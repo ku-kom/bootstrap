@@ -13,7 +13,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@gray-dark">@gray-dark</label>
-    <input class="form-control" id="input-@gray-dark" type="text" value="lighten(@gray-base, 20%)" data-var="@gray-dark"/>
+    <input class="form-control" id="input-@gray-dark" type="text" value="#252525" data-var="@gray-dark"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -56,7 +56,7 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@body-bg">@body-bg</label>
-    <input class="form-control" id="input-@body-bg" type="text" aria-describedby="help-block-@body-bg" value="#fff" data-var="@body-bg"/>
+    <input class="form-control" id="input-@body-bg" type="text" aria-describedby="help-block-@body-bg" value="#f8f8f8" data-var="@body-bg"/>
     <p class="help-block" id="help-block-@body-bg">Background color for <code>&lt;body&gt;</code>.</p>
   </div>
   <div class="col-xs-4">
@@ -85,9 +85,20 @@
 <p>Font, line-height, and color for body text, headings, and more.</p>
 <div class="row">
   <div class="col-xs-4">
+    <label for="input-@font-name-base">@font-name-base</label>
+    <input class="form-control" id="input-@font-name-base" type="text" aria-describedby="help-block-@font-name-base" value="&quot;notosans-regular-webfont&quot;" data-var="@font-name-base"/>
+    <p class="help-block" id="help-block-@font-name-base">File name for all font files.</p>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@font-name-svg-id">@font-name-svg-id</label>
+    <input class="form-control" id="input-@font-name-svg-id" type="text" aria-describedby="help-block-@font-name-svg-id" value="&quot;noto_sans_regular&quot;" data-var="@font-name-svg-id"/>
+    <p class="help-block" id="help-block-@font-name-svg-id">Element ID within SVG icon file.</p>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@font-family-sans-serif">@font-family-sans-serif</label>
     <input class="form-control" id="input-@font-family-sans-serif" type="text" value="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" data-var="@font-family-sans-serif"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-family-serif">@font-family-serif</label>
     <input class="form-control" id="input-@font-family-serif" type="text" value="Georgia, &quot;Times New Roman&quot;, Times, serif" data-var="@font-family-serif"/>
@@ -97,11 +108,11 @@
     <input class="form-control" id="input-@font-family-monospace" type="text" aria-describedby="help-block-@font-family-monospace" value="Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace" data-var="@font-family-monospace"/>
     <p class="help-block" id="help-block-@font-family-monospace">Default monospace fonts for <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>, and <code>&lt;pre&gt;</code>.</p>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-family-base">@font-family-base</label>
     <input class="form-control" id="input-@font-family-base" type="text" value="@font-family-sans-serif" data-var="@font-family-base"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-base">@font-size-base</label>
     <input class="form-control" id="input-@font-size-base" type="text" value="14px" data-var="@font-size-base"/>
@@ -110,11 +121,11 @@
     <label for="input-@font-size-large">@font-size-large</label>
     <input class="form-control" id="input-@font-size-large" type="text" value="ceil((@font-size-base * 1.25))" data-var="@font-size-large"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-small">@font-size-small</label>
     <input class="form-control" id="input-@font-size-small" type="text" value="ceil((@font-size-base * 0.85))" data-var="@font-size-small"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h1">@font-size-h1</label>
     <input class="form-control" id="input-@font-size-h1" type="text" value="floor((@font-size-base * 2.6))" data-var="@font-size-h1"/>
@@ -123,11 +134,11 @@
     <label for="input-@font-size-h2">@font-size-h2</label>
     <input class="form-control" id="input-@font-size-h2" type="text" value="floor((@font-size-base * 2.15))" data-var="@font-size-h2"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h3">@font-size-h3</label>
     <input class="form-control" id="input-@font-size-h3" type="text" value="ceil((@font-size-base * 1.7))" data-var="@font-size-h3"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h4">@font-size-h4</label>
     <input class="form-control" id="input-@font-size-h4" type="text" value="ceil((@font-size-base * 1.25))" data-var="@font-size-h4"/>
@@ -136,11 +147,11 @@
     <label for="input-@font-size-h5">@font-size-h5</label>
     <input class="form-control" id="input-@font-size-h5" type="text" value="@font-size-base" data-var="@font-size-h5"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h6">@font-size-h6</label>
     <input class="form-control" id="input-@font-size-h6" type="text" value="ceil((@font-size-base * 0.85))" data-var="@font-size-h6"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@line-height-base">@line-height-base</label>
     <input class="form-control" id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.428571429" data-var="@line-height-base"/>
@@ -151,12 +162,12 @@
     <input class="form-control" id="input-@line-height-computed" type="text" aria-describedby="help-block-@line-height-computed" value="floor((@font-size-base * @line-height-base))" data-var="@line-height-computed"/>
     <p class="help-block" id="help-block-@line-height-computed">Computed &quot;line-height&quot; (<code>font-size</code> * <code>line-height</code>) for use with <code>margin</code>, <code>padding</code>, etc.</p>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-font-family">@headings-font-family</label>
     <input class="form-control" id="input-@headings-font-family" type="text" aria-describedby="help-block-@headings-font-family" value="inherit" data-var="@headings-font-family"/>
     <p class="help-block" id="help-block-@headings-font-family">By default, this inherits from the <code>&lt;body&gt;</code>.</p>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-font-weight">@headings-font-weight</label>
     <input class="form-control" id="input-@headings-font-weight" type="text" value="500" data-var="@headings-font-weight"/>
@@ -165,7 +176,6 @@
     <label for="input-@headings-line-height">@headings-line-height</label>
     <input class="form-control" id="input-@headings-line-height" type="text" value="1.1" data-var="@headings-line-height"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-color">@headings-color</label>
     <input class="form-control" id="input-@headings-color" type="text" value="inherit" data-var="@headings-color"/>
@@ -320,7 +330,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-default-color">@btn-default-color</label>
-    <input class="form-control" id="input-@btn-default-color" type="text" value="#333" data-var="@btn-default-color"/>
+    <input class="form-control" id="input-@btn-default-color" type="text" value="#252525" data-var="@btn-default-color"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-default-bg">@btn-default-bg</label>
@@ -664,7 +674,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@grid-gutter-width">@grid-gutter-width</label>
-    <input class="form-control" id="input-@grid-gutter-width" type="text" aria-describedby="help-block-@grid-gutter-width" value="30px" data-var="@grid-gutter-width"/>
+    <input class="form-control" id="input-@grid-gutter-width" type="text" aria-describedby="help-block-@grid-gutter-width" value="26px" data-var="@grid-gutter-width"/>
     <p class="help-block" id="help-block-@grid-gutter-width">Padding between columns. Gets divided in half for the left and right.</p>
   </div>
   <div class="col-xs-4">
@@ -703,7 +713,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@container-large-desktop">@container-large-desktop</label>
-    <input class="form-control" id="input-@container-large-desktop" type="text" value="(1140px + @grid-gutter-width)" data-var="@container-large-desktop"/>
+    <input class="form-control" id="input-@container-large-desktop" type="text" value="(1070px + @grid-gutter-width)" data-var="@container-large-desktop"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@container-lg">@container-lg</label>

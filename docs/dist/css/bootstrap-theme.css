@@ -3,6 +3,12 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@font-face {
+  font-family: 'noto sans regular';
+
+  src: url('../fonts/notosans-regular-webfont.eot');
+  src: url('../fonts/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/notosans-regular-webfont.woff2') format('woff2'), url('../fonts/notosans-regular-webfont.woff') format('woff'), url('../fonts/notosans-regular-webfont.ttf') format('truetype'), url('../fonts/notosans-regular-webfont.svg#noto_sans_regular') format('svg');
+}
 .btn-default,
 .btn-primary,
 .btn-success,
