@@ -11,7 +11,6 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -22,6 +21,15 @@
   }
 }
 
+.topbar {
+    background-color: @gray-light;
+    position: relative;
+    min-height: @topbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+    border: 1px solid transparent;
+    border-color: @gray;
+
+    &:extend(.clearfix all);
+}
 
 // Navbar heading
 //
