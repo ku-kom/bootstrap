@@ -18,7 +18,7 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@gray">@gray</label>
-    <input class="form-control" id="input-@gray" type="text" value="lighten(@gray-base, 33.5%)" data-var="@gray"/>
+    <input class="form-control" id="input-@gray" type="text" value="#ccc" data-var="@gray"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@gray-light">@gray-light</label>
@@ -123,7 +123,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-large">@font-size-large</label>
-    <input class="form-control" id="input-@font-size-large" type="text" value="ceil((@font-size-base * 1.25))" data-var="@font-size-large"/>
+    <input class="form-control" id="input-@font-size-large" type="text" value="ceil((@font-size-base * 1.168))" data-var="@font-size-large"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-small">@font-size-small</label>
@@ -158,7 +158,7 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@line-height-base">@line-height-base</label>
-    <input class="form-control" id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.428571429" data-var="@line-height-base"/>
+    <input class="form-control" id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.333333" data-var="@line-height-base"/>
     <p class="help-block" id="help-block-@line-height-base">Unit-less <code>line-height</code> for use in components like buttons.</p>
   </div>
   <div class="col-xs-4">
@@ -202,6 +202,17 @@
     <label for="input-@icon-font-svg-id">@icon-font-svg-id</label>
     <input class="form-control" id="input-@icon-font-svg-id" type="text" aria-describedby="help-block-@icon-font-svg-id" value="&quot;glyphicons_halflingsregular&quot;" data-var="@icon-font-svg-id"/>
     <p class="help-block" id="help-block-@icon-font-svg-id">Element ID within SVG icon file.</p>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
+    <label for="input-@custom-icon-font-name">@custom-icon-font-name</label>
+    <input class="form-control" id="input-@custom-icon-font-name" type="text" aria-describedby="help-block-@custom-icon-font-name" value="&quot;arrow&quot;" data-var="@custom-icon-font-name"/>
+    <p class="help-block" id="help-block-@custom-icon-font-name">Custom KU icon font.</p>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@custom-icon-font-svg-id">@custom-icon-font-svg-id</label>
+    <input class="form-control" id="input-@custom-icon-font-svg-id" type="text" aria-describedby="help-block-@custom-icon-font-svg-id" value="&quot;arrow-font&quot;" data-var="@custom-icon-font-svg-id"/>
+    <p class="help-block" id="help-block-@custom-icon-font-svg-id">Element ID within SVG icon file for KU custom font.</p>
   </div>
 </div>
 <h2 id="components">Components</h2>

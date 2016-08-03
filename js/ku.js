@@ -12,7 +12,7 @@
   var $cachedWidth = $(window).width();
 
   var collapseFooter = function (el, ev) {
-    if ($cachedWidth < 699) {
+    if ($cachedWidth < 768) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -29,7 +29,7 @@
     var $newWidth = $(window).width();
     if ($newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
-      if ($(window).width() < 683) {
+      if ($(window).width() < 768) {
         $footerColumn.css('display', 'none');
       } else {
         $footerColumn.css('display', 'block');
