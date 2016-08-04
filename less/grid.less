@@ -19,14 +19,13 @@
 
 main {
   flex: 1 0 auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: @grid-gutter-width;
-  padding-right: @grid-gutter-width;
+  // padding-left: @grid-gutter-width;
+  // padding-right: @grid-gutter-width;
   background-color: @white-color;
   &:extend(.clearfix all);
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
+    margin: 0 auto;
   }
   @media (min-width: @screen-md-min) {
     width: @container-md;
@@ -37,7 +36,7 @@ main {
 }
 
 // Make columns equal height
-@media (min-width: @screen-lg-min) {
+@media (min-width: @screen-md-min) {
     .row-eq-height {
       display: flex;
     }

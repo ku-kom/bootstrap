@@ -4,7 +4,9 @@
 .globalfooter {
   position: relative;
   background: @gray-light;
-  background: linear-gradient(to bottom, rgba(119, 119, 119, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
+  @media (min-width: @screen-sm-min) {
+      background: linear-gradient(to bottom, rgba(119, 119, 119, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
+  }
   color: @white-color;
   flex: none;
   margin: 0 auto;
@@ -17,7 +19,7 @@
     max-width: (@container-large-desktop - @grid-gutter-width);
     width: 100%;
     margin: 0 auto;
-    padding: @grid-gutter-width @grid-gutter-width @padding-large-vertical;
+    padding: @grid-gutter-width (@grid-gutter-width / 2);
     position: relative;
     display: flex;
     flex-direction: row;
@@ -208,8 +210,6 @@
 }
 @media (max-width: @screen-sm-min) {
   .globalfooter {
-    //min-width: 200px;
-    background: @gray-light;
     .footercontent {
       width: 100%;
       display: block;

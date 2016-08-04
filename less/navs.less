@@ -67,7 +67,25 @@
     max-width: none;
   }
 }
-
+//KU menu item pipes
+@media (min-width: @screen-sm-min) {
+    .ku-nav {
+        ul.nav {
+            > li + li {
+                &:before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                	height: 40%;
+                    width: 1px;
+                    background: #cfcfcf;
+                }
+            }
+        }
+    }
+}
 
 // Tabs
 // -------------------------
