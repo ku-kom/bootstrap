@@ -16,6 +16,8 @@
 
 @white-color:             #fff;
 
+@ku-red:                #901a1e;
+
 @brand-primary:         darken(#428bca, 6.5%); // #337ab7
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
@@ -66,6 +68,7 @@
 @font-size-base:          12px;
 @font-size-large:         ceil((@font-size-base * 1.168)); // ~14px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@ku-branding-text-font-size: ceil((@font-size-base * 1.5)); //18px
 
 @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
@@ -366,7 +369,8 @@
 @container-md:                 @container-desktop;
 
 // Large screen / wide desktop
-@container-large-desktop:      (1070px + @grid-gutter-width);
+@container-large-desktop:      1070px;
+//(1070px + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
 
@@ -376,7 +380,7 @@
 //##
 
 // Basics of a navbar
-@topbar-height:                    25px;
+@ku-topbar-height:                    25px;
 @navbar-height:                    40px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
@@ -462,6 +466,18 @@
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
+//== KU branding box and logo height
+//
+//##
+
+@ku-branding-box-height:                 83px;
+
+//== KU left menu
+//
+//##
+
+// 50% = 6 columns
+@ku-leftmenu-slide-width:                 50%;
 
 //== Pagination
 //

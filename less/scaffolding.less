@@ -23,6 +23,10 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   height: 100%;
+  @media (max-width: @screen-sm-min) {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+  }
 }
 
 body {
@@ -34,6 +38,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  @media (max-width: @screen-sm-min) {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+  }
 }
 
 header,nav,
@@ -167,4 +175,10 @@ hr {
 
 [role="button"] {
   cursor: pointer;
+}
+
+//KU remove gutter from columns
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
 }

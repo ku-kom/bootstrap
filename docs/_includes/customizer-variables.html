@@ -34,14 +34,18 @@
     <input class="form-control" id="input-@white-color" type="text" value="#fff" data-var="@white-color"/>
   </div>
   <div class="col-xs-4">
+    <label for="input-@ku-red">@ku-red</label>
+    <input class="form-control" id="input-@ku-red" type="text" value="#901a1e" data-var="@ku-red"/>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@brand-primary">@brand-primary</label>
     <input class="form-control" id="input-@brand-primary" type="text" value="darken(#428bca, 6.5%)" data-var="@brand-primary"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@brand-success">@brand-success</label>
     <input class="form-control" id="input-@brand-success" type="text" value="#5cb85c" data-var="@brand-success"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@brand-info">@brand-info</label>
     <input class="form-control" id="input-@brand-info" type="text" value="#5bc0de" data-var="@brand-info"/>
@@ -50,6 +54,7 @@
     <label for="input-@brand-warning">@brand-warning</label>
     <input class="form-control" id="input-@brand-warning" type="text" value="#f0ad4e" data-var="@brand-warning"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@brand-danger">@brand-danger</label>
     <input class="form-control" id="input-@brand-danger" type="text" value="#d9534f" data-var="@brand-danger"/>
@@ -131,6 +136,10 @@
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
+    <label for="input-@ku-branding-text-font-size">@ku-branding-text-font-size</label>
+    <input class="form-control" id="input-@ku-branding-text-font-size" type="text" value="ceil((@font-size-base * 1.5))" data-var="@ku-branding-text-font-size"/>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@font-size-h1">@font-size-h1</label>
     <input class="form-control" id="input-@font-size-h1" type="text" value="floor((@font-size-base * 2.6))" data-var="@font-size-h1"/>
   </div>
@@ -138,11 +147,11 @@
     <label for="input-@font-size-h2">@font-size-h2</label>
     <input class="form-control" id="input-@font-size-h2" type="text" value="floor((@font-size-base * 2.15))" data-var="@font-size-h2"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h3">@font-size-h3</label>
     <input class="form-control" id="input-@font-size-h3" type="text" value="ceil((@font-size-base * 1.7))" data-var="@font-size-h3"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h4">@font-size-h4</label>
     <input class="form-control" id="input-@font-size-h4" type="text" value="ceil((@font-size-base * 1.25))" data-var="@font-size-h4"/>
@@ -151,11 +160,11 @@
     <label for="input-@font-size-h5">@font-size-h5</label>
     <input class="form-control" id="input-@font-size-h5" type="text" value="@font-size-base" data-var="@font-size-h5"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@font-size-h6">@font-size-h6</label>
     <input class="form-control" id="input-@font-size-h6" type="text" value="ceil((@font-size-base * 0.85))" data-var="@font-size-h6"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@line-height-base">@line-height-base</label>
     <input class="form-control" id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.333333" data-var="@line-height-base"/>
@@ -166,12 +175,12 @@
     <input class="form-control" id="input-@line-height-computed" type="text" aria-describedby="help-block-@line-height-computed" value="floor((@font-size-base * @line-height-base))" data-var="@line-height-computed"/>
     <p class="help-block" id="help-block-@line-height-computed">Computed &quot;line-height&quot; (<code>font-size</code> * <code>line-height</code>) for use with <code>margin</code>, <code>padding</code>, etc.</p>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-font-family">@headings-font-family</label>
     <input class="form-control" id="input-@headings-font-family" type="text" aria-describedby="help-block-@headings-font-family" value="inherit" data-var="@headings-font-family"/>
     <p class="help-block" id="help-block-@headings-font-family">By default, this inherits from the <code>&lt;body&gt;</code>.</p>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-font-weight">@headings-font-weight</label>
     <input class="form-control" id="input-@headings-font-weight" type="text" value="500" data-var="@headings-font-weight"/>
@@ -180,6 +189,7 @@
     <label for="input-@headings-line-height">@headings-line-height</label>
     <input class="form-control" id="input-@headings-line-height" type="text" value="1.1" data-var="@headings-line-height"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@headings-color">@headings-color</label>
     <input class="form-control" id="input-@headings-color" type="text" value="inherit" data-var="@headings-color"/>
@@ -728,7 +738,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@container-large-desktop">@container-large-desktop</label>
-    <input class="form-control" id="input-@container-large-desktop" type="text" value="(1070px + @grid-gutter-width)" data-var="@container-large-desktop"/>
+    <input class="form-control" id="input-@container-large-desktop" type="text" value="1070px" data-var="@container-large-desktop"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@container-lg">@container-lg</label>
@@ -739,8 +749,8 @@
 <h2 id="navbar">Navbar</h2>
 <div class="row">
   <div class="col-xs-4">
-    <label for="input-@topbar-height">@topbar-height</label>
-    <input class="form-control" id="input-@topbar-height" type="text" value="25px" data-var="@topbar-height"/>
+    <label for="input-@ku-topbar-height">@ku-topbar-height</label>
+    <input class="form-control" id="input-@ku-topbar-height" type="text" value="25px" data-var="@ku-topbar-height"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-height">@navbar-height</label>
@@ -977,6 +987,20 @@
   <div class="col-xs-4">
     <label for="input-@nav-pills-active-link-hover-color">@nav-pills-active-link-hover-color</label>
     <input class="form-control" id="input-@nav-pills-active-link-hover-color" type="text" value="@component-active-color" data-var="@nav-pills-active-link-hover-color"/>
+  </div>
+</div>
+<h2 id="ku-branding-box-and-logo-height">KU branding box and logo height</h2>
+<div class="row">
+  <div class="col-xs-4">
+    <label for="input-@ku-branding-box-height">@ku-branding-box-height</label>
+    <input class="form-control" id="input-@ku-branding-box-height" type="text" value="83px" data-var="@ku-branding-box-height"/>
+  </div>
+</div>
+<h2 id="ku-left-menu">KU left menu</h2>
+<div class="row">
+  <div class="col-xs-4">
+    <label for="input-@ku-leftmenu-slide-width">@ku-leftmenu-slide-width</label>
+    <input class="form-control" id="input-@ku-leftmenu-slide-width" type="text" value="50%" data-var="@ku-leftmenu-slide-width"/>
   </div>
 </div>
 <h2 id="pagination">Pagination</h2>

@@ -1,0 +1,68 @@
+//
+// KU left menu
+// --------------------------------------------------
+
+@media screen and (min-width: @screen-sm-min) {
+    .ku-leftmenu {
+        ul.nav {
+            > li {
+                > a {
+                    color: @gray-dark;
+                    padding-left: 0;
+
+                    &:before {
+                        content: "\e080";
+                        font-family: 'Glyphicons Halflings';
+                        font-size: 7px;
+                        float: left;
+                        .mar (3, 4, 4, 0);
+                        color: @ku-red;
+                        border: 1px solid #d7d7d7;
+                    }
+                    &:hover {
+                        color: @ku-red;
+                    }
+                }
+            }
+        }
+    }
+}
+// Left menu slide in/out for mobiles
+@media screen and (max-width: @screen-sm-min) {
+  .leftmenu-toggle {
+    position: fixed;
+    top: @navbar-height;
+    left: 0;
+    z-index: (@zindex-navbar * 2);
+    .offcanvas-toggle {
+      background-color: @ku-red;
+    }
+  }
+  .row-offcanvas {
+    position: relative;
+    transition: all 0.25s ease-out;
+    .ku-leftmenu {
+      position: absolute;
+      top: 0;
+      width: @ku-leftmenu-slide-width;
+    }
+  }
+  .row-offcanvas-right {
+    right: 0;
+    .ku-leftmenu {
+      right: -@ku-leftmenu-slide-width;
+    }
+    &.active {
+      right: @ku-leftmenu-slide-width;
+    }
+  }
+  .row-offcanvas-left {
+    left: 0;
+    .ku-leftmenu {
+      left: -@ku-leftmenu-slide-width;
+    }
+    &.active {
+      left: @ku-leftmenu-slide-width;
+    }
+  }
+}

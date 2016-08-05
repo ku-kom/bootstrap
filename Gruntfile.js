@@ -106,7 +106,8 @@ module.exports = function (grunt) {
       },
       bootstrap: {
         src: [
-          'js/ku.js', // KU custom scripts
+          'js/ku-global-footer.js',
+          'js/ku-leftmenu.js',
           'js/transition.js',
           'js/alert.js',
           'js/button.js',

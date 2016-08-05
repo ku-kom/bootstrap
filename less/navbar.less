@@ -5,6 +5,7 @@
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
+
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
@@ -477,7 +478,7 @@
 // Inverse navbar
 .navbar-inverse {
   background-color: @navbar-inverse-bg;
-  height: @topbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  height: @ku-topbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   border-color: @navbar-inverse-border;
   .navbar-brand {
     color: @navbar-inverse-brand-color;
@@ -498,6 +499,9 @@
         color: @navbar-inverse-link-hover-color;
         background-color: @navbar-inverse-link-hover-bg;
       }
+    }
+    .eng {
+        padding-right: (@grid-gutter-width / 2);
     }
     > .active > a {
       &,
