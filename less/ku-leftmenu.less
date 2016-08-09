@@ -1,37 +1,102 @@
 //
 // KU left menu
 // --------------------------------------------------
-
 @media screen and (min-width: @screen-sm-min) {
-    .ku-leftmenu {
-        ul.nav {
-            > li {
-                > a {
-                    color: @gray-dark;
-                    padding-left: 0;
-
-                    &:before {
-                        content: "\e080";
-                        font-family: 'Glyphicons Halflings';
-                        font-size: 7px;
-                        float: left;
-                        .mar (3, 4, 4, 0);
-                        color: @ku-red;
-                        border: 1px solid #d7d7d7;
-                    }
-                    &:hover {
-                        color: @ku-red;
-                    }
-                }
-            }
-        }
+  .ku-leftmenu {
+    .ku-navbar-header {
+      font-weight: bold;
+      margin-bottom: @grid-gutter-width;
+      border-left: 8px solid @ku-red;
+      padding-left: 6px;
     }
+    // All levels
+    ul {
+      li {
+          position: relative;
+          display: block;
+        &.active {
+          > a,
+          a.active {
+            color: @ku-red;
+            font-weight: bold;
+          }
+        }
+        a {
+          color: @gray-dark;
+          font-size: 0.95em;
+          padding: 3px 5px 3px 15px;
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+
+          &:active,
+          &:focus,
+          &:hover {
+            text-decoration: none;
+          }
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 5px;
+          }
+        }
+      }
+    }
+    ul.nav {
+      //First level
+      > li {
+        > a {
+          &:before {
+            content: "\e080";
+            font-family: 'Glyphicons Halflings';
+            font-size: 7px;
+            color: @ku-red;
+            border: 1px solid #d7d7d7;
+          }
+          &:hover {
+            color: @ku-red;
+            &:before {
+              background-color: @ku-red;
+              color: @white-color;
+            }
+          }
+        }
+        ul {
+          // Second, third and fourth level
+          list-style-type: none;
+          padding-left: 15px;
+
+          li {
+
+            > a {
+              padding: 2px 5px 2px 10px;
+              &:before {
+                content: "\25A0";
+                color: @ku-red;
+                font-size: 9px;
+              }
+              &:hover:before {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .menu-seperator {
+      height: 1px;
+      color: @gray;
+      background: @gray;
+      border: 0;
+      margin: @margin20 0;
+    }
+  }
 }
 // Left menu slide in/out for mobiles
 @media screen and (max-width: @screen-sm-min) {
   .leftmenu-toggle {
     position: fixed;
-    top: @navbar-height;
+    top: 24px;
     left: 0;
     z-index: (@zindex-navbar * 2);
     .offcanvas-toggle {

@@ -3,30 +3,60 @@ layout: examples
 title: KU standard template with left menu
 slug: examples
 ---
-
-
 <main id="content">
-    <div class="container ku-branding">
-        <div class="ku-branding-line">
-            <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
-            <div class="ku-branding-text">
-                <div class="ku-branding-text-major">Kommunikation</div>
-                <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
-            </div>
-        </div>
+  <div class="container ku-branding">
+    <div class="ku-branding-line">
+      <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
+      <div class="ku-branding-text">
+        <div class="ku-branding-text-major">Kommunikation</div>
+        <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
+      </div>
     </div>
-  <div class="container">
+  </div>
+  <div class="container main-content">
     <div class="row row-offcanvas row-offcanvas-left">
-      <div class="col-xs-6 col-sm-3 ku-leftmenu" role="menu" id="leftmenu">
+      <div class="col-sm-6 col-sm-3 ku-leftmenu" role="menu" id="leftmenu">
+        <div class="ku-navbar-header">
+          Kommunikation
+        </div>
+        <ul class="nav">
+          <li><a href="#">Forside</a></li>
+          <li><a href="#">Sub menu here</a>
+            <ul>
+              <li><a href="#">Link 2.1</a></li>
+              <li><a href="#">Link 2.2</a></li>
+              <li><a href="#">Link 2.3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Separated link</a>
+            <li><a href="#">Separated link</a>
+              <ul>
+                <li><a href="#">Link 2.1</a>
+                  <ul>
+                    <li><a href="#">Link 3.1</a></li>
+                    <li><a href="#">Link 3.2</a></li>
+                    <li><a href="#">Link 3.3</a>
+                      <ul>
+                        <li class="active"><a href="#">Link 4.1 - one more very, very, very, long text</a></li>
+                        <li><a href="#">Link 4.2</a></li>
+                        <li><a href="#">Link 4.3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">One more very, very, very, long separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+        </ul>
+        <hr class="menu-seperator" />
         <ul class="nav">
           <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
           <li><a href="#">Separated link</a></li>
           <li><a href="#">One more separated link</a></li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-9">
+      <div class="col-sm-12 col-sm-9">
         <div class="row">
           <div class="col-sm-12 col-md-4">
             <h2>Heading</h2>
@@ -50,7 +80,7 @@ slug: examples
   </div>
 </main>
 <!-- Toggle left menu button -->
-<div class="visible-xs-block hidden-md hidden lg leftmenu-toggle">
+<div class="visible-xs-block hidden-md hidden-lg leftmenu-toggle">
   <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>

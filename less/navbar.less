@@ -5,7 +5,6 @@
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
-
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
@@ -25,6 +24,7 @@
   }
 }
 .ku-nav {
+  font-size: 1.085em;
   .navbar-nav {
     > li {
       > .dropdown-menu {
@@ -35,18 +35,44 @@
   // KU: make dropdown display by hover instead of click
   ul.nav {
     li.dropdown {
-      &.active {
+    
+      @media screen and (min-width: @screen-sm-min) {
+        &.active {
+          &:hover {
+            > ul.dropdown-menu {
+              display: block;
+            }
+          }
+        }
         &:hover {
-          > ul.dropdown-menu {
+          ul.dropdown-menu {
             display: block;
+            animation: fadeIn 0.4s;
           }
         }
       }
-      &:hover {
-        ul.dropdown-menu {
-          display: block;
-          animation: fadeIn 0.4s;
+      @media screen and (max-width: @screen-sm-min) {
+        // Menu open/close arrows
+        &:after {
+          font-family: 'Glyphicons Halflings';
+          content: '\e080';
+          z-index: 2;
+          color: @gray-dark;
+          font-size: @font-size-base;
+          position: absolute;
+          top: 10px;
+          right: @grid-gutter-width;
+          left: auto;
         }
+        &.open {
+          &:after {
+            content: '\e114';
+          }
+        }
+      }
+      &:active,
+      &:hover {
+        background-color: @gray-lighter;
       }
     }
   }
@@ -501,7 +527,7 @@
       }
     }
     .eng {
-        padding-right: (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
     }
     > .active > a {
       &,

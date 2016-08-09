@@ -2,7 +2,6 @@
 // KU top branding
 .ku-branding {
   background-color: @white-color;
-
   .ku-branding-logo {
     height: @ku-branding-box-height;
     width: 61px;
@@ -10,15 +9,6 @@
     float: left;
     position: relative;
     bottom: -5px;
-    /*Special hack to scale .svg images in IE*/
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      img {
-        width: 100% \9;
-      }
-      img[src$=".svg"] {
-        width: 100%;
-      }
-    }
   }
   .ku-branding-text {
     max-height: @ku-branding-box-height;
@@ -38,6 +28,14 @@
   }
   .ku-branding-line {
     border-bottom: 1px solid @ku-red;
-    margin-bottom: @grid-gutter-width;
   }
+}
+/*Special hack to scale .svg images in IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img {
+    width: 100% \9;
+  }
+}
+img[src$=".svg"] {
+  width: 100%;
 }
