@@ -1217,6 +1217,9 @@ hr {
   overflow: visible;
   clip: auto;
 }
+[tabindex] {
+  outline: 0;
+}
 [role="button"] {
   cursor: pointer;
 }
@@ -1662,6 +1665,8 @@ main {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 @media (min-width: 768px) {
   main {
@@ -4073,7 +4078,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -4114,6 +4119,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: 40%;
     content: " ";
     background: #cfcfcf;
+  }
+  .ku-nav ul.nav > li:first-child > a {
+    padding-left: 0;
   }
 }
 .nav-tabs {
@@ -4169,9 +4177,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 0;
   border-radius: 4px;
 }
-.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
-.nav-tabs.nav-justified > .active > a {
+.nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
@@ -4179,9 +4187,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
   }
-  .nav-tabs.nav-justified > .active > a:focus,
+  .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a {
+  .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #f8f8f8;
   }
 }
@@ -4237,9 +4245,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 0;
   border-radius: 4px;
 }
-.nav-tabs-justified > .active > a:focus,
+.nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
-.nav-tabs-justified > .active > a {
+.nav-tabs-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
@@ -4247,9 +4255,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
   }
-  .nav-tabs-justified > .active > a:focus,
+  .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a {
+  .nav-tabs-justified > .active > a:focus {
     border-bottom-color: #f8f8f8;
   }
 }
@@ -4330,10 +4338,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .ku-nav ul.nav li.dropdown.open:after {
     content: '\e114';
   }
-}
-.ku-nav ul.nav li.dropdown:active,
-.ku-nav ul.nav li.dropdown:hover {
-  background-color: #eee;
 }
 @media (min-width: 768px) {
   .navbar-header {
@@ -6973,6 +6977,24 @@ main:after,
 .ku-branding .ku-branding-line {
   border-bottom: 1px solid #901a1e;
 }
+.theme-samf .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #e13718;
+}
+.theme-hum .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #365aa5;
+}
+.theme-science .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #46743c;
+}
+.theme-sund .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #2a216a;
+}
+.theme-jura .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #999632;
+}
+.theme-teol .ku-branding .ku-branding-line {
+  border-bottom: 1px solid #66609e;
+}
 /*Special hack to scale .svg images in IE*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img {
@@ -6989,6 +7011,24 @@ img[src$=".svg"] {
     font-weight: bold;
     border-left: 8px solid #901a1e;
   }
+  .theme-samf .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #e13718;
+  }
+  .theme-hum .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #365aa5;
+  }
+  .theme-science .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #46743c;
+  }
+  .theme-sund .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #2a216a;
+  }
+  .theme-jura .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #999632;
+  }
+  .theme-teol .ku-leftmenu .ku-navbar-header {
+    border-left: 8px solid #66609e;
+  }
   .ku-leftmenu ul li {
     position: relative;
     display: block;
@@ -6997,6 +7037,30 @@ img[src$=".svg"] {
   .ku-leftmenu ul li.active a.active {
     font-weight: bold;
     color: #901a1e;
+  }
+  .theme-samf .ku-leftmenu ul li.active > a,
+  .theme-samf .ku-leftmenu ul li.active a.active {
+    color: #e13718;
+  }
+  .theme-hum .ku-leftmenu ul li.active > a,
+  .theme-hum .ku-leftmenu ul li.active a.active {
+    color: #365aa5;
+  }
+  .theme-science .ku-leftmenu ul li.active > a,
+  .theme-science .ku-leftmenu ul li.active a.active {
+    color: #46743c;
+  }
+  .theme-sund .ku-leftmenu ul li.active > a,
+  .theme-sund .ku-leftmenu ul li.active a.active {
+    color: #2a216a;
+  }
+  .theme-jura .ku-leftmenu ul li.active > a,
+  .theme-jura .ku-leftmenu ul li.active a.active {
+    color: #999632;
+  }
+  .theme-teol .ku-leftmenu ul li.active > a,
+  .theme-teol .ku-leftmenu ul li.active a.active {
+    color: #66609e;
   }
   .ku-leftmenu ul li a {
     position: relative;
@@ -7009,7 +7073,38 @@ img[src$=".svg"] {
   .ku-leftmenu ul li a:active,
   .ku-leftmenu ul li a:focus,
   .ku-leftmenu ul li a:hover {
+    color: #901a1e;
     text-decoration: none;
+  }
+  .theme-samf .ku-leftmenu ul li a:active,
+  .theme-samf .ku-leftmenu ul li a:focus,
+  .theme-samf .ku-leftmenu ul li a:hover {
+    color: #e13718;
+  }
+  .theme-hum .ku-leftmenu ul li a:active,
+  .theme-hum .ku-leftmenu ul li a:focus,
+  .theme-hum .ku-leftmenu ul li a:hover {
+    color: #365aa5;
+  }
+  .theme-science .ku-leftmenu ul li a:active,
+  .theme-science .ku-leftmenu ul li a:focus,
+  .theme-science .ku-leftmenu ul li a:hover {
+    color: #46743c;
+  }
+  .theme-sund .ku-leftmenu ul li a:active,
+  .theme-sund .ku-leftmenu ul li a:focus,
+  .theme-sund .ku-leftmenu ul li a:hover {
+    color: #2a216a;
+  }
+  .theme-jura .ku-leftmenu ul li a:active,
+  .theme-jura .ku-leftmenu ul li a:focus,
+  .theme-jura .ku-leftmenu ul li a:hover {
+    color: #999632;
+  }
+  .theme-teol .ku-leftmenu ul li a:active,
+  .theme-teol .ku-leftmenu ul li a:focus,
+  .theme-teol .ku-leftmenu ul li a:hover {
+    color: #66609e;
   }
   .ku-leftmenu ul li a:before {
     position: absolute;
@@ -7023,12 +7118,45 @@ img[src$=".svg"] {
     content: "\e080";
     border: 1px solid #d7d7d7;
   }
-  .ku-leftmenu ul.nav > li > a:hover {
-    color: #901a1e;
+  .theme-samf .ku-leftmenu ul.nav > li > a:before {
+    color: #e13718;
+  }
+  .theme-hum .ku-leftmenu ul.nav > li > a:before {
+    color: #365aa5;
+  }
+  .theme-science .ku-leftmenu ul.nav > li > a:before {
+    color: #46743c;
+  }
+  .theme-sund .ku-leftmenu ul.nav > li > a:before {
+    color: #2a216a;
+  }
+  .theme-jura .ku-leftmenu ul.nav > li > a:before {
+    color: #999632;
+  }
+  .theme-teol .ku-leftmenu ul.nav > li > a:before {
+    color: #66609e;
   }
   .ku-leftmenu ul.nav > li > a:hover:before {
     color: #fff;
     background-color: #901a1e;
+  }
+  .theme-samf .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #e13718;
+  }
+  .theme-hum .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #365aa5;
+  }
+  .theme-science .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #46743c;
+  }
+  .theme-sund .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #2a216a;
+  }
+  .theme-jura .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #999632;
+  }
+  .theme-teol .ku-leftmenu ul.nav > li > a:hover:before {
+    background-color: #66609e;
   }
   .ku-leftmenu ul.nav > li ul {
     padding-left: 15px;
@@ -7041,6 +7169,24 @@ img[src$=".svg"] {
     font-size: 9px;
     color: #901a1e;
     content: "\25A0";
+  }
+  .theme-samf .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #e13718;
+  }
+  .theme-hum .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #365aa5;
+  }
+  .theme-science .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #46743c;
+  }
+  .theme-sund .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #2a216a;
+  }
+  .theme-jura .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #999632;
+  }
+  .theme-teol .ku-leftmenu ul.nav > li ul li > a:before {
+    color: #66609e;
   }
   .ku-leftmenu ul.nav > li ul li > a:hover:before {
     text-decoration: none;

@@ -20,6 +20,7 @@
 main {
   flex: 1 0 auto;
   background-color: @white-color;
+  backface-visibility: hidden; //Fix weired flickering
   &:extend(.clearfix all);
   @media (min-width: @screen-sm-min) {
     width: @container-sm;

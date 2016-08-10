@@ -9,7 +9,7 @@
   "latedef"  : true,
   "laxbreak" : true,
   "nonbsp"   : true,
-  "strict"   : true,
+  "strict"   : false,
   "undef"    : true,
-  "unused"   : true
+  "unused"   : false
 }

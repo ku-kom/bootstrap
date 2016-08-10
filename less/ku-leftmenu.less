@@ -7,17 +7,53 @@
       font-weight: bold;
       margin-bottom: @grid-gutter-width;
       border-left: 8px solid @ku-red;
+      .theme-samf & {
+        border-left: 8px solid @samf;
+      }
+      .theme-hum & {
+        border-left: 8px solid @hum;
+      }
+      .theme-science & {
+        border-left: 8px solid @science;
+      }
+      .theme-sund & {
+        border-left: 8px solid @sund;
+      }
+      .theme-jura & {
+        border-left: 8px solid @jura;
+      }
+      .theme-teol & {
+        border-left: 8px solid @teol;
+      }
       padding-left: 6px;
     }
     // All levels
     ul {
       li {
-          position: relative;
-          display: block;
+        position: relative;
+        display: block;
         &.active {
           > a,
           a.active {
             color: @ku-red;
+            .theme-samf & {
+              color: @samf;
+            }
+            .theme-hum & {
+              color: @hum;
+            }
+            .theme-science & {
+              color: @science;
+            }
+            .theme-sund & {
+              color: @sund;
+            }
+            .theme-jura & {
+              color: @jura;
+            }
+            .theme-teol & {
+              color: @teol;
+            }
             font-weight: bold;
           }
         }
@@ -28,10 +64,28 @@
           position: relative;
           display: inline-block;
           vertical-align: top;
-
           &:active,
           &:focus,
           &:hover {
+            color: @ku-red;
+            .theme-samf & {
+              color: @samf;
+            }
+            .theme-hum & {
+              color: @hum;
+            }
+            .theme-science & {
+              color: @science;
+            }
+            .theme-sund & {
+              color: @sund;
+            }
+            .theme-jura & {
+              color: @jura;
+            }
+            .theme-teol & {
+              color: @teol;
+            }
             text-decoration: none;
           }
           &:before {
@@ -51,12 +105,47 @@
             font-family: 'Glyphicons Halflings';
             font-size: 7px;
             color: @ku-red;
+            .theme-samf & {
+              color: @samf;
+            }
+            .theme-hum & {
+              color: @hum;
+            }
+            .theme-science & {
+              color: @science;
+            }
+            .theme-sund & {
+              color: @sund;
+            }
+            .theme-jura & {
+              color: @jura;
+            }
+            .theme-teol & {
+              color: @teol;
+            }
             border: 1px solid #d7d7d7;
           }
           &:hover {
-            color: @ku-red;
             &:before {
               background-color: @ku-red;
+              .theme-samf & {
+                background-color: @samf;
+              }
+              .theme-hum & {
+                background-color: @hum;
+              }
+              .theme-science & {
+                background-color: @science;
+              }
+              .theme-sund & {
+                background-color: @sund;
+              }
+              .theme-jura & {
+                background-color: @jura;
+              }
+              .theme-teol & {
+                background-color: @teol;
+              }
               color: @white-color;
             }
           }
@@ -65,14 +154,30 @@
           // Second, third and fourth level
           list-style-type: none;
           padding-left: 15px;
-
           li {
-
             > a {
               padding: 2px 5px 2px 10px;
               &:before {
                 content: "\25A0";
                 color: @ku-red;
+                .theme-samf & {
+                  color: @samf;
+                }
+                .theme-hum & {
+                  color: @hum;
+                }
+                .theme-science & {
+                  color: @science;
+                }
+                .theme-sund & {
+                  color: @sund;
+                }
+                .theme-jura & {
+                  color: @jura;
+                }
+                .theme-teol & {
+                  color: @teol;
+                }
                 font-size: 9px;
               }
               &:hover:before {
