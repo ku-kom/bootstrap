@@ -50,10 +50,8 @@ if (typeof jQuery === 'undefined') {
       $footerHeader.removeClass('open');
       if ($newWidth < 750) {
         $footerColumn.css('display', 'none');
-        console.log($newWidth + ' Display: none');
       } else {
         $footerColumn.css('display', 'block');
-        console.log($newWidth + ' Display: block');
       }
       $cachedWidth = $newWidth;
     }
