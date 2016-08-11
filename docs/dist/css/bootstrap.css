@@ -1111,7 +1111,7 @@ body {
   display: -ms-flexbox;
   display:         flex;
   height: 100%;
-  font-family: "noto sans regular", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "noto sans regular", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.333333;
   color: #252525;
@@ -4764,7 +4764,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   color: #ccc;
 }
 .navbar-inverse {
-  height: 25px;
+  height: 30px;
   background-color: #777;
   border-color: #ccc;
 }
@@ -6181,7 +6181,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "noto sans regular", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "noto sans regular", Helvetica, Arial, sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: normal;
@@ -6300,7 +6300,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "noto sans regular", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "noto sans regular", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -7205,52 +7205,74 @@ img[src$=".svg"] {
     text-decoration: none;
   }
   .ku-leftmenu .menu-seperator {
-    margin: 26px 0 20px 0;
+    margin: 26px 0 20px;
   }
 }
-@media screen and (max-width: 768px) {
-  .ku-leftmenu {
-    z-index: 1001;
-    background-color: #f8f8f8;
-  }
+@media (max-width: 768px) {
   .leftmenu-toggle {
     position: fixed;
-    top: 24px;
+    top: 3px;
     left: 0;
-    z-index: 2000;
+    z-index: 1040;
   }
   .leftmenu-toggle .offcanvas-toggle {
     background-color: #901a1e;
   }
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
+}
+.offcanvas {
+  display: none;
+}
+.offcanvas.in {
+  display: block;
+}
+@media (max-width: 768px) {
+  .navmenu-default {
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
   }
-  .row-offcanvas .ku-leftmenu {
-    position: absolute;
-    top: 0;
-    width: 50%;
+  .navmenu {
+    width: 300px;
+    height: auto;
   }
-  .row-offcanvas-right {
-    right: 0;
+  .navmenu-fixed-left,
+  .navmenu-fixed-right {
+    position: fixed;
+    top: 30px;
+    bottom: 0;
+    z-index: 1050;
+    overflow-y: auto;
   }
-  .row-offcanvas-right .ku-leftmenu {
-    right: -50%;
-  }
-  .row-offcanvas-right.active {
-    right: 50%;
-  }
-  .row-offcanvas-left {
+  .navmenu-fixed-left {
+    right: auto;
     left: 0;
   }
-  .row-offcanvas-left .ku-leftmenu {
-    left: -52%;
+  .navmenu-fixed-right {
+    right: 0;
+    left: auto;
   }
-  .row-offcanvas-left.active {
-    left: 50%;
+  .navmenu-nav.dropdown-menu {
+    position: static;
+    float: none;
+    padding-top: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
+}
+@media (max-width: 768px) {
+  .offcanvas-sm {
+    display: none;
+  }
+  .offcanvas-sm.in {
+    display: block;
+  }
+}
+.canvas-sliding {
+  -webkit-transition: top .35s, left .35s, bottom .35s, right .35s;
+       -o-transition: top .35s, left .35s, bottom .35s, right .35s;
+          transition: top .35s, left .35s, bottom .35s, right .35s;
 }
 .local-footer {
   margin-right: 0;
@@ -7262,8 +7284,8 @@ img[src$=".svg"] {
           flex: 1 0 auto;
 }
 .local-footer > .row {
-  margin-top: 26px;
-  margin-bottom: 13px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .globalfooter {
   position: relative;

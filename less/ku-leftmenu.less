@@ -189,50 +189,73 @@
       }
     }
     .menu-seperator {
-      margin: @grid-gutter-width 0 @margin20 0;
+      margin: @grid-gutter-width 0 @margin20;
     }
   }
 }
 // Left menu slide in/out for mobiles
-@media screen and (max-width: @screen-sm-min) {
-    .ku-leftmenu {
-        z-index: 1001;
-        background-color: #f8f8f8;
-    }
+@media (max-width: @screen-sm-min) {
   .leftmenu-toggle {
     position: fixed;
-    top: 24px;
+    top: 3px;
     left: 0;
-    z-index: (@zindex-navbar * 2);
+    z-index: 1040;
     .offcanvas-toggle {
       background-color: @ku-red;
     }
   }
-  .row-offcanvas {
-    position: relative;
-    transition: all 0.25s ease-out;
-    .ku-leftmenu {
-      position: absolute;
-      top: 0;
-      width: @ku-leftmenu-slide-width;
+}
+.offcanvas {
+  display: none;
+}
+.offcanvas.in {
+  display: block;
+}
+@media (max-width: @screen-sm-min) {
+    .navmenu-default {
+      background-color: #f8f8f8;
+      border: 1px solid #e7e7e7;
     }
+  .navmenu {
+    width: 300px;
+    height: auto;
   }
-  .row-offcanvas-right {
-    right: 0;
-    .ku-leftmenu {
-      right: -@ku-leftmenu-slide-width;
-    }
-    &.active {
-      right: @ku-leftmenu-slide-width;
-    }
+  .navmenu-fixed-left,
+  .navmenu-fixed-right {
+    position: fixed;
+    z-index: 1050;
+    top: @ku-topbar-height;
+    bottom: 0;
+    overflow-y: auto;
   }
-  .row-offcanvas-left {
+  .navmenu-fixed-left {
     left: 0;
-    .ku-leftmenu {
-      left: -52%;
-    }
-    &.active {
-      left: @ku-leftmenu-slide-width;
-    }
+    right: auto;
   }
+  .navmenu-fixed-right {
+    left: auto;
+    right: 0;
+  }
+  .navmenu-nav.dropdown-menu {
+    position: static;
+    margin: 0;
+    padding-top: 0;
+    float: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+@media (max-width:@screen-sm-min) {
+  .offcanvas-sm {
+    display: none;
+  }
+  .offcanvas-sm.in {
+    display: block;
+  }
+}
+.canvas-sliding {
+  -webkit-transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
+  transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
 }
