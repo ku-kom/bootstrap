@@ -7,9 +7,20 @@
 +function ($) {
   'use strict';
 
-  // Left menu sliding
+  // Left menu expand sub level menu items
 
-  $('[data-toggle="offcanvas"]').click(function () {
-    $('.row-offcanvas').toggleClass('active')
+  $('#leftmenu .nav .hasSubs').click(function (e) {
+    var $width = $('body').prop('clientWidth');
+
+    if ($width < 750) {
+      e.preventDefault();
+      $(this).toggleClass('active');
+      var $ul = $(this).next('ul');
+      if ($ul.is(':visible')) {
+        $ul.slideUp(300);
+      } else {
+        $ul.slideDown(300);
+      }
+    }
   });
 }(jQuery);
