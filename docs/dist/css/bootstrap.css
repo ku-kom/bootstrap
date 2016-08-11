@@ -1196,7 +1196,7 @@ hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ccc;
 }
 .sr-only {
   position: absolute;
@@ -1640,8 +1640,6 @@ pre code {
 .container {
   padding-right: 26px;
   padding-left: 26px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media (min-width: 768px) {
   .container {
@@ -1656,9 +1654,15 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1070px;
+    margin: 0 auto;
   }
 }
 main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex-direction: column;
   background-color: #fff;
 
   -webkit-box-flex: 1;
@@ -1667,6 +1671,14 @@ main {
           flex: 1 0 auto;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 768px) {
   main {
@@ -1699,8 +1711,6 @@ main {
 .container-fluid {
   padding-right: 26px;
   padding-left: 26px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .row {
   margin-right: -13px;
@@ -4312,18 +4322,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .ku-nav .navbar-nav > li > .dropdown-menu {
   border-top: none;
 }
-@media screen and (min-width: 768px) {
-  .ku-nav ul.nav li.dropdown.active:hover > ul.dropdown-menu {
-    display: block;
-  }
-  .ku-nav ul.nav li.dropdown:hover ul.dropdown-menu {
-    display: block;
-    -webkit-animation: fadeIn .4s;
-         -o-animation: fadeIn .4s;
-            animation: fadeIn .4s;
-  }
-}
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .ku-nav ul.nav li.dropdown:after {
     position: absolute;
     top: 10px;
@@ -4337,6 +4336,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .ku-nav ul.nav li.dropdown.open:after {
     content: '\e114';
+  }
+}
+@media (min-width: 768px) {
+  .ku-nav ul.nav li.dropdown.active:hover > ul.dropdown-menu {
+    display: block;
+  }
+  .ku-nav ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    -webkit-animation: fadeIn .4s;
+         -o-animation: fadeIn .4s;
+            animation: fadeIn .4s;
+  }
+  .ku-nav ul.nav li.dropdown:after {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -4389,18 +4402,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse,
 .container > .navbar-header,
-.container-fluid > .navbar-header {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse,
   .container > .navbar-header,
-  .container-fluid > .navbar-header {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -4505,8 +4518,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -7192,14 +7205,14 @@ img[src$=".svg"] {
     text-decoration: none;
   }
   .ku-leftmenu .menu-seperator {
-    height: 1px;
-    margin: 20px 0;
-    color: #ccc;
-    background: #ccc;
-    border: 0;
+    margin: 26px 0 20px 0;
   }
 }
 @media screen and (max-width: 768px) {
+  .ku-leftmenu {
+    z-index: 1001;
+    background-color: #f8f8f8;
+  }
   .leftmenu-toggle {
     position: fixed;
     top: 24px;
@@ -7233,11 +7246,24 @@ img[src$=".svg"] {
     left: 0;
   }
   .row-offcanvas-left .ku-leftmenu {
-    left: -50%;
+    left: -52%;
   }
   .row-offcanvas-left.active {
     left: 50%;
   }
+}
+.local-footer {
+  margin-right: 0;
+  margin-left: 0;
+
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.local-footer > .row {
+  margin-top: 26px;
+  margin-bottom: 13px;
 }
 .globalfooter {
   position: relative;

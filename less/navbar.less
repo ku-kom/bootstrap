@@ -35,23 +35,7 @@
   // KU: make dropdown display by hover instead of click
   ul.nav {
     li.dropdown {
-
-      @media screen and (min-width: @screen-sm-min) {
-        &.active {
-          &:hover {
-            > ul.dropdown-menu {
-              display: block;
-            }
-          }
-        }
-        &:hover {
-          ul.dropdown-menu {
-            display: block;
-            animation: fadeIn 0.4s;
-          }
-        }
-      }
-      @media screen and (max-width: @screen-sm-min) {
+      @media (max-width: @screen-sm-min) {
         // Menu open/close arrows
         &:after {
           font-family: 'Glyphicons Halflings';
@@ -68,6 +52,24 @@
           &:after {
             content: '\e114';
           }
+        }
+      }
+      @media (min-width: @screen-sm-min) {
+        &.active {
+          &:hover {
+            > ul.dropdown-menu {
+              display: block;
+            }
+          }
+        }
+        &:hover {
+          ul.dropdown-menu {
+            display: block;
+            animation: fadeIn 0.4s;
+          }
+        }
+        &:after {
+            display: none;
         }
       }
     }
@@ -140,8 +142,8 @@
 // When a container is present, change the behavior of the header and collapse.
 .container,
 .container-fluid {
-   > .navbar-collapse,
-  > .navbar-header {
+   > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -260,8 +262,8 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
-      .dropdown-header,
-      > li > a {
+       > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
       > li > a {

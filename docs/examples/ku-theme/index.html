@@ -3,6 +3,7 @@ layout: examples
 title: KU standard template with left menu
 slug: examples
 ---
+
 <main id="content">
   <div class="container ku-branding">
     <div class="ku-branding-line">
@@ -13,9 +14,9 @@ slug: examples
       </div>
     </div>
   </div>
-  <div class="container main-content">
+  <div class="container main-content" id="main-content">
     <div class="row row-offcanvas row-offcanvas-left">
-      <div class="col-sm-6 col-sm-3 ku-leftmenu" role="menu" id="leftmenu">
+      <div class="col-sm-4 col-md-3 ku-leftmenu" role="menu" id="leftmenu">
         <div class="ku-navbar-header">
           Kommunikation
         </div>
@@ -56,7 +57,7 @@ slug: examples
           <li><a href="#">One more separated link</a></li>
         </ul>
       </div>
-      <div class="col-sm-12 col-sm-9">
+      <div class="col-sm-8 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-4">
             <h2>Heading</h2>
@@ -78,7 +79,27 @@ slug: examples
       </div>
     </div>
   </div>
+  <div class="container local-footer">
+      <hr>
+      <div class="row">
+        <div class="col-xs-6">
+          <address>
+            <a href="http://www.kommunikation.ku.dk">Kommunikation</a><br>
+            <a href="http://www.ku.dk/">Københavns Universitet</a><br>
+            Nørregade 10, Postboks 2177<br>1017 København K<br>
+        	</address>
+        </div>
+        <div class="col-xs-6 text-right">
+            <address>
+                Kommunikation<br>
+                <a href="mailto:#">kommunikation@adm.ku.dk</a><br>
+                Tel. +45 35 32 42 61<br>
+            </address>
+        </div>
+      </div>
+  </div>
 </main>
+
 <!-- Toggle left menu button -->
 <div class="visible-xs-block hidden-md hidden-lg leftmenu-toggle">
   <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas">

@@ -1,3 +1,4 @@
+// jshint ignore: start
 /* ========================================================================
  * Bootstrap: v3.3.7
  * Custom script for University of Copenhagen: ku.dk
@@ -9,10 +10,10 @@
 
   var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
-  var $cachedWidth = $(window).width();
+  var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
-    if ($cachedWidth < 768) {
+    if ($cachedWidth < 769) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -26,13 +27,15 @@
   });
 
   $(window).resize(function () {
-    var $newWidth = $(window).width();
+    var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
-      if ($(window).width() < 768) {
+      if ($newWidth < 750) {
         $footerColumn.css('display', 'none');
+        console.log($newWidth + ' Display: none');
       } else {
         $footerColumn.css('display', 'block');
+        console.log($newWidth + ' Display: block');
       }
       $cachedWidth = $newWidth;
     }

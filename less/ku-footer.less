@@ -1,11 +1,23 @@
 //
+// Local footer
+// --------------------------------------------------
+.local-footer {
+  flex: 1 0 auto;
+  margin-left: 0;
+  margin-right: 0;
+  > .row {
+      margin-top: @grid-gutter-width;
+      margin-bottom: (@grid-gutter-width / 2);
+  }
+}
+//
 // Global footer
 // --------------------------------------------------
 .globalfooter {
   position: relative;
   background: @gray-light;
   @media (min-width: @screen-sm-min) {
-      background: linear-gradient(to bottom, rgba(119, 119, 119, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
+    background: linear-gradient(to bottom, rgba(119, 119, 119, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
   }
   color: @white-color;
   flex: none;
@@ -282,35 +294,38 @@
             }
           }
         }
-        ul.footerlinks li {
-          color: #4a4949;
-          font-weight: 400;
-          font-size: @font-size-large;
-          padding: 0;
-          position: relative;
-          a {
-            color: #606060;
-            padding: @padding-small-vertical @padding-large-horizontal;
-            display: block;
-            border-bottom: 1px solid @gray;
-            &:active,
-            &:focus {
-              background-color: #cdcdcd;
-            }
-            &:hover {
-              color: initial;
-            }
-            .padlock {
-              &:after {
-                display: none;
+        ul.footerlinks {
+            
+            li {
+              color: #4a4949;
+              font-weight: 400;
+              font-size: @font-size-large;
+              padding: 0;
+              position: relative;
+              a {
+                color: #606060;
+                padding: @padding-small-vertical @padding-large-horizontal;
+                display: block;
+                border-bottom: 1px solid @gray;
+                &:active,
+                &:focus {
+                  background-color: #cdcdcd;
+                }
+                &:hover {
+                  color: initial;
+                }
+                .padlock {
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+              &:last-child {
+                a {
+                  border-bottom: 0;
+                }
               }
             }
-          }
-          &:last-child {
-            a {
-              border-bottom: 0;
-            }
-          }
         }
       }
     }

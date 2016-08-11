@@ -14,13 +14,16 @@
   }
   @media (min-width: @screen-lg-min) {
     width: @container-lg;
+    margin: 0 auto;
   }
 }
-
 main {
   flex: 1 0 auto;
   background-color: @white-color;
   backface-visibility: hidden; //Fix weired flickering
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &:extend(.clearfix all);
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
@@ -33,19 +36,16 @@ main {
     width: @container-lg;
   }
 }
-
 .main-content {
-    padding-top: @grid-gutter-width;
-    padding-bottom: @grid-gutter-width;
+  padding-top: @grid-gutter-width;
+  padding-bottom: @grid-gutter-width;
 }
-
 // Make columns equal height
 @media (min-width: @screen-md-min) {
-    .row-eq-height {
-      display: flex;
-    }
+  .row-eq-height {
+    display: flex;
+  }
 }
-
 // Fluid container
 //
 // Utilizes the mixin meant for fixed width containers, but without any defined
@@ -62,13 +62,11 @@ main {
 // Columns
 //
 // Common styles for small and large grid columns
-.make-grid-columns();
-// Extra small grid
+.make-grid-columns(); // Extra small grid
 //
 // Columns, offsets, pushes, and pulls for extra small devices like
 // smartphones.
-.make-grid(xs);
-// Small grid
+.make-grid(xs); // Small grid
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.

@@ -189,16 +189,16 @@
       }
     }
     .menu-seperator {
-      height: 1px;
-      color: @gray;
-      background: @gray;
-      border: 0;
-      margin: @margin20 0;
+      margin: @grid-gutter-width 0 @margin20 0;
     }
   }
 }
 // Left menu slide in/out for mobiles
 @media screen and (max-width: @screen-sm-min) {
+    .ku-leftmenu {
+        z-index: 1001;
+        background-color: #f8f8f8;
+    }
   .leftmenu-toggle {
     position: fixed;
     top: 24px;
@@ -229,7 +229,7 @@
   .row-offcanvas-left {
     left: 0;
     .ku-leftmenu {
-      left: -@ku-leftmenu-slide-width;
+      left: -52%;
     }
     &.active {
       left: @ku-leftmenu-slide-width;
