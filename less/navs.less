@@ -60,6 +60,7 @@
 //KU menu item pipes
 @media (min-width: @screen-sm-min) {
   .ku-nav {
+      display: block;
     ul.nav {
       > li {
         + li {
@@ -81,6 +82,11 @@
         }
       }
     }
+  }
+}
+@media (max-width: @screen-sm-min) {
+  .ku-nav {
+    display: none;
   }
 }
 // Tabs
@@ -191,9 +197,9 @@
     margin-right: 0;
     border-radius: @border-radius-base;
   }
-   > .active > a,
+   > .active > a:focus,
    > .active > a:hover,
-  > .active > a:focus {
+  > .active > a {
     border: 1px solid @nav-tabs-justified-link-border-color;
   }
   @media (min-width: @screen-sm-min) {
@@ -201,9 +207,9 @@
       border-bottom: 1px solid @nav-tabs-justified-link-border-color;
       border-radius: @border-radius-base @border-radius-base 0 0;
     }
-     > .active > a,
+     > .active > a:focus,
      > .active > a:hover,
-    > .active > a:focus {
+    > .active > a {
       border-bottom-color: @nav-tabs-justified-active-link-border-color;
     }
   }

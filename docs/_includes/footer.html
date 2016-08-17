@@ -1,5 +1,6 @@
-<!-- Footer
-================================================== -->
+<!-- Left Navigation on SMALL screens (mmenu) -->
+<nav id="mobileleftmenu"></nav>
+<!-- Footer -->
 <footer>
   <div class="container-fluid globalfooter">
     <div class="footercontent clearfix">
@@ -136,4 +137,77 @@
 {% else %}
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 {% endif %}
-<script src="../../assets/js/ku-offcanvas.js"></script>
+
+
+<script type="text/javascript" src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
+<script type="text/javascript">
+  //	The menu on the left
+  $(function() {
+    var $leftmenu = $('#leftmenu');
+    var $leftmenu2 = $('#leftmenu_2');
+    var $mobimenu = $('#mobileleftmenu');
+
+    if ($leftmenu) {
+      var $items = $leftmenu.clone();
+    }
+    if ($leftmenu2) {
+      var $items2 = $leftmenu2.clone().prepend('<li class="mm-divider">&nbsp;</li>');
+    }
+    var $menuitems = $items.append($items2);
+    $mobimenu.append($menuitems);
+
+    $mobimenu.mmenu({
+      'offCanvas': {
+        position: 'left',
+        zposition: "front"
+      },
+      "navbars": [{
+        "position": 'top',
+        "content": [
+          '<a href="http://www.ku.dk">Ku.dk</a>'
+        ]
+      }],
+      extensions: ['multiline'],
+      slidingSubmenus: false,
+      currentItem: {
+        find: true,
+      },
+      onClick: {
+        setSelected: true
+      }
+    });
+    var $cachedWidth = $('body').prop('clientWidth');
+    if ($cachedWidth < 769) {
+      // Global menu folding
+      $('#navbar').on('show.bs.collapse', function() {
+        $('.ku-nav').show();
+      });
+      $('#navbar').on('hide.bs.collapse', function() {
+        $('.ku-nav').hide();
+      })
+
+      // Clicking left menu button closes global menu
+      $('#btn_left').click(function() {
+        $('#navbar').collapse('hide');
+      });
+
+      // Close global menu on click on links
+      $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+          $(this).collapse('hide');
+        }
+      });
+    }
+    $(window).resize(function() {
+      var $newWidth = $('body').prop('clientWidth');
+      if ($newWidth !== $cachedWidth) {
+        if ($newWidth > 750) {
+          $('.ku-nav').show();
+        } else {
+          $('.ku-nav').hide();
+        }
+        $cachedWidth = $newWidth;
+      }
+    });
+  });
+</script>

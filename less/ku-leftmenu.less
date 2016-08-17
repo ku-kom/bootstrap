@@ -196,66 +196,49 @@
 // Left menu slide in/out for mobiles
 @media (max-width: @screen-sm-min) {
   .leftmenu-toggle {
+    padding-left: 20px;
+    padding-bottom: 5px;
     position: fixed;
-    top: 3px;
+    top: 0;
     left: 0;
     z-index: 1040;
-    .offcanvas-toggle {
-      background-color: @ku-red;
-    }
   }
-}
-.offcanvas {
-  display: none;
-}
-.offcanvas.in {
-  display: block;
-}
-@media (max-width: @screen-sm-min) {
-    .navmenu-default {
-      background-color: #f8f8f8;
-      border: 1px solid #e7e7e7;
-    }
-  .navmenu {
-    width: 300px;
-    height: auto;
+  .globalmenu-toggle {
+    margin-right: 0;
+    margin-right: -5px;
   }
-  .navmenu-fixed-left,
-  .navmenu-fixed-right {
-    position: fixed;
-    z-index: 1050;
-    top: @ku-topbar-height;
-    bottom: 0;
-    overflow-y: auto;
-  }
-  .navmenu-fixed-left {
-    left: 0;
-    right: auto;
-  }
-  .navmenu-fixed-right {
-    left: auto;
-    right: 0;
-  }
-  .navmenu-nav.dropdown-menu {
-    position: static;
-    margin: 0;
-    padding-top: 0;
-    float: none;
+  // Burger menu animation
+  .navbar-toggle {
     border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 0;
+    background: transparent !important;
+    &:hover {
+      background: transparent !important;
+    }
+    .icon-bar {
+      width: 22px;
+      transition: all 0.2s;
+    }
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    .middle-bar {
+      opacity: 0;
+    }
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+    &.collapsed {
+      .top-bar {
+        transform: rotate(0);
+      }
+      .middle-bar {
+        opacity: 1;
+      }
+      .bottom-bar {
+        transform: rotate(0);
+      }
+    }
   }
-}
-@media (max-width:@screen-sm-min) {
-  .offcanvas-sm {
-    display: none;
-  }
-  .offcanvas-sm.in {
-    display: block;
-  }
-}
-.canvas-sliding {
-  -webkit-transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
-  transition: top 0.35s, left 0.35s, bottom 0.35s, right 0.35s;
 }

@@ -34,43 +34,56 @@
   }
   // KU: make dropdown display by hover instead of click
   ul.nav {
-    li.dropdown {
-      @media (max-width: @screen-sm-min) {
-        // Menu open/close arrows
-        &:after {
-          font-family: 'Glyphicons Halflings';
-          content: '\e080';
-          z-index: 2;
-          color: @gray-dark;
-          font-size: @font-size-base;
-          position: absolute;
-          top: 10px;
-          right: @grid-gutter-width;
-          left: auto;
-        }
-        &.open {
+    li {
+      &.dropdown {
+        @media (max-width: @screen-sm-min) {
+          // Menu open/close arrows
           &:after {
-            content: '\e114';
+            font-family: 'Glyphicons Halflings';
+            content: '\e080';
+            z-index: 2;
+            color: @gray-light;
+            font-size: @font-size-base;
+            position: absolute;
+            top: 10px;
+            right: @grid-gutter-width;
+            left: auto;
           }
-        }
-      }
-      @media (min-width: @screen-sm-min) {
-        &.active {
-          &:hover {
-            > ul.dropdown-menu {
-              display: block;
+          &.open {
+            &:after {
+              content: '\e114';
+            }
+            ul li a:hover {
+                background-color: @gray-lighter;
+            }
+            > a {
+                background-color: @gray-lighter; // Open dropdown item
             }
           }
         }
-        &:hover {
-          ul.dropdown-menu {
-            display: block;
-            animation: fadeIn 0.4s;
+        @media (min-width: @screen-sm-min) {
+          &.active {
+            &:hover {
+              > ul.dropdown-menu {
+                display: block;
+              }
+            }
+          }
+          &:hover {
+            ul.dropdown-menu {
+              display: block;
+              animation: fadeIn 0.4s;
+            }
+          }
+          &:after {
+            display: none;
           }
         }
-        &:after {
-            display: none;
-        }
+      }
+      > a {
+          &:hover {
+              background-color: @gray-lighter;
+          }
       }
     }
   }
@@ -142,8 +155,8 @@
 // When a container is present, change the behavior of the header and collapse.
 .container,
 .container-fluid {
-   > .navbar-header,
-  > .navbar-collapse {
+   > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -216,7 +229,7 @@
   float: right;
   margin-right: @navbar-padding-horizontal;
   padding: 9px 10px;
-  .navbar-vertical-align(25px);
+  //.navbar-vertical-align(25px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @white-color;
@@ -262,8 +275,8 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
-       > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
       > li > a {
