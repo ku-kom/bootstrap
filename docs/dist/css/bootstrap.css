@@ -4163,6 +4163,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-width: 768px) {
   .ku-nav {
     display: none;
+    background-color: #f8f8f8 !important;
   }
 }
 .nav-tabs {
@@ -4369,10 +4370,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     content: '\e114';
   }
   .ku-nav ul.nav li.dropdown.open ul li a:hover {
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
   }
   .ku-nav ul.nav li.dropdown.open > a {
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
   }
 }
 @media (min-width: 768px) {
@@ -6998,6 +6999,12 @@ main:after,
   width: 61px;
   height: 83px;
 }
+@media (max-width: 768px) {
+  .ku-branding .ku-branding-logo {
+    bottom: -20px;
+    width: 50px;
+  }
+}
 .ku-branding .ku-branding-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7312,9 +7319,6 @@ img[src$=".svg"] {
   }
 }
 .local-footer {
-  margin-right: 0;
-  margin-left: 0;
-
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;

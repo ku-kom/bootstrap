@@ -16,7 +16,6 @@ if (typeof jQuery === 'undefined') {
   }
 }(jQuery);
 
-// jshint ignore: start
 /* ========================================================================
  * Bootstrap: v3.3.7
  * Custom script for University of Copenhagen: ku.dk
@@ -31,7 +30,7 @@ if (typeof jQuery === 'undefined') {
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
-    if ($cachedWidth < 769) {
+    if ($cachedWidth < 768) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -48,11 +47,50 @@ if (typeof jQuery === 'undefined') {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
-      if ($newWidth < 750) {
-        $footerColumn.css('display', 'none');
-      } else {
-        $footerColumn.css('display', 'block');
+      $footerColumn.removeAttr('style');
+      $cachedWidth = $newWidth;
+    }
+  });
+}(jQuery);
+
+// jscs:disable
+/* ======================================================================
+ * Bootstrap: v3.3.7
+ * Custom menu script for University of Copenhagen: ku.dk
+ * ====================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  var $kuNav = $('#kunav');
+  var $cachedWidth = $('body').prop('clientWidth');
+  if ($cachedWidth <= 768) {
+    // Global menu folding
+    $('#navbar').on('show.bs.collapse', function () {
+      $kuNav.show();
+    });
+    $('#navbar').on('hide.bs.collapse', function () {
+      $kuNav.hide();
+    });
+
+    // Clicking left menu button or content area closes global menu
+    $('#btn_left, #content').click(function () {
+      $('#navbar').collapse('hide');
+    });
+
+    // Close global menu on click on links
+    $(document).on('click', '#navbar.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a') && $(e.target).attr('class') !== 'dropdown-toggle') {
+        $(this).collapse('hide');
       }
+    });
+  }
+  $(window).resize(function () {
+    var $newWidth = $('body').prop('clientWidth');
+    if ($newWidth !== $cachedWidth) {
+      $kuNav.removeAttr('style'); // reset style
+      $('#btn_right').addClass('collapsed'); // reset burger icon
       $cachedWidth = $newWidth;
     }
   });
