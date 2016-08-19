@@ -23,13 +23,6 @@
     $('#btn_left, #content').click(function () {
       $('#navbar').collapse('hide');
     });
-
-    // Close global menu after click on links
-    $(document).on('click', '#navbar.navbar-collapse.in', function (e) {
-      if ($(e.target).is('a') && $(e.target).attr('class') !== 'dropdown-toggle') {
-        $(this).collapse('hide');
-      }
-    });
   }
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');

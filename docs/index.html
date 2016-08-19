@@ -7,7 +7,7 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
     <div class="ku-branding-line">
       <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
       <div class="ku-branding-text">
-        <div class="ku-branding-text-major">Design guideline</div>
+        <div class="ku-branding-text-major">Design guidelines</div>
         <div class="ku-branding-text-sub">University of Copenhagen</div>
       </div>
     </div>
@@ -17,11 +17,11 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
       <div class="col-sm-4 col-md-3 hidden-xs ku-leftmenu" role="menu">
         <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
           <div class="ku-navbar-header">
-            Kommunikation
+            University of Copenhagen
           </div>
           <ul id="leftmenu" class="nav">
             <li{% if page.slug=="getting-started" %} class="active" {% endif %}>
-              <a href="../getting-started/">Getting started</a>
+            <a href="../getting-started/">Getting started</a>
             </li>
             <li{% if page.slug=="css" %} class="active" {% endif %}>
             <a href="../css/">CSS</a>
@@ -41,8 +41,37 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
       <div class="col-sm-8 col-md-9">
         <div class="row">
           <div class="col-sm-12">
-            <h2>Design guidelines</h2>
+            <h1>Design guidelines</h1>
             <p>Based on Bootstrap v{{ site.current_version }}</p>
+            <h2>Introduction</h2>
+            <p>This design styleguide is meant for developers and project managers who will work on systems and interfaces related to University of Copenhagen.</p>
+            <p>Hence, the purpose of this guide is to demonstrate general design principles as well as the formatting of html elements, in order to maintain a coherent visual identity.</p>
+            <p>Following these guidelines in important in order to ensure a great user experience on all devices and screen sizes.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">This design guide</h3>
+              </div>
+              <div class="panel-body">
+                This design guide is under development. Changes may be made to the stylesheet on a regular basis, but the html code is stable, and will not be altered unless errors appear.
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Contact</h3>
+              </div>
+              <div class="panel-body">Questions regarding this design styleguide can be directed to:
+                <address>
+                <a href="http://www.kommunikation.ku.dk">Kommunikation</a><br>
+                <a href="http://www.ku.dk/">Københavns Universitet</a><br>
+                Nørregade 10, Postboks 2177<br>1017 København K<br>
+              </address>
+              </div>
+            </div>
           </div>
         </div>
       </div>
