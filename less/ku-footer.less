@@ -2,10 +2,16 @@
 // Local footer
 // --------------------------------------------------
 .local-footer {
-  flex: 1 0 auto;
+    align-self: flex-end;
   > .row {
       margin-top: @margin20;
       margin-bottom: 10px;
+  }
+  .footer-data {
+      text-align: right;
+       @media (max-width: @screen-sm) {
+           text-align: left;
+       }
   }
 }
 //
