@@ -1,0 +1,46 @@
+//
+// KU custom grid box styling
+// --------------------------------------------------
+// Grid box sizes
+@gridbox1: 289px; // .size1
+@gridbox2: 185px; // .size2
+@gridbox3: 133px; // .size3
+@gridbox4: 81px; // .size4
+@gridbox5: 22px; // .size5
+
+// Colors
+@brown: rgba(79, 71, 63, 1);
+@red: rgba(144, 26, 30, 1);
+@blue: rgba(161, 197, 200, 1);
+@green: rgba(160, 183, 99, 1);
+@ku-gray: rgba(242, 242, 240, 1);
+@white: rgba(255, 255, 255, 1);
+
+.gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .box1 {
+    z-index: 4;
+    order: 1;
+    flex: 0 1 auto;
+  }
+  .box2 {
+    padding: @padding15;
+    order: 2;
+    flex: 1 1 auto;
+  }
+  .header {
+    font-size: 1.1em;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 7px 25px 8px 12px;
+  }
+  &.with-img {
+    .box2 {
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+}

@@ -54,10 +54,10 @@
               content: '\e114';
             }
             ul li a:hover {
-                background-color: #f2f2f2;
+              background-color: #f2f2f2;
             }
             > a {
-                background-color: #f2f2f2; // Open dropdown item
+              background-color: #f2f2f2; // Open dropdown item
             }
           }
         }
@@ -81,9 +81,9 @@
         }
       }
       > a {
-          &:hover {
-              background-color: @gray-lighter;
-          }
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -155,8 +155,8 @@
 // When a container is present, change the behavior of the header and collapse.
 .container,
 .container-fluid {
-   > .navbar-collapse,
-  > .navbar-header {
+   > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -275,8 +275,8 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
-      .dropdown-header,
-      > li > a {
+       > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
       > li > a {
@@ -536,9 +536,16 @@
         color: @navbar-inverse-link-hover-color;
         background-color: @navbar-inverse-link-hover-bg;
       }
-    }
-    .eng {
-      padding-right: (@grid-gutter-width / 2);
+      // KU language switcher icons
+      &.dk,
+      &.eng {
+        padding-right: (@grid-gutter-width / 2);
+        > img {
+          height: 13px;
+          width: 19px;
+          margin-bottom: 2px;
+        }
+      }
     }
     > .active > a {
       &,
