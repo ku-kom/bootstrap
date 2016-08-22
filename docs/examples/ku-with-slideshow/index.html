@@ -1,0 +1,38 @@
+---
+layout: examples
+title: KU standard template with left menu and slideshow
+slug: examples
+---
+<main id="content">
+  <div class="container ku-branding">
+    <div class="ku-branding-line">
+      <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
+      <div class="ku-branding-text">
+        <div class="ku-branding-text-major">Kommunikation</div>
+        <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-content" id="main-content">
+    <div class="row">
+      <div class="col-sm-4 col-md-3 hidden-xs ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-sm-8 col-md-9">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="slideshow">
+              <div class="bxslider">
+                <li><img src="http://placehold.it/757x250?text=Slide+1" alt="" /></li>
+                <li><img src="http://placehold.it/757x250?text=Slide+2" alt="" /></li>
+                <li><img src="http://placehold.it/757x250?text=Slide+3" alt="" /></li>
+                <li><img src="http://placehold.it/757x250?text=Slide+4" alt="" /></li>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>

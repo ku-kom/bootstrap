@@ -138,6 +138,50 @@
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 {% endif %}
 
+<!-- BxSlider  -->
+<script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var cachedWidth = $(window).width();
+    var bxSettings = function() {
+      var desktop = { //Settings for desktop
+        auto: true,
+        pause: 3000,
+        controls: true,
+        autoHover: true,
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        keyboardEnabled: true,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      var mobile = { //settings for mobile devices
+        auto: true,
+        pause: 3000,
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        mode: 'fade',
+        controls: false,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      return ($(window).width() < 769) ? mobile : desktop;
+    }
+    var slider = $('.bxslider').bxSlider(bxSettings());
+
+    $(window).resize(function() {
+      var newWidth = $(window).width();
+      if (newWidth !== cachedWidth) {
+        slider.reloadSlider(bxSettings());
+        cachedWidth = newWidth;
+      }
+    });
+  });
+</script>
 <!-- Mobile menu -->
 <script type="text/javascript" src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript">
