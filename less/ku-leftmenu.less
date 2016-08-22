@@ -88,7 +88,7 @@
             }
             text-decoration: none;
           }
-          &:before {
+          &::before {
             position: absolute;
             left: 0;
             top: 5px;
@@ -100,7 +100,7 @@
       //First level
       > li {
         > a {
-          &:before {
+          &::before {
             content: "\e080";
             font-family: 'Glyphicons Halflings';
             font-size: 7px;
@@ -126,7 +126,7 @@
             border: 1px solid #d7d7d7;
           }
           &:hover {
-            &:before {
+            &::before {
               background-color: @ku-red;
               .theme-samf & {
                 background-color: @samf;
@@ -157,7 +157,7 @@
           li {
             > a {
               padding: 2px 5px 2px 10px;
-              &:before {
+              &::before {
                 content: "\25A0";
                 color: @ku-red;
                 .theme-samf & {
@@ -180,7 +180,7 @@
                 }
                 font-size: 9px;
               }
-              &:hover:before {
+              &:hover::before {
                 text-decoration: none;
               }
             }
@@ -195,6 +195,9 @@
 }
 // Left menu slide in/out for mobiles
 @media (max-width: @screen-sm-min) {
+  .ku-leftmenu {
+    display: none;
+  }
   .leftmenu-toggle {
     padding-left: 20px;
     padding-bottom: 5px;

@@ -2,6 +2,36 @@
 // KU misc.
 // Various extra classes that doesn't belong in other .less files
 // ---------------------------------------------------------------
+main {
+  flex: 1 0 auto;
+  background-color: @white-color;
+  backface-visibility: hidden; //Fix weired flickering
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:extend(.clearfix all);
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+    margin: 0 auto;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+.main-area {
+  padding-top: @grid-gutter-width;
+  padding-bottom: @grid-gutter-width;
+  flex-grow: 1;
+}
+// Make columns equal height
+@media (min-width: @screen-md-min) {
+  .row-eq-height {
+    display: flex;
+  }
+}
 footer,
 header,
 nav {

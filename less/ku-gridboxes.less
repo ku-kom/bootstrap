@@ -14,6 +14,7 @@
 @green: rgba(160, 183, 99, 1);
 @ku-gray: rgba(242, 242, 240, 1);
 @white: rgba(255, 255, 255, 1);
+
 .gridbox {
   display: flex;
   flex-direction: column;
@@ -45,7 +46,7 @@
       order: 2;
     }
   }
-  &.icon-arrow:before {
+  &.icon-arrow::before {
     display: inline-block;
     font-family: 'arrow';
     content: '\0043';
@@ -99,8 +100,7 @@
   }
   &.red-border {
     border: 1px solid @red;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @red;
     }
   }
@@ -109,73 +109,68 @@
   }
   &.green-border {
     border: 1px solid @green;
-    .border-top-only();
   }
   &.blue-bg {
     background-color: @blue;
   }
   &.blue-border {
     border: 1px solid @blue;
-    .border-top-only();
   }
   &.brown-bg {
     background-color: @brown;
   }
   &.brown-border {
     border: 1px solid @brown;
-    .border-top-only();
   }
   &.grey-bg {
     background-color: @ku-gray;
   }
   &.grey-border {
     border: 1px solid @ku-gray;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @ku-gray;
     }
   }
   //Faculty colors
   &.teol-border {
     border: 1px solid @teol;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @teol;
     }
   }
   &.sund-border {
     border: 1px solid @sund;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @sund;
     }
   }
   &.science-border {
     border: 1px solid @science;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @science;
     }
   }
   &.samf-border {
     border: 1px solid @samf;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @samf;
     }
   }
   &.jura-border {
     border: 1px solid @jura;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @jura;
     }
   }
   &.hum-border {
     border: 1px solid @hum;
-    .border-top-only();
-    &.icon-arrow:before {
+    &.icon-arrow::before {
       color: @hum;
     }
+  }
+  &.border-top {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
   }
 }
