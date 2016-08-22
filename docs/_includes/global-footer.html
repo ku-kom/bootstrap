@@ -139,6 +139,7 @@
 {% endif %}
 
 <!-- BxSlider  -->
+{% if page.slug == 'slideshow' %}
 <script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
 <script type="text/javascript">
   $(function() {
@@ -149,6 +150,8 @@
         pause: 3000,
         controls: true,
         autoHover: true,
+        easing: 'ease-in-out',
+        mode: 'fade',
         minSlides: 1,
         maxSlides: 1,
         shrinkItems: true,
@@ -182,6 +185,7 @@
     });
   });
 </script>
+{% endif %}
 <!-- Mobile menu -->
 <script type="text/javascript" src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript">

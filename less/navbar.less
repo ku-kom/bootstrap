@@ -155,8 +155,8 @@
 // When a container is present, change the behavior of the header and collapse.
 .container,
 .container-fluid {
-   > .navbar-header,
-  > .navbar-collapse {
+   > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -275,8 +275,8 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
-       > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
       > li > a {
@@ -664,5 +664,18 @@
         color: @navbar-inverse-link-disabled-color;
       }
     }
+  }
+
+  // KU top logo positioning
+  .topbar-logo {
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    left: 50px;
+    @media (min-width: @screen-sm) {
+        left: 20px;
+    }
+    display: flex;
+    align-items: center;
   }
 }

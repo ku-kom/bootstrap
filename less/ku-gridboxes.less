@@ -7,7 +7,6 @@
 @gridbox3: 133px; // .size3
 @gridbox4: 81px; // .size4
 @gridbox5: 22px; // .size5
-
 // Colors
 @brown: rgba(79, 71, 63, 1);
 @red: rgba(144, 26, 30, 1);
@@ -15,7 +14,6 @@
 @green: rgba(160, 183, 99, 1);
 @ku-gray: rgba(242, 242, 240, 1);
 @white: rgba(255, 255, 255, 1);
-
 .gridbox {
   display: flex;
   flex-direction: column;
@@ -35,12 +33,149 @@
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    padding: 7px 25px 8px 12px;
   }
   &.with-img {
     .box2 {
       padding: 0;
       overflow: hidden;
+    }
+  }
+  .text-down {
+    .box1 {
+      order: 2;
+    }
+  }
+  &.icon-arrow:before {
+    display: inline-block;
+    font-family: 'arrow';
+    content: '\0043';
+    color: @white-color;
+    top: @margin10;
+    right: 20px;
+    position: absolute;
+    z-index: 5;
+  }
+  // 298
+  &.size1 {
+    height: @gridbox1;
+    background-color: @ku-gray;
+    .box1 {
+      order: 2;
+      padding: 5px 10px 10px;
+      .header-small {
+        color: @gray-light;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .header {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      .text {
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 1.45em;
+      }
+    }
+    .box2 {
+      order: 1;
+      flex-grow: 2;
+      overflow-x: hidden;
+    }
+  }
+  // 185
+  &.size2 {
+    height: @gridbox2;
+    .box1 {
+      .header {
+        font-size: 1.333em;
+        padding: 7px 25px 8px 12px;
+      }
+    }
+  }
+  // Color modes
+  &.red-bg {
+    background-color: @red;
+  }
+  &.red-border {
+    border: 1px solid @red;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @red;
+    }
+  }
+  &.green-bg {
+    background-color: @green;
+  }
+  &.green-border {
+    border: 1px solid @green;
+    .border-top-only();
+  }
+  &.blue-bg {
+    background-color: @blue;
+  }
+  &.blue-border {
+    border: 1px solid @blue;
+    .border-top-only();
+  }
+  &.brown-bg {
+    background-color: @brown;
+  }
+  &.brown-border {
+    border: 1px solid @brown;
+    .border-top-only();
+  }
+  &.grey-bg {
+    background-color: @ku-gray;
+  }
+  &.grey-border {
+    border: 1px solid @ku-gray;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @ku-gray;
+    }
+  }
+  //Faculty colors
+  &.teol-border {
+    border: 1px solid @teol;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @teol;
+    }
+  }
+  &.sund-border {
+    border: 1px solid @sund;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @sund;
+    }
+  }
+  &.science-border {
+    border: 1px solid @science;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @science;
+    }
+  }
+  &.samf-border {
+    border: 1px solid @samf;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @samf;
+    }
+  }
+  &.jura-border {
+    border: 1px solid @jura;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @jura;
+    }
+  }
+  &.hum-border {
+    border: 1px solid @hum;
+    .border-top-only();
+    &.icon-arrow:before {
+      color: @hum;
     }
   }
 }

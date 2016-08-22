@@ -3,8 +3,8 @@
 // --------------------------------------------------
 /** VARIABLES
 ===================================*/
-@controls: '../../images/bxslider/bxslider_controls.png';
-@loader: '../../images/bxslider/bxslider_loader.gif';
+@controls: '../../../images/bxslider/bxslider_controls.png';
+@loader: '../../../images/bxslider/bxslider_loader.gif';
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper {
@@ -31,8 +31,8 @@ ul.bxslider {
   transform: translatez(0);
 }
 .slideshow {
-    // Hides slideshow intil it's loaded
-    visibility: hidden;
+  // Hides slideshow intil it's loaded
+  visibility: hidden;
 }
 .bx-wrapper {
   .bx-controls-auto,
@@ -57,7 +57,7 @@ ul.bxslider {
 .bx-wrapper {
   .bx-pager {
     text-align: center;
-    font-size: .85em;
+    font-size: 0.85em;
     font-weight: bold;
     color: #666;
     padding-top: 20px;
@@ -91,44 +91,64 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper {
   .bx-next,
-  .bx-prev,
-  .bx-start,
-  .bx-stop {
-    background: url(@controls) no-repeat;
+  .bx-prev {
+    &:after {
+      font-family: 'Glyphicons Halflings';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      font-size: 1.9em;
+      color: @gray-dark;
+      display: inline-block;
+    }
   }
   .bx-prev {
-    left: 10px;
-    background-position: 0 -32px;
-    &:focus,
-    &:hover {
-      background-position: 0 0;
+    left: @margin10;
+    &:after {
+      content: '\e257';
+      left: 0;
     }
   }
   .bx-next {
-    right: 10px;
-    background-position: -43px -32px;
-    &:focus,
-    &:hover {
-      background-position: -43px 0;
+    right: @margin10;
+    &:after {
+      content: '\e258';
+      right: 0;
     }
   }
+  // Display arrows on hover only
   .bx-controls-direction a {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
     position: absolute;
     top: 50%;
-    margin-top: -16px;
     outline: 0;
     width: 32px;
     height: 32px;
-    text-indent: -9999px;
-    z-index: 9999;
+    color: transparent;
+    line-height: 0;
+    &:active,
+    &:focus,
+    &:hover {
+      color: transparent;
+    }
     &.disabled {
       display: none;
+    }
+  }
+  &:hover {
+    .bx-controls-direction a {
+      opacity: 1;
     }
   }
 }
 /* AUTO CONTROLS (START / STOP) */
 .bx-wrapper .bx-controls-auto {
   text-align: center;
+  .bx-start,
+  .bx-stop {
+    background: url("@controls") no-repeat;
+  }
   .bx-start {
     display: block;
     text-indent: -9999px;
@@ -182,7 +202,7 @@ ul.bxslider {
   span {
     color: @white-color;
     display: block;
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 10px;
   }
 }

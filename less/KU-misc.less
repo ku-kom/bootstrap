@@ -1,0 +1,29 @@
+//
+// KU misc.
+// Various extra classes that doesn't belong in other .less files
+// ---------------------------------------------------------------
+footer,
+header,
+nav {
+  flex: none;
+}
+.divider {
+  margin: @margin10 0;
+  &:extend(.clearfix all);
+}
+[tabindex] {
+  outline: 0;
+}
+//KU remove gutter from columns
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.relative {
+  position: relative;
+}
+.grid-content {
+  .row:not(:last-child) {
+    margin-bottom: @margin20;
+  }
+}

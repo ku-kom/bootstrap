@@ -44,11 +44,6 @@ body {
   }
 }
 
-header,nav,
-footer {
-  flex: none;
-}
-
 // Reset fonts for relevant elements
 input,
 button,
@@ -75,11 +70,6 @@ a {
   &:focus {
     .tab-focus();
   }
-}
-
-.divider {
-  margin: @margin10 0;
-  &:extend(.clearfix all);
 }
 
 // Figures
@@ -170,10 +160,6 @@ hr {
   }
 }
 
-[tabindex] {
-    outline: 0;
-}
-
 // iOS "clickable elements" fix for role="button"
 //
 // Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
@@ -182,10 +168,4 @@ hr {
 
 [role="button"] {
   cursor: pointer;
-}
-
-//KU remove gutter from columns
-.no-gutter > [class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
 }
