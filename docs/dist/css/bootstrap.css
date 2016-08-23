@@ -4785,7 +4785,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border-color: #777;
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
@@ -4866,7 +4866,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .navbar-inverse .topbar-logo {
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 55px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4880,6 +4880,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 @media (min-width: 480px) {
   .navbar-inverse .topbar-logo {
+    top: 8px;
     width: 50%;
   }
 }
@@ -7195,8 +7196,8 @@ img[src$=".svg"] {
     top: 0;
     left: 0;
     z-index: 1040;
-    padding-bottom: 5px;
-    padding-left: 20px;
+    padding: 8px 10px 5px 10px;
+    background-color: #777;
   }
   .globalmenu-toggle {
     margin-right: 0;

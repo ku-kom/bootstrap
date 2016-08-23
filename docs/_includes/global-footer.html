@@ -167,6 +167,7 @@
         maxSlides: 1,
         shrinkItems: true,
         mode: 'fade',
+        easing: 'ease-in-out',
         controls: false,
         onSliderLoad: function(currentIndex) {
           $('.slideshow').css('visibility', 'visible');
@@ -208,25 +209,32 @@
     var $items3 = $globalMenu.clone();
     var $items4 = $globalMenu2.clone().prepend('<li class="mm-divider">Global menu</li>');
     var $menuitems = $items.append($items2).append($items4).append($items3);
-    $mobimenu.append($menuitems);
 
+    $mobimenu.append($menuitems);
+    $mobimenu.find('ul').removeClass('dropdown-menu');
     $mobimenu.mmenu({
+      counters: true,
       offCanvas: {
         position: 'left',
         zposition: 'front',
         screenReader: true,
-        drag: true
       },
-      navbars: [{
-        position: 'top',
-        content: [
-          '<a href="http://www.ku.dk">Ku.dk</a>'
-        ]
-      }],
+      //   navbars: [{
+      //     position: 'top',
+      //     content: [
+      //       '<a href="http://www.ku.dk">Ku.dk</a>'
+      //     ]
+      //   }],
       extensions: ['multiline'],
       slidingSubmenus: false,
-      currentItem: {
-        find: true
+      drag: {
+        page: {
+          open: true,
+        },
+      },
+      setSelected: {
+        parent: true,
+        current: 'detect'
       },
       onClick: {
         setSelected: true

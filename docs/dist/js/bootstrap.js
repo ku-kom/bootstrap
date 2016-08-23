@@ -59,14 +59,14 @@ if (typeof jQuery === 'undefined') {
  * Custom menu script for University of Copenhagen: ku.dk
  * ====================================================================== */
 
-+function ($) {
-    'use strict';
++ function ($) {
+  'use strict';
 
-    // var $kuNav = $('#kunav');
-    // var $navBar = $('#navbar');
-    var $cachedWidth = $('body').prop('clientWidth');
-    if ($cachedWidth <= 768) {
-      // Global menu folding
+  // var $kuNav = $('#kunav');
+  // var $navBar = $('#navbar');
+  var $cachedWidth = $('body').prop('clientWidth');
+  if ($cachedWidth <= 768) {
+    // Global menu folding
     //   $navBar.on('show.bs.collapse', function () {
     //     $kuNav.show();
     //   });
@@ -74,21 +74,22 @@ if (typeof jQuery === 'undefined') {
     //     $kuNav.hide();
     //   });
 
-      // Clicking left menu button or content area closes global menu
+    // Clicking left menu button or content area closes global menu
     //   $('#btn_left, #content').click(function () {
     //     $navBar.collapse('hide');
     //   });
-    }
+  }
 
-    $(window).resize(function () {
-      var $newWidth = $('body').prop('clientWidth');
-      if ($newWidth !== $cachedWidth) {
-        //$kuNav.removeAttr('style'); // reset style
-        //$('#btn_right').addClass('collapsed'); // reset burger icon
-        $cachedWidth = $newWidth;
+  $(window).resize(function () {
+    var $newWidth = $('body').prop('clientWidth');
+    if ($newWidth !== $cachedWidth) {
+      if ($cachedWidth <= 768) {
+        $('#mobileleftmenu').remove(); // Remove mobile menu
       }
-    });
-  }(jQuery);
+      $cachedWidth = $newWidth;
+    }
+  });
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: transition.js v3.3.7
