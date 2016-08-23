@@ -32,7 +32,9 @@
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: ceil((@font-size-base * 1.125));
+  font-size: ceil(@font-size-base); // ceil((@font-size-base * 1.125));
+  font-weight: bold;
+  letter-spacing: .25px;
   color: inherit;
 
   > a,
@@ -232,7 +234,8 @@
   }
 
   .panel-heading {
-    border-bottom: 0;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #d5d5d5;
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
@@ -252,6 +255,25 @@
 // Contextual variations
 .panel-default {
   .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+  border-top: 1px solid @ku-red;
+  .theme-samf & {
+    border-top: 1px solid @samf;
+  }
+  .theme-hum & {
+    border-top: 1px solid @hum;
+  }
+  .theme-science & {
+    border-top: 1px solid @science;
+  }
+  .theme-sund & {
+    border-top: 1px solid @sund;
+  }
+  .theme-jura & {
+    border-top: 1px solid @jura;
+  }
+  .theme-teol & {
+    border-top: 1px solid @teol;
+  }
 }
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);

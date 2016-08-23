@@ -541,6 +541,7 @@
       &.eng {
         padding-right: (@grid-gutter-width / 2);
         > img {
+          display: inline-block;
           height: 13px;
           width: 19px;
           margin-bottom: 2px;
@@ -665,17 +666,19 @@
       }
     }
   }
-
   // KU top logo positioning
   .topbar-logo {
     position: absolute;
-    top: 3px;
-    bottom: 0;
+    top: 10px;
     left: 50px;
-    width: 90%;
+    width: 65%;
+    @media (min-width: @screen-xs) {
+      width: 50%;
+    }
     @media (min-width: @screen-sm) {
-        left: 20px;
-        width: 100%;
+      left: 20px;
+      width: 30%;
+      top: 10px;
     }
     display: flex;
     align-items: center;
