@@ -3584,7 +3584,6 @@ tbody.collapse.in {
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
   float: left;
   min-width: 160px;
   padding: 5px 0;
@@ -3600,6 +3599,7 @@ tbody.collapse.in {
   border-radius: 2px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  opacity: 0;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -4264,7 +4264,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .95;
+    opacity: .9;
   }
 }
 @-o-keyframes fadeIn {
@@ -4272,7 +4272,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .95;
+    opacity: .9;
   }
 }
 @keyframes fadeIn {
@@ -4280,7 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .95;
+    opacity: .9;
   }
 }
 .ku-nav {
@@ -4316,7 +4316,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
   }
   .ku-nav ul.nav li.dropdown:hover ul.dropdown-menu {
-    display: block;
+    opacity: .9;
     -webkit-animation: fadeIn .4s;
          -o-animation: fadeIn .4s;
             animation: fadeIn .4s;

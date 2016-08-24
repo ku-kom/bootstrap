@@ -188,50 +188,31 @@
 </script>
 {% endif %}
 <!-- Mobile menu -->
-<script type="text/javascript" src="../../assets/js/mmenu/hammer.min.js"></script>
 <script type="text/javascript" src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript">
   $(function() {
-    // Global and left menu merging
-    var $leftmenu = $('#leftmenu');
-    var $leftmenu2 = $('#leftmenu_2');
-    var $globalMenu = $('#topbar_menu');
-    var $globalMenu2 = $('#navbar_menu');
-    var $mobimenu = $('#mobileleftmenu');
-    var $items, $items2, $items3, $items4;
+      // Top and global menus
+    //   var $globalMenu = $('#topbar_menu').children().clone();
+    //   var $globalMenu2 = $('#navbar_menu').children().clone().prepend('<li class="mm-divider">Global menu</li>');
+      var $mobimenu = $('#mobileleftmenu');
+    // Get all left menu items
+    // $( "#leftmenu li" ).each( function( i, e ){
+    //     var $leftmenus = $(this);
+    // });
 
-    if ($leftmenu) {
-      $items = $leftmenu.clone();
-    }
-    if ($leftmenu2) {
-      $items2 = $leftmenu2.clone();
-    }
-    var $items3 = $globalMenu.clone();
-    var $items4 = $globalMenu2.clone().prepend('<li class="mm-divider">Global menu</li>');
-    var $menuitems = $items.append($items2).append($items4).append($items3);
 
-    $mobimenu.append($menuitems);
-    $mobimenu.find('ul').removeClass('dropdown-menu');
+    $mobimenu.append($("#nav li, #topbar_menu li, #navbar_menu li").clone());
+console.log($mobimenu.html());
+
+    //$mobimenu.find('ul').removeClass('dropdown-menu');
     $mobimenu.mmenu({
-      counters: true,
       offCanvas: {
         position: 'left',
         zposition: 'front',
         screenReader: true,
       },
-      //   navbars: [{
-      //     position: 'top',
-      //     content: [
-      //       '<a href="http://www.ku.dk">Ku.dk</a>'
-      //     ]
-      //   }],
       extensions: ['multiline'],
       slidingSubmenus: false,
-      drag: {
-        page: {
-          open: true,
-        },
-      },
       setSelected: {
         parent: true,
         current: 'detect'
@@ -239,6 +220,16 @@
       onClick: {
         setSelected: true
       }
-    });
+  });
+
+    // Open sub items from the global menu
+    // $items.each(function() {
+    //
+    //   $("li", this).each(function(i) {
+    //     if ($(this).hasClass('dropdown')) {
+    //       $(this).addClass('mm-opened');
+    //     }
+    //   });
+    // });
   });
 </script>
