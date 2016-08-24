@@ -58,7 +58,7 @@ if (typeof jQuery === 'undefined') {
  * Custom menu script for University of Copenhagen: ku.dk
  * ====================================================================== */
 
-+ function ($) {
++function ($) {
   'use strict';
 
   var $cachedWidth = $('body').prop('clientWidth');
@@ -67,7 +67,7 @@ if (typeof jQuery === 'undefined') {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
         // Close mobile menu on resize
-      var mmenu = $('#mobileleftmenu').mmenu().data("mmenu");
+      var mmenu = $('#mobileleftmenu').mmenu().data('mmenu');
       mmenu.close();
       $cachedWidth = $newWidth;
     }

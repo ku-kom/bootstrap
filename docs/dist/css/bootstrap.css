@@ -4264,7 +4264,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .9;
+    opacity: .94;
   }
 }
 @-o-keyframes fadeIn {
@@ -4272,7 +4272,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .9;
+    opacity: .94;
   }
 }
 @keyframes fadeIn {
@@ -4280,7 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     opacity: 0;
   }
   100% {
-    opacity: .9;
+    opacity: .94;
   }
 }
 .ku-nav {
@@ -4316,7 +4316,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
   }
   .ku-nav ul.nav li.dropdown:hover ul.dropdown-menu {
-    opacity: .9;
+    opacity: .94;
     -webkit-animation: fadeIn .4s;
          -o-animation: fadeIn .4s;
             animation: fadeIn .4s;

@@ -53,13 +53,12 @@ if (typeof jQuery === 'undefined') {
   });
 }(jQuery);
 
-// jscs:disable
 /* ======================================================================
  * Bootstrap: v3.3.7
  * Custom menu script for University of Copenhagen: ku.dk
  * ====================================================================== */
 
-+ function ($) {
++function ($) {
   'use strict';
 
   var $cachedWidth = $('body').prop('clientWidth');
@@ -67,7 +66,8 @@ if (typeof jQuery === 'undefined') {
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
-      var mmenu = $('#mobileleftmenu').mmenu().data("mmenu");
+        // Close mobile menu on resize
+      var mmenu = $('#mobileleftmenu').mmenu().data('mmenu');
       mmenu.close();
       $cachedWidth = $newWidth;
     }
