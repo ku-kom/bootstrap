@@ -15,8 +15,10 @@
 <!-- Bootstrap core CSS -->
 {% if site.github %}
 <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
-{% elsif page.slug == 'examples' %}
+{% elsif page.slug == 'examples' or page.slug == "slideshow" %}
 <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Datatables -->
+<link href="../../assets/css/datatables/datatables.min.css" rel="stylesheet">
 {% else %}
 <link href="../dist/css/bootstrap.css" rel="stylesheet">
 {% endif %}
@@ -32,7 +34,7 @@
 <!-- Documentation extras -->
 {% if site.github %}
 <link href="../assets/css/docs.min.css" rel="stylesheet">
-{% elsif page.slug == 'examples' %}
+{% elsif page.slug == 'examples' or page.slug == "slideshow" %}
 <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="../../assets/css/src/pygments-manni.css" rel="stylesheet">
 {% else %}
@@ -43,7 +45,7 @@
 <!-- Mobile menu - mmenu -->
 <link rel="stylesheet" href="../../assets/css/mmenu/jquery.mmenu.css">
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-{% if page.slug == 'examples' %}
+{% if page.slug == 'examples' or page.slug == "slideshow" %}
 <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 {% else %}
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -56,7 +58,7 @@
 <![endif]-->
 
 <!-- Favicons -->
-{% if page.slug == 'examples' %}
+{% if page.slug == 'examples' or page.slug == "slideshow" %}
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../favicon.ico">
 {% else %}

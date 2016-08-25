@@ -71,6 +71,7 @@
           }
           &:hover {
             ul.dropdown-menu {
+                display: block;
               opacity: .94;
               animation: fadeIn 0.4s;
             }
@@ -680,6 +681,9 @@
       left: 20px;
       width: 30%;
       top: 10px;
+    }
+    @media (min-width: @screen-md) {
+        top: 8px;
     }
     display: flex;
     align-items: center;

@@ -3584,6 +3584,7 @@ tbody.collapse.in {
   top: 100%;
   left: 0;
   z-index: 1000;
+  display: none;
   float: left;
   min-width: 160px;
   padding: 5px 0;
@@ -3599,7 +3600,6 @@ tbody.collapse.in {
   border-radius: 2px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  opacity: 0;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -4316,6 +4316,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
   }
   .ku-nav ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
     opacity: .94;
     -webkit-animation: fadeIn .4s;
          -o-animation: fadeIn .4s;
@@ -4889,6 +4890,11 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     top: 10px;
     left: 20px;
     width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-inverse .topbar-logo {
+    top: 8px;
   }
 }
 .breadcrumb {
@@ -5651,13 +5657,16 @@ button.list-group-item-danger.active:focus {
 .panel {
   margin-bottom: 15px;
   background-color: #fff;
-  border: 1px solid transparent;
+}
+.panel.with-img .panel-body {
+  padding: 0;
+  overflow: hidden;
 }
 .panel-body {
   padding: 10px;
 }
 .panel-heading {
-  padding: 10px 10px;
+  padding: 8px 10px;
   border-bottom: 1px solid transparent;
 }
 .panel-heading > .dropdown .dropdown-toggle {
@@ -5679,7 +5688,7 @@ button.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
-  padding: 10px 10px;
+  padding: 8px 10px;
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
 }
@@ -7615,7 +7624,7 @@ ul.bxslider {
 .bx-wrapper .bx-controls-auto,
 .bx-wrapper .bx-pager {
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   width: 100%;
 }
 /* LOADER */
@@ -7639,12 +7648,12 @@ ul.bxslider {
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   margin: 0 5px;
   text-indent: -9999px;
   background: #666;
-  border-radius: 5px;
+  border-radius: 50%;
   outline: 0;
 }
 .bx-wrapper .bx-pager.bx-default-pager a.active,
