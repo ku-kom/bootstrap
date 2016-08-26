@@ -7892,7 +7892,7 @@ ul.bxslider {
 }
 .gridbox.size1 {
   height: 289px;
-  background: #f2f2f0;
+  background-color: #f2f2f0;
 }
 .gridbox.size1 .box1 {
   padding: 5px 10px 10px;
@@ -7901,16 +7901,22 @@ ul.bxslider {
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .gridbox.size1 .box1 .header-small {
+  margin: 3px 0 4px 0;
   font-weight: bold;
   color: #777;
   text-transform: uppercase;
 }
 .gridbox.size1 .box1 .header {
   padding: 0;
-  font-size: 1.333em;
+  font-size: 1.2em;
   font-weight: bold;
+  line-height: 1.2em;
 }
 .gridbox.size1 .box1 .text {
   font-size: 1.1em;
@@ -7918,13 +7924,17 @@ ul.bxslider {
   line-height: 1.45em;
 }
 .gridbox.size1 .box2 {
-  height: 50%;
+  max-height: 50%;
   overflow-x: hidden;
 
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 .gridbox.size2 {
   height: 185px;
@@ -7947,7 +7957,7 @@ ul.bxslider {
 .gridbox.red-bg,
 .gridbox.red-header {
   color: #fff;
-  background: #901a1e;
+  background-color: #901a1e;
 }
 .gridbox.red-border {
   border: 1px solid #901a1e;
@@ -7957,7 +7967,7 @@ ul.bxslider {
 }
 .gridbox.green-bg {
   color: #fff;
-  background: #a0b763;
+  background-color: green;
 }
 .gridbox.green-border {
   border: 1px solid #a0b763;
@@ -7967,7 +7977,7 @@ ul.bxslider {
 }
 .gridbox.blue-bg {
   color: #fff;
-  background: #a1c5c8;
+  background-color: #a1c5c8;
 }
 .gridbox.blue-border {
   border: 1px solid #a1c5c8;
@@ -7977,7 +7987,7 @@ ul.bxslider {
 }
 .gridbox.brown-bg {
   color: #fff;
-  background: #4f473f;
+  background-color: #4f473f;
 }
 .gridbox.brown-border {
   border: 1px solid #4f473f;
@@ -7986,17 +7996,16 @@ ul.bxslider {
   color: #4f473f;
 }
 .gridbox.grey-bg {
-  background: #f2f2f0;
+  background-color: #f2f2f0;
 }
 .gridbox.grey-border {
   border: 1px solid #c4c4c4;
 }
 .gridbox.grey-border.with-arrow::before {
-  color: #f2f2f0;
+  color: #777;
 }
 .gridbox.white-bg {
-  background: #fff;
-  background: rgba(255, 255, 255, .8);
+  background-color: #fff;
 }
 .gridbox.white-border {
   border: 1px solid #fff;
