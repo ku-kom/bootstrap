@@ -109,7 +109,7 @@
   // Height 298px
   &.size1 {
     height: @gridbox1;
-    .backgroundColorFix(@ku-gray);
+    .backgroundColorFix(@ku-gray, 1);
     .box1 {
       order: 2;
       padding: 5px 10px 10px;
@@ -159,8 +159,8 @@
   }
   // Color modes
   &.red-bg,
-  &.red-header & {
-    .backgroundColorFix(@red);
+  &.red-header {
+    .backgroundColorFix(@red, 1);
     color: @white;
   }
   &.red-border {
@@ -170,7 +170,7 @@
     }
   }
   &.green-bg {
-    .backgroundColorFix(@green);
+    .backgroundColorFix(@green, 1);
     color: @white;
   }
   &.green-border {
@@ -180,7 +180,7 @@
     }
   }
   &.blue-bg {
-    .backgroundColorFix(@blue);
+    .backgroundColorFix(@blue, 1);
     color: @white;
   }
   &.blue-border {
@@ -190,7 +190,7 @@
     }
   }
   &.brown-bg {
-    .backgroundColorFix(@brown);
+    .backgroundColorFix(@brown, 1);
     color: @white;
   }
   &.brown-border {
@@ -200,7 +200,7 @@
     }
   }
   &.grey-bg {
-    .backgroundColorFix(@ku-gray);
+    .backgroundColorFix(@ku-gray, 1);
   }
   &.grey-border {
     border: 1px solid #c4c4c4;
@@ -209,7 +209,7 @@
     }
   }
   &.white-bg {
-    .backgroundColorFix(@white);
+    .backgroundColorFix(@white, 1);
   }
   &.white-border {
     border: 1px solid @white;

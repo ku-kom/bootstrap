@@ -7945,7 +7945,7 @@ ul.bxslider {
   display: none;
 }
 .gridbox.red-bg,
-.gridbox.red-header .gridbox {
+.gridbox.red-header {
   color: #fff;
   background: #901a1e;
 }
@@ -7996,7 +7996,7 @@ ul.bxslider {
 }
 .gridbox.white-bg {
   background: #fff;
-  background: #fff;
+  background: rgba(255, 255, 255, .8);
 }
 .gridbox.white-border {
   border: 1px solid #fff;
