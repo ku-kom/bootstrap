@@ -14,7 +14,6 @@
 @green: rgba(160, 183, 99, 1);
 @ku-gray: rgba(242, 242, 240, 1);
 @white: rgba(255, 255, 255, 1);
-
 .gridbox {
   display: flex;
   flex-direction: column;
@@ -23,30 +22,82 @@
     z-index: 4;
     order: 1;
     flex: 0 1 auto;
+    position: relative;
+    .header {
+      font-size: 1.2em;
+      padding: 7px 25px 8px @padding10;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
   }
   .box2 {
-    padding: @padding15;
+    padding: @padding10;
     order: 2;
     flex: 1 1 auto;
   }
-  .header {
-    font-size: 1.1em;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-  }
+  // Boxes with an image
   &.with-img {
     .box2 {
       padding: 0;
       overflow: hidden;
     }
   }
-  .text-down {
+  // Boxes with the title at the bottom
+  &.text-down {
     .box1 {
       order: 2;
     }
+    .box2 {
+      order: 1;
+    }
+    &.with-arrow::before {
+      bottom: @padding10;
+      top: auto;
+    }
   }
-  &.icon-arrow::before {
+  // Boxes with the text over the content incl. opacity
+  &.text-over {
+    .box1 {
+      .header {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &.red-bg {
+      .box1 .header {
+        background-color: fade(@red, 80%);
+      }
+    }
+    &.green-bg {
+      .box1 .header {
+        background-color: fade(@green, 80%);
+      }
+    }
+    &.blue-bg {
+      .box1 .header {
+        background-color: fade(@blue, 80%);
+      }
+    }
+    &.brown-bg {
+      .box1 .header {
+        background-color: fade(@brown, 80%);
+      }
+    }
+    &.grey-bg {
+      .box1 .header {
+        background-color: fade(@ku-gray, 80%);
+      }
+    }
+    &.white-bg {
+      .box1 .header {
+        background-color: fade(@white, 80%);
+      }
+    }
+  }
+  // Add an arrow to the box
+  &.with-arrow::before {
     display: inline-block;
     font-family: 'arrow';
     content: '\0043';
@@ -56,7 +107,7 @@
     position: absolute;
     z-index: 5;
   }
-  // 298
+  // Height 298px
   &.size1 {
     height: @gridbox1;
     background-color: @ku-gray;
@@ -69,8 +120,9 @@
         text-transform: uppercase;
       }
       .header {
-        font-size: 1.3em;
+        font-size: 1.333em;
         font-weight: bold;
+        padding: 0;
       }
       .text {
         font-size: 1.1em;
@@ -84,93 +136,111 @@
       overflow-x: hidden;
     }
   }
-  // 185
+  // Height 185px
   &.size2 {
     height: @gridbox2;
-    .box1 {
-      .header {
-        font-size: 1.333em;
-        padding: 7px 25px 8px 12px;
-      }
-    }
+  }
+  // Height 133px
+  &.size3 {
+    height: @gridbox3;
   }
   // Color modes
   &.red-bg {
     background-color: @red;
+    color: @white;
   }
   &.red-border {
     border: 1px solid @red;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @red;
     }
   }
   &.green-bg {
     background-color: @green;
+    color: @white;
   }
   &.green-border {
     border: 1px solid @green;
+    &.with-arrow::before {
+      color: @green;
+    }
   }
   &.blue-bg {
     background-color: @blue;
+    color: @white;
   }
   &.blue-border {
     border: 1px solid @blue;
+    &.with-arrow::before {
+      color: @blue;
+    }
   }
   &.brown-bg {
     background-color: @brown;
+    color: @white;
   }
   &.brown-border {
     border: 1px solid @brown;
+    &.with-arrow::before {
+      color: @brown;
+    }
   }
   &.grey-bg {
     background-color: @ku-gray;
   }
   &.grey-border {
-    border: 1px solid @ku-gray;
-    &.icon-arrow::before {
+    border: 1px solid #c4c4c4;
+    &.with-arrow::before {
       color: @ku-gray;
+    }
+  }
+  &.white-bg {
+    background-color: @white;
+  }
+  &.white-border {
+    border: 1px solid @white;
+    &.with-arrow::before {
+      color: @gray-dark;
     }
   }
   //Faculty colors
   &.teol-border {
     border: 1px solid @teol;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @teol;
     }
   }
   &.sund-border {
     border: 1px solid @sund;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @sund;
     }
   }
   &.science-border {
     border: 1px solid @science;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @science;
     }
   }
   &.samf-border {
     border: 1px solid @samf;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @samf;
     }
   }
   &.jura-border {
     border: 1px solid @jura;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @jura;
     }
   }
   &.hum-border {
     border: 1px solid @hum;
-    &.icon-arrow::before {
+    &.with-arrow::before {
       color: @hum;
     }
   }
   &.border-top {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    border-width: 1px 0 0;
   }
 }

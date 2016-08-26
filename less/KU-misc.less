@@ -1,6 +1,6 @@
 //
 // KU misc.
-// Various extra classes that doesn't belong in other .less files
+// Various extra classes that don't belong in other .less files
 // ---------------------------------------------------------------
 main {
   flex: 1 0 auto;
@@ -49,11 +49,19 @@ nav {
   padding-right: 0;
   padding-left: 0;
 }
-.relative {
-  position: relative;
-}
-.grid-content {
+
+// KU adding margins to rows and columns
+.main-content {
   .row:not(:last-child) {
     margin-bottom: @margin20;
   }
+  .row {
+    > [class*="col-"] {
+      margin-bottom: @margin20
+    }
+  }
+}
+
+.relative {
+  position: relative;
 }
