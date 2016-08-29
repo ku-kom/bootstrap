@@ -7996,7 +7996,7 @@ ul.bxslider {
 }
 .gridbox.white-bg {
   background: #fff;
-  background: rgba(255, 255, 255, .8);
+  background: #fff;
 }
 .gridbox.white-border {
   border: 1px solid #fff;
