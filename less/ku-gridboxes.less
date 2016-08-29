@@ -109,17 +109,20 @@
   // Height 298px
   &.size1 {
     height: @gridbox1;
-    .backgroundColorFix(@ku-gray, 1);
+    background-color: @ku-gray;
     .box1 {
       order: 2;
       padding: 5px 10px 10px;
+      flex: 1 1 auto;
       .header-small {
         color: @gray-light;
         font-weight: bold;
         text-transform: uppercase;
+        margin: 3px 0 4px 0;
       }
       .header {
-        font-size: 1.333em;
+        font-size: 1.2em;
+        line-height: 1.2em;
         font-weight: bold;
         padding: 0;
       }
@@ -130,8 +133,9 @@
       }
     }
     .box2 {
-      height: 50%; // Image height
+      max-height: 50%; // Image height
       order: 1;
+      flex: 0 1 auto;
       overflow-x: hidden;
     }
   }
@@ -160,7 +164,7 @@
   // Color modes
   &.red-bg,
   &.red-header {
-    .backgroundColorFix(@red, 1);
+    background-color: @red;
     color: @white;
   }
   &.red-border {
@@ -170,7 +174,7 @@
     }
   }
   &.green-bg {
-    .backgroundColorFix(@green, 1);
+    background-color: green;
     color: @white;
   }
   &.green-border {
@@ -180,7 +184,7 @@
     }
   }
   &.blue-bg {
-    .backgroundColorFix(@blue, 1);
+    background-color: @blue;
     color: @white;
   }
   &.blue-border {
@@ -190,7 +194,7 @@
     }
   }
   &.brown-bg {
-    .backgroundColorFix(@brown, 1);
+    background-color: @brown;
     color: @white;
   }
   &.brown-border {
@@ -200,16 +204,16 @@
     }
   }
   &.grey-bg {
-    .backgroundColorFix(@ku-gray, 1);
+    background-color: @ku-gray;
   }
   &.grey-border {
     border: 1px solid #c4c4c4;
     &.with-arrow::before {
-      color: @ku-gray;
+      color: @gray-light;
     }
   }
   &.white-bg {
-    .backgroundColorFix(@white, 1);
+    background-color: @white;
   }
   &.white-border {
     border: 1px solid @white;
