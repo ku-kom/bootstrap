@@ -3741,9 +3741,9 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn-group,
+.btn-toolbar > .btn,
 .btn-toolbar > .input-group,
-.btn-toolbar > .btn {
+.btn-toolbar > .btn-group {
   margin-left: 5px;
 }
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
@@ -3767,8 +3767,8 @@ tbody.collapse.in {
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle,
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child {
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -3801,8 +3801,14 @@ tbody.collapse.in {
 }
 .ku-nav .btn .caret {
   margin-left: 5px;
+  color: #bbb;
 }
 .ku-nav .input-group-btn .btn:hover {
+  text-decoration: underline;
+  background-color: #fff;
+}
+.ku-nav .input-group-btn .btn:focus,
+.ku-nav .input-group-btn .btn:active {
   background-color: #fff;
 }
 .btn-lg .caret {
@@ -3812,9 +3818,9 @@ tbody.collapse.in {
 .dropup .btn-lg .caret {
   border-width: 0 5px 5px;
 }
-.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group-vertical > .btn-group {
   display: block;
   float: none;
   width: 100%;
@@ -3823,10 +3829,10 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group > .btn {
   float: none;
 }
-.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group,
-.btn-group-vertical > .btn + .btn {
+.btn-group-vertical > .btn + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
@@ -3848,8 +3854,8 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle,
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child {
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3863,8 +3869,8 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn-group,
-.btn-group-justified > .btn {
+.btn-group-justified > .btn,
+.btn-group-justified > .btn-group {
   display: table-cell;
   float: none;
   width: 1%;
@@ -3875,10 +3881,10 @@ tbody.collapse.in {
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="radio"] {
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -4770,8 +4776,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 }
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #e2e2e2;
-  background-color: transparent;
+  text-decoration: underline;
 }
 .navbar-inverse .navbar-nav > li > a.dk,
 .navbar-inverse .navbar-nav > li > a.eng {

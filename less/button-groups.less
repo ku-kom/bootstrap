@@ -141,11 +141,16 @@
 .ku-nav {
   .btn .caret {
     margin-left: 5px; //KU
+    color: #bbb;
   }
 
   .input-group-btn { //KU
     .btn {
       &:hover {
+        background-color: @white;
+        text-decoration: @link-hover-decoration;
+      }
+      &:focus, &:active {
         background-color: @white;
       }
     }
