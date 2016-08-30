@@ -14,22 +14,26 @@
 @green: #a0b763;
 @ku-gray: #f2f2f0;
 @white: #fff;
+
 .gridbox {
   display: flex;
   flex-direction: column;
+
   .box1 {
     z-index: 4;
     order: 1;
     flex: 0 1 auto;
     position: relative;
+
     .header {
       font-size: 1.2em;
-      padding: @padding10 25px 8px @padding10;
+      padding: 8px 25px 8px @padding10;
       width: 100%;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: .8px;
     }
   }
+
   .box2 {
     padding: 5px @padding10 @padding10;
     order: 2;
@@ -47,15 +51,17 @@
     .box1 {
       order: 2;
     }
+
     .box2 {
       order: 1;
     }
+
     &.with-arrow::before {
       bottom: @padding10;
       top: auto;
     }
   }
-  // Boxes with the text over the content incl. opacity
+  // Boxes with the text above the content incl. opacity
   &.text-over {
     .box1 {
       .header {
@@ -64,31 +70,37 @@
         bottom: 0;
       }
     }
+
     &.red-bg {
       .box1 .header {
         .backgroundColorFix(@red, .8);
       }
     }
+
     &.green-bg {
       .box1 .header {
         .backgroundColorFix(@green, .8);
       }
     }
+
     &.blue-bg {
       .box1 .header {
         .backgroundColorFix(@blue, .8);
       }
     }
+
     &.brown-bg {
       .box1 .header {
         .backgroundColorFix(@brown, .8);
       }
     }
+
     &.grey-bg {
       .box1 .header {
         .backgroundColorFix(@ku-gray, .8);
       }
     }
+
     &.white-bg {
       .box1 .header {
         .backgroundColorFix(@white, .8);
@@ -106,32 +118,45 @@
     position: absolute;
     z-index: 5;
   }
+
   // Height 298px
   &.size1 {
     height: @gridbox1;
     background-color: @ku-gray;
+
     .box1 {
       order: 2;
       padding: 5px 10px 10px;
       flex: 1 1 auto;
+
       .header-small {
         color: @gray-light;
         font-weight: bold;
         text-transform: uppercase;
-        margin: 3px 0 4px 0;
+        margin: 3px 0 4px;
+
+        .date {
+          float: right;
+          padding-left: 5px;
+        }
       }
+
       .header {
         font-size: 1.2em;
-        line-height: 1.2em;
+        line-height: 1.3em;
         font-weight: bold;
         padding: 0;
+        margin: 3px 0 2px;
       }
+
       .text {
         font-size: 1.1em;
         font-weight: 400;
         line-height: 1.45em;
+        padding-top: 3px;
       }
     }
+
     .box2 {
       max-height: 50%; // Image height
       order: 1;
@@ -150,13 +175,21 @@
   // Height 81px
   &.size4 {
     height: @gridbox4;
+
     .box2 {
-        padding-top: 0;
+      padding-top: 0;
     }
   }
   // Height 55px
   &.size5 {
     height: @gridbox5;
+
+    .box1 {
+      .header {
+        padding-top: 7px;
+      }
+    }
+
     .box2 {
       display: none;
     }
@@ -167,56 +200,73 @@
     background-color: @red;
     color: @white;
   }
+
   &.red-border {
     border: 1px solid @red;
+
     &.with-arrow::before {
       color: @red;
     }
   }
+
   &.green-bg {
-    background-color: green;
+    background-color: @green;
     color: @white;
   }
+
   &.green-border {
     border: 1px solid @green;
+
     &.with-arrow::before {
       color: @green;
     }
   }
+
   &.blue-bg {
     background-color: @blue;
     color: @white;
   }
+
   &.blue-border {
     border: 1px solid @blue;
+
     &.with-arrow::before {
       color: @blue;
     }
   }
+
   &.brown-bg {
     background-color: @brown;
     color: @white;
   }
+
   &.brown-border {
     border: 1px solid @brown;
+
     &.with-arrow::before {
       color: @brown;
     }
   }
+
   &.grey-bg {
     background-color: @ku-gray;
   }
+
   &.grey-border {
     border: 1px solid #c4c4c4;
+
     &.with-arrow::before {
       color: @gray-light;
     }
   }
+
   &.white-bg {
     background-color: @white;
   }
+
   &.white-border {
     border: 1px solid @white;
+
     &.with-arrow::before {
       color: @gray-dark;
     }
@@ -224,41 +274,61 @@
   //Faculty colors
   &.teol-border {
     border: 1px solid @teol;
+
     &.with-arrow::before {
       color: @teol;
     }
   }
+
   &.sund-border {
     border: 1px solid @sund;
+
     &.with-arrow::before {
       color: @sund;
     }
   }
+
   &.science-border {
     border: 1px solid @science;
+
     &.with-arrow::before {
       color: @science;
     }
   }
+
   &.samf-border {
     border: 1px solid @samf;
+
     &.with-arrow::before {
       color: @samf;
     }
   }
+
   &.jura-border {
     border: 1px solid @jura;
+
     &.with-arrow::before {
       color: @jura;
     }
   }
+
   &.hum-border {
     border: 1px solid @hum;
+
     &.with-arrow::before {
       color: @hum;
     }
   }
+
   &.border-top {
     border-width: 1px 0 0;
   }
+}
+
+.boxlink {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }
