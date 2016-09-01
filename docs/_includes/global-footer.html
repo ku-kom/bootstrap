@@ -138,6 +138,11 @@
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 {% endif %}
 
+<!-- Form validation -->
+{% if page.slug == 'examples' %}
+<script type="text/javascript" defer async src="../../assets/js/validator/validator.min.js"></script>
+{% endif %}
+
 <!-- BxSlider  -->
 {% if page.slug == 'slideshow' %}
 <script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>

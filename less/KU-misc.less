@@ -57,7 +57,9 @@ nav {
   }
   .row {
     > [class*="col-"] {
-      margin-bottom: @margin20
+      &:not(.form-group) {
+          margin-bottom: @margin20
+      }
     }
   }
 }
