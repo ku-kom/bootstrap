@@ -4940,11 +4940,13 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 @media (min-width: 768px) {
   .breadcrumbs {
     display: block;
-    margin-bottom: 0;
   }
   .breadcrumbs > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
+  }
+  .breadcrumbs > [class*='col-'] {
+    margin-bottom: 0 !important;
   }
 }
 .pagination {

@@ -29,6 +29,9 @@
   @media (min-width: @screen-sm-min) {
     display: block;
     .no-gutter;
-    margin-bottom: @margin0;
+
+    > [class*='col-'] {
+      margin-bottom: @margin0!important;
+    }
   }
 }
