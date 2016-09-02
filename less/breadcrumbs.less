@@ -2,14 +2,13 @@
 // Breadcrumbs
 // --------------------------------------------------
 
-
 .breadcrumb {
   padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
-  margin-bottom: @line-height-computed;
+  margin-bottom: @margin0;
   list-style: none;
   background-color: @breadcrumb-bg;
-  border-radius: @border-radius-base;
-
+  font-size: 0.9em; // KU
+  //border-radius: @border-radius-base;
   > li {
     display: inline-block;
 
@@ -22,5 +21,14 @@
 
   > .active {
     color: @breadcrumb-active-color;
+  }
+}
+
+.breadcrumbs {
+  display: none;
+  @media (min-width: @screen-sm-min) {
+    display: block;
+    .no-gutter;
+    margin-bottom: @margin0;
   }
 }

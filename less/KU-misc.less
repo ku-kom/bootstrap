@@ -2,6 +2,24 @@
 // KU misc.
 // Various extra classes that don't belong in other .less files
 // ---------------------------------------------------------------
+// KU adding margins to rows and columns
+.main-content {
+  // .row:not(:last-child) {
+  //   margin-bottom: @margin20;
+  // }
+  .row {
+    > [class*="col-"] {
+      &:not(.form-group) {
+        margin-bottom: @margin20;
+      }
+    }
+    &.breadcrumbs {
+        margin-bottom: @margin0;
+    }
+  }
+}
+// Main content part
+
 main {
   flex: 1 0 auto;
   background-color: @white-color;
@@ -21,6 +39,13 @@ main {
     width: @container-lg;
   }
 }
+
+footer,
+header,
+nav {
+  flex: none;
+}
+
 .main-area {
   padding-top: @grid-gutter-width;
   padding-bottom: @grid-gutter-width;
@@ -32,35 +57,21 @@ main {
     display: flex;
   }
 }
-footer,
-header,
-nav {
-  flex: none;
-}
+
 .divider {
   margin: @margin10 0;
   &:extend(.clearfix all);
 }
+
 [tabindex] {
   outline: 0;
 }
 //KU remove gutter from columns
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
 
-// KU adding margins to rows and columns
-.main-content {
-  .row:not(:last-child) {
-    margin-bottom: @margin20;
-  }
-  .row {
-    > [class*="col-"] {
-      &:not(.form-group) {
-          margin-bottom: @margin20
-      }
-    }
+.no-gutter {
+  > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

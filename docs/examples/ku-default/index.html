@@ -3,7 +3,6 @@ layout: examples
 title: KU standard template with left menu
 slug: examples
 ---
-
 <main id="content">
   <div class="container ku-branding">
     <div class="ku-branding-line">
@@ -20,6 +19,14 @@ slug: examples
         {% include ku-leftmenu.html %}
       </div>
       <div class="col-sm-8 col-md-9 main-content">
+      <div class="row breadcrumbs">
+        <div class="col-sm-12">
+          <ul class="breadcrumb">
+            <li><a href="#">Komunikation</a></li>
+            <li class="active">Om afdelingen</li>
+          </ul>
+        </div>
+      </div>
         <div class="row">
           <div class="col-sm-12 col-md-4">
             <h2>Heading</h2>
@@ -41,5 +48,5 @@ slug: examples
       </div>
     </div>
   </div>
-{% include local-footer.html %}
+  {% include local-footer.html %}
 </main>
