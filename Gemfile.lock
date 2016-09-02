@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.4.0)
     colorator (0.1)
+    ffi (1.9.14)
     ffi (1.9.14-x64-mingw32)
     ffi (1.9.14-x86-mingw32)
     jekyll (3.1.6)
@@ -27,6 +28,9 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.1.0)
+    nokogiri (1.6.8.rc3)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     nokogiri (1.6.8.rc3-x64-mingw32)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -40,9 +44,9 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
-    wdm (0.1.1)
 
 PLATFORMS
+  ruby
   x64-mingw32
   x86-mingw32
 
@@ -50,7 +54,6 @@ DEPENDENCIES
   jekyll (~> 3.1.2)
   jekyll-sitemap (~> 0.11.0)
   nokogiri (= 1.6.8.rc3)
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.12.5
