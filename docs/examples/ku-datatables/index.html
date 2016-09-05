@@ -542,3 +542,14 @@ slug: examples
   </div>
   {% include local-footer.html %}
 </main>
+<!-- DataTables.js -->
+<script type="text/javascript" src="../../assets/js/datatables/datatables.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#datatable').dataTable({
+      'responsive': true,
+      'ordering': true,
+      'searching': true
+    });
+  });
+</script>

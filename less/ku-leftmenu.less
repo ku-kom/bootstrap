@@ -7,21 +7,27 @@
       font-weight: bold;
       margin-bottom: @grid-gutter-width;
       border-left: 8px solid @ku-red;
+
       .theme-samf & {
         border-left: 8px solid @samf;
       }
+
       .theme-hum & {
         border-left: 8px solid @hum;
       }
+
       .theme-science & {
         border-left: 8px solid @science;
       }
+
       .theme-sund & {
         border-left: 8px solid @sund;
       }
+
       .theme-jura & {
         border-left: 8px solid @jura;
       }
+
       .theme-teol & {
         border-left: 8px solid @teol;
       }
@@ -32,31 +38,39 @@
       li {
         position: relative;
         display: block;
+
         &.active {
           > a,
           a.active {
             color: @ku-red;
+
             .theme-samf & {
               color: @samf;
             }
+
             .theme-hum & {
               color: @hum;
             }
+
             .theme-science & {
               color: @science;
             }
+
             .theme-sund & {
               color: @sund;
             }
+
             .theme-jura & {
               color: @jura;
             }
+
             .theme-teol & {
               color: @teol;
             }
             font-weight: bold;
           }
         }
+
         a {
           color: @gray-dark;
           font-size: 0.95em;
@@ -64,30 +78,38 @@
           position: relative;
           display: inline-block;
           vertical-align: top;
+
           &:active,
           &:focus,
           &:hover {
             color: @ku-red;
+
             .theme-samf & {
               color: @samf;
             }
+
             .theme-hum & {
               color: @hum;
             }
+
             .theme-science & {
               color: @science;
             }
+
             .theme-sund & {
               color: @sund;
             }
+
             .theme-jura & {
               color: @jura;
             }
+
             .theme-teol & {
               color: @teol;
             }
             text-decoration: none;
           }
+
           &::before {
             position: absolute;
             left: 0;
@@ -96,6 +118,7 @@
         }
       }
     }
+
     ul.nav {
       //First level
       > li {
@@ -105,44 +128,57 @@
             font-family: 'Glyphicons Halflings';
             font-size: 7px;
             color: @ku-red;
+
             .theme-samf & {
               color: @samf;
             }
+
             .theme-hum & {
               color: @hum;
             }
+
             .theme-science & {
               color: @science;
             }
+
             .theme-sund & {
               color: @sund;
             }
+
             .theme-jura & {
               color: @jura;
             }
+
             .theme-teol & {
               color: @teol;
             }
             border: 1px solid #d7d7d7;
           }
+
           &:hover {
             &::before {
               background-color: @ku-red;
+
               .theme-samf & {
                 background-color: @samf;
               }
+
               .theme-hum & {
                 background-color: @hum;
               }
+
               .theme-science & {
                 background-color: @science;
               }
+
               .theme-sund & {
                 background-color: @sund;
               }
+
               .theme-jura & {
                 background-color: @jura;
               }
+
               .theme-teol & {
                 background-color: @teol;
               }
@@ -150,36 +186,46 @@
             }
           }
         }
+
         ul {
           // Second, third and fourth level
           list-style-type: none;
           padding-left: 15px;
+
           li {
             > a {
               padding: 2px 5px 2px 10px;
+
               &::before {
                 content: "\25A0";
                 color: @ku-red;
+
                 .theme-samf & {
                   color: @samf;
                 }
+
                 .theme-hum & {
                   color: @hum;
                 }
+
                 .theme-science & {
                   color: @science;
                 }
+
                 .theme-sund & {
                   color: @sund;
                 }
+
                 .theme-jura & {
                   color: @jura;
                 }
+
                 .theme-teol & {
                   color: @teol;
                 }
                 font-size: 9px;
               }
+
               &:hover::before {
                 text-decoration: none;
               }
@@ -188,6 +234,7 @@
         }
       }
     }
+
     .menu-seperator {
       margin: @grid-gutter-width 0 @margin20;
     }
@@ -198,57 +245,18 @@
   .ku-leftmenu {
     display: none;
   }
+
   .leftmenu-toggle {
-    padding: 8px 10px 5px 10px;
+    padding: 8px 10px 5px;
     background-color: @gray-light;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1040;
   }
+
   .globalmenu-toggle {
     margin-right: 0;
     margin-right: -5px;
-  }
-  // Burger menu animation
-  // .navbar-toggle {
-  //   border: none;
-  //   background: transparent !important;
-  //   &:hover {
-  //     background: transparent !important;
-  //   }
-  //   .icon-bar {
-  //     width: 22px;
-  //     transition: all 0.2s;
-  //   }
-  //   .top-bar {
-  //     transform: rotate(45deg);
-  //     transform-origin: 10% 10%;
-  //   }
-  //   .middle-bar {
-  //     opacity: 0;
-  //   }
-  //   .bottom-bar {
-  //     transform: rotate(-45deg);
-  //     transform-origin: 10% 90%;
-  //   }
-  //   &.collapsed {
-  //     .top-bar {
-  //       transform: rotate(0);
-  //     }
-  //     .middle-bar {
-  //       opacity: 1;
-  //     }
-  //     .bottom-bar {
-  //       transform: rotate(0);
-  //     }
-  //   }
-  // }
-  // Hide KU language switcher icons
-  &.dk,
-  &.eng {
-    > img {
-      display: none;
-    }
   }
 }

@@ -5256,14 +5256,31 @@ a.badge:focus {
   margin-right: auto;
   margin-left: auto;
 }
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
+a .thumbnail:hover,
+a.thumbnail.active,
+a.thumbnail:focus {
   border-color: #165aad;
 }
 .thumbnail .caption {
   padding: 9px;
   color: #252525;
+}
+.figure {
+  display: inline-block;
+}
+.figure.pull-left {
+  margin-right: 10px;
+}
+.figure.pull-right {
+  margin-left: 5px;
+}
+.figure-img {
+  margin-bottom: 8px;
+  line-height: 1;
+}
+.figure-caption {
+  font-size: .9em;
+  color: #777;
 }
 .alert {
   padding: 15px;
@@ -5695,6 +5712,9 @@ button.list-group-item-danger.active:focus {
 .panel.with-img .panel-body {
   padding: 0;
   overflow: hidden;
+}
+.panel-body {
+  padding: 10px 0;
 }
 .panel-heading {
   padding: 8px 10px;
@@ -7035,15 +7055,6 @@ main:after,
 .theme-teol .ku-branding .ku-branding-line {
   border-bottom: 1px solid #66609e;
 }
-/*Special hack to scale .svg images in IE*/
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  img {
-    width: 100% \9;
-  }
-}
-img[src$=".svg"] {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .ku-leftmenu .ku-navbar-header {
     padding-left: 6px;
@@ -7244,16 +7255,875 @@ img[src$=".svg"] {
     top: 0;
     left: 0;
     z-index: 1040;
-    padding: 8px 10px 5px 10px;
+    padding: 8px 10px 5px;
     background-color: #777;
   }
   .globalmenu-toggle {
     margin-right: 0;
     margin-right: -5px;
   }
+}
+.global-menu,
+.local-menu {
+  padding: 5px 10px 5px 20px;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #901a1e;
+}
+.theme-samf .local-menu {
+  background-color: #e13718;
+}
+.theme-hum .local-menu {
+  background-color: #365aa5;
+}
+.theme-science .local-menu {
+  background-color: #46743c;
+}
+.theme-sund .local-menu {
+  background-color: #2a216a;
+}
+.theme-jura .local-menu {
+  background-color: #999632;
+}
+.theme-teol .local-menu {
+  background-color: #66609e;
+}
+@media (max-width: 768px) {
   .dk > img,
   .eng > img {
     display: none;
+  }
+}
+.mm-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, .1);
+}
+.mm-menu .mm-navbar a {
+  color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-navbar > * {
+  color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-btn:after {
+  border-color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-btn:before {
+  border-color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-listview {
+  border-color: rgba(0, 0, 0, .1);
+}
+.mm-menu .mm-listview > li .mm-arrow:after {
+  border-color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-listview > li .mm-next:after {
+  border-color: rgba(0, 0, 0, .3);
+}
+.mm-menu .mm-listview > li a:not(.mm-next) {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, .5);
+          tap-highlight-color: rgba(255, 255, 255, .5);
+}
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu .mm-listview > li.mm-selected > span {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu .mm-listview > li.mm-opened.mm-vertical > .mm-panel {
+  background: #fff;
+  background: rgba(255, 255, 255, .05);
+}
+.mm-menu .mm-listview > li.mm-opened.mm-vertical > a.mm-next {
+  background: #fff;
+  background: rgba(255, 255, 255, .05);
+}
+.mm-menu .mm-divider {
+  background: #fff;
+  background: rgba(255, 255, 255, .05);
+}
+.mm-menu:after {
+  position: absolute;
+  top: -10%;
+  left: 100%;
+  z-index: 99;
+  display: block;
+  width: 1px;
+  height: 120%;
+  content: "";
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.mm-panels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0;
+  overflow: hidden;
+  background: inherit;
+  border-color: inherit;
+}
+.mm-panels > .mm-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  padding: 0 20px;
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: inherit;
+  border-color: inherit;
+}
+.mm-panels > .mm-panel:not(.mm-hidden) {
+  display: block;
+}
+.mm-panels > .mm-panel:after {
+  display: block;
+  height: 20px;
+  content: '';
+}
+.mm-panels > .mm-panel:before {
+  display: block;
+  height: 20px;
+  content: '';
+}
+.mm-panels > .mm-panel > .mm-listview {
+  margin: 20px -20px;
+}
+.mm-panels > .mm-panel > .mm-listview:first-child {
+  margin-top: -20px;
+}
+.mm-panels > .mm-panel > .mm-navbar + .mm-listview {
+  margin-top: -20px;
+}
+.mm-panels > .mm-panel.mm-hasnavbar {
+  padding-top: 40px;
+}
+.mm-listview {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+}
+.mm-listview a {
+  text-decoration: none;
+}
+.mm-listview a:hover {
+  text-decoration: none;
+}
+.mm-listview .mm-divider {
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 25px;
+  text-indent: 20px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.mm-listview > li {
+  position: relative;
+  display: block;
+  margin: 0;
+  list-style: none;
+  border-color: inherit;
+}
+.mm-listview > li > a {
+  display: block;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+  overflow: hidden;
+  line-height: 20px;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mm-listview > li > span {
+  display: block;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+  overflow: hidden;
+  line-height: 20px;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mm-listview > li .mm-next {
+  border-color: inherit;
+}
+.mm-listview > li .mm-next:before {
+  border-color: inherit;
+}
+.mm-listview > li:after {
+  border-color: inherit;
+}
+.mm-listview > li > a.mm-arrow {
+  padding-right: 50px;
+}
+.mm-listview > li > span.mm-arrow {
+  padding-right: 50px;
+}
+.mm-listview > li:not(.mm-divider):after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+  display: block;
+  content: '';
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.mm-listview .mm-vertical .mm-panel {
+  display: none;
+  padding: 10px 0 10px 10px;
+}
+.mm-listview .mm-vertical .mm-panel .mm-listview > li:last-child:after {
+  border-color: transparent;
+}
+.mm-listview > li.mm-vertical > .mm-next {
+  bottom: auto;
+  height: 40px;
+}
+.mm-listview > li.mm-vertical > .mm-next:after {
+  top: 16px;
+  bottom: auto;
+}
+.mm-listview > li.mm-vertical.mm-opened > .mm-next:after {
+  right: 19px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mm-listview .mm-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 50px;
+  padding: 0;
+  background: rgba(3, 2, 1, 0);
+}
+.mm-listview .mm-next:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+.mm-listview .mm-next + a {
+  margin-right: 50px;
+}
+.mm-listview .mm-next + span {
+  margin-right: 50px;
+}
+.mm-listview .mm-next.mm-fullsubopen {
+  width: 100%;
+}
+.mm-listview .mm-next.mm-fullsubopen:before {
+  border-left: none;
+}
+.mm-listview .mm-next.mm-fullsubopen + a {
+  padding-right: 50px;
+  margin-right: 0;
+}
+.mm-listview .mm-next.mm-fullsubopen + span {
+  padding-right: 50px;
+  margin-right: 0;
+}
+.mm-listview .mm-inset {
+  padding: 0 10px 15px 40px;
+  margin: 0;
+  list-style: disc inside;
+}
+.mm-listview .mm-inset > li {
+  padding: 5px 0;
+}
+.mm-listview .mm-spacer {
+  padding-top: 40px;
+}
+.mm-listview .mm-spacer > .mm-next {
+  top: 40px;
+}
+.mm-listview .mm-spacer.mm-divider {
+  padding-top: 25px;
+}
+.mm-navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  padding: 0 40px;
+  margin: 0;
+  line-height: 20px;
+  text-align: center;
+  border-color: inherit;
+  border-bottom: 1px solid;
+}
+.mm-navbar a {
+  text-decoration: none;
+}
+.mm-navbar a:hover {
+  text-decoration: none;
+}
+.mm-navbar .mm-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mm-navbar > * {
+  display: block;
+  padding: 10px 0;
+}
+.mm-navbar .mm-btn:first-child {
+  left: 0;
+  padding-left: 20px;
+}
+.mm-navbar .mm-btn:last-child {
+  right: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+.mm-hidden {
+  display: none !important;
+}
+.mm-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.mm-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+.mm-panel.mm-highest {
+  z-index: 1;
+}
+.mm-panel {
+  -webkit-transition: -webkit-transform .4s ease;
+       -o-transition:      -o-transform .4s ease;
+          transition:         transform .4s ease;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.mm-panel .mm-navbar {
+  display: none;
+}
+.mm-panel.mm-opened {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.mm-panel.mm-subopened {
+  -webkit-transform: translate3d(-30%, 0, 0);
+          transform: translate3d(-30%, 0, 0);
+}
+.mm-vertical .mm-panel {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+       -o-transform: none !important;
+          transform: none !important;
+}
+.mm-vertical .mm-listview .mm-panel {
+  display: none;
+  padding: 10px 0 10px 10px;
+}
+.mm-vertical .mm-listview .mm-panel .mm-listview > li:last-child:after {
+  border-color: transparent;
+}
+.mm-vertical .mm-listview > li > .mm-next {
+  bottom: auto;
+  height: 40px;
+}
+.mm-vertical .mm-listview > li > .mm-next:after {
+  top: 16px;
+  bottom: auto;
+}
+.mm-vertical .mm-listview > li.mm-opened > .mm-next:after {
+  right: 19px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mm-vertical li.mm-opened > .mm-panel {
+  display: block;
+}
+li.mm-vertical.mm-opened > .mm-panel {
+  display: block;
+}
+.mm-clear:after {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  bottom: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-clear:before {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-close:after {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  bottom: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-close:before {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-arrow:after {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  bottom: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-next:after {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  bottom: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-prev:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 23px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  content: '';
+  border: 2px solid transparent;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.mm-panel.mm-hasnavbar .mm-navbar {
+  display: block;
+}
+.mm-menu.mm-vertical .mm-listview > li.mm-opened > .mm-panel {
+  background: #000;
+  background: rgba(0, 0, 0, .05);
+}
+.mm-menu.mm-vertical .mm-listview > li.mm-opened > a.mm-next {
+  background: #000;
+  background: rgba(0, 0, 0, .05);
+}
+.mm-menu.mm-offcanvas.mm-right {
+  left: auto;
+}
+html.mm-right.mm-opening .mm-slideout {
+  -webkit-transform: translate(-80%, 0);
+  -webkit-transform: translate3d(-80%, 0, 0);
+      -ms-transform: translate(-80%, 0);
+       -o-transform: translate(-80%, 0);
+          transform: translate(-80%, 0);
+          transform: translate3d(-80%, 0, 0);
+}
+html.mm-front .mm-slideout {
+  z-index: 0;
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+       -o-transform: none !important;
+          transform: none !important;
+}
+html.mm-front #mm-blocker {
+  z-index: 1;
+}
+html.mm-front .mm-menu.mm-offcanvas {
+  z-index: 2000;
+}
+.mm-menu.mm-offcanvas.mm-front {
+  -webkit-transition: -webkit-transform .4s ease;
+       -o-transition:      -o-transform .4s ease;
+          transition:         transform .4s ease;
+  -webkit-transform: translate(-100%, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate(-100%, 0);
+       -o-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.mm-menu.mm-offcanvas.mm-next {
+  -webkit-transition: -webkit-transform .4s ease;
+       -o-transition:      -o-transform .4s ease;
+          transition:         transform .4s ease;
+  -webkit-transform: translate(-100%, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate(-100%, 0);
+       -o-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.mm-menu.mm-offcanvas.mm-front.mm-right {
+  -webkit-transform: translate(100%, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate(100%, 0);
+       -o-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.mm-menu.mm-offcanvas.mm-next.mm-right {
+  -webkit-transform: translate(100%, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate(100%, 0);
+       -o-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.mm-menu.mm-offcanvas.mm-top {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 80%;
+  min-height: 140px;
+  max-height: 880px;
+  -webkit-transform: translate(0, -100%);
+  -webkit-transform: translate3d(0, -100%, 0);
+      -ms-transform: translate(0, -100%);
+       -o-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+          transform: translate3d(0, -100%, 0);
+}
+.mm-menu.mm-offcanvas.mm-bottom {
+  top: auto;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 80%;
+  min-height: 140px;
+  max-height: 880px;
+  -webkit-transform: translate(0, 100%);
+  -webkit-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate(0, 100%);
+       -o-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+          transform: translate3d(0, 100%, 0);
+}
+html.mm-opening .mm-menu.mm-offcanvas.mm-front {
+  -webkit-transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+          transform: translate3d(0, 0, 0);
+}
+html.mm-opening .mm-menu.mm-offcanvas.mm-next {
+  -webkit-transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+          transform: translate3d(0, 0, 0);
+}
+html.mm-opening .mm-slideout {
+  -webkit-transform: translate(80%, 0);
+  -webkit-transform: translate3d(80%, 0, 0);
+      -ms-transform: translate(80%, 0);
+       -o-transform: translate(80%, 0);
+          transform: translate(80%, 0);
+          transform: translate3d(80%, 0, 0);
+}
+.mm-page {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.mm-slideout {
+  z-index: 1;
+  -webkit-transition: -webkit-transform .4s ease;
+       -o-transition:      -o-transform .4s ease;
+          transition:         transform .4s ease;
+}
+html.mm-opened {
+  position: relative;
+  overflow-x: hidden;
+}
+html.mm-blocking {
+  overflow: hidden;
+}
+html.mm-blocking body {
+  overflow: hidden;
+}
+html.mm-blocking #mm-blocker {
+  display: block;
+}
+html.mm-background .mm-page {
+  background: inherit;
+}
+#mm-blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 2, 1, 0);
+}
+.mm-menu.mm-offcanvas {
+  position: fixed;
+  z-index: 0;
+  display: none;
+  width: 80%;
+  min-width: 140px;
+  max-width: 440px;
+}
+.mm-menu.mm-offcanvas.mm-current {
+  display: block;
+}
+.mm-menu.mm-offcanvas.mm-no-csstransforms.mm-current.mm-opened {
+  z-index: 10;
+}
+html.mm-opened.mm-dragging .mm-menu {
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+html.mm-opened.mm-dragging .mm-slideout {
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen + a {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen + span {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen) {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-hoverselected .mm-listview > li > a:not(.mm-fullsubopen):hover {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu.mm-hoverselected .mm-listview > li > a.mm-fullsubopen:hover + span {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen + a {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-parentselected .mm-listview > li > a.mm-fullsubopen + span {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-parentselected .mm-listview > li > a:not(.mm-fullsubopen) {
+  -webkit-transition: background .4s ease;
+       -o-transition: background .4s ease;
+          transition: background .4s ease;
+}
+.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen + a {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected.mm-fullsubopen + span {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-menu.mm-parentselected .mm-listview > li > a.mm-selected:not(.mm-fullsubopen) {
+  background: #fff;
+  background: rgba(255, 255, 255, .5);
+}
+.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > a {
+  text-overflow: clip;
+  white-space: normal;
+}
+.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > span {
+  text-overflow: clip;
+  white-space: normal;
+}
+.mm-menu.mm-multiline .mm-listview > li > a {
+  text-overflow: clip;
+  white-space: normal;
+}
+.mm-menu.mm-multiline .mm-listview > li > span {
+  text-overflow: clip;
+  white-space: normal;
+}
+.mm-sronly {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: 10px;
+}
+html.mm-pagedim #mm-blocker {
+  background: inherit;
+  opacity: 0;
+}
+html.mm-pagedim-black #mm-blocker {
+  background: #000;
+  opacity: 0;
+}
+html.mm-pagedim-black.mm-opening #mm-blocker {
+  opacity: .3;
+  -webkit-transition: opacity .3s ease .3s;
+       -o-transition: opacity .3s ease .3s;
+          transition: opacity .3s ease .3s;
+}
+html.mm-pagedim.mm-opening #mm-blocker {
+  opacity: .3;
+  -webkit-transition: opacity .3s ease .3s;
+       -o-transition: opacity .3s ease .3s;
+          transition: opacity .3s ease .3s;
+}
+@media all and (max-width: 175px) {
+  html.mm-right.mm-opening .mm-slideout {
+    -webkit-transform: translate(-140px, 0);
+    -webkit-transform: translate3d(-140px, 0, 0);
+        -ms-transform: translate(-140px, 0);
+         -o-transform: translate(-140px, 0);
+            transform: translate(-140px, 0);
+            transform: translate3d(-140px, 0, 0);
+  }
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(140px, 0);
+    -webkit-transform: translate3d(140px, 0, 0);
+        -ms-transform: translate(140px, 0);
+         -o-transform: translate(140px, 0);
+            transform: translate(140px, 0);
+            transform: translate3d(140px, 0, 0);
+  }
+}
+@media all and (min-width: 550px) {
+  html.mm-right.mm-opening .mm-slideout {
+    -webkit-transform: translate(-440px, 0);
+    -webkit-transform: translate3d(-440px, 0, 0);
+        -ms-transform: translate(-440px, 0);
+         -o-transform: translate(-440px, 0);
+            transform: translate(-440px, 0);
+            transform: translate3d(-440px, 0, 0);
+  }
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(440px, 0);
+    -webkit-transform: translate3d(440px, 0, 0);
+        -ms-transform: translate(440px, 0);
+         -o-transform: translate(440px, 0);
+            transform: translate(440px, 0);
+            transform: translate3d(440px, 0, 0);
   }
 }
 .local-footer {
@@ -8155,12 +9025,20 @@ nav {
 }
 .main-area {
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 10px;
 
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
           flex-grow: 1;
+}
+.main-area.front-page {
+  padding-top: 0;
+}
+.main-area img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 @media (min-width: 992px) {
   .row-eq-height {
@@ -8182,5 +9060,21 @@ nav {
 }
 .relative {
   position: relative;
+}
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+.ie9 img[src$=".svg"] {
+  width: 100%;
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -100,10 +100,6 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-  window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')
-</script>
 
 {% if site.github %}
 <script src="../dist/js/bootstrap.min.js"></script>
@@ -192,31 +188,18 @@
   });
 </script>
 {% endif %}
-<!-- DataTables.js -->
-<script type="text/javascript" src="../../assets/js/datatables/datatables.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#datatable').dataTable({
-      'responsive': true,
-      'ordering': true,
-      'searching': true
-    });
-  });
-</script>
 
 <!-- Mobile menu -->
 <script type="text/javascript" src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript">
   $(function() {
     // Global and left menu merging
-    var $leftmenu = $('#leftmenu').clone().wrapInner('<ul>').attr('id', 'local-menu');
+    var $leftmenu = $('#leftmenu').clone().wrapInner('<ul class="mobilocal-menu">').prepend('<li class="local-menu">Local menu</li>');
     var $leftmenu2 = $('#leftmenu_2').clone();
     var $globalMenu = $('#topbar_menu').clone();
     var $globalMenu2 = $('#navbar_menu').clone();
     var $mobimenu = $('#mobileleftmenu');
-
-    var $menuitems = $leftmenu.append($leftmenu2).append('<li class="mm-divider">Global menu</li>').append($globalMenu2).append($globalMenu);
-
+    var $menuitems = $leftmenu.append($leftmenu2).append('<li class="global-menu">Global menu</li>').append($globalMenu2).append($globalMenu);
     $mobimenu.append($menuitems);
     $mobimenu.find('ul').removeClass('dropdown-menu');
     $mobimenu.mmenu({
@@ -225,7 +208,7 @@
         zposition: 'front',
         screenReader: true,
       },
-      extensions: ['multiline'],
+      extensions: ['multiline', 'pagedim-black'],
       slidingSubmenus: false,
       setSelected: {
         parent: true,
@@ -235,13 +218,7 @@
         setSelected: true
       }
     });
-    // Open sub items from the global menu
-    // $items.each(function() {
-    //   $("li", this).each(function(i) {
-    //     if ($(this).hasClass('dropdown')) {
-    //       $(this).addClass('mm-opened');
-    //     }
-    //   });
-    // })
+    $(".mobilocal-menu > li").addClass("mm-opened");
+    $("#leftmenu_2 > li").addClass("mm-opened");
   });
 </script>

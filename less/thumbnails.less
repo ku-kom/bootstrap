@@ -1,8 +1,6 @@
 //
 // Thumbnails
 // --------------------------------------------------
-
-
 // Mixin and adjust the regular image class
 .thumbnail {
   display: block;
@@ -20,17 +18,41 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   // Add a hover state for linked versions only
-  a&:hover,
-  a&:focus,
-  a&.active {
+  a &:hover,
+  a&.active,
+  a&:focus {
     border-color: @link-color;
   }
-
   // Image captions
   .caption {
     padding: @thumbnail-caption-padding;
     color: @thumbnail-caption-color;
   }
+}
+//
+// Figures
+//
+
+.figure {
+  // Ensures the caption's text aligns with the image.
+  display: inline-block;
+
+  &.pull-left {
+      margin-right: @margin10;
+  }
+
+  &.pull-right {
+      margin-left: 5px;
+  }
+}
+
+.figure-img {
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.figure-caption {
+  font-size: @figure-caption-font-size;
+  color: @gray-light;
 }

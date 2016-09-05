@@ -3,6 +3,7 @@
 // Various extra classes that don't belong in other .less files
 // ---------------------------------------------------------------
 // KU adding margins to rows and columns
+
 .main-content {
   // .row:not(:last-child) {
   //   margin-bottom: @margin20;
@@ -13,8 +14,9 @@
         margin-bottom: @margin20;
       }
     }
+
     &.breadcrumbs {
-        margin-bottom: @margin0;
+      margin-bottom: @margin0;
     }
   }
 }
@@ -48,8 +50,18 @@ nav {
 
 .main-area {
   padding-top: @grid-gutter-width;
-  padding-bottom: @grid-gutter-width;
+  padding-bottom: @padding10;
+
+  &.front-page {
+    padding-top: 0;
+  }
   flex-grow: 1;
+}
+
+.main-area {
+  img {
+    .img-responsive;
+  }
 }
 // Make columns equal height
 @media (min-width: @screen-md-min) {
@@ -77,4 +89,21 @@ nav {
 
 .relative {
   position: relative;
+}
+
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+.ie9 img[src$=".svg"] {
+  width: 100%;
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%;
+  }
 }
