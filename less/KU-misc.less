@@ -65,8 +65,10 @@ nav {
 }
 // Make columns equal height
 @media (min-width: @screen-md-min) {
-  .row-eq-height {
+  .row-equal-height {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -92,7 +94,7 @@ nav {
 }
 
 /*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
  *
  * [1] IE9
  * [2] IE10+

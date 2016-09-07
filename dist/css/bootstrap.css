@@ -2606,16 +2606,16 @@ output {
   padding-top: 7px;
   font-size: 12px;
   line-height: 1.333333;
-  color: #ccc;
+  color: #252525;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 29px;
+  height: 32px;
   padding: 6px 12px;
   font-size: 12px;
   line-height: 1.333333;
-  color: #ccc;
+  color: #252525;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -2667,7 +2667,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 29px;
+    line-height: 32px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -2847,7 +2847,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 36.25px;
+  padding-right: 40px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2855,9 +2855,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 29px;
-  height: 29px;
-  line-height: 29px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   text-align: center;
   pointer-events: none;
 }
@@ -3979,7 +3979,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 12px;
   font-weight: normal;
   line-height: 1;
-  color: #ccc;
+  color: #252525;
   text-align: center;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
@@ -4537,9 +4537,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-form {
   padding: 10px 13px;
-  margin-top: 5.5px;
+  margin-top: 4px;
   margin-right: -13px;
-  margin-bottom: 5.5px;
+  margin-bottom: 4px;
   margin-left: -13px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -4629,8 +4629,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .navbar-btn.btn-sm {
   margin-top: 1px;
@@ -7329,7 +7329,7 @@ main:after,
   border-color: rgba(0, 0, 0, .3);
 }
 .mm-menu .mm-listview > li .mm-next:after {
-  border-color: rgba(0, 0, 0, .3);
+  border-color: #252525;
 }
 .mm-menu .mm-listview > li a:not(.mm-next) {
   -webkit-tap-highlight-color: rgba(255, 255, 255, .5);
@@ -8961,6 +8961,9 @@ ul.bxslider {
 .gridbox.border-top {
   border-width: 1px 0 0;
 }
+.gridbox img {
+  max-width: none!important;
+}
 .boxlink {
   color: inherit;
 }
@@ -9041,11 +9044,20 @@ nav {
   height: auto;
 }
 @media (min-width: 992px) {
-  .row-eq-height {
+  .row-equal-height {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+            flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 .divider {
@@ -9062,7 +9074,7 @@ nav {
   position: relative;
 }
 /*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
  *
  * [1] IE9
  * [2] IE10+
