@@ -13,27 +13,27 @@
 
 .local-menu {
   .theme-samf & {
-    background-color: @samf;
+    background: @samf;
   }
 
   .theme-hum & {
-    background-color: @hum;
+    background: @hum;
   }
 
   .theme-science & {
-    background-color: @science;
+    background: @science;
   }
 
   .theme-sund & {
-    background-color: @sund;
+    background: @sund;
   }
 
   .theme-jura & {
-    background-color: @jura;
+    background: @jura;
   }
 
   .theme-teol & {
-    background-color: @teol;
+    background: @teol;
   }
   &:extend(.global-menu);
 }
@@ -59,41 +59,57 @@
   padding: 0;
   position: absolute;
   background-color: @white-color;
-  border-color: rgba(0,0,0,.1);
-  color: inherit;;
+  //border-color: rgba(0,0,0,.1);
+  color: @gray-base;
+
+#navbar_menu {
+    border-top: 1px solid @gray;
+}
+  #navbar_menu,
+  #topbar_menu {
+    li {
+      text-transform: uppercase;
+
+      &:hover {
+        background: lighten(@gray-base, 90%); //#e6e6e6
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
 
   .mm-navbar {
     a {
-      color: rgba(0,0,0,.3);
+      color: @gray-light;
     }
 
     > * {
-      color: rgba(0,0,0,.3);
+      color: @gray-light;
     }
   }
 
   .mm-btn {
     &:after {
-      border-color: rgba(0,0,0,.3);
+      border-color: @gray-light;
     }
 
     &:before {
-      border-color: rgba(0,0,0,.3);
+      border-color: @gray-light;
     }
   }
 
   .mm-listview {
-    border-color: rgba(0,0,0,.1);
+    border-color: transparent;
 
     > li {
       .mm-arrow {
         &:after {
-          border-color: rgba(0,0,0,.3);
+          border-color: @gray-light;
         }
       }
 
       .mm-next {
-        &:after { // Arrows
+        &:after {
+          // Arrows 1. level
           border-color: @gray-dark;
         }
       }
@@ -109,25 +125,21 @@
     > li.mm-selected {
       > a {
         &:not(.mm-next) {
-          .backgroundColorFix(@white-color, .5);
-          //background: rgba(255,255,255,.5);
+          // Selected item
+          text-decoration: underline;
+          font-weight: bold;
         }
       }
 
       > span {
-        .backgroundColorFix(@white-color, .5);
         //background: rgba(255,255,255,.5);
+        .backgroundColorFix(@white-color, .5);
       }
     }
 
     > li.mm-opened.mm-vertical {
-      > .mm-panel {
-        .backgroundColorFix(@white-color, .05);
-        //background: rgba(0,0,0,.05);
-      }
-
       > a.mm-next {
-        .backgroundColorFix(@white-color, .05);
+        .backgroundColorFix(@gray-base, .05);
         //background: rgba(0,0,0,.05);
       }
     }
@@ -220,6 +232,10 @@
     &:hover {
       text-decoration: none;
     }
+
+    &.active {
+      text-decoration: underline;
+    }
   }
 
   .mm-divider {
@@ -298,8 +314,7 @@
   .mm-vertical {
     .mm-panel {
       display: none;
-      padding: 10px 0 10px 10px;
-
+      //padding: 10px 0 10px 10px;
       .mm-listview {
         > li {
           &:last-child {
@@ -341,7 +356,7 @@
   line-height: 20px;
 
   .mm-next {
-    background: rgba(3,2,1,0);
+    //background: rgba(3,2,1,0);
     width: 50px;
     padding: 0;
     position: absolute;
@@ -502,7 +517,6 @@
   .mm-listview {
     .mm-panel {
       display: none;
-      padding: 10px 0 10px 10px;
 
       .mm-listview {
         > li {
@@ -679,15 +693,113 @@ li.mm-vertical.mm-opened {
 }
 
 .mm-menu.mm-vertical {
-  .mm-listview {
+  .mm-listview:not(#navbar_menu) {
     > li.mm-opened {
       > .mm-panel {
-          .backgroundColorFix(#000, .05);
-        //background: rgba(0,0,0,.05);
+        // Faculty colors for sublevel 1
+        background: lighten(@ku-red, 15%);
+
+        .theme-samf & {
+          background: lighten(@samf, 15%);
+        }
+
+        .theme-hum & {
+          background: lighten(@hum, 15%);
+        }
+
+        .theme-science & {
+          background: lighten(@science, 15%);
+        }
+
+        .theme-sund & {
+          background: lighten(@sund, 15%);
+        }
+
+        .theme-jura & {
+          background: lighten(@jura, 15%);
+        }
+
+        .theme-teol & {
+          background: lighten(@teol, 15%);
+        }
+        color: @white-color;
+
+        .mm-next {
+          &:after {
+            // Arrows
+            border-color: @white-color;
+          }
+        }
+
+        .mm-panel {
+          // Faculty colors for sublevel 2
+          background: lighten(@ku-red, 20%);
+
+          .theme-samf & {
+            background: lighten(@samf, 20%);
+          }
+
+          .theme-hum & {
+            background: lighten(@hum, 20%);
+          }
+
+          .theme-science & {
+            background: lighten(@science, 20%);
+          }
+
+          .theme-sund & {
+            background: lighten(@sund, 20%);
+          }
+
+          .theme-jura & {
+            background: lighten(@jura, 20%);
+          }
+
+          .theme-teol & {
+            background: lighten(@teol, 20%);
+          }
+          color: @white-color;
+
+          .mm-next {
+            &:after {
+              // Arrows
+              border-color: @white-color;
+            }
+          }
+
+          .mm-panel {
+            // Faculty colors for sublevel 3
+            background: lighten(@ku-red, 25%);
+
+            .theme-samf & {
+              background: lighten(@samf, 25%);
+            }
+
+            .theme-hum & {
+              background: lighten(@hum, 25%);
+            }
+
+            .theme-science & {
+              background: lighten(@science, 25%);
+            }
+
+            .theme-sund & {
+              background: lighten(@sund, 25%);
+            }
+
+            .theme-jura & {
+              background: lighten(@jura, 25%);
+            }
+
+            .theme-teol & {
+              background: lighten(@teol, 25%);
+            }
+          }
+        }
       }
 
       > a.mm-next {
-           .backgroundColorFix(#000, .05);
+        .backgroundColorFix(#000, .05);
         //background: rgba(0,0,0,.05);
       }
     }
@@ -712,7 +824,7 @@ html.mm-front {
   }
 
   #mm-blocker {
-    z-index: 1;
+    z-index: 3;
   }
 
   .mm-menu.mm-offcanvas {
@@ -816,7 +928,6 @@ html.mm-background {
 }
 
 #mm-blocker {
-  background: rgba(3,2,1,0);
   display: none;
   width: 100%;
   height: 100%;
@@ -874,7 +985,7 @@ html.mm-opened.mm-dragging {
           transition: background 0.4s ease;
 
           &:hover {
-               .backgroundColorFix(@white-color, .5);
+            .backgroundColorFix(@white-color, .5);
             //background: rgba(255,255,255,.5);
           }
         }
@@ -882,7 +993,7 @@ html.mm-opened.mm-dragging {
 
       > a.mm-fullsubopen {
         &:hover+span {
-            .backgroundColorFix(@white-color, .5);
+          .backgroundColorFix(@white-color, .5);
           //background: rgba(255,255,255,.5);
         }
       }
@@ -911,37 +1022,19 @@ html.mm-opened.mm-dragging {
       }
 
       > a.mm-selected.mm-fullsubopen+a {
-          .backgroundColorFix(@white-color, .5);
+        .backgroundColorFix(@white-color, .5);
         //background: rgba(255,255,255,.5);
       }
 
       > a.mm-selected.mm-fullsubopen+span {
-          .backgroundColorFix(@white-color, .5);
+        .backgroundColorFix(@white-color, .5);
         //background: rgba(255,255,255,.5);
       }
 
       > a.mm-selected {
         &:not(.mm-fullsubopen) {
-            .backgroundColorFix(@white-color, .5);
+          .backgroundColorFix(@white-color, .5);
           //background: rgba(255,255,255,.5);
-        }
-      }
-    }
-  }
-}
-
-.mm-listview.mm-multiline {
-  > li {
-    .mm-listview {
-      > li.mm-multiline {
-        > a {
-          text-overflow: clip;
-          white-space: normal;
-        }
-
-        > span {
-          text-overflow: clip;
-          white-space: normal;
         }
       }
     }
@@ -974,17 +1067,10 @@ html.mm-opened.mm-dragging {
   z-index: -1;
 }
 
-html.mm-pagedim {
-  #mm-blocker {
-    opacity: 0;
-    background: inherit;
-  }
-}
-
 html.mm-pagedim-black {
   #mm-blocker {
     opacity: 0;
-    background: #000;
+    background: @gray-base;
   }
 }
 
@@ -996,13 +1082,6 @@ html.mm-pagedim-black.mm-opening {
   }
 }
 
-html.mm-pagedim.mm-opening {
-  #mm-blocker {
-    opacity: 0.3;
-    -webkit-transition: opacity 0.3s ease 0.3s;
-    transition: opacity 0.3s ease 0.3s;
-  }
-}
 @media all and (max-width:175px) {
   html.mm-right.mm-opening {
     .mm-slideout {
