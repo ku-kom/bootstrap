@@ -103,13 +103,13 @@
 
 {% if site.github %}
 <script src="../dist/js/bootstrap.min.js"></script>
-{% elsif page.slug == 'examples' or page.slug == "slideshow" %}
+{% elsif page.slug == 'examples' %}
 <script src="../../dist/js/bootstrap.min.js"></script>
 {% else %}
 <script src="../dist/js/bootstrap.js"></script>
 {% endif %} {% if site.github %}
 <script src="../assets/js/docs.min.js"></script>
-{% elsif page.slug == 'examples' or page.slug == "slideshow" %}
+{% elsif page.slug == 'examples' %}
 <script src="../../assets/js/customize.min.js"></script>
 {% else %} {% for file in site.data.configBridge.paths.docsJs %}
 <script src="{{ file }}"></script>
@@ -128,65 +128,10 @@
 {% endfor %} {% endif %} {% endif %}
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-{% if page.slug == 'examples' or page.slug == "slideshow" %}
+{% if page.slug == 'examples' %}
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 {% else %}
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
-{% endif %}
-
-<!-- Form validation -->
-{% if page.slug == 'examples' %}
-<script type="text/javascript" defer async src="../../assets/js/validator/validator.min.js"></script>
-{% endif %}
-
-<!-- BxSlider  -->
-{% if page.slug == 'slideshow' %}
-<script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
-<script type="text/javascript">
-  $(function() {
-    var cachedWidth = $(window).width();
-    var bxSettings = function() {
-      var desktop = { //Settings for desktop
-        auto: true,
-        pause: 3000,
-        controls: true,
-        autoHover: true,
-        easing: 'ease-in-out',
-        mode: 'fade',
-        minSlides: 1,
-        maxSlides: 1,
-        shrinkItems: true,
-        keyboardEnabled: true,
-        onSliderLoad: function(currentIndex) {
-          $('.slideshow').css('visibility', 'visible');
-        }
-      };
-      var mobile = { //settings for mobile devices
-        auto: true,
-        pause: 3000,
-        minSlides: 1,
-        maxSlides: 1,
-        shrinkItems: true,
-        mode: 'fade',
-        easing: 'ease-in-out',
-        controls: false,
-        onSliderLoad: function(currentIndex) {
-          $('.slideshow').css('visibility', 'visible');
-        }
-      };
-      return ($(window).width() < 769) ? mobile : desktop;
-    }
-    var slider = $('.bxslider').bxSlider(bxSettings());
-
-    $(window).resize(function() {
-      var newWidth = $(window).width();
-      if (newWidth !== cachedWidth) {
-        slider.reloadSlider(bxSettings());
-        cachedWidth = newWidth;
-      }
-    });
-  });
-</script>
 {% endif %}
 
 <!-- Mobile menu -->
@@ -195,7 +140,7 @@
   $(function() {
     // Global and left menu merging
     var $localMenuTitle = $('.ku-navbar-header').text();
-    var $leftmenu = $('#leftmenu').clone().wrapInner('<ul class="mobilocal-menu">').prepend('<li class="local-menu">'+ $localMenuTitle +'</li>');
+    var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">'+ $localMenuTitle +'</li>');
     var $leftmenu2 = $('#leftmenu_2').clone();
     var $globalMenu = $('#topbar_menu').clone();
     var $globalMenu2 = $('#navbar_menu').clone();

@@ -1,7 +1,7 @@
 ---
 layout: examples
 title: KU standard template with left menu and slideshow
-slug: slideshow
+slug: examples
 ---
 <main id="content">
   <div class="container ku-branding">
@@ -36,3 +36,50 @@ slug: slideshow
   </div>
   {% include local-footer.html %}
 </main>
+<!-- BxSlider  -->
+<script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var cachedWidth = $(window).width();
+    var bxSettings = function() {
+      var desktop = { //Settings for desktop
+        auto: true,
+        pause: 3000,
+        controls: true,
+        autoHover: true,
+        easing: 'ease-in-out',
+        mode: 'fade',
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        keyboardEnabled: true,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      var mobile = { //settings for mobile devices
+        auto: true,
+        pause: 3000,
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        mode: 'fade',
+        easing: 'ease-in-out',
+        controls: false,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      return ($(window).width() < 769) ? mobile : desktop;
+    }
+    var slider = $('.bxslider').bxSlider(bxSettings());
+
+    $(window).resize(function() {
+      var newWidth = $(window).width();
+      if (newWidth !== cachedWidth) {
+        slider.reloadSlider(bxSettings());
+        cachedWidth = newWidth;
+      }
+    });
+  });
+</script>
