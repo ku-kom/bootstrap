@@ -7,31 +7,38 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: (@padding10/ 2) @padding10 (@padding10 / 2) @padding20;
+  padding: @padding10 @padding10 @padding10 @padding20;
   background: @ku-red;
+  border-bottom: 1px solid lighten(@ku-red, 7%);
 
   .theme-samf & {
     background: @samf;
+    border-bottom: 1px solid lighten(@samf, 7%);
   }
 
   .theme-hum & {
     background: @hum;
+    border-bottom: 1px solid lighten(@hum, 7%);
   }
 
   .theme-science & {
     background: @science;
+    border-bottom: 1px solid lighten(@science, 7%);
   }
 
   .theme-sund & {
     background: @sund;
+    border-bottom: 1px solid lighten(@sund, 7%);
   }
 
   .theme-jura & {
     background: @jura;
+    border-bottom: 1px solid lighten(@jura, 7%);
   }
 
   .theme-teol & {
     background: @teol;
+    border-bottom: 1px solid lighten(@teol, 7%);
   }
 }
 @media (max-width: @screen-sm-min) {
@@ -63,7 +70,6 @@
   #navbar_menu,
   #topbar_menu {
     li:not(.mm-opened) {
-      text-transform: uppercase;
       border-bottom: 1px solid lighten(@gray, 10%);
 
       &:hover {
@@ -90,30 +96,30 @@
   #leftmenu_2,
   #localmenu {
     // Faculty colors for sublevel 1
-    background: lighten(@ku-red, 0%);
+    background: @ku-red;
 
     .theme-samf & {
-      background: lighten(@samf, 0%);
+      background: @samf;
     }
 
     .theme-hum & {
-      background: lighten(@hum, 0%);
+      background: @hum;
     }
 
     .theme-science & {
-      background: lighten(@science, 0%);
+      background: @science;
     }
 
     .theme-sund & {
-      background: lighten(@sund, 0%);
+      background: @sund;
     }
 
     .theme-jura & {
-      background: lighten(@jura, 0%);
+      background: @jura;
     }
 
     .theme-teol & {
-      background: lighten(@teol, 0%);
+      background: @teol;
     }
     color: @white-color;
 
@@ -150,10 +156,6 @@
       .theme-teol & {
         border-bottom: 1px solid lighten(@teol, 7%);
       }
-    }
-
-    li:last-child {
-      border-bottom: 0!important;
     }
   }
 
@@ -357,14 +359,14 @@
     //padding: 0;
     margin: 0;
     position: relative;
-    border-color: inherit;
+    //border-color: inherit; //Border before arrow
 
     .mm-next {
       border-color: inherit;
 
-      &:before {
-        border-color: inherit;
-      }
+    //   &:before {
+    //     border-color: inherit;
+    //   }
     }
     // &:after {
     //   border-color: inherit;
@@ -444,16 +446,16 @@
     bottom: 0;
     z-index: 2;
 
-    &:before {
-      content: '';
-      border-left-width: 1px;
-      border-left-style: solid;
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-    }
+    // &:before {
+    //   content: '';
+    //   border-left-width: 1px;
+    //   border-left-style: solid;
+    //   display: block;
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    // }
   }
 
   .mm-next+a {
@@ -779,7 +781,7 @@ li.mm-vertical.mm-opened {
         background: @gray;
         color: @gray-base;
 
-        li {
+        li:not(.last-child) {
           border-bottom: 1px solid darken(@gray, 5%);
         }
 

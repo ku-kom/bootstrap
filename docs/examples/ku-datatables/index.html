@@ -21,7 +21,7 @@ slug: examples
       <div class="col-sm-8 col-md-6 main-content">
         <div class="row">
           <div class="col-sm-12">
-            <table id="datatable" class="table" data-page-length="25">
+            <table id="datatable" class="table responsive" data-page-length="25" style="width:100%">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -547,9 +547,16 @@ slug: examples
 <script type="text/javascript">
   $(document).ready(function() {
     $('#datatable').dataTable({
-      'responsive': true,
       'ordering': true,
-      'searching': true
+      'searching': true,
+      responsive: {
+        breakpoints: [
+            { name: 'desktop', width: Infinity },
+            { name: 'tablet',  width: 992 },
+            { name: 'fablet',  width: 768 },
+            { name: 'mobile',   width: 480 }
+        ]
+    }
     });
   });
 </script>
