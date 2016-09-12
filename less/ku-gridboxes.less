@@ -1,6 +1,12 @@
 //
 // KU custom grid box styling
 // --------------------------------------------------
+// Grid box styles
+// ------------------
+// outlined: with border color
+// full: with full background color
+// text-top: text-bar at the top
+// text-down: text-bar at the bottom
 // Grid box sizes
 @gridbox1: 289px; // .size1
 @gridbox2: 185px; // .size2
@@ -16,8 +22,206 @@
 @white: #fff;
 
 .gridbox {
+  position: relative;
+  line-height: 1.33;
   display: flex;
   flex-direction: column;
+
+  .theme-ku & {
+    &.basecolor {
+      background: @ku-red;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@ku-red, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: @blue;
+    }
+
+    &.subcolor_2 {
+      background: @brown;
+    }
+
+    &.subcolor_3 {
+      background: @green;
+    }
+
+    &.subcolor_4 {
+      background: @ku-gray;
+    }
+  }
+
+  .theme-science & {
+    &.basecolor {
+      background: @science;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@science, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #dfaf48;
+    }
+
+    &.subcolor_2 {
+      background: #a4c1a9;
+    }
+
+    &.subcolor_3 {
+      background: #bea986;
+    }
+
+    &.subcolor_4 {
+      background: #85a8ae;
+    }
+  }
+
+  .theme-hum & {
+    &.basecolor {
+      background: @hum;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@hum, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #1d2e4a;
+    }
+
+    &.subcolor_2 {
+      background: #7d899b;
+    }
+
+    &.subcolor_3 {
+      background: #bea986;
+    }
+
+    &.subcolor_4 {
+      background: #e7400d;
+    }
+  }
+
+  .theme-teol & {
+    &.basecolor {
+      background: @teol;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@teol, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #d8680b;
+    }
+
+    &.subcolor_2 {
+      background: #093f50;
+    }
+
+    &.subcolor_3 {
+      background: #84bfcc;
+    }
+
+    &.subcolor_4 {
+      background: #c8d351;
+    }
+  }
+
+  .theme-sund & {
+    &.basecolor {
+      background: @sund;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@sund, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #77b6e5;
+    }
+
+    &.subcolor_2 {
+      background: #0f4576;
+    }
+
+    &.subcolor_3 {
+      background: #00706e;
+    }
+
+    &.subcolor_4 {
+      background: #b0d54e;
+    }
+  }
+
+  .theme-samf & {
+    &.basecolor {
+      background: @samf;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@samf, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #2a3d66;
+    }
+
+    &.subcolor_2 {
+      background: #a0b763;
+    }
+
+    &.subcolor_3 {
+      background: #95c1b0;
+    }
+
+    &.subcolor_4 {
+      background: #7d8a8b;
+    }
+  }
+
+  .theme-jura & {
+    &.basecolor {
+      background: @jura;
+
+      &.text-over {
+        .box1 .header {
+          .backgroundColorFix(@jura, .8);
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      background: #ffb400;
+    }
+
+    &.subcolor_2 {
+      background: #33838a;
+    }
+
+    &.subcolor_3 {
+      background: #ccc6ae;
+    }
+
+    &.subcolor_4 {
+      background: #a3650c;
+    }
+  }
 
   .box1 {
     z-index: 4;
@@ -30,7 +234,7 @@
       padding: 8px 25px 8px @padding10;
       width: 100%;
       text-transform: uppercase;
-      letter-spacing: .8px;
+      letter-spacing: 0.8px;
     }
   }
 
@@ -38,10 +242,8 @@
     padding: 5px @padding10 @padding10;
     order: 2;
     flex: 1 1 auto;
-  }
-  // Boxes with an image
-  &.with-img {
-    .box2 {
+    // Boxes with an image
+    img {
       padding: 0;
       overflow: hidden;
     }
@@ -68,57 +270,93 @@
         position: absolute;
         left: 0;
         bottom: 0;
+        color: @white-color;
       }
     }
-
-    &.red-bg {
-      .box1 .header {
-        .backgroundColorFix(@red, .8);
-      }
-    }
-
-    &.green-bg {
-      .box1 .header {
-        .backgroundColorFix(@green, .8);
-      }
-    }
-
-    &.blue-bg {
-      .box1 .header {
-        .backgroundColorFix(@blue, .8);
-      }
-    }
-
-    &.brown-bg {
-      .box1 .header {
-        .backgroundColorFix(@brown, .8);
-      }
-    }
-
-    &.grey-bg {
-      .box1 .header {
-        .backgroundColorFix(@ku-gray, .8);
-      }
-    }
-
-    &.white-bg {
-      .box1 .header {
-        .backgroundColorFix(@white, .8);
-      }
-    }
+    // &.red-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@red, .8);
+    //   }
+    // }
+    //
+    // &.green-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@green, .8);
+    //   }
+    // }
+    //
+    // &.blue-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@blue, .8);
+    //   }
+    // }
+    //
+    // &.brown-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@brown, .8);
+    //   }
+    // }
+    //
+    // &.grey-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@ku-gray, .8);
+    //   }
+    // }
+    //
+    // &.white-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@white, .8);
+    //     color: @gray-dark
+    //   }
+    // }
+    //
+    // &.hum-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@hum, .8);
+    //   }
+    // }
+    //
+    // &.science-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@science, .8);
+    //   }
+    // }
+    //
+    // &.sund-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@sund, .8);
+    //   }
+    // }
+    //
+    // &.samf-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@samf, .8);
+    //   }
+    // }
+    //
+    // &.jura-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@jura, .8);
+    //   }
+    // }
+    //
+    // &.teol-bg {
+    //   .box1 .header {
+    //     .backgroundColorFix(@teol, .8);
+    //   }
+    // }
   }
   // Add an arrow to the box
-  &.with-arrow::before {
+  &::before {
     display: inline-block;
     font-family: 'arrow';
     content: '\0043';
     color: @white-color;
     top: @margin10;
-    right: 20px;
+    right: @margin10;
     position: absolute;
     z-index: 5;
   }
-
   // Height 298px
   &.size1 {
     height: @gridbox1;
@@ -195,144 +433,170 @@
     }
   }
   // Color modes
-  &.red-bg,
-  &.red-header {
-    background-color: @red;
-    color: @white;
-  }
-
-  &.red-border {
-    border: 1px solid @red;
-
-    &.with-arrow::before {
-      color: @red;
-    }
-  }
-
-  &.green-bg {
-    background-color: @green;
-    color: @white;
-  }
-
-  &.green-border {
-    border: 1px solid @green;
-
-    &.with-arrow::before {
-      color: @green;
-    }
-  }
-
-  &.blue-bg {
-    background-color: @blue;
-    color: @white;
-  }
-
-  &.blue-border {
-    border: 1px solid @blue;
-
-    &.with-arrow::before {
-      color: @blue;
-    }
-  }
-
-  &.brown-bg {
-    background-color: @brown;
-    color: @white;
-  }
-
-  &.brown-border {
-    border: 1px solid @brown;
-
-    &.with-arrow::before {
-      color: @brown;
-    }
-  }
-
-  &.grey-bg {
-    background-color: @ku-gray;
-  }
-
-  &.grey-border {
-    border: 1px solid #c4c4c4;
-
-    &.with-arrow::before {
-      color: @gray-light;
-    }
-  }
-
-  &.white-bg {
-    background-color: @white;
-  }
-
-  &.white-border {
-    border: 1px solid @white;
-
-    &.with-arrow::before {
-      color: @gray-dark;
-    }
-  }
-  //Faculty colors
-  &.teol-border {
-    border: 1px solid @teol;
-
-    &.with-arrow::before {
-      color: @teol;
-    }
-  }
-
-  &.sund-border {
-    border: 1px solid @sund;
-
-    &.with-arrow::before {
-      color: @sund;
-    }
-  }
-
-  &.science-border {
-    border: 1px solid @science;
-
-    &.with-arrow::before {
-      color: @science;
-    }
-  }
-
-  &.samf-border {
-    border: 1px solid @samf;
-
-    &.with-arrow::before {
-      color: @samf;
-    }
-  }
-
-  &.jura-border {
-    border: 1px solid @jura;
-
-    &.with-arrow::before {
-      color: @jura;
-    }
-  }
-
-  &.hum-border {
-    border: 1px solid @hum;
-
-    &.with-arrow::before {
-      color: @hum;
-    }
-  }
-
-  &.border-top {
-    border-width: 1px 0 0;
-  }
-
+  // &.red-bg,
+  // &.red-header {
+  //   background-color: @red;
+  //   color: @white;
+  // }
+  //
+  // &.red-border {
+  //   border: 1px solid @red;
+  //
+  //   &.with-arrow::before {
+  //     color: @red;
+  //   }
+  // }
+  //
+  // &.green-bg {
+  //   background-color: @green;
+  //   color: @white;
+  // }
+  //
+  // &.green-border {
+  //   border: 1px solid @green;
+  //
+  //   &.with-arrow::before {
+  //     color: @green;
+  //   }
+  // }
+  //
+  // &.blue-bg {
+  //   background-color: @blue;
+  //   color: @white;
+  // }
+  //
+  // &.blue-border {
+  //   border: 1px solid @blue;
+  //
+  //   &.with-arrow::before {
+  //     color: @blue;
+  //   }
+  // }
+  //
+  // &.brown-bg {
+  //   background-color: @brown;
+  //   color: @white;
+  // }
+  //
+  // &.brown-border {
+  //   border: 1px solid @brown;
+  //
+  //   &.with-arrow::before {
+  //     color: @brown;
+  //   }
+  // }
+  //
+  // &.grey-bg {
+  //   background-color: @ku-gray;
+  // }
+  //
+  // &.grey-border {
+  //   border: 1px solid #c4c4c4;
+  //
+  //   &.with-arrow::before {
+  //     color: @gray-light;
+  //   }
+  // }
+  //
+  // &.white-bg {
+  //   background-color: @white;
+  // }
+  //
+  // &.white-border {
+  //   border: 1px solid @white;
+  //
+  //   &.with-arrow::before {
+  //     color: @gray-dark;
+  //   }
+  // }
+  // //Faculty colors
+  // &.teol-border {
+  //   border: 1px solid @teol;
+  //
+  //   &.with-arrow::before {
+  //     color: @teol;
+  //   }
+  // }
+  //
+  // &.teol-bg {
+  //   background-color: @teol;
+  // }
+  //
+  // &.sund-border {
+  //   border: 1px solid @sund;
+  //
+  //   &.with-arrow::before {
+  //     color: @sund;
+  //   }
+  // }
+  //
+  // &.sund-bg {
+  //   background-color: @sund;
+  // }
+  //
+  // &.science-border {
+  //   border: 1px solid @science;
+  //
+  //   &.with-arrow::before {
+  //     color: @science;
+  //   }
+  // }
+  //
+  // &.science-bg {
+  //   background-color: @science;
+  // }
+  //
+  // &.samf-border {
+  //   border: 1px solid @samf;
+  //
+  //   &.with-arrow::before {
+  //     color: @samf;
+  //   }
+  // }
+  //
+  // &.samf-bg {
+  //   background-color: @samf;
+  // }
+  //
+  // &.jura-border {
+  //   border: 1px solid @jura;
+  //
+  //   &.with-arrow::before {
+  //     color: @jura;
+  //   }
+  // }
+  //
+  // &.jura-bg {
+  //   background-color: @jura;
+  // }
+  //
+  // &.hum-border {
+  //   border: 1px solid @hum;
+  //
+  //   &.with-arrow::before {
+  //     color: @hum;
+  //   }
+  // }
+  //
+  // &.hum-bg {
+  //   background-color: @hum;
+  // }
+  //
+  // &.border-top {
+  //   border-width: 1px 0 0;
+  // }
   img {
-      max-width: none!important;
+    max-width: none!important;
   }
 }
 
 .boxlink {
+  color: inherit;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
     color: inherit;
-    &:hover, &:active, &:focus {
-        text-decoration: none;
-        color: inherit;
-    }
+  }
 }
