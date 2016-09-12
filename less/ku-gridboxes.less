@@ -28,198 +28,1027 @@
   flex-direction: column;
 
   .theme-ku & {
-    &.basecolor {
+    &.full {
       background: @ku-red;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @ku-red;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@ku-red, .8);
         }
       }
+
+      &.text-top {
+        .box1 .header {
+          background: @ku-red;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @ku-red;
+        color: @ku-red;
+
+        &::before {
+          color: @ku-red;
+        }
+      }
+
+      &.full {
+        background: @ku-red;
+      }
     }
 
     &.subcolor_1 {
-      background: @blue;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(@blue, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: @blue;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @blue;
+        color: @blue;
+
+        &::before {
+          color: @blue;
+        }
+      }
+
+      &.full {
+        background: @blue;
+      }
     }
 
     &.subcolor_2 {
-      background: @brown;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(@brown, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: @brown;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @brown;
+        color: @brown;
+
+        &::before {
+          color: @brown;
+        }
+      }
+
+      &.full {
+        background: @brown;
+      }
     }
 
     &.subcolor_3 {
-      background: @green;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(@green, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: @green;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @green;
+        color: @green;
+
+        &::before {
+          color: @green;
+        }
+      }
+
+      &.full {
+        background: @green;
+      }
     }
 
     &.subcolor_4 {
-      background: @ku-gray;
+      color: @gray-dark;
+
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(@ku-gray, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          color: @gray-dark;
+          background: @ku-gray;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @gray;
+        color: @gray-dark;
+
+        &::before {
+          color: @gray-dark;
+        }
+      }
+
+      &.full {
+        background: @ku-gray;
+      }
     }
   }
 
   .theme-science & {
-    &.basecolor {
+    &.full {
       background: @science;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @science;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@science, .8);
         }
       }
+
+      &.text-top {
+        .box1 .header {
+          background: @science;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science;
+        color: @science;
+
+        &::before {
+          color: @science;
+        }
+      }
+
+      &.full {
+        background: @science;
+      }
     }
 
     &.subcolor_1 {
-      background: #dfaf48;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#dfaf48, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #dfaf48;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #dfaf48;
+        color: #dfaf48;
+
+        &::before {
+          color: #dfaf48;
+        }
+      }
+
+      &.full {
+        background: #dfaf48;
+      }
     }
 
     &.subcolor_2 {
-      background: #a4c1a9;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#a4c1a9, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #a4c1a9;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #a4c1a9;
+        color: #a4c1a9;
+
+        &::before {
+          color: #a4c1a9;
+        }
+      }
+
+      &.full {
+        background: #a4c1a9;
+      }
     }
 
     &.subcolor_3 {
-      background: #bea986;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#bea986, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #bea986;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #bea986;
+        color: #bea986;
+
+        &::before {
+          color: #bea986;
+        }
+      }
+
+      &.full {
+        background: #bea986;
+      }
     }
 
     &.subcolor_4 {
-      background: #85a8ae;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#85a8ae, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #85a8ae;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #85a8ae;
+        color: #85a8ae;
+
+        &::before {
+          color: #85a8ae;
+        }
+      }
+
+      &.full {
+        background: #85a8ae;
+      }
     }
   }
 
   .theme-hum & {
-    &.basecolor {
+    &.full {
       background: @hum;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @hum;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@hum, .8);
         }
       }
+
+      &.text-top {
+        .box1 .header {
+          background: @hum;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum;
+        color: @hum;
+
+        &::before {
+          color: @hum;
+        }
+      }
+
+      &.full {
+        background: @hum;
+      }
     }
 
     &.subcolor_1 {
-      background: #1d2e4a;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#1d2e4a, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #1d2e4a;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #1d2e4a;
+        color: #1d2e4a;
+
+        &::before {
+          color: #1d2e4a;
+        }
+      }
+
+      &.full {
+        background: #1d2e4a;
+      }
     }
 
     &.subcolor_2 {
-      background: #7d899b;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#7d899b, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #7d899b;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #7d899b;
+        color: #7d899b;
+
+        &::before {
+          color: #7d899b;
+        }
+      }
+
+      &.full {
+        background: #7d899b;
+      }
     }
 
     &.subcolor_3 {
-      background: #bea986;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#bea986, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #bea986;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #bea986;
+        color: #bea986;
+
+        &::before {
+          color: #bea986;
+        }
+      }
+
+      &.full {
+        background: #bea986;
+      }
     }
 
     &.subcolor_4 {
-      background: #e7400d;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#e7400d, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #e7400d;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #e7400d;
+        color: #e7400d;
+
+        &::before {
+          color: #e7400d;
+        }
+      }
+
+      &.full {
+        background: #e7400d;
+      }
     }
   }
 
   .theme-teol & {
-    &.basecolor {
+    &.full {
       background: @teol;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @teol;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@teol, .8);
         }
       }
+
+      &.text-top {
+        .box1 .header {
+          background: @teol;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol;
+        color: @teol;
+
+        &::before {
+          color: @teol;
+        }
+      }
+
+      &.full {
+        background: @teol;
+      }
     }
 
     &.subcolor_1 {
-      background: #d8680b;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#d8680b, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #d8680b;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #d8680b;
+        color: #d8680b;
+
+        &::before {
+          color: #d8680b;
+        }
+      }
+
+      &.full {
+        background: #d8680b;
+      }
     }
 
     &.subcolor_2 {
-      background: #093f50;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#093f50, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #093f50;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #093f50;
+        color: #093f50;
+
+        &::before {
+          color: #093f50;
+        }
+      }
+
+      &.full {
+        background: #093f50;
+      }
     }
 
     &.subcolor_3 {
-      background: #84bfcc;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#84bfcc, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #84bfcc;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #84bfcc;
+        color: #84bfcc;
+
+        &::before {
+          color: #84bfcc;
+        }
+      }
+
+      &.full {
+        background: #84bfcc;
+      }
     }
 
     &.subcolor_4 {
-      background: #c8d351;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#c8d351, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #c8d351;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #c8d351;
+        color: #c8d351;
+
+        &::before {
+          color: #c8d351;
+        }
+      }
+
+      &.full {
+        background: #c8d351;
+      }
     }
   }
 
   .theme-sund & {
-    &.basecolor {
+    &.full {
       background: @sund;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @sund;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@sund, .8);
         }
       }
+
+      &.text-top {
+        .box1 .header {
+          background: @sund;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund;
+        color: @sund;
+
+        &::before {
+          color: @sund;
+        }
+      }
+
+      &.full {
+        background: @sund;
+      }
     }
 
     &.subcolor_1 {
-      background: #77b6e5;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#77b6e5, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #77b6e5;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #77b6e5;
+        color: #77b6e5;
+
+        &::before {
+          color: #77b6e5;
+        }
+      }
+
+      &.full {
+        background: #77b6e5;
+      }
     }
 
     &.subcolor_2 {
-      background: #0f4576;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#0f4576, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #0f4576;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #0f4576;
+        color: #0f4576;
+
+        &::before {
+          color: #0f4576;
+        }
+      }
+
+      &.full {
+        background: #0f4576;
+      }
     }
 
     &.subcolor_3 {
-      background: #00706e;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#00706e, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #00706e;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #00706e;
+        color: #00706e;
+
+        &::before {
+          color: #00706e;
+        }
+      }
+
+      &.full {
+        background: #00706e;
+      }
     }
 
     &.subcolor_4 {
-      background: #b0d54e;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#b0d54e, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #b0d54e;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #b0d54e;
+        color: #b0d54e;
+
+        &::before {
+          color: #b0d54e;
+        }
+      }
+
+      &.full {
+        background: #b0d54e;
+      }
     }
   }
 
   .theme-samf & {
-    &.basecolor {
+    &.full {
       background: @samf;
+      color: @white-color;
+    }
 
-      &.text-over {
+    &.outlined {
+      border: 1px solid @samf;
+    }
+
+    &.faculty_color {
+      &.text-down {
         .box1 .header {
           .backgroundColorFix(@samf, .8);
         }
       }
-    }
 
-    &.subcolor_1 {
-      background: #2a3d66;
-    }
-
-    &.subcolor_2 {
-      background: #a0b763;
-    }
-
-    &.subcolor_3 {
-      background: #95c1b0;
-    }
-
-    &.subcolor_4 {
-      background: #7d8a8b;
-    }
-  }
-
-  .theme-jura & {
-    &.basecolor {
-      background: @jura;
-
-      &.text-over {
+      &.text-top {
         .box1 .header {
-          .backgroundColorFix(@jura, .8);
+          background: @samf;
         }
+      }
+
+      &.outlined {
+        border: 1px solid @samf;
+        color: @samf;
+
+        &::before {
+          color: @samf;
+        }
+      }
+
+      &.full {
+        background: @samf;
       }
     }
 
     &.subcolor_1 {
-      background: #ffb400;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#2a3d66, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #2a3d66;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #2a3d66;
+        color: #2a3d66;
+
+        &::before {
+          color: #2a3d66;
+        }
+      }
+
+      &.full {
+        background: #2a3d66;
+      }
     }
 
     &.subcolor_2 {
-      background: #33838a;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#a0b763, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #a0b763;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #a0b763;
+        color: #a0b763;
+
+        &::before {
+          color: #a0b763;
+        }
+      }
+
+      &.full {
+        background: #a0b763;
+      }
     }
 
     &.subcolor_3 {
-      background: #ccc6ae;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#95c1b0, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #95c1b0;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #95c1b0;
+        color: #95c1b0;
+
+        &::before {
+          color: #95c1b0;
+        }
+      }
+
+      &.full {
+        background: #95c1b0;
+      }
     }
 
     &.subcolor_4 {
-      background: #a3650c;
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#7d8a8b, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #7d8a8b;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #7d8a8b;
+        color: #7d8a8b;
+
+        &::before {
+          color: #7d8a8b;
+        }
+      }
+
+      &.full {
+        background: #7d8a8b;
+      }
+    }
+  }
+
+  .theme-jura & {
+    &.full {
+      background: @jura;
+      color: @white-color;
+    }
+
+    &.outlined {
+      border: 1px solid @jura;
+    }
+
+    &.faculty_color {
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(@jura, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: @jura;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura;
+        color: @jura;
+
+        &::before {
+          color: @jura;
+        }
+      }
+
+      &.full {
+        background: @jura;
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#ffb400, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #ffb400;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #ffb400;
+        color: #ffb400;
+
+        &::before {
+          color: #ffb400;
+        }
+      }
+
+      &.full {
+        background: #ffb400;
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#33838a, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #33838a;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #33838a;
+        color: #33838a;
+
+        &::before {
+          color: #33838a;
+        }
+      }
+
+      &.full {
+        background: #33838a;
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#ccc6ae, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #ccc6ae;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #ccc6ae;
+        color: #ccc6ae;
+
+        &::before {
+          color: #ccc6ae;
+        }
+      }
+
+      &.full {
+        background: #ccc6ae;
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .box1 .header {
+          .backgroundColorFix(#a3650c, .8);
+        }
+      }
+
+      &.text-top {
+        .box1 .header {
+          background: #a3650c;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid #a3650c;
+        color: #a3650c;
+
+        &::before {
+          color: #a3650c;
+        }
+      }
+
+      &.full {
+        background: #a3650c;
+      }
     }
   }
 
@@ -230,6 +1059,7 @@
     position: relative;
 
     .header {
+      color: inherit;
       font-size: 1.2em;
       padding: 8px 25px 8px @padding10;
       width: 100%;
@@ -242,10 +1072,28 @@
     padding: 5px @padding10 @padding10;
     order: 2;
     flex: 1 1 auto;
+  }
+
+  &.with-img {
     // Boxes with an image
-    img {
-      padding: 0;
+    .box2 {
+      padding: 0 !important;
       overflow: hidden;
+    }
+  }
+  // Boxes with the title at the top
+  &.text-top {
+    .box1 {
+      .box1;
+    }
+
+    .box2 {
+      .box2;
+    }
+
+    &::before {
+      top: @padding10;
+      bottom: auto;
     }
   }
   // Boxes with the title at the bottom
@@ -258,7 +1106,7 @@
       order: 1;
     }
 
-    &.with-arrow::before {
+    &::before {
       bottom: @padding10;
       top: auto;
     }
@@ -270,81 +1118,9 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        color: @white-color;
+        color: inherit;
       }
     }
-    // &.red-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@red, .8);
-    //   }
-    // }
-    //
-    // &.green-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@green, .8);
-    //   }
-    // }
-    //
-    // &.blue-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@blue, .8);
-    //   }
-    // }
-    //
-    // &.brown-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@brown, .8);
-    //   }
-    // }
-    //
-    // &.grey-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@ku-gray, .8);
-    //   }
-    // }
-    //
-    // &.white-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@white, .8);
-    //     color: @gray-dark
-    //   }
-    // }
-    //
-    // &.hum-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@hum, .8);
-    //   }
-    // }
-    //
-    // &.science-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@science, .8);
-    //   }
-    // }
-    //
-    // &.sund-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@sund, .8);
-    //   }
-    // }
-    //
-    // &.samf-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@samf, .8);
-    //   }
-    // }
-    //
-    // &.jura-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@jura, .8);
-    //   }
-    // }
-    //
-    // &.teol-bg {
-    //   .box1 .header {
-    //     .backgroundColorFix(@teol, .8);
-    //   }
-    // }
   }
   // Add an arrow to the box
   &::before {

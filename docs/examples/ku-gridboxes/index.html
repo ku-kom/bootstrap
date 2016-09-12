@@ -22,12 +22,12 @@ slug: examples
         <div class="row">
           <div class="col-md-6 col-md-12">
               <h2>Faculty colors</h2>
-              <p>Select faculty to test colors. Will also affect mobile menu.</p>
               <form>
                 <div class="form-group">
                   <label for="themes" class="control-label">Faculty colors</label>
                   <select id="themes" class="form-control">
-                      <option value="theme-ku" selected>-- Default KU red --</option>
+                      <option value="">-- Select Faculty --</option>
+                      <option value="theme-ku">KU red</option>
                       <option value="theme-hum">Hum</option>
                       <option value="theme-sund">Sund</option>
                       <option value="theme-science">Science</option>
@@ -39,7 +39,8 @@ slug: examples
                 <div class="form-group">
                   <label for="sub-theme" class="control-label">Faculty sub colors</label>
                   <select id="sub-theme" class="form-control">
-                      <option value="basecolor" selected>--Select sub color --</option>
+                      <option value="">-- Select color --</option>
+                      <option value="faculty_color">Faculty color</option>
                       <option value="subcolor_1">Sub color 1</option>
                       <option value="subcolor_2">Sub color 2</option>
                       <option value="subcolor_3">Sub color 3</option>
@@ -89,20 +90,22 @@ slug: examples
               <h2>Gridbox style</h2>
               <form>
                 <div class="form-group">
-                  <label for="style" class="control-label">FSelect box style</label>
+                  <label for="style" class="control-label">Select box style</label>
                   <select id="style" class="form-control">
+                      <option value="">-- Select box style --</option>
                       <option value="full">Full background color</option>
                       <option value="outlined">With border</option>
-                      <option value="text-top">Text bar at the top</option>
-                      <option value="text-down text-over" selected>Text bar at the bottom</option>
+                      <option value="text-top">Text at the top</option>
+                      <option value="text-down text-over">Text at the bottom</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="height" class="control-label">Gridbox height</label>
                   <select id="height" class="form-control">
+                      <option value="">-- Select height --</option>
                       <option value="size1">289px</option>
                       <option value="size2">185px</option>
-                      <option value="size3" selected>133px</option>
+                      <option value="size3">133px</option>
                       <option value="size4">81px</option>
                       <option value="size5">55px</option>
                   </select>
@@ -139,17 +142,13 @@ slug: examples
                 }
               </script>
           </div>
-          <div class="clearfix visible-xs-block"></div>
         </div>
         <div class="row">
-          <div class="col-sm-12">
-            <h3>Height: 185px</h3>
-          </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size2">
+              <div class="gridbox with-img">
                 <div class="box1">
-                  <div class="header">KU rød</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
               </div>
@@ -157,9 +156,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size2">
+              <div class="gridbox with-img">
                 <div class="box1">
-                  <div class="header">Teologi</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
               </div>
@@ -167,9 +166,39 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size2">
+              <div class="gridbox with-img">
                 <div class="box1">
-                  <div class="header">Jura</div>
+                  <div class="header">Header title</div>
+                </div>
+                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="boxlink">
+              <div class="gridbox with-img">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                </div>
+                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="boxlink">
+              <div class="gridbox with-img">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                </div>
+                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <a href="#" class="boxlink">
+              <div class="gridbox with-img">
+                <div class="box1">
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
               </div>
@@ -177,39 +206,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size2">
+              <div class="gridbox with-img">
                 <div class="box1">
-                  <div class="header">Sundhedsvidenskab</div>
-                </div>
-                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size2">
-                <div class="box1">
-                  <div class="header">Samfundsvidenskab</div>
-                </div>
-                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size2">
-                <div class="box1">
-                  <div class="header">Humaniora</div>
-                </div>
-                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size2">
-                <div class="box1">
-                  <div class="header">Naturvidenskab</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
               </div>
@@ -217,79 +216,11 @@ slug: examples
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12">
-            <h3>Height: 133px</h3>
-          </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size3">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
-                </div>
-                <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size3">
-                <div class="box1">
-                  <div class="header">Header</div>
-                </div>
-                <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size3">
-                <div class="box1">
-                  <div class="header">Header</div>
-                </div>
-                <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size3">
-                <div class="box1">
-                  <div class="header">Header</div>
-                </div>
-                <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size3">
-                <div class="box1">
-                  <div class="header">Header</div>
-                </div>
-                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size3 text-down text-over">
-                <div class="box1">
-                  <div class="header">Semi transparent</div>
-                </div>
-                <div class="box2"><img src="http://placehold.it/757x200?text=KU+image+min-width:+757px" alt="Test"></div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h3>Height: 81px</h3>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="boxlink">
-              <div class="gridbox size4">
-                <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
@@ -297,9 +228,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size4">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet.</div>
               </div>
@@ -307,9 +238,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size4">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet.</div>
               </div>
@@ -317,9 +248,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size4">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               </div>
@@ -327,9 +258,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size4">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
@@ -337,9 +268,9 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size4">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
@@ -347,14 +278,11 @@ slug: examples
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12">
-            <h3>Height: 55px</h3>
-          </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Header</div>
+                  <div class="header">Header title</div>
                 </div>
                 <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
@@ -362,51 +290,51 @@ slug: examples
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Lorem ipsum dolor sit amet.</div>
+                  <div class="header">Lorem ipsum dolor sit</div>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Lorem ipsum dolor sit amet.</div>
+                  <div class="header">Lorem ipsum dolor sit</div>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Lorem ipsum dolor sit amet.</div>
+                  <div class="header">Lorem ipsum dolor sit</div>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Lorem ipsum dolor sit amet.</div>
+                  <div class="header">Lorem ipsum dolor sit</div>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md-4">
             <a href="#" class="boxlink">
-              <div class="gridbox size5">
+              <div class="gridbox">
                 <div class="box1">
-                  <div class="header">Lorem ipsum dolor sit amet.</div>
+                  <div class="header">Lorem ipsum dolor sit</div>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
               </div>
             </a>
           </div>
