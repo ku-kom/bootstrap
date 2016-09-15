@@ -1740,7 +1740,7 @@
         .box2 {
           order: 1;
         }
-        background-color: @white-color!important;
+        background-color: transparent!important;
       }
     }
   }
@@ -1778,18 +1778,12 @@
   }
 }
 // Outline style
-.triple-column .column1, .triple-column .column2, .triple-column .column3,// 3/3
-.one-two-column .column1, .two-one-column .column2,// 1/3 column
-
+.triple-column .column1, .triple-column .column2, .triple-column .column3,.one-two-column .column1, .two-one-column .column2,
 .double-column .column1,
 .double-column .column2 {
-  // 1/2 columns
   .size2,
   .size3 {
     &.outlined.with-img {
-      &::before {
-        color: @white-color;
-      }
 
       .theme-ku & {
         &.faculty_color {
@@ -2091,9 +2085,12 @@
   }
 }
 // Remove border from single column outlined boxes with images
-.triple-column .column1, .triple-column .column2, .triple-column .column3,// 3/3 & 1/3 column
+// 3/3 & 1/3 column
 
 .one-two-column .column1,
+.triple-column .column1,
+.triple-column .column2,
+.triple-column .column3,
 .two-one-column .column2 {
   .size2,
   .size3 {
@@ -2105,12 +2102,14 @@
   }
 }
 @media only screen and (min-width: 460px) and (max-width: 870px) {
-  // All single comlumn boxes with image
-  .triple-column .column1, .triple-column .column2, .triple-column .column3,// 3/3
-  .one-two-column .column1, .two-one-column .column2,// 1/3 column
-
+  // All single, 2/3 and double comlumn boxes with image
   .double-column .column1,
-  .double-column .column2 {
+  .double-column .column2,
+  .one-two-column .column1,
+  .triple-column .column1,
+  .triple-column .column2,
+  .triple-column .column3,
+  .two-one-column .column2 {
     .size2,
     .size3 {
       &.with-img {
@@ -2299,7 +2298,7 @@
         }
 
         .box1 {
-          flex: 1 1 auto;
+          flex: 1 1 auto!important;
 
           .text {
             display: block;
@@ -2321,10 +2320,261 @@
         }
 
         &.outlined {
-            border-width: 1px;
+          border-width: 1px;
+          background-color: transparent!important;
+
+          .theme-ku & {
+            &.faculty_color {
+              .header {
+                color: @ku-red;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @blue;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @brown;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @green;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @gray-dark;
+              }
+            }
+          }
+
+          .theme-science & {
+            &.faculty_color {
+              .header {
+                color: @science;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #dfaf48;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #a4c1a9;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #bea986;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #85a8ae;
+              }
+            }
+          }
+
+          .theme-hum & {
+            .header {
+              color: @white-color;
+            }
+
+            &.faculty_color {
+              .header {
+                color: @hum;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #1d2e4a;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #7d899b;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #bea986;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #e7400d;
+              }
+            }
+          }
+
+          .theme-teol & {
+            &.faculty_color {
+              .header {
+                color: @teol;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #d8680b;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #093f50;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #84bfcc;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #c8d351;
+              }
+            }
+          }
+
+          .theme-sund & {
+            &.faculty_color {
+              .header {
+                color: @sund;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #77b6e5;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #0f4576;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #00706e;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #b0d54e;
+              }
+            }
+          }
+
+          .theme-samf & {
+            &.faculty_color {
+              .header {
+                color: @samf;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #2a3d66;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #a0b763;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #95c1b0;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #7d8a8b;
+              }
+            }
+          }
+
+          .theme-jura & {
+            &.faculty_color {
+              .header {
+                color: @jura;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: #ffb400;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: #33838a;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: #ccc6ae;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: #a3650c;
+              }
+            }
+          }
+
+          &.subcolor_5 {
+            .header {
+              color: @ku-gray;
+            }
+          }
+
+          &.subcolor_6 {
+            .header {
+              color: @white-color;
+            }
+          }
+
+          &.subcolor_7 {
+            .header {
+              color: @brown;
+            }
+          }
+
           .box1 {
             order: 2;
-
+            flex: 1 1 auto!important;
+            .header {
+                background-color: transparent!important;
+            }
           }
 
           .box2 {
@@ -2337,7 +2587,29 @@
   }
 }
 @media only screen and (max-width: 459px) {
+  // Single 1/3 and 2/3 columns text-down
+  .one-two-column .column2,
+  .two-one-column .column1,
+  .triple-column .column1,
+  .triple-column .column2,
+  .triple-column .column3 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.outlined {
+          .box1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   // Full width and 2/3 columns - must behave like single column boxes
+  .double-column .column1,
+  .double-column .column2,
   .one-two-column .column2,
   .single-column .column1,
   .two-one-column .column1 {
@@ -2353,6 +2625,10 @@
         .box1 {
           order: 2;
           flex: 0 1 auto;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
 
           .text {
             display: none;
@@ -2365,6 +2641,445 @@
 
         &.outlined {
           border-width: 0;
+
+          .box1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+          }
+
+          .theme-ku & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@ku-red, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(@blue, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(@brown, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(@green, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(@ku-gray, .75);
+                color: @gray-dark;
+              }
+
+              &::before {
+                color: @ku-gray;
+              }
+            }
+          }
+
+          .theme-science & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@science, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#dfaf48, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#a4c1a9, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#bea986, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#85a8ae, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          .theme-hum & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@hum, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#1d2e4a, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#7d899b, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#bea986, .75);
+                color: @gray-dark;
+              }
+
+              &::before {
+                color: @gray-dark;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#e7400d, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          .theme-teol & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@teol, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#d8680b, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#093f50, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#84bfcc, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#c8d351, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          .theme-sund & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@sund, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#77b6e5, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#0f4576, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#00706e, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#b0d54e, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          .theme-samf & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@samf, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#2a3d66, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#a0b763, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#95c1b0, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#7d8a8b, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          .theme-jura & {
+            &.faculty_color {
+              .header {
+                .backgroundColorFix(@jura, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                .backgroundColorFix(#ffb400, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                .backgroundColorFix(#33838a, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                .backgroundColorFix(#ccc6ae, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                .backgroundColorFix(#a3650c, .75);
+                color: @white-color;
+              }
+
+              &::before {
+                color: @white-color;
+              }
+            }
+          }
+
+          &.subcolor_5 {
+            .header {
+              .backgroundColorFix(@ku-gray, .75);
+              color: @gray-dark;
+            }
+
+            &::before {
+              color: @gray-dark;
+            }
+          }
+
+          &.subcolor_6 {
+            .header {
+              .backgroundColorFix(@white-color, .75);
+              color: @gray-dark;
+            }
+
+            &::before {
+              color: @gray-dark;
+            }
+          }
+
+          &.subcolor_7 {
+            .header {
+              .backgroundColorFix(@brown, .75);
+              color: @white-color;
+            }
+
+            &::before {
+              color: @white-color;
+            }
+          }
         }
       }
     }
@@ -2372,25 +3087,22 @@
 }
 @media only screen and (max-width: 870px) {
   // Outline fix for single and double column boxes
-  .triple-column .column1, .triple-column .column2, .triple-column .column3,// 3/3
-  .one-two-column .column1, .two-one-column .column2,// 1/3 column
-
   .double-column .column1,
-  .double-column .column2 {
+  .double-column .column2,
+  .one-two-column .column1,
+  .triple-column .column1,
+  .triple-column .column2,
+  .triple-column .column3,
+  .two-one-column .column2 {
     .size2,
     .size3 {
       &.with-img {
         &.outlined {
-
-
           .box1 {
-            flex: 0 1 auto;
-
             .header {
               position: relative;
               bottom: auto;
               left: auto;
-              background-color: transparent!important;
             }
           }
         }

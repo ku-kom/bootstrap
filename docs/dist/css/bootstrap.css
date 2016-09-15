@@ -10261,7 +10261,7 @@ ul.bxslider {
 .one-two-column .column2 .size3.with-img.outlined,
 .single-column .column1 .size3.with-img.outlined,
 .two-one-column .column1 .size3.with-img.outlined {
-  background-color: #fff !important;
+  background-color: transparent!important;
 }
 .one-two-column .column2 .size2.with-img.outlined .box1,
 .single-column .column1 .size2.with-img.outlined .box1,
@@ -10325,22 +10325,6 @@ ul.bxslider {
 .double-column .column2 .size3.outlined.with-img {
   color: #fff;
   background-color: transparent!important;
-}
-.triple-column .column1 .size2.outlined.with-img::before,
-.triple-column .column2 .size2.outlined.with-img::before,
-.triple-column .column3 .size2.outlined.with-img::before,
-.one-two-column .column1 .size2.outlined.with-img::before,
-.two-one-column .column2 .size2.outlined.with-img::before,
-.double-column .column1 .size2.outlined.with-img::before,
-.double-column .column2 .size2.outlined.with-img::before,
-.triple-column .column1 .size3.outlined.with-img::before,
-.triple-column .column2 .size3.outlined.with-img::before,
-.triple-column .column3 .size3.outlined.with-img::before,
-.one-two-column .column1 .size3.outlined.with-img::before,
-.two-one-column .column2 .size3.outlined.with-img::before,
-.double-column .column1 .size3.outlined.with-img::before,
-.double-column .column2 .size3.outlined.with-img::before {
-  color: #fff;
 }
 .theme-ku .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
@@ -11083,33 +11067,33 @@ ul.bxslider {
   -ms-flex-order: 1;
           order: 1;
 }
+.one-two-column .column1 .size2.with-img.outlined,
 .triple-column .column1 .size2.with-img.outlined,
 .triple-column .column2 .size2.with-img.outlined,
 .triple-column .column3 .size2.with-img.outlined,
-.one-two-column .column1 .size2.with-img.outlined,
 .two-one-column .column2 .size2.with-img.outlined,
+.one-two-column .column1 .size3.with-img.outlined,
 .triple-column .column1 .size3.with-img.outlined,
 .triple-column .column2 .size3.with-img.outlined,
 .triple-column .column3 .size3.with-img.outlined,
-.one-two-column .column1 .size3.with-img.outlined,
 .two-one-column .column2 .size3.with-img.outlined {
   border-width: 0;
 }
 @media only screen and (min-width: 460px) and (max-width: 870px) {
+  .double-column .column1 .size2.with-img,
+  .double-column .column2 .size2.with-img,
+  .one-two-column .column1 .size2.with-img,
   .triple-column .column1 .size2.with-img,
   .triple-column .column2 .size2.with-img,
   .triple-column .column3 .size2.with-img,
-  .one-two-column .column1 .size2.with-img,
   .two-one-column .column2 .size2.with-img,
-  .double-column .column1 .size2.with-img,
-  .double-column .column2 .size2.with-img,
+  .double-column .column1 .size3.with-img,
+  .double-column .column2 .size3.with-img,
+  .one-two-column .column1 .size3.with-img,
   .triple-column .column1 .size3.with-img,
   .triple-column .column2 .size3.with-img,
   .triple-column .column3 .size3.with-img,
-  .one-two-column .column1 .size3.with-img,
-  .two-one-column .column2 .size3.with-img,
-  .double-column .column1 .size3.with-img,
-  .double-column .column2 .size3.with-img {
+  .two-one-column .column2 .size3.with-img {
     color: #fff;
             flex-direction: row;
 
@@ -11118,809 +11102,1453 @@ ul.bxslider {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
+  .theme-ku .double-column .column1 .size2.with-img.faculty_color,
+  .theme-ku .double-column .column2 .size2.with-img.faculty_color,
+  .theme-ku .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-ku .triple-column .column1 .size2.with-img.faculty_color,
   .theme-ku .triple-column .column2 .size2.with-img.faculty_color,
   .theme-ku .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-ku .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-ku .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-ku .double-column .column1 .size2.with-img.faculty_color,
-  .theme-ku .double-column .column2 .size2.with-img.faculty_color,
+  .theme-ku .double-column .column1 .size3.with-img.faculty_color,
+  .theme-ku .double-column .column2 .size3.with-img.faculty_color,
+  .theme-ku .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-ku .triple-column .column1 .size3.with-img.faculty_color,
   .theme-ku .triple-column .column2 .size3.with-img.faculty_color,
   .theme-ku .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-ku .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-ku .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-ku .double-column .column1 .size3.with-img.faculty_color,
-  .theme-ku .double-column .column2 .size3.with-img.faculty_color {
+  .theme-ku .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #901a1e;
   }
+  .theme-ku .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-ku .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-ku .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-ku .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-ku .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-ku .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-ku .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-ku .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-ku .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-ku .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-ku .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-ku .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-ku .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-ku .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-ku .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #a1c5c8;
   }
+  .theme-ku .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-ku .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-ku .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-ku .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-ku .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-ku .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-ku .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-ku .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-ku .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-ku .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-ku .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-ku .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-ku .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-ku .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-ku .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #4f473f;
   }
+  .theme-ku .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-ku .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-ku .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-ku .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-ku .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-ku .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-ku .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-ku .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-ku .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-ku .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-ku .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-ku .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-ku .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-ku .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-ku .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #a0b763;
   }
+  .theme-ku .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-ku .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-ku .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-ku .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-ku .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-ku .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-ku .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-ku .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-ku .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-ku .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-ku .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-ku .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-ku .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-ku .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-ku .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-ku .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-ku .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-ku .two-one-column .column2 .size3.with-img.subcolor_4 {
     color: #252525;
     background-color: #f2f2f0;
   }
+  .theme-science .double-column .column1 .size2.with-img.faculty_color,
+  .theme-science .double-column .column2 .size2.with-img.faculty_color,
+  .theme-science .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-science .triple-column .column1 .size2.with-img.faculty_color,
   .theme-science .triple-column .column2 .size2.with-img.faculty_color,
   .theme-science .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-science .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-science .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-science .double-column .column1 .size2.with-img.faculty_color,
-  .theme-science .double-column .column2 .size2.with-img.faculty_color,
+  .theme-science .double-column .column1 .size3.with-img.faculty_color,
+  .theme-science .double-column .column2 .size3.with-img.faculty_color,
+  .theme-science .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-science .triple-column .column1 .size3.with-img.faculty_color,
   .theme-science .triple-column .column2 .size3.with-img.faculty_color,
   .theme-science .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-science .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-science .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-science .double-column .column1 .size3.with-img.faculty_color,
-  .theme-science .double-column .column2 .size3.with-img.faculty_color {
+  .theme-science .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #46743c;
   }
+  .theme-science .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-science .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-science .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-science .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-science .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-science .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-science .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-science .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-science .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-science .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-science .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-science .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-science .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-science .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-science .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-science .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-science .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-science .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #dfaf48;
   }
+  .theme-science .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-science .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-science .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-science .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-science .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-science .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-science .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-science .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-science .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-science .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-science .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-science .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-science .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-science .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-science .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-science .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-science .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-science .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #a4c1a9;
   }
+  .theme-science .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-science .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-science .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-science .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-science .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-science .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-science .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-science .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-science .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-science .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-science .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-science .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-science .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-science .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-science .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-science .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-science .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-science .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #bea986;
   }
+  .theme-science .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-science .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-science .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-science .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-science .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-science .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-science .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-science .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-science .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-science .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-science .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-science .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-science .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-science .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-science .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-science .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-science .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-science .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #85a8ae;
   }
+  .theme-hum .double-column .column1 .size2.with-img,
+  .theme-hum .double-column .column2 .size2.with-img,
+  .theme-hum .one-two-column .column1 .size2.with-img,
   .theme-hum .triple-column .column1 .size2.with-img,
   .theme-hum .triple-column .column2 .size2.with-img,
   .theme-hum .triple-column .column3 .size2.with-img,
-  .theme-hum .one-two-column .column1 .size2.with-img,
   .theme-hum .two-one-column .column2 .size2.with-img,
-  .theme-hum .double-column .column1 .size2.with-img,
-  .theme-hum .double-column .column2 .size2.with-img,
+  .theme-hum .double-column .column1 .size3.with-img,
+  .theme-hum .double-column .column2 .size3.with-img,
+  .theme-hum .one-two-column .column1 .size3.with-img,
   .theme-hum .triple-column .column1 .size3.with-img,
   .theme-hum .triple-column .column2 .size3.with-img,
   .theme-hum .triple-column .column3 .size3.with-img,
-  .theme-hum .one-two-column .column1 .size3.with-img,
-  .theme-hum .two-one-column .column2 .size3.with-img,
-  .theme-hum .double-column .column1 .size3.with-img,
-  .theme-hum .double-column .column2 .size3.with-img {
+  .theme-hum .two-one-column .column2 .size3.with-img {
     color: #fff;
   }
+  .theme-hum .double-column .column1 .size2.with-img.faculty_color,
+  .theme-hum .double-column .column2 .size2.with-img.faculty_color,
+  .theme-hum .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-hum .triple-column .column1 .size2.with-img.faculty_color,
   .theme-hum .triple-column .column2 .size2.with-img.faculty_color,
   .theme-hum .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-hum .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-hum .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-hum .double-column .column1 .size2.with-img.faculty_color,
-  .theme-hum .double-column .column2 .size2.with-img.faculty_color,
+  .theme-hum .double-column .column1 .size3.with-img.faculty_color,
+  .theme-hum .double-column .column2 .size3.with-img.faculty_color,
+  .theme-hum .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-hum .triple-column .column1 .size3.with-img.faculty_color,
   .theme-hum .triple-column .column2 .size3.with-img.faculty_color,
   .theme-hum .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-hum .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-hum .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-hum .double-column .column1 .size3.with-img.faculty_color,
-  .theme-hum .double-column .column2 .size3.with-img.faculty_color {
+  .theme-hum .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #365aa5;
   }
+  .theme-hum .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-hum .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-hum .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-hum .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-hum .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-hum .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-hum .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-hum .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-hum .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-hum .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-hum .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-hum .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-hum .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-hum .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #1d2e4a;
   }
+  .theme-hum .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-hum .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-hum .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-hum .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-hum .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-hum .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-hum .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-hum .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-hum .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-hum .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-hum .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-hum .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-hum .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-hum .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #7d899b;
   }
+  .theme-hum .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-hum .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-hum .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-hum .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-hum .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-hum .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-hum .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-hum .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-hum .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-hum .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-hum .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-hum .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-hum .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-hum .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_3 {
     color: #252525;
     background-color: #bea986;
   }
+  .theme-hum .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-hum .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-hum .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-hum .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-hum .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-hum .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-hum .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-hum .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-hum .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-hum .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-hum .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-hum .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-hum .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-hum .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-hum .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-hum .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-hum .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #e7400d;
   }
+  .theme-teol .double-column .column1 .size2.with-img.faculty_color,
+  .theme-teol .double-column .column2 .size2.with-img.faculty_color,
+  .theme-teol .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-teol .triple-column .column1 .size2.with-img.faculty_color,
   .theme-teol .triple-column .column2 .size2.with-img.faculty_color,
   .theme-teol .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-teol .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-teol .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-teol .double-column .column1 .size2.with-img.faculty_color,
-  .theme-teol .double-column .column2 .size2.with-img.faculty_color,
+  .theme-teol .double-column .column1 .size3.with-img.faculty_color,
+  .theme-teol .double-column .column2 .size3.with-img.faculty_color,
+  .theme-teol .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-teol .triple-column .column1 .size3.with-img.faculty_color,
   .theme-teol .triple-column .column2 .size3.with-img.faculty_color,
   .theme-teol .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-teol .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-teol .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-teol .double-column .column1 .size3.with-img.faculty_color,
-  .theme-teol .double-column .column2 .size3.with-img.faculty_color {
+  .theme-teol .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #66609e;
   }
+  .theme-teol .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-teol .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-teol .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-teol .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-teol .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-teol .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-teol .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-teol .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-teol .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-teol .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-teol .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-teol .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-teol .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-teol .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-teol .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #d8680b;
   }
+  .theme-teol .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-teol .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-teol .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-teol .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-teol .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-teol .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-teol .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-teol .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-teol .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-teol .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-teol .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-teol .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-teol .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-teol .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-teol .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #093f50;
   }
+  .theme-teol .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-teol .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-teol .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-teol .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-teol .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-teol .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-teol .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-teol .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-teol .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-teol .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-teol .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-teol .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-teol .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-teol .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-teol .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #84bfcc;
   }
+  .theme-teol .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-teol .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-teol .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-teol .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-teol .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-teol .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-teol .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-teol .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-teol .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-teol .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-teol .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-teol .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-teol .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-teol .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-teol .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-teol .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-teol .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-teol .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #c8d351;
   }
+  .theme-sund .double-column .column1 .size2.with-img.faculty_color,
+  .theme-sund .double-column .column2 .size2.with-img.faculty_color,
+  .theme-sund .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-sund .triple-column .column1 .size2.with-img.faculty_color,
   .theme-sund .triple-column .column2 .size2.with-img.faculty_color,
   .theme-sund .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-sund .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-sund .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-sund .double-column .column1 .size2.with-img.faculty_color,
-  .theme-sund .double-column .column2 .size2.with-img.faculty_color,
+  .theme-sund .double-column .column1 .size3.with-img.faculty_color,
+  .theme-sund .double-column .column2 .size3.with-img.faculty_color,
+  .theme-sund .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-sund .triple-column .column1 .size3.with-img.faculty_color,
   .theme-sund .triple-column .column2 .size3.with-img.faculty_color,
   .theme-sund .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-sund .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-sund .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-sund .double-column .column1 .size3.with-img.faculty_color,
-  .theme-sund .double-column .column2 .size3.with-img.faculty_color {
+  .theme-sund .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #2a216a;
   }
+  .theme-sund .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-sund .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-sund .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-sund .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-sund .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-sund .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-sund .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-sund .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-sund .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-sund .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-sund .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-sund .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-sund .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-sund .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-sund .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #77b6e5;
   }
+  .theme-sund .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-sund .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-sund .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-sund .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-sund .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-sund .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-sund .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-sund .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-sund .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-sund .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-sund .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-sund .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-sund .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-sund .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-sund .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #0f4576;
   }
+  .theme-sund .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-sund .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-sund .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-sund .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-sund .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-sund .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-sund .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-sund .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-sund .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-sund .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-sund .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-sund .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-sund .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-sund .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-sund .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #00706e;
   }
+  .theme-sund .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-sund .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-sund .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-sund .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-sund .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-sund .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-sund .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-sund .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-sund .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-sund .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-sund .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-sund .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-sund .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-sund .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-sund .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #b0d54e;
   }
+  .theme-samf .double-column .column1 .size2.with-img.faculty_color,
+  .theme-samf .double-column .column2 .size2.with-img.faculty_color,
+  .theme-samf .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-samf .triple-column .column1 .size2.with-img.faculty_color,
   .theme-samf .triple-column .column2 .size2.with-img.faculty_color,
   .theme-samf .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-samf .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-samf .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-samf .double-column .column1 .size2.with-img.faculty_color,
-  .theme-samf .double-column .column2 .size2.with-img.faculty_color,
+  .theme-samf .double-column .column1 .size3.with-img.faculty_color,
+  .theme-samf .double-column .column2 .size3.with-img.faculty_color,
+  .theme-samf .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-samf .triple-column .column1 .size3.with-img.faculty_color,
   .theme-samf .triple-column .column2 .size3.with-img.faculty_color,
   .theme-samf .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-samf .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-samf .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-samf .double-column .column1 .size3.with-img.faculty_color,
-  .theme-samf .double-column .column2 .size3.with-img.faculty_color {
+  .theme-samf .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #e13718;
   }
+  .theme-samf .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-samf .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-samf .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-samf .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-samf .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-samf .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-samf .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-samf .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-samf .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-samf .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-samf .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-samf .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-samf .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-samf .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-samf .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #2a3d66;
   }
+  .theme-samf .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-samf .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-samf .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-samf .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-samf .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-samf .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-samf .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-samf .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-samf .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-samf .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-samf .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-samf .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-samf .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-samf .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-samf .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #a0b763;
   }
+  .theme-samf .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-samf .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-samf .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-samf .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-samf .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-samf .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-samf .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-samf .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-samf .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-samf .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-samf .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-samf .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-samf .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-samf .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-samf .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #95c1b0;
   }
+  .theme-samf .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-samf .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-samf .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-samf .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-samf .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-samf .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-samf .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-samf .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-samf .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-samf .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-samf .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-samf .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-samf .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-samf .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-samf .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #7d8a8b;
   }
+  .theme-jura .double-column .column1 .size2.with-img.faculty_color,
+  .theme-jura .double-column .column2 .size2.with-img.faculty_color,
+  .theme-jura .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-jura .triple-column .column1 .size2.with-img.faculty_color,
   .theme-jura .triple-column .column2 .size2.with-img.faculty_color,
   .theme-jura .triple-column .column3 .size2.with-img.faculty_color,
-  .theme-jura .one-two-column .column1 .size2.with-img.faculty_color,
   .theme-jura .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-jura .double-column .column1 .size2.with-img.faculty_color,
-  .theme-jura .double-column .column2 .size2.with-img.faculty_color,
+  .theme-jura .double-column .column1 .size3.with-img.faculty_color,
+  .theme-jura .double-column .column2 .size3.with-img.faculty_color,
+  .theme-jura .one-two-column .column1 .size3.with-img.faculty_color,
   .theme-jura .triple-column .column1 .size3.with-img.faculty_color,
   .theme-jura .triple-column .column2 .size3.with-img.faculty_color,
   .theme-jura .triple-column .column3 .size3.with-img.faculty_color,
-  .theme-jura .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-jura .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-jura .double-column .column1 .size3.with-img.faculty_color,
-  .theme-jura .double-column .column2 .size3.with-img.faculty_color {
+  .theme-jura .two-one-column .column2 .size3.with-img.faculty_color {
     background-color: #999632;
   }
+  .theme-jura .double-column .column1 .size2.with-img.subcolor_1,
+  .theme-jura .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-jura .triple-column .column1 .size2.with-img.subcolor_1,
   .theme-jura .triple-column .column2 .size2.with-img.subcolor_1,
   .theme-jura .triple-column .column3 .size2.with-img.subcolor_1,
-  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_1,
   .theme-jura .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-jura .double-column .column1 .size2.with-img.subcolor_1,
-  .theme-jura .double-column .column2 .size2.with-img.subcolor_1,
+  .theme-jura .double-column .column1 .size3.with-img.subcolor_1,
+  .theme-jura .double-column .column2 .size3.with-img.subcolor_1,
+  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_1,
   .theme-jura .triple-column .column1 .size3.with-img.subcolor_1,
   .theme-jura .triple-column .column2 .size3.with-img.subcolor_1,
   .theme-jura .triple-column .column3 .size3.with-img.subcolor_1,
-  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-jura .double-column .column1 .size3.with-img.subcolor_1,
-  .theme-jura .double-column .column2 .size3.with-img.subcolor_1 {
+  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_1 {
     background-color: #ffb400;
   }
+  .theme-jura .double-column .column1 .size2.with-img.subcolor_2,
+  .theme-jura .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-jura .triple-column .column1 .size2.with-img.subcolor_2,
   .theme-jura .triple-column .column2 .size2.with-img.subcolor_2,
   .theme-jura .triple-column .column3 .size2.with-img.subcolor_2,
-  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_2,
   .theme-jura .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-jura .double-column .column1 .size2.with-img.subcolor_2,
-  .theme-jura .double-column .column2 .size2.with-img.subcolor_2,
+  .theme-jura .double-column .column1 .size3.with-img.subcolor_2,
+  .theme-jura .double-column .column2 .size3.with-img.subcolor_2,
+  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_2,
   .theme-jura .triple-column .column1 .size3.with-img.subcolor_2,
   .theme-jura .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-jura .triple-column .column3 .size3.with-img.subcolor_2,
-  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-jura .double-column .column1 .size3.with-img.subcolor_2,
-  .theme-jura .double-column .column2 .size3.with-img.subcolor_2 {
+  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_2 {
     background-color: #33838a;
   }
+  .theme-jura .double-column .column1 .size2.with-img.subcolor_3,
+  .theme-jura .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-jura .triple-column .column1 .size2.with-img.subcolor_3,
   .theme-jura .triple-column .column2 .size2.with-img.subcolor_3,
   .theme-jura .triple-column .column3 .size2.with-img.subcolor_3,
-  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_3,
   .theme-jura .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-jura .double-column .column1 .size2.with-img.subcolor_3,
-  .theme-jura .double-column .column2 .size2.with-img.subcolor_3,
+  .theme-jura .double-column .column1 .size3.with-img.subcolor_3,
+  .theme-jura .double-column .column2 .size3.with-img.subcolor_3,
+  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_3,
   .theme-jura .triple-column .column1 .size3.with-img.subcolor_3,
   .theme-jura .triple-column .column2 .size3.with-img.subcolor_3,
   .theme-jura .triple-column .column3 .size3.with-img.subcolor_3,
-  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-jura .double-column .column1 .size3.with-img.subcolor_3,
-  .theme-jura .double-column .column2 .size3.with-img.subcolor_3 {
+  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_3 {
     background-color: #ccc6ae;
   }
+  .theme-jura .double-column .column1 .size2.with-img.subcolor_4,
+  .theme-jura .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-jura .triple-column .column1 .size2.with-img.subcolor_4,
   .theme-jura .triple-column .column2 .size2.with-img.subcolor_4,
   .theme-jura .triple-column .column3 .size2.with-img.subcolor_4,
-  .theme-jura .one-two-column .column1 .size2.with-img.subcolor_4,
   .theme-jura .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-jura .double-column .column1 .size2.with-img.subcolor_4,
-  .theme-jura .double-column .column2 .size2.with-img.subcolor_4,
+  .theme-jura .double-column .column1 .size3.with-img.subcolor_4,
+  .theme-jura .double-column .column2 .size3.with-img.subcolor_4,
+  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_4,
   .theme-jura .triple-column .column1 .size3.with-img.subcolor_4,
   .theme-jura .triple-column .column2 .size3.with-img.subcolor_4,
   .theme-jura .triple-column .column3 .size3.with-img.subcolor_4,
-  .theme-jura .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-jura .double-column .column1 .size3.with-img.subcolor_4,
-  .theme-jura .double-column .column2 .size3.with-img.subcolor_4 {
+  .theme-jura .two-one-column .column2 .size3.with-img.subcolor_4 {
     background-color: #a3650c;
   }
+  .double-column .column1 .size2.with-img.subcolor_5,
+  .double-column .column2 .size2.with-img.subcolor_5,
+  .one-two-column .column1 .size2.with-img.subcolor_5,
   .triple-column .column1 .size2.with-img.subcolor_5,
   .triple-column .column2 .size2.with-img.subcolor_5,
   .triple-column .column3 .size2.with-img.subcolor_5,
-  .one-two-column .column1 .size2.with-img.subcolor_5,
   .two-one-column .column2 .size2.with-img.subcolor_5,
-  .double-column .column1 .size2.with-img.subcolor_5,
-  .double-column .column2 .size2.with-img.subcolor_5,
+  .double-column .column1 .size3.with-img.subcolor_5,
+  .double-column .column2 .size3.with-img.subcolor_5,
+  .one-two-column .column1 .size3.with-img.subcolor_5,
   .triple-column .column1 .size3.with-img.subcolor_5,
   .triple-column .column2 .size3.with-img.subcolor_5,
   .triple-column .column3 .size3.with-img.subcolor_5,
-  .one-two-column .column1 .size3.with-img.subcolor_5,
-  .two-one-column .column2 .size3.with-img.subcolor_5,
-  .double-column .column1 .size3.with-img.subcolor_5,
-  .double-column .column2 .size3.with-img.subcolor_5 {
+  .two-one-column .column2 .size3.with-img.subcolor_5 {
     background-color: #f2f2f0;
   }
+  .double-column .column1 .size2.with-img.subcolor_6,
+  .double-column .column2 .size2.with-img.subcolor_6,
+  .one-two-column .column1 .size2.with-img.subcolor_6,
   .triple-column .column1 .size2.with-img.subcolor_6,
   .triple-column .column2 .size2.with-img.subcolor_6,
   .triple-column .column3 .size2.with-img.subcolor_6,
-  .one-two-column .column1 .size2.with-img.subcolor_6,
   .two-one-column .column2 .size2.with-img.subcolor_6,
-  .double-column .column1 .size2.with-img.subcolor_6,
-  .double-column .column2 .size2.with-img.subcolor_6,
+  .double-column .column1 .size3.with-img.subcolor_6,
+  .double-column .column2 .size3.with-img.subcolor_6,
+  .one-two-column .column1 .size3.with-img.subcolor_6,
   .triple-column .column1 .size3.with-img.subcolor_6,
   .triple-column .column2 .size3.with-img.subcolor_6,
   .triple-column .column3 .size3.with-img.subcolor_6,
-  .one-two-column .column1 .size3.with-img.subcolor_6,
-  .two-one-column .column2 .size3.with-img.subcolor_6,
-  .double-column .column1 .size3.with-img.subcolor_6,
-  .double-column .column2 .size3.with-img.subcolor_6 {
+  .two-one-column .column2 .size3.with-img.subcolor_6 {
     background-color: #fff;
   }
+  .double-column .column1 .size2.with-img.subcolor_7,
+  .double-column .column2 .size2.with-img.subcolor_7,
+  .one-two-column .column1 .size2.with-img.subcolor_7,
   .triple-column .column1 .size2.with-img.subcolor_7,
   .triple-column .column2 .size2.with-img.subcolor_7,
   .triple-column .column3 .size2.with-img.subcolor_7,
-  .one-two-column .column1 .size2.with-img.subcolor_7,
   .two-one-column .column2 .size2.with-img.subcolor_7,
-  .double-column .column1 .size2.with-img.subcolor_7,
-  .double-column .column2 .size2.with-img.subcolor_7,
+  .double-column .column1 .size3.with-img.subcolor_7,
+  .double-column .column2 .size3.with-img.subcolor_7,
+  .one-two-column .column1 .size3.with-img.subcolor_7,
   .triple-column .column1 .size3.with-img.subcolor_7,
   .triple-column .column2 .size3.with-img.subcolor_7,
   .triple-column .column3 .size3.with-img.subcolor_7,
-  .one-two-column .column1 .size3.with-img.subcolor_7,
-  .two-one-column .column2 .size3.with-img.subcolor_7,
-  .double-column .column1 .size3.with-img.subcolor_7,
-  .double-column .column2 .size3.with-img.subcolor_7 {
+  .two-one-column .column2 .size3.with-img.subcolor_7 {
     background-color: #4f473f;
   }
+  .double-column .column1 .size2.with-img.text-over .box1 .header,
+  .double-column .column2 .size2.with-img.text-over .box1 .header,
+  .one-two-column .column1 .size2.with-img.text-over .box1 .header,
   .triple-column .column1 .size2.with-img.text-over .box1 .header,
   .triple-column .column2 .size2.with-img.text-over .box1 .header,
   .triple-column .column3 .size2.with-img.text-over .box1 .header,
-  .one-two-column .column1 .size2.with-img.text-over .box1 .header,
   .two-one-column .column2 .size2.with-img.text-over .box1 .header,
-  .double-column .column1 .size2.with-img.text-over .box1 .header,
-  .double-column .column2 .size2.with-img.text-over .box1 .header,
+  .double-column .column1 .size3.with-img.text-over .box1 .header,
+  .double-column .column2 .size3.with-img.text-over .box1 .header,
+  .one-two-column .column1 .size3.with-img.text-over .box1 .header,
   .triple-column .column1 .size3.with-img.text-over .box1 .header,
   .triple-column .column2 .size3.with-img.text-over .box1 .header,
   .triple-column .column3 .size3.with-img.text-over .box1 .header,
-  .one-two-column .column1 .size3.with-img.text-over .box1 .header,
-  .two-one-column .column2 .size3.with-img.text-over .box1 .header,
-  .double-column .column1 .size3.with-img.text-over .box1 .header,
-  .double-column .column2 .size3.with-img.text-over .box1 .header {
+  .two-one-column .column2 .size3.with-img.text-over .box1 .header {
     position: relative;
     bottom: auto;
     left: auto;
   }
+  .double-column .column1 .size2.with-img.text-down::before,
+  .double-column .column2 .size2.with-img.text-down::before,
+  .one-two-column .column1 .size2.with-img.text-down::before,
   .triple-column .column1 .size2.with-img.text-down::before,
   .triple-column .column2 .size2.with-img.text-down::before,
   .triple-column .column3 .size2.with-img.text-down::before,
-  .one-two-column .column1 .size2.with-img.text-down::before,
   .two-one-column .column2 .size2.with-img.text-down::before,
-  .double-column .column1 .size2.with-img.text-down::before,
-  .double-column .column2 .size2.with-img.text-down::before,
+  .double-column .column1 .size3.with-img.text-down::before,
+  .double-column .column2 .size3.with-img.text-down::before,
+  .one-two-column .column1 .size3.with-img.text-down::before,
   .triple-column .column1 .size3.with-img.text-down::before,
   .triple-column .column2 .size3.with-img.text-down::before,
   .triple-column .column3 .size3.with-img.text-down::before,
-  .one-two-column .column1 .size3.with-img.text-down::before,
-  .two-one-column .column2 .size3.with-img.text-down::before,
-  .double-column .column1 .size3.with-img.text-down::before,
-  .double-column .column2 .size3.with-img.text-down::before {
+  .two-one-column .column2 .size3.with-img.text-down::before {
     top: auto;
     bottom: 10px;
   }
+  .double-column .column1 .size2.with-img .box1,
+  .double-column .column2 .size2.with-img .box1,
+  .one-two-column .column1 .size2.with-img .box1,
   .triple-column .column1 .size2.with-img .box1,
   .triple-column .column2 .size2.with-img .box1,
   .triple-column .column3 .size2.with-img .box1,
-  .one-two-column .column1 .size2.with-img .box1,
   .two-one-column .column2 .size2.with-img .box1,
-  .double-column .column1 .size2.with-img .box1,
-  .double-column .column2 .size2.with-img .box1,
+  .double-column .column1 .size3.with-img .box1,
+  .double-column .column2 .size3.with-img .box1,
+  .one-two-column .column1 .size3.with-img .box1,
   .triple-column .column1 .size3.with-img .box1,
   .triple-column .column2 .size3.with-img .box1,
   .triple-column .column3 .size3.with-img .box1,
-  .one-two-column .column1 .size3.with-img .box1,
-  .two-one-column .column2 .size3.with-img .box1,
-  .double-column .column1 .size3.with-img .box1,
-  .double-column .column2 .size3.with-img .box1 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+  .two-one-column .column2 .size3.with-img .box1 {
+    -webkit-box-flex: 1!important;
+    -webkit-flex: 1 1 auto!important;
+        -ms-flex: 1 1 auto!important;
+            flex: 1 1 auto!important;
   }
+  .double-column .column1 .size2.with-img .box1 .text,
+  .double-column .column2 .size2.with-img .box1 .text,
+  .one-two-column .column1 .size2.with-img .box1 .text,
   .triple-column .column1 .size2.with-img .box1 .text,
   .triple-column .column2 .size2.with-img .box1 .text,
   .triple-column .column3 .size2.with-img .box1 .text,
-  .one-two-column .column1 .size2.with-img .box1 .text,
   .two-one-column .column2 .size2.with-img .box1 .text,
-  .double-column .column1 .size2.with-img .box1 .text,
-  .double-column .column2 .size2.with-img .box1 .text,
+  .double-column .column1 .size3.with-img .box1 .text,
+  .double-column .column2 .size3.with-img .box1 .text,
+  .one-two-column .column1 .size3.with-img .box1 .text,
   .triple-column .column1 .size3.with-img .box1 .text,
   .triple-column .column2 .size3.with-img .box1 .text,
   .triple-column .column3 .size3.with-img .box1 .text,
-  .one-two-column .column1 .size3.with-img .box1 .text,
-  .two-one-column .column2 .size3.with-img .box1 .text,
-  .double-column .column1 .size3.with-img .box1 .text,
-  .double-column .column2 .size3.with-img .box1 .text {
+  .two-one-column .column2 .size3.with-img .box1 .text {
     display: block;
   }
+  .double-column .column1 .size2.with-img .box2,
+  .double-column .column2 .size2.with-img .box2,
+  .one-two-column .column1 .size2.with-img .box2,
   .triple-column .column1 .size2.with-img .box2,
   .triple-column .column2 .size2.with-img .box2,
   .triple-column .column3 .size2.with-img .box2,
-  .one-two-column .column1 .size2.with-img .box2,
   .two-one-column .column2 .size2.with-img .box2,
-  .double-column .column1 .size2.with-img .box2,
-  .double-column .column2 .size2.with-img .box2,
+  .double-column .column1 .size3.with-img .box2,
+  .double-column .column2 .size3.with-img .box2,
+  .one-two-column .column1 .size3.with-img .box2,
   .triple-column .column1 .size3.with-img .box2,
   .triple-column .column2 .size3.with-img .box2,
   .triple-column .column3 .size3.with-img .box2,
-  .one-two-column .column1 .size3.with-img .box2,
-  .two-one-column .column2 .size3.with-img .box2,
-  .double-column .column1 .size3.with-img .box2,
-  .double-column .column2 .size3.with-img .box2 {
+  .two-one-column .column2 .size3.with-img .box2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 235px;
         -ms-flex: 0 1 235px;
             flex: 0 1 235px;
   }
+  .double-column .column1 .size2.with-img.full .box1,
+  .double-column .column2 .size2.with-img.full .box1,
+  .one-two-column .column1 .size2.with-img.full .box1,
   .triple-column .column1 .size2.with-img.full .box1,
   .triple-column .column2 .size2.with-img.full .box1,
   .triple-column .column3 .size2.with-img.full .box1,
-  .one-two-column .column1 .size2.with-img.full .box1,
   .two-one-column .column2 .size2.with-img.full .box1,
-  .double-column .column1 .size2.with-img.full .box1,
-  .double-column .column2 .size2.with-img.full .box1,
+  .double-column .column1 .size3.with-img.full .box1,
+  .double-column .column2 .size3.with-img.full .box1,
+  .one-two-column .column1 .size3.with-img.full .box1,
   .triple-column .column1 .size3.with-img.full .box1,
   .triple-column .column2 .size3.with-img.full .box1,
   .triple-column .column3 .size3.with-img.full .box1,
-  .one-two-column .column1 .size3.with-img.full .box1,
-  .two-one-column .column2 .size3.with-img.full .box1,
-  .double-column .column1 .size3.with-img.full .box1,
-  .double-column .column2 .size3.with-img.full .box1 {
+  .two-one-column .column2 .size3.with-img.full .box1 {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
   }
+  .double-column .column1 .size2.with-img.full .box2,
+  .double-column .column2 .size2.with-img.full .box2,
+  .one-two-column .column1 .size2.with-img.full .box2,
   .triple-column .column1 .size2.with-img.full .box2,
   .triple-column .column2 .size2.with-img.full .box2,
   .triple-column .column3 .size2.with-img.full .box2,
-  .one-two-column .column1 .size2.with-img.full .box2,
   .two-one-column .column2 .size2.with-img.full .box2,
-  .double-column .column1 .size2.with-img.full .box2,
-  .double-column .column2 .size2.with-img.full .box2,
+  .double-column .column1 .size3.with-img.full .box2,
+  .double-column .column2 .size3.with-img.full .box2,
+  .one-two-column .column1 .size3.with-img.full .box2,
   .triple-column .column1 .size3.with-img.full .box2,
   .triple-column .column2 .size3.with-img.full .box2,
   .triple-column .column3 .size3.with-img.full .box2,
-  .one-two-column .column1 .size3.with-img.full .box2,
-  .two-one-column .column2 .size3.with-img.full .box2,
-  .double-column .column1 .size3.with-img.full .box2,
-  .double-column .column2 .size3.with-img.full .box2 {
+  .two-one-column .column2 .size3.with-img.full .box2 {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
             order: 1;
   }
+  .double-column .column1 .size2.with-img.outlined,
+  .double-column .column2 .size2.with-img.outlined,
+  .one-two-column .column1 .size2.with-img.outlined,
   .triple-column .column1 .size2.with-img.outlined,
   .triple-column .column2 .size2.with-img.outlined,
   .triple-column .column3 .size2.with-img.outlined,
-  .one-two-column .column1 .size2.with-img.outlined,
   .two-one-column .column2 .size2.with-img.outlined,
-  .double-column .column1 .size2.with-img.outlined,
-  .double-column .column2 .size2.with-img.outlined,
+  .double-column .column1 .size3.with-img.outlined,
+  .double-column .column2 .size3.with-img.outlined,
+  .one-two-column .column1 .size3.with-img.outlined,
   .triple-column .column1 .size3.with-img.outlined,
   .triple-column .column2 .size3.with-img.outlined,
   .triple-column .column3 .size3.with-img.outlined,
-  .one-two-column .column1 .size3.with-img.outlined,
-  .two-one-column .column2 .size3.with-img.outlined,
-  .double-column .column1 .size3.with-img.outlined,
-  .double-column .column2 .size3.with-img.outlined {
+  .two-one-column .column2 .size3.with-img.outlined {
     background-color: transparent!important;
     border-width: 1px;
   }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #901a1e;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #a1c5c8;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #4f473f;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #a0b763;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #252525;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #46743c;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #dfaf48;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #a4c1a9;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #bea986;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #85a8ae;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined .header {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #365aa5;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #1d2e4a;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #7d899b;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #bea986;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #e7400d;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #66609e;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #d8680b;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #093f50;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #84bfcc;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #c8d351;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #2a216a;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #77b6e5;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #0f4576;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #00706e;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #b0d54e;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #e13718;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #2a3d66;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #a0b763;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #95c1b0;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #7d8a8b;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.faculty_color .header {
+    color: #999632;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.subcolor_1 .header {
+    color: #ffb400;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
+    color: #33838a;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
+    color: #ccc6ae;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
+    color: #a3650c;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_5 .header,
+  .one-two-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .triple-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .triple-column .column2 .size2.with-img.outlined.subcolor_5 .header,
+  .triple-column .column3 .size2.with-img.outlined.subcolor_5 .header,
+  .two-one-column .column2 .size2.with-img.outlined.subcolor_5 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_5 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_5 .header,
+  .one-two-column .column1 .size3.with-img.outlined.subcolor_5 .header,
+  .triple-column .column1 .size3.with-img.outlined.subcolor_5 .header,
+  .triple-column .column2 .size3.with-img.outlined.subcolor_5 .header,
+  .triple-column .column3 .size3.with-img.outlined.subcolor_5 .header,
+  .two-one-column .column2 .size3.with-img.outlined.subcolor_5 .header {
+    color: #f2f2f0;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_6 .header,
+  .one-two-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .triple-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .triple-column .column2 .size2.with-img.outlined.subcolor_6 .header,
+  .triple-column .column3 .size2.with-img.outlined.subcolor_6 .header,
+  .two-one-column .column2 .size2.with-img.outlined.subcolor_6 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_6 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_6 .header,
+  .one-two-column .column1 .size3.with-img.outlined.subcolor_6 .header,
+  .triple-column .column1 .size3.with-img.outlined.subcolor_6 .header,
+  .triple-column .column2 .size3.with-img.outlined.subcolor_6 .header,
+  .triple-column .column3 .size3.with-img.outlined.subcolor_6 .header,
+  .two-one-column .column2 .size3.with-img.outlined.subcolor_6 .header {
+    color: #fff;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_7 .header,
+  .one-two-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .triple-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .triple-column .column2 .size2.with-img.outlined.subcolor_7 .header,
+  .triple-column .column3 .size2.with-img.outlined.subcolor_7 .header,
+  .two-one-column .column2 .size2.with-img.outlined.subcolor_7 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_7 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_7 .header,
+  .one-two-column .column1 .size3.with-img.outlined.subcolor_7 .header,
+  .triple-column .column1 .size3.with-img.outlined.subcolor_7 .header,
+  .triple-column .column2 .size3.with-img.outlined.subcolor_7 .header,
+  .triple-column .column3 .size3.with-img.outlined.subcolor_7 .header,
+  .two-one-column .column2 .size3.with-img.outlined.subcolor_7 .header {
+    color: #4f473f;
+  }
+  .double-column .column1 .size2.with-img.outlined .box1,
+  .double-column .column2 .size2.with-img.outlined .box1,
+  .one-two-column .column1 .size2.with-img.outlined .box1,
   .triple-column .column1 .size2.with-img.outlined .box1,
   .triple-column .column2 .size2.with-img.outlined .box1,
   .triple-column .column3 .size2.with-img.outlined .box1,
-  .one-two-column .column1 .size2.with-img.outlined .box1,
   .two-one-column .column2 .size2.with-img.outlined .box1,
-  .double-column .column1 .size2.with-img.outlined .box1,
-  .double-column .column2 .size2.with-img.outlined .box1,
+  .double-column .column1 .size3.with-img.outlined .box1,
+  .double-column .column2 .size3.with-img.outlined .box1,
+  .one-two-column .column1 .size3.with-img.outlined .box1,
   .triple-column .column1 .size3.with-img.outlined .box1,
   .triple-column .column2 .size3.with-img.outlined .box1,
   .triple-column .column3 .size3.with-img.outlined .box1,
-  .one-two-column .column1 .size3.with-img.outlined .box1,
-  .two-one-column .column2 .size3.with-img.outlined .box1,
-  .double-column .column1 .size3.with-img.outlined .box1,
-  .double-column .column2 .size3.with-img.outlined .box1 {
+  .two-one-column .column2 .size3.with-img.outlined .box1 {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
+    -webkit-box-flex: 1!important;
+    -webkit-flex: 1 1 auto!important;
+        -ms-flex: 1 1 auto!important;
+            flex: 1 1 auto!important;
   }
+  .double-column .column1 .size2.with-img.outlined .box1 .header,
+  .double-column .column2 .size2.with-img.outlined .box1 .header,
+  .one-two-column .column1 .size2.with-img.outlined .box1 .header,
+  .triple-column .column1 .size2.with-img.outlined .box1 .header,
+  .triple-column .column2 .size2.with-img.outlined .box1 .header,
+  .triple-column .column3 .size2.with-img.outlined .box1 .header,
+  .two-one-column .column2 .size2.with-img.outlined .box1 .header,
+  .double-column .column1 .size3.with-img.outlined .box1 .header,
+  .double-column .column2 .size3.with-img.outlined .box1 .header,
+  .one-two-column .column1 .size3.with-img.outlined .box1 .header,
+  .triple-column .column1 .size3.with-img.outlined .box1 .header,
+  .triple-column .column2 .size3.with-img.outlined .box1 .header,
+  .triple-column .column3 .size3.with-img.outlined .box1 .header,
+  .two-one-column .column2 .size3.with-img.outlined .box1 .header {
+    background-color: transparent!important;
+  }
+  .double-column .column1 .size2.with-img.outlined .box2,
+  .double-column .column2 .size2.with-img.outlined .box2,
+  .one-two-column .column1 .size2.with-img.outlined .box2,
   .triple-column .column1 .size2.with-img.outlined .box2,
   .triple-column .column2 .size2.with-img.outlined .box2,
   .triple-column .column3 .size2.with-img.outlined .box2,
-  .one-two-column .column1 .size2.with-img.outlined .box2,
   .two-one-column .column2 .size2.with-img.outlined .box2,
-  .double-column .column1 .size2.with-img.outlined .box2,
-  .double-column .column2 .size2.with-img.outlined .box2,
+  .double-column .column1 .size3.with-img.outlined .box2,
+  .double-column .column2 .size3.with-img.outlined .box2,
+  .one-two-column .column1 .size3.with-img.outlined .box2,
   .triple-column .column1 .size3.with-img.outlined .box2,
   .triple-column .column2 .size3.with-img.outlined .box2,
   .triple-column .column3 .size3.with-img.outlined .box2,
-  .one-two-column .column1 .size3.with-img.outlined .box2,
-  .two-one-column .column2 .size3.with-img.outlined .box2,
-  .double-column .column1 .size3.with-img.outlined .box2,
-  .double-column .column2 .size3.with-img.outlined .box2 {
+  .two-one-column .column2 .size3.with-img.outlined .box2 {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -11928,9 +12556,28 @@ ul.bxslider {
   }
 }
 @media only screen and (max-width: 459px) {
+  .one-two-column .column2 .size2.with-img.outlined .box1,
+  .two-one-column .column1 .size2.with-img.outlined .box1,
+  .triple-column .column1 .size2.with-img.outlined .box1,
+  .triple-column .column2 .size2.with-img.outlined .box1,
+  .triple-column .column3 .size2.with-img.outlined .box1,
+  .one-two-column .column2 .size3.with-img.outlined .box1,
+  .two-one-column .column1 .size3.with-img.outlined .box1,
+  .triple-column .column1 .size3.with-img.outlined .box1,
+  .triple-column .column2 .size3.with-img.outlined .box1,
+  .triple-column .column3 .size3.with-img.outlined .box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .double-column .column1 .size2.with-img,
+  .double-column .column2 .size2.with-img,
   .one-two-column .column2 .size2.with-img,
   .single-column .column1 .size2.with-img,
   .two-one-column .column1 .size2.with-img,
+  .double-column .column1 .size3.with-img,
+  .double-column .column2 .size3.with-img,
   .one-two-column .column2 .size3.with-img,
   .single-column .column1 .size3.with-img,
   .two-one-column .column1 .size3.with-img {
@@ -11941,20 +12588,33 @@ ul.bxslider {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
   }
+  .double-column .column1 .size2.with-img .text,
+  .double-column .column2 .size2.with-img .text,
   .one-two-column .column2 .size2.with-img .text,
   .single-column .column1 .size2.with-img .text,
   .two-one-column .column1 .size2.with-img .text,
+  .double-column .column1 .size3.with-img .text,
+  .double-column .column2 .size3.with-img .text,
   .one-two-column .column2 .size3.with-img .text,
   .single-column .column1 .size3.with-img .text,
   .two-one-column .column1 .size3.with-img .text {
     display: none;
   }
+  .double-column .column1 .size2.with-img .box1,
+  .double-column .column2 .size2.with-img .box1,
   .one-two-column .column2 .size2.with-img .box1,
   .single-column .column1 .size2.with-img .box1,
   .two-one-column .column1 .size2.with-img .box1,
+  .double-column .column1 .size3.with-img .box1,
+  .double-column .column2 .size3.with-img .box1,
   .one-two-column .column2 .size3.with-img .box1,
   .single-column .column1 .size3.with-img .box1,
   .two-one-column .column1 .size3.with-img .box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -11964,17 +12624,25 @@ ul.bxslider {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
   }
+  .double-column .column1 .size2.with-img .box1 .text,
+  .double-column .column2 .size2.with-img .box1 .text,
   .one-two-column .column2 .size2.with-img .box1 .text,
   .single-column .column1 .size2.with-img .box1 .text,
   .two-one-column .column1 .size2.with-img .box1 .text,
+  .double-column .column1 .size3.with-img .box1 .text,
+  .double-column .column2 .size3.with-img .box1 .text,
   .one-two-column .column2 .size3.with-img .box1 .text,
   .single-column .column1 .size3.with-img .box1 .text,
   .two-one-column .column1 .size3.with-img .box1 .text {
     display: none;
   }
+  .double-column .column1 .size2.with-img .box2,
+  .double-column .column2 .size2.with-img .box2,
   .one-two-column .column2 .size2.with-img .box2,
   .single-column .column1 .size2.with-img .box2,
   .two-one-column .column1 .size2.with-img .box2,
+  .double-column .column1 .size3.with-img .box2,
+  .double-column .column2 .size3.with-img .box2,
   .one-two-column .column2 .size3.with-img .box2,
   .single-column .column1 .size3.with-img .box2,
   .two-one-column .column1 .size3.with-img .box2 {
@@ -11983,53 +12651,1040 @@ ul.bxslider {
     -ms-flex-order: 1;
             order: 1;
   }
+  .double-column .column1 .size2.with-img.outlined,
+  .double-column .column2 .size2.with-img.outlined,
   .one-two-column .column2 .size2.with-img.outlined,
   .single-column .column1 .size2.with-img.outlined,
   .two-one-column .column1 .size2.with-img.outlined,
+  .double-column .column1 .size3.with-img.outlined,
+  .double-column .column2 .size3.with-img.outlined,
   .one-two-column .column2 .size3.with-img.outlined,
   .single-column .column1 .size3.with-img.outlined,
   .two-one-column .column1 .size3.with-img.outlined {
     border-width: 0;
   }
-}
-@media only screen and (max-width: 870px) {
-  .triple-column .column1 .size2.with-img.outlined .box1,
-  .triple-column .column2 .size2.with-img.outlined .box1,
-  .triple-column .column3 .size2.with-img.outlined .box1,
-  .one-two-column .column1 .size2.with-img.outlined .box1,
-  .two-one-column .column2 .size2.with-img.outlined .box1,
   .double-column .column1 .size2.with-img.outlined .box1,
   .double-column .column2 .size2.with-img.outlined .box1,
-  .triple-column .column1 .size3.with-img.outlined .box1,
-  .triple-column .column2 .size3.with-img.outlined .box1,
-  .triple-column .column3 .size3.with-img.outlined .box1,
-  .one-two-column .column1 .size3.with-img.outlined .box1,
-  .two-one-column .column2 .size3.with-img.outlined .box1,
+  .one-two-column .column2 .size2.with-img.outlined .box1,
+  .single-column .column1 .size2.with-img.outlined .box1,
+  .two-one-column .column1 .size2.with-img.outlined .box1,
   .double-column .column1 .size3.with-img.outlined .box1,
-  .double-column .column2 .size3.with-img.outlined .box1 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+  .double-column .column2 .size3.with-img.outlined .box1,
+  .one-two-column .column2 .size3.with-img.outlined .box1,
+  .single-column .column1 .size3.with-img.outlined .box1,
+  .two-one-column .column1 .size3.with-img.outlined .box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #901a1e;
+    background: rgba(144, 26, 30, .75);
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #a1c5c8;
+    background: rgba(161, 197, 200, .75);
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #4f473f;
+    background: rgba(79, 71, 63, .75);
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #a0b763;
+    background: rgba(160, 183, 99, .75);
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #252525;
+    background: #f2f2f0;
+    background: rgba(242, 242, 240, .75);
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #f2f2f0;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #46743c;
+    background: rgba(70, 116, 60, .75);
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-science .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-science .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #dfaf48;
+    background: rgba(223, 175, 72, .75);
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #a4c1a9;
+    background: rgba(164, 193, 169, .75);
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #bea986;
+    background: rgba(190, 169, 134, .75);
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #85a8ae;
+    background: rgba(133, 168, 174, .75);
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #365aa5;
+    background: rgba(54, 90, 165, .75);
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #1d2e4a;
+    background: rgba(29, 46, 74, .75);
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #7d899b;
+    background: rgba(125, 137, 155, .75);
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #252525;
+    background: #bea986;
+    background: rgba(190, 169, 134, .75);
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #252525;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #e7400d;
+    background: rgba(231, 64, 13, .75);
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #66609e;
+    background: rgba(102, 96, 158, .75);
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #d8680b;
+    background: rgba(216, 104, 11, .75);
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #093f50;
+    background: rgba(9, 63, 80, .75);
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #84bfcc;
+    background: rgba(132, 191, 204, .75);
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #c8d351;
+    background: rgba(200, 211, 81, .75);
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #2a216a;
+    background: rgba(42, 33, 106, .75);
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #77b6e5;
+    background: rgba(119, 182, 229, .75);
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #0f4576;
+    background: rgba(15, 69, 118, .75);
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #00706e;
+    background: rgba(0, 112, 110, .75);
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #b0d54e;
+    background: rgba(176, 213, 78, .75);
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #e13718;
+    background: rgba(225, 55, 24, .75);
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #2a3d66;
+    background: rgba(42, 61, 102, .75);
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #a0b763;
+    background: rgba(160, 183, 99, .75);
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #95c1b0;
+    background: rgba(149, 193, 176, .75);
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #7d8a8b;
+    background: rgba(125, 138, 139, .75);
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.faculty_color .header,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+    color: #fff;
+    background: #999632;
+    background: rgba(153, 150, 50, .75);
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.faculty_color::before,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+    color: #fff;
+    background: #ffb400;
+    background: rgba(255, 180, 0, .75);
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #33838a;
+    background: rgba(51, 131, 138, .75);
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+    color: #fff;
+    background: #ccc6ae;
+    background: rgba(204, 198, 174, .75);
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+    color: #fff;
+    background: #a3650c;
+    background: rgba(163, 101, 12, .75);
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
+  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
+  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+    color: #fff;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_5 .header,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_5 .header,
+  .single-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_5 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_5 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_5 .header,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_5 .header,
+  .single-column .column1 .size3.with-img.outlined.subcolor_5 .header,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_5 .header {
+    color: #252525;
+    background: #f2f2f0;
+    background: rgba(242, 242, 240, .75);
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_5::before,
+  .double-column .column2 .size2.with-img.outlined.subcolor_5::before,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_5::before,
+  .single-column .column1 .size2.with-img.outlined.subcolor_5::before,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_5::before,
+  .double-column .column1 .size3.with-img.outlined.subcolor_5::before,
+  .double-column .column2 .size3.with-img.outlined.subcolor_5::before,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_5::before,
+  .single-column .column1 .size3.with-img.outlined.subcolor_5::before,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_5::before {
+    color: #252525;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_6 .header,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_6 .header,
+  .single-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_6 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_6 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_6 .header,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_6 .header,
+  .single-column .column1 .size3.with-img.outlined.subcolor_6 .header,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_6 .header {
+    color: #252525;
+    background: #fff;
+    background: rgba(255, 255, 255, .75);
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_6::before,
+  .double-column .column2 .size2.with-img.outlined.subcolor_6::before,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_6::before,
+  .single-column .column1 .size2.with-img.outlined.subcolor_6::before,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_6::before,
+  .double-column .column1 .size3.with-img.outlined.subcolor_6::before,
+  .double-column .column2 .size3.with-img.outlined.subcolor_6::before,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_6::before,
+  .single-column .column1 .size3.with-img.outlined.subcolor_6::before,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_6::before {
+    color: #252525;
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .double-column .column2 .size2.with-img.outlined.subcolor_7 .header,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_7 .header,
+  .single-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_7 .header,
+  .double-column .column1 .size3.with-img.outlined.subcolor_7 .header,
+  .double-column .column2 .size3.with-img.outlined.subcolor_7 .header,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_7 .header,
+  .single-column .column1 .size3.with-img.outlined.subcolor_7 .header,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_7 .header {
+    color: #fff;
+    background: #4f473f;
+    background: rgba(79, 71, 63, .75);
+  }
+  .double-column .column1 .size2.with-img.outlined.subcolor_7::before,
+  .double-column .column2 .size2.with-img.outlined.subcolor_7::before,
+  .one-two-column .column2 .size2.with-img.outlined.subcolor_7::before,
+  .single-column .column1 .size2.with-img.outlined.subcolor_7::before,
+  .two-one-column .column1 .size2.with-img.outlined.subcolor_7::before,
+  .double-column .column1 .size3.with-img.outlined.subcolor_7::before,
+  .double-column .column2 .size3.with-img.outlined.subcolor_7::before,
+  .one-two-column .column2 .size3.with-img.outlined.subcolor_7::before,
+  .single-column .column1 .size3.with-img.outlined.subcolor_7::before,
+  .two-one-column .column1 .size3.with-img.outlined.subcolor_7::before {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .double-column .column1 .size2.with-img.outlined .box1 .header,
+  .double-column .column2 .size2.with-img.outlined .box1 .header,
+  .one-two-column .column1 .size2.with-img.outlined .box1 .header,
   .triple-column .column1 .size2.with-img.outlined .box1 .header,
   .triple-column .column2 .size2.with-img.outlined .box1 .header,
   .triple-column .column3 .size2.with-img.outlined .box1 .header,
-  .one-two-column .column1 .size2.with-img.outlined .box1 .header,
   .two-one-column .column2 .size2.with-img.outlined .box1 .header,
-  .double-column .column1 .size2.with-img.outlined .box1 .header,
-  .double-column .column2 .size2.with-img.outlined .box1 .header,
+  .double-column .column1 .size3.with-img.outlined .box1 .header,
+  .double-column .column2 .size3.with-img.outlined .box1 .header,
+  .one-two-column .column1 .size3.with-img.outlined .box1 .header,
   .triple-column .column1 .size3.with-img.outlined .box1 .header,
   .triple-column .column2 .size3.with-img.outlined .box1 .header,
   .triple-column .column3 .size3.with-img.outlined .box1 .header,
-  .one-two-column .column1 .size3.with-img.outlined .box1 .header,
-  .two-one-column .column2 .size3.with-img.outlined .box1 .header,
-  .double-column .column1 .size3.with-img.outlined .box1 .header,
-  .double-column .column2 .size3.with-img.outlined .box1 .header {
+  .two-one-column .column2 .size3.with-img.outlined .box1 .header {
     position: relative;
     bottom: auto;
     left: auto;
-    background-color: transparent!important;
   }
 }
 table.dataTable {
