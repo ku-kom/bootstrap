@@ -13,13 +13,45 @@
 @gridbox3: 133px; // .size3
 @gridbox4: 81px; // .size4
 @gridbox5: 55px; // .size5
-// Colors
+// KU colors
 @brown: #4f473f;
 @red: #901a1e;
 @blue: #a1c5c8;
-@green: #a0b763;
+@green: @samf-sub_2;
 @ku-gray: #f2f2f0;
 @white: #fff;
+
+// Faculty sub colors (Faculty colors are located in variables.less)
+//Science
+@science-sub_1: #dfaf48;
+@science-sub_2: #a4c1a9;
+@science-sub_3: #bea986;
+@science-sub_4: #85a8ae;
+//Hum
+@hum-sub_1: #1d2e4a;
+@hum-sub_2: #b7b5b5;
+@hum-sub_3: #7d899b;
+@hum-sub_4: #e7400d;
+//Teol
+@teol-sub_1: #d8680b;
+@teol-sub_2: #093f50;
+@teol-sub_3: #84bfcc;
+@teol-sub_4: #c8d351;
+//Sund
+@sund-sub_1: #77b6e5;
+@sund-sub_2: #0f4576;
+@sund-sub_3: #00706e;
+@sund-sub_4: #b0d54e;
+//Samf
+@samf-sub_1: #2a3d66;
+@samf-sub_2: #a0b763;
+@samf-sub_3: #95c1b0;
+@samf-sub_4: #7d8a8b;
+//Jura
+@jura-sub_1: #ffb400;
+@jura-sub_2: #33838a;
+@jura-sub_3: #ccc6ae;
+@jura-sub_4: #a3650c;
 
 .gridbox {
   position: relative;
@@ -232,29 +264,29 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#dfaf48, .75);
+          .backgroundColorFix(@science-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #dfaf48;
+          background: @science-sub_1;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #dfaf48;
-        color: #dfaf48!important;
+        border: 1px solid @science-sub_1;
+        color: @science-sub_1!important;
 
         &::before {
-          color: #dfaf48;
+          color: @science-sub_1;
         }
       }
 
       &.full {
-        background: #dfaf48;
+        background: @science-sub_1;
         color: @white-color;
       }
     }
@@ -262,28 +294,28 @@
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#a4c1a9, .75);
+          .backgroundColorFix(@science-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #a4c1a9;
+          background: @science-sub_2;
         }
       }
 
       &.outlined {
-        border: 1px solid #a4c1a9;
-        color: #a4c1a9!important;
+        border: 1px solid @science-sub_2;
+        color: @science-sub_2!important;
 
         &::before {
-          color: #a4c1a9;
+          color: @science-sub_2;
         }
       }
 
       &.full {
-        background: #a4c1a9;
+        background: @science-sub_2;
         color: @white-color;
       }
     }
@@ -291,29 +323,29 @@
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#bea986, .75);
+          .backgroundColorFix(@science-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #bea986;
+          background: @science-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #bea986;
-        color: #bea986;
+        border: 1px solid @science-sub_3;
+        color: @science-sub_3;
 
         &::before {
-          color: #bea986;
+          color: @science-sub_3;
         }
       }
 
       &.full {
-        background: #bea986;
+        background: @science-sub_3;
         color: @white-color;
       }
     }
@@ -321,29 +353,29 @@
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#85a8ae, .75);
+          .backgroundColorFix(@science-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #85a8ae;
+          background: @science-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #85a8ae;
-        color: #85a8ae!important;
+        border: 1px solid @science-sub_4;
+        color: @science-sub_4!important;
 
         &::before {
-          color: #85a8ae;
+          color: @science-sub_4;
         }
       }
 
       &.full {
-        background: #85a8ae;
+        background: @science-sub_4;
         color: @white-color;
       }
     }
@@ -392,29 +424,29 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#1d2e4a, .75);
+          .backgroundColorFix(@hum-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #1d2e4a;
+          background: @hum-sub_1;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #1d2e4a;
-        color: #1d2e4a!important;
+        border: 1px solid @hum-sub_1;
+        color: @hum-sub_1!important;
 
         &::before {
-          color: #1d2e4a;
+          color: @hum-sub_1;
         }
       }
 
       &.full {
-        background: #1d2e4a;
+        background: @hum-sub_1;
         color: @white-color;
       }
     }
@@ -422,29 +454,29 @@
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#7d899b, .75);
+          .backgroundColorFix(@hum-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #7d899b;
+          background: @hum-sub_2;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #7d899b;
-        color: #7d899b!important;
+        border: 1px solid @hum-sub_2;
+        color: @hum-sub_2!important;
 
         &::before {
-          color: #7d899b;
+          color: @hum-sub_2;
         }
       }
 
       &.full {
-        background: #7d899b;
+        background: @hum-sub_2;
         color: @white-color;
       }
     }
@@ -452,29 +484,29 @@
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#bea986, .75);
+          .backgroundColorFix(@hum-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #bea986;
+          background: @hum-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #bea986;
-        color: #bea986!important;
+        border: 1px solid @hum-sub_3;
+        color: @hum-sub_3!important;
 
         &::before {
-          color: #bea986;
+          color: @hum-sub_3;
         }
       }
 
       &.full {
-        background: #bea986;
+        background: @hum-sub_3;
         color: @white-color;
       }
     }
@@ -482,29 +514,29 @@
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#e7400d, .75);
+          .backgroundColorFix(@hum-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #e7400d;
+          background: @hum-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #e7400d;
-        color: #e7400d!important;
+        border: 1px solid @hum-sub_4;
+        color: @hum-sub_4!important;
 
         &::before {
-          color: #e7400d;
+          color: @hum-sub_4;
         }
       }
 
       &.full {
-        background: #e7400d;
+        background: @hum-sub_4;
         color: @white-color;
       }
     }
@@ -553,29 +585,29 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#d8680b, .75);
+          .backgroundColorFix(@teol-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #d8680b;
+          background: @teol-sub_1;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #d8680b;
-        color: #d8680b!important;
+        border: 1px solid @teol-sub_1;
+        color: @teol-sub_1!important;
 
         &::before {
-          color: #d8680b;
+          color: @teol-sub_1;
         }
       }
 
       &.full {
-        background: #d8680b;
+        background: @teol-sub_1;
         color: @white-color;
       }
     }
@@ -583,29 +615,29 @@
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#093f50, .75);
+          .backgroundColorFix(@teol-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #093f50;
+          background: @teol-sub_2;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #093f50;
-        color: #093f50;
+        border: 1px solid @teol-sub_2;
+        color: @teol-sub_2;
 
         &::before {
-          color: #093f50;
+          color: @teol-sub_2;
         }
       }
 
       &.full {
-        background: #093f50;
+        background: @teol-sub_2;
         color: @white-color;
       }
     }
@@ -613,29 +645,29 @@
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#84bfcc, .75);
+          .backgroundColorFix(@teol-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #84bfcc;
+          background: @teol-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #84bfcc;
-        color: #84bfcc!important;
+        border: 1px solid @teol-sub_3;
+        color: @teol-sub_3!important;
 
         &::before {
-          color: #84bfcc;
+          color: @teol-sub_3;
         }
       }
 
       &.full {
-        background: #84bfcc;
+        background: @teol-sub_3;
         color: @white-color;
       }
     }
@@ -643,29 +675,29 @@
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#c8d351, .75);
+          .backgroundColorFix(@teol-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #c8d351;
+          background: @teol-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #c8d351;
-        color: #c8d351!important;
+        border: 1px solid @teol-sub_4;
+        color: @teol-sub_4!important;
 
         &::before {
-          color: #c8d351;
+          color: @teol-sub_4;
         }
       }
 
       &.full {
-        background: #c8d351;
+        background: @teol-sub_4;
         color: @white-color;
       }
     }
@@ -714,29 +746,29 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#77b6e5, .75);
+          .backgroundColorFix(@sund-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #77b6e5;
+          background: @sund-sub_1;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #77b6e5;
-        color: #77b6e5!important;
+        border: 1px solid @sund-sub_1;
+        color: @sund-sub_1!important;
 
         &::before {
-          color: #77b6e5;
+          color: @sund-sub_1;
         }
       }
 
       &.full {
-        background: #77b6e5;
+        background: @sund-sub_1;
         color: @white-color;
       }
     }
@@ -744,29 +776,29 @@
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#0f4576, .75);
+          .backgroundColorFix(@sund-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #0f4576;
+          background: @sund-sub_2;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #0f4576;
-        color: #0f4576!important;
+        border: 1px solid @sund-sub_2;
+        color: @sund-sub_2!important;
 
         &::before {
-          color: #0f4576;
+          color: @sund-sub_2;
         }
       }
 
       &.full {
-        background: #0f4576;
+        background: @sund-sub_2;
         color: @white-color;
       }
     }
@@ -774,29 +806,29 @@
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#00706e, .75);
+          .backgroundColorFix(@sund-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #00706e;
+          background: @sund-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #00706e;
-        color: #00706e!important;
+        border: 1px solid @sund-sub_3;
+        color: @sund-sub_3!important;
 
         &::before {
-          color: #00706e;
+          color: @sund-sub_3;
         }
       }
 
       &.full {
-        background: #00706e;
+        background: @sund-sub_3;
         color: @white-color;
       }
     }
@@ -804,29 +836,29 @@
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#b0d54e, .75);
+          .backgroundColorFix(@sund-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #b0d54e;
+          background: @sund-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #b0d54e;
-        color: #b0d54e!important;
+        border: 1px solid @sund-sub_4;
+        color: @sund-sub_4!important;
 
         &::before {
-          color: #b0d54e;
+          color: @sund-sub_4;
         }
       }
 
       &.full {
-        background: #b0d54e;
+        background: @sund-sub_4;
         color: @white-color;
       }
     }
@@ -875,57 +907,57 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#2a3d66, .75);
+          .backgroundColorFix(@samf-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #2a3d66;
+          background: @samf-sub_1;
         }
       }
 
       &.outlined {
-        border: 1px solid #2a3d66;
-        color: #2a3d66!important;
+        border: 1px solid @samf-sub_1;
+        color: @samf-sub_1!important;
 
         &::before {
-          color: #2a3d66;
+          color: @samf-sub_1;
         }
       }
 
       &.full {
-        background: #2a3d66;
+        background: @samf-sub_1;
       }
     }
 
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#a0b763, .75);
+          .backgroundColorFix(@samf-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #a0b763;
+          background: @samf-sub_2;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #a0b763;
-        color: #a0b763!important;
+        border: 1px solid @samf-sub_2;
+        color: @samf-sub_2!important;
 
         &::before {
-          color: #a0b763;
+          color: @samf-sub_2;
         }
       }
 
       &.full {
-        background: #a0b763;
+        background: @samf-sub_2;
         color: @white-color;
       }
     }
@@ -933,29 +965,29 @@
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#95c1b0, .75);
+          .backgroundColorFix(@samf-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #95c1b0;
+          background: @samf-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #95c1b0;
-        color: #95c1b0!important;
+        border: 1px solid @samf-sub_3;
+        color: @samf-sub_3!important;
 
         &::before {
-          color: #95c1b0;
+          color: @samf-sub_3;
         }
       }
 
       &.full {
-        background: #95c1b0;
+        background: @samf-sub_3;
         color: @white-color;
       }
     }
@@ -963,29 +995,29 @@
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#7d8a8b, .75);
+          .backgroundColorFix(@samf-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #7d8a8b;
+          background: @samf-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #7d8a8b;
-        color: #7d8a8b!important;
+        border: 1px solid @samf-sub_4;
+        color: @samf-sub_4!important;
 
         &::before {
-          color: #7d8a8b;
+          color: @samf-sub_4;
         }
       }
 
       &.full {
-        background: #7d8a8b;
+        background: @samf-sub_4;
         color: @white-color;
       }
     }
@@ -1033,116 +1065,116 @@
     &.subcolor_1 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#ffb400, .75);
+          .backgroundColorFix(@jura-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #ffb400;
+          background: @jura-sub_1;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #ffb400;
-        color: #ffb400!important;
+        border: 1px solid @jura-sub_1;
+        color: @jura-sub_1!important;
 
         &::before {
-          color: #ffb400;
+          color: @jura-sub_1;
         }
       }
 
       &.full {
-        background: #ffb400;
+        background: @jura-sub_1;
       }
     }
 
     &.subcolor_2 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#33838a, .75);
+          .backgroundColorFix(@jura-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #33838a;
+          background: @jura-sub_2;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #33838a;
-        color: #33838a!important;
+        border: 1px solid @jura-sub_2;
+        color: @jura-sub_2!important;
 
         &::before {
-          color: #33838a;
+          color: @jura-sub_2;
         }
       }
 
       &.full {
-        background: #33838a;
+        background: @jura-sub_2;
       }
     }
 
     &.subcolor_3 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#ccc6ae, .75);
+          .backgroundColorFix(@jura-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #ccc6ae;
+          background: @jura-sub_3;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #ccc6ae;
-        color: #ccc6ae!important;
+        border: 1px solid @jura-sub_3;
+        color: @jura-sub_3!important;
 
         &::before {
-          color: #ccc6ae;
+          color: @jura-sub_3;
         }
       }
 
       &.full {
-        background: #ccc6ae;
+        background: @jura-sub_3;
       }
     }
 
     &.subcolor_4 {
       &.text-down {
         .box1 .header {
-          .backgroundColorFix(#a3650c, .75);
+          .backgroundColorFix(@jura-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
         .box1 .header {
-          background: #a3650c;
+          background: @jura-sub_4;
           color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid #a3650c;
-        color: #a3650c!important;
+        border: 1px solid @jura-sub_4;
+        color: @jura-sub_4!important;
 
         &::before {
-          color: #a3650c;
+          color: @jura-sub_4;
         }
       }
 
       &.full {
-        background: #a3650c;
+        background: @jura-sub_4;
       }
     }
   }
@@ -1187,6 +1219,10 @@
     &::before {
       color: @gray-dark;
     }
+
+    .text {
+      color: @gray-dark;
+    }
   }
 
   &.subcolor_6 {
@@ -1227,6 +1263,10 @@
     }
 
     &::before {
+      color: @gray-dark;
+    }
+
+    .text {
       color: @gray-dark;
     }
   }
@@ -1554,19 +1594,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #dfaf48;
+          background-color: @science-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #a4c1a9;
+          background-color: @science-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #bea986;
+          background-color: @science-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #85a8ae;
+          background-color: @science-sub_4;
         }
       }
 
@@ -1578,20 +1618,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #1d2e4a;
+          background-color: @hum-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #7d899b;
+          background-color: @hum-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #bea986;
-          color: @gray-dark;
+          background-color: @hum-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #e7400d;
+          background-color: @hum-sub_4;
         }
       }
 
@@ -1601,19 +1640,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #d8680b;
+          background-color: @teol-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #093f50;
+          background-color: @teol-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #84bfcc;
+          background-color: @teol-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #c8d351;
+          background-color: @teol-sub_4;
         }
       }
 
@@ -1623,19 +1662,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #77b6e5;
+          background-color: @sund-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #0f4576;
+          background-color: @sund-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #00706e;
+          background-color: @sund-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #b0d54e;
+          background-color: @sund-sub_4;
         }
       }
 
@@ -1645,19 +1684,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #2a3d66;
+          background-color: @samf-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #a0b763;
+          background-color: @samf-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #95c1b0;
+          background-color: @samf-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #7d8a8b;
+          background-color: @samf-sub_4;
         }
       }
 
@@ -1667,19 +1706,19 @@
         }
 
         &.subcolor_1 {
-          background-color: #ffb400;
+          background-color: @jura-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: #33838a;
+          background-color: @jura-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: #ccc6ae;
+          background-color: @jura-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: #a3650c;
+          background-color: @jura-sub_4;
         }
       }
 
@@ -1708,10 +1747,6 @@
 
       .box1 {
         flex: 0 1 auto;
-
-        .header {
-          background-color: transparent;
-        }
 
         .text {
           display: block;
@@ -1778,13 +1813,17 @@
   }
 }
 // Outline style
-.triple-column .column1, .triple-column .column2, .triple-column .column3,.one-two-column .column1, .two-one-column .column2,
+
 .double-column .column1,
-.double-column .column2 {
+.double-column .column2,
+.one-two-column .column1,
+.triple-column .column1,
+.triple-column .column2,
+.triple-column .column3,
+.two-one-column .column2 {
   .size2,
   .size3 {
     &.outlined.with-img {
-
       .theme-ku & {
         &.faculty_color {
           .header {
@@ -1832,28 +1871,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#dfaf48, .75);
+            .backgroundColorFix(@science-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#a4c1a9, .75);
+            .backgroundColorFix(@science-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#bea986, .75);
+            .backgroundColorFix(@science-sub_3, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#85a8ae, .75);
+            .backgroundColorFix(@science-sub_4, .75);
             color: @white-color;
           }
         }
@@ -1869,28 +1908,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#1d2e4a, .75);
+            .backgroundColorFix(@hum-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#7d899b, .75);
+            .backgroundColorFix(@hum-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#bea986, .75);
+            .backgroundColorFix(@hum-sub_3, .75);
             color: @gray-dark;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#e7400d, .75);
+            .backgroundColorFix(@hum-sub_4, .75);
             color: @white-color;
           }
         }
@@ -1906,28 +1945,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#d8680b, .75);
+            .backgroundColorFix(@teol-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#093f50, .75);
+            .backgroundColorFix(@teol-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#84bfcc, .75);
+            .backgroundColorFix(@teol-sub_3, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#c8d351, .75);
+            .backgroundColorFix(@teol-sub_4, .75);
             color: @white-color;
           }
         }
@@ -1943,28 +1982,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#77b6e5, .75);
+            .backgroundColorFix(@sund-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#0f4576, .75);
+            .backgroundColorFix(@sund-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#00706e, .75);
+            .backgroundColorFix(@sund-sub_3, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#b0d54e, .75);
+            .backgroundColorFix(@sund-sub_4, .75);
             color: @white-color;
           }
         }
@@ -1980,28 +2019,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#2a3d66, .75);
+            .backgroundColorFix(@samf-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#a0b763, .75);
+            .backgroundColorFix(@samf-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#95c1b0, .75);
+            .backgroundColorFix(@samf-sub_3, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#7d8a8b, .75);
+            .backgroundColorFix(@samf-sub_4, .75);
             color: @white-color;
           }
         }
@@ -2017,28 +2056,28 @@
 
         &.subcolor_1 {
           .header {
-            .backgroundColorFix(#ffb400, .75);
+            .backgroundColorFix(@jura-sub_1, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            .backgroundColorFix(#33838a, .75);
+            .backgroundColorFix(@jura-sub_2, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            .backgroundColorFix(#ccc6ae, .75);
+            .backgroundColorFix(@jura-sub_3, .75);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            .backgroundColorFix(#a3650c, .75);
+            .backgroundColorFix(@jura-sub_4, .75);
             color: @white-color;
           }
         }
@@ -2101,6 +2140,91 @@
     }
   }
 }
+@media only screen and (min-width: 870px) {
+  // Flexbox fix for outlined with image (fill width and 2/3 columns)
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1 {
+    .size2,
+    .size3 {
+      &.outlined,
+      &.with-img {
+        .box1 {
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+  // Large desktop arrow style for outlined with image
+  .double-column .column1,
+  .double-column .column2,
+  .one-two-column .column1,
+  .triple-column .column1,
+  .triple-column .column2,
+  .triple-column .column3,
+  .two-one-column .column2 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.outlined {
+          .theme-ku & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-science & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-hum & {
+            &::before {
+              color: @white-color;
+            }
+
+            &.subcolor_3 {
+              &::before {
+                color: @gray-dark;
+              }
+            }
+          }
+
+          .theme-teol & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-sund & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-samf & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-jura & {
+            &::before {
+              color: @white-color;
+            }
+
+            &.subcolor_3 {
+              &::before {
+                color: @gray-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: 460px) and (max-width: 870px) {
   // All single, 2/3 and double comlumn boxes with image
   .double-column .column1,
@@ -2145,19 +2269,19 @@
           }
 
           &.subcolor_1 {
-            background-color: #dfaf48;
+            background-color: @science-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #a4c1a9;
+            background-color: @science-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #bea986;
+            background-color: @science-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: #85a8ae;
+            background-color: @science-sub_4;
           }
         }
 
@@ -2169,20 +2293,20 @@
           }
 
           &.subcolor_1 {
-            background-color: #1d2e4a;
+            background-color: @hum-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #7d899b;
+            background-color: @hum-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #bea986;
+            background-color: @hum-sub_3;
             color: @gray-dark;
           }
 
           &.subcolor_4 {
-            background-color: #e7400d;
+            background-color: @hum-sub_4;
           }
         }
 
@@ -2192,19 +2316,19 @@
           }
 
           &.subcolor_1 {
-            background-color: #d8680b;
+            background-color: @teol-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #093f50;
+            background-color: @teol-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #84bfcc;
+            background-color: @teol-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: #c8d351;
+            background-color: @teol-sub_4;
           }
         }
 
@@ -2214,19 +2338,19 @@
           }
 
           &.subcolor_1 {
-            background-color: #77b6e5;
+            background-color: @sund-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #0f4576;
+            background-color: @sund-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #00706e;
+            background-color: @sund-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: #b0d54e;
+            background-color: @sund-sub_4;
           }
         }
 
@@ -2236,19 +2360,19 @@
           }
 
           &.subcolor_1 {
-            background-color: #2a3d66;
+            background-color: @samf-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #a0b763;
+            background-color: @samf-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #95c1b0;
+            background-color: @samf-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: #7d8a8b;
+            background-color: @samf-sub_4;
           }
         }
 
@@ -2258,19 +2382,19 @@
           }
 
           &.subcolor_1 {
-            background-color: #ffb400;
+            background-color: @jura-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: #33838a;
+            background-color: @jura-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: #ccc6ae;
+            background-color: @jura-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: #a3650c;
+            background-color: @jura-sub_4;
           }
         }
 
@@ -2364,25 +2488,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #dfaf48;
+                color: @science-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #a4c1a9;
+                color: @science-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #bea986;
+                color: @science-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #85a8ae;
+                color: @science-sub_4;
               }
             }
           }
@@ -2400,25 +2524,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #1d2e4a;
+                color: @hum-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #7d899b;
+                color: @hum-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #bea986;
+                color: @hum-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #e7400d;
+                color: @hum-sub_4;
               }
             }
           }
@@ -2432,25 +2556,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #d8680b;
+                color: @teol-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #093f50;
+                color: @teol-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #84bfcc;
+                color: @teol-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #c8d351;
+                color: @teol-sub_4;
               }
             }
           }
@@ -2464,25 +2588,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #77b6e5;
+                color: @sund-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #0f4576;
+                color: @sund-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #00706e;
+                color: @sund-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #b0d54e;
+                color: @sund-sub_4;
               }
             }
           }
@@ -2496,25 +2620,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #2a3d66;
+                color: @samf-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #a0b763;
+                color: @samf-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #95c1b0;
+                color: @samf-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #7d8a8b;
+                color: @samf-sub_4;
               }
             }
           }
@@ -2528,25 +2652,25 @@
 
             &.subcolor_1 {
               .header {
-                color: #ffb400;
+                color: @jura-sub_1;
               }
             }
 
             &.subcolor_2 {
               .header {
-                color: #33838a;
+                color: @jura-sub_2;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: #ccc6ae;
+                color: @jura-sub_3;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: #a3650c;
+                color: @jura-sub_4;
               }
             }
           }
@@ -2572,8 +2696,10 @@
           .box1 {
             order: 2;
             flex: 1 1 auto!important;
+
             .header {
-                background-color: transparent!important;
+              background-color: transparent!important;
+              position: relative;
             }
           }
 
@@ -2587,34 +2713,10 @@
   }
 }
 @media only screen and (max-width: 459px) {
-  // Single 1/3 and 2/3 columns text-down
-  .one-two-column .column2,
-  .two-one-column .column1,
-  .triple-column .column1,
-  .triple-column .column2,
-  .triple-column .column3 {
-    .size2,
-    .size3 {
-      &.with-img {
-        &.outlined {
-          .box1 {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-  // Full width and 2/3 columns - must behave like single column boxes
-  .double-column .column1,
-  .double-column .column2,
-  .one-two-column .column2,
-  .single-column .column1,
-  .two-one-column .column1 {
-    .size2,
-    .size3 {
+  // All column types must behave like single column boxes
+  .gcrow .gccolumn .gridbox {
+    &.size2,
+    &.size3 {
       &.with-img {
         flex-direction: column;
 
@@ -2720,7 +2822,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#dfaf48, .75);
+                .backgroundColorFix(@science-sub_1, .75);
                 color: @white-color;
               }
 
@@ -2731,7 +2833,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#a4c1a9, .75);
+                .backgroundColorFix(@science-sub_2, .75);
                 color: @white-color;
               }
 
@@ -2742,7 +2844,7 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#bea986, .75);
+                .backgroundColorFix(@science-sub_3, .75);
                 color: @white-color;
               }
 
@@ -2753,7 +2855,7 @@
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#85a8ae, .75);
+                .backgroundColorFix(@science-sub_4, .75);
                 color: @white-color;
               }
 
@@ -2777,7 +2879,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#1d2e4a, .75);
+                .backgroundColorFix(@hum-sub_1, .75);
                 color: @white-color;
               }
 
@@ -2788,7 +2890,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#7d899b, .75);
+                .backgroundColorFix(@hum-sub_2, .75);
                 color: @white-color;
               }
 
@@ -2799,18 +2901,18 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#bea986, .75);
-                color: @gray-dark;
+                .backgroundColorFix(@hum-sub_3, .75);
+                color: @white-color;
               }
 
               &::before {
-                color: @gray-dark;
+                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#e7400d, .75);
+                .backgroundColorFix(@hum-sub_4, .75);
                 color: @white-color;
               }
 
@@ -2834,7 +2936,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#d8680b, .75);
+                .backgroundColorFix(@teol-sub_1, .75);
                 color: @white-color;
               }
 
@@ -2845,7 +2947,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#093f50, .75);
+                .backgroundColorFix(@teol-sub_2, .75);
                 color: @white-color;
               }
 
@@ -2856,7 +2958,7 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#84bfcc, .75);
+                .backgroundColorFix(@teol-sub_3, .75);
                 color: @white-color;
               }
 
@@ -2867,7 +2969,7 @@
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#c8d351, .75);
+                .backgroundColorFix(@teol-sub_4, .75);
                 color: @white-color;
               }
 
@@ -2891,7 +2993,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#77b6e5, .75);
+                .backgroundColorFix(@sund-sub_1, .75);
                 color: @white-color;
               }
 
@@ -2902,7 +3004,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#0f4576, .75);
+                .backgroundColorFix(@sund-sub_2, .75);
                 color: @white-color;
               }
 
@@ -2913,7 +3015,7 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#00706e, .75);
+                .backgroundColorFix(@sund-sub_3, .75);
                 color: @white-color;
               }
 
@@ -2924,7 +3026,7 @@
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#b0d54e, .75);
+                .backgroundColorFix(@sund-sub_4, .75);
                 color: @white-color;
               }
 
@@ -2948,7 +3050,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#2a3d66, .75);
+                .backgroundColorFix(@samf-sub_1, .75);
                 color: @white-color;
               }
 
@@ -2959,7 +3061,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#a0b763, .75);
+                .backgroundColorFix(@samf-sub_2, .75);
                 color: @white-color;
               }
 
@@ -2970,7 +3072,7 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#95c1b0, .75);
+                .backgroundColorFix(@samf-sub_3, .75);
                 color: @white-color;
               }
 
@@ -2981,7 +3083,7 @@
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#7d8a8b, .75);
+                .backgroundColorFix(@samf-sub_4, .75);
                 color: @white-color;
               }
 
@@ -3005,7 +3107,7 @@
 
             &.subcolor_1 {
               .header {
-                .backgroundColorFix(#ffb400, .75);
+                .backgroundColorFix(@jura-sub_1, .75);
                 color: @white-color;
               }
 
@@ -3016,7 +3118,7 @@
 
             &.subcolor_2 {
               .header {
-                .backgroundColorFix(#33838a, .75);
+                .backgroundColorFix(@jura-sub_2, .75);
                 color: @white-color;
               }
 
@@ -3027,7 +3129,7 @@
 
             &.subcolor_3 {
               .header {
-                .backgroundColorFix(#ccc6ae, .75);
+                .backgroundColorFix(@jura-sub_3, .75);
                 color: @white-color;
               }
 
@@ -3038,7 +3140,7 @@
 
             &.subcolor_4 {
               .header {
-                .backgroundColorFix(#a3650c, .75);
+                .backgroundColorFix(@jura-sub_4, .75);
                 color: @white-color;
               }
 
@@ -3078,31 +3180,6 @@
 
             &::before {
               color: @white-color;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 870px) {
-  // Outline fix for single and double column boxes
-  .double-column .column1,
-  .double-column .column2,
-  .one-two-column .column1,
-  .triple-column .column1,
-  .triple-column .column2,
-  .triple-column .column3,
-  .two-one-column .column2 {
-    .size2,
-    .size3 {
-      &.with-img {
-        &.outlined {
-          .box1 {
-            .header {
-              position: relative;
-              bottom: auto;
-              left: auto;
             }
           }
         }

@@ -8921,7 +8921,7 @@ ul.bxslider {
   background: #dfaf48;
 }
 .theme-science .gridbox.subcolor_1.outlined {
-  color: #dfaf48!important;
+  color: #dfaf48 !important;
   border: 1px solid #dfaf48;
 }
 .theme-science .gridbox.subcolor_1.outlined::before {
@@ -8940,7 +8940,7 @@ ul.bxslider {
   background: #a4c1a9;
 }
 .theme-science .gridbox.subcolor_2.outlined {
-  color: #a4c1a9!important;
+  color: #a4c1a9 !important;
   border: 1px solid #a4c1a9;
 }
 .theme-science .gridbox.subcolor_2.outlined::before {
@@ -8980,7 +8980,7 @@ ul.bxslider {
   background: #85a8ae;
 }
 .theme-science .gridbox.subcolor_4.outlined {
-  color: #85a8ae!important;
+  color: #85a8ae !important;
   border: 1px solid #85a8ae;
 }
 .theme-science .gridbox.subcolor_4.outlined::before {
@@ -9027,7 +9027,7 @@ ul.bxslider {
   background: #1d2e4a;
 }
 .theme-hum .gridbox.subcolor_1.outlined {
-  color: #1d2e4a!important;
+  color: #1d2e4a !important;
   border: 1px solid #1d2e4a;
 }
 .theme-hum .gridbox.subcolor_1.outlined::before {
@@ -9039,43 +9039,43 @@ ul.bxslider {
 }
 .theme-hum .gridbox.subcolor_2.text-down .box1 .header {
   color: #fff;
-  background: #7d899b;
-  background: rgba(125, 137, 155, .75);
+  background: #b7b5b5;
+  background: rgba(183, 181, 181, .75);
 }
 .theme-hum .gridbox.subcolor_2.text-top .box1 .header {
   color: #fff;
-  background: #7d899b;
+  background: #b7b5b5;
 }
 .theme-hum .gridbox.subcolor_2.outlined {
-  color: #7d899b!important;
-  border: 1px solid #7d899b;
+  color: #b7b5b5 !important;
+  border: 1px solid #b7b5b5;
 }
 .theme-hum .gridbox.subcolor_2.outlined::before {
-  color: #7d899b;
+  color: #b7b5b5;
 }
 .theme-hum .gridbox.subcolor_2.full {
   color: #fff;
-  background: #7d899b;
+  background: #b7b5b5;
 }
 .theme-hum .gridbox.subcolor_3.text-down .box1 .header {
   color: #fff;
-  background: #bea986;
-  background: rgba(190, 169, 134, .75);
+  background: #7d899b;
+  background: rgba(125, 137, 155, .75);
 }
 .theme-hum .gridbox.subcolor_3.text-top .box1 .header {
   color: #fff;
-  background: #bea986;
+  background: #7d899b;
 }
 .theme-hum .gridbox.subcolor_3.outlined {
-  color: #bea986!important;
-  border: 1px solid #bea986;
+  color: #7d899b !important;
+  border: 1px solid #7d899b;
 }
 .theme-hum .gridbox.subcolor_3.outlined::before {
-  color: #bea986;
+  color: #7d899b;
 }
 .theme-hum .gridbox.subcolor_3.full {
   color: #fff;
-  background: #bea986;
+  background: #7d899b;
 }
 .theme-hum .gridbox.subcolor_4.text-down .box1 .header {
   color: #fff;
@@ -9087,7 +9087,7 @@ ul.bxslider {
   background: #e7400d;
 }
 .theme-hum .gridbox.subcolor_4.outlined {
-  color: #e7400d!important;
+  color: #e7400d !important;
   border: 1px solid #e7400d;
 }
 .theme-hum .gridbox.subcolor_4.outlined::before {
@@ -9134,7 +9134,7 @@ ul.bxslider {
   background: #d8680b;
 }
 .theme-teol .gridbox.subcolor_1.outlined {
-  color: #d8680b!important;
+  color: #d8680b !important;
   border: 1px solid #d8680b;
 }
 .theme-teol .gridbox.subcolor_1.outlined::before {
@@ -9174,7 +9174,7 @@ ul.bxslider {
   background: #84bfcc;
 }
 .theme-teol .gridbox.subcolor_3.outlined {
-  color: #84bfcc!important;
+  color: #84bfcc !important;
   border: 1px solid #84bfcc;
 }
 .theme-teol .gridbox.subcolor_3.outlined::before {
@@ -9194,7 +9194,7 @@ ul.bxslider {
   background: #c8d351;
 }
 .theme-teol .gridbox.subcolor_4.outlined {
-  color: #c8d351!important;
+  color: #c8d351 !important;
   border: 1px solid #c8d351;
 }
 .theme-teol .gridbox.subcolor_4.outlined::before {
@@ -9241,7 +9241,7 @@ ul.bxslider {
   background: #77b6e5;
 }
 .theme-sund .gridbox.subcolor_1.outlined {
-  color: #77b6e5!important;
+  color: #77b6e5 !important;
   border: 1px solid #77b6e5;
 }
 .theme-sund .gridbox.subcolor_1.outlined::before {
@@ -9261,7 +9261,7 @@ ul.bxslider {
   background: #0f4576;
 }
 .theme-sund .gridbox.subcolor_2.outlined {
-  color: #0f4576!important;
+  color: #0f4576 !important;
   border: 1px solid #0f4576;
 }
 .theme-sund .gridbox.subcolor_2.outlined::before {
@@ -9281,7 +9281,7 @@ ul.bxslider {
   background: #00706e;
 }
 .theme-sund .gridbox.subcolor_3.outlined {
-  color: #00706e!important;
+  color: #00706e !important;
   border: 1px solid #00706e;
 }
 .theme-sund .gridbox.subcolor_3.outlined::before {
@@ -9301,7 +9301,7 @@ ul.bxslider {
   background: #b0d54e;
 }
 .theme-sund .gridbox.subcolor_4.outlined {
-  color: #b0d54e!important;
+  color: #b0d54e !important;
   border: 1px solid #b0d54e;
 }
 .theme-sund .gridbox.subcolor_4.outlined::before {
@@ -9347,7 +9347,7 @@ ul.bxslider {
   background: #2a3d66;
 }
 .theme-samf .gridbox.subcolor_1.outlined {
-  color: #2a3d66!important;
+  color: #2a3d66 !important;
   border: 1px solid #2a3d66;
 }
 .theme-samf .gridbox.subcolor_1.outlined::before {
@@ -9366,7 +9366,7 @@ ul.bxslider {
   background: #a0b763;
 }
 .theme-samf .gridbox.subcolor_2.outlined {
-  color: #a0b763!important;
+  color: #a0b763 !important;
   border: 1px solid #a0b763;
 }
 .theme-samf .gridbox.subcolor_2.outlined::before {
@@ -9386,7 +9386,7 @@ ul.bxslider {
   background: #95c1b0;
 }
 .theme-samf .gridbox.subcolor_3.outlined {
-  color: #95c1b0!important;
+  color: #95c1b0 !important;
   border: 1px solid #95c1b0;
 }
 .theme-samf .gridbox.subcolor_3.outlined::before {
@@ -9406,7 +9406,7 @@ ul.bxslider {
   background: #7d8a8b;
 }
 .theme-samf .gridbox.subcolor_4.outlined {
-  color: #7d8a8b!important;
+  color: #7d8a8b !important;
   border: 1px solid #7d8a8b;
 }
 .theme-samf .gridbox.subcolor_4.outlined::before {
@@ -9452,7 +9452,7 @@ ul.bxslider {
   background: #ffb400;
 }
 .theme-jura .gridbox.subcolor_1.outlined {
-  color: #ffb400!important;
+  color: #ffb400 !important;
   border: 1px solid #ffb400;
 }
 .theme-jura .gridbox.subcolor_1.outlined::before {
@@ -9471,7 +9471,7 @@ ul.bxslider {
   background: #33838a;
 }
 .theme-jura .gridbox.subcolor_2.outlined {
-  color: #33838a!important;
+  color: #33838a !important;
   border: 1px solid #33838a;
 }
 .theme-jura .gridbox.subcolor_2.outlined::before {
@@ -9490,7 +9490,7 @@ ul.bxslider {
   background: #ccc6ae;
 }
 .theme-jura .gridbox.subcolor_3.outlined {
-  color: #ccc6ae!important;
+  color: #ccc6ae !important;
   border: 1px solid #ccc6ae;
 }
 .theme-jura .gridbox.subcolor_3.outlined::before {
@@ -9509,7 +9509,7 @@ ul.bxslider {
   background: #a3650c;
 }
 .theme-jura .gridbox.subcolor_4.outlined {
-  color: #a3650c!important;
+  color: #a3650c !important;
   border: 1px solid #a3650c;
 }
 .theme-jura .gridbox.subcolor_4.outlined::before {
@@ -9547,6 +9547,9 @@ ul.bxslider {
 .gridbox.subcolor_5::before {
   color: #252525;
 }
+.gridbox.subcolor_5 .text {
+  color: #252525;
+}
 .gridbox.subcolor_6.text-down .box1 .header {
   color: #252525;
   background: #fff;
@@ -9574,6 +9577,9 @@ ul.bxslider {
   color: #252525;
 }
 .gridbox.subcolor_6::before {
+  color: #252525;
+}
+.gridbox.subcolor_6 .text {
   color: #252525;
 }
 .gridbox.subcolor_7.text-down .box1 .header {
@@ -9973,7 +9979,7 @@ ul.bxslider {
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_2,
 .theme-hum .two-one-column .column1 .size3.with-img.subcolor_2 {
-  background-color: #7d899b;
+  background-color: #b7b5b5;
 }
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_3,
@@ -9981,8 +9987,7 @@ ul.bxslider {
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_3,
 .theme-hum .two-one-column .column1 .size3.with-img.subcolor_3 {
-  color: #252525;
-  background-color: #bea986;
+  background-color: #7d899b;
 }
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_4,
@@ -10206,14 +10211,6 @@ ul.bxslider {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
-.one-two-column .column2 .size2.with-img .box1 .header,
-.single-column .column1 .size2.with-img .box1 .header,
-.two-one-column .column1 .size2.with-img .box1 .header,
-.one-two-column .column2 .size3.with-img .box1 .header,
-.single-column .column1 .size3.with-img .box1 .header,
-.two-one-column .column1 .size3.with-img .box1 .header {
-  background-color: transparent;
-}
 .one-two-column .column2 .size2.with-img .box1 .text,
 .single-column .column1 .size2.with-img .box1 .text,
 .two-one-column .column1 .size2.with-img .box1 .text,
@@ -10309,759 +10306,759 @@ ul.bxslider {
 .two-one-column .column2 .size3.text-down::before {
   bottom: 10px;
 }
+.double-column .column1 .size2.outlined.with-img,
+.double-column .column2 .size2.outlined.with-img,
+.one-two-column .column1 .size2.outlined.with-img,
 .triple-column .column1 .size2.outlined.with-img,
 .triple-column .column2 .size2.outlined.with-img,
 .triple-column .column3 .size2.outlined.with-img,
-.one-two-column .column1 .size2.outlined.with-img,
 .two-one-column .column2 .size2.outlined.with-img,
-.double-column .column1 .size2.outlined.with-img,
-.double-column .column2 .size2.outlined.with-img,
+.double-column .column1 .size3.outlined.with-img,
+.double-column .column2 .size3.outlined.with-img,
+.one-two-column .column1 .size3.outlined.with-img,
 .triple-column .column1 .size3.outlined.with-img,
 .triple-column .column2 .size3.outlined.with-img,
 .triple-column .column3 .size3.outlined.with-img,
-.one-two-column .column1 .size3.outlined.with-img,
-.two-one-column .column2 .size3.outlined.with-img,
-.double-column .column1 .size3.outlined.with-img,
-.double-column .column2 .size3.outlined.with-img {
+.two-one-column .column2 .size3.outlined.with-img {
   color: #fff;
   background-color: transparent!important;
 }
+.theme-ku .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-ku .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-ku .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-ku .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-ku .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-ku .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-ku .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-ku .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-ku .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-ku .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-ku .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-ku .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-ku .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-ku .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #901a1e;
   background: rgba(144, 26, 30, .75);
 }
+.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #a1c5c8;
   background: rgba(161, 197, 200, .75);
 }
+.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #4f473f;
   background: rgba(79, 71, 63, .75);
 }
+.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #a0b763;
   background: rgba(160, 183, 99, .75);
 }
+.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-ku .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-ku .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-ku .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-ku .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #252525;
   background: #f2f2f0;
   background: rgba(242, 242, 240, .75);
 }
+.theme-science .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-science .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-science .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-science .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-science .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-science .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-science .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-science .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-science .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-science .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-science .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-science .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-science .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #46743c;
   background: rgba(70, 116, 60, .75);
 }
+.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #dfaf48;
   background: rgba(223, 175, 72, .75);
 }
+.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #a4c1a9;
   background: rgba(164, 193, 169, .75);
 }
+.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #bea986;
   background: rgba(190, 169, 134, .75);
 }
+.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-science .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-science .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-science .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-science .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #85a8ae;
   background: rgba(133, 168, 174, .75);
 }
+.theme-hum .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-hum .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-hum .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-hum .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-hum .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-hum .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-hum .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-hum .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-hum .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-hum .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-hum .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-hum .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-hum .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-hum .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #365aa5;
   background: rgba(54, 90, 165, .75);
 }
+.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #1d2e4a;
   background: rgba(29, 46, 74, .75);
 }
+.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
-  background: #7d899b;
-  background: rgba(125, 137, 155, .75);
+  background: #b7b5b5;
+  background: rgba(183, 181, 181, .75);
 }
+.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #252525;
-  background: #bea986;
-  background: rgba(190, 169, 134, .75);
+  background: #7d899b;
+  background: rgba(125, 137, 155, .75);
 }
+.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-hum .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-hum .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-hum .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-hum .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #e7400d;
   background: rgba(231, 64, 13, .75);
 }
+.theme-teol .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-teol .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-teol .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-teol .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-teol .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-teol .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-teol .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-teol .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-teol .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-teol .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-teol .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-teol .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-teol .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-teol .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #66609e;
   background: rgba(102, 96, 158, .75);
 }
+.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #d8680b;
   background: rgba(216, 104, 11, .75);
 }
+.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #093f50;
   background: rgba(9, 63, 80, .75);
 }
+.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #84bfcc;
   background: rgba(132, 191, 204, .75);
 }
+.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-teol .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-teol .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-teol .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-teol .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #c8d351;
   background: rgba(200, 211, 81, .75);
 }
+.theme-sund .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-sund .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-sund .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-sund .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-sund .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-sund .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-sund .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-sund .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-sund .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-sund .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-sund .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #2a216a;
   background: rgba(42, 33, 106, .75);
 }
+.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #77b6e5;
   background: rgba(119, 182, 229, .75);
 }
+.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #0f4576;
   background: rgba(15, 69, 118, .75);
 }
+.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #00706e;
   background: rgba(0, 112, 110, .75);
 }
+.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #b0d54e;
   background: rgba(176, 213, 78, .75);
 }
+.theme-samf .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-samf .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-samf .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-samf .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-samf .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-samf .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-samf .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-samf .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-samf .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #e13718;
   background: rgba(225, 55, 24, .75);
 }
+.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #2a3d66;
   background: rgba(42, 61, 102, .75);
 }
+.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #a0b763;
   background: rgba(160, 183, 99, .75);
 }
+.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #95c1b0;
   background: rgba(149, 193, 176, .75);
 }
+.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-samf .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-samf .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-samf .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-samf .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #7d8a8b;
   background: rgba(125, 138, 139, .75);
 }
+.theme-jura .double-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-jura .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-jura .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column3 .size2.outlined.with-img.faculty_color .header,
-.theme-jura .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-jura .double-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-jura .double-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-jura .double-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-jura .double-column .column2 .size3.outlined.with-img.faculty_color .header,
+.theme-jura .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column1 .size3.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column2 .size3.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column .column3 .size3.outlined.with-img.faculty_color .header,
-.theme-jura .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-jura .two-one-column .column2 .size3.outlined.with-img.faculty_color .header,
-.theme-jura .double-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-jura .double-column .column2 .size3.outlined.with-img.faculty_color .header {
+.theme-jura .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
   background: #999632;
   background: rgba(153, 150, 50, .75);
 }
+.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column3 .size2.outlined.with-img.subcolor_1 .header,
-.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_1 .header,
+.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column1 .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column2 .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column .column3 .size3.outlined.with-img.subcolor_1 .header,
-.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header,
-.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
   background: #ffb400;
   background: rgba(255, 180, 0, .75);
 }
+.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column3 .size2.outlined.with-img.subcolor_2 .header,
-.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_2 .header,
+.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column1 .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column2 .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column .column3 .size3.outlined.with-img.subcolor_2 .header,
-.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header,
-.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
   background: #33838a;
   background: rgba(51, 131, 138, .75);
 }
+.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column3 .size2.outlined.with-img.subcolor_3 .header,
-.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_3 .header,
+.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column1 .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column2 .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column .column3 .size3.outlined.with-img.subcolor_3 .header,
-.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header,
-.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
   background: #ccc6ae;
   background: rgba(204, 198, 174, .75);
 }
+.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column3 .size2.outlined.with-img.subcolor_4 .header,
-.theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-jura .double-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-jura .double-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_4 .header,
+.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column1 .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column2 .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column .column3 .size3.outlined.with-img.subcolor_4 .header,
-.theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header,
-.theme-jura .double-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-jura .double-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+.theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
   background: #a3650c;
   background: rgba(163, 101, 12, .75);
 }
+.double-column .column1 .size2.outlined.with-img.subcolor_5 .header,
+.double-column .column2 .size2.outlined.with-img.subcolor_5 .header,
+.one-two-column .column1 .size2.outlined.with-img.subcolor_5 .header,
 .triple-column .column1 .size2.outlined.with-img.subcolor_5 .header,
 .triple-column .column2 .size2.outlined.with-img.subcolor_5 .header,
 .triple-column .column3 .size2.outlined.with-img.subcolor_5 .header,
-.one-two-column .column1 .size2.outlined.with-img.subcolor_5 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_5 .header,
-.double-column .column1 .size2.outlined.with-img.subcolor_5 .header,
-.double-column .column2 .size2.outlined.with-img.subcolor_5 .header,
+.double-column .column1 .size3.outlined.with-img.subcolor_5 .header,
+.double-column .column2 .size3.outlined.with-img.subcolor_5 .header,
+.one-two-column .column1 .size3.outlined.with-img.subcolor_5 .header,
 .triple-column .column1 .size3.outlined.with-img.subcolor_5 .header,
 .triple-column .column2 .size3.outlined.with-img.subcolor_5 .header,
 .triple-column .column3 .size3.outlined.with-img.subcolor_5 .header,
-.one-two-column .column1 .size3.outlined.with-img.subcolor_5 .header,
-.two-one-column .column2 .size3.outlined.with-img.subcolor_5 .header,
-.double-column .column1 .size3.outlined.with-img.subcolor_5 .header,
-.double-column .column2 .size3.outlined.with-img.subcolor_5 .header {
+.two-one-column .column2 .size3.outlined.with-img.subcolor_5 .header {
   color: #252525;
   background: #f2f2f0;
   background: rgba(242, 242, 240, .75);
 }
+.double-column .column1 .size2.outlined.with-img.subcolor_6 .header,
+.double-column .column2 .size2.outlined.with-img.subcolor_6 .header,
+.one-two-column .column1 .size2.outlined.with-img.subcolor_6 .header,
 .triple-column .column1 .size2.outlined.with-img.subcolor_6 .header,
 .triple-column .column2 .size2.outlined.with-img.subcolor_6 .header,
 .triple-column .column3 .size2.outlined.with-img.subcolor_6 .header,
-.one-two-column .column1 .size2.outlined.with-img.subcolor_6 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_6 .header,
-.double-column .column1 .size2.outlined.with-img.subcolor_6 .header,
-.double-column .column2 .size2.outlined.with-img.subcolor_6 .header,
+.double-column .column1 .size3.outlined.with-img.subcolor_6 .header,
+.double-column .column2 .size3.outlined.with-img.subcolor_6 .header,
+.one-two-column .column1 .size3.outlined.with-img.subcolor_6 .header,
 .triple-column .column1 .size3.outlined.with-img.subcolor_6 .header,
 .triple-column .column2 .size3.outlined.with-img.subcolor_6 .header,
 .triple-column .column3 .size3.outlined.with-img.subcolor_6 .header,
-.one-two-column .column1 .size3.outlined.with-img.subcolor_6 .header,
-.two-one-column .column2 .size3.outlined.with-img.subcolor_6 .header,
-.double-column .column1 .size3.outlined.with-img.subcolor_6 .header,
-.double-column .column2 .size3.outlined.with-img.subcolor_6 .header {
+.two-one-column .column2 .size3.outlined.with-img.subcolor_6 .header {
   color: #252525;
   background: #fff;
   background: rgba(255, 255, 255, .75);
 }
+.double-column .column1 .size2.outlined.with-img.subcolor_7 .header,
+.double-column .column2 .size2.outlined.with-img.subcolor_7 .header,
+.one-two-column .column1 .size2.outlined.with-img.subcolor_7 .header,
 .triple-column .column1 .size2.outlined.with-img.subcolor_7 .header,
 .triple-column .column2 .size2.outlined.with-img.subcolor_7 .header,
 .triple-column .column3 .size2.outlined.with-img.subcolor_7 .header,
-.one-two-column .column1 .size2.outlined.with-img.subcolor_7 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_7 .header,
-.double-column .column1 .size2.outlined.with-img.subcolor_7 .header,
-.double-column .column2 .size2.outlined.with-img.subcolor_7 .header,
+.double-column .column1 .size3.outlined.with-img.subcolor_7 .header,
+.double-column .column2 .size3.outlined.with-img.subcolor_7 .header,
+.one-two-column .column1 .size3.outlined.with-img.subcolor_7 .header,
 .triple-column .column1 .size3.outlined.with-img.subcolor_7 .header,
 .triple-column .column2 .size3.outlined.with-img.subcolor_7 .header,
 .triple-column .column3 .size3.outlined.with-img.subcolor_7 .header,
-.one-two-column .column1 .size3.outlined.with-img.subcolor_7 .header,
-.two-one-column .column2 .size3.outlined.with-img.subcolor_7 .header,
-.double-column .column1 .size3.outlined.with-img.subcolor_7 .header,
-.double-column .column2 .size3.outlined.with-img.subcolor_7 .header {
+.two-one-column .column2 .size3.outlined.with-img.subcolor_7 .header {
   color: #fff;
   background: #4f473f;
   background: rgba(79, 71, 63, .75);
 }
+.double-column .column1 .size2.outlined.with-img .box1,
+.double-column .column2 .size2.outlined.with-img .box1,
+.one-two-column .column1 .size2.outlined.with-img .box1,
 .triple-column .column1 .size2.outlined.with-img .box1,
 .triple-column .column2 .size2.outlined.with-img .box1,
 .triple-column .column3 .size2.outlined.with-img .box1,
-.one-two-column .column1 .size2.outlined.with-img .box1,
 .two-one-column .column2 .size2.outlined.with-img .box1,
-.double-column .column1 .size2.outlined.with-img .box1,
-.double-column .column2 .size2.outlined.with-img .box1,
+.double-column .column1 .size3.outlined.with-img .box1,
+.double-column .column2 .size3.outlined.with-img .box1,
+.one-two-column .column1 .size3.outlined.with-img .box1,
 .triple-column .column1 .size3.outlined.with-img .box1,
 .triple-column .column2 .size3.outlined.with-img .box1,
 .triple-column .column3 .size3.outlined.with-img .box1,
-.one-two-column .column1 .size3.outlined.with-img .box1,
-.two-one-column .column2 .size3.outlined.with-img .box1,
-.double-column .column1 .size3.outlined.with-img .box1,
-.double-column .column2 .size3.outlined.with-img .box1 {
+.two-one-column .column2 .size3.outlined.with-img .box1 {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
 }
+.double-column .column1 .size2.outlined.with-img .box1 .header,
+.double-column .column2 .size2.outlined.with-img .box1 .header,
+.one-two-column .column1 .size2.outlined.with-img .box1 .header,
 .triple-column .column1 .size2.outlined.with-img .box1 .header,
 .triple-column .column2 .size2.outlined.with-img .box1 .header,
 .triple-column .column3 .size2.outlined.with-img .box1 .header,
-.one-two-column .column1 .size2.outlined.with-img .box1 .header,
 .two-one-column .column2 .size2.outlined.with-img .box1 .header,
-.double-column .column1 .size2.outlined.with-img .box1 .header,
-.double-column .column2 .size2.outlined.with-img .box1 .header,
+.double-column .column1 .size3.outlined.with-img .box1 .header,
+.double-column .column2 .size3.outlined.with-img .box1 .header,
+.one-two-column .column1 .size3.outlined.with-img .box1 .header,
 .triple-column .column1 .size3.outlined.with-img .box1 .header,
 .triple-column .column2 .size3.outlined.with-img .box1 .header,
 .triple-column .column3 .size3.outlined.with-img .box1 .header,
-.one-two-column .column1 .size3.outlined.with-img .box1 .header,
-.two-one-column .column2 .size3.outlined.with-img .box1 .header,
-.double-column .column1 .size3.outlined.with-img .box1 .header,
-.double-column .column2 .size3.outlined.with-img .box1 .header {
+.two-one-column .column2 .size3.outlined.with-img .box1 .header {
   position: absolute;
   bottom: 0;
   left: 0;
   color: inherit;
 }
+.double-column .column1 .size2.outlined.with-img .box2,
+.double-column .column2 .size2.outlined.with-img .box2,
+.one-two-column .column1 .size2.outlined.with-img .box2,
 .triple-column .column1 .size2.outlined.with-img .box2,
 .triple-column .column2 .size2.outlined.with-img .box2,
 .triple-column .column3 .size2.outlined.with-img .box2,
-.one-two-column .column1 .size2.outlined.with-img .box2,
 .two-one-column .column2 .size2.outlined.with-img .box2,
-.double-column .column1 .size2.outlined.with-img .box2,
-.double-column .column2 .size2.outlined.with-img .box2,
+.double-column .column1 .size3.outlined.with-img .box2,
+.double-column .column2 .size3.outlined.with-img .box2,
+.one-two-column .column1 .size3.outlined.with-img .box2,
 .triple-column .column1 .size3.outlined.with-img .box2,
 .triple-column .column2 .size3.outlined.with-img .box2,
 .triple-column .column3 .size3.outlined.with-img .box2,
-.one-two-column .column1 .size3.outlined.with-img .box2,
-.two-one-column .column2 .size3.outlined.with-img .box2,
-.double-column .column1 .size3.outlined.with-img .box2,
-.double-column .column2 .size3.outlined.with-img .box2 {
+.two-one-column .column2 .size3.outlined.with-img .box2 {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -11078,6 +11075,169 @@ ul.bxslider {
 .triple-column .column3 .size3.with-img.outlined,
 .two-one-column .column2 .size3.with-img.outlined {
   border-width: 0;
+}
+@media only screen and (min-width: 870px) {
+  .one-two-column .column2 .size2.outlined .box1,
+  .single-column .column1 .size2.outlined .box1,
+  .two-one-column .column1 .size2.outlined .box1,
+  .one-two-column .column2 .size3.outlined .box1,
+  .single-column .column1 .size3.outlined .box1,
+  .two-one-column .column1 .size3.outlined .box1,
+  .one-two-column .column2 .size2.with-img .box1,
+  .single-column .column1 .size2.with-img .box1,
+  .two-one-column .column1 .size2.with-img .box1,
+  .one-two-column .column2 .size3.with-img .box1,
+  .single-column .column1 .size3.with-img .box1,
+  .two-one-column .column1 .size3.with-img .box1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .theme-ku .double-column .column1 .size2.with-img.outlined::before,
+  .theme-ku .double-column .column2 .size2.with-img.outlined::before,
+  .theme-ku .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-ku .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-ku .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-ku .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-ku .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-ku .double-column .column1 .size3.with-img.outlined::before,
+  .theme-ku .double-column .column2 .size3.with-img.outlined::before,
+  .theme-ku .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-ku .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-ku .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-ku .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-ku .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-science .double-column .column1 .size2.with-img.outlined::before,
+  .theme-science .double-column .column2 .size2.with-img.outlined::before,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-science .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-science .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-science .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-science .double-column .column1 .size3.with-img.outlined::before,
+  .theme-science .double-column .column2 .size3.with-img.outlined::before,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-science .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-science .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-science .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined::before,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined::before,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .one-two-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column3 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .two-one-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .one-two-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_3::before,
+  .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_3::before {
+    color: #252525;
+  }
+  .theme-teol .double-column .column1 .size2.with-img.outlined::before,
+  .theme-teol .double-column .column2 .size2.with-img.outlined::before,
+  .theme-teol .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-teol .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-teol .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-teol .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-teol .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-teol .double-column .column1 .size3.with-img.outlined::before,
+  .theme-teol .double-column .column2 .size3.with-img.outlined::before,
+  .theme-teol .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-teol .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-teol .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-teol .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-teol .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-sund .double-column .column1 .size2.with-img.outlined::before,
+  .theme-sund .double-column .column2 .size2.with-img.outlined::before,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-sund .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-sund .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-sund .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-sund .double-column .column1 .size3.with-img.outlined::before,
+  .theme-sund .double-column .column2 .size3.with-img.outlined::before,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-sund .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-sund .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-sund .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-samf .double-column .column1 .size2.with-img.outlined::before,
+  .theme-samf .double-column .column2 .size2.with-img.outlined::before,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-samf .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-samf .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-samf .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-samf .double-column .column1 .size3.with-img.outlined::before,
+  .theme-samf .double-column .column2 .size3.with-img.outlined::before,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-samf .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-samf .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-samf .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined::before,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined::before,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined::before,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined::before,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined::before,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined::before,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined::before,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined::before,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .one-two-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column1 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column3 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .two-one-column .column2 .size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .one-two-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column1 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column2 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .triple-column .column3 .size3.with-img.outlined.subcolor_3::before,
+  .theme-jura .two-one-column .column2 .size3.with-img.outlined.subcolor_3::before {
+    color: #252525;
+  }
 }
 @media only screen and (min-width: 460px) and (max-width: 870px) {
   .double-column .column1 .size2.with-img,
@@ -11325,7 +11485,7 @@ ul.bxslider {
   .theme-hum .triple-column .column2 .size3.with-img.subcolor_2,
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_2,
   .theme-hum .two-one-column .column2 .size3.with-img.subcolor_2 {
-    background-color: #7d899b;
+    background-color: #b7b5b5;
   }
   .theme-hum .double-column .column1 .size2.with-img.subcolor_3,
   .theme-hum .double-column .column2 .size2.with-img.subcolor_3,
@@ -11342,7 +11502,7 @@ ul.bxslider {
   .theme-hum .triple-column .column3 .size3.with-img.subcolor_3,
   .theme-hum .two-one-column .column2 .size3.with-img.subcolor_3 {
     color: #252525;
-    background-color: #bea986;
+    background-color: #7d899b;
   }
   .theme-hum .double-column .column1 .size2.with-img.subcolor_4,
   .theme-hum .double-column .column2 .size2.with-img.subcolor_4,
@@ -12094,7 +12254,7 @@ ul.bxslider {
   .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_2 .header,
   .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_2 .header,
   .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_2 .header {
-    color: #7d899b;
+    color: #b7b5b5;
   }
   .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
   .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
@@ -12110,7 +12270,7 @@ ul.bxslider {
   .theme-hum .triple-column .column2 .size3.with-img.outlined.subcolor_3 .header,
   .theme-hum .triple-column .column3 .size3.with-img.outlined.subcolor_3 .header,
   .theme-hum .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
-    color: #bea986;
+    color: #7d899b;
   }
   .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
   .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
@@ -12533,6 +12693,7 @@ ul.bxslider {
   .triple-column .column2 .size3.with-img.outlined .box1 .header,
   .triple-column .column3 .size3.with-img.outlined .box1 .header,
   .two-one-column .column2 .size3.with-img.outlined .box1 .header {
+    position: relative;
     background-color: transparent!important;
   }
   .double-column .column1 .size2.with-img.outlined .box2,
@@ -12556,31 +12717,8 @@ ul.bxslider {
   }
 }
 @media only screen and (max-width: 459px) {
-  .one-two-column .column2 .size2.with-img.outlined .box1,
-  .two-one-column .column1 .size2.with-img.outlined .box1,
-  .triple-column .column1 .size2.with-img.outlined .box1,
-  .triple-column .column2 .size2.with-img.outlined .box1,
-  .triple-column .column3 .size2.with-img.outlined .box1,
-  .one-two-column .column2 .size3.with-img.outlined .box1,
-  .two-one-column .column1 .size3.with-img.outlined .box1,
-  .triple-column .column1 .size3.with-img.outlined .box1,
-  .triple-column .column2 .size3.with-img.outlined .box1,
-  .triple-column .column3 .size3.with-img.outlined .box1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  .double-column .column1 .size2.with-img,
-  .double-column .column2 .size2.with-img,
-  .one-two-column .column2 .size2.with-img,
-  .single-column .column1 .size2.with-img,
-  .two-one-column .column1 .size2.with-img,
-  .double-column .column1 .size3.with-img,
-  .double-column .column2 .size3.with-img,
-  .one-two-column .column2 .size3.with-img,
-  .single-column .column1 .size3.with-img,
-  .two-one-column .column1 .size3.with-img {
+  .gcrow .gccolumn .gridbox.size2.with-img,
+  .gcrow .gccolumn .gridbox.size3.with-img {
             flex-direction: column;
 
     -webkit-box-orient: vertical;
@@ -12588,28 +12726,12 @@ ul.bxslider {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
   }
-  .double-column .column1 .size2.with-img .text,
-  .double-column .column2 .size2.with-img .text,
-  .one-two-column .column2 .size2.with-img .text,
-  .single-column .column1 .size2.with-img .text,
-  .two-one-column .column1 .size2.with-img .text,
-  .double-column .column1 .size3.with-img .text,
-  .double-column .column2 .size3.with-img .text,
-  .one-two-column .column2 .size3.with-img .text,
-  .single-column .column1 .size3.with-img .text,
-  .two-one-column .column1 .size3.with-img .text {
+  .gcrow .gccolumn .gridbox.size2.with-img .text,
+  .gcrow .gccolumn .gridbox.size3.with-img .text {
     display: none;
   }
-  .double-column .column1 .size2.with-img .box1,
-  .double-column .column2 .size2.with-img .box1,
-  .one-two-column .column2 .size2.with-img .box1,
-  .single-column .column1 .size2.with-img .box1,
-  .two-one-column .column1 .size2.with-img .box1,
-  .double-column .column1 .size3.with-img .box1,
-  .double-column .column2 .size3.with-img .box1,
-  .one-two-column .column2 .size3.with-img .box1,
-  .single-column .column1 .size3.with-img .box1,
-  .two-one-column .column1 .size3.with-img .box1 {
+  .gcrow .gccolumn .gridbox.size2.with-img .box1,
+  .gcrow .gccolumn .gridbox.size3.with-img .box1 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -12624,1067 +12746,407 @@ ul.bxslider {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
   }
-  .double-column .column1 .size2.with-img .box1 .text,
-  .double-column .column2 .size2.with-img .box1 .text,
-  .one-two-column .column2 .size2.with-img .box1 .text,
-  .single-column .column1 .size2.with-img .box1 .text,
-  .two-one-column .column1 .size2.with-img .box1 .text,
-  .double-column .column1 .size3.with-img .box1 .text,
-  .double-column .column2 .size3.with-img .box1 .text,
-  .one-two-column .column2 .size3.with-img .box1 .text,
-  .single-column .column1 .size3.with-img .box1 .text,
-  .two-one-column .column1 .size3.with-img .box1 .text {
+  .gcrow .gccolumn .gridbox.size2.with-img .box1 .text,
+  .gcrow .gccolumn .gridbox.size3.with-img .box1 .text {
     display: none;
   }
-  .double-column .column1 .size2.with-img .box2,
-  .double-column .column2 .size2.with-img .box2,
-  .one-two-column .column2 .size2.with-img .box2,
-  .single-column .column1 .size2.with-img .box2,
-  .two-one-column .column1 .size2.with-img .box2,
-  .double-column .column1 .size3.with-img .box2,
-  .double-column .column2 .size3.with-img .box2,
-  .one-two-column .column2 .size3.with-img .box2,
-  .single-column .column1 .size3.with-img .box2,
-  .two-one-column .column1 .size3.with-img .box2 {
+  .gcrow .gccolumn .gridbox.size2.with-img .box2,
+  .gcrow .gccolumn .gridbox.size3.with-img .box2 {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
             order: 1;
   }
-  .double-column .column1 .size2.with-img.outlined,
-  .double-column .column2 .size2.with-img.outlined,
-  .one-two-column .column2 .size2.with-img.outlined,
-  .single-column .column1 .size2.with-img.outlined,
-  .two-one-column .column1 .size2.with-img.outlined,
-  .double-column .column1 .size3.with-img.outlined,
-  .double-column .column2 .size3.with-img.outlined,
-  .one-two-column .column2 .size3.with-img.outlined,
-  .single-column .column1 .size3.with-img.outlined,
-  .two-one-column .column1 .size3.with-img.outlined {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined {
     border-width: 0;
   }
-  .double-column .column1 .size2.with-img.outlined .box1,
-  .double-column .column2 .size2.with-img.outlined .box1,
-  .one-two-column .column2 .size2.with-img.outlined .box1,
-  .single-column .column1 .size2.with-img.outlined .box1,
-  .two-one-column .column1 .size2.with-img.outlined .box1,
-  .double-column .column1 .size3.with-img.outlined .box1,
-  .double-column .column2 .size3.with-img.outlined .box1,
-  .one-two-column .column2 .size3.with-img.outlined .box1,
-  .single-column .column1 .size3.with-img.outlined .box1,
-  .two-one-column .column1 .size3.with-img.outlined .box1 {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined .box1,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined .box1 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #901a1e;
     background: rgba(144, 26, 30, .75);
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #a1c5c8;
     background: rgba(161, 197, 200, .75);
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #4f473f;
     background: rgba(79, 71, 63, .75);
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #a0b763;
     background: rgba(160, 183, 99, .75);
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #252525;
     background: #f2f2f0;
     background: rgba(242, 242, 240, .75);
   }
-  .theme-ku .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-ku .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-ku .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-ku .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-ku .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-ku .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-ku .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-ku .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-ku .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-ku .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-ku .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-ku .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #f2f2f0;
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-science .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-science .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-science .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-science .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-science .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #46743c;
     background: rgba(70, 116, 60, .75);
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-science .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-science .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-science .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-science .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-science .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #dfaf48;
     background: rgba(223, 175, 72, .75);
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #a4c1a9;
     background: rgba(164, 193, 169, .75);
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #bea986;
     background: rgba(190, 169, 134, .75);
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #85a8ae;
     background: rgba(133, 168, 174, .75);
   }
-  .theme-science .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-science .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-science .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-science .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-science .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-science .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-science .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-science .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-science .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-science .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #365aa5;
     background: rgba(54, 90, 165, .75);
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #1d2e4a;
     background: rgba(29, 46, 74, .75);
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
+    color: #fff;
+    background: #b7b5b5;
+    background: rgba(183, 181, 181, .75);
+  }
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
+    color: #fff;
+  }
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #7d899b;
     background: rgba(125, 137, 155, .75);
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
-    color: #252525;
-    background: #bea986;
-    background: rgba(190, 169, 134, .75);
-  }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
-    color: #252525;
-  }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #e7400d;
     background: rgba(231, 64, 13, .75);
   }
-  .theme-hum .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-hum .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-hum .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-hum .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-hum .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-hum .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-hum .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-hum .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-hum .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-hum .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-hum .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-hum .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #66609e;
     background: rgba(102, 96, 158, .75);
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #d8680b;
     background: rgba(216, 104, 11, .75);
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #093f50;
     background: rgba(9, 63, 80, .75);
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #84bfcc;
     background: rgba(132, 191, 204, .75);
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #c8d351;
     background: rgba(200, 211, 81, .75);
   }
-  .theme-teol .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-teol .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-teol .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-teol .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-teol .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-teol .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-teol .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-teol .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-teol .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-teol .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-teol .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-teol .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #2a216a;
     background: rgba(42, 33, 106, .75);
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #77b6e5;
     background: rgba(119, 182, 229, .75);
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #0f4576;
     background: rgba(15, 69, 118, .75);
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #00706e;
     background: rgba(0, 112, 110, .75);
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #b0d54e;
     background: rgba(176, 213, 78, .75);
   }
-  .theme-sund .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-sund .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-sund .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-sund .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-sund .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-sund .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-sund .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-sund .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-sund .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-sund .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #e13718;
     background: rgba(225, 55, 24, .75);
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #2a3d66;
     background: rgba(42, 61, 102, .75);
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #a0b763;
     background: rgba(160, 183, 99, .75);
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #95c1b0;
     background: rgba(149, 193, 176, .75);
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #7d8a8b;
     background: rgba(125, 138, 139, .75);
   }
-  .theme-samf .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-samf .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-samf .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-samf .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-samf .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-samf .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-samf .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-samf .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-samf .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-samf .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.faculty_color .header,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.faculty_color .header,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.faculty_color .header,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.faculty_color .header,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.faculty_color .header {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
     color: #fff;
     background: #999632;
     background: rgba(153, 150, 50, .75);
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.faculty_color::before,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.faculty_color::before,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.faculty_color::before,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.faculty_color::before,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.faculty_color::before {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color::before,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color::before {
     color: #fff;
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_1 .header,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_1 .header,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_1 .header {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
     color: #fff;
     background: #ffb400;
     background: rgba(255, 180, 0, .75);
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_1::before,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_1::before,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_1::before,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_1::before,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_1::before {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1::before,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1::before {
     color: #fff;
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_2 .header,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_2 .header,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_2 .header {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
     color: #fff;
     background: #33838a;
     background: rgba(51, 131, 138, .75);
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_2::before,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_2::before,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_2::before,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_2::before,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_2::before {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2::before,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2::before {
     color: #fff;
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_3 .header,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_3 .header,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_3 .header {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
     color: #fff;
     background: #ccc6ae;
     background: rgba(204, 198, 174, .75);
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_3::before,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_3::before,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_3::before,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_3::before,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_3::before {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3::before,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3::before {
     color: #fff;
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_4 .header,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_4 .header,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_4 .header {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
     color: #fff;
     background: #a3650c;
     background: rgba(163, 101, 12, .75);
   }
-  .theme-jura .double-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-jura .double-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-jura .one-two-column .column2 .size2.with-img.outlined.subcolor_4::before,
-  .theme-jura .single-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-jura .two-one-column .column1 .size2.with-img.outlined.subcolor_4::before,
-  .theme-jura .double-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-jura .double-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-jura .one-two-column .column2 .size3.with-img.outlined.subcolor_4::before,
-  .theme-jura .single-column .column1 .size3.with-img.outlined.subcolor_4::before,
-  .theme-jura .two-one-column .column1 .size3.with-img.outlined.subcolor_4::before {
+  .theme-jura .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4::before,
+  .theme-jura .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4::before {
     color: #fff;
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_5 .header,
-  .double-column .column2 .size2.with-img.outlined.subcolor_5 .header,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_5 .header,
-  .single-column .column1 .size2.with-img.outlined.subcolor_5 .header,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_5 .header,
-  .double-column .column1 .size3.with-img.outlined.subcolor_5 .header,
-  .double-column .column2 .size3.with-img.outlined.subcolor_5 .header,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_5 .header,
-  .single-column .column1 .size3.with-img.outlined.subcolor_5 .header,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_5 .header {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5 .header,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5 .header {
     color: #252525;
     background: #f2f2f0;
     background: rgba(242, 242, 240, .75);
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_5::before,
-  .double-column .column2 .size2.with-img.outlined.subcolor_5::before,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_5::before,
-  .single-column .column1 .size2.with-img.outlined.subcolor_5::before,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_5::before,
-  .double-column .column1 .size3.with-img.outlined.subcolor_5::before,
-  .double-column .column2 .size3.with-img.outlined.subcolor_5::before,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_5::before,
-  .single-column .column1 .size3.with-img.outlined.subcolor_5::before,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_5::before {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5::before,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5::before {
     color: #252525;
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_6 .header,
-  .double-column .column2 .size2.with-img.outlined.subcolor_6 .header,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_6 .header,
-  .single-column .column1 .size2.with-img.outlined.subcolor_6 .header,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_6 .header,
-  .double-column .column1 .size3.with-img.outlined.subcolor_6 .header,
-  .double-column .column2 .size3.with-img.outlined.subcolor_6 .header,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_6 .header,
-  .single-column .column1 .size3.with-img.outlined.subcolor_6 .header,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_6 .header {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_6 .header,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_6 .header {
     color: #252525;
     background: #fff;
     background: rgba(255, 255, 255, .75);
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_6::before,
-  .double-column .column2 .size2.with-img.outlined.subcolor_6::before,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_6::before,
-  .single-column .column1 .size2.with-img.outlined.subcolor_6::before,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_6::before,
-  .double-column .column1 .size3.with-img.outlined.subcolor_6::before,
-  .double-column .column2 .size3.with-img.outlined.subcolor_6::before,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_6::before,
-  .single-column .column1 .size3.with-img.outlined.subcolor_6::before,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_6::before {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_6::before,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_6::before {
     color: #252525;
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_7 .header,
-  .double-column .column2 .size2.with-img.outlined.subcolor_7 .header,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_7 .header,
-  .single-column .column1 .size2.with-img.outlined.subcolor_7 .header,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_7 .header,
-  .double-column .column1 .size3.with-img.outlined.subcolor_7 .header,
-  .double-column .column2 .size3.with-img.outlined.subcolor_7 .header,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_7 .header,
-  .single-column .column1 .size3.with-img.outlined.subcolor_7 .header,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_7 .header {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_7 .header,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_7 .header {
     color: #fff;
     background: #4f473f;
     background: rgba(79, 71, 63, .75);
   }
-  .double-column .column1 .size2.with-img.outlined.subcolor_7::before,
-  .double-column .column2 .size2.with-img.outlined.subcolor_7::before,
-  .one-two-column .column2 .size2.with-img.outlined.subcolor_7::before,
-  .single-column .column1 .size2.with-img.outlined.subcolor_7::before,
-  .two-one-column .column1 .size2.with-img.outlined.subcolor_7::before,
-  .double-column .column1 .size3.with-img.outlined.subcolor_7::before,
-  .double-column .column2 .size3.with-img.outlined.subcolor_7::before,
-  .one-two-column .column2 .size3.with-img.outlined.subcolor_7::before,
-  .single-column .column1 .size3.with-img.outlined.subcolor_7::before,
-  .two-one-column .column1 .size3.with-img.outlined.subcolor_7::before {
+  .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_7::before,
+  .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_7::before {
     color: #fff;
-  }
-}
-@media only screen and (max-width: 870px) {
-  .double-column .column1 .size2.with-img.outlined .box1 .header,
-  .double-column .column2 .size2.with-img.outlined .box1 .header,
-  .one-two-column .column1 .size2.with-img.outlined .box1 .header,
-  .triple-column .column1 .size2.with-img.outlined .box1 .header,
-  .triple-column .column2 .size2.with-img.outlined .box1 .header,
-  .triple-column .column3 .size2.with-img.outlined .box1 .header,
-  .two-one-column .column2 .size2.with-img.outlined .box1 .header,
-  .double-column .column1 .size3.with-img.outlined .box1 .header,
-  .double-column .column2 .size3.with-img.outlined .box1 .header,
-  .one-two-column .column1 .size3.with-img.outlined .box1 .header,
-  .triple-column .column1 .size3.with-img.outlined .box1 .header,
-  .triple-column .column2 .size3.with-img.outlined .box1 .header,
-  .triple-column .column3 .size3.with-img.outlined .box1 .header,
-  .two-one-column .column2 .size3.with-img.outlined .box1 .header {
-    position: relative;
-    bottom: auto;
-    left: auto;
   }
 }
 table.dataTable {
