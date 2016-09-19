@@ -1264,7 +1264,8 @@ h2,
 h3,
 .h3 {
   margin-top: 15px;
-  margin-bottom: 7.5px;
+  margin-bottom: 12px;
+  font-weight: 400;
 }
 h1 small,
 .h1 small,
@@ -1306,27 +1307,30 @@ h6 .small,
 h1,
 .h1 {
   margin-top: 0;
-  font-size: 31px;
+  font-size: 24px;
 }
 h2,
 .h2 {
-  font-size: 25px;
+  font-size: 18px;
 }
 h3,
 .h3 {
-  font-size: 21px;
+  font-size: 17px;
 }
 h4,
 .h4 {
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 400;
 }
 h5,
 .h5 {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 700;
 }
 h6,
 .h6 {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 700;
 }
 p {
   margin: 0 0 7.5px;
@@ -5733,6 +5737,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden;
   font-size: 12px;
   font-weight: bold;
   color: inherit;
@@ -13676,7 +13681,7 @@ nav {
   max-width: 100%;
   height: auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .row-equal-height {
     display: -webkit-box;
     display: -webkit-flex;

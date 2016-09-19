@@ -22,70 +22,67 @@ slug: examples
         <div class="row">
           <div class="col-sm-12">
             <h1>Form fields validation</h1>
-            <form data-toggle="validator">
+            <form id="validate" class="form-horizontal">
               <div class="form-group">
-                <label for="inputName" class="control-label">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
-              </div>
-              <div class="form-group has-feedback">
-                <label for="inputTwitter" class="control-label">Twitter</label>
-                <div class="input-group">
-                  <span class="input-group-addon">@</span>
-                  <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+                <label class="col-sm-3 control-label" for="email">Email</label>
+                <div class="col-sm-9">
+                  <input id="email" class="form-control" type="email" placeholder="Email" name="email" />
                 </div>
-                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+                <div class="col-sm-5 messages"></div>
               </div>
               <div class="form-group">
-                <label for="inputEmail" class="control-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
-                <div class="help-block with-errors"></div>
+                <label class="col-sm-3 control-label" for="password">Password</label>
+                <div class="col-sm-9">
+                  <input id="password" class="form-control" type="password" placeholder="Password" name="password" />
+                </div>
+                <div class="col-sm-5 messages"></div>
               </div>
               <div class="form-group">
-                <label for="inputPassword" class="control-label">Password</label>
-                <div class="row">
-                  <div class="form-group col-sm-6">
-                    <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-                    <div class="help-block">Minimum of 6 characters</div>
-                  </div>
-                  <div class="form-group col-sm-6">
-                    <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
-                    <div class="help-block with-errors"></div>
-                  </div>
+                <label class="col-sm-3 control-label" for="confirm-password">Confirm password</label>
+                <div class="col-sm-9">
+                  <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" name="confirm-password" />
+                </div>
+                <div class="col-sm-5 messages"></div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="username">Username</label>
+                <div class="col-sm-9">
+                  <input id="username" class="form-control" type="text" placeholder="Username" name="username" />
+                </div>
+                <div class="col-sm-5 messages">
                 </div>
               </div>
               <div class="form-group">
-                <div class="radio">
-                  <label>
-                  <input type="radio" name="underwear" required>
-                  Boxers
-                </label>
+                <label class="col-sm-3 control-label" for="birthdate">Birthdate</label>
+                <div class="col-sm-9">
+                  <input id="birthdate" class="form-control" type="text" placeholder="YYYY-MM-DD" name="birthdate" />
                 </div>
-                <div class="radio">
-                  <label>
-                  <input type="radio" name="underwear" required>
-                  Briefs
-                </label>
-                </div>
+                <div class="col-sm-5 messages"></div>
               </div>
               <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                  <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
-                  Check yourself
-                </label>
-                  <div class="help-block with-errors"></div>
+                <label class="col-sm-3 control-label" for="zip">ZIP Code</label>
+                <div class="col-sm-9">
+                  <input id="zip" class="form-control" type="text" placeholder="12345" name="zip" />
                 </div>
+                <div class="col-sm-5 messages"></div>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <label class="col-sm-3 control-label" for="message">Message</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="3" placeholder="Message" name="message" id="message"></textarea>
+                </div>
+                <div class="col-sm-5 messages"></div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
-
       </div>
-      <div class=" col-sm-8 col-md-3 right-side">
+      <div class="col-sm-8 col-md-3 pull-right right-side">
         <aside>
           <div class="row">
             <div class="col-sm-12">
@@ -136,4 +133,4 @@ slug: examples
   {% include local-footer.html %}
 </main>
 <!-- Form validation -->
-<script type="text/javascript" defer async src="../../assets/js/validator/validator.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.10.0/validate.min.js"></script>
