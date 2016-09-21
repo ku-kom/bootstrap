@@ -21,6 +21,11 @@
     }
   }
 }
+.right-side {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+    .pull-right();
+  }
+}
 // Main content part
 main {
   flex: 1 0 auto;
@@ -55,12 +60,6 @@ nav {
     padding-top: 0;
   }
   flex-grow: 1;
-}
-
-.right-side {
-  @media (min-width: @screen-md-min) {
-    .pull-right();
-  }
 }
 
 .main-area {

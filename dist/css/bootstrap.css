@@ -7258,6 +7258,26 @@ main:after,
     margin: 26px 0 20px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ku-leftmenu ul.nav > li {
+    font-size: 14px;
+  }
+  .ku-leftmenu ul.nav > li > a {
+    padding: 7px 5px 7px 13px;
+  }
+  .ku-leftmenu ul.nav > li > a::before {
+    top: 10px;
+  }
+  .ku-leftmenu ul.nav > li ul li a {
+    padding: 5px 5px 5px 13px;
+  }
+  .ku-leftmenu ul.nav > li ul li a::before {
+    top: 5px;
+  }
+  .ku-leftmenu .menu-seperator {
+    margin: 10px 0;
+  }
+}
 @media (max-width: 768px) {
   .ku-leftmenu {
     display: none;
@@ -7308,7 +7328,7 @@ main:after,
   background: #66609e;
   border-bottom: 1px solid #7b76ac;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .dk > span,
   .eng > span,
   .dk img,
@@ -8217,7 +8237,7 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 .local-footer .footer-data {
   text-align: right;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .local-footer .footer-data {
     text-align: left;
   }
@@ -8795,6 +8815,9 @@ ul.bxslider {
 .dataTable.nowrap td,
 .dataTable.nowrap th {
   white-space: nowrap;
+}
+.dataTables_wrapper > .row > [class*=col-] {
+  margin-bottom: 0!important;
 }
 .dataTables_wrapper .dataTables_length label {
   font-weight: normal;
@@ -9847,6 +9870,11 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted span.focus {
 .main-content .row.breadcrumbs {
   margin-bottom: 0;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .right-side {
+    float: right !important;
+  }
+}
 main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9904,11 +9932,6 @@ nav {
 }
 .main-area.front-page {
   padding-top: 0;
-}
-@media (min-width: 992px) {
-  .right-side {
-    float: right !important;
-  }
 }
 .main-area img {
   display: block;

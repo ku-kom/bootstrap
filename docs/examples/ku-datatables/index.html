@@ -24,12 +24,12 @@ slug: examples
             <table id="datatable" class="table responsive" data-page-length="25" style="width:100%">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th>Navn</th>
                   <th>Position</th>
-                  <th>Office</th>
-                  <th>Age</th>
-                  <th>Start date</th>
-                  <th>Salary</th>
+                  <th>Kontor</th>
+                  <th>Alder</th>
+                  <th>Startdato</th>
+                  <th>Løn</th>
                 </tr>
               </thead>
               <tfoot>
@@ -504,7 +504,7 @@ slug: examples
           </div>
         </div>
       </div>
-      <div class=" col-sm-12 col-md-3 right-side">
+      <div class=" col-sm-8 col-md-3 right-side">
         <div class="row">
           <div class="col-sm-6 col-md-12">
             <div class="panel panel-default">
@@ -547,6 +547,23 @@ slug: examples
 <script type="text/javascript">
   $(document).ready(function() {
     $('#datatable').dataTable({
+        "language": {
+          "sProcessing": "Henter...",
+          "sLengthMenu": "Vis _MENU_ linjer",
+          "sZeroRecords": "Ingen linjer matcher s&oslash;gningen",
+          "sInfo": "Viser _START_ til _END_ af _TOTAL_ linjer",
+          "sInfoEmpty": "Viser 0 til 0 af 0 linjer",
+          "sInfoFiltered": "(filtreret fra _MAX_ linjer)",
+          "sInfoPostFix": "",
+          "sSearch": "S&oslash;g:",
+          "sUrl": "",
+          "oPaginate": {
+            "sFirst": "F&oslash;rste",
+            "sPrevious": "Forrige",
+            "sNext": "N&aelig;ste",
+            "sLast": "Sidste"
+          }
+      },
       'ordering': true,
       'searching': false,
       responsive: {
