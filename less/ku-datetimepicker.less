@@ -145,14 +145,14 @@
       }
     }
 
-    &.day:hover,
+    &.day:not(.active):hover,
     &.focused {
       span {
         background: @gray-lighter;
+        color: inherit;
         cursor: pointer;
       }
     }
-
     &.old {
       &:hover {
         span {
@@ -267,6 +267,7 @@
         &:hover {
           color: #fff;
           background-color: @datepicker-active-date-bg-hover;
+          cursor: pointer;
         }
       }
     }
@@ -296,7 +297,6 @@
       &.active:hover {
         color: #fff;
         background-color: @datepicker-active-date-bg;
-        border-radius: 50%;
       }
 
       &.new,

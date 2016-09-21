@@ -504,9 +504,9 @@ slug: examples
           </div>
         </div>
       </div>
-      <div class=" col-sm-8 col-md-3 right-side">
+      <div class=" col-sm-12 col-md-3 right-side">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-6 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Right side</h3>
@@ -516,7 +516,7 @@ slug: examples
               </div>
             </div>
           </div>
-          <div class="col-sm-12">
+          <div class="col-sm-6 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Right side</h3>
@@ -548,7 +548,7 @@ slug: examples
   $(document).ready(function() {
     $('#datatable').dataTable({
       'ordering': true,
-      'searching': true,
+      'searching': false,
       responsive: {
         breakpoints: [
             { name: 'desktop', width: Infinity },

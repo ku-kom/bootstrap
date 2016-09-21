@@ -141,6 +141,7 @@ slug: examples
     };
     $('.datepicker').datepicker({
       language: 'da',
+      autoclose: true,
       beforeShowDay: function(date) {
         if (date.getMonth() == (new Date()).getMonth())
           switch (date.getDate()) {
