@@ -7258,7 +7258,7 @@ main:after,
     margin: 26px 0 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .ku-leftmenu ul.nav > li {
     font-size: 14px;
   }
@@ -7278,7 +7278,7 @@ main:after,
     margin: 10px 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ku-leftmenu {
     display: none;
   }
@@ -8459,7 +8459,7 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 .globalfooter .social-items .footer-heading {
   margin-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .globalfooter .container {
     padding-right: 0;
     padding-left: 0;
@@ -9859,7 +9859,7 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted span.focus {
   text-shadow: 0 1px 0 #fff;
   border-width: 1px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-content {
     width: 100%;
   }
@@ -9870,7 +9870,7 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted span.focus {
 .main-content .row.breadcrumbs {
   margin-bottom: 0;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .right-side {
     float: right !important;
   }
