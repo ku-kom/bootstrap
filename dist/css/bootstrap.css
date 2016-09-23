@@ -4797,6 +4797,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   display: inline-block;
   width: 19px;
   height: 13px;
+  margin-left: 2px;
 }
 .navbar-inverse .navbar-nav > li > a.eng > span {
   background-image: url("../../images/gb.svg");
@@ -7365,15 +7366,6 @@ main:after,
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
-.mm-menu #navbar_menu li:not(.mm-opened) a:active,
-.mm-menu #topbar_menu li:not(.mm-opened) a:active,
-.mm-menu #navbar_menu li:not(.mm-opened) a:focus,
-.mm-menu #topbar_menu li:not(.mm-opened) a:focus {
-  background: #e6e6e6;
-  -webkit-transition: all .2s ease-in-out;
-       -o-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-}
 .mm-menu #navbar_menu li.mm-opened,
 .mm-menu #topbar_menu li.mm-opened {
   background: #ccc;
@@ -7465,10 +7457,6 @@ main:after,
           tap-highlight-color: rgba(255, 255, 255, .5);
 }
 .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next):active {
   font-weight: bold;
   text-decoration: underline;
 }

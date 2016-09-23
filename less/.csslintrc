@@ -17,5 +17,6 @@
   "universal-selector": false,
   "unqualified-attributes": false,
   "no-empty-source": null,
-  "ids": null
+  "ids": null,
+  "fallback-colors": null
 }
