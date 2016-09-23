@@ -18,36 +18,29 @@
 @red: #901a1e;
 @blue: #a1c5c8;
 @green: @samf-sub_2;
-@ku-gray: #f2f2f0;
-//@white: @white-color;
-
+@ku-gray: #f2f2f0; //@white: @white-color;
 // Faculty sub colors (Faculty colors are located in variables.less)
 //Science
 @science-sub_1: #dfaf48;
 @science-sub_2: #a4c1a9;
 @science-sub_3: #bea986;
-@science-sub_4: #85a8ae;
-//Hum
+@science-sub_4: #85a8ae; //Hum
 @hum-sub_1: #1d2e4a;
 @hum-sub_2: #b7b5b5;
 @hum-sub_3: #7d899b;
-@hum-sub_4: #e7400d;
-//Teol
+@hum-sub_4: #e7400d; //Teol
 @teol-sub_1: #d8680b;
 @teol-sub_2: #093f50;
 @teol-sub_3: #84bfcc;
-@teol-sub_4: #c8d351;
-//Sund
+@teol-sub_4: #c8d351; //Sund
 @sund-sub_1: #77b6e5;
 @sund-sub_2: #0f4576;
 @sund-sub_3: #00706e;
-@sund-sub_4: #b0d54e;
-//Samf
+@sund-sub_4: #b0d54e; //Samf
 @samf-sub_1: #2a3d66;
 @samf-sub_2: #a0b763;
 @samf-sub_3: #95c1b0;
-@samf-sub_4: #7d8a8b;
-//Jura
+@samf-sub_4: #7d8a8b; //Jura
 @jura-sub_1: #ffb400;
 @jura-sub_2: #33838a;
 @jura-sub_3: #ccc6ae;
@@ -55,7 +48,7 @@
 
 .gridbox {
   position: relative;
-  line-height: 1.33;
+  line-height: @line-height-base;
   display: flex;
   flex-direction: column;
 
@@ -71,14 +64,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@ku-red, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @ku-red;
         }
       }
@@ -100,14 +93,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@blue, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @blue;
           color: @white-color;
         }
@@ -130,14 +123,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@brown, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @brown;
           color: @white-color;
         }
@@ -160,14 +153,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@green, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @green;
           color: @white-color;
         }
@@ -192,14 +185,14 @@
       color: @gray-dark;
 
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@ku-gray, .75);
           color: @gray-dark;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           color: @gray-dark;
           background: @ku-gray;
         }
@@ -233,14 +226,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@science, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @science;
           color: @white-color;
         }
@@ -263,14 +256,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@science-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @science-sub_1;
           color: @white-color;
         }
@@ -293,14 +286,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@science-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @science-sub_2;
         }
       }
@@ -322,14 +315,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@science-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @science-sub_3;
           color: @white-color;
         }
@@ -352,14 +345,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@science-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @science-sub_4;
           color: @white-color;
         }
@@ -393,14 +386,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@hum, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @hum;
           color: @white-color;
         }
@@ -423,14 +416,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@hum-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @hum-sub_1;
           color: @white-color;
         }
@@ -453,14 +446,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@hum-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @hum-sub_2;
           color: @white-color;
         }
@@ -483,14 +476,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@hum-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @hum-sub_3;
           color: @white-color;
         }
@@ -513,14 +506,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@hum-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @hum-sub_4;
           color: @white-color;
         }
@@ -554,14 +547,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@teol, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @teol;
           color: @white-color;
         }
@@ -584,14 +577,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@teol-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @teol-sub_1;
           color: @white-color;
         }
@@ -614,14 +607,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@teol-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @teol-sub_2;
           color: @white-color;
         }
@@ -644,14 +637,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@teol-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @teol-sub_3;
           color: @white-color;
         }
@@ -674,14 +667,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@teol-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @teol-sub_4;
           color: @white-color;
         }
@@ -715,14 +708,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@sund, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @sund;
           color: @white-color;
         }
@@ -745,14 +738,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@sund-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @sund-sub_1;
           color: @white-color;
         }
@@ -775,14 +768,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@sund-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @sund-sub_2;
           color: @white-color;
         }
@@ -805,14 +798,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@sund-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @sund-sub_3;
           color: @white-color;
         }
@@ -835,14 +828,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@sund-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @sund-sub_4;
           color: @white-color;
         }
@@ -876,14 +869,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@samf, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @samf;
           color: @white-color;
         }
@@ -906,14 +899,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@samf-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @samf-sub_1;
         }
       }
@@ -934,14 +927,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@samf-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @samf-sub_2;
           color: @white-color;
         }
@@ -964,14 +957,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@samf-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @samf-sub_3;
           color: @white-color;
         }
@@ -994,14 +987,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@samf-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @samf-sub_4;
           color: @white-color;
         }
@@ -1035,14 +1028,14 @@
 
     &.faculty_color {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@jura, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @jura;
           color: @white-color;
         }
@@ -1064,14 +1057,14 @@
 
     &.subcolor_1 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@jura-sub_1, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @jura-sub_1;
           color: @white-color;
         }
@@ -1093,14 +1086,14 @@
 
     &.subcolor_2 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@jura-sub_2, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @jura-sub_2;
           color: @white-color;
         }
@@ -1122,14 +1115,14 @@
 
     &.subcolor_3 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@jura-sub_3, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @jura-sub_3;
           color: @white-color;
         }
@@ -1151,14 +1144,14 @@
 
     &.subcolor_4 {
       &.text-down {
-        .box1 .header {
+        .header {
           .backgroundColorFix(@jura-sub_4, .75);
           color: @white-color;
         }
       }
 
       &.text-top {
-        .box1 .header {
+        .header {
           background: @jura-sub_4;
           color: @white-color;
         }
@@ -1181,14 +1174,14 @@
 
   &.subcolor_5 {
     &.text-down {
-      .box1 .header {
+      .header {
         .backgroundColorFix(@ku-gray, .75);
         color: @gray-dark;
       }
     }
 
     &.text-top {
-      .box1 .header {
+      .header {
         background: @ku-gray;
         color: @gray-dark;
       }
@@ -1227,14 +1220,14 @@
 
   &.subcolor_6 {
     &.text-down {
-      .box1 .header {
+      .header {
         .backgroundColorFix(@white-color, .8);
         color: @gray-dark;
       }
     }
 
     &.text-top {
-      .box1 .header {
+      .header {
         background: @white-color;
         color: @gray-dark;
       }
@@ -1273,14 +1266,14 @@
 
   &.subcolor_7 {
     &.text-down {
-      .box1 .header {
+      .header {
         .backgroundColorFix(@brown, .8);
         color: @white-color;
       }
     }
 
     &.text-top {
-      .box1 .header {
+      .header {
         background: @brown;
         color: @white-color;
       }
@@ -1360,11 +1353,11 @@
   // Boxes with the title at the top
   &.text-top {
     .box1 {
-      .box1;
+      order: 1;
     }
 
     .box2 {
-      .box2;
+      order: 2;
     }
 
     &::before {
@@ -1382,15 +1375,13 @@
       order: 1;
     }
   }
-  // Boxes with the text above the content incl. opacity
+  // Boxes with the text above the content
   &.text-over {
-    .box1 {
-      .header {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: inherit;
-      }
+    .header {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: inherit;
     }
   }
   // Add an arrow to the box
@@ -1399,7 +1390,7 @@
     font-family: 'arrow';
     content: '\0043';
     color: @white-color;
-    bottom: 12px;
+    bottom: @margin10;
     right: @margin10;
     position: absolute;
     z-index: 5;
@@ -1519,6 +1510,12 @@
   &.size4 {
     height: @gridbox4;
 
+    .box1 {
+      .text {
+        display: none;
+      }
+    }
+
     .box2 {
       display: none;
     }
@@ -1530,6 +1527,10 @@
     .box1 {
       .header {
         padding-bottom: 4px;
+      }
+
+      .text {
+        display: none;
       }
     }
 
@@ -1559,6 +1560,12 @@
 .one-two-column .column2,
 .single-column .column1,
 .two-one-column .column1 {
+  .size4 {
+    .text {
+      display: block;
+    }
+  }
+
   .size2,
   .size3 {
     &.with-img {
@@ -1734,7 +1741,7 @@
         background-color: @brown;
       }
 
-      &.text-over .box1 .header {
+      &.text-over .header {
         bottom: auto;
         left: auto;
         position: relative;
@@ -1746,7 +1753,7 @@
       }
 
       .box1 {
-        flex: 0 1 auto;
+        flex: 1;
 
         .text {
           display: block;
@@ -1789,37 +1796,32 @@
   .size3 {
     &.with-img {
       .box1 {
-        flex: 0 1 auto;
+        flex: 1;
       }
 
       .box2 {
         flex: 0 1 235px;
       }
     }
-  }
-}
-//Arrow for single column boxes
-
-.one-two-column .column1,
-.two-one-column .column2 {
-  // One columns span
-  .size2,
-  .size3 {
+    //Arrow for single column boxes
     &.text-down {
       &::before {
         bottom: @margin10;
       }
     }
   }
+
+  .size3 {
+    .text {
+      display: none;
+    }
+  }
 }
 // Outline style
 
-.double-column .column1,
-.double-column .column2,
+.double-column [class*=column],
 .one-two-column .column1,
-.triple-column .column1,
-.triple-column .column2,
-.triple-column .column3,
+.triple-column [class*=column],
 .two-one-column .column2 {
   .size2,
   .size3 {
@@ -2121,18 +2123,7 @@
       background-color: transparent!important;
       color: @white-color;
     }
-  }
-}
-// Remove border from single column outlined boxes with images
-// 3/3 & 1/3 column
-
-.one-two-column .column1,
-.triple-column .column1,
-.triple-column .column2,
-.triple-column .column3,
-.two-one-column .column2 {
-  .size2,
-  .size3 {
+    // Remove border from single column outlined boxes with images
     &.with-img {
       &.outlined {
         border-width: 0;
@@ -2141,7 +2132,24 @@
   }
 }
 @media only screen and (min-width: 870px) {
-  // Flexbox fix for outlined with image (fill width and 2/3 columns)
+  // Header styling for single column boxes
+  .one-two-column .column1,
+  .triple-column [class*=column],
+  .two-one-column .column2 {
+    .size2,
+    .size3 {
+      &.with-img {
+        .header {
+          font-size: 1.1em;
+          letter-spacing: 0.7px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  // Flexbox fix for outlined with image (full width and 2/3 columns)
   .one-two-column .column2,
   .single-column .column1,
   .two-one-column .column1 {
@@ -2150,18 +2158,15 @@
       &.outlined,
       &.with-img {
         .box1 {
-          flex: 1 1 auto;
+          flex: 1;
         }
       }
     }
   }
   // Large desktop arrow style for outlined with image
-  .double-column .column1,
-  .double-column .column2,
+  .double-column [class*=column],
   .one-two-column .column1,
-  .triple-column .column1,
-  .triple-column .column2,
-  .triple-column .column3,
+  .triple-column [class*=column],
   .two-one-column .column2 {
     .size2,
     .size3 {
@@ -2227,12 +2232,9 @@
 }
 @media only screen and (min-width: 460px) and (max-width: 870px) {
   // All single, 2/3 and double comlumn boxes with image
-  .double-column .column1,
-  .double-column .column2,
+  .double-column [class*=column],
   .one-two-column .column1,
-  .triple-column .column1,
-  .triple-column .column2,
-  .triple-column .column3,
+  .triple-column [class*=column],
   .two-one-column .column2 {
     .size2,
     .size3 {
@@ -2410,7 +2412,7 @@
           background-color: @brown;
         }
 
-        &.text-over .box1 .header {
+        &.text-over .header {
           position: relative;
           bottom: auto;
           left: auto;
@@ -2422,7 +2424,7 @@
         }
 
         .box1 {
-          flex: 1 1 auto!important;
+          flex: 1;
 
           .text {
             display: block;
@@ -2710,6 +2712,12 @@
         }
       }
     }
+    // Display text for certain boxes
+    .size4 {
+      .text {
+        display: block;
+      }
+    }
   }
 }
 @media only screen and (max-width: 459px) {
@@ -2720,10 +2728,6 @@
       &.with-img {
         flex-direction: column;
 
-        .text {
-          display: none;
-        }
-
         .box1 {
           order: 2;
           flex: 0 1 auto;
@@ -2731,6 +2735,14 @@
           left: 0;
           bottom: 0;
           width: 100%;
+
+          .header {
+            font-size: 1.1em;
+            letter-spacing: 0.7px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
 
           .text {
             display: none;
@@ -3183,6 +3195,12 @@
             }
           }
         }
+      }
+    }
+
+    &.size4 {
+      .text {
+        display: none;
       }
     }
   }

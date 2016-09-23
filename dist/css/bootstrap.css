@@ -4403,18 +4403,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse,
 .container > .navbar-header,
-.container-fluid > .navbar-header {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse,
   .container > .navbar-header,
-  .container-fluid > .navbar-header {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -4517,8 +4517,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -4798,10 +4798,15 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   width: 19px;
   height: 13px;
 }
-.navbar-inverse .navbar-nav > li > a.dk > span > img,
-.navbar-inverse .navbar-nav > li > a.eng > span > img {
-  max-width: 100%;
-  max-height: 100%;
+.navbar-inverse .navbar-nav > li > a.eng > span {
+  background-image: url("../../images/gb.svg");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.navbar-inverse .navbar-nav > li > a.dk > span {
+  background-image: url("../../images/dk.svg");
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
@@ -4818,8 +4823,8 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-toggle {
   border-color: #777;
 }
-.navbar-inverse .navbar-toggle:focus,
-.navbar-inverse .navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:active {
   background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -8455,6 +8460,10 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 }
 .globalfooter .social-items .social-item .social-icon.youtube:hover {
   background-color: #d12223;
+}
+.globalfooter .social-items .social-item .social-icon:active,
+.globalfooter .social-items .social-item .social-icon:focus {
+  background-color: inherit;
 }
 .globalfooter .social-items .footer-heading {
   margin-top: 20px;
