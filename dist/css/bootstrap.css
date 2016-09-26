@@ -8449,9 +8449,8 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 .globalfooter .social-items .social-item .social-icon.youtube:hover {
   background-color: #d12223;
 }
-.globalfooter .social-items .social-item .social-icon:active,
-.globalfooter .social-items .social-item .social-icon:focus {
-  background-color: inherit;
+.globalfooter .social-items .social-item .social-icon:active {
+  background-color: #757575;
 }
 .globalfooter .social-items .footer-heading {
   margin-top: 20px;
@@ -9783,6 +9782,15 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted span.focus {
   color: #fff;
   cursor: pointer;
   background-color: #7f9a9a;
+}
+.datepicker table tr td.active span a,
+.datepicker table tr td.active.highlighted span a {
+  display: block;
+  color: inherit;
+}
+.datepicker table tr td.active span a:hover,
+.datepicker table tr td.active.highlighted span a:hover {
+  text-decoration: none;
 }
 .datepicker table tr td span {
   display: block;
