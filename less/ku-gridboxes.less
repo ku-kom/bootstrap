@@ -14,37 +14,69 @@
 @gridbox4: 81px; // .size4
 @gridbox5: 55px; // .size5
 // KU colors
-@brown: #4f473f;
-@red: #901a1e;
+@brown: #625757;
+@brown-hover: #4d4444; //@red: #901a1e;
+//@red-hover: #7b161a;
 @blue: #a1c5c8;
-@green: @samf-sub_2;
-@ku-gray: #f2f2f0; //@white: @white-color;
-// Faculty sub colors (Faculty colors are located in variables.less)
+@blue-hover: #7ea5a8;
+@green: #85ae33;
+@green-hover: #75992c;
+@ku-gray: #eee;
+@ku-gray-hover: #e7e7e7;
+@ku-darkgray: #b5b5b5;
+@ku-darkgray-hover: #a1a1a1;
+@ku-darkblue: #42759b;
+@ku-darkblue-hover: #3b688a;
+@white-color-hover: #ebebeb; // Faculty sub colors (Faculty colors are located in variables.less)
 //Science
 @science-sub_1: #dfaf48;
+@science-sub_1-hover: #c99e40;
 @science-sub_2: #a4c1a9;
+@science-sub_2-hover: #93ad98;
 @science-sub_3: #bea986;
-@science-sub_4: #85a8ae; //Hum
+@science-sub_3-hover: #ab9979;
+@science-sub_4: #85a8ae;
+@science-sub_4-hover: #749399; //Hum
 @hum-sub_1: #1d2e4a;
+@hum-sub_1-hover: #131e30;
 @hum-sub_2: #b7b5b5;
+@hum-sub_2-hover: #a3a2a2;
 @hum-sub_3: #7d899b;
-@hum-sub_4: #e7400d; //Teol
+@hum-sub_3-hover: #6b7585;
+@hum-sub_4: #e7400d;
+@hum-sub_4-hover: #d13a0d; //Teol
 @teol-sub_1: #d8680b;
+@teol-sub_1-hover: #c45e0a;
 @teol-sub_2: #093f50;
+@teol-sub_2-hover: #062a36;
 @teol-sub_3: #84bfcc;
-@teol-sub_4: #c8d351; //Sund
+@teol-sub_3-hover: #77acb8;
+@teol-sub_4: #c8d351;
+@teol-sub_4-hover: #b5bf49; //Sund
 @sund-sub_1: #77b6e5;
+@sund-sub_1-hover: #6da6d1;
 @sund-sub_2: #0f4576;
+@sund-sub_2-hover: #0c355c;
 @sund-sub_3: #00706e;
-@sund-sub_4: #b0d54e; //Samf
+@sund-sub_3-hover: #005958;
+@sund-sub_4: #b0d54e;
+@sund-sub_4-hover: #a1c248; //Samf
 @samf-sub_1: #2a3d66;
+@samf-sub_1-hover: #213152;
 @samf-sub_2: #a0b763;
+@samf-sub_2-hover: #8fa358;
 @samf-sub_3: #95c1b0;
-@samf-sub_4: #7d8a8b; //Jura
+@samf-sub_3-hover: #86ad9e;
+@samf-sub_4: #7d8a8b;
+@samf-sub_4-hover: #6c7778; //Jura
 @jura-sub_1: #ffb400;
+@jura-sub_1-hover: #eba400;
 @jura-sub_2: #33838a;
+@jura-sub_2-hover: #2b6f75;
 @jura-sub_3: #ccc6ae;
+@jura-sub_3-hover: #b8b29c;
 @jura-sub_4: #a3650c;
+@jura-sub_4-hover: #8f570a;
 
 .gridbox {
   position: relative;
@@ -52,20 +84,22 @@
   display: flex;
   flex-direction: column;
 
+  img {
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    img {
+      filter: brightness(80%);
+      transition: all 0.15s ease;
+    }
+  }
+
   .theme-ku & {
-    &.full {
-      background: @ku-red;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @ku-red;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@ku-red, 75%);
+          background: fade(@ku-red, 75%)!important;
           color: @white-color;
         }
       }
@@ -83,11 +117,33 @@
         &::before {
           color: @ku-red;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @ku-red-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-red-hover;
+          }
+        }
       }
 
       &.full {
         background: @ku-red;
         color: @white-color;
+
+        &:hover {
+          background: @ku-red-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @ku-red-hover!important;
+        }
       }
     }
 
@@ -113,45 +169,29 @@
         &::before {
           color: @blue;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @blue-hover;
+        }
       }
 
       &.full {
         background: @blue;
         color: @white-color;
+
+        &:hover {
+          background: @blue-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @blue-hover!important;
+        }
       }
     }
 
     &.subcolor_2 {
-      &.text-down {
-        .header {
-          background: fade(@brown, 75%);
-          color: @white-color;
-        }
-      }
-
-      &.text-top {
-        .header {
-          background: @brown;
-          color: @white-color;
-        }
-      }
-
-      &.outlined {
-        border: 1px solid @brown;
-        color: @brown!important;
-
-        &::before {
-          color: @brown;
-        }
-      }
-
-      &.full {
-        background: @brown;
-        color: @white-color;
-      }
-    }
-
-    &.subcolor_3 {
       &.text-down {
         .header {
           background: fade(@green, 75%);
@@ -173,57 +213,125 @@
         &::before {
           color: @green;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @green-hover;
+        }
       }
 
       &.full {
         background: @green;
         color: @white-color;
+
+        &:hover {
+          background: @green-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @green-hover!important;
+        }
       }
     }
 
-    &.subcolor_4 {
-      color: @gray-dark;
-
+    &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@ku-gray, 75%);
-          color: @gray-dark;
+          background: fade(@ku-darkgray, 75%);
+          color: @white-color;
         }
       }
 
       &.text-top {
         .header {
-          color: @gray-dark;
-          background: @ku-gray;
+          background: @ku-darkgray;
+          color: @white-color;
         }
       }
 
       &.outlined {
-        border: 1px solid @gray;
+        border: 1px solid @ku-darkgray;
         color: @gray-dark!important;
 
         &::before {
           color: @gray-dark;
         }
+
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @ku-darkgray-hover!important;
+        }
       }
 
       &.full {
-        background: @ku-gray;
+        background: @ku-darkgray;
+        color: @white-color;
+
+        &:hover {
+          background: @ku-darkgray-hover!important;
+        }
+
+        &.subcolor_3 {
+          &::before {
+            color: @white-color;
+          }
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @ku-darkgray-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      color: @white-color;
+
+      &.text-down {
+        .header {
+          background: fade(@ku-darkblue, 75%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          color: @white-color;
+          background: @ku-darkblue;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @ku-darkblue;
+        color: @ku-darkblue!important;
+
+        &::before {
+          color: @ku-darkblue;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @ku-darkblue-hover;
+        }
+      }
+
+      &.full {
+        background: @ku-darkblue;
+
+        &:hover {
+          background: @ku-darkblue-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @ku-darkblue-hover!important;
+        }
       }
     }
   }
 
   .theme-science & {
-    &.full {
-      background: @science;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @science;
-      color: @science!important;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
@@ -246,11 +354,25 @@
         &::before {
           color: @science;
         }
+
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @science-hover!important;
+        }
       }
 
       &.full {
         background: @science;
         color: @white-color;
+
+        &:hover {
+          background: @science-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @science-hover!important;
+        }
       }
     }
 
@@ -276,11 +398,25 @@
         &::before {
           color: @science-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_1-hover;
+        }
       }
 
       &.full {
         background: @science-sub_1;
         color: @white-color;
+
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
       }
     }
 
@@ -305,11 +441,25 @@
         &::before {
           color: @science-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_2-hover;
+        }
       }
 
       &.full {
         background: @science-sub_2;
         color: @white-color;
+
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
       }
     }
 
@@ -335,11 +485,25 @@
         &::before {
           color: @science-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_3-hover;
+        }
       }
 
       &.full {
         background: @science-sub_3;
         color: @white-color;
+
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
       }
     }
 
@@ -365,11 +529,25 @@
         &::before {
           color: @science-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_4-hover;
+        }
       }
 
       &.full {
         background: @science-sub_4;
         color: @white-color;
+
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
       }
     }
   }
@@ -406,11 +584,25 @@
         &::before {
           color: @hum;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-hover;
+        }
       }
 
       &.full {
         background: @hum;
         color: @white-color;
+
+        &:hover {
+          background: @hum-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @hum-hover!important;
+        }
       }
     }
 
@@ -436,11 +628,25 @@
         &::before {
           color: @hum-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_1-hover;
+        }
       }
 
       &.full {
         background: @hum-sub_1;
         color: @white-color;
+
+        &:hover {
+          background: @hum-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @hum-sub_1-hover!important;
+        }
       }
     }
 
@@ -466,11 +672,25 @@
         &::before {
           color: @hum-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_2-hover;
+        }
       }
 
       &.full {
         background: @hum-sub_2;
         color: @white-color;
+
+        &:hover {
+          background: @hum-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @hum-sub_2-hover!important;
+        }
       }
     }
 
@@ -496,11 +716,25 @@
         &::before {
           color: @hum-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_3-hover;
+        }
       }
 
       &.full {
         background: @hum-sub_3;
         color: @white-color;
+
+        &:hover {
+          background: @hum-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @hum-sub_2-hover!important;
+        }
       }
     }
 
@@ -526,25 +760,30 @@
         &::before {
           color: @hum-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_4-hover;
+        }
       }
 
       &.full {
         background: @hum-sub_4;
         color: @white-color;
+
+        &:hover {
+          background: @hum-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @hum-sub_4-hover!important;
+        }
       }
     }
   }
 
   .theme-teol & {
-    &.full {
-      background: @teol;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @teol;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
@@ -567,11 +806,25 @@
         &::before {
           color: @teol;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-hover;
+        }
       }
 
       &.full {
         background: @teol;
         color: @white-color;
+
+        &:hover {
+          background: @teol-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @teol-hover!important;
+        }
       }
     }
 
@@ -597,11 +850,25 @@
         &::before {
           color: @teol-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_1-hover;
+        }
       }
 
       &.full {
         background: @teol-sub_1;
         color: @white-color;
+
+        &:hover {
+          background: @teol-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @teol-sub_1-hover!important;
+        }
       }
     }
 
@@ -627,11 +894,25 @@
         &::before {
           color: @teol-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_2-hover;
+        }
       }
 
       &.full {
         background: @teol-sub_2;
         color: @white-color;
+
+        &:hover {
+          background: @teol-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @teol-sub_2-hover!important;
+        }
       }
     }
 
@@ -657,11 +938,25 @@
         &::before {
           color: @teol-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_3-hover;
+        }
       }
 
       &.full {
         background: @teol-sub_3;
         color: @white-color;
+
+        &:hover {
+          background: @teol-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @teol-sub_3-hover!important;
+        }
       }
     }
 
@@ -687,25 +982,30 @@
         &::before {
           color: @teol-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_4-hover;
+        }
       }
 
       &.full {
         background: @teol-sub_4;
         color: @white-color;
+
+        &:hover {
+          background: @teol-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @teol-sub_4-hover!important;
+        }
       }
     }
   }
 
   .theme-sund & {
-    &.full {
-      background: @sund;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @sund;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
@@ -728,11 +1028,25 @@
         &::before {
           color: @sund;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-hover;
+        }
       }
 
       &.full {
         background: @sund;
         color: @white-color;
+
+        &:hover {
+          background: @sund-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @sund-hover!important;
+        }
       }
     }
 
@@ -758,11 +1072,25 @@
         &::before {
           color: @sund-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_1-hover;
+        }
       }
 
       &.full {
         background: @sund-sub_1;
         color: @white-color;
+
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
       }
     }
 
@@ -788,11 +1116,25 @@
         &::before {
           color: @sund-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_2-hover;
+        }
       }
 
       &.full {
         background: @sund-sub_2;
         color: @white-color;
+
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
       }
     }
 
@@ -818,11 +1160,25 @@
         &::before {
           color: @sund-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_3-hover;
+        }
       }
 
       &.full {
         background: @sund-sub_3;
         color: @white-color;
+
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
       }
     }
 
@@ -848,25 +1204,30 @@
         &::before {
           color: @sund-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_4-hover;
+        }
       }
 
       &.full {
         background: @sund-sub_4;
         color: @white-color;
+
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
       }
     }
   }
 
   .theme-samf & {
-    &.full {
-      background: @samf;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @samf;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
@@ -889,11 +1250,25 @@
         &::before {
           color: @samf;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-hover;
+        }
       }
 
       &.full {
         background: @samf;
         color: @white-color;
+
+        &:hover {
+          background: @samf-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @samf-hover!important;
+        }
       }
     }
 
@@ -918,10 +1293,24 @@
         &::before {
           color: @samf-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_1-hover;
+        }
       }
 
       &.full {
         background: @samf-sub_1;
+
+        &:hover {
+          background: @samf-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @samf-sub_1-hover!important;
+        }
       }
     }
 
@@ -947,11 +1336,25 @@
         &::before {
           color: @samf-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_2-hover;
+        }
       }
 
       &.full {
         background: @samf-sub_2;
         color: @white-color;
+
+        &:hover {
+          background: @samf-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @samf-sub_2-hover!important;
+        }
       }
     }
 
@@ -977,11 +1380,25 @@
         &::before {
           color: @samf-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_3-hover;
+        }
       }
 
       &.full {
         background: @samf-sub_3;
         color: @white-color;
+
+        &:hover {
+          background: @samf-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @samf-sub_3-hover!important;
+        }
       }
     }
 
@@ -1007,25 +1424,30 @@
         &::before {
           color: @samf-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_4-hover;
+        }
       }
 
       &.full {
         background: @samf-sub_4;
         color: @white-color;
+
+        &:hover {
+          background: @samf-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @samf-sub_4-hover!important;
+        }
       }
     }
   }
 
   .theme-jura & {
-    &.full {
-      background: @jura;
-      color: @white-color;
-    }
-
-    &.outlined {
-      border: 1px solid @jura;
-    }
-
     &.faculty_color {
       &.text-down {
         .header {
@@ -1048,10 +1470,24 @@
         &::before {
           color: @jura;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-hover;
+        }
       }
 
       &.full {
         background: @jura;
+
+        &:hover {
+          background: @jura-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @jura-hover!important;
+        }
       }
     }
 
@@ -1077,10 +1513,24 @@
         &::before {
           color: @jura-sub_1;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_1-hover;
+        }
       }
 
       &.full {
         background: @jura-sub_1;
+
+        &:hover {
+          background: @jura-sub_1-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @jura-sub_1-hover!important;
+        }
       }
     }
 
@@ -1106,10 +1556,24 @@
         &::before {
           color: @jura-sub_2;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_2-hover;
+        }
       }
 
       &.full {
         background: @jura-sub_2;
+
+        &:hover {
+          background: @jura-sub_2-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @jura-sub_2-hover!important;
+        }
       }
     }
 
@@ -1135,10 +1599,24 @@
         &::before {
           color: @jura-sub_3;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_3-hover;
+        }
       }
 
       &.full {
         background: @jura-sub_3;
+
+        &:hover {
+          background: @jura-sub_3-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @jura-sub_3-hover!important;
+        }
       }
     }
 
@@ -1164,10 +1642,24 @@
         &::before {
           color: @jura-sub_4;
         }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_4-hover;
+        }
       }
 
       &.full {
         background: @jura-sub_4;
+
+        &:hover {
+          background: @jura-sub_4-hover!important;
+        }
+      }
+      &.text-down {
+        &:hover {
+          background: @jura-sub_4-hover!important;
+        }
       }
     }
   }
@@ -1188,11 +1680,16 @@
     }
 
     &.outlined {
-      border: 1px solid @gray-dark;
+      border: 1px solid @ku-gray;
       color: @gray-dark!important;
 
       &::before {
         color: @gray-dark!important;
+      }
+
+      &:hover {
+        background: @ku-gray-hover!important;
+        border: 1px solid @ku-gray-hover;
       }
     }
 
@@ -1200,12 +1697,17 @@
       background: @ku-gray;
       color: @gray-dark;
 
+      &:hover {
+        background: @ku-gray-hover!important;
+      }
+
       .header {
         color: @gray-dark;
       }
-
-      &::before {
-        color: @gray-dark;
+    }
+    &.text-down {
+      &:hover {
+        background: @ku-gray-hover!important;
       }
     }
 
@@ -1240,6 +1742,10 @@
       &::before {
         color: @gray-dark!important;
       }
+
+      &:hover {
+        background: @white-color-hover!important;
+      }
     }
 
     &.full {
@@ -1252,6 +1758,15 @@
 
       &::before {
         color: @gray-dark;
+      }
+
+      &:hover {
+        background: @white-color-hover!important;
+      }
+    }
+    &.text-down {
+      &:hover {
+        background: @white-color-hover!important;
       }
     }
 
@@ -1286,6 +1801,11 @@
       &::before {
         color: @brown;
       }
+
+      &:hover {
+        background: @white-color-hover!important;
+        border: 1px solid @brown-hover;
+      }
     }
 
     &.full {
@@ -1294,6 +1814,16 @@
 
       .header {
         color: @white-color;
+      }
+
+      &:hover {
+        background: @brown-hover!important;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @brown-hover!important;
       }
     }
 
@@ -1398,7 +1928,7 @@
   // Height 298px
   &.size1 {
     height: @gridbox1;
-    background-color: @ku-gray;
+    background: @ku-gray;
 
     .box1 {
       order: 2;
@@ -1573,47 +2103,51 @@
       color: @white-color;
 
       .theme-ku & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @ku-red;
+          background: @ku-red;
         }
 
         &.subcolor_1 {
-          background-color: @blue;
+          background: @blue;
         }
 
         &.subcolor_2 {
-          background-color: @brown;
+          background: @green;
         }
 
         &.subcolor_3 {
-          background-color: @green;
+          background: @ku-darkgray;
+          color: @gray-dark;
         }
 
         &.subcolor_4 {
-          background-color: @ku-gray;
-          color: @gray-dark;
+          background: @ku-darkblue;
         }
       }
 
       .theme-science & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @science;
+          background: @science;
         }
 
         &.subcolor_1 {
-          background-color: @science-sub_1;
+          background: @science-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @science-sub_2;
+          background: @science-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @science-sub_3;
+          background: @science-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @science-sub_4;
+          background: @science-sub_4;
         }
       }
 
@@ -1621,130 +2155,140 @@
         color: @white-color;
 
         &.faculty_color {
-          background-color: @hum;
+          background: @hum;
         }
 
         &.subcolor_1 {
-          background-color: @hum-sub_1;
+          background: @hum-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @hum-sub_2;
+          background: @hum-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @hum-sub_3;
+          background: @hum-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @hum-sub_4;
+          background: @hum-sub_4;
         }
       }
 
       .theme-teol & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @teol;
+          background: @teol;
         }
 
         &.subcolor_1 {
-          background-color: @teol-sub_1;
+          background: @teol-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @teol-sub_2;
+          background: @teol-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @teol-sub_3;
+          background: @teol-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @teol-sub_4;
+          background: @teol-sub_4;
         }
       }
 
       .theme-sund & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @sund;
+          background: @sund;
         }
 
         &.subcolor_1 {
-          background-color: @sund-sub_1;
+          background: @sund-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @sund-sub_2;
+          background: @sund-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @sund-sub_3;
+          background: @sund-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @sund-sub_4;
+          background: @sund-sub_4;
         }
       }
 
       .theme-samf & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @samf;
+          background: @samf;
         }
 
         &.subcolor_1 {
-          background-color: @samf-sub_1;
+          background: @samf-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @samf-sub_2;
+          background: @samf-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @samf-sub_3;
+          background: @samf-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @samf-sub_4;
+          background: @samf-sub_4;
         }
       }
 
       .theme-jura & {
+        color: @white-color;
+
         &.faculty_color {
-          background-color: @jura;
+          background: @jura;
         }
 
         &.subcolor_1 {
-          background-color: @jura-sub_1;
+          background: @jura-sub_1;
         }
 
         &.subcolor_2 {
-          background-color: @jura-sub_2;
+          background: @jura-sub_2;
         }
 
         &.subcolor_3 {
-          background-color: @jura-sub_3;
+          background: @jura-sub_3;
         }
 
         &.subcolor_4 {
-          background-color: @jura-sub_4;
+          background: @jura-sub_4;
         }
       }
 
       &.subcolor_5 {
-        background-color: @ku-gray;
+        background: @ku-gray;
       }
 
       &.subcolor_6 {
-        background-color: @white-color;
+        background: @white-color;
       }
 
       &.subcolor_7 {
-        background-color: @brown;
+        background: @brown;
       }
 
-      &.text-over .header {
-        bottom: auto;
-        left: auto;
-        position: relative;
+      &.text-over {
+        .header {
+          bottom: auto;
+          left: auto;
+          position: relative;
+        }
       }
 
       &.text-down::before {
@@ -1782,7 +2326,7 @@
         .box2 {
           order: 1;
         }
-        background-color: transparent!important;
+        background: transparent!important;
       }
     }
   }
@@ -1843,21 +2387,21 @@
 
         &.subcolor_2 {
           .header {
-            background: fade(@brown, 75%);
+            background: fade(@green, 75%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@green, 75%);
+            background: fade(@ku-darkgray, 75%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@ku-gray, 75%);
+            background: fade(@ku-darkblue, 75%);
             color: @gray-dark;
           }
         }
@@ -2120,13 +2664,13 @@
       .box2 {
         order: 1;
       }
-      background-color: transparent!important;
+      background: transparent;
       color: @white-color;
     }
     // Remove border from single column outlined boxes with images
     &.with-img {
       &.outlined {
-        border-width: 0;
+        border-width: 0!important;
       }
     }
   }
@@ -2160,6 +2704,16 @@
       &.with-img {
         .box1 {
           flex: 1;
+        }
+      }
+
+      &.with-img {
+        &.text-down {
+          &:hover {
+            .header {
+              background: transparent!important;
+            }
+          }
         }
       }
     }
@@ -2245,46 +2799,46 @@
 
         .theme-ku & {
           &.faculty_color {
-            background-color: @ku-red;
+            background: @ku-red;
           }
 
           &.subcolor_1 {
-            background-color: @blue;
+            background: @blue;
           }
 
           &.subcolor_2 {
-            background-color: @brown;
+            background: @green;
           }
 
           &.subcolor_3 {
-            background-color: @green;
+            background: @ku-darkgray;
+            color: @gray-dark;
           }
 
           &.subcolor_4 {
-            background-color: @ku-gray;
-            color: @gray-dark;
+            background: @ku-darkblue;
           }
         }
 
         .theme-science & {
           &.faculty_color {
-            background-color: @science;
+            background: @science;
           }
 
           &.subcolor_1 {
-            background-color: @science-sub_1;
+            background: @science-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @science-sub_2;
+            background: @science-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @science-sub_3;
+            background: @science-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: @science-sub_4;
+            background: @science-sub_4;
           }
         }
 
@@ -2292,131 +2846,139 @@
           color: @white-color;
 
           &.faculty_color {
-            background-color: @hum;
+            background: @hum;
           }
 
           &.subcolor_1 {
-            background-color: @hum-sub_1;
+            background: @hum-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @hum-sub_2;
+            background: @hum-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @hum-sub_3;
+            background: @hum-sub_3;
             color: @gray-dark;
           }
 
           &.subcolor_4 {
-            background-color: @hum-sub_4;
+            background: @hum-sub_4;
           }
         }
 
         .theme-teol & {
           &.faculty_color {
-            background-color: @teol;
+            background: @teol;
           }
 
           &.subcolor_1 {
-            background-color: @teol-sub_1;
+            background: @teol-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @teol-sub_2;
+            background: @teol-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @teol-sub_3;
+            background: @teol-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: @teol-sub_4;
+            background: @teol-sub_4;
           }
         }
 
         .theme-sund & {
           &.faculty_color {
-            background-color: @sund;
+            background: @sund;
           }
 
           &.subcolor_1 {
-            background-color: @sund-sub_1;
+            background: @sund-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @sund-sub_2;
+            background: @sund-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @sund-sub_3;
+            background: @sund-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: @sund-sub_4;
+            background: @sund-sub_4;
           }
         }
 
         .theme-samf & {
           &.faculty_color {
-            background-color: @samf;
+            background: @samf;
           }
 
           &.subcolor_1 {
-            background-color: @samf-sub_1;
+            background: @samf-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @samf-sub_2;
+            background: @samf-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @samf-sub_3;
+            background: @samf-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: @samf-sub_4;
+            background: @samf-sub_4;
           }
         }
 
         .theme-jura & {
           &.faculty_color {
-            background-color: @jura;
+            background: @jura;
           }
 
           &.subcolor_1 {
-            background-color: @jura-sub_1;
+            background: @jura-sub_1;
           }
 
           &.subcolor_2 {
-            background-color: @jura-sub_2;
+            background: @jura-sub_2;
           }
 
           &.subcolor_3 {
-            background-color: @jura-sub_3;
+            background: @jura-sub_3;
           }
 
           &.subcolor_4 {
-            background-color: @jura-sub_4;
+            background: @jura-sub_4;
           }
         }
 
         &.subcolor_5 {
-          background-color: @ku-gray;
+          background: @ku-gray;
         }
 
         &.subcolor_6 {
-          background-color: @white-color;
+          background: @white-color;
         }
 
         &.subcolor_7 {
-          background-color: @brown;
+          background: @brown;
         }
 
-        &.text-over .header {
-          position: relative;
-          bottom: auto;
-          left: auto;
+        &.text-over {
+          .header {
+            position: relative;
+            bottom: auto;
+            left: auto;
+          }
+
+          &:hover {
+            .header {
+              background: transparent!important;
+            }
+          }
         }
 
         &.text-down::before {
@@ -2448,7 +3010,7 @@
 
         &.outlined {
           border-width: 1px;
-          background-color: transparent!important;
+          background: transparent;
 
           .theme-ku & {
             &.faculty_color {
@@ -2465,19 +3027,19 @@
 
             &.subcolor_2 {
               .header {
-                color: @brown;
+                color: @green;
               }
             }
 
             &.subcolor_3 {
               .header {
-                color: @green;
+                color: @gray-dark;
               }
             }
 
             &.subcolor_4 {
               .header {
-                color: @gray-dark;
+                color: @ku-darkblue;
               }
             }
           }
@@ -2701,7 +3263,7 @@
             flex: 1;
 
             .header {
-              background-color: transparent!important;
+              background: transparent!important;
               position: relative;
             }
           }
@@ -2709,7 +3271,7 @@
           .box2 {
             order: 1;
           }
-          background-color: transparent!important;
+          background: transparent!important;
         }
       }
     }
@@ -2717,6 +3279,23 @@
     .size4 {
       .text {
         display: block;
+      }
+    }
+  }
+// Hover styling for full width and 2/3 columns
+  .single-column .column1,
+  .one-two-column .column2,
+  .two-one-column .column1 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.text-down {
+          &:hover {
+            .header {
+              background: transparent!important;
+            }
+          }
+        }
       }
     }
   }
@@ -2789,7 +3368,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@brown, 75%);
+                background: fade(@green, 75%);
                 color: @white-color;
               }
 
@@ -2800,23 +3379,23 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@green, 75%);
-                color: @white-color;
+                background: fade(@ku-darkgray, 75%);
+                color: @gray-dark;
               }
 
               &::before {
-                color: @white-color;
+                color: @gray-dark;
               }
             }
 
             &.subcolor_4 {
               .header {
-                background: fade(@ku-gray, 75%);
+                background: fade(@ku-darkblue, 75%);
                 color: @gray-dark;
               }
 
               &::before {
-                color: @ku-gray;
+                color: @gray-dark;
               }
             }
           }
