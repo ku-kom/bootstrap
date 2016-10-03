@@ -14,6 +14,7 @@
 @gridbox4: 81px; // .size4
 @gridbox5: 55px; // .size5
 // KU colors
+@ku-gridbox-text: #606060;
 @brown: #625757;
 @brown-hover: #4d4444; //@red: #901a1e;
 //@red-hover: #7b161a;
@@ -22,7 +23,7 @@
 @green: #85ae33;
 @green-hover: #75992c;
 @ku-gray: #eee;
-@ku-gray-hover: #e7e7e7;
+@ku-gray-hover: #f5f5f5;
 @ku-darkgray: #b5b5b5;
 @ku-darkgray-hover: #a1a1a1;
 @ku-darkblue: #42759b;
@@ -81,25 +82,26 @@
 .gridbox {
   position: relative;
   line-height: @line-height-base;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
 
-  img {
-    transition: all 0.15s ease;
-  }
-
   &:hover {
     img {
-      filter: brightness(80%);
-      transition: all 0.15s ease;
+      filter: brightness(90%);
     }
+  }
+
+  .text {
+    font-size: 13px;
+    color: @ku-gridbox-text;
   }
 
   .theme-ku & {
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@ku-red, 75%)!important;
+          background: fade(@ku-red, 83%)!important;
           color: @white-color;
         }
       }
@@ -150,7 +152,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@blue, 75%);
+          background: fade(@blue, 83%);
           color: @white-color;
         }
       }
@@ -174,6 +176,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @blue-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @blue-hover;
+          }
+        }
       }
 
       &.full {
@@ -184,6 +193,7 @@
           background: @blue-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @blue-hover!important;
@@ -194,7 +204,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@green, 75%);
+          background: fade(@green, 83%);
           color: @white-color;
         }
       }
@@ -218,6 +228,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @green-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @green-hover;
+          }
+        }
       }
 
       &.full {
@@ -228,6 +245,7 @@
           background: @green-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @green-hover!important;
@@ -238,7 +256,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@ku-darkgray, 75%);
+          background: fade(@ku-darkgray, 83%);
           color: @white-color;
         }
       }
@@ -252,15 +270,22 @@
 
       &.outlined {
         border: 1px solid @ku-darkgray;
-        color: @gray-dark!important;
+        color: @ku-gridbox-text!important;
 
         &::before {
-          color: @gray-dark;
+          color: @ku-gridbox-text;
         }
 
         &:hover {
           background: @ku-gray-hover;
           border: 1px solid @ku-darkgray-hover!important;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-gray-hover;
+          }
         }
       }
 
@@ -278,6 +303,7 @@
           }
         }
       }
+
       &.text-down {
         &:hover {
           background: @ku-darkgray-hover!important;
@@ -290,7 +316,7 @@
 
       &.text-down {
         .header {
-          background: fade(@ku-darkblue, 75%);
+          background: fade(@ku-darkblue, 83%);
           color: @white-color;
         }
       }
@@ -314,6 +340,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @ku-darkblue-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-darkblue-hover;
+          }
+        }
       }
 
       &.full {
@@ -323,6 +356,7 @@
           background: @ku-darkblue-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @ku-darkblue-hover!important;
@@ -335,7 +369,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@science, 75%);
+          background: fade(@science, 83%);
           color: @white-color;
         }
       }
@@ -359,6 +393,13 @@
           background: @ku-gray-hover;
           border: 1px solid @science-hover!important;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-hover;
+          }
+        }
       }
 
       &.full {
@@ -369,6 +410,7 @@
           background: @science-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @science-hover!important;
@@ -379,7 +421,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@science-sub_1, 75%);
+          background: fade(@science-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -403,6 +445,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @science-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_1-hover;
+          }
+        }
       }
 
       &.full {
@@ -413,6 +462,7 @@
           background: @science-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @science-sub_1-hover!important;
@@ -423,7 +473,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@science-sub_2, 75%);
+          background: fade(@science-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -446,6 +496,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @science-sub_2-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_2-hover;
+          }
+        }
       }
 
       &.full {
@@ -456,6 +513,7 @@
           background: @science-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @science-sub_2-hover!important;
@@ -466,7 +524,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@science-sub_3, 75%);
+          background: fade(@science-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -490,6 +548,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @science-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -500,6 +565,7 @@
           background: @science-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @science-sub_3-hover!important;
@@ -510,7 +576,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@science-sub_4, 75%);
+          background: fade(@science-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -534,6 +600,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @science-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_4-hover;
+          }
+        }
       }
 
       &.full {
@@ -544,6 +617,7 @@
           background: @science-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @science-sub_4-hover!important;
@@ -565,7 +639,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@hum, 75%);
+          background: fade(@hum, 83%);
           color: @white-color;
         }
       }
@@ -589,6 +663,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @hum-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-hover;
+          }
+        }
       }
 
       &.full {
@@ -599,6 +680,7 @@
           background: @hum-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @hum-hover!important;
@@ -609,7 +691,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@hum-sub_1, 75%);
+          background: fade(@hum-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -633,6 +715,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @hum-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_1-hover;
+          }
+        }
       }
 
       &.full {
@@ -643,6 +732,7 @@
           background: @hum-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @hum-sub_1-hover!important;
@@ -653,7 +743,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@hum-sub_2, 75%);
+          background: fade(@hum-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -667,15 +757,22 @@
 
       &.outlined {
         border: 1px solid @hum-sub_2;
-        color: @hum-sub_2!important;
+        color: @ku-gridbox-text!important;
 
         &::before {
-          color: @hum-sub_2;
+          color: @ku-gridbox-text;
         }
 
         &:hover {
           background: @ku-gray-hover!important;
           border: 1px solid @hum-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_2-hover;
+          }
         }
       }
 
@@ -687,6 +784,7 @@
           background: @hum-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @hum-sub_2-hover!important;
@@ -697,7 +795,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@hum-sub_3, 75%);
+          background: fade(@hum-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -721,6 +819,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @hum-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -731,6 +836,7 @@
           background: @hum-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @hum-sub_2-hover!important;
@@ -741,7 +847,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@hum-sub_4, 75%);
+          background: fade(@hum-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -765,6 +871,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @hum-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_4-hover;
+          }
+        }
       }
 
       &.full {
@@ -775,6 +888,7 @@
           background: @hum-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @hum-sub_4-hover!important;
@@ -787,7 +901,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@teol, 75%);
+          background: fade(@teol, 83%);
           color: @white-color;
         }
       }
@@ -811,6 +925,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @teol-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-hover;
+          }
+        }
       }
 
       &.full {
@@ -821,6 +942,7 @@
           background: @teol-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @teol-hover!important;
@@ -831,7 +953,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@teol-sub_1, 75%);
+          background: fade(@teol-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -855,6 +977,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @teol-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_1-hover;
+          }
+        }
       }
 
       &.full {
@@ -865,6 +994,7 @@
           background: @teol-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @teol-sub_1-hover!important;
@@ -875,7 +1005,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@teol-sub_2, 75%);
+          background: fade(@teol-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -889,7 +1019,7 @@
 
       &.outlined {
         border: 1px solid @teol-sub_2;
-        color: @teol-sub_2;
+        color: @teol-sub_2!important;
 
         &::before {
           color: @teol-sub_2;
@@ -898,6 +1028,13 @@
         &:hover {
           background: @ku-gray-hover!important;
           border: 1px solid @teol-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_2-hover;
+          }
         }
       }
 
@@ -909,6 +1046,7 @@
           background: @teol-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @teol-sub_2-hover!important;
@@ -919,7 +1057,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@teol-sub_3, 75%);
+          background: fade(@teol-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -943,6 +1081,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @teol-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -953,6 +1098,7 @@
           background: @teol-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @teol-sub_3-hover!important;
@@ -963,7 +1109,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@teol-sub_4, 75%);
+          background: fade(@teol-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -987,6 +1133,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @teol-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_4-hover;
+          }
+        }
       }
 
       &.full {
@@ -997,6 +1150,7 @@
           background: @teol-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @teol-sub_4-hover!important;
@@ -1009,7 +1163,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@sund, 75%);
+          background: fade(@sund, 83%);
           color: @white-color;
         }
       }
@@ -1033,6 +1187,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @sund-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-hover;
+          }
+        }
       }
 
       &.full {
@@ -1043,6 +1204,7 @@
           background: @sund-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @sund-hover!important;
@@ -1053,7 +1215,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@sund-sub_1, 75%);
+          background: fade(@sund-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -1077,6 +1239,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @sund-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_1-hover;
+          }
+        }
       }
 
       &.full {
@@ -1087,6 +1256,7 @@
           background: @sund-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @sund-sub_1-hover!important;
@@ -1097,7 +1267,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@sund-sub_2, 75%);
+          background: fade(@sund-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -1121,6 +1291,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @sund-sub_2-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_2-hover;
+          }
+        }
       }
 
       &.full {
@@ -1131,6 +1308,7 @@
           background: @sund-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @sund-sub_2-hover!important;
@@ -1141,7 +1319,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@sund-sub_3, 75%);
+          background: fade(@sund-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -1165,6 +1343,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @sund-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -1175,6 +1360,7 @@
           background: @sund-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @sund-sub_3-hover!important;
@@ -1185,7 +1371,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@sund-sub_4, 75%);
+          background: fade(@sund-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -1209,6 +1395,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @sund-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_4-hover;
+          }
+        }
       }
 
       &.full {
@@ -1219,6 +1412,7 @@
           background: @sund-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @sund-sub_4-hover!important;
@@ -1231,7 +1425,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@samf, 75%);
+          background: fade(@samf, 83%);
           color: @white-color;
         }
       }
@@ -1255,6 +1449,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @samf-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-hover;
+          }
+        }
       }
 
       &.full {
@@ -1265,6 +1466,7 @@
           background: @samf-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @samf-hover!important;
@@ -1275,7 +1477,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@samf-sub_1, 75%);
+          background: fade(@samf-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -1298,15 +1500,24 @@
           background: @ku-gray-hover!important;
           border: 1px solid @samf-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_1-hover;
+          }
+        }
       }
 
       &.full {
         background: @samf-sub_1;
+        color: @white-color;
 
         &:hover {
           background: @samf-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @samf-sub_1-hover!important;
@@ -1317,7 +1528,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@samf-sub_2, 75%);
+          background: fade(@samf-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -1341,6 +1552,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @samf-sub_2-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_2-hover;
+          }
+        }
       }
 
       &.full {
@@ -1351,6 +1569,7 @@
           background: @samf-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @samf-sub_2-hover!important;
@@ -1361,7 +1580,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@samf-sub_3, 75%);
+          background: fade(@samf-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -1385,6 +1604,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @samf-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -1395,6 +1621,7 @@
           background: @samf-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @samf-sub_3-hover!important;
@@ -1405,7 +1632,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@samf-sub_4, 75%);
+          background: fade(@samf-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -1429,6 +1656,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @samf-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_4-hover;
+          }
+        }
       }
 
       &.full {
@@ -1439,6 +1673,7 @@
           background: @samf-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @samf-sub_4-hover!important;
@@ -1451,7 +1686,7 @@
     &.faculty_color {
       &.text-down {
         .header {
-          background: fade(@jura, 75%);
+          background: fade(@jura, 83%);
           color: @white-color;
         }
       }
@@ -1475,15 +1710,24 @@
           background: @ku-gray-hover!important;
           border: 1px solid @jura-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-hover;
+          }
+        }
       }
 
       &.full {
         background: @jura;
+        color: @white-color;
 
         &:hover {
           background: @jura-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @jura-hover!important;
@@ -1494,7 +1738,7 @@
     &.subcolor_1 {
       &.text-down {
         .header {
-          background: fade(@jura-sub_1, 75%);
+          background: fade(@jura-sub_1, 83%);
           color: @white-color;
         }
       }
@@ -1518,15 +1762,24 @@
           background: @ku-gray-hover!important;
           border: 1px solid @jura-sub_1-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_1-hover;
+          }
+        }
       }
 
       &.full {
         background: @jura-sub_1;
+        color: @white-color;
 
         &:hover {
           background: @jura-sub_1-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @jura-sub_1-hover!important;
@@ -1537,7 +1790,7 @@
     &.subcolor_2 {
       &.text-down {
         .header {
-          background: fade(@jura-sub_2, 75%);
+          background: fade(@jura-sub_2, 83%);
           color: @white-color;
         }
       }
@@ -1561,15 +1814,24 @@
           background: @ku-gray-hover!important;
           border: 1px solid @jura-sub_2-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_2-hover;
+          }
+        }
       }
 
       &.full {
         background: @jura-sub_2;
+        color: @white-color;
 
         &:hover {
           background: @jura-sub_2-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @jura-sub_2-hover!important;
@@ -1580,7 +1842,7 @@
     &.subcolor_3 {
       &.text-down {
         .header {
-          background: fade(@jura-sub_3, 75%);
+          background: fade(@jura-sub_3, 83%);
           color: @white-color;
         }
       }
@@ -1604,6 +1866,13 @@
           background: @ku-gray-hover!important;
           border: 1px solid @jura-sub_3-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_3-hover;
+          }
+        }
       }
 
       &.full {
@@ -1613,6 +1882,7 @@
           background: @jura-sub_3-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @jura-sub_3-hover!important;
@@ -1623,7 +1893,7 @@
     &.subcolor_4 {
       &.text-down {
         .header {
-          background: fade(@jura-sub_4, 75%);
+          background: fade(@jura-sub_4, 83%);
           color: @white-color;
         }
       }
@@ -1647,15 +1917,24 @@
           background: @ku-gray-hover!important;
           border: 1px solid @jura-sub_4-hover;
         }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_4-hover;
+          }
+        }
       }
 
       &.full {
         background: @jura-sub_4;
+        color: @white-color;
 
         &:hover {
           background: @jura-sub_4-hover!important;
         }
       }
+
       &.text-down {
         &:hover {
           background: @jura-sub_4-hover!important;
@@ -1667,103 +1946,119 @@
   &.subcolor_5 {
     &.text-down {
       .header {
-        background: fade(@ku-gray, 75%);
-        color: @gray-dark;
+        background: fade(@ku-gray, 83%);
+        color: @ku-gridbox-text;
       }
     }
 
     &.text-top {
       .header {
         background: @ku-gray;
-        color: @gray-dark;
+        color: @ku-gridbox-text;
       }
     }
 
     &.outlined {
       border: 1px solid @ku-gray;
-      color: @gray-dark!important;
+      color: @ku-gridbox-text!important;
 
       &::before {
-        color: @gray-dark!important;
+        color: @ku-gridbox-text!important;
       }
 
       &:hover {
-        background: @ku-gray-hover!important;
-        border: 1px solid @ku-gray-hover;
+        background: #e7e7e7!important;
+        border: 1px solid #e7e7e7;
+      }
+
+      &.with-img {
+        &:hover {
+          background: #e7e7e7!important;
+          border: 1px solid #e7e7e7;
+        }
       }
     }
 
     &.full {
       background: @ku-gray;
-      color: @gray-dark;
+      color: @ku-gridbox-text;
 
       &:hover {
-        background: @ku-gray-hover!important;
+        background: #e7e7e7!important;
       }
 
       .header {
-        color: @gray-dark;
+        color: @ku-gridbox-text;
       }
     }
+
     &.text-down {
       &:hover {
-        background: @ku-gray-hover!important;
+        background: #e7e7e7!important;
       }
     }
 
     &::before {
-      color: @gray-dark!important;
+      color: @ku-gridbox-text!important;
     }
 
     .text {
-      color: @gray-dark;
+      color: @ku-gridbox-text;
     }
   }
 
   &.subcolor_6 {
     &.text-down {
       .header {
-        background: fade(@white-color, 80%);
-        color: @gray-dark;
+        background: fade(@white-color, 83%);
+        color: @ku-gridbox-text;
       }
     }
 
     &.text-top {
       .header {
         background: @white-color;
-        color: @gray-dark;
+        color: @ku-gridbox-text;
       }
     }
 
     &.outlined {
       border: 1px solid @gray-dark;
-      color: @gray-dark!important;
+      color: @ku-gridbox-text!important;
 
       &::before {
-        color: @gray-dark!important;
+        color: @ku-gridbox-text!important;
       }
 
       &:hover {
         background: @white-color-hover!important;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @gray-dark;
+        }
       }
     }
 
     &.full {
       background: @white-color;
-      color: @gray-dark;
+      color: @ku-gridbox-text;
 
       .header {
-        color: @gray-dark;
+        color: @ku-gridbox-text;
       }
 
       &::before {
-        color: @gray-dark;
+        color: @ku-gridbox-text;
       }
 
       &:hover {
         background: @white-color-hover!important;
       }
     }
+
     &.text-down {
       &:hover {
         background: @white-color-hover!important;
@@ -1771,18 +2066,18 @@
     }
 
     &::before {
-      color: @gray-dark!important;
+      color: @ku-gridbox-text!important;
     }
 
     .text {
-      color: @gray-dark;
+      color: @ku-gridbox-text;
     }
   }
 
   &.subcolor_7 {
     &.text-down {
       .header {
-        background: fade(@brown, 80%);
+        background: fade(@brown, 83%);
         color: @white-color;
       }
     }
@@ -1796,7 +2091,7 @@
 
     &.outlined {
       border: 1px solid @brown;
-      color: @gray-dark!important;
+      color: @ku-gridbox-text!important;
 
       &::before {
         color: @brown;
@@ -1805,6 +2100,13 @@
       &:hover {
         background: @white-color-hover!important;
         border: 1px solid @brown-hover;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @brown-hover;
+        }
       }
     }
 
@@ -1843,8 +2145,9 @@
       font-size: 1.2em;
       padding: 8px 25px 6px @padding10;
       width: 100%;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.4px;
     }
   }
 
@@ -1972,6 +2275,7 @@
   }
 
   &.outlined {
+      background: @white-color;
     &:not(.with-img) {
       // Boxes without img: remove box2, make box1 100% height
       .box1 {
@@ -2076,12 +2380,12 @@
 
 .boxlink {
   color: inherit!important;
+  display: block;
 
+  &:hover,
   &:active,
-  &:focus,
-  &:hover {
+  &:focus {
     text-decoration: none;
-    color: inherit;
   }
 }
 // Obvius specific styling
@@ -2119,7 +2423,7 @@
 
         &.subcolor_3 {
           background: @ku-darkgray;
-          color: @gray-dark;
+          color: @ku-gridbox-text;
         }
 
         &.subcolor_4 {
@@ -2176,8 +2480,6 @@
       }
 
       .theme-teol & {
-        color: @white-color;
-
         &.faculty_color {
           background: @teol;
         }
@@ -2272,7 +2574,7 @@
       }
 
       &.subcolor_5 {
-        background: @ku-gray;
+        //background: @ku-gray;
       }
 
       &.subcolor_6 {
@@ -2326,7 +2628,7 @@
         .box2 {
           order: 1;
         }
-        background: transparent!important;
+        //background: transparent!important;
       }
     }
   }
@@ -2370,39 +2672,41 @@
   .size2,
   .size3 {
     &.outlined.with-img {
+      border-width: 0;
+
       .theme-ku & {
         &.faculty_color {
           .header {
-            background: fade(@ku-red, 75%);
+            background: fade(@ku-red, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@blue, 75%);
+            background: fade(@blue, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@green, 75%);
+            background: fade(@green, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@ku-darkgray, 75%);
+            background: fade(@ku-darkgray, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@ku-darkblue, 75%);
-            color: @gray-dark;
+            background: fade(@ku-darkblue, 83%);
+            color: @white-color;
           }
         }
       }
@@ -2410,35 +2714,35 @@
       .theme-science & {
         &.faculty_color {
           .header {
-            background: fade(@science, 75%);
+            background: fade(@science, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@science-sub_1, 75%);
+            background: fade(@science-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@science-sub_2, 75%);
+            background: fade(@science-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@science-sub_3, 75%);
+            background: fade(@science-sub_3, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@science-sub_4, 75%);
+            background: fade(@science-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2447,35 +2751,35 @@
       .theme-hum & {
         &.faculty_color {
           .header {
-            background: fade(@hum, 75%);
+            background: fade(@hum, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@hum-sub_1, 75%);
+            background: fade(@hum-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@hum-sub_2, 75%);
+            background: fade(@hum-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@hum-sub_3, 75%);
-            color: @gray-dark;
+            background: fade(@hum-sub_3, 83%);
+            color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@hum-sub_4, 75%);
+            background: fade(@hum-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2484,35 +2788,35 @@
       .theme-teol & {
         &.faculty_color {
           .header {
-            background: fade(@teol, 75%);
+            background: fade(@teol, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@teol-sub_1, 75%);
+            background: fade(@teol-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@teol-sub_2, 75%);
+            background: fade(@teol-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@teol-sub_3, 75%);
+            background: fade(@teol-sub_3, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@teol-sub_4, 75%);
+            background: fade(@teol-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2521,35 +2825,35 @@
       .theme-sund & {
         &.faculty_color {
           .header {
-            background: fade(@sund, 75%);
+            background: fade(@sund, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@sund-sub_1, 75%);
+            background: fade(@sund-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@sund-sub_2, 75%);
+            background: fade(@sund-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@sund-sub_3, 75%);
+            background: fade(@sund-sub_3, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@sund-sub_4, 75%);
+            background: fade(@sund-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2558,35 +2862,35 @@
       .theme-samf & {
         &.faculty_color {
           .header {
-            background: fade(@samf, 75%);
+            background: fade(@samf, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@samf-sub_1, 75%);
+            background: fade(@samf-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@samf-sub_2, 75%);
+            background: fade(@samf-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@samf-sub_3, 75%);
+            background: fade(@samf-sub_3, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@samf-sub_4, 75%);
+            background: fade(@samf-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2595,35 +2899,35 @@
       .theme-jura & {
         &.faculty_color {
           .header {
-            background: fade(@jura, 75%);
+            background: fade(@jura, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_1 {
           .header {
-            background: fade(@jura-sub_1, 75%);
+            background: fade(@jura-sub_1, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_2 {
           .header {
-            background: fade(@jura-sub_2, 75%);
+            background: fade(@jura-sub_2, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_3 {
           .header {
-            background: fade(@jura-sub_3, 75%);
+            background: fade(@jura-sub_3, 83%);
             color: @white-color;
           }
         }
 
         &.subcolor_4 {
           .header {
-            background: fade(@jura-sub_4, 75%);
+            background: fade(@jura-sub_4, 83%);
             color: @white-color;
           }
         }
@@ -2631,21 +2935,21 @@
 
       &.subcolor_5 {
         .header {
-          background: fade(@ku-gray, 75%);
-          color: @gray-dark;
+          background: fade(@ku-gray, 83%);
+          color: @ku-gridbox-text;
         }
       }
 
       &.subcolor_6 {
         .header {
-          background: fade(@white-color, 75%);
-          color: @gray-dark;
+          background: fade(@white-color, 83%);
+          color: @ku-gridbox-text;
         }
       }
 
       &.subcolor_7 {
         .header {
-          background: fade(@brown, 75%);
+          background: fade(@brown, 83%);
           color: @white-color;
         }
       }
@@ -2667,12 +2971,6 @@
       background: transparent;
       color: @white-color;
     }
-    // Remove border from single column outlined boxes with images
-    &.with-img {
-      &.outlined {
-        border-width: 0!important;
-      }
-    }
   }
 }
 @media only screen and (min-width: 870px) {
@@ -2682,14 +2980,23 @@
   .two-one-column .column2 {
     .size2,
     .size3 {
+        &.outlined,
+        &.with-img {
+          &:hover {
+            border-width: 0;
+          }
+        }
+      &.full,
+      &.outlined,
       &.with-img {
         .header {
           font-size: 1.1em;
-          letter-spacing: 0.7px;
+          font-weight: 700;
+          letter-spacing: 0.4px;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          padding: 8px 25px 8px 10px;
+          padding: 8px 5px 8px 10px;
         }
       }
     }
@@ -2705,6 +3012,13 @@
         .box1 {
           flex: 1;
         }
+
+        .header {
+          padding: 8px 5px 8px 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
       }
 
       &.with-img {
@@ -2713,6 +3027,9 @@
             .header {
               background: transparent!important;
             }
+          }
+          &.subcolor_5 {
+            background: @ku-gray;
           }
         }
       }
@@ -2727,6 +3044,9 @@
     .size3 {
       &.with-img {
         &.outlined {
+            &:hover {
+              border-width: 0!important;
+            }
           .theme-ku & {
             &::before {
               color: @white-color;
@@ -2746,7 +3066,7 @@
 
             &.subcolor_3 {
               &::before {
-                color: @gray-dark;
+                color: @ku-gridbox-text;
               }
             }
           }
@@ -2776,7 +3096,7 @@
 
             &.subcolor_3 {
               &::before {
-                color: @gray-dark;
+                color: @ku-gridbox-text;
               }
             }
           }
@@ -2812,7 +3132,7 @@
 
           &.subcolor_3 {
             background: @ku-darkgray;
-            color: @gray-dark;
+            color: @ku-gridbox-text;
           }
 
           &.subcolor_4 {
@@ -2859,7 +3179,7 @@
 
           &.subcolor_3 {
             background: @hum-sub_3;
-            color: @gray-dark;
+            color: @ku-gridbox-text;
           }
 
           &.subcolor_4 {
@@ -2981,9 +3301,14 @@
           }
         }
 
-        &.text-down::before {
-          bottom: @margin10;
-          top: auto;
+        &.text-down {
+            .header {
+            padding: 8px 5px 6px 10px;
+        }
+          &:before {
+            bottom: @margin10;
+            top: auto;
+          }
         }
 
         .box1 {
@@ -3010,7 +3335,7 @@
 
         &.outlined {
           border-width: 1px;
-          background: transparent;
+           background: transparent;
 
           .theme-ku & {
             &.faculty_color {
@@ -3033,7 +3358,7 @@
 
             &.subcolor_3 {
               .header {
-                color: @gray-dark;
+                color: @ku-gridbox-text;
               }
             }
 
@@ -3242,13 +3567,13 @@
 
           &.subcolor_5 {
             .header {
-              color: @ku-gray;
+              color: @ku-gridbox-text;
             }
           }
 
           &.subcolor_6 {
             .header {
-              color: @white-color;
+              color: @ku-gridbox-text;
             }
           }
 
@@ -3271,9 +3596,13 @@
           .box2 {
             order: 1;
           }
-          background: transparent!important;
+
         }
       }
+    }
+
+    &.outlined {
+      border-width: 1px;
     }
     // Display text for certain boxes
     .size4 {
@@ -3282,17 +3611,21 @@
       }
     }
   }
-// Hover styling for full width and 2/3 columns
-  .single-column .column1,
+  // Hover styling for full width and 2/3 columns
   .one-two-column .column2,
+  .single-column .column1,
   .two-one-column .column1 {
     .size2,
     .size3 {
       &.with-img {
         &.text-down {
+            &.subcolor_5 {
+              background: @ku-gray;
+            }
           &:hover {
             .header {
               background: transparent!important;
+              padding: 8px 5px 6px 10px;
             }
           }
         }
@@ -3318,7 +3651,8 @@
 
           .header {
             font-size: 1.1em;
-            letter-spacing: 0.7px;
+            letter-spacing: 0.4px;
+            font-weight: 700;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -3346,7 +3680,7 @@
           .theme-ku & {
             &.faculty_color {
               .header {
-                background: fade(@ku-red, 75%);
+                background: fade(@ku-red, 83%);
                 color: @white-color;
               }
 
@@ -3357,7 +3691,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@blue, 75%);
+                background: fade(@blue, 83%);
                 color: @white-color;
               }
 
@@ -3368,7 +3702,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@green, 75%);
+                background: fade(@green, 83%);
                 color: @white-color;
               }
 
@@ -3379,23 +3713,23 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@ku-darkgray, 75%);
-                color: @gray-dark;
+                background: fade(@ku-darkgray, 83%);
+                color: @ku-gridbox-text;
               }
 
               &::before {
-                color: @gray-dark;
+                color: @ku-gridbox-text;
               }
             }
 
             &.subcolor_4 {
               .header {
-                background: fade(@ku-darkblue, 75%);
-                color: @gray-dark;
+                background: fade(@ku-darkblue, 83%);
+                color: @ku-gridbox-text;
               }
 
               &::before {
-                color: @gray-dark;
+                color: @ku-gridbox-text;
               }
             }
           }
@@ -3403,7 +3737,7 @@
           .theme-science & {
             &.faculty_color {
               .header {
-                background: fade(@science, 75%);
+                background: fade(@science, 83%);
                 color: @white-color;
               }
 
@@ -3414,7 +3748,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@science-sub_1, 75%);
+                background: fade(@science-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3425,7 +3759,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@science-sub_2, 75%);
+                background: fade(@science-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3436,7 +3770,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@science-sub_3, 75%);
+                background: fade(@science-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3447,7 +3781,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@science-sub_4, 75%);
+                background: fade(@science-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3460,7 +3794,7 @@
           .theme-hum & {
             &.faculty_color {
               .header {
-                background: fade(@hum, 75%);
+                background: fade(@hum, 83%);
                 color: @white-color;
               }
 
@@ -3471,7 +3805,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@hum-sub_1, 75%);
+                background: fade(@hum-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3482,7 +3816,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@hum-sub_2, 75%);
+                background: fade(@hum-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3493,7 +3827,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@hum-sub_3, 75%);
+                background: fade(@hum-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3504,7 +3838,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@hum-sub_4, 75%);
+                background: fade(@hum-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3517,7 +3851,7 @@
           .theme-teol & {
             &.faculty_color {
               .header {
-                background: fade(@teol, 75%);
+                background: fade(@teol, 83%);
                 color: @white-color;
               }
 
@@ -3528,7 +3862,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@teol-sub_1, 75%);
+                background: fade(@teol-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3539,7 +3873,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@teol-sub_2, 75%);
+                background: fade(@teol-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3550,7 +3884,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@teol-sub_3, 75%);
+                background: fade(@teol-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3561,7 +3895,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@teol-sub_4, 75%);
+                background: fade(@teol-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3574,7 +3908,7 @@
           .theme-sund & {
             &.faculty_color {
               .header {
-                background: fade(@sund, 75%);
+                background: fade(@sund, 83%);
                 color: @white-color;
               }
 
@@ -3585,7 +3919,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@sund-sub_1, 75%);
+                background: fade(@sund-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3596,7 +3930,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@sund-sub_2, 75%);
+                background: fade(@sund-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3607,7 +3941,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@sund-sub_3, 75%);
+                background: fade(@sund-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3618,7 +3952,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@sund-sub_4, 75%);
+                background: fade(@sund-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3631,7 +3965,7 @@
           .theme-samf & {
             &.faculty_color {
               .header {
-                background: fade(@samf, 75%);
+                background: fade(@samf, 83%);
                 color: @white-color;
               }
 
@@ -3642,7 +3976,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@samf-sub_1, 75%);
+                background: fade(@samf-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3653,7 +3987,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@samf-sub_2, 75%);
+                background: fade(@samf-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3664,7 +3998,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@samf-sub_3, 75%);
+                background: fade(@samf-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3675,7 +4009,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@samf-sub_4, 75%);
+                background: fade(@samf-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3688,7 +4022,7 @@
           .theme-jura & {
             &.faculty_color {
               .header {
-                background: fade(@jura, 75%);
+                background: fade(@jura, 83%);
                 color: @white-color;
               }
 
@@ -3699,7 +4033,7 @@
 
             &.subcolor_1 {
               .header {
-                background: fade(@jura-sub_1, 75%);
+                background: fade(@jura-sub_1, 83%);
                 color: @white-color;
               }
 
@@ -3710,7 +4044,7 @@
 
             &.subcolor_2 {
               .header {
-                background: fade(@jura-sub_2, 75%);
+                background: fade(@jura-sub_2, 83%);
                 color: @white-color;
               }
 
@@ -3721,7 +4055,7 @@
 
             &.subcolor_3 {
               .header {
-                background: fade(@jura-sub_3, 75%);
+                background: fade(@jura-sub_3, 83%);
                 color: @white-color;
               }
 
@@ -3732,7 +4066,7 @@
 
             &.subcolor_4 {
               .header {
-                background: fade(@jura-sub_4, 75%);
+                background: fade(@jura-sub_4, 83%);
                 color: @white-color;
               }
 
@@ -3744,29 +4078,29 @@
 
           &.subcolor_5 {
             .header {
-              background: fade(@ku-gray, 75%);
-              color: @gray-dark;
+              background: fade(@ku-gray, 83%);
+              color: @ku-gridbox-text;
             }
 
             &::before {
-              color: @gray-dark;
+              color: @ku-gridbox-text;
             }
           }
 
           &.subcolor_6 {
             .header {
-              background: fade(@white-color, 75%);
-              color: @gray-dark;
+              background: fade(@white-color, 83%);
+              color: @ku-gridbox-text;
             }
 
             &::before {
-              color: @gray-dark;
+              color: @ku-gridbox-text;
             }
           }
 
           &.subcolor_7 {
             .header {
-              background: fade(@brown, 75%);
+              background: fade(@brown, 83%);
               color: @white-color;
             }
 

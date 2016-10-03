@@ -150,26 +150,26 @@
     var $menuitems = $leftmenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
     $mobimenu.append($menuitems);
     $mobimenu.find('ul').removeClass('dropdown-menu');
-    $mobimenu.mmenu({
-      offCanvas: {
-        position: 'left',
-        zposition: 'front',
-        screenReader: true,
-      },
-      extensions: ['multiline', 'pagedim-black'],
-      slidingSubmenus: false,
-      currentItem: {
-                find: true,
-            },
-      setSelected: {
-        parent: true,
-        current: 'detect'
-      },
-      onClick: {
-        setSelected: true
-      }
-    });
-    $("#localmenu > li").addClass("mm-opened");
-    $("#leftmenu_2 > li").addClass("mm-opened");
+      $mobimenu.mmenu({
+        offCanvas: {
+          position: 'left',
+          zposition: 'front',
+          screenReader: true,
+        },
+        extensions: ['multiline', 'pagedim-black'],
+        slidingSubmenus: false,
+        currentItem: {
+          find: true,
+        },
+        setSelected: {
+          parent: true,
+          current: 'detect'
+        },
+        onClick: {
+          setSelected: true
+        }
+      });
+      $("#localmenu > li").addClass("mm-opened");
+      $("#leftmenu_2 > li").addClass("mm-opened");
   });
 </script>
