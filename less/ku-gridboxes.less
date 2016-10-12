@@ -79,12 +79,17 @@
 @jura-sub_4: #a3650c;
 @jura-sub_4-hover: #8f570a;
 
+.gridbox * {
+  box-sizing: border-box;
+}
+
 .gridbox {
   position: relative;
   line-height: @line-height-base;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 
   &:hover {
     img {
@@ -839,7 +844,7 @@
 
       &.text-down {
         &:hover {
-          background: @hum-sub_2-hover!important;
+          background: @hum-sub_3-hover!important;
         }
       }
     }
@@ -2143,11 +2148,16 @@
     .header {
       color: inherit;
       font-size: 1.2em;
-      padding: 8px 25px 6px @padding10;
-      width: 100%;
+      padding: 8px 15px 6px @padding10;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.4px;
+    }
+  }
+
+  &.text-down {
+    .header {
+      padding: 8px 25px 6px @padding10;
     }
   }
 
@@ -2236,13 +2246,13 @@
     .box1 {
       order: 2;
       padding: 5px 10px 10px;
-      flex: 1 1 auto;
+      flex: 1;
 
       .header-small {
         color: @gray-light;
         font-weight: bold;
         text-transform: uppercase;
-        margin: 3px 0 4px;
+        margin: 5px 0;
 
         .date {
           float: right;
@@ -2253,29 +2263,38 @@
       .header {
         font-size: 1.2em;
         line-height: 1.3em;
-        font-weight: bold;
         padding: 0;
-        margin: 3px 0 2px;
+        margin: 3px 0 5px;
       }
 
       .text {
         font-size: 1.1em;
         font-weight: 400;
         line-height: 1.45em;
-        padding-top: 3px;
+        padding: 0 15px 5px 0;
+        color: @ku-gridbox-text;
       }
     }
 
     .box2 {
       max-height: 50%; // Image height
       order: 1;
-      flex: 0 1 auto;
+      flex: 1;
       overflow-x: hidden;
+    }
+
+    &:before {
+      color: @ku-gridbox-text
+    }
+
+    &:hover {
+      background: #e7e7e7;
     }
   }
 
   &.outlined {
-      background: @white-color;
+    background: @white-color!important;
+
     &:not(.with-img) {
       // Boxes without img: remove box2, make box1 100% height
       .box1 {
@@ -2382,9 +2401,9 @@
   color: inherit!important;
   display: block;
 
-  &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     text-decoration: none;
   }
 }
@@ -2961,7 +2980,7 @@
           position: absolute;
           left: 0;
           bottom: 0;
-          color: inherit;
+          //color: inherit;
         }
       }
 
@@ -2980,12 +2999,12 @@
   .two-one-column .column2 {
     .size2,
     .size3 {
-        &.outlined,
-        &.with-img {
-          &:hover {
-            border-width: 0;
-          }
-        }
+      //   &.outlined,
+      //   &.with-img {
+      //     &:hover {
+      //       border-width: 0;
+      //     }
+      //   }
       &.full,
       &.outlined,
       &.with-img {
@@ -2996,7 +3015,8 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          padding: 8px 5px 8px 10px;
+          padding: 8px 15px 8px 10px;
+          width: 100%;
         }
       }
     }
@@ -3012,13 +3032,6 @@
         .box1 {
           flex: 1;
         }
-
-        .header {
-          padding: 8px 5px 8px 10px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
       }
 
       &.with-img {
@@ -3028,9 +3041,22 @@
               background: transparent!important;
             }
           }
+
           &.subcolor_5 {
             background: @ku-gray;
           }
+        }
+      }
+    }
+  }
+
+  .double-column [class*=column] {
+    .size2,
+    .size3 {
+      &.outlined,
+      &.with-img {
+        .header {
+          width: 100%;
         }
       }
     }
@@ -3044,9 +3070,10 @@
     .size3 {
       &.with-img {
         &.outlined {
-            &:hover {
-              border-width: 0!important;
-            }
+          &:hover {
+            border-width: 0!important;
+          }
+
           .theme-ku & {
             &::before {
               color: @white-color;
@@ -3179,7 +3206,6 @@
 
           &.subcolor_3 {
             background: @hum-sub_3;
-            color: @ku-gridbox-text;
           }
 
           &.subcolor_4 {
@@ -3302,9 +3328,10 @@
         }
 
         &.text-down {
-            .header {
+          .header {
             padding: 8px 5px 6px 10px;
-        }
+          }
+
           &:before {
             bottom: @margin10;
             top: auto;
@@ -3335,7 +3362,7 @@
 
         &.outlined {
           border-width: 1px;
-           background: transparent;
+          background: transparent;
 
           .theme-ku & {
             &.faculty_color {
@@ -3596,7 +3623,6 @@
           .box2 {
             order: 1;
           }
-
         }
       }
     }
@@ -3619,9 +3645,10 @@
     .size3 {
       &.with-img {
         &.text-down {
-            &.subcolor_5 {
-              background: @ku-gray;
-            }
+          &.subcolor_5 {
+            background: @ku-gray;
+          }
+
           &:hover {
             .header {
               background: transparent!important;
@@ -3650,12 +3677,11 @@
           width: 100%;
 
           .header {
-            font-size: 1.1em;
-            letter-spacing: 0.4px;
-            font-weight: 700;
-            overflow: hidden;
+            width: 100%;
             text-overflow: ellipsis;
             white-space: nowrap;
+            overflow: hidden;
+            padding: 8px 15px 6px 10px;
           }
 
           .text {

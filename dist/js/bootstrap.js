@@ -67,10 +67,8 @@ if (typeof jQuery === 'undefined') {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
         // Close mobile menu on resize
-      var mmenu = $('#mobileleftmenu').mmenu().data('mmenu');
-      if (mmenu) {
-         mmenu.close();
-      }
+        var API = $('#mobileleftmenu').data('mmenu');
+        API.close();
       $cachedWidth = $newWidth;
     }
   });
