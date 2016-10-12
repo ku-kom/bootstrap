@@ -8332,6 +8332,7 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
   margin-top: 20px;
 }
 .globalfooter .footercontent > [class*="col-"] .footer-heading[data-heading='open'] {
+  margin-top: 20px;
   margin-bottom: 3px;
 }
 .globalfooter ul.footerlinks {
@@ -8471,7 +8472,8 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 .globalfooter .social-items .social-item .social-icon.youtube:hover {
   background-color: #d12223;
 }
-.globalfooter .social-items .social-item .social-icon:active {
+.globalfooter .social-items .social-item .social-icon:active,
+.globalfooter .social-items .social-item .social-icon:focus {
   background-color: #757575;
 }
 .globalfooter .social-items .footer-heading {
