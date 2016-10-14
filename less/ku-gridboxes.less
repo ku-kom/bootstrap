@@ -2168,18 +2168,19 @@
   }
 
   &.with-img {
-    // Boxes with an image
+    // Boxes with media
     .box2 {
       position: relative;
       padding: 0 !important;
       overflow: hidden;
+      transform-style: preserve-3d;
 
-      img {
-        // center image inside the box
+      img, iframe {
+        // center media inside the box
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        transform: translate(-50%, -50%)
       }
     }
   }
