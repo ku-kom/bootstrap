@@ -2584,7 +2584,7 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
@@ -10013,6 +10013,25 @@ nav {
   img[src$=".svg"] {
     width: 100%;
   }
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  cursor: inherit;
+  background: #fff;
+  filter: alpha(opacity=0);
+  outline: none;
+  opacity: 0;
 }
 .news-teaser {
   display: table-cell;
