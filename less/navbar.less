@@ -173,8 +173,8 @@
 
 .container,
 .container-fluid {
-   > .navbar-header,
-  > .navbar-collapse {
+   > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -305,8 +305,8 @@
       border: 0;
       box-shadow: none;
 
-       > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
@@ -613,27 +613,18 @@
       &.dk,
       &.eng {
         padding-right: (@grid-gutter-width / 2);
-
-        > span {
-          height: 13px;
-          width: 19px;
-          display: inline-block;
-          margin-left: 2px;
-        }
+        display: inline-block;
+        width: 71px;
+        background-repeat: no-repeat;
+        background-position: right 6px;
       }
 
       &.eng {
-        > span {
-          background-image: url("../../images/gb.svg");
-          background-size: cover;
-        }
+        background-image: url("../../images/flag-uk.gif");
       }
 
       &.dk {
-        > span {
-          background-image: url("../../images/dk.svg");
-          background-size: cover;
-        }
+        background-image: url("../../images/flag-dk.gif");
       }
     }
 
@@ -659,7 +650,8 @@
   .navbar-toggle {
     border-color: @navbar-inverse-toggle-border-color;
 
-    &:hover, &:active {
+    &:active,
+    &:hover {
       background-color: @navbar-inverse-toggle-hover-bg;
     }
 

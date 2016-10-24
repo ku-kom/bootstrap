@@ -57,17 +57,20 @@ nav {
 
 .main-area {
   padding-top: @grid-gutter-width;
+  flex-grow: 1;
 
   &.front-page {
     padding-top: 0;
   }
-  flex-grow: 1;
-}
 
-.main-area {
   img {
     .img-responsive;
   }
+}
+
+.divider {
+  margin: @margin10 0;
+  &:extend(.clearfix all);
 }
 // Make columns equal height
 @media (min-width: @screen-sm-min) {
@@ -76,18 +79,60 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
+  // Accessibility
+  [tabindex] {
+    outline: 0;
+  }
 
-.divider {
-  margin: @margin10 0;
-  &:extend(.clearfix all);
-}
+  .jump,
+  .jumpbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
 
-[tabindex] {
-  outline: 0;
+    li {
+      list-style: none;
+      display: block;
+
+      a {
+        display: block;
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        width: 0;
+        height: 0;
+
+        &:active,
+        &:focus {
+          color: #51a7e8;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          height: auto;
+          width: auto;
+        }
+
+        &.btn-gray {
+          background-color: @gray-dark;
+          color: @white-color;
+
+          &:focus {
+            color: @white-color!important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .jumpbox {
+    display: none;
+  }
 }
 //KU remove gutter from columns
-
 .no-gutter {
   > [class*='col-'] {
     padding-right: 0;
@@ -114,13 +159,18 @@ nav {
     width: 100%;
   }
 }
-
+// Global search button-size
+.btn-global-search {
+  button {
+    height: @input-height-base; // (base line-height + padding + border)
+  }
+}
 // KU special file upload button
 .btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
+  position: relative;
+  overflow: hidden;
+
+  input[type=file] {
     position: absolute;
     top: 0;
     right: 0;
@@ -134,8 +184,14 @@ nav {
     background: @white-color;
     cursor: inherit;
     display: block;
+  }
+
+  .glyphicon {
+    color: @gray-light;
+    margin-left: 3px;
+  }
 }
 
 .news-teaser {
-	display: table-cell;
+  display: table-cell;
 }
