@@ -7257,7 +7257,7 @@ main:after,
     margin: 26px 0 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .ku-leftmenu ul.nav > li {
     font-size: 14px;
   }
@@ -7287,6 +7287,9 @@ main:after,
     left: 0;
     z-index: 1040;
     padding: 8px 10px 5px;
+    background-color: #777;
+  }
+  .leftmenu-toggle:focus {
     background-color: #777;
   }
   .globalmenu-toggle {

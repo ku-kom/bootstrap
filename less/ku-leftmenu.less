@@ -240,7 +240,7 @@
     }
   }
 }
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+@media (min-width: @screen-xs-max) and (max-width: @screen-md) {
   .ku-leftmenu {
     // Larger font for tablets
     ul.nav {
@@ -281,6 +281,9 @@
     top: 0;
     left: 0;
     z-index: 1040;
+    &:focus {
+        background-color: @gray-light;
+    }
   }
 
   .globalmenu-toggle {
