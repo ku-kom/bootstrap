@@ -4817,9 +4817,8 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-toggle {
   border-color: #777;
 }
-.navbar-inverse .navbar-toggle:active,
 .navbar-inverse .navbar-toggle:hover {
-  background-color: #333;
+  background-color: #777;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -7289,8 +7288,8 @@ main:after,
     padding: 8px 10px 5px;
     background-color: #777;
   }
-  .leftmenu-toggle:focus {
-    background-color: #777;
+  .leftmenu-toggle:active {
+    background-color: #222;
   }
   .globalmenu-toggle {
     margin-right: 0;
