@@ -7288,6 +7288,9 @@ main:after,
     padding: 8px 10px 5px;
     background-color: #777;
   }
+  .leftmenu-toggle:hover {
+    background-color: #222;
+  }
   .leftmenu-toggle:active {
     background-color: #222;
   }
