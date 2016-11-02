@@ -4478,7 +4478,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
   background-image: none;
   border: 1px solid #fff;
-  border-radius: 2px;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -7283,7 +7282,7 @@ main:after,
   .leftmenu-toggle {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 8px;
     z-index: 1040;
     padding: 8px 10px 5px;
     background-color: #777;
