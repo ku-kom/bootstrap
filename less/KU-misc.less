@@ -72,8 +72,9 @@ nav {
   margin: @margin10 0;
   &:extend(.clearfix all);
 }
-// Make columns equal height
+
 @media (min-width: @screen-sm-min) {
+  // Make columns equal height
   .row-equal-height {
     display: flex;
     flex-direction: row;
@@ -82,6 +83,7 @@ nav {
   // Accessibility
   [tabindex] {
     outline: 0;
+    user-focus: none;
   }
 
   .jump,

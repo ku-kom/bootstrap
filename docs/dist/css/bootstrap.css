@@ -4894,12 +4894,12 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .navbar-inverse .topbar-logo {
   position: absolute;
   top: 10px;
-  left: 55px;
+  left: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  width: 65%;
+  width: 70%;
 
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -4908,14 +4908,13 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 @media (min-width: 480px) {
   .navbar-inverse .topbar-logo {
-    top: 8px;
+    left: 15px;
     width: 50%;
   }
 }
 @media (min-width: 768px) {
   .navbar-inverse .topbar-logo {
-    top: 10px;
-    left: 26px;
+    left: 24px;
     width: 30%;
   }
 }
@@ -7172,6 +7171,11 @@ main:after,
     left: 0;
   }
   .ku-leftmenu ul.nav > li > a::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding-top: 1px;
+    padding-right: 1px;
     font-family: 'Glyphicons Halflings';
     font-size: 7px;
     color: #901a1e;
@@ -7284,7 +7288,7 @@ main:after,
     top: 0;
     right: 8px;
     z-index: 1040;
-    padding: 8px 10px 5px;
+    padding: 7px 10px;
     background-color: #777;
   }
   .leftmenu-toggle:active {
@@ -7297,6 +7301,7 @@ main:after,
 }
 .local-menu {
   padding: 10px 10px 10px 20px;
+  margin-left: 20px !important;
   overflow: hidden;
   color: #fff;
   text-overflow: ellipsis;
@@ -7536,7 +7541,7 @@ main:after,
   padding: 0;
   margin: 0;
   font: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   list-style: none;
 }
@@ -7613,6 +7618,11 @@ main:after,
       -ms-transform: rotate(45deg);
        -o-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mm-listview {
+    font-size: 15px;
+  }
 }
 .mm-listview .mm-next {
   position: absolute;
@@ -8227,11 +8237,7 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
   padding-left: 20px;
 }
 #mobileleftmenu > div > div > ul > ul > li > div > ul li {
-  margin-left: -20px;
   border-bottom: #bfbfbf !important;
-}
-#mobileleftmenu > div > div > ul > ul > li > div > ul li a {
-  padding-left: 40px;
 }
 #mobileleftmenu > div > div > ul > ul > li > div > ul li:last-child {
   border-bottom: none !important;
@@ -9983,6 +9989,8 @@ nav {
   }
   [tabindex] {
     outline: 0;
+
+    user-focus: none;
   }
   .jump,
   .jumpbox {
