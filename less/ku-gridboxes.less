@@ -2156,12 +2156,6 @@
     }
   }
 
-  &.text-down {
-    .header {
-      padding: 8px 25px 6px @padding10;
-    }
-  }
-
   .box2 {
     padding: 5px @padding10 @padding10;
     order: 2;
@@ -2180,12 +2174,10 @@
       img {
         // media inside the box adjusted by height
         display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        height: auto!important;
-        max-width: 100%!important;
+        backface-visibility: hidden;
+        max-width: 100%;
+        height: auto;
+        -ms-interpolation-mode: bicubic;
         // left: 50%;
         // transform: translate(-50%, -50%);
         // top: 70%;
@@ -2299,7 +2291,6 @@
     .box2 {
       order: 1;
       flex: 1;
-      overflow-x: hidden;
     }
 
     &:before {
@@ -2409,10 +2400,6 @@
     .box2 {
       display: none;
     }
-  }
-
-  img {
-    max-width: none!important;
   }
 }
 
@@ -3032,9 +3019,10 @@
           font-weight: 700;
           letter-spacing: 0.4px;
           overflow: hidden;
-          text-overflow: ellipsis;
+          //text-overflow: ellipsis;
           white-space: nowrap;
-          padding: 8px 15px 8px 10px;
+          padding: 8px 0 8px 10px;
+          border-right: 25px solid transparent;
           width: 100%;
         }
       }
@@ -3152,6 +3140,7 @@
   }
 }
 @media only screen and (min-width: 460px) and (max-width: 870px) {
+
   // All single, 2/3 and double comlumn boxes with image
   .double-column [class*=column],
   .one-two-column .column1,
@@ -3355,6 +3344,11 @@
             bottom: @margin10;
             top: auto;
           }
+        }
+        &.text-top {
+            &:before {
+              display: none;
+            }
         }
 
         .box1 {
@@ -3684,42 +3678,40 @@
   .gcrow .gccolumn .gridbox {
     &.size2,
     &.size3 {
-      &.text-top {
-        .box1 {
-          order: 1;
-          position: relative;
-        }
-
-        .box2 {
-          order: 2;
-        }
-      }
-
-      &.with-img:not(.text-top) {
+      &.with-img {
         flex-direction: column;
 
-        &.text-down {
-          .box1 {
-            position: absolute;
-            left: 0;
-            bottom: 0;
+        &.text-over {
+
+          &.text-down {
+            .box1 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+          }
+
+          &.text-top {
+            .box1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
           }
         }
 
         .box1 {
           order: 2;
           flex: 0 1 auto;
-          //   position: absolute;
-          //   left: 0;
-          //   bottom: 0;
           width: 100%;
 
           .header {
             width: 100%;
-            text-overflow: ellipsis;
+            //text-overflow: ellipsis;
+            border-right: 25px solid transparent;
             white-space: nowrap;
             overflow: hidden;
-            padding: 8px 15px 6px 10px;
+            padding: 8px 0 6px 10px;
           }
 
           .text {
@@ -4171,6 +4163,16 @@
             &::before {
               color: @white-color;
             }
+          }
+        }
+        &.text-top {
+          .box1 {
+            order: 1;
+            position: relative;
+          }
+
+          .box2 {
+            order: 2;
           }
         }
       }
