@@ -269,9 +269,9 @@
   .icon-bar {
     display: block;
     width: 22px;
-    height: 2px;
+    height: 4px;
     border-radius: 1px;
-    background-color: @white-color;
+    background-color: @gray-dark;
   }
 
   .icon-bar + .icon-bar {
@@ -648,7 +648,8 @@
   }
   // Darken the responsive nav toggle
   .navbar-toggle {
-    border-color: @navbar-inverse-toggle-border-color;
+    // border-color: @navbar-inverse-toggle-border-color;
+    border: none; // KU
 
     &:hover {
       background-color: @navbar-inverse-toggle-hover-bg;
@@ -656,7 +657,7 @@
 
     .icon-bar {
       background-color: @navbar-inverse-toggle-icon-bar-bg;
-      .opacity(.8); // KU
+
     }
   }
 

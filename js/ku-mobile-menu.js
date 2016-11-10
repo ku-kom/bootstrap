@@ -1,6 +1,6 @@
 /* ======================================================================
  * Bootstrap: v3.3.7
- * Custom menu script for University of Copenhagen: ku.dk
+ * Custom mobile menu script for University of Copenhagen: ku.dk
  * ====================================================================== */
 
 +function ($) {
@@ -8,13 +8,73 @@
 
   var $cachedWidth = $('body').prop('clientWidth');
 
+  // Global and left menu merging
+  var $localMenuTitle = $('.ku-navbar-header').text();
+  var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
+  var $leftmenu2 = $('#leftmenu_2').clone();
+  var $globalMenu = $('#topbar_menu').clone();
+  var $globalMenu2 = $('#navbar_menu').clone();
+  var $mobimenu = $('#mobileleftmenu');
+  var $menuitems = $leftmenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
+  if ($.fn.mmenu) {
+      $mobimenu.append($menuitems);
+      $mobimenu.find('ul').removeClass('dropdown-menu');
+      var API = $mobimenu.mmenu({
+        offCanvas: {
+          position: 'right',
+          zposition: 'front'
+        },
+        extensions: ['multiline', 'pagedim-black'],
+        slidingSubmenus: false,
+        currentItem: {
+          find: true
+        },
+        setSelected: {
+          parent: true,
+          current: 'detect'
+        },
+        onClick: {
+          setSelected: true
+      },
+      screenReader: true
+      })
+      .data('mmenu');
+
+      // Open sub menu items on load
+      $('#localmenu > li').addClass('mm-opened');
+      $('#leftmenu_2 > li').addClass('mm-opened');
+
+      // Open/close
+      var $burger = $('#hamburger').on('click',
+        function (e) {
+            e.preventDefault();
+            if ($('html').hasClass('mm-opened')) {
+                API.close();
+            } else {
+                API.open();
+            }
+        }
+    );
+
+    // Hamburger icon animation
+    API.bind('closing', function () {
+            setTimeout(function () {
+                $burger.removeClass('is-active');
+            }, 100);
+        });
+        API.bind('opening', function () {
+            setTimeout(function () {
+                $burger.addClass('is-active');
+            }, 100);
+        });
+  }
+
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
         // Close mobile menu on resize
-        var API = $('#mobileleftmenu').data('mmenu');
         API.close();
-      $cachedWidth = $newWidth;
+        $cachedWidth = $newWidth;
     }
   });
 }(jQuery);

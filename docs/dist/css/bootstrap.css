@@ -4485,8 +4485,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
-  height: 2px;
-  background-color: #fff;
+  height: 4px;
+  background-color: #252525;
   border-radius: 1px;
 }
 .navbar-toggle .icon-bar + .icon-bar {
@@ -4814,19 +4814,13 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #eee;
+  border: none;
 }
 .navbar-inverse .navbar-toggle:hover {
-  zoom: 1;
   background-color: #eee;
-  filter: alpha(opacity=80);
-  opacity: .8;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  zoom: 1;
-  background-color: #777;
-  filter: alpha(opacity=80);
-  opacity: .8;
+  background-color: #901a1e;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
@@ -7294,24 +7288,99 @@ main:after,
     bottom: 0;
     left: 0;
     z-index: 1040;
-    padding: 5px;
-    zoom: 1;
-    background-color: #fff;
-    filter: alpha(opacity=80);
-    opacity: .8;
+    width: 38px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+    background: rgba(255, 255, 255, .6);
+    -webkit-transition: background .3s;
+         -o-transition: background .3s;
+            transition: background .3s;
   }
-  .leftmenu-toggle:hover,
-  .leftmenu-toggle:active {
-    zoom: 1;
+  .leftmenu-toggle:active,
+  .leftmenu-toggle:hover {
+    background: #eee;
+    background: rgba(238, 238, 238, .6);
+  }
+  .leftmenu-toggle:focus {
+    outline: none;
+  }
+  .leftmenu-toggle .icon-bar {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    left: 4px;
+    width: auto;
+    height: 4px;
+    background: inherit;
+    -webkit-transition: -webkit-transform .3s;
+         -o-transition:      -o-transform .3s;
+            transition:         transform .3s;
+  }
+  .leftmenu-toggle .icon-bar:after,
+  .leftmenu-toggle .icon-bar:before {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: inherit;
+  }
+  .leftmenu-toggle .icon-bar:before {
+    top: -9px;
+    -webkit-transition: -webkit-transform .3s, width .3s, top .3s;
+         -o-transition:      -o-transform .3s, width .3s, top .3s;
+            transition:         transform .3s, width .3s, top .3s;
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+         -o-transform-origin: top left;
+            transform-origin: top left;
+  }
+  .leftmenu-toggle .icon-bar:after {
+    bottom: -9px;
+    -webkit-transition: -webkit-transform .3s, width .3s, bottom .3s;
+         -o-transition:      -o-transform .3s, width .3s, bottom .3s;
+            transition:         transform .3s, width .3s, bottom .3s;
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+         -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  .leftmenu-toggle.is-active {
     background-color: #eee;
-    filter: alpha(opacity=80);
-    opacity: .8;
+  }
+  .leftmenu-toggle.is-active .icon-bar {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .leftmenu-toggle.is-active .icon-bar:after,
+  .leftmenu-toggle.is-active .icon-bar:before {
+    width: 50%;
+  }
+  .leftmenu-toggle.is-active .icon-bar:before {
+    top: 0;
+    -webkit-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+        -ms-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+         -o-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+            transform: translateX(-4px) translateY(2px) rotate(-45deg);
+  }
+  .leftmenu-toggle.is-active .icon-bar:after {
+    bottom: 0;
+    -webkit-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+        -ms-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+         -o-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+            transform: translateX(-4px) translateY(-2px) rotate(45deg);
   }
 }
 .local-menu {
   padding: 10px 10px 10px 20px;
-  margin-left: 20px !important;
   overflow: hidden;
+  font-size: 15px;
   color: #fff;
   text-overflow: ellipsis;
   white-space: nowrap;
