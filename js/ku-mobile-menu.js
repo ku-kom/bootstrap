@@ -8,7 +8,7 @@
 
   var $cachedWidth = $('body').prop('clientWidth');
 
-  // Global and left menu merging
+  // Merging global and left menu
   var $localMenuTitle = $('.ku-navbar-header').text();
   var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
   var $leftmenu2 = $('#leftmenu_2').clone();
@@ -45,28 +45,28 @@
       $('#leftmenu_2 > li').addClass('mm-opened');
 
       // Open/close
-      var $burger = $('#hamburger').on('click',
-        function (e) {
-            e.preventDefault();
-            if ($('html').hasClass('mm-opened')) {
-                API.close();
-            } else {
-                API.open();
-            }
-        }
-    );
+    //   var $burger = $('#hamburger').on('click',
+    //     function(e) {
+    //         e.preventDefault();
+    //         if ($('html').hasClass('mm-opened')) {
+    //             API.close();
+    //         } else {
+    //             API.open();
+    //         }
+    //     }
+    // );
 
     // Hamburger icon animation
-    API.bind('closing', function () {
-            setTimeout(function () {
-                $burger.removeClass('is-active');
-            }, 100);
-        });
-        API.bind('opening', function () {
-            setTimeout(function () {
-                $burger.addClass('is-active');
-            }, 100);
-        });
+    // API.bind('closing', function() {
+    //         setTimeout(function() {
+    //             $burger.removeClass('is-active');
+    //         }, 100);
+    //     });
+    //     API.bind('opening', function() {
+    //         setTimeout(function() {
+    //             $burger.addClass('is-active');
+    //         }, 100);
+    //     });
   }
 
   $(window).resize(function () {

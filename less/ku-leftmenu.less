@@ -283,81 +283,19 @@
 
   .leftmenu-toggle {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 8px;
     z-index: 1040;
-    .backgroundColorFix(@white-color, .6);
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    width: 38px;
-    height: 35px;
-    transition: background 0.3s;
+    padding: 8px 10px;
+    background-color: @gray-light;
 
     &:active,
     &:hover {
-      .backgroundColorFix(@navbar-inverse-toggle-hover-bg, .6);
+      background-color: @navbar-inverse-toggle-hover-bg;
     }
 
     &:focus {
-      outline: none;
-    }
-
-    .icon-bar {
-      position: absolute;
-      top: 15px;
-      left: 4px;
-      right: 5px;
-      height: 4px;
-      width: auto;
-      background: inherit;
-      transition: transform 0.3s;
-
-      &:after,
-      &:before {
-        position: absolute;
-        display: block;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: inherit;
-        content: "";
-      }
-
-      &:before {
-        top: -9px;
-        transform-origin: top left;
-        transition: transform 0.3s, width 0.3s, top 0.3s;
-      }
-
-      &:after {
-        bottom: -9px;
-        transform-origin: bottom left;
-        transition: transform 0.3s, width 0.3s, bottom 0.3s;
-      }
-    }
-    // active state, i.e. menu open
-    &.is-active {
-      background-color: @gray-lighter;
-
-      .icon-bar {
-        transform: rotate(180deg);
-
-        &:after,
-        &:before {
-          width: 50%;
-        }
-
-        &:before {
-          top: 0;
-          transform: translateX(-4px) translateY(2px) rotate(-45deg);
-        }
-
-        &:after {
-          bottom: 0;
-          transform: translateX(-4px) translateY(-2px) rotate(45deg);
-        }
-      }
+      background-color: @gray-light;
     }
   }
 }
