@@ -6999,6 +6999,7 @@ main:after,
   }
 }
 .ku-branding {
+  position: relative;
   background-color: #fff;
 }
 .ku-branding .ku-branding-logo {
@@ -7063,7 +7064,7 @@ main:after,
 .theme-teol .ku-branding .ku-branding-line {
   border-bottom: 1px solid #66609e;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .ku-leftmenu .ku-navbar-header {
     padding-left: 6px;
     margin-bottom: 26px;
@@ -9964,7 +9965,8 @@ nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  [tabindex] {
+  [tabindex],
+  .main-area {
     outline: 0;
 
     user-focus: none;
@@ -10013,7 +10015,7 @@ nav {
     color: #fff !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .jumpbox {
     display: none;
   }
@@ -10069,5 +10071,54 @@ nav {
 }
 .news-teaser {
   display: table-cell;
+}
+@media (min-width: 767px) {
+  .privacy-policy {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    display: none;
+    padding: 20px;
+    color: #fff;
+    background: #a5a5a5;
+    background: rgba(165, 165, 165, .9);
+  }
+  .privacy-policy .h2 {
+    margin-top: 0;
+    font-weight: 700;
+  }
+  .privacy-policy p {
+    margin: 0 0 2px;
+  }
+  .privacy-policy .btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #901a1e;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(top, #eee 0%, #cfcfcf 100%);
+    background-image:      -o-linear-gradient(top, #eee 0%, #cfcfcf 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#cfcfcf));
+    background-image:         linear-gradient(to bottom, #eee 0%, #cfcfcf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffcfcfcf', GradientType=0);
+    background-repeat: repeat-x;
+  }
+  .privacy-policy .laes_mere_cookies {
+    display: block;
+    color: #901a1e;
+  }
+  .privacy-policy .laes_mere_cookies:before {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+    color: inherit;
+    content: "\00bb";
+  }
+}
+@media (max-width: 767px) {
+  .privacy-policy {
+    display: none;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -73,7 +73,7 @@ nav {
   &:extend(.clearfix all);
 }
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm) {
   // Make columns equal height
   .row-equal-height {
     display: flex;
@@ -81,7 +81,7 @@ nav {
     flex-wrap: wrap;
   }
   // Accessibility
-  [tabindex] {
+  [tabindex], .main-area {
     outline: 0;
     user-focus: none;
   }
@@ -129,7 +129,7 @@ nav {
     }
   }
 }
-@media (max-width: @screen-xs-max) {
+@media (max-width: @screen-sm) {
   .jumpbox {
     display: none;
   }
