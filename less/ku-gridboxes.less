@@ -2178,20 +2178,10 @@
         max-width: 100%;
         height: auto;
         -ms-interpolation-mode: bicubic;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // top: 70%;
-        //
-        // @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
-        //     top: 48%;
-        // }
-        // @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-        //     top: 50%;
-        // }
-        //
-        // @media (min-width: @screen-md) {
-        //     top: 55%; //desktop
-        // }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
       }
     }
   }
@@ -4173,11 +4163,18 @@
 
           .box2 {
             order: 2;
+            flex: 0 1 auto;
           }
         }
       }
     }
 
+    &.size2 {
+        height: 220px;
+    }
+    &.size3 {
+        height: 170px;
+    }
     &.size4 {
       .text {
         display: none;
