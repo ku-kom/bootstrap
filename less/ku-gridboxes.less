@@ -2184,7 +2184,6 @@
         transform: translateY(-50%) translateX(-50%);
       }
     }
-
     // Position image left
     &.img-left {
       img {
@@ -2192,7 +2191,6 @@
         transform: translateY(-50%) translateX(0);
       }
     }
-
     // Position image right
     &.img-right {
       img {
@@ -2262,42 +2260,45 @@
     height: @gridbox1;
     background: @ku-gray;
 
-    .box1 {
-      order: 2;
-      padding: 5px 10px 10px;
-      flex: 1;
+    &.with-img {
+      .box1 {
+        order: 2;
+        padding: 5px 10px 10px;
+        flex: 1;
 
-      .header-small {
-        color: @gray-light;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 5px 0;
+        .header-small {
+          color: @gray-light;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 5px 0;
 
-        .date {
-          float: right;
-          padding-left: 5px;
+          .date {
+            float: right;
+            padding-left: 5px;
+          }
         }
-      }
 
-      .header {
-        font-size: 1.2em;
-        line-height: 1.3em;
-        padding: 0;
-        margin: 3px 0 5px;
-      }
+        .header {
+          font-size: 1.2em;
+          line-height: 1.3em;
+          padding: 0;
+          margin: 3px 0 5px;
+        }
 
-      .text {
-        font-size: 1.1em;
-        font-weight: 400;
-        line-height: 1.45em;
-        padding: 0 15px 5px 0;
-        color: @ku-gridbox-text;
+        .text {
+          font-size: 1.1em;
+          font-weight: 400;
+          line-height: 1.45em;
+          padding: 0 15px 5px 0;
+          color: @ku-gridbox-text;
+        }
       }
     }
 
     .box2 {
       order: 1;
-      flex: 1;
+      // image height
+      flex: 0 1 120px;
     }
 
     &:before {
@@ -2313,7 +2314,7 @@
     background: @white-color!important;
 
     &:not(.with-img) {
-      // Boxes without img: remove box2, make box1 100% height
+      // Boxes without img: hide box2, make .box1 100% height
       .box1 {
         flex: 0 1 100%;
       }
@@ -3187,8 +3188,30 @@
         }
       }
     }
+    .size1 {
+      &.with-img {
+        .box2 {
+          img {
+            max-width: 121%!important;
+            height: auto;
+          }
+        }
+      }
+    }
   }
 }
+
+// Media query for .size1 boxes only in order to make image fit
+@media only screen and (min-width: 610px) and (max-width: 680px) {
+    .size1 {
+        .box2 {
+            img {
+                transform: translateY(-50%) translateX(-50%) scale(1.15)!important;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 460px) and (max-width: 870px) {
   // All single, 2/3 and double comlumn boxes with image
   .double-column [class*=column],
@@ -4223,7 +4246,7 @@
 
           .box2 {
             order: 2;
-            flex: 0 1 auto;
+            flex: 1;
           }
         }
       }
