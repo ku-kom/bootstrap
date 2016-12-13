@@ -1,0 +1,62 @@
+// KU News
+// Global menu news
+
+.nyheder {
+  li {
+    display: block;
+    white-space: normal;
+    min-width: 250px;
+    width: 100%;
+    overflow: auto;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+
+    &:last-child {
+      overflow: visible;
+      padding-left: 10px;
+      border-bottom: 0;
+    }
+
+    a {
+      display: inline;
+      white-space: normal;
+      padding: 0;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    img {
+      float: left;
+      display: block;
+      margin: 0 8px 5px 2px;
+      max-width: 55px!important;
+      height: auto;
+      border: 1px solid #929292;
+      padding: 2px;
+    }
+
+    .small {
+      margin-top: 2px;
+      font-size: 10px;
+    }
+    @media (max-width: @screen-xs-max) {
+      line-height: 1.29em;
+      min-width: inherit;
+
+      &:last-child {
+        display: none;
+      }
+      // Remove arrow in mobile menu
+      .mm-next {
+        display: none;
+      }
+    }
+  }
+}
+
+.news-teaser {
+  display: table-cell;
+}
