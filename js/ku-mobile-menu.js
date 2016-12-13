@@ -43,30 +43,6 @@
       // Open sub menu items on load
       $('#localmenu > li').addClass('mm-opened');
       $('#leftmenu_2 > li').addClass('mm-opened');
-
-      // Open/close
-    //   var $burger = $('#hamburger').on('click',
-    //     function(e) {
-    //         e.preventDefault();
-    //         if ($('html').hasClass('mm-opened')) {
-    //             API.close();
-    //         } else {
-    //             API.open();
-    //         }
-    //     }
-    // );
-
-    // Hamburger icon animation
-    // API.bind('closing', function() {
-    //         setTimeout(function() {
-    //             $burger.removeClass('is-active');
-    //         }, 100);
-    //     });
-    //     API.bind('opening', function() {
-    //         setTimeout(function() {
-    //             $burger.addClass('is-active');
-    //         }, 100);
-    //     });
   }
 
   $(window).resize(function () {
