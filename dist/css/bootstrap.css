@@ -8591,11 +8591,6 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
   white-space: normal;
   border-bottom: 1px dotted #ccc;
 }
-.nyheder li:last-child {
-  padding-left: 10px;
-  overflow: visible;
-  border-bottom: 0;
-}
 .nyheder li a {
   display: inline;
   padding: 0;
@@ -8604,6 +8599,14 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
 .nyheder li a:focus,
 .nyheder li a:hover {
   background-color: transparent;
+}
+.nyheder li:last-child {
+  padding-left: 10px;
+  overflow: visible;
+  border-bottom: 0;
+}
+.nyheder li:last-child a {
+  display: block;
 }
 .nyheder li img {
   display: block;
@@ -8615,8 +8618,9 @@ html.mm-pagedim-black.mm-opening #mm-blocker {
   border: 1px solid #929292;
 }
 .nyheder li .small {
-  margin-top: 2px;
+  margin-top: 3px;
   font-size: 10px;
+  color: #777;
 }
 @media (max-width: 767px) {
   .nyheder li {
