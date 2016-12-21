@@ -145,17 +145,13 @@ nav {
 .relative {
   position: relative;
 }
-/*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
- *
- * [1] IE9
- * [2] IE10+
- */
-/* 1 */
+
+ // Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
+
 .ie9 img[src$=".svg"] {
   width: 100%;
 }
-/* 2 */
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
     width: 100%;

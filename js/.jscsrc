@@ -3,7 +3,7 @@
   "disallowKeywords": ["with"],
   "disallowMixedSpacesAndTabs": true,
   "disallowMultipleLineStrings": true,
-  "disallowMultipleVarDecl": true,
+  "disallowMultipleVarDecl": false,
   "disallowQuotedKeysInObjects": "allButReserved",
   "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
   "disallowSpaceBeforeBinaryOperators": [","],

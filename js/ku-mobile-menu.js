@@ -8,18 +8,27 @@
 
   var $cachedWidth = $('body').prop('clientWidth');
 
-  // Merging global and left menu
-  var $localMenuTitle = $('.ku-navbar-header').text();
-  var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
-  var $leftmenu2 = $('#leftmenu_2').clone();
-  var $globalMenu = $('#topbar_menu').clone();
-  var $globalMenu2 = $('#navbar_menu').clone();
-  var $mobimenu = $('#mobileleftmenu');
-  var $menuitems = $leftmenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
+  var $localMenuTitle = $('.ku-navbar-header').text(),
+      $container = $('#localmenu'),
+      $leftmenu = $container.find('li.leftmenu-menu').first(),
+      $topbarmenu = $container.find('li.topbar-menu').first(),
+      $navbarmenu = $container.find('li.navbar-menu').first();
+
+  // Add title to local menu
+  $leftmenu.find('span.title-placeholder').replaceWith($localMenuTitle);
+  $leftmenu.append(
+      $('#leftmenu_2').clone().attr('id', 'leftmenu2-clone')
+  );
+  $topbarmenu.append(
+      $('#topbar_menu').clone().attr('id', 'topbar_menu-clone')
+  );
+  $navbarmenu.append(
+      $('#navbar_menu').clone().attr('id', 'navbar_menu-clone')
+  );
+  $container.find('ul').removeClass('dropdown-menu');
+
   if ($.fn.mmenu) {
-      $mobimenu.append($menuitems);
-      $mobimenu.find('ul').removeClass('dropdown-menu');
-      var API = $mobimenu.mmenu({
+      var API = $container.mmenu({
         offCanvas: {
           position: 'right',
           zposition: 'front'
