@@ -7,12 +7,16 @@
 +function ($) {
   'use strict';
 
+  // Check if the page is responsive
+  if ($('meta[name="viewport"]').length) {
+    var $responsiveEnabled = true;
+  }
   var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
-    if ($cachedWidth < 768) {
+    if ($responsiveEnabled === true && $cachedWidth < 768) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -27,7 +31,7 @@
 
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
-    if ($newWidth !== $cachedWidth) {
+    if ($responsiveEnabled === true && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
       $footerColumn.removeAttr('style');
       $cachedWidth = $newWidth;

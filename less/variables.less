@@ -16,6 +16,7 @@
 
 @white-color:            #fff;
 
+@ku-news-gray:          #4a4949;
 @ku-footer-icon-bg:      #666;
 @ku-footer-icon-size:    28px;
 
@@ -63,21 +64,22 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-@font-face {
-  font-family: 'noto sans regular';
-  src: url('@{icon-font-path}@{font-name-base}.eot');
-  src: url('@{icon-font-path}@{font-name-base}.eot?#iefix') format('embedded-opentype'),
-       url('@{icon-font-path}@{font-name-base}.woff2') format('woff2'),
-       url('@{icon-font-path}@{font-name-base}.woff') format('woff'),
-       url('@{icon-font-path}@{font-name-base}.ttf') format('truetype'),
-       url('@{icon-font-path}@{font-name-base}.svg#@{font-name-svg-id}') format('svg');
-
-}
+// @font-face {
+//   font-family: 'noto sans regular';
+//   src: url('@{icon-font-path}@{font-name-base}.eot');
+//   src: url('@{icon-font-path}@{font-name-base}.eot?#iefix') format('embedded-opentype'),
+//        url('@{icon-font-path}@{font-name-base}.woff2') format('woff2'),
+//        url('@{icon-font-path}@{font-name-base}.woff') format('woff'),
+//        url('@{icon-font-path}@{font-name-base}.ttf') format('truetype'),
+//        url('@{icon-font-path}@{font-name-base}.svg#@{font-name-svg-id}') format('svg');
+//
+// }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin-ext');
 //** File name for all font files.
 @font-name-base:          "notosans-regular-webfont";
 //** Element ID within SVG icon file.
 @font-name-svg-id:        "noto_sans_regular";
-@font-family-sans-serif:  "Open Sans", "noto sans regular", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;

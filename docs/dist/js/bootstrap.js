@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the MIT license
  */
 
@@ -25,12 +25,16 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
+  // Check if the page is responsive
+  if ($('meta[name="viewport"]').length) {
+    var $responsiveEnabled = true;
+  }
   var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
-    if ($cachedWidth < 768) {
+    if ($responsiveEnabled === true && $cachedWidth < 768) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -45,7 +49,7 @@ if (typeof jQuery === 'undefined') {
 
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
-    if ($newWidth !== $cachedWidth) {
+    if ($responsiveEnabled === true && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
       $footerColumn.removeAttr('style');
       $cachedWidth = $newWidth;
@@ -63,27 +67,18 @@ if (typeof jQuery === 'undefined') {
 
   var $cachedWidth = $('body').prop('clientWidth');
 
-  var $localMenuTitle = $('.ku-navbar-header').text(),
-      $container = $('#localmenu'),
-      $leftmenu = $container.find('li.leftmenu-menu').first(),
-      $topbarmenu = $container.find('li.topbar-menu').first(),
-      $navbarmenu = $container.find('li.navbar-menu').first();
-
-  // Add title to local menu
-  $leftmenu.find('span.title-placeholder').replaceWith($localMenuTitle);
-  $leftmenu.append(
-      $('#leftmenu_2').clone().attr('id', 'leftmenu2-clone')
-  );
-  $topbarmenu.append(
-      $('#topbar_menu').clone().attr('id', 'topbar_menu-clone')
-  );
-  $navbarmenu.append(
-      $('#navbar_menu').clone().attr('id', 'navbar_menu-clone')
-  );
-  $container.find('ul').removeClass('dropdown-menu');
-
+  // Merging global and left menu
+  var $localMenuTitle = $('.ku-navbar-header').text();
+  var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
+  var $leftmenu2 = $('#leftmenu_2').clone();
+  var $globalMenu = $('#topbar_menu').clone();
+  var $globalMenu2 = $('#navbar_menu').clone();
+  var $mobimenu = $('#mobileleftmenu');
+  var $menuitems = $leftmenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
   if ($.fn.mmenu) {
-      var API = $container.mmenu({
+      $mobimenu.append($menuitems);
+      $mobimenu.find('ul').removeClass('dropdown-menu');
+      var API = $mobimenu.mmenu({
         offCanvas: {
           position: 'right',
           zposition: 'front'
