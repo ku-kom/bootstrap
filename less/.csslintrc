@@ -18,5 +18,6 @@
   "unqualified-attributes": false,
   "no-empty-source": null,
   "ids": null,
-  "fallback-colors": null
+  "fallback-colors": null,
+  "import": null
 }

@@ -2659,7 +2659,7 @@
       }
 
       .box2 {
-        flex: 0 1 235px;
+        flex: 0 0 235px;
       }
 
       &.full {
@@ -2696,7 +2696,7 @@
       }
 
       .box2 {
-        flex: 0 1 235px;
+        flex: 0 0 235px;
       }
     }
     //Arrow for single column boxes
@@ -3082,7 +3082,7 @@
         }
 
         &:hover {
-        // New sort of underlining :-)
+          // New sort of underlining :-)
           .header {
             > span {
               background-image: linear-gradient(rgba(74, 73, 73, 0.25) 0%, @gray-dark 100%);
@@ -3134,7 +3134,6 @@
           font-weight: 700;
           letter-spacing: 0.4px;
           overflow: hidden;
-          //text-overflow: ellipsis;
           white-space: nowrap;
           padding: 8px 0 8px 10px;
           border-right: 25px solid transparent;
@@ -3267,6 +3266,15 @@
   .one-two-column .column1,
   .triple-column [class*=column],
   .two-one-column .column2 {
+    .size1 {
+      .box1 {
+        .header {
+          font-size: 1.3em;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+
     .size2 {
       &.with-img {
         .box2 {
@@ -3565,7 +3573,7 @@
         }
 
         .box2 {
-          flex: 0 1 235px;
+          flex: 0 0 235px;
         }
 
         &.full {
@@ -3879,6 +3887,14 @@
   }
 }
 @media only screen and (max-width: 459px) {
+  .with-img {
+    .header {
+        // No line breaks
+      br {
+        display: none;
+      }
+    }
+  }
   // All column types must behave like single column boxes
   .gcrow .gccolumn .gridbox {
     &.size1 {
