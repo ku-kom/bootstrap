@@ -2281,7 +2281,7 @@
 
         .header {
           color: @ku-news-gray;
-          font-size: 1.5em;
+          font-size: 1.42em;
           line-height: 1.399em;
           text-transform: none;
           padding: 0;
@@ -2350,8 +2350,8 @@
 
       .box2 {
         img {
-          max-width: 155%!important;
-          height: auto;
+            max-height: 108%!important;
+            max-width: none!important;
         }
       }
     }
@@ -2379,7 +2379,7 @@
 
       .box2 {
         img {
-          max-width: 110%!important;
+          max-width: 104%!important;
           height: auto;
         }
       }
@@ -2659,7 +2659,7 @@
       }
 
       .box2 {
-        flex: 0 0 235px;
+        flex: 0 1 235px;
       }
 
       &.full {
@@ -2696,7 +2696,7 @@
       }
 
       .box2 {
-        flex: 0 0 235px;
+        flex: 0 1 235px;
       }
     }
     //Arrow for single column boxes
@@ -3342,10 +3342,7 @@
   &.size1 {
     .box2 {
       flex: 0 1 185px!important;
-      //   img {
-      //     max-width: 145%!important;
-      //     height: auto;
-      //   }
+
       //Fix for iframe centering in .size1 boxes
       iframe {
         position: absolute;
@@ -3962,61 +3959,39 @@
             left: 0;
             bottom: 0;
             width: 100%;
+            .header {
+              color: @white-color;
+            }
           }
 
           .theme-ku & {
             &.faculty_color {
               .header {
                 background: fade(@ku-red, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@blue, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@green, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@ku-darkgray, 83%);
-                color: @ku-gridbox-text;
-              }
-
-              &::before {
-                color: @ku-gridbox-text;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@ku-darkblue, 83%);
-                color: @ku-gridbox-text;
-              }
-
-              &::before {
-                color: @ku-gridbox-text;
               }
             }
           }
@@ -4025,55 +4000,30 @@
             &.faculty_color {
               .header {
                 background: fade(@science, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@science-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@science-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@science-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@science-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
@@ -4082,55 +4032,30 @@
             &.faculty_color {
               .header {
                 background: fade(@hum, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@hum-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@hum-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@hum-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@hum-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
@@ -4139,55 +4064,30 @@
             &.faculty_color {
               .header {
                 background: fade(@teol, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@teol-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@teol-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@teol-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@teol-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
@@ -4196,55 +4096,30 @@
             &.faculty_color {
               .header {
                 background: fade(@sund, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@sund-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@sund-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@sund-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@sund-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
@@ -4253,55 +4128,30 @@
             &.faculty_color {
               .header {
                 background: fade(@samf, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@samf-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@samf-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@samf-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@samf-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
@@ -4310,55 +4160,30 @@
             &.faculty_color {
               .header {
                 background: fade(@jura, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_1 {
               .header {
                 background: fade(@jura-sub_1, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_2 {
               .header {
                 background: fade(@jura-sub_2, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_3 {
               .header {
                 background: fade(@jura-sub_3, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
 
             &.subcolor_4 {
               .header {
                 background: fade(@jura-sub_4, 83%);
-                color: @white-color;
-              }
-
-              &::before {
-                color: @white-color;
               }
             }
           }
