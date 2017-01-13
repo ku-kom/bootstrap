@@ -2350,8 +2350,8 @@
 
       .box2 {
         img {
-            max-height: 108%!important;
-            max-width: none!important;
+          max-height: 108%!important;
+          max-width: none!important;
         }
       }
     }
@@ -3326,6 +3326,21 @@
       }
     }
   }
+
+  .FullWidthFrontpage.no-left-menu {
+    .double-column [class*=column] {
+      .size1 {
+        &.with-img {
+          .box2 {
+            img {
+              max-width: 100%!important;
+              max-height: none!important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 680px) {
   &.size1 {
@@ -3342,7 +3357,6 @@
   &.size1 {
     .box2 {
       flex: 0 1 185px!important;
-
       //Fix for iframe centering in .size1 boxes
       iframe {
         position: absolute;
@@ -3886,7 +3900,7 @@
 @media only screen and (max-width: 459px) {
   .with-img {
     .header {
-        // No line breaks
+      // No line breaks
       br {
         display: none;
       }
@@ -3954,11 +3968,16 @@
         &.outlined {
           border-width: 0;
 
+          &::before {
+            color: @white-color;
+          }
+
           .box1 {
             position: absolute;
             left: 0;
             bottom: 0;
             width: 100%;
+
             .header {
               color: @white-color;
             }
