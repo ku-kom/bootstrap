@@ -11756,17 +11756,23 @@ nav {
 .boxlink:hover {
   text-decoration: none;
 }
+.one-one-two-column .column3 .size4 .text,
 .one-two-column .column2 .size4 .text,
 .single-column .column1 .size4 .text,
-.two-one-column .column1 .size4 .text {
+.two-one-column .column1 .size4 .text,
+.two-one-one-column .column1 .size4 .text {
   display: block;
 }
+.one-one-two-column .column3 .size2.with-img,
 .one-two-column .column2 .size2.with-img,
 .single-column .column1 .size2.with-img,
 .two-one-column .column1 .size2.with-img,
+.two-one-one-column .column1 .size2.with-img,
+.one-one-two-column .column3 .size3.with-img,
 .one-two-column .column2 .size3.with-img,
 .single-column .column1 .size3.with-img,
-.two-one-column .column1 .size3.with-img {
+.two-one-column .column1 .size3.with-img,
+.two-one-one-column .column1 .size3.with-img {
   color: #fff;
           flex-direction: row;
 
@@ -11775,440 +11781,648 @@ nav {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img,
 .theme-ku .one-two-column .column2 .size2.with-img,
 .theme-ku .single-column .column1 .size2.with-img,
 .theme-ku .two-one-column .column1 .size2.with-img,
+.theme-ku .two-one-one-column .column1 .size2.with-img,
+.theme-ku .one-one-two-column .column3 .size3.with-img,
 .theme-ku .one-two-column .column2 .size3.with-img,
 .theme-ku .single-column .column1 .size3.with-img,
-.theme-ku .two-one-column .column1 .size3.with-img {
+.theme-ku .two-one-column .column1 .size3.with-img,
+.theme-ku .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-ku .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-ku .single-column .column1 .size2.with-img.faculty_color,
 .theme-ku .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-ku .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-ku .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-ku .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-ku .single-column .column1 .size3.with-img.faculty_color,
-.theme-ku .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-ku .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-ku .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #901a1e;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-ku .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-ku .single-column .column1 .size2.with-img.subcolor_1,
 .theme-ku .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-ku .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-ku .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-ku .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-ku .single-column .column1 .size3.with-img.subcolor_1,
-.theme-ku .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-ku .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-ku .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #a1c5c8;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-ku .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-ku .single-column .column1 .size2.with-img.subcolor_2,
 .theme-ku .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-ku .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-ku .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-ku .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-ku .single-column .column1 .size3.with-img.subcolor_2,
-.theme-ku .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-ku .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-ku .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #85ae33;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-ku .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-ku .single-column .column1 .size2.with-img.subcolor_3,
 .theme-ku .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-ku .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-ku .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-ku .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-ku .single-column .column1 .size3.with-img.subcolor_3,
-.theme-ku .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-ku .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-ku .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   color: #606060;
   background: #b5b5b5;
 }
+.theme-ku .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-ku .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-ku .single-column .column1 .size2.with-img.subcolor_4,
 .theme-ku .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-ku .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-ku .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-ku .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-ku .single-column .column1 .size3.with-img.subcolor_4,
-.theme-ku .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-ku .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-ku .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #42759b;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img,
 .theme-science .one-two-column .column2 .size2.with-img,
 .theme-science .single-column .column1 .size2.with-img,
 .theme-science .two-one-column .column1 .size2.with-img,
+.theme-science .two-one-one-column .column1 .size2.with-img,
+.theme-science .one-one-two-column .column3 .size3.with-img,
 .theme-science .one-two-column .column2 .size3.with-img,
 .theme-science .single-column .column1 .size3.with-img,
-.theme-science .two-one-column .column1 .size3.with-img {
+.theme-science .two-one-column .column1 .size3.with-img,
+.theme-science .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-science .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-science .single-column .column1 .size2.with-img.faculty_color,
 .theme-science .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-science .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-science .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-science .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-science .single-column .column1 .size3.with-img.faculty_color,
-.theme-science .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-science .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-science .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #46743c;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-science .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-science .single-column .column1 .size2.with-img.subcolor_1,
 .theme-science .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-science .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-science .single-column .column1 .size3.with-img.subcolor_1,
-.theme-science .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #dfaf48;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-science .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-science .single-column .column1 .size2.with-img.subcolor_2,
 .theme-science .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-science .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-science .single-column .column1 .size3.with-img.subcolor_2,
-.theme-science .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #a4c1a9;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-science .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-science .single-column .column1 .size2.with-img.subcolor_3,
 .theme-science .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-science .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-science .single-column .column1 .size3.with-img.subcolor_3,
-.theme-science .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #bea986;
 }
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-science .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-science .single-column .column1 .size2.with-img.subcolor_4,
 .theme-science .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-science .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-science .single-column .column1 .size3.with-img.subcolor_4,
-.theme-science .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #85a8ae;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img,
 .theme-hum .one-two-column .column2 .size2.with-img,
 .theme-hum .single-column .column1 .size2.with-img,
 .theme-hum .two-one-column .column1 .size2.with-img,
+.theme-hum .two-one-one-column .column1 .size2.with-img,
+.theme-hum .one-one-two-column .column3 .size3.with-img,
 .theme-hum .one-two-column .column2 .size3.with-img,
 .theme-hum .single-column .column1 .size3.with-img,
-.theme-hum .two-one-column .column1 .size3.with-img {
+.theme-hum .two-one-column .column1 .size3.with-img,
+.theme-hum .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-hum .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-hum .single-column .column1 .size2.with-img.faculty_color,
 .theme-hum .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-hum .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-hum .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-hum .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-hum .single-column .column1 .size3.with-img.faculty_color,
-.theme-hum .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-hum .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-hum .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #365aa5;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_1,
 .theme-hum .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-hum .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-hum .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_1,
-.theme-hum .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-hum .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-hum .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #1d2e4a;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_2,
 .theme-hum .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-hum .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-hum .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_2,
-.theme-hum .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-hum .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-hum .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #b7b5b5;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_3,
 .theme-hum .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-hum .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-hum .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_3,
-.theme-hum .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-hum .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-hum .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #7d899b;
 }
+.theme-hum .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-hum .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-hum .single-column .column1 .size2.with-img.subcolor_4,
 .theme-hum .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-hum .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-hum .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-hum .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-hum .single-column .column1 .size3.with-img.subcolor_4,
-.theme-hum .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-hum .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-hum .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #e7400d;
 }
+.theme-teol .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-teol .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-teol .single-column .column1 .size2.with-img.faculty_color,
 .theme-teol .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-teol .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-teol .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-teol .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-teol .single-column .column1 .size3.with-img.faculty_color,
-.theme-teol .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-teol .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-teol .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #66609e;
 }
+.theme-teol .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-teol .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-teol .single-column .column1 .size2.with-img.subcolor_1,
 .theme-teol .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-teol .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-teol .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-teol .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-teol .single-column .column1 .size3.with-img.subcolor_1,
-.theme-teol .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-teol .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-teol .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #d8680b;
 }
+.theme-teol .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-teol .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-teol .single-column .column1 .size2.with-img.subcolor_2,
 .theme-teol .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-teol .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-teol .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-teol .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-teol .single-column .column1 .size3.with-img.subcolor_2,
-.theme-teol .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-teol .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-teol .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #093f50;
 }
+.theme-teol .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-teol .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-teol .single-column .column1 .size2.with-img.subcolor_3,
 .theme-teol .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-teol .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-teol .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-teol .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-teol .single-column .column1 .size3.with-img.subcolor_3,
-.theme-teol .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-teol .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-teol .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #84bfcc;
 }
+.theme-teol .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-teol .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-teol .single-column .column1 .size2.with-img.subcolor_4,
 .theme-teol .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-teol .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-teol .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-teol .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-teol .single-column .column1 .size3.with-img.subcolor_4,
-.theme-teol .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-teol .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-teol .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #c8d351;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img,
 .theme-sund .one-two-column .column2 .size2.with-img,
 .theme-sund .single-column .column1 .size2.with-img,
 .theme-sund .two-one-column .column1 .size2.with-img,
+.theme-sund .two-one-one-column .column1 .size2.with-img,
+.theme-sund .one-one-two-column .column3 .size3.with-img,
 .theme-sund .one-two-column .column2 .size3.with-img,
 .theme-sund .single-column .column1 .size3.with-img,
-.theme-sund .two-one-column .column1 .size3.with-img {
+.theme-sund .two-one-column .column1 .size3.with-img,
+.theme-sund .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-sund .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-sund .single-column .column1 .size2.with-img.faculty_color,
 .theme-sund .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-sund .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-sund .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-sund .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-sund .single-column .column1 .size3.with-img.faculty_color,
-.theme-sund .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-sund .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-sund .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #2a216a;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-sund .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-sund .single-column .column1 .size2.with-img.subcolor_1,
 .theme-sund .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-sund .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-sund .single-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-sund .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #77b6e5;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-sund .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-sund .single-column .column1 .size2.with-img.subcolor_2,
 .theme-sund .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-sund .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-sund .single-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-sund .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #0f4576;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-sund .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-sund .single-column .column1 .size2.with-img.subcolor_3,
 .theme-sund .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-sund .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-sund .single-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-sund .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #00706e;
 }
+.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-sund .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-sund .single-column .column1 .size2.with-img.subcolor_4,
 .theme-sund .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-sund .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-sund .single-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-sund .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #b0d54e;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img,
 .theme-samf .one-two-column .column2 .size2.with-img,
 .theme-samf .single-column .column1 .size2.with-img,
 .theme-samf .two-one-column .column1 .size2.with-img,
+.theme-samf .two-one-one-column .column1 .size2.with-img,
+.theme-samf .one-one-two-column .column3 .size3.with-img,
 .theme-samf .one-two-column .column2 .size3.with-img,
 .theme-samf .single-column .column1 .size3.with-img,
-.theme-samf .two-one-column .column1 .size3.with-img {
+.theme-samf .two-one-column .column1 .size3.with-img,
+.theme-samf .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-samf .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-samf .single-column .column1 .size2.with-img.faculty_color,
 .theme-samf .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-samf .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-samf .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-samf .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-samf .single-column .column1 .size3.with-img.faculty_color,
-.theme-samf .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-samf .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-samf .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #e13718;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-samf .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-samf .single-column .column1 .size2.with-img.subcolor_1,
 .theme-samf .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-samf .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-samf .single-column .column1 .size3.with-img.subcolor_1,
-.theme-samf .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #2a3d66;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-samf .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-samf .single-column .column1 .size2.with-img.subcolor_2,
 .theme-samf .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-samf .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-samf .single-column .column1 .size3.with-img.subcolor_2,
-.theme-samf .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #a0b763;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-samf .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-samf .single-column .column1 .size2.with-img.subcolor_3,
 .theme-samf .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-samf .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-samf .single-column .column1 .size3.with-img.subcolor_3,
-.theme-samf .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #95c1b0;
 }
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-samf .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-samf .single-column .column1 .size2.with-img.subcolor_4,
 .theme-samf .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-samf .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-samf .single-column .column1 .size3.with-img.subcolor_4,
-.theme-samf .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #7d8a8b;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img,
 .theme-jura .one-two-column .column2 .size2.with-img,
 .theme-jura .single-column .column1 .size2.with-img,
 .theme-jura .two-one-column .column1 .size2.with-img,
+.theme-jura .two-one-one-column .column1 .size2.with-img,
+.theme-jura .one-one-two-column .column3 .size3.with-img,
 .theme-jura .one-two-column .column2 .size3.with-img,
 .theme-jura .single-column .column1 .size3.with-img,
-.theme-jura .two-one-column .column1 .size3.with-img {
+.theme-jura .two-one-column .column1 .size3.with-img,
+.theme-jura .two-one-one-column .column1 .size3.with-img {
   color: #fff;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img.faculty_color,
 .theme-jura .one-two-column .column2 .size2.with-img.faculty_color,
 .theme-jura .single-column .column1 .size2.with-img.faculty_color,
 .theme-jura .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-jura .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-jura .one-one-two-column .column3 .size3.with-img.faculty_color,
 .theme-jura .one-two-column .column2 .size3.with-img.faculty_color,
 .theme-jura .single-column .column1 .size3.with-img.faculty_color,
-.theme-jura .two-one-column .column1 .size3.with-img.faculty_color {
+.theme-jura .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-jura .two-one-one-column .column1 .size3.with-img.faculty_color {
   background: #999632;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img.subcolor_1,
 .theme-jura .one-two-column .column2 .size2.with-img.subcolor_1,
 .theme-jura .single-column .column1 .size2.with-img.subcolor_1,
 .theme-jura .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-jura .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-jura .one-one-two-column .column3 .size3.with-img.subcolor_1,
 .theme-jura .one-two-column .column2 .size3.with-img.subcolor_1,
 .theme-jura .single-column .column1 .size3.with-img.subcolor_1,
-.theme-jura .two-one-column .column1 .size3.with-img.subcolor_1 {
+.theme-jura .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-jura .two-one-one-column .column1 .size3.with-img.subcolor_1 {
   background: #ffb400;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img.subcolor_2,
 .theme-jura .one-two-column .column2 .size2.with-img.subcolor_2,
 .theme-jura .single-column .column1 .size2.with-img.subcolor_2,
 .theme-jura .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-jura .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-jura .one-one-two-column .column3 .size3.with-img.subcolor_2,
 .theme-jura .one-two-column .column2 .size3.with-img.subcolor_2,
 .theme-jura .single-column .column1 .size3.with-img.subcolor_2,
-.theme-jura .two-one-column .column1 .size3.with-img.subcolor_2 {
+.theme-jura .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-jura .two-one-one-column .column1 .size3.with-img.subcolor_2 {
   background: #33838a;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img.subcolor_3,
 .theme-jura .one-two-column .column2 .size2.with-img.subcolor_3,
 .theme-jura .single-column .column1 .size2.with-img.subcolor_3,
 .theme-jura .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-jura .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-jura .one-one-two-column .column3 .size3.with-img.subcolor_3,
 .theme-jura .one-two-column .column2 .size3.with-img.subcolor_3,
 .theme-jura .single-column .column1 .size3.with-img.subcolor_3,
-.theme-jura .two-one-column .column1 .size3.with-img.subcolor_3 {
+.theme-jura .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-jura .two-one-one-column .column1 .size3.with-img.subcolor_3 {
   background: #ccc6ae;
 }
+.theme-jura .one-one-two-column .column3 .size2.with-img.subcolor_4,
 .theme-jura .one-two-column .column2 .size2.with-img.subcolor_4,
 .theme-jura .single-column .column1 .size2.with-img.subcolor_4,
 .theme-jura .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-jura .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-jura .one-one-two-column .column3 .size3.with-img.subcolor_4,
 .theme-jura .one-two-column .column2 .size3.with-img.subcolor_4,
 .theme-jura .single-column .column1 .size3.with-img.subcolor_4,
-.theme-jura .two-one-column .column1 .size3.with-img.subcolor_4 {
+.theme-jura .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-jura .two-one-one-column .column1 .size3.with-img.subcolor_4 {
   background: #a3650c;
 }
+.one-one-two-column .column3 .size2.with-img.subcolor_6,
 .one-two-column .column2 .size2.with-img.subcolor_6,
 .single-column .column1 .size2.with-img.subcolor_6,
 .two-one-column .column1 .size2.with-img.subcolor_6,
+.two-one-one-column .column1 .size2.with-img.subcolor_6,
+.one-one-two-column .column3 .size3.with-img.subcolor_6,
 .one-two-column .column2 .size3.with-img.subcolor_6,
 .single-column .column1 .size3.with-img.subcolor_6,
-.two-one-column .column1 .size3.with-img.subcolor_6 {
+.two-one-column .column1 .size3.with-img.subcolor_6,
+.two-one-one-column .column1 .size3.with-img.subcolor_6 {
   background: #fff;
 }
+.one-one-two-column .column3 .size2.with-img.subcolor_7,
 .one-two-column .column2 .size2.with-img.subcolor_7,
 .single-column .column1 .size2.with-img.subcolor_7,
 .two-one-column .column1 .size2.with-img.subcolor_7,
+.two-one-one-column .column1 .size2.with-img.subcolor_7,
+.one-one-two-column .column3 .size3.with-img.subcolor_7,
 .one-two-column .column2 .size3.with-img.subcolor_7,
 .single-column .column1 .size3.with-img.subcolor_7,
-.two-one-column .column1 .size3.with-img.subcolor_7 {
+.two-one-column .column1 .size3.with-img.subcolor_7,
+.two-one-one-column .column1 .size3.with-img.subcolor_7 {
   background: #625757;
 }
+.one-one-two-column .column3 .size2.with-img.text-over .header,
 .one-two-column .column2 .size2.with-img.text-over .header,
 .single-column .column1 .size2.with-img.text-over .header,
 .two-one-column .column1 .size2.with-img.text-over .header,
+.two-one-one-column .column1 .size2.with-img.text-over .header,
+.one-one-two-column .column3 .size3.with-img.text-over .header,
 .one-two-column .column2 .size3.with-img.text-over .header,
 .single-column .column1 .size3.with-img.text-over .header,
-.two-one-column .column1 .size3.with-img.text-over .header {
+.two-one-column .column1 .size3.with-img.text-over .header,
+.two-one-one-column .column1 .size3.with-img.text-over .header {
   position: relative;
   bottom: auto;
   left: auto;
   padding: 8px 5px 6px 10px;
 }
+.one-one-two-column .column3 .size2.with-img.text-down::before,
 .one-two-column .column2 .size2.with-img.text-down::before,
 .single-column .column1 .size2.with-img.text-down::before,
 .two-one-column .column1 .size2.with-img.text-down::before,
+.two-one-one-column .column1 .size2.with-img.text-down::before,
+.one-one-two-column .column3 .size3.with-img.text-down::before,
 .one-two-column .column2 .size3.with-img.text-down::before,
 .single-column .column1 .size3.with-img.text-down::before,
-.two-one-column .column1 .size3.with-img.text-down::before {
+.two-one-column .column1 .size3.with-img.text-down::before,
+.two-one-one-column .column1 .size3.with-img.text-down::before {
   top: auto;
   bottom: 10px;
 }
+.one-one-two-column .column3 .size2.with-img .box1,
 .one-two-column .column2 .size2.with-img .box1,
 .single-column .column1 .size2.with-img .box1,
 .two-one-column .column1 .size2.with-img .box1,
+.two-one-one-column .column1 .size2.with-img .box1,
+.one-one-two-column .column3 .size3.with-img .box1,
 .one-two-column .column2 .size3.with-img .box1,
 .single-column .column1 .size3.with-img .box1,
-.two-one-column .column1 .size3.with-img .box1 {
+.two-one-column .column1 .size3.with-img .box1,
+.two-one-one-column .column1 .size3.with-img .box1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
+.one-one-two-column .column3 .size2.with-img .box1 .text,
 .one-two-column .column2 .size2.with-img .box1 .text,
 .single-column .column1 .size2.with-img .box1 .text,
 .two-one-column .column1 .size2.with-img .box1 .text,
+.two-one-one-column .column1 .size2.with-img .box1 .text,
+.one-one-two-column .column3 .size3.with-img .box1 .text,
 .one-two-column .column2 .size3.with-img .box1 .text,
 .single-column .column1 .size3.with-img .box1 .text,
-.two-one-column .column1 .size3.with-img .box1 .text {
+.two-one-column .column1 .size3.with-img .box1 .text,
+.two-one-one-column .column1 .size3.with-img .box1 .text {
   display: block;
 }
+.one-one-two-column .column3 .size2.with-img .box2,
 .one-two-column .column2 .size2.with-img .box2,
 .single-column .column1 .size2.with-img .box2,
 .two-one-column .column1 .size2.with-img .box2,
+.two-one-one-column .column1 .size2.with-img .box2,
+.one-one-two-column .column3 .size3.with-img .box2,
 .one-two-column .column2 .size3.with-img .box2,
 .single-column .column1 .size3.with-img .box2,
-.two-one-column .column1 .size3.with-img .box2 {
+.two-one-column .column1 .size3.with-img .box2,
+.two-one-one-column .column1 .size3.with-img .box2 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 235px;
       -ms-flex: 0 1 235px;
           flex: 0 1 235px;
 }
+.one-one-two-column .column3 .size2.with-img.full .box1,
 .one-two-column .column2 .size2.with-img.full .box1,
 .single-column .column1 .size2.with-img.full .box1,
 .two-one-column .column1 .size2.with-img.full .box1,
+.two-one-one-column .column1 .size2.with-img.full .box1,
+.one-one-two-column .column3 .size3.with-img.full .box1,
 .one-two-column .column2 .size3.with-img.full .box1,
 .single-column .column1 .size3.with-img.full .box1,
-.two-one-column .column1 .size3.with-img.full .box1 {
+.two-one-column .column1 .size3.with-img.full .box1,
+.two-one-one-column .column1 .size3.with-img.full .box1 {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
 }
+.one-one-two-column .column3 .size2.with-img.full .box2,
 .one-two-column .column2 .size2.with-img.full .box2,
 .single-column .column1 .size2.with-img.full .box2,
 .two-one-column .column1 .size2.with-img.full .box2,
+.two-one-one-column .column1 .size2.with-img.full .box2,
+.one-one-two-column .column3 .size3.with-img.full .box2,
 .one-two-column .column2 .size3.with-img.full .box2,
 .single-column .column1 .size3.with-img.full .box2,
-.two-one-column .column1 .size3.with-img.full .box2 {
+.two-one-column .column1 .size3.with-img.full .box2,
+.two-one-one-column .column1 .size3.with-img.full .box2 {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
 }
+.one-one-two-column .column3 .size2.with-img.outlined .box1,
 .one-two-column .column2 .size2.with-img.outlined .box1,
 .single-column .column1 .size2.with-img.outlined .box1,
 .two-one-column .column1 .size2.with-img.outlined .box1,
+.two-one-one-column .column1 .size2.with-img.outlined .box1,
+.one-one-two-column .column3 .size3.with-img.outlined .box1,
 .one-two-column .column2 .size3.with-img.outlined .box1,
 .single-column .column1 .size3.with-img.outlined .box1,
-.two-one-column .column1 .size3.with-img.outlined .box1 {
+.two-one-column .column1 .size3.with-img.outlined .box1,
+.two-one-one-column .column1 .size3.with-img.outlined .box1 {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
 }
+.one-one-two-column .column3 .size2.with-img.outlined .box2,
 .one-two-column .column2 .size2.with-img.outlined .box2,
 .single-column .column1 .size2.with-img.outlined .box2,
 .two-one-column .column1 .size2.with-img.outlined .box2,
+.two-one-one-column .column1 .size2.with-img.outlined .box2,
+.one-one-two-column .column3 .size3.with-img.outlined .box2,
 .one-two-column .column2 .size3.with-img.outlined .box2,
 .single-column .column1 .size3.with-img.outlined .box2,
-.two-one-column .column1 .size3.with-img.outlined .box2 {
+.two-one-column .column1 .size3.with-img.outlined .box2,
+.two-one-one-column .column1 .size3.with-img.outlined .box2 {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -12255,10 +12469,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img,
 .one-two-column .column1 .size2.outlined.with-img,
+.quad-column [class*=column] .size2.outlined.with-img,
 .triple-column [class*=column] .size2.outlined.with-img,
 .two-one-column .column2 .size2.outlined.with-img,
 .double-column [class*=column] .size3.outlined.with-img,
 .one-two-column .column1 .size3.outlined.with-img,
+.quad-column [class*=column] .size3.outlined.with-img,
 .triple-column [class*=column] .size3.outlined.with-img,
 .two-one-column .column2 .size3.outlined.with-img {
   color: #fff;
@@ -12267,10 +12483,12 @@ nav {
 }
 .theme-ku .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-ku .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-ku .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-ku .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-ku .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-ku .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-ku .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-ku .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12278,10 +12496,12 @@ nav {
 }
 .theme-ku .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-ku .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-ku .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-ku .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12289,10 +12509,12 @@ nav {
 }
 .theme-ku .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-ku .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-ku .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-ku .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12300,10 +12522,12 @@ nav {
 }
 .theme-ku .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-ku .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-ku .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-ku .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12311,10 +12535,12 @@ nav {
 }
 .theme-ku .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-ku .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-ku .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-ku .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-ku .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12322,10 +12548,12 @@ nav {
 }
 .theme-science .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-science .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-science .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-science .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-science .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-science .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-science .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12333,10 +12561,12 @@ nav {
 }
 .theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12344,10 +12574,12 @@ nav {
 }
 .theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12355,10 +12587,12 @@ nav {
 }
 .theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12366,10 +12600,12 @@ nav {
 }
 .theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12377,10 +12613,12 @@ nav {
 }
 .theme-hum .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-hum .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-hum .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-hum .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-hum .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-hum .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-hum .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-hum .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12388,10 +12626,12 @@ nav {
 }
 .theme-hum .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-hum .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-hum .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-hum .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12399,10 +12639,12 @@ nav {
 }
 .theme-hum .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-hum .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-hum .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-hum .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12410,10 +12652,12 @@ nav {
 }
 .theme-hum .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-hum .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-hum .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-hum .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12421,10 +12665,12 @@ nav {
 }
 .theme-hum .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-hum .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-hum .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-hum .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-hum .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12432,10 +12678,12 @@ nav {
 }
 .theme-teol .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-teol .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-teol .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-teol .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-teol .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-teol .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-teol .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-teol .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12443,10 +12691,12 @@ nav {
 }
 .theme-teol .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teol .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-teol .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-teol .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12454,10 +12704,12 @@ nav {
 }
 .theme-teol .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teol .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-teol .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-teol .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12465,10 +12717,12 @@ nav {
 }
 .theme-teol .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teol .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-teol .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-teol .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12476,10 +12730,12 @@ nav {
 }
 .theme-teol .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teol .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-teol .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-teol .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-teol .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12487,10 +12743,12 @@ nav {
 }
 .theme-sund .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-sund .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-sund .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-sund .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-sund .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-sund .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-sund .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-sund .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12498,10 +12756,12 @@ nav {
 }
 .theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12509,10 +12769,12 @@ nav {
 }
 .theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12520,10 +12782,12 @@ nav {
 }
 .theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12531,10 +12795,12 @@ nav {
 }
 .theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12542,10 +12808,12 @@ nav {
 }
 .theme-samf .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-samf .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-samf .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-samf .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-samf .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-samf .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12553,10 +12821,12 @@ nav {
 }
 .theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12564,10 +12834,12 @@ nav {
 }
 .theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12575,10 +12847,12 @@ nav {
 }
 .theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12586,10 +12860,12 @@ nav {
 }
 .theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12597,10 +12873,12 @@ nav {
 }
 .theme-jura .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-jura .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-jura .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
 .theme-jura .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-jura .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-jura .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-jura .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
 .theme-jura .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
   color: #fff;
@@ -12608,10 +12886,12 @@ nav {
 }
 .theme-jura .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-jura .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
 .theme-jura .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-jura .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
 .theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
   color: #fff;
@@ -12619,10 +12899,12 @@ nav {
 }
 .theme-jura .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-jura .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
 .theme-jura .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-jura .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
 .theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
   color: #fff;
@@ -12630,10 +12912,12 @@ nav {
 }
 .theme-jura .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-jura .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
 .theme-jura .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-jura .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
 .theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
   color: #fff;
@@ -12641,10 +12925,12 @@ nav {
 }
 .theme-jura .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-jura .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
 .theme-jura .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-jura .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
 .theme-jura .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
   color: #fff;
@@ -12652,10 +12938,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img.subcolor_5 .header,
 .one-two-column .column1 .size2.outlined.with-img.subcolor_5 .header,
+.quad-column [class*=column] .size2.outlined.with-img.subcolor_5 .header,
 .triple-column [class*=column] .size2.outlined.with-img.subcolor_5 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_5 .header,
 .double-column [class*=column] .size3.outlined.with-img.subcolor_5 .header,
 .one-two-column .column1 .size3.outlined.with-img.subcolor_5 .header,
+.quad-column [class*=column] .size3.outlined.with-img.subcolor_5 .header,
 .triple-column [class*=column] .size3.outlined.with-img.subcolor_5 .header,
 .two-one-column .column2 .size3.outlined.with-img.subcolor_5 .header {
   color: #606060;
@@ -12663,10 +12951,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img.subcolor_6 .header,
 .one-two-column .column1 .size2.outlined.with-img.subcolor_6 .header,
+.quad-column [class*=column] .size2.outlined.with-img.subcolor_6 .header,
 .triple-column [class*=column] .size2.outlined.with-img.subcolor_6 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_6 .header,
 .double-column [class*=column] .size3.outlined.with-img.subcolor_6 .header,
 .one-two-column .column1 .size3.outlined.with-img.subcolor_6 .header,
+.quad-column [class*=column] .size3.outlined.with-img.subcolor_6 .header,
 .triple-column [class*=column] .size3.outlined.with-img.subcolor_6 .header,
 .two-one-column .column2 .size3.outlined.with-img.subcolor_6 .header {
   color: #606060;
@@ -12674,10 +12964,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img.subcolor_7 .header,
 .one-two-column .column1 .size2.outlined.with-img.subcolor_7 .header,
+.quad-column [class*=column] .size2.outlined.with-img.subcolor_7 .header,
 .triple-column [class*=column] .size2.outlined.with-img.subcolor_7 .header,
 .two-one-column .column2 .size2.outlined.with-img.subcolor_7 .header,
 .double-column [class*=column] .size3.outlined.with-img.subcolor_7 .header,
 .one-two-column .column1 .size3.outlined.with-img.subcolor_7 .header,
+.quad-column [class*=column] .size3.outlined.with-img.subcolor_7 .header,
 .triple-column [class*=column] .size3.outlined.with-img.subcolor_7 .header,
 .two-one-column .column2 .size3.outlined.with-img.subcolor_7 .header {
   color: #fff;
@@ -12685,10 +12977,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img .box1,
 .one-two-column .column1 .size2.outlined.with-img .box1,
+.quad-column [class*=column] .size2.outlined.with-img .box1,
 .triple-column [class*=column] .size2.outlined.with-img .box1,
 .two-one-column .column2 .size2.outlined.with-img .box1,
 .double-column [class*=column] .size3.outlined.with-img .box1,
 .one-two-column .column1 .size3.outlined.with-img .box1,
+.quad-column [class*=column] .size3.outlined.with-img .box1,
 .triple-column [class*=column] .size3.outlined.with-img .box1,
 .two-one-column .column2 .size3.outlined.with-img .box1 {
   -webkit-box-ordinal-group: 3;
@@ -12698,10 +12992,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img .box1 .header,
 .one-two-column .column1 .size2.outlined.with-img .box1 .header,
+.quad-column [class*=column] .size2.outlined.with-img .box1 .header,
 .triple-column [class*=column] .size2.outlined.with-img .box1 .header,
 .two-one-column .column2 .size2.outlined.with-img .box1 .header,
 .double-column [class*=column] .size3.outlined.with-img .box1 .header,
 .one-two-column .column1 .size3.outlined.with-img .box1 .header,
+.quad-column [class*=column] .size3.outlined.with-img .box1 .header,
 .triple-column [class*=column] .size3.outlined.with-img .box1 .header,
 .two-one-column .column2 .size3.outlined.with-img .box1 .header {
   position: absolute;
@@ -12710,10 +13006,12 @@ nav {
 }
 .double-column [class*=column] .size2.outlined.with-img .box2,
 .one-two-column .column1 .size2.outlined.with-img .box2,
+.quad-column [class*=column] .size2.outlined.with-img .box2,
 .triple-column [class*=column] .size2.outlined.with-img .box2,
 .two-one-column .column2 .size2.outlined.with-img .box2,
 .double-column [class*=column] .size3.outlined.with-img .box2,
 .one-two-column .column1 .size3.outlined.with-img .box2,
+.quad-column [class*=column] .size3.outlined.with-img .box2,
 .triple-column [class*=column] .size3.outlined.with-img .box2,
 .two-one-column .column2 .size3.outlined.with-img .box2 {
   -webkit-box-ordinal-group: 2;
@@ -12722,6 +13020,12 @@ nav {
           order: 1;
 }
 @media only screen and (min-width: 870px) {
+  .one-one-two-column .column3 .size2.with-img .box2 img,
+  .two-one-one-column .column1 .size2.with-img .box2 img {
+    width: 100%!important;
+    max-width: none!important;
+    max-height: none!important;
+  }
   .single-column .column1 .size1 {
             flex-direction: row;
     background: #fff;
@@ -12797,29 +13101,78 @@ nav {
     -ms-flex-order: 2;
             order: 2;
   }
+  .one-one-two-column .column1 .size1.with-img .box2 img,
+  .one-one-two-column .column2 .size1.with-img .box2 img,
+  .two-one-one-column .column2 .size1.with-img .box2 img,
+  .two-one-one-column .column3 .size1.with-img .box2 img,
+  .one-three-column .column1 .size1.with-img .box2 img,
   .one-two-column .column1 .size1.with-img .box2 img,
+  .quad-column [class*=column] .size1.with-img .box2 img,
+  .three-one-column .column2 .size1.with-img .box2 img,
   .triple-column [class*=column] .size1.with-img .box2 img,
   .two-one-column .column2 .size1.with-img .box2 img {
     width: auto;
     max-width: none!important;
     max-height: 100%;
   }
+  .one-one-two-column .column1 .size2.full .header,
+  .one-one-two-column .column2 .size2.full .header,
+  .two-one-one-column .column2 .size2.full .header,
+  .two-one-one-column .column3 .size2.full .header,
+  .one-three-column .column1 .size2.full .header,
   .one-two-column .column1 .size2.full .header,
+  .quad-column [class*=column] .size2.full .header,
+  .three-one-column .column2 .size2.full .header,
   .triple-column [class*=column] .size2.full .header,
   .two-one-column .column2 .size2.full .header,
+  .one-one-two-column .column1 .size3.full .header,
+  .one-one-two-column .column2 .size3.full .header,
+  .two-one-one-column .column2 .size3.full .header,
+  .two-one-one-column .column3 .size3.full .header,
+  .one-three-column .column1 .size3.full .header,
   .one-two-column .column1 .size3.full .header,
+  .quad-column [class*=column] .size3.full .header,
+  .three-one-column .column2 .size3.full .header,
   .triple-column [class*=column] .size3.full .header,
   .two-one-column .column2 .size3.full .header,
+  .one-one-two-column .column1 .size2.outlined .header,
+  .one-one-two-column .column2 .size2.outlined .header,
+  .two-one-one-column .column2 .size2.outlined .header,
+  .two-one-one-column .column3 .size2.outlined .header,
+  .one-three-column .column1 .size2.outlined .header,
   .one-two-column .column1 .size2.outlined .header,
+  .quad-column [class*=column] .size2.outlined .header,
+  .three-one-column .column2 .size2.outlined .header,
   .triple-column [class*=column] .size2.outlined .header,
   .two-one-column .column2 .size2.outlined .header,
+  .one-one-two-column .column1 .size3.outlined .header,
+  .one-one-two-column .column2 .size3.outlined .header,
+  .two-one-one-column .column2 .size3.outlined .header,
+  .two-one-one-column .column3 .size3.outlined .header,
+  .one-three-column .column1 .size3.outlined .header,
   .one-two-column .column1 .size3.outlined .header,
+  .quad-column [class*=column] .size3.outlined .header,
+  .three-one-column .column2 .size3.outlined .header,
   .triple-column [class*=column] .size3.outlined .header,
   .two-one-column .column2 .size3.outlined .header,
+  .one-one-two-column .column1 .size2.with-img .header,
+  .one-one-two-column .column2 .size2.with-img .header,
+  .two-one-one-column .column2 .size2.with-img .header,
+  .two-one-one-column .column3 .size2.with-img .header,
+  .one-three-column .column1 .size2.with-img .header,
   .one-two-column .column1 .size2.with-img .header,
+  .quad-column [class*=column] .size2.with-img .header,
+  .three-one-column .column2 .size2.with-img .header,
   .triple-column [class*=column] .size2.with-img .header,
   .two-one-column .column2 .size2.with-img .header,
+  .one-one-two-column .column1 .size3.with-img .header,
+  .one-one-two-column .column2 .size3.with-img .header,
+  .two-one-one-column .column2 .size3.with-img .header,
+  .two-one-one-column .column3 .size3.with-img .header,
+  .one-three-column .column1 .size3.with-img .header,
   .one-two-column .column1 .size3.with-img .header,
+  .quad-column [class*=column] .size3.with-img .header,
+  .three-one-column .column2 .size3.with-img .header,
   .triple-column [class*=column] .size3.with-img .header,
   .two-one-column .column2 .size3.with-img .header {
     width: 100%;
@@ -12831,38 +13184,54 @@ nav {
     white-space: nowrap;
     border-right: 25px solid transparent;
   }
+  .one-one-two-column .column3 .size2.outlined .box1,
   .one-two-column .column2 .size2.outlined .box1,
   .single-column .column1 .size2.outlined .box1,
   .two-one-column .column1 .size2.outlined .box1,
+  .two-one-one-column .column1 .size2.outlined .box1,
+  .one-one-two-column .column3 .size3.outlined .box1,
   .one-two-column .column2 .size3.outlined .box1,
   .single-column .column1 .size3.outlined .box1,
   .two-one-column .column1 .size3.outlined .box1,
+  .two-one-one-column .column1 .size3.outlined .box1,
+  .one-one-two-column .column3 .size2.with-img .box1,
   .one-two-column .column2 .size2.with-img .box1,
   .single-column .column1 .size2.with-img .box1,
   .two-one-column .column1 .size2.with-img .box1,
+  .two-one-one-column .column1 .size2.with-img .box1,
+  .one-one-two-column .column3 .size3.with-img .box1,
   .one-two-column .column2 .size3.with-img .box1,
   .single-column .column1 .size3.with-img .box1,
-  .two-one-column .column1 .size3.with-img .box1 {
+  .two-one-column .column1 .size3.with-img .box1,
+  .two-one-one-column .column1 .size3.with-img .box1 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .one-two-column .column2 .size2.with-img.text-down:hover .header,
-  .single-column .column1 .size2.with-img.text-down:hover .header,
-  .two-one-column .column1 .size2.with-img.text-down:hover .header,
-  .one-two-column .column2 .size3.with-img.text-down:hover .header,
-  .single-column .column1 .size3.with-img.text-down:hover .header,
-  .two-one-column .column1 .size3.with-img.text-down:hover .header {
-    background: transparent!important;
-  }
-  .one-two-column .column2 .size2.with-img.text-down.subcolor_5,
-  .single-column .column1 .size2.with-img.text-down.subcolor_5,
-  .two-one-column .column1 .size2.with-img.text-down.subcolor_5,
-  .one-two-column .column2 .size3.with-img.text-down.subcolor_5,
-  .single-column .column1 .size3.with-img.text-down.subcolor_5,
-  .two-one-column .column1 .size3.with-img.text-down.subcolor_5 {
-    background: #eee;
+  .one-one-two-column .column3 .size2.outlined .box2 img,
+  .one-two-column .column2 .size2.outlined .box2 img,
+  .single-column .column1 .size2.outlined .box2 img,
+  .two-one-column .column1 .size2.outlined .box2 img,
+  .two-one-one-column .column1 .size2.outlined .box2 img,
+  .one-one-two-column .column3 .size3.outlined .box2 img,
+  .one-two-column .column2 .size3.outlined .box2 img,
+  .single-column .column1 .size3.outlined .box2 img,
+  .two-one-column .column1 .size3.outlined .box2 img,
+  .two-one-one-column .column1 .size3.outlined .box2 img,
+  .one-one-two-column .column3 .size2.with-img .box2 img,
+  .one-two-column .column2 .size2.with-img .box2 img,
+  .single-column .column1 .size2.with-img .box2 img,
+  .two-one-column .column1 .size2.with-img .box2 img,
+  .two-one-one-column .column1 .size2.with-img .box2 img,
+  .one-one-two-column .column3 .size3.with-img .box2 img,
+  .one-two-column .column2 .size3.with-img .box2 img,
+  .single-column .column1 .size3.with-img .box2 img,
+  .two-one-column .column1 .size3.with-img .box2 img,
+  .two-one-one-column .column1 .size3.with-img .box2 img {
+    width: auto!important;
+    max-width: none!important;
+    max-height: 100%!important;
   }
   .double-column [class*=column] .size1.with-img .box2 {
     -webkit-box-flex: 0;
@@ -12979,18 +13348,21 @@ nav {
 }
 @media only screen and (min-width: 870px) and (max-width: 1024px) {
   .one-two-column .column1 .size1 .box1 .header,
+  .quad-column [class*=column] .size1 .box1 .header,
   .triple-column [class*=column] .size1 .box1 .header,
   .two-one-column .column2 .size1 .box1 .header {
     font-size: 1.3em;
     letter-spacing: .2px;
   }
   .one-two-column .column1 .size2.with-img .box2 img,
+  .quad-column [class*=column] .size2.with-img .box2 img,
   .triple-column [class*=column] .size2.with-img .box2 img,
   .two-one-column .column2 .size2.with-img .box2 img {
     max-width: 188%!important;
     height: auto;
   }
   .one-two-column .column1 .size3.with-img .box2 img,
+  .quad-column [class*=column] .size3.with-img .box2 img,
   .triple-column [class*=column] .size3.with-img .box2 img,
   .two-one-column .column2 .size3.with-img .box2 img {
     max-width: 136%!important;
@@ -13012,6 +13384,48 @@ nav {
     max-height: none!important;
   }
 }
+@media only screen and (min-width: 681px) and (max-width: 869px) {
+  .one-three-column .column1 .size1.with-img,
+  .three-one-column .column2 .size1.with-img {
+            flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+  }
+  .one-three-column .column1 .size1.with-img .box1,
+  .three-one-column .column2 .size1.with-img .box1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+            order: 2;
+  }
+  .one-three-column .column1 .size1.with-img .box1 .text,
+  .three-one-column .column2 .size1.with-img .box1 .text {
+    display: block;
+  }
+  .one-three-column .column1 .size1.with-img .box2,
+  .three-one-column .column2 .size1.with-img .box2 {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: 0 1 235px!important;
+        -ms-flex: 0 1 235px!important;
+            flex: 0 1 235px!important;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+            order: 1;
+  }
+  .one-three-column .column1 .size1.with-img .box2 img,
+  .three-one-column .column2 .size1.with-img .box2 img {
+    max-width: none!important;
+    max-height: 108%!important;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 680px) {
   .size1.with-img .box2 img {
     -webkit-transform: translateY(-50%) translateX(-50%) scale(1.12);
@@ -13020,7 +13434,7 @@ nav {
             transform: translateY(-50%) translateX(-50%) scale(1.12);
   }
 }
-@media only screen and (min-width: 460px) and (max-width: 870px) {
+@media only screen and (min-width: 460px) and (max-width: 869px) {
   .size1 .box2 {
     -webkit-box-flex: 0!important;
     -webkit-flex: 0 1 185px!important;
@@ -14007,6 +14421,47 @@ nav {
   .two-one-column .column2 .size4 .text {
     display: block;
   }
+  .quad-column [class*=column].size2.with-img,
+  .quad-column [class*=column].size3.with-img {
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+  .quad-column [class*=column].size2.with-img.text-over.text-down .box1,
+  .quad-column [class*=column].size3.with-img.text-over.text-down .box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .quad-column [class*=column].size2.with-img.text-over.text-top .box1,
+  .quad-column [class*=column].size3.with-img.text-over.text-top .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .quad-column [class*=column].size2.with-img .box1,
+  .quad-column [class*=column].size3.with-img .box1 {
+    width: 100%;
+
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .quad-column [class*=column].size2.with-img .box2,
+  .quad-column [class*=column].size3.with-img .box2 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+            order: 1;
+  }
   .one-two-column .column2 .size2.with-img.text-down.subcolor_5,
   .single-column .column1 .size2.with-img.text-down.subcolor_5,
   .two-one-column .column1 .size2.with-img.text-down.subcolor_5,
@@ -14023,6 +14478,32 @@ nav {
   .two-one-column .column1 .size3.with-img.text-down:hover .header {
     padding: 8px 5px 6px 10px;
     background: transparent!important;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .one-one-two-column .column3 .size2.with-img.text-down:hover .header,
+  .one-two-column .column2 .size2.with-img.text-down:hover .header,
+  .single-column .column1 .size2.with-img.text-down:hover .header,
+  .two-one-column .column1 .size2.with-img.text-down:hover .header,
+  .two-one-one-column .column1 .size2.with-img.text-down:hover .header,
+  .one-one-two-column .column3 .size3.with-img.text-down:hover .header,
+  .one-two-column .column2 .size3.with-img.text-down:hover .header,
+  .single-column .column1 .size3.with-img.text-down:hover .header,
+  .two-one-column .column1 .size3.with-img.text-down:hover .header,
+  .two-one-one-column .column1 .size3.with-img.text-down:hover .header {
+    background: transparent!important;
+  }
+  .one-one-two-column .column3 .size2.with-img.text-down.subcolor_5,
+  .one-two-column .column2 .size2.with-img.text-down.subcolor_5,
+  .single-column .column1 .size2.with-img.text-down.subcolor_5,
+  .two-one-column .column1 .size2.with-img.text-down.subcolor_5,
+  .two-one-one-column .column1 .size2.with-img.text-down.subcolor_5,
+  .one-one-two-column .column3 .size3.with-img.text-down.subcolor_5,
+  .one-two-column .column2 .size3.with-img.text-down.subcolor_5,
+  .single-column .column1 .size3.with-img.text-down.subcolor_5,
+  .two-one-column .column1 .size3.with-img.text-down.subcolor_5,
+  .two-one-one-column .column1 .size3.with-img.text-down.subcolor_5 {
+    background: #eee;
   }
 }
 @media only screen and (max-width: 459px) {
