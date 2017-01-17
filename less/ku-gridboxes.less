@@ -2221,6 +2221,14 @@
       display: none;
     }
   }
+
+  // Videos
+  &.with-iframe {
+      background-color: @ku-gray;
+      &::before {
+          display: none;
+      }
+  }
   // Boxes with the title at the top
   &.text-top {
     .box1 {
@@ -2267,7 +2275,6 @@
         flex: 1;
 
         .header-small {
-          color: @gray-light;
           font-weight: bold;
           text-transform: uppercase;
           letter-spacing: 0.4px;
@@ -2276,6 +2283,7 @@
           .date {
             float: right;
             padding-left: 5px;
+            color: @gray-light;
           }
         }
 
@@ -3282,6 +3290,10 @@
 }
 @media only screen and (min-width: 870px) and (max-width: 1024px) {
   // All single culumns
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .two-one-one-column .column2,
+  .two-one-one-column .column3,
   .one-two-column .column1,
   .quad-column [class*=column],
   .triple-column [class*=column],
@@ -3996,7 +4008,53 @@
     }
   }
 }
+@media only screen and (min-width: 460px) and (max-width:680px) {
+    // Front page grid single columns
+    .one-one-two-column .column1,
+    .one-one-two-column .column2,
+    .two-one-one-column .column2,
+    .two-one-one-column .column3,
+    .quad-column [class*=column] {
+      .size2 {
+        &.with-img {
+          .box2 img {
+            max-width: none!important;
+            max-height: 155%!important;
+            transform: translateY(-50%) translateX(-50%) scale(1.2);
+          }
+        }
+      }
+      .size3 {
+        &.with-img {
+          .box2 img {
+              width: 100%;
+              max-width: none!important;
+              max-height: none!important;
+          }
+        }
+      }
+    }
+}
 @media only screen and (min-width: 460px) {
+    // Front page/ no left menu
+    .one-one-two-column .column3,
+    .two-one-one-column .column1 {
+      .size2, .size3 {
+        // Videos
+        &.with-iframe {
+            background-color: @ku-gray;
+            &::before {
+                display: none;
+            }
+            .box1 {
+                order: 2;
+            }
+            .box2 {
+                order: 1;
+            }
+        }
+      }
+    }
   .one-one-two-column .column3,
   .one-two-column .column2,
   .single-column .column1,
