@@ -1,0 +1,181 @@
+// Jump board for front page
+
+.jumpboard {
+  background: @gray-lighter;
+  // padding: 23px 0;
+  @media (max-width: @screen-xs-max) {
+    padding: 0;
+    background: #f8f8f5;
+  }
+  @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+    padding: @grid-gutter-width;
+  }
+  position: relative;
+
+  .jumpcolumn {
+    border-right: 1px solid @white-color;
+    height: 160px;
+    // padding: 0 23px;
+    position: relative;
+    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+      &.col-sm-6:nth-child(3) {
+        clear: left;
+      }
+      @media (max-width: @screen-xs-max) {
+        height: auto;
+        padding: 0 !important;
+        border-right: 0;
+      }
+    }
+    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+      border-right: 0;
+    }
+
+    &:first-child {
+      padding-left: 40px;
+      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+        padding-left: @grid-gutter-width;
+      }
+      @media (max-width: @screen-xs-max) {
+        .jumpheading {
+          border-top: 1px solid @gray;
+        }
+      }
+    }
+
+    &:last-child {
+      border-right: 0;
+      width: 20%;
+    }
+    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+      .jumpcolumn:nth-child(1),
+      .jumpcolumn:nth-child(2) {
+        border-bottom: 1px solid #fff;
+        padding-bottom: (@grid-gutter-width / 2);
+        margin-bottom: (@grid-gutter-width / 2);
+        height: 182px!important;
+      }
+    }
+
+    .jumpheading {
+      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+        padding-left: 6%;
+      }
+
+      &:after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        color: @ku-jumpboard;
+        content: '\0043';
+        font-family: 'arrow';
+        font-size: 0.6em;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        margin-left: 3px;
+        z-index: 2;
+        @media (max-width: @screen-xs-max) {
+          font-size: 1rem;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      @media (max-width: @screen-xs-max) {
+        border-bottom: 1px solid #ccc;
+        background: #eee;
+        font-size: 1.5em!important;
+        font-weight: bold;
+        margin: 0;
+        padding: 7px 20px 10px;
+
+        a {
+          display: block;
+        }
+      }
+    }
+
+    .jumplinks {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+        margin-right: 10px;
+        padding-left: 6%;
+      }
+
+      li {
+        color: @ku-jumpboard-links;
+        display: block;
+        font-size: 1.081em;
+        font-weight: 700;
+        line-height: 20px;
+        margin: 5px 0;
+        padding: 0;
+        @media (max-width: @screen-xs-max) {
+          border-bottom: 1px solid @gray;
+          margin: 0;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+
+        a {
+          color: inherit;
+          display: block;
+          font-size: 1.081em;
+          font-weight: 700;
+          line-height: 20px;
+          padding: 0;
+          @media (max-width: @screen-xs-max) {
+            padding: 10px 20px 12px;
+            //display: block;
+            &:active,
+            &:focus,
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+        }
+
+        a.padlock {
+          &:after {
+            background-size: contain;
+            background: url('http://cms.ku.dk/fa-sites/forside/img/padlock.svg') no-repeat;
+            content: " ";
+            display: inline-block;
+            height: 14px;
+            left: 6px;
+            position: relative;
+            top: 2px;
+            width: 14px;
+          }
+        }
+      }
+    }
+    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
+      .long-break {
+        width: 170px;
+      }
+    }
+  }
+}
+
+#content {
+  .jumpboard {
+    .jumpcolumn {
+      .jumpheading {
+        color: @ku-jumpboard!important;
+        font-size: 2em!important;
+        margin: 0 0 11px;
+        position: relative;
+
+        a {
+          color: inherit!important;
+        }
+      }
+    }
+  }
+}
