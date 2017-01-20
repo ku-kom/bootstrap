@@ -2,8 +2,8 @@
 
 .jumpboard {
   background: @gray-lighter;
-  // padding: 23px 0;
-  @media (max-width: @screen-xs-max) {
+  padding: @grid-gutter-height 0;
+  @media (max-width: @screen-phone) {
     padding: 0;
     background: #f8f8f5;
   }
@@ -15,13 +15,13 @@
   .jumpcolumn {
     border-right: 1px solid @white-color;
     height: 160px;
-    // padding: 0 23px;
+    padding: 0 @grid-gutter-height;
     position: relative;
     @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
       &.col-sm-6:nth-child(3) {
         clear: left;
       }
-      @media (max-width: @screen-xs-max) {
+      @media (max-width: @screen-phone) {
         height: auto;
         padding: 0 !important;
         border-right: 0;
@@ -32,20 +32,23 @@
     }
 
     &:first-child {
+        @media (min-width: @screen-sm) {
       padding-left: 40px;
+  }
       @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
         padding-left: @grid-gutter-width;
       }
-      @media (max-width: @screen-xs-max) {
+      @media (max-width: @screen-phone) {
         .jumpheading {
           border-top: 1px solid @gray;
         }
       }
     }
-
-    &:last-child {
-      border-right: 0;
-      width: 20%;
+    @media (min-width: @screen-xs-max) {
+      &:last-child {
+        border-right: 0;
+        width: 20%;
+      }
     }
     @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
       .jumpcolumn:nth-child(1),
@@ -58,6 +61,14 @@
     }
 
     .jumpheading {
+      color: @ku-jumpboard;
+      font-size: 2em;
+      margin: 0 0 11px;
+      position: relative;
+
+      a {
+        color: inherit!important;
+      }
       @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
         padding-left: 6%;
       }
@@ -74,7 +85,7 @@
         line-height: 1;
         margin-left: 3px;
         z-index: 2;
-        @media (max-width: @screen-xs-max) {
+        @media (max-width: @screen-phone) {
           font-size: 1rem;
           position: absolute;
           right: 20px;
@@ -82,7 +93,7 @@
           transform: translateY(-50%);
         }
       }
-      @media (max-width: @screen-xs-max) {
+      @media (max-width: @screen-phone) {
         border-bottom: 1px solid #ccc;
         background: #eee;
         font-size: 1.5em!important;
@@ -113,7 +124,7 @@
         line-height: 20px;
         margin: 5px 0;
         padding: 0;
-        @media (max-width: @screen-xs-max) {
+        @media (max-width: @screen-phone) {
           border-bottom: 1px solid @gray;
           margin: 0;
 
@@ -129,7 +140,7 @@
           font-weight: 700;
           line-height: 20px;
           padding: 0;
-          @media (max-width: @screen-xs-max) {
+          @media (max-width: @screen-phone) {
             padding: 10px 20px 12px;
             //display: block;
             &:active,
@@ -158,23 +169,6 @@
     @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
       .long-break {
         width: 170px;
-      }
-    }
-  }
-}
-
-#content {
-  .jumpboard {
-    .jumpcolumn {
-      .jumpheading {
-        color: @ku-jumpboard!important;
-        font-size: 2em!important;
-        margin: 0 0 11px;
-        position: relative;
-
-        a {
-          color: inherit!important;
-        }
       }
     }
   }

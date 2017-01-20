@@ -2150,7 +2150,7 @@
       color: inherit;
       font-size: 1.2em;
       text-transform: uppercase;
-      padding: 8px 15px 6px @padding10;
+      padding: 8px 18px 6px @padding10;
       font-weight: 700;
       letter-spacing: 0.4px;
       width: 100%;
@@ -2172,6 +2172,12 @@
     right: @margin10;
     position: absolute;
     z-index: 5;
+  }
+  // Hide arrow
+  &.no-arrow {
+    &::before {
+      display: none;
+    }
   }
 
   &.with-img {
@@ -2227,6 +2233,10 @@
 
     &::before {
       display: none;
+    }
+
+    .header {
+      border-right: 5px solid transparent;
     }
   }
   // Boxes with the title at the top
@@ -2707,6 +2717,17 @@
 
       .box2 {
         flex: 0 1 235px;
+      }
+      // Video sizing
+      &.with-iframe {
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          flex: 0 1 325px;
+          order: 1;
+        }
       }
     }
     //Arrow for single column boxes
@@ -3375,15 +3396,23 @@
   }
 }
 @media only screen and (max-width: 869px) {
-    // Dynamic height for boxes without images
-    &:not(.with-img) {
-        &.outlined, &.full {
-            height: auto!important;
-            .text {
-                padding-bottom: 10px;
-            }
+  // Dynamic height for boxes without images
+  .gridbox {
+    &.size2,
+    &.size3 {
+      &:not(.with-img) {
+        &.full,
+        &.outlined {
+          height: auto!important;
+
+          .box1 {
+            flex: 1 1 auto;
+            padding-bottom: 5px;
+          }
         }
+      }
     }
+  }
 }
 @media only screen and (min-width: 681px) and (max-width: 869px) {
   // Front page / no menu
@@ -4022,6 +4051,26 @@
       }
     }
   }
+  // 2/3 columns
+  .one-two-column [class*=column],
+  .two-one-column [class*=column] {
+    .size2,
+    .size3 {
+      &.with-img {
+        // Video sizing
+        &.with-iframe {
+          .box1 {
+            order: 2;
+          }
+
+          .box2 {
+            flex: 0 1 325px;
+            order: 1;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 460px) and (max-width:680px) {
   // Front page grid single columns
@@ -4107,8 +4156,15 @@
         display: none;
       }
     }
-  }
 
+    &.with-iframe {
+      .header {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
   // All column types must behave like single column boxes
   .gcrow .gccolumn .gridbox {
     &.size1 {
@@ -4459,9 +4515,13 @@
     }
 
     &.size2 {
-
       &.with-img {
-          height: 220px;
+        height: 220px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
+
         .box2 {
           img {
             max-width: 171%!important;
@@ -4472,9 +4532,13 @@
     }
 
     &.size3 {
-
       &.with-img {
-          height: 170px;
+        height: 170px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
+
         .box2 {
           img {
             max-width: 136%!important;
@@ -4489,6 +4553,5 @@
         display: none;
       }
     }
-
   }
 }
