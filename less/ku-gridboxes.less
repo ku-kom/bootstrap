@@ -2458,6 +2458,70 @@
   }
 }
 // Obvius specific styling
+//Fix to make the box work in old Obvius rightbox
+// Obvius standard page fix
+
+.HTML,
+.Standard {
+  .gridbox {
+    div {
+      margin-bottom: 0 !important;
+    }
+
+    &.size2,
+    &.size3 {
+      &.outlined {
+        &.with-img {
+          .box1 {
+            order: 2;
+
+            .header {
+              white-space: nowrap;
+              overflow: hidden;
+              border-right: 25px solid transparent;
+            }
+          }
+
+          .box2 {
+            order: 1;
+          }
+
+          &::before {
+            color: @white-color;
+          }
+        }
+
+        .header {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .rightbox-normal {
+    .outlined {
+      &:hover {
+        border: 0;
+      }
+    }
+
+    .text-down {
+      .header {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 25px solid transparent;
+      }
+    }
+
+    .box2 {
+      img {
+        height: 100%!important;
+      }
+    }
+  }
+}
 // full width and 2/3 columns
 
 .one-one-two-column .column3,
@@ -2760,9 +2824,12 @@
 }
 // Outline style
 
+.HTML,
+.Standard,
 .double-column [class*=column],
 .one-two-column .column1,
 .quad-column [class*=column],
+.rightbox-normal,
 .triple-column [class*=column],
 .two-one-column .column2 {
   .size2,

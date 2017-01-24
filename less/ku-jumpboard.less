@@ -1,63 +1,25 @@
 // Jump board for front page
 
 .jumpboard {
-  background: @gray-lighter;
-  padding: @grid-gutter-height 0;
-  @media (max-width: @screen-phone) {
-    padding: 0;
-    background: #f8f8f5;
-  }
-  @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-    padding: @grid-gutter-width;
-  }
   position: relative;
+  padding: @grid-gutter-height 0;
+  background: rgb(238, 238, 238);
 
   .jumpcolumn {
-    border-right: 1px solid @white-color;
-    height: 160px;
-    padding: 0 @grid-gutter-height;
     position: relative;
-    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-      &.col-sm-6:nth-child(3) {
-        clear: left;
-      }
-      @media (max-width: @screen-phone) {
-        height: auto;
-        padding: 0 !important;
-        border-right: 0;
-      }
-    }
-    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-      border-right: 0;
-    }
+    padding: 0 @grid-gutter-height;
+    border-right: 1px solid @white-color;
+    width: 25%;
+    height: 160px;
+    float: left;
 
     &:first-child {
-        @media (min-width: @screen-sm) {
       padding-left: 40px;
-  }
-      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-        padding-left: @grid-gutter-width;
-      }
-      @media (max-width: @screen-phone) {
-        .jumpheading {
-          border-top: 1px solid @gray;
-        }
-      }
     }
-    @media (min-width: @screen-xs-max) {
-      &:last-child {
-        border-right: 0;
-        width: 20%;
-      }
-    }
-    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-      .jumpcolumn:nth-child(1),
-      .jumpcolumn:nth-child(2) {
-        border-bottom: 1px solid #fff;
-        padding-bottom: (@grid-gutter-width / 2);
-        margin-bottom: (@grid-gutter-width / 2);
-        height: 182px!important;
-      }
+
+    &:last-child {
+      width: 20%;
+      border-right: 0;
     }
 
     .jumpheading {
@@ -66,37 +28,123 @@
       margin: 0 0 11px;
       position: relative;
 
-      a {
-        color: inherit!important;
-      }
-      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-        padding-left: 6%;
-      }
-
       &:after {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        color: @ku-jumpboard;
-        content: '\0043';
         font-family: 'arrow';
-        font-size: 0.6em;
         font-style: normal;
         font-weight: normal;
         line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\0043';
+        color: inherit;
+        font-size: 0.6em;
         margin-left: 3px;
         z-index: 2;
-        @media (max-width: @screen-phone) {
-          font-size: 1rem;
-          position: absolute;
-          right: 20px;
-          top: 50%;
-          transform: translateY(-50%);
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    .jumplinks {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+
+      li {
+        margin: 5px 0;
+        padding: 0;
+        line-height: 20px;
+        font-size: 1.081em;
+        font-weight: 700;
+        color: @ku-jumpboard-links;
+        display: block;
+
+        a {
+          padding: 0;
+          line-height: 20px;
+          font-size: 1.081em;
+          font-weight: 700;
+          color: @ku-jumpboard;
+          display: block;
+        }
+
+        a.padlock {
+          &:after {
+            content: " ";
+            background: url('../../images/padlock_jumpboard.svg') no-repeat;
+            background-size: contain;
+            top: 2px;
+            left: 6px;
+            height: 14px;
+            width: 14px;
+            display: inline-block;
+            position: relative;
+          }
         }
       }
-      @media (max-width: @screen-phone) {
-        border-bottom: 1px solid #ccc;
-        background: #eee;
-        font-size: 1.5em!important;
+    }
+  }
+}
+@media only screen and (min-width: @screen-xs-max) and (max-width: @screen-sm) {
+  .jumpboard {
+    padding: @grid-gutter-height;
+
+    .jumpcolumn {
+      width: 50% !important;
+      float: left;
+      border-right: 0 !important;
+
+      &:first-child {
+        padding-left: @grid-gutter-height;
+      }
+
+      &:nth-child(1) {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        height: 182px !important;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        height: 182px !important;
+      }
+
+      .jumpheading {
+        padding-left: 6%;
+      }
+
+      .jumplinks {
+        margin-right: 10px;
+        padding-left: 6%;
+      }
+    }
+  }
+
+  .long-break {
+    width: 170px;
+  }
+}
+@media only screen and (max-width: @screen-xs-min) {
+  .jumpboard {
+    padding: 0;
+    background: #f8f8f5;
+
+    .jumpcolumn {
+      height: auto;
+      width: 100% !important;
+      float: none;
+      padding: 0 !important;
+      border-right: 0;
+
+      .jumpheading {
+        border-bottom: 1px solid @gray;
+        background: @gray-lighter;
+        font-size: 1.5em !important;
         font-weight: bold;
         margin: 0;
         padding: 7px 20px 10px;
@@ -104,71 +152,49 @@
         a {
           display: block;
         }
-      }
-    }
 
-    .jumplinks {
-      list-style: none;
-      margin: 0;
-      padding-left: 0;
-      @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-        margin-right: 10px;
-        padding-left: 6%;
+        &:after {
+          font-size: 1rem;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
       }
 
-      li {
-        color: @ku-jumpboard-links;
-        display: block;
-        font-size: 1.081em;
-        font-weight: 700;
-        line-height: 20px;
-        margin: 5px 0;
-        padding: 0;
-        @media (max-width: @screen-phone) {
+      &:first-child {
+        .jumpheading {
+          border-top: 1px solid @gray;
+        }
+      }
+
+      .jumplinks {
+        li {
           border-bottom: 1px solid @gray;
           margin: 0;
 
           &:last-child {
             margin: 0;
           }
-        }
 
-        a {
-          color: inherit;
-          display: block;
-          font-size: 1.081em;
-          font-weight: 700;
-          line-height: 20px;
-          padding: 0;
-          @media (max-width: @screen-phone) {
+          a {
             padding: 10px 20px 12px;
-            //display: block;
-            &:active,
-            &:focus,
+            display: block;
+
+            &:active {
+              background-color: @ku-jumpboard-list-bg;
+            }
+
             &:hover {
-              background-color: #f1f1f1;
+              background-color: @ku-jumpboard-list-bg;
+            }
+
+            &:focus {
+              background-color: @ku-jumpboard-list-bg;
             }
           }
         }
-
-        a.padlock {
-          &:after {
-            background-size: contain;
-            background: url('http://cms.ku.dk/fa-sites/forside/img/padlock.svg') no-repeat;
-            content: " ";
-            display: inline-block;
-            height: 14px;
-            left: 6px;
-            position: relative;
-            top: 2px;
-            width: 14px;
-          }
-        }
-      }
-    }
-    @media (min-width: @screen-phone) and (max-width: @screen-xs-max) {
-      .long-break {
-        width: 170px;
       }
     }
   }
