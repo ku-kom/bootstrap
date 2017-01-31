@@ -61,13 +61,14 @@ a {
   color: @link-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: @link-hover-color;
     text-decoration: @link-hover-decoration;
   }
 
   &:focus {
+     color: @link-hover-color;
+     text-decoration: none;
     .tab-focus();
   }
 }

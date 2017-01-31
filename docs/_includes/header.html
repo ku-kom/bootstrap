@@ -27,14 +27,9 @@
   <link href="data:text/css;charset=utf-8," data-href="../dist/css/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet">
 {% endif %}
 {% endif %}
-
-<!-- Documentation extras -->
 {% if site.github %}
+<!-- Documentation extras -->
 <link href="../assets/css/docs.min.css" rel="stylesheet">
-{% elsif page.slug == 'examples' %}
-<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link href="../../assets/css/src/pygments-manni.css" rel="stylesheet">
-{% else %}
 <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../assets/css/src/docs.css" rel="stylesheet">
@@ -47,11 +42,6 @@
 <!-- Bootstrap datetimepicker -->
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-{% if page.slug == 'examples' %}
-<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-{% else %}
-<script src="../assets/js/ie-emulation-modes-warning.js"></script>
-{% endif %}
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -62,7 +52,7 @@
 <!-- Favicons -->
 {% if page.slug == 'examples' %}
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<link rel="icon" href="../../favicon.ico">
+<link rel="icon" href="../../favicon_fa.ico">
 {% else %}
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
