@@ -20,13 +20,13 @@
   // Add title to local menu
   $left_menu.find('span.title-placeholder').replaceWith($localMenuTitle);
   $left_menu.append(
-      $('#leftmenu_2').clone().attr("id", 'leftmenu2-clone')
+      $('#leftmenu_2').clone().attr('id', 'leftmenu2-clone')
   );
   $topbar_menu.append(
-      $('#topbar_menu').clone().attr("id", 'topbar_menu-clone')
+      $('#topbar_menu').clone().attr('id', 'topbar_menu-clone')
   );
   $navbar_menu.append(
-      $('#navbar_menu').clone().attr("id", 'navbar_menu-clone')
+      $('#navbar_menu').clone().attr('id', 'navbar_menu-clone')
   );
 
   $container.find('ul').removeClass('dropdown-menu');
