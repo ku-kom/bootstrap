@@ -1,31 +1,28 @@
 //
 // Scaffolding
 // --------------------------------------------------
-
-
 // Reset the box-sizing
 //
 // Heads up! This reset may cause conflicts with some third-party widgets.
 // For recommendations on resolving such conflicts, see
 // http://getbootstrap.com/getting-started/#third-box-sizing
+
 * {
   .box-sizing(border-box);
 }
-*:before,
-*:after {
+
+*:after,
+*:before {
   .box-sizing(border-box);
 }
-
-
 // Body reset
-
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   height: 100%;
   @media (max-width: @screen-sm-min) {
-      overflow-x: hidden;
-      /* Prevent scroll on narrow devices */
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
   }
 }
 
@@ -39,24 +36,21 @@ body {
   flex-direction: column;
   height: 100%;
   @media (max-width: @screen-sm-min) {
-      overflow-x: hidden;
-      /* Prevent scroll on narrow devices */
+    font-size: @font-size-large;
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
   }
 }
-
 // Reset fonts for relevant elements
-input,
 button,
+input,
 select,
 textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
-
-
 // Links
-
 a {
   color: @link-color;
   text-decoration: none;
@@ -67,12 +61,11 @@ a {
   }
 
   &:focus {
-     color: @link-hover-color;
-     text-decoration: none;
+    color: @link-hover-color;
+    text-decoration: none;
     .tab-focus();
   }
 }
-
 // Figures
 //
 // We reset this here because previously Normalize had no `figure` margins. This
@@ -81,27 +74,22 @@ a {
 figure {
   margin: 0;
 }
-
-
 // Images
-
 img {
   vertical-align: middle;
 }
-
 // Responsive images (ensure images don't scale beyond their parents)
 .img-responsive {
   .img-responsive();
 }
-
 // Rounded corners
 .img-rounded {
   border-radius: @border-radius-large;
 }
-
 // Image thumbnails
 //
 // Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+
 .img-thumbnail {
   padding: @thumbnail-padding;
   line-height: @line-height-base;
@@ -109,27 +97,20 @@ img {
   border: 1px solid @thumbnail-border;
   border-radius: @thumbnail-border-radius;
   .transition(all .2s ease-in-out);
-
   // Keep them at most 100% wide
   .img-responsive(inline-block);
 }
-
 // Perfect circle
 .img-circle {
   border-radius: 50%; // set radius in percents
 }
-
-
 // Horizontal rules
-
 hr {
-  margin-top:    @margin10;
+  margin-top: @margin10;
   margin-bottom: @line-height-computed;
   border: 0;
   border-top: 1px solid @hr-border;
 }
-
-
 // Only display content to screen readers
 //
 // See: http://a11yproject.com/posts/how-to-hide-content
@@ -144,7 +125,6 @@ hr {
   clip: rect(0,0,0,0);
   border: 0;
 }
-
 // Use in conjunction with .sr-only to only display content when it's focused.
 // Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
 // Credit: HTML5 Boilerplate
@@ -160,7 +140,6 @@ hr {
     clip: auto;
   }
 }
-
 // iOS "clickable elements" fix for role="button"
 //
 // Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
