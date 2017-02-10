@@ -89,7 +89,7 @@
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          12px;
-@font-size-large:         ceil((@font-size-base * 1.168)); // ~14px (mobile)
+@font-size-large:         floor((@font-size-base * 1.167)); // ~14px (mobile)
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 @ku-branding-text-font-size: ceil((@font-size-base * 1.5)); //18px
 
@@ -805,6 +805,13 @@
 @panel-danger-text:           @state-danger-text;
 @panel-danger-border:         @state-danger-border;
 @panel-danger-heading-bg:     @state-danger-bg;
+
+// KU accordions
+@panel-accordion-text:           @text-color;
+@panel-accordion-border:         #b4b4b4;
+@panel-accordion-heading-bg:     #ededed;
+@panel-accordion-border-radius:  @border-radius-small;
+@panel-accordion-arrow-active:   #4c4c4c;
 
 
 //== Thumbnails
