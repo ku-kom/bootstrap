@@ -13,6 +13,8 @@ port:             9001
 url:              https://nanna-dk.github.io/ku.dk-bootstrap
 encoding:         UTF-8
 
+baseurl:          https://nanna-dk.github.io/ku.dk-bootstrap/
+
 gems:
   - jekyll-sitemap
 
