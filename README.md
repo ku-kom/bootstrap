@@ -1,4 +1,4 @@
-# [Bootstrap](http://getbootstrap.com)
+# [Bootstrap](https://github.com/nanna-dk/ku.dk-bootstrap)
 
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
 ![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
@@ -29,14 +29,14 @@ To get started, check out <http://getbootstrap.com>!
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.7.zip).
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
+* [Download the latest release](https://github.com/nanna-dk/ku.dk-bootstrap/archive/gh_pages.zip).
+* Clone the repo: `git clone https://github.com/nanna-dk/ku.dk-bootstrap.git`.
 * Install with [Bower](http://bower.io): `bower install bootstrap`.
 * Install with [npm](https://www.npmjs.com): `npm install bootstrap@3`.
 * Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
 * Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`.
 
-Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](https://nanna-dk.github.io/ku.dk-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 

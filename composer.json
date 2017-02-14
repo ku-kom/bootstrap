@@ -11,7 +11,7 @@
     "framework",
     "web"
   ],
-  "homepage": "http://getbootstrap.com",
+  "homepage": "https://github.com/nanna-dk/ku.dk-bootstrap",
   "authors": [
     {
       "name": "Mark Otto",
@@ -23,7 +23,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://github.com/nanna-dk/ku.dk-bootstrap/issues"
   },
   "license": "MIT",
   "extra": {

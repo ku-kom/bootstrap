@@ -14,13 +14,13 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              https://nanna-dk.github.io
+url:              https://nanna-dk.github.io/ku.dk-bootstrap
 encoding:         UTF-8
-baseurl:          /ku.dk-bootstrap
 
 gems:
   - jekyll-sitemap
 
 # Custom vars
 current_version:  3.3.7
+github:
 repo:             https://github.com/nanna-dk/ku.dk-bootstrap

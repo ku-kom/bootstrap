@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Bootstrap v3.3.7 (https://nanna-dk.github.io/ku.dk-bootstrap/)
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the MIT license
  */
