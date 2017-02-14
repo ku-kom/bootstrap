@@ -1,3 +1,6 @@
+title: University of Copenhagen website branding
+name: University of Copenhagen, Communications
+
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
@@ -10,10 +13,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              https://nanna-dk.github.io/ku.dk-bootstrap
+url:              "/" # https://nanna-dk.github.io/ku.dk-bootstrap
 encoding:         UTF-8
-
-baseurl:          https://nanna-dk.github.io/ku.dk-bootstrap/
 
 gems:
   - jekyll-sitemap

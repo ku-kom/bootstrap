@@ -13,11 +13,11 @@
 </title>
 <!-- Bootstrap core CSS -->
 {% if site.github %}
-<link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 {% elsif page.slug == 'examples' %}
 <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 {% else %}
-<link href="/dist/css/bootstrap.css" rel="stylesheet">
+<link href="../dist/css/bootstrap.css" rel="stylesheet">
 {% endif %}
 {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
   <!-- Optional Bootstrap Theme -->
@@ -34,17 +34,11 @@
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../assets/css/src/docs.css" rel="stylesheet">
 {% endif %}
-{% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
-<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="../assets/css/src/docs.css" rel="stylesheet">
-{% endif %}
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-{% if site.github %}
 <script>
   window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')
 </script>
-{% endif %}
 <!-- Bootstrap datetimepicker -->
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -58,7 +52,7 @@
 <!-- Favicons -->
 {% if page.slug == 'examples' %}
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<link rel="icon" href="../../images/favicons/favicon_fa.ico">
+<link rel="icon" href="../../favicon_fa.ico">
 {% else %}
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
