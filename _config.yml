@@ -14,8 +14,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              https://nanna-dk.github.io
-baseurl:          /ku.dk-bootstrap
+url:              https://nanna-dk.github.io/ku.dk-bootstrap
+#baseurl:          /ku.dk-bootstrap
 encoding:         UTF-8
 
 gems:
