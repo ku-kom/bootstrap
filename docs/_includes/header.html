@@ -21,10 +21,10 @@
 {% endif %}
 {% if site.github %}
 <!-- Documentation extras -->
-<link href="../assets/css/docs.min.css" rel="stylesheet">
-<link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="../assets/css/src/docs.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/docs.min.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/src/docs.css" rel="stylesheet">
 {% endif %}
 {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 {% if site.github %}
 <script>
-  window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')
+  window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery.min.js"><\/script>')
 </script>
 {% endif %}
 <!-- Bootstrap datetimepicker -->
@@ -52,6 +52,6 @@
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 {% else %}
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.url }}/favicon.ico">
 {% endif %}
