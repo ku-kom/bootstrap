@@ -13,7 +13,7 @@
 </title>
 <!-- Bootstrap core CSS -->
 {% if site.github %}
-<link href="{{ site.url }}/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 {% elsif page.slug == 'examples' %}
 <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 {% else %}
@@ -21,10 +21,10 @@
 {% endif %}
 {% if site.github %}
 <!-- Documentation extras -->
-<link href="{{ site.url }}/assets/css/docs.min.css" rel="stylesheet">
-<link href="{{ site.url }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link href="{{ site.url }}/assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="{{ site.url }}/assets/css/src/docs.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/src/docs.css" rel="stylesheet">
 {% endif %}
 {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
@@ -52,6 +52,6 @@
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 {% else %}
-<link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
-<link rel="icon" href="{{ site.url }}/favicon.ico">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 {% endif %}
