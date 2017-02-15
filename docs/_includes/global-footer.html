@@ -110,16 +110,16 @@
 <script src="../../custom/ku-mobile-menu.js"></script>
 {% endif %}
 {% if site.github %}
-<script src="{{ site.url }}/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
 {% elsif page.slug == 'examples' %}
 <script src="../../dist/js/bootstrap.min.js"></script>
 {% else %}
 <script src="../dist/js/bootstrap.js"></script>
 {% endif %}
 {% if site.github %}
-<script src="{{ site.url }}/assets/js/docs.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 {% for file in site.data.configBridge.paths.docsJs %}
 <script src="{{ file }}"></script>
 {% endfor %}
