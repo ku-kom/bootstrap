@@ -51,7 +51,7 @@ input[type="search"] {
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   margin-top: 1px \9; // IE8-9
   line-height: normal;
 }
@@ -137,7 +137,9 @@ output {
     border: 0;
     background-color: transparent;
   }
-
+  select& {
+      padding-top: 4px; // KU specific
+  }
   // Disabled and read-only inputs
   //
   // HTML5 says that controls under a fieldset > legend:first-child won't be
@@ -212,6 +214,9 @@ input[type="search"] {
 
 .form-group {
   margin-bottom: @form-group-margin-bottom;
+  .form-group { // KU
+      margin-bottom: 0;
+  }
 }
 
 
@@ -455,7 +460,7 @@ input[type="checkbox"] {
 .help-block {
   display: block; // account for any element using help-block
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: lighten(@text-color, 25%); // lighten the text some for contrast
 }
 

@@ -50,8 +50,10 @@
   <p>Extend the default collapse behavior to create an accordion with the panel component.</p>
 
   <div class="bs-example" data-example-id="collapse-accordion">
+    <button class="btn btn-default openall">Open all</button>
+    <button class="btn btn-default closeall">Close all</button>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
+      <div class="panel panel-accordion">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -65,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-accordion">
         <div class="panel-heading" role="tab" id="headingTwo">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -79,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-accordion">
         <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -96,8 +98,10 @@
     </div>
   </div><!-- /example -->
 {% highlight html %}
+<button class="btn btn-default openall">Open all</button>
+<button class="btn btn-default closeall">Close all</button>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
+  <div class="panel panel-accordion">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -111,7 +115,7 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
+  <div class="panel panel-accordion">
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -125,7 +129,7 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
+  <div class="panel panel-accordion">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -145,7 +149,7 @@
   <p>It's also possible to swap out <code>.panel-body</code>s with <code>.list-group</code>s.</p>
 
   <div class="panel-group" role="tablist">
-    <div class="panel panel-default">
+    <div class="panel panel-accordion">
       <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
         <h4 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">

@@ -1,0 +1,201 @@
+// Jump board for front page
+
+.jumpboard {
+  position: relative;
+  padding: @grid-gutter-height 0;
+  background: rgb(238, 238, 238);
+
+  .jumpcolumn {
+    position: relative;
+    padding: 0 @grid-gutter-height;
+    border-right: 1px solid @white-color;
+    width: 25%;
+    height: 160px;
+    float: left;
+
+    &:first-child {
+      padding-left: 40px;
+    }
+
+    &:last-child {
+      width: 20%;
+      border-right: 0;
+    }
+
+    .jumpheading {
+      color: @ku-jumpboard;
+      font-size: 2em;
+      margin: 0 0 11px;
+      position: relative;
+
+      &:after {
+        font-family: 'arrow';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\0043';
+        color: inherit;
+        font-size: 0.6em;
+        margin-left: 3px;
+        z-index: 2;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    .jumplinks {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+
+      li {
+        margin: 5px 0;
+        padding: 0;
+        line-height: 20px;
+        font-size: 1.081em;
+        font-weight: 700;
+        color: @ku-jumpboard-links;
+        display: block;
+
+        a {
+          padding: 0;
+          line-height: 20px;
+          font-size: 1.081em;
+          font-weight: 700;
+          color: @ku-jumpboard;
+          display: block;
+        }
+
+        a.padlock {
+          &:after {
+            content: " ";
+            background: url('../../images/padlock_jumpboard.svg') no-repeat;
+            background-size: contain;
+            top: 2px;
+            left: 6px;
+            height: 14px;
+            width: 14px;
+            display: inline-block;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: @screen-xs-max) and (max-width: @screen-sm) {
+  .jumpboard {
+    padding: @grid-gutter-height;
+
+    .jumpcolumn {
+      width: 50% !important;
+      float: left;
+      border-right: 0 !important;
+
+      &:first-child {
+        padding-left: @grid-gutter-height;
+      }
+
+      &:nth-child(1) {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        height: 182px !important;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        height: 182px !important;
+      }
+
+      .jumpheading {
+        padding-left: 6%;
+      }
+
+      .jumplinks {
+        margin-right: 10px;
+        padding-left: 6%;
+      }
+    }
+  }
+
+  .long-break {
+    width: 170px;
+  }
+}
+@media only screen and (max-width: @screen-xs-min) {
+  .jumpboard {
+    padding: 0;
+    background: #f8f8f5;
+
+    .jumpcolumn {
+      height: auto;
+      width: 100% !important;
+      float: none;
+      padding: 0 !important;
+      border-right: 0;
+
+      .jumpheading {
+        border-bottom: 1px solid @gray;
+        background: @gray-lighter;
+        font-size: 1.5em !important;
+        font-weight: bold;
+        margin: 0;
+        padding: 7px 20px 10px;
+
+        a {
+          display: block;
+        }
+
+        &:after {
+          font-size: 1rem;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+
+      &:first-child {
+        .jumpheading {
+          border-top: 1px solid @gray;
+        }
+      }
+
+      .jumplinks {
+        li {
+          border-bottom: 1px solid @gray;
+          margin: 0;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          a {
+            padding: 10px 20px 12px;
+            display: block;
+
+            &:active {
+              background-color: @ku-jumpboard-list-bg;
+            }
+
+            &:hover {
+              background-color: @ku-jumpboard-list-bg;
+            }
+
+            &:focus {
+              background-color: @ku-jumpboard-list-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

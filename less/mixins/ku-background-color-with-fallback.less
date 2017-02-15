@@ -1,0 +1,6 @@
+// Create background colors with transoparency and fallback
+
+.backgroundColorFix(@theColor, @theAlpha) {
+  background: (@theColor);
+  background: rgba(red(@theColor), green(@theColor), blue(@theColor), @theAlpha);
+}

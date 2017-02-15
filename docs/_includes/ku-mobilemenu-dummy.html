@@ -1,0 +1,118 @@
+{% if page.slug == "examples" %}
+<!-- Test mobile menu-->
+<div class="mm-panels mm-vertical">
+  <div class="mm-panel mm-vertical mm-opened mm-current" id="localmenu">
+    <ul class="mm-listview mm-vertical">
+      <li class="leftmenu-menu mm-opened mm-vertical">
+        Nannas testwebsted
+        <div class="mm-panel mm-vertical" id="mm-1">
+          <ul class="mm-listview mm-vertical">
+            <li class="">
+              <a href="/nanna-kom/jumpboard/?bootstrap=1">Jumpboard</a>
+            </li>
+            <li class="mm-vertical">
+              <a class="mm-next" href="#mm-26" data-target="#mm-26" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="/sigj/test/?bootstrap=1">Test</a>
+              <div class="mm-panel mm-vertical" id="mm-26">
+                <ul class="mm-listview mm-vertical">
+                  <li class="">
+                    <a href="/sigj/test/stooort_billede?bootstrap=1">Stoooort billede</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mm-panel mm-vertical" id="leftmenu2-clone">
+          <ul class="nav mm-listview mm-vertical">
+            <li><a href="http://cms.ku.dk/testarea/sigj">Signe på Testarea</a></li>
+            <li><a href="http://cmstest01.ku.dk/sigj">Signe på Obviustest</a></li>
+            <li><a href="http://wiki.ku.dk/webmanual">Webmanualen</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="topbar-menu mm-opened mm-vertical">
+        <div class="mm-panel mm-vertical" id="topbar_menu-clone">
+          <ul class="nav navbar-nav navbar-right mm-listview mm-vertical">
+            <li><a href="http://kalender.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Kalender']);">Kalender</a></li>
+            <li><a href="http://findvej.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Find-vej']);">Find vej</a></li>
+            <li><a href="http://www.ku.dk/vejviser/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Telefonbog']);">Telefonbog</a></li>
+            <li><a href="http://jobportal.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Job']);">Job</a></li>
+            <li><a href="http://velkommen.ku.dk/indeks/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'A-AA-indeks']);">A-Å-indeks</a></li>
+            <li><a href="https://intranet.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'KUnet']);">KUnet</a></li>
+            <!-- TODO: This link needs to be dynamic -->
+            <li>
+              <a class="eng" href="#">English
+							<span></span>
+						</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="navbar-menu mm-opened mm-vertical">
+        <div class="mm-panel mm-vertical" id="navbar_menu-clone">
+          <ul class="nav navbar-nav mm-listview mm-vertical">
+            <li class="dropdown mm-vertical">
+              <a class="mm-next" href="#mm-2" data-target="#mm-2" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Uddannelser på KU</a>
+              <div class="mm-panel mm-vertical" id="mm-2">
+                <ul class="mm-listview mm-vertical">
+                  <li><a href="#">Bachelor</a></li>
+                  <li><a href="#">Kandidat</a></li>
+                  <li><a href="#">Ph.d.</a></li>
+                  <li><a href="#">Efter- og videreuddannelse</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown mm-vertical">
+              <a class="mm-next" href="#mm-3" data-target="#mm-3" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forskning på KU</a>
+              <div class="mm-panel mm-vertical" id="mm-3">
+                <ul class="mm-listview mm-vertical">
+                  <li><a href="#">Styrkeområder</a></li>
+                  <li><a href="#">Forskningscentre</a></li>
+                  <li><a href="#">Ph.d.-programmer</a></li>
+                  <li><a href="#">Find en forsker</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Nyheder</a></li>
+            <li class="dropdown mm-vertical">
+              <a class="mm-next" href="#mm-4" data-target="#mm-4" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samarbejde</a>
+              <div class="mm-panel mm-vertical" id="mm-4">
+                <ul class="mm-listview mm-vertical">
+                  <li><a href="#">Internationalt</a></li>
+                  <li><a href="#">Erhverv</a></li>
+                  <li><a href="#">ErhvervsPhD</a></li>
+                  <li><a href="#">Skoler og gymnasier</a></li>
+                  <li><a href="#">Alumni</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown mm-vertical">
+              <a class="mm-next" href="#mm-5" data-target="#mm-5" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Besøg KU</a>
+              <div class="mm-panel mm-vertical" id="mm-5">
+                <ul class="mm-listview mm-vertical">
+                  <li><a href="#">Museer</a></li>
+                  <li><a href="#">Biblioteker</a></li>
+                  <li><a href="#">For skoler og gymnasier</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown mm-vertical">
+              <a class="mm-next" href="#mm-6" data-target="#mm-6" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om KU</a>
+              <div class="mm-panel mm-vertical" id="mm-6">
+                <ul class="mm-listview mm-vertical">
+                  <li><a href="#">Historie</a></li>
+                  <li><a href="#">Organisation</a></li>
+                  <li><a href="#">Ledelse</a></li>
+                  <li><a href="#">Fakulteter</a></li>
+                  <li><a href="#">Institutter</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endif %}

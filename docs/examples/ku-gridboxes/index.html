@@ -1,0 +1,249 @@
+---
+layout: examples
+title: KU standard template with grid boxes
+slug: examples
+---
+<main tabindex="0" id="content">
+  <div class="container ku-branding">
+    <div class="ku-branding-line">
+      <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
+      <div class="ku-branding-text">
+        <div class="ku-branding-text-major">Kommunikation</div>
+        <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
+      </div>
+    </div>
+  </div>
+   <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-4 col-md-3 hidden-xs ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-xs-8 col-md-9 main-content">
+        <div class="row">
+          <div class="col-md-6 col-md-12">
+            <h2>Faculty colors</h2>
+            <form>
+              <div class="form-group">
+                <label for="themes" class="control-label">Faculty colors</label>
+                <select id="themes" class="form-control">
+                  <option value="">-- Select Faculty --</option>
+                  <option value="theme-faelles">KU red</option>
+                  <option value="theme-hum">Hum</option>
+                  <option value="theme-sund">Sund</option>
+                  <option value="theme-science">Science</option>
+                  <option value="theme-jura">Jura</option>
+                  <option value="theme-samf">Samf</option>
+                  <option value="theme-teol">Teol</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub-theme" class="control-label">Faculty sub colors</label>
+                <select id="sub-theme" class="form-control">
+                  <option value="">-- Select color --</option>
+                  <option value="faculty_color">Faculty color</option>
+                  <option value="subcolor_1">Sub color 1</option>
+                  <option value="subcolor_2">Sub color 2</option>
+                  <option value="subcolor_3">Sub color 3</option>
+                  <option value="subcolor_4">Sub color 4</option>
+                  <option value="subcolor_5">Grey</option>
+                  <option value="subcolor_6">White</option>
+                  <option value="subcolor_7">Brown</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label class="control-label" for="checkbox-img">Med billede:</label>
+                  <input id="checkbox-img" type="checkbox" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 col-md-12">
+            <h2>Gridbox style</h2>
+            <form>
+              <div class="form-group">
+                <label for="style" class="control-label">Select box style</label>
+                <select id="style" class="form-control">
+                  <option value="">-- Select box style --</option>
+                  <option value="full">Full background color</option>
+                  <option value="outlined">With border</option>
+                  <option value="text-top">Text at the top</option>
+                  <option value="text-down text-over">Text at the bottom</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="height" class="control-label">Gridbox height</label>
+                <select id="height" class="form-control">
+                  <option value="">-- Select height --</option>
+                  <option value="size1">289px</option>
+                  <option value="size2">185px</option>
+                  <option value="size3">133px</option>
+                  <option value="size4">81px</option>
+                  <option value="size5">55px</option>
+                 </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#" class="boxlink">
+              <div class="gridbox">
+                <div class="box1">
+                  <div class="header">Header title</div>
+                  <div class="text">Nye rundvisninger i botanisk have</div>
+                </div>
+                <div class="box2">Lorem ipsum dolor sit amet, consectetur.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>
+<script type="text/javascript">
+$(function () {
+    $('#sub-theme').on('change', getsubTheme);
+    $('#style').on('change', getStyle);
+    $('#height').on('change', getHeight);
+    $('#themes').on('change', getClass);
+    $('#checkbox-img').change(function () {
+        var $this = $(".gridbox");
+        if ($('#checkbox-img').is(':checked')) {
+            $this.addClass('with-img');
+            $this.find('.box2').text('').append('<img src="http://cms.ku.dk/testarea/nanna/billeder/ku_work.png" alt="">').show();
+        } else {
+            $this.removeClass('with-img');
+            $this.find('.box2').find('img').hide();
+        }
+    });
+
+    function getClass(event) {
+        var themes = $(event.currentTarget);
+        var classToAdd = themes.find('option[value]:selected').map(function () {
+            return this.value;
+        }).get().join(' ');
+        var allClassess = themes.find('option[value]').map(function () {
+            return this.value ? this.value : null;
+        }).get().join(' ');
+        $('body').removeClass(allClassess).addClass(classToAdd);
+    }
+
+
+    function getsubTheme(event) {
+        var subTheme = $(event.currentTarget);
+        var classToAdd = subTheme.find('option[value]:selected').map(function () {
+            return this.value;
+        }).get().join(' ');
+
+        var allClassess = subTheme.find('option[value]').map(function () {
+            return this.value ? this.value : null;
+        }).get().join(' ');
+
+        $('.gridbox').removeClass(allClassess).addClass(classToAdd);
+    }
+
+    function getStyle(event) {
+        var style = $(event.currentTarget);
+        var classToAdd = style.find('option[value]:selected').map(function () {
+            return this.value;
+        }).get().join(' ');
+
+        var allClassess = style.find('option[value]').map(function () {
+            return this.value ? this.value : null;
+        }).get().join(' ');
+
+        $('.gridbox').removeClass(allClassess).addClass(classToAdd);
+    }
+
+    function getHeight(event) {
+        var height = $(event.currentTarget);
+        var classToAdd = height.find('option[value]:selected').map(function () {
+            return this.value;
+        }).get().join(' ');
+        var allClassess = height.find('option[value]').map(function () {
+            return this.value ? this.value : null;
+        }).get().join(' ');
+        $('.gridbox').removeClass(allClassess).addClass(classToAdd);
+    }
+});
+</script>

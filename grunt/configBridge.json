@@ -21,12 +21,12 @@
     "autoprefixerBrowsers": [
       "Android 2.3",
       "Android >= 4",
-      "Chrome >= 20",
-      "Firefox >= 24",
+      "Chrome >= 26",
+      "Firefox >= 30",
       "Explorer >= 8",
-      "iOS >= 6",
-      "Opera >= 12",
-      "Safari >= 6"
+      "iOS >= 7",
+      "Opera >= 20",
+      "Safari >= 8"
     ],
     "jqueryCheck": [
       "if (typeof jQuery === 'undefined') {",

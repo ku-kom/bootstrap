@@ -1,0 +1,55 @@
+//
+// KU top branding
+.ku-branding {
+  background-color: @white-color;
+  position: relative;
+  .ku-branding-logo {
+    height: @ku-branding-box-height;
+    width: 61px;
+    z-index: 10;
+    float: left;
+    position: relative;
+    bottom: -5px;
+    @media (max-width: @screen-sm-min) {
+        width: 50px;
+        bottom: -20px;
+    }
+  }
+  .ku-branding-text {
+    max-height: @ku-branding-box-height;
+    letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 86px;
+    padding-left: 2%;
+    .ku-branding-text-major {
+      font-size: @ku-branding-text-font-size;
+    }
+    .ku-branding-text-sub {
+      font-size: @font-size-large;
+      margin-top: 2px;
+    }
+  }
+  .ku-branding-line {
+    border-bottom: 1px solid @ku-red;
+    .theme-samf & {
+      border-bottom: 1px solid @samf;
+    }
+    .theme-hum & {
+      border-bottom: 1px solid @hum;
+    }
+    .theme-science & {
+      border-bottom: 1px solid @science;
+    }
+    .theme-sund & {
+      border-bottom: 1px solid @sund;
+    }
+    .theme-jura & {
+      border-bottom: 1px solid @jura;
+    }
+    .theme-teol & {
+      border-bottom: 1px solid @teol;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.7 (https://nanna-dk.github.io/ku.dk-bootstrap/)
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the MIT license
  */
 
@@ -14,6 +14,47 @@ if (typeof jQuery === 'undefined') {
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
   }
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: v3.3.7
+ * Custom script for University of Copenhagen: ku.dk
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // Check if the page is responsive
+  if ($('meta[name="viewport"]').length) {
+    var $responsiveEnabled = true;
+  }
+  var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
+  var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
+  var $cachedWidth = $('body').prop('clientWidth');
+
+  var collapseFooter = function (el, ev) {
+    if ($responsiveEnabled === true && $cachedWidth < 768) {
+      ev.preventDefault();
+      $(el).next('ul').slideToggle();
+      $(el).toggleClass('open');
+    } else {
+      $(el).next('ul').show();
+    }
+  };
+
+  $footerHeader.click(function (e) {
+    collapseFooter(this, e);
+  });
+
+  $(window).resize(function () {
+    var $newWidth = $('body').prop('clientWidth');
+    if ($responsiveEnabled === true && $newWidth !== $cachedWidth) {
+      $footerHeader.removeClass('open');
+      $footerColumn.removeAttr('style');
+      $cachedWidth = $newWidth;
+    }
+  });
 }(jQuery);
 
 /* ========================================================================
@@ -2375,3 +2416,71 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+/* ========================================================================
+ * Copyright 2017
+ * University of Copenhagen, Communications
+ * ========================================================================*/
+
+// Fix viewport width on Windows Phone: http://getbootstrap.com/getting-started/#support-ie10-width
+
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style');
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  );
+  document.querySelector('head').appendChild(msViewportStyle);
+}
+
+// Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
+$(function () {
+  var nua = navigator.userAgent;
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%');
+  }
+});
+
+$(document).ready(function () {
+  // Toggle icon in accordions
+  function toggleArrow(e) {
+    $(e.target)
+      .prev('.panel-heading')
+      .toggleClass('open');
+  }
+  $('.panel-group').on('hide.bs.collapse', toggleArrow);
+  $('.panel-group').on('show.bs.collapse', toggleArrow);
+
+  // Open / close all accordions
+  $('.closeall').click(function () {
+    $('.panel-collapse.in')
+      .collapse('hide');
+  });
+  $('.openall').click(function () {
+    $('.panel-collapse:not(".in")')
+      .collapse('show');
+  });
+
+  // Attach the `fileselect` event to all file inputs on the page
+  $(document).on('change', ':file', function () {
+    var $input = $(this),
+      numFiles = $input.get(0).files ? $input.get(0).files.length : 1,
+      label = $input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    $input.trigger('fileselect', [numFiles, label]);
+  });
+
+  // Watch for the custom `fileselect` event
+  $(document).ready(function () {
+    $(':file').on('fileselect', function (event, numFiles, label) {
+      var input = $(this).parents('.input-group').find(':text'),
+        log = numFiles > 1 ? numFiles + ' files selected' : label;
+      if (input.length) {
+        input.val(log);
+        //} else {
+        // if (log) console.log(log);
+      }
+    });
+  });
+});

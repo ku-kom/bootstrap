@@ -1,0 +1,49 @@
+// KU privacy policy box
+@media (min-width: @screen-xs-max) {
+  .privacy-policy {
+    display: none;  // remove when implemented
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: @zindex-navbar-fixed;
+    padding: @padding20;
+    color: @white-color;
+    .backgroundColorFix(lighten(@gray-light, 18%), .9);
+
+    .h2 {
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 2px;
+    }
+
+    .btn {
+      #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
+      color: @ku-red;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .laes_mere_cookies {
+      color: @ku-red;
+      display: block;
+
+      &:before {
+        content: "\00bb";
+        color: inherit;
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .privacy-policy {
+    display: none;
+  }
+}

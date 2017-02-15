@@ -1,0 +1,85 @@
+---
+layout: examples
+title: KU standard template with left menu and slideshow
+slug: examples
+---
+<main tabindex="0" id="content">
+  <div class="container ku-branding">
+    <div class="ku-branding-line">
+      <div class="ku-branding-logo"><img class="img-responsive" src="../../images/branding/ku.svg" alt="Københavns universitet"></div>
+      <div class="ku-branding-text">
+        <div class="ku-branding-text-major">Kommunikation</div>
+        <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
+      </div>
+    </div>
+  </div>
+   <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-4 col-md-3 ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-xs-8 col-md-9 main-content">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="slideshow">
+              <ul class="bxslider">
+                <li><a href="#"><img src="http://placehold.it/757x250?text=Slide+1" alt="" /></a></li>
+                <li><a href="#"><img src="http://placehold.it/757x250?text=Slide+2" alt="" /></a></li>
+                <li><a href="#"><img src="http://placehold.it/757x250?text=Slide+3" alt="" /></a></li>
+                <li><a href="#"><img src="http://placehold.it/757x250?text=Slide+4" alt="" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>
+<!-- BxSlider  -->
+<script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var cachedWidth = $(window).width();
+    var bxSettings = function() {
+      var desktop = { //Settings for desktop
+        auto: true,
+        pause: 3000,
+        controls: true,
+        autoHover: true,
+        easing: 'ease-in-out',
+        mode: 'fade',
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        keyboardEnabled: true,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      var mobile = { //settings for mobile devices
+        auto: true,
+        pause: 3000,
+        minSlides: 1,
+        maxSlides: 1,
+        shrinkItems: true,
+        mode: 'fade',
+        easing: 'ease-in-out',
+        controls: false,
+        onSliderLoad: function(currentIndex) {
+          $('.slideshow').css('visibility', 'visible');
+        }
+      };
+      return (cachedWidth < 769) ? mobile : desktop;
+    }
+    var slider = $('.bxslider').bxSlider(bxSettings());
+
+    $(window).resize(function() {
+      var newWidth = $(window).width();
+      if (newWidth !== cachedWidth) {
+        slider.reloadSlider(bxSettings());
+        cachedWidth = newWidth;
+      }
+    });
+  });
+</script>

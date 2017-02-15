@@ -1,0 +1,344 @@
+//
+// KU left menu
+// --------------------------------------------------
+@media screen and (min-width: @screen-xs-max) {
+  .ku-leftmenu {
+    .ku-navbar-header {
+      font-weight: bold;
+      margin-bottom: @grid-gutter-width;
+      padding-left: 6px;
+      border-left: 8px solid @ku-red;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          text-decoration: none;
+          color: @ku-red;
+        }
+      }
+
+      .theme-samf & {
+        border-left: 8px solid @samf;
+
+        a {
+          &:hover {
+            color: @samf;
+          }
+        }
+      }
+
+      .theme-hum & {
+        border-left: 8px solid @hum;
+
+        a {
+          &:hover {
+            color: @hum;
+          }
+        }
+      }
+
+      .theme-science & {
+        border-left: 8px solid @science;
+
+        a {
+          &:hover {
+            color: @science;
+          }
+        }
+      }
+
+      .theme-sund & {
+        border-left: 8px solid @sund;
+
+        a {
+          &:hover {
+            color: @sund;
+          }
+        }
+      }
+
+      .theme-jur & {
+        border-left: 8px solid @jura;
+
+        a {
+          &:hover {
+            color: @jura;
+          }
+        }
+      }
+
+      .theme-teo & {
+        border-left: 8px solid @teol;
+
+        a {
+          &:hover {
+            color: @teol;
+          }
+        }
+      }
+    }
+    // All levels
+    ul {
+      li {
+        position: relative;
+        display: block;
+
+        &.active {
+          > a,
+          a.active {
+            color: @ku-red;
+
+            .theme-samf & {
+              color: @samf;
+            }
+
+            .theme-hum & {
+              color: @hum;
+            }
+
+            .theme-science & {
+              color: @science;
+            }
+
+            .theme-sund & {
+              color: @sund;
+            }
+
+            .theme-jur & {
+              color: @jura;
+            }
+
+            .theme-teo & {
+              color: @teol;
+            }
+            font-weight: bold;
+          }
+        }
+
+        a {
+          color: @gray-dark;
+          font-size: 1em;
+          padding: 3px 5px 3px 15px;
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: @ku-red;
+
+            .theme-samf & {
+              color: @samf;
+            }
+
+            .theme-hum & {
+              color: @hum;
+            }
+
+            .theme-science & {
+              color: @science;
+            }
+
+            .theme-sund & {
+              color: @sund;
+            }
+
+            .theme-jur & {
+              color: @jura;
+            }
+
+            .theme-teo & {
+              color: @teol;
+            }
+            text-decoration: none;
+          }
+
+          &::before {
+            position: absolute;
+            left: 0;
+            top: 3px;
+          }
+        }
+      }
+    }
+
+    ul.nav {
+      //First level
+      > li {
+        > a {
+          &::before {
+            content: "\e080";
+            font-family: 'Glyphicons Halflings';
+            font-size: 8px;
+            color: @ku-red;
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+            .theme-samf & {
+              color: @samf;
+            }
+
+            .theme-hum & {
+              color: @hum;
+            }
+
+            .theme-science & {
+              color: @science;
+            }
+
+            .theme-sund & {
+              color: @sund;
+            }
+
+            .theme-jur & {
+              color: @jura;
+            }
+
+            .theme-teo & {
+              color: @teol;
+            }
+            border: 1px solid #d7d7d7;
+          }
+
+          &:hover {
+            &::before {
+              background-color: @ku-red;
+
+              .theme-samf & {
+                background-color: @samf;
+              }
+
+              .theme-hum & {
+                background-color: @hum;
+              }
+
+              .theme-science & {
+                background-color: @science;
+              }
+
+              .theme-sund & {
+                background-color: @sund;
+              }
+
+              .theme-jur & {
+                background-color: @jura;
+              }
+
+              .theme-teo & {
+                background-color: @teol;
+              }
+              color: @white-color;
+            }
+          }
+        }
+
+        ul {
+          // Second, third and fourth level
+          list-style-type: none;
+          padding-left: 15px;
+
+          li {
+            > a {
+              padding: 2px 5px 2px 10px;
+
+              &::before {
+                content: "\25A0";
+                color: @ku-red;
+
+                .theme-samf & {
+                  color: @samf;
+                }
+
+                .theme-hum & {
+                  color: @hum;
+                }
+
+                .theme-science & {
+                  color: @science;
+                }
+
+                .theme-sund & {
+                  color: @sund;
+                }
+
+                .theme-jur & {
+                  color: @jura;
+                }
+
+                .theme-teo & {
+                  color: @teol;
+                }
+                font-size: 9px;
+              }
+
+              &:hover::before {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu-seperator {
+      margin: @margin20 0;
+    }
+  }
+}
+@media (min-width: @screen-xs-max) and (max-width: @screen-md) {
+  .ku-leftmenu {
+    // Larger font for tablets
+    ul.nav {
+      > li {
+        font-size: 14px;
+
+        > a {
+          padding: 7px 5px 7px 13px;
+
+          &::before {
+            top: 10px;
+          }
+        }
+
+        ul li a {
+          padding: 5px 5px 5px 13px;
+
+          &::before {
+            top: 5px;
+          }
+        }
+      }
+    }
+
+    .menu-seperator {
+      margin: @margin10 0;
+    }
+  }
+}
+// Left menu slide in/out for mobiles
+@media (max-width: @screen-xs-max) {
+  .ku-leftmenu {
+    display: none;
+  }
+
+  .leftmenu-toggle {
+    position: fixed;
+    top: 0;
+    right: 8px;
+    z-index: 1040;
+    padding: 8px 10px;
+    background-color: @gray-light;
+
+    &:active,
+    &:hover {
+      background-color: @navbar-inverse-toggle-hover-bg;
+    }
+
+    &:focus {
+      background-color: @gray-light;
+    }
+  }
+}

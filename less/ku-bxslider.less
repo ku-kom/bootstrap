@@ -1,0 +1,208 @@
+//
+// BxSlider basic styling
+// --------------------------------------------------
+/** VARIABLES
+===================================*/
+@controls: '../../../images/bxslider/bxslider_controls.png';
+@loader: '../../../images/bxslider/bxslider_loader.gif';
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  // *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  transform: translatez(0);
+}
+.slideshow {
+  // Hides slideshow intil it's loaded
+  visibility: hidden;
+}
+.bx-wrapper {
+  .bx-controls-auto,
+  .bx-pager {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+  }
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(@loader) center center no-repeat @white-color;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper {
+  .bx-pager {
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    &.bx-default-pager a {
+      background: #666;
+      text-indent: -9999px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      margin: 0 5px;
+      outline: 0;
+      border-radius: 50%;
+      &.active,
+      &:focus,
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+  .bx-controls-auto .bx-controls-auto-item,
+  .bx-pager-item {
+    display: inline-block;
+    // *zoom: 1;
+    // *display: inline;
+  }
+  .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+  }
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper {
+  .bx-next,
+  .bx-prev {
+    &:after {
+      font-family: 'Glyphicons Halflings';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      font-size: 1.9em;
+      color: @gray-dark;
+      display: inline-block;
+    }
+  }
+  .bx-prev {
+    left: @margin10;
+    &:after {
+      content: '\e257';
+      left: 0;
+    }
+  }
+  .bx-next {
+    right: @margin10;
+    &:after {
+      content: '\e258';
+      right: 0;
+    }
+  }
+  // Display arrows on hover only
+  .bx-controls-direction a {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    position: absolute;
+    top: 50%;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    color: transparent;
+    line-height: 0;
+    &:active,
+    &:focus,
+    &:hover {
+      color: transparent;
+    }
+    &.disabled {
+      display: none;
+    }
+  }
+  &:hover {
+    .bx-controls-direction a {
+      opacity: 1;
+    }
+  }
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+  .bx-start,
+  .bx-stop {
+    background: url("@controls") no-repeat;
+  }
+  .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background-position: -86px -11px;
+    margin: 0 3px;
+    &.active,
+    &:focus,
+    &:hover {
+      background-position: -86px 0;
+    }
+  }
+  .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background-position: -86px -44px;
+    margin: 0 3px;
+    &.active,
+    &:focus,
+    &:hover {
+      background-position: -86px -33px;
+    }
+  }
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper {
+  .bx-controls.bx-has-controls-auto.bx-has-pager {
+    .bx-pager {
+      text-align: left;
+      width: 80%;
+    }
+    .bx-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+  span {
+    color: @white-color;
+    display: block;
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}

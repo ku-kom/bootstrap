@@ -3,20 +3,20 @@
   <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     {% include header.html %}
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
   </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
-    <a href="http://blog.getbootstrap.com/2015/12/08/bootstrap-4-alpha-2/" class="v4-tease">Aww yeah, Bootstrap 4 is coming!</a>
 
     <!-- Docs master nav -->
     {% include nav/main.html %}
 
+    <main>
     <!-- Docs page layout -->
     <div class="bs-docs-header" id="content" tabindex="-1">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
-        {% include ads.html %}
       </div>
     </div>
 
@@ -49,17 +49,12 @@
             <a class="back-to-top" href="#top">
               Back to top
             </a>
-            {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
-            <a href="#" class="bs-docs-theme-toggle" role="button">
-              Preview theme
-            </a>
-            {% endif %}
           </nav>
         </div>
         {% endunless %}
       </div>
     </div>
-
-    {% include footer.html %}
+</main>
+    {% include global-footer.html %}
   </body>
 </html>

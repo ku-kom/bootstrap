@@ -3,6 +3,7 @@
 
   <h2 id="forms-example">Basic example</h2>
   <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+  <p><a href="../examples/ku-formvalidation/">See example of forms wil form dynamic front-end validation here</a>.</p>
   <div class="bs-example" data-example-id="basic-forms">
     <form>
       <div class="form-group">
@@ -252,6 +253,29 @@
   </div><!-- /.bs-example -->
 {% highlight html %}
 <textarea class="form-control" rows="3"></textarea>
+{% endhighlight %}
+
+<h3>File upload</h3>
+<p>Form control which supports custom file upload.</p>
+<div class="bs-example" data-example-id="fileupload-form-control">
+    <div class="input-group">
+        <label class="input-group-btn">
+            <span class="btn btn-file" title="Gennemse">
+                <span class="sr-only sr-only-focusable">Gennemse</span> <input type="file" multiple="">
+            </span>
+        </label>
+        <input type="text" class="form-control" placeholder="Tilføj vedhæftning(er)" readonly="">
+    </div>
+</div><!-- /.bs-example -->
+{% highlight html %}
+<div class="input-group">
+    <label class="input-group-btn">
+        <span class="btn btn-file" title="Gennemse">
+            <span class="sr-only sr-only-focusable">Gennemse</span> <input type="file" multiple="">
+        </span>
+    </label>
+    <input type="text" class="form-control" placeholder="Tilføj vedhæftning(er)" readonly="">
+</div>
 {% endhighlight %}
 
   <h3>Checkboxes and radios</h3>
@@ -1026,4 +1050,3 @@
   </div>
 </div>
 {% endhighlight %}
-

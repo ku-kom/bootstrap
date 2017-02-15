@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
+      <nav class="jumpbox" aria-label="Spring til indhold på Siden" title="Spring til Indhold på Siden">
+          <ul class="jump">
+              <li>
+                  <a href="#navbar" title="Spring til sidens globalmenu" accesskey="1" class="btn btn-small btn-gray"><i class="glyphicon glyphicon-menu-hamburger"></i>
+                  <span>Emnenavigation</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#searchinput" title="Spring til Søgning" accesskey="2" class="btn btn-small btn-gray"><i class="glyphicon glyphicon-search"></i>
+                      <span>Søgning</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#content" title="Spring til Indhold på Siden" accesskey="3" class="btn btn-small btn-gray"><i class="glyphicon glyphicon-list"></i>
+                      <span>Indhold</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#footer" title="Spring til footerlinks" accesskey="4" class="btn btn-small btn-gray"><i class="glyphicon glyphicon-list"></i>
+                  <span>Footerbunks</span>
+              </a>
+              </li>
+          </ul>
+      </nav>
+    <!-- Ku top navigation -->
+    {% include nav/ku-nav.html %}
+    {{ content }}
+    {% include ku-privacypolicy.html %}
+    {% include global-footer.html %}
+  </body>
+</html>

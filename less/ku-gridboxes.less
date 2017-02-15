@@ -1,0 +1,4669 @@
+//
+// KU custom grid box styling
+// --------------------------------------------------
+// Grid box styles
+// ------------------
+// outlined: with border color
+// full: with full background color
+// text-top: text-bar at the top
+// text-down: text-bar at the bottom
+// Grid box sizes
+@gridbox0: 370px; // Special news box size
+@gridbox1: 289px; // .size1
+@gridbox2: 185px; // .size2
+@gridbox3: 133px; // .size3
+@gridbox4: 81px; // .size4
+@gridbox5: 55px; // .size5
+// KU colors
+@ku-gridbox-text: #606060;
+@brown: #625757;
+@brown-hover: #4d4444; //@red: #901a1e;
+//@red-hover: #7b161a;
+@blue: #a1c5c8;
+@blue-hover: #7ea5a8;
+@green: #85ae33;
+@green-hover: #75992c;
+@ku-gray: #eee;
+@ku-gray-hover: #f5f5f5;
+@ku-darkgray: #b5b5b5;
+@ku-darkgray-hover: #a1a1a1;
+@ku-darkblue: #42759b;
+@ku-darkblue-hover: #3b688a;
+@white-color-hover: #ebebeb; // Faculty sub colors (Faculty colors are located in variables.less)
+//Science
+@science-sub_1: #dfaf48;
+@science-sub_1-hover: #c99e40;
+@science-sub_2: #a4c1a9;
+@science-sub_2-hover: #93ad98;
+@science-sub_3: #bea986;
+@science-sub_3-hover: #ab9979;
+@science-sub_4: #85a8ae;
+@science-sub_4-hover: #749399; //Hum
+@hum-sub_1: #1d2e4a;
+@hum-sub_1-hover: #131e30;
+@hum-sub_2: #b7b5b5;
+@hum-sub_2-hover: #a3a2a2;
+@hum-sub_3: #7d899b;
+@hum-sub_3-hover: #6b7585;
+@hum-sub_4: #e7400d;
+@hum-sub_4-hover: #d13a0d; //Teol
+@teol-sub_1: #d8680b;
+@teol-sub_1-hover: #c45e0a;
+@teol-sub_2: #093f50;
+@teol-sub_2-hover: #062a36;
+@teol-sub_3: #84bfcc;
+@teol-sub_3-hover: #77acb8;
+@teol-sub_4: #c8d351;
+@teol-sub_4-hover: #b5bf49; //Sund
+@sund-sub_1: #77b6e5;
+@sund-sub_1-hover: #6da6d1;
+@sund-sub_2: #0f4576;
+@sund-sub_2-hover: #0c355c;
+@sund-sub_3: #00706e;
+@sund-sub_3-hover: #005958;
+@sund-sub_4: #b0d54e;
+@sund-sub_4-hover: #a1c248; //Samf
+@samf-sub_1: #2a3d66;
+@samf-sub_1-hover: #213152;
+@samf-sub_2: #a0b763;
+@samf-sub_2-hover: #8fa358;
+@samf-sub_3: #95c1b0;
+@samf-sub_3-hover: #86ad9e;
+@samf-sub_4: #7d8a8b;
+@samf-sub_4-hover: #6c7778; //Jura
+@jura-sub_1: #ffb400;
+@jura-sub_1-hover: #eba400;
+@jura-sub_2: #33838a;
+@jura-sub_2-hover: #2b6f75;
+@jura-sub_3: #ccc6ae;
+@jura-sub_3-hover: #b8b29c;
+@jura-sub_4: #a3650c;
+@jura-sub_4-hover: #8f570a;
+
+.gridbox * {
+  box-sizing: border-box;
+}
+
+.gridbox {
+  width: 100%;
+  position: relative;
+  line-height: @line-height-base;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &:hover {
+    img {
+      filter: brightness(90%);
+    }
+  }
+
+  .text {
+    font-size: 13px;
+    color: @ku-gridbox-text;
+  }
+
+  .theme-faelles & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@ku-red, 83%)!important;
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @ku-red;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @ku-red;
+        color: @ku-red!important;
+
+        &::before {
+          color: @ku-red;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @ku-red-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-red-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @ku-red;
+        color: @white-color;
+
+        &:hover {
+          background: @ku-red-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @ku-red-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@blue, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @blue;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @blue;
+        color: @blue!important;
+
+        &::before {
+          color: @blue;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @blue-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @blue-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @blue;
+        color: @white-color;
+
+        &:hover {
+          background: @blue-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @blue-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@green, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @green;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @green;
+        color: @green!important;
+
+        &::before {
+          color: @green;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @green-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @green-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @green;
+        color: @white-color;
+
+        &:hover {
+          background: @green-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @green-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@ku-darkgray, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @ku-darkgray;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @ku-darkgray;
+        color: @ku-gridbox-text!important;
+
+        &::before {
+          color: @ku-gridbox-text;
+        }
+
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @ku-darkgray-hover!important;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-gray-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @ku-darkgray;
+        color: @white-color;
+
+        &:hover {
+          background: @ku-darkgray-hover!important;
+        }
+
+        &.subcolor_3 {
+          &::before {
+            color: @white-color;
+          }
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @ku-darkgray-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      color: @white-color;
+
+      &.text-down {
+        .header {
+          background: fade(@ku-darkblue, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          color: @white-color;
+          background: @ku-darkblue;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @ku-darkblue;
+        color: @ku-darkblue!important;
+
+        &::before {
+          color: @ku-darkblue;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @ku-darkblue-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @ku-darkblue-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @ku-darkblue;
+
+        &:hover {
+          background: @ku-darkblue-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @ku-darkblue-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-science & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@science, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science;
+        color: @science!important;
+
+        &::before {
+          color: @science;
+        }
+
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @science-hover!important;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science;
+        color: @white-color;
+
+        &:hover {
+          background: @science-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_1;
+        color: @science-sub_1!important;
+
+        &::before {
+          color: @science-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_2;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_2;
+        color: @science-sub_2!important;
+
+        &::before {
+          color: @science-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_3;
+        color: @science-sub_3;
+
+        &::before {
+          color: @science-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_4;
+        color: @science-sub_4!important;
+
+        &::before {
+          color: @science-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-hum & {
+    &.full {
+      background: @hum;
+      color: @white-color;
+    }
+
+    &.outlined {
+      border: 1px solid @hum;
+    }
+
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@hum, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @hum;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum;
+        color: @hum!important;
+
+        &::before {
+          color: @hum;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @hum;
+        color: @white-color;
+
+        &:hover {
+          background: @hum-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @hum-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@hum-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @hum-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum-sub_1;
+        color: @hum-sub_1!important;
+
+        &::before {
+          color: @hum-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @hum-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @hum-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @hum-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@hum-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @hum-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum-sub_2;
+        color: @ku-gridbox-text!important;
+
+        &::before {
+          color: @ku-gridbox-text;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @hum-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @hum-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @hum-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@hum-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @hum-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum-sub_3;
+        color: @hum-sub_3!important;
+
+        &::before {
+          color: @hum-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @hum-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @hum-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @hum-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@hum-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @hum-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @hum-sub_4;
+        color: @hum-sub_4!important;
+
+        &::before {
+          color: @hum-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @hum-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @hum-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @hum-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @hum-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @hum-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-teol & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@teol, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @teol;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol;
+        color: @teol!important;
+
+        &::before {
+          color: @teol;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @teol;
+        color: @white-color;
+
+        &:hover {
+          background: @teol-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @teol-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@teol-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @teol-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol-sub_1;
+        color: @teol-sub_1!important;
+
+        &::before {
+          color: @teol-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @teol-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @teol-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @teol-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@teol-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @teol-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol-sub_2;
+        color: @teol-sub_2!important;
+
+        &::before {
+          color: @teol-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @teol-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @teol-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @teol-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@teol-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @teol-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol-sub_3;
+        color: @teol-sub_3!important;
+
+        &::before {
+          color: @teol-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @teol-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @teol-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @teol-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@teol-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @teol-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @teol-sub_4;
+        color: @teol-sub_4!important;
+
+        &::before {
+          color: @teol-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @teol-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @teol-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @teol-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @teol-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @teol-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-sund & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@sund, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund;
+        color: @sund!important;
+
+        &::before {
+          color: @sund;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_1;
+        color: @sund-sub_1!important;
+
+        &::before {
+          color: @sund-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_2;
+        color: @sund-sub_2!important;
+
+        &::before {
+          color: @sund-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_3;
+        color: @sund-sub_3!important;
+
+        &::before {
+          color: @sund-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_4;
+        color: @sund-sub_4!important;
+
+        &::before {
+          color: @sund-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-samf & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@samf, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @samf;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @samf;
+        color: @samf!important;
+
+        &::before {
+          color: @samf;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @samf;
+        color: @white-color;
+
+        &:hover {
+          background: @samf-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @samf-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@samf-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @samf-sub_1;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @samf-sub_1;
+        color: @samf-sub_1!important;
+
+        &::before {
+          color: @samf-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @samf-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @samf-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @samf-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@samf-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @samf-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @samf-sub_2;
+        color: @samf-sub_2!important;
+
+        &::before {
+          color: @samf-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @samf-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @samf-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @samf-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@samf-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @samf-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @samf-sub_3;
+        color: @samf-sub_3!important;
+
+        &::before {
+          color: @samf-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @samf-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @samf-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @samf-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@samf-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @samf-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @samf-sub_4;
+        color: @samf-sub_4!important;
+
+        &::before {
+          color: @samf-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @samf-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @samf-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @samf-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @samf-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @samf-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  .theme-jura & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@jura, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @jura;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura;
+        color: @jura!important;
+
+        &::before {
+          color: @jura;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @jura;
+        color: @white-color;
+
+        &:hover {
+          background: @jura-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @jura-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@jura-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @jura-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura-sub_1;
+        color: @jura-sub_1!important;
+
+        &::before {
+          color: @jura-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @jura-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @jura-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @jura-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@jura-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @jura-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura-sub_2;
+        color: @jura-sub_2!important;
+
+        &::before {
+          color: @jura-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @jura-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @jura-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @jura-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@jura-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @jura-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura-sub_3;
+        color: @jura-sub_3!important;
+
+        &::before {
+          color: @jura-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @jura-sub_3;
+
+        &:hover {
+          background: @jura-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @jura-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@jura-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @jura-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @jura-sub_4;
+        color: @jura-sub_4!important;
+
+        &::before {
+          color: @jura-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @jura-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @jura-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @jura-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @jura-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @jura-sub_4-hover!important;
+        }
+      }
+    }
+  }
+
+  &.subcolor_5 {
+    &.text-down {
+      .header {
+        background: fade(@ku-gray, 90%);
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @ku-gray;
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @ku-gray;
+      color: @ku-gridbox-text!important;
+
+      &::before {
+        color: @ku-gridbox-text!important;
+      }
+
+      &:hover {
+        background: #e7e7e7!important;
+        border: 1px solid #e7e7e7;
+      }
+
+      &.with-img {
+        &:hover {
+          background: #e7e7e7!important;
+          border: 1px solid #e7e7e7;
+        }
+      }
+    }
+
+    &.full {
+      background: @ku-gray;
+      color: @ku-gridbox-text;
+
+      &:hover {
+        background: #e7e7e7!important;
+      }
+
+      .header {
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: #e7e7e7!important;
+      }
+    }
+
+    &::before {
+      color: @ku-gridbox-text!important;
+    }
+
+    .text {
+      color: @ku-gridbox-text;
+    }
+  }
+
+  &.subcolor_6 {
+    &.text-down {
+      .header {
+        background: fade(@white-color, 90%);
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @white-color;
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @gray-dark;
+      color: @ku-gridbox-text!important;
+
+      &::before {
+        color: @ku-gridbox-text!important;
+      }
+
+      &:hover {
+        background: @white-color-hover!important;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @gray-dark;
+        }
+      }
+    }
+
+    &.full {
+      background: @white-color;
+      color: @ku-gridbox-text;
+
+      .header {
+        color: @ku-gridbox-text;
+      }
+
+      &::before {
+        color: @ku-gridbox-text;
+      }
+
+      &:hover {
+        background: @white-color-hover!important;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @white-color-hover!important;
+      }
+    }
+
+    &::before {
+      color: @ku-gridbox-text!important;
+    }
+
+    .text {
+      color: @ku-gridbox-text;
+    }
+  }
+
+  &.subcolor_7 {
+    &.text-down {
+      .header {
+        background: fade(@brown, 83%);
+        color: @white-color;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @brown;
+        color: @white-color;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @brown;
+      color: @ku-gridbox-text!important;
+
+      &::before {
+        color: @brown;
+      }
+
+      &:hover {
+        background: @white-color-hover!important;
+        border: 1px solid @brown-hover;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @brown-hover;
+        }
+      }
+    }
+
+    &.full {
+      background: @brown;
+      color: @white-color;
+
+      .header {
+        color: @white-color;
+      }
+
+      &:hover {
+        background: @brown-hover!important;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @brown-hover!important;
+      }
+    }
+
+    &::before {
+      color: @white-color;
+    }
+  }
+
+  .box1 {
+    z-index: 4;
+    order: 1;
+    flex: 0 1 auto;
+    position: relative;
+
+    .header {
+      color: inherit;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 8px 18px 6px @padding10;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      width: 100%;
+    }
+  }
+
+  .box2 {
+    padding: 5px @padding10 @padding10;
+    order: 2;
+    flex: 1 1 auto;
+  }
+  // Add an arrow to the box
+  &::before {
+    display: inline-block;
+    font-family: 'arrow';
+    content: '\0043';
+    color: @white-color;
+    bottom: 9px;
+    right: @margin10;
+    position: absolute;
+    z-index: 5;
+  }
+  // Hide arrow
+  &.no-arrow {
+    &::before {
+      display: none;
+    }
+  }
+
+  &.with-img {
+    // Boxes with img
+    .box2 {
+      position: relative;
+      padding: 0 !important;
+      overflow: hidden;
+      transform-style: preserve-3d;
+
+      img {
+        // Img inside the box adjusted by height and centered
+        display: block;
+        backface-visibility: hidden;
+        max-width: 100%;
+        height: auto;
+        -ms-interpolation-mode: bicubic;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+    // Position image left
+    &.img-left {
+      img {
+        left: 0;
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+    // Position image right
+    &.img-right {
+      img {
+        left: auto;
+        right: 0;
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+  }
+
+  &:not(.with-img) {
+    .box1 {
+      flex: 1 1 auto;
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+  // Videos
+  &.with-iframe {
+    background-color: @ku-gray;
+
+    &::before {
+      display: none;
+    }
+
+    .header {
+      border-right: 5px solid transparent;
+    }
+  }
+  // Boxes with the title at the top
+  &.text-top {
+    .box1 {
+      order: 1;
+    }
+
+    .box2 {
+      order: 2;
+    }
+
+    &::before {
+      top: @padding10;
+      bottom: auto;
+    }
+  }
+  // Boxes with the title at the bottom
+  &.text-down {
+    .box1 {
+      order: 2;
+    }
+
+    .box2 {
+      order: 1;
+    }
+  }
+  // Boxes with the text above the content
+  &.text-over {
+    .header {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: inherit;
+    }
+  }
+  // Height 298px
+  &.size1 {
+    height: @gridbox1;
+    background: @ku-gray;
+
+    &.with-img {
+      .box1 {
+        order: 2;
+        padding: 5px 10px 10px;
+        flex: 1;
+
+        .header-small {
+          font-weight: bold;
+          color: @gray-light;
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+          margin: 5px 0;
+
+          .date {
+            float: right;
+            padding-left: 5px;
+          }
+        }
+
+        .header {
+          color: @ku-news-gray;
+          font-size: 1.42em;
+          line-height: 1.399em;
+          text-transform: none;
+          padding: 0;
+          margin: 15px 0 5px;
+        }
+
+        .text {
+          display: none;
+          font-size: 1.1em;
+          font-weight: 400;
+          line-height: 1.45em;
+          padding: 0 15px 5px 0;
+          color: @gray-dark;
+        }
+      }
+    }
+
+    .box2 {
+      order: 1;
+      // image height
+      flex: 0 0 133px;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &:hover {
+      background: #e7e7e7;
+    }
+  }
+
+  &.outlined {
+    background: @white-color!important;
+
+    &:not(.with-img) {
+      // Boxes without img: hide box2, make .box1 100% height
+      .box1 {
+        flex: 0 1 100%;
+      }
+
+      .box2 {
+        display: none;
+      }
+    }
+
+    .text {
+      display: block;
+    }
+  }
+
+  .text {
+    padding: 0 25px 5px @padding10;
+    color: inherit;
+  }
+  // Height 185px
+  &.size2 {
+    height: @gridbox2;
+
+    &.with-img {
+      .box1 {
+        .text {
+          display: none;
+        }
+      }
+
+      .box2 {
+        img {
+          max-height: 108%!important;
+          max-width: none!important;
+        }
+      }
+    }
+
+    &:not(.with-img) {
+      .box1 {
+        flex: 0 1 100%;
+
+        .text {
+          display: block;
+        }
+      }
+    }
+  }
+  // Height 133px
+  &.size3 {
+    height: @gridbox3;
+
+    &.with-img {
+      .box1 {
+        .text {
+          display: none;
+        }
+      }
+
+      .box2 {
+        img {
+          max-width: 104%!important;
+          height: auto;
+        }
+      }
+    }
+
+    &:not(.with-img) {
+      .box1 {
+        flex: 0 1 100%;
+
+        .text {
+          display: block;
+        }
+      }
+    }
+  }
+  // Height 81px
+  &.size4 {
+    height: @gridbox4;
+
+    .box1 {
+      .text {
+        display: none;
+      }
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+  // Height 55px
+  &.size5 {
+    height: @gridbox5;
+
+    .box1 {
+      .header {
+        padding-bottom: 4px;
+      }
+
+      .text {
+        display: none;
+      }
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+}
+
+.boxlink {
+  color: inherit!important;
+  display: block;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+// Obvius specific styling
+//Fix to make the box work in old Obvius rightbox
+// Obvius standard page fix
+
+.EncyclopediaEntry,
+.HTML,
+.Standard {
+  .gridbox {
+    div {
+      margin-bottom: 0 !important;
+    }
+
+    &.size2,
+    &.size3 {
+      &.outlined {
+        &.with-img {
+          .box1 {
+            order: 2;
+
+            .header {
+              white-space: nowrap;
+              overflow: hidden;
+              border-right: 25px solid transparent;
+            }
+          }
+
+          .box2 {
+            order: 1;
+          }
+
+          &::before {
+            color: @white-color;
+          }
+        }
+
+        .header {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .rightbox-normal {
+    .outlined {
+      &:hover {
+        border: 0;
+      }
+    }
+
+    .text-down {
+      .header {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 25px solid transparent;
+      }
+    }
+
+    .box2 {
+      img {
+        height: 100%!important;
+      }
+    }
+  }
+}
+// full width and 2/3 columns
+
+.one-one-two-column .column3,
+.one-two-column .column2,
+.single-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1 {
+  .size4 {
+    .text {
+      display: block;
+    }
+  }
+
+  .size2,
+  .size3 {
+    &.with-img {
+      flex-direction: row;
+      color: @white-color;
+
+      .theme-faelles & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @ku-red;
+        }
+
+        &.subcolor_1 {
+          background: @blue;
+        }
+
+        &.subcolor_2 {
+          background: @green;
+        }
+
+        &.subcolor_3 {
+          background: @ku-darkgray;
+          color: @ku-gridbox-text;
+        }
+
+        &.subcolor_4 {
+          background: @ku-darkblue;
+        }
+      }
+
+      .theme-science & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @science;
+        }
+
+        &.subcolor_1 {
+          background: @science-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @science-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @science-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @science-sub_4;
+        }
+      }
+
+      .theme-hum & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @hum;
+        }
+
+        &.subcolor_1 {
+          background: @hum-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @hum-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @hum-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @hum-sub_4;
+        }
+      }
+
+      .theme-teol & {
+        &.faculty_color {
+          background: @teol;
+        }
+
+        &.subcolor_1 {
+          background: @teol-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @teol-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @teol-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @teol-sub_4;
+        }
+      }
+
+      .theme-sund & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @sund;
+        }
+
+        &.subcolor_1 {
+          background: @sund-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @sund-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @sund-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @sund-sub_4;
+        }
+      }
+
+      .theme-samf & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @samf;
+        }
+
+        &.subcolor_1 {
+          background: @samf-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @samf-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @samf-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @samf-sub_4;
+        }
+      }
+
+      .theme-jura & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @jura;
+        }
+
+        &.subcolor_1 {
+          background: @jura-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @jura-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @jura-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @jura-sub_4;
+        }
+      }
+
+      &.subcolor_5 {
+        //background: @ku-gray;
+      }
+
+      &.subcolor_6 {
+        background: @white-color;
+      }
+
+      &.subcolor_7 {
+        background: @brown;
+      }
+
+      &.text-over {
+        .header {
+          padding: 8px 5px 6px 10px;
+          bottom: auto;
+          left: auto;
+          position: relative;
+        }
+      }
+
+      &.text-down::before {
+        bottom: @margin10;
+        top: auto;
+      }
+
+      .box1 {
+        flex: 1;
+
+        .text {
+          display: block;
+        }
+      }
+
+      .box2 {
+        flex: 0 1 235px;
+      }
+
+      &.full {
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+
+      &.outlined {
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+// 2/3 columns
+
+.one-two-column .column2,
+.two-one-column .column1 {
+  .size2,
+  .size3 {
+    &.with-img {
+      .box1 {
+        flex: 1;
+      }
+
+      .box2 {
+        flex: 0 1 235px;
+      }
+      // Video sizing
+      &.with-iframe {
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          flex: 0 1 325px;
+          order: 1;
+        }
+      }
+    }
+    //Arrow for single column boxes
+    &.text-down {
+      &::before {
+        bottom: @margin10;
+      }
+    }
+  }
+
+  .size3 {
+    .text {
+      display: none;
+    }
+  }
+
+  .size1 {
+    &.with-img {
+      .text {
+        // Hide text part
+        display: none;
+      }
+
+      .box2 {
+        // image height
+        flex: 0 0 185px;
+      }
+    }
+  }
+}
+// Outline style
+
+.EncyclopediaEntry,
+.HTML,
+.Standard,
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.rightbox-normal,
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .size2,
+  .size3 {
+    &.outlined.with-img {
+      border-width: 0;
+
+      .theme-faelles & {
+        &.faculty_color {
+          .header {
+            background: fade(@ku-red, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@blue, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@green, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@ku-darkgray, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@ku-darkblue, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-science & {
+        &.faculty_color {
+          .header {
+            background: fade(@science, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@science-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@science-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@science-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@science-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-hum & {
+        &.faculty_color {
+          .header {
+            background: fade(@hum, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@hum-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@hum-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@hum-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@hum-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-teol & {
+        &.faculty_color {
+          .header {
+            background: fade(@teol, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@teol-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@teol-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@teol-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@teol-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-sund & {
+        &.faculty_color {
+          .header {
+            background: fade(@sund, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@sund-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@sund-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@sund-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@sund-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-samf & {
+        &.faculty_color {
+          .header {
+            background: fade(@samf, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@samf-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@samf-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@samf-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@samf-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      .theme-jura & {
+        &.faculty_color {
+          .header {
+            background: fade(@jura, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@jura-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@jura-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@jura-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@jura-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+
+      &.subcolor_5 {
+        .header {
+          background: fade(@ku-gray, 90%);
+          color: @ku-gridbox-text;
+        }
+      }
+
+      &.subcolor_6 {
+        .header {
+          background: fade(@white-color, 90%);
+          color: @ku-gridbox-text;
+        }
+      }
+
+      &.subcolor_7 {
+        .header {
+          background: fade(@brown, 83%);
+          color: @white-color;
+        }
+      }
+
+      .box1 {
+        order: 2;
+
+        .header {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          //color: inherit;
+        }
+      }
+
+      .box2 {
+        order: 1;
+      }
+      background: transparent;
+      color: @white-color;
+    }
+  }
+}
+@media only screen and (min-width: 870px) {
+  // Front page/ no left menu
+  .one-one-two-column .column3,
+  .two-one-one-column .column1 {
+    .size2 {
+      &.with-img {
+        .box2 img {
+          max-width: none!important;
+          max-height: none!important;
+          width: 100%!important;
+        }
+      }
+    }
+  }
+  // Display text for full width .size1 boxes
+  .single-column .column1 {
+    .size1 {
+      flex-direction: row;
+      background: @white-color;
+
+      &.with-img {
+        .box1 {
+          padding-left: 24px;
+          padding-right: 0;
+          flex: 0 1 51.6%;
+          max-width: 390px; // preventing that too much text will expand this box
+          order: 2;
+
+          .header-small {
+            margin: 0;
+          }
+
+          .header {
+            font-size: 3em;
+            font-weight: normal;
+            line-height: 1.11111em;
+          }
+
+          .text {
+            // Display text in desktop
+            display: block;
+            font-size: 1.18em;
+            padding: 5px 0;
+          }
+        }
+
+        .box2 {
+          // Flip image to the left
+          flex: 1;
+          order: 1;
+
+          img {
+            max-width: none!important;
+            max-height: 100%;
+          }
+        }
+
+        &:hover {
+          // New sort of underlining :-)
+          .header {
+            > span {
+              background-image: linear-gradient(rgba(74, 73, 73, 0.25) 0%, @gray-dark 100%);
+              background-repeat: repeat-x;
+              background-size: 1px 1px;
+              background-position: 0 93%;
+              text-shadow: 3px 0 @white-color, 2px 0 @white-color, 1px 0 @white-color, -1px 0 @white-color, -2px 0 @white-color, -3px 0 @white-color;
+            }
+          }
+        }
+      }
+      // Flip image to the right
+      &.img-flip-right {
+        .box1 {
+          padding-left: 0;
+          padding-right: 24px;
+        }
+
+        .box2 {
+          flex: 1;
+          order: 2;
+        }
+      }
+    }
+  }
+  // Header styling for single column boxes
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .one-three-column .column1,
+  .one-two-column .column1,
+  .quad-column [class*=column],
+  .three-one-column .column2,
+  .triple-column [class*=column],
+  .two-one-column .column2,
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
+    .size1 {
+      &.with-img {
+        .box2 {
+          img {
+            max-height: 100%;
+            width: auto;
+            max-width: none!important;
+          }
+        }
+      }
+    }
+
+    .size2,
+    .size3 {
+      &.full,
+      &.outlined,
+      &.with-img {
+        .header {
+          font-size: 1.1em;
+          font-weight: 700;
+          letter-spacing: 0.4px;
+          overflow: hidden;
+          white-space: nowrap;
+          padding: 8px 0 8px 10px;
+          border-right: 25px solid transparent;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // Flexbox fix for outlined with image (full width and 2/3 columns)
+  .one-one-two-column .column3,
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1,
+  .two-one-one-column .column1 {
+    .size2,
+    .size3 {
+      &.outlined,
+      &.with-img {
+        .box1 {
+          flex: 1;
+        }
+
+        .box2 {
+          img {
+            max-height: 100%!important;
+            max-width: none!important;
+            width: auto!important;
+          }
+        }
+      }
+    }
+  }
+  // Double columns
+  .double-column [class*=column] {
+    .size1 {
+      // Special news boxes for the news team
+      &.news {
+        height: @gridbox0;
+
+        &.with-img {
+          background-color: @white-color;
+          border: 1px solid #e5e4e4;
+
+          .box1 {
+            .header {
+              font-size: 1.7em;
+              font-weight: 600;
+              line-height: 26px;
+            }
+
+            .text {
+              display: block;
+            }
+          }
+
+          .box2 {
+            flex: 0 0 185px;
+          }
+        }
+      }
+
+      .box1 {
+        max-height: calc(@gridbox1 - 185px);
+      }
+
+      .box2 {
+        flex: 0 1 185px;
+      }
+    }
+
+    .size2,
+    .size3 {
+      &.outlined,
+      &.with-img {
+        .header {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // Large desktop arrow style for outlined with image
+  .double-column [class*=column],
+  .one-two-column .column1,
+  .triple-column [class*=column],
+  .two-one-column .column2 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.outlined {
+          &:hover {
+            border-width: 0!important;
+          }
+
+          .theme-faelles & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-science & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-hum & {
+            &::before {
+              color: @white-color;
+            }
+
+            &.subcolor_3 {
+              &::before {
+                color: @ku-gridbox-text;
+              }
+            }
+          }
+
+          .theme-teol & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-sund & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-samf & {
+            &::before {
+              color: @white-color;
+            }
+          }
+
+          .theme-jura & {
+            &::before {
+              color: @white-color;
+            }
+
+            &.subcolor_3 {
+              &::before {
+                color: @ku-gridbox-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 870px) and (max-width: 1024px) {
+  // All single culumns
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .one-two-column .column1,
+  .quad-column [class*=column],
+  .triple-column [class*=column],
+  .two-one-column .column2,
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
+    .size1 {
+      .box1 {
+        .header {
+          font-size: 1.3em;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+
+    .size2 {
+      &.with-img {
+        .box2 {
+          img {
+            max-width: 188%!important;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .size3 {
+      &.with-img {
+        .box2 {
+          img {
+            max-width: 136%!important;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 870px) and (max-width: 1077px) {
+  //Full width columns
+  .single-column .column1 {
+    .size1 {
+      &.with-img {
+        .box2 {
+          img {
+            max-height: 100%!important;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  // Double columns
+
+  .double-column [class*=column] {
+    .size1 {
+      &.with-img {
+        // Special news box for the news team
+        &.news {
+          .box2 {
+            img {
+              max-width: none!important;
+              height: auto;
+              max-height: 108%!important;
+            }
+          }
+        }
+
+        .box1 {
+          max-height: calc(@gridbox1 - 165px);
+        }
+
+        .box2 {
+          flex: 0 1 165px;
+
+          img {
+            max-height: 121%!important;
+          }
+        }
+      }
+    }
+  }
+
+  .FullWidthFrontpage.no-left-menu {
+    .double-column [class*=column] {
+      .size1 {
+        &.with-img {
+          .box2 {
+            img {
+              max-width: 100%!important;
+              max-height: none!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 869px) {
+  // Dynamic height for boxes without images
+    &.size2,
+    &.size3 {
+      &:not(.with-img) {
+        &.full,
+        &.outlined {
+          height: auto!important;
+
+          .box1 {
+            flex: 1 1 auto;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+}
+@media only screen and (min-width: 681px) and (max-width: 869px) {
+  // Front page / no menu
+  // 1/3 columns
+  .one-three-column .column1,
+  .three-one-column .column2 {
+    .size1 {
+      &.with-img {
+        flex-direction: row;
+
+        .box1 {
+          flex: 1;
+          order: 2;
+
+          .text {
+            display: block;
+          }
+        }
+
+        .box2 {
+          flex: 0 1 49%!important;
+          order: 1;
+
+          img {
+            max-width: none!important;
+            max-height: 108%!important;
+          }
+        }
+      }
+    }
+  }
+  // Front page/ no left menu
+  // one-one-two columns
+  .one-one-two-column .column3,
+  .two-one-one-column .column1 {
+    .size2,
+    .size3 {
+      // Videos
+      &.with-iframe {
+        .box2 {
+          flex: 0 1 49%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 680px) {
+  &.size1 {
+    &.with-img {
+      .box2 {
+        img {
+          transform: translateY(-50%) translateX(-50%) scale(1.12);
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 869px) {
+  &.size1 {
+    .box2 {
+      flex: 0 1 185px!important;
+      //Fix for iframe centering in .size1 boxes
+      iframe {
+        position: absolute;
+        top: -20%!important;
+      }
+    }
+  }
+  //
+  // All single, 2/3 and double comlumn boxes with image
+  .double-column [class*=column],
+  .one-two-column .column1,
+  .triple-column [class*=column],
+  .two-one-column .column2 {
+    .size2,
+    .size3 {
+      &.with-img {
+        flex-direction: row;
+        color: @white-color;
+
+        .theme-faelles & {
+          &.faculty_color {
+            background: @ku-red;
+          }
+
+          &.subcolor_1 {
+            background: @blue;
+          }
+
+          &.subcolor_2 {
+            background: @green;
+          }
+
+          &.subcolor_3 {
+            background: @ku-darkgray;
+            color: @ku-gridbox-text;
+          }
+
+          &.subcolor_4 {
+            background: @ku-darkblue;
+          }
+        }
+
+        .theme-science & {
+          &.faculty_color {
+            background: @science;
+          }
+
+          &.subcolor_1 {
+            background: @science-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @science-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @science-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @science-sub_4;
+          }
+        }
+
+        .theme-hum & {
+          color: @white-color;
+
+          &.faculty_color {
+            background: @hum;
+          }
+
+          &.subcolor_1 {
+            background: @hum-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @hum-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @hum-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @hum-sub_4;
+          }
+        }
+
+        .theme-teol & {
+          &.faculty_color {
+            background: @teol;
+          }
+
+          &.subcolor_1 {
+            background: @teol-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @teol-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @teol-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @teol-sub_4;
+          }
+        }
+
+        .theme-sund & {
+          &.faculty_color {
+            background: @sund;
+          }
+
+          &.subcolor_1 {
+            background: @sund-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @sund-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @sund-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @sund-sub_4;
+          }
+        }
+
+        .theme-samf & {
+          &.faculty_color {
+            background: @samf;
+          }
+
+          &.subcolor_1 {
+            background: @samf-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @samf-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @samf-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @samf-sub_4;
+          }
+        }
+
+        .theme-jura & {
+          &.faculty_color {
+            background: @jura;
+          }
+
+          &.subcolor_1 {
+            background: @jura-sub_1;
+          }
+
+          &.subcolor_2 {
+            background: @jura-sub_2;
+          }
+
+          &.subcolor_3 {
+            background: @jura-sub_3;
+          }
+
+          &.subcolor_4 {
+            background: @jura-sub_4;
+          }
+        }
+
+        &.subcolor_5 {
+          background: @ku-gray;
+        }
+
+        &.subcolor_6 {
+          background: @white-color;
+        }
+
+        &.subcolor_7 {
+          background: @brown;
+        }
+
+        &.text-over {
+          .header {
+            position: relative;
+            bottom: auto;
+            left: auto;
+          }
+
+          &:hover {
+            .header {
+              background: transparent!important;
+            }
+          }
+        }
+
+        &.text-down {
+          .header {
+            padding: 8px 5px 6px 10px;
+          }
+
+          &:before {
+            bottom: @margin10;
+            top: auto;
+          }
+        }
+
+        &.text-top {
+          &:before {
+            display: none;
+          }
+        }
+
+        .box1 {
+          flex: 1;
+
+          .text {
+            display: block;
+          }
+        }
+
+        .box2 {
+          flex: 0 0 235px;
+        }
+
+        &.full {
+          .box1 {
+            order: 2;
+          }
+
+          .box2 {
+            order: 1;
+          }
+        }
+
+        &.outlined {
+          border-width: 1px;
+          background: transparent;
+
+          .theme-faelles & {
+            &.faculty_color {
+              .header {
+                color: @ku-red;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @blue;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @green;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @ku-gridbox-text;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @ku-darkblue;
+              }
+            }
+          }
+
+          .theme-science & {
+            &.faculty_color {
+              .header {
+                color: @science;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @science-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @science-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @science-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @science-sub_4;
+              }
+            }
+          }
+
+          .theme-hum & {
+            .header {
+              color: @white-color;
+            }
+
+            &.faculty_color {
+              .header {
+                color: @hum;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @hum-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @hum-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @hum-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @hum-sub_4;
+              }
+            }
+          }
+
+          .theme-teol & {
+            &.faculty_color {
+              .header {
+                color: @teol;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @teol-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @teol-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @teol-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @teol-sub_4;
+              }
+            }
+          }
+
+          .theme-sund & {
+            &.faculty_color {
+              .header {
+                color: @sund;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @sund-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @sund-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @sund-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @sund-sub_4;
+              }
+            }
+          }
+
+          .theme-samf & {
+            &.faculty_color {
+              .header {
+                color: @samf;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @samf-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @samf-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @samf-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @samf-sub_4;
+              }
+            }
+          }
+
+          .theme-jura & {
+            &.faculty_color {
+              .header {
+                color: @jura;
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                color: @jura-sub_1;
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                color: @jura-sub_2;
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                color: @jura-sub_3;
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                color: @jura-sub_4;
+              }
+            }
+          }
+
+          &.subcolor_5 {
+            .header {
+              color: @ku-gridbox-text;
+            }
+          }
+
+          &.subcolor_6 {
+            .header {
+              color: @ku-gridbox-text;
+            }
+          }
+
+          &.subcolor_7 {
+            .header {
+              color: @brown;
+            }
+          }
+
+          .box1 {
+            order: 2;
+            flex: 1;
+
+            .header {
+              background: transparent!important;
+              position: relative;
+            }
+          }
+
+          .box2 {
+            order: 1;
+          }
+        }
+      }
+    }
+
+    &.outlined {
+      border-width: 1px;
+    }
+    // Display text for certain boxes
+    .size4 {
+      .text {
+        display: block;
+      }
+    }
+  }
+  // Behave as single columns
+  .quad-column [class*=column] {
+    &.size2,
+    &.size3 {
+      &.with-img {
+        flex-direction: column;
+
+        &.text-over {
+          &.text-down {
+            .box1 {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          &.text-top {
+            .box1 {
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+
+        .box1 {
+          order: 2;
+          flex: 0 1 auto;
+          width: 100%;
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+    }
+  }
+  // Hover styling for full width and 2/3 columns
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.text-down {
+          &.subcolor_5 {
+            background: @ku-gray;
+          }
+
+          &:hover {
+            .header {
+              background: transparent!important;
+              padding: 8px 5px 6px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 2/3 columns
+  .one-two-column [class*=column],
+  .two-one-column [class*=column] {
+    .size2,
+    .size3 {
+      &.with-img {
+        // Video sizing
+        &.with-iframe {
+          .box1 {
+            order: 2;
+          }
+
+          .box2 {
+            flex: 0 1 325px;
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 460px) and (max-width:680px) {
+  // Front page grid single columns
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .quad-column [class*=column],
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
+    .size2 {
+      &.with-img {
+        .box2 img {
+          max-width: none!important;
+          max-height: 155%!important;
+          transform: translateY(-50%) translateX(-50%) scale(1.2);
+        }
+      }
+    }
+
+    .size3 {
+      &.with-img {
+        .box2 img {
+          width: 100%;
+          max-width: none!important;
+          max-height: none!important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 460px) {
+  // Front page/ no left menu
+  .one-one-two-column .column3,
+  .two-one-one-column .column1 {
+    .size2,
+    .size3 {
+      // Videos
+      &.with-iframe {
+        background-color: @ku-gray;
+
+        &::before {
+          display: none;
+        }
+
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  .one-one-two-column .column3,
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1,
+  .two-one-one-column .column1 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.text-down {
+          &:hover {
+            .header {
+              background: transparent!important;
+            }
+          }
+
+          &.subcolor_5 {
+            background: @ku-gray;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 459px) {
+  .with-img {
+    .header {
+      // No line breaks
+      br {
+        display: none;
+      }
+    }
+
+    &.with-iframe {
+      .header {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+  // All column types must behave like single column boxes
+  .gcrow .gccolumn .gridbox {
+    &.size1 {
+      &.with-img {
+        .box2 {
+          flex: 0 1 133px;
+
+          img {
+            max-width: 100%!important;
+          }
+        }
+      }
+    }
+
+    &.size2,
+    &.size3 {
+      &.with-img {
+        flex-direction: column;
+
+        &.text-over {
+          &.text-down {
+            .box1 {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          &.text-top {
+            .box1 {
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+
+        .box1 {
+          order: 2;
+          flex: 0 1 auto;
+          width: 100%;
+
+          .header {
+            width: 100%;
+            border-right: 25px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 8px 0 6px 10px;
+          }
+
+          .text {
+            display: none;
+          }
+        }
+
+        .box2 {
+          order: 1;
+        }
+
+        &.outlined {
+          border-width: 0;
+
+          &::before {
+            color: @white-color;
+          }
+
+          .box1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            .header {
+              color: @white-color;
+            }
+          }
+
+          .theme-faelles & {
+            &.faculty_color {
+              .header {
+                background: fade(@ku-red, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@blue, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@green, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@ku-darkgray, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@ku-darkblue, 83%);
+              }
+            }
+          }
+
+          .theme-science & {
+            &.faculty_color {
+              .header {
+                background: fade(@science, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@science-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@science-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@science-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@science-sub_4, 83%);
+              }
+            }
+          }
+
+          .theme-hum & {
+            &.faculty_color {
+              .header {
+                background: fade(@hum, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@hum-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@hum-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@hum-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@hum-sub_4, 83%);
+              }
+            }
+          }
+
+          .theme-teol & {
+            &.faculty_color {
+              .header {
+                background: fade(@teol, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@teol-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@teol-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@teol-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@teol-sub_4, 83%);
+              }
+            }
+          }
+
+          .theme-sund & {
+            &.faculty_color {
+              .header {
+                background: fade(@sund, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@sund-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@sund-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@sund-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@sund-sub_4, 83%);
+              }
+            }
+          }
+
+          .theme-samf & {
+            &.faculty_color {
+              .header {
+                background: fade(@samf, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@samf-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@samf-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@samf-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@samf-sub_4, 83%);
+              }
+            }
+          }
+
+          .theme-jura & {
+            &.faculty_color {
+              .header {
+                background: fade(@jura, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@jura-sub_1, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@jura-sub_2, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@jura-sub_3, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@jura-sub_4, 83%);
+              }
+            }
+          }
+
+          &.subcolor_5 {
+            .header {
+              background: fade(@ku-gray, 90%);
+              color: @ku-gridbox-text;
+            }
+
+            &::before {
+              color: @ku-gridbox-text;
+            }
+          }
+
+          &.subcolor_6 {
+            .header {
+              background: fade(@white-color, 90%);
+              color: @ku-gridbox-text;
+            }
+
+            &::before {
+              color: @ku-gridbox-text;
+            }
+          }
+
+          &.subcolor_7 {
+            .header {
+              background: fade(@brown, 83%);
+              color: @white-color;
+            }
+
+            &::before {
+              color: @white-color;
+            }
+          }
+        }
+
+        &.text-top {
+          .box1 {
+            order: 1;
+            position: relative;
+          }
+
+          .box2 {
+            order: 2;
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    &.size2 {
+      &.with-img {
+        height: 220px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
+
+        .box2 {
+          img {
+            max-width: 171%!important;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &.size3 {
+      &.with-img {
+        height: 170px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
+
+        .box2 {
+          img {
+            max-width: 136%!important;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &.size4 {
+      .text {
+        display: none;
+      }
+    }
+  }
+}
