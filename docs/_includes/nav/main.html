@@ -12,16 +12,16 @@
     <nav id="bs-navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li{% if page.slug == "getting-started" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}{% else %}..{% endif %}/getting-started/">Getting started</a>
+          <a href="{% if site.github %}{{ site.baseurl }}/getting-started.html{% else %}../getting-started/{% endif %}">Getting started</a>
         </li>
         <li{% if page.slug == "css" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}{% else %}..{% endif %}/css/">CSS</a>
+          <a href="{% if site.github %}{{ site.baseurl }}/css/{% else %}../css/{% endif %}">CSS</a>
         </li>
         <li{% if page.slug == "components" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}{% else %}..{% endif %}/components/">Components</a>
+          <a href="{% if site.github %}{{ site.baseurl }}/components/{% else %}../components/{% endif %}">Components</a>
         </li>
         <li{% if page.slug == "js" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}{% else %}..{% endif %}/javascript/">JavaScript</a>
+          <a href="{% if site.github %}{{ site.baseurl }}/javascript/{% else %}../javascript/{% endif %}">JavaScript</a>
         </li>
       </ul>
     </nav>
