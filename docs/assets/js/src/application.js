@@ -127,7 +127,7 @@
 
     // Config ZeroClipboard
     ZeroClipboard.config({
-      moviePath: '/assets/flash/ZeroClipboard.swf',
+      moviePath: 'https://nanna-dk.github.io/ku.dk-bootstrap//assets/flash/ZeroClipboard.swf',
       hoverClass: 'btn-clipboard-hover'
     })
 
