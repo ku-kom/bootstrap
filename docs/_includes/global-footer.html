@@ -123,7 +123,6 @@
 {% for file in site.data.configBridge.paths.docsJs %}
 <script src="{{ file }}"></script>
 {% endfor %}
-{% endif %}
-{% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+{% elsif page.slug == "css" or page.slug == "components" or page.slug == "js" %}
 <script src="../assets/js/docs.min.js"></script>
 {% endif %}
