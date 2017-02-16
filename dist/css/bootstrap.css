@@ -5864,10 +5864,10 @@ button.list-group-item-danger.active:focus {
 .theme-sund .panel-default > .panel-heading {
   border-top: 1px solid #2a216a;
 }
-.theme-jura .panel-default > .panel-heading {
+.theme-jur .panel-default > .panel-heading {
   border-top: 1px solid #999632;
 }
-.theme-teol .panel-default > .panel-heading {
+.theme-teo .panel-default > .panel-heading {
   border-top: 1px solid #66609e;
 }
 .panel-primary {
@@ -7053,10 +7053,10 @@ main:after,
 .theme-sund .ku-branding .ku-branding-line {
   border-bottom: 1px solid #2a216a;
 }
-.theme-jura .ku-branding .ku-branding-line {
+.theme-jur .ku-branding .ku-branding-line {
   border-bottom: 1px solid #999632;
 }
-.theme-teol .ku-branding .ku-branding-line {
+.theme-teo .ku-branding .ku-branding-line {
   border-bottom: 1px solid #66609e;
 }
 @media screen and (min-width: 767px) {
