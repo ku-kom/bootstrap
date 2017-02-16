@@ -25,8 +25,7 @@
 <link href="{{ site.baseurl }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/src/docs.css" rel="stylesheet">
-{% endif %}
-{% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+{% elsif page.slug == "css" or page.slug == "components" or page.slug == "js" %}
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../assets/css/src/docs.css" rel="stylesheet">
 {% endif %}
@@ -42,8 +41,6 @@
 {% if page.slug == 'examples' %}
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 {% endif %}
-
-
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
