@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Københavns Universitet er med cirka 40.000 studerende og 9.000 medarbejdere en af Nordens største forsknings- og uddannelsesinstitutioner.">
 <meta name="author" content="Københavns Universitet">
-
 <title>
   {% if page.layout == "home" %}
     {{ page.title }}
@@ -12,22 +11,20 @@
   {% endif %}
 </title>
 <!-- Bootstrap core CSS -->
-{% if site.github %}
-<link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
-{% elsif page.slug == 'examples' %}
-<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+{% if page.slug == 'examples' %}
+<link href="../../dist/css/bootstrap.css" rel="stylesheet">
+<link href="../../dist/css/ku-gridboxes.css" rel="stylesheet">
 {% else %}
-<link href="/dist/css/bootstrap.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
 {% endif %}
-{% if site.github %}
-<!-- Documentation extras -->
-<!-- <link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet"> -->
-<link href="{{ site.baseurl }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<!-- Documentation extras - not for production -->
+{% if page.slug == "cexamples"%}
+<link href="../../assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="../../assets/css/src/docs.min.css" rel="stylesheet">
+{% else %}
 <link href="{{ site.baseurl }}/assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/src/docs.css" rel="stylesheet">
-{% elsif page.slug == "css" or page.slug == "components" or page.slug == "js" %}
-<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="../assets/css/src/docs.css" rel="stylesheet">
 {% endif %}
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -35,20 +32,19 @@
 <script>
   window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"><\/script>')
 </script>
-<!-- Bootstrap datetimepicker -->
-<script src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 {% endif %}
 {% if page.slug == 'examples' %}
+<!-- Bootstrap datetimepicker -->
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+{% else %}
+<script src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 {% endif %}
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-
 <!-- Favicons -->
 {% if page.slug == 'examples' %}
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">

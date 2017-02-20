@@ -167,6 +167,15 @@ module.exports = function (grunt) {
         src: 'less/bootstrap.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
+      compileCustom: {
+        options: {
+          strictMath: true,
+          sourceMap: false,
+          outputSourceFiles: false
+        },
+        src: 'less/ku-gridboxes.less',
+        dest: 'dist/css/ku-gridboxes.css'
+      },
       compileTheme: {
         options: {
           strictMath: true,
@@ -189,6 +198,12 @@ module.exports = function (grunt) {
           map: true
         },
         src: 'dist/css/<%= pkg.name %>.css'
+      },
+      custom: {
+        options: {
+          map: false
+        },
+        src: 'dist/css/ku-gridboxes.css'
       },
       theme: {
         options: {
@@ -213,6 +228,7 @@ module.exports = function (grunt) {
       },
       dist: [
         'dist/css/bootstrap.css',
+        'dist/css/ku-gridboxes.css',
         'dist/css/bootstrap-theme.css'
       ],
       examples: [
@@ -240,6 +256,10 @@ module.exports = function (grunt) {
       minifyCore: {
         src: 'dist/css/<%= pkg.name %>.css',
         dest: 'dist/css/<%= pkg.name %>.min.css'
+      },
+      minifyCustom: {
+        src: 'dist/css/ku-gridboxes.css',
+        dest: 'dist/css/ku-gridboxes.min.css'
       },
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
@@ -477,8 +497,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileTheme']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyTheme']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
