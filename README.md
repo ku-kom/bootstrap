@@ -49,10 +49,6 @@ bootstrap/
 │   ├── bootstrap.css.map
 │   ├── bootstrap.min.css
 │   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
 ├── js/
 │   ├── bootstrap.js
 │   └── bootstrap.min.js

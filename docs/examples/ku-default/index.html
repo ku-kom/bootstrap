@@ -6,7 +6,7 @@ slug: examples
 <main tabindex="0" id="content">
   <div class="container ku-branding">
     <div class="ku-branding-line">
-      <div class="ku-branding-logo"><img class="img-responsive" src="{{ site.baseurl }}/images/branding/ku.svg" alt="Københavns universitet"></div>
+      <div class="ku-branding-logo"><img class="img-responsive" src="{{ site.baseurl }}/images/branding/faelles.svg" alt="Københavns universitet"></div>
       <div class="ku-branding-text">
         <div class="ku-branding-text-major">Kommunikation</div>
         <div class="ku-branding-text-sub">- en del af Fællesadministrationen</div>
@@ -55,21 +55,21 @@ slug: examples
                 <div class="form-group">
                   <label for="themes" class="control-label">Faculty colors</label>
                   <select id="themes" class="form-control">
-                      <option value="theme-faelles" selected>-- Select faculty / default KU red --</option>
+                      <option value="theme-faelles" selected>-- default KU red --</option>
                       <option value="theme-hum">Hum</option>
                       <option value="theme-sund">Sund</option>
                       <option value="theme-science">Science</option>
                       <option value="theme-jur">Jura</option>
                       <option value="theme-samf">Samf</option>
-                      <option value="theme-teo">Teol</option>
+                      <option value="theme-teo">Teo</option>
                       </select>
                 </div>
               </form>
             <script type="text/javascript">
               $('#themes').on('change', getClass);
 
-              function getClass(event) {
-                var themes = $(event.currentTarget);
+              function getClass(e) {
+                var themes = $(e.currentTarget);
                 var classToAdd = themes.find('option[value]:selected').map(function() {
                   return this.value;
                 }).get().join(' ');
@@ -78,11 +78,11 @@ slug: examples
                   return this.value ? this.value : null;
                 }).get().join(' ');
 
-                $('body').removeClass(allClassess).addClass(classToAdd);
+                $('html').removeClass(allClassess).addClass(classToAdd);
 
                 // Switch branding logo
                 var logo = classToAdd.replace('theme-', '');
-                if ($('body').hasClass(classToAdd)) {
+                if ($('html').hasClass(classToAdd)) {
                   $('.ku-branding-logo img').attr('src', '../../images/branding/' + logo + '.svg');
                 }
               }

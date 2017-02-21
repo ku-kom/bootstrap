@@ -1456,6 +1456,10 @@ ul {
   margin-top: 0;
   margin-bottom: 7.5px;
 }
+ol li,
+ul li {
+  margin: 2px 0;
+}
 ol ol,
 ul ol,
 ol ul,
@@ -1482,6 +1486,8 @@ dl {
 }
 dd,
 dt {
+  margin-top: 1px;
+  margin-bottom: 1px;
   line-height: 1.333333;
 }
 dt {
