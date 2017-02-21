@@ -175,17 +175,6 @@ module.exports = function (grunt) {
         },
         src: 'less/ku-gridboxes.less',
         dest: 'dist/css/ku-gridboxes.css'
-      },
-      compileTheme: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
-        },
-        src: 'less/theme.less',
-        dest: 'dist/css/<%= pkg.name %>-theme.css'
       }
     },
 
@@ -200,16 +189,7 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       custom: {
-        options: {
-          map: false
-        },
         src: 'dist/css/ku-gridboxes.css'
-      },
-      theme: {
-        options: {
-          map: true
-        },
-        src: 'dist/css/<%= pkg.name %>-theme.css'
       },
       docs: {
         src: ['docs/assets/css/src/docs.css']
@@ -228,8 +208,7 @@ module.exports = function (grunt) {
       },
       dist: [
         'dist/css/bootstrap.css',
-        'dist/css/ku-gridboxes.css',
-        'dist/css/bootstrap-theme.css'
+        'dist/css/ku-gridboxes.css'
       ],
       examples: [
         'docs/examples/**/*.css'
@@ -260,10 +239,6 @@ module.exports = function (grunt) {
       minifyCustom: {
         src: 'dist/css/ku-gridboxes.css',
         dest: 'dist/css/ku-gridboxes.min.css'
-      },
-      minifyTheme: {
-        src: 'dist/css/<%= pkg.name %>-theme.css',
-        dest: 'dist/css/<%= pkg.name %>-theme.min.css'
       },
       docs: {
         src: [
@@ -497,8 +472,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyTheme']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
@@ -507,14 +482,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
 
   grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
-
-  // task for building customizer
-  // grunt.registerTask('build-customizer', ['build-customizer-html', 'build-raw-files']);
-  // grunt.registerTask('build-customizer-html', 'pug');
-  // grunt.registerTask('build-raw-files', 'Add scripts/less files to customizer.', function () {
-  //   var banner = grunt.template.process('<%= banner %>');
-  //   generateRawFiles(grunt, banner);
-  // });
 
   grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function () {
     var srcFiles = grunt.config.get('concat.bootstrap.src');

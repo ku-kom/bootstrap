@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
     {% include header.html %}
   </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
-
-    <!-- Docs master nav -->
     {% include nav/main.html %}
-
     <main>
-    <!-- Docs page layout -->
     <div class="bs-docs-header" id="content" tabindex="-1">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
       </div>
     </div>
-
     <div class="container bs-docs-container">
-
       <div class="row">
         <div class="col-md-{% if page.fullwidth == true %}12{% else %}9{% endif %}" role="main">
           {{ content }}
@@ -53,7 +46,7 @@
         {% endunless %}
       </div>
     </div>
-</main>
+  </main>
     {% include global-footer.html %}
   </body>
 </html>

@@ -18,6 +18,8 @@ url:              https://nanna-dk.github.io
 baseurl:          /ku.dk-bootstrap
 encoding:         UTF-8
 
+timezone: Europe/Copenhagen
+
 gems:
   - jekyll-sitemap
 

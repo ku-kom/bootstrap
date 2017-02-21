@@ -39,11 +39,23 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
         <div class="row">
           <div class="col-sm-12">
             <h1>Design guidelines</h1>
-            <p>Based on Bootstrap v{{ site.current_version }}</p>
             <h2>Introduction</h2>
             <p>This design styleguide is meant for developers and project managers who will work on systems and interfaces related to University of Copenhagen.</p>
             <p>Hence, the purpose of this guide is to demonstrate general design principles as well as the formatting of html elements, in order to maintain a coherent visual identity.</p>
-            <p>Following these guidelines in important in order to ensure a great user experience on all devices and screen sizes.</p>
+            <p>Following these guidelines is important in order to ensure a great user experience across all devices and screen sizes, while maintaining a consistent look and feel.</p>
+            <h2>Design rules</h2>
+            <p>This style guide is based on Bootstrap v{{ site.current_version }}. All solutions must be created to integrate seamlessly with these design principles:</p>
+            <ul>
+              <li>
+                <strong>CSS:</strong> All solutions must link to the same master stylesheet at ku.dk: <code>dist/css/bootstrap.min.css</code>
+              </li>
+              <li>
+                <strong>HTML</strong> must be valid and well-formed.
+              </li>
+              <li>
+                <strong>Accesibility:</strong> Solutions are to apply and observe the rules of accessibility provided by <a href="http://www.w3.org/TR/WCAG/">WCAG 2.0 level AA</a>. it is allowed to use <a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a>.
+              </li>
+            </ul>
           </div>
           <div class="divider"></div>
           <div class="col-xs-12 col-sm-6">
@@ -52,7 +64,8 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
                 <h3 class="panel-title">This design guide</h3>
               </div>
               <div class="panel-body">
-                This design guide is under development. Changes may be made to the stylesheet on a regular basis, but the html code is stable, and will not be altered unless errors appear.
+                <p>This design guide is under development. Changes may be made to the stylesheet on a regular basis, but the html code is stable, and will not be altered unless errors appear.</p>
+                <p>Last modified {{ site.time | date: "%B %d, %Y" }}</p>
               </div>
             </div>
           </div>
