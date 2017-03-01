@@ -167,7 +167,7 @@ module.exports = function (grunt) {
         src: 'less/bootstrap.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
-      compileCustom: {
+      compileGridboxes: {
         options: {
           strictMath: true,
           sourceMap: false,
@@ -175,6 +175,15 @@ module.exports = function (grunt) {
         },
         src: 'less/ku-gridboxes.less',
         dest: 'dist/css/ku-gridboxes.css'
+      },
+      compileFacultyStyles: {
+        options: {
+          strictMath: true,
+          sourceMap: false,
+          outputSourceFiles: false
+        },
+        src: 'less/faculties//**/*.less',
+        dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
 
@@ -188,7 +197,7 @@ module.exports = function (grunt) {
         },
         src: 'dist/css/<%= pkg.name %>.css'
       },
-      custom: {
+      gridboxes: {
         src: 'dist/css/ku-gridboxes.css'
       },
       docs: {
@@ -236,7 +245,7 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css',
         dest: 'dist/css/<%= pkg.name %>.min.css'
       },
-      minifyCustom: {
+      minifyGridboxes: {
         src: 'dist/css/ku-gridboxes.css',
         dest: 'dist/css/ku-gridboxes.min.css'
       },
@@ -472,8 +481,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileGridboxes', 'less:compileFacultyStyles']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:gridboxes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyGridboxes']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
