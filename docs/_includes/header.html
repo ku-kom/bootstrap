@@ -32,10 +32,20 @@
 </script>
 {% endif %}
 {% if site.github %}
+<!-- Bootstrap datetimepicker -->
 <script src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
 {% elsif page.slug == 'examples' %}
 <!-- Bootstrap datetimepicker -->
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+{% endif %}
+{% if site.github %}
+<!-- Bootstrap multiple select -->
+
+<script src="{{ site.baseurl }}/assets/js/datatables/datatables.min.js"></script>
+{% elsif page.tags == 'kurser' %}
+<!-- Bootstrap multiple select -->
+
+<script src="../../assets/js/datatables/datatables.min.js"></script>
 {% endif %}
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

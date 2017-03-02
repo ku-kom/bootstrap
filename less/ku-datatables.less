@@ -1,16 +1,6 @@
 //
 // KU Datatables.js styling
 // ---------------------------------------------------------------
-// Color variables (appears count calculates by raw css)
-@color1: #d33333; // Appears 4 times
-@color3: #eaeaea; // Appears 2 times
-// Width variables (appears count calculates by raw css)
-@width3: 16px; // Appears 2 times
-@width4: 14px; // Appears 4 times
-@width6: 75px; // Appears 2 times
-// Height variables (appears count calculates by raw css)
-@height1: 14px; // Appears 4 times
-@height3: 16px; // Appears 2 times
 
 .dataTable {
   border-collapse: separate !important;
@@ -33,7 +23,7 @@
 
   thead > tr {
     > th {
-      padding-top: 0;
+      padding-top: 10px;
 
       &:active {
         outline: none;
@@ -96,7 +86,7 @@
 
     select {
       display: inline-block;
-      width: @width6;
+      width: 75px;
     }
   }
 
@@ -354,14 +344,14 @@
       content: '+';
       display: block;
       font-family: 'Courier New', Courier, monospace;
-      height: @height1;
+      height: 14px;
       left: 4px;
-      line-height: @height1;
+      line-height: 14px;
       padding: 0 1px 1px 0;
       position: absolute;
       text-align: center;
       top: 9px;
-      width: @width4;
+      width: 14px;
     }
   }
 }
@@ -382,14 +372,14 @@
       content: '+';
       display: block;
       font-family: 'Courier New', Courier, monospace;
-      height: @height1;
+      height: 14px;
       left: 4px;
-      line-height: @height1;
+      line-height: 14px;
       padding: 0 1px 1px 0;
       position: absolute;
       text-align: center;
       top: 9px;
-      width: @width4;
+      width: 14px;
     }
   }
 }
@@ -397,7 +387,7 @@
 .dataTable.dtr-inline.collapsed > tbody > tr.parent > td {
   &:first-child {
     &:before {
-      background-color: @color1;
+      background-color: #d33333;
       content: '-';
     }
   }
@@ -406,7 +396,7 @@
 .dataTable.dtr-inline.collapsed > tbody > tr.parent > th {
   &:first-child {
     &:before {
-      background-color: @color1;
+      background-color: #d33333;
       content: '-';
     }
   }
@@ -426,12 +416,12 @@
 
     &:before {
       border-radius: 14px;
-      height: @height1;
+      height: 14px;
       left: 4px;
-      line-height: @height1;
+      line-height: 14px;
       text-indent: 3px;
       top: 5px;
-      width: @width4;
+      width: 14px;
     }
   }
 }
@@ -442,12 +432,12 @@
 
     &:before {
       border-radius: 14px;
-      height: @height1;
+      height: 14px;
       left: 4px;
-      line-height: @height1;
+      line-height: 14px;
       text-indent: 3px;
       top: 5px;
-      width: @width4;
+      width: 14px;
     }
   }
 }
@@ -466,15 +456,15 @@
     content: '+';
     display: block;
     font-family: 'Courier New', Courier, monospace;
-    height: @height3;
+    height: 16px;
     left: 50%;
-    line-height: @height1;
+    line-height: 14px;
     margin-left: -10px;
     margin-top: -10px;
     position: absolute;
     text-align: center;
     top: 50%;
-    width: @width3;
+    width: 16px;
   }
 }
 
@@ -492,29 +482,29 @@
     content: '+';
     display: block;
     font-family: 'Courier New', Courier, monospace;
-    height: @height3;
+    height: 16px;
     left: 50%;
-    line-height: @height1;
+    line-height: 14px;
     margin-left: -10px;
     margin-top: -10px;
     position: absolute;
     text-align: center;
     top: 50%;
-    width: @width3;
+    width: 16px;
   }
 }
 
 .dataTable.dtr-column > tbody > tr.parent {
   td.control {
     &:before {
-      background-color: @color1;
+      background-color: #d33333;
       content: '-';
     }
   }
 
   th.control {
     &:before {
-      background-color: @color1;
+      background-color: #d33333;
       content: '-';
     }
   }
@@ -550,7 +540,7 @@
   .dtr-title {
     display: inline-block;
     font-weight: bold;
-    min-width: @width6;
+    min-width: 75px;
   }
 }
 
@@ -590,7 +580,7 @@
   .dtr-modal-close {
     background-color: @gray-lighter;
     border-radius: 3px;
-    border: 1px solid @color3;
+    border: 1px solid #eaeaea;
     cursor: pointer;
     height: 22px;
     position: absolute;
@@ -601,7 +591,7 @@
     z-index: 12;
 
     &:hover {
-      background-color: @color3;
+      background-color: #eaeaea;
     }
   }
 
