@@ -18,13 +18,13 @@
 {% else %}
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/dist/css/multiple-select/multiple-select.min.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/dist/css/datatables/datatables.min.css" rel="stylesheet">
 {% endif %}
 <!-- Documentation extras - not for production -->
 {% if page.slug == "cexamples"%}
 <link href="../../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../../assets/css/src/docs.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/dist/css/datatables.min.css" rel="stylesheet">
 {% else %}
 <link href="{{ site.baseurl }}/assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/src/docs.css" rel="stylesheet">
@@ -37,7 +37,7 @@
 {% endif %}
 {% if site.github %}
 <!-- Bootstrap datetimepicker -->
-<script src="{{ site.baseurl }}/dist/js/bootstrap-datetimepicker.js"></script>
+<script src="{{ site.baseurl }}/dist/js/bootstrap-datetimepicker.min.js"></script>
 {% elsif page.slug == 'examples' %}
 <!-- Bootstrap datetimepicker -->
 <script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
