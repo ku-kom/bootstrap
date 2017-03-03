@@ -23,8 +23,18 @@
 }
 
 .right-side {
-  @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
-    .pull-right();
+  @media (max-width: @screen-xs-max) {
+    margin-top: @grid-gutter-height;
+  }
+  // @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
+  //   .pull-right();
+  // }
+  @media (min-width: @screen-xs-max) {
+    .panel-default:first-of-type {
+      .panel-heading {
+        border-top: 0;
+      }
+    }
   }
 }
 // Main content part
@@ -55,8 +65,11 @@ nav {
   flex: none;
 }
 
-.main-area {
+.main-content {
   padding-top: @grid-gutter-width;
+}
+
+.main-area {
   flex-grow: 1;
 
   &.front-page {
@@ -72,7 +85,6 @@ nav {
   margin: @margin10 0;
   &:extend(.clearfix all);
 }
-
 @media (min-width: @screen-sm) {
   // Make columns equal height
   .row-equal-height {
@@ -81,7 +93,8 @@ nav {
     flex-wrap: wrap;
   }
   // Accessibility
-  [tabindex], .main-area {
+  .main-area,
+  [tabindex] {
     outline: 0;
     user-focus: none;
   }
@@ -135,6 +148,7 @@ nav {
   }
 }
 //KU remove gutter from columns
+
 .no-gutter {
   > [class*='col-'] {
     padding-right: 0;
@@ -149,44 +163,47 @@ nav {
 .w100 {
   width: 100%;
 }
+
 .wauto {
   width: auto;
 }
- // Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
+// Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
 
 .ie9 img[src$=".svg"] {
   width: 100%;
 }
-
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
     width: 100%;
   }
 }
-
 //Fix viewport width on Windows phone: http://getbootstrap.com/getting-started/#support-ie10-width
-@-ms-viewport       { width: device-width; }
-
+@-ms-viewport {
+  width: device-width;
+}
 // Global search button-size
+
 .btn-global-search {
   button {
     height: @input-height-base; // (base line-height + padding + border)
   }
 }
 // KU special file upload button
-.btn-file {
-    background-color: @white-color;
-    border: 1px solid @gray;
-    padding: 4px 10px;
-    margin-right: -2px;
 
-    &:before {
-        font-size: 14px;
-        content: "\e142";
-        font-family: "Glyphicons Halflings";
-        overflow: hidden;
-    }
-    input[type=file] {
-        display: none;
-    }
+.btn-file {
+  background-color: @white-color;
+  border: 1px solid @gray;
+  padding: 4px 10px;
+  margin-right: -2px;
+
+  &:before {
+    font-size: 14px;
+    content: "\e142";
+    font-family: "Glyphicons Halflings";
+    overflow: hidden;
+  }
+
+  input[type=file] {
+    display: none;
+  }
 }

@@ -9656,9 +9656,14 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 .main-content .row.breadcrumbs {
   margin-bottom: 0;
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (max-width: 767px) {
   .right-side {
-    float: right !important;
+    margin-top: 23px;
+  }
+}
+@media (min-width: 767px) {
+  .right-side .panel-default:first-of-type .panel-heading {
+    border-top: 0;
   }
 }
 main {
@@ -9708,9 +9713,10 @@ nav {
       -ms-flex: none;
           flex: none;
 }
-.main-area {
+.main-content {
   padding-top: 26px;
-
+}
+.main-area {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -9743,8 +9749,8 @@ nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  [tabindex],
-  .main-area {
+  .main-area,
+  [tabindex] {
     outline: 0;
 
     user-focus: none;

@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .dl-horizontal dd {
+    margin-left: 43%;
+  }
+  .dl-horizontal dt {
+    width: 40%;
+    text-align: left;
+  }
+}

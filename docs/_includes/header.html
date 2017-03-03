@@ -19,6 +19,11 @@
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
 {% endif %}
+{% if site.github and page.tags == 'kurser' %}
+<link href="{{ site.baseurl }}/assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
+{% elsif page.tags == 'kurser' %}
+<link href="../../assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
+{% endif %}
 <!-- Documentation extras - not for production -->
 {% if page.slug == "cexamples"%}
 <link href="../../assets/css/src/pygments-manni.css" rel="stylesheet">
