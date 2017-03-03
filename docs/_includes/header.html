@@ -13,9 +13,13 @@
 {% if page.slug == 'examples' %}
 <link href="../../dist/css/bootstrap.css" rel="stylesheet">
 <link href="../../dist/css/ku-gridboxes.css" rel="stylesheet">
+<link href="../../assets/css/multiple-select/multiple-select.css" rel="stylesheet">
+<link href="../../assets/css/datatables/datatables.css" rel="stylesheet">
 {% else %}
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/multiple-select/multiple-select.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/datatables/datatables.min.css" rel="stylesheet">
 {% endif %}
 <!-- Documentation extras - not for production -->
 {% if page.slug == "cexamples"%}
@@ -40,12 +44,12 @@
 {% endif %}
 {% if site.github %}
 <!-- Bootstrap multiple select -->
-
+<script src="{{ site.baseurl }}/assets/js/multiple-select/ku-multiple-select.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/datatables/datatables.min.js"></script>
 {% elsif page.tags == 'kurser' %}
 <!-- Bootstrap multiple select -->
-
-<script src="../../assets/js/datatables/datatables.min.js"></script>
+<script src="../../assets/js/multiple-select/ku-multiple-select.js"></script>
+<script src="../../assets/js/datatables/datatables.js"></script>
 {% endif %}
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
