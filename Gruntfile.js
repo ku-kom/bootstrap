@@ -145,6 +145,21 @@ module.exports = function (grunt) {
       docsJs: {
         src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
+      },
+      custom: {
+        files: [
+          {
+            expand: true,
+            src: [
+              'docs/assets/js/datatables/datatables.js',
+              'docs/assets/js/multiple-select/multiple-select.js',
+              'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js'
+            ],
+            dest: 'dist/js/',
+            ext: '.min.js',
+            flatten: true
+        }
+      ]
       }
     },
 
@@ -189,8 +204,12 @@ module.exports = function (grunt) {
         src: 'dist/css/<%= pkg.name %>.css'
       },
       custom: {
-        src: 'dist/css/ku-gridboxes.css'
-      },
+        src: [
+          'dist/css/ku-gridboxes.css',
+          'docs/assets/css/datatables/datatables.css',
+          'docs/assets/css/multiple-select/multiple-select.css'
+      ]
+    },
       docs: {
         src: ['docs/assets/css/src/docs.css']
       },
@@ -247,6 +266,18 @@ module.exports = function (grunt) {
           'docs/assets/css/src/docs.css'
         ],
         dest: 'docs/assets/css/docs.min.css'
+      },
+      assets: {
+        expand: true,
+        sourceMap: false,
+        sourceMapInlineSources: false,
+        src: [
+          'docs/assets/css/datatables/datatables.css',
+          'docs/assets/css/multiple-select/multiple-select.css'
+        ],
+        dest: 'dist/css/',
+        ext: '.min.css',
+        flatten: true
       }
     },
 
@@ -469,11 +500,11 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
+  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

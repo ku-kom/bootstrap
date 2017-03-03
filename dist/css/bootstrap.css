@@ -1206,6 +1206,12 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .form-control,
+  .btn {
+    font-size: 14px !important;
+  }
+}
 .h1,
 .h2,
 .h3,
@@ -6699,6 +6705,11 @@ button.close {
   .carousel-indicators {
     bottom: 20px;
   }
+}
+.textelipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .clearfix:before,
 .clearfix:after,

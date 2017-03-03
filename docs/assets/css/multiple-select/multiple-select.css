@@ -15,13 +15,13 @@
   padding: 0;
   overflow: hidden;
   cursor: pointer;
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
   text-align: left;
   white-space: nowrap;
   line-height: 26px;
   color: #444;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: #fff;
 }
 
@@ -42,11 +42,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  padding-left: 8px;
+  padding-left: 14px;
 }
 
 .ms-choice>span.placeholder {
-  color: #999;
+  color: #252525;
 }
 
 .ms-choice>div {
@@ -61,7 +61,8 @@
   position: relative;
   top: 1px;
   display: inline-block;
-  content:"\e259";
+  content: "\e259";
+  color: inherit;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: 400;
@@ -72,7 +73,7 @@
 }
 
 .ms-choice>div.open::before {
-  content:"\e260";
+  content: "\e260";
 }
 
 .ms-drop {
@@ -91,11 +92,13 @@
 
 .ms-drop.bottom {
   top: 100%;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
   box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
 }
 
 .ms-drop.top {
   bottom: 100%;
+  -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
   box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
 }
 
@@ -121,17 +124,21 @@
   font-size: 1em;
   border: 1px solid #aaa;
   border-radius: 0;
-  box-shadow: none;
-  background: #fff url('multiple-select.png') no-repeat 100% -22px;
-  background: url('multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
-  background: url('multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
-  background: url('multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-  background: url('multiple-select.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /*
+  background: #fff url('../docs/images/multiple-select.png') no-repeat 100% -22px;
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left top, left bottom, color-stop(85%, #ffffff), color-stop(99%, #eeeeee));
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left top, left bottom, color-stop(85%, #ffffff), color-stop(99%, #eeeeee));
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);*/
 }
 
 .ms-search, .ms-search input {
-  -khtml-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -150,7 +157,6 @@
 
 .ms-drop ul>li .disabled {
   opacity: .35;
-  filter: Alpha(Opacity=35);
 }
 
 .ms-drop ul>li.multiple {
@@ -194,4 +200,10 @@
 
 .w100 {
   width: calc(100% - 26px);
+}
+
+.form-group .control-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
