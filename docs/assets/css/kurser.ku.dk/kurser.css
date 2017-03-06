@@ -1,9 +1,55 @@
-@media (min-width: 768px) {
-  .dl-horizontal dd {
-    margin-left: 43%;
+.dl-horizontal dt {
+  margin-top: 5px;
+}
+
+.right-side li a .glyphicon {
+  color: #888;
+}
+
+ul.workload li {
+  width: 50%;
+  float: left;
+  padding: 3px 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+ul.workload li:nth-child(3), ul.workload li:nth-child(4), ul.workload li:nth-child(7), ul.workload li:nth-child(8), ul.workload li:nth-child(11), ul.workload li:nth-child(12), ul.workload li:nth-child(15), ul.workload li:nth-child(16) {
+  background-color: #f9f9f9;
+}
+
+ul.workload li:nth-child(odd) {
+  clear: left;
+}
+
+ul.workload li:nth-child(even) {
+  text-align: center;
+}
+
+ul.workload .total {
+  border-top: 1px solid #999;
+}
+
+@media (min-width: 480px) and (max-width: 757px) {
+  ul.workload {
+    width: 70%;
   }
-  .dl-horizontal dt {
+}
+
+@media (min-width: 768px) {
+  .right-side .dl-horizontal dd {
+    margin-left: 43%;
+    margin-top: 5px;
+  }
+  .right-side .dl-horizontal dt {
     width: 40%;
     text-align: left;
+    margin-top: 5px;
+  }
+  .right-side .dl-horizontal dt:hover+.right-side .dl-horizontal dd {
+    background-color: #f9f9f9;
+  }
+  ul.workload {
+    width: 50%;
   }
 }

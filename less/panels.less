@@ -37,7 +37,11 @@
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: ceil(@font-size-base); // ceil((@font-size-base * 1.125));
+  font-size: ceil((@font-size-base * 1.125));
+  @media (min-width: @screen-xs-max) {
+    // KU specific
+    font-size: @font-size-base
+  }
   font-weight: bold;
   letter-spacing: 0.25px;
   color: inherit;

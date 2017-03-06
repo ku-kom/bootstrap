@@ -1,5 +1,5 @@
 /**
- * @author zhixin wen
+ * @author zhixin wen: https://github.com/wenzhixin/multiple-select
  */
 
 .ms-parent {
@@ -70,6 +70,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
+  color: #000;
 }
 
 .ms-choice>div.open::before {

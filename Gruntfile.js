@@ -174,7 +174,7 @@ module.exports = function (grunt) {
       compileCore: {
         options: {
           strictMath: true,
-          sourceMap: true,
+          //sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
@@ -184,9 +184,7 @@ module.exports = function (grunt) {
       },
       compileCustom: {
         options: {
-          strictMath: true,
-          sourceMap: false,
-          outputSourceFiles: false
+          strictMath: true
         },
         src: 'less/ku-gridboxes.less',
         dest: 'dist/css/ku-gridboxes.css'
@@ -247,8 +245,8 @@ module.exports = function (grunt) {
         //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
         compatibility: 'ie8',
         keepSpecialComments: '*',
-        sourceMap: true,
-        sourceMapInlineSources: true,
+        //sourceMap: true,
+        //sourceMapInlineSources: true,
         advanced: false
       },
       minifyCore: {
@@ -269,8 +267,6 @@ module.exports = function (grunt) {
       },
       assets: {
         expand: true,
-        sourceMap: false,
-        sourceMapInlineSources: false,
         src: [
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css'

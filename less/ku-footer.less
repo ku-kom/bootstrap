@@ -39,9 +39,10 @@
     padding: @grid-gutter-width 0;
     position: relative;
 
-    > [class*="col-"] {
-      padding-left: 0;
+    > [class*="col-"]{
+
       z-index: 2;
+      & + [class*="col-"] {padding-left: 0;} 
 
       &:last-child {
         padding-right: 0;
@@ -318,7 +319,7 @@
 
           &:before {
             position: absolute;
-            bottom: 0;
+            bottom: -2px;
             left: 0;
             display: block;
             content: ' ';

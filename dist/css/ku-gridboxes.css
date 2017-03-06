@@ -1416,6 +1416,7 @@
   display: none;
 }
 .gridbox.with-iframe .header {
+  color: #252525;
   border-right: 5px solid transparent;
 }
 .gridbox.text-top .box1 {

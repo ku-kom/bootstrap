@@ -3,6 +3,7 @@
 // --------------------------------------------------
 @media screen and (min-width: @screen-xs-max) {
   .ku-leftmenu {
+    padding-top: @grid-gutter-height;
     .ku-navbar-header {
       font-weight: bold;
       margin-bottom: @grid-gutter-width;
@@ -327,17 +328,16 @@
   .leftmenu-toggle {
     position: fixed;
     top: 0;
-    right: 8px;
+    right: 0;
     z-index: 1040;
     padding: 8px 10px;
     background-color: @gray-light;
 
-    &:active,
     &:hover {
       background-color: @navbar-inverse-toggle-hover-bg;
     }
 
-    &:focus {
+    &:focus, &:active, {
       background-color: @gray-light;
     }
   }

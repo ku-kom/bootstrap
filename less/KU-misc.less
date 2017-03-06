@@ -66,9 +66,12 @@ nav {
 }
 
 .main-content {
-  padding-top: @grid-gutter-width;
+  padding-top: @grid-gutter-height;
+  padding-bottom: @grid-gutter-height;
 }
-
+.right-side {
+  padding-bottom: @grid-gutter-height;
+}
 .main-area {
   flex-grow: 1;
 
@@ -164,9 +167,6 @@ nav {
   width: 100%;
 }
 
-.wauto {
-  width: auto;
-}
 // Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
 
 .ie9 img[src$=".svg"] {
@@ -184,8 +184,9 @@ nav {
 // Global search button-size
 
 .btn-global-search {
-  button {
+  .btn {
     height: @input-height-base; // (base line-height + padding + border)
+    background-image: none; // remove gradient from default button
   }
 }
 // KU special file upload button

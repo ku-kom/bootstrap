@@ -2,23 +2,86 @@
 layout: examples
 title: Københavns Universitet - Kurser
 slug: examples
-tags: kurser
+category: kurser
 ---
 <main tabindex="0" id="content">
-  <div class="container ku-branding">
-    <div class="ku-branding-line">
-      <div class="ku-branding-logo"><img class="img-responsive" src="{{ site.baseurl }}/images/branding/faelles.svg" alt="Københavns universitet"></div>
-      <div class="ku-branding-text">
-        <div class="ku-branding-text-major">Kurser</div>
-        <div class="ku-branding-text-sub"></div>
-      </div>
-    </div>
-  </div>
+  {% include ku-branding.html %}
   <div class="container main-area" id="main-area">
     <div class="row">
       <div class="col-xs-12 col-sm-7 col-md-8 main-content">
         <h1>SCAM13006U  Companion Animal Internal Medicine – Diagnosis and Treatment of Patients with Endocrine and Urological Diseases</h1>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <h3>Engelsk titel</h3>
+        <p>Course in Medical Genetics, Medicine.</p>
+        <h3>Uddannelse</h3>
+        <p>Bacheloruddannelsen i medicin - obligatorisk.</p>
+        <h3>Kursusindhold</h3>
+        <p>Den studerende skal gennem kurset opnå viden om kortlægning af gener og genetisk betingede sygdomme samt efter kurset kunne redegøre for klassiske nedarvningsmønstre samt for den sygdomsmæssige betydning af ændringer i gener og kromosomer.</p>
+        <h3>Målbeskrivelser</h3>
+        <p>Efter endt kursus forventes den studerende at kunne:</p>
+        <p>Viden:</p>
+        <ul>
+          <li>Forstå basale genetiske problemstillinger og genetik set i sammenhæng med andre fag</li>
+          <li>Forstå sammenhænge mellem genotyper og fænotyper</li>
+          <li>Forstå forskellige typer af mutationer, deres opståen og betydning for personen selv og dennes børn</li>
+          <li>Beskrive og karakterisere arvegange</li>
+          <li>Forstå samspillet mellem genetiske, epigenetiske og miljømæssige faktorer, der påvirker fænotypen, og derved modificerer arvegange.</li>
+          <li>Forstå betydningen af genetisk variation</li>
+          <li>Beskrive metoder til genetisk diagnostik og til kortlægning af gener for genetiske sygdomme. </li>
+        </ul>
+        <p>Færdigheder:</p>
+        <ul>
+          <li>Bedømme stamtræer over familier med forskellige arvelige sygdomme og afgøre, hvad der er den mest sandsynlige arvegang</li>
+          <li>Beregne risikoen for at forskellige arvelige sygdomme gives videre til næste generation</li>
+          <li>Udføre og anvende karyotyper til vurdering af kromosomfejl, deres opståen og konsekvenser.</li>
+        </ul>
+        <h3>Undervisningsform</h3>
+        <p>Forelæsninger, studenteraktiverende holdundervisning og øvelsesundervisning.</p>
+        <h3>Bemærkninger</h3>
+        <p>Kurset evalueres desuden i eksamen i medicinsk genetik.</p>
+        <p>Undervisningssproget er dansk – men engelsktalende undervisere kan forekomme i mindre omfang.</p>
+        <h3>Tilmelding</h3>
+        <p>Selvbetjeningen på KUnet.</p>
+        <h3>Eksamen (Obligatoriske elementer)</h3>
+        <dl class="dl-horizontal">
+          <dt>Point</dt>
+          <dd>2,5 ECTS</dd>
+          <dt>Prøveform</dt>
+          <dd>Kursusdeltagelse, deltagelse i øvelsesundervisning, fremlæggelse af resultater samt deltagelse i multiple choice test</dd>
+          <dt>Hjælpemidler</dt>
+          <dd>Alle hjælpemidler tilladt</dd>
+          <dt>Bedømmelsesform</dt>
+          <dd>Bestået/ikke bestået</dd>
+          <dt>Censurform</dt>
+          <dd>Ingen ekstern censur<br>En intern bedømmer</dd>
+        </dl>
+        <p>Kriterier for bedømmelse</p>
+        <p>For at opnå kursusattest skal den studerende kunne:</p>
+        <p>Viden:</p>
+        <ul class="clearfix">
+          <li>Redegøre for metoder til genetisk diagnostik og forstå mutationers betydning</li>
+          <li>Redegøre for anvendelsen af koblede DNA-markører til kortlægning af mutationer i familier</li>
+          <li>Redegøre for betydningen af ændringer i kromosomer for personen selv og personens børn</li>
+          <li>Redegøre for, hvordan disse ændringer kan være opstået.</li>
+        </ul>
+        <p>Færdigheder:</p>
+        <ul>
+          <li>Beregne risikoen for, at en arvelig sygdom gives videre til næste generation.</li>
+        </ul>
+        <h3>Arbejdsbelastning:</h3>
+        <ul class="list-unstyled workload clearfix">
+          <li>Kategori</li>
+          <li>Timer</li>
+          <li>Forelæsninger</li>
+          <li>12</li>
+          <li>Holdundervisning</li>
+          <li>18</li>
+          <li>Praktiske øvelser</li>
+          <li>10</li>
+          <li>Forberedelse</li>
+          <li>97</li>
+          <li class="total">I alt</li>
+          <li class="total">135</li>
+        </ul>
       </div>
       <div class="col-xs-12 col-sm-5 col-md-4 right-side">
         <div class="panel panel-default">
@@ -26,16 +89,33 @@ tags: kurser
             <h3 class="panel-title">Kursusinformation</h3>
           </div>
           <div class="panel-body">
-            <dl class="dl-horizontal"> <dt>Description lists</dt>
-              <dd>A description list is perfect for defining terms.</dd>
-              <dt>Euismod</dt>
-              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-              <dt>Malesuada porta</dt>
-              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-              <dt>Felis euismod semper eget lacinia</dt>
-              <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+            <dl class="dl-horizontal">
+              <dt>Sprog</dt>
+              <dd>Dansk</dd>
+              <dt>Kursusnummer</dt>
+              <dd>SCAM13006U</dd>
+              <dt>Points</dt>
+              <dd>2,5 ECTS</dd>
+              <dt>Niveau</dt>
+              <dd>Bachelor</dd>
+              <dt>Varighed</dt>
+              <dd>1 semester</dd>
+              <dt>Placering skemagruppe</dt>
+              <dd>Se Syllabus</dd>
+              <dt>Kursuskapacitet</dt>
+              <dd>Forbeholdt medicinstuderende ved KU</dd>
+              <dt>Studienævn</dt>
+              <dd>Studienævnet for Medicin og den Sundhedsfaglige Kandidatuddannelse</dd>
             </dl>
+            <h5 class="panel-title">Udbydende institut</h5>
+            <ul class="list-unstyled">
+              <li>Institut for Cellulær og Molekylær Medicin</li>
+            </ul>
+            <h5 class="panel-title">Kursusansavarlig</h5>
+            <ul class="list-unstyled">
+              <li>Anne Nørremølle <a href="mailto:first.last@example.com"><span class="glyphicon glyphicon-envelope"></span></a></li>
+              <li>Kursussekretær: Michael Muusfeldt <a href="mailto:first.last@example.com"><span class="glyphicon glyphicon-envelope"></span></a></li>
+            </ul>
           </div>
         </div>
         <div class="panel panel-default">
@@ -43,7 +123,18 @@ tags: kurser
             <h3 class="panel-title">Se skema</h3>
           </div>
           <div class="panel-body">
-            This is a right side panel element. It can contain almost anything.
+            <ul class="list-unstyled">
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+              <li><a href="#" target="_blank">Skema</a></li>
+            </ul>
           </div>
         </div>
       </div>

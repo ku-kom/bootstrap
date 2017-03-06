@@ -8,12 +8,12 @@
 // http://getbootstrap.com/getting-started/#third-box-sizing
 
 * {
-  .box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 *:after,
 *:before {
-  .box-sizing(border-box);
+  box-sizing: border-box;
 }
 // Body reset
 html {
@@ -100,7 +100,7 @@ img {
   background-color: @thumbnail-bg;
   border: 1px solid @thumbnail-border;
   border-radius: @thumbnail-border-radius;
-  .transition(all .2s ease-in-out);
+  transition: all .2s ease-in-out;
   // Keep them at most 100% wide
   .img-responsive(inline-block);
 }
