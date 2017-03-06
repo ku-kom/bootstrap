@@ -18,7 +18,7 @@ category: kurser
                   <input type="text" class="form-control" id="nummer" placeholder="Søg i kursusbeskrivelser" autofocus>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mobile-hidden">
                 <label for="niveau" class="col-sm-4 control-label">Niveau</label>
                 <div class="col-sm-8">
                   <select class="form-control" id="niveau">
@@ -31,7 +31,7 @@ category: kurser
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mobile-hidden">
                 <label for="fakultet" class="col-sm-4 control-label">Fakultet</label>
                 <div class="col-sm-8">
                   <select class="form-control" id="fakultet">
@@ -44,7 +44,7 @@ category: kurser
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mobile-hidden">
                 <label for="institut" class="col-sm-4 control-label">Institut</label>
                 <div class="col-sm-8">
                   <select multiple class="" id="institut">
@@ -56,7 +56,7 @@ category: kurser
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mobile-hidden">
                 <label for="videre" class="col-sm-4 control-label">Efter- og<br />videreuddannelse</label>
                 <div class="col-sm-8">
                   <div class="checkbox">
@@ -67,7 +67,7 @@ category: kurser
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 margin-top-0">
+            <div class="col-xs-12 col-sm-6 margin-top-0 mobile-hidden">
               <div class="form-group">
                 <label for="sprog" class="col-sm-4 control-label">Undervisningssprog</label>
                 <div class="col-sm-8">
@@ -126,6 +126,9 @@ category: kurser
           <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-2">
             <div class="form-group">
               <button type="submit" class="btn btn-default">Søg i kursusdatabasen</button>
+            </div>
+            <div class="form-group show-filter">
+              <button id="showall" class="btn btn-default">Avanceret søgning <span class="glyphicon glyphicon-cog"></span></button>
             </div>
           </div>
         </div>
@@ -851,6 +854,18 @@ category: kurser
 </main>
 <script>
   $(document).ready(function() {
+    var $cachedWidth = $('body').prop('clientWidth');
+      $('#showall').click(function() {
+        if ($cachedWidth < 768) {
+        $('.mobile-hidden').slideToggle()
+      }
+    });
+    $(window).resize(function() {
+        var $newWidth = $('body').prop('clientWidth');
+        if ($newWidth !== $cachedWidth) {
+            $cachedWidth = $newWidth;
+        }
+    });
     $('select[multiple]').multipleSelect({
       placeholder: "V&aelig;lg flere...",
       selectAllText: 'V&aelig;lg alle',

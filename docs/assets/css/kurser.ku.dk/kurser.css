@@ -52,4 +52,13 @@ ul.workload .total {
   ul.workload {
     width: 50%;
   }
+  .show-filter {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
 }

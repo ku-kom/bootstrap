@@ -259,11 +259,12 @@ module.exports = function (grunt) {
       },
       docs: {
         src: [
-          'docs/assets/css/ie10-viewport-bug-workaround.css',
+          'docs/assets/css/src/ie10-viewport-bug-workaround.css',
           'docs/assets/css/src/pygments-manni.css',
           'docs/assets/css/src/docs.css'
         ],
-        dest: 'docs/assets/css/docs.min.css'
+        dest: 'docs/assets/css/docs.min.css',
+        flatten: true
       },
       assets: {
         expand: true,

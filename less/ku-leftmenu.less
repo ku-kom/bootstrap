@@ -1,7 +1,7 @@
 //
 // KU left menu
 // --------------------------------------------------
-@media screen and (min-width: @screen-xs-max) {
+@media screen and (min-width: @screen-sm-min) {
   .ku-leftmenu {
     padding-top: @grid-gutter-height;
     .ku-navbar-header {
@@ -288,8 +288,11 @@
       margin: @margin20 0;
     }
   }
+  #mobileleftmenu {
+    display: none;
+  }
 }
-@media (min-width: @screen-xs-max) and (max-width: @screen-md) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-md) {
   .ku-leftmenu {
     // Larger font for tablets
     ul.nav {

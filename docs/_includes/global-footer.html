@@ -1,7 +1,5 @@
-{% if page.slug == "examples" %}
 <!-- Left Navigation on SMALL screens (mmenu) -->
 <nav id="mobileleftmenu">{% include ku-mobilemenu-dummy.html %}</nav>
-{% endif %}
 <!-- Footer -->
 <footer id="footer">
   <div class="container-fluid globalfooter">
@@ -102,22 +100,18 @@
 </footer>
 {% if site.github %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
-<script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
-{% elsif page.slug == 'examples' %}
-<script src="../../dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
-<script src="../../custom/ku-mobile-menu.js"></script>
-{% else %}
-<script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
-{% endif %}
-{% if site.github %}
+<!-- Documentation extra - not for production -->
 <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
+<!-- //Documentation extra - not for production -->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
-{% for file in site.data.configBridge.paths.docsJs %}
-<script src="{{ file }}"></script>
-{% endfor %}
-{% elsif page.slug == "css" or page.slug == "components" or page.slug == "js" %}
-<script src="../assets/js/docs.min.js"></script>
+{% if page.slug == "examples" %}
+<script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
+<script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
+{% endif %}
+{% else %}
+<script src="../../dist/js/bootstrap.js"></script>
+<script src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
+<script src="../../custom/ku-mobile-menu.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
 {% endif %}
