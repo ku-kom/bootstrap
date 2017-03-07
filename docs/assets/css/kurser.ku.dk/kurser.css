@@ -1,9 +1,13 @@
 /* CSS for kurser.ku.dk */
-
+p {
+    margin: 0;
+}
 .dl-horizontal dt {
   margin-top: 5px;
 }
-
+.panel-title {
+  font-weight: 600;
+}
 .right-side li a .glyphicon {
   color: #888;
 }
@@ -33,7 +37,7 @@ ul.workload .total {
   border-top: 1px solid #999;
 }
 
-.last-modified {
+.last-modified, .permalink {
   margin-top: 10px;
 }
 
@@ -45,13 +49,12 @@ ul.workload .total {
 .course-item a>h3 {
   position: relative;
   background-color: #f6f6f6;
-  padding: 5px;
+  border: 1px solid #e8e8e8;
+  padding: 7px 5px;
 }
 
 .course-item a>h3::after {
   content: "\e259";
-  position: relative;
-  top: 1px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
@@ -61,6 +64,9 @@ ul.workload .total {
   -moz-osx-font-smoothing: grayscale;
   margin-left: 4px;
   font-size: 10px;
+  position: absolute;
+  top: 8px;
+  right: 6px;
 }
 
 .course-item a:not(.collapsed)>h3::after {
@@ -96,10 +102,7 @@ ul.workload .total {
 
 @media (max-width: 768px) {
   .course-item a>h3::after {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    font-size: 12px;
+    font-size: 12px
   }
   .dataTables_wrapper .row .col-sm-6:nth-of-type(2) {
     margin-bottom: 0;
