@@ -109,9 +109,17 @@
 <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
 {% endif %}
+{% if page.category == "kurser" %}
+<!-- Kurser.ku.dk -->
+<script src="../../assets/js/kurser.ku.dk/kurser.min.js"></script>
+{% endif %}
 {% else %}
 <script src="../../dist/js/bootstrap.js"></script>
 <script src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script src="../../custom/ku-mobile-menu.js"></script>
 <script src="../../assets/js/docs.min.js"></script>
+{% if page.category == "kurser" %}
+<!-- Kurser.ku.dk -->
+<script src="../../assets/js/kurser.ku.dk/kurser.js"></script>
+{% endif %}
 {% endif %}

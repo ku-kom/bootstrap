@@ -125,17 +125,15 @@ category: kurser
         <div class="row">
           <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-2">
             <div class="form-group">
-              <button type="submit" class="btn btn-default">Søg i kursusdatabasen</button>
-            </div>
-            <div class="form-group show-filter">
-              <button id="showall" class="btn btn-default">Avanceret søgning <span class="glyphicon glyphicon-cog"></span></button>
+              <button id="searchall" type="submit" class="btn btn-default">Søg i kursusdatabasen</button>
+              <button id="showall" class="btn btn-default show-filter">Avanceret søgning <span class="glyphicon"></span></button>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <h3>Søgeresultat</h3>
-            <table id="searchresults" class="table table-striped table-bordered table-hover" data-order='[[ 0, "asc" ]]' data-page-length='25'>
+            <table id="searchresults" class="table table-striped table-bordered table-hover" data-page-length='25'>
               <thead>
                 <tr>
                   <th>
@@ -852,68 +850,3 @@ category: kurser
   </div>
   {% include local-footer.html %}
 </main>
-<script>
-  $(document).ready(function() {
-    var $cachedWidth = $('body').prop('clientWidth');
-      $('#showall').click(function() {
-        if ($cachedWidth < 768) {
-        $('.mobile-hidden').slideToggle()
-      }
-    });
-    $(window).resize(function() {
-        var $newWidth = $('body').prop('clientWidth');
-        if ($newWidth !== $cachedWidth) {
-            $cachedWidth = $newWidth;
-        }
-    });
-    $('select[multiple]').multipleSelect({
-      placeholder: "V&aelig;lg flere...",
-      selectAllText: 'V&aelig;lg alle',
-      allSelected: 'Alle valgt',
-      countSelected: '# af % valgt',
-      width: '100%'
-    });
-    $('#searchresults').DataTable({
-      "language": {
-        "sProcessing": "Henter...",
-        "sLengthMenu": "Vis _MENU_ r&aelig;kker",
-        "sZeroRecords": "Ingen r&aelig;kker matcher s&oslash;gningen",
-        "sInfo": "Viser _START_ til _END_ af _TOTAL_ r&aelig;kker",
-        "sInfoEmpty": "Viser 0 til 0 af 0 r&aelig;kker",
-        "sInfoFiltered": "(filtreret fra _MAX_ r&aelig;kker)",
-        "sInfoPostFix": "",
-        "sSearch": "S&oslash;g:",
-        "sUrl": "",
-        "oPaginate": {
-          "sFirst": "F&oslash;rste",
-          "sPrevious": "Forrige",
-          "sNext": "N&aelig;ste",
-          "sLast": "Sidste"
-        }
-      },
-      'ordering': true,
-      "autoWidth": false,
-      "bFilter": false,
-      fixedHeader: true,
-      responsive: {
-        breakpoints: [{
-            name: 'desktop',
-            width: Infinity
-          },
-          {
-            name: 'tablet',
-            width: 992
-          },
-          {
-            name: 'fablet',
-            width: 768
-          },
-          {
-            name: 'mobile',
-            width: 480
-          }
-        ]
-      }
-    });
-  });
-</script>

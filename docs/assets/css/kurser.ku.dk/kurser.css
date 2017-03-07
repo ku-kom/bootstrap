@@ -1,3 +1,5 @@
+/* CSS for kurser.ku.dk */
+
 .dl-horizontal dt {
   margin-top: 5px;
 }
@@ -11,6 +13,7 @@ ul.workload li {
   float: left;
   padding: 3px 0;
   list-style-type: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -28,6 +31,40 @@ ul.workload li:nth-child(even) {
 
 ul.workload .total {
   border-top: 1px solid #999;
+}
+
+.last-modified {
+  margin-top: 10px;
+}
+
+.course-item>a {
+  color: #252525;
+  display: block;
+}
+
+.course-item a>h3 {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 5px;
+}
+
+.course-item a>h3::after {
+  content: "\e259";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.course-item a:not(.collapsed)>h3::after {
+  content: "\e260";
 }
 
 @media (min-width: 480px) and (max-width: 757px) {
@@ -58,7 +95,29 @@ ul.workload .total {
 }
 
 @media (max-width: 768px) {
+  .course-item a>h3::after {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    font-size: 12px;
+  }
+  .dataTables_wrapper .row .col-sm-6:nth-of-type(2) {
+    margin-bottom: 0;
+  }
   .mobile-hidden {
     display: none;
+  }
+  .show-filter {
+    float: right;
+    margin-left: 10px;
+  }
+  .show-filter .glyphicon {
+    margin-left: 3px;
+  }
+  .show-filter .glyphicon::before {
+    content: "\e259";
+  }
+  .show-filter.open .glyphicon::before {
+    content: "\e260";
   }
 }
