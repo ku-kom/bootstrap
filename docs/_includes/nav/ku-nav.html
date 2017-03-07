@@ -97,24 +97,24 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right search_form search_reset" role="search">
         <div class="input-group">
-          <input class="form-control" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
-          <input id="localdomain" name="localdomain" type="hidden" value="www.ku.dk">
+          <input class="form-control search_query" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
+          <input id="localdomain" name="localdomain" type="hidden" value=" + window.location.hostname +">
           <script type="text/javascript">
-              <!--
               el = document.getElementById("localdomain");
               el.value = window.location.hostname;
-            //-->
-          </script>
+            </script>
           <div class="input-group-btn btn-global-search">
             <button type="button" id="search" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="caret"></span> <span class="sr-only">Vis søgemuligheder</span> </button>
             <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">Hele KU</a></li>
-              <li><a href="#">Nyheder</a></li>
-              <li><a href="#">Studier</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Efteruddannelse</a></li>
+              <li data-index="0" class="selected"><a href="#">Hele KU</a></li>
+              <li data-index="1"><a href="#">Nyheder</a></li>
+              <li data-index="2"><a href="#">Studier</a></li>
+              <li data-index="3"><a href="#">Efteruddannelse</a></li>
+              <li data-index="4"><a href="#">Forskere</a></li>
+              <li data-index="5"><a href="#">Publicationer</a></li>
+              <li data-index="6"><a href="#">Jobs</a></li>
             </ul>
             <button class="btn btn-default" name="sa" id="submit-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
           </div>

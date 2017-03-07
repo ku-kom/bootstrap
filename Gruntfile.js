@@ -153,7 +153,8 @@ module.exports = function (grunt) {
             src: [
               'docs/assets/js/datatables/datatables.js',
               'docs/assets/js/multiple-select/multiple-select.js',
-              'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js'
+              'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js',
+              'docs/assets/js/ku-global-search/search.js'
             ],
             dest: 'dist/js/',
             ext: '.min.js',
