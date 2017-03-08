@@ -10,33 +10,33 @@
  *   DataTables 1.10.13, FixedHeader 3.1.2, Responsive 2.1.1
  */
 
-table.dataTable {
+.dataTable {
   clear: both;
   margin-top: 6px !important;
   margin-bottom: 6px !important;
   max-width: none !important;
   border-collapse: separate !important;
 }
-table.dataTable td,
-table.dataTable th {
+.dataTable td,
+.dataTable th {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-table.dataTable td.dataTables_empty,
-table.dataTable th.dataTables_empty {
+.dataTable td.dataTables_empty,
+.dataTable th.dataTables_empty {
   text-align: center;
 }
-table.dataTable.nowrap th,
-table.dataTable.nowrap td {
+.dataTable.nowrap th,
+.dataTable.nowrap td {
   white-space: nowrap;
 }
 
-.dataTables_wrapper div.dataTables_length label {
+.dataTables_wrapper .dataTables_length label {
   font-weight: normal;
   text-align: left;
   white-space: nowrap;
 }
-.dataTables_wrapper div.dataTables_length select {
+.dataTables_wrapper .dataTables_length select {
   width: 75px;
   display: inline-block;
 }
@@ -44,33 +44,33 @@ table.dataTable.nowrap td {
     height: 29px;
     line-height: 26px;
 }
-.dataTables_wrapper div.dataTables_filter {
+.dataTables_wrapper .dataTables_filter {
   text-align: right;
 }
-.dataTables_wrapper div.dataTables_filter label {
+.dataTables_wrapper .dataTables_filter label {
   font-weight: normal;
   white-space: nowrap;
   text-align: left;
 }
-.dataTables_wrapper div.dataTables_filter input {
+.dataTables_wrapper .dataTables_filter input {
   margin-left: 0.5em;
   display: inline-block;
   width: auto;
 }
-.dataTables_wrapper div.dataTables_info {
+.dataTables_wrapper .dataTables_info {
   padding-top: 8px;
   white-space: nowrap;
 }
-.dataTables_wrapper div.dataTables_paginate {
+.dataTables_wrapper .dataTables_paginate {
   margin: 0;
   white-space: nowrap;
   text-align: right;
 }
-.dataTables_wrapper div.dataTables_paginate ul.pagination {
+.dataTables_wrapper .dataTables_paginate ul.pagination {
   margin: 2px 0;
   white-space: nowrap;
 }
-.dataTables_wrapper div.dataTables_processing {
+.dataTables_wrapper .dataTables_processing {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,29 +81,29 @@ table.dataTable.nowrap td {
   padding: 1em 0;
 }
 
-table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting,
-table.dataTable thead > tr > td.sorting_asc,
-table.dataTable thead > tr > td.sorting_desc,
-table.dataTable thead > tr > td.sorting {
+.dataTable thead > tr > th.sorting_asc, .dataTable thead > tr > th.sorting_desc, .dataTable thead > tr > th.sorting,
+.dataTable thead > tr > td.sorting_asc,
+.dataTable thead > tr > td.sorting_desc,
+.dataTable thead > tr > td.sorting {
   padding-right: 30px;
 }
-table.dataTable thead > tr > th:active,
-table.dataTable thead > tr > td:active {
+.dataTable thead > tr > th:active,
+.dataTable thead > tr > td:active {
   outline: none;
 }
-table.dataTable thead .sorting,
-table.dataTable thead .sorting_asc,
-table.dataTable thead .sorting_desc,
-table.dataTable thead .sorting_asc_disabled,
-table.dataTable thead .sorting_desc_disabled {
+.dataTable thead .sorting,
+.dataTable thead .sorting_asc,
+.dataTable thead .sorting_desc,
+.dataTable thead .sorting_asc_disabled,
+.dataTable thead .sorting_desc_disabled {
   cursor: pointer;
   position: relative;
 }
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:after {
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:after,
+.dataTable thead .sorting_asc_disabled:after,
+.dataTable thead .sorting_desc_disabled:after {
   position: absolute;
   bottom: 8px;
   right: 8px;
@@ -111,135 +111,135 @@ table.dataTable thead .sorting_desc_disabled:after {
   font-family: 'Glyphicons Halflings';
   opacity: 0.5;
 }
-table.dataTable thead .sorting:after {
+.dataTable thead .sorting:after {
   opacity: 0.2;
   content: "\e150";
   /* sort */
 }
-table.dataTable thead .sorting_asc:after {
+.dataTable thead .sorting_asc:after {
   content: "\e155";
   /* sort-by-attributes */
 }
-table.dataTable thead .sorting_desc:after {
+.dataTable thead .sorting_desc:after {
   content: "\e156";
   /* sort-by-attributes-alt */
 }
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:after {
+.dataTable thead .sorting_asc_disabled:after,
+.dataTable thead .sorting_desc_disabled:after {
   color: #eee;
 }
 
-div.dataTables_scrollHead table.dataTable {
+.dataTables_scrollHead .dataTable {
   margin-bottom: 0 !important;
 }
 
-div.dataTables_scrollBody table {
+.dataTables_scrollBody table {
   border-top: none;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-div.dataTables_scrollBody table thead .sorting:after,
-div.dataTables_scrollBody table thead .sorting_asc:after,
-div.dataTables_scrollBody table thead .sorting_desc:after {
+.dataTables_scrollBody table thead .sorting:after,
+.dataTables_scrollBody table thead .sorting_asc:after,
+.dataTables_scrollBody table thead .sorting_desc:after {
   display: none;
 }
-div.dataTables_scrollBody table tbody tr:first-child th,
-div.dataTables_scrollBody table tbody tr:first-child td {
+.dataTables_scrollBody table tbody tr:first-child th,
+.dataTables_scrollBody table tbody tr:first-child td {
   border-top: none;
 }
 
-div.dataTables_scrollFoot table {
+.dataTables_scrollFoot table {
   margin-top: 0 !important;
   border-top: none;
 }
 
 @media screen and (max-width: 767px) {
-  .dataTables_wrapper div.dataTables_length,
-  .dataTables_wrapper div.dataTables_filter,
-  .dataTables_wrapper div.dataTables_info,
-  .dataTables_wrapper div.dataTables_paginate {
-    text-align: center;
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter,
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_paginate {
+    text-align: left;
   }
 }
-table.dataTable.table-condensed > thead > tr > th {
+.dataTable.table-condensed > thead > tr > th {
   padding-right: 20px;
 }
-table.dataTable.table-condensed .sorting:after,
-table.dataTable.table-condensed .sorting_asc:after,
-table.dataTable.table-condensed .sorting_desc:after {
+.dataTable.table-condensed .sorting:after,
+.dataTable.table-condensed .sorting_asc:after,
+.dataTable.table-condensed .sorting_desc:after {
   top: 6px;
   right: 6px;
 }
 
-table.table-bordered.dataTable th,
-table.table-bordered.dataTable td {
+.table-bordered.dataTable th,
+.table-bordered.dataTable td {
   border-left-width: 0;
 }
-table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child,
-table.table-bordered.dataTable td:last-child,
-table.table-bordered.dataTable td:last-child {
+.table-bordered.dataTable th:last-child, .table-bordered.dataTable th:last-child,
+.table-bordered.dataTable td:last-child,
+.table-bordered.dataTable td:last-child {
   border-right-width: 0;
 }
-table.table-bordered.dataTable tbody th,
-table.table-bordered.dataTable tbody td {
+.table-bordered.dataTable tbody th,
+.table-bordered.dataTable tbody td {
   border-bottom-width: 0;
 }
 
-div.dataTables_scrollHead table.table-bordered {
+.dataTables_scrollHead .table-bordered {
   border-bottom-width: 0;
 }
 
-div.table-responsive > .dataTables_wrapper > div.row {
+.table-responsive > .dataTables_wrapper > div.row {
   margin: 0;
 }
-div.table-responsive > .dataTables_wrapper > div.row > div[class^="col-"]:first-child {
+.table-responsive > .dataTables_wrapper > div.row > div[class^="col-"]:first-child {
   padding-left: 0;
 }
-div.table-responsive > .dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+.table-responsive > .dataTables_wrapper > div.row > div[class^="col-"]:last-child {
   padding-right: 0;
 }
 
 
-table.dataTable.fixedHeader-floating,
-table.dataTable.fixedHeader-locked {
+.dataTable.fixedHeader-floating,
+.dataTable.fixedHeader-locked {
   background-color: white;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-table.dataTable.fixedHeader-floating {
+.dataTable.fixedHeader-floating {
   position: fixed !important;
 }
 
-table.dataTable.fixedHeader-locked {
+.dataTable.fixedHeader-locked {
   position: absolute !important;
 }
 
 @media print {
-  table.fixedHeader-floating {
+  .fixedHeader-floating {
     display: none;
   }
 }
 
 
-table.dataTable.dtr-inline.collapsed > tbody > tr > td.child,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th.child,
-table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty {
+.dataTable.dtr-inline.collapsed > tbody > tr > td.child,
+.dataTable.dtr-inline.collapsed > tbody > tr > th.child,
+.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty {
   cursor: default !important;
 }
-table.dataTable.dtr-inline.collapsed > tbody > tr > td.child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th.child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty:before {
+.dataTable.dtr-inline.collapsed > tbody > tr > td.child:before,
+.dataTable.dtr-inline.collapsed > tbody > tr > th.child:before,
+.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty:before {
   display: none !important;
 }
-table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child {
+.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child,
+.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
 }
-table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   top: 9px;
   left: 4px;
   height: 14px;
@@ -259,20 +259,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   content: '+';
   background-color: #337ab7;
 }
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
   content: '-';
   background-color: #d33333;
 }
-table.dataTable.dtr-inline.collapsed > tbody > tr.child td:before {
+.dataTable.dtr-inline.collapsed > tbody > tr.child td:before {
   display: none;
 }
-table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child,
-table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child {
+.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child,
+.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child {
   padding-left: 27px;
 }
-table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child:before,
-table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child:before {
+.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child:before,
+.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child:before {
   top: 5px;
   left: 4px;
   height: 14px;
@@ -281,13 +281,13 @@ table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child:befor
   line-height: 14px;
   text-indent: 3px;
 }
-table.dataTable.dtr-column > tbody > tr > td.control,
-table.dataTable.dtr-column > tbody > tr > th.control {
+.dataTable.dtr-column > tbody > tr > td.control,
+.dataTable.dtr-column > tbody > tr > th.control {
   position: relative;
   cursor: pointer;
 }
-table.dataTable.dtr-column > tbody > tr > td.control:before,
-table.dataTable.dtr-column > tbody > tr > th.control:before {
+.dataTable.dtr-column > tbody > tr > td.control:before,
+.dataTable.dtr-column > tbody > tr > th.control:before {
   top: 50%;
   left: 50%;
   height: 16px;
@@ -309,34 +309,34 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
   content: '+';
   background-color: #337ab7;
 }
-table.dataTable.dtr-column > tbody > tr.parent td.control:before,
-table.dataTable.dtr-column > tbody > tr.parent th.control:before {
+.dataTable.dtr-column > tbody > tr.parent td.control:before,
+.dataTable.dtr-column > tbody > tr.parent th.control:before {
   content: '-';
   background-color: #d33333;
 }
-table.dataTable > tbody > tr.child {
+.dataTable > tbody > tr.child {
   padding: 0.5em 1em;
 }
-table.dataTable > tbody > tr.child:hover {
+.dataTable > tbody > tr.child:hover {
   background: transparent !important;
 }
-table.dataTable > tbody > tr.child ul.dtr-details {
+.dataTable > tbody > tr.child ul.dtr-details {
   display: inline-block;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-table.dataTable > tbody > tr.child ul.dtr-details li {
+.dataTable > tbody > tr.child ul.dtr-details li {
   border-bottom: 1px solid #efefef;
   padding: 0.5em 0;
 }
-table.dataTable > tbody > tr.child ul.dtr-details li:first-child {
+.dataTable > tbody > tr.child ul.dtr-details li:first-child {
   padding-top: 0;
 }
-table.dataTable > tbody > tr.child ul.dtr-details li:last-child {
+.dataTable > tbody > tr.child ul.dtr-details li:last-child {
   border-bottom: none;
 }
-table.dataTable > tbody > tr.child span.dtr-title {
+.dataTable > tbody > tr.child span.dtr-title {
   display: inline-block;
   min-width: 75px;
   font-weight: bold;

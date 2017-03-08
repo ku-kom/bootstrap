@@ -4,17 +4,24 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6 footer-address">
       <address>
+        {% if page.category == "kurser" %}
+          Support: <abbr title="Tlf.">tlf:</abbr> 353 22700 / <a href="mailto:it-service@adm.ku.dk">it-service@adm.ku.dk</a><br>
+          Hvis du har spørgsmål til kurset, skal du skrive til studieadministrationen.
+        {% else %}
           <a href="http://www.kommunikation.ku.dk">Kommunikation</a><br>
           <a href="http://www.ku.dk/">Københavns Universitet</a><br>
           Nørregade 10, Postboks 2177<br>1017 København K<br>
-          </address>
+        {% endif %}
+      </address>
     </div>
     <div class="col-xs-12 col-sm-6 footer-data">
       <address>
-              Kommunikation<br>
-              <a href="mailto:#">kommunikation@adm.ku.dk</a><br>
-              Tel. +45 35 32 42 61<br>
-          </address>
+        {% if page.category != "kurser" %}
+        Kommunikation<br>
+        <a href="mailto:kommunikation@adm.ku.dk">kommunikation@adm.ku.dk</a><br>
+        <abbr title="Tlf.">Tlf:</abbr>+45 35 32 42 61
+        {% endif %}
+      </address>
     </div>
   </div>
 </div>

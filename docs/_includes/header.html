@@ -10,13 +10,15 @@
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Documentation extras - not for production -->
-<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
-<!-- //Documentation extras - not for production -->
 {% if page.slug == "examples" %}
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/datatables.min.css" rel="stylesheet">
+{% endif %}
+{% if page.slug != "examples" %}
+<!-- Documentation extras - not for production -->
+<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+<!-- //Documentation extras - not for production -->
 {% endif %}
 {% if page.category == "kurser" %}
 <!-- Kurser.ku.dk -->
@@ -26,9 +28,11 @@
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+{% if page.slug != "examples" %}
 <!-- Documentation extras - not for production -->
 <link href="../../assets/css/docs.min.css" rel="stylesheet">
 <!-- //Documentation extras - not for production -->
+{% endif %}
 {% if page.slug == "examples" %}
 <link href="../../dist/css/ku-gridboxes.css" rel="stylesheet">
 <link href="../../assets/css/multiple-select/multiple-select.css" rel="stylesheet">
