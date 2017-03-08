@@ -1,20 +1,57 @@
 /* CSS for kurser.ku.dk */
-.course-item p {
-    margin: 0;
+
+body {
+  line-height: 1.4;
 }
+
+h1 {
+  font-size: 1.67em;
+  line-height: 1.4;
+  margin: 0.67em 0 22px;
+}
+
+table>thead>tr>th, .control-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.course-item p {
+  margin: 0;
+}
+
+.resultsheader {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#searchall, #showall {
+  font-size: 14px;
+  font-weight: 600;
+  color: #901a1e;
+}
+
+#searchall.btn-default:hover,
+#searchall.btn-default:active,
+#searchall.btn-default:focus,
+#showall.btn-default:hover,
+#showall.btn-default:active,
+#showall.btn-default:focus {
+  color: #901a1e;
+}
+
 .course-archive {
   margin-top: 6px;
   display: block;
 }
-.resultsheader {
-  text-align: center;
-}
+
 .dl-horizontal dt {
   margin-top: 5px;
 }
+
 .panel-title {
   font-weight: 600;
 }
+
 .right-side li a .glyphicon {
   color: #999;
   font-size: .83em;
@@ -55,11 +92,15 @@ ul.workload .total {
 }
 
 .course-item a>h3 {
+  color: #666;
   position: relative;
   background-color: #f6f6f6;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #dedede;
   border-radius: 2px;
-  padding: 7px 5px;
+  padding: 7px 25px 7px 5px;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .course-item a>h3::after {
@@ -128,8 +169,10 @@ ul.workload .total {
   }
   .show-filter .glyphicon::before {
     content: "\e259";
+    color: #252525;
   }
   .show-filter.open .glyphicon::before {
     content: "\e260";
+    color: #252525;
   }
 }

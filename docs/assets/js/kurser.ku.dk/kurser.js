@@ -3,8 +3,9 @@ $(document).ready(function() {
   var $cachedWidth = $('body').prop('clientWidth');
   var $search = $('#searchall');
   var $searchText = $search.text();
+  var $hiddenColumn = $('.mobile-hidden');
 
-// Function to change text for small screens
+  // Function to change text for small screens
   var resetText = function() {
     if ($cachedWidth < 768) {
       $search.text('Søg');
@@ -15,16 +16,19 @@ $(document).ready(function() {
 
   resetText();
 
-  if ($cachedWidth < 768) {
-    $('#showall').click(function() {
+
+  $('#showall').click(function() {
+    if ($cachedWidth < 768) {
       $(this).toggleClass("open");
       $('.mobile-hidden').slideToggle();
-    });
-  }
+    }
+  });
+
 
   $(window).resize(function() {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
+      $hiddenColumn.removeAttr('style');
       resetText();
       $cachedWidth = $newWidth;
     }
