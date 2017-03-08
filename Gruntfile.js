@@ -153,8 +153,7 @@ module.exports = function (grunt) {
             src: [
               'docs/assets/js/datatables/datatables.js',
               'docs/assets/js/multiple-select/multiple-select.js',
-              'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js',
-              'docs/assets/js/ku-global-search/search.js'
+              'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js'
             ],
             dest: 'dist/js/',
             ext: '.min.js',
@@ -200,6 +199,21 @@ module.exports = function (grunt) {
         },
         src: 'less/ku-gridboxes.less',
         dest: 'dist/css/ku-gridboxes.css'
+      },
+      compileFacultyStyles: {
+        options: {
+            strictMath: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'less/faculties/',
+            src: ['**/*.less'],
+            dest: 'dist/css/faculties/',
+            ext: '.css',
+            flatten: true
+        }
+      ]
       }
     },
 
@@ -218,7 +232,8 @@ module.exports = function (grunt) {
           'dist/css/ku-gridboxes.css',
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
-          'docs/assets/css/kurser.ku.dk/kurser.css'
+          'docs/assets/css/kurser.ku.dk/kurser.css',
+          'dist/css/faculties/*.css'
       ]
     },
       docs: {
@@ -513,7 +528,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:assets']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
 
   // Full distribution task.
