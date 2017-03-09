@@ -1,6 +1,6 @@
 /* ========================================================================
  * Copyright 2017
- * University of Copenhagen, Communications
+ * University of Copenhagen, FA Communications
  * ========================================================================*/
 
 // Fix viewport width on Windows Phone: http://getbootstrap.com/getting-started/#support-ie10-width
@@ -53,7 +53,6 @@ $(document).ready(function () {
   });
 
   // Watch for the custom `fileselect` event
-  $(document).ready(function () {
     $(':file').on('fileselect', function (event, numFiles, label) {
       var input = $(this).parents('.input-group').find(':text'),
         log = numFiles > 1 ? numFiles + ' files selected' : label;
@@ -63,5 +62,19 @@ $(document).ready(function () {
         // if (log) console.log(log);
       }
     });
-  });
+
+    /* Truncate multiple lines of text */
+$(function () {
+    //News in global menu
+    var $chars = 80; // number of characters
+    var $news = $('ul.dropdown-menu.nyheder li a');
+    if ($news) {
+        $news.each(function (i, v) {
+            var txt = $(this).text();
+            if (txt.length > $chars) {
+                $(this).html($(this).html().substring(0, $chars) + '...');
+            }
+        });
+    }
+});
 });
