@@ -1,12 +1,12 @@
 // Custom scripts for kurser.ku.dk
-$(document).ready(function() {
+$(document).ready(function () {
   var $cachedWidth = $('body').prop('clientWidth');
   var $search = $('#searchall');
   var $searchText = $search.text();
   var $hiddenColumn = $('.mobile-hidden');
 
   // Function to change text for small screens
-  var resetText = function() {
+  var resetText = function () {
     if ($cachedWidth < 768) {
       $search.text('Søg');
     } else {
@@ -17,15 +17,15 @@ $(document).ready(function() {
   resetText();
 
 
-  $('#showall').click(function() {
+  $('#showall').click(function () {
     if ($cachedWidth < 768) {
-      $(this).toggleClass("open");
-      $('.mobile-hidden').slideToggle();
+      $(this).toggleClass('open');
+      $hiddenColumn.slideToggle();
     }
   });
 
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
       $hiddenColumn.removeAttr('style');
@@ -34,36 +34,43 @@ $(document).ready(function() {
     }
     $cachedWidth = $newWidth;
   });
-  // Multiple select functions
-  $('select[multiple]').multipleSelect({
-    placeholder: "V&aelig;lg flere...",
-    selectAllText: 'V&aelig;lg alle',
-    allSelected: 'Alle valgt',
-    countSelected: '# af % valgt',
-    width: '100%'
-  });
-  // Datatable
+
+  // Multiple select language switcher
+  var multipleSelectLang = function () {
+    var da = {
+      placeholder: 'V&aelig;lg flere...',
+      selectAllText: 'V&aelig;lg alle',
+      allSelected: 'Alle valgt',
+      countSelected: '# af % valgt',
+      width: '100%'
+    };
+    var en = {
+      placeholder: 'Select multiple...',
+      width: '100%'
+    };
+    // Run Multiple select
+    return ($('html').attr('lang') == 'da') ? da : en;
+  };
+  $('select[multiple]').multipleSelect(multipleSelectLang());
+
+  // Datatable language switcher
+  function getLanguage() {
+    var langMap = {
+      en: 'English',
+      da: 'Danish'
+    };
+    var lang = $('html').attr('lang');
+    return '//cdn.datatables.net/plug-ins/1.10.13/i18n/' + langMap[lang] + '.json';
+  }
+
+  // Run Datatables
   $('#searchresults').DataTable({
-    "language": {
-      "sProcessing": "Henter...",
-      "sLengthMenu": "Vis _MENU_ r&aelig;kker",
-      "sZeroRecords": "Ingen r&aelig;kker matcher s&oslash;gningen",
-      "sInfo": "Viser _START_ til _END_ af _TOTAL_ r&aelig;kker",
-      "sInfoEmpty": "Viser 0 til 0 af 0 r&aelig;kker",
-      "sInfoFiltered": "(filtreret fra _MAX_ r&aelig;kker)",
-      "sInfoPostFix": "",
-      "sSearch": "S&oslash;g:",
-      "sUrl": "",
-      "oPaginate": {
-        "sFirst": "F&oslash;rste",
-        "sPrevious": "Forrige",
-        "sNext": "N&aelig;ste",
-        "sLast": "Sidste"
-      }
+    language: {
+      url: getLanguage()
     },
-    'ordering': true,
-    "autoWidth": false,
-    "bFilter": false,
+    ordering: true,
+    autoWidth: false,
+    bFilter: false,
     fixedHeader: true,
     responsive: true
   });

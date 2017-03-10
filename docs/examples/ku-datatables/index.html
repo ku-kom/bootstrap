@@ -13,7 +13,7 @@ slug: examples
       <div class="col-sm-8 col-md-6 main-content">
         <div class="row">
           <div class="col-sm-12">
-            <table id="datatable" class="table responsive table-hover" data-page-length="25" style="width:100%">
+            <table id="datatable" class="table responsive table-hover" data-page-length="25">
               <thead>
                 <tr>
                   <th>Navn</th>
@@ -498,26 +498,6 @@ slug: examples
       </div>
       <div class=" col-sm-8 col-md-3 right-side">
         <div class="row">
-          <div class="col-sm-6 col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Right side</h3>
-              </div>
-              <div class="panel-body">
-                This is a right side panel element. It can contain almost anything.
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Right side</h3>
-              </div>
-              <div class="panel-body">
-                This is a right side panel element. It can contain almost anything.
-              </div>
-            </div>
-          </div>
           <div class="col-sm-12">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -525,6 +505,31 @@ slug: examples
               </div>
               <div class="panel-body">
                 This is a right side panel element. It can contain almost anything.
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Right side</h3>
+              </div>
+              <div class="panel-body">
+                This is a right side panel element. It can contain almost anything.
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Right side</h3>
+              </div>
+              <div class="panel-body">
+                This is a right side panel element. It can contain almost anything.
+              </div>
+            </div>
+            <div class="panel panel-default with-img">
+              <div class="panel-heading">
+                <h3 class="panel-title">Right side box with img</h3>
+              </div>
+              <div class="panel-body">
+                <img src="https://placehold.it/768x200?text=Img+768x200" alt="Right box">
               </div>
             </div>
           </div>
@@ -535,37 +540,28 @@ slug: examples
   {% include local-footer.html %}
 </main>
 <!-- DataTables.js -->
-<script type="text/javascript" src="../../assets/js/datatables/datatables.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#datatable').dataTable({
-        "language": {
-          "sProcessing": "Henter...",
-          "sLengthMenu": "Vis _MENU_ r&aelig;kker",
-          "sZeroRecords": "Ingen r&aelig;kker matcher s&oslash;gningen",
-          "sInfo": "Viser _START_ til _END_ af _TOTAL_ r&aelig;kker",
-          "sInfoEmpty": "Viser 0 til 0 af 0 r&aelig;kker",
-          "sInfoFiltered": "(filtreret fra _MAX_ r&aelig;kker)",
-          "sInfoPostFix": "",
-          "sSearch": "S&oslash;g:",
-          "sUrl": "",
-          "oPaginate": {
-            "sFirst": "F&oslash;rste",
-            "sPrevious": "Forrige",
-            "sNext": "N&aelig;ste",
-            "sLast": "Sidste"
-          }
-      },
-      'ordering': true,
-      'searching': false,
-      responsive: {
-        breakpoints: [
-            { name: 'desktop', width: Infinity },
-            { name: 'tablet',  width: 992 },
-            { name: 'fablet',  width: 768 },
-            { name: 'mobile',   width: 480 }
-        ]
+    // Datatable language switcher
+    function getLanguage() {
+      var langMap = {
+        en: 'English',
+        da: 'Danish'
+      };
+      var lang = $('html').attr('lang');
+      return '//cdn.datatables.net/plug-ins/1.10.13/i18n/' + langMap[lang] + '.json';
     }
+
+    // Run Datatables
+    $('#datatable').DataTable({
+      language: {
+        url: getLanguage()
+      },
+      ordering: true,
+      autoWidth: false,
+      bFilter: false,
+      fixedHeader: true,
+      responsive: true
     });
   });
 </script>

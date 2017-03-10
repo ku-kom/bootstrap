@@ -18,7 +18,7 @@
       API;
 
   // Add title to local menu
-  $left_menu.find('span.title-placeholder').replaceWith($localMenuTitle);
+  $left_menu.find('.title-placeholder').replaceWith($localMenuTitle);
   $left_menu.append(
       $('#leftmenu_2').clone().attr('id', 'leftmenu2-clone')
   );

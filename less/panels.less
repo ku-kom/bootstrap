@@ -47,11 +47,11 @@
   color: inherit;
   overflow: hidden; //KU - only single line header
 
-   > .small,
+   > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 }
@@ -69,8 +69,8 @@
 // any kind of custom content between the two.
 
 .panel {
-   > .panel-collapse > .list-group,
-  > .list-group {
+   > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -116,9 +116,9 @@
 // watch it go full width.
 
 .panel {
-   > .panel-collapse > .table,
+   > .table,
    > .table-responsive > .table,
-  > .table {
+  > .panel-collapse > .table {
     margin-bottom: 0;
 
     caption {
@@ -170,53 +170,53 @@
   //     }
   //   }
   // }
-   > .panel-body + .table-responsive,
+   > .panel-body + .table,
    > .table + .panel-body,
    > .table-responsive + .panel-body,
-  > .panel-body + .table {
+  > .panel-body + .table-responsive {
     border-top: 1px solid @table-border-color;
   }
 
-   > .table > tbody:first-child > tr:first-child td,
-  > .table > tbody:first-child > tr:first-child th {
+   > .table > tbody:first-child > tr:first-child th,
+  > .table > tbody:first-child > tr:first-child td {
     border-top: 0;
   }
 
-   > .table-responsive > .table-bordered,
-  > .table-bordered {
+   > .table-bordered,
+  > .table-responsive > .table-bordered {
     border: 0;
 
-     > tbody,
+     > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-         > td:first-child,
-        > th:first-child {
+         > th:first-child,
+        > td:first-child {
           border-left: 0;
         }
 
-         > td:last-child,
-        > th:last-child {
+         > th:last-child,
+        > td:last-child {
           border-right: 0;
         }
       }
     }
 
-     > tbody,
-    > thead {
+     > thead,
+    > tbody {
       > tr:first-child {
-         > th,
-        > td {
+         > td,
+        > th {
           border-bottom: 0;
         }
       }
     }
 
-     > tfoot,
-    > tbody {
+     > tbody,
+    > tfoot {
       > tr:last-child {
-         > th,
-        > td {
+         > td,
+        > th {
           border-bottom: 0;
         }
       }
@@ -298,6 +298,16 @@
       border-top: 1px solid @teol;
     }
   }
+  @media (min-width: @screen-xs-max) {
+    // Remove top border from first box in the right side
+    .right-side & {
+      &:first-child {
+        > .panel-heading {
+          border-top: 0;
+        }
+      }
+    }
+  }
 }
 
 .panel-primary {
@@ -348,6 +358,7 @@
     // Open accordion
     &.open {
       .glyphicon-triangle-bottom;
+
       &:before {
         color: @panel-accordion-arrow-active;
       }

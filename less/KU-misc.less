@@ -29,13 +29,6 @@
   // @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
   //   .pull-right();
   // }
-  @media (min-width: @screen-xs-max) {
-    .panel-default:first-of-type {
-      .panel-heading {
-        border-top: 0;
-      }
-    }
-  }
 }
 // Main content part
 
@@ -69,9 +62,11 @@ nav {
   padding-top: @grid-gutter-height;
   padding-bottom: @grid-gutter-height;
 }
+
 .right-side {
   padding-bottom: @grid-gutter-height;
 }
+
 .main-area {
   flex-grow: 1;
 
@@ -79,9 +74,20 @@ nav {
     padding-top: 0;
   }
 
+  &:focus {
+    outline: 0;
+    user-focus: none;
+  }
+
   img {
     .img-responsive;
   }
+}
+// Accessibility
+
+[tabindex] {
+  outline: 0;
+  user-focus: none;
 }
 
 .divider {
@@ -94,12 +100,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  // Accessibility
-  .main-area,
-  [tabindex] {
-    outline: 0;
-    user-focus: none;
   }
 
   .jump,
@@ -162,13 +162,7 @@ nav {
 .relative {
   position: relative;
 }
-
-.w100 {
-  width: 100%;
-}
-
 // Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
-
 .ie9 img[src$=".svg"] {
   width: 100%;
 }

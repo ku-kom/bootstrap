@@ -9,6 +9,39 @@
 
   &-inline {
     width: 100%;
+    @media (max-width: @screen-md-min) {
+      .right-side & {
+        // To-do - fix calendar box top when not first box
+        // .right-side .panel-default:not(:first-child) .datepicker.datepicker-inline {
+        //   border-top: 0;
+        // }
+        border-top: 1px solid @ku-red;
+
+        .theme-samf & {
+          border-top: 1px solid @samf;
+        }
+
+        .theme-hum & {
+          border-top: 1px solid @hum;
+        }
+
+        .theme-science & {
+          border-top: 1px solid @science;
+        }
+
+        .theme-sund & {
+          border-top: 1px solid @sund;
+        }
+
+        .theme-jur & {
+          border-top: 1px solid @jura;
+        }
+
+        .theme-teo & {
+          border-top: 1px solid @teol;
+        }
+      }
+    }
   }
   direction: ltr;
 
