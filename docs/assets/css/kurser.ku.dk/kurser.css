@@ -4,6 +4,10 @@ body {
   line-height: 1.4;
 }
 
+select[multiple] {
+  visibility: hidden;
+}
+
 h1 {
   font-size: 1.67em;
   line-height: 1.4;
@@ -30,12 +34,7 @@ table>thead>tr>th, .control-label {
   color: #901a1e;
 }
 
-#searchall.btn-default:hover,
-#searchall.btn-default:active,
-#searchall.btn-default:focus,
-#showall.btn-default:hover,
-#showall.btn-default:active,
-#showall.btn-default:focus {
+#searchall.btn-default:hover, #searchall.btn-default:active, #searchall.btn-default:focus, #showall.btn-default:hover, #showall.btn-default:active, #showall.btn-default:focus {
   color: #901a1e;
 }
 

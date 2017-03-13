@@ -2,7 +2,7 @@
   <div class="navbar-inverse navbar-static-top ku-topbar" role="navigation">
     <div class="container relative">
       <a class="topbar-logo" href="/">
-         <img class="img-responsive" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/ku_top_dk.svg" alt="Københavns universitet">
+         <img class="img-responsive" src="{% if site.github %}{{ site.baseurl }}/images/ku_top_dk.svg{% else %}http://cms.ku.dk/billeder/ku_top_dk.svg{% endif %}" alt="Københavns universitet">
       </a>
 
       <div id="topbar" class="navbar-collapse collapse">
@@ -99,7 +99,7 @@
       </ul>
       <form class="navbar-form navbar-right search_form search_reset" role="search">
         <div class="input-group">
-          <input class="form-control search_query" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
+          <input class="form-control" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
           <input id="localdomain" name="localdomain" type="hidden" value=" + window.location.hostname +">
           <script type="text/javascript">
               el = document.getElementById("localdomain");
@@ -107,15 +107,10 @@
             </script>
           <div class="input-group-btn btn-global-search">
             <button type="button" id="search" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="caret"></span> <span class="sr-only">Vis søgemuligheder</span> </button>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li data-index="0" class="selected"><a href="#">Hele KU</a></li>
-              <li data-index="1"><a href="#">Nyheder</a></li>
-              <li data-index="2"><a href="#">Studier</a></li>
-              <li data-index="3"><a href="#">Efteruddannelse</a></li>
-              <li data-index="4"><a href="#">Forskere</a></li>
-              <li data-index="5"><a href="#">Publicationer</a></li>
-              <li data-index="6"><a href="#">Jobs</a></li>
+
+            <ul id="searchfilter" class="dropdown-menu dropdown-menu-right">
             </ul>
+
             <button class="btn btn-default" name="sa" id="submit-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
           </div>
         </div>
