@@ -3,9 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Københavns Universitet er med cirka 40.000 studerende og 9.000 medarbejdere en af Nordens største forsknings- og uddannelsesinstitutioner.">
 <meta name="author" content="Københavns Universitet">
-<title>
-    {{ page.title }} &middot; Bootstrap
-</title>
+<title>{{ page.title }} &middot; Bootstrap</title>
 {% if site.github %}
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
@@ -43,7 +41,6 @@
 <link href="../../assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
 {% endif %}
 {% endif %}
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 {% if site.github %}
 <script>
@@ -57,6 +54,8 @@
 <script src="{{ site.baseurl }}/dist/js/bootstrap-datetimepicker.min.js"></script>
 <script src="{{ site.baseurl }}/dist/js/multiple-select.min.js"></script>
 <script src="{{ site.baseurl }}/dist/js/datatables.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/ku-global-search/valid_search_engines.js"></script>
+<script src="{{ site.baseurl }}/assets/js/ku-global-search/search.js"></script>
 {% endif %}
 {% else %}
 <!--[if lt IE 9]>
@@ -71,7 +70,6 @@
 <script src="../../assets/js/ku-global-search/search.js"></script>
 {% endif %}
 {% endif %}
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

@@ -19,18 +19,17 @@ jQuery(function() {
     }
     return true;
   };
-  $(document).click('click', 'li', function() {
-    var $area = $('#search');
+  $('#searchfilter').on('click', 'li', function() {
     $('li[data-selected="selected"]').attr('data-selected', '');
     $(this).attr('data-selected', 'selected');
-    var $dropdownText = $(this).attr('data-selected', 'selected').text();
-    $area.text($dropdownText);
+    var $area = $("#search");
+    $area.text($(this).text());
     $area.append('<span class="caret"></span><span class="sr-only">Search options</span>');
   });
   var forms = jQuery("form.search_form");
   forms.each(function() {
     var form = jQuery(this);
-    var field = form.find("#search_query");
+    var field = form.find("#global_search_query");
     var filter = form.find("#searchfilter");
     var resetForm = form.hasClass("search_reset");
 
@@ -46,7 +45,7 @@ jQuery(function() {
           option.attr('data-selected', '');
         }
         if (!resetForm && isEngineCurrent(engine)) {
-          option.attr("selected", "selected");
+          option.attr('data-selected', 'selected');
           field.val(getUrlParameter(engine.querykey));
         }
         filter.append(option);

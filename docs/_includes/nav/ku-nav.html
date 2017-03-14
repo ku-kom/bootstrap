@@ -101,10 +101,6 @@
         <div class="input-group">
           <input class="form-control" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
           <input id="localdomain" name="localdomain" type="hidden" value=" + window.location.hostname +">
-          <script type="text/javascript">
-              el = document.getElementById("localdomain");
-              el.value = window.location.hostname;
-            </script>
           <div class="input-group-btn btn-global-search">
             <button type="button" id="search" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="caret"></span> <span class="sr-only">Vis søgemuligheder</span> </button>
 
@@ -116,6 +112,5 @@
         </div>
       </form>
     </div>
-    <!--/.nav-collapse -->
   </div>
 </nav>
