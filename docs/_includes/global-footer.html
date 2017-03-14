@@ -99,10 +99,12 @@
     </div>
   </div>
 </footer>
+<script src="http://cms.ku.dk/system/valid_search_engines.js?lang=da"></script>
 {% if site.github %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://cms.ku.dk/bootstrap-styling/scripts/search.js"></script>
 {% if page.slug != "examples" %}
 <!-- Documentation extra - not for production -->
 <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
@@ -118,6 +120,7 @@
 <script src="../../assets/js/kurser.ku.dk/kurser.min.js"></script>
 {% endif %}
 {% else %}
+<script src="../../assets/js/ku-global-search/search.js"></script>
 <script src="../../dist/js/bootstrap.js"></script>
 <script src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script src="../../custom/ku-mobile-menu.js"></script>

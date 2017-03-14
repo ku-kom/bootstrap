@@ -1,12 +1,11 @@
 window.searchCallbacks = [];
 
-jQuery(function() {
-
-  var stripPath = function(path) {
-    return path === "/" ? path : path.replace(/\/$/, "");
+jQuery(function () {
+  var stripPath = function (path) {
+    return path === '/' ? path : path.replace(/\/$/, '');
   };
 
-  var isEngineCurrent = function(engine) {
+  var isEngineCurrent = function (engine) {
     if (stripPath(engine.url) !== stripPath(document.location.origin + document.location.pathname)) {
       return false;
     }
@@ -19,48 +18,50 @@ jQuery(function() {
     }
     return true;
   };
-  $('#searchfilter').on('click', 'li', function() {
-    $('li[data-selected="selected"]').attr('data-selected', '');
-    $(this).attr('data-selected', 'selected');
-    var $area = $("#search");
+  $('#searchfilter').on('click', 'li', function () {
+    //$('li[data-selected="selected"]').attr('data-selected', '');
+    $('li.selected').removeClass('selected');
+    //$(this).attr('data-selected', 'selected');
+    $(this).addClass('selected');
+    var $area = $('#search');
     $area.text($(this).text());
-    $area.append('<span class="caret"></span><span class="sr-only">Search options</span>');
+    $area.append('<span class="sr-only">Search options</span>');
   });
-  var forms = jQuery("form.search_form");
-  forms.each(function() {
+  var forms = jQuery('form.search_form');
+  forms.each(function () {
     var form = jQuery(this);
-    var field = form.find("#global_search_query");
-    var filter = form.find("#searchfilter");
-    var resetForm = form.hasClass("search_reset");
+    var field = form.find('#global_search_query');
+    var filter = form.find('#searchfilter');
+    var resetForm = form.hasClass('search_reset');
 
     if (window.searchEngines) {
       for (var i = 0; i < window.searchEngines.length; i++) {
         var engine = window.searchEngines[i];
-        var option = jQuery(document.createElement("li"));
+        var option = jQuery(document.createElement('li'));
         option.text(engine.label);
         option.attr('data-value', i);
         if (i === 0) {
-          option.attr('data-selected', 'selected');
+          option.addClass('selected');
         } else {
-          option.attr('data-selected', '');
+          option.removeClass('selected');
         }
         if (!resetForm && isEngineCurrent(engine)) {
-          option.attr('data-selected', 'selected');
+          option.addClass('selected');
           field.val(getUrlParameter(engine.querykey));
         }
         filter.append(option);
       }
-      form.submit(function(event) {
+      form.submit(function (event) {
         var chosenEngine = window.searchEngines[$('li[data-selected="selected"]').data('value')];
         //console.log(chosenEngine);
-        form.attr("action", chosenEngine.url);
-        form.attr("method", chosenEngine.method || "GET");
-        field.attr("name", chosenEngine.querykey);
+        form.attr('action', chosenEngine.url);
+        form.attr('method', chosenEngine.method || 'GET');
+        field.attr('name', chosenEngine.querykey);
         if (chosenEngine.param) {
           for (var paramName in chosenEngine.param) {
-            var input = jQuery(document.createElement("input"));
-            input.attr("type", "hidden");
-            input.attr("name", paramName);
+            var input = jQuery(document.createElement('input'));
+            input.attr('type', 'hidden');
+            input.attr('name', paramName);
             input.val(chosenEngine.param[paramName]);
             form.append(input);
           }
