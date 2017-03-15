@@ -10,15 +10,16 @@
 
   // Merging global and left menu
   var $localMenuTitle = $('.ku-navbar-header').text();
-  var $leftmenu = $('#leftmenu').clone().wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
+  var $leftmenu = $('#leftmenu').clone();
   var $leftmenu2 = $('#leftmenu_2').clone();
-  var $globalMenu = $('#topbar_menu').clone();
-  var $globalMenu2 = $('#navbar_menu').clone();
+  var $globalMenu = $('#topbar_menu').children().clone();
+  var $globalMenu2 = $('#navbar_menu').children().clone();
   var $mobimenu = $('#mobileleftmenu');
-   var $menuitems = $leftmenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
+  var $menuitems = $mobimenu.append($leftmenu2).append($globalMenu2).append($globalMenu);
 
   if ($.fn.mmenu) {
       $mobimenu.append($menuitems);
+      $mobimenu.wrapInner('<ul id="localmenu">').prepend('<li class="local-menu">' + $localMenuTitle + '</li>');
       $mobimenu.find('ul').removeClass('dropdown-menu');
       var API = $mobimenu.mmenu({
         offCanvas: {
