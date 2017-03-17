@@ -292,40 +292,13 @@
     display: none;
   }
 }
-@media (min-width: @screen-sm-min) and (max-width: @screen-md) {
-  .ku-leftmenu {
-    // Larger font for tablets
-    ul.nav {
-      > li {
-        font-size: 14px;
 
-        > a {
-          padding: 7px 5px 7px 13px;
-
-          &::before {
-            top: 10px;
-          }
-        }
-
-        ul li a {
-          padding: 5px 5px 5px 13px;
-
-          &::before {
-            top: 5px;
-          }
-        }
-      }
-    }
-
-    .menu-seperator {
-      margin: @margin10 0;
-    }
-  }
-}
 // Left menu slide in/out for mobiles
 @media (max-width: @screen-xs-max) {
-  .ku-leftmenu {
-    display: none;
+  html:not(.non-responsive) {
+    .ku-leftmenu {
+      display: none;
+    }
   }
 
   .leftmenu-toggle {

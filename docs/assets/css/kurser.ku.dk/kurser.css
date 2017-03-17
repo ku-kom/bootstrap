@@ -27,11 +27,20 @@ table>thead>tr>th, .control-label {
   margin-top: 0;
   margin-bottom: 20px;
 }
-
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 #searchall, #showall {
   font-size: 14px;
   font-weight: 600;
   color: #901a1e;
+  -webkit-animation: fadein 2.5s;
+          animation: fadein 2.5s;
 }
 
 #searchall.btn-default:hover, #searchall.btn-default:active, #searchall.btn-default:focus, #showall.btn-default:hover, #showall.btn-default:active, #showall.btn-default:focus {

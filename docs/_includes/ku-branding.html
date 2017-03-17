@@ -2,7 +2,7 @@
   <div class="ku-branding-line">
     <div class="ku-branding-logo"><img class="img-responsive" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/branding/faelles.svg" alt="Københavns universitet"></div>
     <div class="ku-branding-text">
-      <div class="ku-branding-text-major">Kurser</div>
+      <div class="ku-branding-text-major">{% if page.category == "kurser" %}Kurser{% else %}Department of Plant and Environmental Sciences{% endif %}</div>
       <div class="ku-branding-text-sub"></div>
     </div>
   </div>

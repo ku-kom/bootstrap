@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% if page.category != "non-responsive" %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endif %}
 <meta name="description" content="Københavns Universitet er med cirka 40.000 studerende og 9.000 medarbejdere en af Nordens største forsknings- og uddannelsesinstitutioner.">
 <meta name="author" content="Københavns Universitet">
 <title>{{ page.title }} &middot; Bootstrap</title>
@@ -8,6 +10,10 @@
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
+{% if page.category == "non-responsive" %}
+<link href="{{ site.baseurl }}/assets/css/non-responsive/non-responsive.css" rel="stylesheet">
+{% endif %}
+<link href="{{ site.baseurl }}/assets/css/print/print.css" media="print" rel="stylesheet">
 {% if page.slug == "examples" %}
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
@@ -26,6 +32,10 @@
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+{% if page.category == "non-responsive" %}
+<link href="../../assets/css/non-responsive/non-responsive.css" rel="stylesheet">
+{% endif %}
+<link href="../../assets/css/print/print.css" media="print" rel="stylesheet">
 {% if page.slug != "examples" %}
 <!-- Documentation extras - not for production -->
 <link href="../../assets/css/docs.min.css" rel="stylesheet">

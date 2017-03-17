@@ -1,0 +1,200 @@
+html.non-responsive {
+  min-width: 1070px;
+  overflow: auto;
+}
+html.non-responsive .container, html.non-responsive main {
+  max-width: none !important;
+  width: 1070px !important;
+}
+/*html.non-responsive [class^="col-"] {
+  float: left;
+}
+html.non-responsive .col-sm-1,
+html.non-responsive .col-md-1,
+html.non-responsive .col-lg-1 {
+  width: 8.33333333% !important;
+}
+html.non-responsive .col-sm-2,
+html.non-responsive .col-md-2,
+html.non-responsive .col-lg-2 {
+  width: 16.66666667% !important;
+}
+html.non-responsive .col-sm-3,
+html.non-responsive .col-md-3,
+html.non-responsive .col-lg-3 {
+  width: 25% !important;
+}
+html.non-responsive .col-sm-4,
+html.non-responsive .col-md-4,
+html.non-responsive .col-lg-4 {
+  width: 33.33333333% !important;
+}
+html.non-responsive .col-sm-5,
+html.non-responsive .col-md-5,
+html.non-responsive .col-lg-5 {
+  width: 41.66666667% !important;
+}
+html.non-responsive .col-sm-6,
+html.non-responsive .col-md-6,
+html.non-responsive .col-lg-6 {
+  width: 50% !important;
+}
+html.non-responsive .col-sm-7,
+html.non-responsive .col-md-7,
+html.non-responsive .col-lg-7 {
+  width: 58.33333333% !important;
+}
+html.non-responsive .col-sm-8,
+html.non-responsive .col-md-8,
+html.non-responsive .col-lg-8 {
+  width: 66.66666667% !important;
+}
+html.non-responsive .col-sm-9,
+html.non-responsive .col-md-9,
+html.non-responsive .col-lg-9 {
+  width: 75% !important;
+}
+html.non-responsive .col-sm-10,
+html.non-responsive .col-md-10,
+html.non-responsive .col-lg-10 {
+  width: 83.33333333% !important;
+}
+html.non-responsive .col-sm-11,
+html.non-responsive .col-md-11,
+html.non-responsive .col-lg-11 {
+  width: 91.66666667% !important;
+}
+html.non-responsive .col-sm-12,
+html.non-responsive .col-md-12,
+html.non-responsive .col-lg-12 {
+  width: 100% !important;
+}
+html.non-responsive .col-sm-offset-0,
+html.non-responsive .col-md-offset-0,
+html.non-responsive .col-lg-offset-0 {
+  margin-left: 0 !important;
+}
+html.non-responsive .col-sm-offset-1,
+html.non-responsive .col-md-offset-1,
+html.non-responsive .col-lg-offset-1 {
+  margin-left: 8.33333333% !important;
+}
+html.non-responsive .col-sm-offset-2,
+html.non-responsive .col-md-offset-2,
+html.non-responsive .col-lg-offset-2 {
+  margin-left: 16.66666667% !important;
+}
+html.non-responsive .col-sm-offset-3,
+html.non-responsive .col-md-offset-3,
+html.non-responsive .col-lg-offset-3 {
+  margin-left: 25% !important;
+}
+html.non-responsive .col-sm-offset-4,
+html.non-responsive .col-md-offset-4,
+html.non-responsive .col-lg-offset-4 {
+  margin-left: 33.33333333% !important;
+}
+html.non-responsive .col-sm-offset-5,
+html.non-responsive .col-md-offset-5,
+html.non-responsive .col-lg-offset-5 {
+  margin-left: 41.66666667% !important;
+}
+html.non-responsive .col-sm-offset-6,
+html.non-responsive .col-md-offset-6,
+html.non-responsive .col-lg-offset-6 {
+  margin-left: 50% !important;
+}
+html.non-responsive .col-sm-offset-7,
+html.non-responsive .col-md-offset-7,
+html.non-responsive .col-lg-offset-7 {
+  margin-left: 58.33333333% !important;
+}
+html.non-responsive .col-sm-offset-8,
+html.non-responsive .col-md-offset-8,
+html.non-responsive .col-lg-offset-8 {
+  margin-left: 66.66666667% !important;
+}
+html.non-responsive .col-sm-offset-9,
+html.non-responsive .col-md-offset-9,
+html.non-responsive .col-lg-offset-9 {
+  margin-left: 75% !important;
+}
+html.non-responsive .col-sm-offset-10,
+html.non-responsive .col-md-offset-10,
+html.non-responsive .col-lg-offset-10 {
+  margin-left: 83.33333333% !important;
+}
+html.non-responsive .col-sm-offset-11,
+html.non-responsive .col-md-offset-11,
+html.non-responsive .col-lg-offset-11 {
+  margin-left: 91.66666667% !important;
+}
+html.non-responsive .col-sm-offset-12,
+html.non-responsive .col-md-offset-12,
+html.non-responsive .col-lg-offset-12 {
+  margin-left: 100% !important;
+}*/
+
+html.non-responsive .visible-xs-inline,
+html.non-responsive .visible-sm-inline {
+  display: inline !important;
+}
+html.non-responsive .visible-xs-inline-block,
+html.non-responsive .visible-sm-inline-block {
+  display: inline-block !important;
+}
+html.non-responsive .hidden-xs,
+html.non-responsive .hidden-sm {
+  display: block !important;
+}
+html.non-responsive .container .navbar-header,
+html.non-responsive .container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+html.non-responsive .navbar-header {
+  float: left;
+}
+html.non-responsive .navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+html.non-responsive .navbar-toggle {
+  display: none;
+}
+html.non-responsive .navbar-collapse {
+  border-top: 0;
+}
+html.non-responsive .navbar-brand {
+  margin-left: -15px;
+}
+html.non-responsive .navbar-nav {
+  float: left;
+  margin: 0;
+}
+html.non-responsive .navbar-nav > li {
+  float: left;
+}
+html.non-responsive .navbar-nav.navbar-right {
+  float: right;
+}
+
+html.non-responsive .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}

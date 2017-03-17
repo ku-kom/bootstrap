@@ -16,6 +16,7 @@
   box-sizing: border-box;
 }
 // Body reset
+
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -23,6 +24,10 @@ html {
   @media (max-width: @screen-sm-min) {
     overflow-x: hidden;
     /* Prevent scroll on narrow devices */
+  }
+
+  html:not(.non-responsive) & {
+    overflow: auto;
   }
 }
 
@@ -42,6 +47,7 @@ body {
   }
 }
 // Reset fonts for relevant elements
+
 button,
 input,
 select,
@@ -51,6 +57,7 @@ textarea {
   line-height: inherit;
 }
 // Links
+
 a {
   color: @link-color;
   text-decoration: none;
@@ -79,14 +86,17 @@ figure {
   margin: 0;
 }
 // Images
+
 img {
   vertical-align: middle;
 }
 // Responsive images (ensure images don't scale beyond their parents)
+
 .img-responsive {
   .img-responsive();
 }
 // Rounded corners
+
 .img-rounded {
   border-radius: @border-radius-large;
 }
@@ -100,15 +110,17 @@ img {
   background-color: @thumbnail-bg;
   border: 1px solid @thumbnail-border;
   border-radius: @thumbnail-border-radius;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   // Keep them at most 100% wide
   .img-responsive(inline-block);
 }
 // Perfect circle
+
 .img-circle {
   border-radius: 50%; // set radius in percents
 }
 // Horizontal rules
+
 hr {
   margin-top: @margin10;
   margin-bottom: @line-height-computed;
@@ -153,9 +165,9 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
-
 @media (max-width: @screen-sm-min) {
-  .form-control, .btn {
+  .btn,
+  .form-control {
     font-size: @font-size-large!important;
   }
 }

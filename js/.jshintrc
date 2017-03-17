@@ -11,5 +11,6 @@
   "nonbsp"   : true,
   "strict"   : false,
   "undef"    : true,
-  "unused"   : false
+  "unused"   : false,
+  "devel"    : true
 }

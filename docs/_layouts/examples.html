@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="theme-faelles" lang="da">
+<html class="theme-faelles {% if page.category == 'non-responsive' %}non-responsive{% endif %}" lang="da">
   <head>
     {% include header.html %}
   </head>
-  <body {% if page.tags == 'kurser' %}class="kurser"{% endif %}>
+  <body>
     <nav class="jumpbox" aria-label="Spring til indhold på Siden" title="Spring til Indhold på Siden">
       <ul class="jump">
         <li>
