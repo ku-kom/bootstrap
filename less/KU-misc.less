@@ -4,28 +4,29 @@
 // ---------------------------------------------------------------
 // KU adding margins to rows and columns
 
-.main-content {
-  @media (max-width: @screen-xs-max) {
-    width: 100%; // Overriding Bootstrap's grid system
-  }
-
-  .row {
-    > [class*="col-"] {
-      &:not(.form-group) {
-        margin-bottom: @margin20;
-      }
-    }
-
-    &.breadcrumbs {
-      margin-bottom: @margin0;
+html:not(.non-responsive) {
+  .main-content {
+    @media (max-width: @screen-xs-max) {
+      width: 100%; // Overriding Bootstrap's grid system
     }
   }
 }
 
+.row {
+  > [class*="col-"] {
+    &:not(.form-group) {
+      margin-bottom: @margin20;
+    }
+  }
+
+  &.breadcrumbs {
+    margin-bottom: @margin0;
+  }
+}
 //.right-side {
-  // @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
-  //   .pull-right();
-  // }
+// @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
+//   .pull-right();
+// }
 //}
 // Main content part
 
@@ -62,6 +63,7 @@ nav {
 
 .right-side {
   padding-bottom: @grid-gutter-height;
+  .pull-right;
 }
 
 .main-area {
@@ -160,6 +162,7 @@ nav {
   position: relative;
 }
 // Let's target IE to respect aspect ratios and sizes for img tags containing SVG files - Thanks IE! :-/
+
 .ie9 img[src$=".svg"] {
   width: 100%;
 }

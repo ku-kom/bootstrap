@@ -298,12 +298,16 @@
       border-top: 1px solid @teol;
     }
   }
-  @media (min-width: @screen-xs-max) {
-    // Remove top border from first box in the right side
-    .right-side & {
+}
+@media (min-width: @screen-xs-max) {
+  // Remove top border from first box in the right side
+  .right-side {
+    [class^="col-"] {
       &:first-child {
-        > .panel-heading {
-          border-top: 0;
+        .panel-default {
+          > .panel-heading {
+            border-top: 0;
+          }
         }
       }
     }

@@ -23,10 +23,9 @@ html {
   height: 100%;
   @media (max-width: @screen-sm-min) {
     overflow-x: hidden;
-    /* Prevent scroll on narrow devices */
   }
 
-  html:not(.non-responsive) & {
+  &.non-responsive {
     overflow: auto;
   }
 }
@@ -41,7 +40,9 @@ body {
   flex-direction: column;
   height: 100%;
   @media (max-width: @screen-sm-min) {
-    font-size: @font-size-large;
+    html:not(.non-responsive) & {
+      font-size: @font-size-large;
+    }
     overflow-x: hidden;
     /* Prevent scroll on narrow devices */
   }
