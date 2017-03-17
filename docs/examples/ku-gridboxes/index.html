@@ -23,9 +23,9 @@ slug: examples
                   <option value="theme-hum">Hum</option>
                   <option value="theme-sund">Sund</option>
                   <option value="theme-science">Science</option>
-                  <option value="theme-jura">Jura</option>
+                  <option value="theme-jur">Jura</option>
                   <option value="theme-samf">Samf</option>
-                  <option value="theme-teol">Teol</option>
+                  <option value="theme-teo">Teol</option>
                 </select>
               </div>
               <div class="form-group">
@@ -56,8 +56,7 @@ slug: examples
                 <select id="style" class="form-control">
                   <option value="">-- Select box style --</option>
                   <option value="full">Full background color</option>
-                  <option value="outlined">With border</option>
-                  <option value="text-top">Text at the top</option>
+                  <option value="outlined">Outlined</option>
                   <option value="text-down text-over">Text at the bottom</option>
                 </select>
               </div>
@@ -109,7 +108,7 @@ slug: examples
               </div>
             </a>
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-xs-12 col-sm-6 col-md-6">
             <a href="#" class="boxlink">
               <div class="gridbox">
                 <div class="box1">
@@ -120,7 +119,7 @@ slug: examples
               </div>
             </a>
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-xs-12 col-sm-6 col-md-6">
             <a href="#" class="boxlink">
               <div class="gridbox">
                 <div class="box1">
@@ -182,27 +181,32 @@ $(function () {
         var $this = $(".gridbox");
         if ($('#checkbox-img').is(':checked')) {
             $this.addClass('with-img');
-            $this.find('.box2').text('').append('<img src="http://cms.ku.dk/testarea/nanna/billeder/ku_work.png" alt="">').show();
+            $this.find('.box2').text('').append('<img src="http://cms.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="550 x 300">').show();
         } else {
             $this.removeClass('with-img');
-            $this.find('.box2').find('img').hide();
+            $this.find('.box2').find('img').remove();
         }
     });
 
-    function getClass(event) {
-        var themes = $(event.currentTarget);
+    function getClass(e) {
+        var themes = $(e.currentTarget);
         var classToAdd = themes.find('option[value]:selected').map(function () {
             return this.value;
         }).get().join(' ');
         var allClassess = themes.find('option[value]').map(function () {
             return this.value ? this.value : null;
         }).get().join(' ');
-        $('body').removeClass(allClassess).addClass(classToAdd);
+        $('html').removeClass(allClassess).addClass(classToAdd);
+        // Switch branding logo
+        var logo = classToAdd.replace('theme-', '');
+        if ($('html').hasClass(classToAdd)) {
+          $('.ku-branding-logo img').attr('src', '../../images/branding/' + logo + '.svg');
+        }
     }
 
 
-    function getsubTheme(event) {
-        var subTheme = $(event.currentTarget);
+    function getsubTheme(e) {
+        var subTheme = $(e.currentTarget);
         var classToAdd = subTheme.find('option[value]:selected').map(function () {
             return this.value;
         }).get().join(' ');
@@ -210,12 +214,11 @@ $(function () {
         var allClassess = subTheme.find('option[value]').map(function () {
             return this.value ? this.value : null;
         }).get().join(' ');
-
         $('.gridbox').removeClass(allClassess).addClass(classToAdd);
     }
 
-    function getStyle(event) {
-        var style = $(event.currentTarget);
+    function getStyle(e) {
+        var style = $(e.currentTarget);
         var classToAdd = style.find('option[value]:selected').map(function () {
             return this.value;
         }).get().join(' ');
@@ -223,12 +226,11 @@ $(function () {
         var allClassess = style.find('option[value]').map(function () {
             return this.value ? this.value : null;
         }).get().join(' ');
-
         $('.gridbox').removeClass(allClassess).addClass(classToAdd);
     }
 
-    function getHeight(event) {
-        var height = $(event.currentTarget);
+    function getHeight(e) {
+        var height = $(e.currentTarget);
         var classToAdd = height.find('option[value]:selected').map(function () {
             return this.value;
         }).get().join(' ');
