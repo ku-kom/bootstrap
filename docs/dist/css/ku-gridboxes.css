@@ -1147,6 +1147,7 @@
   border: 1px solid #b8b29c;
 }
 .theme-jur .gridbox.subcolor_3.full {
+  color: #fff;
   background: #ccc6ae;
 }
 .theme-jur .gridbox.subcolor_3.full:hover {
