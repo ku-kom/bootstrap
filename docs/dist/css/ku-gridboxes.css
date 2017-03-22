@@ -1380,9 +1380,8 @@
   max-width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0px, 0px, 0px);
+          transform: translateY(-50%) translateX(-50%) translate3d(0px, 0px, 0px);
 }
 .gridbox.with-img.img-left img {
   left: 0;
@@ -1447,6 +1446,7 @@
 }
 .gridbox.text-over .header {
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
   color: inherit;
