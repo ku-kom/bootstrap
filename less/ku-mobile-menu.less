@@ -2,6 +2,12 @@
 // KU mobile menu
 // --------------------------------------------------
 
+@media (min-width: @screen-sm-min) {
+    #mobileleftmenu {
+      display: none;
+    }
+}
+
 .leftmenu-menu {
   font-size: @font-size-large;
   color: @white-color;
@@ -71,6 +77,7 @@
   #navbar_menu-clone,
   #topbar_menu-clone {
     background: @white-color;
+
     li:not(.mm-opened) {
       border-bottom: 1px solid lighten(@gray, 10%);
 
@@ -81,7 +88,8 @@
     }
   }
 
-  #localmenu, #leftmenu2-clone {
+  #leftmenu2-clone,
+  #localmenu {
     // Faculty colors for sublevel 1
     background: @ku-red;
 
@@ -117,33 +125,33 @@
       }
     }
     // 1px solid
-     li {
-       color: @white-color;
-    //   border-bottom: lighten(@ku-red, 7%);
-    //
-    //   .theme-samf & {
-    //     border-bottom: lighten(@samf, 7%);
-    //   }
-    //
-    //   .theme-hum & {
-    //     border-bottom: lighten(@hum, 7%);
-    //   }
-    //
-    //   .theme-science & {
-    //     border-bottom: lighten(@science, 7%);
-    //   }
-    //
-    //   .theme-sund & {
-    //     border-bottom: lighten(@sund, 7%);
-    //   }
-    //
-    //   .theme-jur & {
-    //     border-bottom: lighten(@jura, 7%);
-    //   }
-    //
-    //   .theme-teo & {
-    //     border-bottom: lighten(@teol, 7%);
-    //   }
+    li {
+      color: @white-color;
+      //   border-bottom: lighten(@ku-red, 7%);
+      //
+      //   .theme-samf & {
+      //     border-bottom: lighten(@samf, 7%);
+      //   }
+      //
+      //   .theme-hum & {
+      //     border-bottom: lighten(@hum, 7%);
+      //   }
+      //
+      //   .theme-science & {
+      //     border-bottom: lighten(@science, 7%);
+      //   }
+      //
+      //   .theme-sund & {
+      //     border-bottom: lighten(@sund, 7%);
+      //   }
+      //
+      //   .theme-jur & {
+      //     border-bottom: lighten(@jura, 7%);
+      //   }
+      //
+      //   .theme-teo & {
+      //     border-bottom: lighten(@teol, 7%);
+      //   }
     }
   }
 
@@ -762,11 +770,9 @@ li.mm-vertical.mm-opened {
         // Faculty colors for sublevel 2
         //background: @gray;
         color: @gray-base;
-
         // li:not(.last-child) {
         //   border-bottom: 1px solid darken(@gray, 5%);
         // }
-
         .mm-next {
           &:after {
             // Arrows
