@@ -59,6 +59,12 @@ nav {
 .main-content {
   padding-top: @grid-gutter-height;
   padding-bottom: @grid-gutter-height;
+
+  a {
+    &:not(.btn):visited {
+      color: @link-visited-color;
+    }
+  }
 }
 
 .right-side {
