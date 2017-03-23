@@ -4,6 +4,7 @@ $(document).ready(function() {
   $search = $('#searchall');
   $advanced = $('#showall');
   $hiddenColumn = $('.mobile-hidden');
+  $results = $('#searchresults');
 
   resetText();
   multipleSelectBox();
@@ -51,8 +52,8 @@ function runDatatable() {
     return '//cdn.datatables.net/plug-ins/1.10.13/i18n/' + $langMap[$lang] + '.json';
   }
 
-  // Run Datatables
-  $('#searchresults').DataTable({
+  // Build Datatable
+  $results.DataTable({
     language: {
       url: getLanguage()
     },
@@ -62,6 +63,12 @@ function runDatatable() {
     fixedHeader: true,
     responsive: true
   });
+}
+
+// Destroy DataTable - reinitialise with runDatatable()
+function destroyDatatable() {
+  table = $results.DataTable();
+  table.destroy();
 }
 
 function multipleSelectBox() {
