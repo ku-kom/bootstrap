@@ -57,8 +57,15 @@
       pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
     }
   }
+  // KU specific
+  &.go-back {
+    &::before {
+      font-family: 'Glyphicons Halflings';
+      content:"\e079";
+      margin-right: 2px;
+    }
+  }
 }
-
 
 // Alternate buttons
 // --------------------------------------------------

@@ -7,8 +7,8 @@
 }
 
 html, body {
-  overflow-x: hidden;
   display: block;
+  overflow: visible;
 }
 
 header, nav, footer {
@@ -17,9 +17,25 @@ header, nav, footer {
 
 main {
   margin-left: 0;
+  overflow-y: visible;
 }
 
+.main-content {
+  width: 100%;
+}
+.right-side {
+  width: 50%;
+  float: left!important;
+}
 .navbar, #mobileleftmenu, .ku-leftmenu, .globalfooter {
+  display: none;
+}
+
+.panel-accordion .collapse {
+  display: block;
+}
+
+.panel-accordion > .panel-heading:before {
   display: none;
 }
 

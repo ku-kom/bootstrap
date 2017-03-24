@@ -31,7 +31,7 @@ $(document).ready(function() {
 // Function to change text for small screens (DA/ENG)
 function resetText() {
   var $lang = $('html').attr('lang');
-  $('.form-group .btn').each(function() {
+  $('.main-content .btn').each(function() {
     if ($cachedWidth < 768 && $lang == 'da') {
       $search.html('Søg');
     } else {

@@ -23,24 +23,41 @@ table>thead>tr>th, .control-label {
   margin: 0;
 }
 
+@media print {
+  [data-toggle="collapse"]>h3::after {
+    display: none!important;
+  }
+}
+
 .resultsheader {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 #searchall, #showall {
   font-size: 14px;
   font-weight: 600;
   color: #901a1e;
   -webkit-animation: fadein 2.5s;
-          animation: fadein 2.5s;
+  animation: fadein 2.5s;
 }
 
 #searchall.btn-default:hover, #searchall.btn-default:active, #searchall.btn-default:focus, #showall.btn-default:hover, #showall.btn-default:active, #showall.btn-default:focus {
@@ -52,6 +69,9 @@ table>thead>tr>th, .control-label {
   display: block;
 }
 
+.go-back {
+  margin-top: 20px;
+}
 .dl-horizontal dt {
   margin-top: 5px;
 }
@@ -64,9 +84,11 @@ table>thead>tr>th, .control-label {
   color: #999;
   font-size: .83em;
 }
-.right-side .panel-default:first-child > .panel-heading {
+
+.right-side .panel-default:first-child>.panel-heading {
   border-top: 0;
 }
+
 ul.workload li {
   width: 50%;
   float: left;
