@@ -2433,25 +2433,24 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   );
   document.querySelector('head').appendChild(msViewportStyle);
 }
+  // Toggle icon in accordions
+function flipArrow(e) {
+  $(e.target)
+    .prev('.panel-heading')
+    .toggleClass('open');
+}
 
-// Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
 $(function () {
+  // Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
   var nua = navigator.userAgent;
   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
   if (isAndroid) {
     $('select.form-control').removeClass('form-control').css('width', '100%');
   }
-});
 
-$(document).ready(function () {
   // Toggle icon in accordions
-  function toggleArrow(e) {
-    $(e.target)
-      .prev('.panel-heading')
-      .toggleClass('open');
-  }
-  $('.panel-group').on('hide.bs.collapse', toggleArrow);
-  $('.panel-group').on('show.bs.collapse', toggleArrow);
+  $('.panel-group').on('hide.bs.collapse', flipArrow);
+  $('.panel-group').on('show.bs.collapse', flipArrow);
 
   // Open / close all accordions
   $('.closeall').click(function () {
@@ -2472,28 +2471,25 @@ $(document).ready(function () {
   });
 
   // Watch for the custom `fileselect` event
-    $(':file').on('fileselect', function (event, numFiles, label) {
-      var input = $(this).parents('.input-group').find(':text'),
-        log = numFiles > 1 ? numFiles + ' files selected' : label;
-      if (input.length) {
-        input.val(log);
-        //} else {
-        // if (log) console.log(log);
+  $(':file').on('fileselect', function (event, numFiles, label) {
+    var input = $(this).parents('.input-group').find(':text'),
+      log = numFiles > 1 ? numFiles + ' files selected' : label;
+    if (input.length) {
+      input.val(log);
+      //} else {
+      // if (log) console.log(log);
+    }
+  });
+
+  // Truncate multiple lines of text in News in global menu
+  var $chars = 80; // number of characters
+  var $news = $('ul.dropdown-menu.nyheder li a');
+  if ($news) {
+    $news.each(function (i, v) {
+      var txt = $(this).text();
+      if (txt.length > $chars) {
+        $(this).html($(this).html().substring(0, $chars) + '...');
       }
     });
-
-    /* Truncate multiple lines of text */
-$(function () {
-    //News in global menu
-    var $chars = 80; // number of characters
-    var $news = $('ul.dropdown-menu.nyheder li a');
-    if ($news) {
-        $news.each(function (i, v) {
-            var txt = $(this).text();
-            if (txt.length > $chars) {
-                $(this).html($(this).html().substring(0, $chars) + '...');
-            }
-        });
-    }
-});
+  }
 });

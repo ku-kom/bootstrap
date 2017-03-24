@@ -4,11 +4,10 @@ $(document).ready(function() {
   $search = $('#searchall');
   $advanced = $('#showall');
   $hiddenColumn = $('.mobile-hidden');
-  $results = $('#searchresults');
 
   resetText();
   multipleSelectBox();
-  runDatatable();
+  //runDatatable(); Run after table exists
 
   $advanced.click(function() {
     if ($cachedWidth < 768) {
@@ -53,7 +52,7 @@ function runDatatable() {
   }
 
   // Build Datatable
-  $results.DataTable({
+  $('#searchresults').DataTable({
     language: {
       url: getLanguage()
     },
@@ -67,8 +66,8 @@ function runDatatable() {
 
 // Destroy DataTable - reinitialise with runDatatable()
 function destroyDatatable() {
-  table = $results.DataTable();
-  table.destroy();
+  var $table = $('#searchresults').DataTable();
+  $table.destroy();
 }
 
 function multipleSelectBox() {
