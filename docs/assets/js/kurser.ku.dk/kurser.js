@@ -84,8 +84,8 @@ function multipleSelectBox() {
       placeholder: 'Select multiple...',
       width: '100%'
     };
-    // Run Multiple select
     return ($('html').attr('lang') == 'da') ? da : en;
   };
+      // Run Multiple select
   $('select[multiple]').multipleSelect(multipleSelectLang());
 }

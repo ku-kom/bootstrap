@@ -112,7 +112,7 @@
       &::after {
         content: "\e252";
         font-family: 'Glyphicons Halflings';
-        color: @gray;
+        color: #bbb;
         font-size: 10px;
         position: absolute;
         top: 50%;
@@ -135,6 +135,10 @@
         }
       }
     }
+  }
+
+  #submit-button .glyphicon {
+    color: @ku-search-icons;
   }
 }
 // Navbar heading
@@ -211,8 +215,8 @@
 
 .container,
 .container-fluid {
-   > .navbar-header,
-  > .navbar-collapse {
+   > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -343,8 +347,8 @@
       border: 0;
       box-shadow: none;
 
-       > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
@@ -636,7 +640,6 @@
   }
 
   .navbar-nav {
-
     > li > a {
       color: @navbar-inverse-link-color;
 
@@ -651,17 +654,18 @@
       &.eng {
         padding-right: (@grid-gutter-width / 2);
         display: inline-block;
-        width: 71px;
         background-repeat: no-repeat;
-        background-position: right 6px;
+        background-position: right 7px;
       }
 
       &.eng {
         background-image: url("http://cms.ku.dk/grafik/globalmenu/flag-uk.gif");
+        width: 71px;
       }
 
       &.dan {
         background-image: url("http://cms.ku.dk/grafik/globalmenu/flag-dk.gif");
+        width: 68px;
       }
     }
 
@@ -800,7 +804,7 @@
   }
   // KU top logo positioning
   .topbar-logo {
-    background-image: url('http://cms.ku.dk/billeder/ku_top_dk.svg');
+    background-image: url('http://cms.ku.dk/billeder/toplogo_dk.svg');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -810,16 +814,31 @@
     top: 8px;
     left: 15px;
     display: block;
-    @media (min-width: @screen-xs) {
+    @media (min-width: @screen-xs-max) {
       width: 60%;
     }
-    @media (min-width: @screen-sm) {
-      left: 26px;
-      width: 35%;
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      width: 36%;
+    }
+    @media (min-width: @screen-md-min) {
+      left: (@grid-gutter-width / 2);
+      width: 25%;
     }
 
+// English version
     html:lang(en) & {
-      background-image: url('http://cms.ku.dk/billeder/ku_top_uk.svg');
+      background-image: url('http://cms.ku.dk/billeder/toplogo_uk.svg');
+      width: 75%;
+      left: @margin20;
+      @media (min-width: @screen-xs-max) {
+        width: 60%;
+      }
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        width: 36%;
+      }
+      @media (min-width: @screen-md-min) {
+        width: 28%;
+      }
     }
   }
 }

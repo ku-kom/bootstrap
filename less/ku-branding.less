@@ -1,8 +1,13 @@
-//
 // KU top branding
+
 .ku-branding {
   background-color: @white-color;
   position: relative;
+  @media (max-width: @screen-xs-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .ku-branding-logo {
     height: @ku-branding-box-height;
     width: 61px;
@@ -11,10 +16,11 @@
     position: relative;
     bottom: -5px;
     @media (max-width: @screen-sm-min) {
-        width: 50px;
-        bottom: -20px;
+      width: 50px;
+      bottom: -20px;
     }
   }
+
   .ku-branding-text {
     max-height: @ku-branding-box-height;
     letter-spacing: 0.1em;
@@ -26,38 +32,52 @@
     @media (min-width: @screen-sm-min) {
       padding-left: 15px;
     }
+
     .ku-branding-text-major {
       font-size: 1.16em;
-        @media (min-width: @screen-sm-min) {
-          font-size: @ku-branding-text-font-size;
-        }
+      @media (min-width: @screen-sm-min) {
+        font-size: @ku-branding-text-font-size;
+      }
     }
+
     .ku-branding-text-sub {
       font-size: @font-size-large;
       margin-top: 2px;
     }
+
     a {
       color: inherit;
     }
   }
+
   .ku-branding-line {
+    @media (max-width: @screen-xs-max) {
+      padding-left: @padding20;
+      padding-right: @padding20;
+    }
     border-bottom: 1px solid @ku-red;
     margin-top: 3px;
+
     .theme-samf & {
       border-bottom: 1px solid @samf;
     }
+
     .theme-hum & {
       border-bottom: 1px solid @hum;
     }
+
     .theme-science & {
       border-bottom: 1px solid @science;
     }
+
     .theme-sund & {
       border-bottom: 1px solid @sund;
     }
+
     .theme-jur & {
       border-bottom: 1px solid @jura;
     }
+
     .theme-teo & {
       border-bottom: 1px solid @teol;
     }

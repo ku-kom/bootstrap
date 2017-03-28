@@ -11,18 +11,6 @@ html:not(.non-responsive) {
     }
   }
 }
-
-.row {
-  > [class*="col-"] {
-    &:not(.form-group) {
-      margin-bottom: @margin20;
-    }
-  }
-
-  &.breadcrumbs {
-    margin-bottom: @margin0;
-  }
-}
 //.right-side {
 // @media (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
 //   .pull-right();
@@ -65,11 +53,22 @@ nav {
       color: @link-visited-color;
     }
   }
-}
 
-.right-side {
-  padding-bottom: @grid-gutter-height;
-  .pull-right;
+  .front-page & {
+    padding-top: 0;
+  }
+
+  .row {
+    > [class*="col-"] {
+      &:not(.form-group) {
+        margin-bottom: @margin20;
+      }
+    }
+
+    &.breadcrumbs {
+      margin-bottom: @margin0;
+    }
+  }
 }
 
 .main-area {
@@ -87,6 +86,11 @@ nav {
   img {
     .img-responsive;
   }
+}
+
+.right-side {
+  padding-bottom: @grid-gutter-height;
+  .pull-right;
 }
 // Accessibility
 

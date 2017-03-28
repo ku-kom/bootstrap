@@ -4,6 +4,9 @@ title: KU standard full width template
 slug: examples
 ---
 <main tabindex="0" id="content">
+  <script>
+  $('head').append('<link rel="stylesheet" href="../../assets/css/frontpage/frontpage.css">');
+  </script>
   {% include ku-branding.html %}
   <div class="container main-area front-page" id="main-area">
     <div class="row">
@@ -16,6 +19,44 @@ slug: examples
             <h2>Breaking</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           </div>
+          <div class="clearfix"></div>
+            <div class="col-sm-12">
+              <div class="jumpboard row clearfix">
+                <div class="col-xs-12 col-sm-6 col-md-3 jumpcolumn">
+                    <h3 class="jumpheading"><a href="http://www.velkommen.ku.dk/uddannelse_oversigt">Uddannelse</a></h3>
+                    <ul class="jumplinks">
+                        <li><a href="http://www.studier.ku.dk/bachelor/">Bachelor</a></li>
+                        <li><a href="http://www.studier.ku.dk/kandidat/">Kandidat</a></li>
+                        <li><a href="http://www.evu.ku.dk/">Efter- og videreuddannelse</a></li>
+                        <li><a href="http://www.moocs.ku.dk/">Online undervisning</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 jumpcolumn">
+                    <h3 class="jumpheading"><a href="http://www.forskning.ku.dk/">Forskning</a></h3>
+                    <ul class="jumplinks">
+                        <li><a href="http://www.forskning.ku.dk/styrkeomraader/">Tværgående styrkeområder</a></li>
+                        <li><a href="http://www.forskning.ku.dk/find-en-forsker/">Find en forsker</a></li>
+                        <li><a href="http://www.phd.ku.dk/">Ph.d.-uddannelse</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 jumpcolumn">
+                    <h3 class="jumpheading"><a href="http://www.velkommen.ku.dk/">Universitet</a></h3>
+                    <ul class="jumplinks">
+                        <li><a href="http://www.velkommen.ku.dk/">Om universitetet</a></li>
+                        <li><a href="http://www.jobportal.ku.dk/">Job og karriere</a></li>
+                        <li><a href="http://www.erhverv.ku.dk/">Erhvervssamarbejde</a></li>
+                        <li><a href="http://www.velkommen.ku.dk/organisation/fakulteter/">Fakulteter</a></li>
+                        <li><a href="http://www.velkommen.ku.dk/organisation/institutter/">Institutter</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 jumpcolumn">
+                    <h3 class="jumpheading"><a href="http://intranet.ku.dk/">For studerende og ansatte</a></h3>
+                    <ul class="jumplinks">
+                        <li><a class="padlock" href="http://intranet.ku.dk/">KUnet</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
           <div class="clearfix"></div>
           <div class="col-sm-12 col-md-3">
             <h2>Heading 1</h2>

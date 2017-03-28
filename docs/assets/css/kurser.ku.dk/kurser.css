@@ -11,7 +11,7 @@ select[multiple] {
 h1 {
   font-size: 1.67em;
   line-height: 1.4;
-  margin: 0.67em 0 22px;
+  margin: 0 0 22px;
 }
 
 table>thead>tr>th, .control-label {
@@ -64,14 +64,10 @@ table>thead>tr>th, .control-label {
   color: #901a1e;
 }
 
-.course-archive {
-  margin-top: 9px;
-  display: block;
-}
-
 .go-back {
   margin-top: 20px;
 }
+
 .dl-horizontal dt {
   margin-top: 5px;
 }
@@ -80,7 +76,7 @@ table>thead>tr>th, .control-label {
   font-weight: 600;
 }
 
-.right-side li a .glyphicon {
+.right-side li .glyphicon {
   color: #999;
   font-size: .83em;
 }
@@ -119,11 +115,10 @@ ul.workload .total {
 }
 
 .course-item>a {
-  color: #252525;
   display: block;
 }
 
-.course-item a>h3 {
+.course-item h3 {
   color: #666;
   position: relative;
   background-color: #f6f6f6;
@@ -135,7 +130,7 @@ ul.workload .total {
   margin-top: 10px;
 }
 
-.course-item a>h3::after {
+.course-item h3::after {
   content: "\e259";
   display: inline-block;
   font-family: 'Glyphicons Halflings';
@@ -151,7 +146,7 @@ ul.workload .total {
   right: 6px;
 }
 
-.course-item a:not(.collapsed)>h3::after {
+.course-item h3:not(.collapsed)::after {
   content: "\e260";
 }
 
@@ -162,6 +157,10 @@ ul.workload .total {
 }
 
 @media (min-width: 768px) {
+  .course-archive {
+    margin-top: 9px;
+    display: block;
+  }
   .right-side .dl-horizontal dd {
     margin-left: 43%;
     margin-top: 5px;

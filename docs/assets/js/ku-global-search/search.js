@@ -19,13 +19,11 @@ jQuery(function () {
     return true;
   };
   $('#searchfilter').on('click', 'li', function () {
-    //$('li[data-selected="selected"]').attr('data-selected', '');
     $('li.selected').removeClass('selected');
-    //$(this).attr('data-selected', 'selected');
     $(this).addClass('selected');
     var $area = $('#search');
     $area.text($(this).text());
-    $area.append('<span class="sr-only">Search options</span>');
+    $area.append('<span class="sr-only">Søgeområder</span>');
   });
   var forms = jQuery('form.search_form');
   forms.each(function () {
@@ -53,7 +51,6 @@ jQuery(function () {
       }
       form.submit(function (event) {
         var chosenEngine = window.searchEngines[$('li[data-selected="selected"]').data('value')];
-        //console.log(chosenEngine);
         form.attr('action', chosenEngine.url);
         form.attr('method', chosenEngine.method || 'GET');
         field.attr('name', chosenEngine.querykey);
