@@ -5,7 +5,11 @@ title: Ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
 <main id="content" tabindex="-1">
   <div class="container ku-branding">
     <div class="ku-branding-line">
-      <div class="ku-branding-logo"><img class="img-responsive" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/branding/faelles.svg" alt="Københavns Universitet"></div>
+      <div class="ku-branding-logo">
+        <a title="Forsiden af ku.dk" href="/">
+          <img class="logo-img" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/branding/faelles.svg" alt="Københavns Universitet">
+        </a>
+      </div>
       <div class="ku-branding-text">
         <div class="ku-branding-text-major">Design guidelines</div>
         <div class="ku-branding-text-sub">University of Copenhagen</div>

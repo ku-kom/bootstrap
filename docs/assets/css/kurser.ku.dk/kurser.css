@@ -14,6 +14,11 @@ h1 {
   margin: 0 0 22px;
 }
 
+.courseVolume {
+  float: right;
+  display: inline-block;
+}
+
 table>thead>tr>th, .control-label {
   font-size: 13px;
   font-weight: 600;
@@ -24,7 +29,7 @@ table>thead>tr>th, .control-label {
 }
 
 @media print {
-  [data-toggle="collapse"]>h3::after {
+  [data-toggle="collapse"]>a::after {
     display: none!important;
   }
 }
@@ -51,21 +56,16 @@ table>thead>tr>th, .control-label {
     opacity: 1;
   }
 }
-
 #searchall, #showall {
   font-size: 14px;
   font-weight: 600;
   color: #901a1e;
-  -webkit-animation: fadein 2.5s;
-  animation: fadein 2.5s;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 #searchall.btn-default:hover, #searchall.btn-default:active, #searchall.btn-default:focus, #showall.btn-default:hover, #showall.btn-default:active, #showall.btn-default:focus {
   color: #901a1e;
-}
-
-.go-back {
-  margin-top: 20px;
 }
 
 .dl-horizontal dt {
@@ -115,22 +115,24 @@ ul.workload .total {
 }
 
 .course-item>a {
-  display: block;
-}
-
-.course-item h3 {
   color: #666;
+  font-size: 15px;
+  font-weight: 600;
   position: relative;
+  display: block;
   background-color: #f6f6f6;
   border: 1px solid #dedede;
   border-radius: 2px;
   padding: 7px 25px 7px 5px;
   line-height: 1.3em;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
-.course-item h3::after {
+.course-item>a:hover {
+  text-decoration: none;
+}
+
+.course-item>a::after {
   content: "\e259";
   display: inline-block;
   font-family: 'Glyphicons Halflings';
@@ -146,7 +148,7 @@ ul.workload .total {
   right: 6px;
 }
 
-.course-item h3:not(.collapsed)::after {
+.course-item>a:not(.collapsed)::after {
   content: "\e260";
 }
 
@@ -157,6 +159,10 @@ ul.workload .total {
 }
 
 @media (min-width: 768px) {
+  .courseTitle {
+    width: 82%;
+    display: inline-block;
+  }
   .course-archive {
     margin-top: 9px;
     display: block;
@@ -182,7 +188,7 @@ ul.workload .total {
 }
 
 @media (max-width: 768px) {
-  .course-item a>h3::after {
+  .course-item>a::after {
     font-size: 1em;
   }
   .dataTables_wrapper .row .col-sm-6:nth-of-type(2) {

@@ -1,5 +1,5 @@
 // Custom scripts for kurser.ku.dk
-$(document).ready(function() {
+$(document).ready(function () {
   $cachedWidth = $('body').prop('clientWidth');
   $search = $('#searchall');
   $advanced = $('#showall');
@@ -7,21 +7,23 @@ $(document).ready(function() {
 
   resetText();
   multipleSelectBox();
+  collapsePanels();
   //runDatatable(); Run after table exists
 
-  $advanced.click(function() {
+  $advanced.click(function () {
     if ($cachedWidth < 768) {
       $(this).toggleClass('open');
       $hiddenColumn.slideToggle();
     }
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
       $hiddenColumn.removeAttr('style');
       $advanced.removeClass('open');
       resetText();
+      collapsePanels();
       $cachedWidth = $newWidth;
     }
     $cachedWidth = $newWidth;
@@ -31,31 +33,41 @@ $(document).ready(function() {
 // Function to change text for small screens (DA/ENG)
 function resetText() {
   var $lang = $('html').attr('lang');
-  $('.main-content .btn').each(function() {
-    if ($cachedWidth < 768 && $lang == 'da') {
-      $search.html('Søg');
-    } else {
-      $(this).html($(this).data($lang));
-    }
+  $('.main-content .btn').each(function () {
+    $(this).html($(this).data($lang));
   });
 }
 
 function runDatatable() {
   // Datatable language switcher
   function getLanguage() {
-    var $langMap = {
-      en: 'English',
-      da: 'Danish'
+    var en = {
+      sLengthMenu: 'Display _MENU_ courses per page',
+      sInfo: 'Showing _START_ to _END_ of _TOTAL_ courses'
+    };
+
+    var da = {
+      sProcessing: 'Henter...',
+      sLengthMenu: 'Vis _MENU_ kurser',
+      sInfo: 'Viser _START_ til _END_ af _TOTAL_ kurser',
+      sInfoEmpty: 'Viser 0 til 0 af 0 kurser',
+      sSearch: 'S&oslash;g:',
+      sUrl: '',
+      oPaginate: {
+        sFirst: 'F&oslash;rste',
+        sPrevious: 'Forrige',
+        sNext: 'N&aelig;ste',
+        sLast: 'Sidste'
+      }
     };
     var $lang = $('html').attr('lang');
-    return '//cdn.datatables.net/plug-ins/1.10.13/i18n/' + $langMap[$lang] + '.json';
+    var $currentLang = ($lang == 'da') ? da : en;
+    return $currentLang;
   }
 
   // Build Datatable
   $('#searchresults').DataTable({
-    language: {
-      url: getLanguage()
-    },
+    oLanguage: getLanguage(),
     ordering: true,
     autoWidth: false,
     bFilter: false,
@@ -72,7 +84,7 @@ function destroyDatatable() {
 
 function multipleSelectBox() {
   // Multiple select language switcher
-  var multipleSelectLang = function() {
+  var multipleSelectLang = function () {
     var da = {
       placeholder: 'V&aelig;lg flere...',
       selectAllText: 'V&aelig;lg alle',
@@ -86,6 +98,18 @@ function multipleSelectBox() {
     };
     return ($('html').attr('lang') == 'da') ? da : en;
   };
-      // Run Multiple select
+  // Run Multiple select
   $('select[multiple]').multipleSelect(multipleSelectLang());
+}
+
+function collapsePanels() {
+  // Collapse panels for mobiles
+  var $open = $('.course-item a[aria-expanded="true"]');
+  if ($cachedWidth < 769) {
+    $open.next('[class*="collapse"]').removeClass('in').removeAttr('style');
+    $open.addClass('collapsed');
+  } else {
+    $open.next('[class*="collapse"]').addClass('in').removeAttr('style');
+    $open.removeClass('collapsed');
+  }
 }

@@ -136,7 +136,7 @@ category: kurser
         <div class="row">
           <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-2">
             <div class="form-group">
-              <button id="searchall" type="submit" class="btn btn-default" data-da="Søg i kursusdatabasen" data-en="Search">Søg i kursusdatabasen</button>
+              <button id="searchall" type="submit" class="btn btn-default" data-da="Søg" data-en="Search">Søg</button>
               <button id="showall" class="btn btn-default show-filter" data-da="Avanceret søgning" data-en="Advanced search">Avanceret søgning</button>
             </div>
           </div>
@@ -863,5 +863,10 @@ category: kurser
       </div>
     </div>
   </div>
+  <script>
+  $(document).ready(function () {
+    runDatatable();
+  });
+  </script>
   {% include local-footer.html %}
 </main>

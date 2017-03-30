@@ -9,6 +9,9 @@
 
   > li {
     display: inline; // Remove list-style and block-level defaults
+    > a:visited {
+      color: inherit;
+    }
     > a,
     > span {
       position: relative;
@@ -36,6 +39,9 @@
     }
   }
 
+> li > a:visited {
+  color: @pagination-color;
+}
   > li > a,
   > li > span {
     &:hover,
