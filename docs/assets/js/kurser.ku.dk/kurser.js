@@ -2,26 +2,26 @@
 $(document).ready(function () {
   $cachedWidth = $('body').prop('clientWidth');
   $search = $('#searchall');
-  $advanced = $('#showall');
-  $hiddenColumn = $('.mobile-hidden');
+  $adv = $('#showall');
+  $hiddenCol = $('.mobile-hidden');
 
   resetText();
   multipleSelectBox();
   collapsePanels();
   //runDatatable(); Run after table exists
 
-  $advanced.click(function () {
+  $adv.click(function () {
     if ($cachedWidth < 768) {
       $(this).toggleClass('open');
-      $hiddenColumn.slideToggle();
+      $hiddenCol.slideToggle();
     }
   });
 
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
-      $hiddenColumn.removeAttr('style');
-      $advanced.removeClass('open');
+      $hiddenCol.removeAttr('style');
+      $adv.removeClass('open');
       resetText();
       collapsePanels();
       $cachedWidth = $newWidth;
@@ -38,36 +38,46 @@ function resetText() {
   });
 }
 
+// Datatable.js settings
 function runDatatable() {
-  // Datatable language switcher
+  // Datatable language switcher with custom mods to overwrite the defaults
   function getLanguage() {
-    var en = {
-      sLengthMenu: 'Display _MENU_ courses per page',
-      sInfo: 'Showing _START_ to _END_ of _TOTAL_ courses'
-    };
-
-    var da = {
-      sProcessing: 'Henter...',
-      sLengthMenu: 'Vis _MENU_ kurser',
-      sInfo: 'Viser _START_ til _END_ af _TOTAL_ kurser',
-      sInfoEmpty: 'Viser 0 til 0 af 0 kurser',
-      sSearch: 'S&oslash;g:',
-      sUrl: '',
-      oPaginate: {
-        sFirst: 'F&oslash;rste',
-        sPrevious: 'Forrige',
-        sNext: 'N&aelig;ste',
-        sLast: 'Sidste'
+    var $langMap = {
+      en: {
+        path: 'English',
+        mods: {
+          sLengthMenu: 'Display _MENU_ courses',
+          sInfo: 'Showing _START_ to _END_ of _TOTAL_ courses'
+        }
+      },
+      da: {
+        path: 'Danish',
+        mods: {
+          sLengthMenu: 'Vis _MENU_ kurser',
+          sInfo: 'Viser _START_ til _END_ af _TOTAL_ kurser',
+          sInfoEmpty: 'Viser 0 til 0 af 0 kurser'
+        }
       }
     };
     var $lang = $('html').attr('lang');
-    var $currentLang = ($lang == 'da') ? da : en;
-    return $currentLang;
+    if (!$langMap[$lang]) {
+      $lang = 'en';
+    }
+    var $result = null;
+    var path = '//cdn.datatables.net/plug-ins/1.10.13/i18n/';
+    $.ajax({
+      async: false,
+      url: path + $langMap[$lang].path + '.json',
+      success: function (obj) {
+        $result = $.extend({}, obj, $langMap[$lang].mods);
+      }
+    });
+    return $result;
   }
 
   // Build Datatable
   $('#searchresults').DataTable({
-    oLanguage: getLanguage(),
+    language: getLanguage(),
     ordering: true,
     autoWidth: false,
     bFilter: false,

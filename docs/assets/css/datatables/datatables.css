@@ -232,27 +232,51 @@
   bottom: 9px;
   left: 11px;
   height: 14px;
-  width: 20px;
+  width: 22px;
   display: block;
   position: absolute;
   padding-top: 3px;
+  padding-left: 3px;
   color: #666;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  text-align: center;
   font-family: 'Glyphicons Halflings';
-  line-height: 14px;
+  line-height: 10px;
   content: "\e252";
   font-size: 10px;
-  /*background-color: #337ab7;*/
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
   content: "\e253";
+  line-height: 12px;
   padding-top: 1px;
   padding-bottom: 2px;
-  /*background-color: #d33333;*/
+}
+.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:after {
+  bottom: 9px;
+  left: 30px;
+  height: 14px;
+  width: auto;
+  display: block;
+  position: absolute;
+  padding-top: 3px;
+  padding-right: 3px;
+  color: #333;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  line-height: 10px;
+  content: "Vis detaljer";
+  font-size: 12px;
+  font-weight: 600;
+}
+.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
+  content: "Skjul detaljer";
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.child td:before {
