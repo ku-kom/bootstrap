@@ -20,7 +20,7 @@
 
 .dataTable td, .dataTable th {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .dataTable td.dataTables_empty, .dataTable th.dataTables_empty {
@@ -232,51 +232,69 @@
   bottom: 9px;
   left: 11px;
   height: 14px;
-  width: 22px;
+  width: auto;
   display: block;
   position: absolute;
-  padding-top: 3px;
-  padding-left: 3px;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 5px;
   color: #666;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   font-family: 'Glyphicons Halflings';
-  line-height: 10px;
+  line-height: 9px;
   content: "\e252";
   font-size: 10px;
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
   content: "\e253";
-  line-height: 12px;
-  padding-top: 1px;
-  padding-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 1px;
 }
-.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:after {
+
+.dataTable.dtr-inline.collapsed>tbody>tr>td:not(.child):first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr>th:not(.child):first-child:after {
   bottom: 9px;
-  left: 30px;
+  left: 33px;
   height: 14px;
   width: auto;
   display: block;
   position: absolute;
-  padding-top: 3px;
-  padding-right: 3px;
+  padding-top: 6px;
+  padding-right: 6px;
   color: #333;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  line-height: 10px;
+  box-sizing: content-box;
+  line-height: 8px;
   content: "Vis detaljer";
-  font-size: 12px;
+  letter-spacing: .7px;
+  font-size: 11px;
+  text-transform: uppercase;
   font-weight: 600;
 }
+
 .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
   content: "Skjul detaljer";
+}
+
+html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr>td:not(.child):first-child:after, html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr>th:not(.child):first-child:after {
+  content: "Show details";
+}
+
+html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
+  content: "Hide details";
+}
+
+.dataTable.dtr-inline.collapsed>tbody>tr>td.child:first-child {
+  padding-bottom: 10px;
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.child td:before {
@@ -332,6 +350,7 @@
 
 .dataTable>tbody>tr.child {
   padding: 0.5em 1em;
+  background-color: #fff;
 }
 
 .dataTable>tbody>tr.child:hover {
@@ -368,7 +387,7 @@
 div.dtr-modal {
   position: fixed;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   height: 100%;
@@ -393,7 +412,7 @@ div.dtr-modal div.dtr-modal-display {
   border: 1px solid black;
   border-radius: 0.5em;
   -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 div.dtr-modal div.dtr-modal-content {

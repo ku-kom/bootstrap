@@ -1,5 +1,5 @@
 // Custom scripts for kurser.ku.dk
-$(document).ready(function () {
+$(document).ready(function() {
   $cachedWidth = $('body').prop('clientWidth');
   $search = $('#searchall');
   $adv = $('#showall');
@@ -10,14 +10,14 @@ $(document).ready(function () {
   collapsePanels();
   //runDatatable(); Run after table exists
 
-  $adv.click(function () {
+  $adv.click(function() {
     if ($cachedWidth < 768) {
       $(this).toggleClass('open');
       $hiddenCol.slideToggle();
     }
   });
 
-  $(window).resize(function () {
+  $(window).resize(function() {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
       $hiddenCol.removeAttr('style');
@@ -33,7 +33,7 @@ $(document).ready(function () {
 // Function to change text for small screens (DA/ENG)
 function resetText() {
   var $lang = $('html').attr('lang');
-  $('.main-content .btn').each(function () {
+  $('.main-content .btn').each(function() {
     $(this).html($(this).data($lang));
   });
 }
@@ -68,7 +68,7 @@ function runDatatable() {
     $.ajax({
       async: false,
       url: path + $langMap[$lang].path + '.json',
-      success: function (obj) {
+      success: function(obj) {
         $result = $.extend({}, obj, $langMap[$lang].mods);
       }
     });
@@ -94,7 +94,7 @@ function destroyDatatable() {
 
 function multipleSelectBox() {
   // Multiple select language switcher
-  var multipleSelectLang = function () {
+  var multipleSelectLang = function() {
     var da = {
       placeholder: 'V&aelig;lg flere...',
       selectAllText: 'V&aelig;lg alle',
