@@ -1,0 +1,307 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+  clear: both;
+
+  &.slick-initialized {
+    display: block;
+  }
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+  &>* {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+  }
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+    .slick-list {
+      background: @white-color url( '../../images/slider/loader.gif') center center no-repeat;
+    }
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+// Arrows
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  left: -25px;
+
+  &:hover {
+    color: transparent;
+    outline: none;
+    background: transparent;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+    color: @text-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '←';
+  }
+}
+
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  right: -25px;
+
+  &:hover {
+    color: transparent;
+    outline: none;
+    background: transparent;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+    color: @text-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '→';
+  }
+}
+
+.slick-prev.slick-disabled {
+  &:before {
+    opacity: 0.25;
+  }
+}
+
+.slick-next.slick-disabled {
+  &:before {
+    opacity: 0.25;
+  }
+}
+
+[dir='rtl'] {
+  .slick-prev {
+    right: -25px;
+    left: auto;
+
+    &:before {
+      content: '→';
+    }
+  }
+
+  .slick-next {
+    right: auto;
+    left: -25px;
+
+    &:before {
+      content: '←';
+    }
+  }
+}
+// Dots
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+
+      &:hover {
+        outline: none;
+
+        &:before {
+          opacity: 1;
+        }
+      }
+
+      &:focus {
+        outline: none;
+
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    .slick-active {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

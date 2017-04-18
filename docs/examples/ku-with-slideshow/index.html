@@ -2,6 +2,7 @@
 layout: examples
 title: KU standard template with left menu and slideshow
 slug: examples
+category: slider
 ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
@@ -14,12 +15,52 @@ slug: examples
         <div class="row">
           <div class="col-sm-12">
             <div class="slideshow">
-              <ul class="bxslider">
-                <li><a href="#"><img src="https://placehold.it/757x250?text=Slide+1" alt="" /></a></li>
-                <li><a href="#"><img src="https://placehold.it/757x250?text=Slide+2" alt="" /></a></li>
-                <li><a href="#"><img src="https://placehold.it/757x250?text=Slide+3" alt="" /></a></li>
-                <li><a href="#"><img src="https://placehold.it/757x250?text=Slide+4" alt="" /></a></li>
-              </ul>
+                <a href="#" class="slide-link">
+                    <div class="text-bottom">
+                        <img src="http://cms.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="">
+                        <div class="caption">
+                            <div>Københavns Univeristet</div>
+                            <h2>Nye rundvisninger i botanisk have</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <div class="text-right-short">
+                        <img src="http://placehold.it/550x300?text=Slide+2" alt="">
+                        <div class="caption">
+                            <div>Alumnernes dag</div>
+                            <h2>Forskning. Samtaler. Festmiddag.</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <div class="text-left">
+                        <img src="http://placehold.it/550x300?text=Slide+3" alt="">
+                        <div class="caption">
+                            <div>Bliv klogere på dit studievalg</div>
+                            <h2>Kom til åbent hus</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <div class="text-left-short">
+                        <img src="http://placehold.it/550x300?text=Slide+4" alt="">
+                        <div class="caption">
+                            <div>Bliv klogere på dit studievalg</div>
+                            <h2>Kom til åbent hus</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <div>
+                        <img src="http://placehold.it/550x300?text=Slide+5" alt="">
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <div>
+                        <img src="http://placehold.it/550x300?text=Slide+6" alt="">
+                    </div>
+                </a>
             </div>
           </div>
         </div>
@@ -28,50 +69,21 @@ slug: examples
   </div>
   {% include local-footer.html %}
 </main>
-<!-- BxSlider  -->
-<script type="text/javascript" src="../../assets/js/bxslider/jquery.bxslider.min.js"></script>
+<!-- Slider  -->
+<script type="text/javascript" src="../../assets/js/slider/slick.min.js"></script>
 <script type="text/javascript">
-  $(function() {
-    var cachedWidth = $(window).width();
-    var bxSettings = function() {
-      var desktop = { //Settings for desktop
-        auto: true,
-        pause: 3000,
-        controls: true,
-        autoHover: true,
-        easing: 'ease-in-out',
-        mode: 'fade',
-        minSlides: 1,
-        maxSlides: 1,
-        shrinkItems: true,
-        keyboardEnabled: true,
-        onSliderLoad: function(currentIndex) {
-          $('.slideshow').css('visibility', 'visible');
-        }
-      };
-      var mobile = { //settings for mobile devices
-        auto: true,
-        pause: 3000,
-        minSlides: 1,
-        maxSlides: 1,
-        shrinkItems: true,
-        mode: 'fade',
-        easing: 'ease-in-out',
-        controls: false,
-        onSliderLoad: function(currentIndex) {
-          $('.slideshow').css('visibility', 'visible');
-        }
-      };
-      return (cachedWidth < 769) ? mobile : desktop;
-    }
-    var slider = $('.bxslider').bxSlider(bxSettings());
-
-    $(window).resize(function() {
-      var newWidth = $(window).width();
-      if (newWidth !== cachedWidth) {
-        slider.reloadSlider(bxSettings());
-        cachedWidth = newWidth;
-      }
+    $(document).ready(function() {
+      $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
+        $(".slideshow").slick({
+            //autoplay: true,
+            dots: true,
+            fade: true,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: true
+                }
+            }]
+        });
     });
-  });
 </script>
