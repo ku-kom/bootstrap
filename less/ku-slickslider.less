@@ -1,5 +1,8 @@
 /* Slider */
 .slick-slider {
+  @media (min-width: @screen-sm-min) {
+    height: 289px; // KU
+  }
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -17,9 +20,12 @@
 .slick-list {
   position: relative;
   overflow: hidden;
-  display: block;
+  //display: block;
   margin: 0;
   padding: 0;
+  @media (min-width: @screen-sm-min) {
+    height: 100%; // KU
+  }
 
   &:focus {
     outline: none;
@@ -41,6 +47,9 @@
   left: 0;
   top: 0;
   display: block;
+  @media (min-width: @screen-sm-min) {
+    height: 100%; // KU
+  }
 
   &:after,
   &:before {
@@ -80,9 +89,12 @@
     height: auto;
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    object-fit: contain;
+    @media (min-width: @screen-sm-min) {
+      max-width: none; // KU
+      width: 100%;
+    }
   }
 
   &.slick-loading img {
@@ -98,10 +110,11 @@
     display: block;
   }
 
+// Loading
   .slick-loading & {
     visibility: hidden;
     .slick-list {
-      background: @white-color url( '../../images/slider/loader.gif') center center no-repeat;
+      .ku-loading();
     }
   }
 
@@ -111,7 +124,10 @@
     border: 1px solid transparent;
   }
 }
-
+// Links
+.slide-link, &:hover, &:visited {
+  text-decoration: none;
+}
 .slick-arrow.slick-hidden {
   display: none;
 }
