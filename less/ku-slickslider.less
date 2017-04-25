@@ -1,4 +1,7 @@
 /* Slider */
+.slide-wrapper {
+  visibility: hidden;
+}
 .slick-slider {
   @media (min-width: @screen-sm-min) {
     height: 289px; // KU
@@ -9,11 +12,11 @@
   user-select: none;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-  display: none;
+  visibility: hidden;
   clear: both;
 
   &.slick-initialized {
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -90,7 +93,6 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    object-fit: contain;
     @media (min-width: @screen-sm-min) {
       max-width: none; // KU
       width: 100%;
@@ -138,13 +140,14 @@
 
 // Arrows
 .slick-prev {
+  z-index: 2;
   font-size: 0;
   line-height: 0;
   position: absolute;
   top: 50%;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   transform: translate(0, -50%);
   cursor: pointer;
@@ -152,7 +155,7 @@
   border: none;
   outline: none;
   background: transparent;
-  left: -25px;
+  left: 0;
 
   &:hover {
     color: transparent;
@@ -175,24 +178,26 @@
   }
 
   &:before {
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
     opacity: 0.75;
     color: @text-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: '←';
+    font-family: 'Glyphicons Halflings';
+    content:"\e257";
   }
 }
 
 .slick-next {
+  z-index: 2;
   font-size: 0;
   line-height: 0;
   position: absolute;
   top: 50%;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   transform: translate(0, -50%);
   cursor: pointer;
@@ -200,7 +205,7 @@
   border: none;
   outline: none;
   background: transparent;
-  right: -25px;
+  right: 0;
 
   &:hover {
     color: transparent;
@@ -223,13 +228,14 @@
   }
 
   &:before {
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
     opacity: 0.75;
     color: @text-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: '→';
+    font-family: 'Glyphicons Halflings';
+    content:"\e258";
   }
 }
 
@@ -247,20 +253,20 @@
 
 [dir='rtl'] {
   .slick-prev {
-    right: -25px;
+    right: 0;
     left: auto;
 
     &:before {
-      content: '→';
+      content:"\e258";
     }
   }
 
   .slick-next {
     right: auto;
-    left: -25px;
+    left: 0;
 
     &:before {
-      content: '←';
+      content:"\e257";
     }
   }
 }
@@ -316,8 +322,8 @@
         }
       }
     }
-    .slick-active {
-      background: rgba(0, 0, 0, 0.5);
-    }
+  }
+  .slick-active {
+    background: rgba(0, 0, 0, 0.5);
   }
 }
