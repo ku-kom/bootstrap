@@ -3,10 +3,6 @@
 
 /*Edge-to-edge grid for eg. slider*/
 @media screen and (max-width: 767px) {
-  .front-page .main-content .row:first-child {
-    margin-right: -13px;
-    margin-left: -13px;
-  }
   .front-page .main-content .row:first-child .col-sm-12.col-md-9 {
     padding-right: 0;
     padding-left: 0;

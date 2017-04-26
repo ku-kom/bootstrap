@@ -2,8 +2,9 @@
 .slide-wrapper {
   visibility: hidden;
 }
+
 .slick-slider {
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-md-min) {
     height: 289px; // KU
   }
   position: relative;
@@ -26,7 +27,7 @@
   //display: block;
   margin: 0;
   padding: 0;
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-md-min) {
     height: 100%; // KU
   }
 
@@ -50,7 +51,7 @@
   left: 0;
   top: 0;
   display: block;
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-md-min) {
     height: 100%; // KU
   }
 
@@ -76,7 +77,8 @@
   overflow: hidden;
   position: relative;
   display: none;
-  &>* {
+
+  & > * {
     overflow: hidden;
     height: 100%;
     position: relative;
@@ -91,11 +93,12 @@
     max-width: 100%;
     height: auto;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    @media (min-width: @screen-sm-min) {
-      max-width: none; // KU
+    @media (min-width: @screen-md-min) {
+      max-width: none!important; // KU
       width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) translateX(0);
     }
   }
 
@@ -111,10 +114,10 @@
   .slick-initialized & {
     display: block;
   }
-
-// Loading
+  // Loading
   .slick-loading & {
     visibility: hidden;
+
     .slick-list {
       .ku-loading();
     }
@@ -127,9 +130,11 @@
   }
 }
 // Links
-.slide-link, &:hover, &:visited {
-  text-decoration: none;
+
+.slide-link {
+  .states(none);
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }
@@ -137,9 +142,9 @@
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
-
 // Arrows
-.slick-prev {
+
+.slick-arrow {
   z-index: 2;
   font-size: 0;
   line-height: 0;
@@ -155,7 +160,6 @@
   border: none;
   outline: none;
   background: transparent;
-  left: 0;
 
   &:hover {
     color: transparent;
@@ -181,92 +185,61 @@
     font-size: 40px;
     line-height: 1;
     opacity: 0.75;
-    color: @text-color;
+    color: @white-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Glyphicons Halflings';
-    content:"\e257";
   }
 }
 
-.slick-next {
-  z-index: 2;
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  right: 0;
-
+.slick-slider {
   &:hover {
-    color: transparent;
-    outline: none;
-    background: transparent;
+    .slick-prev {
+      left: 0;
 
-    &:before {
-      opacity: 1;
+      &:before {
+        content: "\e257";
+      }
     }
-  }
 
-  &:focus {
-    color: transparent;
-    outline: none;
-    background: transparent;
+    .slick-next {
+      right: 0;
 
-    &:before {
-      opacity: 1;
+      &:before {
+        content: "\e258";
+      }
     }
-  }
 
-  &:before {
-    font-size: 40px;
-    line-height: 1;
-    opacity: 0.75;
-    color: @text-color;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Glyphicons Halflings';
-    content:"\e258";
-  }
-}
-
-.slick-prev.slick-disabled {
-  &:before {
-    opacity: 0.25;
-  }
-}
-
-.slick-next.slick-disabled {
-  &:before {
-    opacity: 0.25;
-  }
-}
-
-[dir='rtl'] {
-  .slick-prev {
-    right: 0;
-    left: auto;
-
-    &:before {
-      content:"\e258";
+    .slick-prev.slick-disabled {
+      &:before {
+        opacity: 0.25;
+      }
     }
-  }
 
-  .slick-next {
-    right: auto;
-    left: 0;
+    .slick-next.slick-disabled {
+      &:before {
+        opacity: 0.25;
+      }
+    }
 
-    &:before {
-      content:"\e257";
+    [dir='rtl'] {
+      .slick-prev {
+        right: 0;
+        left: auto;
+
+        &:before {
+          content: "\e258";
+        }
+      }
+
+      .slick-next {
+        right: auto;
+        left: 0;
+
+        &:before {
+          content: "\e257";
+        }
+      }
     }
   }
 }
@@ -323,7 +296,9 @@
       }
     }
   }
+
   .slick-active {
     background: rgba(0, 0, 0, 0.5);
+    outline: none;
   }
 }
