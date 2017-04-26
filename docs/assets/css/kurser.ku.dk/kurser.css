@@ -7,6 +7,11 @@ body {
 select[multiple] {
   visibility: hidden;
 }
+.form-group .control-label {
+  text-overflow: initial;
+  white-space: normal;
+  padding-top: 0;
+}
 
 h1 {
   font-size: 1.67em;
@@ -158,7 +163,7 @@ ul.workload .total {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .courseTitle {
     width: 82%;
     display: inline-block;
@@ -188,6 +193,9 @@ ul.workload .total {
 }
 
 @media (max-width: 768px) {
+  .show-filter {
+    display: block;
+  }
   .course-item>a::after {
     font-size: 1em;
   }
