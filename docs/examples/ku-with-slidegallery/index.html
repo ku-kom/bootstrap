@@ -196,6 +196,9 @@ category: slider
     var $thumbsShow = $('.gallery-nav');
     var $countThumbs = $thumbsShow.find('div').length;
     var $totalThumbs = ($countThumbs) ? $countThumbs : 1;
+    $slideshow.on('init', function(event, slick) {
+      $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
+    });
     $slideshow.slick({
       slide: 'a',
       fade: true,
@@ -209,6 +212,5 @@ category: slider
       focusOnSelect: true,
       useTransform: false
     });
-    $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
   });
 </script>

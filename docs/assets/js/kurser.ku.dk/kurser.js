@@ -11,7 +11,13 @@ $(document).ready(function() {
   //runDatatable(); Run after table exists
 
   $adv.click(function() {
-    if ($cachedWidth < 768) {
+    if ($(this).hasClass("open")) {
+      $('html, body').animate({
+        scrollTop: 0
+      });
+    }
+
+    if ($cachedWidth <= 768) {
       $(this).toggleClass('open');
       $hiddenCol.slideToggle();
     }
@@ -115,7 +121,8 @@ function multipleSelectBox() {
 function collapsePanels() {
   // Collapse panels for mobiles
   var $open = $('.course-item a[aria-expanded="true"]');
-  if ($cachedWidth < 769) {
+  if ($cachedWidth <= 768) {
+    $('.collapse').collapse('hide');
     $open.next('[class*="collapse"]').removeClass('in').removeAttr('style');
     $open.addClass('collapsed');
   } else {
