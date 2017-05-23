@@ -78,10 +78,10 @@ category: slider
     $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
     var $slideshow = $('.slideshow');
     $slideshow.on('init', function(event, slick) {
-      console.log('slider was initialized');
+      $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
     });
     $slideshow.slick({
-      //autoplay: true,
+      autoplay: true,
       dots: true,
       fade: true,
       arrows: true,
@@ -92,6 +92,6 @@ category: slider
         }
       }]
     });
-    $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
+
   });
 </script>

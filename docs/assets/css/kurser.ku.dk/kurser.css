@@ -7,6 +7,7 @@ body {
 select[multiple] {
   visibility: hidden;
 }
+
 .form-group .control-label {
   text-overflow: initial;
   white-space: normal;
@@ -61,6 +62,7 @@ table>thead>tr>th, .control-label {
     opacity: 1;
   }
 }
+
 #searchall, #showall {
   font-size: 14px;
   font-weight: 600;
@@ -75,6 +77,10 @@ table>thead>tr>th, .control-label {
 
 .dl-horizontal dt {
   margin-top: 5px;
+}
+
+dt:first-of-type, dd:first-of-type {
+    margin-top: 0;
 }
 
 .panel-title {
@@ -157,9 +163,20 @@ ul.workload .total {
   content: "\e260";
 }
 
-@media (min-width: 480px) and (max-width: 757px) {
+.show-filter {
+  display: block;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
   ul.workload {
     width: 70%;
+  }
+  .form-group .control-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -169,7 +186,7 @@ ul.workload .total {
     display: inline-block;
   }
   .course-archive {
-    margin-top: 9px;
+    margin-top: 3px;
     display: block;
   }
   .right-side .dl-horizontal dd {
@@ -193,9 +210,6 @@ ul.workload .total {
 }
 
 @media (max-width: 768px) {
-  .show-filter {
-    display: block;
-  }
   .course-item>a::after {
     font-size: 1em;
   }
