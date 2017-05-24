@@ -18,7 +18,7 @@
 
 @ku-search-icons:        #9d9d9d;
 @ku-news-gray:          #4a4949;
-@ku-footer-icon-bg:      #666;
+@ku-footer-icon-bg:      #757575;
 @ku-footer-icon-size:    28px;
 
 // KU specific colors
@@ -126,9 +126,10 @@
 @icon-font-svg-id:        "glyphicons_halflingsregular";
 //** Custom KU icon font.
 @custom-icon-font-path:   "https://bootstrap.secure.ku.dk/fonts/";
-@custom-icon-font-name:   "ku-symbols";
+@custom-icon-font-family-name: "ku-symbols";
+@custom-icon-font-name:   "KU";
 //** Element ID within SVG icon file for KU custom font.
-@custom-icon-font-svg-id: "ku-symbols";
+@custom-icon-font-svg-id: "ku_symbols";
 
 
 //== Components
@@ -193,6 +194,9 @@
 //** Border color for table and cell borders.
 @table-border-color:            #ddd;
 
+// KU specific
+@tr-highlight-bg: #e0e0e0;
+
 
 //== Buttons
 //
@@ -200,9 +204,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #252525;
+@btn-default-color:              @gray-dark;
 @btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-border:             #d4d4d4;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -424,12 +428,12 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #252525;
+@navbar-default-color:             @gray-dark;
 @navbar-default-bg:                #fff;
 @navbar-default-border:            @gray;
 
 // Navbar links
-@navbar-default-link-color:                #252525;
+@navbar-default-link-color:                @gray-dark;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #555;

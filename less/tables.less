@@ -16,7 +16,6 @@ th {
   text-align: left;
 }
 
-
 // Baseline styles
 
 .table {
@@ -42,6 +41,7 @@ th {
     vertical-align: bottom;
     border-bottom: 2px solid @table-border-color;
   }
+
   // Remove top border from thead by default
   > caption + thead,
   > colgroup + thead,
@@ -61,6 +61,15 @@ th {
   // Nesting
   .table {
     background-color: @body-bg;
+  }
+
+  @media (min-width: @screen-sm) {
+    // KU
+    > tbody > tr {
+      &.highlight {
+        background-color: @tr-highlight-bg!important;
+      }
+    }
   }
 }
 

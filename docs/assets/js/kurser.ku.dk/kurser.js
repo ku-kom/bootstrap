@@ -29,6 +29,7 @@ $(document).ready(function() {
       $hiddenCol.removeAttr('style');
       $adv.removeClass('open');
       resetText();
+      $('.collapse').collapse('hide');
       collapsePanels();
       $cachedWidth = $newWidth;
     }
@@ -120,13 +121,14 @@ function multipleSelectBox() {
 
 function collapsePanels() {
   // Collapse panels for mobiles
-  var $open = $('.course-item a[aria-expanded="true"]');
+  // var $open = $('.course-item a[aria-expanded="true"]');
+  var $open = $('.course-item > a');
   if ($cachedWidth <= 768) {
-    $('.collapse').collapse('hide');
-    $open.next('[class*="collapse"]').removeClass('in').removeAttr('style');
+    $open.next('[class*="collaps"]').removeClass('in').removeAttr('style');
     $open.addClass('collapsed');
-  } else {
-    $open.next('[class*="collapse"]').addClass('in').removeAttr('style');
-    $open.removeClass('collapsed');
   }
+  // else {
+  //   $open.next('[class*="collaps"]').addClass('in').removeAttr('style');
+  //   $open.removeClass('collapsed');
+  // }
 }

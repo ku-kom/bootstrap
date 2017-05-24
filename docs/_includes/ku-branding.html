@@ -2,11 +2,11 @@
   <div class="ku-branding-line">
     <div class="ku-branding-logo">
       <a title="Forsiden af ku.dk" href="/">
-        <img class="logo-img" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/branding/faelles.svg" alt="Københavns Universitet">
+        <img class="logo-img" src="https://bootstrap.secure.ku.dk/img/faelles.svg" alt="Københavns Universitet">
       </a>
     </div>
     <div class="ku-branding-text">
-      <div class="ku-branding-text-major">{% if page.category == "kurser" %}Kurser{% else %}Department of Plant and Environmental Sciences{% endif %}</div>
+      <div class="ku-branding-text-major">{{ page.title }}</div>
       <div class="ku-branding-text-sub"></div>
     </div>
   </div>

@@ -8,21 +8,25 @@
 // <a href="#"><span class="icon icon-facebook"></span> Star</a>
 // Import the fonts
 @font-face {
-  font-family: @custom-icon-font-name;
+  font-family: @custom-icon-font-family-name;
   src: url('@{custom-icon-font-path}@{custom-icon-font-name}.eot');
-  src: url('@{custom-icon-font-path}@{custom-icon-font-name}.eot?#iefix') format('embedded-opentype'), url('@{custom-icon-font-path}@{custom-icon-font-name}.woff2') format('woff2'), url('@{custom-icon-font-path}@{custom-icon-font-name}.woff') format('woff'), url('@{custom-icon-font-path}@{custom-icon-font-name}.ttf') format('truetype'), url('@{custom-icon-font-path}@{custom-icon-font-name}.svg#@{custom-icon-font-svg-id}') format('svg');
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  src: url('@{custom-icon-font-path}@{custom-icon-font-name}.eot?#iefix') format('embedded-opentype'),
+  url('@{custom-icon-font-path}@{custom-icon-font-name}.woff2') format('woff2'), url('@{custom-icon-font-path}@{custom-icon-font-name}.woff') format('woff'), url('@{custom-icon-font-path}@{custom-icon-font-name}.ttf') format('truetype'), url('@{custom-icon-font-path}@{custom-icon-font-name}.svg#@{custom-icon-font-svg-id}') format('svg');
 }
 // Import the fonts
 // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('@{icon-font-path}@{icon-font-name}.eot');
-  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'), url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'), url('@{icon-font-path}@{icon-font-name}.woff') format('woff'), url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'), url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'), url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'),
+  url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
+  url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'), url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+@font-face {
+  font-family: 'arrow';
+  src: url('@{custom-icon-font-path}arrow.eot');
+  src: url('@{custom-icon-font-path}arrow.eot?#iefix') format('embedded-opentype'),
+  url('@{custom-icon-font-path}arrow.woff2') format('woff2'), url('@{custom-icon-font-path}arrow.woff') format('woff'), url('@{custom-icon-font-path}arrow.ttf') format('truetype'), url('@{custom-icon-font-path}arrow.svg#@{custom-icon-font-svg-id}') format('svg');
 }
 // Catchall baseclass
 
@@ -1638,10 +1642,11 @@
 @icon-radio-button: "\6d";
 @icon-radio-button-active: "\73";
 @icon-exclamation: "\65";
+@icon-padlock: "\64";
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: @custom-icon-font-name!important;
+  font-family: @custom-icon-font-family-name!important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1757,5 +1762,11 @@
 .icon-exclamation {
   &:before {
     content: @icon-exclamation;
+  }
+}
+
+.icon-padlock {
+  &:before {
+    content: @icon-padlock;
   }
 }

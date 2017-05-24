@@ -1357,9 +1357,10 @@
   bottom: 9px;
   z-index: 5;
   display: inline-block;
-  font-family: 'arrow';
+  font-family: "ku-symbols";
+  font-size: 17px;
   color: #fff;
-  content: '\0043';
+  content: "\61";
 }
 .gridbox.no-arrow::before {
   display: none;

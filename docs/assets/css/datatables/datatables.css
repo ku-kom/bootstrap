@@ -266,7 +266,7 @@
   position: absolute;
   padding-top: 6px;
   padding-right: 6px;
-  color: #333;
+  color: #252525;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -276,7 +276,7 @@
   line-height: 8px;
   content: "Vis detaljer";
   letter-spacing: .7px;
-  font-size: 11px;
+  font-size: 8px;
   text-transform: uppercase;
   font-weight: 600;
 }
