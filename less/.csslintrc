@@ -19,5 +19,6 @@
   "no-empty-source": null,
   "ids": null,
   "fallback-colors": null,
-  "import": null
+  "import": null,
+  "overqualified-elements" : null
 }
