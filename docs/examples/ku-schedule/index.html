@@ -5,13 +5,15 @@ slug: examples
 ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
-  <div class="container main-area front-page" id="main-area">
+  <div class="container main-area" id="main-area">
     <div class="row">
       <div class="col-sm-12 main-content">
         <div class="row">
           <div class="col-sm-12">
+            <p class="lead">Hold: Sfabil108u-H1<span class="schedule-dates">Uge: 30-29 (25 jul 2016 - 23 jul 2017)</span></p>
             <div class="schedule-wrapper">
-              <table class="schedule table table-bordered table-striped table-hover">
+              <table class="schedule table table-bordered table-striped table-hover" style="width:100%">
+                <caption>Mandag, hold 01</caption>
                 <thead>
                   <tr>
                     <th>Aktivitet</th>
@@ -19,8 +21,8 @@ slug: examples
                     <th>Type</th>
                     <th>Start</th>
                     <th>Slut</th>
-                    <th>Block/Skemagruppe</th>
-                    <th>Uge(r)</th>
+                    <th>Blok/Skemagruppe</th>
+                    <th>Uge</th>
                     <th>Lokale</th>
                     <th>Underviser</th>
                   </tr>
@@ -61,7 +63,8 @@ slug: examples
                   </tr>
                 </tbody>
               </table>
-              <table class="schedule table table-bordered table-striped table-hover">
+              <table class="schedule table table-bordered table-striped table-hover" style="width:100%">
+                <caption>Torsdag, hold 02</caption>
                 <thead>
                   <tr>
                     <th>Aktivitet</th>
@@ -69,8 +72,8 @@ slug: examples
                     <th>Type</th>
                     <th>Start</th>
                     <th>Slut</th>
-                    <th>Block/Skemagruppe</th>
-                    <th>Uge(r)</th>
+                    <th>Blok/Skemagruppe</th>
+                    <th>Uge</th>
                     <th>Lokale</th>
                     <th>Underviser</th>
                   </tr>
@@ -144,11 +147,20 @@ slug: examples
                   </tr>
                 </tbody>
               </table>
+
+              <nav aria-label="Skema">
+                <ul class="pager">
+                  <li><a class="btn btn-default" href="#"><span class="glyphicon glyphicon-chevron-left"> </span> Forrige uges skema</a></li>
+                  <li><a class="btn btn-default" href="#">Næste uges skema <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                </ul>
+              </nav>
+
             </div>
-            <script src="../../assets/js/kurser.ku.dk/kurser.min.js"></script>
             <script>
               $(document).ready(function() {
-                $('.schedule').DataTable({
+                $('head').append('<link rel="stylesheet" href="../../assets/css/kurser.ku.dk/skema.css">');
+
+                $('table.schedule').DataTable({
                   ordering: false,
                   "info": false,
                   autoWidth: false,
@@ -158,7 +170,7 @@ slug: examples
                   responsive: true
                 });
 
-                $(".schedule tbody tr").click(function() {
+                $("table.schedule tbody tr").click(function() {
                   if ($(this).hasClass("highlight"))
                     $(this).removeClass('highlight');
                   else

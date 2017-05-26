@@ -1,0 +1,8 @@
+/* Css til skema.ku.dk */
+.dataTables_wrapper > .row:first-child, .dataTables_wrapper > .row:last-child {
+  display: none;
+}
+.schedule-dates {
+  float: right;
+  padding-left: 10px;
+}
