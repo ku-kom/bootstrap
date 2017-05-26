@@ -187,7 +187,7 @@
   width: 14px;
   height: 14px;
   content: " ";
-  background: url('http://cms.ku.dk/fa-sites/forside/img/padlock.svg') no-repeat;
+  background: url('https://bootstrap.secure.ku.dk/img/padlock.svg') no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
 }
