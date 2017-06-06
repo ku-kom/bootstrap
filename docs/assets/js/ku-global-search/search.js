@@ -50,7 +50,7 @@ jQuery(function () {
         filter.append(option);
       }
       form.submit(function (event) {
-        var chosenEngine = window.searchEngines[$('li[data-selected="selected"]').data('value')];
+        var chosenEngine = window.searchEngines[$('#searchfilter li.selected').data('value')];
         form.attr('action', chosenEngine.url);
         form.attr('method', chosenEngine.method || 'GET');
         field.attr('name', chosenEngine.querykey);

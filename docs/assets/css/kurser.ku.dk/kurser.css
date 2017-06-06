@@ -17,7 +17,7 @@ select[multiple] {
 h1 {
   font-size: 1.67em;
   line-height: 1.4;
-  margin: 0 0 22px;
+  margin: 0 0 16px;
 }
 
 .courseVolume {
@@ -80,7 +80,7 @@ table>thead>tr>th, .control-label {
 }
 
 dt:first-of-type, dd:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .panel-title {
@@ -143,7 +143,7 @@ ul.workload .total {
   text-decoration: none;
 }
 
-.course-item>a::after {
+.course-item>a::after, .toggle-btns .btn:after {
   content: "\e259";
   display: inline-block;
   font-family: 'Glyphicons Halflings';
@@ -165,6 +165,23 @@ ul.workload .total {
 
 .show-filter {
   display: block;
+}
+
+.toggle-btns {
+  float: right;
+}
+
+.toggle-btns .btn {
+  position: relative;
+  padding-right: 25px;
+}
+
+.toggle-btns .btn:after {
+  top: 9px;
+}
+
+.toggle-btns .btn.closed:after {
+  content: "\e260";
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -210,6 +227,9 @@ ul.workload .total {
 }
 
 @media (max-width: 768px) {
+  .toggle-btns {
+    float: left;
+  }
   .course-item>a::after {
     font-size: 1em;
   }
@@ -231,5 +251,14 @@ ul.workload .total {
   }
   .show-filter.open::after {
     content: "\e260";
+  }
+}
+
+
+/* To be removed shortly */
+
+@media (max-width: 767px) {
+  html:not(.non-responsive) .globalfooter .footercontent .footercolumn .footer-heading:after {
+    text-transform: none;
   }
 }

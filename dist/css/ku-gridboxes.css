@@ -1360,6 +1360,7 @@
   font-family: "ku-symbols";
   font-size: 17px;
   color: #fff;
+  text-transform: none;
   content: "\61";
 }
 .gridbox.no-arrow::before {
