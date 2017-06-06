@@ -62,7 +62,7 @@
         position: absolute;
         z-index: -1;
         top: -5px;
-        right: 55px;
+        right: 60px;
         left: auto;
         bottom: 0;
         width: 430px;
@@ -321,10 +321,11 @@
             &:after {
               .icon;
               line-height: 0!important;
-              content: 'a';
+              content: @icon-arrow;
+              text-transform: none;
               z-index: 2;
               color: @white-color;
-              font-size: 18px;
+              font-size: 14px;
               position: absolute;
               top: 55%;
               right: 15px;
@@ -389,7 +390,7 @@
           margin: 7px 16px 0 0;
 
           .icon {
-            font-size: 34px;
+            font-size: 32px;
             width: 35px;
             height: 35px;
             background-color: #666;
