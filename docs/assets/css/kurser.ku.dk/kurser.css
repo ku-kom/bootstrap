@@ -173,11 +173,14 @@ ul.workload .total {
 
 .toggle-btns .btn {
   position: relative;
-  padding-right: 25px;
+  padding-right: 30px;
 }
 
 .toggle-btns .btn:after {
-  top: 9px;
+  top: 6px;
+  right: 7px;
+  font-size: 13.5px;
+  color: #666;
 }
 
 .toggle-btns .btn.closed:after {
