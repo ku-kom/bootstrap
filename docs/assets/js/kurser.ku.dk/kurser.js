@@ -4,6 +4,8 @@ $(document).ready(function() {
   $search = $('#searchall');
   $adv = $('#showall');
   $hiddenCol = $('.mobile-hidden');
+  $panels = $('.course-item > a');
+  $toggleButton = $('#toggle-btn');
 
   resetText();
   multipleSelectBox();
@@ -23,6 +25,10 @@ $(document).ready(function() {
     }
   });
 
+  $toggleButton.click(function() {
+    setToggleButton();
+  });
+
   $(window).resize(function() {
     var $newWidth = $('body').prop('clientWidth');
     if ($newWidth !== $cachedWidth) {
@@ -37,6 +43,20 @@ $(document).ready(function() {
   });
 });
 
+// Function to toggle expand/collaapse button
+function setToggleButton() {
+  var collapse = $toggleButton.attr("data-collapse");
+  var expand = $toggleButton.attr("data-expand");
+  if ($panels.next().hasClass('in')) {
+    $panels.next().collapse('hide');
+    $toggleButton.text(expand);
+    $toggleButton.removeClass('closed');
+  } else {
+    $panels.next().collapse('show');
+    $toggleButton.text(collapse);
+    $toggleButton.addClass('closed');
+  }
+}
 // Function to change text for small screens (DA/ENG)
 function resetText() {
   var $lang = $('html').attr('lang');
