@@ -160,18 +160,18 @@ module.exports = function (grunt) {
             flatten: true
         }
       ]
+    },
+    assets: {
+      files: [
+        {
+          expand: true,
+          src: [
+            'docs/assets/js/kurser.ku.dk/kurser.js'
+          ],
+          ext: '.min.js'
+      }
+    ]
     }
-    // assets: {
-    //   files: [
-    //     {
-    //       expand: true,
-    //       src: [
-    //         'docs/assets/js/kurser.ku.dk/kurser.js'
-    //       ],
-    //       ext: '.min.js'
-    //   }
-    // ]
-    // }
     },
 
     qunit: {
@@ -232,7 +232,7 @@ module.exports = function (grunt) {
           'dist/css/ku-gridboxes.css',
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
-          //'docs/assets/css/kurser.ku.dk/kurser.css',
+          'docs/assets/css/kurser.ku.dk/kurser.css',
           'dist/css/faculties/*.css'
       ]
     },
@@ -525,7 +525,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
+  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:assets']);
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
