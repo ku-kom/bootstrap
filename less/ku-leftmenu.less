@@ -236,13 +236,14 @@
         }
 
         ul {
-          // Second, third and fourth level
+          // Second level
           list-style-type: none;
           padding-left: 15px;
 
           li {
             > a {
               padding: 2px 5px 2px 10px;
+              display: block;
 
               &::before {
                 content: "\25A0";
@@ -276,6 +277,34 @@
 
               &:hover::before {
                 text-decoration: none;
+              }
+            }
+
+            ul {
+              // Third level
+              padding-left: 10px;
+              
+              li {
+                > a {
+                  &::before {
+                    font-size: 8px;
+                    top: 4px;
+                    }
+                  }
+
+                ul {
+                  // Fourth level
+                  li {
+                    > a {
+                      padding-left: 9px;
+
+                      &::before {
+                        font-size: 6px;
+                        top: 6px;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
