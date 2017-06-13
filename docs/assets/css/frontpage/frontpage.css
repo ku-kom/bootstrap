@@ -2,6 +2,7 @@
 
 
 /*Edge-to-edge grid for eg. slider*/
+
 @media screen and (max-width: 767px) {
   .front-page .main-content .row:first-child .col-sm-12.col-md-9 {
     padding-right: 0;
@@ -15,184 +16,151 @@
   position: relative;
   padding: 23px 0;
   margin-left: 0;
-    margin-right: 0;
+  margin-right: 0;
   background: #eee;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-@media (max-width: 480px) {
-  .jumpboard {
-    padding: 0;
-    background: #f8f8f5;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard {
-    padding: 26px;
-  }
-}
+
 .jumpboard .jumpcolumn {
-  position: relative;
-  height: 160px;
-  padding: 0 23px;
+  margin-bottom: 0!important;
+  max-height: 160px;
   border-right: 1px solid #fff;
+  padding-left: 23px;
+  padding-right: 23px;
+  position: relative;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn.col-sm-6:nth-child(3) {
-    clear: left;
-  }
+
+.jumpboard .jumpcolumn:last-child {
+  border-right: 0
 }
-@media (min-width: 480px) and (max-width: 767px) and (max-width: 480px) {
-  .jumpboard .jumpcolumn {
-    height: auto;
-    padding: 0 !important;
-    border-right: 0;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn {
-    border-right: 0;
-  }
-}
-.jumpboard .jumpcolumn:first-child {
-  padding-left: 40px;
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn:first-child {
-    padding-left: 26px;
-  }
-}
-@media (max-width: 480px) {
-  .jumpboard .jumpcolumn:first-child .jumpheading {
-    border-top: 1px solid #ccc;
-  }
-}
-@media (min-width: 767px) {
-  .jumpboard .jumpcolumn:last-child {
-    width: 20%;
-    border-right: 0;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn .jumpcolumn:nth-child(1),
-  .jumpboard .jumpcolumn .jumpcolumn:nth-child(2) {
-    height: 182px!important;
-    padding-bottom: 13px;
-    margin-bottom: 13px;
-    border-bottom: 1px solid #fff;
-  }
-}
+
 .jumpboard .jumpcolumn .jumpheading {
   position: relative;
   margin: 0 0 11px;
   font-size: 2em;
   color: #921819;
 }
+
 .jumpboard .jumpcolumn .jumpheading a {
   color: inherit!important;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn .jumpheading {
-    padding-left: 6%;
-  }
-}
+
 .jumpboard .jumpcolumn .jumpheading:after {
   z-index: 2;
-  margin-left: 3px;
-  font-family: 'arrow';
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+  font-family: 'ku-symbols';
   font-size: .6em;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   color: #921819;
-  content: '\0043';
-
+  content: '\61';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 480px) {
-  .jumpboard .jumpcolumn .jumpheading:after {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    font-size: 1rem;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-@media (max-width: 480px) {
-  .jumpboard .jumpcolumn .jumpheading {
-    padding: 7px 20px 10px;
-    margin: 0;
-    font-size: 1.5em!important;
-    font-weight: bold;
-    background: #eee;
-    border-bottom: 1px solid #ccc;
-  }
-  .jumpboard .jumpcolumn .jumpheading a {
-    display: block;
-  }
-}
+
 .jumpboard .jumpcolumn .jumplinks {
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn .jumplinks {
-    padding-left: 6%;
-    margin-right: 10px;
-  }
-}
+
 .jumpboard .jumpcolumn .jumplinks li {
-  display: block;
-  padding: 0;
   margin: 5px 0;
-  font-size: 1.081em;
-  font-weight: 700;
-  line-height: 20px;
-  color: #606060;
 }
-@media (max-width: 480px) {
-  .jumpboard .jumpcolumn .jumplinks li {
-    margin: 0;
-    border-bottom: 1px solid #ccc;
-  }
-  .jumpboard .jumpcolumn .jumplinks li:last-child {
-    margin: 0;
-  }
-}
+
 .jumpboard .jumpcolumn .jumplinks li a {
-  display: block;
   padding: 0;
-  font-size: 1.081em;
-  font-weight: 700;
   line-height: 20px;
-  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #606060;
+  display: block;
 }
-@media (max-width: 480px) {
-  .jumpboard .jumpcolumn .jumplinks li a {
-    padding: 10px 20px 12px;
-  }
-  .jumpboard .jumpcolumn .jumplinks li a:active,
-  .jumpboard .jumpcolumn .jumplinks li a:focus,
-  .jumpboard .jumpcolumn .jumplinks li a:hover {
-    background-color: #f1f1f1;
-  }
-}
-.jumpboard .jumpcolumn .jumplinks li a.padlock:after {
+
+.jumpboard .jumpcolumn .jumplinks li .padlock:after {
+  z-index: 2;
   position: relative;
-  top: 2px;
-  left: 6px;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  content: " ";
-  background: url('https://bootstrap.secure.ku.dk/img/padlock.svg') no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  top: -1px;
+  margin-left: 5px;
+  font-family: 'ku-symbols';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: #606060;
+  content: '\64';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .jumpboard .jumpcolumn .long-break {
-    width: 170px;
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .jumpboard>.jumpcolumn {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 0;
+  }
+  .jumpboard:after {
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    height: 1px;
+    width: calc(100% - 52px);
+    background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .jumpboard {
+    padding: 0;
+    background: #f8f8f5;
+  }
+  .jumpboard>.jumpcolumn {
+    max-height: none;
+    padding: 0;
+  }
+  .jumpboard .jumpcolumn:first-child .jumpheading {
+    border-top: 1px solid #ccc;
+  }
+  .jumpboard .jumpcolumn .jumpheading {
+    border-bottom: 1px solid #ccc;
+    background: #eee;
+    font-size: 1.5em!important;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px 35px 10px 20px;
+  }
+  .jumpboard .jumpcolumn .jumpheading:after {
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .jumpboard .jumpcolumn .jumplinks li {
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+  }
+  .jumpboard .jumpcolumn .jumplinks li a {
+    padding: 10px 20px 12px 20px;
+  }
+  .jumpboard .jumpcolumn .jumplinks li a:active, .jumpboard .jumpcolumn .jumplinks li a:hover, .jumpboard .jumpcolumn .jumplinks li a:focus {
+    background-color: #f1f1f1;
   }
 }
