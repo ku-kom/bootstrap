@@ -2,10 +2,16 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* Current and total slides */
+.slide-wrapper .slider-count {
+  text-align: center;
+  margin-top: 8px;
+}
 /* Slider gallery start */
 
 .gallery-nav {
-  margin-top: 1px;
+  /*margin-top: 1px;*/
+  margin-top: 10px;
   height: auto;
 }
 
@@ -57,15 +63,15 @@
 
 .slick-slide .caption {
   position: relative;
-  min-height: 80px;
   width: 100%;
+  color: #252525;
   line-height: 1.333333;
   z-index: 2;
   padding: 15px;
 }
-
 .slick-slide:hover .caption {
   text-decoration: none;
+
 }
 
 .slick-slide .caption h2 {
