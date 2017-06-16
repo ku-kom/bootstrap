@@ -23,6 +23,9 @@
         <li{% if page.slug == "js" %} class="active"{% endif %}>
           <a href="{% if site.github %}{{ site.baseurl }}/javascript.html{% else %}../javascript/{% endif %}">JavaScript</a>
         </li>
+        <li{% if page.slug=="examples" %} class="active" {% endif %}>
+        <a href="{% if site.github %}{{ site.baseurl }}/examples/ku-default{% else %}../examples/ku-default/{% endif %}">KU templates</a>
+        </li>
       </ul>
     </nav>
   </div>

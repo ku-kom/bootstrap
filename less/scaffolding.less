@@ -31,6 +31,8 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   font-family: @font-family-base;
   font-size: @font-size-base;
   line-height: @line-height-base;
@@ -39,7 +41,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
   @media (max-width: @screen-sm-min) {
+    -webkit-overflow-scrolling: touch;
     html:not(.non-responsive) & {
       font-size: @font-size-large;
     }
