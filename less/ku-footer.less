@@ -42,16 +42,18 @@
 
   .footercontent {
     //margin: 0 auto;
-    padding: @grid-gutter-width 0;
+    padding: @grid-gutter-width 0 20px 0;
     position: relative;
 
-    > [class*="col-"] {
+    > .footercolumn {
       z-index: 2;
 
-      & + [class*="col-"] {
+      & + .footercolumn {
         padding-left: 0;
       }
-
+      &:nth-child(3) {
+        padding-right: @grid-gutter-width;
+      }
       &:last-child {
         padding-right: 0;
       }
@@ -67,7 +69,7 @@
         bottom: 0;
         width: 430px;
         height: 430px;
-        opacity: 0.1;
+        opacity: .1;
         background: url('https://bootstrap.secure.ku.dk/img/footersegl.svg') no-repeat;
         background-size: cover;
       }
