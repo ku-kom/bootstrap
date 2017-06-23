@@ -188,6 +188,7 @@ category: slider
 <script type="text/javascript" src="../../assets/js/slider/slick.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+    $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick.css">');
     $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
     // Variables
     var $slideshow = $('.slide-gallery');
@@ -224,7 +225,7 @@ category: slider
       $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
       // Add number of slides to counter
        $('<div class="slider-count"><span id="currentSlide">1</span> af <span id="total">'+ slick.slideCount +'</span></div>').insertAfter($(this));
-       toggleCaptions(event, slick);
+       //toggleCaptions(event, slick);
     });
 
     // Init sliders
@@ -235,7 +236,7 @@ category: slider
     $slideshow.on('afterChange', function(event, slick, currentSlide) {
       // Update slide counter
       $('.slider-count #currentSlide').html(currentSlide + 1);
-      toggleCaptions(event, slick);
+      //toggleCaptions(event, slick);
     });
 
     function toggleCaptions(event, slick, currentSlide) {
