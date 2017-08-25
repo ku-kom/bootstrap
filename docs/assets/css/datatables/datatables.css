@@ -10,6 +10,13 @@
  *   DataTables 1.10.13, FixedHeader 3.1.2, Responsive 2.1.1
  */
 
+ /* KU */
+.dataTables_wrapper tfoot {
+    display: table-header-group;
+}
+.dataTables_wrapper tfoot th input {
+    font-weight: normal;
+}
 .dataTable {
   clear: both;
   margin-top: 6px !important;
