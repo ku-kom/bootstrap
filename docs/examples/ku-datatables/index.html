@@ -1,11 +1,7 @@
----
-layout: examples
-title: KU standard template with left menu and datatables
-slug: examples
----
+--- layout: examples title: KU standard template with left menu and datatables slug: examples ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
-   <div class="container main-area" id="main-area">
+  <div class="container main-area" id="main-area">
     <div class="row">
       <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
         {% include ku-leftmenu.html %}
@@ -443,79 +439,76 @@ slug: examples
 </main>
 <!-- DataTables.js -->
 <script type="text/javascript">
-$(document).ready(function() {
-  // Add a text input to each footer cell
-  $('#datatable tfoot th').each(function() {
-    var title = $(this).text().toLowerCase();
-    $(this).html('<input type="text" class="form-control input-sm ku-filters" placeholder="Søg i ' + title + '" />');
-  });
-  // Datatable language switcher
-  function getLanguage() {
-    var $langMap = {
-      en: {
-        path: 'English',
-        mods: {
-          sLengthMenu: 'Display _MENU_ persons',
-          sInfo: 'Showing _START_ to _END_ of _TOTAL_ persons',
-          sInfoEmpty: 'Showin 0 to 0 out of 0 persons'
-        }
-      },
-      da: {
-        path: 'Danish',
-        mods: {
-          sLengthMenu: 'Vis _MENU_ personer',
-          sInfo: 'Viser _START_ til _END_ af _TOTAL_ personer',
-          sInfoEmpty: 'Viser 0 til 0 af 0 personer'
-        }
-      }
-    };
-    var $lang = $('html').attr('lang');
-    if (!$langMap[$lang]) {
-      $lang = 'en';
-    }
-    var $result = null;
-    var path = 'https://cdn.datatables.net/plug-ins/1.10.13/i18n/';
-    var url = path + $langMap[$lang].path + '.json';
-    console.log(url);
-    $.ajax({
-      async: false,
-      url: url,
-      success: function(obj) {
-        console.log(obj);
-        $result = $.extend({}, obj, $langMap[$lang].mods);
-        console.log($result);
-      },
-      error: function(xhr, status, error) {
-        console.log(xhr.responseText);
-      }
+  $(document).ready(function() {
+    // Apply searchbox for columns
+    $('#datatable tfoot th').each(function() {
+      var title = $(this).text().toLowerCase();
+      $(this).html('<input type="text" class="form-control input-sm ku-filters" placeholder="Søg i ' + title + '" />');
     });
-    return $result;
-  }
 
-  // DataTable
-  var table = $('#datatable').DataTable({
-    language: {
-      url: getLanguage()
-    },
-    "dom": '<"listing"l>tip',
-    ordering: true,
-    autoWidth: false,
-    fixedHeader: true,
-    responsive: true,
-    initComplete: function() {
-      // Apply the search
-      table.columns().every(function() {
-        var that = this;
+    // DataTable
+    var table = $('#datatable').DataTable({
+      language: getLanguage(),
+      "dom": '<"listing"l>tip',
+      ordering: true,
+      autoWidth: false,
+      fixedHeader: true,
+      responsive: true
+    });
 
-        $('input', this.footer()).on('keyup change', function() {
-          if (that.search() !== this.value) {
-            that
-              .search(this.value)
-              .draw();
-          }
-        });
+    // Apply Datatable column the search
+    table.columns().every(function() {
+      var that = this;
+
+      $('input', this.footer()).on('keyup change', function() {
+        if (that.search() !== this.value) {
+          that
+            .search(this.value)
+            .draw();
+        }
       });
+    });
+
+// Datatable language adjustments
+    function getLanguage() {
+      var $langMap = {
+        en: {
+          path: 'English',
+          mods: {
+            sLengthMenu: 'Display _MENU_ persons',
+            sInfo: 'Showing _START_ to _END_ of _TOTAL_ persons',
+            sInfoEmpty: 'Showin 0 to 0 out of 0 persons'
+          }
+        },
+        da: {
+          path: 'Danish',
+          mods: {
+            sLengthMenu: 'Vis _MENU_ personer',
+            sInfo: 'Viser _START_ til _END_ af _TOTAL_ personer',
+            sInfoEmpty: 'Viser 0 til 0 af 0 personer'
+          }
+        }
+      };
+      var $lang = $('html').attr('lang');
+      if (!$langMap[$lang]) {
+        $lang = 'en';
+      }
+      var $result = null;
+      var paths = '//cdn.datatables.net/plug-ins/1.10.13/i18n/';
+      var url = paths + $langMap[$lang].path + '.json';
+      //console.log(url);
+      $.ajax({
+        async: false,
+        url: url,
+        success: function(obj) {
+          $tmp = $.extend({}, obj, $langMap[$lang].mods);
+          $langMap[$lang].mods = $tmp;
+        },
+        error: function(xhr, status, error) {
+          console.log(xhr.responseText);
+        }
+      });
+      return $langMap[$lang].mods;
     }
   });
-});
 </script>
