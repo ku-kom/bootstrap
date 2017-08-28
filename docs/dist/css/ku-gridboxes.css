@@ -1558,7 +1558,7 @@
   display: none;
 }
 .gridbox.size3.with-img .box2 img {
-  max-width: 104%!important;
+  max-width: 105%!important;
   height: auto;
 }
 .gridbox.size3:not(.with-img) .box1 {
