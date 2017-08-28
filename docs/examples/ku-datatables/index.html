@@ -440,6 +440,7 @@
 <!-- DataTables.js -->
 <script type="text/javascript">
   $(document).ready(function() {
+    // Apply searchbox for columns
     $('#datatable tfoot th').each(function() {
       var title = $(this).text().toLowerCase();
       $(this).html('<input type="text" class="form-control input-sm ku-filters" placeholder="Søg i ' + title + '" />');
@@ -455,7 +456,7 @@
       responsive: true
     });
 
-    // Apply the search
+    // Apply Datatable column the search
     table.columns().every(function() {
       var that = this;
 
@@ -468,6 +469,7 @@
       });
     });
 
+// Datatable language adjustments
     function getLanguage() {
       var $langMap = {
         en: {
@@ -508,7 +510,5 @@
       });
       return $langMap[$lang].mods;
     }
-
-
   });
 </script>
