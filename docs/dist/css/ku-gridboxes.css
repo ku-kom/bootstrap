@@ -1370,9 +1370,6 @@
   position: relative;
   padding: 0 !important;
   overflow: hidden;
-
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 .gridbox.with-img .box2 img {
   position: absolute;
@@ -1671,6 +1668,52 @@
 .HTML .rightbox-normal .box2 img,
 .Standard .rightbox-normal .box2 img {
   height: 100%!important;
+}
+@media only screen and (min-width: 870px) {
+  #gridsidebar .single-column .column1 .size2.with-img,
+  #gridsidebar .single-column .column1 .size3.with-img {
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img .header,
+  #gridsidebar .single-column .column1 .size3.with-img .header {
+    padding: 8px 0 8px 10px;
+    overflow: hidden;
+    font-size: 1.1em;
+    white-space: nowrap;
+    border-right: 25px solid transparent;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img .box1,
+  #gridsidebar .single-column .column1 .size3.with-img .box1 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img .box1 .text,
+  #gridsidebar .single-column .column1 .size3.with-img .box1 .text {
+    display: none;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img .box2,
+  #gridsidebar .single-column .column1 .size3.with-img .box2 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 235px;
+        -ms-flex: 0 1 235px;
+            flex: 0 1 235px;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img .box2 img,
+  #gridsidebar .single-column .column1 .size3.with-img .box2 img {
+    max-width: 104%!important;
+    max-height: none!important;
+  }
+  #gridsidebar .single-column .column1 .size2.with-img::before,
+  #gridsidebar .single-column .column1 .size3.with-img::before {
+    bottom: 9px;
+  }
 }
 .one-one-two-column .column3 .size4 .text,
 .one-two-column .column2 .size4 .text,

@@ -2166,7 +2166,6 @@
     flex: 1 1 auto;
   }
   // Add an arrow to the box
-
   &::before {
     display: inline-block;
     font-family: @custom-icon-font-family-name;
@@ -2180,7 +2179,6 @@
     z-index: 5;
   }
   // Hide arrow
-
   &.no-arrow {
     &::before {
       display: none;
@@ -2193,7 +2191,6 @@
       position: relative;
       padding: 0 !important;
       overflow: hidden;
-      transform-style: preserve-3d;
 
       img {
         // Img inside the box adjusted by height and centered
@@ -2234,7 +2231,6 @@
     }
   }
   // Videos
-
   &.with-iframe {
     background: @ku-gray;
     color: initial!important;
@@ -2249,7 +2245,6 @@
     }
   }
   // Boxes with the title at the top
-
   &.text-top {
     .box1 {
       order: 1;
@@ -2265,7 +2260,6 @@
     }
   }
   // Boxes with the title at the bottom
-
   &.text-down {
     .box1 {
       order: 2;
@@ -2276,7 +2270,6 @@
     }
   }
   // Boxes with the text above the content
-
   &.text-over {
     .header {
       position: absolute;
@@ -2287,7 +2280,6 @@
     }
   }
   // Height 298px
-
   &.size1 {
     height: @gridbox1;
     background: @ku-gray;
@@ -2370,7 +2362,6 @@
     color: inherit;
   }
   // Height 185px
-
   &.size2 {
     height: @gridbox2;
 
@@ -2400,7 +2391,6 @@
     }
   }
   // Height 133px
-
   &.size3 {
     height: @gridbox3;
 
@@ -2430,7 +2420,6 @@
     }
   }
   // Height 81px
-
   &.size4 {
     height: @gridbox4;
 
@@ -2445,7 +2434,6 @@
     }
   }
   // Height 55px
-
   &.size5 {
     height: @gridbox5;
 
@@ -2538,6 +2526,48 @@
     .box2 {
       img {
         height: 100%!important;
+      }
+    }
+  }
+}
+// Grid standard page, right sidebar
+@media only screen and (min-width: 870px) {
+  #gridsidebar {
+    .single-column .column1 {
+      .size2,
+      .size3 {
+        &.with-img {
+          flex-direction: column;
+
+          .header {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1.1em;
+            padding: 8px 0 8px 10px;
+            border-right: 25px solid transparent;
+          }
+
+          .box1 {
+            flex: 0 1 auto;
+
+            .text {
+              display: none;
+            }
+          }
+
+          .box2 {
+            flex: 0 1 235px;
+
+            img {
+              max-width: 104%!important;
+              max-height: none!important;
+            }
+          }
+
+          &::before {
+            bottom: 9px;
+          }
+        }
       }
     }
   }
@@ -3357,9 +3387,11 @@
     .size2 {
       &.with-iframe {
         background: transparent;
+
         .box1 {
           flex: 0 1 auto;
           z-index: 4;
+
           .header {
             background: fade(@ku-gray, 75%);
             position: absolute;
