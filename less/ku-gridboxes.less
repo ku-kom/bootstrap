@@ -2530,48 +2530,6 @@
     }
   }
 }
-// Grid standard page, right sidebar
-@media only screen and (min-width: 870px) {
-  #gridsidebar {
-    .single-column .column1 {
-      .size2,
-      .size3 {
-        &.with-img {
-          flex-direction: column;
-
-          .header {
-            white-space: nowrap;
-            overflow: hidden;
-            font-size: 1.1em;
-            padding: 8px 0 8px 10px;
-            border-right: 25px solid transparent;
-          }
-
-          .box1 {
-            flex: 0 1 auto;
-
-            .text {
-              display: none;
-            }
-          }
-
-          .box2 {
-            flex: 0 1 235px;
-
-            img {
-              max-width: 104%!important;
-              max-height: none!important;
-            }
-          }
-
-          &::before {
-            bottom: 9px;
-          }
-        }
-      }
-    }
-  }
-}
 // full width and 2/3 columns
 
 .one-one-two-column .column3,
@@ -3188,6 +3146,46 @@
   }
 }
 @media only screen and (min-width: 870px) {
+  // Grid standard page, right sidebar
+  #gridsidebar {
+    .single-column .column1 {
+      .size2,
+      .size3 {
+        &.with-img {
+          flex-direction: column;
+
+          .header {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1.1em;
+            padding: 8px 0 8px 10px;
+            border-right: 25px solid transparent;
+          }
+
+          .box1 {
+            flex: 0 1 auto;
+
+            .text {
+              display: none;
+            }
+          }
+
+          .box2 {
+            flex: 0 1 235px;
+
+            img {
+              max-width: 104%!important;
+              max-height: none!important;
+            }
+          }
+
+          &::before {
+            bottom: 9px;
+          }
+        }
+      }
+    }
+  }
   // Front page/ no left menu
   .one-one-two-column .column3,
   .two-one-one-column .column1 {
