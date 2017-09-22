@@ -22,6 +22,7 @@
   padding: @panel-body-padding 0;
   &:extend(.clearfix all);
 }
+
 // Optional heading
 
 .panel-heading {
@@ -37,21 +38,16 @@
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: ceil((@font-size-base * 1.125));
-  @media (min-width: @screen-xs-max) {
-    // KU specific
-    font-size: @font-size-base
-  }
-  font-weight: bold;
+  font-size: ceil((@font-size-base * 1.34));
+  font-weight: 600;
   letter-spacing: 0.25px;
   color: inherit;
-  overflow: hidden; //KU - only single line header
 
-   > .small > a,
+   > .small,
    > a,
    > small,
    > small > a,
-  > .small {
+  > .small > a {
     color: inherit;
   }
 }
@@ -69,8 +65,8 @@
 // any kind of custom content between the two.
 
 .panel {
-   > .list-group,
-  > .panel-collapse > .list-group {
+   > .panel-collapse > .list-group,
+  > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -116,9 +112,9 @@
 // watch it go full width.
 
 .panel {
-   > .table,
+   > .panel-collapse > .table,
    > .table-responsive > .table,
-  > .panel-collapse > .table {
+  > .table {
     margin-bottom: 0;
 
     caption {
@@ -170,53 +166,53 @@
   //     }
   //   }
   // }
-   > .panel-body + .table,
+   > .panel-body + .table-responsive,
    > .table + .panel-body,
    > .table-responsive + .panel-body,
-  > .panel-body + .table-responsive {
+  > .panel-body + .table {
     border-top: 1px solid @table-border-color;
   }
 
-   > .table > tbody:first-child > tr:first-child th,
-  > .table > tbody:first-child > tr:first-child td {
+   > .table > tbody:first-child > tr:first-child td,
+  > .table > tbody:first-child > tr:first-child th {
     border-top: 0;
   }
 
-   > .table-bordered,
-  > .table-responsive > .table-bordered {
+   > .table-responsive > .table-bordered,
+  > .table-bordered {
     border: 0;
 
-     > tfoot,
+     > tbody,
      > thead,
-    > tbody {
+    > tfoot {
       > tr {
-         > th:first-child,
-        > td:first-child {
+         > td:first-child,
+        > th:first-child {
           border-left: 0;
         }
 
-         > th:last-child,
-        > td:last-child {
+         > td:last-child,
+        > th:last-child {
           border-right: 0;
         }
       }
     }
 
-     > thead,
-    > tbody {
+     > tbody,
+    > thead {
       > tr:first-child {
-         > td,
-        > th {
+         > th,
+        > td {
           border-bottom: 0;
         }
       }
     }
 
-     > tbody,
-    > tfoot {
+     > tfoot,
+    > tbody {
       > tr:last-child {
-         > td,
-        > th {
+         > th,
+        > td {
           border-bottom: 0;
         }
       }
@@ -267,52 +263,57 @@
 
 .panel-default {
   & > .panel-heading {
-    color: @panel-default-header-text;
-    height: 27px;
     overflow: hidden;
-    #gradient > .vertical-three-colors(#eee; #e8e8e6; 50%; #f1f1f1);
-    border-bottom: 1px solid @panel-default-border;
-    border-top: 1px solid @ku-red;
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: 0;
+    & > .panel-title {
+      line-height: 1.34;
+      color: @panel-default-header-text;
+      min-height: 16px;
+      padding: @panel-bokstop-heading-padding;
+      border-bottom: 1px solid @ku-red;
 
-    .theme-samf & {
-      border-top: 1px solid @samf;
-    }
+      .theme-samf & {
+        border-bottom: 1px solid @samf;
+      }
 
-    .theme-hum & {
-      border-top: 1px solid @hum;
-    }
+      .theme-hum & {
+        border-bottom: 1px solid @hum;
+      }
 
-    .theme-science & {
-      border-top: 1px solid @science;
-    }
+      .theme-science & {
+        border-bottom: 1px solid @science;
+      }
 
-    .theme-sund & {
-      border-top: 1px solid @sund;
-    }
+      .theme-sund & {
+        border-bottom: 1px solid @sund;
+      }
 
-    .theme-jur & {
-      border-top: 1px solid @jura;
-    }
+      .theme-jur & {
+        border-bottom: 1px solid @jura;
+      }
 
-    .theme-teo & {
-      border-top: 1px solid @teol;
-    }
-  }
-}
-@media (min-width: @screen-xs-max) {
-  // Remove top border from first box in the right side
-  .right-side {
-    [class^="col-"] {
-      &:first-child {
-        .panel-default {
-          > .panel-heading {
-            border-top: 0;
-          }
-        }
+      .theme-teo & {
+        border-bottom: 1px solid @teol;
       }
     }
   }
 }
+// @media (min-width: @screen-xs-max) {
+//   // Remove top border from first box in the right side
+//   .right-side {
+//     [class^="col-"] {
+//       &:first-child {
+//         .panel-default {
+//           > .panel-heading {
+//             border-top: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
