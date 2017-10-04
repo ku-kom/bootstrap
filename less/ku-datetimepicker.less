@@ -170,6 +170,9 @@
     }
   }
 
+  .calendar_days {
+    font-weight: 600;
+  }
   .new,
   .old {
     span {
@@ -179,6 +182,14 @@
 
   .day {
     cursor: pointer;
+    &.occup_monthday {
+      span {
+        background: @ku-occupied-color;
+        a {
+          color: @white-color;
+        }
+      }
+    }
 
     &.focused,
     &:not(.active):hover {
