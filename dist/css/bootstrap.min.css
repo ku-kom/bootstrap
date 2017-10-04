@@ -5957,6 +5957,9 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 15px;
   background-color: #fff;
 }
+.panel.with-img .panel-heading {
+  padding-bottom: 0;
+}
 .panel.with-img .panel-body {
   padding: 0;
   overflow: hidden;
@@ -10638,6 +10641,12 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
     background: linear-gradient(to bottom, #777777 0%, #868686 25%, #8e8d8d 50%, #888888 80%, #808080 100%);
   }
 }
+.nyhedsoverskrift {
+  font-size: 1rem;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+}
 .nyheder li {
   display: block;
   white-space: normal;
@@ -10690,31 +10699,28 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
     display: none;
   }
 }
+.media {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
 .media .media-object {
-  max-width: none;
+  max-width: 55px;
+}
+.media .eventteaser {
+  line-height: 18px;
+}
+.media .news-date2 {
+  line-height: 15px;
+}
+.media .media-heading {
+  font-size: 1rem;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
 }
 .media .media-heading a {
   color: inherit;
-}
-#calendar h2.media-heading {
-  font-family: inherit;
-  line-height: 1.1;
-  color: inherit;
-  letter-spacing: .7px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 600;
-}
-#calendar h2.media-heading .small,
-#calendar h2.media-heading small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777;
-}
-#calendar h2.media-heading .small,
-#calendar h2.media-heading small {
-  font-size: 65%;
+  font-size: 12px;
 }
 .news-teaser {
   display: table-cell;
@@ -10728,66 +10734,73 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
   align-items: flex-start;
   border-bottom: 1px solid #e8e8e8;
   padding-top: 1px;
+  border-top: 1px solid #901a1e;
 }
-@media only screen and (min-width: 768px) {
+.theme-samf .entries {
+  border-top: 1px solid #e13718;
+}
+.theme-hum .entries {
+  border-top: 1px solid #365aa5;
+}
+.theme-science .entries {
+  border-top: 1px solid #46743c;
+}
+.theme-sund .entries {
+  border-top: 1px solid #2a216a;
+}
+.theme-jur .entries {
+  border-top: 1px solid #999632;
+}
+.theme-teo .entries {
+  border-top: 1px solid #66609e;
+}
+.entries:before,
+.entries:after {
+  content: " ";
+  display: table;
+}
+.entries:after {
+  clear: both;
+}
+.entries:before,
+.entries:after {
+  content: " ";
+  display: table;
+}
+.entries:after {
+  clear: both;
+}
+@media only screen and (min-width: 992px) {
   .entries {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: -webkit-linear-gradient(top, #f3f3f1 0%, #edece9 100%);
-    background-image: -o-linear-gradient(top, #f3f3f1 0%, #edece9 100%);
-    background-image: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3f3f1', endColorstr='#ffedece9', GradientType=0);
-    border-top: 1px solid #901a1e;
-  }
-  .theme-samf .entries {
-    border-top: 1px solid #e13718;
-  }
-  .theme-hum .entries {
-    border-top: 1px solid #365aa5;
-  }
-  .theme-science .entries {
-    border-top: 1px solid #46743c;
-  }
-  .theme-sund .entries {
-    border-top: 1px solid #2a216a;
-  }
-  .theme-jur .entries {
-    border-top: 1px solid #999632;
-  }
-  .theme-teo .entries {
-    border-top: 1px solid #66609e;
   }
 }
 .entries .entry {
   flex: 1 1 auto;
   text-align: left;
+  border-bottom: 1px solid #fff;
+  position: relative;
   margin-top: 5px;
-  padding-left: 20px;
+  padding: 10px 15px 10px 20px;
   width: 100%;
   background-image: -webkit-linear-gradient(top, #f3f3f1 0%, #edece9 100%);
   background-image: -o-linear-gradient(top, #f3f3f1 0%, #edece9 100%);
   background-image: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3f3f1', endColorstr='#ffedece9', GradientType=0);
-  border-bottom: 1px solid #fff;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .entries .entry {
+    width: auto;
+    margin-top: 0;
     padding: 10px 15px;
-  }
-}
-@media only screen and (min-width: 767px) and (max-width: 992px) {
-  .entries .entry {
-    padding: 11px 5px;
+    text-align: center;
   }
 }
 .entries .entry > a {
-  display: inline-flex;
+  display: block;
   font-size: 15px;
   padding-left: 18px;
   align-items: center;
@@ -10800,18 +10813,19 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
   color: #666;
   white-space: nowrap;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .entries .entry > a {
-    display: block;
-  }
-}
-@media only screen and (min-width: 767px) and (max-width: 992px) {
-  .entries .entry > a {
-    font-size: 14px;
+    display: inline-flex;
   }
 }
 .entries .entry > a:before {
   content: "\61";
+}
+.entries .entry > a:hover {
+  text-decoration: underline;
+}
+.entries .entry > a:visited {
+  color: #666;
 }
 .entries .entry > a:before {
   font-size: 12px;
@@ -10851,7 +10865,7 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .theme-teo .entries .entry > a:before {
   color: #66609e;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .entries .entry + .entry:after {
     content: '';
     width: 1px;
@@ -11008,12 +11022,21 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .table-striped .datepicker table tr th {
   background-color: transparent;
 }
+.datepicker .calendar_days {
+  font-weight: 600;
+}
 .datepicker .new span,
 .datepicker .old span {
   color: #777;
 }
 .datepicker .day {
   cursor: pointer;
+}
+.datepicker .day.occup_monthday span {
+  background: #7f9a9a;
+}
+.datepicker .day.occup_monthday span a {
+  color: #fff;
 }
 .datepicker .day.focused span,
 .datepicker .day:not(.active):hover span {
