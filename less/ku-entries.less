@@ -1,0 +1,156 @@
+// KU "indgange"
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid @ku-entry-border;
+  padding-top: 1px;
+  @media only screen and (min-width: @screen-sm-min) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    #gradient.vertical(@ku-entry-start; @ku-entry-end; 0%; 100%);
+    border-top: 1px solid @ku-red;
+
+    .theme-samf & {
+      border-top: 1px solid @samf;
+    }
+
+    .theme-hum & {
+      border-top: 1px solid @hum;
+    }
+
+    .theme-science & {
+      border-top: 1px solid @science;
+    }
+
+    .theme-sund & {
+      border-top: 1px solid @sund;
+    }
+
+    .theme-jur & {
+      border-top: 1px solid @jura;
+    }
+
+    .theme-teo & {
+      border-top: 1px solid @teol;
+    }
+  }
+
+  .entry {
+    flex: 1 1 auto;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 20px;
+    width: 100%;
+    #gradient.vertical(@ku-entry-start; @ku-entry-end; 0%; 100%);
+    @media only screen and (min-width: @screen-sm-min) {
+      padding: 10px 15px;
+    }
+    @media only screen and (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
+      padding: 11px 5px;
+    }
+    border-bottom: 1px solid @white-color;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    & > a {
+      display: inline-flex;
+      @media only screen and (min-width: @screen-sm-min) {
+        display: block;
+      }
+      font-size: 15px;
+      @media only screen and (min-width: @screen-xs-max) and (max-width: @screen-md-min) {
+        font-size: 14px;
+      }
+      padding-left: 18px;
+      align-items: center;
+      letter-spacing: 0.06em;
+      line-height: 20px;
+      font-weight: 600;
+      position: relative;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: @gray-666;
+      white-space: nowrap;
+      .icon-arrow;
+
+      &:before {
+        font-size: 12px;
+        font-weight: normal;
+        margin-right: 5px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline;
+        .icon;
+        text-transform: none;
+        color: @ku-red;
+
+        .theme-samf & {
+          color: @samf;
+        }
+
+        .theme-hum & {
+          color: @hum;
+        }
+
+        .theme-science & {
+          color: @science;
+        }
+
+        .theme-sund & {
+          color: @sund;
+        }
+
+        .theme-jur & {
+          color: @jura;
+        }
+
+        .theme-teo & {
+          color: @teol;
+        }
+      }
+    }
+    @media only screen and (min-width: @screen-sm-min) {
+      &+.entry {
+        &:after {
+          content: '';
+          width: 1px;
+          height: 70%;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          background-color: @ku-red;
+
+          .theme-samf & {
+            background-color: @samf;
+          }
+
+          .theme-hum & {
+            background-color: @hum;
+          }
+
+          .theme-science & {
+            background-color: @science;
+          }
+
+          .theme-sund & {
+            background-color: @sund;
+          }
+
+          .theme-jur & {
+            background-color: @jura;
+          }
+
+          .theme-teo & {
+            background-color: @teol;
+          }
+        }
+      }
+    }
+  }
+}
