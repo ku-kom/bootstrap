@@ -1,6 +1,14 @@
 // KU Nyheder & arrangementer
 // Global menu news
 
+// Include this class everywhere it's needed
+.nyhedsoverskrift {
+  font-size: 1rem;
+  line-height: @line-height-base;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+}
+
 .nyheder {
   li {
     display: block;
@@ -68,6 +76,7 @@
   }
 
   .media-heading {
+    .nyhedsoverskrift;
     a {
       color: inherit;
     }
