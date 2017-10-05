@@ -11203,9 +11203,6 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .datepicker .day {
   cursor: pointer;
 }
-.datepicker .day span a {
-  color: #252525;
-}
 .datepicker .day.occup_monthday span {
   background: #88a6a6;
 }
@@ -11662,10 +11659,13 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 }
 .datepicker span {
   display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
   border-radius: 50%;
+}
+.datepicker span a {
+  color: #252525;
 }
 .datepicker span.focused,
 .datepicker span:hover {
