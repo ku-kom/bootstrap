@@ -213,11 +213,6 @@
 
   .day {
     cursor: pointer;
-    span {
-      a {
-        color: @text-color;
-      }
-    }
     &.occup_monthday {
       span {
         background: @ku-occupied-color;
@@ -370,10 +365,13 @@
 
   span {
     border-radius: 50%;
-    line-height: 30px;
+    line-height: 28px;
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
+    a {
+      color: @text-color;
+    }
 
     &.focused,
     &:hover {
