@@ -135,3 +135,17 @@
 <script src="../../assets/js/kurser.ku.dk/kurser.js"></script>
 {% endif %}
 {% endif %}
+<script>
+// Only use under development - set active left menu item
+$(function(){
+    var current = location.pathname;
+    console.log(current);
+    $('#leftmenu li a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').replace('..', '/examples').indexOf(current) !== -1){
+            $this.parent().addClass('active');
+        }
+    })
+})
+</script>
