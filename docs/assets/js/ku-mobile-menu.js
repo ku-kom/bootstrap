@@ -220,7 +220,7 @@ return true;
             });
             $menu_ul.append($new_localmenu2);
         }
-        
+
         // Clean up class names for navbar before adding to menu
         $new_navbar.each(function() {
             $(this).addClass('navbar_mmenu').removeClass('dropdown');
@@ -260,7 +260,7 @@ return true;
                    ]
                 }
             ]
-        }, 
+        },
         {
             // configuration
             offCanvas: {
