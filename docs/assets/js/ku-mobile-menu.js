@@ -255,7 +255,7 @@ return true;
                 current: 'detect'
             },
             navbar: {
-                title: 'something'
+                title: pageTitle // pageTitle is global var set in switch template
             },
             navbars: [
                 {
