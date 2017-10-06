@@ -202,15 +202,13 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
+        $new_search = $('#globalSearch').clone(),
         API;
 
         console.log('title?');
         console.log($('.ku-navbar-header').text());
 
     if ($.fn.mmenu) {
-
-        // Identify search form, so we can move it to the mobile menu
-        var $search = $('#globalSearch');
 
         // Clean up class names for local menu 1
         $localmenu1.each(function() {
@@ -274,7 +272,7 @@ return true;
         }).data('mmenu');
 
         // Add search to MMenu
-        $('.search-placeholder').first().append($search);
+        $('.search-placeholder').first().append($new_search);
 
     }
 
