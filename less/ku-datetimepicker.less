@@ -1,47 +1,16 @@
 /*  https://bootstrap-datepicker.readthedocs.io/en/stable/index.html
 * Bootstrap datepicker
 */
-@datepicker-active-date-bg: #88a6a6;
-@datepicker-active-date-bg-hover: #7f9a9a;
 
+// KU calendar code-color
+
+@ku-occupied-color:     #88a6a6;
+@ku-occupied-color-hover: #7f9a9a;
 .datepicker {
   border-radius: @border-radius-base;
 
   &-inline {
     width: 100%;
-    @media (max-width: @screen-md-min) {
-      .right-side & {
-        // To-do - fix calendar box top when not first box
-        // .right-side .panel-default:not(:first-child) .datepicker.datepicker-inline {
-        //   border-top: 0;
-        // }
-        border-top: 1px solid @ku-red;
-
-        .theme-samf & {
-          border-top: 1px solid @samf;
-        }
-
-        .theme-hum & {
-          border-top: 1px solid @hum;
-        }
-
-        .theme-science & {
-          border-top: 1px solid @science;
-        }
-
-        .theme-sund & {
-          border-top: 1px solid @sund;
-        }
-
-        .theme-jur & {
-          border-top: 1px solid @jura;
-        }
-
-        .theme-teo & {
-          border-top: 1px solid @teol;
-        }
-      }
-    }
   }
   direction: ltr;
 
@@ -127,13 +96,13 @@
     user-select: none;
 
     tr {
-      td,
       th {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
         height: 28px;
+        border: none;
+        text-align: center;
+      }
+      td {
+        text-align: center;
         border: none;
       }
     }
@@ -219,7 +188,9 @@
         a {
           color: @white-color;
         }
-        &:hover {
+      }
+      &:hover {
+        span {
           background: @ku-occupied-color-hover;
         }
       }
@@ -336,19 +307,19 @@
   .selected,
   .selected.highlighted {
     span {
-      .button-variant(#fff, @gray-light, @gray);
+      .button-variant(@white-color, @gray-light, @gray);
     }
   }
 
   .active,
   .active.highlighted {
     span {
-      color: #fff;
-      background-color: @datepicker-active-date-bg;
+      color: @white-color;
+      background-color: @ku-occupied-color;
 
       &:hover {
-        color: #fff;
-        background-color: @datepicker-active-date-bg-hover;
+        color: @white-color;
+        background-color: @ku-occupied-color-hover;
         cursor: pointer;
       }
 
@@ -390,7 +361,7 @@
     &.active.disabled:hover,
     &.active:hover {
       color: #fff;
-      background-color: @datepicker-active-date-bg;
+      background-color: @ku-occupied-color;
     }
 
     &.new,
