@@ -202,8 +202,12 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
+        $search = $('#globalSearch'),
         // $localMenuTitle = $('.ku-navbar-header').text(),
         API;
+
+        console.log('title?');
+        console.log($('.ku-navbar-header').text());
 
     if ($.fn.mmenu) {
 
@@ -256,16 +260,7 @@ return true;
                 {
                    "position": "top",
                    "content": [
-                       `<form class="navbar-form navbar-right search_form search_reset" role="search">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="global_search_query" placeholder="Søg..." aria-label="Inputfelt til søgeord">
-                                <div class="input-group-btn btn-global-search">
-                                    <button type="button" id="search" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="sr-only">Vis søgemuligheder</span></button>
-                                    <ul id="searchfilter" class="dropdown-menu dropdown-menu-right"></ul>
-                                    <button class="btn btn-default" name="sa" id="submit-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
-                            </div>
-                        </form>`
+                       '<span class="search-placeholder"></span>'
                    ]
                 }
             ]
@@ -276,6 +271,9 @@ return true;
                 pageSelector: "#pagewrapper"
             }
         }).data('mmenu');
+
+        // Add search to MMenu
+        $('.search-placeholder').first().append($search);
 
     }
 
