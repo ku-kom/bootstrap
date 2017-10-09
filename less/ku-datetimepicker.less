@@ -119,10 +119,6 @@
     }
 
     thead {
-      tr {
-        //border-bottom: 1px solid @panel-default-border;
-      }
-
       tr:nth-child(2) {
         // KU: Month and arrows
         font-size: 17px;
@@ -161,7 +157,7 @@
 
       tr:nth-child(3) {
         // KU: Week names bar
-        background-color: @gray-lighter;
+        background-color: darken(@gray-lighter, 5%);
       }
     }
 
@@ -197,20 +193,23 @@
   }
 
   .day {
-    cursor: pointer;
-
     &.normal_monthday {
-      span {
-        background: @gray-lighter;
+      &:hover {
+        span {
+          background: @white-color;
+        }
       }
     }
 
     &.occup_monthday {
       span {
         background: @ku-occupied-color;
-
         a {
           color: @white-color;
+          display: block;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
 

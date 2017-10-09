@@ -10463,7 +10463,7 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
   border-bottom: 1px solid #66609e;
 }
 .datepicker table thead tr:nth-child(3) {
-  background-color: #eee;
+  background-color: #e1e1e1;
 }
 .datepicker table.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #eee;
@@ -10483,17 +10483,18 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .datepicker .old span {
   color: #777;
 }
-.datepicker .day {
-  cursor: pointer;
-}
-.datepicker .day.normal_monthday span {
-  background: #eee;
+.datepicker .day.normal_monthday:hover span {
+  background: #fff;
 }
 .datepicker .day.occup_monthday span {
   background: #88a6a6;
 }
 .datepicker .day.occup_monthday span a {
+  display: block;
   color: #fff;
+}
+.datepicker .day.occup_monthday span a:hover {
+  text-decoration: none;
 }
 .datepicker .day.occup_monthday:hover span {
   background: #7f9a9a;
