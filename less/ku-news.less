@@ -12,11 +12,21 @@
   .media-left,
   .media-right {
     min-width: @ku-thumbnails-size;
+
+    a {
+      display: block;
+    }
   }
 
   .media {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 1px solid @gray;
+
+    &:first-child {
+      border-top: 1px solid @gray;
+      padding-top: 15px;
+    }
+
     .media-heading {
       .nyhedsoverskrift;
 
@@ -41,16 +51,10 @@
     }
   }
 }
-
-
 // Nyhedsliste - midterkolonne:
 #nyhedsliste {
   &.smal {
     .media {
-      .media-left {
-        min-width: @ku-thumbnails-size;
-      }
-
       .nyhedsliste_dato {
         color: @gray-light;
         .pull-right();

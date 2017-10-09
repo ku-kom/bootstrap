@@ -7859,9 +7859,17 @@ a.alert-link:visited {
 .media-list .media-right {
   min-width: 65px;
 }
+.media-list .media-left a,
+.media-list .media-right a {
+  display: block;
+}
 .media-list .media {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
+}
+.media-list .media:first-child {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
   font-size: 1em;
@@ -7888,9 +7896,6 @@ a.alert-link:visited {
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
-}
-#nyhedsliste.smal .media .media-left {
-  min-width: 65px;
 }
 #nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;
