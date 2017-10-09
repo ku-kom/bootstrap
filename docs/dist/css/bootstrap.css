@@ -10831,6 +10831,10 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
   left: 0;
   padding: 4px;
 }
+.datepicker-dropdown table tr td {
+  width: 28px;
+  height: 28px;
+}
 .datepicker-dropdown:before {
   position: absolute;
   display: inline-block;
