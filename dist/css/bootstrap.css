@@ -10412,6 +10412,9 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
   border-top: 6px solid #fff;
   border-bottom: 0;
 }
+.datepicker .calStepLink {
+  color: #252525;
+}
 .datepicker table {
   width: 100%;
   margin: 0;
@@ -10462,11 +10465,18 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .datepicker table thead tr:nth-child(3) {
   background-color: #eee;
 }
+.datepicker table.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #eee;
+}
+.datepicker table.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #e1e1e1;
+}
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
   background-color: transparent;
 }
 .datepicker .calendar_days {
+  padding-top: 5px;
   font-weight: 600;
 }
 .datepicker .new span,
@@ -10476,6 +10486,9 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 .datepicker .day {
   cursor: pointer;
 }
+.datepicker .day.normal_monthday span {
+  background: #eee;
+}
 .datepicker .day.occup_monthday span {
   background: #88a6a6;
 }
@@ -10484,12 +10497,6 @@ em.mm-counter + a.mm-next + label.mm-toggle + span {
 }
 .datepicker .day.occup_monthday:hover span {
   background: #7f9a9a;
-}
-.datepicker .day.focused span,
-.datepicker .day:not(.active):hover span {
-  color: inherit;
-  cursor: pointer;
-  background: #eee;
 }
 .datepicker .old:hover span {
   cursor: default;

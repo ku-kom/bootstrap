@@ -1,11 +1,10 @@
 /*  https://bootstrap-datepicker.readthedocs.io/en/stable/index.html
 * Bootstrap datepicker
 */
-
 // KU calendar code-color
-
-@ku-occupied-color:     #88a6a6;
+@ku-occupied-color: #88a6a6;
 @ku-occupied-color-hover: #7f9a9a;
+
 .datepicker {
   border-radius: @border-radius-base;
 
@@ -30,7 +29,6 @@
     top: 0;
     left: 0;
     padding: 4px;
-
     // table {
     //   tr {
     //     td {
@@ -39,7 +37,6 @@
     //     }
     //   }
     // }
-
     &:before {
       content: '';
       display: inline-block;
@@ -98,6 +95,10 @@
     }
   }
 
+  .calStepLink {
+    color: @text-color;
+  }
+
   table {
     width: 100%;
     margin: 0;
@@ -110,6 +111,7 @@
         border: none;
         text-align: center;
       }
+
       td {
         text-align: center;
         border: none;
@@ -131,6 +133,7 @@
         min-height: 16px;
         padding: 6px 0;
         border-bottom: 1px solid #901a1e;
+
         .theme-samf & {
           border-bottom: 1px solid @samf;
         }
@@ -162,13 +165,15 @@
       }
     }
 
-    // &.table-striped {
-    //   &:extend(.table-striped);
-    //
-    //   > tbody > tr:nth-of-type(even) {
-    //     background-color: darken(@gray-lighter, 5%);
-    //   }
-    // }
+    &.table-striped {
+      > tbody > tr:nth-of-type(odd) {
+        background-color: @gray-lighter;
+      }
+
+      > tbody > tr:nth-of-type(even) {
+        background-color: darken(@gray-lighter, 5%);
+      }
+    }
   }
   // Inline display inside a table presents some problems with
   // border and background colors.
@@ -181,7 +186,9 @@
 
   .calendar_days {
     font-weight: 600;
+    padding-top: 5px;
   }
+
   .new,
   .old {
     span {
@@ -191,26 +198,26 @@
 
   .day {
     cursor: pointer;
+
+    &.normal_monthday {
+      span {
+        background: @gray-lighter;
+      }
+    }
+
     &.occup_monthday {
       span {
         background: @ku-occupied-color;
+
         a {
           color: @white-color;
         }
       }
+
       &:hover {
         span {
           background: @ku-occupied-color-hover;
         }
-      }
-    }
-
-    &.focused,
-    &:not(.active):hover {
-      span {
-        background: @gray-lighter;
-        color: inherit;
-        cursor: pointer;
       }
     }
   }
@@ -349,6 +356,7 @@
     display: block;
     width: 28px;
     height: 28px;
+
     a {
       color: @text-color;
     }
