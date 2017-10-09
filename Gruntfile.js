@@ -65,7 +65,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'package.js', 'grunt/*.js']
       },
       core: {
-        src: 'js/*.js'
+        src: 'js/*min.js'
       },
       test: {
         options: {
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
         src: 'js/tests/unit/*.js'
       },
       assets: {
-        src: ['docs/assets/js/src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
+        src: ['docs/assets/js/src/*.js', '!docs/assets/js/*.min.js']
       }
     },
 
@@ -161,17 +161,6 @@ module.exports = function (grunt) {
         }
       ]
     }
-    // assets: {
-    //   files: [
-    //     {
-    //       expand: true,
-    //       src: [
-    //         'docs/assets/js/kurser.ku.dk/kurser.js'
-    //       ],
-    //       ext: '.min.js'
-    //   }
-    // ]
-    // }
     },
 
     qunit: {

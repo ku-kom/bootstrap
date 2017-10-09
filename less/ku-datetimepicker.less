@@ -31,14 +31,14 @@
     left: 0;
     padding: 4px;
 
-    table {
-      tr {
-        td {
-          height: 28px;
-          width: 28px;
-        }
-      }
-    }
+    // table {
+    //   tr {
+    //     td {
+    //       height: 28px;
+    //       width: 28px;
+    //     }
+    //   }
+    // }
 
     &:before {
       content: '';
@@ -162,13 +162,13 @@
       }
     }
 
-    &.table-striped {
-      &:extend(.table-striped);
-
-      > tbody > tr:nth-of-type(even) {
-        background-color: darken(@gray-lighter, 5%);
-      }
-    }
+    // &.table-striped {
+    //   &:extend(.table-striped);
+    //
+    //   > tbody > tr:nth-of-type(even) {
+    //     background-color: darken(@gray-lighter, 5%);
+    //   }
+    // }
   }
   // Inline display inside a table presents some problems with
   // border and background colors.
