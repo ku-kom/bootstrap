@@ -1,6 +1,5 @@
 // KU Nyheder & arrangementer
 // Global menu news
-// Include this class everywhere it's needed
 
 .nyhedsoverskrift {
   font-size: 1em;
@@ -25,6 +24,12 @@
 
     .media-object {
       .img-thumbnail;
+    }
+  }
+  &.smal {
+    // If no media-object
+    & > .media-body {
+      padding-left: @ku-thumbnails-size;
     }
   }
 }
