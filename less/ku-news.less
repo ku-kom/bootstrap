@@ -39,6 +39,10 @@
 
   &.smal {
     .media {
+      &:first-child {
+        border-top: 1px solid @gray;
+        padding-top: 15px;
+      }
       // If no media-object, indent content
       & > .media-body:first-child {
         padding-left: @ku-thumbnails-size;
@@ -51,11 +55,6 @@
 #nyhedsliste {
   &.smal {
     .media {
-      &:first-child {
-        border-top: 1px solid @gray;
-        padding-top: 15px;
-      }
-
       .nyhedsliste_dato {
         color: @gray-light;
         .pull-right();
@@ -73,5 +72,11 @@
       line-height: 15px;
       color: @gray-light;
     }
+  }
+}
+// Kalender - højre kolonne
+#minicalendar {
+  .panel-body {
+    padding: 6px 0 0;
   }
 }
