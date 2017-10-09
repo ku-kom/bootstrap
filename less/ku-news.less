@@ -10,6 +10,9 @@
 }
 
 .media-list {
+  .media-right, .media-left {
+    min-width: @ku-thumbnails-size;
+  }
   .media {
     .media-heading {
       .nyhedsoverskrift;
@@ -31,7 +34,7 @@
   &.smal {
     .media {
       .media-left {
-        min-width: 65px;
+        min-width: @ku-thumbnails-size;
       }
 
       .nyhedsliste_dato {
@@ -41,13 +44,11 @@
     }
   }
 }
+
 // Nyhedsliste - højrekolonne
 
 #nyhedsliste-rightbox {
   .media {
-    .img-right {
-      min-width: 65px;
-    }
     .news-date2 {
       font-size: 12px;
       font-weight: 400;
