@@ -206,9 +206,6 @@ return true;
         $new_search = $('#globalSearch').clone(),
         API;
 
-        console.log('title?');
-        console.log($('.ku-navbar-header').text());
-
     if ($.fn.mmenu) {
 
         // Clean up class names for local menu 1
