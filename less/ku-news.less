@@ -1,7 +1,7 @@
 // KU Nyheder & arrangementer
 // Global menu news
-// Include this class everywhere it's needed
 
+// Include this class everywhere it's needed
 .nyhedsoverskrift {
   font-size: 1rem;
   line-height: @line-height-computed;
@@ -9,92 +9,49 @@
   font-weight: bold;
 }
 
-.nyheder {
-  li {
-    display: block;
-    white-space: normal;
-    min-width: 250px;
-    width: 100%;
-    overflow: auto;
-    padding: 5px;
-    border-bottom: 1px dotted #ccc;
+.media-list {
+  .media {
+    .media-heading {
+      .nyhedsoverskrift;
+    }
 
-    a {
-      display: inline;
-      white-space: normal;
-      padding: 0;
+    .media-object {
+      .img-thumbnail;
+    }
+  }
+}
 
-      &:focus,
-      &:hover {
-        background-color: transparent;
+// Nyhedsliste - midterkolonne:
+#nyhedsliste {
+  &.smal {
+    .media {
+      .media-heading {
+        a {
+          font-size: 1rem;
+          color: inherit;
+        }
       }
-    }
 
-    &:last-child {
-      overflow: visible;
-      padding-left: 10px;
-      border-bottom: 0;
-
-      a {
-        display: block;
+      .media-left {
+        min-width: 65px;
       }
-    }
 
-    img {
-      float: left;
-      display: block;
-      margin: 0 8px 5px 2px;
-      max-width: 55px!important;
-      height: auto;
-      border: 1px solid #929292;
-      padding: 2px;
-    }
-
-    .small {
-      margin-top: 3px;
-      font-size: 10px;
-      color: @gray-light;
-    }
-    @media (max-width: @screen-xs-max) {
-      line-height: 1.29em;
-      min-width: inherit;
-
-      &:last-child {
-        display: none;
-      }
-      // Remove arrow in mobile menu
-      .mm-next {
-        display: none;
+      .nyhedsliste_dato {
+        color: @gray-light;
+        .pull-right();
       }
     }
   }
 }
-// Nyheds- og arrangementslister
 
-.media {
-  padding-bottom: 10px;
-  border-bottom: 1px solid @gray;
-
-  .media-object {
-    max-width: 55px;
-  }
-
-  .eventteaser {
-    line-height: 18px;
-  }
-
-  .news-date2 {
-    font-size: 12px;
-    line-height: @line-height-computed;
-    font-weight: 400;
-  }
-
-  .media-heading {
-    .nyhedsoverskrift;
-
-    a {
-      color: inherit;
+// Nyhedsliste - højrekolonne
+#nyhedsliste-rightbox {
+  .media {
+    .news-date2 {
       font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      color: @gray-light;
     }
   }
 }

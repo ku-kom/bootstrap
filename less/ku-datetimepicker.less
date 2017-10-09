@@ -183,6 +183,7 @@
   .calendar_days {
     font-weight: 600;
     padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .new,
@@ -193,14 +194,6 @@
   }
 
   .day {
-    &.normal_monthday {
-      &:hover {
-        span {
-          background: @white-color;
-        }
-      }
-    }
-
     &.occup_monthday {
       span {
         background: @ku-occupied-color;
@@ -358,11 +351,6 @@
 
     a {
       color: @text-color;
-    }
-
-    &.focused,
-    &:hover {
-      background: @gray-lighter;
     }
 
     &.disabled,
