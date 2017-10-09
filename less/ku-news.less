@@ -19,6 +19,7 @@
       a {
         font-size: 1em;
         color: inherit;
+        display: block;
       }
     }
 
@@ -27,9 +28,11 @@
     }
   }
   &.smal {
-    // If no media-object
-    & > .media-body {
-      padding-left: @ku-thumbnails-size;
+    .media {
+      // If no media-object, move content in
+      & > .media-body {
+        padding-left: @ku-thumbnails-size;
+      }
     }
   }
 }
