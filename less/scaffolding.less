@@ -42,12 +42,22 @@ body {
   flex-direction: column;
   height: 100%;
   position: relative;
+  margin: 0;
   @media (max-width: @screen-sm-min) {
     -webkit-overflow-scrolling: touch;
     html:not(.non-responsive) & {
       font-size: @font-size-large;
     }
   }
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
 // Reset fonts for relevant elements
 

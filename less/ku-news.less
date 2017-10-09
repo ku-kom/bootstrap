@@ -1,9 +1,9 @@
 // KU Nyheder & arrangementer
 // Global menu news
-
 // Include this class everywhere it's needed
+
 .nyhedsoverskrift {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: @line-height-computed;
   letter-spacing: 0.7px;
   font-weight: bold;
@@ -13,6 +13,11 @@
   .media {
     .media-heading {
       .nyhedsoverskrift;
+
+      a {
+        font-size: 1em;
+        color: inherit;
+      }
     }
 
     .media-object {
@@ -20,18 +25,11 @@
     }
   }
 }
-
 // Nyhedsliste - midterkolonne:
+
 #nyhedsliste {
   &.smal {
     .media {
-      .media-heading {
-        a {
-          font-size: 1rem;
-          color: inherit;
-        }
-      }
-
       .media-left {
         min-width: 65px;
       }
@@ -43,10 +41,13 @@
     }
   }
 }
-
 // Nyhedsliste - højrekolonne
+
 #nyhedsliste-rightbox {
   .media {
+    .img-right {
+      min-width: 65px;
+    }
     .news-date2 {
       font-size: 12px;
       font-weight: 400;
