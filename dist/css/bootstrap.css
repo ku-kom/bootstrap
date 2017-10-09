@@ -7867,10 +7867,6 @@ a.alert-link:visited {
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-.media-list .media:first-child {
-  padding-top: 15px;
-  border-top: 1px solid #ccc;
-}
 .media-list .media .media-heading {
   font-size: 1em;
   font-weight: bold;
@@ -7896,6 +7892,10 @@ a.alert-link:visited {
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
+}
+#nyhedsliste.smal .media:first-child {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
 }
 #nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;

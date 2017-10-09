@@ -22,11 +22,6 @@
     padding-bottom: 10px;
     border-bottom: 1px solid @gray;
 
-    &:first-child {
-      border-top: 1px solid @gray;
-      padding-top: 15px;
-    }
-
     .media-heading {
       .nyhedsoverskrift;
 
@@ -52,9 +47,15 @@
   }
 }
 // Nyhedsliste - midterkolonne:
+
 #nyhedsliste {
   &.smal {
     .media {
+      &:first-child {
+        border-top: 1px solid @gray;
+        padding-top: 15px;
+      }
+
       .nyhedsliste_dato {
         color: @gray-light;
         .pull-right();
@@ -63,6 +64,7 @@
   }
 }
 // Nyhedsliste - højrekolonne
+
 #nyhedsliste-rightbox {
   .media {
     .news-date2 {
