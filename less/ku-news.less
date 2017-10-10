@@ -56,9 +56,11 @@
   &.smal {
     .media {
       .media-heading {
-        display: inline-block;
-        // Make room for the date:
-        max-width: 84%;
+        @media (min-width: @screen-sm-min) {
+          // Make room for the date:
+          display: inline-block;
+          max-width: 84%;
+        }
       }
 
       .nyhedsliste_dato {

@@ -7896,9 +7896,11 @@ a.alert-link:visited {
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
 }
-#nyhedsliste.smal .media .media-heading {
-  display: inline-block;
-  max-width: 84%;
+@media (min-width: 768px) {
+  #nyhedsliste.smal .media .media-heading {
+    display: inline-block;
+    max-width: 84%;
+  }
 }
 #nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;
