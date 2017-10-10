@@ -8145,7 +8145,7 @@ a.alert-link:visited {
 }
 .datepicker-dropdown table tr th,
 .datepicker-dropdown table tr td {
-  padding: 4px;
+  padding: 5px;
 }
 .datepicker-dropdown:before {
   position: absolute;
@@ -8195,6 +8195,7 @@ a.alert-link:visited {
   border-bottom: 0;
 }
 .datepicker-dropdown .day:hover {
+  font-weight: 700;
   cursor: pointer;
 }
 .datepicker .calStepLink {
