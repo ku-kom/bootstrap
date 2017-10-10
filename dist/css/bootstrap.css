@@ -7849,7 +7849,7 @@ a.alert-link:visited {
   }
 }
 .nyhedsoverskrift {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: .7px;
@@ -7867,7 +7867,7 @@ a.alert-link:visited {
   border-bottom: 1px solid #ccc;
 }
 .media-list .media .media-heading {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: .7px;
@@ -7898,6 +7898,7 @@ a.alert-link:visited {
 }
 #nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;
+  font-weight: 600;
   color: #777;
 }
 #nyhedsliste-rightbox .media .news-date2 {
