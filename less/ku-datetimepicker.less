@@ -34,7 +34,7 @@
     table {
       tr {
         th, td {
-          padding: 4px;
+          padding: 5px;
         }
       }
     }
@@ -94,6 +94,13 @@
       border-bottom: 0;
       border-top: 6px solid @dropdown-bg;
     }
+
+    .day {
+      &:hover {
+        cursor: pointer;
+        font-weight: 700;
+      }
+    }
   }
 
   .calStepLink {
@@ -111,6 +118,7 @@
         height: 28px;
         border: none;
         text-align: center;
+        font-weight: 600;
       }
 
       td {

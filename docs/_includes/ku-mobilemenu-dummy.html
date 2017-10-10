@@ -1,118 +1,283 @@
 {% if page.slug == "examples" %}
 <!-- Test mobile menu-->
-<div class="mm-panels mm-vertical">
-  <div class="mm-panel mm-vertical mm-opened mm-current" id="localmenu">
-    <ul class="mm-listview mm-vertical">
-      <li class="leftmenu-menu mm-opened mm-vertical">
-        Nannas testwebsted
-        <div class="mm-panel mm-vertical" id="mm-1">
-          <ul class="mm-listview mm-vertical">
-            <li class="">
-              <a href="/nanna-kom/jumpboard/?bootstrap=1">Jumpboard</a>
-            </li>
-            <li class="mm-vertical">
-              <a class="mm-next" href="#mm-26" data-target="#mm-26" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="/sigj/test/?bootstrap=1">Test</a>
-              <div class="mm-panel mm-vertical" id="mm-26">
-                <ul class="mm-listview mm-vertical">
-                  <li class="">
-                    <a href="/sigj/test/stooort_billede?bootstrap=1">Stoooort billede</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="mm-panel mm-vertical" id="leftmenu2-clone">
-          <ul class="nav mm-listview mm-vertical">
-            <li><a href="http://cms.ku.dk/testarea/sigj">Signe på Testarea</a></li>
-            <li><a href="http://cmstest01.ku.dk/sigj">Signe på Obviustest</a></li>
-            <li><a href="http://wiki.ku.dk/webmanual">Webmanualen</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="topbar-menu mm-opened mm-vertical">
-        <div class="mm-panel mm-vertical" id="topbar_menu-clone">
-          <ul class="nav navbar-nav navbar-right mm-listview mm-vertical">
-            <li><a href="http://kalender.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Kalender']);">Kalender</a></li>
-            <li><a href="http://findvej.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Find-vej']);">Find vej</a></li>
-            <li><a href="http://www.ku.dk/vejviser/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Telefonbog']);">Telefonbog</a></li>
-            <li><a href="http://jobportal.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Job']);">Job</a></li>
-            <li><a href="http://velkommen.ku.dk/indeks/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'A-AA-indeks']);">A-Å-indeks</a></li>
-            <li><a href="https://intranet.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'KUnet']);">KUnet</a></li>
-            <!-- TODO: This link needs to be dynamic -->
-            <li>
-              <a class="eng" href="#">English
+<nav id="mobileleftmenu" class="mm-menu mm-vertical mm-offcanvas mm-right mm-front mm-hasnavbar-top-1 mm-parentselected mm-multiline mm-pagedim-black mm-opened">
+  <div class="mm-navbars-top">
+    <div class="mm-navbar mm-navbar-size-1"><span class="search-placeholder"><form class="navbar-form navbar-right" role="search" id="globalSearch">
+        <div class="input-group">
+          <input class="form-control" placeholder="Søg..." aria-label="Inputfelt til søgeord">
+          <div class="input-group-btn">
+            <button type="button" id="search" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="caret"></span> <span class="sr-only">Vis søgemuligheder</span> </button>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">Hele KU</a></li>
+        <li><a href="#">Nyheder</a></li>
+        <li><a href="#">Studier</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Efteruddannelse</a></li>
+      </ul>
+      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+    </div>
+  </div>
+  </form>
+  </span>
+  </div>
+  </div>
+  <div class="mm-panels">
+    <div class="mm-panel mm-vertical mm-hasnavbar" id="mm-0">
+      <div class="mm-navbar"><a class="mm-title">Nanna KOM</a></div>
+      <ul class="mm-listview">
+        <li class="local1_mmenu">
+          <a href="/quizpoll/?bootstrap=1">En quiz</a>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/nyhedsbrev/?bootstrap=1">Et nyhedsbrev</a>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/asdf.pptx?bootstrap=1">Test</a>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/formular/?bootstrap=1">En formular</a>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Lukket område)</span></a><a href="/lukket_omraade/?bootstrap=1">Lukket område</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-1" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/lukket_omraade/subarea2/?bootstrap=1">Underområde</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-2" aria-owns="mm-2" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Nyhedsområde)</span></a><a href="/nyheder/?bootstrap=1">Nyhedsområde</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-2" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/nyheder/nyhed0002/?bootstrap=1">Nyhed 0002</a>
+              </li>
+              <li class="">
+                <a href="/nyheder/nyhed0003/?bootstrap=1">Nyhed 0003</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/publikationsliste/?bootstrap=1">En publikationsliste</a>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/nynyhedsliste/?bootstrap=1">NyNyhedsliste</a>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-3" aria-owns="mm-3" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Medarbejderoversigt)</span></a><a href="/medarbejderoversigt/?bootstrap=1">Medarbejderoversigt</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-3" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/medarbejderoversigt/beskrivelse/?bootstrap=1">Medarbejderdetaljer</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/link/?bootstrap=1">Et link</a>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-4" aria-owns="mm-4" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (CFIM Booking)</span></a><a href="/cfimbooking/?bootstrap=1">CFIM Booking</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-4" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/cfimbooking/rules_and_regulations/?bootstrap=1">Rules and regulations</a>
+              </li>
+              <li class="">
+                <a href="/cfimbooking/what_is_a_sund_account/?bootstrap=1">What is a SUND Account?</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/standard/?bootstrap=1">Et standarddokument</a>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-5" aria-owns="mm-5" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Test af pager)</span></a><a href="/pager/?bootstrap=1">Test af pager</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-5" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/pager/nyhedsliste/?bootstrap=1">Nyhedsliste</a>
+              </li>
+              <li class="mm-vertical">
+                <a class="mm-next" href="#mm-6" aria-owns="mm-6" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Kalender)</span></a><a href="/pager/kalender/?bootstrap=1">Kalender</a>
+                <div class="mm-panel mm-hidden mm-vertical" id="mm-6" aria-hidden="true">
+                  <ul class="mm-listview">
+                    <li class="">
+                      <a href="/pager/kalender/arrangement001/?bootstrap=1">Arrangement 001</a>
+                    </li>
+                    <li class="">
+                      <a href="/pager/kalender/arrangement002/?bootstrap=1">Arrangement 002</a>
+                    </li>
+                    <li class="">
+                      <a href="/pager/kalender/arrangement003/?bootstrap=1">Arrangement 003</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <a href="/pager/nyarrangementsliste/?bootstrap=1">NyArrangementsliste</a>
+              </li>
+              <li class="">
+                <a href="/pager/kursusliste/?bootstrap=1">Kursusliste</a>
+              </li>
+              <li class="">
+                <a href="/pager/keywordsearch/?bootstrap=1">KeywordSearch</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-7" aria-owns="mm-7" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (En Forside som test)</span></a><a href="/frontpage/?bootstrap=1">En Forside som test</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-7" aria-hidden="true">
+            <ul class="mm-listview">
+              <li class="">
+                <a href="/frontpage/standard/?bootstrap=1">EndnuEnStandardTestside</a>
+              </li>
+              <li class="">
+                <a href="/frontpage/standard_kopi/?bootstrap=1">Standardside: Test af en standardside</a>
+              </li>
+              <li class="">
+                <a href="/frontpage/pagetest/?bootstrap=1">Standardtestside</a>
+              </li>
+              <li class="">
+                <a href="/frontpage/pagetest_kopi/?bootstrap=1">Testside side test, standard</a>
+              </li>
+              <li class="">
+                <a href="/frontpage/gridfrontpage/?bootstrap=1">Testing the gridfrontpage</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="local1_mmenu">
+          <a href="/gridforside/?bootstrap=1">En gridforside</a>
+        </li>
+        <li class="mm-opened local1_mmenu mm-vertical mm-selected">
+          <a class="mm-next" href="#mm-8" aria-owns="mm-8" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Nanna KOM)</span></a><a href="/nanna-kom/?bootstrap=1">Nanna KOM</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-8">
+            <ul class="mm-listview">
+              <li class="mm-vertical">
+                <a class="mm-next" href="#mm-9" aria-owns="mm-9" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Nyheder)</span></a><a href="/nanna-kom/nyheder/?bootstrap=1">Nyheder</a>
+                <div class="mm-panel mm-hidden mm-vertical" id="mm-9" aria-hidden="true">
+                  <ul class="mm-listview">
+                    <li class="">
+                      <a href="/nanna-kom/nyheder/dansk-astronom-faar-stor-forskerpris/?bootstrap=1">Dansk astronom får stor forskerpris</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/nyheder/fermentering-skaber-baeredygtig-vaekst-i-den-vestafrikanske-foedevaresektor/?bootstrap=1">Fermentering skaber bæredygtig vækst i den vestafrikanske fødevaresektor</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/nyheder/nu-er-maersk-taarnet-i-koebenhavn-indviet/?bootstrap=1">Nu er Mærsk Tårnet i København indviet</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/nyheder/facebook-goer-dig-ulykkelig-og-ensom/?bootstrap=1">Facebook gør dig #ulykkelig og #ensom</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mm-vertical">
+                <a class="mm-next" href="#mm-10" aria-owns="mm-10" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Kalender)</span></a><a href="/nanna-kom/kalender/?bootstrap=1">Kalender</a>
+                <div class="mm-panel mm-hidden mm-vertical" id="mm-10" aria-hidden="true">
+                  <ul class="mm-listview">
+                    <li class="">
+                      <a href="/nanna-kom/kalender/philosophical-issues-in-psychiatry-v/?bootstrap=1">Philosophical Issues in Psychiatry V</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/kalender/videnskabsgalla/?bootstrap=1">Videnskabsgalla</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/kalender/rundvisning-paa-zoologisk-museum-efter-lukketid/?bootstrap=1">Rundvisning på Zoologisk Museum efter lukketid</a>
+                    </li>
+                    <li class="">
+                      <a href="/nanna-kom/kalender/sund-aldring/?bootstrap=1">Sund aldring</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <a href="/nanna-kom/arrangementer/?bootstrap=1">Arrangementer</a>
+              </li>
+              <li class="">
+                <a href="/nanna-kom/fleksible-bokse/?bootstrap=1">Fleksible bokse</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-11" aria-owns="mm-11" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Uddannelser på KU)</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Uddannelser på KU</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-11" aria-hidden="true">
+            <ul class="mm-listview">
+              <li><a href="#">Bachelor</a></li>
+              <li><a href="#">Kandidat</a></li>
+              <li><a href="#">Ph.d.</a></li>
+              <li><a href="#">Efter- og videreuddannelse</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-12" aria-owns="mm-12" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Forskning på KU)</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forskning på KU</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-12" aria-hidden="true">
+            <ul class="mm-listview">
+              <li><a href="#">Styrkeområder</a></li>
+              <li><a href="#">Forskningscentre</a></li>
+              <li><a href="#">Ph.d.-programmer</a></li>
+              <li><a href="#">Find en forsker</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_mmenu"><a href="#">Nyheder</a></li>
+        <li class="navbar_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-13" aria-owns="mm-13" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Samarbejde)</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samarbejde</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-13" aria-hidden="true">
+            <ul class="mm-listview">
+              <li><a href="#">Internationalt</a></li>
+              <li><a href="#">Erhverv</a></li>
+              <li><a href="#">ErhvervsPhD</a></li>
+              <li><a href="#">Skoler og gymnasier</a></li>
+              <li><a href="#">Alumni</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-14" aria-owns="mm-14" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Besøg KU)</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Besøg KU</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-14" aria-hidden="true">
+            <ul class="mm-listview">
+              <li><a href="#">Museer</a></li>
+              <li><a href="#">Biblioteker</a></li>
+              <li><a href="#">For skoler og gymnasier</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_mmenu mm-vertical">
+          <a class="mm-next" href="#mm-15" aria-owns="mm-15" aria-haspopup="true"><span class="mm-sronly">Toggle submenu (Om KU)</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om KU</a>
+          <div class="mm-panel mm-hidden mm-vertical" id="mm-15" aria-hidden="true">
+            <ul class="mm-listview">
+              <li><a href="#">Historie</a></li>
+              <li><a href="#">Organisation</a></li>
+              <li><a href="#">Ledelse</a></li>
+              <li><a href="#">Fakulteter</a></li>
+              <li><a href="#">Institutter</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="http://kalender.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Kalender']);">Kalender</a></li>
+        <li><a href="http://findvej.ku.dk" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Find-vej']);">Find vej</a></li>
+        <li><a href="http://www.ku.dk/vejviser/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Telefonbog']);">Telefonbog</a></li>
+        <li><a href="http://jobportal.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'Job']);">Job</a></li>
+        <li><a href="http://velkommen.ku.dk/indeks/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'A-AA-indeks']);">A-Å-indeks</a></li>
+        <li><a href="https://intranet.ku.dk/" onclick="_gaq.push(['mainTracker._trackEvent', 'Globaltools-DA', 'klik', 'KUnet']);">KUnet</a></li>
+        <li>
+          <a class="eng" href="#">English
 							<span></span>
 						</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="navbar-menu mm-opened mm-vertical">
-        <div class="mm-panel mm-vertical" id="navbar_menu-clone">
-          <ul class="nav navbar-nav mm-listview mm-vertical">
-            <li class="dropdown mm-vertical">
-              <a class="mm-next" href="#mm-2" data-target="#mm-2" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Uddannelser på KU</a>
-              <div class="mm-panel mm-vertical" id="mm-2">
-                <ul class="mm-listview mm-vertical">
-                  <li><a href="#">Bachelor</a></li>
-                  <li><a href="#">Kandidat</a></li>
-                  <li><a href="#">Ph.d.</a></li>
-                  <li><a href="#">Efter- og videreuddannelse</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown mm-vertical">
-              <a class="mm-next" href="#mm-3" data-target="#mm-3" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forskning på KU</a>
-              <div class="mm-panel mm-vertical" id="mm-3">
-                <ul class="mm-listview mm-vertical">
-                  <li><a href="#">Styrkeområder</a></li>
-                  <li><a href="#">Forskningscentre</a></li>
-                  <li><a href="#">Ph.d.-programmer</a></li>
-                  <li><a href="#">Find en forsker</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Nyheder</a></li>
-            <li class="dropdown mm-vertical">
-              <a class="mm-next" href="#mm-4" data-target="#mm-4" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samarbejde</a>
-              <div class="mm-panel mm-vertical" id="mm-4">
-                <ul class="mm-listview mm-vertical">
-                  <li><a href="#">Internationalt</a></li>
-                  <li><a href="#">Erhverv</a></li>
-                  <li><a href="#">ErhvervsPhD</a></li>
-                  <li><a href="#">Skoler og gymnasier</a></li>
-                  <li><a href="#">Alumni</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown mm-vertical">
-              <a class="mm-next" href="#mm-5" data-target="#mm-5" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Besøg KU</a>
-              <div class="mm-panel mm-vertical" id="mm-5">
-                <ul class="mm-listview mm-vertical">
-                  <li><a href="#">Museer</a></li>
-                  <li><a href="#">Biblioteker</a></li>
-                  <li><a href="#">For skoler og gymnasier</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="dropdown mm-vertical">
-              <a class="mm-next" href="#mm-6" data-target="#mm-6" aria-haspopup="true"><span class="mm-sronly">Toggle submenu</span></a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om KU</a>
-              <div class="mm-panel mm-vertical" id="mm-6">
-                <ul class="mm-listview mm-vertical">
-                  <li><a href="#">Historie</a></li>
-                  <li><a href="#">Organisation</a></li>
-                  <li><a href="#">Ledelse</a></li>
-                  <li><a href="#">Fakulteter</a></li>
-                  <li><a href="#">Institutter</a></li>
-                  <li><a href="#">Kontakt</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+
+</nav>
 {% endif %}

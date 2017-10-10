@@ -5936,7 +5936,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: inherit;
   letter-spacing: .25px;
@@ -6083,7 +6083,7 @@ button.list-group-item-danger.active:focus {
 .boxtop {
   min-height: 16px;
   padding: 6px 0;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.34;
   color: #151515;
   letter-spacing: .7px;
@@ -6108,15 +6108,14 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid #66609e;
 }
 .panel-default > .panel-heading {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
   overflow: hidden;
   font-weight: 600;
 }
 .panel-default > .panel-heading > .panel-title {
   min-height: 16px;
   padding: 6px 0;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.34;
   color: #151515;
   letter-spacing: .7px;
@@ -7850,9 +7849,9 @@ a.alert-link:visited {
   }
 }
 .nyhedsoverskrift {
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
   letter-spacing: .7px;
 }
 .media-list .media-left,
@@ -7868,14 +7867,14 @@ a.alert-link:visited {
   border-bottom: 1px solid #ccc;
 }
 .media-list .media .media-heading {
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
   letter-spacing: .7px;
 }
 .media-list .media .media-heading a {
   display: block;
-  font-size: 1em;
+  font-size: inherit;
   color: inherit;
 }
 .media-list .media .media-object {
@@ -7897,15 +7896,25 @@ a.alert-link:visited {
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
 }
+@media (min-width: 768px) {
+  #nyhedsliste.smal .media .media-heading {
+    display: inline-block;
+    max-width: 84%;
+  }
+}
 #nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;
+  font-weight: 600;
   color: #777;
 }
 #nyhedsliste-rightbox .media .news-date2 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 15px;
   color: #777;
+}
+#calendarlist .eventdate {
+  margin-bottom: 5px;
 }
 #minicalendar .panel-body {
   padding: 6px 0 0;
@@ -8142,7 +8151,7 @@ a.alert-link:visited {
 }
 .datepicker-dropdown table tr th,
 .datepicker-dropdown table tr td {
-  padding: 4px;
+  padding: 5px;
 }
 .datepicker-dropdown:before {
   position: absolute;
@@ -8191,6 +8200,10 @@ a.alert-link:visited {
   border-top: 6px solid #fff;
   border-bottom: 0;
 }
+.datepicker-dropdown .day:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
 .datepicker .calStepLink {
   color: #252525;
 }
@@ -8206,6 +8219,7 @@ a.alert-link:visited {
 }
 .datepicker table tr th {
   height: 28px;
+  font-weight: 600;
   text-align: center;
   border: none;
 }

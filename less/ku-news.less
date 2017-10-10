@@ -2,10 +2,10 @@
 // Global menu news
 
 .nyhedsoverskrift {
-  font-size: 1em;
-  line-height: @line-height-computed;
+  font-size: 14px;
+  line-height: 18px;
   letter-spacing: 0.7px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .media-list {
@@ -26,7 +26,7 @@
       .nyhedsoverskrift;
 
       a {
-        font-size: 1em;
+        font-size: inherit;
         color: inherit;
         display: block;
       }
@@ -55,8 +55,17 @@
 #nyhedsliste {
   &.smal {
     .media {
+      .media-heading {
+        @media (min-width: @screen-sm-min) {
+          // Make room for the date:
+          display: inline-block;
+          max-width: 84%;
+        }
+      }
+
       .nyhedsliste_dato {
         color: @gray-light;
+        font-weight: 600;
         .pull-right();
       }
     }
@@ -68,13 +77,21 @@
   .media {
     .news-date2 {
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 15px;
       color: @gray-light;
     }
   }
 }
-// Kalender - højre kolonne
+// Arrangementer - midterkolonne:
+
+#calendarlist {
+  .eventdate {
+    margin-bottom: 5px;
+  }
+}
+// Arrangementer - højre kolonne
+
 #minicalendar {
   .panel-body {
     padding: 6px 0 0;

@@ -4,22 +4,22 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.333333;
           flex-direction: column;
   border-radius: 2px;
 
+  gitpullwidth: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
 .gridbox:hover img {
-          filter: brightness(90%);
+          filter: brightness(90%) !important;
 
-  -webkit-filter: brightness(90%);
+  -webkit-filter: brightness(90%) !important;
 }
 .gridbox * {
   -webkit-box-sizing: border-box;
@@ -1382,6 +1382,9 @@
   -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .gridbox.with-img.img-left img {
   left: 0;
