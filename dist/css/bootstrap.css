@@ -7907,6 +7907,9 @@ a.alert-link:visited {
   line-height: 15px;
   color: #777;
 }
+#calendarlist .eventdate {
+  margin-bottom: 5px;
+}
 #minicalendar .panel-body {
   padding: 6px 0 0;
 }
@@ -8190,6 +8193,9 @@ a.alert-link:visited {
   bottom: -6px;
   border-top: 6px solid #fff;
   border-bottom: 0;
+}
+.datepicker-dropdown .day:hover {
+  cursor: pointer;
 }
 .datepicker .calStepLink {
   color: #252525;
