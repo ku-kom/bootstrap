@@ -8805,7 +8805,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
     width: 100%;
   }
 }
-#pageWrapper {
+#pagewrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
