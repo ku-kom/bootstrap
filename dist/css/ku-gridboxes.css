@@ -4,13 +4,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.333333;
           flex-direction: column;
   border-radius: 2px;
 
+  gitpullwidth: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1378,13 +1378,13 @@
   display: block;
   max-width: 100%;
   height: auto;
-          filter: brightness(100%);
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
 
-  -webkit-filter: brightness(100%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .gridbox.with-img.img-left img {
   left: 0;

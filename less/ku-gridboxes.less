@@ -82,7 +82,8 @@
 @jura-sub_4: #a3650c;
 @jura-sub_4-hover: #8f570a;
 
-.gridbox {
+.gridbox {git pull
+
   width: 100%;
   position: relative;
   line-height: @line-height-base;
@@ -2202,7 +2203,9 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        filter: brightness(100%);
+        // Prevent image from moving in some cases:
+        backface-visibility: hidden;
+        //filter: brightness(100%);
       }
     }
     // Position image left
