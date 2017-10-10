@@ -5936,7 +5936,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: inherit;
   letter-spacing: .25px;
@@ -7850,8 +7850,8 @@ a.alert-link:visited {
 }
 .nyhedsoverskrift {
   font-size: 1em;
-  font-weight: bold;
-  line-height: 15px;
+  font-weight: 600;
+  line-height: 18px;
   letter-spacing: .7px;
 }
 .media-list .media-left,
@@ -7868,13 +7868,13 @@ a.alert-link:visited {
 }
 .media-list .media .media-heading {
   font-size: 1em;
-  font-weight: bold;
-  line-height: 15px;
+  font-weight: 600;
+  line-height: 18px;
   letter-spacing: .7px;
 }
 .media-list .media .media-heading a {
   display: block;
-  font-size: 1em;
+  font-size: inherit;
   color: inherit;
 }
 .media-list .media .media-object {
@@ -7902,7 +7902,7 @@ a.alert-link:visited {
 }
 #nyhedsliste-rightbox .media .news-date2 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 15px;
   color: #777;
 }
