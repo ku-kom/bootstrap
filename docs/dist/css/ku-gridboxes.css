@@ -17,9 +17,9 @@
       -ms-flex-direction: column;
 }
 .gridbox:hover img {
-          filter: brightness(90%);
+          filter: brightness(90%) !important;
 
-  -webkit-filter: brightness(90%);
+  -webkit-filter: brightness(90%) !important;
 }
 .gridbox * {
   -webkit-box-sizing: border-box;
@@ -1378,10 +1378,13 @@
   display: block;
   max-width: 100%;
   height: auto;
+          filter: brightness(100%);
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
+
+  -webkit-filter: brightness(100%);
 }
 .gridbox.with-img.img-left img {
   left: 0;
