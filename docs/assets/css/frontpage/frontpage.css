@@ -4,7 +4,7 @@
 /*Edge-to-edge grid for eg. slider*/
 
 @media screen and (max-width: 767px) {
-  .front-page .main-content .row:first-child .col-sm-12.col-md-9 {
+  .FullWidthFrontpage .main-content .row:first-child .col-sm-12.col-md-9 {
     padding-right: 0;
     padding-left: 0;
     margin-left: -13px;
