@@ -7489,19 +7489,31 @@ a.alert-link:visited {
 #mobileleftmenu .local2_mmenu::after {
   border: none;
 }
+#mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
+  border-color: #252525;
+}
 #mobileleftmenu .mm-title {
   font-size: larger;
   color: #fff;
   background-color: #901a1e;
   border-bottom: solid 1px #e56e72;
 }
+#mobileleftmenu .mm-navbars-top {
+  border: 0;
+}
 #mobileleftmenu .navbar-form {
   padding: 0;
   margin: 0;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 #mobileleftmenu .search-placeholder {
   padding: 0;
+}
+#mobileleftmenu .mm-menu .mm-navbar > *,
+#mobileleftmenu .mm-menu .mm-navbar a {
+  color: rgba(37, 37, 37, .01);
 }
 .local-footer {
   -webkit-align-self: flex-end;

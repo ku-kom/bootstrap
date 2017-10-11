@@ -1,30 +1,23 @@
 //
 // KU mobile menu
 // --------------------------------------------------
-
-
 /* Media queries */
-
 @media (min-width: @screen-sm-min) {
-    #mobileleftmenu {
+  #mobileleftmenu {
+    display: none;
+  }
+}
+@media (max-width: @screen-sm-max) {
+  // Hide KU language switcher icons
+  &.dk,
+  &.eng {
+    > span,
+    img {
       display: none;
     }
+  }
 }
-
-@media (max-width: @screen-sm-max) {
-    // Hide KU language switcher icons
-    &.dk,
-    &.eng {
-        > span,
-            img {
-            display: none;
-        }
-    }
-}
-
-
 /* KU theme colors for jQuery MMenu */
-
 // @white-color
 // @gray-base
 // @gray
@@ -33,73 +26,93 @@
 // @ku-red
 
 #mobileleftmenu {
-    background-color: @white-color;
-    color: @gray-base;
+  background-color: @white-color;
+  color: @gray-base;
 
-    .local1_mmenu,
-    .local2_mmenu {
-        // Faculty colors for sublevel 1
-        background: @ku-red;
-        color: @white-color;
+  .local1_mmenu,
+  .local2_mmenu {
+    // Faculty colors for sublevel 1
+    background: @ku-red;
+    color: @white-color;
 
-        .theme-samf & {
-            background: @samf;
-        }
-
-        .theme-hum & {
-            background: @hum;
-        }
-
-        .theme-science & {
-            background: @science;
-        }
-
-        .theme-sund & {
-            background: @sund;
-        }
-
-        .theme-jur & {
-            background: @jura;
-        }
-
-        .theme-teo & {
-            background: @teol;
-        }
-
-        .mm-next::after {
-            // Arrows
-            border-color: @white-color;
-        }
+    .theme-samf & {
+      background: @samf;
     }
 
-    .local1_mmenu,
-    .local2_mmenu {
+    .theme-hum & {
+      background: @hum;
+    }
 
-        > .mm-panel {
-            background-color: lighten(@gray-light, 40%);
-            color: @gray-dark;
+    .theme-science & {
+      background: @science;
+    }
+
+    .theme-sund & {
+      background: @sund;
+    }
+
+    .theme-jur & {
+      background: @jura;
+    }
+
+    .theme-teo & {
+      background: @teol;
+    }
+
+    .mm-next::after {
+      // Arrows
+      border-color: @white-color;
+    }
+  }
+
+  .local1_mmenu,
+  .local2_mmenu {
+    > .mm-panel {
+      background-color: lighten(@gray-light, 40%);
+      color: @gray-dark;
+    }
+
+    &::after {
+      border: none;
+    }
+  }
+
+  .local1_mmenu {
+    &.mm-opened {
+      .mm-listview {
+        .mm-next {
+          &::after {
+            border-color: @gray-dark;
+          }
         }
-
-        &::after {
-            border: none;
-        }
+      }
     }
+  }
 
-    .mm-title {
-        background-color: @ku-red;
-        color: @white-color;
-        font-size: larger;
-        border-bottom: solid 1px lighten(@ku-red, 33%);
-    }
+  .mm-title {
+    background-color: @ku-red;
+    color: @white-color;
+    font-size: larger;
+    border-bottom: solid 1px lighten(@ku-red, 33%);
+  }
 
-    .navbar-form {
-        margin: 0;
-        padding: 0;
-        border: none;
-    }
+  .mm-navbars-top {
+    border: 0;
+  }
 
-    .search-placeholder {
-        padding: 0;
-    }
+  .navbar-form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
 
+  .search-placeholder {
+    padding: 0;
+  }
+
+  .mm-menu .mm-navbar > *,
+  .mm-menu .mm-navbar a {
+    color: fade(@text-color,1);
+  }
 }
