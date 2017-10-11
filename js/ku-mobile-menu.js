@@ -272,7 +272,9 @@ return true;
         $('.search-placeholder').first().append($new_search);
 
         // Make sure selected item also displays sub-items
-        $('.mm-selected').addClass('mm-opened');
+        var selectedItem = $('.mm-selected');
+        selectedItem.addClass('mm-opened');
+        selectedItem.children('.mm-panel').removeClass('mm-hidden');
 
     }
 
