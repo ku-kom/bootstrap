@@ -272,7 +272,7 @@ return true;
         $('.search-placeholder').first().append($new_search);
 
         // Make sure selected item also displays sub-items
-        $('.mm-selected.mm-opened > .mm-panel').attr('aria-hidden', 'false');
+        $('.mm-selected').addClass('mm-opened');
 
     }
 
