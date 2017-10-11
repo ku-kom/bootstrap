@@ -272,10 +272,13 @@ return true;
         $('.search-placeholder').first().append($new_search);
 
         // Make sure selected item also displays sub-items
+        console.log('I did this');
         var selectedItem = $('.mm-selected');
+        console.log(selectedItem);
         selectedItem.addClass('mm-opened');
         selectedItem.children('.mm-panel').removeClass('mm-hidden');
-
+        console.log(selectedItem.children('.mm-panel'));
+        
     }
 
     $(window).resize(function () {
