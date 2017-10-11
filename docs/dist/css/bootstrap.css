@@ -7451,30 +7451,37 @@ a.alert-link:visited {
 #mobileleftmenu .local2_mmenu {
   color: #fff;
   background: #901a1e;
+  border-bottom: 1px solid #651215;
 }
 .theme-samf #mobileleftmenu .local1_mmenu,
 .theme-samf #mobileleftmenu .local2_mmenu {
   background: #e13718;
+  border-bottom: 1px solid #b32c13;
 }
 .theme-hum #mobileleftmenu .local1_mmenu,
 .theme-hum #mobileleftmenu .local2_mmenu {
   background: #365aa5;
+  border-bottom: 1px solid #29457f;
 }
 .theme-science #mobileleftmenu .local1_mmenu,
 .theme-science #mobileleftmenu .local2_mmenu {
   background: #46743c;
+  border-bottom: 1px solid #32522b;
 }
 .theme-sund #mobileleftmenu .local1_mmenu,
 .theme-sund #mobileleftmenu .local2_mmenu {
   background: #2a216a;
+  border-bottom: 1px solid #1b1543;
 }
 .theme-jur #mobileleftmenu .local1_mmenu,
 .theme-jur #mobileleftmenu .local2_mmenu {
   background: #999632;
+  border-bottom: 1px solid #737025;
 }
 .theme-teo #mobileleftmenu .local1_mmenu,
 .theme-teo #mobileleftmenu .local2_mmenu {
   background: #66609e;
+  border-bottom: 1px solid #524d7e;
 }
 #mobileleftmenu .local1_mmenu .mm-next::after,
 #mobileleftmenu .local2_mmenu .mm-next::after {
@@ -7496,7 +7503,31 @@ a.alert-link:visited {
   font-size: larger;
   color: #fff;
   background-color: #901a1e;
-  border-bottom: solid 1px #e56e72;
+  border-bottom: solid 1px #e26165;
+}
+.theme-samf #mobileleftmenu .mm-title {
+  background-color: #e13718;
+  border-bottom: 1px solid #f5ab9d;
+}
+.theme-hum #mobileleftmenu .mm-title {
+  background-color: #365aa5;
+  border-bottom: 1px solid #97aedd;
+}
+.theme-science #mobileleftmenu .mm-title {
+  background-color: #46743c;
+  border-bottom: 1px solid #92c188;
+}
+.theme-sund #mobileleftmenu .mm-title {
+  background-color: #2a216a;
+  border-bottom: 1px solid #6759cb;
+}
+.theme-jur #mobileleftmenu .mm-title {
+  background-color: #999632;
+  border-bottom: 1px solid #d9d78b;
+}
+.theme-teo #mobileleftmenu .mm-title {
+  background-color: #66609e;
+  border-bottom: 1px solid #c1bfd8;
 }
 #mobileleftmenu .mm-navbars-top {
   border: 0;
@@ -7513,7 +7544,7 @@ a.alert-link:visited {
 }
 #mobileleftmenu .mm-menu .mm-navbar > *,
 #mobileleftmenu .mm-menu .mm-navbar a {
-  color: rgba(37, 37, 37, .01);
+  color: inherit;
 }
 .local-footer {
   -webkit-align-self: flex-end;
