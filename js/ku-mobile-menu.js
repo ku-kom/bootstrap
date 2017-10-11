@@ -271,6 +271,9 @@ return true;
         // Add search to MMenu
         $('.search-placeholder').first().append($new_search);
 
+        // Make sure selected item also displays sub-items
+        $('.mm-selected.mm-opened > .mm-panel').attr('aria-hidden', 'false');
+
     }
 
     $(window).resize(function () {
