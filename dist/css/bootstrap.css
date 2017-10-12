@@ -1295,11 +1295,6 @@ html {
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-@media (max-width: 768px) {
-  html {
-    overflow-x: hidden;
-  }
-}
 html.non-responsive {
   overflow: auto;
 }
