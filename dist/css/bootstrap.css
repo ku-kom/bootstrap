@@ -5916,7 +5916,7 @@ button.list-group-item-danger.active:focus {
   background-color: #fff;
 }
 .panel-body {
-  padding: 0 10px 10px;
+  padding: 10px;
 }
 .panel-heading {
   padding: 6px 10px;
@@ -6094,6 +6094,7 @@ button.list-group-item-danger.active:focus {
   letter-spacing: .7px;
 }
 .panel-default > .panel-body {
+  padding: 0;
   border-top: 1px solid #901a1e;
 }
 .theme-samf .panel-default > .panel-body {
@@ -6113,6 +6114,9 @@ button.list-group-item-danger.active:focus {
 }
 .theme-teo .panel-default > .panel-body {
   border-top: 1px solid #66609e;
+}
+.panel-default > .panel-body > p:first-child {
+  padding: 12px 10px 10px;
 }
 .panel-primary {
   border-color: #337ab7;
