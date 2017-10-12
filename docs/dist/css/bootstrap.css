@@ -1543,7 +1543,7 @@ h6 {
   font-weight: 700;
 }
 p {
-  margin: 0 0 7.5px;
+  margin: 0 0 10px;
 }
 .lead {
   margin-bottom: 15px;
@@ -5917,6 +5917,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 10px;
+  overflow: hidden;
 }
 .panel-heading {
   padding: 6px 10px;
@@ -6116,7 +6117,7 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #66609e;
 }
 .panel-default > .panel-body > p:first-child {
-  padding: 12px 10px 10px;
+  padding: 12px 0 0;
 }
 .panel-primary {
   border-color: #337ab7;
