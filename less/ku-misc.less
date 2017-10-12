@@ -74,10 +74,6 @@ nav {
 .main-area {
   flex-grow: 1;
 
-  &.front-page {
-    padding-top: 0;
-  }
-
   &:focus {
     outline: 0;
     user-focus: none;
@@ -213,6 +209,15 @@ nav {
   }
 }
 // KU loading symbol
+@keyframes ku-loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 .ku-loading {
   border-bottom: 6px solid @gray;
@@ -227,22 +232,4 @@ nav {
   position: absolute;
   top: 37%;
   left: 40%;
-}
-@-webkit-keyframes ku-loading {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes ku-loading {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
 }

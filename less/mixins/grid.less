@@ -4,14 +4,16 @@
 
 // Centered container element
 .container-fixed(@gutter: @grid-gutter-width) {
-   @media (min-width: @screen-sm-min) {
-      padding-left: @grid-gutter-width;
-      padding-right: @grid-gutter-width;
-  }
-  @media (max-width: @screen-sm-min) {
-      padding-left:  10px;
-      padding-right: 10px;
-  }
+  //  @media (min-width: @screen-sm-min) {
+  //     padding-left: @grid-gutter-width;
+  //     padding-right: @grid-gutter-width;
+  // }
+  // @media (max-width: @screen-sm-min) {
+  //     padding-left:  10px;
+  //     padding-right: 10px;
+  // }
+  padding-left:  floor((@gutter / 2));
+  padding-right: ceil((@gutter / 2));
   &:extend(.clearfix all);
 }
 

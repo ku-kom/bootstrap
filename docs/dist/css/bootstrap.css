@@ -1832,19 +1832,9 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  padding-right: 13px;
+  padding-left: 13px;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .container {
-    padding-right: 26px;
-    padding-left: 26px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1866,17 +1856,9 @@ pre code {
     width: 1070px;
   }
 }
-@media (min-width: 768px) {
-  .container-fluid {
-    padding-right: 26px;
-    padding-left: 26px;
-  }
-}
-@media (max-width: 768px) {
-  .container-fluid {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+.container-fluid {
+  padding-right: 13px;
+  padding-left: 13px;
 }
 .row {
   margin-right: -13px;
@@ -8900,9 +8882,6 @@ nav {
   -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.main-area.front-page {
-  padding-top: 0;
-}
 .main-area:focus {
   outline: 0;
 
@@ -9027,21 +9006,6 @@ nav {
 .btn-file input[type=file] {
   display: none;
 }
-.ku-loading {
-  position: absolute;
-  top: 37%;
-  left: 40%;
-  width: 50px;
-  height: 50px;
-  overflow: auto;
-  border-top: 6px solid #901a1e;
-  border-right: 6px solid #ccc;
-  border-bottom: 6px solid #ccc;
-  border-left: 6px solid #ccc;
-  border-radius: 100%;
-  -webkit-animation: ku-loading .6s infinite linear;
-          animation: ku-loading .6s infinite linear;
-}
 @-webkit-keyframes ku-loading {
   from {
     -webkit-transform: rotate(0deg);
@@ -9061,6 +9025,21 @@ nav {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
   }
+}
+.ku-loading {
+  position: absolute;
+  top: 37%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  overflow: auto;
+  border-top: 6px solid #901a1e;
+  border-right: 6px solid #ccc;
+  border-bottom: 6px solid #ccc;
+  border-left: 6px solid #ccc;
+  border-radius: 100%;
+  -webkit-animation: ku-loading .6s infinite linear;
+          animation: ku-loading .6s infinite linear;
 }
 @media (min-width: 767px) {
   .privacy-policy {
