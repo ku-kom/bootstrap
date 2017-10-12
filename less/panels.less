@@ -8,27 +8,14 @@
   background-color: @panel-bg;
   //border: 1px solid transparent;
   //border-radius: @panel-border-radius;
-  // KU: Panels with images
-  &.with-img {
-    .panel-heading {
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
-    .panel-body {
-      padding: 0;
-      overflow: hidden;
-    }
-  }
 }
 // Panel contents
 
 .panel-body {
-  padding: @panel-body-padding 0;
+  padding: 0 @panel-body-padding @panel-body-padding;
   &:extend(.clearfix all);
 }
-
 // Optional heading
-
 .panel-heading {
   padding: @panel-heading-padding;
   border-bottom: 1px solid transparent;
@@ -47,11 +34,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-   > .small,
+   > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 }
@@ -69,8 +56,8 @@
 // any kind of custom content between the two.
 
 .panel {
-   > .panel-collapse > .list-group,
-  > .list-group {
+   > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -116,9 +103,9 @@
 // watch it go full width.
 
 .panel {
-   > .panel-collapse > .table,
+   > .table,
    > .table-responsive > .table,
-  > .table {
+  > .panel-collapse > .table {
     margin-bottom: 0;
 
     caption {
@@ -170,53 +157,53 @@
   //     }
   //   }
   // }
-   > .panel-body + .table-responsive,
+   > .panel-body + .table,
    > .table + .panel-body,
    > .table-responsive + .panel-body,
-  > .panel-body + .table {
+  > .panel-body + .table-responsive {
     border-top: 1px solid @table-border-color;
   }
 
-   > .table > tbody:first-child > tr:first-child td,
-  > .table > tbody:first-child > tr:first-child th {
+   > .table > tbody:first-child > tr:first-child th,
+  > .table > tbody:first-child > tr:first-child td {
     border-top: 0;
   }
 
-   > .table-responsive > .table-bordered,
-  > .table-bordered {
+   > .table-bordered,
+  > .table-responsive > .table-bordered {
     border: 0;
 
-     > tbody,
+     > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-         > td:first-child,
-        > th:first-child {
+         > th:first-child,
+        > td:first-child {
           border-left: 0;
         }
 
-         > td:last-child,
-        > th:last-child {
+         > th:last-child,
+        > td:last-child {
           border-right: 0;
         }
       }
     }
 
-     > tbody,
-    > thead {
+     > thead,
+    > tbody {
       > tr:first-child {
-         > th,
-        > td {
+         > td,
+        > th {
           border-bottom: 0;
         }
       }
     }
 
-     > tfoot,
-    > tbody {
+     > tbody,
+    > tfoot {
       > tr:last-child {
-         > th,
-        > td {
+         > td,
+        > th {
           border-bottom: 0;
         }
       }
@@ -264,8 +251,8 @@
   }
 }
 // Contextual variations
-
 // KU bokstope
+
 .boxtop {
   line-height: 1.34;
   letter-spacing: 0.7px;
@@ -273,31 +260,6 @@
   min-height: 16px;
   font-weight: 600;
   padding: @panel-bokstop-heading-padding;
-  border-bottom: 1px solid @ku-red;
-
-  .theme-samf & {
-    border-bottom: 1px solid @samf;
-  }
-
-  .theme-hum & {
-    border-bottom: 1px solid @hum;
-  }
-
-  .theme-science & {
-    border-bottom: 1px solid @science;
-  }
-
-  .theme-sund & {
-    border-bottom: 1px solid @sund;
-  }
-
-  .theme-jur & {
-    border-bottom: 1px solid @jura;
-  }
-
-  .theme-teo & {
-    border-bottom: 1px solid @teol;
-  }
 }
 
 .panel-default {
@@ -305,8 +267,37 @@
     overflow: hidden;
     font-weight: 600;
     padding: 0;
+
     & > .panel-title {
       .boxtop;
+    }
+  }
+
+  & > .panel-body {
+    border-top: 1px solid @ku-red;
+
+    .theme-samf & {
+      border-top: 1px solid @samf;
+    }
+
+    .theme-hum & {
+      border-top: 1px solid @hum;
+    }
+
+    .theme-science & {
+      border-top: 1px solid @science;
+    }
+
+    .theme-sund & {
+      border-top: 1px solid @sund;
+    }
+
+    .theme-jur & {
+      border-top: 1px solid @jura;
+    }
+
+    .theme-teo & {
+      border-top: 1px solid @teol;
     }
   }
 }
