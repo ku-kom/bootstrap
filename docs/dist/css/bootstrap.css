@@ -1832,8 +1832,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 26px;
+  padding-left: 26px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -1857,8 +1857,8 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 26px;
+  padding-left: 26px;
 }
 .row {
   margin-right: -13px;
