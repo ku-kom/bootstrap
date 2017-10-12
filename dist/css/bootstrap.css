@@ -8882,6 +8882,12 @@ nav {
   -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media (max-width: 768px) {
+  .main-area {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+}
 .main-area:focus {
   outline: 0;
 
@@ -8894,15 +8900,14 @@ nav {
 }
 .right-side {
   float: right !important;
-  padding-bottom: 23px;
+}
+.divider {
+  margin: 10px 0;
 }
 [tabindex] {
   outline: 0;
 
   user-focus: none;
-}
-.divider {
-  margin: 10px 0;
 }
 @media (min-width: 768px) {
   .row-equal-height {

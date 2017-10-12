@@ -73,6 +73,10 @@ nav {
 
 .main-area {
   flex-grow: 1;
+  @media (max-width: @screen-sm-min) {
+      padding-left:  (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
+  }
 
   &:focus {
     outline: 0;
@@ -85,8 +89,13 @@ nav {
 }
 
 .right-side {
-  padding-bottom: @grid-gutter-height;
+  //padding-bottom: @grid-gutter-height;
   .pull-right;
+}
+
+.divider {
+  margin: @margin10 0;
+  &:extend(.clearfix all);
 }
 // Accessibility
 
@@ -95,10 +104,6 @@ nav {
   user-focus: none;
 }
 
-.divider {
-  margin: @margin10 0;
-  &:extend(.clearfix all);
-}
 @media (min-width: @screen-sm) {
   // Make columns equal height
   .row-equal-height {
