@@ -2462,25 +2462,6 @@ $(function () {
       .collapse('show');
   });
 
-  // Attach the `fileselect` event to all file inputs on the page
-  $(document).on('change', ':file', function () {
-    var $input = $(this),
-      numFiles = $input.get(0).files ? $input.get(0).files.length : 1,
-      label = $input.val().replace(/\\/g, '/').replace(/.*\//, '');
-    $input.trigger('fileselect', [numFiles, label]);
-  });
-
-  // Watch for the custom `fileselect` event
-  $(':file').on('fileselect', function (event, numFiles, label) {
-    var input = $(this).parents('.input-group').find(':text'),
-      log = numFiles > 1 ? numFiles + ' files selected' : label;
-    if (input.length) {
-      input.val(log);
-      //} else {
-      // if (log) console.log(log);
-    }
-  });
-
   // Truncate multiple lines of text in News in global menu
   var $chars = 80; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
@@ -2492,4 +2473,32 @@ $(function () {
       }
     });
   }
+
+  // Global smooth scroll to top
+  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Til top\'><span class=\'icon-arrow\'></span></div>';
+  $('body').append($scroller);
+  scrollFunction();
+
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  $('#scrolltop').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+
+  function scrollFunction() {
+    var $scroll = $('#scrolltop');
+    if ($scroll) {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $scroll.addClass('fadeIn');
+      } else {
+        $scroll.removeClass('fadeIn');
+      }
+    }
+  }
+
 });

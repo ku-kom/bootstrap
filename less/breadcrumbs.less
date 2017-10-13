@@ -3,35 +3,27 @@
 // --------------------------------------------------
 
 .breadcrumb {
-  padding: 0 @breadcrumb-padding-horizontal @breadcrumb-padding-horizontal 0;
-  margin-bottom: @margin0;
-  list-style: none;
-  background-color: @breadcrumb-bg;
-  font-size: 0.8em; // KU
-  //border-radius: @border-radius-base;
-  > li {
-    display: inline-block;
-
-    + li:before {
-      content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
-      padding: 0 5px;
-      color: @breadcrumb-color;
-    }
-  }
-
-  > .active {
-    color: @breadcrumb-active-color;
-  }
-}
-
-.breadcrumbs {
   display: none;
   @media (min-width: @screen-sm-min) {
     display: block;
-    .no-gutter;
+    padding: 0 @breadcrumb-padding-horizontal @breadcrumb-padding-horizontal 0;
+    margin-bottom: @margin0;
+    list-style: none;
+    background-color: @breadcrumb-bg;
+    font-size: 0.8em; // KU
+    //border-radius: @border-radius-base;
+    > li {
+      display: inline-block;
 
-    > [class*='col-'] {
-      margin-bottom: @margin0!important;
+      + li:before {
+        content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+        padding: 0 5px;
+        color: @breadcrumb-color;
+      }
+    }
+
+    > .active {
+      color: @breadcrumb-active-color;
     }
   }
 }

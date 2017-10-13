@@ -74,8 +74,8 @@ nav {
 .main-area {
   flex-grow: 1;
   @media (max-width: @screen-sm-min) {
-      padding-left:  (@grid-gutter-width / 2);
-      padding-right: (@grid-gutter-width / 2);
+    padding-left: (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
   }
 
   &:focus {
@@ -103,7 +103,6 @@ nav {
   outline: 0;
   user-focus: none;
 }
-
 @media (min-width: @screen-sm) {
   // Make columns equal height
   .row-equal-height {
@@ -194,23 +193,45 @@ nav {
     background-image: none; // remove gradient from default button
   }
 }
-// KU special file upload button
+// Global scroll to top
 
-.btn-file {
-  background-color: @white-color;
-  border: 1px solid @gray;
-  padding: 4px 10px;
-  margin-right: -2px;
+.scrolltop {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #d75959;
+  color: @white-color;
+  z-index: 1030;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .icon;
 
-  &:before {
-    font-size: 14px;
-    content: "\e142";
-    font-family: "Glyphicons Halflings";
-    overflow: hidden;
+  .icon-arrow {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    &:before {
+      display: inline-block;
+      font-size: 20px;
+      transform: rotate(-90deg);
+    }
   }
 
-  input[type=file] {
-    display: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.fadeIn {
+    opacity: 1;
   }
 }
 // KU loading symbol
