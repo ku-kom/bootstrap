@@ -20,7 +20,7 @@ h6 {
   //font-weight: @headings-font-weight;
   line-height: @headings-line-height;
   color: @headings-color;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
 
   .small,
   small {
@@ -100,7 +100,7 @@ h6 {
 // -------------------------
 
 p {
-  margin: 10px 0 10px;
+  margin: 10px 0;
 }
 
 .lead {
@@ -114,6 +114,7 @@ p {
 // Emphasis & misc
 // -------------------------
 // Ex: (12px small font / 14px base font) * 100% = about 85%
+
 .small,
 small {
   font-size: floor((100% * @font-size-small / @font-size-base));
@@ -125,6 +126,7 @@ mark {
   padding: 0.2em;
 }
 // Alignment
+
 .text-left {
   text-align: left;
 }
@@ -145,6 +147,7 @@ mark {
   white-space: nowrap;
 }
 // Transformation
+
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -157,6 +160,7 @@ mark {
   text-transform: capitalize;
 }
 // Contextual colors
+
 .text-muted {
   color: @text-muted;
 }
@@ -217,17 +221,20 @@ mark {
 // Lists
 // -------------------------
 // Unordered and Ordered lists
-ul,
-ol {
+
+ol,
+ul {
   margin-top: 0;
   margin-bottom: (@line-height-computed / 2);
-  ul,
-  ol {
+
+  ol,
+  ul {
     margin-bottom: 0;
   }
 }
 // List options
 // Unstyled keeps list items block level, just removes default browser padding and list-style
+
 .list-unstyled {
   // KU specific:
   margin-top: 2px;
@@ -235,6 +242,7 @@ ol {
   list-style: none;
 }
 // Inline turns list items into inline-block
+
 .list-inline {
   .list-unstyled();
   margin-left: -5px;
@@ -246,6 +254,7 @@ ol {
   }
 }
 // Description Lists
+
 dl {
   margin-top: 0; // Remove browser default
   margin-bottom: @line-height-computed;
@@ -303,11 +312,22 @@ abbr[data-original-title] {
   .text-uppercase();
 }
 // Blockquotes
+
 blockquote {
+  position: relative;
   padding: (@line-height-computed / 2) @line-height-computed;
   margin: 0 0 @line-height-computed;
   font-size: @blockquote-font-size;
-  border-left: 5px solid @blockquote-border-color;
+  .icon-quote;
+
+  &:before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 50px;
+    color: @blockquote-icon-color;
+    .icon;
+  }
 
   ol,
   p,
@@ -333,15 +353,18 @@ blockquote {
 }
 // Opposite alignment of blockquote
 //
-// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
 
-.blockquote-reverse,
-blockquote.pull-right {
+.blockquote-reverse {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid @blockquote-border-color;
   border-left: 0;
   text-align: right;
+
+  &:before {
+    top: -20px;
+    right: 0;
+    left: auto;
+  }
   // Account for citation
   .small,
   footer,
@@ -356,6 +379,7 @@ blockquote.pull-right {
   }
 }
 // Addresses
+
 address {
   margin-bottom: @line-height-computed;
   font-style: normal;

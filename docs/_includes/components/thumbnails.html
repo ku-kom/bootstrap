@@ -43,10 +43,16 @@
 
     <h2 id="thumbnails-custom-html5-content">Custom content using HTML5 figure tags</h2>
     <p>With HTML5's figure tag, you can easily control content and captions.</p>
+    <div class="bs-example" data-example-id="img-with-captions">
+      <figure class="figure">
+        <img src="https://placehold.it/800x200" class="figure-img" alt="A generic square placeholder image in a figure.">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+      </figure>
+    </div>
     {% highlight html %}
     <figure class="figure">
-      <img src="..." class="figure-img img-fluid img-rounded" alt="A generic square placeholder image in a figure.">
-      <figcaption class="figure-caption text-xs-right">A caption for the above image.</figcaption>
+      <img src="..." class="figure-img" alt="">
+      <figcaption class="figure-caption">A caption for the above image.</figcaption>
     </figure>
     {% endhighlight %}
   <h2 id="thumbnails-custom-content">Custom content</h2>

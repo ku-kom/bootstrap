@@ -1372,7 +1372,7 @@ img {
   padding: 2px;
   line-height: 1.333333;
   background-color: #f8f8f8;
-  border: 1px solid #929292;
+  border: 1px solid #ddd;
   border-radius: 2px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -1538,7 +1538,7 @@ h6 {
   font-weight: 700;
 }
 p {
-  margin: 10px 0 10px;
+  margin: 10px 0;
 }
 .lead {
   margin-bottom: 15px;
@@ -1662,15 +1662,15 @@ a.bg-danger:focus {
   margin: 30px 0 15px;
   border-bottom: 1px solid #eee;
 }
-ul,
-ol {
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 7.5px;
 }
-ul ul,
-ol ul,
+ol ol,
 ul ol,
-ol ol {
+ol ul,
+ul ul {
   margin-bottom: 0;
 }
 .list-unstyled {
@@ -1725,10 +1725,31 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
+  position: relative;
   padding: 7.5px 15px;
   margin: 0 0 15px;
   font-size: 15px;
-  border-left: 5px solid #eee;
+}
+blockquote:before {
+  content: "\71";
+}
+blockquote:before {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  color: #818181;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 blockquote ol:last-child,
 blockquote p:last-child,
@@ -1748,28 +1769,25 @@ blockquote footer:before,
 blockquote small:before {
   content: '\2014 \00A0';
 }
-.blockquote-reverse,
-blockquote.pull-right {
+.blockquote-reverse {
   padding-right: 15px;
   padding-left: 0;
   text-align: right;
-  border-right: 5px solid #eee;
   border-left: 0;
 }
+.blockquote-reverse:before {
+  top: -20px;
+  right: 0;
+  left: auto;
+}
 .blockquote-reverse .small:before,
-blockquote.pull-right .small:before,
 .blockquote-reverse footer:before,
-blockquote.pull-right footer:before,
-.blockquote-reverse small:before,
-blockquote.pull-right small:before {
+.blockquote-reverse small:before {
   content: '';
 }
 .blockquote-reverse .small:after,
-blockquote.pull-right .small:after,
 .blockquote-reverse footer:after,
-blockquote.pull-right footer:after,
-.blockquote-reverse small:after,
-blockquote.pull-right small:after {
+.blockquote-reverse small:after {
   content: '\00A0 \2014';
 }
 address {
@@ -5435,7 +5453,7 @@ a.badge:focus {
   margin-bottom: 15px;
   line-height: 1.333333;
   background-color: #f8f8f8;
-  border: 1px solid #929292;
+  border: 1px solid #ddd;
   border-radius: 2px;
   -webkit-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
@@ -5463,13 +5481,20 @@ a.thumbnail:focus {
 .figure.pull-right {
   margin-left: 5px;
 }
+.figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .figure-img {
   margin-bottom: 8px;
   line-height: 1;
 }
 .figure-caption {
+  padding-bottom: 10px;
   font-size: .9em;
   color: #777;
+  border-bottom: 1px solid #dfdfdf;
 }
 .alert {
   padding: 15px;
@@ -6106,7 +6131,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading {
   position: relative;
-  padding: 10px 25px 15px 10px;
+  padding: 0 30px 0 0;
   background-color: #f5f5f5;
   border: 0;
   border-radius: inherit;
@@ -6114,9 +6139,11 @@ button.list-group-item-danger.active:focus {
 .panel-accordion > .panel-heading .panel-title {
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 .panel-accordion > .panel-heading .panel-title a {
   display: block;
+  padding: 10px 0 15px 10px;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   content: "\002b";
@@ -6145,6 +6172,9 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading.open {
   background-color: #fff;
+}
+.panel-accordion > .panel-heading.open .panel-title a {
+  padding-bottom: 10px;
 }
 .panel-accordion > .panel-heading.open .panel-title a:before {
   content: "\2212";
@@ -7748,7 +7778,7 @@ main:after,
   padding: 2px;
   line-height: 1.333333;
   background-color: #f8f8f8;
-  border: 1px solid #929292;
+  border: 1px solid #ddd;
   border-radius: 2px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -8878,7 +8908,7 @@ nav {
 }
 .scrolltop {
   position: fixed;
-  right: 3%;
+  right: 2%;
   bottom: 4%;
   z-index: 1030;
   display: -webkit-box;

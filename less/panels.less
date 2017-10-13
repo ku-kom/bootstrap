@@ -320,7 +320,7 @@
 
   & > .panel-heading {
     background-color: @panel-accordion-heading-bg;
-    padding: 10px 25px 15px 10px;
+    padding: 0 30px 0 0;
     position: relative;
     border-radius: inherit;
     border: 0;
@@ -328,9 +328,11 @@
     .panel-title {
       font-size: @font-size-large;
       font-weight: 400;
+      line-height: 20px;
 
       a {
         display: block;
+        padding: 10px 0 15px 10px;
         .glyphicon-plus;
 
         &:before {
@@ -353,6 +355,7 @@
       .panel-title {
         a {
           .glyphicon-minus;
+          padding-bottom: 10px;
         }
       }
 
