@@ -5159,9 +5159,9 @@ html:lang(en) .navbar-inverse .topbar-logo {
   }
 }
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 0 15px 15px 0;
   margin-bottom: 0;
-  font-size: .9em;
+  font-size: .8em;
   list-style: none;
   background-color: #fff;
 }
@@ -7908,6 +7908,10 @@ a.alert-link:visited {
 }
 .minicalendar .panel-body {
   padding-top: 10px;
+}
+.calendarbox .panel-body {
+  padding-top: 10px;
+  border-top: 0;
 }
 .media-events .media-heading a {
   color: inherit;
