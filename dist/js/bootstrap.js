@@ -2493,7 +2493,7 @@ $(function () {
   function scrollFunction() {
     var $scroll = $('#scrolltop');
     if ($scroll) {
-      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         $scroll.addClass('fadeIn');
       } else {
         $scroll.removeClass('fadeIn');
