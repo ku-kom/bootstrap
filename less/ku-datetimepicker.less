@@ -1,7 +1,6 @@
 /*  https://bootstrap-datepicker.readthedocs.io/en/stable/index.html
 * Bootstrap datepicker
 */
-
 // KU calendar code-color
 @ku-occupied-color: #88a6a6;
 @ku-occupied-color-hover: #7f9a9a;
@@ -14,7 +13,7 @@
   }
   direction: ltr;
 
-  &&-rtl {
+  &-rtl {
     direction: rtl;
 
     &.dropdown-menu {
@@ -31,13 +30,16 @@
     top: 0;
     left: 0;
     padding: 4px;
+
     table {
       tr {
-        th, td {
+        td,
+        th {
           padding: 5px;
         }
       }
     }
+
     &:before {
       content: '';
       display: inline-block;
@@ -179,6 +181,10 @@
         background-color: darken(@gray-lighter, 5%);
       }
     }
+
+    > tfoot > tr > th {
+      cursor: pointer;
+    }
   }
   // Inline display inside a table presents some problems with
   // border and background colors.
@@ -206,9 +212,11 @@
     &.occup_monthday {
       span {
         background: @ku-occupied-color;
+
         a {
           color: @white-color;
           display: block;
+
           &:hover {
             text-decoration: none;
             font-weight: 600;
@@ -403,6 +411,7 @@
   }
   // Basic styling for calendar-week cells
   .cw {
+    color: @gray-light;
     font-size: 10px;
     width: 12px;
     padding: 0 2px 0 5px;
