@@ -2475,7 +2475,7 @@ $(function () {
   }
 
   // Global smooth scroll to top
-  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Til top\'><span class=\'icon-arrow\'></span></div>';
+  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Top\'><span class=\'icon-arrow\'></span></div>';
   $('body').append($scroller);
   scrollFunction();
 
@@ -2493,7 +2493,7 @@ $(function () {
   function scrollFunction() {
     var $scroll = $('#scrolltop');
     if ($scroll) {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         $scroll.addClass('fadeIn');
       } else {
         $scroll.removeClass('fadeIn');

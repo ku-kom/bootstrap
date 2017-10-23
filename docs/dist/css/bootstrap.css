@@ -8667,12 +8667,11 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   color: #777;
 }
 .datepicker .datepicker-switch {
-  width: 145px;
+  width: 70%;
+  padding-bottom: 7px;
 }
-.datepicker .datepicker-switch,
 .datepicker .next,
-.datepicker .prev,
-.datepicker tfoot tr th {
+.datepicker .prev {
   cursor: pointer;
 }
 .datepicker .next.disabled,
@@ -8915,19 +8914,12 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
   color: #fff;
-  text-transform: none;
           flex-direction: column;
-  background: #d75959;
+  background: #901a1e;
   border-radius: 50%;
   opacity: 0;
   -webkit-transition: opacity .4s ease-in;
@@ -8945,18 +8937,26 @@ nav {
   -webkit-align-items: center;
   -ms-flex-align: center;
           align-items: center;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .scrolltop .icon-arrow {
   display: block;
   width: 100%;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
   text-align: center;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .scrolltop .icon-arrow:before {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
