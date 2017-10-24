@@ -4283,6 +4283,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
   text-decoration: none;
   cursor: not-allowed;
+  background-color: #f3f3f3;
 }
 .nav .open > a,
 .nav .open > a:focus,
@@ -5268,6 +5269,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
+  color: #252525;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -5394,7 +5396,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #165aad;
+  color: #252525;
   background-color: #fff;
 }
 .list-group-item > .badge {
