@@ -1,6 +1,9 @@
 @import "variables.less";
-@import "mixins.less"; //
+@import "mixins.less";
 // KU custom grid box styling
+// NEL:
+// This code was originally made for old Obvius page templates.
+// Please refer to the ku-gridboxes-bootstrap.less for gridboxes in Bootstrap templates.
 // --------------------------------------------------
 // Grid box styles
 // ------------------
@@ -82,8 +85,7 @@
 @jura-sub_4: #a3650c;
 @jura-sub_4-hover: #8f570a;
 
-.gridbox {git pull
-
+.gridbox {
   width: 100%;
   position: relative;
   line-height: @line-height-base;
@@ -2535,7 +2537,8 @@
   }
 }
 // full width and 2/3 columns
-
+.three-one-column .column1,
+.one-three-column .column2,
 .one-one-two-column .column3,
 .one-two-column .column2,
 .single-column .column1,
