@@ -56,7 +56,7 @@ $(function () {
   }
 
   // Global smooth scroll to top
-  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Top\'><span class=\'icon-arrow\'></span></div>';
+  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
   $('body').append($scroller);
   scrollFunction();
 
