@@ -1,226 +1,547 @@
 @import "variables.less";
 @import "mixins.less"; // Extra gridbox styling for Bootstrap templates (prefixed with class "ku-bs").
 // Extends ku-gridboxes.less which was build for old Obvius page templates.
+
 // Extends ku-gridboxes.less which was build for old Obvius page templates.
 @media only screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-  // All single, 2/3 and double comlumn boxes with image
-  .double-column [class*=column],
+// All gridboxes with images
+// All single, 2/3 and double comlumn boxes with image
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.two-one-one-column .column2,
+.two-one-one-column .column3,
+.double-column [class*=column],
+.one-two-column .column1,
+.triple-column [class*=column],
+.two-one-column .column2,
+.one-three-column .column1 {
+  .size2,
+  .size3 {
+    &.with-img {
+      flex-direction: row;
+      color: @white-color;
+
+      // .theme-faelles & {
+      //   &.faculty_color {
+      //     background: @ku-red;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @blue;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @green;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @ku-darkgray;
+      //     color: @ku-gridbox-text;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @ku-darkblue;
+      //   }
+      // }
+      //
+      // .theme-science & {
+      //   &.faculty_color {
+      //     background: @science;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @science-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @science-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @science-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @science-sub_4;
+      //   }
+      // }
+      //
+      // .theme-hum & {
+      //   color: @white-color;
+      //
+      //   &.faculty_color {
+      //     background: @hum;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @hum-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @hum-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @hum-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @hum-sub_4;
+      //   }
+      // }
+      //
+      // .theme-teo & {
+      //   &.faculty_color {
+      //     background: @teol;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @teol-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @teol-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @teol-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @teol-sub_4;
+      //   }
+      // }
+      //
+      // .theme-sund & {
+      //   &.faculty_color {
+      //     background: @sund;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @sund-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @sund-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @sund-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @sund-sub_4;
+      //   }
+      // }
+      //
+      // .theme-samf & {
+      //   &.faculty_color {
+      //     background: @samf;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @samf-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @samf-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @samf-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @samf-sub_4;
+      //   }
+      // }
+      //
+      // .theme-jur & {
+      //   &.faculty_color {
+      //     background: @jura;
+      //   }
+      //
+      //   &.subcolor_1 {
+      //     background: @jura-sub_1;
+      //   }
+      //
+      //   &.subcolor_2 {
+      //     background: @jura-sub_2;
+      //   }
+      //
+      //   &.subcolor_3 {
+      //     background: @jura-sub_3;
+      //   }
+      //
+      //   &.subcolor_4 {
+      //     background: @jura-sub_4;
+      //   }
+      // }
+      //
+      // &.subcolor_5 {
+      //   background: @ku-gray;
+      // }
+      //
+      // &.subcolor_6 {
+      //   background: @white-color;
+      // }
+      //
+      // &.subcolor_7 {
+      //   background: @brown;
+      // }
+
+      &.text-over {
+        .header {
+          position: relative;
+          bottom: auto;
+          left: auto;
+        }
+
+        &:hover {
+          .header {
+            background: transparent!important;
+          }
+        }
+      }
+
+      &.text-down {
+        .header {
+          padding: 8px 5px 6px 10px;
+        }
+
+        &:before {
+          bottom: @margin10;
+          top: auto;
+        }
+      }
+
+      &.text-top {
+        &:before {
+          display: none;
+        }
+      }
+
+      .box1 {
+        flex: 1;
+
+        .text {
+          display: block;
+        }
+      }
+
+      .box2 {
+        flex: 0 0 235px;
+      }
+
+      &.full {
+        .box1 {
+          order: 2;
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+
+      &.outlined {
+        border-width: 1px;
+        background: transparent;
+
+        // .theme-faelles & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @ku-red;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @blue;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @green;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @ku-gridbox-text;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @ku-darkblue;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-science & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @science;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @science-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @science-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @science-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @science-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-hum & {
+        //   .header {
+        //     color: @white-color;
+        //   }
+        //
+        //   &.faculty_color {
+        //     .header {
+        //       color: @hum;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @hum-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @hum-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @hum-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @hum-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-teo & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @teol;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @teol-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @teol-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @teol-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @teol-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-sund & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @sund;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @sund-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @sund-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @sund-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @sund-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-samf & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @samf;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @samf-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @samf-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @samf-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @samf-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // .theme-jur & {
+        //   &.faculty_color {
+        //     .header {
+        //       color: @jura;
+        //     }
+        //   }
+        //
+        //   &.subcolor_1 {
+        //     .header {
+        //       color: @jura-sub_1;
+        //     }
+        //   }
+        //
+        //   &.subcolor_2 {
+        //     .header {
+        //       color: @jura-sub_2;
+        //     }
+        //   }
+        //
+        //   &.subcolor_3 {
+        //     .header {
+        //       color: @jura-sub_3;
+        //     }
+        //   }
+        //
+        //   &.subcolor_4 {
+        //     .header {
+        //       color: @jura-sub_4;
+        //     }
+        //   }
+        // }
+        //
+        // &.subcolor_5 {
+        //   .header {
+        //     color: @ku-gridbox-text;
+        //   }
+        // }
+        //
+        // &.subcolor_6 {
+        //   .header {
+        //     color: @ku-gridbox-text;
+        //   }
+        // }
+        //
+        // &.subcolor_7 {
+        //   .header {
+        //     color: @brown;
+        //   }
+        // }
+
+        .box1 {
+          order: 2;
+          flex: 1;
+
+          .header {
+            background: transparent!important;
+            position: relative;
+          }
+        }
+
+        .box2 {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  &.outlined {
+    border-width: 1px;
+  }
+  // Display text for certain boxes
+  .size4 {
+    .text {
+      display: block;
+    }
+  }
+}
+}
+@media only screen and (min-width: 681px) and (max-width: @screen-sm-min) {
+  // Front page / no menu
+  // 2-1-1 columns and 1-1-2 columns
   .one-one-two-column .column1,
   .one-one-two-column .column2,
-  .one-three-column .column1,
-  .one-two-column .column1,
-  .triple-column [class*=column],
-  .two-one-column .column2,
   .two-one-one-column .column2,
   .two-one-one-column .column3 {
     .size2,
     .size3 {
       &.with-img {
         flex-direction: row;
-        color: @white-color;
 
-        // .theme-faelles & {
-        //   &.faculty_color {
-        //     background: @ku-red;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @blue;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @green;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @ku-darkgray;
-        //     color: @ku-gridbox-text;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @ku-darkblue;
-        //   }
-        // }
-        //
-        // .theme-science & {
-        //   &.faculty_color {
-        //     background: @science;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @science-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @science-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @science-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @science-sub_4;
-        //   }
-        // }
-        //
-        // .theme-hum & {
-        //   color: @white-color;
-        //
-        //   &.faculty_color {
-        //     background: @hum;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @hum-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @hum-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @hum-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @hum-sub_4;
-        //   }
-        // }
-        //
-        // .theme-teo & {
-        //   &.faculty_color {
-        //     background: @teol;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @teol-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @teol-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @teol-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @teol-sub_4;
-        //   }
-        // }
-        //
-        // .theme-sund & {
-        //   &.faculty_color {
-        //     background: @sund;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @sund-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @sund-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @sund-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @sund-sub_4;
-        //   }
-        // }
-        //
-        // .theme-samf & {
-        //   &.faculty_color {
-        //     background: @samf;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @samf-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @samf-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @samf-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @samf-sub_4;
-        //   }
-        // }
-        //
-        // .theme-jur & {
-        //   &.faculty_color {
-        //     background: @jura;
-        //   }
-        //
-        //   &.subcolor_1 {
-        //     background: @jura-sub_1;
-        //   }
-        //
-        //   &.subcolor_2 {
-        //     background: @jura-sub_2;
-        //   }
-        //
-        //   &.subcolor_3 {
-        //     background: @jura-sub_3;
-        //   }
-        //
-        //   &.subcolor_4 {
-        //     background: @jura-sub_4;
-        //   }
-        // }
-        //
-        // &.subcolor_5 {
-        //   background: @ku-gray;
-        // }
-        //
-        // &.subcolor_6 {
-        //   background: @white-color;
-        // }
-        //
-        // &.subcolor_7 {
-        //   background: @brown;
-        // }
+        .box1 {
+          flex: 1;
 
-        &.text-over {
           .header {
+            background: 0 0!important;
             position: relative;
             bottom: auto;
             left: auto;
           }
-
-          &:hover {
-            .header {
-              background: transparent!important;
-            }
-          }
-        }
-
-        &.text-down {
-          .header {
-            padding: 8px 5px 6px 10px;
-          }
-
-          &:before {
-            bottom: @margin10;
-            top: auto;
-          }
-        }
-
-        &.text-top {
-          &:before {
-            display: none;
-          }
-        }
-
-        .box1 {
-          flex: 1;
 
           .text {
             display: block;
@@ -228,281 +549,11 @@
         }
 
         .box2 {
-          flex: 0 0 235px;
-        }
+          flex: 0 1 235px;
 
-        &.full {
-          .box1 {
-            order: 2;
-          }
-
-          .box2 {
-            order: 1;
-          }
-        }
-
-        &.outlined {
-          border-width: 1px;
-          background: transparent;
-
-          // .theme-faelles & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @ku-red;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @blue;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @green;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @ku-gridbox-text;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @ku-darkblue;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-science & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @science;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @science-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @science-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @science-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @science-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-hum & {
-          //   .header {
-          //     color: @white-color;
-          //   }
-          //
-          //   &.faculty_color {
-          //     .header {
-          //       color: @hum;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @hum-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @hum-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @hum-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @hum-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-teo & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @teol;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @teol-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @teol-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @teol-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @teol-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-sund & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @sund;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @sund-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @sund-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @sund-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @sund-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-samf & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @samf;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @samf-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @samf-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @samf-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @samf-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // .theme-jur & {
-          //   &.faculty_color {
-          //     .header {
-          //       color: @jura;
-          //     }
-          //   }
-          //
-          //   &.subcolor_1 {
-          //     .header {
-          //       color: @jura-sub_1;
-          //     }
-          //   }
-          //
-          //   &.subcolor_2 {
-          //     .header {
-          //       color: @jura-sub_2;
-          //     }
-          //   }
-          //
-          //   &.subcolor_3 {
-          //     .header {
-          //       color: @jura-sub_3;
-          //     }
-          //   }
-          //
-          //   &.subcolor_4 {
-          //     .header {
-          //       color: @jura-sub_4;
-          //     }
-          //   }
-          // }
-          //
-          // &.subcolor_5 {
-          //   .header {
-          //     color: @ku-gridbox-text;
-          //   }
-          // }
-          //
-          // &.subcolor_6 {
-          //   .header {
-          //     color: @ku-gridbox-text;
-          //   }
-          // }
-          //
-          // &.subcolor_7 {
-          //   .header {
-          //     color: @brown;
-          //   }
-          // }
-
-          .box1 {
-            order: 2;
-            flex: 1;
-
-            .header {
-              background: transparent!important;
-              position: relative;
-            }
-          }
-
-          .box2 {
-            order: 1;
+          img {
+            max-width: none!important;
+            max-height: 108%!important;
           }
         }
       }
