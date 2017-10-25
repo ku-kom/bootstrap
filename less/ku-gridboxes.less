@@ -1,6 +1,5 @@
 @import "variables.less";
-@import "mixins.less";
-// KU custom grid box styling
+@import "mixins.less"; // KU custom grid box styling
 // NEL:
 // This code was originally made for old Obvius page templates.
 // Please refer to the ku-gridboxes-bootstrap.less for gridboxes in Bootstrap templates.
@@ -2537,17 +2536,18 @@
   }
 }
 // full width and 2/3 columns
+
 .one-one-two-column .column1,
 .one-one-two-column .column2,
-.two-one-one-column .column2,
-.two-one-one-column .column3,
-.three-one-column .column1,
-.one-three-column .column2,
 .one-one-two-column .column3,
+.one-three-column .column2,
 .one-two-column .column2,
 .single-column .column1,
+.three-one-column .column1,
 .two-one-column .column1,
-.two-one-one-column .column1 {
+.two-one-one-column .column1,
+.two-one-one-column .column2,
+.two-one-one-column .column3 {
   .size4 {
     .text {
       display: block;
@@ -3215,14 +3215,17 @@
   .one-one-two-column .column2,
   .two-one-one-column .column2,
   .two-one-one-column .column3 {
-    .size2, .size3 {
-      flex-direction: column;
-      .text {
-        display: none;
+    .size2,
+    .size3 {
+      &.with-img {
+        flex-direction: column;
+
+        .text {
+          display: none;
+        }
       }
     }
   }
-
   // Display text for full width .size1 boxes
   .single-column .column1 {
     .size1 {

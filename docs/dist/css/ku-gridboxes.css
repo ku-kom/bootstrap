@@ -3986,14 +3986,14 @@
     max-width: none!important;
     max-height: none!important;
   }
-  .one-one-two-column .column1 .size2,
-  .one-one-two-column .column2 .size2,
-  .two-one-one-column .column2 .size2,
-  .two-one-one-column .column3 .size2,
-  .one-one-two-column .column1 .size3,
-  .one-one-two-column .column2 .size3,
-  .two-one-one-column .column2 .size3,
-  .two-one-one-column .column3 .size3 {
+  .one-one-two-column .column1 .size2.with-img,
+  .one-one-two-column .column2 .size2.with-img,
+  .two-one-one-column .column2 .size2.with-img,
+  .two-one-one-column .column3 .size2.with-img,
+  .one-one-two-column .column1 .size3.with-img,
+  .one-one-two-column .column2 .size3.with-img,
+  .two-one-one-column .column2 .size3.with-img,
+  .two-one-one-column .column3 .size3.with-img {
             flex-direction: column;
 
     -webkit-box-orient: vertical;
@@ -4001,14 +4001,14 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
   }
-  .one-one-two-column .column1 .size2 .text,
-  .one-one-two-column .column2 .size2 .text,
-  .two-one-one-column .column2 .size2 .text,
-  .two-one-one-column .column3 .size2 .text,
-  .one-one-two-column .column1 .size3 .text,
-  .one-one-two-column .column2 .size3 .text,
-  .two-one-one-column .column2 .size3 .text,
-  .two-one-one-column .column3 .size3 .text {
+  .one-one-two-column .column1 .size2.with-img .text,
+  .one-one-two-column .column2 .size2.with-img .text,
+  .two-one-one-column .column2 .size2.with-img .text,
+  .two-one-one-column .column3 .size2.with-img .text,
+  .one-one-two-column .column1 .size3.with-img .text,
+  .one-one-two-column .column2 .size3.with-img .text,
+  .two-one-one-column .column2 .size3.with-img .text,
+  .two-one-one-column .column3 .size3.with-img .text {
     display: none;
   }
   .single-column .column1 .size1 {
