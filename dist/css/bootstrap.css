@@ -9020,14 +9020,8 @@ nav {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 @media only screen and (min-width: 681px) and (max-width: 768px) {
-  .one-one-two-column .column1 .size2.with-img,
-  .one-one-two-column .column2 .size2.with-img,
-  .two-one-one-column .column2 .size2.with-img,
-  .two-one-one-column .column3 .size2.with-img,
-  .one-one-two-column .column1 .size3.with-img,
-  .one-one-two-column .column2 .size3.with-img,
-  .two-one-one-column .column2 .size3.with-img,
-  .two-one-one-column .column3 .size3.with-img {
+  .gcrow .gccolumn .gridbox .size2.with-img,
+  .gcrow .gccolumn .gridbox .size3.with-img {
             flex-direction: row;
 
     -webkit-box-orient: horizontal;
@@ -9035,63 +9029,33 @@ nav {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
-  .one-one-two-column .column1 .size2.with-img .box1,
-  .one-one-two-column .column2 .size2.with-img .box1,
-  .two-one-one-column .column2 .size2.with-img .box1,
-  .two-one-one-column .column3 .size2.with-img .box1,
-  .one-one-two-column .column1 .size3.with-img .box1,
-  .one-one-two-column .column2 .size3.with-img .box1,
-  .two-one-one-column .column2 .size3.with-img .box1,
-  .two-one-one-column .column3 .size3.with-img .box1 {
+  .gcrow .gccolumn .gridbox .size2.with-img .box1,
+  .gcrow .gccolumn .gridbox .size3.with-img .box1 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .one-one-two-column .column1 .size2.with-img .box1 .header,
-  .one-one-two-column .column2 .size2.with-img .box1 .header,
-  .two-one-one-column .column2 .size2.with-img .box1 .header,
-  .two-one-one-column .column3 .size2.with-img .box1 .header,
-  .one-one-two-column .column1 .size3.with-img .box1 .header,
-  .one-one-two-column .column2 .size3.with-img .box1 .header,
-  .two-one-one-column .column2 .size3.with-img .box1 .header,
-  .two-one-one-column .column3 .size3.with-img .box1 .header {
+  .gcrow .gccolumn .gridbox .size2.with-img .box1 .header,
+  .gcrow .gccolumn .gridbox .size3.with-img .box1 .header {
     position: relative;
     bottom: auto;
     left: auto;
     background: 0 0!important;
   }
-  .one-one-two-column .column1 .size2.with-img .box1 .text,
-  .one-one-two-column .column2 .size2.with-img .box1 .text,
-  .two-one-one-column .column2 .size2.with-img .box1 .text,
-  .two-one-one-column .column3 .size2.with-img .box1 .text,
-  .one-one-two-column .column1 .size3.with-img .box1 .text,
-  .one-one-two-column .column2 .size3.with-img .box1 .text,
-  .two-one-one-column .column2 .size3.with-img .box1 .text,
-  .two-one-one-column .column3 .size3.with-img .box1 .text {
+  .gcrow .gccolumn .gridbox .size2.with-img .box1 .text,
+  .gcrow .gccolumn .gridbox .size3.with-img .box1 .text {
     display: block;
   }
-  .one-one-two-column .column1 .size2.with-img .box2,
-  .one-one-two-column .column2 .size2.with-img .box2,
-  .two-one-one-column .column2 .size2.with-img .box2,
-  .two-one-one-column .column3 .size2.with-img .box2,
-  .one-one-two-column .column1 .size3.with-img .box2,
-  .one-one-two-column .column2 .size3.with-img .box2,
-  .two-one-one-column .column2 .size3.with-img .box2,
-  .two-one-one-column .column3 .size3.with-img .box2 {
+  .gcrow .gccolumn .gridbox .size2.with-img .box2,
+  .gcrow .gccolumn .gridbox .size3.with-img .box2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 235px;
         -ms-flex: 0 1 235px;
             flex: 0 1 235px;
   }
-  .one-one-two-column .column1 .size2.with-img .box2 img,
-  .one-one-two-column .column2 .size2.with-img .box2 img,
-  .two-one-one-column .column2 .size2.with-img .box2 img,
-  .two-one-one-column .column3 .size2.with-img .box2 img,
-  .one-one-two-column .column1 .size3.with-img .box2 img,
-  .one-one-two-column .column2 .size3.with-img .box2 img,
-  .two-one-one-column .column2 .size3.with-img .box2 img,
-  .two-one-one-column .column3 .size3.with-img .box2 img {
+  .gcrow .gccolumn .gridbox .size2.with-img .box2 img,
+  .gcrow .gccolumn .gridbox .size3.with-img .box2 img {
     max-width: none!important;
     max-height: 108%!important;
   }
