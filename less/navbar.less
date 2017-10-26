@@ -215,8 +215,8 @@
 
 .container,
 .container-fluid {
-   > .navbar-collapse,
-  > .navbar-header {
+   > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -347,8 +347,8 @@
       border: 0;
       box-shadow: none;
 
-      .dropdown-header,
-      > li > a {
+       > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
 
@@ -373,6 +373,56 @@
       > a {
         padding-top: @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
+      }
+    }
+  }
+}
+
+#topbar_menu {
+  &.navbar-nav {
+    > li {
+      > a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+}
+@media (min-width: @screen-sm-min) {
+  // KU news in global menu
+  .dropdown-menu {
+    &.nyheder {
+      top: 100%;
+
+      > li {
+        display: block;
+        width: 100%;
+        min-width: 250px;
+        padding: 5px;
+        overflow: auto;
+        white-space: normal;
+
+        > a {
+          display: inline;
+          padding: 0;
+          white-space: normal;
+
+          &:focus,
+          &:hover {
+            background-color: inherit;
+          }
+        }
+
+        img {
+          display: block;
+          float: left;
+          margin: 0 8px 5px 2px;
+          .img-thumbnail;
+        }
+
+        + li {
+          border-top: 1px dotted @gray;
+        }
       }
     }
   }
@@ -824,8 +874,7 @@
       left: (@grid-gutter-width / 2);
       width: 25%;
     }
-
-// English version
+    // English version
     html:lang(en) & {
       background-image: url('https://bootstrap.secure.ku.dk/img/toplogo_uk.svg');
       width: 75%;

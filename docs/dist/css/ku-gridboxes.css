@@ -5415,6 +5415,7 @@
     position: relative;
     bottom: auto;
     left: auto;
+    background: 0;
   }
   .one-one-two-column .column1 .size2.with-img.text-over:hover .header,
   .one-one-two-column .column2 .size2.with-img.text-over:hover .header,
@@ -6637,11 +6638,15 @@
     -ms-flex-order: 1;
             order: 1;
   }
+  .three-one-column .column1 .size2.with-img.text-down:hover .header,
+  .one-three-column .column2 .size2.with-img.text-down:hover .header,
   .one-one-two-column .column3 .size2.with-img.text-down:hover .header,
   .one-two-column .column2 .size2.with-img.text-down:hover .header,
   .single-column .column1 .size2.with-img.text-down:hover .header,
   .two-one-column .column1 .size2.with-img.text-down:hover .header,
   .two-one-one-column .column1 .size2.with-img.text-down:hover .header,
+  .three-one-column .column1 .size3.with-img.text-down:hover .header,
+  .one-three-column .column2 .size3.with-img.text-down:hover .header,
   .one-one-two-column .column3 .size3.with-img.text-down:hover .header,
   .one-two-column .column2 .size3.with-img.text-down:hover .header,
   .single-column .column1 .size3.with-img.text-down:hover .header,
@@ -6649,11 +6654,15 @@
   .two-one-one-column .column1 .size3.with-img.text-down:hover .header {
     background: transparent!important;
   }
+  .three-one-column .column1 .size2.with-img.text-down.subcolor_5,
+  .one-three-column .column2 .size2.with-img.text-down.subcolor_5,
   .one-one-two-column .column3 .size2.with-img.text-down.subcolor_5,
   .one-two-column .column2 .size2.with-img.text-down.subcolor_5,
   .single-column .column1 .size2.with-img.text-down.subcolor_5,
   .two-one-column .column1 .size2.with-img.text-down.subcolor_5,
   .two-one-one-column .column1 .size2.with-img.text-down.subcolor_5,
+  .three-one-column .column1 .size3.with-img.text-down.subcolor_5,
+  .one-three-column .column2 .size3.with-img.text-down.subcolor_5,
   .one-one-two-column .column3 .size3.with-img.text-down.subcolor_5,
   .one-two-column .column2 .size3.with-img.text-down.subcolor_5,
   .single-column .column1 .size3.with-img.text-down.subcolor_5,
