@@ -379,11 +379,12 @@
 }
 
 #topbar_menu {
+  height: 100%;
   &.navbar-nav {
     > li {
       > a {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding: 0 8px;
+        line-height: @ku-topbar-height;
       }
     }
   }
@@ -700,22 +701,22 @@
         //background-color: @navbar-inverse-link-hover-bg;
       }
       // KU language switcher icons
-      &.dan,
-      &.eng {
+      &.dansk,
+      &.english {
+        width: 74px;
         padding-right: (@grid-gutter-width / 2);
         display: inline-block;
         background-repeat: no-repeat;
-        background-position: right 7px;
       }
 
-      &.eng {
+      &.english {
         background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
-        width: 71px;
+        background-position: right 8px;
       }
 
-      &.dan {
+      &.dansk {
         background-image: url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
-        width: 68px;
+        background-position: right 9px;
       }
     }
 

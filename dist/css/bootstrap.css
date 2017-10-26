@@ -4578,7 +4578,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.collapse {
     display: block !important;
-    height: 30px !important;
+    height: 28px !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
@@ -4740,9 +4740,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-bottom: 12.5px;
   }
 }
+#topbar_menu {
+  height: 100%;
+}
 #topbar_menu.navbar-nav > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 0 8px;
+  line-height: 28px;
 }
 @media (min-width: 768px) {
   .dropdown-menu.nyheder {
@@ -5005,7 +5008,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   color: #ccc;
 }
 .navbar-inverse {
-  height: 30px;
+  height: 28px;
   background-color: #777;
   border-color: #ccc;
 }
@@ -5027,20 +5030,20 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a:hover {
   text-decoration: underline;
 }
-.navbar-inverse .navbar-nav > li > a.dan,
-.navbar-inverse .navbar-nav > li > a.eng {
+.navbar-inverse .navbar-nav > li > a.dansk,
+.navbar-inverse .navbar-nav > li > a.english {
   display: inline-block;
+  width: 74px;
   padding-right: 13px;
   background-repeat: no-repeat;
-  background-position: right 7px;
 }
-.navbar-inverse .navbar-nav > li > a.eng {
-  width: 71px;
+.navbar-inverse .navbar-nav > li > a.english {
   background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+  background-position: right 8px;
 }
-.navbar-inverse .navbar-nav > li > a.dan {
-  width: 68px;
+.navbar-inverse .navbar-nav > li > a.dansk {
   background-image: url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
+  background-position: right 9px;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
@@ -7279,7 +7282,7 @@ main:after,
     top: 0;
     right: 0;
     z-index: 1040;
-    padding: 8px 10px;
+    padding: 7px 10px;
     background-color: #777;
   }
   .leftmenu-toggle:hover {
