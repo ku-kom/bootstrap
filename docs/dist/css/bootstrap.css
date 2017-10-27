@@ -4744,7 +4744,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   height: 100%;
 }
 #topbar_menu.navbar-nav > li > a {
-  padding: 0 8px;
+  padding: 0 7px;
   line-height: 28px;
 }
 @media (min-width: 768px) {
@@ -5031,13 +5031,13 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   text-decoration: underline;
 }
 .navbar-inverse .navbar-nav > li > a.dansk,
-.navbar-inverse .navbar-nav > li > a.english {
+.navbar-inverse .navbar-nav > li > a.engelsk {
   display: inline-block;
   width: 74px;
   padding-right: 13px;
   background-repeat: no-repeat;
 }
-.navbar-inverse .navbar-nav > li > a.english {
+.navbar-inverse .navbar-nav > li > a.engelsk {
   background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
   background-position: right 8px;
 }
