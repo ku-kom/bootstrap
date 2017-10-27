@@ -18,7 +18,7 @@
 @gray-ddd:               #ddd;
 @gray-lighter:           #eee;
 
-@semi-white:            #f1f1f1;
+@semi-white:             #f1f1f1;
 @white-color:            #fff;
 
 @ku-search-icons:        #9d9d9d;
@@ -26,7 +26,7 @@
 @ku-footer-icon-bg:      #757575;
 @ku-footer-icon-size:    28px;
 
-@ku-jump-to-top:        #757474;
+@ku-jump-to-top:         #757474;
 
 // KU specific colors
 
@@ -128,7 +128,7 @@
 @ku-entry-end:          #edece9;
 @ku-entry-border:       #e8e8e8;
 
-@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-primary:         darken(#7ea5a8, 6.5%); // #337ab7
 @brand-success:         #85ae33;
 @brand-info:            #7ea5a8;
 @brand-warning:         #e57002;
@@ -239,7 +239,7 @@
 @border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    @white-color;
 //** Global background color for active items (e.g., navs or dropdowns).
 @component-active-bg:       @brand-primary;
 
@@ -287,19 +287,19 @@
 @btn-primary-bg:                 #fbfbfb;
 @btn-primary-border:             #b6b6b6;
 
-@btn-success-color:              #fff;
+@btn-success-color:              @white-color;
 @btn-success-bg:                 @brand-success;
 @btn-success-border:             darken(@btn-success-bg, 5%);
 
-@btn-info-color:                 #fff;
+@btn-info-color:                 @white-color;
 @btn-info-bg:                    @brand-info;
 @btn-info-border:                darken(@btn-info-bg, 5%);
 
-@btn-warning-color:              #fff;
+@btn-warning-color:              @white-color;
 @btn-warning-bg:                 @brand-warning;
 @btn-warning-border:             darken(@btn-warning-bg, 5%);
 
-@btn-danger-color:               #fff;
+@btn-danger-color:               @white-color;
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
@@ -316,7 +316,7 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       @white-color;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
@@ -367,7 +367,7 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    #fff;
+@dropdown-bg:                    @white-color;
 //** Dropdown menu `border-color`.
 @dropdown-border:                rgba(0,0,0,.15);
 //** Dropdown menu `border-color` **for IE8**.
@@ -507,7 +507,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @gray-dark;
-@navbar-default-bg:                #fff;
+@navbar-default-bg:                @white-color;
 @navbar-default-border:            @gray;
 
 // Navbar links
@@ -618,7 +618,7 @@
 @pagination-active-border:             @gray-999;
 
 @pagination-disabled-color:            @gray-light;
-@pagination-disabled-bg:               #fff;
+@pagination-disabled-bg:               @white-color;
 @pagination-disabled-border:           @gray-ddd;
 
 
@@ -654,21 +654,21 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
-@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-success-text:             #1a321a;
+@state-success-bg:               #85ae33;
+@state-success-border:           #889a2d;
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
-@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+@state-info-text:                @white-color;
+@state-info-bg:                  #7ea5a8;
+@state-info-border:              #699a95;
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-warning-text:             #6d501d;
+@state-warning-bg:               #faebcc;
+@state-warning-border:           #fbe4b4;
 
-@state-danger-text:              #a94442;
+@state-danger-text:              #7b161a;
 @state-danger-bg:                #f2dede;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@state-danger-border:            #ebccd1;
 
 
 //== Tooltips
@@ -678,7 +678,7 @@
 //** Tooltip max width
 @tooltip-max-width:           200px;
 //** Tooltip text color
-@tooltip-color:               #fff;
+@tooltip-color:               @white-color;
 //** Tooltip background color
 @tooltip-bg:                  #000;
 @tooltip-opacity:             .9;
@@ -694,13 +694,13 @@
 //##
 
 //** Popover body background color
-@popover-bg:                          #fff;
+@popover-bg:                          @white-color;
 //** Popover maximum width
 @popover-max-width:                   276px;
 //** Popover border color
 @popover-border-color:                rgba(0,0,0,.2);
 //** Popover fallback border color
-@popover-fallback-border-color:       #ccc;
+@popover-fallback-border-color:       @gray;
 
 //** Popover title background color
 @popover-title-bg:                    darken(@popover-bg, 3%);
@@ -736,9 +736,9 @@
 @label-danger-bg:             @brand-danger;
 
 //** Default label text color
-@label-color:                 #fff;
+@label-color:                 @white-color;
 //** Default text color of a linked label
-@label-link-hover-color:      #fff;
+@label-link-hover-color:      @white-color;
 
 
 //== Modals
@@ -754,7 +754,7 @@
 @modal-title-line-height:     @line-height-base;
 
 //** Background color of modal content area
-@modal-content-bg:                             #fff;
+@modal-content-bg:                             @white-color;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0,0,0,.2);
 //** Modal content border color **for IE8**
@@ -806,7 +806,7 @@
 //** Background color of the whole progress component
 @progress-bg:                 #f5f5f5;
 //** Progress bar text color
-@progress-bar-color:          #fff;
+@progress-bar-color:          @white-color;
 //** Variable for setting rounded corners on progress bar.
 @progress-border-radius:      @border-radius-base;
 
@@ -827,7 +827,7 @@
 //##
 
 //** Background color on `.list-group-item`
-@list-group-bg:                 #fff;
+@list-group-bg:                 @white-color;
 //** `.list-group-item` border color
 @list-group-border:             #ddd;
 //** List group border radius
@@ -860,7 +860,7 @@
 //
 //##
 
-@panel-bg:                    #fff;
+@panel-bg:                    @white-color;
 @panel-body-padding:          10px;
 @panel-heading-padding:       6px 10px;
 // KU specific
@@ -877,7 +877,7 @@
 @panel-default-border:        #d5d5d5;
 @panel-default-heading-bg:    #f5f5f5;
 
-@panel-primary-text:          #fff;
+@panel-primary-text:          @white-color;
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
 
@@ -910,7 +910,7 @@
 //** Padding around the thumbnail image
 @thumbnail-padding:           2px;
 //** Thumbnail background color
-@thumbnail-bg:                @body-bg;
+@thumbnail-bg:                @white-color;
 //** Thumbnail border color
 @thumbnail-border:            @gray-ddd;
 //** Thumbnail border radius
@@ -936,15 +936,15 @@
 //
 //##
 
-@badge-color:                 #fff;
+@badge-color:                 @white-color;
 //** Linked badge text color on hover
-@badge-link-hover-color:      #fff;
+@badge-link-hover-color:      @white-color;
 @badge-bg:                    @gray-light;
 
 //** Badge text color in active nav link
 @badge-active-color:          @text-color;
 //** Badge background color in active nav link
-@badge-active-bg:             #fff;
+@badge-active-bg:             @white-color;
 
 @badge-font-weight:           bold;
 @badge-line-height:           1;
@@ -973,15 +973,15 @@
 
 @carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
 
-@carousel-control-color:                      #fff;
+@carousel-control-color:                      @white-color;
 @carousel-control-width:                      15%;
 @carousel-control-opacity:                    .5;
 @carousel-control-font-size:                  20px;
 
-@carousel-indicator-active-bg:                #fff;
-@carousel-indicator-border-color:             #fff;
+@carousel-indicator-active-bg:                @white-color;
+@carousel-indicator-border-color:             @white-color;
 
-@carousel-caption-color:                      #fff;
+@carousel-caption-color:                      @white-color;
 
 
 //== Close
@@ -990,7 +990,7 @@
 
 @close-font-weight:           bold;
 @close-color:                 #000;
-@close-text-shadow:           0 1px 0 #fff;
+@close-text-shadow:           0 1px 0 @white-color;
 
 
 //== Code
@@ -1000,7 +1000,7 @@
 @code-color:                  #c7254e;
 @code-bg:                     #f9f2f4;
 
-@kbd-color:                   #fff;
+@kbd-color:                   @white-color;
 @kbd-bg:                      #333;
 
 @pre-bg:                      #f5f5f5;

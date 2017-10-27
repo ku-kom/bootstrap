@@ -519,7 +519,9 @@ h4 code {
 }
 @media (min-width: 768px) {
   .bs-docs-sidebar {
+    z-index: 20;
     padding-left: 20px;
+    background-color: #fff;
   }
 }
 
@@ -579,7 +581,7 @@ h4 code {
 }
 
 /* Back to top (hidden on mobile) */
-.back-to-top,
+/*.back-to-top,
 .bs-docs-theme-toggle {
   display: none;
   padding: 4px 10px;
@@ -603,7 +605,7 @@ h4 code {
   .bs-docs-theme-toggle {
     display: block;
   }
-}
+}*/
 
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
