@@ -144,8 +144,11 @@
 // -------------------------
 
 .nav-pills {
+  margin-left: -1px; // Taking care of li's in multiple lines
   > li {
     float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
     // Links rendered as pills
     > a {
       color: @text-color;
@@ -155,10 +158,6 @@
       &:hover {
         background-color: @ku-nav-tabs-and-pills-hover-bg-color
       }
-    }
-
-    + li {
-      margin-left: 2px;
     }
     // Active state
     &.active > a {
