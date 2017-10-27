@@ -256,12 +256,3 @@ ul.workload .total {
     content: "\e260";
   }
 }
-
-
-/* To be removed shortly */
-
-@media (max-width: 767px) {
-  html:not(.non-responsive) .globalfooter .footercontent .footercolumn .footer-heading:after {
-    text-transform: none;
-  }
-}

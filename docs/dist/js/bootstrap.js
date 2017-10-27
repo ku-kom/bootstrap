@@ -29,8 +29,8 @@ if (typeof jQuery === 'undefined') {
   if ($('meta[name="viewport"]').length) {
     var $responsiveEnabled = true;
   }
-  var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
-  var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
+  var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
+  var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
@@ -2475,7 +2475,7 @@ $(function () {
   }
 
   // Global smooth scroll to top
-  var $scroller = '<div class=\'scrolltop\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
+  var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
   $('body').append($scroller);
   scrollFunction();
 
@@ -2494,9 +2494,9 @@ $(function () {
     var $scroll = $('#scrolltop');
     if ($scroll) {
       if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-        $scroll.addClass('fadeIn');
+        $scroll.addClass('in');
       } else {
-        $scroll.removeClass('fadeIn');
+        $scroll.removeClass('in');
       }
     }
   }

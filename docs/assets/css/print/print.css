@@ -27,7 +27,7 @@ main {
   width: 50%;
   float: left!important;
 }
-.navbar, #mobileleftmenu, .ku-leftmenu, .globalfooter {
+.navbar, #mobileleftmenu, .ku-leftmenu, #globalfooter {
   display: none;
 }
 

@@ -11,8 +11,8 @@
   if ($('meta[name="viewport"]').length) {
     var $responsiveEnabled = true;
   }
-  var $footerHeader = $('.globalfooter .footer-heading[data-heading="toggle"]');
-  var $footerColumn = $('.globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
+  var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
+  var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
