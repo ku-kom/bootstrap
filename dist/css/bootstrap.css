@@ -4742,6 +4742,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 #topbar_menu {
   height: 100%;
+  margin-right: 0;
 }
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
@@ -5033,8 +5034,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a.dansk,
 .navbar-inverse .navbar-nav > li > a.engelsk {
   display: inline-block;
-  width: 74px;
-  padding-right: 13px;
+  width: 71px;
   background-repeat: no-repeat;
 }
 .navbar-inverse .navbar-nav > li > a.engelsk {
