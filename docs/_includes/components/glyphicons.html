@@ -2,14 +2,15 @@
   <h1 id="glyphicons" class="page-header">Glyphicons</h1>
 
   <h2 id="glyphicons-glyphs">Available glyphs</h2>
-  <p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
+  <p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank
+    you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
   <div class="bs-glyphicons">
     <ul class="bs-glyphicons-list">
       {% for iconClassName in site.data.glyphicons %}
-        <li>
-          <span class="glyphicon {{ iconClassName }}" aria-hidden="true"></span>
-          <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
-        </li>
+      <li>
+        <span class="glyphicon {{ iconClassName }}" aria-hidden="true"></span>
+        <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
+      </li>
       {% endfor %}
     </ul>
   </div>
@@ -37,13 +38,14 @@
   </div>
   <div class="bs-callout bs-callout-warning" id="callout-glyphicons-accessibility">
     <h4>Accessible icons</h4>
-    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden="true"</code> attribute.</p>
+    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them
+      with the <code>aria-hidden="true"</code> attribute.</p>
     <p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the <code>.sr-only</code> class.</p>
-    <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
+    <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive
+      technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
   </div>
-{% highlight html %}
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-{% endhighlight %}
+  {% highlight html %}
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> {% endhighlight %}
 
 
   <h2 id="glyphicons-examples">Examples</h2>
@@ -64,28 +66,116 @@
       <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
     </div>
   </div>
-{% highlight html %}
-<button type="button" class="btn btn-default" aria-label="Left Align">
+  {% highlight html %}
+  <button type="button" class="btn btn-default" aria-label="Left Align">
   <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
 </button>
 
-<button type="button" class="btn btn-default btn-lg">
+  <button type="button" class="btn btn-default btn-lg">
   <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button>
-{% endhighlight %}
+</button> {% endhighlight %}
   <p>An icon used in an <a href="#alerts">alert</a> to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
   <div class="bs-example" data-example-id="glyphicons-accessibility">
     <div class="alert alert-danger" role="alert">
       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span class="sr-only">Error:</span>
-      Enter a valid email address
+      <span class="sr-only">Error:</span> Enter a valid email address
     </div>
   </div>
+  {% highlight html %}
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span> Enter a valid email address
+  </div>
+  {% endhighlight %}
+</div>
+
+<!-- KU custom font icon -->
+<h2 id="ku-icon-examples">KU custom icons</h2>
+<p>Special KU icons not included in the Glyphicons above.</p>
+<p>Implement like Glyphicons above: <code>&lt;span class="icon icon-facebook" aria-hidden="true"&gt;&lt;/span&gt;</code> or if needed, use a list:</p>
+<div class="bs-example" data-example-id="ku-icons-general">
+  <ul class="social-icons">
+    <li>
+      <a href="#" title="Facebook"><span class="icon icon-facebook" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="LinkedIn"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="Twitter"><span class="icon icon-twitter" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="Instagram"><span class="icon icon-instagram" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="YouTube"><span class="icon icon-youtube" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="Coursera"><span class="icon icon-coursera" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="KU videoportal"><span class="icon icon-video" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="Vimeo"><span class="icon icon-vimeo" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="The Conversation"><span class="icon icon-conversation" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="Futurity"><span class="icon icon-futurity" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#" title="RSS"><span class="icon icon-rss" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <span class="icon icon-ku-logo" aria-hidden="true"></span>
+    </li>
+    <li>
+      <span class="icon icon-padlock" aria-hidden="true"></span>
+    </li>
+  </ul>
+</div>
 {% highlight html %}
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Error:</span>
-  Enter a valid email address
-</div>
+<ul class="social-icons">
+  <li>
+    <a href="#" title="Facebook"><span class="icon icon-facebook" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="LinkedIn"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="Twitter"><span class="icon icon-twitter" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="Instagram"><span class="icon icon-instagram" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="YouTube"><span class="icon icon-youtube" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="Coursera"><span class="icon icon-coursera" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="KU videoportal"><span class="icon icon-video" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="Vimeo"><span class="icon icon-vimeo" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="The Conversation"><span class="icon icon-conversation" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="Futurity"><span class="icon icon-futurity" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <a href="#" title="RSS"><span class="icon icon-rss" aria-hidden="true"></span></a>
+  </li>
+  <li>
+    <span class="icon icon-ku-logo" aria-hidden="true"></span>
+  </li>
+  <li>
+    <span class="icon icon-padlock" aria-hidden="true"></span>
+  </li>
+</ul>
 {% endhighlight %}
-</div>

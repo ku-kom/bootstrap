@@ -3,6 +3,7 @@
 // --------------------------------------------------
   .ku-leftmenu {
     padding-top: @grid-gutter-height;
+    line-height: 1.333333;
     .ku-navbar-header {
       font-weight: bold;
       margin-bottom: @grid-gutter-width;
@@ -246,6 +247,7 @@
               display: block;
 
               &::before {
+                font-size: 8px;
                 content: "\25A0";
                 color: @ku-red;
 
@@ -272,7 +274,6 @@
                 .theme-teo & {
                   color: @teol;
                 }
-                font-size: 9px;
               }
 
               &:hover::before {
@@ -287,7 +288,7 @@
               li {
                 > a {
                   &::before {
-                    font-size: 8px;
+                    font-size: 7px;
                     top: 4px;
                     }
                   }
