@@ -412,3 +412,139 @@
   background: rgba(176, 213, 78, 0.83);
   color: #fff;
 }
+@media only screen and (min-width: 870px) {
+  .theme-sund .double-column [class*=column] .size2.with-img.outlined::before,
+  .theme-sund .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-sund .triple-column [class*=column] .size2.with-img.outlined::before,
+  .theme-sund .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-sund .double-column [class*=column] .size3.with-img.outlined::before,
+  .theme-sund .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-sund .triple-column [class*=column] .size3.with-img.outlined::before,
+  .theme-sund .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 869px) {
+  .theme-sund .double-column [class*=column] .size2.with-img.faculty_color,
+  .theme-sund .one-one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-sund .one-one-two-column .column2 .size2.with-img.faculty_color,
+  .theme-sund .one-three-column .column1 .size2.with-img.faculty_color,
+  .theme-sund .one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-sund .triple-column [class*=column] .size2.with-img.faculty_color,
+  .theme-sund .two-one-column .column2 .size2.with-img.faculty_color,
+  .theme-sund .two-one-one-column .column2 .size2.with-img.faculty_color,
+  .theme-sund .two-one-one-column .column3 .size2.with-img.faculty_color,
+  .theme-sund .double-column [class*=column] .size3.with-img.faculty_color,
+  .theme-sund .one-one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-sund .one-one-two-column .column2 .size3.with-img.faculty_color,
+  .theme-sund .one-three-column .column1 .size3.with-img.faculty_color,
+  .theme-sund .one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-sund .triple-column [class*=column] .size3.with-img.faculty_color,
+  .theme-sund .two-one-column .column2 .size3.with-img.faculty_color,
+  .theme-sund .two-one-one-column .column2 .size3.with-img.faculty_color,
+  .theme-sund .two-one-one-column .column3 .size3.with-img.faculty_color {
+    background: #2a216a;
+  }
+  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_1,
+  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_1,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_1,
+  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_1,
+  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_1,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+    background: #77b6e5;
+  }
+  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_2,
+  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_2,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_2,
+  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_2,
+  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_2,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+    background: #0f4576;
+  }
+  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_3,
+  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_3,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_3,
+  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_3,
+  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_3,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+    background: #00706e;
+  }
+  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_4,
+  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_4,
+  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_4,
+  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_4,
+  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_4,
+  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+    background: #b0d54e;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
+    background: rgba(42, 33, 106, 0.83);
+  }
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
+    background: rgba(119, 182, 229, 0.83);
+  }
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
+    background: rgba(15, 69, 118, 0.83);
+  }
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
+    background: rgba(0, 112, 110, 0.83);
+  }
+  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
+    background: rgba(176, 213, 78, 0.83);
+  }
+}

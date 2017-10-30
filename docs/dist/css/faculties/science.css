@@ -411,3 +411,139 @@
   background: rgba(133, 168, 174, 0.83);
   color: #fff;
 }
+@media only screen and (min-width: 870px) {
+  .theme-science .double-column [class*=column] .size2.with-img.outlined::before,
+  .theme-science .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-science .triple-column [class*=column] .size2.with-img.outlined::before,
+  .theme-science .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-science .double-column [class*=column] .size3.with-img.outlined::before,
+  .theme-science .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-science .triple-column [class*=column] .size3.with-img.outlined::before,
+  .theme-science .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 869px) {
+  .theme-science .double-column [class*=column] .size2.with-img.faculty_color,
+  .theme-science .one-one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-science .one-one-two-column .column2 .size2.with-img.faculty_color,
+  .theme-science .one-three-column .column1 .size2.with-img.faculty_color,
+  .theme-science .one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-science .triple-column [class*=column] .size2.with-img.faculty_color,
+  .theme-science .two-one-column .column2 .size2.with-img.faculty_color,
+  .theme-science .two-one-one-column .column2 .size2.with-img.faculty_color,
+  .theme-science .two-one-one-column .column3 .size2.with-img.faculty_color,
+  .theme-science .double-column [class*=column] .size3.with-img.faculty_color,
+  .theme-science .one-one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-science .one-one-two-column .column2 .size3.with-img.faculty_color,
+  .theme-science .one-three-column .column1 .size3.with-img.faculty_color,
+  .theme-science .one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-science .triple-column [class*=column] .size3.with-img.faculty_color,
+  .theme-science .two-one-column .column2 .size3.with-img.faculty_color,
+  .theme-science .two-one-one-column .column2 .size3.with-img.faculty_color,
+  .theme-science .two-one-one-column .column3 .size3.with-img.faculty_color {
+    background: #46743c;
+  }
+  .theme-science .double-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-science .one-one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-science .one-one-two-column .column2 .size2.with-img.subcolor_1,
+  .theme-science .one-three-column .column1 .size2.with-img.subcolor_1,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-science .triple-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-science .two-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-science .two-one-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-science .two-one-one-column .column3 .size2.with-img.subcolor_1,
+  .theme-science .double-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-science .one-one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-science .one-one-two-column .column2 .size3.with-img.subcolor_1,
+  .theme-science .one-three-column .column1 .size3.with-img.subcolor_1,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-science .triple-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-science .two-one-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-science .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+    background: #dfaf48;
+  }
+  .theme-science .double-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-science .one-one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-science .one-one-two-column .column2 .size2.with-img.subcolor_2,
+  .theme-science .one-three-column .column1 .size2.with-img.subcolor_2,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-science .triple-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-science .two-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-science .two-one-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-science .two-one-one-column .column3 .size2.with-img.subcolor_2,
+  .theme-science .double-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-science .one-one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-science .one-one-two-column .column2 .size3.with-img.subcolor_2,
+  .theme-science .one-three-column .column1 .size3.with-img.subcolor_2,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-science .triple-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-science .two-one-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-science .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+    background: #a4c1a9;
+  }
+  .theme-science .double-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-science .one-one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-science .one-one-two-column .column2 .size2.with-img.subcolor_3,
+  .theme-science .one-three-column .column1 .size2.with-img.subcolor_3,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-science .triple-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-science .two-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-science .two-one-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-science .two-one-one-column .column3 .size2.with-img.subcolor_3,
+  .theme-science .double-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-science .one-one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-science .one-one-two-column .column2 .size3.with-img.subcolor_3,
+  .theme-science .one-three-column .column1 .size3.with-img.subcolor_3,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-science .triple-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-science .two-one-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-science .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+    background: #bea986;
+  }
+  .theme-science .double-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-science .one-one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-science .one-one-two-column .column2 .size2.with-img.subcolor_4,
+  .theme-science .one-three-column .column1 .size2.with-img.subcolor_4,
+  .theme-science .one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-science .triple-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-science .two-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-science .two-one-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-science .two-one-one-column .column3 .size2.with-img.subcolor_4,
+  .theme-science .double-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-science .one-one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-science .one-one-two-column .column2 .size3.with-img.subcolor_4,
+  .theme-science .one-three-column .column1 .size3.with-img.subcolor_4,
+  .theme-science .one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-science .triple-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-science .two-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-science .two-one-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-science .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+    background: #85a8ae;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
+    background: rgba(70, 116, 60, 0.83);
+  }
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
+    background: rgba(223, 175, 72, 0.83);
+  }
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
+    background: rgba(164, 193, 169, 0.83);
+  }
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
+    background: rgba(190, 169, 134, 0.83);
+  }
+  .theme-science .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-science .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
+    background: rgba(133, 168, 174, 0.83);
+  }
+}

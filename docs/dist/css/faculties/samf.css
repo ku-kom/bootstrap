@@ -411,3 +411,139 @@
   background: rgba(125, 138, 139, 0.83);
   color: #fff;
 }
+@media only screen and (min-width: 870px) {
+  .theme-samf .double-column [class*=column] .size2.with-img.outlined::before,
+  .theme-samf .one-two-column .column1 .size2.with-img.outlined::before,
+  .theme-samf .triple-column [class*=column] .size2.with-img.outlined::before,
+  .theme-samf .two-one-column .column2 .size2.with-img.outlined::before,
+  .theme-samf .double-column [class*=column] .size3.with-img.outlined::before,
+  .theme-samf .one-two-column .column1 .size3.with-img.outlined::before,
+  .theme-samf .triple-column [class*=column] .size3.with-img.outlined::before,
+  .theme-samf .two-one-column .column2 .size3.with-img.outlined::before {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 869px) {
+  .theme-samf .double-column [class*=column] .size2.with-img.faculty_color,
+  .theme-samf .one-one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-samf .one-one-two-column .column2 .size2.with-img.faculty_color,
+  .theme-samf .one-three-column .column1 .size2.with-img.faculty_color,
+  .theme-samf .one-two-column .column1 .size2.with-img.faculty_color,
+  .theme-samf .triple-column [class*=column] .size2.with-img.faculty_color,
+  .theme-samf .two-one-column .column2 .size2.with-img.faculty_color,
+  .theme-samf .two-one-one-column .column2 .size2.with-img.faculty_color,
+  .theme-samf .two-one-one-column .column3 .size2.with-img.faculty_color,
+  .theme-samf .double-column [class*=column] .size3.with-img.faculty_color,
+  .theme-samf .one-one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-samf .one-one-two-column .column2 .size3.with-img.faculty_color,
+  .theme-samf .one-three-column .column1 .size3.with-img.faculty_color,
+  .theme-samf .one-two-column .column1 .size3.with-img.faculty_color,
+  .theme-samf .triple-column [class*=column] .size3.with-img.faculty_color,
+  .theme-samf .two-one-column .column2 .size3.with-img.faculty_color,
+  .theme-samf .two-one-one-column .column2 .size3.with-img.faculty_color,
+  .theme-samf .two-one-one-column .column3 .size3.with-img.faculty_color {
+    background: #e13718;
+  }
+  .theme-samf .double-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_1,
+  .theme-samf .one-three-column .column1 .size2.with-img.subcolor_1,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_1,
+  .theme-samf .triple-column [class*=column] .size2.with-img.subcolor_1,
+  .theme-samf .two-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_1,
+  .theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_1,
+  .theme-samf .double-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_1,
+  .theme-samf .one-three-column .column1 .size3.with-img.subcolor_1,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_1,
+  .theme-samf .triple-column [class*=column] .size3.with-img.subcolor_1,
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_1,
+  .theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+    background: #2a3d66;
+  }
+  .theme-samf .double-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_2,
+  .theme-samf .one-three-column .column1 .size2.with-img.subcolor_2,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_2,
+  .theme-samf .triple-column [class*=column] .size2.with-img.subcolor_2,
+  .theme-samf .two-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_2,
+  .theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_2,
+  .theme-samf .double-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_2,
+  .theme-samf .one-three-column .column1 .size3.with-img.subcolor_2,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_2,
+  .theme-samf .triple-column [class*=column] .size3.with-img.subcolor_2,
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_2,
+  .theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+    background: #a0b763;
+  }
+  .theme-samf .double-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_3,
+  .theme-samf .one-three-column .column1 .size2.with-img.subcolor_3,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_3,
+  .theme-samf .triple-column [class*=column] .size2.with-img.subcolor_3,
+  .theme-samf .two-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_3,
+  .theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_3,
+  .theme-samf .double-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_3,
+  .theme-samf .one-three-column .column1 .size3.with-img.subcolor_3,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_3,
+  .theme-samf .triple-column [class*=column] .size3.with-img.subcolor_3,
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_3,
+  .theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+    background: #95c1b0;
+  }
+  .theme-samf .double-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_4,
+  .theme-samf .one-three-column .column1 .size2.with-img.subcolor_4,
+  .theme-samf .one-two-column .column1 .size2.with-img.subcolor_4,
+  .theme-samf .triple-column [class*=column] .size2.with-img.subcolor_4,
+  .theme-samf .two-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_4,
+  .theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_4,
+  .theme-samf .double-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_4,
+  .theme-samf .one-three-column .column1 .size3.with-img.subcolor_4,
+  .theme-samf .one-two-column .column1 .size3.with-img.subcolor_4,
+  .theme-samf .triple-column [class*=column] .size3.with-img.subcolor_4,
+  .theme-samf .two-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_4,
+  .theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+    background: #7d8a8b;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
+    background: rgba(225, 55, 24, 0.83);
+  }
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
+    background: rgba(42, 61, 102, 0.83);
+  }
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
+    background: rgba(160, 183, 99, 0.83);
+  }
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
+    background: rgba(149, 193, 176, 0.83);
+  }
+  .theme-samf .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
+  .theme-samf .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
+    background: rgba(125, 138, 139, 0.83);
+  }
+}

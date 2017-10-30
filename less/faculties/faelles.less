@@ -273,6 +273,7 @@
   }
 }
 // full width and 2/3 columns
+
 .one-one-two-column .column1,
 .one-one-two-column .column2,
 .one-one-two-column .column3,
@@ -314,7 +315,6 @@
     }
   }
 }
-
 // Outline style
 
 .EncyclopediaEntry,
@@ -362,6 +362,109 @@
           .header {
             background: fade(@ku-darkblue, 83%);
             color: @white-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 870px) {
+  // Large desktop arrow style for outlined with image
+  .double-column [class*=column],
+  .one-two-column .column1,
+  .triple-column [class*=column],
+  .two-one-column .column2 {
+    .size2,
+    .size3 {
+      &.with-img {
+        &.outlined {
+          .theme-faelles & {
+            &::before {
+              color: @white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 869px) {
+  // All single, 2/3 and double comlumn boxes with image
+  .double-column [class*=column],
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .one-three-column .column1,
+  .one-two-column .column1,
+  .triple-column [class*=column],
+  .two-one-column .column2,
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
+    .size2,
+    .size3 {
+      &.with-img {
+        .theme-faelles & {
+          &.faculty_color {
+            background: @ku-red;
+          }
+
+          &.subcolor_1 {
+            background: @blue;
+          }
+
+          &.subcolor_2 {
+            background: @green;
+          }
+
+          &.subcolor_3 {
+            background: @ku-darkgray;
+            color: @ku-gridbox-text;
+          }
+
+          &.subcolor_4 {
+            background: @ku-darkblue;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 459px) {
+  // All column types must behave like single column boxes
+  .gcrow .gccolumn .gridbox {
+    &.size2,
+    &.size3 {
+      &.with-img {
+        &.outlined {
+          .theme-faelles & {
+            &.faculty_color {
+              .header {
+                background: fade(@ku-red, 83%);
+              }
+            }
+
+            &.subcolor_1 {
+              .header {
+                background: fade(@blue, 83%);
+              }
+            }
+
+            &.subcolor_2 {
+              .header {
+                background: fade(@green, 83%);
+              }
+            }
+
+            &.subcolor_3 {
+              .header {
+                background: fade(@ku-darkgray, 83%);
+              }
+            }
+
+            &.subcolor_4 {
+              .header {
+                background: fade(@ku-darkblue, 83%);
+              }
+            }
           }
         }
       }

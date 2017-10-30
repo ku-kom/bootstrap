@@ -1,7 +1,5 @@
 @import "variables.less";
-@import "mixins.less";
-
-// KU custom grid box styling
+@import "mixins.less"; // KU custom grid box styling
 // NEL:
 // This code was originally made for old Obvius page templates.
 // Please refer to the ku-gridboxes-bootstrap.less for gridboxes in Bootstrap templates.
@@ -13,7 +11,6 @@
 // text-top: text-bar at the top
 // text-down: text-bar at the bottom
 // text-over: overlays content
-
 
 .gridbox {
   width: 100%;
@@ -415,7 +412,7 @@
     .box2 {
       order: 1;
       // image height
-      flex: 0 0 133px;
+      flex: 0 0 @gridbox3;
     }
 
     &:before {
@@ -753,7 +750,7 @@
 
       .box2 {
         // image height
-        flex: 0 0 185px;
+        flex: 0 0 @gridbox2;
       }
     }
   }
@@ -1043,17 +1040,17 @@
           }
 
           .box2 {
-            flex: 0 0 185px;
+            flex: 0 0 @gridbox2;
           }
         }
       }
 
       .box1 {
-        max-height: calc(@gridbox1 - 185px);
+        max-height: calc(@gridbox1 - @gridbox2);
       }
 
       .box2 {
-        flex: 0 1 185px;
+        flex: 0 1 @gridbox2;
       }
     }
 
@@ -1080,76 +1077,6 @@
             position: absolute;
             top: 0;
             left: 0;
-          }
-        }
-      }
-    }
-  }
-  // Large desktop arrow style for outlined with image
-  .double-column [class*=column],
-  .one-two-column .column1,
-  .triple-column [class*=column],
-  .two-one-column .column2 {
-    .size2,
-    .size3 {
-      &.with-img {
-        &.outlined {
-          &:hover {
-            border-width: 0!important;
-          }
-
-          .theme-faelles & {
-            &::before {
-              color: @white-color;
-            }
-          }
-
-          .theme-science & {
-            &::before {
-              color: @white-color;
-            }
-          }
-
-          .theme-hum & {
-            &::before {
-              color: @white-color;
-            }
-
-            &.subcolor_3 {
-              &::before {
-                color: @ku-gridbox-text;
-              }
-            }
-          }
-
-          .theme-teo & {
-            &::before {
-              color: @white-color;
-            }
-          }
-
-          .theme-sund & {
-            &::before {
-              color: @white-color;
-            }
-          }
-
-          .theme-samf & {
-            &::before {
-              color: @white-color;
-            }
-          }
-
-          .theme-jur & {
-            &::before {
-              color: @white-color;
-            }
-
-            &.subcolor_3 {
-              &::before {
-                color: @ku-gridbox-text;
-              }
-            }
           }
         }
       }
@@ -1356,7 +1283,7 @@
 @media only screen and (min-width: 460px) and (max-width: 869px) {
   &.size1 {
     .box2 {
-      flex: 0 1 185px!important;
+      flex: 0 1 @gridbox2!important;
       //Fix for iframe centering in .size1 boxes
       iframe {
         position: absolute;
@@ -1366,177 +1293,20 @@
   }
   //
   // All single, 2/3 and double comlumn boxes with image
+  .double-column [class*=column],
   .one-one-two-column .column1,
   .one-one-two-column .column2,
-  .two-one-one-column .column2,
-  .two-one-one-column .column3,
-  .double-column [class*=column],
+  .one-three-column .column1,
   .one-two-column .column1,
   .triple-column [class*=column],
   .two-one-column .column2,
-  .one-three-column .column1 {
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
     .size2,
     .size3 {
       &.with-img {
         flex-direction: row;
         color: @white-color;
-
-        .theme-faelles & {
-          &.faculty_color {
-            background: @ku-red;
-          }
-
-          &.subcolor_1 {
-            background: @blue;
-          }
-
-          &.subcolor_2 {
-            background: @green;
-          }
-
-          &.subcolor_3 {
-            background: @ku-darkgray;
-            color: @ku-gridbox-text;
-          }
-
-          &.subcolor_4 {
-            background: @ku-darkblue;
-          }
-        }
-
-        .theme-science & {
-          &.faculty_color {
-            background: @science;
-          }
-
-          &.subcolor_1 {
-            background: @science-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @science-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @science-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @science-sub_4;
-          }
-        }
-
-        .theme-hum & {
-          color: @white-color;
-
-          &.faculty_color {
-            background: @hum;
-          }
-
-          &.subcolor_1 {
-            background: @hum-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @hum-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @hum-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @hum-sub_4;
-          }
-        }
-
-        .theme-teo & {
-          &.faculty_color {
-            background: @teol;
-          }
-
-          &.subcolor_1 {
-            background: @teol-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @teol-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @teol-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @teol-sub_4;
-          }
-        }
-
-        .theme-sund & {
-          &.faculty_color {
-            background: @sund;
-          }
-
-          &.subcolor_1 {
-            background: @sund-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @sund-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @sund-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @sund-sub_4;
-          }
-        }
-
-        .theme-samf & {
-          &.faculty_color {
-            background: @samf;
-          }
-
-          &.subcolor_1 {
-            background: @samf-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @samf-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @samf-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @samf-sub_4;
-          }
-        }
-
-        .theme-jur & {
-          &.faculty_color {
-            background: @jura;
-          }
-
-          &.subcolor_1 {
-            background: @jura-sub_1;
-          }
-
-          &.subcolor_2 {
-            background: @jura-sub_2;
-          }
-
-          &.subcolor_3 {
-            background: @jura-sub_3;
-          }
-
-          &.subcolor_4 {
-            background: @jura-sub_4;
-          }
-        }
 
         &.subcolor_5 {
           background: @ku-gray;
@@ -2014,11 +1784,11 @@
     }
   }
 
-  .three-one-column .column1,
-  .one-three-column .column2,
   .one-one-two-column .column3,
+  .one-three-column .column2,
   .one-two-column .column2,
   .single-column .column1,
+  .three-one-column .column1,
   .two-one-column .column1,
   .two-one-one-column .column1 {
     .size2,
@@ -2061,7 +1831,7 @@
     &.size1 {
       &.with-img {
         .box2 {
-          flex: 0 1 133px;
+          flex: 0 1 @gridbox3;
 
           img {
             max-width: 100%!important;
@@ -2130,230 +1900,6 @@
 
             .header {
               color: @white-color;
-            }
-          }
-
-          .theme-faelles & {
-            &.faculty_color {
-              .header {
-                background: fade(@ku-red, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@blue, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@green, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@ku-darkgray, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@ku-darkblue, 83%);
-              }
-            }
-          }
-
-          .theme-science & {
-            &.faculty_color {
-              .header {
-                background: fade(@science, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@science-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@science-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@science-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@science-sub_4, 83%);
-              }
-            }
-          }
-
-          .theme-hum & {
-            &.faculty_color {
-              .header {
-                background: fade(@hum, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@hum-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@hum-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@hum-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@hum-sub_4, 83%);
-              }
-            }
-          }
-
-          .theme-teo & {
-            &.faculty_color {
-              .header {
-                background: fade(@teol, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@teol-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@teol-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@teol-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@teol-sub_4, 83%);
-              }
-            }
-          }
-
-          .theme-sund & {
-            &.faculty_color {
-              .header {
-                background: fade(@sund, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@sund-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@sund-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@sund-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@sund-sub_4, 83%);
-              }
-            }
-          }
-
-          .theme-samf & {
-            &.faculty_color {
-              .header {
-                background: fade(@samf, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@samf-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@samf-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@samf-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@samf-sub_4, 83%);
-              }
-            }
-          }
-
-          .theme-jur & {
-            &.faculty_color {
-              .header {
-                background: fade(@jura, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@jura-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@jura-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@jura-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@jura-sub_4, 83%);
-              }
             }
           }
 
