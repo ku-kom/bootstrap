@@ -1,0 +1,413 @@
+.theme-science .gridbox.faculty_color.text-down .header {
+  background: rgba(70, 116, 60, 0.83);
+  color: #fff;
+}
+.theme-science .gridbox.faculty_color.text-top .header {
+  background: #46743c;
+  color: #fff;
+}
+.theme-science .gridbox.faculty_color.outlined {
+  border: 1px solid #46743c;
+  color: #46743c !important;
+}
+.theme-science .gridbox.faculty_color.outlined::before {
+  color: #46743c;
+}
+.theme-science .gridbox.faculty_color.outlined:hover {
+  background: #f5f5f5;
+  border: 1px solid #395e31 !important;
+}
+.theme-science .gridbox.faculty_color.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #395e31;
+}
+.theme-science .gridbox.faculty_color.full {
+  background: #46743c;
+  color: #fff;
+}
+.theme-science .gridbox.faculty_color.full:hover {
+  background: #395e31 !important;
+}
+.theme-science .gridbox.faculty_color.text-down:hover {
+  background: #395e31 !important;
+}
+.theme-science .gridbox.subcolor_1.text-down .header {
+  background: rgba(223, 175, 72, 0.83);
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_1.text-top .header {
+  background: #dfaf48;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_1.outlined {
+  border: 1px solid #dfaf48;
+  color: #dfaf48 !important;
+}
+.theme-science .gridbox.subcolor_1.outlined::before {
+  color: #dfaf48;
+}
+.theme-science .gridbox.subcolor_1.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #c99e40;
+}
+.theme-science .gridbox.subcolor_1.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #c99e40;
+}
+.theme-science .gridbox.subcolor_1.full {
+  background: #dfaf48;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_1.full:hover {
+  background: #c99e40 !important;
+}
+.theme-science .gridbox.subcolor_1.text-down:hover {
+  background: #c99e40 !important;
+}
+.theme-science .gridbox.subcolor_2.text-down .header {
+  background: rgba(164, 193, 169, 0.83);
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_2.text-top .header {
+  background: #a4c1a9;
+}
+.theme-science .gridbox.subcolor_2.outlined {
+  border: 1px solid #a4c1a9;
+  color: #a4c1a9 !important;
+}
+.theme-science .gridbox.subcolor_2.outlined::before {
+  color: #a4c1a9;
+}
+.theme-science .gridbox.subcolor_2.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #93ad98;
+}
+.theme-science .gridbox.subcolor_2.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #93ad98;
+}
+.theme-science .gridbox.subcolor_2.full {
+  background: #a4c1a9;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_2.full:hover {
+  background: #93ad98 !important;
+}
+.theme-science .gridbox.subcolor_2.text-down:hover {
+  background: #93ad98 !important;
+}
+.theme-science .gridbox.subcolor_3.text-down .header {
+  background: rgba(190, 169, 134, 0.83);
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_3.text-top .header {
+  background: #bea986;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_3.outlined {
+  border: 1px solid #bea986;
+  color: #bea986;
+}
+.theme-science .gridbox.subcolor_3.outlined::before {
+  color: #bea986;
+}
+.theme-science .gridbox.subcolor_3.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #ab9979;
+}
+.theme-science .gridbox.subcolor_3.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #ab9979;
+}
+.theme-science .gridbox.subcolor_3.full {
+  background: #bea986;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_3.full:hover {
+  background: #ab9979 !important;
+}
+.theme-science .gridbox.subcolor_3.text-down:hover {
+  background: #ab9979 !important;
+}
+.theme-science .gridbox.subcolor_4.text-down .header {
+  background: rgba(133, 168, 174, 0.83);
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_4.text-top .header {
+  background: #85a8ae;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_4.outlined {
+  border: 1px solid #85a8ae;
+  color: #85a8ae !important;
+}
+.theme-science .gridbox.subcolor_4.outlined::before {
+  color: #85a8ae;
+}
+.theme-science .gridbox.subcolor_4.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #749399;
+}
+.theme-science .gridbox.subcolor_4.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #749399;
+}
+.theme-science .gridbox.subcolor_4.full {
+  background: #85a8ae;
+  color: #fff;
+}
+.theme-science .gridbox.subcolor_4.full:hover {
+  background: #749399 !important;
+}
+.theme-science .gridbox.subcolor_4.text-down:hover {
+  background: #749399 !important;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img,
+.theme-science .one-one-two-column .column2 .size2.with-img,
+.theme-science .one-one-two-column .column3 .size2.with-img,
+.theme-science .one-three-column .column2 .size2.with-img,
+.theme-science .one-two-column .column2 .size2.with-img,
+.theme-science .single-column .column1 .size2.with-img,
+.theme-science .three-one-column .column1 .size2.with-img,
+.theme-science .two-one-column .column1 .size2.with-img,
+.theme-science .two-one-one-column .column1 .size2.with-img,
+.theme-science .two-one-one-column .column2 .size2.with-img,
+.theme-science .two-one-one-column .column3 .size2.with-img,
+.theme-science .one-one-two-column .column1 .size3.with-img,
+.theme-science .one-one-two-column .column2 .size3.with-img,
+.theme-science .one-one-two-column .column3 .size3.with-img,
+.theme-science .one-three-column .column2 .size3.with-img,
+.theme-science .one-two-column .column2 .size3.with-img,
+.theme-science .single-column .column1 .size3.with-img,
+.theme-science .three-one-column .column1 .size3.with-img,
+.theme-science .two-one-column .column1 .size3.with-img,
+.theme-science .two-one-one-column .column1 .size3.with-img,
+.theme-science .two-one-one-column .column2 .size3.with-img,
+.theme-science .two-one-one-column .column3 .size3.with-img {
+  color: #fff;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img.faculty_color,
+.theme-science .one-one-two-column .column2 .size2.with-img.faculty_color,
+.theme-science .one-one-two-column .column3 .size2.with-img.faculty_color,
+.theme-science .one-three-column .column2 .size2.with-img.faculty_color,
+.theme-science .one-two-column .column2 .size2.with-img.faculty_color,
+.theme-science .single-column .column1 .size2.with-img.faculty_color,
+.theme-science .three-one-column .column1 .size2.with-img.faculty_color,
+.theme-science .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-science .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-science .two-one-one-column .column2 .size2.with-img.faculty_color,
+.theme-science .two-one-one-column .column3 .size2.with-img.faculty_color,
+.theme-science .one-one-two-column .column1 .size3.with-img.faculty_color,
+.theme-science .one-one-two-column .column2 .size3.with-img.faculty_color,
+.theme-science .one-one-two-column .column3 .size3.with-img.faculty_color,
+.theme-science .one-three-column .column2 .size3.with-img.faculty_color,
+.theme-science .one-two-column .column2 .size3.with-img.faculty_color,
+.theme-science .single-column .column1 .size3.with-img.faculty_color,
+.theme-science .three-one-column .column1 .size3.with-img.faculty_color,
+.theme-science .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-science .two-one-one-column .column1 .size3.with-img.faculty_color,
+.theme-science .two-one-one-column .column2 .size3.with-img.faculty_color,
+.theme-science .two-one-one-column .column3 .size3.with-img.faculty_color {
+  background: #46743c;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img.subcolor_1,
+.theme-science .one-one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_1,
+.theme-science .one-three-column .column2 .size2.with-img.subcolor_1,
+.theme-science .one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-science .single-column .column1 .size2.with-img.subcolor_1,
+.theme-science .three-one-column .column1 .size2.with-img.subcolor_1,
+.theme-science .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-science .two-one-one-column .column2 .size2.with-img.subcolor_1,
+.theme-science .two-one-one-column .column3 .size2.with-img.subcolor_1,
+.theme-science .one-one-two-column .column1 .size3.with-img.subcolor_1,
+.theme-science .one-one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_1,
+.theme-science .one-three-column .column2 .size3.with-img.subcolor_1,
+.theme-science .one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-science .single-column .column1 .size3.with-img.subcolor_1,
+.theme-science .three-one-column .column1 .size3.with-img.subcolor_1,
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_1,
+.theme-science .two-one-one-column .column2 .size3.with-img.subcolor_1,
+.theme-science .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+  background: #dfaf48;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img.subcolor_2,
+.theme-science .one-one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_2,
+.theme-science .one-three-column .column2 .size2.with-img.subcolor_2,
+.theme-science .one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-science .single-column .column1 .size2.with-img.subcolor_2,
+.theme-science .three-one-column .column1 .size2.with-img.subcolor_2,
+.theme-science .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-science .two-one-one-column .column2 .size2.with-img.subcolor_2,
+.theme-science .two-one-one-column .column3 .size2.with-img.subcolor_2,
+.theme-science .one-one-two-column .column1 .size3.with-img.subcolor_2,
+.theme-science .one-one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_2,
+.theme-science .one-three-column .column2 .size3.with-img.subcolor_2,
+.theme-science .one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-science .single-column .column1 .size3.with-img.subcolor_2,
+.theme-science .three-one-column .column1 .size3.with-img.subcolor_2,
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_2,
+.theme-science .two-one-one-column .column2 .size3.with-img.subcolor_2,
+.theme-science .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+  background: #a4c1a9;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img.subcolor_3,
+.theme-science .one-one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_3,
+.theme-science .one-three-column .column2 .size2.with-img.subcolor_3,
+.theme-science .one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-science .single-column .column1 .size2.with-img.subcolor_3,
+.theme-science .three-one-column .column1 .size2.with-img.subcolor_3,
+.theme-science .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-science .two-one-one-column .column2 .size2.with-img.subcolor_3,
+.theme-science .two-one-one-column .column3 .size2.with-img.subcolor_3,
+.theme-science .one-one-two-column .column1 .size3.with-img.subcolor_3,
+.theme-science .one-one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_3,
+.theme-science .one-three-column .column2 .size3.with-img.subcolor_3,
+.theme-science .one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-science .single-column .column1 .size3.with-img.subcolor_3,
+.theme-science .three-one-column .column1 .size3.with-img.subcolor_3,
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_3,
+.theme-science .two-one-one-column .column2 .size3.with-img.subcolor_3,
+.theme-science .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+  background: #bea986;
+}
+.theme-science .one-one-two-column .column1 .size2.with-img.subcolor_4,
+.theme-science .one-one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-science .one-one-two-column .column3 .size2.with-img.subcolor_4,
+.theme-science .one-three-column .column2 .size2.with-img.subcolor_4,
+.theme-science .one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-science .single-column .column1 .size2.with-img.subcolor_4,
+.theme-science .three-one-column .column1 .size2.with-img.subcolor_4,
+.theme-science .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-science .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-science .two-one-one-column .column2 .size2.with-img.subcolor_4,
+.theme-science .two-one-one-column .column3 .size2.with-img.subcolor_4,
+.theme-science .one-one-two-column .column1 .size3.with-img.subcolor_4,
+.theme-science .one-one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-science .one-one-two-column .column3 .size3.with-img.subcolor_4,
+.theme-science .one-three-column .column2 .size3.with-img.subcolor_4,
+.theme-science .one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-science .single-column .column1 .size3.with-img.subcolor_4,
+.theme-science .three-one-column .column1 .size3.with-img.subcolor_4,
+.theme-science .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-science .two-one-one-column .column1 .size3.with-img.subcolor_4,
+.theme-science .two-one-one-column .column2 .size3.with-img.subcolor_4,
+.theme-science .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+  background: #85a8ae;
+}
+.theme-science .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
+.theme-science .HTML .size2.outlined.with-img.faculty_color .header,
+.theme-science .Standard .size2.outlined.with-img.faculty_color .header,
+.theme-science .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-science .rightbox-normal .size2.outlined.with-img.faculty_color .header,
+.theme-science .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-science .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-science .EncyclopediaEntry .size3.outlined.with-img.faculty_color .header,
+.theme-science .HTML .size3.outlined.with-img.faculty_color .header,
+.theme-science .Standard .size3.outlined.with-img.faculty_color .header,
+.theme-science .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-science .rightbox-normal .size3.outlined.with-img.faculty_color .header,
+.theme-science .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-science .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
+  background: rgba(70, 116, 60, 0.83);
+  color: #fff;
+}
+.theme-science .EncyclopediaEntry .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .HTML .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .Standard .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .rightbox-normal .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-science .EncyclopediaEntry .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .HTML .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .Standard .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .rightbox-normal .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+  background: rgba(223, 175, 72, 0.83);
+  color: #fff;
+}
+.theme-science .EncyclopediaEntry .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .HTML .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .Standard .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .rightbox-normal .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-science .EncyclopediaEntry .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .HTML .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .Standard .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .rightbox-normal .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+  background: rgba(164, 193, 169, 0.83);
+  color: #fff;
+}
+.theme-science .EncyclopediaEntry .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .HTML .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .Standard .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .rightbox-normal .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-science .EncyclopediaEntry .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .HTML .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .Standard .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .rightbox-normal .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+  background: rgba(190, 169, 134, 0.83);
+  color: #fff;
+}
+.theme-science .EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .HTML .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .Standard .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .rightbox-normal .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-science .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .HTML .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .Standard .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .rightbox-normal .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-science .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+  background: rgba(133, 168, 174, 0.83);
+  color: #fff;
+}

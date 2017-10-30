@@ -1,0 +1,419 @@
+.theme-faelles .gridbox.faculty_color.text-down .header {
+  background: rgba(144, 26, 30, 0.83) !important;
+  color: #fff;
+}
+.theme-faelles .gridbox.faculty_color.text-top .header {
+  background: #901a1e;
+}
+.theme-faelles .gridbox.faculty_color.outlined {
+  border: 1px solid #901a1e;
+  color: #901a1e !important;
+}
+.theme-faelles .gridbox.faculty_color.outlined::before {
+  color: #901a1e;
+}
+.theme-faelles .gridbox.faculty_color.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #7b161a;
+}
+.theme-faelles .gridbox.faculty_color.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #7b161a;
+}
+.theme-faelles .gridbox.faculty_color.full {
+  background: #901a1e;
+  color: #fff;
+}
+.theme-faelles .gridbox.faculty_color.full:hover {
+  background: #7b161a !important;
+}
+.theme-faelles .gridbox.faculty_color.text-down:hover {
+  background: #7b161a !important;
+}
+.theme-faelles .gridbox.subcolor_1.text-down .header {
+  background: rgba(161, 197, 200, 0.83);
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_1.text-top .header {
+  background: #a1c5c8;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_1.outlined {
+  border: 1px solid #a1c5c8;
+  color: #a1c5c8 !important;
+}
+.theme-faelles .gridbox.subcolor_1.outlined::before {
+  color: #a1c5c8;
+}
+.theme-faelles .gridbox.subcolor_1.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #7ea5a8;
+}
+.theme-faelles .gridbox.subcolor_1.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #7ea5a8;
+}
+.theme-faelles .gridbox.subcolor_1.full {
+  background: #a1c5c8;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_1.full:hover {
+  background: #7ea5a8 !important;
+}
+.theme-faelles .gridbox.subcolor_1.text-down:hover {
+  background: #7ea5a8 !important;
+}
+.theme-faelles .gridbox.subcolor_2.text-down .header {
+  background: rgba(133, 174, 51, 0.83);
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_2.text-top .header {
+  background: #85ae33;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_2.outlined {
+  border: 1px solid #85ae33;
+  color: #85ae33 !important;
+}
+.theme-faelles .gridbox.subcolor_2.outlined::before {
+  color: #85ae33;
+}
+.theme-faelles .gridbox.subcolor_2.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #75992c;
+}
+.theme-faelles .gridbox.subcolor_2.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #75992c;
+}
+.theme-faelles .gridbox.subcolor_2.full {
+  background: #85ae33;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_2.full:hover {
+  background: #75992c !important;
+}
+.theme-faelles .gridbox.subcolor_2.text-down:hover {
+  background: #75992c !important;
+}
+.theme-faelles .gridbox.subcolor_3.text-down .header {
+  background: rgba(181, 181, 181, 0.83);
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_3.text-top .header {
+  background: #b5b5b5;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_3.outlined {
+  border: 1px solid #b5b5b5;
+  color: #606060 !important;
+}
+.theme-faelles .gridbox.subcolor_3.outlined::before {
+  color: #606060;
+}
+.theme-faelles .gridbox.subcolor_3.outlined:hover {
+  background: #f5f5f5;
+  border: 1px solid #a1a1a1 !important;
+}
+.theme-faelles .gridbox.subcolor_3.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #f5f5f5;
+}
+.theme-faelles .gridbox.subcolor_3.full {
+  background: #b5b5b5;
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_3.full:hover {
+  background: #a1a1a1 !important;
+}
+.theme-faelles .gridbox.subcolor_3.full.subcolor_3::before {
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_3.text-down:hover {
+  background: #a1a1a1 !important;
+}
+.theme-faelles .gridbox.subcolor_4 {
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_4.text-down .header {
+  background: rgba(66, 117, 155, 0.83);
+  color: #fff;
+}
+.theme-faelles .gridbox.subcolor_4.text-top .header {
+  color: #fff;
+  background: #42759b;
+}
+.theme-faelles .gridbox.subcolor_4.outlined {
+  border: 1px solid #42759b;
+  color: #42759b !important;
+}
+.theme-faelles .gridbox.subcolor_4.outlined::before {
+  color: #42759b;
+}
+.theme-faelles .gridbox.subcolor_4.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #3b688a;
+}
+.theme-faelles .gridbox.subcolor_4.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #3b688a;
+}
+.theme-faelles .gridbox.subcolor_4.full {
+  background: #42759b;
+}
+.theme-faelles .gridbox.subcolor_4.full:hover {
+  background: #3b688a !important;
+}
+.theme-faelles .gridbox.subcolor_4.text-down:hover {
+  background: #3b688a !important;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img,
+.theme-faelles .one-one-two-column .column2 .size2.with-img,
+.theme-faelles .one-one-two-column .column3 .size2.with-img,
+.theme-faelles .one-three-column .column2 .size2.with-img,
+.theme-faelles .one-two-column .column2 .size2.with-img,
+.theme-faelles .single-column .column1 .size2.with-img,
+.theme-faelles .three-one-column .column1 .size2.with-img,
+.theme-faelles .two-one-column .column1 .size2.with-img,
+.theme-faelles .two-one-one-column .column1 .size2.with-img,
+.theme-faelles .two-one-one-column .column2 .size2.with-img,
+.theme-faelles .two-one-one-column .column3 .size2.with-img,
+.theme-faelles .one-one-two-column .column1 .size3.with-img,
+.theme-faelles .one-one-two-column .column2 .size3.with-img,
+.theme-faelles .one-one-two-column .column3 .size3.with-img,
+.theme-faelles .one-three-column .column2 .size3.with-img,
+.theme-faelles .one-two-column .column2 .size3.with-img,
+.theme-faelles .single-column .column1 .size3.with-img,
+.theme-faelles .three-one-column .column1 .size3.with-img,
+.theme-faelles .two-one-column .column1 .size3.with-img,
+.theme-faelles .two-one-one-column .column1 .size3.with-img,
+.theme-faelles .two-one-one-column .column2 .size3.with-img,
+.theme-faelles .two-one-one-column .column3 .size3.with-img {
+  color: #fff;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img.faculty_color,
+.theme-faelles .one-one-two-column .column2 .size2.with-img.faculty_color,
+.theme-faelles .one-one-two-column .column3 .size2.with-img.faculty_color,
+.theme-faelles .one-three-column .column2 .size2.with-img.faculty_color,
+.theme-faelles .one-two-column .column2 .size2.with-img.faculty_color,
+.theme-faelles .single-column .column1 .size2.with-img.faculty_color,
+.theme-faelles .three-one-column .column1 .size2.with-img.faculty_color,
+.theme-faelles .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column2 .size2.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column3 .size2.with-img.faculty_color,
+.theme-faelles .one-one-two-column .column1 .size3.with-img.faculty_color,
+.theme-faelles .one-one-two-column .column2 .size3.with-img.faculty_color,
+.theme-faelles .one-one-two-column .column3 .size3.with-img.faculty_color,
+.theme-faelles .one-three-column .column2 .size3.with-img.faculty_color,
+.theme-faelles .one-two-column .column2 .size3.with-img.faculty_color,
+.theme-faelles .single-column .column1 .size3.with-img.faculty_color,
+.theme-faelles .three-one-column .column1 .size3.with-img.faculty_color,
+.theme-faelles .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column1 .size3.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column2 .size3.with-img.faculty_color,
+.theme-faelles .two-one-one-column .column3 .size3.with-img.faculty_color {
+  background: #901a1e;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_1,
+.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_1,
+.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_1,
+.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-faelles .single-column .column1 .size2.with-img.subcolor_1,
+.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_1,
+.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_1,
+.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_1,
+.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_1,
+.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_1,
+.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-faelles .single-column .column1 .size3.with-img.subcolor_1,
+.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_1,
+.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_1,
+.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+  background: #a1c5c8;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_2,
+.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_2,
+.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_2,
+.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-faelles .single-column .column1 .size2.with-img.subcolor_2,
+.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_2,
+.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_2,
+.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_2,
+.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_2,
+.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_2,
+.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-faelles .single-column .column1 .size3.with-img.subcolor_2,
+.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_2,
+.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_2,
+.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+  background: #85ae33;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_3,
+.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_3,
+.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_3,
+.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-faelles .single-column .column1 .size2.with-img.subcolor_3,
+.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_3,
+.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_3,
+.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_3,
+.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_3,
+.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_3,
+.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-faelles .single-column .column1 .size3.with-img.subcolor_3,
+.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_3,
+.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_3,
+.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+  background: #b5b5b5;
+  color: #606060;
+}
+.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_4,
+.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_4,
+.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_4,
+.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-faelles .single-column .column1 .size2.with-img.subcolor_4,
+.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_4,
+.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_4,
+.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_4,
+.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_4,
+.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_4,
+.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-faelles .single-column .column1 .size3.with-img.subcolor_4,
+.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_4,
+.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_4,
+.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+  background: #42759b;
+}
+.theme-faelles .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .HTML .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .Standard .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .rightbox-normal .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-faelles .EncyclopediaEntry .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .HTML .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .Standard .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .rightbox-normal .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-faelles .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
+  background: rgba(144, 26, 30, 0.83);
+  color: #fff;
+}
+.theme-faelles .EncyclopediaEntry .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .HTML .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .Standard .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .rightbox-normal .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-faelles .EncyclopediaEntry .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .HTML .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .Standard .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .rightbox-normal .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-faelles .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+  background: rgba(161, 197, 200, 0.83);
+  color: #fff;
+}
+.theme-faelles .EncyclopediaEntry .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .HTML .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .Standard .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .rightbox-normal .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-faelles .EncyclopediaEntry .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .HTML .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .Standard .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .rightbox-normal .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-faelles .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+  background: rgba(133, 174, 51, 0.83);
+  color: #fff;
+}
+.theme-faelles .EncyclopediaEntry .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .HTML .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .Standard .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .rightbox-normal .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-faelles .EncyclopediaEntry .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .HTML .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .Standard .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .rightbox-normal .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-faelles .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+  background: rgba(181, 181, 181, 0.83);
+  color: #fff;
+}
+.theme-faelles .EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .HTML .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .Standard .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .rightbox-normal .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-faelles .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .HTML .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .Standard .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .rightbox-normal .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-faelles .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+  background: rgba(66, 117, 155, 0.83);
+  color: #fff;
+}

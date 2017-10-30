@@ -1,0 +1,413 @@
+.theme-samf .gridbox.faculty_color.text-down .header {
+  background: rgba(225, 55, 24, 0.83);
+  color: #fff;
+}
+.theme-samf .gridbox.faculty_color.text-top .header {
+  background: #e13718;
+  color: #fff;
+}
+.theme-samf .gridbox.faculty_color.outlined {
+  border: 1px solid #e13718;
+  color: #e13718 !important;
+}
+.theme-samf .gridbox.faculty_color.outlined::before {
+  color: #e13718;
+}
+.theme-samf .gridbox.faculty_color.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #cc3216;
+}
+.theme-samf .gridbox.faculty_color.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #cc3216;
+}
+.theme-samf .gridbox.faculty_color.full {
+  background: #e13718;
+  color: #fff;
+}
+.theme-samf .gridbox.faculty_color.full:hover {
+  background: #cc3216 !important;
+}
+.theme-samf .gridbox.faculty_color.text-down:hover {
+  background: #cc3216 !important;
+}
+.theme-samf .gridbox.subcolor_1.text-down .header {
+  background: rgba(42, 61, 102, 0.83);
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_1.text-top .header {
+  background: #2a3d66;
+}
+.theme-samf .gridbox.subcolor_1.outlined {
+  border: 1px solid #2a3d66;
+  color: #2a3d66 !important;
+}
+.theme-samf .gridbox.subcolor_1.outlined::before {
+  color: #2a3d66;
+}
+.theme-samf .gridbox.subcolor_1.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #213152;
+}
+.theme-samf .gridbox.subcolor_1.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #213152;
+}
+.theme-samf .gridbox.subcolor_1.full {
+  background: #2a3d66;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_1.full:hover {
+  background: #213152 !important;
+}
+.theme-samf .gridbox.subcolor_1.text-down:hover {
+  background: #213152 !important;
+}
+.theme-samf .gridbox.subcolor_2.text-down .header {
+  background: rgba(160, 183, 99, 0.83);
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_2.text-top .header {
+  background: #a0b763;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_2.outlined {
+  border: 1px solid #a0b763;
+  color: #a0b763 !important;
+}
+.theme-samf .gridbox.subcolor_2.outlined::before {
+  color: #a0b763;
+}
+.theme-samf .gridbox.subcolor_2.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #8fa358;
+}
+.theme-samf .gridbox.subcolor_2.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #8fa358;
+}
+.theme-samf .gridbox.subcolor_2.full {
+  background: #a0b763;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_2.full:hover {
+  background: #8fa358 !important;
+}
+.theme-samf .gridbox.subcolor_2.text-down:hover {
+  background: #8fa358 !important;
+}
+.theme-samf .gridbox.subcolor_3.text-down .header {
+  background: rgba(149, 193, 176, 0.83);
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_3.text-top .header {
+  background: #95c1b0;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_3.outlined {
+  border: 1px solid #95c1b0;
+  color: #95c1b0 !important;
+}
+.theme-samf .gridbox.subcolor_3.outlined::before {
+  color: #95c1b0;
+}
+.theme-samf .gridbox.subcolor_3.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #86ad9e;
+}
+.theme-samf .gridbox.subcolor_3.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #86ad9e;
+}
+.theme-samf .gridbox.subcolor_3.full {
+  background: #95c1b0;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_3.full:hover {
+  background: #86ad9e !important;
+}
+.theme-samf .gridbox.subcolor_3.text-down:hover {
+  background: #86ad9e !important;
+}
+.theme-samf .gridbox.subcolor_4.text-down .header {
+  background: rgba(125, 138, 139, 0.83);
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_4.text-top .header {
+  background: #7d8a8b;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_4.outlined {
+  border: 1px solid #7d8a8b;
+  color: #7d8a8b !important;
+}
+.theme-samf .gridbox.subcolor_4.outlined::before {
+  color: #7d8a8b;
+}
+.theme-samf .gridbox.subcolor_4.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #6c7778;
+}
+.theme-samf .gridbox.subcolor_4.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #6c7778;
+}
+.theme-samf .gridbox.subcolor_4.full {
+  background: #7d8a8b;
+  color: #fff;
+}
+.theme-samf .gridbox.subcolor_4.full:hover {
+  background: #6c7778 !important;
+}
+.theme-samf .gridbox.subcolor_4.text-down:hover {
+  background: #6c7778 !important;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img,
+.theme-samf .one-one-two-column .column2 .size2.with-img,
+.theme-samf .one-one-two-column .column3 .size2.with-img,
+.theme-samf .one-three-column .column2 .size2.with-img,
+.theme-samf .one-two-column .column2 .size2.with-img,
+.theme-samf .single-column .column1 .size2.with-img,
+.theme-samf .three-one-column .column1 .size2.with-img,
+.theme-samf .two-one-column .column1 .size2.with-img,
+.theme-samf .two-one-one-column .column1 .size2.with-img,
+.theme-samf .two-one-one-column .column2 .size2.with-img,
+.theme-samf .two-one-one-column .column3 .size2.with-img,
+.theme-samf .one-one-two-column .column1 .size3.with-img,
+.theme-samf .one-one-two-column .column2 .size3.with-img,
+.theme-samf .one-one-two-column .column3 .size3.with-img,
+.theme-samf .one-three-column .column2 .size3.with-img,
+.theme-samf .one-two-column .column2 .size3.with-img,
+.theme-samf .single-column .column1 .size3.with-img,
+.theme-samf .three-one-column .column1 .size3.with-img,
+.theme-samf .two-one-column .column1 .size3.with-img,
+.theme-samf .two-one-one-column .column1 .size3.with-img,
+.theme-samf .two-one-one-column .column2 .size3.with-img,
+.theme-samf .two-one-one-column .column3 .size3.with-img {
+  color: #fff;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img.faculty_color,
+.theme-samf .one-one-two-column .column2 .size2.with-img.faculty_color,
+.theme-samf .one-one-two-column .column3 .size2.with-img.faculty_color,
+.theme-samf .one-three-column .column2 .size2.with-img.faculty_color,
+.theme-samf .one-two-column .column2 .size2.with-img.faculty_color,
+.theme-samf .single-column .column1 .size2.with-img.faculty_color,
+.theme-samf .three-one-column .column1 .size2.with-img.faculty_color,
+.theme-samf .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-samf .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-samf .two-one-one-column .column2 .size2.with-img.faculty_color,
+.theme-samf .two-one-one-column .column3 .size2.with-img.faculty_color,
+.theme-samf .one-one-two-column .column1 .size3.with-img.faculty_color,
+.theme-samf .one-one-two-column .column2 .size3.with-img.faculty_color,
+.theme-samf .one-one-two-column .column3 .size3.with-img.faculty_color,
+.theme-samf .one-three-column .column2 .size3.with-img.faculty_color,
+.theme-samf .one-two-column .column2 .size3.with-img.faculty_color,
+.theme-samf .single-column .column1 .size3.with-img.faculty_color,
+.theme-samf .three-one-column .column1 .size3.with-img.faculty_color,
+.theme-samf .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-samf .two-one-one-column .column1 .size3.with-img.faculty_color,
+.theme-samf .two-one-one-column .column2 .size3.with-img.faculty_color,
+.theme-samf .two-one-one-column .column3 .size3.with-img.faculty_color {
+  background: #e13718;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_1,
+.theme-samf .one-three-column .column2 .size2.with-img.subcolor_1,
+.theme-samf .one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-samf .single-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .three-one-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_1,
+.theme-samf .one-three-column .column2 .size3.with-img.subcolor_1,
+.theme-samf .one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-samf .single-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .three-one-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_1,
+.theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+  background: #2a3d66;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_2,
+.theme-samf .one-three-column .column2 .size2.with-img.subcolor_2,
+.theme-samf .one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-samf .single-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .three-one-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_2,
+.theme-samf .one-three-column .column2 .size3.with-img.subcolor_2,
+.theme-samf .one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-samf .single-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .three-one-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_2,
+.theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+  background: #a0b763;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_3,
+.theme-samf .one-three-column .column2 .size2.with-img.subcolor_3,
+.theme-samf .one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-samf .single-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .three-one-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_3,
+.theme-samf .one-three-column .column2 .size3.with-img.subcolor_3,
+.theme-samf .one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-samf .single-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .three-one-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_3,
+.theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+  background: #95c1b0;
+}
+.theme-samf .one-one-two-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column3 .size2.with-img.subcolor_4,
+.theme-samf .one-three-column .column2 .size2.with-img.subcolor_4,
+.theme-samf .one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-samf .single-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .three-one-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column2 .size2.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column3 .size2.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-samf .one-one-two-column .column3 .size3.with-img.subcolor_4,
+.theme-samf .one-three-column .column2 .size3.with-img.subcolor_4,
+.theme-samf .one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-samf .single-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .three-one-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column1 .size3.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column2 .size3.with-img.subcolor_4,
+.theme-samf .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+  background: #7d8a8b;
+}
+.theme-samf .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
+.theme-samf .HTML .size2.outlined.with-img.faculty_color .header,
+.theme-samf .Standard .size2.outlined.with-img.faculty_color .header,
+.theme-samf .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-samf .rightbox-normal .size2.outlined.with-img.faculty_color .header,
+.theme-samf .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-samf .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-samf .EncyclopediaEntry .size3.outlined.with-img.faculty_color .header,
+.theme-samf .HTML .size3.outlined.with-img.faculty_color .header,
+.theme-samf .Standard .size3.outlined.with-img.faculty_color .header,
+.theme-samf .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-samf .rightbox-normal .size3.outlined.with-img.faculty_color .header,
+.theme-samf .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
+  background: rgba(225, 55, 24, 0.83);
+  color: #fff;
+}
+.theme-samf .EncyclopediaEntry .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .HTML .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .Standard .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .rightbox-normal .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-samf .EncyclopediaEntry .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .HTML .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .Standard .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .rightbox-normal .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+  background: rgba(42, 61, 102, 0.83);
+  color: #fff;
+}
+.theme-samf .EncyclopediaEntry .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .HTML .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .Standard .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .rightbox-normal .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-samf .EncyclopediaEntry .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .HTML .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .Standard .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .rightbox-normal .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+  background: rgba(160, 183, 99, 0.83);
+  color: #fff;
+}
+.theme-samf .EncyclopediaEntry .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .HTML .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .Standard .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .rightbox-normal .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-samf .EncyclopediaEntry .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .HTML .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .Standard .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .rightbox-normal .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+  background: rgba(149, 193, 176, 0.83);
+  color: #fff;
+}
+.theme-samf .EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .HTML .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .Standard .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .rightbox-normal .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-samf .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .HTML .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .Standard .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .rightbox-normal .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-samf .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+  background: rgba(125, 138, 139, 0.83);
+  color: #fff;
+}

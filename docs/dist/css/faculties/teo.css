@@ -1,0 +1,390 @@
+.theme-teo .gridbox.faculty_color.text-down .header {
+  background: rgba(102, 96, 158, 0.83);
+  color: #fff;
+}
+.theme-teo .gridbox.faculty_color.text-top .header {
+  background: #66609e;
+  color: #fff;
+}
+.theme-teo .gridbox.faculty_color.outlined {
+  border: 1px solid #66609e;
+  color: #66609e !important;
+}
+.theme-teo .gridbox.faculty_color.outlined::before {
+  color: #66609e;
+}
+.theme-teo .gridbox.faculty_color.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #565185;
+}
+.theme-teo .gridbox.faculty_color.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #565185;
+}
+.theme-teo .gridbox.faculty_color.full {
+  background: #66609e;
+  color: #fff;
+}
+.theme-teo .gridbox.faculty_color.full:hover {
+  background: #565185 !important;
+}
+.theme-teo .gridbox.faculty_color.text-down:hover {
+  background: #565185 !important;
+}
+.theme-teo .gridbox.subcolor_1.text-down .header {
+  background: rgba(216, 104, 11, 0.83);
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_1.text-top .header {
+  background: #d8680b;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_1.outlined {
+  border: 1px solid #d8680b;
+  color: #d8680b !important;
+}
+.theme-teo .gridbox.subcolor_1.outlined::before {
+  color: #d8680b;
+}
+.theme-teo .gridbox.subcolor_1.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #c45e0a;
+}
+.theme-teo .gridbox.subcolor_1.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #c45e0a;
+}
+.theme-teo .gridbox.subcolor_1.full {
+  background: #d8680b;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_1.full:hover {
+  background: #c45e0a !important;
+}
+.theme-teo .gridbox.subcolor_1.text-down:hover {
+  background: #c45e0a !important;
+}
+.theme-teo .gridbox.subcolor_2.text-down .header {
+  background: rgba(9, 63, 80, 0.83);
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_2.text-top .header {
+  background: #093f50;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_2.outlined {
+  border: 1px solid #093f50;
+  color: #093f50 !important;
+}
+.theme-teo .gridbox.subcolor_2.outlined::before {
+  color: #093f50;
+}
+.theme-teo .gridbox.subcolor_2.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #062a36;
+}
+.theme-teo .gridbox.subcolor_2.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #062a36;
+}
+.theme-teo .gridbox.subcolor_2.full {
+  background: #093f50;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_2.full:hover {
+  background: #062a36 !important;
+}
+.theme-teo .gridbox.subcolor_2.text-down:hover {
+  background: #062a36 !important;
+}
+.theme-teo .gridbox.subcolor_3.text-down .header {
+  background: rgba(132, 191, 204, 0.83);
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_3.text-top .header {
+  background: #84bfcc;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_3.outlined {
+  border: 1px solid #84bfcc;
+  color: #84bfcc !important;
+}
+.theme-teo .gridbox.subcolor_3.outlined::before {
+  color: #84bfcc;
+}
+.theme-teo .gridbox.subcolor_3.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #77acb8;
+}
+.theme-teo .gridbox.subcolor_3.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #77acb8;
+}
+.theme-teo .gridbox.subcolor_3.full {
+  background: #84bfcc;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_3.full:hover {
+  background: #77acb8 !important;
+}
+.theme-teo .gridbox.subcolor_3.text-down:hover {
+  background: #77acb8 !important;
+}
+.theme-teo .gridbox.subcolor_4.text-down .header {
+  background: rgba(200, 211, 81, 0.83);
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_4.text-top .header {
+  background: #c8d351;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_4.outlined {
+  border: 1px solid #c8d351;
+  color: #c8d351 !important;
+}
+.theme-teo .gridbox.subcolor_4.outlined::before {
+  color: #c8d351;
+}
+.theme-teo .gridbox.subcolor_4.outlined:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #b5bf49;
+}
+.theme-teo .gridbox.subcolor_4.outlined.with-img:hover {
+  background: #f5f5f5 !important;
+  border: 1px solid #b5bf49;
+}
+.theme-teo .gridbox.subcolor_4.full {
+  background: #c8d351;
+  color: #fff;
+}
+.theme-teo .gridbox.subcolor_4.full:hover {
+  background: #b5bf49 !important;
+}
+.theme-teo .gridbox.subcolor_4.text-down:hover {
+  background: #b5bf49 !important;
+}
+.theme-teo .one-one-two-column .column1 .size2.with-img.faculty_color,
+.theme-teo .one-one-two-column .column2 .size2.with-img.faculty_color,
+.theme-teo .one-one-two-column .column3 .size2.with-img.faculty_color,
+.theme-teo .one-three-column .column2 .size2.with-img.faculty_color,
+.theme-teo .one-two-column .column2 .size2.with-img.faculty_color,
+.theme-teo .single-column .column1 .size2.with-img.faculty_color,
+.theme-teo .three-one-column .column1 .size2.with-img.faculty_color,
+.theme-teo .two-one-column .column1 .size2.with-img.faculty_color,
+.theme-teo .two-one-one-column .column1 .size2.with-img.faculty_color,
+.theme-teo .two-one-one-column .column2 .size2.with-img.faculty_color,
+.theme-teo .two-one-one-column .column3 .size2.with-img.faculty_color,
+.theme-teo .one-one-two-column .column1 .size3.with-img.faculty_color,
+.theme-teo .one-one-two-column .column2 .size3.with-img.faculty_color,
+.theme-teo .one-one-two-column .column3 .size3.with-img.faculty_color,
+.theme-teo .one-three-column .column2 .size3.with-img.faculty_color,
+.theme-teo .one-two-column .column2 .size3.with-img.faculty_color,
+.theme-teo .single-column .column1 .size3.with-img.faculty_color,
+.theme-teo .three-one-column .column1 .size3.with-img.faculty_color,
+.theme-teo .two-one-column .column1 .size3.with-img.faculty_color,
+.theme-teo .two-one-one-column .column1 .size3.with-img.faculty_color,
+.theme-teo .two-one-one-column .column2 .size3.with-img.faculty_color,
+.theme-teo .two-one-one-column .column3 .size3.with-img.faculty_color {
+  background: #66609e;
+}
+.theme-teo .one-one-two-column .column1 .size2.with-img.subcolor_1,
+.theme-teo .one-one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-teo .one-one-two-column .column3 .size2.with-img.subcolor_1,
+.theme-teo .one-three-column .column2 .size2.with-img.subcolor_1,
+.theme-teo .one-two-column .column2 .size2.with-img.subcolor_1,
+.theme-teo .single-column .column1 .size2.with-img.subcolor_1,
+.theme-teo .three-one-column .column1 .size2.with-img.subcolor_1,
+.theme-teo .two-one-column .column1 .size2.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column1 .size2.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column2 .size2.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column3 .size2.with-img.subcolor_1,
+.theme-teo .one-one-two-column .column1 .size3.with-img.subcolor_1,
+.theme-teo .one-one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-teo .one-one-two-column .column3 .size3.with-img.subcolor_1,
+.theme-teo .one-three-column .column2 .size3.with-img.subcolor_1,
+.theme-teo .one-two-column .column2 .size3.with-img.subcolor_1,
+.theme-teo .single-column .column1 .size3.with-img.subcolor_1,
+.theme-teo .three-one-column .column1 .size3.with-img.subcolor_1,
+.theme-teo .two-one-column .column1 .size3.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column1 .size3.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column2 .size3.with-img.subcolor_1,
+.theme-teo .two-one-one-column .column3 .size3.with-img.subcolor_1 {
+  background: #d8680b;
+}
+.theme-teo .one-one-two-column .column1 .size2.with-img.subcolor_2,
+.theme-teo .one-one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-teo .one-one-two-column .column3 .size2.with-img.subcolor_2,
+.theme-teo .one-three-column .column2 .size2.with-img.subcolor_2,
+.theme-teo .one-two-column .column2 .size2.with-img.subcolor_2,
+.theme-teo .single-column .column1 .size2.with-img.subcolor_2,
+.theme-teo .three-one-column .column1 .size2.with-img.subcolor_2,
+.theme-teo .two-one-column .column1 .size2.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column1 .size2.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column2 .size2.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column3 .size2.with-img.subcolor_2,
+.theme-teo .one-one-two-column .column1 .size3.with-img.subcolor_2,
+.theme-teo .one-one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-teo .one-one-two-column .column3 .size3.with-img.subcolor_2,
+.theme-teo .one-three-column .column2 .size3.with-img.subcolor_2,
+.theme-teo .one-two-column .column2 .size3.with-img.subcolor_2,
+.theme-teo .single-column .column1 .size3.with-img.subcolor_2,
+.theme-teo .three-one-column .column1 .size3.with-img.subcolor_2,
+.theme-teo .two-one-column .column1 .size3.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column1 .size3.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column2 .size3.with-img.subcolor_2,
+.theme-teo .two-one-one-column .column3 .size3.with-img.subcolor_2 {
+  background: #093f50;
+}
+.theme-teo .one-one-two-column .column1 .size2.with-img.subcolor_3,
+.theme-teo .one-one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-teo .one-one-two-column .column3 .size2.with-img.subcolor_3,
+.theme-teo .one-three-column .column2 .size2.with-img.subcolor_3,
+.theme-teo .one-two-column .column2 .size2.with-img.subcolor_3,
+.theme-teo .single-column .column1 .size2.with-img.subcolor_3,
+.theme-teo .three-one-column .column1 .size2.with-img.subcolor_3,
+.theme-teo .two-one-column .column1 .size2.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column1 .size2.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column2 .size2.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column3 .size2.with-img.subcolor_3,
+.theme-teo .one-one-two-column .column1 .size3.with-img.subcolor_3,
+.theme-teo .one-one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-teo .one-one-two-column .column3 .size3.with-img.subcolor_3,
+.theme-teo .one-three-column .column2 .size3.with-img.subcolor_3,
+.theme-teo .one-two-column .column2 .size3.with-img.subcolor_3,
+.theme-teo .single-column .column1 .size3.with-img.subcolor_3,
+.theme-teo .three-one-column .column1 .size3.with-img.subcolor_3,
+.theme-teo .two-one-column .column1 .size3.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column1 .size3.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column2 .size3.with-img.subcolor_3,
+.theme-teo .two-one-one-column .column3 .size3.with-img.subcolor_3 {
+  background: #84bfcc;
+}
+.theme-teo .one-one-two-column .column1 .size2.with-img.subcolor_4,
+.theme-teo .one-one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-teo .one-one-two-column .column3 .size2.with-img.subcolor_4,
+.theme-teo .one-three-column .column2 .size2.with-img.subcolor_4,
+.theme-teo .one-two-column .column2 .size2.with-img.subcolor_4,
+.theme-teo .single-column .column1 .size2.with-img.subcolor_4,
+.theme-teo .three-one-column .column1 .size2.with-img.subcolor_4,
+.theme-teo .two-one-column .column1 .size2.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column1 .size2.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column2 .size2.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column3 .size2.with-img.subcolor_4,
+.theme-teo .one-one-two-column .column1 .size3.with-img.subcolor_4,
+.theme-teo .one-one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-teo .one-one-two-column .column3 .size3.with-img.subcolor_4,
+.theme-teo .one-three-column .column2 .size3.with-img.subcolor_4,
+.theme-teo .one-two-column .column2 .size3.with-img.subcolor_4,
+.theme-teo .single-column .column1 .size3.with-img.subcolor_4,
+.theme-teo .three-one-column .column1 .size3.with-img.subcolor_4,
+.theme-teo .two-one-column .column1 .size3.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column1 .size3.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column2 .size3.with-img.subcolor_4,
+.theme-teo .two-one-one-column .column3 .size3.with-img.subcolor_4 {
+  background: #c8d351;
+}
+.theme-teo .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
+.theme-teo .HTML .size2.outlined.with-img.faculty_color .header,
+.theme-teo .Standard .size2.outlined.with-img.faculty_color .header,
+.theme-teo .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-teo .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
+.theme-teo .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-teo .rightbox-normal .size2.outlined.with-img.faculty_color .header,
+.theme-teo .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
+.theme-teo .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
+.theme-teo .EncyclopediaEntry .size3.outlined.with-img.faculty_color .header,
+.theme-teo .HTML .size3.outlined.with-img.faculty_color .header,
+.theme-teo .Standard .size3.outlined.with-img.faculty_color .header,
+.theme-teo .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-teo .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
+.theme-teo .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-teo .rightbox-normal .size3.outlined.with-img.faculty_color .header,
+.theme-teo .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
+.theme-teo .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
+  background: rgba(102, 96, 158, 0.83);
+  color: #fff;
+}
+.theme-teo .EncyclopediaEntry .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .HTML .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .Standard .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .rightbox-normal .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
+.theme-teo .EncyclopediaEntry .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .HTML .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .Standard .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .rightbox-normal .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
+.theme-teo .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
+  background: rgba(216, 104, 11, 0.83);
+  color: #fff;
+}
+.theme-teo .EncyclopediaEntry .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .HTML .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .Standard .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .rightbox-normal .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
+.theme-teo .EncyclopediaEntry .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .HTML .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .Standard .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .rightbox-normal .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
+.theme-teo .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
+  background: rgba(9, 63, 80, 0.83);
+  color: #fff;
+}
+.theme-teo .EncyclopediaEntry .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .HTML .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .Standard .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .rightbox-normal .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
+.theme-teo .EncyclopediaEntry .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .HTML .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .Standard .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .rightbox-normal .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
+.theme-teo .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
+  background: rgba(132, 191, 204, 0.83);
+  color: #fff;
+}
+.theme-teo .EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .HTML .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .Standard .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .rightbox-normal .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
+.theme-teo .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .HTML .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .Standard .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .rightbox-normal .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
+.theme-teo .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
+  background: rgba(200, 211, 81, 0.83);
+  color: #fff;
+}

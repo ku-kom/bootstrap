@@ -1,7 +1,363 @@
 // Core variables and mixins
 @import "../variables.less";
-@import "../mixins.less";
-
-//
+@import "../mixins.less"; //
 // Sund styles
 // --------------------------------------------------
+
+.gridbox {
+  .theme-sund & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@sund, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund;
+        color: @sund!important;
+
+        &::before {
+          color: @sund;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_1;
+        color: @sund-sub_1!important;
+
+        &::before {
+          color: @sund-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_2;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_2;
+        color: @sund-sub_2!important;
+
+        &::before {
+          color: @sund-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_3;
+        color: @sund-sub_3!important;
+
+        &::before {
+          color: @sund-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@sund-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @sund-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @sund-sub_4;
+        color: @sund-sub_4!important;
+
+        &::before {
+          color: @sund-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @sund-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @sund-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @sund-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @sund-sub_4-hover!important;
+        }
+      }
+    }
+  }
+}
+// full width and 2/3 columns
+
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.one-one-two-column .column3,
+.one-three-column .column2,
+.one-two-column .column2,
+.single-column .column1,
+.three-one-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1,
+.two-one-one-column .column2,
+.two-one-one-column .column3 {
+  .size2,
+  .size3 {
+    &.with-img {
+      .theme-sund & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @sund;
+        }
+
+        &.subcolor_1 {
+          background: @sund-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @sund-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @sund-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @sund-sub_4;
+        }
+      }
+    }
+  }
+}
+// Outline style
+.EncyclopediaEntry,
+.HTML,
+.Standard,
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.rightbox-normal,
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .size2,
+  .size3 {
+    &.outlined.with-img {
+      .theme-sund & {
+        &.faculty_color {
+          .header {
+            background: fade(@sund, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@sund-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@sund-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@sund-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@sund-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+    }
+  }
+}

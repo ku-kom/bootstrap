@@ -1,7 +1,363 @@
 // Core variables and mixins
 @import "../variables.less";
-@import "../mixins.less";
-
-//
+@import "../mixins.less"; //
 // Science styles
 // --------------------------------------------------
+
+.gridbox {
+  .theme-science & {
+    &.faculty_color {
+      &.text-down {
+        .header {
+          background: fade(@science, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science;
+        color: @science!important;
+
+        &::before {
+          color: @science;
+        }
+
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @science-hover!important;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science;
+        color: @white-color;
+
+        &:hover {
+          background: @science-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_1 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_1, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_1;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_1;
+        color: @science-sub_1!important;
+
+        &::before {
+          color: @science-sub_1;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_1-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_1-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_1;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_1-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_2 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_2, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_2;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_2;
+        color: @science-sub_2!important;
+
+        &::before {
+          color: @science-sub_2;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_2-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_2-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_2;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_2-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_3 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_3, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_3;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_3;
+        color: @science-sub_3;
+
+        &::before {
+          color: @science-sub_3;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_3-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_3-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_3;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_3-hover!important;
+        }
+      }
+    }
+
+    &.subcolor_4 {
+      &.text-down {
+        .header {
+          background: fade(@science-sub_4, 83%);
+          color: @white-color;
+        }
+      }
+
+      &.text-top {
+        .header {
+          background: @science-sub_4;
+          color: @white-color;
+        }
+      }
+
+      &.outlined {
+        border: 1px solid @science-sub_4;
+        color: @science-sub_4!important;
+
+        &::before {
+          color: @science-sub_4;
+        }
+
+        &:hover {
+          background: @ku-gray-hover!important;
+          border: 1px solid @science-sub_4-hover;
+        }
+
+        &.with-img {
+          &:hover {
+            background: @ku-gray-hover!important;
+            border: 1px solid @science-sub_4-hover;
+          }
+        }
+      }
+
+      &.full {
+        background: @science-sub_4;
+        color: @white-color;
+
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
+      }
+
+      &.text-down {
+        &:hover {
+          background: @science-sub_4-hover!important;
+        }
+      }
+    }
+  }
+}
+// full width and 2/3 columns
+
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.one-one-two-column .column3,
+.one-three-column .column2,
+.one-two-column .column2,
+.single-column .column1,
+.three-one-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1,
+.two-one-one-column .column2,
+.two-one-one-column .column3 {
+  .size2,
+  .size3 {
+    &.with-img {
+      .theme-science & {
+        color: @white-color;
+
+        &.faculty_color {
+          background: @science;
+        }
+
+        &.subcolor_1 {
+          background: @science-sub_1;
+        }
+
+        &.subcolor_2 {
+          background: @science-sub_2;
+        }
+
+        &.subcolor_3 {
+          background: @science-sub_3;
+        }
+
+        &.subcolor_4 {
+          background: @science-sub_4;
+        }
+      }
+    }
+  }
+}
+// Outline style
+
+.EncyclopediaEntry,
+.HTML,
+.Standard,
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.rightbox-normal,
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .size2,
+  .size3 {
+    &.outlined.with-img {
+      .theme-science & {
+        &.faculty_color {
+          .header {
+            background: fade(@science, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_1 {
+          .header {
+            background: fade(@science-sub_1, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_2 {
+          .header {
+            background: fade(@science-sub_2, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_3 {
+          .header {
+            background: fade(@science-sub_3, 83%);
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_4 {
+          .header {
+            background: fade(@science-sub_4, 83%);
+            color: @white-color;
+          }
+        }
+      }
+    }
+  }
+}
