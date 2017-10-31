@@ -117,7 +117,7 @@ module.exports = function (grunt) {
           'js/modal.js',
           'js/tooltip.js',
           'js/popover.js',
-          'js/scrollspy.js',
+          //'js/scrollspy.js',
           'js/tab.js',
           //'js/affix.js',
           'js/ku-custom.js'
