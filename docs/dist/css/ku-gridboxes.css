@@ -5,8 +5,7 @@
   display: -ms-flexbox;
   display:         flex;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 1.5;
           flex-direction: column;
   border-radius: 2px;
@@ -22,8 +21,7 @@
   -webkit-filter: brightness(90%) !important;
 }
 .gridbox * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .gridbox.subcolor_5.text-down .header {
   color: #606060;
@@ -216,7 +214,6 @@
   height: auto;
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
 
   -webkit-backface-visibility: hidden;
@@ -225,14 +222,12 @@
 .gridbox.with-img.img-left img {
   left: 0;
   -webkit-transform: translateY(-50%) translateX(0);
-      -ms-transform: translateY(-50%) translateX(0);
           transform: translateY(-50%) translateX(0);
 }
 .gridbox.with-img.img-right img {
   right: 0;
   left: auto;
   -webkit-transform: translateY(-50%) translateX(0);
-      -ms-transform: translateY(-50%) translateX(0);
           transform: translateY(-50%) translateX(0);
 }
 .gridbox:not(.with-img) .box1 {
@@ -1179,13 +1174,11 @@
   }
   .single-column .column1 .size1.with-img:hover .header > span {
     text-shadow: 3px 0 #fff, 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff, -3px 0 #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 73, 73, .25)), to(#252525));
     background-image: -webkit-linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
     background-image:         linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
     background-repeat: repeat-x;
     background-position: 0 93%;
-    -webkit-background-size: 1px 1px;
-            background-size: 1px 1px;
+    background-size: 1px 1px;
   }
   .single-column .column1 .size1.img-flip-right .box1 {
     padding-right: 24px;
@@ -1588,7 +1581,6 @@
 @media only screen and (min-width: 600px) and (max-width: 680px) {
   .size1.with-img .box2 img {
     -webkit-transform: translateY(-50%) translateX(-50%) scale(1.12);
-        -ms-transform: translateY(-50%) translateX(-50%) scale(1.12);
             transform: translateY(-50%) translateX(-50%) scale(1.12);
   }
 }
@@ -2889,7 +2881,6 @@
     max-width: none!important;
     max-height: 155%!important;
     -webkit-transform: translateY(-50%) translateX(-50%) scale(1.2);
-        -ms-transform: translateY(-50%) translateX(-50%) scale(1.2);
             transform: translateY(-50%) translateX(-50%) scale(1.2);
   }
   .one-one-two-column .column1 .size3.with-img .box2 img,

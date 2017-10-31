@@ -1,0 +1,60 @@
+//
+// KU custom advanced lists with images
+// --------------------------------------------------
+
+.advanced-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    min-height: 80px;
+    background-color: @gray-f5;
+    zoom: 1;
+    &:extend(.clearfix all);
+
+    .list-img {
+      display: none;
+      @media screen and (min-width: @screen-sm-min) {
+        display: block;
+        flex: 1 0 33%;
+        background-position: center;
+        background-size: cover;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .list-content {
+      padding: 10px;
+      line-height: 1.33333;
+
+      .list-header {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    .advanced-link {
+      color: @text-color;
+      text-decoration: none;
+      display: flex;
+
+      &:hover {
+        background-color: #e7e6e6;
+      }
+    }
+
+    & + li {
+      margin-top: 5px;
+    }
+  }
+  &.left {
+    .list-content {
+      order: 2;
+    }
+  }
+}

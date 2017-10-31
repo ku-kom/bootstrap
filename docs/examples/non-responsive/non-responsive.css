@@ -109,8 +109,7 @@ body,
   border: 1px solid rgba(0, 0, 0, .15);
   border-width: 0 1px 1px;
   border-radius: 0 0 4px 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #333;
@@ -139,8 +138,7 @@ body,
   margin-right: 0;
   margin-left: 0;
   border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /* Copy-pasted from forms.less since we mixin the .form-inline styles. */

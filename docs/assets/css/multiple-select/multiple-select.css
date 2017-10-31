@@ -16,8 +16,7 @@
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   text-align: left;
   white-space: nowrap;
   line-height: 34px;
@@ -97,13 +96,11 @@
 
 .ms-drop.bottom {
   top: 100%;
-  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
   box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
 }
 
 .ms-drop.top {
   bottom: 100%;
-  -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
   box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
 }
 
@@ -129,8 +126,7 @@
   font-size: 1em;
   border: 1px solid #aaa;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   /*
   background: #fff url('../docs/images/multiple-select.png') no-repeat 100% -22px;
   background: url('../docs/images/multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
@@ -143,7 +139,6 @@
 }
 
 .ms-search, .ms-search input {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

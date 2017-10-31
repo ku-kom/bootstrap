@@ -19,6 +19,7 @@
 @gray-lighter:           #eee;
 
 @semi-white:             #f1f1f1;
+@gray-f5:                #f5f5f5;
 @white-color:            #fff;
 
 @ku-search-icons:        #9d9d9d;
@@ -64,7 +65,7 @@
 @green: #85ae33;
 @green-hover: #75992c;
 @ku-gray: #eee;
-@ku-gray-hover: #f5f5f5;
+@ku-gray-hover: @gray-f5;
 @ku-darkgray: #b5b5b5;
 @ku-darkgray-hover: #a1a1a1;
 @ku-darkblue: #42759b;
@@ -263,7 +264,7 @@
 //** Background color used for `.table-striped`.
 @table-bg-accent:               #f9f9f9;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                #f5f5f5;
+@table-bg-hover:                @gray-f5;
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
@@ -380,7 +381,7 @@
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         @gray-f5;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -804,7 +805,7 @@
 //##
 
 //** Background color of the whole progress component
-@progress-bg:                 #f5f5f5;
+@progress-bg:                 @gray-f5;
 //** Progress bar text color
 @progress-bar-color:          @white-color;
 //** Variable for setting rounded corners on progress bar.
@@ -834,7 +835,7 @@
 @list-group-border-radius:      @border-radius-base;
 
 //** Background color of single list items on hover
-@list-group-hover-bg:           #f5f5f5;
+@list-group-hover-bg:           @gray-f5;
 //** Text color of active list items
 @list-group-active-color:       @component-active-color;
 //** Background color of active list items
@@ -870,12 +871,12 @@
 
 //** Border color for elements within panels
 @panel-inner-border:          #ddd;
-@panel-footer-bg:             #f5f5f5;
+@panel-footer-bg:             @gray-f5;
 
 @panel-default-header-text:   #151515;
 @panel-default-text:          @gray-dark;
 @panel-default-border:        #d5d5d5;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-heading-bg:    @gray-f5;
 
 @panel-primary-text:          @white-color;
 @panel-primary-border:        @brand-primary;
@@ -900,7 +901,7 @@
 // KU accordions
 @panel-accordion-text:           @text-color;
 @panel-accordion-border:         #ddd;
-@panel-accordion-heading-bg:     #f5f5f5;
+@panel-accordion-heading-bg:     @gray-f5;
 
 
 //== Thumbnails
@@ -928,7 +929,7 @@
 //
 //##
 
-@well-bg:                     #f5f5f5;
+@well-bg:                     @gray-f5;
 @well-border:                 darken(@well-bg, 7%);
 
 
@@ -1003,7 +1004,7 @@
 @kbd-color:                   @white-color;
 @kbd-bg:                      #333;
 
-@pre-bg:                      #f5f5f5;
+@pre-bg:                      @gray-f5;
 @pre-color:                   @gray-dark;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
