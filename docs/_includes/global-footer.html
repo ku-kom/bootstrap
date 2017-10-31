@@ -137,9 +137,11 @@
   // Only use under development - set active left menu item
   $(function() {
     setActiveLinks();
-    // $('#leftmenu li a').click(function() {
-    //   setActiveLinks();
-    // });
+
+    $('.nav li a').click(function() {
+    $('.nav li').removeClass('active');
+      $(this).parent().addClass('active');
+    });
 
     function setActiveLinks() {
       var current = location.pathname;
