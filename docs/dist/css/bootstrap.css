@@ -6735,8 +6735,6 @@ button.close {
 .modal-footer:after,
 .ku-branding .ku-branding-line:before,
 .ku-branding .ku-branding-line:after,
-.advanced-list li:before,
-.advanced-list li:after,
 main:before,
 main:after,
 .divider:before,
@@ -6761,7 +6759,6 @@ main:after,
 .modal-header:after,
 .modal-footer:after,
 .ku-branding .ku-branding-line:after,
-.advanced-list li:after,
 main:after,
 .divider:after {
   clear: both;
@@ -7813,7 +7810,7 @@ main:after,
 .advanced-list li + li {
   margin-top: 5px;
 }
-.advanced-list.left .list-content {
+.advanced-list.img-left .list-content {
   -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
