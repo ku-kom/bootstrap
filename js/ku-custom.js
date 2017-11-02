@@ -15,11 +15,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector('head').appendChild(msViewportStyle);
 }
 
-  // Toggle icon in accordions
+// Toggle icon in accordions
 function flipIcon(e) {
-  $(e.target)
-    //.prev('.panel-heading')
-    .toggleClass('open');
+$(e.target)
+  .prev('.panel-heading')
+  .toggleClass('open');
 }
 
 $(function () {
