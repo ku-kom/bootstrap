@@ -2097,6 +2097,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   );
   document.querySelector('head').appendChild(msViewportStyle);
 }
+
   // Toggle icon in accordions
 function flipIcon(e) {
   $(e.target)
@@ -2114,7 +2115,7 @@ $(function () {
 
   // Toggle icon in accordions
   $('.panel-group').on('hide.bs.collapse', flipIcon);
-  $('.panel-group').on('shown.bs.collapse', flipIcon);
+  $('.panel-group').on('show.bs.collapse', flipIcon);
 
   // Open / close all accordions
   $('.closeall').click(function () {
