@@ -2101,7 +2101,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   // Toggle icon in accordions
 function flipIcon(e) {
   $(e.target)
-    .prev('.panel-heading')
+    //.prev('.panel-heading')
     .toggleClass('open');
 }
 
@@ -2114,8 +2114,8 @@ $(function () {
   }
 
   // Toggle icon in accordions
-  $('.panel-group').on('hide.bs.collapse', flipIcon);
-  $('.panel-group').on('show.bs.collapse', flipIcon);
+  $('.panel-accordion').on('hide.bs.collapse', flipIcon);
+  $('.panel-accordion').on('show.bs.collapse', flipIcon);
 
   // Open / close all accordions
   $('.closeall').click(function () {

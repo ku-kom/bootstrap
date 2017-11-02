@@ -37,11 +37,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small > a,
+  > .small,
    > a,
    > small,
    > small > a,
-  > .small {
+  > .small > a {
     color: inherit;
   }
 }
@@ -59,8 +59,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .list-group,
-  > .panel-collapse > .list-group {
+  > .panel-collapse > .list-group,
+  > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -106,9 +106,9 @@
 // watch it go full width.
 
 .panel {
-  > .table,
+  > .panel-collapse > .table,
    > .table-responsive > .table,
-  > .panel-collapse > .table {
+  > .table {
     margin-bottom: 0;
 
     caption {
@@ -361,10 +361,15 @@
         padding-top: 0;
         padding-bottom: 15px;
         border-top: 0;
+
+        p {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
     // Open accordion
-
     &.open {
       background-color: @white-color;
     }
