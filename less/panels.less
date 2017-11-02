@@ -37,11 +37,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-   > .small,
+  > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 }
@@ -59,8 +59,8 @@
 // any kind of custom content between the two.
 
 .panel {
-   > .panel-collapse > .list-group,
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -106,9 +106,9 @@
 // watch it go full width.
 
 .panel {
-   > .panel-collapse > .table,
+  > .table,
    > .table-responsive > .table,
-  > .table {
+  > .panel-collapse > .table {
     margin-bottom: 0;
 
     caption {
@@ -346,28 +346,27 @@
           transform: translateY(-50%);
           width: 20px;
         }
-      }
-    }
-    // Open accordion
-    &.open {
-      background-color: @white-color;
 
-      .panel-title {
-        a {
+        &:not(.collapsed) {
           .glyphicon-minus;
           padding-bottom: 10px;
         }
       }
+    }
 
-      + .panel-collapse {
+    + .panel-collapse {
+      border-top: 0;
+
+      .panel-body {
+        padding-top: 0;
+        padding-bottom: 15px;
         border-top: 0;
-
-        .panel-body {
-          padding-top: 0;
-          padding-bottom: 15px;
-          border-top: 0;
-        }
       }
+    }
+    // Open accordion
+
+    &.open {
+      background-color: @white-color;
     }
   }
 
