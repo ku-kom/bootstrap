@@ -37,11 +37,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small,
+  > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 }
@@ -59,8 +59,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .panel-collapse > .list-group,
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -106,9 +106,9 @@
 // watch it go full width.
 
 .panel {
-  > .panel-collapse > .table,
+  > .table,
    > .table-responsive > .table,
-  > .table {
+  > .panel-collapse > .table {
     margin-bottom: 0;
 
     caption {
@@ -224,18 +224,38 @@
 
 .panel-group {
   margin-bottom: @line-height-computed;
-  // Tighten up margin so it's only between panels
+
   .panel {
     margin-bottom: 0;
-    border-radius: @panel-border-radius;
-    // + .panel {
-    //   margin-top: 5px;
-    // }
+
+    &:first-child {
+      border-top-left-radius: @panel-border-radius;
+      border-top-right-radius: @panel-border-radius;
+
+      > .panel-heading {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+    }
+
+    &:last-child {
+      border-bottom-left-radius: @panel-border-radius;
+      border-bottom-right-radius: @panel-border-radius;
+
+      > .panel-heading {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+    }
   }
 
   .panel-heading {
     border-top: 1px solid @semi-white;
     border-bottom: 1px solid @panel-default-border;
+
+    &:hover {
+      background-color: darken(@panel-bg, 7%);
+    }
 
     + .panel-collapse > .list-group,
     + .panel-collapse > .panel-body {
@@ -252,7 +272,7 @@
   }
 }
 // Contextual variations
-// KU bokstope
+// KU bokstoppe
 
 .panel-default {
   & > .panel-heading {
@@ -322,7 +342,6 @@
     background-color: @panel-accordion-heading-bg;
     padding: 0 30px 0 0;
     position: relative;
-    border-radius: inherit;
     border: 0;
 
     .panel-title {

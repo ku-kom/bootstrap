@@ -6050,11 +6050,29 @@ button.list-group-item-danger.active:focus {
 }
 .panel-group .panel {
   margin-bottom: 0;
-  border-radius: 2px;
+}
+.panel-group .panel:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.panel-group .panel:first-child > .panel-heading {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.panel-group .panel:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.panel-group .panel:last-child > .panel-heading {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
 }
 .panel-group .panel-heading {
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #d5d5d5;
+}
+.panel-group .panel-heading:hover {
+  background-color: #ededed;
 }
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group .panel-heading + .panel-collapse > .panel-body {
@@ -6199,7 +6217,6 @@ button.list-group-item-danger.active:focus {
   padding: 0 30px 0 0;
   background-color: #f5f5f5;
   border: 0;
-  border-radius: inherit;
 }
 .panel-accordion > .panel-heading .panel-title {
   font-size: 14px;
