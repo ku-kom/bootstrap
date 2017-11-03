@@ -352,23 +352,25 @@
       a {
         display: block;
         padding: 8px 0 10px 10px;
-        .glyphicon-plus;
 
         &:before {
           .glyphicon;
+          content: "\002b";
           font-size: 12px;
           color: @gray-light;
           position: absolute;
-          display: block;
-          top: 50%;
+          top: 50%!important;
           right: 7px;
           transform: translateY(-50%);
           width: 20px;
+          overflow: hidden;
         }
 
         &:not(.collapsed) {
-          .glyphicon-minus;
-          padding-bottom: 10px;
+          &:before {
+            content: "\2212";
+            right: 8px;
+          }
         }
       }
     }
