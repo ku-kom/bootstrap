@@ -1,7 +1,6 @@
 @import "variables.less";
 @import "mixins.less"; // Extra gridbox styling for Bootstrap templates (prefixed with class "ku-bs").
 // Extends ku-gridboxes.less which was build for old Obvius page templates.
-
 @media only screen and (min-width: 681px) and (max-width: @screen-sm-min) {
   // Front page / no menu
   // 2-1-1 columns and 1-1-2 columns
@@ -35,6 +34,88 @@
           img {
             max-width: none!important;
             max-height: 108%!important;
+          }
+        }
+      }
+    }
+  }
+  // 1-3 / 3-1
+  .ku-bs {
+    .one-three-column .column1,
+    .three-one-column .column2 {
+      .size2 {
+        &.with-img {
+          .box2 {
+            img {
+              max-width: 117%!important;
+            }
+          }
+        }
+      }
+
+      .size3 {
+        &.with-img {
+          .box2 {
+            img {
+              max-height: 100%!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+  .ku-bs {
+    // Behave as small size boxes
+    .one-one-two-column .column1,
+    .one-one-two-column .column2,
+    .quad-column [class*=column],
+    .two-one-one-column .column2,
+    .two-one-one-column .column3 {
+      &.size2,
+      &.size3 {
+        &.with-img {
+          flex-direction: column;
+
+          &.text-over {
+            &.text-down {
+              .box1 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+              }
+            }
+
+            &.text-top {
+              .box1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+              }
+            }
+          }
+
+          .box1 {
+            order: 2;
+            flex: 0 1 auto;
+            width: 100%;
+
+            .header {
+              width: 100%;
+              border-right: 25px solid transparent;
+              white-space: nowrap;
+              overflow: hidden;
+              padding: 8px 0 6px 10px;
+            }
+
+            .text {
+              display: none;
+            }
+          }
+
+          .box2 {
+            order: 1;
           }
         }
       }

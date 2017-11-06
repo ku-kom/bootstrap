@@ -8921,6 +8921,125 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
     max-width: none!important;
     max-height: 108%!important;
   }
+  .ku-bs .one-three-column .column1 .size2.with-img .box2 img,
+  .ku-bs .three-one-column .column2 .size2.with-img .box2 img {
+    max-width: 117%!important;
+  }
+  .ku-bs .one-three-column .column1 .size3.with-img .box2 img,
+  .ku-bs .three-one-column .column2 .size3.with-img .box2 img {
+    max-height: 100%!important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .ku-bs .one-one-two-column .column1.size2.with-img,
+  .ku-bs .one-one-two-column .column2.size2.with-img,
+  .ku-bs .quad-column [class*=column].size2.with-img,
+  .ku-bs .two-one-one-column .column2.size2.with-img,
+  .ku-bs .two-one-one-column .column3.size2.with-img,
+  .ku-bs .one-one-two-column .column1.size3.with-img,
+  .ku-bs .one-one-two-column .column2.size3.with-img,
+  .ku-bs .quad-column [class*=column].size3.with-img,
+  .ku-bs .two-one-one-column .column2.size3.with-img,
+  .ku-bs .two-one-one-column .column3.size3.with-img {
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img.text-over.text-down .box1,
+  .ku-bs .one-one-two-column .column2.size2.with-img.text-over.text-down .box1,
+  .ku-bs .quad-column [class*=column].size2.with-img.text-over.text-down .box1,
+  .ku-bs .two-one-one-column .column2.size2.with-img.text-over.text-down .box1,
+  .ku-bs .two-one-one-column .column3.size2.with-img.text-over.text-down .box1,
+  .ku-bs .one-one-two-column .column1.size3.with-img.text-over.text-down .box1,
+  .ku-bs .one-one-two-column .column2.size3.with-img.text-over.text-down .box1,
+  .ku-bs .quad-column [class*=column].size3.with-img.text-over.text-down .box1,
+  .ku-bs .two-one-one-column .column2.size3.with-img.text-over.text-down .box1,
+  .ku-bs .two-one-one-column .column3.size3.with-img.text-over.text-down .box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img.text-over.text-top .box1,
+  .ku-bs .one-one-two-column .column2.size2.with-img.text-over.text-top .box1,
+  .ku-bs .quad-column [class*=column].size2.with-img.text-over.text-top .box1,
+  .ku-bs .two-one-one-column .column2.size2.with-img.text-over.text-top .box1,
+  .ku-bs .two-one-one-column .column3.size2.with-img.text-over.text-top .box1,
+  .ku-bs .one-one-two-column .column1.size3.with-img.text-over.text-top .box1,
+  .ku-bs .one-one-two-column .column2.size3.with-img.text-over.text-top .box1,
+  .ku-bs .quad-column [class*=column].size3.with-img.text-over.text-top .box1,
+  .ku-bs .two-one-one-column .column2.size3.with-img.text-over.text-top .box1,
+  .ku-bs .two-one-one-column .column3.size3.with-img.text-over.text-top .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img .box1,
+  .ku-bs .one-one-two-column .column2.size2.with-img .box1,
+  .ku-bs .quad-column [class*=column].size2.with-img .box1,
+  .ku-bs .two-one-one-column .column2.size2.with-img .box1,
+  .ku-bs .two-one-one-column .column3.size2.with-img .box1,
+  .ku-bs .one-one-two-column .column1.size3.with-img .box1,
+  .ku-bs .one-one-two-column .column2.size3.with-img .box1,
+  .ku-bs .quad-column [class*=column].size3.with-img .box1,
+  .ku-bs .two-one-one-column .column2.size3.with-img .box1,
+  .ku-bs .two-one-one-column .column3.size3.with-img .box1 {
+    width: 100%;
+
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img .box1 .header,
+  .ku-bs .one-one-two-column .column2.size2.with-img .box1 .header,
+  .ku-bs .quad-column [class*=column].size2.with-img .box1 .header,
+  .ku-bs .two-one-one-column .column2.size2.with-img .box1 .header,
+  .ku-bs .two-one-one-column .column3.size2.with-img .box1 .header,
+  .ku-bs .one-one-two-column .column1.size3.with-img .box1 .header,
+  .ku-bs .one-one-two-column .column2.size3.with-img .box1 .header,
+  .ku-bs .quad-column [class*=column].size3.with-img .box1 .header,
+  .ku-bs .two-one-one-column .column2.size3.with-img .box1 .header,
+  .ku-bs .two-one-one-column .column3.size3.with-img .box1 .header {
+    width: 100%;
+    padding: 8px 0 6px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 25px solid transparent;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img .box1 .text,
+  .ku-bs .one-one-two-column .column2.size2.with-img .box1 .text,
+  .ku-bs .quad-column [class*=column].size2.with-img .box1 .text,
+  .ku-bs .two-one-one-column .column2.size2.with-img .box1 .text,
+  .ku-bs .two-one-one-column .column3.size2.with-img .box1 .text,
+  .ku-bs .one-one-two-column .column1.size3.with-img .box1 .text,
+  .ku-bs .one-one-two-column .column2.size3.with-img .box1 .text,
+  .ku-bs .quad-column [class*=column].size3.with-img .box1 .text,
+  .ku-bs .two-one-one-column .column2.size3.with-img .box1 .text,
+  .ku-bs .two-one-one-column .column3.size3.with-img .box1 .text {
+    display: none;
+  }
+  .ku-bs .one-one-two-column .column1.size2.with-img .box2,
+  .ku-bs .one-one-two-column .column2.size2.with-img .box2,
+  .ku-bs .quad-column [class*=column].size2.with-img .box2,
+  .ku-bs .two-one-one-column .column2.size2.with-img .box2,
+  .ku-bs .two-one-one-column .column3.size2.with-img .box2,
+  .ku-bs .one-one-two-column .column1.size3.with-img .box2,
+  .ku-bs .one-one-two-column .column2.size3.with-img .box2,
+  .ku-bs .quad-column [class*=column].size3.with-img .box2,
+  .ku-bs .two-one-one-column .column2.size3.with-img .box2,
+  .ku-bs .two-one-one-column .column3.size3.with-img .box2 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+            order: 1;
+  }
 }
 #pagewrapper {
   display: -webkit-box;
