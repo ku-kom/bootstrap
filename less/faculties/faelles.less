@@ -274,17 +274,7 @@
 }
 // full width and 2/3 columns
 
-.one-one-two-column .column1,
-.one-one-two-column .column2,
-.one-one-two-column .column3,
-.one-three-column .column2,
-.one-two-column .column2,
-.single-column .column1,
-.three-one-column .column1,
-.two-one-column .column1,
-.two-one-one-column .column1,
-.two-one-one-column .column2,
-.two-one-one-column .column3 {
+@media only screen and (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   .size2,
   .size3 {
     &.with-img {
@@ -422,49 +412,6 @@
 
           &.subcolor_4 {
             background: @ku-darkblue;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 459px) {
-  // All column types must behave like single column boxes
-  .gcrow .gccolumn .gridbox {
-    &.size2,
-    &.size3 {
-      &.with-img {
-        &.outlined {
-          .theme-faelles & {
-            &.faculty_color {
-              .header {
-                background: fade(@ku-red, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@blue, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@green, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@ku-darkgray, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@ku-darkblue, 83%);
-              }
-            }
           }
         }
       }

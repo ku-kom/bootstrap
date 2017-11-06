@@ -1,124 +1,595 @@
 @import "variables.less";
-@import "mixins.less"; // Extra gridbox styling for Bootstrap templates (prefixed with class "ku-bs").
-// Extends ku-gridboxes.less which was build for old Obvius page templates.
-@media only screen and (min-width: 681px) and (max-width: @screen-sm-min) {
-  // Front page / no menu
-  // 2-1-1 columns and 1-1-2 columns
-  .one-one-two-column .column1,
-  .one-one-two-column .column2,
-  .two-one-one-column .column2,
-  .two-one-one-column .column3 {
-    .size2,
-    .size3 {
+@import "mixins.less"; // KU custom grid box styling
+// NEL:
+// This code was originally made for old Obvius page templates.
+// Please refer to the ku-gridboxes-bootstrap.less for gridboxes in Bootstrap templates.
+// --------------------------------------------------
+// Grid box styles
+// ------------------
+// outlined: with border color
+// full: with full background color
+// text-top: text-bar at the top
+// text-down: text-bar at the bottom
+// text-over: overlays content
+
+.gridbox {
+  width: 100%;
+  position: relative;
+  line-height: @line-height-base;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &:hover {
+    img {
+      filter: brightness(90%)!important;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &.subcolor_5 {
+    &.text-down {
+      .header {
+        background: fade(@ku-gray, 90%);
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @ku-gray;
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @ku-gray;
+      color: @ku-gridbox-text;
+
+      &::before {
+        color: @ku-gridbox-text;
+      }
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @ku-gray-hover;
+      }
+
       &.with-img {
-        flex-direction: row;
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @ku-gray-hover;
+        }
+      }
+    }
 
-        .box1 {
-          flex: 1;
+    &.full {
+      background: @ku-gray;
+      color: @ku-gridbox-text;
 
-          .header {
-            background: 0 0!important;
-            position: relative;
-            bottom: auto;
-            left: auto;
-          }
+      &:hover {
+        background: @ku-gray-hover;
+      }
 
-          .text {
-            display: block;
+      .header {
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @ku-gray-hover;
+      }
+    }
+
+    &::before {
+      color: @ku-gridbox-text;
+    }
+
+    .text {
+      color: @ku-gridbox-text;
+    }
+  }
+
+  &.subcolor_6 {
+    &.text-down {
+      .header {
+        background: fade(@white-color, 90%);
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @white-color;
+        color: @ku-gridbox-text;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @gray-dark;
+      color: @ku-gridbox-text;
+
+      &::before {
+        color: @ku-gridbox-text;
+      }
+
+      &:hover {
+        background: @white-color-hover;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @gray-dark;
+        }
+      }
+    }
+
+    &.full {
+      background: @white-color;
+      color: @ku-gridbox-text;
+
+      .header {
+        color: @ku-gridbox-text;
+      }
+
+      &::before {
+        color: @ku-gridbox-text;
+      }
+
+      &:hover {
+        background: @white-color-hover;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @white-color-hover;
+      }
+    }
+
+    &::before {
+      color: @ku-gridbox-text;
+    }
+
+    .text {
+      color: @ku-gridbox-text;
+    }
+  }
+
+  &.subcolor_7 {
+    background: @brown;
+
+    &.text-down {
+      .header {
+        background: fade(@brown, 83%);
+        color: @white-color;
+      }
+    }
+
+    &.text-top {
+      .header {
+        background: @brown;
+        color: @white-color;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid @brown;
+      color: @ku-gridbox-text;
+
+      &::before {
+        color: @brown;
+      }
+
+      &:hover {
+        background: @white-color-hover;
+        border: 1px solid @brown-hover;
+      }
+
+      &.with-img {
+        &:hover {
+          background: @ku-gray-hover;
+          border: 1px solid @brown-hover;
+        }
+      }
+    }
+
+    &.full {
+      background: @brown;
+      color: @white-color;
+
+      .header {
+        color: @white-color;
+      }
+
+      &:hover {
+        background: @brown-hover;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @brown-hover;
+      }
+    }
+
+    &::before {
+      color: @white-color;
+    }
+  }
+
+  .box1 {
+    z-index: 4;
+    order: 1;
+    flex: 0 1 auto;
+    position: relative;
+
+    .header {
+      color: inherit;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 8px 18px 6px @padding10;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      width: 100%;
+    }
+
+    .text {
+      font-size: 13px;
+    }
+  }
+
+  .box2 {
+    padding: 5px @padding10 @padding10;
+    order: 2;
+    flex: 1 1 auto;
+  }
+  // Add an arrow to the box
+  &::before {
+    display: inline-block;
+    font-family: @custom-icon-font-family-name;
+    content: "\61";
+    text-transform: none;
+    font-size: 12px;
+    color: @white-color;
+    bottom: 9px;
+    right: @margin10;
+    position: absolute;
+    z-index: 5;
+  }
+  // Hide arrow
+  &.no-arrow {
+    &::before {
+      display: none;
+    }
+  }
+
+  &.with-img {
+    // Boxes with img
+    .box2 {
+      position: relative;
+      padding: 0 !important;
+      overflow: hidden;
+
+      img {
+        // Img inside the box adjusted by height and centered
+        display: block;
+        width: auto;
+        min-height: 100%;
+        object-fit: cover;
+        -ms-interpolation-mode: bicubic;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        // Prevent image from moving in some cases
+        backface-visibility: hidden;
+      }
+    }
+    // Position image left
+    &.img-left {
+      img {
+        left: 0;
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+    // Position image right
+    &.img-right {
+      img {
+        left: auto;
+        right: 0;
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+  }
+
+  &:not(.with-img) {
+    .box1 {
+      flex: 1 1 auto;
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+  // Videos
+  &.with-iframe {
+    background: @ku-gray;
+    color: initial!important;
+
+    &::before {
+      display: none;
+    }
+
+    .header {
+      border-right: 5px solid transparent;
+      color: @gray-dark;
+    }
+  }
+  // Boxes with the title at the top
+  &.text-top {
+    .box1 {
+      order: 1;
+    }
+
+    .box2 {
+      order: 2;
+    }
+
+    &::before {
+      top: @padding10;
+      bottom: auto;
+    }
+  }
+  // Boxes with the title at the bottom
+  &.text-down {
+    .box1 {
+      order: 2;
+    }
+
+    .box2 {
+      order: 1;
+    }
+  }
+  // Boxes with the text above the content
+  &.text-over {
+    .header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: inherit;
+    }
+  }
+  // Height 298px
+  &.size1 {
+    height: @gridbox1;
+    background: @ku-gray;
+
+    &.with-img {
+      .box1 {
+        order: 2;
+        padding: 5px 10px 10px;
+        flex: 1;
+
+        .header-small {
+          font-weight: bold;
+          color: @gray-light;
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+          margin: 5px 0;
+
+          .date {
+            float: right;
+            padding-left: 5px;
           }
         }
 
-        .box2 {
-          flex: 0 1 235px;
+        .header {
+          color: @ku-news-gray;
+          font-size: 1.42em;
+          line-height: 1.399em;
+          text-transform: none;
+          padding: 0;
+          margin: 15px 0 5px;
+        }
 
-          img {
-            max-width: none!important;
-            max-height: 108%!important;
-          }
+        .text {
+          display: none;
+          font-size: 1.1em;
+          font-weight: 400;
+          line-height: 1.45em;
+          padding: 0 15px 5px 0;
+          color: @gray-dark;
+        }
+      }
+    }
+
+    .box2 {
+      order: 1;
+      // image height
+      flex: 0 0 @gridbox3;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &:hover {
+      background: @ku-gray-hover;
+    }
+  }
+
+  &.outlined {
+    background: @white-color!important;
+
+    &:not(.with-img) {
+      // Boxes without img: hide box2, make .box1 100% height
+      .box1 {
+        flex: 0 1 100%;
+      }
+
+      .box2 {
+        display: none;
+      }
+    }
+
+    .text {
+      display: block;
+    }
+  }
+
+  .text {
+    padding: 0 25px 5px @padding10;
+    color: inherit;
+  }
+  // Height 185px
+  &.size2 {
+    height: @gridbox2;
+
+    &.with-img {
+      .box1 {
+        .text {
+          display: none;
+        }
+      }
+
+      .box2 {
+        img {
+          max-height: 108%;
+          max-width: none;
+        }
+      }
+    }
+
+    &:not(.with-img) {
+      .box1 {
+        flex: 0 1 100%;
+
+        .text {
+          display: block;
         }
       }
     }
   }
-  // 1-3 / 3-1
-  .ku-bs {
-    .one-three-column .column1,
-    .three-one-column .column2 {
-      .size2 {
-        &.with-img {
-          .box2 {
-            img {
-              max-width: 117%!important;
-            }
-          }
+  // Height 133px
+  &.size3 {
+    height: @gridbox3;
+
+    &.with-img {
+      .box1 {
+        .text {
+          display: none;
         }
       }
+    }
 
-      .size3 {
-        &.with-img {
-          .box2 {
-            img {
-              max-height: 100%!important;
-            }
-          }
+    &:not(.with-img) {
+      .box1 {
+        flex: 0 1 100%;
+
+        .text {
+          display: block;
         }
+      }
+    }
+  }
+  // Height 81px
+  &.size4 {
+    height: @gridbox4;
+
+    .box1 {
+      .text {
+        display: none;
+      }
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+  // Height 55px
+  &.size5 {
+    height: @gridbox5;
+
+    .box1 {
+      .header {
+        padding-bottom: 4px;
+      }
+
+      .text {
+        display: none;
+      }
+    }
+
+    .box2 {
+      display: none;
+    }
+  }
+}
+
+.boxlink {
+  color: inherit!important;
+  display: block;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+/*
+* Mobile: All column types must behave like single column boxes
+*/
+.gcrow .gccolumn .gridbox {
+  .all-single-column();
+}
+
+@media (max-width: @screen-xs-min) {
+&.size2 {
+  &.with-img {
+    height: 220px;
+    // Video has natural height
+    &.with-iframe {
+      height: inherit;
+    }
+  }
+}
+
+  &.size3 {
+    &.with-img {
+      height: 170px;
+      // Video has natural height
+      &.with-iframe {
+        height: inherit;
       }
     }
   }
 }
-@media only screen and (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
-  .ku-bs {
-    // Behave as small size boxes
-    .one-one-two-column .column1,
-    .one-one-two-column .column2,
-    .quad-column [class*=column],
-    .two-one-one-column .column2,
-    .two-one-one-column .column3 {
-      &.size2,
-      &.size3 {
-        &.with-img {
-          flex-direction: column;
 
-          &.text-over {
-            &.text-down {
-              .box1 {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-              }
-            }
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+  // Tablet
+  .gcrow .gccolumn .gridbox {
+    .img-text-aligned();
+  }
 
-            &.text-top {
-              .box1 {
-                position: absolute;
-                left: 0;
-                top: 0;
-              }
-            }
-          }
-
-          .box1 {
-            order: 2;
-            flex: 0 1 auto;
-            width: 100%;
-
-            .header {
-              width: 100%;
-              border-right: 25px solid transparent;
-              white-space: nowrap;
-              overflow: hidden;
-              padding: 8px 0 6px 10px;
-            }
-
-            .text {
-              display: none;
-            }
-          }
-
-          .box2 {
-            order: 1;
-          }
-        }
-      }
+  .GridForside {
+    // Double columns must span 100% in tablet view (but not the ful-width template - hence this hack.)
+    .double-column .col-sm-6 {
+      width: 100%;
     }
+  }
+}
+@media (min-width: @screen-md-min) {
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1 {
+    .img-text-aligned();
   }
 }

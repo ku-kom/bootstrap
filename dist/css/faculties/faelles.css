@@ -1,3 +1,16 @@
+/*
+* KU gridboxes mixin
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
+/*
+* Tablet style: Grid front page with left menu - all boxes img left text right:
+*    ..img-text-aligned();
+*/
 .theme-faelles .gridbox.faculty_color.text-down .header {
   background: rgba(144, 26, 30, 0.83) !important;
   color: #fff;
@@ -167,150 +180,32 @@
 .theme-faelles .gridbox.subcolor_4.text-down:hover {
   background: #3b688a !important;
 }
-.theme-faelles .one-one-two-column .column1 .size2.with-img,
-.theme-faelles .one-one-two-column .column2 .size2.with-img,
-.theme-faelles .one-one-two-column .column3 .size2.with-img,
-.theme-faelles .one-three-column .column2 .size2.with-img,
-.theme-faelles .one-two-column .column2 .size2.with-img,
-.theme-faelles .single-column .column1 .size2.with-img,
-.theme-faelles .three-one-column .column1 .size2.with-img,
-.theme-faelles .two-one-column .column1 .size2.with-img,
-.theme-faelles .two-one-one-column .column1 .size2.with-img,
-.theme-faelles .two-one-one-column .column2 .size2.with-img,
-.theme-faelles .two-one-one-column .column3 .size2.with-img,
-.theme-faelles .one-one-two-column .column1 .size3.with-img,
-.theme-faelles .one-one-two-column .column2 .size3.with-img,
-.theme-faelles .one-one-two-column .column3 .size3.with-img,
-.theme-faelles .one-three-column .column2 .size3.with-img,
-.theme-faelles .one-two-column .column2 .size3.with-img,
-.theme-faelles .single-column .column1 .size3.with-img,
-.theme-faelles .three-one-column .column1 .size3.with-img,
-.theme-faelles .two-one-column .column1 .size3.with-img,
-.theme-faelles .two-one-one-column .column1 .size3.with-img,
-.theme-faelles .two-one-one-column .column2 .size3.with-img,
-.theme-faelles .two-one-one-column .column3 .size3.with-img {
-  color: #fff;
-}
-.theme-faelles .one-one-two-column .column1 .size2.with-img.faculty_color,
-.theme-faelles .one-one-two-column .column2 .size2.with-img.faculty_color,
-.theme-faelles .one-one-two-column .column3 .size2.with-img.faculty_color,
-.theme-faelles .one-three-column .column2 .size2.with-img.faculty_color,
-.theme-faelles .one-two-column .column2 .size2.with-img.faculty_color,
-.theme-faelles .single-column .column1 .size2.with-img.faculty_color,
-.theme-faelles .three-one-column .column1 .size2.with-img.faculty_color,
-.theme-faelles .two-one-column .column1 .size2.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column1 .size2.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column2 .size2.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column3 .size2.with-img.faculty_color,
-.theme-faelles .one-one-two-column .column1 .size3.with-img.faculty_color,
-.theme-faelles .one-one-two-column .column2 .size3.with-img.faculty_color,
-.theme-faelles .one-one-two-column .column3 .size3.with-img.faculty_color,
-.theme-faelles .one-three-column .column2 .size3.with-img.faculty_color,
-.theme-faelles .one-two-column .column2 .size3.with-img.faculty_color,
-.theme-faelles .single-column .column1 .size3.with-img.faculty_color,
-.theme-faelles .three-one-column .column1 .size3.with-img.faculty_color,
-.theme-faelles .two-one-column .column1 .size3.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column1 .size3.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column2 .size3.with-img.faculty_color,
-.theme-faelles .two-one-one-column .column3 .size3.with-img.faculty_color {
-  background: #901a1e;
-}
-.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_1,
-.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_1,
-.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_1,
-.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_1,
-.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_1,
-.theme-faelles .single-column .column1 .size2.with-img.subcolor_1,
-.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_1,
-.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_1,
-.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_1,
-.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_1,
-.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_1,
-.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_1,
-.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_1,
-.theme-faelles .single-column .column1 .size3.with-img.subcolor_1,
-.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_1,
-.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_1,
-.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_1 {
-  background: #a1c5c8;
-}
-.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_2,
-.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_2,
-.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_2,
-.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_2,
-.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_2,
-.theme-faelles .single-column .column1 .size2.with-img.subcolor_2,
-.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_2,
-.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_2,
-.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_2,
-.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_2,
-.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_2,
-.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_2,
-.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_2,
-.theme-faelles .single-column .column1 .size3.with-img.subcolor_2,
-.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_2,
-.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_2,
-.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_2 {
-  background: #85ae33;
-}
-.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_3,
-.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_3,
-.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_3,
-.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_3,
-.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_3,
-.theme-faelles .single-column .column1 .size2.with-img.subcolor_3,
-.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_3,
-.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_3,
-.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_3,
-.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_3,
-.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_3,
-.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_3,
-.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_3,
-.theme-faelles .single-column .column1 .size3.with-img.subcolor_3,
-.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_3,
-.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_3,
-.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_3 {
-  background: #b5b5b5;
-  color: #606060;
-}
-.theme-faelles .one-one-two-column .column1 .size2.with-img.subcolor_4,
-.theme-faelles .one-one-two-column .column2 .size2.with-img.subcolor_4,
-.theme-faelles .one-one-two-column .column3 .size2.with-img.subcolor_4,
-.theme-faelles .one-three-column .column2 .size2.with-img.subcolor_4,
-.theme-faelles .one-two-column .column2 .size2.with-img.subcolor_4,
-.theme-faelles .single-column .column1 .size2.with-img.subcolor_4,
-.theme-faelles .three-one-column .column1 .size2.with-img.subcolor_4,
-.theme-faelles .two-one-column .column1 .size2.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column1 .size2.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column2 .size2.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column3 .size2.with-img.subcolor_4,
-.theme-faelles .one-one-two-column .column1 .size3.with-img.subcolor_4,
-.theme-faelles .one-one-two-column .column2 .size3.with-img.subcolor_4,
-.theme-faelles .one-one-two-column .column3 .size3.with-img.subcolor_4,
-.theme-faelles .one-three-column .column2 .size3.with-img.subcolor_4,
-.theme-faelles .one-two-column .column2 .size3.with-img.subcolor_4,
-.theme-faelles .single-column .column1 .size3.with-img.subcolor_4,
-.theme-faelles .three-one-column .column1 .size3.with-img.subcolor_4,
-.theme-faelles .two-one-column .column1 .size3.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column1 .size3.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_4,
-.theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_4 {
-  background: #42759b;
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+  .theme-faelles .size2.with-img,
+  .theme-faelles .size3.with-img {
+    color: #fff;
+  }
+  .theme-faelles .size2.with-img.faculty_color,
+  .theme-faelles .size3.with-img.faculty_color {
+    background: #901a1e;
+  }
+  .theme-faelles .size2.with-img.subcolor_1,
+  .theme-faelles .size3.with-img.subcolor_1 {
+    background: #a1c5c8;
+  }
+  .theme-faelles .size2.with-img.subcolor_2,
+  .theme-faelles .size3.with-img.subcolor_2 {
+    background: #85ae33;
+  }
+  .theme-faelles .size2.with-img.subcolor_3,
+  .theme-faelles .size3.with-img.subcolor_3 {
+    background: #b5b5b5;
+    color: #606060;
+  }
+  .theme-faelles .size2.with-img.subcolor_4,
+  .theme-faelles .size3.with-img.subcolor_4 {
+    background: #42759b;
+  }
 }
 .theme-faelles .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
 .theme-faelles .HTML .size2.outlined.with-img.faculty_color .header,
@@ -530,27 +425,5 @@
   .theme-faelles .two-one-one-column .column2 .size3.with-img.subcolor_4,
   .theme-faelles .two-one-one-column .column3 .size3.with-img.subcolor_4 {
     background: #42759b;
-  }
-}
-@media only screen and (max-width: 459px) {
-  .theme-faelles .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
-  .theme-faelles .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
-    background: rgba(144, 26, 30, 0.83);
-  }
-  .theme-faelles .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
-  .theme-faelles .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
-    background: rgba(161, 197, 200, 0.83);
-  }
-  .theme-faelles .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
-  .theme-faelles .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
-    background: rgba(133, 174, 51, 0.83);
-  }
-  .theme-faelles .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
-  .theme-faelles .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
-    background: rgba(181, 181, 181, 0.83);
-  }
-  .theme-faelles .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
-  .theme-faelles .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
-    background: rgba(66, 117, 155, 0.83);
   }
 }

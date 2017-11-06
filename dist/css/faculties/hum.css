@@ -1,3 +1,16 @@
+/*
+* KU gridboxes mixin
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
+/*
+* Tablet style: Grid front page with left menu - all boxes img left text right:
+*    ..img-text-aligned();
+*/
 .theme-hum .gridbox.full {
   background: #365aa5;
   color: #fff;

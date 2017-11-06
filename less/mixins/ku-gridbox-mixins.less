@@ -1,0 +1,188 @@
+/*
+* KU gridboxes mixin
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
+
+.all-single-column() {
+  &.size1 {
+    &.with-img {
+      .box2 {
+        flex: 0 1 @gridbox3;
+
+        img {
+          max-width: 100%!important;
+        }
+      }
+    }
+  }
+
+  &.size2,
+  &.size3 {
+    &.with-img {
+      &.text-over {
+        &.text-down {
+          .box1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        &.text-top {
+          .box1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+
+      .box1 {
+        flex: 0 1 auto;
+        width: 100%;
+
+        .header {
+          width: 100%;
+          border-right: 25px solid transparent;
+          white-space: nowrap;
+          overflow: hidden;
+          padding: 8px 0 6px 10px;
+        }
+
+        .text {
+          display: none;
+        }
+      }
+
+      &.outlined {
+        border-width: 0;
+
+        &::before {
+          color: @white-color;
+        }
+
+        .box1 {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+
+          .header {
+            color: @white-color;
+          }
+        }
+
+        &.subcolor_5 {
+          .header {
+            background: fade(@ku-gray, 90%);
+            color: @ku-gridbox-text;
+          }
+
+          &::before {
+            color: @ku-gridbox-text;
+          }
+        }
+
+        &.subcolor_6 {
+          .header {
+            background: fade(@white-color, 90%);
+            color: @ku-gridbox-text;
+          }
+
+          &::before {
+            color: @ku-gridbox-text;
+          }
+        }
+
+        &.subcolor_7 {
+          .header {
+            background: fade(@brown, 83%);
+            color: @white-color;
+          }
+
+          &::before {
+            color: @white-color;
+          }
+        }
+      }
+
+      &.text-top {
+        .box1 {
+          order: 1;
+          position: relative;
+        }
+
+        .box2 {
+          order: 2;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  &.size4 {
+    .text {
+      display: none;
+    }
+  }
+}
+/*
+* Tablet style: Grid front page with left menu - all boxes img left text right:
+*    ..img-text-aligned();
+*/
+.img-text-aligned() {
+  &.size1 {
+    .box2 {
+      flex: 0 1 @gridbox2!important;
+      //Fix for iframe centering in .size1 boxes
+      iframe {
+        position: absolute;
+        top: -20%!important;
+      }
+    }
+  }
+  // All single, 2/3 and double comlumn boxes with image
+  &.size2,
+  &.size3 {
+    &.with-img {
+      flex-direction: row;
+      color: @white-color;
+
+      .box1 {
+        flex: 1;
+        order: 2;
+        position: initial!important;
+
+        .header {
+          position: relative;
+          bottom: auto;
+          left: auto;
+          padding: 8px 5px 6px 10px;
+        }
+
+        .text {
+          display: block;
+        }
+      }
+
+      .box2 {
+        flex: 0 1 235px;
+        order: 1;
+
+        img {
+          max-height: 100%;
+        }
+      }
+      &:hover {
+        .header {
+          background-color: transparent!important;
+        }
+      }
+    }
+  }
+}

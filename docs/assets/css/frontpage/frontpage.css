@@ -2,8 +2,11 @@
 
 
 /*Edge-to-edge grid for eg. slider*/
-..FullWidthFrontpage .main-content {
+.FullWidthFrontpage .main-content {
   padding-top: 0;
+}
+.FullWidthFrontpage .breadcrumb {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .FullWidthFrontpage .main-content .row:first-child .col-sm-12.col-md-9 {
