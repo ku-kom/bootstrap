@@ -1,464 +1,291 @@
 // Core variables and mixins
 @import "../variables.less";
-@import "../mixins.less"; //
-// Sund styles
+@import "../mixins.less"; // FA styles
 // --------------------------------------------------
 
 .gridbox {
-  .theme-sund & {
-    &.faculty_color {
-      &.text-down {
-        .header {
-          background: fade(@sund, 83%);
-          color: @white-color;
-        }
-      }
+  &.faculty_color {
+    background: @sund;
+    color: @white-color;
 
-      &.text-top {
-        .header {
-          background: @sund;
-          color: @white-color;
-        }
-      }
+    .header {
+      background: fade(@sund, 83%);
+      color: @white-color;
+    }
 
-      &.outlined {
-        border: 1px solid @sund;
-        color: @sund!important;
-
-        &::before {
-          color: @sund;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @sund-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @sund-hover;
-          }
-        }
-      }
-
-      &.full {
+    &.text-top {
+      .header {
         background: @sund;
-        color: @white-color;
-
-        &:hover {
-          background: @sund-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @sund-hover!important;
-        }
       }
     }
 
-    &.subcolor_1 {
-      &.text-down {
-        .header {
-          background: fade(@sund-sub_1, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @sund;
+      color: @sund;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @sund-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @sund-sub_1;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @sund-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @sund-sub_1;
-        color: @sund-sub_1!important;
-
-        &::before {
-          color: @sund-sub_1;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @sund-sub_1-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @sund-sub_1-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @sund-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_1 {
+    background: @sund-sub_1;
+    color: @white-color;
+
+    .header {
+      background: fade(@sund-sub_1, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @sund-sub_1;
         color: @white-color;
-
-        &:hover {
-          background: @sund-sub_1-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @sund-sub_1-hover!important;
-        }
       }
     }
 
-    &.subcolor_2 {
-      &.text-down {
-        .header {
-          background: fade(@sund-sub_2, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @sund-sub_1;
+      color: @sund-sub_1;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @sund-sub_1-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @sund-sub_2;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @sund-sub_1-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @sund-sub_2;
-        color: @sund-sub_2!important;
-
-        &::before {
-          color: @sund-sub_2;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @sund-sub_2-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @sund-sub_2-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @sund-sub_1-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_2 {
+    background: @sund-sub_2;
+    color: @white-color;
+
+    .header {
+      background: fade(@sund-sub_2, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @sund-sub_2;
         color: @white-color;
-
-        &:hover {
-          background: @sund-sub_2-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @sund-sub_2-hover!important;
-        }
       }
     }
 
-    &.subcolor_3 {
-      &.text-down {
-        .header {
-          background: fade(@sund-sub_3, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @sund-sub_2;
+      color: @sund-sub_2;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @sund-sub_2-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @sund-sub_3;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @sund-sub_2-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @sund-sub_3;
-        color: @sund-sub_3!important;
-
-        &::before {
-          color: @sund-sub_3;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @sund-sub_3-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @sund-sub_3-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @sund-sub_2-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_3 {
+    background: @sund-sub_3;
+    color: @white-color;
+
+    .header {
+      background: fade(@sund-sub_3, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @sund-sub_3;
         color: @white-color;
-
-        &:hover {
-          background: @sund-sub_3-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @sund-sub_3-hover!important;
-        }
       }
     }
 
-    &.subcolor_4 {
-      &.text-down {
-        .header {
-          background: fade(@sund-sub_4, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @sund-sub_3;
+      color: @ku-gridbox-text;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @sund-sub_3-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @sund-sub_4;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @sund-sub_3-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @sund-sub_4;
-        color: @sund-sub_4!important;
-
-        &::before {
-          color: @sund-sub_4;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @sund-sub_4-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @sund-sub_4-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @sund-sub_3-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_4 {
+    background: @sund-sub_4;
+    color: @white-color;
+
+    .header {
+      background: fade(@sund-sub_4, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
+        color: @white-color;
         background: @sund-sub_4;
-        color: @white-color;
-
-        &:hover {
-          background: @sund-sub_4-hover!important;
-        }
       }
+    }
 
-      &.text-down {
-        &:hover {
-          background: @sund-sub_4-hover!important;
-        }
+    &.outlined {
+      border: 1px solid @sund-sub_4;
+      color: @sund-sub_4;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @sund-sub_4-hover;
+      }
+    }
+
+    &.full {
+      &:hover {
+        background: @sund-sub_4-hover;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @sund-sub_4-hover;
       }
     }
   }
 }
-// full width and 2/3 columns
-
-.one-one-two-column .column1,
-.one-one-two-column .column2,
-.one-one-two-column .column3,
-.one-three-column .column2,
-.one-two-column .column2,
-.single-column .column1,
-.three-one-column .column1,
-.two-one-column .column1,
-.two-one-one-column .column1,
-.two-one-one-column .column2,
-.two-one-one-column .column3 {
-  .size2,
-  .size3 {
-    &.with-img {
-      .theme-sund & {
-        color: @white-color;
-
+@media (min-width: @screen-xs-min) {
+  // Outline arrow style for multiple column spans
+  .one-one-two-column .column2,
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1,
+  .two-one-one-column .column1 {
+    .gridbox {
+      &.outlined {
         &.faculty_color {
-          background: @sund;
-        }
-
-        &.subcolor_1 {
-          background: @sund-sub_1;
-        }
-
-        &.subcolor_2 {
-          background: @sund-sub_2;
-        }
-
-        &.subcolor_3 {
-          background: @sund-sub_3;
-        }
-
-        &.subcolor_4 {
-          background: @sund-sub_4;
-        }
-      }
-    }
-  }
-}
-// Outline style
-.EncyclopediaEntry,
-.HTML,
-.Standard,
-.double-column [class*=column],
-.one-two-column .column1,
-.quad-column [class*=column],
-.rightbox-normal,
-.triple-column [class*=column],
-.two-one-column .column2 {
-  .size2,
-  .size3 {
-    &.outlined.with-img {
-      .theme-sund & {
-        &.faculty_color {
-          .header {
-            background: fade(@sund, 83%);
-            color: @white-color;
+          &::before {
+            color: @sund;
           }
         }
 
         &.subcolor_1 {
-          .header {
-            background: fade(@sund-sub_1, 83%);
-            color: @white-color;
+          &::before {
+            color: @sund-sub_1;
           }
         }
 
         &.subcolor_2 {
-          .header {
-            background: fade(@sund-sub_2, 83%);
-            color: @white-color;
+          &::before {
+            color: @sund-sub_2;
           }
         }
 
         &.subcolor_3 {
-          .header {
-            background: fade(@sund-sub_3, 83%);
-            color: @white-color;
+          &::before {
+            color: @sund-sub_3;
           }
         }
 
         &.subcolor_4 {
-          .header {
-            background: fade(@sund-sub_4, 83%);
-            color: @white-color;
+          &::before {
+            color: @sund-sub_4;
           }
         }
       }
     }
   }
 }
-
-@media only screen and (min-width: 870px) {
-  // Large desktop arrow style for outlined with image
+@media (min-width: @screen-md-min) {
+  // Outline style for multiple column spans
   .double-column [class*=column],
   .one-two-column .column1,
+  .quad-column [class*=column],
+  .rightbox-normal,
   .triple-column [class*=column],
   .two-one-column .column2 {
-    .size2,
-    .size3 {
-      &.with-img {
-        &.outlined {
-          .theme-sund & {
-            &::before {
+    .gridbox {
+      &.size2,
+      &.size3 {
+        &.outlined.with-img {
+          border: 0;
+
+          &.faculty_color {
+            .header {
+              background: fade(@sund, 83%);
               color: @white-color;
             }
           }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 460px) and (max-width: 869px) {
-  // All single, 2/3 and double comlumn boxes with image
-  .double-column [class*=column],
-  .one-one-two-column .column1,
-  .one-one-two-column .column2,
-  .one-three-column .column1,
-  .one-two-column .column1,
-  .triple-column [class*=column],
-  .two-one-column .column2,
-  .two-one-one-column .column2,
-  .two-one-one-column .column3 {
-    .size2,
-    .size3 {
-      &.with-img {
-        .theme-sund & {
-          &.faculty_color {
-            background: @sund;
-          }
 
           &.subcolor_1 {
-            background: @sund-sub_1;
+            .header {
+              background: fade(@sund-sub_1, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_2 {
-            background: @sund-sub_2;
+            .header {
+              background: fade(@sund-sub_2, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_3 {
-            background: @sund-sub_3;
+            .header {
+              background: fade(@sund-sub_3, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_4 {
-            background: @sund-sub_4;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 459px) {
-  // All column types must behave like single column boxes
-  .gcrow .gccolumn .gridbox {
-    &.size2,
-    &.size3 {
-      &.with-img {
-        &.outlined {
-          .theme-sund & {
-            &.faculty_color {
-              .header {
-                background: fade(@sund, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@sund-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@sund-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@sund-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@sund-sub_4, 83%);
-              }
+            .header {
+              background: fade(@sund-sub_4, 83%);
+              color: @white-color;
             }
           }
         }

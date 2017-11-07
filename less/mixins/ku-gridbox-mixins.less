@@ -1,5 +1,5 @@
 /*
-* KU gridboxes mixin
+* KU gridboxes mixin - for Bootstrap templates only
 */
 /*
 * Mobile style: All column types must behave like single column boxes regardless of template:
@@ -51,7 +51,6 @@
           border-right: 25px solid transparent;
           white-space: nowrap;
           overflow: hidden;
-          padding: 8px 0 6px 10px;
         }
 
         .text {
@@ -60,30 +59,16 @@
       }
 
       &.outlined {
-        border-width: 0;
-
-        &::before {
-          color: @white-color;
-        }
-
         .box1 {
           position: absolute;
           left: 0;
           bottom: 0;
           width: 100%;
-
-          .header {
-            color: @white-color;
-          }
         }
 
         &.subcolor_5 {
           .header {
             background: fade(@ku-gray, 90%);
-            color: @ku-gridbox-text;
-          }
-
-          &::before {
             color: @ku-gridbox-text;
           }
         }
@@ -93,19 +78,11 @@
             background: fade(@white-color, 90%);
             color: @ku-gridbox-text;
           }
-
-          &::before {
-            color: @ku-gridbox-text;
-          }
         }
 
         &.subcolor_7 {
           .header {
             background: fade(@brown, 83%);
-            color: @white-color;
-          }
-
-          &::before {
             color: @white-color;
           }
         }
@@ -133,7 +110,7 @@
 }
 /*
 * Tablet style: Grid front page with left menu - all boxes img left text right:
-*    ..img-text-aligned();
+*    .img-text-aligned();
 */
 .img-text-aligned() {
   &.size1 {
@@ -146,13 +123,12 @@
       }
     }
   }
-  // All single, 2/3 and double comlumn boxes with image
+
   &.size2,
   &.size3 {
     &.with-img {
       flex-direction: row;
-      color: @white-color;
-
+      //color: @white-color;
       .box1 {
         flex: 1;
         order: 2;
@@ -176,8 +152,10 @@
 
         img {
           max-height: 100%;
+          max-width: none;
         }
       }
+
       &:hover {
         .header {
           background-color: transparent!important;

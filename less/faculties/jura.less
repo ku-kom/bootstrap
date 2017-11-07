@@ -1,470 +1,291 @@
 // Core variables and mixins
 @import "../variables.less";
-@import "../mixins.less"; //
-// Jur styles
+@import "../mixins.less"; // FA styles
 // --------------------------------------------------
 
 .gridbox {
-  .theme-jur & {
-    &.faculty_color {
-      &.text-down {
-        .header {
-          background: fade(@jura, 83%);
-          color: @white-color;
-        }
-      }
+  &.faculty_color {
+    background: @jura;
+    color: @white-color;
 
-      &.text-top {
-        .header {
-          background: @jura;
-          color: @white-color;
-        }
-      }
+    .header {
+      background: fade(@jura, 83%);
+      color: @white-color;
+    }
 
-      &.outlined {
-        border: 1px solid @jura;
-        color: @jura!important;
-
-        &::before {
-          color: @jura;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @jura-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @jura-hover;
-          }
-        }
-      }
-
-      &.full {
+    &.text-top {
+      .header {
         background: @jura;
-        color: @white-color;
-
-        &:hover {
-          background: @jura-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @jura-hover!important;
-        }
       }
     }
 
-    &.subcolor_1 {
-      &.text-down {
-        .header {
-          background: fade(@jura-sub_1, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @jura;
+      color: @jura;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @jura-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @jura-sub_1;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @jura-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @jura-sub_1;
-        color: @jura-sub_1!important;
-
-        &::before {
-          color: @jura-sub_1;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @jura-sub_1-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @jura-sub_1-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @jura-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_1 {
+    background: @jura-sub_1;
+    color: @white-color;
+
+    .header {
+      background: fade(@jura-sub_1, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @jura-sub_1;
         color: @white-color;
-
-        &:hover {
-          background: @jura-sub_1-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @jura-sub_1-hover!important;
-        }
       }
     }
 
-    &.subcolor_2 {
-      &.text-down {
-        .header {
-          background: fade(@jura-sub_2, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @jura-sub_1;
+      color: @jura-sub_1;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @jura-sub_1-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @jura-sub_2;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @jura-sub_1-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @jura-sub_2;
-        color: @jura-sub_2!important;
-
-        &::before {
-          color: @jura-sub_2;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @jura-sub_2-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @jura-sub_2-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @jura-sub_1-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_2 {
+    background: @jura-sub_2;
+    color: @white-color;
+
+    .header {
+      background: fade(@jura-sub_2, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @jura-sub_2;
         color: @white-color;
-
-        &:hover {
-          background: @jura-sub_2-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @jura-sub_2-hover!important;
-        }
       }
     }
 
-    &.subcolor_3 {
-      &.text-down {
-        .header {
-          background: fade(@jura-sub_3, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @jura-sub_2;
+      color: @jura-sub_2;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @jura-sub_2-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @jura-sub_3;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @jura-sub_2-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @jura-sub_3;
-        color: @jura-sub_3!important;
-
-        &::before {
-          color: @jura-sub_3;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @jura-sub_3-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @jura-sub_3-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @jura-sub_2-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_3 {
+    background: @jura-sub_3;
+    color: @white-color;
+
+    .header {
+      background: fade(@jura-sub_3, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
         background: @jura-sub_3;
         color: @white-color;
-
-        &:hover {
-          background: @jura-sub_3-hover!important;
-        }
-      }
-
-      &.text-down {
-        &:hover {
-          background: @jura-sub_3-hover!important;
-        }
       }
     }
 
-    &.subcolor_4 {
-      &.text-down {
-        .header {
-          background: fade(@jura-sub_4, 83%);
-          color: @white-color;
-        }
+    &.outlined {
+      border: 1px solid @jura-sub_3;
+      color: @ku-gridbox-text;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @jura-sub_3-hover;
       }
+    }
 
-      &.text-top {
-        .header {
-          background: @jura-sub_4;
-          color: @white-color;
-        }
+    &.full {
+      &:hover {
+        background: @jura-sub_3-hover;
       }
+    }
 
-      &.outlined {
-        border: 1px solid @jura-sub_4;
-        color: @jura-sub_4!important;
-
-        &::before {
-          color: @jura-sub_4;
-        }
-
-        &:hover {
-          background: @ku-gray-hover!important;
-          border: 1px solid @jura-sub_4-hover;
-        }
-
-        &.with-img {
-          &:hover {
-            background: @ku-gray-hover!important;
-            border: 1px solid @jura-sub_4-hover;
-          }
-        }
+    &.text-down {
+      &:hover {
+        background: @jura-sub_3-hover;
       }
+    }
+  }
 
-      &.full {
+  &.subcolor_4 {
+    background: @jura-sub_4;
+    color: @white-color;
+
+    .header {
+      background: fade(@jura-sub_4, 83%);
+      color: @white-color;
+    }
+
+    &.text-top {
+      .header {
+        color: @white-color;
         background: @jura-sub_4;
-        color: @white-color;
-
-        &:hover {
-          background: @jura-sub_4-hover!important;
-        }
       }
+    }
 
-      &.text-down {
-        &:hover {
-          background: @jura-sub_4-hover!important;
-        }
+    &.outlined {
+      border: 1px solid @jura-sub_4;
+      color: @jura-sub_4;
+
+      &:hover {
+        background: @ku-gray-hover;
+        border: 1px solid @jura-sub_4-hover;
+      }
+    }
+
+    &.full {
+      &:hover {
+        background: @jura-sub_4-hover;
+      }
+    }
+
+    &.text-down {
+      &:hover {
+        background: @jura-sub_4-hover;
       }
     }
   }
 }
-// full width and 2/3 columns
-
-.one-one-two-column .column1,
-.one-one-two-column .column2,
-.one-one-two-column .column3,
-.one-three-column .column2,
-.one-two-column .column2,
-.single-column .column1,
-.three-one-column .column1,
-.two-one-column .column1,
-.two-one-one-column .column1,
-.two-one-one-column .column2,
-.two-one-one-column .column3 {
-  .size2,
-  .size3 {
-    &.with-img {
-      .theme-jur & {
-        color: @white-color;
-
+@media (min-width: @screen-xs-min) {
+  // Outline arrow style for multiple column spans
+  .one-one-two-column .column2,
+  .one-two-column .column2,
+  .single-column .column1,
+  .two-one-column .column1,
+  .two-one-one-column .column1 {
+    .gridbox {
+      &.outlined {
         &.faculty_color {
-          background: @jura;
-        }
-
-        &.subcolor_1 {
-          background: @jura-sub_1;
-        }
-
-        &.subcolor_2 {
-          background: @jura-sub_2;
-        }
-
-        &.subcolor_3 {
-          background: @jura-sub_3;
-        }
-
-        &.subcolor_4 {
-          background: @jura-sub_4;
-        }
-      }
-    }
-  }
-}
-// Outline style
-
-.EncyclopediaEntry,
-.HTML,
-.Standard,
-.double-column [class*=column],
-.one-two-column .column1,
-.quad-column [class*=column],
-.rightbox-normal,
-.triple-column [class*=column],
-.two-one-column .column2 {
-  .size2,
-  .size3 {
-    &.outlined.with-img {
-      .theme-jur & {
-        &.faculty_color {
-          .header {
-            background: fade(@jura, 83%);
-            color: @white-color;
+          &::before {
+            color: @jura;
           }
         }
 
         &.subcolor_1 {
-          .header {
-            background: fade(@jura-sub_1, 83%);
-            color: @white-color;
+          &::before {
+            color: @jura-sub_1;
           }
         }
 
         &.subcolor_2 {
-          .header {
-            background: fade(@jura-sub_2, 83%);
-            color: @white-color;
+          &::before {
+            color: @jura-sub_2;
           }
         }
 
         &.subcolor_3 {
-          .header {
-            background: fade(@jura-sub_3, 83%);
-            color: @white-color;
+          &::before {
+            color: @jura-sub_3;
           }
         }
 
         &.subcolor_4 {
-          .header {
-            background: fade(@jura-sub_4, 83%);
-            color: @white-color;
+          &::before {
+            color: @jura-sub_4;
           }
         }
       }
     }
   }
 }
-@media only screen and (min-width: 870px) {
-  // Large desktop arrow style for outlined with image
+@media (min-width: @screen-md-min) {
+  // Outline style for multiple column spans
   .double-column [class*=column],
   .one-two-column .column1,
+  .quad-column [class*=column],
+  .rightbox-normal,
   .triple-column [class*=column],
   .two-one-column .column2 {
-    .size2,
-    .size3 {
-      &.with-img {
-        &.outlined {
-          .theme-jur & {
-            &::before {
+    .gridbox {
+      &.size2,
+      &.size3 {
+        &.outlined.with-img {
+          border: 0;
+
+          &.faculty_color {
+            .header {
+              background: fade(@jura, 83%);
               color: @white-color;
             }
-
-            &.subcolor_3 {
-              &::before {
-                color: @ku-gridbox-text;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 460px) and (max-width: 869px) {
-  // All single, 2/3 and double comlumn boxes with image
-  .double-column [class*=column],
-  .one-one-two-column .column1,
-  .one-one-two-column .column2,
-  .one-three-column .column1,
-  .one-two-column .column1,
-  .triple-column [class*=column],
-  .two-one-column .column2,
-  .two-one-one-column .column2,
-  .two-one-one-column .column3 {
-    .size2,
-    .size3 {
-      &.with-img {
-        .theme-jur & {
-          &.faculty_color {
-            background: @jura;
           }
 
           &.subcolor_1 {
-            background: @jura-sub_1;
+            .header {
+              background: fade(@jura-sub_1, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_2 {
-            background: @jura-sub_2;
+            .header {
+              background: fade(@jura-sub_2, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_3 {
-            background: @jura-sub_3;
+            .header {
+              background: fade(@jura-sub_3, 83%);
+              color: @white-color;
+            }
           }
 
           &.subcolor_4 {
-            background: @jura-sub_4;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 459px) {
-  // All column types must behave like single column boxes
-  .gcrow .gccolumn .gridbox {
-    &.size2,
-    &.size3 {
-      &.with-img {
-        &.outlined {
-          .theme-jur & {
-            &.faculty_color {
-              .header {
-                background: fade(@jura, 83%);
-              }
-            }
-
-            &.subcolor_1 {
-              .header {
-                background: fade(@jura-sub_1, 83%);
-              }
-            }
-
-            &.subcolor_2 {
-              .header {
-                background: fade(@jura-sub_2, 83%);
-              }
-            }
-
-            &.subcolor_3 {
-              .header {
-                background: fade(@jura-sub_3, 83%);
-              }
-            }
-
-            &.subcolor_4 {
-              .header {
-                background: fade(@jura-sub_4, 83%);
-              }
+            .header {
+              background: fade(@jura-sub_4, 83%);
+              color: @white-color;
             }
           }
         }

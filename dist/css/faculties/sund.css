@@ -1,5 +1,5 @@
 /*
-* KU gridboxes mixin
+* KU gridboxes mixin - for Bootstrap templates only
 */
 /*
 * Mobile style: All column types must behave like single column boxes regardless of template:
@@ -9,555 +9,262 @@
 */
 /*
 * Tablet style: Grid front page with left menu - all boxes img left text right:
-*    ..img-text-aligned();
+*    .img-text-aligned();
 */
-.theme-sund .gridbox.faculty_color.text-down .header {
-  background: rgba(42, 33, 106, 0.83);
-  color: #fff;
-}
-.theme-sund .gridbox.faculty_color.text-top .header {
+.gridbox.faculty_color {
   background: #2a216a;
   color: #fff;
 }
-.theme-sund .gridbox.faculty_color.outlined {
-  border: 1px solid #2a216a;
-  color: #2a216a !important;
+.gridbox.faculty_color .header {
+  background: rgba(42, 33, 106, 0.83);
+  color: #fff;
 }
-.theme-sund .gridbox.faculty_color.outlined::before {
+.gridbox.faculty_color.text-top .header {
+  background: #2a216a;
+}
+.gridbox.faculty_color.outlined {
+  border: 1px solid #2a216a;
   color: #2a216a;
 }
-.theme-sund .gridbox.faculty_color.outlined:hover {
-  background: #f5f5f5 !important;
+.gridbox.faculty_color.outlined:hover {
+  background: #f5f5f5;
   border: 1px solid #1b1545;
 }
-.theme-sund .gridbox.faculty_color.outlined.with-img:hover {
-  background: #f5f5f5 !important;
-  border: 1px solid #1b1545;
+.gridbox.faculty_color.full:hover {
+  background: #1b1545;
 }
-.theme-sund .gridbox.faculty_color.full {
-  background: #2a216a;
-  color: #fff;
+.gridbox.faculty_color.text-down:hover {
+  background: #1b1545;
 }
-.theme-sund .gridbox.faculty_color.full:hover {
-  background: #1b1545 !important;
-}
-.theme-sund .gridbox.faculty_color.text-down:hover {
-  background: #1b1545 !important;
-}
-.theme-sund .gridbox.subcolor_1.text-down .header {
-  background: rgba(119, 182, 229, 0.83);
-  color: #fff;
-}
-.theme-sund .gridbox.subcolor_1.text-top .header {
+.gridbox.subcolor_1 {
   background: #77b6e5;
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_1.outlined {
-  border: 1px solid #77b6e5;
-  color: #77b6e5 !important;
+.gridbox.subcolor_1 .header {
+  background: rgba(119, 182, 229, 0.83);
+  color: #fff;
 }
-.theme-sund .gridbox.subcolor_1.outlined::before {
+.gridbox.subcolor_1.text-top .header {
+  background: #77b6e5;
+  color: #fff;
+}
+.gridbox.subcolor_1.outlined {
+  border: 1px solid #77b6e5;
   color: #77b6e5;
 }
-.theme-sund .gridbox.subcolor_1.outlined:hover {
-  background: #f5f5f5 !important;
+.gridbox.subcolor_1.outlined:hover {
+  background: #f5f5f5;
   border: 1px solid #6da6d1;
 }
-.theme-sund .gridbox.subcolor_1.outlined.with-img:hover {
-  background: #f5f5f5 !important;
-  border: 1px solid #6da6d1;
+.gridbox.subcolor_1.full:hover {
+  background: #6da6d1;
 }
-.theme-sund .gridbox.subcolor_1.full {
-  background: #77b6e5;
-  color: #fff;
+.gridbox.subcolor_1.text-down:hover {
+  background: #6da6d1;
 }
-.theme-sund .gridbox.subcolor_1.full:hover {
-  background: #6da6d1 !important;
-}
-.theme-sund .gridbox.subcolor_1.text-down:hover {
-  background: #6da6d1 !important;
-}
-.theme-sund .gridbox.subcolor_2.text-down .header {
-  background: rgba(15, 69, 118, 0.83);
-  color: #fff;
-}
-.theme-sund .gridbox.subcolor_2.text-top .header {
+.gridbox.subcolor_2 {
   background: #0f4576;
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_2.outlined {
-  border: 1px solid #0f4576;
-  color: #0f4576 !important;
+.gridbox.subcolor_2 .header {
+  background: rgba(15, 69, 118, 0.83);
+  color: #fff;
 }
-.theme-sund .gridbox.subcolor_2.outlined::before {
+.gridbox.subcolor_2.text-top .header {
+  background: #0f4576;
+  color: #fff;
+}
+.gridbox.subcolor_2.outlined {
+  border: 1px solid #0f4576;
   color: #0f4576;
 }
-.theme-sund .gridbox.subcolor_2.outlined:hover {
-  background: #f5f5f5 !important;
+.gridbox.subcolor_2.outlined:hover {
+  background: #f5f5f5;
   border: 1px solid #0c355c;
 }
-.theme-sund .gridbox.subcolor_2.outlined.with-img:hover {
-  background: #f5f5f5 !important;
-  border: 1px solid #0c355c;
+.gridbox.subcolor_2.full:hover {
+  background: #0c355c;
 }
-.theme-sund .gridbox.subcolor_2.full {
-  background: #0f4576;
+.gridbox.subcolor_2.text-down:hover {
+  background: #0c355c;
+}
+.gridbox.subcolor_3 {
+  background: #00706e;
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_2.full:hover {
-  background: #0c355c !important;
-}
-.theme-sund .gridbox.subcolor_2.text-down:hover {
-  background: #0c355c !important;
-}
-.theme-sund .gridbox.subcolor_3.text-down .header {
+.gridbox.subcolor_3 .header {
   background: rgba(0, 112, 110, 0.83);
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_3.text-top .header {
+.gridbox.subcolor_3.text-top .header {
   background: #00706e;
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_3.outlined {
+.gridbox.subcolor_3.outlined {
   border: 1px solid #00706e;
-  color: #00706e !important;
+  color: #606060;
 }
-.theme-sund .gridbox.subcolor_3.outlined::before {
-  color: #00706e;
-}
-.theme-sund .gridbox.subcolor_3.outlined:hover {
-  background: #f5f5f5 !important;
+.gridbox.subcolor_3.outlined:hover {
+  background: #f5f5f5;
   border: 1px solid #005958;
 }
-.theme-sund .gridbox.subcolor_3.outlined.with-img:hover {
-  background: #f5f5f5 !important;
-  border: 1px solid #005958;
+.gridbox.subcolor_3.full:hover {
+  background: #005958;
 }
-.theme-sund .gridbox.subcolor_3.full {
-  background: #00706e;
-  color: #fff;
+.gridbox.subcolor_3.text-down:hover {
+  background: #005958;
 }
-.theme-sund .gridbox.subcolor_3.full:hover {
-  background: #005958 !important;
-}
-.theme-sund .gridbox.subcolor_3.text-down:hover {
-  background: #005958 !important;
-}
-.theme-sund .gridbox.subcolor_4.text-down .header {
-  background: rgba(176, 213, 78, 0.83);
-  color: #fff;
-}
-.theme-sund .gridbox.subcolor_4.text-top .header {
+.gridbox.subcolor_4 {
   background: #b0d54e;
   color: #fff;
 }
-.theme-sund .gridbox.subcolor_4.outlined {
-  border: 1px solid #b0d54e;
-  color: #b0d54e !important;
+.gridbox.subcolor_4 .header {
+  background: rgba(176, 213, 78, 0.83);
+  color: #fff;
 }
-.theme-sund .gridbox.subcolor_4.outlined::before {
+.gridbox.subcolor_4.text-top .header {
+  color: #fff;
+  background: #b0d54e;
+}
+.gridbox.subcolor_4.outlined {
+  border: 1px solid #b0d54e;
   color: #b0d54e;
 }
-.theme-sund .gridbox.subcolor_4.outlined:hover {
-  background: #f5f5f5 !important;
+.gridbox.subcolor_4.outlined:hover {
+  background: #f5f5f5;
   border: 1px solid #a1c248;
 }
-.theme-sund .gridbox.subcolor_4.outlined.with-img:hover {
-  background: #f5f5f5 !important;
-  border: 1px solid #a1c248;
+.gridbox.subcolor_4.full:hover {
+  background: #a1c248;
 }
-.theme-sund .gridbox.subcolor_4.full {
-  background: #b0d54e;
-  color: #fff;
+.gridbox.subcolor_4.text-down:hover {
+  background: #a1c248;
 }
-.theme-sund .gridbox.subcolor_4.full:hover {
-  background: #a1c248 !important;
+@media (min-width: 480px) {
+  .one-one-two-column .column2 .gridbox.outlined.faculty_color::before,
+  .one-two-column .column2 .gridbox.outlined.faculty_color::before,
+  .single-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-one-column .column1 .gridbox.outlined.faculty_color::before {
+    color: #2a216a;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_1::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_1::before,
+  .single-column .column1 .gridbox.outlined.subcolor_1::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_1::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_1::before {
+    color: #77b6e5;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_2::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_2::before,
+  .single-column .column1 .gridbox.outlined.subcolor_2::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_2::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_2::before {
+    color: #0f4576;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_3::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_3::before,
+  .single-column .column1 .gridbox.outlined.subcolor_3::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_3::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_3::before {
+    color: #00706e;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_4::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_4::before,
+  .single-column .column1 .gridbox.outlined.subcolor_4::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_4::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_4::before {
+    color: #b0d54e;
+  }
 }
-.theme-sund .gridbox.subcolor_4.text-down:hover {
-  background: #a1c248 !important;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img,
-.theme-sund .one-one-two-column .column2 .size2.with-img,
-.theme-sund .one-one-two-column .column3 .size2.with-img,
-.theme-sund .one-three-column .column2 .size2.with-img,
-.theme-sund .one-two-column .column2 .size2.with-img,
-.theme-sund .single-column .column1 .size2.with-img,
-.theme-sund .three-one-column .column1 .size2.with-img,
-.theme-sund .two-one-column .column1 .size2.with-img,
-.theme-sund .two-one-one-column .column1 .size2.with-img,
-.theme-sund .two-one-one-column .column2 .size2.with-img,
-.theme-sund .two-one-one-column .column3 .size2.with-img,
-.theme-sund .one-one-two-column .column1 .size3.with-img,
-.theme-sund .one-one-two-column .column2 .size3.with-img,
-.theme-sund .one-one-two-column .column3 .size3.with-img,
-.theme-sund .one-three-column .column2 .size3.with-img,
-.theme-sund .one-two-column .column2 .size3.with-img,
-.theme-sund .single-column .column1 .size3.with-img,
-.theme-sund .three-one-column .column1 .size3.with-img,
-.theme-sund .two-one-column .column1 .size3.with-img,
-.theme-sund .two-one-one-column .column1 .size3.with-img,
-.theme-sund .two-one-one-column .column2 .size3.with-img,
-.theme-sund .two-one-one-column .column3 .size3.with-img {
-  color: #fff;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img.faculty_color,
-.theme-sund .one-one-two-column .column2 .size2.with-img.faculty_color,
-.theme-sund .one-one-two-column .column3 .size2.with-img.faculty_color,
-.theme-sund .one-three-column .column2 .size2.with-img.faculty_color,
-.theme-sund .one-two-column .column2 .size2.with-img.faculty_color,
-.theme-sund .single-column .column1 .size2.with-img.faculty_color,
-.theme-sund .three-one-column .column1 .size2.with-img.faculty_color,
-.theme-sund .two-one-column .column1 .size2.with-img.faculty_color,
-.theme-sund .two-one-one-column .column1 .size2.with-img.faculty_color,
-.theme-sund .two-one-one-column .column2 .size2.with-img.faculty_color,
-.theme-sund .two-one-one-column .column3 .size2.with-img.faculty_color,
-.theme-sund .one-one-two-column .column1 .size3.with-img.faculty_color,
-.theme-sund .one-one-two-column .column2 .size3.with-img.faculty_color,
-.theme-sund .one-one-two-column .column3 .size3.with-img.faculty_color,
-.theme-sund .one-three-column .column2 .size3.with-img.faculty_color,
-.theme-sund .one-two-column .column2 .size3.with-img.faculty_color,
-.theme-sund .single-column .column1 .size3.with-img.faculty_color,
-.theme-sund .three-one-column .column1 .size3.with-img.faculty_color,
-.theme-sund .two-one-column .column1 .size3.with-img.faculty_color,
-.theme-sund .two-one-one-column .column1 .size3.with-img.faculty_color,
-.theme-sund .two-one-one-column .column2 .size3.with-img.faculty_color,
-.theme-sund .two-one-one-column .column3 .size3.with-img.faculty_color {
-  background: #2a216a;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_1,
-.theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_1,
-.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_1,
-.theme-sund .one-three-column .column2 .size2.with-img.subcolor_1,
-.theme-sund .one-two-column .column2 .size2.with-img.subcolor_1,
-.theme-sund .single-column .column1 .size2.with-img.subcolor_1,
-.theme-sund .three-one-column .column1 .size2.with-img.subcolor_1,
-.theme-sund .two-one-column .column1 .size2.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_1,
-.theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_1,
-.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_1,
-.theme-sund .one-three-column .column2 .size3.with-img.subcolor_1,
-.theme-sund .one-two-column .column2 .size3.with-img.subcolor_1,
-.theme-sund .single-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .three-one-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_1,
-.theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_1 {
-  background: #77b6e5;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_2,
-.theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_2,
-.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_2,
-.theme-sund .one-three-column .column2 .size2.with-img.subcolor_2,
-.theme-sund .one-two-column .column2 .size2.with-img.subcolor_2,
-.theme-sund .single-column .column1 .size2.with-img.subcolor_2,
-.theme-sund .three-one-column .column1 .size2.with-img.subcolor_2,
-.theme-sund .two-one-column .column1 .size2.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_2,
-.theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_2,
-.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_2,
-.theme-sund .one-three-column .column2 .size3.with-img.subcolor_2,
-.theme-sund .one-two-column .column2 .size3.with-img.subcolor_2,
-.theme-sund .single-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .three-one-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_2,
-.theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_2 {
-  background: #0f4576;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_3,
-.theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_3,
-.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_3,
-.theme-sund .one-three-column .column2 .size2.with-img.subcolor_3,
-.theme-sund .one-two-column .column2 .size2.with-img.subcolor_3,
-.theme-sund .single-column .column1 .size2.with-img.subcolor_3,
-.theme-sund .three-one-column .column1 .size2.with-img.subcolor_3,
-.theme-sund .two-one-column .column1 .size2.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_3,
-.theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_3,
-.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_3,
-.theme-sund .one-three-column .column2 .size3.with-img.subcolor_3,
-.theme-sund .one-two-column .column2 .size3.with-img.subcolor_3,
-.theme-sund .single-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .three-one-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_3,
-.theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_3 {
-  background: #00706e;
-}
-.theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_4,
-.theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_4,
-.theme-sund .one-one-two-column .column3 .size2.with-img.subcolor_4,
-.theme-sund .one-three-column .column2 .size2.with-img.subcolor_4,
-.theme-sund .one-two-column .column2 .size2.with-img.subcolor_4,
-.theme-sund .single-column .column1 .size2.with-img.subcolor_4,
-.theme-sund .three-one-column .column1 .size2.with-img.subcolor_4,
-.theme-sund .two-one-column .column1 .size2.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column1 .size2.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_4,
-.theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_4,
-.theme-sund .one-one-two-column .column3 .size3.with-img.subcolor_4,
-.theme-sund .one-three-column .column2 .size3.with-img.subcolor_4,
-.theme-sund .one-two-column .column2 .size3.with-img.subcolor_4,
-.theme-sund .single-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .three-one-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .two-one-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column1 .size3.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_4,
-.theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_4 {
-  background: #b0d54e;
-}
-.theme-sund .EncyclopediaEntry .size2.outlined.with-img.faculty_color .header,
-.theme-sund .HTML .size2.outlined.with-img.faculty_color .header,
-.theme-sund .Standard .size2.outlined.with-img.faculty_color .header,
-.theme-sund .double-column [class*=column] .size2.outlined.with-img.faculty_color .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.faculty_color .header,
-.theme-sund .quad-column [class*=column] .size2.outlined.with-img.faculty_color .header,
-.theme-sund .rightbox-normal .size2.outlined.with-img.faculty_color .header,
-.theme-sund .triple-column [class*=column] .size2.outlined.with-img.faculty_color .header,
-.theme-sund .two-one-column .column2 .size2.outlined.with-img.faculty_color .header,
-.theme-sund .EncyclopediaEntry .size3.outlined.with-img.faculty_color .header,
-.theme-sund .HTML .size3.outlined.with-img.faculty_color .header,
-.theme-sund .Standard .size3.outlined.with-img.faculty_color .header,
-.theme-sund .double-column [class*=column] .size3.outlined.with-img.faculty_color .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.faculty_color .header,
-.theme-sund .quad-column [class*=column] .size3.outlined.with-img.faculty_color .header,
-.theme-sund .rightbox-normal .size3.outlined.with-img.faculty_color .header,
-.theme-sund .triple-column [class*=column] .size3.outlined.with-img.faculty_color .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.faculty_color .header {
-  background: rgba(42, 33, 106, 0.83);
-  color: #fff;
-}
-.theme-sund .EncyclopediaEntry .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .HTML .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .Standard .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .rightbox-normal .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_1 .header,
-.theme-sund .EncyclopediaEntry .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .HTML .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .Standard .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .rightbox-normal .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_1 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_1 .header {
-  background: rgba(119, 182, 229, 0.83);
-  color: #fff;
-}
-.theme-sund .EncyclopediaEntry .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .HTML .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .Standard .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .rightbox-normal .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_2 .header,
-.theme-sund .EncyclopediaEntry .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .HTML .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .Standard .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .rightbox-normal .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_2 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_2 .header {
-  background: rgba(15, 69, 118, 0.83);
-  color: #fff;
-}
-.theme-sund .EncyclopediaEntry .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .HTML .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .Standard .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .rightbox-normal .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_3 .header,
-.theme-sund .EncyclopediaEntry .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .HTML .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .Standard .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .rightbox-normal .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_3 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_3 .header {
-  background: rgba(0, 112, 110, 0.83);
-  color: #fff;
-}
-.theme-sund .EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .HTML .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .Standard .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .rightbox-normal .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header,
-.theme-sund .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .HTML .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .Standard .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .rightbox-normal .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header,
-.theme-sund .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
-  background: rgba(176, 213, 78, 0.83);
-  color: #fff;
-}
-@media only screen and (min-width: 870px) {
-  .theme-sund .double-column [class*=column] .size2.with-img.outlined::before,
-  .theme-sund .one-two-column .column1 .size2.with-img.outlined::before,
-  .theme-sund .triple-column [class*=column] .size2.with-img.outlined::before,
-  .theme-sund .two-one-column .column2 .size2.with-img.outlined::before,
-  .theme-sund .double-column [class*=column] .size3.with-img.outlined::before,
-  .theme-sund .one-two-column .column1 .size3.with-img.outlined::before,
-  .theme-sund .triple-column [class*=column] .size3.with-img.outlined::before,
-  .theme-sund .two-one-column .column2 .size3.with-img.outlined::before {
+@media (min-width: 992px) {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img,
+  .rightbox-normal .gridbox.size2.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img,
+  .rightbox-normal .gridbox.size3.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img {
+    border: 0;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.faculty_color .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .rightbox-normal .gridbox.size2.outlined.with-img.faculty_color .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.faculty_color .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.faculty_color .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .rightbox-normal .gridbox.size3.outlined.with-img.faculty_color .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.faculty_color .header {
+    background: rgba(42, 33, 106, 0.83);
     color: #fff;
   }
-}
-@media only screen and (min-width: 460px) and (max-width: 869px) {
-  .theme-sund .double-column [class*=column] .size2.with-img.faculty_color,
-  .theme-sund .one-one-two-column .column1 .size2.with-img.faculty_color,
-  .theme-sund .one-one-two-column .column2 .size2.with-img.faculty_color,
-  .theme-sund .one-three-column .column1 .size2.with-img.faculty_color,
-  .theme-sund .one-two-column .column1 .size2.with-img.faculty_color,
-  .theme-sund .triple-column [class*=column] .size2.with-img.faculty_color,
-  .theme-sund .two-one-column .column2 .size2.with-img.faculty_color,
-  .theme-sund .two-one-one-column .column2 .size2.with-img.faculty_color,
-  .theme-sund .two-one-one-column .column3 .size2.with-img.faculty_color,
-  .theme-sund .double-column [class*=column] .size3.with-img.faculty_color,
-  .theme-sund .one-one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-sund .one-one-two-column .column2 .size3.with-img.faculty_color,
-  .theme-sund .one-three-column .column1 .size3.with-img.faculty_color,
-  .theme-sund .one-two-column .column1 .size3.with-img.faculty_color,
-  .theme-sund .triple-column [class*=column] .size3.with-img.faculty_color,
-  .theme-sund .two-one-column .column2 .size3.with-img.faculty_color,
-  .theme-sund .two-one-one-column .column2 .size3.with-img.faculty_color,
-  .theme-sund .two-one-one-column .column3 .size3.with-img.faculty_color {
-    background: #2a216a;
-  }
-  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_1,
-  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_1,
-  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_1,
-  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_1,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_1,
-  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_1,
-  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_1,
-  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_1,
-  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_1,
-  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_1,
-  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_1,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_1,
-  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_1,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_1,
-  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_1 {
-    background: #77b6e5;
-  }
-  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_2,
-  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_2,
-  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_2,
-  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_2,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_2,
-  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_2,
-  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_2,
-  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_2,
-  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_2,
-  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_2,
-  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_2,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_2,
-  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_2,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_2,
-  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_2 {
-    background: #0f4576;
-  }
-  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_3,
-  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_3,
-  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_3,
-  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_3,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_3,
-  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_3,
-  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_3,
-  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_3,
-  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_3,
-  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_3,
-  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_3,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_3,
-  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_3,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_3,
-  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_3 {
-    background: #00706e;
-  }
-  .theme-sund .double-column [class*=column] .size2.with-img.subcolor_4,
-  .theme-sund .one-one-two-column .column1 .size2.with-img.subcolor_4,
-  .theme-sund .one-one-two-column .column2 .size2.with-img.subcolor_4,
-  .theme-sund .one-three-column .column1 .size2.with-img.subcolor_4,
-  .theme-sund .one-two-column .column1 .size2.with-img.subcolor_4,
-  .theme-sund .triple-column [class*=column] .size2.with-img.subcolor_4,
-  .theme-sund .two-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-sund .two-one-one-column .column2 .size2.with-img.subcolor_4,
-  .theme-sund .two-one-one-column .column3 .size2.with-img.subcolor_4,
-  .theme-sund .double-column [class*=column] .size3.with-img.subcolor_4,
-  .theme-sund .one-one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-sund .one-one-two-column .column2 .size3.with-img.subcolor_4,
-  .theme-sund .one-three-column .column1 .size3.with-img.subcolor_4,
-  .theme-sund .one-two-column .column1 .size3.with-img.subcolor_4,
-  .theme-sund .triple-column [class*=column] .size3.with-img.subcolor_4,
-  .theme-sund .two-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-sund .two-one-one-column .column2 .size3.with-img.subcolor_4,
-  .theme-sund .two-one-one-column .column3 .size3.with-img.subcolor_4 {
-    background: #b0d54e;
-  }
-}
-@media only screen and (max-width: 459px) {
-  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.faculty_color .header,
-  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.faculty_color .header {
-    background: rgba(42, 33, 106, 0.83);
-  }
-  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_1 .header,
-  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_1 .header {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_1 .header {
     background: rgba(119, 182, 229, 0.83);
+    color: #fff;
   }
-  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_2 .header,
-  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_2 .header {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_2 .header {
     background: rgba(15, 69, 118, 0.83);
+    color: #fff;
   }
-  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header,
-  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_3 .header {
     background: rgba(0, 112, 110, 0.83);
+    color: #fff;
   }
-  .theme-sund .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header,
-  .theme-sund .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_4 .header {
     background: rgba(176, 213, 78, 0.83);
+    color: #fff;
   }
 }

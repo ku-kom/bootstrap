@@ -27,10 +27,6 @@
     }
   }
 
-  * {
-    box-sizing: border-box;
-  }
-
   &.subcolor_5 {
     &.text-down {
       .header {
@@ -39,11 +35,9 @@
       }
     }
 
-    &.text-top {
-      .header {
-        background: @ku-gray;
-        color: @ku-gridbox-text;
-      }
+    .header {
+      background: @ku-gray;
+      color: @ku-gridbox-text;
     }
 
     &.outlined {
@@ -55,7 +49,6 @@
       }
 
       &:hover {
-        background: @ku-gray-hover;
         border: 1px solid @ku-gray-hover;
       }
 
@@ -96,11 +89,9 @@
   }
 
   &.subcolor_6 {
-    &.text-down {
-      .header {
-        background: fade(@white-color, 90%);
-        color: @ku-gridbox-text;
-      }
+    .header {
+      background: fade(@white-color, 90%);
+      color: @ku-gridbox-text;
     }
 
     &.text-top {
@@ -114,17 +105,12 @@
       border: 1px solid @gray-dark;
       color: @ku-gridbox-text;
 
-      &::before {
-        color: @ku-gridbox-text;
-      }
-
       &:hover {
         background: @white-color-hover;
       }
 
       &.with-img {
         &:hover {
-          background: @ku-gray-hover;
           border: 1px solid @gray-dark;
         }
       }
@@ -164,12 +150,11 @@
 
   &.subcolor_7 {
     background: @brown;
+    color: @white-color;
 
-    &.text-down {
-      .header {
-        background: fade(@brown, 83%);
-        color: @white-color;
-      }
+    .header {
+      background: fade(@brown, 83%);
+      color: @white-color;
     }
 
     &.text-top {
@@ -183,12 +168,7 @@
       border: 1px solid @brown;
       color: @ku-gridbox-text;
 
-      &::before {
-        color: @brown;
-      }
-
       &:hover {
-        background: @white-color-hover;
         border: 1px solid @brown-hover;
       }
 
@@ -232,12 +212,11 @@
 
     .header {
       color: inherit;
-      font-size: 1.2em;
+      font-size: 13.2px;
       text-transform: uppercase;
       padding: 8px 18px 6px @padding10;
       font-weight: 700;
       letter-spacing: 0.4px;
-      width: 100%;
     }
 
     .text {
@@ -258,7 +237,7 @@
     text-transform: none;
     font-size: 12px;
     color: @white-color;
-    bottom: 9px;
+    bottom: 8px;
     right: @margin10;
     position: absolute;
     z-index: 5;
@@ -429,6 +408,10 @@
   &.outlined {
     background: @white-color!important;
 
+    &:hover {
+      background: @ku-gray-hover!important;
+    }
+
     &:not(.with-img) {
       // Boxes without img: hide box2, make .box1 100% height
       .box1 {
@@ -454,12 +437,6 @@
     height: @gridbox2;
 
     &.with-img {
-      .box1 {
-        .text {
-          display: none;
-        }
-      }
-
       .box2 {
         img {
           max-height: 108%;
@@ -481,14 +458,6 @@
   // Height 133px
   &.size3 {
     height: @gridbox3;
-
-    &.with-img {
-      .box1 {
-        .text {
-          display: none;
-        }
-      }
-    }
 
     &:not(.with-img) {
       .box1 {
@@ -547,49 +516,79 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gcrow .gccolumn .gridbox {
   .all-single-column();
 }
-
 @media (max-width: @screen-xs-min) {
-&.size2 {
-  &.with-img {
-    height: 220px;
-    // Video has natural height
-    &.with-iframe {
-      height: inherit;
-    }
-  }
-}
+  .gridbox {
+    border: 0!important;
 
-  &.size3 {
-    &.with-img {
-      height: 170px;
-      // Video has natural height
-      &.with-iframe {
-        height: inherit;
+    &.size2 {
+      &.with-img {
+        height: 220px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
+      }
+    }
+
+    &.size3 {
+      &.with-img {
+        height: 170px;
+        // Video has natural height
+        &.with-iframe {
+          height: inherit;
+        }
       }
     }
   }
 }
-
 @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   // Tablet
   .gcrow .gccolumn .gridbox {
     .img-text-aligned();
+
+    &.outlined {
+      .header {
+        background: inherit!important;
+        color: inherit!important;
+      }
+
+      &::before {
+        color: inherit;
+      }
+
+      &.subcolor_6 {
+        border: 1px solid @text-color;
+      }
+    }
   }
 
   .GridForside {
-    // Double columns must span 100% in tablet view (but not the ful-width template - hence this hack.)
+    // Double columns must span 100% in tablet view (but not the full-width template - hence this hack.)
     .double-column .col-sm-6 {
       width: 100%;
     }
   }
 }
 @media (min-width: @screen-md-min) {
+  // Desktop text-down with img style for multiple column spans
+  .one-one-two-column .column2,
   .one-two-column .column2,
   .single-column .column1,
-  .two-one-column .column1 {
-    .img-text-aligned();
+  .two-one-column .column1,
+  .two-one-one-column .column1 {
+    .gridbox {
+      .img-text-aligned();
+
+      &.outlined {
+        .header {
+          background: transparent;
+          color: inherit;
+        }
+      }
+    }
   }
 }

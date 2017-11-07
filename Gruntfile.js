@@ -111,7 +111,7 @@ module.exports = function (grunt) {
           'js/transition.js',
           'js/alert.js',
           'js/button.js',
-          'js/carousel.js',
+          //'js/carousel.js',
           'js/collapse.js',
           'js/dropdown.js',
           'js/modal.js',
@@ -186,7 +186,7 @@ module.exports = function (grunt) {
         options: {
           strictMath: true
         },
-        src: 'less/ku-gridboxes.less',
+        src: 'less/ku-gridboxes-bootstrap.less',
         dest: 'dist/css/ku-gridboxes.css'
       },
       compileFacultyStyles: {

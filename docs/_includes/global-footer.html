@@ -147,7 +147,7 @@
       var current = location.pathname;
       $('#leftmenu:not(.exclude) li a').each(function() {
         var $this = $(this);
-        $this.removeClass('active');
+        $this.parent().removeClass('active');
         // if the current path is like this link, make it active
         var $templateLink = $this.attr('href').replace('..', '/examples').indexOf(current) !== -1;
         // Get hash value
