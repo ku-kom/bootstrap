@@ -32,6 +32,9 @@
 
   -webkit-filter: brightness(90%) !important;
 }
+.gridbox.subcolor_5 {
+  background: #eee;
+}
 .gridbox.subcolor_5.text-down .header {
   color: #606060;
   background: rgba(238, 238, 238, .9);
@@ -42,7 +45,7 @@
 }
 .gridbox.subcolor_5.outlined {
   color: #606060;
-  border: 1px solid #eee;
+  border: 1px solid #252525;
 }
 .gridbox.subcolor_5.outlined::before {
   color: #606060;
@@ -56,7 +59,6 @@
 }
 .gridbox.subcolor_5.full {
   color: #606060;
-  background: #eee;
 }
 .gridbox.subcolor_5.full:hover {
   background: #e7e7e7;
@@ -72,6 +74,9 @@
 }
 .gridbox.subcolor_5 .text {
   color: #606060;
+}
+.gridbox.subcolor_6 {
+  background: #fff;
 }
 .gridbox.subcolor_6 .header {
   color: #606060;
@@ -106,6 +111,9 @@
 }
 .gridbox.subcolor_6.text-down:hover {
   background: #ebebeb;
+}
+.gridbox.subcolor_6.text-down:not(.with-img) {
+  border: 1px solid #252525;
 }
 .gridbox.subcolor_6::before {
   color: #606060;
@@ -191,7 +199,7 @@
 .gridbox::before {
   position: absolute;
   right: 10px;
-  bottom: 8px;
+  bottom: 9px;
   z-index: 5;
   display: inline-block;
   font-family: "ku-symbols";
@@ -485,17 +493,14 @@
 .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5 .header,
 .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5 .header {
   color: #606060;
-  background: rgba(238, 238, 238, .9);
 }
 .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_6 .header,
 .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_6 .header {
   color: #606060;
-  background: rgba(255, 255, 255, .9);
 }
 .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_7 .header,
 .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_7 .header {
   color: #fff;
-  background: rgba(98, 87, 87, .83);
 }
 .gcrow .gccolumn .gridbox.size2.with-img.text-top .box1,
 .gcrow .gccolumn .gridbox.size3.with-img.text-top .box1 {
@@ -615,7 +620,7 @@
   }
   .gcrow .gccolumn .gridbox.size2.with-img:hover .header,
   .gcrow .gccolumn .gridbox.size3.with-img:hover .header {
-    background-color: transparent!important;
+    background: 0!important;
   }
   .gcrow .gccolumn .gridbox.outlined .header {
     color: inherit!important;
@@ -635,9 +640,11 @@
   }
 }
 @media (min-width: 992px) {
-  .one-one-two-column .column2 .gridbox.size1 .box2,
+  .one-one-two-column .column3 .gridbox.size1 .box2,
+  .one-three-column .column2 .gridbox.size1 .box2,
   .one-two-column .column2 .gridbox.size1 .box2,
   .single-column .column1 .gridbox.size1 .box2,
+  .three-one-column .column1 .gridbox.size1 .box2,
   .two-one-column .column1 .gridbox.size1 .box2,
   .two-one-one-column .column1 .gridbox.size1 .box2 {
     -webkit-box-flex: 0 !important;
@@ -645,22 +652,28 @@
         -ms-flex: 0 1 185px !important;
             flex: 0 1 185px !important;
   }
-  .one-one-two-column .column2 .gridbox.size1 .box2 iframe,
+  .one-one-two-column .column3 .gridbox.size1 .box2 iframe,
+  .one-three-column .column2 .gridbox.size1 .box2 iframe,
   .one-two-column .column2 .gridbox.size1 .box2 iframe,
   .single-column .column1 .gridbox.size1 .box2 iframe,
+  .three-one-column .column1 .gridbox.size1 .box2 iframe,
   .two-one-column .column1 .gridbox.size1 .box2 iframe,
   .two-one-one-column .column1 .gridbox.size1 .box2 iframe {
     position: absolute;
     top: -20% !important;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img,
+  .one-one-two-column .column3 .gridbox.size2.with-img,
+  .one-three-column .column2 .gridbox.size2.with-img,
   .one-two-column .column2 .gridbox.size2.with-img,
   .single-column .column1 .gridbox.size2.with-img,
+  .three-one-column .column1 .gridbox.size2.with-img,
   .two-one-column .column1 .gridbox.size2.with-img,
   .two-one-one-column .column1 .gridbox.size2.with-img,
-  .one-one-two-column .column2 .gridbox.size3.with-img,
+  .one-one-two-column .column3 .gridbox.size3.with-img,
+  .one-three-column .column2 .gridbox.size3.with-img,
   .one-two-column .column2 .gridbox.size3.with-img,
   .single-column .column1 .gridbox.size3.with-img,
+  .three-one-column .column1 .gridbox.size3.with-img,
   .two-one-column .column1 .gridbox.size3.with-img,
   .two-one-one-column .column1 .gridbox.size3.with-img {
             flex-direction: row;
@@ -670,14 +683,18 @@
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img .box1,
+  .one-one-two-column .column3 .gridbox.size2.with-img .box1,
+  .one-three-column .column2 .gridbox.size2.with-img .box1,
   .one-two-column .column2 .gridbox.size2.with-img .box1,
   .single-column .column1 .gridbox.size2.with-img .box1,
+  .three-one-column .column1 .gridbox.size2.with-img .box1,
   .two-one-column .column1 .gridbox.size2.with-img .box1,
   .two-one-one-column .column1 .gridbox.size2.with-img .box1,
-  .one-one-two-column .column2 .gridbox.size3.with-img .box1,
+  .one-one-two-column .column3 .gridbox.size3.with-img .box1,
+  .one-three-column .column2 .gridbox.size3.with-img .box1,
   .one-two-column .column2 .gridbox.size3.with-img .box1,
   .single-column .column1 .gridbox.size3.with-img .box1,
+  .three-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 {
     position: initial!important;
@@ -691,14 +708,18 @@
     -ms-flex-order: 2;
             order: 2;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img .box1 .header,
+  .one-one-two-column .column3 .gridbox.size2.with-img .box1 .header,
+  .one-three-column .column2 .gridbox.size2.with-img .box1 .header,
   .one-two-column .column2 .gridbox.size2.with-img .box1 .header,
   .single-column .column1 .gridbox.size2.with-img .box1 .header,
+  .three-one-column .column1 .gridbox.size2.with-img .box1 .header,
   .two-one-column .column1 .gridbox.size2.with-img .box1 .header,
   .two-one-one-column .column1 .gridbox.size2.with-img .box1 .header,
-  .one-one-two-column .column2 .gridbox.size3.with-img .box1 .header,
+  .one-one-two-column .column3 .gridbox.size3.with-img .box1 .header,
+  .one-three-column .column2 .gridbox.size3.with-img .box1 .header,
   .one-two-column .column2 .gridbox.size3.with-img .box1 .header,
   .single-column .column1 .gridbox.size3.with-img .box1 .header,
+  .three-one-column .column1 .gridbox.size3.with-img .box1 .header,
   .two-one-column .column1 .gridbox.size3.with-img .box1 .header,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 .header {
     position: relative;
@@ -706,26 +727,34 @@
     left: auto;
     padding: 8px 5px 6px 10px;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img .box1 .text,
+  .one-one-two-column .column3 .gridbox.size2.with-img .box1 .text,
+  .one-three-column .column2 .gridbox.size2.with-img .box1 .text,
   .one-two-column .column2 .gridbox.size2.with-img .box1 .text,
   .single-column .column1 .gridbox.size2.with-img .box1 .text,
+  .three-one-column .column1 .gridbox.size2.with-img .box1 .text,
   .two-one-column .column1 .gridbox.size2.with-img .box1 .text,
   .two-one-one-column .column1 .gridbox.size2.with-img .box1 .text,
-  .one-one-two-column .column2 .gridbox.size3.with-img .box1 .text,
+  .one-one-two-column .column3 .gridbox.size3.with-img .box1 .text,
+  .one-three-column .column2 .gridbox.size3.with-img .box1 .text,
   .one-two-column .column2 .gridbox.size3.with-img .box1 .text,
   .single-column .column1 .gridbox.size3.with-img .box1 .text,
+  .three-one-column .column1 .gridbox.size3.with-img .box1 .text,
   .two-one-column .column1 .gridbox.size3.with-img .box1 .text,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 .text {
     display: block;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img .box2,
+  .one-one-two-column .column3 .gridbox.size2.with-img .box2,
+  .one-three-column .column2 .gridbox.size2.with-img .box2,
   .one-two-column .column2 .gridbox.size2.with-img .box2,
   .single-column .column1 .gridbox.size2.with-img .box2,
+  .three-one-column .column1 .gridbox.size2.with-img .box2,
   .two-one-column .column1 .gridbox.size2.with-img .box2,
   .two-one-one-column .column1 .gridbox.size2.with-img .box2,
-  .one-one-two-column .column2 .gridbox.size3.with-img .box2,
+  .one-one-two-column .column3 .gridbox.size3.with-img .box2,
+  .one-three-column .column2 .gridbox.size3.with-img .box2,
   .one-two-column .column2 .gridbox.size3.with-img .box2,
   .single-column .column1 .gridbox.size3.with-img .box2,
+  .three-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
     -webkit-box-flex: 0;
@@ -737,34 +766,44 @@
     -ms-flex-order: 1;
             order: 1;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img .box2 img,
+  .one-one-two-column .column3 .gridbox.size2.with-img .box2 img,
+  .one-three-column .column2 .gridbox.size2.with-img .box2 img,
   .one-two-column .column2 .gridbox.size2.with-img .box2 img,
   .single-column .column1 .gridbox.size2.with-img .box2 img,
+  .three-one-column .column1 .gridbox.size2.with-img .box2 img,
   .two-one-column .column1 .gridbox.size2.with-img .box2 img,
   .two-one-one-column .column1 .gridbox.size2.with-img .box2 img,
-  .one-one-two-column .column2 .gridbox.size3.with-img .box2 img,
+  .one-one-two-column .column3 .gridbox.size3.with-img .box2 img,
+  .one-three-column .column2 .gridbox.size3.with-img .box2 img,
   .one-two-column .column2 .gridbox.size3.with-img .box2 img,
   .single-column .column1 .gridbox.size3.with-img .box2 img,
+  .three-one-column .column1 .gridbox.size3.with-img .box2 img,
   .two-one-column .column1 .gridbox.size3.with-img .box2 img,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 img {
     max-width: none;
     max-height: 100%;
   }
-  .one-one-two-column .column2 .gridbox.size2.with-img:hover .header,
+  .one-one-two-column .column3 .gridbox.size2.with-img:hover .header,
+  .one-three-column .column2 .gridbox.size2.with-img:hover .header,
   .one-two-column .column2 .gridbox.size2.with-img:hover .header,
   .single-column .column1 .gridbox.size2.with-img:hover .header,
+  .three-one-column .column1 .gridbox.size2.with-img:hover .header,
   .two-one-column .column1 .gridbox.size2.with-img:hover .header,
   .two-one-one-column .column1 .gridbox.size2.with-img:hover .header,
-  .one-one-two-column .column2 .gridbox.size3.with-img:hover .header,
+  .one-one-two-column .column3 .gridbox.size3.with-img:hover .header,
+  .one-three-column .column2 .gridbox.size3.with-img:hover .header,
   .one-two-column .column2 .gridbox.size3.with-img:hover .header,
   .single-column .column1 .gridbox.size3.with-img:hover .header,
+  .three-one-column .column1 .gridbox.size3.with-img:hover .header,
   .two-one-column .column1 .gridbox.size3.with-img:hover .header,
   .two-one-one-column .column1 .gridbox.size3.with-img:hover .header {
-    background-color: transparent!important;
+    background: 0!important;
   }
-  .one-one-two-column .column2 .gridbox.outlined .header,
+  .one-one-two-column .column3 .gridbox.outlined .header,
+  .one-three-column .column2 .gridbox.outlined .header,
   .one-two-column .column2 .gridbox.outlined .header,
   .single-column .column1 .gridbox.outlined .header,
+  .three-one-column .column1 .gridbox.outlined .header,
   .two-one-column .column1 .gridbox.outlined .header,
   .two-one-one-column .column1 .gridbox.outlined .header {
     color: inherit;
