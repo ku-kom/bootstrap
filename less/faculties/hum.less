@@ -245,7 +245,6 @@
   .double-column [class*=column],
   .one-two-column .column1,
   .quad-column [class*=column],
-  .rightbox-normal,
   .triple-column [class*=column],
   .two-one-column .column2 {
     .gridbox {
@@ -253,6 +252,10 @@
       &.size3 {
         &.outlined.with-img {
           border: 0;
+
+          &::before {
+            color: @white-color;
+          }
 
           &.faculty_color {
             .header {

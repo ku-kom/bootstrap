@@ -19,7 +19,6 @@
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 
   &:hover {
     img {
@@ -236,7 +235,7 @@
     content: "\61";
     text-transform: none;
     font-size: 12px;
-    color: @white-color;
+    //color: @white-color;
     bottom: 8px;
     right: @margin10;
     position: absolute;
@@ -291,6 +290,11 @@
   &:not(.with-img) {
     .box1 {
       flex: 1 1 auto;
+
+      .header {
+        background: transparent;
+        color: inherit;
+      }
     }
 
     .box2 {
@@ -345,6 +349,34 @@
       bottom: 0;
       color: inherit;
     }
+  }
+
+  &.outlined {
+    background: @white-color!important;
+
+    &:hover {
+      background: @ku-gray-hover!important;
+    }
+
+    &:not(.with-img) {
+      // Boxes without img: hide box2, make .box1 100% height
+      .box1 {
+        flex: 0 1 100%;
+      }
+
+      .box2 {
+        display: none;
+      }
+    }
+
+    .text {
+      display: block;
+    }
+  }
+
+  .text {
+    padding: 0 25px 5px @padding10;
+    color: inherit;
   }
   // Height 298px
   &.size1 {
@@ -403,34 +435,6 @@
     &:hover {
       background: @ku-gray-hover;
     }
-  }
-
-  &.outlined {
-    background: @white-color!important;
-
-    &:hover {
-      background: @ku-gray-hover!important;
-    }
-
-    &:not(.with-img) {
-      // Boxes without img: hide box2, make .box1 100% height
-      .box1 {
-        flex: 0 1 100%;
-      }
-
-      .box2 {
-        display: none;
-      }
-    }
-
-    .text {
-      display: block;
-    }
-  }
-
-  .text {
-    padding: 0 25px 5px @padding10;
-    color: inherit;
   }
   // Height 185px
   &.size2 {
@@ -519,10 +523,25 @@
 
 .gcrow .gccolumn .gridbox {
   .all-single-column();
+
+  &.full {
+    .header {
+      background: transparent;
+      padding-right: 10px;
+    }
+  }
 }
 @media (max-width: @screen-xs-min) {
   .gridbox {
-    border: 0!important;
+    &.size2,
+    &.size3 {
+      &:not(.with-img) {
+        &.full,
+        &.outlined {
+          height: auto;
+        }
+      }
+    }
 
     &.size2 {
       &.with-img {
@@ -543,6 +562,22 @@
         }
       }
     }
+
+    &.outlined {
+      &.with-img {
+        border: 0!important;
+
+        &::before {
+          color: @white-color;
+        }
+
+        &.subcolor_6 {
+          &::before {
+            color: @gray-dark;
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
@@ -559,9 +594,19 @@
       &::before {
         color: inherit;
       }
+    }
 
+    &.text-down {
       &.subcolor_6 {
-        border: 1px solid @text-color;
+        border: 1px solid @gray-dark;
+      }
+    }
+
+    &.size1 {
+      .box2 {
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -587,6 +632,85 @@
         .header {
           background: transparent;
           color: inherit;
+        }
+      }
+    }
+  }
+
+  &.outlined {
+    &.with-img {
+      &.subcolor_6 {
+        color: @white-color;
+      }
+    }
+
+    &:not(.with-img) {
+      &.subcolor_6 {
+        color: @gray-dark;
+      }
+    }
+  }
+  // Display text for full width .size1 boxes
+  .single-column .column1 {
+    .size1 {
+      flex-direction: row;
+      background: @white-color;
+
+      &.with-img {
+        .box1 {
+          padding-left: 24px;
+          padding-right: 0;
+          flex: 0 1 51.6%;
+          max-width: 390px; // preventing that too much text will expand this box
+          order: 2;
+
+          .header-small {
+            margin: 0;
+          }
+
+          .header {
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 1.11111em;
+          }
+
+          .text {
+            // Display text in desktop
+            display: block;
+            font-size: 14.1px;
+            padding: 5px 0;
+          }
+        }
+
+        .box2 {
+          // Flip image to the left
+          flex: 1!important;
+          order: 1;
+        }
+
+        &:hover {
+          // New sort of underlining :-)
+          .header {
+            > span {
+              background-image: linear-gradient(rgba(74, 73, 73, 0.25) 0%, @gray-dark 100%);
+              background-repeat: repeat-x;
+              background-size: 1px 1px;
+              background-position: 0 93%;
+              text-shadow: 3px 0 @white-color, 2px 0 @white-color, 1px 0 @white-color, -1px 0 @white-color, -2px 0 @white-color, -3px 0 @white-color;
+            }
+          }
+        }
+      }
+      // Flip image to the right
+      &.img-flip-right {
+        .box1 {
+          padding-left: 0;
+          padding-right: 24px;
+        }
+
+        .box2 {
+          flex: 1;
+          order: 2;
         }
       }
     }

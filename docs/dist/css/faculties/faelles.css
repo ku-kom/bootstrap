@@ -27,7 +27,7 @@
   color: #901a1e;
 }
 .gridbox.faculty_color.outlined:hover {
-  background: #f5f5f5;
+  background: #e7e7e7;
   border: 1px solid #7b161a;
 }
 .gridbox.faculty_color.full:hover {
@@ -53,7 +53,7 @@
   color: #a1c5c8;
 }
 .gridbox.subcolor_1.outlined:hover {
-  background: #f5f5f5;
+  background: #e7e7e7;
   border: 1px solid #7ea5a8;
 }
 .gridbox.subcolor_1.full:hover {
@@ -79,7 +79,7 @@
   color: #85ae33;
 }
 .gridbox.subcolor_2.outlined:hover {
-  background: #f5f5f5;
+  background: #e7e7e7;
   border: 1px solid #75992c;
 }
 .gridbox.subcolor_2.full:hover {
@@ -105,7 +105,7 @@
   color: #606060;
 }
 .gridbox.subcolor_3.outlined:hover {
-  background: #f5f5f5;
+  background: #e7e7e7;
   border: 1px solid #a1a1a1;
 }
 .gridbox.subcolor_3.full:hover {
@@ -131,7 +131,7 @@
   color: #42759b;
 }
 .gridbox.subcolor_4.outlined:hover {
-  background: #f5f5f5;
+  background: #e7e7e7;
   border: 1px solid #3b688a;
 }
 .gridbox.subcolor_4.full:hover {
@@ -181,27 +181,35 @@
   .double-column [class*=column] .gridbox.size2.outlined.with-img,
   .one-two-column .column1 .gridbox.size2.outlined.with-img,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img,
-  .rightbox-normal .gridbox.size2.outlined.with-img,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img,
   .two-one-column .column2 .gridbox.size2.outlined.with-img,
   .double-column [class*=column] .gridbox.size3.outlined.with-img,
   .one-two-column .column1 .gridbox.size3.outlined.with-img,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img,
-  .rightbox-normal .gridbox.size3.outlined.with-img,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img,
   .two-one-column .column2 .gridbox.size3.outlined.with-img {
     border: 0;
   }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img::before,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img::before,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img::before,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img::before {
+    color: #fff;
+  }
   .double-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.faculty_color .header,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
-  .rightbox-normal .gridbox.size2.outlined.with-img.faculty_color .header,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
   .two-one-column .column2 .gridbox.size2.outlined.with-img.faculty_color .header,
   .double-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
   .one-two-column .column1 .gridbox.size3.outlined.with-img.faculty_color .header,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
-  .rightbox-normal .gridbox.size3.outlined.with-img.faculty_color .header,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.faculty_color .header {
     background: rgba(144, 26, 30, 0.83);
@@ -210,13 +218,11 @@
   .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_1 .header,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
-  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_1 .header,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
   .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_1 .header,
   .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
   .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_1 .header,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
-  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_1 .header,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_1 .header {
     background: rgba(161, 197, 200, 0.83);
@@ -225,13 +231,11 @@
   .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_2 .header,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
-  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_2 .header,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
   .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_2 .header,
   .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
   .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_2 .header,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
-  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_2 .header,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_2 .header {
     background: rgba(133, 174, 51, 0.83);
@@ -240,13 +244,11 @@
   .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_3 .header,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
-  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_3 .header,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
   .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_3 .header,
   .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
   .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_3 .header,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
-  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_3 .header,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_3 .header {
     background: rgba(181, 181, 181, 0.83);
@@ -255,13 +257,11 @@
   .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_4 .header,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
-  .rightbox-normal .gridbox.size2.outlined.with-img.subcolor_4 .header,
   .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
   .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_4 .header,
   .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
   .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_4 .header,
   .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
-  .rightbox-normal .gridbox.size3.outlined.with-img.subcolor_4 .header,
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_4 .header {
     background: rgba(66, 117, 155, 0.83);
