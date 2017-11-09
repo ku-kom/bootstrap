@@ -1,32 +1,22 @@
 /* Front page styling */
 
-
 /*Edge-to-edge grid for eg. slider*/
+
 .FullWidthFrontpage .main-content {
   padding-top: 0;
 }
+
 .FullWidthFrontpage .breadcrumb {
   display: none;
-}
-@media screen and (max-width: 767px) {
-  .FullWidthFrontpage .main-content .row:first-child .col-sm-12.col-md-9 {
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: -13px;
-    margin-right: -13px;
-  }
 }
 
 .jumpboard {
   position: relative;
-  padding: 23px 0;
   margin-left: 0;
   margin-right: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
   background: #eee;
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .jumpboard .jumpcolumn {
@@ -105,16 +95,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .jumpboard>.jumpcolumn {
+  .jumpboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    border-right: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
+    padding-top: 23px;
   }
   .jumpboard:after {
     position: absolute;
@@ -124,12 +113,28 @@
     width: calc(100% - 52px);
     background-color: #fff;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .jumpboard .jumpcolumn {
+    border-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumpboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media (max-width: 767px) {
+  .FullWidthFrontpage .main-content .row:first-child .col-sm-12.col-md-9 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: -13px;
+    margin-right: -13px;
+  }
   .jumpboard {
     padding: 0;
     background: #f8f8f5;
@@ -155,7 +160,6 @@
     right: 20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .jumpboard .jumpcolumn .jumplinks li {
