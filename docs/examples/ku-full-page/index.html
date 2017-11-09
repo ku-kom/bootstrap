@@ -5,7 +5,7 @@ slug: examples
 ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
-  <div class="container main-area FullWidthFrontpage" id="main-area">
+  <div class="container main-area" id="main-area">
     <div class="row">
       <div class="col-sm-12 col-md-12 main-content">
         <ul class="breadcrumb">
@@ -13,7 +13,7 @@ slug: examples
         </ul>
         <div class="gridcontent">
           <div class="row gcrow three-one-column">
-            <div class="gccolumn column1 col-xs-12 col-sm-7 col-md-9">
+            <div class="gccolumn column1 col-xs-12 col-sm-6 col-md-9">
               <div class="gccolumn-inner">
                 <div class="gcitem html">
                   <a href="#" class="boxlink">
@@ -28,7 +28,7 @@ slug: examples
                 </div>
               </div>
             </div>
-            <div class="gccolumn column2 col-xs-12 col-sm-5 col-md-3">
+            <div class="gccolumn column2 col-xs-12 col-sm-6 col-md-3">
               <div class="gccolumn-inner">
                 <div class="gcitem html">
                   <a href="#" class="boxlink">
@@ -92,7 +92,7 @@ slug: examples
             </div>
           </div>
           <div class="row gcrow one-three-column">
-            <div class="gccolumn column1 col-xs-12 col-sm-5 col-md-3">
+            <div class="gccolumn column1 col-xs-12 col-sm-6 col-md-3">
               <div class="gccolumn-inner">
                 <div class="gcitem html">
                   <a href="#" class="boxlink">
@@ -107,7 +107,7 @@ slug: examples
                 </div>
               </div>
             </div>
-            <div class="gccolumn column2 col-xs-12 col-sm-7 col-md-9">
+            <div class="gccolumn column2 col-xs-12 col-sm-6 col-md-9">
               <div class="gccolumn-inner">
                 <div class="gcitem html">
                   <a href="#" class="boxlink">
@@ -383,15 +383,16 @@ slug: examples
 </main>
 <script>
 $(function () {
-    var $head = $("head");
-    // Append faculty stylesheet
-    var $headlinklast = $head.find("link[rel='stylesheet']:last");
-    var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/faelles.css' type='text/css'><link rel='stylesheet' href='../../assets/css/frontpage/frontpage.css' type='text/css'>";
-    if ($headlinklast.length){
-       $headlinklast.after(linkElement);
-    }
-    else {
-       $head.append(linkElement);
-    }
-  });
+  $('body').addClass('FullWidthFrontpage');
+  var $head = $("head");
+  // Append faculty stylesheet
+  var $headlinklast = $head.find("link[rel='stylesheet']:last");
+  var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/faelles.css' type='text/css'><link rel='stylesheet' href='../../assets/css/frontpage/frontpage.css' type='text/css'>";
+  if ($headlinklast.length){
+     $headlinklast.after(linkElement);
+  }
+  else {
+     $head.append(linkElement);
+  }
+});
 </script>

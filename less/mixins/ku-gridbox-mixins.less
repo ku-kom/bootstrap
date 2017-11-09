@@ -7,7 +7,6 @@
 *    .all-single-column();
 *  }
 */
-
 .all-single-column() {
   &.size1 {
     &.with-img {
@@ -43,7 +42,7 @@
       }
 
       .box1 {
-        flex: 0 1 auto;
+        flex: 1;
         width: 100%;
 
         .header {
@@ -51,10 +50,6 @@
           border-right: 25px solid transparent;
           white-space: nowrap;
           overflow: hidden;
-        }
-
-        .text {
-          display: none;
         }
       }
 
@@ -98,17 +93,12 @@
       }
     }
   }
-
-  &.size4 {
-    .text {
-      display: none;
-    }
-  }
 }
 /*
 * Tablet style: Grid front page with left menu - all boxes img left text right:
 *    .img-text-aligned();
 */
+
 .img-text-aligned() {
   &.size1 {
     .box2 {
@@ -150,12 +140,6 @@
         img {
           max-height: 100%;
           max-width: none;
-        }
-      }
-
-      &:hover {
-        .header {
-          background: 0!important;
         }
       }
     }

@@ -75,8 +75,16 @@ nav {
 }
 
 .right-side {
-  //padding-bottom: @grid-gutter-height;
   .pull-right;
+}
+
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+  .GridForside {
+    // Double columns must span 100% in tablet view (but not the full-width template - hence this hack.)
+    .double-column .col-sm-6 {
+      width: 100%;
+    }
+  }
 }
 
 .divider {
@@ -145,8 +153,6 @@ nav {
     display: none;
   }
 }
-
-
 //KU remove gutter from columns
 
 .no-gutter {
@@ -191,8 +197,8 @@ nav {
   .glyphicon;
   .glyphicon-menu-up;
 }
-
 // Global scroll to top
+
 .scrolltop {
   position: fixed;
   bottom: 3%;

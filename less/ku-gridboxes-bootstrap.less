@@ -49,10 +49,6 @@
         color: @ku-gridbox-text;
       }
 
-      &:hover {
-        border: 1px solid @ku-gray-hover;
-      }
-
       &.with-img {
         &:hover {
           background: @ku-gray-hover;
@@ -90,6 +86,7 @@
 
   &.subcolor_6 {
     background: @white-color;
+
     .header {
       background: fade(@white-color, 90%);
       color: @ku-gridbox-text;
@@ -538,6 +535,10 @@
 }
 @media (max-width: @screen-xs-min) {
   .gridbox {
+    .text {
+      display: none;
+    }
+
     &.size2,
     &.size3 {
       &:not(.with-img) {
@@ -572,6 +573,10 @@
       &.with-img {
         border: 0!important;
 
+        .text {
+          display: none;
+        }
+
         &::before {
           color: @white-color;
         }
@@ -585,69 +590,113 @@
     }
   }
 }
-@media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
-  // Tablet
-.gcrow .gccolumn .gridbox {
-    .img-text-aligned();
-
-    &.outlined {
-      .header {
-        background: inherit!important;
-        color: inherit!important;
+@media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+  .gridbox {
+    &.with-img {
+      .text {
+        display: block;
       }
 
-      &::before {
-        color: inherit;
-      }
-    }
-
-    &.text-down {
-      &.subcolor_6 {
-        border: 1px solid @gray-dark;
-      }
-    }
-
-    &.size1 {
-      .box2 {
-        img {
-          width: 100%;
+      &:hover {
+        .header {
+          background: transparent;
         }
       }
     }
   }
+}
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+  // Tablet
+  .col-sm-12,
+  .double-column .col-sm-6 {
+    .gridbox {
+      .img-text-aligned();
 
-  .GridForside {
-    // Double columns must span 100% in tablet view (but not the full-width template - hence this hack.)
-    .double-column .col-sm-6 {
-      width: 100%;
+      &.outlined {
+        .header {
+          background: inherit!important;
+          color: inherit!important;
+        }
+
+        &::before {
+          color: inherit;
+        }
+      }
+
+      &.text-down {
+        &.subcolor_6 {
+          border: 1px solid @gray-dark;
+        }
+      }
+
+      &.size1 {
+        .box2 {
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
+  // Tablet: For full-width front page only
+  .FullWidthFrontpage {
+    .one-one-two-column .column3,
+    .one-two-column .column2,
+    .single-column .column1,
+    .two-one-column .column1,
+    .two-one-one-column .column1 {
+      .gridbox {
+        &.with-img {
+          &:hover {
+            .header {
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  // Tablet: For full-width fornt page only
+  .FullWidthFrontpage {
+    .col-sm-6,
+    .double-column .col-sm-6 {
+      .gridbox {
+        &.size2,
+        &.size3 {
+          &.with-img {
+            flex-direction: column!important;
+            border: 0;
 
-// Full-width page only:
-  // .FullWidthFrontpage {
-  //   .two-one-one-column .column2,
-  //   .two-one-one-column .column3,
-  //   .one-one-two-column .column1,
-  //   .one-one-two-column .column2,
-  //   .double-column [class*=column],
-  //   .quad-column [class*=column],
-  //   .one-three-column .column1,
-  //   .three-one-column .column2 {
-  //     .gridbox {
-  //       flex-direction: column;
-  //       .box1 {
-  //             flex: 0 1 auto;
-  //             order: 1;
-  //       }
-  //       .box2 {
-  //             flex: 1 1 auto;
-  //             order: 2;
-  //       }
-  //     }
-  //   }
-  // }
+            .box1 {
+              position: absolute!important;
+            }
+
+            .box2 {
+              img {
+                max-width: 100%;
+                max-height: initial;
+              }
+            }
+
+            .text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: @screen-md-min) {
+  .gridbox {
+    &.with-img {
+      .text {
+        display: none;
+      }
+    }
+  }
   // Desktop text-down with img style for multiple column spans
   .one-one-two-column .column3,
   .one-three-column .column2,
@@ -658,6 +707,14 @@
   .two-one-one-column .column1 {
     .gridbox {
       .img-text-aligned();
+
+      &.with-img {
+        &:hover {
+          .header {
+            background: 0;
+          }
+        }
+      }
 
       &.outlined {
         .header {

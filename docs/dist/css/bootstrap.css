@@ -8955,6 +8955,11 @@ nav {
 .right-side {
   float: right !important;
 }
+@media (min-width: 480px) and (max-width: 991px) {
+  .GridForside .double-column .col-sm-6 {
+    width: 100%;
+  }
+}
 .divider {
   margin: 10px 0;
 }
