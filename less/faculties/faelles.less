@@ -198,7 +198,7 @@
     }
   }
 }
-@media (min-width: @screen-xs-min) {
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   // Outline arrow style for multiple column spans
   .one-one-two-column .column2,
   .one-two-column .column2,
@@ -241,7 +241,7 @@
   }
 }
 @media (min-width: @screen-md-min) {
-  // Outline style for multiple column spans
+  // Outline style for single column spans
   .double-column [class*=column],
   .one-two-column .column1,
   .quad-column [class*=column],

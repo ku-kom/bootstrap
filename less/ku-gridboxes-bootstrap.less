@@ -260,9 +260,9 @@
       img {
         // Img inside the box adjusted by height and centered
         display: block;
-        width: auto;
-        min-height: 100%;
-        object-fit: cover;
+        // width: auto;
+        min-height: calc(100% + 1px);
+        object-fit: fill;
         -ms-interpolation-mode: bicubic;
         position: absolute;
         top: 50%;
@@ -445,8 +445,7 @@
     &.with-img {
       .box2 {
         img {
-          max-height: 108%;
-          max-width: none;
+          object-fit: cover;
         }
       }
     }
@@ -581,6 +580,12 @@
           color: @white-color;
         }
 
+        &.subcolor_5 {
+          &::before {
+            color: @gray-dark;
+          }
+        }
+
         &.subcolor_6 {
           &::before {
             color: @gray-dark;
@@ -590,7 +595,7 @@
     }
   }
 }
-@media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+@media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
   .gridbox {
     &.with-img {
       .text {
@@ -603,43 +608,64 @@
         }
       }
     }
+    // Frontpage only
+    .FullWidthFrontpage & {
+      &.outlined {
+        .header {
+          background: 0;
+          color: inherit;
+        }
+      }
+    }
   }
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   // Tablet
-  .col-sm-12,
-  .double-column .col-sm-6 {
+  .gridbox {
+    .img-text-aligned();
+
+    &.outlined {
+      &::before {
+        color: inherit;
+      }
+    }
+
+    &.text-down {
+      &.subcolor_6 {
+        border: 1px solid @gray-dark;
+      }
+    }
+
+    &.size1 {
+      .box2 {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  body:not(.FullWidthFrontpage) {
     .gridbox {
-      .img-text-aligned();
+      &.text-down {
+        &:hover {
+          .header {
+            background: 0;
+          }
+        }
+      }
 
       &.outlined {
         .header {
-          background: inherit!important;
+          background: 0;
           color: inherit!important;
-        }
-
-        &::before {
-          color: inherit;
-        }
-      }
-
-      &.text-down {
-        &.subcolor_6 {
-          border: 1px solid @gray-dark;
-        }
-      }
-
-      &.size1 {
-        .box2 {
-          img {
-            width: 100%;
-          }
         }
       }
     }
   }
   // Tablet: For full-width front page only
   .FullWidthFrontpage {
+    // Multiple columns span
     .one-one-two-column .column3,
     .one-two-column .column2,
     .single-column .column1,
@@ -647,9 +673,13 @@
     .two-one-one-column .column1 {
       .gridbox {
         &.with-img {
-          &:hover {
+          .header {
+            background: transparent;
+          }
+
+          &.outlined {
             .header {
-              background: transparent;
+              color: inherit;
             }
           }
         }
@@ -658,7 +688,7 @@
   }
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-  // Tablet: For full-width fornt page only
+  // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
     .col-sm-6,
     .double-column .col-sm-6 {
@@ -673,13 +703,6 @@
               position: absolute!important;
             }
 
-            .box2 {
-              img {
-                max-width: 100%;
-                max-height: initial;
-              }
-            }
-
             .text {
               display: none;
             }
@@ -690,10 +713,26 @@
   }
 }
 @media (min-width: @screen-md-min) {
-  .gridbox {
-    &.with-img {
-      .text {
-        display: none;
+  //Frontpage only
+  .one-one-two-column .column1,
+  .one-one-two-column .column2,
+  .two-one-one-column .column2,
+  .two-one-one-column .column3 {
+    .gridbox {
+      &.with-img {
+        &.outlined {
+          border: 0;
+
+          &::before {
+            color: @white-color;
+          }
+
+          &.subcolor_6 {
+            &::before {
+              color: @ku-gridbox-text;
+            }
+          }
+        }
       }
     }
   }
@@ -725,16 +764,54 @@
     }
   }
 
-  &.outlined {
+  .gridbox {
     &.with-img {
-      &.subcolor_6 {
-        color: @white-color;
+      .text {
+        display: none;
       }
+    }
+
+    &.outlined {
+      // &.with-img {
+      //   &.subcolor_6 {
+      //     color: @white-color;
+      //   }
     }
 
     &:not(.with-img) {
       &.subcolor_6 {
         color: @gray-dark;
+      }
+    }
+  }
+  // Outline arrow style for singel column spans
+  .double-column [class*=column],
+  .one-two-column .column1,
+  .quad-column [class*=column],
+  .triple-column [class*=column],
+  .two-one-column .column2 {
+    .gridbox {
+      &.size2,
+      &.size3 {
+        &.outlined.with-img {
+          &.subcolor_6 {
+            &::before {
+              color: @gray-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .double-column [class*=column] {
+    .gridbox {
+      &.with-img {
+        .box2 {
+          img {
+            object-fit: unset;
+          }
+        }
       }
     }
   }

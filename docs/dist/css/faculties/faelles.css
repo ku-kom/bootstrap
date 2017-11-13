@@ -140,7 +140,7 @@
 .gridbox.subcolor_4.text-down:hover {
   background: #3b688a;
 }
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .one-one-two-column .column2 .gridbox.outlined.faculty_color::before,
   .one-two-column .column2 .gridbox.outlined.faculty_color::before,
   .single-column .column1 .gridbox.outlined.faculty_color::before,
