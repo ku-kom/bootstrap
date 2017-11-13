@@ -608,6 +608,13 @@
         }
       }
     }
+    &.size1 {
+      .box2 {
+        img {
+          width: 100%;
+        }
+      }
+    }
     // Frontpage only
     .FullWidthFrontpage & {
       &.outlined {
@@ -639,7 +646,7 @@
     &.size1 {
       .box2 {
         img {
-          width: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -747,6 +754,10 @@
     .gridbox {
       .img-text-aligned();
 
+      .text {
+        display: block;
+      }
+
       &.with-img {
         &:hover {
           .header {
@@ -769,13 +780,6 @@
       .text {
         display: none;
       }
-    }
-
-    &.outlined {
-      // &.with-img {
-      //   &.subcolor_6 {
-      //     color: @white-color;
-      //   }
     }
 
     &:not(.with-img) {
@@ -851,6 +855,10 @@
           // Flip image to the left
           flex: 1!important;
           order: 1;
+
+          img {
+            object-fit: cover;
+          }
         }
 
         &:hover {
