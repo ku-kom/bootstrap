@@ -9,11 +9,9 @@
 }
 @media (max-width: @screen-sm-max) {
   // Hide KU language switcher icons
-  &.dk,
-  &.eng {
-    > span,
-    img {
-      display: none;
+  .global-sprog {
+    a {
+      background: 0;
     }
   }
 }
@@ -64,8 +62,10 @@
       // Arrows
       border-color: @white-color;
     }
-    &.mm-selected > a:not(.mm-next) {
+
+    &.mm-selected.mm-opened > a:not(.mm-next) {
       // selected view
+      font-weight: 600;
       background: darken(@ku-red, 3%);
 
       .theme-samf & {
@@ -104,8 +104,6 @@
     &::after {
       border: none;
     }
-
-
   }
 
   .local1_mmenu {
