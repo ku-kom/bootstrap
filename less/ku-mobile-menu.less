@@ -18,6 +18,7 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
+
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -63,6 +64,34 @@
       // Arrows
       border-color: @white-color;
     }
+    &.mm-selected > a:not(.mm-next) {
+      // selected view
+      background: darken(@ku-red, 3%);
+
+      .theme-samf & {
+        background: darken(@samf, 3%);
+      }
+
+      .theme-hum & {
+        background: darken(@hum, 3%);
+      }
+
+      .theme-science & {
+        background: darken(@science, 3%);
+      }
+
+      .theme-sund & {
+        background: darken(@sund, 3%);
+      }
+
+      .theme-jur & {
+        background: darken(@jura, 3%);
+      }
+
+      .theme-teo & {
+        background: darken(@teol, 3%);
+      }
+    }
   }
 
   .local1_mmenu,
@@ -75,6 +104,8 @@
     &::after {
       border: none;
     }
+
+
   }
 
   .local1_mmenu {
@@ -86,34 +117,6 @@
           }
         }
       }
-    }
-  }
-
-  .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-    background: darken(@ku-red, 3%);
-
-    .theme-samf & {
-      background: darken(@samf, 3%);
-    }
-
-    .theme-hum & {
-      background: darken(@hum, 3%);
-    }
-
-    .theme-science & {
-      background: darken(@science, 3%);
-    }
-
-    .theme-sund & {
-      background: darken(@sund, 3%);
-    }
-
-    .theme-jur & {
-      background: darken(@jura, 3%);
-    }
-
-    .theme-teo & {
-      background: darken(@teol, 3%);
     }
   }
 
