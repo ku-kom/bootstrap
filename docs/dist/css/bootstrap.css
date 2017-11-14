@@ -7470,32 +7470,25 @@ main:after,
   background-color: #66609e;
   border-bottom: 1px solid #7b76ac;
 }
-#mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-#mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+#mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #83181b;
 }
-.theme-samf #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-samf #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-samf #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #d33417;
 }
-.theme-hum #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-hum #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-hum #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #325499;
 }
-.theme-science #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-science #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-science #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #406a37;
 }
-.theme-sund #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-sund #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-sund #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #251d5e;
 }
-.theme-jur #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-jur #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-jur #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #8d8b2e;
 }
-.theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
-.theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > span {
+.theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #605a94;
 }
 #mobileleftmenu .mm-navbars-top {
