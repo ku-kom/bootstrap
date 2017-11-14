@@ -18,7 +18,6 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -128,31 +127,35 @@
   }
 
   .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-    background: darken(@ku-red, 3%);
+    .backgroundColorFix(darken(@ku-red, 3%), 1);
 
     .theme-samf & {
-      background: darken(@samf, 3%);
+      .backgroundColorFix(darken(@samf, 3%), 1);
     }
 
     .theme-hum & {
-      background: darken(@hum, 3%);
+      .backgroundColorFix(darken(@hum, 3%), 1);
     }
 
     .theme-science & {
-      background: darken(@science, 3%);
+      .backgroundColorFix(darken(@science, 3%), 1);
     }
 
     .theme-sund & {
-      background: darken(@sund, 3%);
+      .backgroundColorFix(darken(@sund, 3%), 1);
     }
 
     .theme-jur & {
-      background: darken(@jura, 3%);
+      .backgroundColorFix(darken(@jura, 3%), 1);
     }
 
     .theme-teo & {
-      background: darken(@teol, 3%);
+      .backgroundColorFix(darken(@teol, 3%), 1);
     }
+  }
+
+  .mm-menu .mm-listview > li.mm-opened > a.mm-next {
+    font-weight: 600;
   }
 
   .mm-navbars-top {

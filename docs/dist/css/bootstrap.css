@@ -7491,6 +7491,9 @@ main:after,
 .theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
   background: #605a94;
 }
+#mobileleftmenu .mm-menu .mm-listview > li.mm-opened > a.mm-next {
+  font-weight: 600;
+}
 #mobileleftmenu .mm-navbars-top {
   border: 0;
 }
