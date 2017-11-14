@@ -7385,7 +7385,7 @@ main:after,
 }
 /* KU theme colors for jQuery MMenu */
 #mobileleftmenu {
-  color: #000;
+  color: #252525;
   background-color: #fff;
 }
 #mobileleftmenu .local1_mmenu,
@@ -7444,31 +7444,31 @@ main:after,
   font-size: larger;
   color: #fff;
   background-color: #901a1e;
-  border-bottom: solid 1px #e26165;
+  border-bottom: solid 1px #ae1f24;
 }
 .theme-samf #mobileleftmenu .mm-title {
   background-color: #e13718;
-  border-bottom: 1px solid #f5ab9d;
+  border-bottom: 1px solid #e94f33;
 }
 .theme-hum #mobileleftmenu .mm-title {
   background-color: #365aa5;
-  border-bottom: 1px solid #97aedd;
+  border-bottom: 1px solid #3f69c0;
 }
 .theme-science #mobileleftmenu .mm-title {
   background-color: #46743c;
-  border-bottom: 1px solid #92c188;
+  border-bottom: 1px solid #548c48;
 }
 .theme-sund #mobileleftmenu .mm-title {
   background-color: #2a216a;
-  border-bottom: 1px solid #6759cb;
+  border-bottom: 1px solid #352985;
 }
 .theme-jur #mobileleftmenu .mm-title {
   background-color: #999632;
-  border-bottom: 1px solid #d9d78b;
+  border-bottom: 1px solid #b4b03b;
 }
 .theme-teo #mobileleftmenu .mm-title {
   background-color: #66609e;
-  border-bottom: 1px solid #c1bfd8;
+  border-bottom: 1px solid #7b76ac;
 }
 #mobileleftmenu .mm-navbars-top {
   border: 0;
