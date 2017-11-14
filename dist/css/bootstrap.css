@@ -7392,37 +7392,37 @@ main:after,
 #mobileleftmenu .local2_mmenu {
   color: #fff;
   background: #901a1e;
-  border-bottom: 1px solid #651215;
+  border-bottom: 1px solid #7a1619;
 }
 .theme-samf #mobileleftmenu .local1_mmenu,
 .theme-samf #mobileleftmenu .local2_mmenu {
   background: #e13718;
-  border-bottom: 1px solid #b32c13;
+  border-bottom: 1px solid #ca3116;
 }
 .theme-hum #mobileleftmenu .local1_mmenu,
 .theme-hum #mobileleftmenu .local2_mmenu {
   background: #365aa5;
-  border-bottom: 1px solid #29457f;
+  border-bottom: 1px solid #305092;
 }
 .theme-science #mobileleftmenu .local1_mmenu,
 .theme-science #mobileleftmenu .local2_mmenu {
   background: #46743c;
-  border-bottom: 1px solid #32522b;
+  border-bottom: 1px solid #3c6333;
 }
 .theme-sund #mobileleftmenu .local1_mmenu,
 .theme-sund #mobileleftmenu .local2_mmenu {
   background: #2a216a;
-  border-bottom: 1px solid #1b1543;
+  border-bottom: 1px solid #221b57;
 }
 .theme-jur #mobileleftmenu .local1_mmenu,
 .theme-jur #mobileleftmenu .local2_mmenu {
   background: #999632;
-  border-bottom: 1px solid #737025;
+  border-bottom: 1px solid #86832c;
 }
 .theme-teo #mobileleftmenu .local1_mmenu,
 .theme-teo #mobileleftmenu .local2_mmenu {
   background: #66609e;
-  border-bottom: 1px solid #524d7e;
+  border-bottom: 1px solid #5c568e;
 }
 #mobileleftmenu .local1_mmenu .mm-next::after,
 #mobileleftmenu .local2_mmenu .mm-next::after {
