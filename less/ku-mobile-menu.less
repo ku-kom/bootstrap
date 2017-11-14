@@ -89,6 +89,34 @@
     }
   }
 
+  .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+    background: darken(@ku-red, 3%);
+
+    .theme-samf & {
+      background: darken(@samf, 3%);
+    }
+
+    .theme-hum & {
+      background: darken(@hum, 3%);
+    }
+
+    .theme-science & {
+      background: darken(@science, 3%);
+    }
+
+    .theme-sund & {
+      background: darken(@sund, 3%);
+    }
+
+    .theme-jur & {
+      background: darken(@jura, 3%);
+    }
+
+    .theme-teo & {
+      background: darken(@teol, 3%);
+    }
+  }
+
   .mm-title {
     background-color: @ku-red;
     color: @white-color;
@@ -123,34 +151,6 @@
     .theme-teo & {
       background-color: @teol;
       border-bottom: 1px solid lighten(@teol, 7%);
-    }
-  }
-
-  .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-    .backgroundColorFix(darken(@ku-red, 3%), 1);
-
-    .theme-samf & {
-      .backgroundColorFix(darken(@samf, 3%), 1);
-    }
-
-    .theme-hum & {
-      .backgroundColorFix(darken(@hum, 3%), 1);
-    }
-
-    .theme-science & {
-      .backgroundColorFix(darken(@science, 3%), 1);
-    }
-
-    .theme-sund & {
-      .backgroundColorFix(darken(@sund, 3%), 1);
-    }
-
-    .theme-jur & {
-      .backgroundColorFix(darken(@jura, 3%), 1);
-    }
-
-    .theme-teo & {
-      .backgroundColorFix(darken(@teol, 3%), 1);
     }
   }
 

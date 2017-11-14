@@ -7440,6 +7440,27 @@ main:after,
 #mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
   border-color: #252525;
 }
+#mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #83181b;
+}
+.theme-samf #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #d33417;
+}
+.theme-hum #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #325499;
+}
+.theme-science #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #406a37;
+}
+.theme-sund #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #251d5e;
+}
+.theme-jur #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #8d8b2e;
+}
+.theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
+  background: #605a94;
+}
 #mobileleftmenu .mm-title {
   font-size: larger;
   color: #fff;
@@ -7469,27 +7490,6 @@ main:after,
 .theme-teo #mobileleftmenu .mm-title {
   background-color: #66609e;
   border-bottom: 1px solid #7b76ac;
-}
-#mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(131, 24, 27, 0);
-}
-.theme-samf #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(211, 52, 23, 0);
-}
-.theme-hum #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(50, 84, 153, 0);
-}
-.theme-science #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(64, 106, 55, 0);
-}
-.theme-sund #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(37, 29, 94, 0);
-}
-.theme-jur #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(141, 139, 46, 0);
-}
-.theme-teo #mobileleftmenu .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next) {
-  background: rgba(96, 90, 148, 0);
 }
 #mobileleftmenu .mm-navbars-top {
   border: 0;
@@ -8850,7 +8850,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
     display: none;
     padding: 20px;
     color: #fff;
-    background: rgba(165, 165, 165, 0);
+    background: rgba(165, 165, 165, .9);
   }
   .privacy-policy .h2 {
     margin-top: 0;
