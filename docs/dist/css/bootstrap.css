@@ -7428,31 +7428,31 @@ main:after,
 #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
   font-weight: 600;
-  background: #83181b;
+  background: #761519;
 }
 .theme-samf #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-samf #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #d33417;
+  background: #c53015;
 }
 .theme-hum #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-hum #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #325499;
+  background: #2e4d8e;
 }
 .theme-science #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-science #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #406a37;
+  background: #3a6032;
 }
 .theme-sund #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-sund #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #251d5e;
+  background: #211a53;
 }
 .theme-jur #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-jur #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #8d8b2e;
+  background: #827f2a;
 }
 .theme-teo #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 .theme-teo #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
-  background: #605a94;
+  background: #5a548b;
 }
 #mobileleftmenu .local1_mmenu > .mm-panel,
 #mobileleftmenu .local2_mmenu > .mm-panel {
