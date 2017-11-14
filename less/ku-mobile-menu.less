@@ -127,6 +127,35 @@
     }
   }
 
+  .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+  .mm-menu .mm-listview > li.mm-selected > span {
+    background: darken(@ku-red, 3%);
+
+    .theme-samf & {
+      background: darken(@samf, 3%);
+    }
+
+    .theme-hum & {
+      background: darken(@hum, 3%);
+    }
+
+    .theme-science & {
+      background: darken(@science, 3%);
+    }
+
+    .theme-sund & {
+      background: darken(@sund, 3%);
+    }
+
+    .theme-jur & {
+      background: darken(@jura, 3%);
+    }
+
+    .theme-teo & {
+      background: darken(@teol, 3%);
+    }
+  }
+
   .mm-navbars-top {
     border: 0;
   }
@@ -140,6 +169,14 @@
 
   .search-placeholder {
     padding: 0;
+
+    .dropdown-menu {
+      padding-top: 0;
+      margin-top: 0;
+      top: 100%;
+      border-top: 0;
+      right: 15px;
+    }
   }
 
   .mm-menu .mm-navbar > *,
