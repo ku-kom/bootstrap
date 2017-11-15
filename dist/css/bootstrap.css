@@ -7388,10 +7388,10 @@ main:after,
 #mobileleftmenu .local1_mmenu,
 #mobileleftmenu .local2_mmenu {
   color: #fff;
+  background: #901a1e;
 }
 #mobileleftmenu .local1_mmenu + li,
 #mobileleftmenu .local2_mmenu + li {
-  background: #901a1e;
   border-top: 1px solid #7a1619;
 }
 .theme-samf #mobileleftmenu .local1_mmenu + li,
