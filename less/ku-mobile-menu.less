@@ -16,7 +16,6 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -26,48 +25,41 @@
     // Faculty colors for sublevel 1
     background: @ku-red;
     color: @white-color;
+    border-top: 1px solid darken(@ku-red, 5%);
 
-    &+ li {
-      border-top: 1px solid darken(@ku-red, 5%);
+    .theme-samf & {
+      background: @samf;
+      border-top: 1px solid darken(@samf, 5%);
+    }
 
-      .theme-samf & {
-        background: @samf;
-        border-top: 1px solid darken(@samf, 5%);
-      }
+    .theme-hum & {
+      background: @hum;
+      border-top: 1px solid darken(@hum, 5%);
+    }
 
-      .theme-hum & {
-        background: @hum;
-        border-top: 1px solid darken(@hum, 5%);
-      }
+    .theme-science & {
+      background: @science;
+      border-top: 1px solid darken(@science, 5%);
+    }
 
-      .theme-science & {
-        background: @science;
-        border-top: 1px solid darken(@science, 5%);
-      }
+    .theme-sund & {
+      background: @sund;
+      border-top: 1px solid darken(@sund, 5%);
+    }
 
-      .theme-sund & {
-        background: @sund;
-        border-top: 1px solid darken(@sund, 5%);
-      }
+    .theme-jur & {
+      background: @jura;
+      border-top: 1px solid darken(@jura, 5%);
+    }
 
-      .theme-jur & {
-        background: @jura;
-        border-top: 1px solid darken(@jura, 5%);
-      }
+    .theme-teo & {
+      background: @teol;
+      border-top: 1px solid darken(@teol, 5%);
+    }
 
-      .theme-teo & {
-        background: @teol;
-        border-top: 1px solid darken(@teol, 5%);
-      }
-
-      .mm-next::after {
-        // Arrows
-        border-color: @white-color;
-      }
-
-      &:last-child {
-        border-top: 0;
-      }
+    .mm-next::after {
+      // Arrows
+      border-color: @white-color;
     }
 
     &.mm-selected > a:not(.mm-next) {
