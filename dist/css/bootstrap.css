@@ -7463,6 +7463,11 @@ main:after,
 #mobileleftmenu .local2_mmenu::after {
   border: none;
 }
+#mobileleftmenu .local1_mmenu .mm-opened.mm-selected,
+#mobileleftmenu .local2_mmenu .mm-opened.mm-selected {
+  margin-left: 2px;
+  border-left: 2px solid #666;
+}
 #mobileleftmenu .local1_mmenu:first-of-type {
   border-top: 0;
 }
