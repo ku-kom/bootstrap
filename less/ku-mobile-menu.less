@@ -100,9 +100,13 @@
     &::after {
       border: none;
     }
-    .mm-opened.mm-selected {
-      border-left: 2px solid @gray-666;
-      margin-left: 2px;
+    .mm-opened {
+
+      // Seklected border
+      > .mm-opened.mm-selected {
+        border-left: 2px solid @gray-666;
+        margin-left: 2px;
+      }
     }
   }
 
