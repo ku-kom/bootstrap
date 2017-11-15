@@ -16,7 +16,6 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -102,10 +101,14 @@
       border: none;
     }
 
-    .mm-opened.mm-selected {
-      a:not(.mm-next) {
-        border-left: 2px solid @gray-666;
-        margin-left: 2px;
+    .mm-opened {
+      > .mm-panel {
+        .mm-opened.mm-selected {
+          a:not(.mm-next) {
+            border-left: 2px solid @gray-666;
+            margin-left: 2px;
+          }
+        }
       }
     }
   }
