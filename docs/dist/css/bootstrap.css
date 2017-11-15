@@ -7428,6 +7428,10 @@ main:after,
 #mobileleftmenu .local2_mmenu + li .mm-next::after {
   border-color: #fff;
 }
+#mobileleftmenu .local1_mmenu + li:last-child,
+#mobileleftmenu .local2_mmenu + li:last-child {
+  border-top: 0;
+}
 #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
   font-weight: 600;
