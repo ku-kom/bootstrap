@@ -7463,8 +7463,8 @@ main:after,
 #mobileleftmenu .local2_mmenu::after {
   border: none;
 }
-#mobileleftmenu .local1_mmenu .mm-opened > .mm-panel .mm-opened.mm-selected a:not(.mm-next),
-#mobileleftmenu .local2_mmenu .mm-opened > .mm-panel .mm-opened.mm-selected a:not(.mm-next) {
+#mobileleftmenu .local1_mmenu.mm-opened > .mm-panel .mm-opened.mm-selected a:not(.mm-next),
+#mobileleftmenu .local2_mmenu.mm-opened > .mm-panel .mm-opened.mm-selected a:not(.mm-next) {
   margin-left: 2px;
   border-left: 2px solid #666;
 }
