@@ -1,6 +1,12 @@
 /* ========================================================================
  * Copyright 2017
  * University of Copenhagen, FA Communications
+ * Important!!: Alle functions to be run must be wrapped in:
+ *
+ * (function($) {
+ *     Execute code...
+ * })(jQuery);
+*
  * ========================================================================*/
 
 // Fix viewport width on Windows Phone: http://getbootstrap.com/getting-started/#support-ie10-width
@@ -22,7 +28,7 @@ $(e.target)
   .toggleClass('open');
 }
 
-$(function () {
+(function($) {
   // Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
   var nua = navigator.userAgent;
   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
@@ -83,4 +89,4 @@ $(function () {
     }
   }
 
-});
+})(jQuery);
