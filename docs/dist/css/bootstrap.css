@@ -1280,74 +1280,38 @@ template {
 .icon-facebook:before {
   content: "\66";
 }
-.icon-facebook:hover {
-  background-color: #3e5a98;
-}
 .icon-futurity:before {
   content: "\75";
-}
-.icon-futurity:hover {
-  background-color: #f7ba20;
 }
 .icon-instagram:before {
   content: "\69";
 }
-.icon-instagram:hover {
-  background-color: #3e5a98;
-}
 .icon-twitter:before {
   content: "\74";
-}
-.icon-twitter:hover {
-  background-color: #2ca8df;
 }
 .icon-rss:before {
   content: "\72";
 }
-.icon-rss:hover {
-  background-color: #f7941e;
-}
 .icon-linkedin:before {
   content: "\6c";
-}
-.icon-linkedin:hover {
-  background-color: #0078b6;
 }
 .icon-coursera:before {
   content: "\63";
 }
-.icon-coursera:hover {
-  background-color: #408bc9;
-}
 .icon-video:before {
   content: "\76";
-}
-.icon-video:hover {
-  background-color: #439639;
 }
 .icon-conversation:before {
   content: "\6f";
 }
-.icon-conversation:hover {
-  background-color: #d7352a;
-}
 .icon-vimeo:before {
   content: "\62";
-}
-.icon-vimeo:hover {
-  background-color: #d12223;
 }
 .icon-youtube:before {
   content: "\79";
 }
-.icon-youtube:hover {
-  background-color: #d12223;
-}
 .icon-phone:before {
   content: "\70";
-}
-.icon-phone:hover {
-  background-color: #901a1e;
 }
 .icon-arrow:before {
   content: "\61";
@@ -1357,9 +1321,6 @@ template {
 }
 .icon-ku-logo:before {
   content: "\6b";
-}
-.icon-ku-logo:hover {
-  background-color: #901a1e;
 }
 .icon-radio-button:before {
   content: "\6d";
@@ -7564,7 +7525,7 @@ main:after,
 }
 #globalfooter .footercontent {
   position: relative;
-  padding: 26px 0 20px 0;
+  padding: 26px 0 20px;
 }
 #globalfooter .footercontent > .footercolumn {
   z-index: 2;
@@ -7589,7 +7550,7 @@ main:after,
   width: 430px;
   height: 430px;
   content: ' ';
-  background: url('https://bootstrap.secure.ku.dk/img/footersegl.svg') no-repeat;
+  background: url("https://bootstrap.secure.ku.dk/img/footersegl.svg") no-repeat;
   background-size: cover;
   opacity: .1;
 }
@@ -7640,26 +7601,38 @@ main:after,
   color: #e2e2e2;
   text-decoration: none;
 }
-#globalfooter ul.footerlinks li .icon-padlock:before {
+#globalfooter ul.footerlinks li .padlock:after {
   position: relative;
-  top: -1px;
+  top: 0;
   margin-left: 5px;
-  font-size: 16px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
   color: #fff;
+  text-transform: none;
+  content: "\64";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-#globalfooter .social-items {
+.social-items {
   width: 80%;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  #globalfooter .social-items {
+  .social-items {
     width: 100%;
   }
 }
-#globalfooter .social-items .social-item {
+.social-items .social-item {
   display: inline-block;
   margin: .5em .3em 0 0;
 }
-#globalfooter .social-items .social-item .icon {
+.social-items .social-item a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7668,6 +7641,7 @@ main:after,
   height: 28px;
   font-size: 24px;
   color: #fff;
+  text-decoration: none;
   background-color: #757575;
   border-radius: 100%;
 
@@ -7680,11 +7654,11 @@ main:after,
   -ms-flex-pack: center;
           justify-content: center;
 }
-#globalfooter .social-items .social-item .icon:active,
-#globalfooter .social-items .social-item .icon:focus {
+.social-items .social-item a:active,
+.social-items .social-item a:focus {
   background-color: #757575;
 }
-#globalfooter .social-items .footer-heading {
+.social-items .footer-heading {
   margin-top: 20px;
 }
 @media (max-width: 767px) {
@@ -7702,7 +7676,7 @@ main:after,
     margin: 0 auto;
   }
   html:not(.non-responsive) #globalfooter .footercontent:after {
-    content: none;
+    display: none;
   }
   html:not(.non-responsive) #globalfooter .footercontent .footercolumn {
     float: none;
@@ -7801,7 +7775,7 @@ main:after,
   html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a:hover {
     color: initial;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a .icon-padlock:after {
+  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a .padlock:after {
     display: none;
   }
   html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li:last-child a {
@@ -9195,4 +9169,40 @@ nav {
   border-radius: 100%;
   -webkit-animation: ku-loading .6s infinite linear;
           animation: ku-loading .6s infinite linear;
+}
+.icon-facebook:hover {
+  background-color: #3e5a98;
+}
+.icon-futurity:hover {
+  background-color: #f7ba20;
+}
+.icon-instagram:hover {
+  background-color: #3e5a98;
+}
+.icon-twitter:hover {
+  background-color: #2ca8df;
+}
+.icon-rss:hover {
+  background-color: #f7941e;
+}
+.icon-linkedin:hover {
+  background-color: #0078b6;
+}
+.icon-coursera:hover {
+  background-color: #408bc9;
+}
+.icon-video:hover {
+  background-color: #439639;
+}
+.icon-conversation:hover {
+  background-color: #d7352a;
+}
+.icon-vimeo:hover {
+  background-color: #d12223;
+}
+.icon-youtube:hover {
+  background-color: #d12223;
+}
+.icon-phone:hover {
+  background-color: #901a1e;
 }
