@@ -24,6 +24,9 @@
   max-width: none !important;
   /*border-collapse: separate !important;*/
 }
+.table>tbody>tr:hover {
+    background-color: @gray-f5;
+}
 
 .dataTable td, .dataTable th {
   box-sizing: content-box;

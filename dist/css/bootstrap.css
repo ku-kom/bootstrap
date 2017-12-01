@@ -2573,9 +2573,6 @@ caption {
 th {
   text-align: left;
 }
-#medarbejdertable_wrapper table tfoot {
-  display: table-header-group;
-}
 .table {
   width: 100%;
   max-width: 100%;
