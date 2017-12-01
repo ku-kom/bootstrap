@@ -1280,38 +1280,74 @@ template {
 .icon-facebook:before {
   content: "\66";
 }
+.icon-facebook:hover {
+  background-color: #3e5a98;
+}
 .icon-futurity:before {
   content: "\75";
+}
+.icon-futurity:hover {
+  background-color: #f7ba20;
 }
 .icon-instagram:before {
   content: "\69";
 }
+.icon-instagram:hover {
+  background-color: #3e5a98;
+}
 .icon-twitter:before {
   content: "\74";
+}
+.icon-twitter:hover {
+  background-color: #2ca8df;
 }
 .icon-rss:before {
   content: "\72";
 }
+.icon-rss:hover {
+  background-color: #f7941e;
+}
 .icon-linkedin:before {
   content: "\6c";
+}
+.icon-linkedin:hover {
+  background-color: #0078b6;
 }
 .icon-coursera:before {
   content: "\63";
 }
+.icon-coursera:hover {
+  background-color: #408bc9;
+}
 .icon-video:before {
   content: "\76";
+}
+.icon-video:hover {
+  background-color: #439639;
 }
 .icon-conversation:before {
   content: "\6f";
 }
+.icon-conversation:hover {
+  background-color: #d7352a;
+}
 .icon-vimeo:before {
   content: "\62";
+}
+.icon-vimeo:hover {
+  background-color: #d12223;
 }
 .icon-youtube:before {
   content: "\79";
 }
+.icon-youtube:hover {
+  background-color: #d12223;
+}
 .icon-phone:before {
   content: "\70";
+}
+.icon-phone:hover {
+  background-color: #901a1e;
 }
 .icon-arrow:before {
   content: "\61";
@@ -2612,6 +2648,30 @@ th {
     background-color: #e0e0e0 !important;
   }
 }
+.pct_10 {
+  width: 10%;
+}
+.pct_15 {
+  width: 15%;
+}
+.pct_20 {
+  width: 20%;
+}
+.pct_25 {
+  width: 25%;
+}
+.pct_30 {
+  width: 30%;
+}
+.pct_35 {
+  width: 35%;
+}
+.pct_40 {
+  width: 40%;
+}
+.pct_45 {
+  width: 45%;
+}
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
 .table-condensed > tfoot > tr > th,
@@ -3831,7 +3891,7 @@ tbody.collapse.in {
 }
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 1px);
+  top: 100%;
   left: 0;
   z-index: 1000;
   display: none;
@@ -7601,7 +7661,7 @@ main:after,
   color: #e2e2e2;
   text-decoration: none;
 }
-#globalfooter ul.footerlinks li .padlock:after {
+#globalfooter ul.footerlinks li .padlock::after {
   position: relative;
   top: 0;
   margin-left: 5px;
@@ -7631,19 +7691,20 @@ main:after,
 .social-items .social-item {
   display: inline-block;
   margin: .5em .3em 0 0;
+  background-color: #757575;
+  border-radius: 50%;
 }
-.social-items .social-item a {
+.social-items .social-item .social-icon {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
   width: 28px;
   height: 28px;
-  font-size: 24px;
+  font-size: 26px;
   color: #fff;
   text-decoration: none;
-  background-color: #757575;
-  border-radius: 100%;
+  border-radius: inherit;
 
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -7654,8 +7715,21 @@ main:after,
   -ms-flex-pack: center;
           justify-content: center;
 }
-.social-items .social-item a:active,
-.social-items .social-item a:focus {
+.social-items .social-item .social-icon::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.social-items .social-item .social-icon:active,
+.social-items .social-item .social-icon:focus {
   background-color: #757575;
 }
 .social-items .footer-heading {
@@ -9169,40 +9243,4 @@ nav {
   border-radius: 100%;
   -webkit-animation: ku-loading .6s infinite linear;
           animation: ku-loading .6s infinite linear;
-}
-.icon-facebook:hover {
-  background-color: #3e5a98;
-}
-.icon-futurity:hover {
-  background-color: #f7ba20;
-}
-.icon-instagram:hover {
-  background-color: #3e5a98;
-}
-.icon-twitter:hover {
-  background-color: #2ca8df;
-}
-.icon-rss:hover {
-  background-color: #f7941e;
-}
-.icon-linkedin:hover {
-  background-color: #0078b6;
-}
-.icon-coursera:hover {
-  background-color: #408bc9;
-}
-.icon-video:hover {
-  background-color: #439639;
-}
-.icon-conversation:hover {
-  background-color: #d7352a;
-}
-.icon-vimeo:hover {
-  background-color: #d12223;
-}
-.icon-youtube:hover {
-  background-color: #d12223;
-}
-.icon-phone:hover {
-  background-color: #901a1e;
 }

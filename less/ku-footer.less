@@ -133,7 +133,7 @@
         }
       }
 
-      .padlock:after {
+      .padlock::after {
         .icon;
         content: @icon-padlock;
         position: relative;
@@ -156,18 +156,23 @@
   .social-item {
     display: inline-block;
     margin: 0.5em 0.3em 0 0;
+    background-color: @ku-footer-icon-bg;
+    border-radius: 50%;
 
-    a {
+    .social-icon {
       width: @ku-footer-icon-size;
       height: @ku-footer-icon-size;
-      font-size: 24px;
-      background-color: @ku-footer-icon-bg;
+      font-size: 26px;
+      border-radius: inherit;
       color: @white-color;
-      border-radius: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
+
+      &::before {
+        .icon;
+      }
 
       &:active,
       &:focus {
@@ -180,7 +185,6 @@
     margin-top: 20px;
   }
 }
-
 @media (max-width: @screen-xs-max) {
   html:not(.non-responsive) {
     #globalfooter {

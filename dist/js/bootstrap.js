@@ -34,7 +34,8 @@ if (typeof jQuery === 'undefined') {
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
-    if ($responsiveEnabled === true && $cachedWidth < 768) {
+    // Collapse footer at lowest breakpoint
+    if ($responsiveEnabled === true && window.matchMedia('(max-width: 767px)').matches) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
