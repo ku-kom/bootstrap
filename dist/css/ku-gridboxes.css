@@ -381,7 +381,8 @@
   height: 185px;
 }
 .gridbox.size2.with-img .box2 img {
-  object-fit: cover;
+  max-width: none;
+  max-height: 100%;
 }
 .gridbox.size2:not(.with-img) .box1 {
   -webkit-box-flex: 0;
