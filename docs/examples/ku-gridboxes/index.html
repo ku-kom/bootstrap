@@ -2,6 +2,7 @@
 layout: examples
 title: KU standard template with grid boxes
 slug: examples
+category: gridbox
 ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
@@ -667,92 +668,5 @@ slug: examples
 <script type="text/javascript">
 $(function () {
    $("body").addClass('GridForside');
-  // Append faculty stylesheet
-  var $head = $("head");
-  var $headlinklast = $head.find("link[rel='stylesheet']:last");
-  var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/faelles.css' type='text/css' media='screen'>";
-  if ($headlinklast.length){
-     $headlinklast.after(linkElement);
-  }
-  else {
-     $head.append(linkElement);
-  }
-    // $('#sub-theme').on('change', getsubTheme);
-    // $('#style').on('change', getStyle);
-    // $('#height').on('change', getHeight);
-    // $('#themes').on('change', getClass);
-    // $('#checkbox-img').change(function () {
-    //     var $this = $(".gridbox");
-    //     if ($('#checkbox-img').is(':checked')) {
-    //         $this.addClass('with-img');
-    //         $this.find('.box2').text('').append('<img src="http://cms.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="550 x 300">').show();
-    //     } else {
-    //         $this.removeClass('with-img');
-    //         $this.find('.box2').find('img').remove();
-    //     }
-    // });
-    //
-    // function getClass(e) {
-    //     var themes = $(e.currentTarget);
-    //     var classToAdd = themes.find('option[value]:selected').map(function () {
-    //         return this.value;
-    //     }).get().join(' ');
-    //     var allClassess = themes.find('option[value]').map(function () {
-    //         return this.value ? this.value : null;
-    //     }).get().join(' ');
-    //     $('html').removeClass(allClassess).addClass(classToAdd);
-    //     // Switch branding logo
-    //     var $fak = classToAdd.replace('theme-', '');
-    //     if ($('html').hasClass(classToAdd)) {
-    //       $('.ku-branding-logo img').attr('src', '../../images/branding/' + $fak + '.svg');
-    //     }
-    //
-    //     // Append faculty stylesheet
-    //     var $head = $("head");
-    //     var $headlinklast = $head.find("link[rel='stylesheet']:last");
-    //     var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/" + $fak + ".css' type='text/css' media='screen'>";
-    //     if ($headlinklast.length){
-    //        $headlinklast.after(linkElement);
-    //     }
-    //     else {
-    //        $head.append(linkElement);
-    //     }
-    // }
-    //
-    //
-    // function getsubTheme(e) {
-    //     var subTheme = $(e.currentTarget);
-    //     var classToAdd = subTheme.find('option[value]:selected').map(function () {
-    //         return this.value;
-    //     }).get().join(' ');
-    //
-    //     var allClassess = subTheme.find('option[value]').map(function () {
-    //         return this.value ? this.value : null;
-    //     }).get().join(' ');
-    //     $('.gridbox').removeClass(allClassess).addClass(classToAdd);
-    // }
-    //
-    // function getStyle(e) {
-    //     var style = $(e.currentTarget);
-    //     var classToAdd = style.find('option[value]:selected').map(function () {
-    //         return this.value;
-    //     }).get().join(' ');
-    //
-    //     var allClassess = style.find('option[value]').map(function () {
-    //         return this.value ? this.value : null;
-    //     }).get().join(' ');
-    //     $('.gridbox').removeClass(allClassess).addClass(classToAdd);
-    // }
-    //
-    // function getHeight(e) {
-    //     var height = $(e.currentTarget);
-    //     var classToAdd = height.find('option[value]:selected').map(function () {
-    //         return this.value;
-    //     }).get().join(' ');
-    //     var allClassess = height.find('option[value]').map(function () {
-    //         return this.value ? this.value : null;
-    //     }).get().join(' ');
-    //     $('.gridbox').removeClass(allClassess).addClass(classToAdd);
-    // }
 });
 </script>

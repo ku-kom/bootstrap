@@ -64,7 +64,9 @@ $(e.target)
 
   // Global smooth scroll to top
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
+
   $('body').append($scroller);
+
   scrollFunction();
 
   window.onscroll = function () {
