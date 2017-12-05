@@ -129,11 +129,12 @@
 }
 
 @media (max-width: 767px) {
-  .FullWidthFrontpage .main-content .row:first-child .col-sm-12.col-md-9 {
+  /*Target first row*/
+  .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
     padding-right: 0;
-    padding-left: 0;
     margin-left: -13px;
-    margin-right: -13px;
+    margin-right: 0;
+    width: 100vw;
   }
   .jumpboard {
     padding: 0;
