@@ -8906,10 +8906,10 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1030 !important;
+    z-index: 1070 !important;
     padding: 20px;
     color: #fff;
-    background: rgba(165, 165, 165, .9);
+    background: rgba(165, 165, 165, .7);
   }
   .privacy-policy .h2 {
     margin-top: 0;
