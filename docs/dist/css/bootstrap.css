@@ -6260,6 +6260,7 @@ button.list-group-item-danger.active:focus {
 .panel-accordion > .panel-heading .panel-title a {
   display: block;
   padding: 8px 0 10px 10px;
+  outline: none;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
@@ -9138,24 +9139,6 @@ nav {
   height: 32px;
   background-color: #fff;
   background-image: none;
-}
-.to-top {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  margin: 4px 0 4px 5px;
-  font-family: 'Glyphicons Halflings';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  color: #757474;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.to-top:before {
-  content: "\e260";
 }
 .scrolltop {
   position: fixed;

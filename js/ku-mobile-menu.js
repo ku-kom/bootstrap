@@ -275,7 +275,7 @@ return true;
         var selectedItem = $('.mm-selected');
         selectedItem.addClass('mm-opened');
         selectedItem.children('.mm-panel').removeClass('mm-hidden');
-        
+
     }
 
     $(window).resize(function () {

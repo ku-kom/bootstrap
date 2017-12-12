@@ -213,13 +213,13 @@ return true;
         });
 
         // Look for local menu 2 and add to menu
-        if( $('#leftmenu_2') ) {
-            var $new_localmenu2 = $('#leftmenu_2 > li');
-            $new_localmenu2.each(function() {
-                $(this).addClass('local2_mmenu');
-            });
-            $menu_ul.append($new_localmenu2);
-        }
+        // if( $('#leftmenu_2') ) {
+        //     var $new_localmenu2 = $('#leftmenu_2 > li');
+        //     $new_localmenu2.each(function() {
+        //         $(this).addClass('local2_mmenu');
+        //     });
+        //     $menu_ul.append($new_localmenu2);
+        // }
 
         // Clean up class names for navbar before adding to menu
         $new_navbar.each(function() {
@@ -275,7 +275,7 @@ return true;
         var selectedItem = $('.mm-selected');
         selectedItem.addClass('mm-opened');
         selectedItem.children('.mm-panel').removeClass('mm-hidden');
-        
+
     }
 
     $(window).resize(function () {
