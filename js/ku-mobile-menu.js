@@ -214,7 +214,7 @@ return true;
 
         // Look for local menu 2 and add to menu
         if( $('#leftmenu_2') ) {
-            var $new_localmenu2 = $('#leftmenu_2 > li');
+            var $new_localmenu2 = $('#leftmenu_2 > li').clone();
             $new_localmenu2.each(function() {
                 $(this).addClass('local2_mmenu');
             });

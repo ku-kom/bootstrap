@@ -8904,7 +8904,6 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
     bottom: 0;
     left: 0;
     z-index: 1030 !important;
-    display: none;
     padding: 20px;
     color: #fff;
     background: rgba(165, 165, 165, .9);
