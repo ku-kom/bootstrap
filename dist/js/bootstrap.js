@@ -1883,6 +1883,11 @@ $(e.target)
   }
 
   // Toggle icon in accordions
+  $('.panel-accordion').each(function () {
+     if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
+         $(this).find('.panel-heading').addClass('open');
+     }
+ });
   $('.panel-accordion').on('hide.bs.collapse', flipIcon);
   $('.panel-accordion').on('show.bs.collapse', flipIcon);
 
