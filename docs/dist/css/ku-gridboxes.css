@@ -222,7 +222,7 @@
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
 
-  object-fit: fill;
+  object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
