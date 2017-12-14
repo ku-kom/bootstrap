@@ -225,7 +225,6 @@ category: slider
       $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
       // Add number of slides to counter
        $('<div class="slider-count"><span id="currentSlide">1</span> af <span id="total">'+ slick.slideCount +'</span></div>').insertAfter($(this));
-       //toggleCaptions(event, slick);
     });
 
     // Init sliders
@@ -236,17 +235,6 @@ category: slider
     $slideshow.on('afterChange', function(event, slick, currentSlide) {
       // Update slide counter
       $('.slider-count #currentSlide').html(currentSlide + 1);
-      //toggleCaptions(event, slick);
     });
-
-    function toggleCaptions(event, slick, currentSlide) {
-      var thisSlide = $slideshow.find('.slick-slide.slick-current.slick-active');
-      var hasCaption = ($(thisSlide).find(".caption").length > 0) ? true : false;
-      if (hasCaption === false) {
-        slick.$slides.find(".caption").slideUp(350);
-      } else {
-        slick.$slides.find(".caption").slideDown(350);
-      }
-    }
   });
 </script>

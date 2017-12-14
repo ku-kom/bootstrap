@@ -5577,25 +5577,31 @@ a.thumbnail:focus {
   padding: 9px;
   color: #252525;
 }
-.figure {
+.figure,
+figure {
   display: inline-block;
 }
-.figure.pull-left {
+.figure.pull-left,
+figure.pull-left {
   margin-right: 10px;
 }
-.figure.pull-right {
+.figure.pull-right,
+figure.pull-right {
   margin-left: 5px;
 }
-.figure img {
+.figure img,
+figure img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.figure-img {
+.figure-img,
+figure img {
   margin-bottom: 8px;
   line-height: 1;
 }
-.figure-caption {
+.figure-caption,
+figcaption {
   padding-bottom: 10px;
   font-size: .9em;
   color: #777;

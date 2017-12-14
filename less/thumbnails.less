@@ -2,6 +2,7 @@
 // Thumbnails
 // --------------------------------------------------
 // Mixin and adjust the regular image class
+
 .thumbnail {
   display: block;
   padding: @thumbnail-padding;
@@ -34,28 +35,29 @@
 // Figures
 //
 
-.figure {
+.figure, figure {
   // Ensures the caption's text aligns with the image.
   display: inline-block;
 
   &.pull-left {
-      margin-right: @margin10;
+    margin-right: @margin10;
   }
 
   &.pull-right {
-      margin-left: 5px;
+    margin-left: 5px;
   }
+
   img {
     .img-responsive();
   }
 }
 
-.figure-img {
+.figure-img, figure img {
   margin-bottom: 8px;
   line-height: 1;
 }
 
-.figure-caption {
+.figure-caption, figcaption {
   font-size: @figure-caption-font-size;
   color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;

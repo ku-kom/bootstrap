@@ -15,6 +15,9 @@
   height: auto;
 }
 
+.gallery-nav .slick-track {
+  left: 0!important;
+}
 .gallery-nav img {
   cursor: pointer;
   top: auto;
