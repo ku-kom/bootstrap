@@ -62,6 +62,8 @@ input[type="checkbox"] {
 
 input[type="file"] {
   display: block;
+  // KU specific:
+  width: 100%;
 }
 
 // Make range inputs behave like textual form controls
@@ -142,7 +144,9 @@ output {
     background-color: transparent;
   }
   select& {
-      padding-top: 4px; // KU specific
+    // KU specific
+    width: auto;
+    max-width: calc(100% - 40px);
   }
   // Disabled and read-only inputs
   //
@@ -618,5 +622,36 @@ input[type="checkbox"] {
         font-size: @font-size-small;
       }
     }
+  }
+}
+
+// KU: tooltip mark to hover on inside form input fields
+// Place .form-tooltips right before input fields with the class .form-control
+
+.form-tooltips {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  line-height: 34px;
+  background-color: @white-color;
+  color: #333;
+  border: 1px solid @gray-999;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "\003F";
+  }
+  + .form-control {
+    // Make room for the tooltip marker inside the input
+    padding-right: 30px;
   }
 }

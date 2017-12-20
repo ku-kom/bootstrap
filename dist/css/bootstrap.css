@@ -2903,6 +2903,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+  width: 100%;
 }
 input[type="range"] {
   display: block;
@@ -2961,7 +2962,8 @@ output {
   border: 0;
 }
 select.form-control {
-  padding-top: 4px;
+  width: auto;
+  max-width: calc(100% - 40px);
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -3375,6 +3377,41 @@ select[multiple].input-lg {
     padding-top: 6px;
     font-size: 11px;
   }
+}
+.form-tooltips {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  width: 16px;
+  height: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 50%;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+.form-tooltips::before {
+  content: "\003F";
+}
+.form-tooltips + .form-control {
+  padding-right: 30px;
 }
 .btn {
   display: inline-block;
