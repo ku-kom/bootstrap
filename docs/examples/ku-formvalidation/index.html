@@ -23,13 +23,13 @@ slug: examples
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="password">Password</label>
+                <label class="col-sm-3 control-label" for="password">Password <span class="mandatory">*</span></label>
                 <div class="col-sm-9">
                   <input id="password" class="form-control" type="password" placeholder="Password" name="password" />
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="confirm-password">Confirm password</label>
+                <label class="col-sm-3 control-label" for="confirm-password">Confirm password <span class="mandatory">*</span></label>
                 <div class="col-sm-9">
                   <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" name="confirm-password" />
                 </div>
@@ -84,6 +84,18 @@ slug: examples
                 </select></div>
               </div>
               <div class="form-group">
+                <label class="col-sm-3 control-label" for="error">Select multiple</label>
+                <div class="col-sm-9">
+                  <span class="form-tooltips" data-toggle="tooltip" data-placement="top" title="Klik på en eller flere valgmuligheder"></span>
+                  <select multiple class="form-control">
+                  <option>1</option>
+                  <option>2 - længere indhold</option>
+                  <option>3 - længere indhold længere indhold</option>
+                  <option>4 - længere indhold længere indhold længere indhold længere indhold</option>
+                  <option>5</option>
+                </select></div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-3 control-label" for="upload">File upload</label>
                 <div class="col-sm-9">
                   <span class="form-tooltips" data-toggle="tooltip" data-placement="top" title="Vedhøft fil"></span>
@@ -107,7 +119,7 @@ slug: examples
                 <label class="col-sm-3 control-label" for="message">Message</label>
                 <div class="col-sm-9">
                   <span class="form-tooltips" data-toggle="tooltip" data-placement="top" title="Enter message"></span>
-                  <textarea class="form-control" rows="3" cols="40" placeholder="Message" name="message" id="message"></textarea>
+                  <textarea class="form-control" rows="10" placeholder="Message" name="message" id="message"></textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -160,6 +172,8 @@ slug: examples
 <!-- Datepicker: https://bootstrap-datepicker.readthedocs.io/en/stable/index.html -->
 <script type="text/javascript">
   $(function() {
+    // Multiple select
+    multipleSelectBox();
     // Form tooltips
     $('[data-toggle="tooltip"]').tooltip();
     $.fn.datepicker.dates['da'] = {
@@ -189,6 +203,25 @@ slug: examples
           }
       }
     });
+    function multipleSelectBox() {
+    // Multiple select language switcher
+    var multipleSelectLang = function() {
+        var da = {
+            placeholder: 'V&aelig;lg flere...',
+            selectAllText: 'V&aelig;lg alle',
+            allSelected: 'Alle valgt',
+            countSelected: '# af % valgt',
+            width: 'calc(100% - 40px)'
+        };
+        var en = {
+            placeholder: 'Select multiple...',
+            width: 'calc(100% - 40px)'
+        };
+        return ($('html').attr('lang') == 'da') ? da : en;
+    };
+    // Run Multiple select
+    $('select[multiple]').multipleSelect(multipleSelectLang());
+}
     $('.datepicker table tbody tr td').wrapInner("<span/>");
   });
 </script>

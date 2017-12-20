@@ -7,10 +7,6 @@
 //
 // Restyle and baseline non-control form elements.
 
-// KU mandatory:
-.mandatory {
-  color: @brand-danger;
-}
 fieldset {
   padding: 0;
   margin: 0;
@@ -63,7 +59,8 @@ input[type="checkbox"] {
 input[type="file"] {
   display: block;
   // KU specific:
-  width: 100%;
+  // Make room for tooltop marker:
+  width: calc(100% - 40px);
 }
 
 // Make range inputs behave like textual form controls
@@ -589,7 +586,7 @@ input[type="checkbox"] {
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: @screen-sm-min) {
     .control-label {
-      text-align: right;
+      //text-align: right;
       margin-bottom: 0;
       padding-top: (@padding-base-vertical + 1); // Default padding plus a border
     }
@@ -654,4 +651,9 @@ input[type="checkbox"] {
     // Make room for the tooltip marker inside the input
     padding-right: 30px;
   }
+}
+
+// KU mandatory:
+.mandatory {
+  color: @brand-danger;
 }

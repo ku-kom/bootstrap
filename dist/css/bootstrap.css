@@ -2866,9 +2866,6 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
-.mandatory {
-  color: #7b161a;
-}
 fieldset {
   min-width: 0;
   padding: 0;
@@ -2903,7 +2900,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
-  width: 100%;
+  width: calc(100% - 40px);
 }
 input[type="range"] {
   display: block;
@@ -3360,7 +3357,6 @@ select[multiple].input-lg {
   .form-horizontal .control-label {
     padding-top: 7px;
     margin-bottom: 0;
-    text-align: right;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -3412,6 +3408,9 @@ select[multiple].input-lg {
 }
 .form-tooltips + .form-control {
   padding-right: 30px;
+}
+.mandatory {
+  color: #7b161a;
 }
 .btn {
   display: inline-block;
