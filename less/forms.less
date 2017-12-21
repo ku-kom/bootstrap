@@ -34,6 +34,8 @@ label {
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: bold;
+  // KU:
+  line-height: 1.1;
 }
 
 
@@ -59,8 +61,7 @@ input[type="checkbox"] {
 input[type="file"] {
   display: block;
   // KU specific:
-  // Make room for tooltop marker:
-  width: calc(100% - 40px);
+  width: 100%;
 }
 
 // Make range inputs behave like textual form controls
@@ -143,7 +144,7 @@ output {
   select& {
     // KU specific
     width: auto;
-    max-width: calc(100% - 40px);
+    max-width: 100%;
   }
   // Disabled and read-only inputs
   //
@@ -588,7 +589,7 @@ input[type="checkbox"] {
     .control-label {
       //text-align: right;
       margin-bottom: 0;
-      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      padding-top: 1px; //(@padding-base-vertical + 1);  Default padding plus a border
     }
   }
 
@@ -623,37 +624,58 @@ input[type="checkbox"] {
 }
 
 // KU: tooltip mark to hover on inside form input fields
-// Place .form-tooltips right before input fields with the class .form-control
 
-.form-tooltips {
-  position: absolute;
-  top: 7px;
-  right: 20px;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 16px;
-  line-height: 34px;
-  background-color: @white-color;
-  color: #333;
-  border: 1px solid @gray-999;
-  font-size: 13px;
-  font-weight: 700;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &::before {
-    content: "\003F";
+.input-group-addon {
+  &:last-child {
+      font-weight: 700;
+      &:hover {
+        border-left: 0;
+      }
   }
-  + .form-control {
-    // Make room for the tooltip marker inside the input
-    padding-right: 30px;
+  &:not(first-child):not(last-child) {
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid @input-border;
+    border-left: 0;
+
+    &:hover {
+      border-left: 0;
+    }
   }
 }
 
 // KU mandatory:
 .mandatory {
   color: @brand-danger;
+}
+
+// KU: Tooltip marker for radios and checkboxes
+.form-tooltip {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 3;
+  .form-control;
+  width: 27px;
+  font-weight: 700;
+  background-color: @input-group-addon-bg;
+  border: 1px solid @input-border;
+  border-radius: @border-radius-base;
+  cursor: pointer;
+}
+
+// KU:
+.input-fileupload {
+  position: relative;
+  width: 100%;
+  right: 1px;
+  min-height: 40px;
+
+  .form-tooltip {
+    top: 0;
+  }
+}
+// KU:
+textarea {
+  resize: vertical; /* user can resize vertically, but width is fixed */
 }

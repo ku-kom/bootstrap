@@ -10,6 +10,7 @@
 
 .ms-parent.form-control {
   padding: 0;
+  z-index: 10;
 }
 
 .ms-choice {
@@ -88,7 +89,7 @@
   overflow: hidden;
   display: none;
   margin-top: -1px;
-  padding: 0;
+  padding: 0 5px 0;
   position: absolute;
   z-index: 1000;
   background: #fff;
@@ -190,14 +191,4 @@
 
 .ms-drop .ms-no-results {
   display: none;
-}
-
-.w100 {
-  width: calc(100% - 26px);
-}
-
-.form-group .control-label {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
