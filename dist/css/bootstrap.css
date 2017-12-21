@@ -3393,7 +3393,7 @@ select[multiple].input-lg {
 }
 .form-tooltip {
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 0;
   z-index: 3;
   display: block;
@@ -3456,9 +3456,6 @@ textarea.form-tooltip {
   right: 1px;
   width: 100%;
   min-height: 40px;
-}
-.input-fileupload .form-tooltip {
-  top: 0;
 }
 textarea {
   resize: vertical;
