@@ -95,7 +95,8 @@
   background: #fff;
   color: #252525;
   border: 1px solid #aaa;
-  border-radius: 4px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .ms-drop.bottom {
