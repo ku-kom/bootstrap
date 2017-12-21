@@ -2901,7 +2901,6 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
-  width: 100%;
 }
 input[type="range"] {
   display: block;
