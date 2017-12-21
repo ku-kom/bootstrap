@@ -4294,7 +4294,7 @@ tbody.collapse.in {
 }
 .input-group .form-control {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   float: left;
   width: 100%;
   margin-bottom: 0;
