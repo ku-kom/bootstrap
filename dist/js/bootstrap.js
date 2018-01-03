@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.3.7 (https://nanna-dk.github.io/ku.dk-bootstrap/)
- * Copyright 2011-2017 Twitter, Inc.
+ * Copyright 2011-2018 Twitter, Inc.
  * Licensed under the MIT license
  */
 
@@ -26,16 +26,14 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // Check if the page is responsive
-  if ($('meta[name="viewport"]').length) {
-    var $responsiveEnabled = true;
-  }
+  var $isResponsive = ($('html').hasClass('non-responsive')) ? true : false;
   var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
   var collapseFooter = function (el, ev) {
     // Collapse footer at lowest breakpoint
-    if ($responsiveEnabled === true && window.matchMedia('(max-width: 767px)').matches) {
+    if ($isResponsive === false && window.matchMedia('(max-width: 767px)').matches) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
@@ -50,7 +48,7 @@ if (typeof jQuery === 'undefined') {
 
   $(window).resize(function () {
     var $newWidth = $('body').prop('clientWidth');
-    if ($responsiveEnabled === true && $newWidth !== $cachedWidth) {
+    if ($isResponsive === false && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
       $footerColumn.removeAttr('style');
       $cachedWidth = $newWidth;
@@ -1916,7 +1914,8 @@ $(e.target)
   // Global smooth scroll to top
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
-  $('body').append($scroller);
+  // Add scroller after footer
+$($scroller).appendTo('body');
 
   scrollFunction();
 

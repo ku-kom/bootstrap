@@ -11,13 +11,13 @@
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/mmenu/jquery.mmenu.css" rel="stylesheet">
-{% if page.category == "non-responsive" %}
-<link href="{{ site.baseurl }}/assets/css/non-responsive/non-responsive.css" rel="stylesheet">
-{% endif %}
 {% if page.slug == "examples" %}
 <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/dist/css/datatables.min.css" rel="stylesheet">
+{% endif %}
+{% if page.category == "non-responsive" %}
+<link href="{{ site.baseurl }}/assets/css/non-responsive/non-responsive.css" rel="stylesheet">
 {% endif %}
 {% if page.slug != "examples" %}
 <!-- Documentation extras - not for production -->
@@ -37,9 +37,6 @@
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 <link href="../../dist/css/bootstrap.css" rel="stylesheet">
 <link href="../../assets/css/mmenu/jquery.mmenu.css" rel="stylesheet">
-{% if page.category == "non-responsive" %}
-<link href="../../assets/css/non-responsive/non-responsive.css" rel="stylesheet">
-{% endif %}
 {% if page.slug != "examples" %}
 <!-- Documentation extras - not for production -->
 <link href="../../assets/css/docs.min.css" rel="stylesheet">
@@ -49,6 +46,9 @@
 <link href="../../dist/css/ku-gridboxes.css" rel="stylesheet">
 <link href="../../assets/css/multiple-select/multiple-select.css" rel="stylesheet">
 <link href="../../assets/css/datatables/datatables.css" rel="stylesheet">
+{% endif %}
+{% if page.category == "non-responsive" %}
+<link href="../../assets/css/non-responsive/non-responsive.css" rel="stylesheet">
 {% endif %}
 {% if page.category == "kurser" %}
 <!-- Kurser.ku.dk -->

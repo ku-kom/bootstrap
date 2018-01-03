@@ -1,103 +1,101 @@
-// Core variables and mixins
-@import "../../variables.less";
-@import "../../mixins.less";
-
-html.non-responsive {
+.non-responsive {
   min-width: 1070px;
   overflow: auto;
 }
-html.non-responsive .container, html.non-responsive main {
+
+.non-responsive .container, .non-responsive main {
   max-width: none !important;
   width: 1070px !important;
 }
 
-html.non-responsive .main-content > .row > .col-sm-12 {
+.non-responsive .main-content>.row>.col-sm-12 {
   width: 50% !important;
-}
-html.non-responsive .right-side {
-width: 25%; !important;
-}
-html.non-responsive .ku-leftmenu {
-width: 25%; !important;
-}
-html.non-responsive .main-content.col-sm-8 {
-  width: 50% !important;
-}
-html.non-responsive [class^="col-"] {
-  float: left;
-}
-.right-side [class^="col-"]:first-child .panel-default > .panel-heading {
-    border-top: 0;
 }
 
-html.non-responsive .visible-xs-inline,
-html.non-responsive .visible-sm-inline {
+.non-responsive .right-side {
+  width: 25%!important;
+}
+
+.non-responsive .ku-leftmenu {
+  width: 25%!important;
+}
+
+.non-responsive [class^="col-"] {
+  float: left;
+}
+
+.right-side [class^="col-"]:first-child .panel-default>.panel-heading {
+  border-top: 0;
+}
+
+.non-responsive .visible-xs-inline, .non-responsive .visible-sm-inline {
   display: inline !important;
 }
-html.non-responsive .visible-xs-inline-block,
-html.non-responsive .visible-sm-inline-block {
+
+.non-responsive .visible-xs-inline-block, .non-responsive .visible-sm-inline-block {
   display: inline-block !important;
 }
-html.non-responsive .hidden-xs,
-html.non-responsive .hidden-sm {
+
+.non-responsive .hidden-xs, .non-responsive .hidden-sm {
   display: block !important;
 }
-html.non-responsive .container .navbar-header,
-html.non-responsive .container .navbar-collapse {
+
+.non-responsive .container .navbar-header, .non-responsive .container .navbar-collapse {
   margin-right: 0;
   margin-left: 0;
 }
-html.non-responsive .navbar-header {
+
+.non-responsive .navbar-header {
   float: left;
 }
-html.non-responsive .navbar-collapse {
+
+.non-responsive .navbar-collapse {
   display: block !important;
   height: auto !important;
   padding-bottom: 0;
   overflow: visible !important;
 }
-html.non-responsive .navbar-toggle {
+
+.non-responsive .navbar-toggle {
   display: none;
 }
-html.non-responsive .navbar-collapse {
+
+.non-responsive .navbar-collapse {
   border-top: 0;
 }
-html.non-responsive .navbar-brand {
+
+.non-responsive .navbar-brand {
   margin-left: -15px;
 }
-html.non-responsive .navbar-nav {
+
+.non-responsive .navbar-nav {
   float: left;
   margin: 0;
 }
-html.non-responsive .navbar-nav > li {
+
+.non-responsive .navbar-nav>li {
   float: left;
 }
-html.non-responsive .navbar-nav.navbar-right {
+
+.non-responsive .navbar-nav.navbar-right {
   float: right;
 }
 
-
-
-html.non-responsive .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+.non-responsive .navbar-default .navbar-nav .open .dropdown-menu>li>a {
   color: #333;
 }
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+
+.non-responsive .navbar .navbar-nav .open .dropdown-menu>li>a:hover, .non-responsive .navbar .navbar-nav .open .dropdown-menu>li>a:focus, .non-responsive .navbar .navbar-nav .open .dropdown-menu>.active>a, .non-responsive .navbar .navbar-nav .open .dropdown-menu>.active>a:hover, .non-responsive .navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
   color: #fff !important;
   background-color: #428bca !important;
 }
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-html.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+
+.non-responsive .navbar .navbar-nav .open .dropdown-menu>.disabled>a, .non-responsive .navbar .navbar-nav .open .dropdown-menu>.disabled>a:hover, .non-responsive .navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus {
   color: #999 !important;
   background-color: transparent !important;
 }
 
-html.non-responsive {
-  #globalfooter {
-    background: linear-gradient(to bottom, rgba(119, 119, 119, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
-  }
+.non-responsive #globalfooter {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #777), color-stop(25%, #868686), color-stop(50%, #8e8d8d), color-stop(80%, #888), to(grey));
+  background: linear-gradient(to bottom, #777 0, #868686 25%, #8e8d8d 50%, #888 80%, grey 100%);
 }
