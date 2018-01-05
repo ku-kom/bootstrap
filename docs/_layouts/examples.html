@@ -3,7 +3,7 @@
   <head>
     {% include header.html %}
   </head>
-  <body {% if site.github %}{% else %}class="ku-docs"{% endif %}>
+  <body class="{% if site.github %}{% else %}ku-docs{% endif %}{% if page.category == 'forms' %} Form{% endif %}">
     <nav class="jumpbox" aria-label="Spring til indhold på Siden" title="Spring til Indhold på Siden">
       <ul class="jump">
         <li>

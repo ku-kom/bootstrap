@@ -621,24 +621,29 @@ input[type="checkbox"] {
   }
 }
 
-// KU: tooltip mark to hover on inside form input fields
 
-.input-group-addon {
-  &:last-child {
+
+body.Form {
+  // KU: tooltip mark to hover on inside form input fields
+
+  .input-group-addon {
+    &:last-child {
+        font-weight: 600;
+        padding: 6px;
+        &:hover {
+          border-left: 0;
+        }
+    }
+    &:not(first-child):not(last-child) {
       font-weight: 600;
+      cursor: pointer;
+      border: 1px solid @input-border;
+      border-left: 0;
+
+
       &:hover {
         border-left: 0;
       }
-  }
-  &:not(first-child):not(last-child) {
-    font-weight: 700;
-    cursor: pointer;
-    border: 1px solid @input-border;
-    border-left: 0;
-    padding: 6px;
-
-    &:hover {
-      border-left: 0;
     }
   }
 }

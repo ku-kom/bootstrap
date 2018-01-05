@@ -3373,20 +3373,20 @@ select[multiple].input-lg {
     font-size: 11px;
   }
 }
-.input-group-addon:last-child {
+body.Form .input-group-addon:last-child {
+  padding: 6px;
   font-weight: 600;
 }
-.input-group-addon:last-child:hover {
+body.Form .input-group-addon:last-child:hover {
   border-left: 0;
 }
-.input-group-addon:not(first-child):not(last-child) {
-  padding: 6px;
-  font-weight: 700;
+body.Form .input-group-addon:not(first-child):not(last-child) {
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #ccc;
   border-left: 0;
 }
-.input-group-addon:not(first-child):not(last-child):hover {
+body.Form .input-group-addon:not(first-child):not(last-child):hover {
   border-left: 0;
 }
 .mandatory {
