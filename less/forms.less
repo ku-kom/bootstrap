@@ -625,7 +625,7 @@ input[type="checkbox"] {
 
 .input-group-addon {
   &:last-child {
-      font-weight: 700;
+      font-weight: 600;
       &:hover {
         border-left: 0;
       }
@@ -635,6 +635,7 @@ input[type="checkbox"] {
     cursor: pointer;
     border: 1px solid @input-border;
     border-left: 0;
+    padding: 6px;
 
     &:hover {
       border-left: 0;
@@ -649,17 +650,19 @@ input[type="checkbox"] {
 
 // KU: Tooltip marker for radios and checkboxes
 .form-tooltip {
+  .form-control;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 3;
-  .form-control;
-  width: 27px;
-  font-weight: 700;
+  width: auto;
+  padding: 6px;
+  font-weight: 600;
   background-color: @input-group-addon-bg;
   border: 1px solid @input-border;
   border-radius: @border-radius-base;
   cursor: pointer;
+  text-align: center;
 }
 
 // KU:

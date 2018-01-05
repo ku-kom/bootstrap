@@ -8,8 +8,9 @@
   width: 1070px !important;
 }
 
-.non-responsive .main-content>.row>.col-sm-12 {
+.non-responsive .main-content>.row>.col-md-6 {
   width: 50% !important;
+  float: left;
 }
 
 .non-responsive .right-side {
@@ -20,8 +21,12 @@
   width: 25%!important;
 }
 
-.non-responsive [class^="col-"] {
-  float: left;
+.non-responsive .main-content {
+  width: 50%;
+}
+
+.non-responsive #globalfooter .footercolumn:first-child h3:nth-of-type(2) {
+    display: none !important;
 }
 
 .right-side [class^="col-"]:first-child .panel-default>.panel-heading {

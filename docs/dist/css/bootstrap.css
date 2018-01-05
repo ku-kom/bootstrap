@@ -3374,12 +3374,13 @@ select[multiple].input-lg {
   }
 }
 .input-group-addon:last-child {
-  font-weight: 700;
+  font-weight: 600;
 }
 .input-group-addon:last-child:hover {
   border-left: 0;
 }
 .input-group-addon:not(first-child):not(last-child) {
+  padding: 6px;
   font-weight: 700;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -3398,13 +3399,15 @@ select[multiple].input-lg {
   z-index: 3;
   display: block;
   width: 100%;
-  width: 27px;
+  width: auto;
   height: 32px;
   padding: 6px 10px;
+  padding: 6px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   color: #252525;
+  text-align: center;
   cursor: pointer;
   background-color: #fff;
   background-color: #eee;
@@ -7241,6 +7244,7 @@ main:after,
   padding-left: 6px;
   margin-bottom: 26px;
   font-weight: bold;
+  line-height: 1;
   border-left: 8px solid #901a1e;
 }
 .ku-leftmenu .ku-navbar-header a {
@@ -8106,6 +8110,7 @@ main:after,
 }
 .minicalendar .panel-body {
   padding-top: 10px;
+  padding-top: 0!important;
   border-top: 0;
 }
 .calendarbox .panel-body {
@@ -8417,6 +8422,7 @@ main:after,
   border: none;
 }
 .datepicker table tr td {
+  height: 28px;
   text-align: center;
   border: none;
 }
