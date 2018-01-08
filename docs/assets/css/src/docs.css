@@ -1192,6 +1192,9 @@ h1[id] {
   display: inline-block;
   padding-right: 45px;
 }
+figure.highlight {
+  display: block;
+}
 
 /*
  * Responsive tests
