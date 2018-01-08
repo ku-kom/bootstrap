@@ -2600,6 +2600,11 @@ table {
   border-collapse: collapse;
   background-color: transparent;
 }
+@media (max-width: 768px) {
+  html:not(.non-responsive) table {
+    font-size: 14px;
+  }
+}
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3354,7 +3359,7 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    padding-top: 1px;
+    padding-top: 7px;
     margin-bottom: 0;
   }
 }
@@ -3377,17 +3382,15 @@ body.Form .input-group-addon:last-child {
   padding: 6px;
   font-weight: 600;
 }
-body.Form .input-group-addon:last-child:hover {
-  border-left: 0;
-}
 body.Form .input-group-addon:not(first-child):not(last-child) {
   font-weight: 600;
   cursor: pointer;
   border: 1px solid #ccc;
   border-left: 0;
 }
-body.Form .input-group-addon:not(first-child):not(last-child):hover {
-  border-left: 0;
+body.Form .has-error .input-group-addon {
+  border-color: #7b161a;
+  border-width: 1px 1px 1px 0;
 }
 .mandatory {
   color: #7b161a;

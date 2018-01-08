@@ -6,6 +6,13 @@
 table {
   background-color: @table-bg;
   border-collapse: collapse;
+
+  // KU:
+  @media (max-width: @screen-sm-min) {
+    html:not(.non-responsive) & {
+      font-size: @font-size-large;
+    }
+  }
 }
 caption {
   padding-top: @table-cell-padding;

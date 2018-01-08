@@ -587,7 +587,7 @@ input[type="checkbox"] {
     .control-label {
       //text-align: right;
       margin-bottom: 0;
-      padding-top: 1px; //(@padding-base-vertical + 1);  Default padding plus a border
+      padding-top: (@padding-base-vertical + 1);  // Default padding plus a border
     }
   }
 
@@ -624,26 +624,26 @@ input[type="checkbox"] {
 
 
 body.Form {
-  // KU: tooltip mark to hover on inside form input fields
+  // KU: tooltip mark to hover inside form input fields
 
   .input-group-addon {
     &:last-child {
         font-weight: 600;
         padding: 6px;
-        &:hover {
-          border-left: 0;
-        }
     }
+
     &:not(first-child):not(last-child) {
       font-weight: 600;
       cursor: pointer;
       border: 1px solid @input-border;
       border-left: 0;
+    }
+  }
 
-
-      &:hover {
-        border-left: 0;
-      }
+  .has-error {
+    .input-group-addon {
+      border-color: @state-danger-text;
+      border-width: 1px 1px 1px 0;
     }
   }
 }
