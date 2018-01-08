@@ -11,10 +11,17 @@
  */
 
 /*
- * Scaffolding
- *
- * Update the basics of our documents to prep for docs content.
+ * Sticky left menu - only for Docs section
  */
+
+.bs-docs-container #leftmenu.fixed {
+  position: fixed;
+  top: 0;
+  left: auto;
+  height: 90%;
+  padding-top: 15px;
+  overflow-y: scroll;
+}
 
 /* Keep code small in tables on account of limited space */
 
@@ -1192,6 +1199,7 @@ h1[id] {
   display: inline-block;
   padding-right: 45px;
 }
+
 figure.highlight {
   display: block;
 }

@@ -79,13 +79,6 @@ $($scroller).appendTo('body');
     scrollFunction()
   };
 
-  $('#scrolltop').click(function () {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
-
   function scrollFunction() {
     var $scroll = $('#scrolltop');
     if ($scroll) {
@@ -96,5 +89,12 @@ $($scroller).appendTo('body');
       }
     }
   }
+
+  $('#scrolltop').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
 
 })(jQuery);
