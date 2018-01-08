@@ -2602,7 +2602,7 @@ table {
 }
 @media (max-width: 768px) {
   html:not(.non-responsive) table {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 caption {
