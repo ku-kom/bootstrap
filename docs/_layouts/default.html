@@ -45,5 +45,22 @@
     </div>
   </main>
     {% include global-footer.html %}
+    <script>
+      $(function() {
+        // Without Affix plugin - only for Docs
+        var $sidebar = $('.bs-docs-container #leftmenu'),
+          $window = jQuery(window),
+          offset = $sidebar.offset();
+        $window.scroll(function() {
+          if ($sidebar) {
+            if ($window.scrollTop() > offset.top) {
+              $sidebar.addClass('fixed');
+            } else {
+              $sidebar.removeClass('fixed');
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
