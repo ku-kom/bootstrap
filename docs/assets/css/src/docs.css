@@ -10,17 +10,32 @@
  * Special styles for presenting Bootstrap's documentation and code examples.
  */
 
+.scrolltop {
+  position: fixed!important;
+  z-index: 1030!important;
+}
+
 /*
- * Sticky left menu - only for Docs section
- */
+  * Sticky left menu - only for Docs section
+  */
+
+.bs-docs-container #leftmenu {
+  position: relative;
+  -webkit-transition: position .25s linear;
+          transition: position .25s linear;
+}
 
 .bs-docs-container #leftmenu.fixed {
   position: fixed;
   top: 0;
   left: auto;
-  height: 90%;
-  padding-top: 15px;
+  z-index: 10;
+  height: 95%;
+  margin-top: 15px;
   overflow-y: scroll;
+  background-color: #fff;
+  -webkit-transition: position .25s linear;
+          transition: position .25s linear;
 }
 
 /* Keep code small in tables on account of limited space */

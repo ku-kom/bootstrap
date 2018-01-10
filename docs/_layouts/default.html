@@ -47,13 +47,12 @@
     {% include global-footer.html %}
     <script>
       $(function() {
-        // Without Affix plugin - only for Docs
+        // Sticky left menu - only for Docs
         var $sidebar = $('.bs-docs-container #leftmenu'),
-          $window = jQuery(window),
-          offset = $sidebar.offset();
+          $window = $(window);
         $window.scroll(function() {
           if ($sidebar) {
-            if ($window.scrollTop() > offset.top) {
+            if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
               $sidebar.addClass('fixed');
             } else {
               $sidebar.removeClass('fixed');
