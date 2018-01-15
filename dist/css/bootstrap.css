@@ -3466,10 +3466,6 @@ textarea.form-tooltip {
 .remember_mandatory {
   margin-bottom: 15px;
 }
-textarea {
-  resize: vertical;
-  /* user can resize vertically, but width is fixed */
-}
 .btn {
   display: inline-block;
   padding: 6px 10px;

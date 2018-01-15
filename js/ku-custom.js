@@ -71,7 +71,7 @@ $(e.target)
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
   // Add scroller after last element
-$($scroller).appendTo('body');
+$($scroller).appendTo('#footer');
 
   scrollFunction();
 
