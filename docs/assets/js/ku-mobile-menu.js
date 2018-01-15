@@ -202,7 +202,7 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
-        $new_search = $('#globalSearch').clone(),
+        $new_search = $('#globalSearch').detach(),
         API;
 
     if ($.fn.mmenu) {
