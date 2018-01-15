@@ -202,7 +202,6 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
-        $new_search = $('#globalSearch').detach(),
         API;
 
     if ($.fn.mmenu) {
@@ -269,7 +268,7 @@ return true;
         }).data('mmenu');
 
         // Add search to MMenu
-        $('.search-placeholder').first().append($new_search);
+        $('.search-placeholder').first().append($('#globalSearch').detach());
 
         // Make sure selected item also displays sub-items
         var selectedItem = $('.mm-selected');
