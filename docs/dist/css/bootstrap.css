@@ -2892,7 +2892,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.1;
 }
 input[type="search"] {
@@ -2938,7 +2938,7 @@ output {
   color: #252525;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -3379,13 +3379,13 @@ select[multiple].input-lg {
   }
 }
 body.Form .input-group-addon:last-child {
-  padding: 6px;
-  font-weight: 600;
+  padding: 6px 8px;
+  font-weight: 400;
 }
 body.Form .input-group-addon:not(first-child):not(last-child) {
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-left: 0;
 }
 body.Form .has-error .input-group-addon {
@@ -3405,9 +3405,9 @@ body.Form .has-error .input-group-addon {
   width: auto;
   height: 32px;
   padding: 6px 10px;
-  padding: 6px;
+  padding: 6px 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   color: #252525;
   text-align: center;
@@ -3415,7 +3415,7 @@ body.Form .has-error .input-group-addon {
   background-color: #fff;
   background-color: #eee;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -3462,6 +3462,9 @@ textarea.form-tooltip {
   right: 1px;
   width: 100%;
   min-height: 40px;
+}
+.remember_mandatory {
+  margin-bottom: 15px;
 }
 textarea {
   resize: vertical;
@@ -4378,7 +4381,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #252525;
   text-align: center;
   background-color: #eee;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 2px;
 }
 .input-group-addon.input-sm {
@@ -6666,7 +6669,7 @@ button.close {
   padding: 3px 8px;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #666;
   border-radius: 2px;
 }
 .tooltip-arrow {
@@ -6681,56 +6684,56 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #666;
 }
 .tooltip.top-left .tooltip-arrow {
   right: 5px;
   bottom: 0;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #666;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   left: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #666;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000;
+  border-right-color: #666;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #666;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #666;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   right: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #666;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   left: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #666;
 }
 .popover {
   position: absolute;

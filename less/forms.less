@@ -33,7 +33,7 @@ label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 600;
   // KU:
   line-height: 1.1;
 }
@@ -628,12 +628,12 @@ body.Form {
 
   .input-group-addon {
     &:last-child {
-        font-weight: 600;
-        padding: 6px;
+        font-weight: 400;
+        padding: 6px 8px;
     }
 
     &:not(first-child):not(last-child) {
-      font-weight: 600;
+      font-weight: 400;
       cursor: pointer;
       border: 1px solid @input-border;
       border-left: 0;
@@ -656,18 +656,18 @@ body.Form {
 // KU: Tooltip marker for radios and checkboxes
 .form-tooltip {
   .form-control;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
-  width: auto;
-  padding: 6px;
-  font-weight: 600;
-  background-color: @input-group-addon-bg;
-  border: 1px solid @input-border;
-  border-radius: @border-radius-base;
-  cursor: pointer;
-  text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: auto;
+    padding: 6px 8px;
+    font-weight: 400;
+    background-color: @input-group-addon-bg;
+    border: 1px solid @input-border;
+    border-radius: @border-radius-base;
+    cursor: pointer;
+    text-align: center;
 }
 
 // KU:
@@ -676,6 +676,10 @@ body.Form {
   width: 100%;
   right: 1px;
   min-height: 40px;
+}
+
+.remember_mandatory {
+  margin-bottom: 15px;
 }
 // KU:
 textarea {
