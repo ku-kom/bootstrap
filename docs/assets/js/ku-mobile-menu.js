@@ -1,4 +1,4 @@
-;(function(root, factory) {
+(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
@@ -202,6 +202,7 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
+        $new_search = $('#globalSearch').clone(),
         API;
 
     if ($.fn.mmenu) {
@@ -268,7 +269,7 @@ return true;
         }).data('mmenu');
 
         // Add search to MMenu
-        $('.search-placeholder').first().append($('#globalSearch').detach());
+        $('.search-placeholder').first().append($new_search);
 
         // Make sure selected item also displays sub-items
         var selectedItem = $('.mm-selected');
