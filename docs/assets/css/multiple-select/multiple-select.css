@@ -10,7 +10,7 @@
 
 .ms-parent.form-control {
   padding: 0;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .ms-choice {
