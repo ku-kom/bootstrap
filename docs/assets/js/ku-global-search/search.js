@@ -34,8 +34,6 @@ jQuery(function () {
             
             form.submit(function (event) {
 
-                console.log('show me some stuff');
-                console.log('show me some stuff');
                 form.attr('action', current_engine.url);
                 form.attr('method', current_engine.method || 'GET');
                 field.attr('name', current_engine.querykey);
