@@ -1,75 +1,72 @@
 window.searchCallbacks = [];
 
 jQuery(function () {
-  var stripPath = function (path) {
-    return path === '/' ? path : path.replace(/\/$/, '');
-  };
 
-  var isEngineCurrent = function (engine) {
-    if (stripPath(engine.url) !== stripPath(document.location.origin + document.location.pathname)) {
-      return false;
-    }
-    if (engine.param) {
-      for (var key in engine.param) {
-        if (getUrlParameter(key) !== engine.param[key]) {
-          return false;
-        }
-      }
-    }
-    return true;
-  };
-  $('.search-filter').on('click', 'li', function () {
-    $('li.selected').removeClass('selected');
-    $(this).addClass('selected');
-    var $area = $('.global-search');
-    $area.text($(this).text());
-    $area.append('<span class="sr-only">Søgeområder</span>');
-  });
-  var forms = jQuery('form.search_form');
-  forms.each(function () {
-    var form = jQuery(this);
-    var field = form.find('.global-search-query');
-    var filter = form.find('.search-filter');
-    var resetForm = form.hasClass('search_reset');
+    var forms = $('.global-search'),
+        current_engine = {};
+
+    function initSearchForm() {
+
+        forms.each(function () {
+
+            var form = $(this),
+                field = form.find('.global-search-query'),
+                filter = form.find('.global-search-options-filter'),
+                filter_btn = form.find('.global-search-options-toggle');
+
+            filter_btn.html(window.searchEngines[0].label);
+            current_engine = window.searchEngines[0];
+
+            for (var se in window.searchEngines) {
+
+                var engine = window.searchEngines[se],
+                    option = $(document.createElement('li'));
+
+                option.text(engine.label);
+                option.attr('data-label', engine.label);
+                option.attr('data-value', se);
+                option.on('click', function(event) {
+                    filter_btn.html(event.target.dataset.label);
+                    current_engine = window.searchEngines[event.target.dataset.value];
+                });
+                filter.append(option);
+            }
+            
+            form.submit(function (event) {
+
+                console.log('show me some stuff');
+                console.log('show me some stuff');
+                form.attr('action', current_engine.url);
+                form.attr('method', current_engine.method || 'GET');
+                field.attr('name', current_engine.querykey);
+                if (current_engine.param) {
+                    for (var paramName in current_engine.param) {
+                        var input = jQuery(document.createElement('input'));
+                        input.attr('type', 'hidden');
+                        input.attr('name', paramName);
+                        input.val(current_engine.param[paramName]);
+                        form.append(input);
+                    }
+                }
+                for (var i = 0; i < window.searchCallbacks.length; i++) {
+                    var callback = window.searchCallbacks[i];
+                    if (jQuery.isFunction(callback)) {
+                        callback(current_engine, this);
+                    }
+                }
+            });
+        });
+    };
 
     if (window.searchEngines) {
-      for (var i = 0; i < window.searchEngines.length; i++) {
-        var engine = window.searchEngines[i];
-        var option = jQuery(document.createElement('li'));
-        option.text(engine.label);
-        option.attr('data-value', i);
-        if (i === 0) {
-          option.addClass('selected');
-        } else {
-          option.removeClass('selected');
-        }
-        if (!resetForm && isEngineCurrent(engine)) {
-          option.addClass('selected');
-          field.val(getUrlParameter(engine.querykey));
-        }
-        filter.append(option);
-      }
-      form.submit(function (event) {
-        var chosenEngine = window.searchEngines[$('.search-filter li.selected').data('value')];
-        form.attr('action', chosenEngine.url);
-        form.attr('method', chosenEngine.method || 'GET');
-        field.attr('name', chosenEngine.querykey);
-        if (chosenEngine.param) {
-          for (var paramName in chosenEngine.param) {
-            var input = jQuery(document.createElement('input'));
-            input.attr('type', 'hidden');
-            input.attr('name', paramName);
-            input.val(chosenEngine.param[paramName]);
-            form.append(input);
-          }
-        }
-        for (var i = 0; i < window.searchCallbacks.length; i++) {
-          var callback = window.searchCallbacks[i];
-          if (jQuery.isFunction(callback)) {
-            callback(chosenEngine, this);
-          }
-        }
-      });
-    }
-  });
+
+        initSearchForm();
+
+    } else {
+
+        forms.destroy();
+        console.log('No search engine data available.')
+
+    };
+
 });
