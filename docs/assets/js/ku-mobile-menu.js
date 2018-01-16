@@ -1,4 +1,4 @@
-;(function(root, factory) {
+(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
@@ -202,7 +202,7 @@ return true;
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
-        $new_search = $('#globalSearch').clone(),
+        $new_search = $('.global-search').first().clone(),
         API;
 
     if ($.fn.mmenu) {
