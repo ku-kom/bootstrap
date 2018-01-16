@@ -4733,17 +4733,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.ku-nav .search_form .dropdown-menu li {
+.ku-nav #submit-button .glyphicon {
+  color: #9d9d9d;
+}
+.search_form .dropdown-menu li {
   padding: 3px 20px;
   font-size: 1.085em;
 }
-.ku-nav .search_form .dropdown-menu li.selected,
-.ku-nav .search_form .dropdown-menu li:hover {
+.search_form .dropdown-menu li.selected,
+.search_form .dropdown-menu li:hover {
   cursor: pointer;
   background-color: #efefef;
-}
-.ku-nav #submit-button .glyphicon {
-  color: #9d9d9d;
 }
 @media (min-width: 768px) {
   .navbar-header {
@@ -4793,18 +4793,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
 .container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
+.container-fluid > .navbar-collapse,
+.container > .navbar-header,
+.container-fluid > .navbar-header {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
   .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
+  .container-fluid > .navbar-collapse,
+  .container > .navbar-header,
+  .container-fluid > .navbar-header {
     margin-right: 0;
     margin-left: 0;
   }
@@ -4905,8 +4905,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5329,7 +5329,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   display: block;
   width: 70%;
   height: 13px;
-  background-image: url('https://bootstrap.secure.ku.dk/img/toplogo_dk.svg');
+  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_dk.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -5353,7 +5353,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 html:lang(en) .navbar-inverse .topbar-logo {
   left: 20px;
   width: 75%;
-  background-image: url('https://bootstrap.secure.ku.dk/img/toplogo_uk.svg');
+  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
 }
 @media (min-width: 767px) {
   html:lang(en) .navbar-inverse .topbar-logo {
