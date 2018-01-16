@@ -122,25 +122,26 @@
     }
   }
 
-  .search_form {
-    .dropdown-menu {
-      li {
-        padding: 3px 20px;
-        font-size: 1.085em;
-
-        &.selected,
-        &:hover {
-          background-color: #efefef;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
   #submit-button .glyphicon {
     color: @ku-search-icons;
   }
 }
+
+.search_form {
+  .dropdown-menu {
+    li {
+      padding: 3px 20px;
+      font-size: 1.085em;
+
+      &.selected,
+      &:hover {
+        background-color: #efefef;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 // Navbar heading
 //
 // Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
@@ -215,8 +216,8 @@
 
 .container,
 .container-fluid {
-   > .navbar-header,
-  > .navbar-collapse {
+  > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -347,8 +348,8 @@
       border: 0;
       box-shadow: none;
 
-       > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
@@ -381,6 +382,7 @@
 #topbar_menu {
   height: 100%;
   margin-right: 0;
+
   &.navbar-nav {
     > li {
       > a {
@@ -856,7 +858,7 @@
   }
   // KU top logo positioning
   .topbar-logo {
-    background-image: url('https://bootstrap.secure.ku.dk/img/toplogo_dk.svg');
+    background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_dk.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -878,7 +880,7 @@
     }
     // English version
     html:lang(en) & {
-      background-image: url('https://bootstrap.secure.ku.dk/img/toplogo_uk.svg');
+      background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
       width: 75%;
       left: @margin20;
       @media (min-width: @screen-xs-max) {
