@@ -195,6 +195,12 @@
         padding-left: 0;
       }
 
+      .padlock {
+        &:after {
+          display: none;
+        }
+      }
+
       .footercontent {
         width: 100%;
         display: block;
@@ -223,6 +229,7 @@
             &[data-heading='open'] {
               cursor: default;
               padding-bottom: 8px;
+              padding-left: 0;
               margin-bottom: 0;
 
               &:after,
@@ -299,12 +306,6 @@
 
                 &:hover {
                   color: initial;
-                }
-
-                .padlock {
-                  &:after {
-                    display: none;
-                  }
                 }
               }
 
