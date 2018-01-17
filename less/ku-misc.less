@@ -96,7 +96,23 @@ nav {
   outline: 0;
   user-focus: none;
 }
+
+.page-icons {
+  display: none;
+}
 @media (min-width: @screen-sm) {
+  // Utility icon
+  .page-icons {
+    display: block;
+    .pull-right();
+  }
+
+  .ical {
+    a {
+      color: @gray-666;
+      font-size: 1.2em;
+    }
+  }
   // Make columns equal height
   .row-equal-height {
     display: flex;
@@ -243,8 +259,8 @@ nav {
   top: 50%;
   left: 50%;
 }
-
 // KU: For legacy html: Should be removed
+
 .visible-desktop {
   display: block;
 }
