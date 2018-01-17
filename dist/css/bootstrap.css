@@ -9279,6 +9279,7 @@ nav {
   height: 40px;
   overflow: hidden;
   color: #fff;
+  cursor: pointer;
           flex-direction: column;
   background: #a1a1a1;
   border-radius: 50%;
@@ -9315,9 +9316,6 @@ nav {
   margin: 0 auto;
   font-size: 18px;
 }
-.scrolltop:hover {
-  cursor: pointer;
-}
 @-webkit-keyframes ku-loading {
   from {
     -webkit-transform: rotate(0deg);
@@ -9352,4 +9350,18 @@ nav {
   border-radius: 100%;
   -webkit-animation: ku-loading .6s infinite linear;
           animation: ku-loading .6s infinite linear;
+}
+.visible-desktop {
+  display: block;
+}
+.visible-mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .visible-mobile {
+    display: block;
+  }
+  .visible-desktop {
+    display: none;
+  }
 }
