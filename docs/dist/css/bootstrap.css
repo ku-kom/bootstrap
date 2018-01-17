@@ -5370,12 +5370,16 @@ html:lang(en) .navbar-inverse .topbar-logo {
     width: 28%;
   }
 }
-.breadcrumb {
+.breadcrumbs {
   display: none;
 }
 @media (min-width: 768px) {
-  .breadcrumb {
+  .breadcrumbs {
     display: block;
+  }
+}
+@media (min-width: 768px) {
+  .breadcrumb {
     padding: 0 15px 15px 0;
     margin-bottom: 0;
     font-size: .8em;
@@ -6225,7 +6229,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading > .panel-title {
   min-height: 16px;
-  padding: 6px 0;
+  padding: 8px 0;
   font-weight: 600;
   line-height: 1.25;
   color: #252525;
