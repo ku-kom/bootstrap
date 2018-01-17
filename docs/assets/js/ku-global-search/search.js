@@ -50,7 +50,7 @@ jQuery(function() {
   if (window.searchEngines) {
     initSearchForm();
   } else {
-    forms.destroy();
+    forms.remove();
     console.log('No search engine data available.')
   };
 });
