@@ -187,7 +187,6 @@ nav {
     background-image: none; // remove gradient from default button
   }
 }
-
 // Global scroll to top
 
 .scrolltop {
@@ -205,6 +204,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   .glyphicon-menu-up {
     .glyphicon;
@@ -216,10 +216,6 @@ nav {
       margin: 0 auto;
       font-size: 18px;
     }
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }
 // KU loading symbol
@@ -246,4 +242,22 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+// KU: For legacy html: Should be removed
+.visible-desktop {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+@media (max-width: @screen-xs-max) {
+  .visible-mobile {
+    display: block;
+  }
+
+  .visible-desktop {
+    display: none;
+  }
 }
