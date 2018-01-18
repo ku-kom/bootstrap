@@ -5372,10 +5372,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .breadcrumbs {
   display: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
 
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
