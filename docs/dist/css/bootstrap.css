@@ -9158,6 +9158,9 @@ nav {
 .main-content .row > [class*="col-"] {
   margin-bottom: 23px;
 }
+#gridsidebar .row > [class*="col-"] {
+  margin-bottom: 23px;
+}
 .main-area {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;

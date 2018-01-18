@@ -52,7 +52,13 @@ nav {
     }
   }
 }
-
+#gridsidebar {
+  .row {
+    > [class*="col-"] {
+      margin-bottom: @grid-gutter-height;
+    }
+  }
+}
 .main-area {
   flex-grow: 1;
   @media (max-width: @screen-sm-min) {
