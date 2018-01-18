@@ -9152,10 +9152,7 @@ nav {
   padding-top: 0;
 }
 .main-content .row > [class*="col-"]:not(.form-group) {
-  margin-bottom: 20px;
-}
-.main-content .row.breadcrumbs {
-  margin-bottom: 0;
+  margin-bottom: 23px;
 }
 .main-area {
   -webkit-box-flex: 1;
@@ -9181,6 +9178,9 @@ nav {
 }
 .right-side {
   float: right !important;
+}
+.gcitem + .gcitem {
+  margin-top: 23px;
 }
 @media (min-width: 480px) and (max-width: 991px) {
   .GridForside .double-column .col-sm-6 {

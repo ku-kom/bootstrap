@@ -47,12 +47,8 @@ nav {
   .row {
     > [class*="col-"] {
       &:not(.form-group) {
-        margin-bottom: @margin20;
+        margin-bottom: @grid-gutter-height;
       }
-    }
-
-    &.breadcrumbs {
-      margin-bottom: @margin0;
     }
   }
 }
@@ -76,6 +72,10 @@ nav {
 
 .right-side {
   .pull-right;
+}
+
+.gcitem + .gcitem {
+  margin-top: @grid-gutter-height;
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   .GridForside {
