@@ -8117,17 +8117,17 @@ main:after,
   padding-left: 65px;
 }
 @media (min-width: 768px) {
-  #nyhedsliste.smal .media .media-heading {
+  .nyhedsliste.smal .media .media-heading {
     display: inline-block;
     max-width: 84%;
   }
 }
-#nyhedsliste.smal .media .nyhedsliste_dato {
+.nyhedsliste.smal .media .nyhedsliste_dato {
   float: right !important;
   font-weight: 600;
   color: #777;
 }
-#nyhedsliste-rightbox .media .news-date2 {
+.nyhedsliste-rightbox .media .news-date2 {
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
