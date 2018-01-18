@@ -9146,12 +9146,16 @@ nav {
 }
 .main-content {
   padding-top: 23px;
-  padding-bottom: 23px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 23px;
+  }
 }
 .front-page .main-content {
   padding-top: 0;
 }
-.main-content .row > [class*="col-"]:not(.form-group) {
+.main-content .row > [class*="col-"] {
   margin-bottom: 23px;
 }
 .main-area {
