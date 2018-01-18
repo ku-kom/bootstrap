@@ -1,14 +1,19 @@
 //
 // Breadcrumbs
 // --------------------------------------------------
+
 .breadcrumbs {
   display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: @screen-sm) {
   .breadcrumbs {
     display: block;
   }
 }
+
 .breadcrumb {
   @media (min-width: @screen-sm-min) {
     padding: 0 @breadcrumb-padding-horizontal @breadcrumb-padding-horizontal 0;

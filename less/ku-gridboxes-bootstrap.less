@@ -521,7 +521,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gcrow .gccolumn .gridbox {
   .all-single-column();
 
@@ -608,6 +607,7 @@
         }
       }
     }
+
     &.size1 {
       .box2 {
         img {
@@ -884,6 +884,43 @@
         .box2 {
           flex: 1;
           order: 2;
+        }
+      }
+    }
+  }
+
+  #gridsidebar {
+    .single-column .column1 {
+      .gridbox {
+        &.size2,
+        &.size3 {
+          &.with-img {
+            flex-direction: column;
+
+            .header {
+              padding: 8px 0 8px 10px;
+              overflow: hidden;
+              font-size: 1.1em;
+              white-space: nowrap;
+              border-right: 25px solid transparent;
+            }
+
+            .box1 {
+              flex: 0 1 auto;
+
+              .text {
+                display: none;
+              }
+            }
+
+            .box2 {
+              flex: 0 1 235px;
+            }
+
+            &::before {
+              bottom: 9px;
+            }
+          }
         }
       }
     }
