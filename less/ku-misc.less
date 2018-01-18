@@ -38,7 +38,9 @@ nav {
 
 .main-content {
   padding-top: @grid-gutter-height;
-  padding-bottom: @grid-gutter-height;
+  @media (max-width: @screen-sm-min) {
+    padding-bottom: @grid-gutter-height;
+  }
 
   .front-page & {
     padding-top: 0;
@@ -46,13 +48,7 @@ nav {
 
   .row {
     > [class*="col-"] {
-      &:not(.form-group) {
-        margin-bottom: @margin20;
-      }
-    }
-
-    &.breadcrumbs {
-      margin-bottom: @margin0;
+      margin-bottom: @grid-gutter-height;
     }
   }
 }
@@ -76,6 +72,11 @@ nav {
 
 .right-side {
   .pull-right;
+}
+// KU grid:
+
+.gcitem + .gcitem {
+  margin-top: @grid-gutter-height;
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
   .GridForside {
