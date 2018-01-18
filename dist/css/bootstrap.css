@@ -5388,7 +5388,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 @media (min-width: 768px) {
   .breadcrumbs {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
   }
 }
 @media (min-width: 768px) {
