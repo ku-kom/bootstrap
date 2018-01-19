@@ -8160,13 +8160,8 @@ main:after,
 .media-events .media-heading a {
   color: inherit;
 }
-.custom-search-results .media-heading {
-  display: inline-block;
-  max-width: 84%;
-}
 .custom-search-results .nyhedsliste_dato {
-  float: right !important;
-  font-weight: 600;
+  color: #252525 !important;
 }
 .entries {
   display: -webkit-box;
