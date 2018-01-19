@@ -1,0 +1,118 @@
+---
+layout: examples
+title: KU standard template with left menu and right sidebar
+slug: examples
+---
+<main tabindex="0" id="content">
+  {% include ku-branding.html %}
+  <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-xs-6 col-sm-8 col-md-6 main-content">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Search page</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Input med avanceret søgning" placeholder="Søg...">
+                <div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="glyphicon glyphicon-cog"></span> <span class="sr-only">Toggle avanceret søgning</span> </button>
+                  <div class="dropdown-menu dropdown-menu-right custom-search">
+                    <div class="row">
+                      <label class="col-sm-12 col-md-3 control-label" for="tags">Søg i tags</label>
+                      <div class="col-sm-12 col-md-9">
+                        <input type="text" class="form-control" id="tags" placeholder="Tags">
+                      </div>
+                      <div class="spacer"></div>
+                      <div class="clearfix"></div>
+                      <div class="col-xs-12 col-md-6">
+                        <label class="control-label" for="dates">Publiceret efter</label>
+                        <div class="input-group">
+                        <input type="text" data-provide="datepicker" class="form-control" id="dates" placeholder="Vælg dato">
+                          <div class="input-group-addon" title="Dato Editor">
+                            <span class="glyphicon glyphicon-th"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 mobile-margin-top-10">
+                        <label class="control-label" for="beforedate">Publiceret før</label>
+                        <div class="input-group">
+                        <input type="text" data-provide="datepicker" class="form-control" id="beforedate" placeholder="Vælg dato">
+                          <div class="input-group-addon" title="Dato Editor">
+                            <span class="glyphicon glyphicon-th"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </div>
+              </div>
+            </form>
+            <div class="spacer"></div>
+            <ul class="media-list custom-search-results">
+          		<li class="media">
+          		  <div class="media-body">
+          				<h2 class="media-heading">
+          					<a title="Multimedie (fx film eller lyd)" href="#">Multimedie (fx film eller lyd)</a>
+          				</h2>
+          				<div class="nyhedsliste_dato">
+          					<span>
+          						04.10.2017
+          					</span>
+                    <div class="result_relavans">100%</div>
+          				</div>
+          				<div class="nyhedsliste_indhold">
+          					<p class="news-teaser">
+          						Du har mulighed for at indsætte et multi-medie element på din hjemmeside. Det kan fx være...
+          						<a href="#" title="">
+          							… <strong>»</strong>
+          						</a>
+          					</p>
+          				</div>
+          		  </div>
+          		</li>
+              <li class="media">
+          		  <div class="media-body">
+          				<h2 class="media-heading">
+          					<a title="Multimedie (fx film eller lyd)" href="#">Ikoner til sociale medier</a>
+          				</h2>
+          				<div class="nyhedsliste_dato">
+          					<span>
+          						22.12.2016
+          					</span>
+                    <div class="result_relavans">40%</div>
+          				</div>
+          				<div class="nyhedsliste_indhold">
+          					<p class="news-teaser">
+          						Hvis du har brug for at henvise til KU på sociale medier, kan du bruge nedenstående ikoner...
+          						<a href="#" title="">
+          							… <strong>»</strong>
+          						</a>
+          					</p>
+          				</div>
+          		  </div>
+          		</li>
+	           </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-3 right-side">
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Right side</h2>
+              </div>
+              <div class="panel-body">
+                <p>This is a right side panel element. It can contain almost anything.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>

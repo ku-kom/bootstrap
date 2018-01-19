@@ -47,6 +47,17 @@ nav {
   }
 
   .row {
+    // > [class*="col-"] {
+    //   margin-bottom: @grid-gutter-height;
+    // }
+    + .row {
+      margin-top: @grid-gutter-height;
+    }
+  }
+}
+
+#gridsidebar {
+  .row {
     > [class*="col-"] {
       margin-bottom: @grid-gutter-height;
     }
@@ -91,6 +102,12 @@ nav {
   margin: @margin10 0;
   &:extend(.clearfix all);
 }
+
+.spacer {
+  height: @margin20;
+  clear: both;
+  &:extend(.clearfix all);
+}
 // Accessibility
 
 [tabindex] {
@@ -101,6 +118,17 @@ nav {
 .page-icons {
   display: none;
 }
+// For custom search pages
+
+.custom-search {
+  width: 400px;
+  padding: 15px 0;
+
+  > .row {
+    margin: 0;
+  }
+}
+
 @media (min-width: @screen-sm) {
   // Utility icon
   .page-icons {
@@ -162,6 +190,12 @@ nav {
         }
       }
     }
+  }
+}
+@media (max-width: @screen-sm-max) {
+  // Margin top for mobile and tablets
+  .mobile-margin-top-10 {
+    margin-top: @margin10;
   }
 }
 @media (max-width: @screen-sm) {
