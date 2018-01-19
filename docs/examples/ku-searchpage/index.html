@@ -11,6 +11,13 @@ slug: examples
         {% include ku-leftmenu.html %}
       </div>
       <div class="col-xs-6 col-sm-8 col-md-6 main-content">
+        <div class="breadcrumbs">
+            <ul class="breadcrumb">
+                <li><a href="/">A subsite</a></li>
+                <li><a href="/nanna-kom/" title="Nanna KOM">Nanna KOM</a></li>
+                <li class="active">Nyheder</li>
+            </ul>
+        </div>
         <div class="row">
           <div class="col-sm-12">
             <h1>Search page</h1>
@@ -51,6 +58,27 @@ slug: examples
               </div>
             </form>
             <div class="spacer"></div>
+            <nav aria-label="Pager">
+              <ul class="pagination pagination-sm">
+                <li class="disabled">
+                  <span>
+                    <span aria-hidden="true">«</span>
+                  </span>
+                </li>
+                  <li class="active">
+                    <span>1<span class="sr-only">(nuværende)</span>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                <li>
+                  <a href="#" aria-label="Næste">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
             <ul class="media-list custom-search-results">
           		<li class="media">
           		  <div class="media-body">
@@ -95,6 +123,27 @@ slug: examples
           		  </div>
           		</li>
 	           </ul>
+             <nav aria-label="Pager">
+               <ul class="pagination pagination-sm">
+                 <li class="disabled">
+                   <span>
+                     <span aria-hidden="true">«</span>
+                   </span>
+                 </li>
+                   <li class="active">
+                     <span>1<span class="sr-only">(nuværende)</span>
+                     </span>
+                   </li>
+                   <li>
+                     <a href="#">2</a>
+                   </li>
+                 <li>
+                   <a href="#" aria-label="Næste">
+                     <span aria-hidden="true">»</span>
+                   </a>
+                 </li>
+               </ul>
+             </nav>
           </div>
         </div>
       </div>
