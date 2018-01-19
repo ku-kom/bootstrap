@@ -6920,7 +6920,9 @@ button.close {
 main:before,
 main:after,
 .divider:before,
-.divider:after {
+.divider:after,
+.spacer:before,
+.spacer:after {
   display: table;
   content: " ";
 }
@@ -6942,7 +6944,8 @@ main:after,
 .modal-footer:after,
 .ku-branding .ku-branding-line:after,
 main:after,
-.divider:after {
+.divider:after,
+.spacer:after {
   clear: both;
 }
 .center-block {
@@ -8157,6 +8160,14 @@ main:after,
 .media-events .media-heading a {
   color: inherit;
 }
+.custom-search-results .media-heading {
+  display: inline-block;
+  max-width: 84%;
+}
+.custom-search-results .nyhedsliste_dato {
+  float: right !important;
+  font-weight: 600;
+}
 .entries {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9155,8 +9166,8 @@ nav {
 .front-page .main-content {
   padding-top: 0;
 }
-.main-content .row > [class*="col-"] {
-  margin-bottom: 23px;
+.main-content .row + .row {
+  margin-top: 23px;
 }
 #gridsidebar .row > [class*="col-"] {
   margin-bottom: 23px;
@@ -9197,6 +9208,10 @@ nav {
 .divider {
   margin: 10px 0;
 }
+.spacer {
+  height: 20px;
+  clear: both;
+}
 [tabindex] {
   outline: 0;
 
@@ -9204,6 +9219,13 @@ nav {
 }
 .page-icons {
   display: none;
+}
+.custom-search {
+  width: 400px;
+  padding: 15px 0;
+}
+.custom-search > .row {
+  margin: 0;
 }
 @media (min-width: 768px) {
   .page-icons {
@@ -9271,6 +9293,11 @@ nav {
   .jump li a.btn-gray:focus,
   .jumpbox li a.btn-gray:focus {
     color: #fff !important;
+  }
+}
+@media (max-width: 991px) {
+  .mobile-margin-top-10 {
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
