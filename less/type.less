@@ -314,6 +314,11 @@ abbr[data-original-title] {
 // Blockquotes
 
 blockquote {
+  // KU:
+  @media (min-width: @screen-sm-min) {
+    width: 48%;
+  }
+  float: right;
   position: relative;
   padding: (@line-height-computed / 2) @line-height-computed;
   margin: 0 0 @line-height-computed;
@@ -354,30 +359,30 @@ blockquote {
 // Opposite alignment of blockquote
 //
 
-.blockquote-reverse {
-  padding-right: 15px;
-  padding-left: 0;
-  border-left: 0;
-  text-align: right;
-
-  &:before {
-    top: -20px;
-    right: 0;
-    left: auto;
-  }
-  // Account for citation
-  .small,
-  footer,
-  small {
-    &:before {
-      content: '';
-    }
-
-    &:after {
-      content: '\00A0 \2014'; // nbsp, em dash
-    }
-  }
-}
+// .blockquote-reverse {
+//   padding-right: 15px;
+//   padding-left: 0;
+//   border-left: 0;
+//   text-align: right;
+//
+//   &:before {
+//     top: -20px;
+//     right: 0;
+//     left: auto;
+//   }
+//   // Account for citation
+//   .small,
+//   footer,
+//   small {
+//     &:before {
+//       content: '';
+//     }
+//
+//     &:after {
+//       content: '\00A0 \2014'; // nbsp, em dash
+//     }
+//   }
+// }
 // Addresses
 
 address {
