@@ -128,9 +128,10 @@
     // Config ZeroClipboard
     ZeroClipboard.config({
       moviePath: 'https://nanna-dk.github.io/ku.dk-bootstrap/assets/flash/ZeroClipboard.swf',
-      swfPath: '/assets/ZeroClipboard.swf',
+      swfPath: '//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.1.7/ZeroClipboard.swf',
       hoverClass: 'btn-clipboard-hover',
-      trustedDomains: [window.location.host]
+      allowScriptAccess: 'always',
+      trustedDomains: ['*']
     })
 
     // Insert copy to clipboard button before .highlight

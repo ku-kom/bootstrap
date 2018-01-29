@@ -1808,7 +1808,7 @@ blockquote {
   position: relative;
   float: right;
   padding: 9px 18px;
-  margin: 0 0 18px;
+  margin: 10px 0 10px 10px;
   font-size: 15px;
 }
 @media (min-width: 768px) {
