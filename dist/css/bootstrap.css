@@ -1807,13 +1807,13 @@ abbr[data-original-title] {
 blockquote {
   position: relative;
   float: right;
-  padding: 9px 18px;
+  padding: 9px 0 9px 18px;
   margin: 10px 0 10px 10px;
   font-size: 15px;
 }
 @media (min-width: 768px) {
   blockquote {
-    width: 48%;
+    width: 49%;
   }
 }
 blockquote:before {
@@ -1821,7 +1821,7 @@ blockquote:before {
 }
 blockquote:before {
   position: absolute;
-  top: -15px;
+  top: -12px;
   left: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
