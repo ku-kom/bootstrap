@@ -92,8 +92,33 @@ dt:first-of-type, dd:first-of-type {
   font-size: .83em;
 }
 
-.right-side .panel-default:first-child>.panel-heading {
+.right-side .panel-default>.panel-heading {
+  background-image: none;
+  background-color: #fff;
+  padding: 8px 0;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #252525;
+  letter-spacing: .6px;
   border-top: 0;
+  border-bottom: 0;
+  height: auto;
+  overflow: unset;
+
+}
+
+.right-side .panel-default>.panel-heading .panel-title {
+  font-size: 16px;
+  color: #252525;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.right-side .panel-default>.panel-body {
+    padding: 1px 0 0;
+    border-top: 1px solid #901a1e;
 }
 
 ul.workload li {
