@@ -222,10 +222,17 @@ module.exports = function (grunt) {
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
           'dist/css/faculties/*.css'
-      ]
-    },
+        ]
+      },
       docs: {
         src: ['docs/assets/css/src/docs.css']
+      },
+      fak: {
+        expand: true,
+        cwd: 'docs/assets/css/doctypes/',
+        src: ['**/*.css'],
+        dest: 'dist/css/doctypes/',
+        flatten: true
       },
       examples: {
         expand: true,
@@ -517,7 +524,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fak', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
