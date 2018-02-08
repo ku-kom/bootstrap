@@ -8145,9 +8145,6 @@ main:after,
 .media-events .media-heading a {
   color: inherit;
 }
-.custom-search-results li:nth-child(odd) {
-  background-color: #eee;
-}
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
 }
