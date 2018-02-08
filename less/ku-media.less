@@ -11,10 +11,11 @@
 // Custom sesrch pages
 
 .custom-search-results {
-  // .media-heading {
-  //   display: inline-block;
-  //   max-width: 84%;
-  // }
+  li {
+    &:nth-child(odd) {
+      background-color: @gray-lighter;
+    }
+  }
 
   .nyhedsliste_dato {
     color: @text-color!important;
