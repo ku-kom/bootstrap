@@ -1,10 +1,7 @@
 /* Datatables */
 @import url("../datatables.min.css");
 
-#medarbejdertable tr td:nth-child(4) {
-   width: 4em;
-}
-
+#medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
-   width: 4em;
+   width: 8em;
 }
