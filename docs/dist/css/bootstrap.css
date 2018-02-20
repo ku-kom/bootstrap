@@ -1609,7 +1609,7 @@ h2 {
 }
 .h3,
 h3 {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 }
 .h4,
@@ -5375,8 +5375,12 @@ html:lang(en) .navbar-inverse .topbar-logo {
     display:         flex;
   }
 }
+.breadcrumb {
+  display: none;
+}
 @media (min-width: 768px) {
   .breadcrumb {
+    display: block;
     padding: 0 15px 15px 0;
     margin-bottom: 0;
     font-size: .8em;
@@ -9143,11 +9147,13 @@ nav {
     padding-bottom: 23px;
   }
 }
-.front-page .main-content {
-  padding-top: 0;
-}
 .main-content .row + .row {
   margin-top: 23px;
+}
+@media (max-width: 992px) {
+  .main-content [class*="col-"] + [class*="col-"] {
+    margin-top: 23px;
+  }
 }
 #gridsidebar .row > [class*="col-"] {
   margin-bottom: 23px;
