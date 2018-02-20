@@ -22,7 +22,7 @@
 
   &:hover {
     img {
-      filter: brightness(90%)!important;
+      filter: brightness(90%);
     }
   }
 
@@ -261,7 +261,9 @@
         // Img inside the box adjusted by height and centered
         display: block;
         min-height: calc(100% + 1px);
-        object-fit: cover;
+        @media (max-width: @screen-xs-min) {
+          object-fit: cover;
+        }
         -ms-interpolation-mode: bicubic;
         position: absolute;
         top: 50%;
@@ -814,6 +816,7 @@
         .box2 {
           img {
             object-fit: unset;
+            max-height: none;
           }
         }
       }

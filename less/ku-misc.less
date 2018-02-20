@@ -42,16 +42,19 @@ nav {
     padding-bottom: @grid-gutter-height;
   }
 
-  .front-page & {
-    padding-top: 0;
-  }
-
   .row {
     // > [class*="col-"] {
     //   margin-bottom: @grid-gutter-height;
     // }
     + .row {
       margin-top: @grid-gutter-height;
+    }
+  }
+  @media (max-width: @screen-md-min) {
+    [class*="col-"] {
+      + [class*="col-"] {
+        margin-top: @grid-gutter-height;
+      }
     }
   }
 }

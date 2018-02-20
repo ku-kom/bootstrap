@@ -1,2 +1,7 @@
 /* Datatables */
 @import url("../datatables.min.css");
+
+#medarbejdertable tr th:nth-child(4),
+#medarbejdertable tr th:nth-child(4) input {
+   width: 8em;
+}

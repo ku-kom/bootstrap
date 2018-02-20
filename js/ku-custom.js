@@ -73,7 +73,7 @@ $(e.target)
   // Add scroller after last element
 $($scroller).appendTo('#globalfooter');
 
-  scrollFunction();
+  $(scrollFunction);
 
   window.onscroll = function () {
     scrollFunction()
