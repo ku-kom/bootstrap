@@ -2,11 +2,27 @@
 
 /*Edge-to-edge grid for eg. slider*/
 
-.FullWidthFrontpage .main-content {
-  padding-top: 0;
+.ku-branding .ku-branding-text {
+  background: url('https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg') 5px 66% no-repeat;
+  background-size: 75%;
 }
 
-.FullWidthFrontpage .breadcrumb {
+@media (min-width: 767px) {
+  .ku-branding .ku-branding-text {
+    background: url('https://bootstrap.secure.ku.dk/img/ku_header.svg') left 72% no-repeat;
+    background-size: contain;
+    height: 70px;
+    width: 38%;
+    bottom: 7px;
+  }
+}
+
+.main-content {
+  padding-top: 0;
+  padding-bottom: 23px;
+}
+
+.breadcrumbs, .local-footer, ..navbar-inverse .topbar-logo {
   display: none;
 }
 
