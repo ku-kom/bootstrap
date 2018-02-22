@@ -1,7 +1,5 @@
 /* Front page styling */
 
-/*Edge-to-edge grid for eg. slider*/
-
 .ku-branding .ku-branding-text {
   background: url('https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg') 5px 66% no-repeat;
   background-size: 75%;
@@ -27,7 +25,11 @@
   padding-bottom: 23px;
 }
 
-.breadcrumbs, .local-footer, .topbar-logo {
+.topbar-logo {
+  display: none!important;
+}
+
+.breadcrumbs, .local-footer {
   display: none;
 }
 

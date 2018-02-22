@@ -25,7 +25,11 @@
   padding-bottom: 23px;
 }
 
-.breadcrumbs, .local-footer, .topbar-logo {
+.topbar-logo {
+  display: none!important;
+}
+
+.breadcrumbs, .local-footer {
   display: none;
 }
 
