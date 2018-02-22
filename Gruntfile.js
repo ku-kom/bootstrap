@@ -227,7 +227,7 @@ module.exports = function (grunt) {
       docs: {
         src: ['docs/assets/css/src/docs.css']
       },
-      fak: {
+      doctypes: {
         expand: true,
         cwd: 'docs/assets/css/doctypes/',
         src: ['**/*.css'],
@@ -524,7 +524,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fak', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
