@@ -226,11 +226,6 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-@media (max-width: 480px) {
-  .gridbox.with-img .box2 img {
-    object-fit: cover;
-  }
-}
 .gridbox.with-img.img-left img {
   left: 0;
   -webkit-transform: translateY(-50%) translateX(0);
