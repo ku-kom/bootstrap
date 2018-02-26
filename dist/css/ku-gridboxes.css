@@ -217,6 +217,7 @@
   top: 50%;
   left: 50%;
   display: block;
+  min-width: calc(100% + 1px);
   min-height: calc(100% + 1px);
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
