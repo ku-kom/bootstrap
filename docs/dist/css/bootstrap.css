@@ -6224,6 +6224,11 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default > .panel-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  min-height: 57px;
   padding: 0;
   overflow: hidden;
   font-weight: 600;
@@ -6235,6 +6240,10 @@ button.list-group-item-danger.active:focus {
   line-height: 1.25;
   color: #252525;
   letter-spacing: .6px;
+
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 .panel-default > .panel-body {
   padding: 1px 0 0;
