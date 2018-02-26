@@ -261,9 +261,10 @@
         // Img inside the box adjusted by height and centered
         display: block;
         min-height: calc(100% + 1px);
-        @media (max-width: @screen-xs-min) {
-          object-fit: cover;
-        }
+        min-width: calc(100% + 1px);
+        // @media (max-width: @screen-xs-min) {
+        //   object-fit: cover;
+        // }
         -ms-interpolation-mode: bicubic;
         position: absolute;
         top: 50%;

@@ -217,6 +217,7 @@
   top: 50%;
   left: 50%;
   display: block;
+  min-width: calc(100% + 1px);
   min-height: calc(100% + 1px);
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
@@ -224,11 +225,6 @@
 
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}
-@media (max-width: 480px) {
-  .gridbox.with-img .box2 img {
-    object-fit: cover;
-  }
 }
 .gridbox.with-img.img-left img {
   left: 0;
