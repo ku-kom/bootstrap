@@ -1,0 +1,15 @@
+{
+  "name": "University of Copenhagen",
+  "short_name": "KU.dk",
+  "description": "Københavns Universitet er med cirka 40.000 studerende og 9.000 medarbejdere en af Nordens største forsknings- og uddannelsesinstitutioner.",
+  "start_url": "/",
+  "display": "browser",
+  "lang": "da-DK",
+  "background_color": "#fff",
+  "theme_color": "#901a1e",
+  "icons": [{
+    "src": "http://cms.ku.dk/billeder/apple-touch-icon.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }]
+}

@@ -6,7 +6,9 @@
 <meta name="description" content="Københavns Universitet er med cirka 40.000 studerende og 9.000 medarbejdere en af Nordens største forsknings- og uddannelsesinstitutioner.">
 <meta name="author" content="Københavns Universitet">
 <title>{{ page.title }} &middot; Bootstrap</title>
+<link rel="alternate" href="http://www.ku.dk" hreflang="da-dk">
 {% if site.github %}
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +35,7 @@
 <link href="{{ site.baseurl }}/dist/css/faculties/faelles.css" rel="stylesheet">
 {% endif %}
 {% else %}
+<link rel="manifest" href="../manifest.json">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="icon" href="../../images/favicons/favicon_fa.ico">
 <link href="../../dist/css/bootstrap.css" rel="stylesheet">

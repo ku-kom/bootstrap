@@ -4,6 +4,9 @@
 
 .local-footer {
   align-self: flex-end;
+    @media (max-width: @screen-xs-max) {
+      padding: 0 13px;
+    }
 
   > .row {
     margin-bottom: 10px;
@@ -229,7 +232,6 @@
             &[data-heading='open'] {
               cursor: default;
               padding-bottom: 8px;
-              padding-left: 0;
               margin-bottom: 0;
 
               &:after,
