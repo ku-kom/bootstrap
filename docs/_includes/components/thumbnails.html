@@ -2,7 +2,8 @@
   <h1 id="thumbnails" class="page-header">Thumbnails</h1>
 
   <p class="lead">Extend Bootstrap's <a href="../css/#grid">grid system</a> with the thumbnail component to easily display grids of images, videos, text, and more.</p>
-  <p>If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as <a href="http://masonry.desandro.com">Masonry</a>, <a href="http://isotope.metafizzy.co">Isotope</a>, or <a href="http://salvattore.com">Salvattore</a>.</p>
+  <p>If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as <a href="http://masonry.desandro.com">Masonry</a>, <a href="http://isotope.metafizzy.co">Isotope</a>, or
+    <a href="http://salvattore.com">Salvattore</a>.</p>
 
   <h2 id="thumbnails-default">Default example</h2>
   <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
@@ -29,32 +30,48 @@
         </a>
       </div>
     </div>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
+  </div>
+  <!-- /.bs-example -->
+  {% highlight html %}
+  <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
       <img src="..." alt="...">
     </a>
-  </div>
-  ...
-</div>
-{% endhighlight %}
-
-    <h2 id="thumbnails-custom-html5-content">Custom content using HTML5 figure tags</h2>
-    <p>With HTML5's figure tag, you can easily control content and captions.</p>
-    <div class="bs-example" data-example-id="img-with-captions">
-      <figure class="image">
-        <img src="https://placehold.it/800x200" class="figure-img" alt="A generic square placeholder image in a figure.">
-        <figcaption class="figure-caption">A caption for the above image.</figcaption>
-      </figure>
     </div>
-    {% highlight html %}
+    ...
+  </div>
+  {% endhighlight %}
+
+  <h2 id="thumbnails-custom-html5-content">Custom content using HTML5 figure tags</h2>
+  <p>With HTML5's figure tag, you can easily control content and captions.</p>
+  <div class="bs-example" data-example-id="img-with-captions">
     <figure class="image">
-      <img src="..." class="figure-img" alt="">
+      <img src="https://placehold.it/800x200" class="figure-img" alt="A generic square placeholder image in a figure.">
       <figcaption class="figure-caption">A caption for the above image.</figcaption>
     </figure>
-    {% endhighlight %}
+  </div>
+  {% highlight html %}
+  <figure class="image">
+    <img src="..." class="figure-img" alt="">
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure>
+  {% endhighlight %}
+
+  <div class="bs-example" data-example-id="img-with-captions-aligned">
+    <figure class="image pull-right">
+      <img src="https://placehold.it/800x200" class="figure-img" alt="Right-aligned figure">
+      <figcaption class="figure-caption">Right-aligned figure</figcaption>
+    </figure>
+    <p>Add <code>pull-left</code> or <code>pull-right</code> to the figure element to align the image.</p>
+  </div>
+  {% highlight html %}
+  <figure class="image pull-right">
+    <img src="..." class="figure-img" alt="">
+    <figcaption class="figure-caption">Right-aligned figure.</figcaption>
+  </figure>
+  {% endhighlight %}
+
   <h2 id="thumbnails-custom-content">Custom content</h2>
   <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
   <div class="bs-example" data-example-id="thumbnails-with-custom-content">
@@ -90,19 +107,20 @@
         </div>
       </div>
     </div>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+  </div>
+  <!-- /.bs-example -->
+  {% highlight html %}
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="..." alt="...">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-{% endhighlight %}
+  {% endhighlight %}
 </div>
