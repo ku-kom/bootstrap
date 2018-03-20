@@ -6930,7 +6930,9 @@ main:after,
 .divider:before,
 .divider:after,
 .spacer:before,
-.spacer:after {
+.spacer:after,
+.gcitem:before,
+.gcitem:after {
   display: table;
   content: " ";
 }
@@ -6953,7 +6955,8 @@ main:after,
 .ku-branding .ku-branding-line:after,
 main:after,
 .divider:after,
-.spacer:after {
+.spacer:after,
+.gcitem:after {
   clear: both;
 }
 .center-block {
