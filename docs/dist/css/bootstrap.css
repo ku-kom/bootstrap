@@ -5678,24 +5678,18 @@ figure {
   display: inline-block;
   clear: both;
 }
-.figure.pull-left,
-figure.pull-left {
-  margin-right: 10px;
-}
 @media (min-width: 768px) {
   .figure.pull-left,
   figure.pull-left {
     width: 45%;
+    margin-right: 10px;
   }
-}
-.figure.pull-right,
-figure.pull-right {
-  margin-left: 10px;
 }
 @media (min-width: 768px) {
   .figure.pull-right,
   figure.pull-right {
     width: 45%;
+    margin-left: 10px;
   }
 }
 .figure img,
@@ -5704,7 +5698,7 @@ figure img {
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .figure,
   figure {
     float: none!important;

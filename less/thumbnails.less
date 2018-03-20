@@ -41,15 +41,15 @@
   clear: both;
 
   &.pull-left {
-    margin-right: @margin10;
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: @screen-sm) {
+      margin-right: @margin10;
       width: 45%;
     }
   }
 
   &.pull-right {
-    margin-left: @margin10;
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: @screen-sm) {
+      margin-left: @margin10;
       width: 45%;
     }
   }
@@ -57,7 +57,7 @@
   img {
     .img-responsive();
   }
-  @media (max-width: @screen-sm) {
+  @media (max-width: @screen-xs-max) {
     float: none!important;
     &:extend(.clearfix all);
   }
