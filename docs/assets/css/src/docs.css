@@ -19,7 +19,7 @@
   * Sticky left menu - only for Docs section
   */
 
-.bs-docs-container #leftmenu {
+/* .bs-docs-container #leftmenu {
   position: relative;
   -webkit-transition: position .25s linear;
           transition: position .25s linear;
@@ -37,7 +37,7 @@
   background-color: #fff;
   -webkit-transition: position .25s linear;
           transition: position .25s linear;
-}
+} */
 
 /* Keep code small in tables on account of limited space */
 
