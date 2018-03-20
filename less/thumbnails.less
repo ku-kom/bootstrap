@@ -57,6 +57,10 @@
   img {
     .img-responsive();
   }
+  @media (max-width: @screen-sm) {
+    float: none!important;
+    &:extend(.clearfix all);
+  }
 }
 
 .figure-img, figure img {
