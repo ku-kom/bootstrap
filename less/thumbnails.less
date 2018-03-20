@@ -38,13 +38,20 @@
 .figure, figure {
   // Ensures the caption's text aligns with the image.
   display: inline-block;
+  clear: both;
 
   &.pull-left {
     margin-right: @margin10;
+    @media (min-width: @screen-sm-min) {
+      width: 45%;
+    }
   }
 
   &.pull-right {
     margin-left: 5px;
+    @media (min-width: @screen-sm-min) {
+      width: 45%;
+    }
   }
 
   img {
