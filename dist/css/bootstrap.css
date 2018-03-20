@@ -5079,10 +5079,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-left {
-    float: left !important;
+    float: left;
   }
   .navbar-right {
-    float: right !important;
+    float: right;
     margin-right: -13px;
   }
   .navbar-right ~ .navbar-right {
@@ -5703,6 +5703,12 @@ figure img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .figure,
+  figure {
+    float: none!important;
+  }
 }
 .figure-img,
 figure img {
@@ -6965,10 +6971,10 @@ main:after,
   margin-left: auto;
 }
 .pull-right {
-  float: right !important;
+  float: right;
 }
 .pull-left {
-  float: left !important;
+  float: left;
 }
 .hide {
   display: none !important;
@@ -8141,7 +8147,7 @@ main:after,
   }
 }
 .nyhedsliste.smal .media .nyhedsliste_dato {
-  float: right !important;
+  float: right;
   font-weight: 600;
   color: #777;
 }
@@ -9207,7 +9213,7 @@ nav {
   height: auto;
 }
 .right-side {
-  float: right !important;
+  float: right;
 }
 .gcitem + .gcitem {
   margin-top: 23px;
@@ -9242,7 +9248,7 @@ nav {
 @media (min-width: 768px) {
   .page-icons {
     display: block;
-    float: right !important;
+    float: right;
   }
   .ical a {
     font-size: 1.2em;
