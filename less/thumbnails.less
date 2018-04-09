@@ -58,8 +58,20 @@
     .img-responsive();
   }
   @media (max-width: @screen-xs-max) {
+    width: 100%;
     float: none!important;
     &:extend(.clearfix all);
+  }
+}
+
+img {
+  &.img-left {
+    float: left;
+    margin: 10px 10px 10px 0;
+  }
+  &.img-right {
+    float: right;
+    margin: 10px 0 10px 10px;
   }
 }
 

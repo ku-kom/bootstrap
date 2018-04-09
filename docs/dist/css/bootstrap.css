@@ -5702,7 +5702,16 @@ figure img {
   .figure,
   figure {
     float: none!important;
+    width: 100%;
   }
+}
+img.img-left {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+img.img-right {
+  float: right;
+  margin: 10px 0 10px 10px;
 }
 .figure-img,
 figure img {
