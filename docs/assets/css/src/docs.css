@@ -645,6 +645,7 @@ h1[id] {
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
+  overflow: hidden;
   border: 1px solid #eee;
   border-left-width: 5px;
   border-radius: 3px;

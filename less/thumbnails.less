@@ -20,9 +20,9 @@
     margin-right: auto;
   }
   // Add a hover state for linked versions only
-  a &:hover,
-  a&.active,
-  a&:focus {
+  a&:hover,
+  a&:focus,
+  a&.active {
     border-color: @link-color;
   }
   // Image captions
@@ -58,8 +58,20 @@
     .img-responsive();
   }
   @media (max-width: @screen-xs-max) {
+    width: 100%;
     float: none!important;
     &:extend(.clearfix all);
+  }
+}
+
+img {
+  &.img-left {
+    float: left;
+    margin: 10px 10px 10px 0;
+  }
+  &.img-right {
+    float: right;
+    margin: 10px 0 10px 10px;
   }
 }
 
