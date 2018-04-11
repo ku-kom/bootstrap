@@ -5680,14 +5680,20 @@ figure {
 }
 @media (min-width: 768px) {
   .figure.pull-left,
-  figure.pull-left {
+  figure.pull-left,
+  .figure.align-left,
+  figure.align-left {
+    float: left;
     width: 45%;
     margin-right: 10px;
   }
 }
 @media (min-width: 768px) {
   .figure.pull-right,
-  figure.pull-right {
+  figure.pull-right,
+  .figure.align-right,
+  figure.align-right {
+    float: right;
     width: 45%;
     margin-left: 10px;
   }

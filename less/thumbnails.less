@@ -40,17 +40,19 @@
   display: inline-block;
   clear: both;
 
-  &.pull-left {
+  &.pull-left, &.align-left {
     @media (min-width: @screen-sm) {
       margin-right: @margin10;
       width: 45%;
+      float: left;
     }
   }
 
-  &.pull-right {
+  &.pull-right, &.align-right {
     @media (min-width: @screen-sm) {
       margin-left: @margin10;
       width: 45%;
+      float: right;
     }
   }
 
