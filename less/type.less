@@ -328,7 +328,7 @@ blockquote {
 
   &:before {
     position: absolute;
-    top: -12px;
+    top: -15px;
     left: 0;
     font-size: 50px;
     color: @blockquote-icon-color;
@@ -355,6 +355,10 @@ blockquote {
     &:before {
       content: '\2014 \00A0'; // em dash, nbsp
     }
+  }
+  &.full-width {
+    width: 100%;
+    padding-left: 0;
   }
 }
 // Opposite alignment of blockquote

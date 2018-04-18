@@ -1822,7 +1822,7 @@ blockquote:before {
 }
 blockquote:before {
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -1855,6 +1855,10 @@ blockquote .small:before,
 blockquote footer:before,
 blockquote small:before {
   content: '\2014 \00A0';
+}
+blockquote.full-width {
+  width: 100%;
+  padding-left: 0;
 }
 address {
   margin-bottom: 18px;
@@ -5664,9 +5668,9 @@ a.badge:focus {
   margin-right: auto;
   margin-left: auto;
 }
-a .thumbnail:hover,
-a.thumbnail.active,
-a.thumbnail:focus {
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
   border-color: #165aad;
 }
 .thumbnail .caption {
@@ -5680,14 +5684,20 @@ figure {
 }
 @media (min-width: 768px) {
   .figure.pull-left,
-  figure.pull-left {
+  figure.pull-left,
+  .figure.align-left,
+  figure.align-left {
+    float: left;
     width: 45%;
     margin-right: 10px;
   }
 }
 @media (min-width: 768px) {
   .figure.pull-right,
-  figure.pull-right {
+  figure.pull-right,
+  .figure.align-right,
+  figure.align-right {
+    float: right;
     width: 45%;
     margin-left: 10px;
   }
@@ -5707,11 +5717,11 @@ figure img {
 }
 img.img-left {
   float: left;
-  margin: 10px 10px 10px 0;
+  margin: 5px 20px 10px 0;
 }
 img.img-right {
   float: right;
-  margin: 10px 0 10px 10px;
+  margin: 5px 0 10px 20px;
 }
 .figure-img,
 figure img {
