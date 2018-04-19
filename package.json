@@ -12,7 +12,7 @@
     "web"
   ],
   "homepage": "https://ku-kom.github.io/bootstrap/",
-  "author": "Twitter, Inc.",
+  "author": "University of Copenhagen, based on Twitter, Inc.",
   "scripts": {
     "change-version": "node grunt/change-version.js",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
