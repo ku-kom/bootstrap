@@ -64,13 +64,14 @@ slug: examples
                       <option value="theme-hum">Hum</option>
                       <option value="theme-sund">Sund</option>
                       <option value="theme-science">Science</option>
-                      <option value="theme-jur">Jura</option>
+                      <option value="theme-jura">Jura</option>
                       <option value="theme-samf">Samf</option>
                       <option value="theme-teo">Teo</option>
                       </select>
                 </div>
               </form>
             <script>
+              var isLocalhost = ($path = window.location.href.indexOf("github.io") > -1) ? false : true;
               $('#themes').on('change', getClass);
 
               function getClass(e) {
@@ -91,10 +92,18 @@ slug: examples
                   $('.ku-branding-logo img').attr('src', '../../images/branding/' + $fak + '.svg');
                 }
 
+                // Set path of FAK stylesheets
+                if ($path === true) {
+                  var $style = '../../dist/css/faculties/';
+                } else {
+                  var $style = '../../../dist/css/faculties/';
+                }
+
                 // Append faculty stylesheet
                 var $head = $("head");
                 var $headlinklast = $head.find("link[rel='stylesheet']:last");
-                var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/" + $fak + ".css' type='text/css' media='screen'>";
+
+                var linkElement = "<link rel='stylesheet' href='" + $style + "" + $fak + ".css' type='text/css' media='screen'>";
                 if ($headlinklast.length){
                    $headlinklast.after(linkElement);
                 }
