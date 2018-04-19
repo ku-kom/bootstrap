@@ -64,7 +64,7 @@ slug: examples
                       <option value="theme-hum">Hum</option>
                       <option value="theme-sund">Sund</option>
                       <option value="theme-science">Science</option>
-                      <option value="theme-jura">Jura</option>
+                      <option value="theme-jur">Jura</option>
                       <option value="theme-samf">Samf</option>
                       <option value="theme-teo">Teo</option>
                       </select>
@@ -88,6 +88,7 @@ slug: examples
 
                 // Switch branding logo
                 var $fak = classToAdd.replace('theme-', '');
+                
                 if ($('html').hasClass(classToAdd)) {
                   $('.ku-branding-logo img').attr('src', '../../images/branding/' + $fak + '.svg');
                 }
