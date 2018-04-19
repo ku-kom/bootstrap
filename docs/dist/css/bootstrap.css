@@ -1471,6 +1471,8 @@ img {
   border-radius: 50%;
 }
 hr {
+  float: left;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 18px;
   border: 0;
@@ -9226,6 +9228,10 @@ nav {
   .GridForside .double-column .col-sm-6 {
     width: 100%;
   }
+}
+.rightbox blockquote,
+.ingle-column .column1 blockquote {
+  width: 100%!important;
 }
 .divider {
   margin: 10px 0;
