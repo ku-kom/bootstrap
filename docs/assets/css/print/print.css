@@ -1,3 +1,7 @@
+@page {
+    size: A4 landscape;
+    margin: 15mm 10mm;
+}
 *, *:before, *:after {
   color: #000 !important;
   text-shadow: none !important;
