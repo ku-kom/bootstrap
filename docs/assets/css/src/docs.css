@@ -113,6 +113,10 @@ h2 code, h3 code, h4 code {
   border: 1px solid #fff;
 }
 
+.bs-example-images .img-thumbnail {
+  display: inline-block;
+}
+
 /*
  * Fancy skip link
  *
