@@ -11,8 +11,8 @@
  */
 
 .scrolltop {
-  position: fixed!important;
-  z-index: 1030!important;
+  position: fixed !important;
+  z-index: 1030 !important;
 }
 
 /*
@@ -164,7 +164,7 @@ h2 code, h3 code, h4 code {
 
 .bs-docs-nav .navbar-nav > li > a:hover, .bs-docs-nav .navbar-nav > .active > a, .bs-docs-nav .navbar-nav > .active > a:hover {
   color: #252525;
-  background-color: #f9f9f9;
+  background-color: #eee;
 }
 
 .bs-docs-nav .navbar-toggle .icon-bar {
@@ -176,8 +176,8 @@ h2 code, h3 code, h4 code {
 }
 
 .bs-docs-nav .navbar-header .navbar-toggle:hover, .bs-docs-nav .navbar-header .navbar-toggle:focus {
-  background-color: #f9f9f9;
-  border-color: #f9f9f9;
+  background-color: #eee;
+  border-color: #ddd;
 }
 
 /*
@@ -532,7 +532,7 @@ h2 code, h3 code, h4 code {
 /* Nav: second level (shown on .active) */
 
 .bs-docs-sidebar .nav .nav {
-  /*display: none; /* Hide by default, but at >768px, show it */
+  display: none; /* Hide by default, but at >768px, show it */
   padding-bottom: 10px;
 }
 
@@ -580,41 +580,35 @@ h2 code, h3 code, h4 code {
 
 /* Show and affix the side nav when space allows it */
 
-/*@media (min-width: 992px) {
+@media (min-width: 992px) {
   .bs-docs-sidebar .nav > .active > ul {
     display: block;
-  }*/
-
-/* Widen the fixed sidebar */
-
-/*.bs-docs-sidebar.affix,
-  .bs-docs-sidebar.affix-bottom {
+  }
+  /* Widen the fixed sidebar */
+  .bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
     width: 213px;
   }
   .bs-docs-sidebar.affix {
-    position: fixed; /* Undo the static from mobile first approach */
-
-/*top: 20px;
+    position: fixed;
+    /* Undo the static from mobile first approach */
+    top: 20px;
   }
   .bs-docs-sidebar.affix-bottom {
-    position: absolute; /* Undo the static from mobile first approach */
-
-/*}
-  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav,
-  .bs-docs-sidebar.affix .bs-docs-sidenav {
+    position: absolute;
+    /* Undo the static from mobile first approach */
+  }
+  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav, .bs-docs-sidebar.affix .bs-docs-sidenav {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
-@media (min-width: 1200px) {*/
 
-/* Widen the fixed sidebar again */
-
-/*.bs-docs-sidebar.affix-bottom,
-  .bs-docs-sidebar.affix {
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-docs-sidebar.affix-bottom, .bs-docs-sidebar.affix {
     width: 263px;
   }
-}*/
+}
 
 /*
  * Docs sections
@@ -873,6 +867,7 @@ h1[id] {
   border-width: 1px 0;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
 }
+
 .bs-example:before {
   display: table;
   content: " ";
