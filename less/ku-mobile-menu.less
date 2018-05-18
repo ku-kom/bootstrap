@@ -7,14 +7,7 @@
     display: none;
   }
 }
-@media (max-width: @screen-sm-max) {
-  // Hide KU language switcher icons
-  .global-sprog {
-    a {
-      background: 0;
-    }
-  }
-}
+
 /* KU theme colors for jQuery MMenu */
 
 #mobileleftmenu {
@@ -109,9 +102,6 @@
     }
 
     &.mm-opened {
-      a:not(.mm-next) {
-        font-weight: 700;
-      }
       .mm-listview {
         .mm-next {
           &::after {
@@ -185,6 +175,14 @@
   .mm-menu .mm-navbar > *,
   .mm-menu .mm-navbar a {
     color: inherit;
+  }
+
+  .mm-menu .navbar_mmenu {
+    &.mm-opened {
+      a:not(.mm-next) {
+        font-weight: 700;
+      }
+    }
   }
 
   .nyheder {

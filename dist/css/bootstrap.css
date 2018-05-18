@@ -7559,11 +7559,6 @@ main:after,
     display: none;
   }
 }
-@media (max-width: 991px) {
-  .global-sprog a {
-    background: 0;
-  }
-}
 /* KU theme colors for jQuery MMenu */
 #mobileleftmenu {
   color: #252525;
@@ -7650,9 +7645,6 @@ main:after,
 #mobileleftmenu .local1_mmenu:first-of-type {
   border-top: 0;
 }
-#mobileleftmenu .local1_mmenu.mm-opened a:not(.mm-next) {
-  font-weight: 700;
-}
 #mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
   border-color: #252525;
 }
@@ -7708,6 +7700,9 @@ main:after,
 #mobileleftmenu .mm-menu .mm-navbar > *,
 #mobileleftmenu .mm-menu .mm-navbar a {
   color: inherit;
+}
+#mobileleftmenu .mm-menu .navbar_mmenu.mm-opened a:not(.mm-next) {
+  font-weight: 700;
 }
 #mobileleftmenu .nyheder img {
   margin: 5px 5px 5px 20px;
