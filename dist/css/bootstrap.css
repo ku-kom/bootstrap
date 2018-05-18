@@ -7701,7 +7701,7 @@ main:after,
 #mobileleftmenu .mm-menu .mm-navbar a {
   color: inherit;
 }
-#mobileleftmenu .mm-menu .navbar_mmenu.mm-opened a:not(.mm-next) {
+#mobileleftmenu .navbar_mmenu.mm-opened > a:not(.mm-next) {
   font-weight: 700;
 }
 #mobileleftmenu .nyheder img {
