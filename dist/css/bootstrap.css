@@ -1453,7 +1453,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .img-thumbnail {
   display: block;
@@ -3124,7 +3124,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 select.input-lg {
   height: 43px;
@@ -3139,7 +3139,7 @@ select[multiple].input-lg {
   padding: 10px 16px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .form-group-lg select.form-control {
   height: 43px;
@@ -3897,7 +3897,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -4306,7 +4306,7 @@ tbody.collapse.in {
   padding: 10px 16px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -4380,7 +4380,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon.input-lg {
   padding: 10px 16px;
   font-size: 14px;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -5478,13 +5478,13 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
@@ -6573,7 +6573,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
+  border-radius: 2px;
   outline: 0;
   box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
@@ -6794,7 +6794,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
+  border-radius: 2px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 
   line-break: auto;
@@ -6817,7 +6817,7 @@ button.close {
   font-size: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
+  border-radius: 1px 1px 0 0;
 }
 .popover-content {
   padding: 9px 14px;
