@@ -7650,6 +7650,9 @@ main:after,
 #mobileleftmenu .local1_mmenu:first-of-type {
   border-top: 0;
 }
+#mobileleftmenu .local1_mmenu.mm-opened a:not(.mm-next) {
+  font-weight: 700;
+}
 #mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
   border-color: #252525;
 }
