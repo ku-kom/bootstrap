@@ -115,7 +115,8 @@
 <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 <!-- //Documentation extra - not for production -->
 <script src="{{ site.baseurl }}/assets/js/ku-mobile-menu.js"></script>
-{% endif %} {% if page.slug == "examples" %}
+{% endif %}
+{% if page.slug == "examples" %}
 <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
 {% endif %} {% if page.category == "kurser" %}
@@ -126,9 +127,8 @@
 <script src="../../assets/js/mmenu/jquery.mmenu.all.min.js"></script>
 <script src="../../custom/ku-mobile-menu.js"></script>
 <script src="../../assets/js/ku-global-search/search.js"></script>
-{% if page.slug != "examples" %}
-<script src="https://nanna-dk.github.io/ku.dk-bootstrap/assets/js/docs.min.js"></script>
-{% endif %} {% if page.category == "kurser" %}
+<script src="../../assets/js/docs.min.js"></script>
+{% if page.category == "kurser" %}
 <!-- Kurser.ku.dk -->
 <script src="../../assets/js/kurser.ku.dk/kurser.js"></script>
 {% endif %} {% endif %}
