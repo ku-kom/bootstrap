@@ -13,22 +13,14 @@
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style');
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      '@-ms-viewport{width:auto!important}'
-    )
-  );
+  msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
   document.querySelector('head').appendChild(msViewportStyle);
 }
 
 // Toggle class in accordions
 function toggleClass(e) {
-$(e.target)
-  .prev('.panel-heading')
-  .toggleClass('open');
-}
-
-(function($) {
+  $(e.target).prev('.panel-heading').toggleClass('open');
+}(function($) {
   // Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
   var nua = navigator.userAgent;
   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
@@ -37,29 +29,27 @@ $(e.target)
   }
 
   // Toggle icon in accordions
-  $('.panel-accordion').each(function () {
-     if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
-         $(this).find('.panel-heading').addClass('open');
-     }
- });
+  $('.panel-accordion').each(function() {
+    if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
+      $(this).find('.panel-heading').addClass('open');
+    }
+  });
   $('.panel-accordion').on('hide.bs.collapse', toggleClass);
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
   // Open / close all accordions
-  $('.closeall').click(function () {
-    $('.panel-collapse.in')
-      .collapse('hide');
+  $('.closeall').click(function() {
+    $('.panel-collapse.in').collapse('hide');
   });
-  $('.openall').click(function () {
-    $('.panel-collapse:not(".in")')
-      .collapse('show');
+  $('.openall').click(function() {
+    $('.panel-collapse:not(".in")').collapse('show');
   });
 
   // Truncate multiple lines of text in News in global menu
   var $chars = 80; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
   if ($news) {
-    $news.each(function (i, v) {
+    $news.each(function(i, v) {
       var txt = $(this).text();
       if (txt.length > $chars) {
         $(this).html($(this).html().substring(0, $chars) + '...');
@@ -67,15 +57,16 @@ $(e.target)
     });
   }
 
-  // Global smooth scroll to top
+  // Element to click for smooth scroll to top
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
   // Add scroller after last element
-$($scroller).appendTo('#globalfooter');
+  $($scroller).appendTo('#globalfooter');
 
-  $(scrollFunction);
+  // Init scroller
+  scrollFunction();
 
-  window.onscroll = function () {
+  window.onscroll = function() {
     scrollFunction()
   };
 
@@ -90,7 +81,8 @@ $($scroller).appendTo('#globalfooter');
     }
   }
 
-  $('#scrolltop').click(function () {
+  // Smooth scrolling click event
+  $('#scrolltop').click(function() {
     $('html, body').animate({
       scrollTop: 0
     }, 500);
