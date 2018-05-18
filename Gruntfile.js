@@ -138,10 +138,10 @@ module.exports = function (grunt) {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
-      customize: {
-        src: configBridge.paths.customizerJs,
-        dest: 'docs/assets/js/customize.min.js'
-      },
+      // customize: {
+      //   src: configBridge.paths.customizerJs,
+      //   dest: 'docs/assets/js/customize.min.js'
+      // },
       docsJs: {
         src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
@@ -397,20 +397,20 @@ module.exports = function (grunt) {
       }
     },
 
-    pug: {
-      options: {
-        pretty: true,
-        data: getLessVarsData
-      },
-      customizerVars: {
-        src: 'docs/_pug/customizer-variables.pug',
-        dest: 'docs/_includes/customizer-variables.html'
-      },
-      customizerNav: {
-        src: 'docs/_pug/customizer-nav.pug',
-        dest: 'docs/_includes/nav/customize.html'
-      }
-    },
+    // pug: {
+    //   options: {
+    //     pretty: true,
+    //     data: getLessVarsData
+    //   },
+    //   customizerVars: {
+    //     src: 'docs/_pug/customizer-variables.pug',
+    //     dest: 'docs/_includes/customizer-variables.html'
+    //   },
+    //   customizerNav: {
+    //     src: 'docs/_pug/customizer-nav.pug',
+    //     dest: 'docs/_includes/nav/customize.html'
+    //   }
+    // },
 
     htmllint: {
       options: {
@@ -543,7 +543,7 @@ module.exports = function (grunt) {
   // Docs task.
   grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
   grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
-  grunt.registerTask('docs-js', ['uglify:docsJs', 'uglify:customize']);
+  grunt.registerTask('docs-js', ['uglify:docsJs']); //, 'uglify:customize'
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data']);
   grunt.registerTask('docs-github', ['jekyll:github', 'htmlmin']);
