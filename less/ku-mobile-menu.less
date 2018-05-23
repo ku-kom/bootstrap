@@ -7,9 +7,7 @@
     display: none;
   }
 }
-
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -50,12 +48,10 @@
       background: @teol;
       border-top: 1px solid darken(@teol, 5%);
     }
-
     // .mm-next::after {
     //   // Arrows
     //   color: @white-color;
     // }
-
     &.mm-selected > a:not(.mm-next) {
       // selected view
       font-weight: 600;
@@ -100,16 +96,6 @@
     &:first-of-type {
       border-top: 0;
     }
-
-    // &.mm-opened {
-    //   .mm-listview {
-    //     .mm-next {
-    //       &::after {
-    //         color: @gray-dark;
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   .mm-title {
@@ -160,15 +146,16 @@
     box-shadow: none;
   }
 
-// Mmenu overrides
+  // Mmenu overrides
+
   .mm-hasnavbar-top-1 {
     .mm-panels {
-        top: 45px;
+      top: 45px;
     }
   }
-
   // Use KU Arrows
-  .local1_mmenu, .local2_mmenu {
+  .local1_mmenu,
+  .local2_mmenu {
     .mm-next {
       &::after {
         .icon;
@@ -179,12 +166,15 @@
         right: 20px;
       }
     }
-    .mm-opened {
-      >.mm-next {
-        &::after {
-          color: @gray-dark;
-          transform: rotate(90deg);
-          right: 20px;
+    // Open
+    &.mm-opened {
+      .mm-listview {
+        .mm-next {
+          &::after {
+            color: @gray-dark;
+            transform: rotate(90deg);
+            right: 20px;
+          }
         }
       }
     }

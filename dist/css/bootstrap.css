@@ -7703,8 +7703,8 @@ main:after,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#mobileleftmenu .local1_mmenu .mm-opened > .mm-next::after,
-#mobileleftmenu .local2_mmenu .mm-opened > .mm-next::after {
+#mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after,
+#mobileleftmenu .local2_mmenu.mm-opened .mm-listview .mm-next::after {
   right: 20px;
   color: #252525;
   -webkit-transform: rotate(90deg);
