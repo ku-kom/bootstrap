@@ -53,7 +53,7 @@
 
     .mm-next::after {
       // Arrows
-      border-color: @white-color;
+      color: @white-color;
     }
 
     &.mm-selected > a:not(.mm-next) {
@@ -105,7 +105,7 @@
       .mm-listview {
         .mm-next {
           &::after {
-            border-color: @gray-dark;
+            color: @gray-dark;
           }
         }
       }
@@ -160,8 +160,35 @@
     box-shadow: none;
   }
 
+// Mmenu overrides
+  .mm-hasnavbar-top-1 {
+    .mm-panels {
+        top: 45px;
+    }
+  }
+
+  // Use KU Arrows
+  .local1_mmenu, .local2_mmenu {
+    .mm-next {
+      &::after {
+        .icon;
+        content: @icon-arrow;
+        border: 0;
+        transform: rotate(0);
+      }
+    }
+    .mm-opened {
+      &>.mm-next {
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
   .search-placeholder {
-    padding: 0;
+    padding: 5px;
+    background-color: @gray-lighter;
 
     .dropdown-menu {
       padding-top: 0;
