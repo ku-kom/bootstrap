@@ -7600,10 +7600,6 @@ main:after,
   background: #66609e;
   border-top: 1px solid #5c568e;
 }
-#mobileleftmenu .local1_mmenu .mm-next::after,
-#mobileleftmenu .local2_mmenu .mm-next::after {
-  border-color: #fff;
-}
 #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
   font-weight: 600;
@@ -7645,9 +7641,6 @@ main:after,
 #mobileleftmenu .local1_mmenu:first-of-type {
   border-top: 0;
 }
-#mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
-  border-color: #252525;
-}
 #mobileleftmenu .mm-title {
   font-size: larger;
   color: #fff;
@@ -7687,8 +7680,47 @@ main:after,
   border: none;
   box-shadow: none;
 }
+#mobileleftmenu .mm-panels {
+  top: 45px!important;
+}
+#mobileleftmenu .mm-listview li .mm-next::after {
+  right: 20px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  color: #252525;
+  text-transform: none;
+  content: "\61";
+  border: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#mobileleftmenu .mm-listview li.mm-opened > .mm-next::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#mobileleftmenu .mm-listview li.mm-opened .mm-listview > .mm-next::after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+#mobileleftmenu .mm-listview li.mm-opened .mm-listview .mm-opened > .mm-next::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after,
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after {
+  color: #fff;
+}
 #mobileleftmenu .search-placeholder {
-  padding: 0;
+  padding: 5px;
+  background-color: #eee;
 }
 #mobileleftmenu .search-placeholder .dropdown-menu {
   top: 100%;
@@ -7940,6 +7972,7 @@ main:after,
   }
   html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open'] {
     padding-bottom: 8px;
+    padding-left: 0;
     margin-bottom: 0;
     cursor: default;
   }
@@ -8036,9 +8069,6 @@ main:after,
     height: 35px;
     font-size: 32px;
     background-color: #666;
-  }
-  html:not(.non-responsive) #globalfooter .social-items .footer-heading {
-    padding-left: 0;
   }
 }
 .advanced-list {

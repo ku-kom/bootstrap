@@ -7,7 +7,6 @@
     display: none;
   }
 }
-
 /* KU theme colors for jQuery MMenu */
 
 #mobileleftmenu {
@@ -51,11 +50,6 @@
       border-top: 1px solid darken(@teol, 5%);
     }
 
-    .mm-next::after {
-      // Arrows
-      border-color: @white-color;
-    }
-
     &.mm-selected > a:not(.mm-next) {
       // selected view
       font-weight: 600;
@@ -88,7 +82,7 @@
 
     > .mm-panel {
       background-color: lighten(@gray-light, 40%);
-      color: @gray-dark;
+      color: @text-color;
     }
 
     &::after {
@@ -99,16 +93,6 @@
   .local1_mmenu {
     &:first-of-type {
       border-top: 0;
-    }
-
-    &.mm-opened {
-      .mm-listview {
-        .mm-next {
-          &::after {
-            border-color: @gray-dark;
-          }
-        }
-      }
     }
   }
 
@@ -159,9 +143,65 @@
     border: none;
     box-shadow: none;
   }
+  // Mmenu overrides
+  .mm-panels {
+    top: 45px!important;
+  }
+  // Use KU Arrows
+  .mm-listview li {
+    .mm-next {
+      &::after {
+        .icon;
+        content: @icon-arrow;
+        color: @text-color;
+        border: 0;
+        transform: rotate(0);
+        right: 20px;
+      }
+    }
+
+    // Opened
+    &.mm-opened {
+      > .mm-next {
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+
+      // Sublevels
+      .mm-listview {
+        > .mm-next {
+          &::after {
+            transform: rotate(0);
+          }
+        }
+
+        // Opened
+        .mm-opened {
+          > .mm-next {
+            &::after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mm-listview {
+    > .local2_mmenu,
+    > .local1_mmenu {
+      > .mm-next {
+        &::after {
+          color: @white-color;
+        }
+      }
+    }
+  }
 
   .search-placeholder {
-    padding: 0;
+    padding: 5px;
+    background-color: @gray-lighter;
 
     .dropdown-menu {
       padding-top: 0;
