@@ -7714,8 +7714,8 @@ main:after,
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after,
-#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after {
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after,
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after {
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
