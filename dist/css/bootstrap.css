@@ -7600,10 +7600,6 @@ main:after,
   background: #66609e;
   border-top: 1px solid #5c568e;
 }
-#mobileleftmenu .local1_mmenu .mm-next::after,
-#mobileleftmenu .local2_mmenu .mm-next::after {
-  color: #fff;
-}
 #mobileleftmenu .local1_mmenu.mm-selected > a:not(.mm-next),
 #mobileleftmenu .local2_mmenu.mm-selected > a:not(.mm-next) {
   font-weight: 600;
@@ -7644,9 +7640,6 @@ main:after,
 }
 #mobileleftmenu .local1_mmenu:first-of-type {
   border-top: 0;
-}
-#mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after {
-  color: #252525;
 }
 #mobileleftmenu .mm-title {
   font-size: larger;
@@ -7692,12 +7685,14 @@ main:after,
 }
 #mobileleftmenu .local1_mmenu .mm-next::after,
 #mobileleftmenu .local2_mmenu .mm-next::after {
+  right: 20px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   line-height: 1;
+  color: #fff;
   text-transform: none;
   content: "\61";
   border: 0;
@@ -7710,6 +7705,8 @@ main:after,
 }
 #mobileleftmenu .local1_mmenu .mm-opened > .mm-next::after,
 #mobileleftmenu .local2_mmenu .mm-opened > .mm-next::after {
+  right: 20px;
+  color: #252525;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }

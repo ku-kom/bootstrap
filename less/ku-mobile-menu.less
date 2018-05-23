@@ -51,10 +51,10 @@
       border-top: 1px solid darken(@teol, 5%);
     }
 
-    .mm-next::after {
-      // Arrows
-      color: @white-color;
-    }
+    // .mm-next::after {
+    //   // Arrows
+    //   color: @white-color;
+    // }
 
     &.mm-selected > a:not(.mm-next) {
       // selected view
@@ -101,15 +101,15 @@
       border-top: 0;
     }
 
-    &.mm-opened {
-      .mm-listview {
-        .mm-next {
-          &::after {
-            color: @gray-dark;
-          }
-        }
-      }
-    }
+    // &.mm-opened {
+    //   .mm-listview {
+    //     .mm-next {
+    //       &::after {
+    //         color: @gray-dark;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   .mm-title {
@@ -174,13 +174,17 @@
         .icon;
         content: @icon-arrow;
         border: 0;
+        color: @white-color;
         transform: rotate(0);
+        right: 20px;
       }
     }
     .mm-opened {
-      &>.mm-next {
+      >.mm-next {
         &::after {
+          color: @gray-dark;
           transform: rotate(90deg);
+          right: 20px;
         }
       }
     }
