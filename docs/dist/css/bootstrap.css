@@ -7683,7 +7683,7 @@ main:after,
 #mobileleftmenu .mm-panels {
   top: 45px!important;
 }
-#mobileleftmenu .mm-listview > li .mm-next::after {
+#mobileleftmenu .mm-listview li .mm-next::after {
   right: 20px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -7702,20 +7702,20 @@ main:after,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#mobileleftmenu .mm-listview > li.mm-opened .mm-next::after {
+#mobileleftmenu .mm-listview li.mm-opened > .mm-next::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .mm-listview > li.mm-opened .mm-listview .mm-next::after {
+#mobileleftmenu .mm-listview li.mm-opened .mm-listview > .mm-next::after {
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
-#mobileleftmenu .mm-listview > li.mm-opened .mm-listview .mm-opened .mm-next::after {
+#mobileleftmenu .mm-listview li.mm-opened .mm-listview .mm-opened > .mm-next::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .local1_mmenu > .mm-next::after,
-#mobileleftmenu .local2_mmenu > .mm-next::after {
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after,
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after {
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {

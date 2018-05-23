@@ -153,7 +153,7 @@
   }
 
   // Use KU Arrows
-  .mm-listview >li {
+  .mm-listview  li {
     .mm-next {
       &::after {
         .icon;
@@ -166,7 +166,7 @@
     }
 
     &.mm-opened {
-      .mm-next {
+      >.mm-next {
         &::after {
           transform: rotate(90deg);
         }
@@ -191,14 +191,16 @@
     }
   }
 
-  .local1_mmenu,
-  .local2_mmenu {
+.mm-listview {
+  >.local1_mmenu,
+  >.local2_mmenu {
     >.mm-next {
       &::after {
         color: @white-color;
       }
     }
   }
+}
 
   .search-placeholder {
     padding: 5px;
