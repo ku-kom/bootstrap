@@ -145,12 +145,15 @@
     border: none;
     box-shadow: none;
   }
+
+
   // Mmenu overrides
   .mm-panels {
     top: 45px!important;
   }
+
   // Use KU Arrows
-  .mm-listview > li {
+  .mm-listview >li {
     .mm-next {
       &::after {
         .icon;
@@ -168,16 +171,17 @@
           transform: rotate(90deg);
         }
       }
+
       // Sublevels
       .mm-listview {
-        .mm-next {
+        >.mm-next {
           &::after {
             transform: rotate(0);
           }
         }
 
         .mm-opened {
-          .mm-next {
+          >.mm-next {
             &::after {
               transform: rotate(90deg);
             }
@@ -189,7 +193,7 @@
 
   .local1_mmenu,
   .local2_mmenu {
-    .mm-next {
+    >.mm-next {
       &::after {
         color: @white-color;
       }
