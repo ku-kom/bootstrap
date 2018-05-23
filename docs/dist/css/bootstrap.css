@@ -7680,8 +7680,8 @@ main:after,
   border: none;
   box-shadow: none;
 }
-#mobileleftmenu .mm-hasnavbar-top-1 .mm-panels {
-  top: 45px;
+#mobileleftmenu .mm-panels {
+  top: 45px!important;
 }
 #mobileleftmenu .local1_mmenu .mm-next::after,
 #mobileleftmenu .local2_mmenu .mm-next::after {
@@ -7702,6 +7702,13 @@ main:after,
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#mobileleftmenu .local1_mmenu.mm-opened .mm-next::after,
+#mobileleftmenu .local2_mmenu.mm-opened .mm-next::after {
+  right: 20px;
+  color: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 #mobileleftmenu .local1_mmenu.mm-opened .mm-listview .mm-next::after,
 #mobileleftmenu .local2_mmenu.mm-opened .mm-listview .mm-next::after {

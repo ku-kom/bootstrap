@@ -148,11 +148,10 @@
 
   // Mmenu overrides
 
-  .mm-hasnavbar-top-1 {
-    .mm-panels {
-      top: 45px;
-    }
+  .mm-panels {
+    top: 45px!important;
   }
+
   // Use KU Arrows
   .local1_mmenu,
   .local2_mmenu {
@@ -166,8 +165,16 @@
         right: 20px;
       }
     }
-    // Open
+
     &.mm-opened {
+      .mm-next {
+        &::after {
+          color: @white-color;
+          transform: rotate(90deg);
+          right: 20px;
+        }
+      }
+      // Sublevels
       .mm-listview {
         .mm-next {
           &::after {
