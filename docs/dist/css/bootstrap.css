@@ -7543,6 +7543,7 @@ main:after,
     right: 0;
     z-index: 1040;
     padding: 7px 10px;
+    margin-right: 10px;
     background-color: #777;
   }
   .leftmenu-toggle:hover {
@@ -7681,7 +7682,7 @@ main:after,
   box-shadow: none;
 }
 #mobileleftmenu .mm-panels {
-  top: 45px!important;
+  top: 45px;
 }
 #mobileleftmenu .mm-listview li .mm-next::after {
   right: 20px;
@@ -7719,7 +7720,7 @@ main:after,
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
-  padding: 5px;
+  padding: 5px 15px 5px 5px;
   background-color: #eee;
 }
 #mobileleftmenu .search-placeholder .dropdown-menu {
