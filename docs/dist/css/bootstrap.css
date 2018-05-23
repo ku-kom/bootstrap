@@ -7559,11 +7559,6 @@ main:after,
     display: none;
   }
 }
-@media (max-width: 991px) {
-  .global-sprog a {
-    background: 0;
-  }
-}
 /* KU theme colors for jQuery MMenu */
 #mobileleftmenu {
   color: #252525;
@@ -7705,6 +7700,9 @@ main:after,
 #mobileleftmenu .mm-menu .mm-navbar > *,
 #mobileleftmenu .mm-menu .mm-navbar a {
   color: inherit;
+}
+#mobileleftmenu .navbar_mmenu.mm-opened > a:not(.mm-next) {
+  font-weight: 700;
 }
 #mobileleftmenu .nyheder img {
   margin: 5px 5px 5px 20px;
@@ -8038,6 +8036,9 @@ main:after,
     height: 35px;
     font-size: 32px;
     background-color: #666;
+  }
+  html:not(.non-responsive) #globalfooter .social-items .footer-heading {
+    padding-left: 0;
   }
 }
 .advanced-list {
