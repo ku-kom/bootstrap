@@ -9531,18 +9531,18 @@ nav {
   letter-spacing: .02em;
   background-color: #f5f5f5;
 }
-.mce-content-body #content ul.full_link li:hover div {
+.mce-content-body ul.full_link li:hover div {
   background-color: #e7e6e6;
 }
-.mce-content-body #content ul.full_link div:hover {
+.mce-content-body ul.full_link div:hover {
   background-color: transparent;
 }
-.mce-content-body #content ul.advanced_list p {
+.mce-content-body ul.advanced_list p {
   padding: 0;
   margin: 0;
   line-height: 13px;
 }
-.mce-content-body #content ul.advanced_list li {
+.mce-content-body ul.advanced_list li {
   /*min-height: 80px;*/
   position: relative;
   height: 100%;
@@ -9552,14 +9552,14 @@ nav {
   list-style-type: none;
   background: right no-repeat #f5f5f5;
 }
-.mce-content-body #content ul.advanced_list h2 {
+.mce-content-body ul.advanced_list h2 {
   padding: 0;
-  margin: 0 0 4px 0;
+  margin: 0 0 4px;
   font-size: 1em;
   font-weight: 700;
   letter-spacing: .6px;
 }
-.mce-content-body #content ul.advanced_list h2 a,
-.mce-content-body #content ul.advanced_list h2 a:visited {
+.mce-content-body ul.advanced_list h2 a,
+.mce-content-body ul.advanced_list h2 a:visited {
   color: #252525;
 }
