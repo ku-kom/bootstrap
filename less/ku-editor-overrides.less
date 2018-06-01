@@ -1,0 +1,35 @@
+// --------------------------------------------------
+// Overrides for existing ku pages, eg. editor styles
+// Remove these styles when all pages use Bootstrap
+// ------------------
+
+
+// Old blockquotes inside TinyMCE
+
+.mce-content-body {
+  blockquote {
+    padding-top: 20px;
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+
+    &::before {
+      content: '\"';
+      color: #901a1e;
+      position: absolute;
+      top: 4px;
+      left: -2px;
+      font-style: italic;
+      font-size: 25px;
+      line-height: 1;
+    }
+
+    &.full-width {
+      max-width: 100%;
+      width: 100%;
+      clear: both;
+      float: none;
+    }
+  }
+}

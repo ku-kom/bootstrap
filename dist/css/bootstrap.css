@@ -9487,3 +9487,26 @@ nav {
     display: none;
   }
 }
+.mce-content-body blockquote {
+  position: relative;
+  padding-top: 20px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mce-content-body blockquote::before {
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1;
+  color: #901a1e;
+  content: '\"';
+}
+.mce-content-body blockquote.full-width {
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+}
