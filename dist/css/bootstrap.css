@@ -9493,6 +9493,7 @@ nav {
   margin: 0;
   font-size: 12px;
   font-weight: 700;
+  border-top: 1px solid #901a1e;
 }
 .mce-content-body blockquote::before {
   position: absolute;
