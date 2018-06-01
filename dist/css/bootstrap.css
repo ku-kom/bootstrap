@@ -9515,11 +9515,11 @@ nav {
   font-size: .9em;
   font-weight: normal;
 }
-.mce-content-body #content ul.advanced_list {
+.mce-content-body ul.advanced_list {
   padding: 0;
   margin: 0;
 }
-.mce-content-body #content ul.advanced_list div {
+.mce-content-body ul.advanced_list div {
   position: relative;
   width: 255px;
   /*min-height: 80px;*/
@@ -9533,9 +9533,6 @@ nav {
 }
 .mce-content-body ul.full_link li:hover div {
   background-color: #e7e6e6;
-}
-.mce-content-body ul.full_link div:hover {
-  background-color: transparent;
 }
 .mce-content-body ul.advanced_list p {
   padding: 0;
