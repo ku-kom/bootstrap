@@ -9491,7 +9491,7 @@ nav {
   position: relative;
   padding-top: 20px;
   margin: 0;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 700;
 }
 .mce-content-body blockquote::before {
@@ -9509,4 +9509,8 @@ nav {
   width: 100%;
   max-width: 100%;
   clear: both;
+}
+.mce-content-body blockquote footer {
+  font-size: .9em;
+  font-weight: normal;
 }
