@@ -9489,6 +9489,7 @@ nav {
 }
 .mce-content-body blockquote {
   position: relative;
+  float: right;
   padding-top: 20px;
   margin: 0;
   font-size: 12px;
