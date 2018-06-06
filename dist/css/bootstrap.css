@@ -7543,6 +7543,7 @@ main:after,
     right: 0;
     z-index: 1040;
     padding: 7px 10px;
+    margin-right: 10px;
     background-color: #777;
   }
   .leftmenu-toggle:hover {
@@ -7681,7 +7682,7 @@ main:after,
   box-shadow: none;
 }
 #mobileleftmenu .mm-panels {
-  top: 45px!important;
+  top: 45px;
 }
 #mobileleftmenu .mm-listview li .mm-next::after {
   right: 20px;
@@ -7719,7 +7720,7 @@ main:after,
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
-  padding: 5px;
+  padding: 5px 15px 5px 5px;
   background-color: #eee;
 }
 #mobileleftmenu .search-placeholder .dropdown-menu {
@@ -9485,4 +9486,78 @@ nav {
   .visible-desktop {
     display: none;
   }
+}
+.mce-content-body blockquote {
+  position: relative;
+  float: right;
+  padding-top: 20px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  border-top: 1px solid #901a1e;
+}
+.mce-content-body blockquote::before {
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1;
+  color: #901a1e;
+  content: '\"';
+}
+.mce-content-body blockquote.full-width {
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+}
+.mce-content-body blockquote footer {
+  font-size: .9em;
+  font-weight: normal;
+}
+.mce-content-body ul.advanced_list {
+  padding: 0;
+  margin: 0;
+}
+.mce-content-body ul.advanced_list div {
+  position: relative;
+  width: 255px;
+  /*min-height: 80px;*/
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 10px;
+  font-size: 1em;
+  line-height: 14px;
+  letter-spacing: .02em;
+  background-color: #f5f5f5;
+}
+.mce-content-body ul.full_link li:hover div {
+  background-color: #e7e6e6;
+}
+.mce-content-body ul.advanced_list p {
+  padding: 0;
+  margin: 0;
+  line-height: 13px;
+}
+.mce-content-body ul.advanced_list li {
+  /*min-height: 80px;*/
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 8px;
+  list-style-type: none;
+  background: right no-repeat #f5f5f5;
+}
+.mce-content-body ul.advanced_list h2 {
+  padding: 0;
+  margin: 0 0 4px;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+.mce-content-body ul.advanced_list h2 a,
+.mce-content-body ul.advanced_list h2 a:visited {
+  color: #252525;
 }
