@@ -8228,6 +8228,7 @@ main:after,
   display: -ms-flexbox;
   display:         flex;
   padding-top: 1px;
+  overflow: hidden;
           flex-direction: column;
   border-top: 1px solid #901a1e;
   border-bottom: 1px solid #e8e8e8;
@@ -9487,6 +9488,9 @@ nav {
     display: none;
   }
 }
+.mce-content-body {
+  /* Tables are always outlined in editor */
+}
 .mce-content-body blockquote {
   position: relative;
   float: right;
@@ -9560,4 +9564,19 @@ nav {
 .mce-content-body ul.advanced_list h2 a,
 .mce-content-body ul.advanced_list h2 a:visited {
   color: #252525;
+}
+.mce-content-body .table {
+  border: 1px solid #ddd;
+}
+.mce-content-body .table > thead > tr > th,
+.mce-content-body .table > tbody > tr > th,
+.mce-content-body .table > tfoot > tr > th,
+.mce-content-body .table > thead > tr > td,
+.mce-content-body .table > tbody > tr > td,
+.mce-content-body .table > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.mce-content-body .table > thead > tr > th,
+.mce-content-body .table > thead > tr > td {
+  border-bottom-width: 2px;
 }

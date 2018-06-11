@@ -3,6 +3,7 @@
 // Remove these styles when all pages use Bootstrap
 // ------------------
 // Old blockquotes inside TinyMCE
+
 .mce-content-body {
   blockquote {
     float: right;
@@ -37,12 +38,12 @@
     }
   }
 
-   ul.advanced_list {
+  ul.advanced_list {
     margin: 0;
     padding: 0;
   }
 
-   ul.advanced_list div {
+  ul.advanced_list div {
     width: 255px;
     font-size: 1em;
     letter-spacing: 0.02em;
@@ -87,5 +88,26 @@
   ul.advanced_list h2 a,
   ul.advanced_list h2 a:visited {
     color: #252525;
+  }
+  /* Tables are always outlined in editor */
+
+  .table {
+    border: 1px solid @table-border-color;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border: 1px solid @table-border-color;
+        }
+      }
+    }
+    > thead > tr {
+      > th,
+      > td {
+        border-bottom-width: 2px;
+      }
+    }
   }
 }
