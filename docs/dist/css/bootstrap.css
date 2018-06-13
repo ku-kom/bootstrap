@@ -9565,18 +9565,18 @@ nav {
 .mce-content-body ul.advanced_list h2 a:visited {
   color: #252525;
 }
-.mce-content-body .table {
+.mce-content-body table {
   border: 1px solid #ddd;
 }
-.mce-content-body .table > thead > tr > th,
-.mce-content-body .table > tbody > tr > th,
-.mce-content-body .table > tfoot > tr > th,
-.mce-content-body .table > thead > tr > td,
-.mce-content-body .table > tbody > tr > td,
-.mce-content-body .table > tfoot > tr > td {
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td,
+.mce-content-body table > tfoot > tr > td {
   border: 1px solid #ddd;
 }
-.mce-content-body .table > thead > tr > th,
-.mce-content-body .table > thead > tr > td {
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > thead > tr > td {
   border-bottom-width: 2px;
 }
