@@ -4457,7 +4457,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .nav > li.disabled > a {
-  color: grey-999;
+  color: #999;
 }
 .nav > li.disabled > a:focus,
 .nav > li.disabled > a:hover {
@@ -5681,8 +5681,12 @@ a.thumbnail.active {
 }
 .figure,
 figure {
-  display: inline-block;
+  display: table;
   clear: both;
+}
+.figure.image,
+figure.image {
+  width: 1px;
 }
 @media (min-width: 768px) {
   .figure.pull-left,
@@ -5690,7 +5694,6 @@ figure {
   .figure.align-left,
   figure.align-left {
     float: left;
-    width: 45%;
     margin-right: 10px;
   }
 }
@@ -5700,14 +5703,13 @@ figure {
   .figure.align-right,
   figure.align-right {
     float: right;
-    width: 45%;
     margin-left: 10px;
   }
 }
 .figure img,
 figure img {
-  display: block;
-  max-width: 100%;
+  float: none;
+  max-width: none!important;
   height: auto;
 }
 @media (max-width: 767px) {
@@ -5732,6 +5734,7 @@ figure img {
 }
 .figure-caption,
 figcaption {
+  width: 100%;
   padding-bottom: 10px;
   font-size: .9em;
   color: #777;
