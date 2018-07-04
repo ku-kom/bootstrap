@@ -4457,7 +4457,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .nav > li.disabled > a {
-  color: grey-999;
+  color: #999;
 }
 .nav > li.disabled > a:focus,
 .nav > li.disabled > a:hover {
@@ -5681,8 +5681,12 @@ a.thumbnail.active {
 }
 .figure,
 figure {
-  display: inline-block;
+  display: table;
   clear: both;
+}
+.figure.image,
+figure.image {
+  width: 1px;
 }
 @media (min-width: 768px) {
   .figure.pull-left,
@@ -5690,7 +5694,6 @@ figure {
   .figure.align-left,
   figure.align-left {
     float: left;
-    width: 45%;
     margin-right: 10px;
   }
 }
@@ -5700,14 +5703,13 @@ figure {
   .figure.align-right,
   figure.align-right {
     float: right;
-    width: 45%;
     margin-left: 10px;
   }
 }
 .figure img,
 figure img {
-  display: block;
-  max-width: 100%;
+  float: none;
+  max-width: none!important;
   height: auto;
 }
 @media (max-width: 767px) {
@@ -5732,6 +5734,7 @@ figure img {
 }
 .figure-caption,
 figcaption {
+  width: 100%;
   padding-bottom: 10px;
   font-size: .9em;
   color: #777;
@@ -8228,6 +8231,7 @@ main:after,
   display: -ms-flexbox;
   display:         flex;
   padding-top: 1px;
+  overflow: hidden;
           flex-direction: column;
   border-top: 1px solid #901a1e;
   border-bottom: 1px solid #e8e8e8;
@@ -9487,6 +9491,9 @@ nav {
     display: none;
   }
 }
+.mce-content-body {
+  /* Tables are always outlined in editor */
+}
 .mce-content-body blockquote {
   position: relative;
   float: right;
@@ -9560,4 +9567,19 @@ nav {
 .mce-content-body ul.advanced_list h2 a,
 .mce-content-body ul.advanced_list h2 a:visited {
   color: #252525;
+}
+.mce-content-body table {
+  border: 1px solid #ddd;
+}
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td,
+.mce-content-body table > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > thead > tr > td {
+  border-bottom-width: 2px;
 }
