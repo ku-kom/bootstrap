@@ -217,14 +217,11 @@
   top: 50%;
   left: 50%;
   display: block;
-  min-width: calc(100% + 1px);
-  min-height: calc(100% + 1px);
+  min-width: 100% ;
+  min-height: 100%;
   -ms-interpolation-mode: bicubic;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
-
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 .gridbox.with-img.img-left img {
   left: 0;
@@ -434,6 +431,14 @@
 .boxlink:focus,
 .boxlink:hover {
   text-decoration: none;
+}
+.boxlink:active .gridbox img,
+.boxlink:focus .gridbox img,
+.boxlink:hover .gridbox img {
+          filter: brightness(90%);
+
+  -webkit-filter: brightness(90%);
+  -webkit-backface-visibility: hidden;
 }
 /*
 * Mobile: All column types must behave like single column boxes

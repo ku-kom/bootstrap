@@ -260,8 +260,8 @@
       img {
         // Img inside the box adjusted by height and centered
         display: block;
-        min-height: calc(100% + 1px);
-        min-width: calc(100% + 1px);
+        min-height: 100%;
+        min-width: 100% ;
         // @media (max-width: @screen-xs-min) {
         //   object-fit: cover;
         // }
@@ -270,8 +270,6 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        // Prevent image from moving in some cases
-        backface-visibility: hidden;
       }
     }
     // Position image left
@@ -519,11 +517,20 @@
   &:focus,
   &:hover {
     text-decoration: none;
+
+    .gridbox {
+      img {
+        filter: brightness(90%);
+        // Prevent image from moving when using the filter above:
+        -webkit-backface-visibility: hidden;
+      }
+    }
   }
 }
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gcrow .gccolumn .gridbox {
   .all-single-column();
 
