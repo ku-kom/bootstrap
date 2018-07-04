@@ -214,14 +214,14 @@
 }
 .gridbox.with-img .box2 img {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   display: block;
   min-width: 100% ;
   min-height: 100%;
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(0) translateX(-50%);
+          transform: translateY(0) translateX(-50%);
 }
 .gridbox.with-img.img-left img {
   left: 0;
