@@ -9491,9 +9491,6 @@ nav {
     display: none;
   }
 }
-.mce-content-body {
-  /* Tables are always outlined in editor */
-}
 .mce-content-body blockquote {
   position: relative;
   float: right;
@@ -9530,7 +9527,6 @@ nav {
 .mce-content-body ul.advanced_list div {
   position: relative;
   width: 255px;
-  /*min-height: 80px;*/
   height: 100%;
   box-sizing: border-box;
   padding: 5px 5px 5px 10px;
@@ -9548,7 +9544,6 @@ nav {
   line-height: 13px;
 }
 .mce-content-body ul.advanced_list li {
-  /*min-height: 80px;*/
   position: relative;
   height: 100%;
   box-sizing: border-box;
