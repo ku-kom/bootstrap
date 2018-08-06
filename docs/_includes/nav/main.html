@@ -7,24 +7,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="{% if site.github %}{{ site.baseurl }}{% else %}../{% endif %}" class="navbar-brand">KU Bootstrap</a>
+      <a href="{{ site.baseurl }}/" class="navbar-brand">KU Bootstrap</a>
     </div>
     <nav id="bs-navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li{% if page.slug == "getting-started" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}/getting-started.html{% else %}../getting-started/{% endif %}">Getting started</a>
+          <a href="{{ site.baseurl }}/getting-started{% if site.github %}.html{% endif %}">Getting started</a>
         </li>
         <li{% if page.slug == "css" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}/css.html{% else %}../css/{% endif %}">CSS</a>
+          <a href="{{ site.baseurl }}/css{% if site.github %}.html{% endif %}">CSS</a>
         </li>
         <li{% if page.slug == "components" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}/components.html{% else %}../components/{% endif %}">Components</a>
+          <a href="{{ site.baseurl }}/components{% if site.github %}.html{% endif %}">Components</a>
         </li>
         <li{% if page.slug == "js" %} class="active"{% endif %}>
-          <a href="{% if site.github %}{{ site.baseurl }}/javascript.html{% else %}../javascript/{% endif %}">JavaScript</a>
+          <a href="{{ site.baseurl }}/javascript{% if site.github %}.html{% endif %}">JavaScript</a>
         </li>
         <li{% if page.slug=="examples" %} class="active" {% endif %}>
-        <a href="{% if site.github %}{{ site.baseurl }}/examples/ku-default{% else %}../examples/ku-default/{% endif %}">KU templates</a>
+        <a href="{{ site.baseurl }}/examples/ku-default{% if site.github %}.html{% endif %}">KU templates</a>
         </li>
       </ul>
     </nav>

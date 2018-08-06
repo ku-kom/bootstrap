@@ -6,8 +6,8 @@ title: ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
   <div class="container ku-branding">
     <div class="ku-branding-line">
       <div class="ku-branding-logo">
-        <a title="Forsiden af ku.dk" href="/">
-          <img class="logo-img" src="{% if site.github %}{{ site.baseurl }}{% else %}../..{% endif %}/images/branding/faelles.svg" alt="Københavns Universitet">
+        <a title="Forsiden af ku.dk" href="/bootstrap">
+          <img class="logo-img" src="{% if site.github %}{{ site.baseurl }}{% else %}../../bootstrap{% endif %}/images/branding/faelles.svg" alt="Københavns Universitet">
         </a>
       </div>
       <div class="ku-branding-text">
@@ -25,19 +25,19 @@ title: ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
           </div>
           <ul id="leftmenu" class="nav exclude">
             <li{% if page.slug=="getting-started" %} class="active" {% endif %}>
-            <a href="{% if site.github %}{{ site.baseurl }}/getting-started.html{% else %}../getting-started/{% endif %}">Getting started</a>
+            <a href="{{ site.baseurl }}/getting-started{% if site.github %}.html{% endif %}">Getting started</a>
             </li>
             <li{% if page.slug=="css" %} class="active" {% endif %}>
-            <a href="{% if site.github %}{{ site.baseurl }}/css.html{% else %}../css/{% endif %}">CSS</a>
+            <a href="{{ site.baseurl }}/css{% if site.github %}.html{% endif %}">CSS</a>
             </li>
             <li{% if page.slug=="components" %} class="active" {% endif %}>
-            <a href="{% if site.github %}{{ site.baseurl }}/components.html{% else %}../components/{% endif %}">Components</a>
+            <a href="{{ site.baseurl }}/components{% if site.github %}.html{% endif %}">Components</a>
             </li>
             <li{% if page.slug=="js" %} class="active" {% endif %}>
-            <a href="{% if site.github %}{{ site.baseurl }}/javascript.html{% else %}../javascript/{% endif %}">JavaScript</a>
+            <a href="{{ site.baseurl }}/javascript{% if site.github %}.html{% endif %}">JavaScript</a>
             </li>
             <li{% if page.slug=="examples" %} class="active" {% endif %}>
-            <a href="{% if site.github %}{{ site.baseurl }}/examples/ku-default{% else %}../examples/ku-default/{% endif %}">KU templates</a>
+            <a href="{{ site.baseurl }}/examples/ku-default{% if site.github %}.html{% endif %}">KU templates</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@ title: ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
             <p>This style guide is based on <a href="http://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap v{{ site.current_version }}</a>. All solutions must be created to integrate seamlessly with these design principles:</p>
             <ul>
               <li>Full documentation and source code at GitHub <a href="https://github.com/ku-kom/bootstrap"> can be found here</a>.</li>
-              <li>Page templates for University of Copenhagen <a href="{% if site.github %}{{ site.baseurl }}/examples/ku-default{% else %}../examples/ku-default/{% endif %}">can be found here</a>.</li>
+              <li>Page templates for University of Copenhagen <a href="{{ site.baseurl }}/examples/ku-default">can be found here</a>.</li>
               <li>
                 <p>CSS and javaScript: All external solutions must link to the same master stylesheet:</p>
                 <p>CSS: <code>https://cms.ku.dk/bootstrap/dist/css/bootstrap.min.css</code></p>

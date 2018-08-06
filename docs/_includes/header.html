@@ -13,54 +13,51 @@
 <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 <link href="{{ site.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/mmenu/jquery.mmenu.css" rel="stylesheet">
-{% if page.slug == "examples" %}
-<link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/dist/css/datatables.min.css" rel="stylesheet">
-{% endif %}
-{% if page.category == "non-responsive" %}
-<link href="{{ site.baseurl }}/assets/css/non-responsive/non-responsive.css" rel="stylesheet">
-{% endif %}
-{% if page.slug != "examples" %}
-<!-- Documentation extras - not for production -->
-<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
-<!-- //Documentation extras - not for production -->
-<link href="{{ site.baseurl }}/assets/css/print/print.css" media="print" rel="stylesheet">
-{% endif %}
-{% if page.category == "kurser" %}
-<!-- Kurser.ku.dk -->
-<link href="{{ site.baseurl }}/assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
-{% endif %}
-{% if page.category == "gridbox" %}
-<link href="{{ site.baseurl }}/dist/css/faculties/faelles.css" rel="stylesheet">
-{% endif %}
+  {% if page.slug == "examples" %}
+  <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/dist/css/multiple-select.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/dist/css/datatables.min.css" rel="stylesheet">
+  {% endif %}
+  {% if page.slug != "examples" %}
+  <!-- Documentation extras - not for production -->
+  <link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+  <!-- //Documentation extras - not for production -->
+  <link href="{{ site.baseurl }}/assets/css/print/print.css" media="print" rel="stylesheet">
+  {% endif %}
+  {% if page.category == "kurser" %}
+  <!-- Kurser.ku.dk -->
+  <link href="{{ site.baseurl }}/assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
+  {% endif %}
+  {% if page.category == "gridbox" %}
+  <link href="{{ site.baseurl }}/dist/css/faculties/faelles.css" rel="stylesheet">
+  {% endif %}
 {% else %}
-<link rel="manifest" href="../../manifest.json">
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<link rel="icon" type="image/x-icon" href="../../images/favicons/favicon_fa.ico">
-<link href="../../dist/css/bootstrap.css" rel="stylesheet">
-<link href="../../assets/css/mmenu/jquery.mmenu.css" rel="stylesheet">
-{% if page.slug != "examples" %}
-<!-- Documentation extras - not for production -->
-<link href="../../assets/css/docs.min.css" rel="stylesheet">
-<!-- //Documentation extras - not for production -->
-{% endif %}
-{% if page.slug == "examples" %}
-<link href="../../dist/css/ku-gridboxes.css" rel="stylesheet">
-<link href="../../assets/css/multiple-select/multiple-select.css" rel="stylesheet">
-<link href="../../assets/css/datatables/datatables.css" rel="stylesheet">
-{% endif %}
-{% if page.category == "non-responsive" %}
-<link href="../../assets/css/non-responsive/non-responsive.css" rel="stylesheet">
-{% endif %}
-{% if page.category == "kurser" %}
-<!-- Kurser.ku.dk -->
-<link href="../../assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
-{% endif %}
-{% if page.category == "gridbox" %}
-<link href="{{ site.baseurl }}../../dist/css/faculties/faelles.css" rel="stylesheet">
-{% endif %}
-<link href="../../assets/css/print/print.css" media="print" rel="stylesheet">
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+<link href="{{ site.baseurl }}/dist/css/bootstrap.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/mmenu/jquery.mmenu.css" rel="stylesheet">
+  {% if page.slug != "examples" %}
+  <!-- Documentation extras - not for production -->
+  <link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+  <!-- //Documentation extras - not for production -->
+  {% endif %}
+  {% if page.slug == "examples" %}
+  <link href="{{ site.baseurl }}/dist/css/ku-gridboxes.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/multiple-select/multiple-select.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/datatables/datatables.css" rel="stylesheet">
+  {% endif %}
+  {% if page.category == "kurser" %}
+  <!-- Kurser.ku.dk -->
+  <link href="{{ site.baseurl }}/assets/css/kurser.ku.dk/kurser.css" rel="stylesheet">
+  {% endif %}
+  {% if page.category == "gridbox" %}
+  <link href="{{ site.baseurl }}../../dist/css/faculties/faelles.css" rel="stylesheet">
+  {% endif %}
+  {% if page.category == "non-responsive" %}
+  <link href="{{ site.baseurl }}/assets/css/non-responsive/non-responsive.css" rel="stylesheet">
+  {% endif %}
+<link href="{{ site.baseurl }}/assets/css/print/print.css" media="print" rel="stylesheet">
 {% endif %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 {% if site.github %}
@@ -70,22 +67,22 @@
 <!--[if lt IE 9]>
 <script src="{{ site.baseurl }}/assets/js/ie8-responsive-file-warning.js"></script>
 <![endif]-->
-{% if page.slug == "examples"%}
-<!-- Bootstrap add-ons -->
-<script src="{{ site.baseurl }}/dist/js/bootstrap-datetimepicker.min.js"></script>
-<script src="{{ site.baseurl }}/dist/js/multiple-select.min.js"></script>
-<script src="{{ site.baseurl }}/dist/js/datatables.min.js"></script>
-{% endif %}
+  {% if page.slug == "examples"%}
+  <!-- Bootstrap add-ons -->
+  <script src="{{ site.baseurl }}/dist/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="{{ site.baseurl }}/dist/js/multiple-select.min.js"></script>
+  <script src="{{ site.baseurl }}/dist/js/datatables.min.js"></script>
+  {% endif %}
 {% else %}
 <!--[if lt IE 9]>
-<script src="../assets/js/ie8-responsive-file-warning.js"></script>
+<script src="{{ site.baseurl }}/assets/js/ie8-responsive-file-warning.js"></script>
 <![endif]-->
-{% if page.slug == "examples"%}
-<!-- Bootstrap add-ons -->
-<script src="../../assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
-<script src="../../assets/js/multiple-select/multiple-select.js"></script>
-<script src="../../assets/js/datatables/datatables.js"></script>
-{% endif %}
+  {% if page.slug == "examples"%}
+  <!-- Bootstrap add-ons -->
+  <script src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/multiple-select/multiple-select.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/datatables/datatables.js"></script>
+  {% endif %}
 {% endif %}
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
