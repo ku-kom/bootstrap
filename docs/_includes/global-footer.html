@@ -111,23 +111,20 @@
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 {% else %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
+{% if page.slug != "examples" %}
+<!-- Documentation extra - not for production -->
 <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
+<!-- //Documentation extra - not for production -->
+{% endif %}
  {% endif %}
-   {% if page.slug == "examples" %}
-   <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
-   <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
-   {% endif %}
-  {% if page.slug != "examples" %}
-  <!-- Documentation extra - not for production -->
-  <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
-  <!-- //Documentation extra - not for production -->
-  <script src="{{ site.baseurl }}/assets/js/ku-mobile-menu.js"></script>
-  {% endif %}
   {% if page.category == "kurser" %}
   <!-- Kurser.ku.dk -->
   <script src="{{ site.baseurl }}/assets/js/kurser.ku.dk/kurser.min.js"></script>
   {% endif %}
-<script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
+  {% if page.slug == "examples" %}
+  <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
+  <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
+  {% endif %}
 <script src="{{ site.baseurl }}/assets/js/ku-global-search/search.js"></script>
 <script>
   // Only use under development - set active left menu item
