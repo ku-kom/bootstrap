@@ -1853,20 +1853,13 @@ if (typeof jQuery === 'undefined') {
 *
  * ========================================================================*/
 
-// Fix viewport width on Windows Phone: http://getbootstrap.com/getting-started/#support-ie10-width
-
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style');
-  msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
-  document.querySelector('head').appendChild(msViewportStyle);
-}
-
 (function($) {
-  // Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
-  var nua = navigator.userAgent;
-  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
-  if (isAndroid) {
-    $('select.form-control').removeClass('form-control').css('width', '100%');
+
+  var editMode;
+  if ($('html').hasClass('ku-bs')) {
+    // False if in Obvius editor mode (Bootstrap templates has class .ku-bs but not in backend).
+    // Use this variable to determine if certain stuff should run or load.
+    editMode = false;
   }
 
   // Toggle icon in accordions
@@ -1908,20 +1901,23 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
   // Add scroller after last element
-  $($scroller).appendTo('#globalfooter');
-
-  var $scroll = $('#scrolltop');
+  if (editMode === false) {
+    $($scroller).appendTo('#globalfooter');
+  }
 
   // Init scroller
   scrollFunction();
 
+  // Run on scroll
   window.onscroll = function() {
     scrollFunction()
   };
 
+  // Show/hide scroller
   function scrollFunction() {
-    if ($scroll) {
-      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    var $scroll = $('#scrolltop');
+    if (editMode === false && $scroll) {
+      if (document.documentElement.scrollTop > 60) {
         $scroll.addClass('in');
       } else {
         $scroll.removeClass('in');
@@ -1929,7 +1925,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     }
   }
 
-  // Smooth scrolling click event
+  // Smooth scrolling to top on click event
   $('#scrolltop').click(function() {
     $('html, body').animate({
       scrollTop: 0
@@ -1937,7 +1933,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     return false;
   });
 
-  /* Animate scrolling on anchors */
+  // Animate scrolling on anchors in general
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -1953,4 +1949,4 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     }
   });
 
-})(jQuery);
+ })(jQuery);
