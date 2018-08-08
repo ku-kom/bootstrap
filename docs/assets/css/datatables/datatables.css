@@ -300,6 +300,9 @@ html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:aft
   content: "Hide details";
 }
 
+.dataTable >tbody>tr>td.dataTables_empty:after {
+  display: none;
+}
 .dataTable.dtr-inline.collapsed>tbody>tr>td.child:first-child {
   padding-bottom: 10px;
 }
