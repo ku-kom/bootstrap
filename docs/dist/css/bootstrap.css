@@ -7866,25 +7866,6 @@ main:after,
   color: #e2e2e2;
   text-decoration: none;
 }
-#globalfooter ul.footerlinks li .padlock::after {
-  position: relative;
-  top: 0;
-  margin-left: 5px;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  color: #fff;
-  text-transform: none;
-  content: "\64";
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .social-items {
   width: 80%;
 }
