@@ -4,9 +4,9 @@
 
 .local-footer {
   align-self: flex-end;
-    @media (max-width: @screen-xs-max) {
-      padding: 0 @grid-gutter-by-half;
-    }
+  @media (max-width: @screen-xs-max) {
+    padding: 0 @grid-gutter-by-half;
+  }
 
   > .row {
     margin-bottom: 10px;
@@ -136,16 +136,12 @@
         }
       }
 
-      // .padlock::after {
-      //   .icon;
-      //   content: @icon-padlock;
-      //   position: relative;
-      //   top: 0;
-      //   font-size: 15px;
-      //   color: @white-color;
-      //   margin-left: 5px;
-      //   position: relative;
-      // }
+      .icon-padlock {
+        &:before {
+          font-size: 15px;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }
