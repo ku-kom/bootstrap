@@ -8132,8 +8132,6 @@ main:after,
 }
 .media-list .media {
   padding-bottom: 10px;
-}
-.ku-bs .media-list .media {
   border-bottom: 1px solid #ccc;
 }
 .media-list .media .media-heading {
