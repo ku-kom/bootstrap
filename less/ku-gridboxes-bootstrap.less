@@ -22,7 +22,7 @@
 
   &:hover {
     img {
-      filter: brightness(90%);
+      filter: brightness(90%) blur(0);
     }
   }
 
@@ -261,17 +261,15 @@
         // Img inside the box adjusted by height and centered
         display: block;
         min-height: 100%;
-        min-width: 100% ;
+        min-width: 100%;
         // @media (max-width: @screen-xs-min) {
         //   object-fit: cover;
         // }
         -ms-interpolation-mode: bicubic;
         position: absolute;
-        // top: 50%;
-        top: 0;
+        top: 50%;
         left: 50%;
-        // transform: translateY(-50%) translateX(-50%);
-        transform: translateY(0) translateX(-50%) translate3d(0,0,0);
+        transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
         filter: blur(0);
         image-rendering: -webkit-optimize-contrast;
       }

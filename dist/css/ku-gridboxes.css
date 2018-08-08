@@ -28,9 +28,9 @@
       -ms-flex-direction: column;
 }
 .gridbox:hover img {
-          filter: brightness(90%);
+          filter: brightness(90%) blur(0);
 
-  -webkit-filter: brightness(90%);
+  -webkit-filter: brightness(90%) blur(0);
 }
 .gridbox.subcolor_5 {
   background: #eee;
@@ -214,15 +214,15 @@
 }
 .gridbox.with-img .box2 img {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   display: block;
-  min-width: 100% ;
+  min-width: 100%;
   min-height: 100%;
           filter: blur(0);
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateY(0) translateX(-50%) translate3d(0, 0, 0);
-          transform: translateY(0) translateX(-50%) translate3d(0, 0, 0);
+  -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
+          transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
 
   -webkit-filter: blur(0);
   image-rendering: -webkit-optimize-contrast;
