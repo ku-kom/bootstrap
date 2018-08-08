@@ -1861,10 +1861,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   document.querySelector('head').appendChild(msViewportStyle);
 }
 
-// Toggle class in accordions
-function toggleClass(e) {
-  $(e.target).prev('.panel-heading').toggleClass('open');
-}(function($) {
+(function($) {
   // Fix for select boxes on Android 4.1: http://getbootstrap.com/getting-started/#support-android-stock-browser
   var nua = navigator.userAgent;
   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
@@ -1878,6 +1875,12 @@ function toggleClass(e) {
       $(this).find('.panel-heading').addClass('open');
     }
   });
+
+  // Toggle class in accordions
+  function toggleClass(e) {
+    $(e.target).prev('.panel-heading').toggleClass('open');
+  }
+
   $('.panel-accordion').on('hide.bs.collapse', toggleClass);
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
@@ -1907,6 +1910,8 @@ function toggleClass(e) {
   // Add scroller after last element
   $($scroller).appendTo('#globalfooter');
 
+  var $scroll = $('#scrolltop');
+
   // Init scroller
   scrollFunction();
 
@@ -1915,7 +1920,6 @@ function toggleClass(e) {
   };
 
   function scrollFunction() {
-    var $scroll = $('#scrolltop');
     if ($scroll) {
       if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         $scroll.addClass('in');
@@ -1931,6 +1935,22 @@ function toggleClass(e) {
       scrollTop: 0
     }, 500);
     return false;
+  });
+
+  /* Animate scrolling on anchors */
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length
+        ? target
+        : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
   });
 
 })(jQuery);
