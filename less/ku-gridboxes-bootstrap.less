@@ -800,7 +800,7 @@
       }
     }
   }
-  // Outline arrow style for singel column spans
+  // Outline arrow style for single column spans
   .double-column [class*=column],
   .one-two-column .column1,
   .quad-column [class*=column],
@@ -897,6 +897,30 @@
         .box2 {
           flex: 1;
           order: 2;
+        }
+      }
+    }
+  }
+  // Styling for 3/1 columns with .size1 boxes on full width page (front page)
+  .FullWidthFrontpage {
+    .one-three-column .column2,
+    .three-one-column .column1 {
+      .gridbox {
+        &.size1 {
+          flex-direction: row;
+
+          .box1 {
+            order: 1;
+          }
+
+          .text {
+            display: block;
+          }
+
+          .box2 {
+            order: 2;
+            flex: 0 0 50%;
+          }
         }
       }
     }
