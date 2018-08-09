@@ -155,9 +155,9 @@
   /*Target first row*/
   .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
     padding-right: 0;
-    margin-left: -13px;
-    margin-right: 0;
+    padding-left: 0;
     width: 100vw;
+    max-width: 100%;
   }
   .jumpboard {
     padding: 0;

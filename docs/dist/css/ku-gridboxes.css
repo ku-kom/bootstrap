@@ -963,6 +963,10 @@
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
   }
+  .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box2 img,
+  .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box2 img {
+    max-width: none;
+  }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img {
             flex-direction: column;

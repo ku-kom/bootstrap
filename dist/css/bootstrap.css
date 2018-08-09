@@ -9466,11 +9466,6 @@ nav {
 .main-content .row + .row {
   margin-top: 23px;
 }
-@media (max-width: 992px) {
-  .main-content [class*="col-"] + [class*="col-"] {
-    margin-top: 23px;
-  }
-}
 #gridsidebar .row > [class*="col-"] {
   margin-bottom: 23px;
 }
