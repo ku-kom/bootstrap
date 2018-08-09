@@ -470,6 +470,39 @@ slug: examples
               </div>
             </div>
           </div>
+          <div class="row gcrow one-three-column">
+            <div class="gccolumn column1 col-xs-12 col-sm-6 col-md-3">
+              <div class="gccolumn-inner">
+                <div class="gcitem html">
+                  <a href="#" class="boxlink">
+                    <div class="gridbox with-img size1">
+                      <div class="box1">
+                        <div class="header-small">Tema
+                          <div class="date">10/10 2018</div>
+                        </div>
+                        <div class="header">Har du en ide til sundhed</div>
+                        <div class="text">Måske kan idéen føre os til ny viden og give os nye måder at gøre tingene på.</div>
+                      </div>
+                      <div class="box2"><img src="https://cms.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="550x300"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="gccolumn column2 col-xs-12 col-sm-6 col-md-9">
+              <div class="gccolumn-inner">
+                <div class="gcitem html">
+                  <a href="#" class="boxlink"> <div class="gridbox size1 with-img">
+                    <div class="box1">
+                      <div class="header-small">Tema
+                        <div class="date">10/10 2018</div>
+                      </div><div class="header"><span>Facebook gør dig #ulykkelig og #ensom</span></div> <div class="text">3,5 millioner danskere har en Facebook-profil og de fleste af os tjekker den dagligt eller endda mange gange om dagen. Men den konstante strøm af venners baby-billeder, skiferier og job-successer ser ud til at gøre os mindre tilfredse med vores egne liv.</div> </div>
+                    <div class="box2"><img src="http://cms.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="550x300"></div> </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -482,7 +515,7 @@ $(function () {
   var $head = $("head");
   // Append faculty stylesheet
   var $headlinklast = $head.find("link[rel='stylesheet']:last");
-  var linkElement = "<link rel='stylesheet' href='../../../dist/css/faculties/faelles.css' type='text/css'><link rel='stylesheet' href='../../../dist/css/doctypes/fullwidthfrontpage.css' type='text/css'>";
+  var linkElement = "<link rel='stylesheet' href='{{ site.baseurl }}/dist/css/faculties/faelles.css' type='text/css'><link rel='stylesheet' href='{{ site.baseurl }}/dist/css/doctypes/fullwidthfrontpage.css' type='text/css'>";
   if ($headlinklast.length){
      $headlinklast.after(linkElement);
   }
