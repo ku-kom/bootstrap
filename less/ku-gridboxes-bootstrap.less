@@ -264,9 +264,9 @@
         -ms-interpolation-mode: bicubic;
         position: absolute;
         // top: 50%;
-        // left: 50%;
+        left: 50%;
         // transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+        transform: translateX(-50%) translate3d(0,0,0);
         backface-visibility: hidden;
         filter: brightness(100%) blur(0);
         //image-rendering: -webkit-optimize-contrast;
@@ -803,6 +803,7 @@
       &.with-img {
         .box2 {
           img {
+            min-width: 100%;
             top: 50%;
             left: 50%;
             transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
