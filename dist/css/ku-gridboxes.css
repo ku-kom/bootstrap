@@ -213,6 +213,7 @@
 }
 .gridbox.with-img .box2 img {
   position: absolute;
+  top: 0;
   left: 50%;
   display: block;
   min-height: 100%;
