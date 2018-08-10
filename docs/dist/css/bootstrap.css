@@ -9726,6 +9726,7 @@ nav {
   }
 }
 .mce-content-body#content {
+  display: block;
   width: 100%;
   max-width: none;
   padding: 5px;
