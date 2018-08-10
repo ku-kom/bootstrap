@@ -9725,6 +9725,14 @@ nav {
     display: none;
   }
 }
+.mce-content-body#content {
+  width: 100%;
+  max-width: none;
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+  background-color: #fff;
+}
 .mce-content-body blockquote {
   position: relative;
   float: right;
