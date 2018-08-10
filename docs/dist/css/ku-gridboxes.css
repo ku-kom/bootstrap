@@ -228,10 +228,14 @@
 }
 .gridbox.with-img.img-left img {
   left: 0;
+  -webkit-transform: translateX(0) translate3d(0, 0, 0);
+          transform: translateX(0) translate3d(0, 0, 0);
 }
 .gridbox.with-img.img-right img {
   right: 0;
   left: auto;
+  -webkit-transform: translateX(0) translate3d(0, 0, 0);
+          transform: translateX(0) translate3d(0, 0, 0);
 }
 .gridbox:not(.with-img) .box1 {
   -webkit-box-flex: 1;
