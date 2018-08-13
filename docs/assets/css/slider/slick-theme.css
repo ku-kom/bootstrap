@@ -64,8 +64,8 @@
 
 /* Slider gallery end */
 
-@media (min-width: 481px) and (max-width: 768px) {
-  /* Slider height for oPad */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Slider height for iPad */
   .slide-wrapper {
     height: 289px;
     background: #eee;
