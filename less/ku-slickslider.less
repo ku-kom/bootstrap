@@ -84,9 +84,9 @@
     position: relative;
   }
 
-  [dir="rtl"] & {
-    float: right;
-  }
+  // [dir="rtl"] & {
+  //   float: right;
+  // }
 
   img {
     display: block;
@@ -183,13 +183,16 @@
   }
 
   &:before {
-    font-size: 40px;
-    line-height: 1;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
     opacity: 0.75;
     color: @white-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Glyphicons Halflings';
+    font-family: @custom-icon-font-family-name;
   }
 }
 
@@ -199,7 +202,9 @@
       left: 0;
 
       &:before {
-        content: "\e257";
+        content: @icon-arrow;
+        transform: rotate(180deg) translate3d(0,0,0);
+        display: inline-block;
       }
     }
 
@@ -207,7 +212,7 @@
       right: 0;
 
       &:before {
-        content: "\e258";
+        content: @icon-arrow;
       }
     }
 
@@ -223,25 +228,25 @@
       }
     }
 
-    [dir='rtl'] {
-      .slick-prev {
-        right: 0;
-        left: auto;
-
-        &:before {
-          content: "\e258";
-        }
-      }
-
-      .slick-next {
-        right: auto;
-        left: 0;
-
-        &:before {
-          content: "\e257";
-        }
-      }
-    }
+    // [dir='rtl'] {
+    //   .slick-prev {
+    //     right: 0;
+    //     left: auto;
+    //
+    //     &:before {
+    //       content: "\e258";
+    //     }
+    //   }
+    //
+    //   .slick-next {
+    //     right: auto;
+    //     left: 0;
+    //
+    //     &:before {
+    //       content: "\e257";
+    //     }
+    //   }
+    // }
   }
 }
 // Dots

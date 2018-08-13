@@ -75,14 +75,13 @@ category: slider
 <script type="text/javascript" src="../../assets/js/slider/slick.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick.css">');
     $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
     var $slideshow = $('.slideshow');
     $slideshow.on('init', function(event, slick) {
       $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
     });
     $slideshow.slick({
-      autoplay: true,
+      //autoplay: true,
       dots: true,
       fade: true,
       arrows: true,

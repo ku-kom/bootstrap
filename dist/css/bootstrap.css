@@ -1352,6 +1352,11 @@ template {
 .icon-arrow:before {
   content: "\61";
 }
+.icon-arrow-back:before {
+  content: "\61";
+  -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
+          transform: rotate(180deg) translate3d(0, 0, 0);
+}
 .icon-quote:before {
   content: "\71";
 }
@@ -5347,16 +5352,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
   width: 75%;
   background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
 }
-@media (min-width: 767px) {
-  html:lang(en) .navbar-inverse .topbar-logo {
-    width: 60%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  html:lang(en) .navbar-inverse .topbar-logo {
-    width: 36%;
-  }
-}
 @media (min-width: 992px) {
   html:lang(en) .navbar-inverse .topbar-logo {
     width: 28%;
@@ -8413,11 +8408,6 @@ main:after,
 .slide-wrapper {
   visibility: hidden;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .slide-wrapper {
-    height: 289px;
-  }
-}
 .slick-slider {
   position: relative;
   display: block;
@@ -8493,9 +8483,6 @@ main:after,
   position: relative;
   height: 100%;
   overflow: hidden;
-}
-[dir="rtl"] .slick-slide {
-  float: right;
 }
 .slick-slide img {
   position: relative;
@@ -8579,10 +8566,13 @@ main:after,
   opacity: 1;
 }
 .slick-arrow:before {
-  font-family: 'Glyphicons Halflings';
-  font-size: 40px;
-  line-height: 1;
+  font-family: "ku-symbols";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
   color: #fff;
+  text-transform: none;
   opacity: .75;
 
   -webkit-font-smoothing: antialiased;
@@ -8592,33 +8582,22 @@ main:after,
   left: 0;
 }
 .slick-slider:hover .slick-prev:before {
-  content: "\e257";
+  display: inline-block;
+  content: "\61";
+  -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
+          transform: rotate(180deg) translate3d(0, 0, 0);
 }
 .slick-slider:hover .slick-next {
   right: 0;
 }
 .slick-slider:hover .slick-next:before {
-  content: "\e258";
+  content: "\61";
 }
 .slick-slider:hover .slick-prev.slick-disabled:before {
   opacity: .25;
 }
 .slick-slider:hover .slick-next.slick-disabled:before {
   opacity: .25;
-}
-.slick-slider:hover [dir='rtl'] .slick-prev {
-  right: 0;
-  left: auto;
-}
-.slick-slider:hover [dir='rtl'] .slick-prev:before {
-  content: "\e258";
-}
-.slick-slider:hover [dir='rtl'] .slick-next {
-  right: auto;
-  left: 0;
-}
-.slick-slider:hover [dir='rtl'] .slick-next:before {
-  content: "\e257";
 }
 .slick-dots {
   position: absolute;
