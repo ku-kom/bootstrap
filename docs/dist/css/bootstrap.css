@@ -8413,6 +8413,11 @@ main:after,
 .slide-wrapper {
   visibility: hidden;
 }
+@media (min-width: 480px) and (max-width: 767px) {
+  .slide-wrapper {
+    height: 289px;
+  }
+}
 .slick-slider {
   position: relative;
   display: block;

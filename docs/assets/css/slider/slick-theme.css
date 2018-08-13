@@ -64,6 +64,14 @@
 
 /* Slider gallery end */
 
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Slider height for oPad */
+  .slide-wrapper {
+    height: 289px;
+    background: #eee;
+  }
+}
+
 /* Custom captions */
 
 .slick-slide .caption {
