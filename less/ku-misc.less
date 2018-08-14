@@ -90,6 +90,13 @@ nav {
   margin-top: @grid-gutter-height;
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+  .gccolumn {
+    &[class^="col-"][class$="-12"] {
+      // Stacking full width columns i tablet view
+      margin-top: @grid-gutter-height;
+    }
+  }
+
   .GridForside {
     // Double columns must span 100% in tablet view (but not the full-width template - hence this hack.)
     .double-column .col-sm-6 {
@@ -98,8 +105,8 @@ nav {
   }
 }
 
-
-.rightbox, .ingle-column .column1 {
+.ingle-column .column1,
+.rightbox {
   blockquote {
     width: 100%!important;
   }
@@ -245,6 +252,7 @@ nav {
   }
 }
 // Global scroll to top
+
 .scrolltop {
   position: fixed;
   bottom: 3%;

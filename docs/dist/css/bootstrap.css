@@ -9585,12 +9585,15 @@ nav {
   margin-top: 23px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
+  .gccolumn[class^="col-"][class$="-12"] {
+    margin-top: 23px;
+  }
   .GridForside .double-column .col-sm-6 {
     width: 100%;
   }
 }
-.rightbox blockquote,
-.ingle-column .column1 blockquote {
+.ingle-column .column1 blockquote,
+.rightbox blockquote {
   width: 100%!important;
 }
 .divider {

@@ -872,11 +872,11 @@
         -ms-flex-direction: row;
   }
   .single-column .column1 .size1.with-img .header {
-    padding-top: 5px;
+    margin-top: 5px;
   }
   .single-column .column1 .size1.with-img .box1 {
     max-width: 390px;
-    padding: 0 24px 10px 0;
+    padding: 0 24px 10px 15px;
 
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 51.6%;
