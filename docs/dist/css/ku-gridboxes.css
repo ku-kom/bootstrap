@@ -214,14 +214,15 @@
 .gridbox.with-img .box2 img {
   position: absolute;
   top: 0;
-  left: 50%;
+  bottom: 0;
   display: block;
   min-height: 100%;
           filter: brightness(100%) blur(0);
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateX(-50%) translate3d(0, 0, 0);
-          transform: translateX(-50%) translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 
+  object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-filter: brightness(100%) blur(0);
@@ -841,6 +842,18 @@
   .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_6::before,
   .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_6::before {
     color: #252525;
+  }
+  .double-column [class*=column] .gridbox.size2.text-over.with-img,
+  .one-two-column .column1 .gridbox.size2.text-over.with-img,
+  .quad-column [class*=column] .gridbox.size2.text-over.with-img,
+  .triple-column [class*=column] .gridbox.size2.text-over.with-img,
+  .two-one-column .column2 .gridbox.size2.text-over.with-img,
+  .double-column [class*=column] .gridbox.size3.text-over.with-img,
+  .one-two-column .column1 .gridbox.size3.text-over.with-img,
+  .quad-column [class*=column] .gridbox.size3.text-over.with-img,
+  .triple-column [class*=column] .gridbox.size3.text-over.with-img,
+  .two-one-column .column2 .gridbox.size3.text-over.with-img {
+    background: none;
   }
   .double-column [class*=column] .gridbox.with-img .box2 img {
     top: 50%;

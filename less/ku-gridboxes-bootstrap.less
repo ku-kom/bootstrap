@@ -262,11 +262,13 @@
         min-height: 100%;
         // min-width: 100%;
         -ms-interpolation-mode: bicubic;
+        object-fit: cover;
         position: absolute;
         top: 0;
-        left: 50%;
+        //left: 50%;
+        bottom: 0;
         // transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
-        transform: translateX(-50%) translate3d(0,0,0);
+        transform: translate3d(0,0,0);
         backface-visibility: hidden;
         filter: brightness(100%) blur(0);
         //image-rendering: -webkit-optimize-contrast;
@@ -794,6 +796,10 @@
             }
           }
         }
+        &.text-over.with-img {
+          // Trying to fix visible background behind image
+          background: none;
+        }
       }
     }
   }
@@ -954,7 +960,6 @@
 
   &:hover {
     text-decoration: none;
-
     .gridbox {
       img {
         filter: brightness(90%) blur(0);

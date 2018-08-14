@@ -8568,11 +8568,7 @@ main:after,
 .slick-arrow:before {
   font-family: "ku-symbols";
   font-size: 32px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
   color: #fff;
-  text-transform: none;
   opacity: .75;
 
   -webkit-font-smoothing: antialiased;
