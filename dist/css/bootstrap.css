@@ -8198,7 +8198,7 @@ main:after,
   margin-top: 0;
 }
 .search-news {
-  padding: 7px 15px;
+  padding: 7px 15px!important;
 }
 .search-news form {
   display: -webkit-box;
