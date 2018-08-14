@@ -116,18 +116,24 @@
   margin-top: 0;
 }
 
-// Search news forms 
+// Search news forms
 
 .search-news {
-  display: flex;
-
-  .search-news-query {
-    // Shrink and grow as needed, but never shrink so small that we can't read the placeholder
-    flex: 1 0 8em;
+  form {
+    display: flex;
+    @media only screen and (min-width: @screen-sm-max) {
+      height: 29px;
+    }
   }
 
-  .soegeknap {
-    // Never shrink or grow
+  .search-news-query {
+    flex: 1 0 8em;
+    @media only screen and (min-width: @screen-sm-max) {
+      height: 100%;
+    }
+  }
+
+  .btn {
     flex: 0 0 auto;
   }
 }

@@ -8197,11 +8197,16 @@ main:after,
 .eventdate {
   margin-top: 0;
 }
-.search-news {
+.search-news form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+@media only screen and (min-width: 991px) {
+  .search-news form {
+    height: 29px;
+  }
 }
 .search-news .search-news-query {
   -webkit-box-flex: 1;
@@ -8209,7 +8214,12 @@ main:after,
       -ms-flex: 1 0 8em;
           flex: 1 0 8em;
 }
-.search-news .soegeknap {
+@media only screen and (min-width: 991px) {
+  .search-news .search-news-query {
+    height: 100%;
+  }
+}
+.search-news .btn {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
