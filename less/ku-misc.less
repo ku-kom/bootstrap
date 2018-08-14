@@ -86,8 +86,11 @@ nav {
 }
 // KU grid:
 
-.gcitem + .gcitem {
-  margin-top: @grid-gutter-height;
+.gcitem {
+  &:extend(.clearfix all);
+  & + .gcitem {
+    margin-top: @grid-gutter-height;
+  }
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
   .gccolumn {
@@ -324,8 +327,4 @@ nav {
   .visible-desktop {
     display: none;
   }
-}
-
-.gcitem {
-  &:extend(.clearfix all);
 }

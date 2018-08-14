@@ -102,7 +102,6 @@ h6 {
 p {
   margin: 10px 0;
 }
-
 // .lead {
 //   margin-bottom: @line-height-computed;
 //   font-size: floor((@font-size-base * 1.167));
@@ -322,7 +321,7 @@ blockquote {
   float: right;
   position: relative;
   padding: (@line-height-computed / 2) 0 (@line-height-computed / 2) @line-height-computed;
-  margin:  10px 0 10px 10px;
+  margin: 10px 0 10px 10px;
   font-size: @blockquote-font-size;
   .icon-quote;
 
@@ -356,6 +355,7 @@ blockquote {
       content: '\2014 \00A0'; // em dash, nbsp
     }
   }
+
   &.full-width {
     width: 100%;
     padding-left: 0;
@@ -363,7 +363,6 @@ blockquote {
 }
 // Opposite alignment of blockquote
 //
-
 // .blockquote-reverse {
 //   padding-right: 15px;
 //   padding-left: 0;
@@ -394,4 +393,16 @@ address {
   margin-bottom: @line-height-computed;
   font-style: normal;
   line-height: @line-height-base;
+}
+// KU:
+
+h2 {
+  &.deloverskrift {
+    font-size: 1.85em;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+    margin: 0;
+    padding: 10px 5px 8px 0;
+    border-bottom: 1px solid #bebebe;
+  }
 }

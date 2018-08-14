@@ -1350,6 +1350,7 @@ template {
   background-color: #901a1e;
 }
 .icon-arrow:before {
+  text-transform: none;
   content: "\61";
 }
 .icon-arrow-back:before {
@@ -1871,6 +1872,14 @@ address {
   margin-bottom: 18px;
   font-style: normal;
   line-height: 1.5;
+}
+h2.deloverskrift {
+  padding: 10px 5px 8px 0;
+  margin: 0;
+  font-size: 1.85em;
+  line-height: 1.2;
+  letter-spacing: .7px;
+  border-bottom: 1px solid #bebebe;
 }
 code,
 kbd,
@@ -6141,8 +6150,10 @@ button.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
-  margin-bottom: 18px;
   background-color: #fff;
+}
+.panel + .panel {
+  margin-top: 23px;
 }
 .panel-body {
   padding: 10px;
@@ -6937,12 +6948,12 @@ button.close {
 .ku-branding .ku-branding-line:after,
 main:before,
 main:after,
+.gcitem:before,
+.gcitem:after,
 .divider:before,
 .divider:after,
 .spacer:before,
-.spacer:after,
-.gcitem:before,
-.gcitem:after {
+.spacer:after {
   display: table;
   content: " ";
 }
@@ -6964,9 +6975,9 @@ main:after,
 .modal-footer:after,
 .ku-branding .ku-branding-line:after,
 main:after,
+.gcitem:after,
 .divider:after,
-.spacer:after,
-.gcitem:after {
+.spacer:after {
   clear: both;
 }
 .center-block {
@@ -8197,8 +8208,11 @@ main:after,
 .eventdate {
   margin-top: 0;
 }
+.readAll {
+  margin-bottom: 0;
+}
 .search-news {
-  padding: 7px 15px!important;
+  padding: 5px 15px!important;
 }
 .search-news form {
   display: -webkit-box;
@@ -8208,7 +8222,7 @@ main:after,
 }
 @media only screen and (min-width: 991px) {
   .search-news form {
-    height: 29px;
+    height: 30px;
   }
 }
 .search-news .search-news-query {
@@ -8231,7 +8245,7 @@ main:after,
 @media only screen and (min-width: 991px) {
   .search-news .btn {
     height: 100%;
-    padding-top: 3px;
+    padding-top: 4px;
   }
 }
 .media-events .media-heading a {
@@ -8364,6 +8378,7 @@ main:after,
   }
 }
 .entries .entry > a:before {
+  text-transform: none;
   content: "\61";
 }
 .entries .entry > a:hover {
