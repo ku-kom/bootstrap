@@ -119,6 +119,7 @@
 // Search news forms
 
 .search-news {
+  padding: 7px 15px;
   form {
     display: flex;
     @media only screen and (min-width: @screen-sm-max) {
@@ -127,7 +128,7 @@
   }
 
   .search-news-query {
-    flex: 1 0 8em;
+    flex: 1 0 235px;
     @media only screen and (min-width: @screen-sm-max) {
       height: 100%;
     }
@@ -135,5 +136,9 @@
 
   .btn {
     flex: 0 0 auto;
+    @media only screen and (min-width: @screen-sm-max) {
+      height: 100%;
+      padding-top: 3px;
+    }
   }
 }

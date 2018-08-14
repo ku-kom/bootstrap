@@ -8197,6 +8197,9 @@ main:after,
 .eventdate {
   margin-top: 0;
 }
+.search-news {
+  padding: 7px 15px;
+}
 .search-news form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8210,9 +8213,9 @@ main:after,
 }
 .search-news .search-news-query {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 8em;
-      -ms-flex: 1 0 8em;
-          flex: 1 0 8em;
+  -webkit-flex: 1 0 235px;
+      -ms-flex: 1 0 235px;
+          flex: 1 0 235px;
 }
 @media only screen and (min-width: 991px) {
   .search-news .search-news-query {
@@ -8224,6 +8227,12 @@ main:after,
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+@media only screen and (min-width: 991px) {
+  .search-news .btn {
+    height: 100%;
+    padding-top: 3px;
+  }
 }
 .media-events .media-heading a {
   color: inherit;
