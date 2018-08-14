@@ -8213,9 +8213,9 @@ main:after,
 }
 .search-news .search-news-query {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 235px;
-      -ms-flex: 1 0 235px;
-          flex: 1 0 235px;
+  -webkit-flex: 1 0 210px;
+      -ms-flex: 1 0 210px;
+          flex: 1 0 210px;
 }
 @media only screen and (min-width: 991px) {
   .search-news .search-news-query {

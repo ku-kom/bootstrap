@@ -855,6 +855,12 @@
   .two-one-column .column2 .gridbox.size3.text-over.with-img {
     background: none;
   }
+  .double-column [class*=column] .gridbox.with-img .box1 {
+    padding-top: 0;
+  }
+  .double-column [class*=column] .gridbox.with-img .header {
+    padding-top: 5px;
+  }
   .double-column [class*=column] .gridbox.with-img .box2 img {
     top: 50%;
     left: 50%;
