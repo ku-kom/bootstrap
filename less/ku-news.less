@@ -43,7 +43,6 @@
     }
   }
 }
-
 // Nyhedsliste - midterkolonne:
 
 .nyhedsliste {
@@ -115,4 +114,20 @@
 
 .eventdate {
   margin-top: 0;
+}
+
+// Search news forms 
+
+.search-news {
+  display: flex;
+
+  .search-news-query {
+    // Shrink and grow as needed, but never shrink so small that we can't read the placeholder
+    flex: 1 0 8em;
+  }
+
+  .soegeknap {
+    // Never shrink or grow
+    flex: 0 0 auto;
+  }
 }

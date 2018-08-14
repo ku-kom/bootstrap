@@ -1,0 +1,73 @@
+// KU Bokstoppe til sociale integrationer
+
+.social-embed {
+  padding-bottom: 5px;
+  &:before {
+    .icon;
+    margin: 0 5px 0 0;
+    position: relative;
+    font-size: 36px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.twitter {
+    border-bottom: 1px solid @ku-twitter;
+
+    &:before {
+      content: @icon-twitter;
+      color: @ku-twitter;
+      top: 5px;
+    }
+
+    h2 {
+      color: @ku-twitter;
+    }
+  }
+
+  &.facebook {
+    border-bottom: 1px solid @ku-facebook;
+
+    &:before {
+      content: @icon-facebook;
+      color: @ku-facebook;
+    }
+
+    h2 {
+      color: @ku-facebook;
+    }
+  }
+
+  &.futurity {
+    border-bottom: 1px solid @ku-futurity;
+
+    &:before {
+      content: @icon-futurity;
+      color: @ku-futurity;
+    }
+
+    h2 {
+      color: @ku-futurity;
+    }
+  }
+
+  &.conversation {
+    border-bottom: 1px solid @ku-conversation;
+
+    &:before {
+      content: @icon-conversation;
+      color: @ku-conversation;
+      top: 5px;
+    }
+
+    h2 {
+      color: @ku-conversation;
+    }
+  }
+}

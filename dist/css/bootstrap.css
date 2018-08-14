@@ -1281,13 +1281,13 @@ template {
   content: "\66";
 }
 .icon-facebook:hover {
-  background-color: #3e5a98;
+  background-color: #4267b2;
 }
 .icon-futurity:before {
   content: "\75";
 }
 .icon-futurity:hover {
-  background-color: #f7ba20;
+  background-color: #ffa64d;
 }
 .icon-instagram:before {
   content: "\69";
@@ -1299,7 +1299,7 @@ template {
   content: "\74";
 }
 .icon-twitter:hover {
-  background-color: #2ca8df;
+  background-color: #1da1f2;
 }
 .icon-rss:before {
   content: "\72";
@@ -1329,7 +1329,7 @@ template {
   content: "\6f";
 }
 .icon-conversation:hover {
-  background-color: #d7352a;
+  background-color: #d20b17;
 }
 .icon-vimeo:before {
   content: "\62";
@@ -8197,6 +8197,24 @@ main:after,
 .eventdate {
   margin-top: 0;
 }
+.search-news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.search-news .search-news-query {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 8em;
+      -ms-flex: 1 0 8em;
+          flex: 1 0 8em;
+}
+.search-news .soegeknap {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
 .media-events .media-heading a {
   color: inherit;
 }
@@ -8223,6 +8241,22 @@ main:after,
   -ms-flex-align: start;
           align-items: flex-start;
 }
+.entries:before,
+.entries:after {
+  display: table;
+  content: " ";
+}
+.entries:after {
+  clear: both;
+}
+.entries:before,
+.entries:after {
+  display: table;
+  content: " ";
+}
+.entries:after {
+  clear: both;
+}
 .theme-samf .entries {
   border-top: 1px solid #e13718;
 }
@@ -8240,22 +8274,6 @@ main:after,
 }
 .theme-teo .entries {
   border-top: 1px solid #66609e;
-}
-.entries:before,
-.entries:after {
-  display: table;
-  content: " ";
-}
-.entries:after {
-  clear: both;
-}
-.entries:before,
-.entries:after {
-  display: table;
-  content: " ";
-}
-.entries:after {
-  clear: both;
 }
 @media only screen and (min-width: 992px) {
   .entries {
@@ -9373,6 +9391,74 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   .privacy-policy {
     display: none;
   }
+}
+.social-embed {
+  padding-bottom: 5px;
+}
+.social-embed:before {
+  position: relative;
+  margin: 0 5px 0 0;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.social-embed h2 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+.social-embed.twitter {
+  border-bottom: 1px solid #1da1f2;
+}
+.social-embed.twitter:before {
+  top: 5px;
+  color: #1da1f2;
+  content: "\74";
+}
+.social-embed.twitter h2 {
+  color: #1da1f2;
+}
+.social-embed.facebook {
+  border-bottom: 1px solid #4267b2;
+}
+.social-embed.facebook:before {
+  color: #4267b2;
+  content: "\66";
+}
+.social-embed.facebook h2 {
+  color: #4267b2;
+}
+.social-embed.futurity {
+  border-bottom: 1px solid #ffa64d;
+}
+.social-embed.futurity:before {
+  color: #ffa64d;
+  content: "\75";
+}
+.social-embed.futurity h2 {
+  color: #ffa64d;
+}
+.social-embed.conversation {
+  border-bottom: 1px solid #d20b17;
+}
+.social-embed.conversation:before {
+  top: 5px;
+  color: #d20b17;
+  content: "\6f";
+}
+.social-embed.conversation h2 {
+  color: #d20b17;
 }
 #pagewrapper {
   display: -webkit-box;
