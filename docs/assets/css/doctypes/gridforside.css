@@ -1,1 +1,6 @@
-
+@media (min-width: 480px) and (max-width: 757px) {
+  /* Double columns must span 100% in tablet view (but not the full-width template - hence this hack.) */
+  .GridForside .double-column .col-sm-6 {
+    width: 100%;
+  }
+}
