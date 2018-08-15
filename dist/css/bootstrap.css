@@ -9597,6 +9597,9 @@ nav {
 .right-side {
   float: right;
 }
+.gcitem {
+  position: relative;
+}
 .gcitem + .gcitem {
   margin-top: 23px;
 }
