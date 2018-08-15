@@ -1329,7 +1329,7 @@ template {
   content: "\6f";
 }
 .icon-conversation:hover {
-  background-color: #d20b17;
+  background-color: #d8352a;
 }
 .icon-vimeo:before {
   content: "\62";
@@ -9484,15 +9484,15 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   color: #ffa64d;
 }
 .social-embed.conversation {
-  border-bottom: 1px solid #d20b17;
+  border-bottom: 1px solid #d8352a;
 }
 .social-embed.conversation:before {
   top: 5px;
-  color: #d20b17;
+  color: #d8352a;
   content: "\6f";
 }
 .social-embed.conversation h2 {
-  color: #d20b17;
+  color: #d8352a;
 }
 #pagewrapper {
   display: -webkit-box;
