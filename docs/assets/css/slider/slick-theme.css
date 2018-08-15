@@ -67,8 +67,10 @@
 @media (min-width: 768px) and (max-width: 992px) {
   /* Slider height for iPad */
   .slide-wrapper {
-    height: 289px;
     background: #eee;
+  }
+  .slick-track {
+    height: 289px;
   }
 }
 
@@ -87,6 +89,16 @@
   z-index: 2;
   padding: 15px;
   border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 992px) {
+  .slick-slide.slick-current .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .7);
+  }
 }
 
 .slick-slide.slick-current:hover .caption {
@@ -97,14 +109,14 @@
   margin-top: 0;
 }
 
-.slick-slider .text-bottom .caption {
+.slick-slider .text-bottom.caption {
   bottom: 0;
   left: 0;
   color: #fff;
   background: rgba(64, 116, 157, .8);
 }
 
-.slick-slider .text-right-short .caption {
+.slick-slider .text-right-short.caption {
   left: auto;
   right: 0;
   top: auto;
@@ -115,7 +127,7 @@
   background: rgba(119, 172, 179, .8);
 }
 
-.slick-slider .text-left .caption {
+.slick-slider .text-left.caption {
   left: 0;
   right: auto;
   top: 0;
@@ -123,7 +135,7 @@
   background: rgba(68, 68, 68, .8);
 }
 
-.slick-slider .text-left-short .caption {
+.slick-slider .text-left-short.caption {
   color: #fff;
   background: rgba(68, 68, 68, .8);
 }
@@ -132,17 +144,17 @@
   .gallery-nav .slick-slide {
     min-width: 25% !important;
   }
-  .slick-slider .text-right-short .caption {
+  .slick-slider .text-right-short.caption {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 50%;
   }
-  .slick-slider .text-left .caption {
+  .slick-slider .text-left.caption {
     width: 50%;
     height: 100%;
   }
-  .slick-slider .text-left-short .caption {
+  .slick-slider .text-left-short.caption {
     height: 70%;
     top: 50%;
     -webkit-transform: translateY(-50%);
