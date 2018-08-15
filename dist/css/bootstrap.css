@@ -9428,6 +9428,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 }
 .social-embed {
   padding-bottom: 5px;
+  background-color: #fff;
 }
 .social-embed:before {
   position: relative;
