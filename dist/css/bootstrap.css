@@ -9926,3 +9926,7 @@ nav {
 .mce-content-body table > thead > tr > td {
   border-bottom-width: 2px;
 }
+#gridcontent-dialog-edit-flexiblebox .image-alignment-picker .radio:first-child .control-label {
+  padding-left: 0;
+  font-weight: 600;
+}
