@@ -86,7 +86,6 @@
   width: 100%;
   color: #252525;
   line-height: 1.333333;
-  z-index: 2;
   padding: 15px;
   border: 1px solid #ddd;
   background: rgba(255, 255, 255, 1);
@@ -97,7 +96,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 2;
     background: rgba(255, 255, 255, .7);
+    border: 0;
   }
 }
 
