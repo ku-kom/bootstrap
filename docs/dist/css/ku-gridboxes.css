@@ -213,14 +213,15 @@
 }
 .gridbox.with-img .box2 img {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   display: block;
-  min-height: 100%;
+  max-width: none;
+  max-height: 100%;
           filter: brightness(100%) blur(0);
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
+          transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
 
   object-fit: cover;
   -webkit-backface-visibility: hidden;
