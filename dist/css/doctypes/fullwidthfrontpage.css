@@ -138,7 +138,7 @@ html:lang(en) .ku-branding .ku-branding-text {
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
+  .jumpcolumn:nth-child(3), .jumpcolumn:nth-child(4) {
     padding-top: 23px;
   }
   .jumpboard:after {
@@ -153,15 +153,6 @@ html:lang(en) .ku-branding .ku-branding-text {
   }
   .jumpboard .jumpcolumn {
     border-right: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .jumpboard {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
   }
 }
 
