@@ -20,9 +20,9 @@
     margin-right: auto;
   }
   // Add a hover state for linked versions only
-  a&:hover,
-  a&:focus,
-  a&.active {
+  a &:hover,
+  a&.active,
+  a&:focus {
     border-color: @link-color;
   }
   // Image captions
@@ -35,8 +35,10 @@
 // Figures
 //
 
-.figure, figure {
+.figure,
+figure {
   // Ensures the caption's text aligns with the image.
+  margin: 0;
   display: table;
   clear: both;
 
@@ -45,14 +47,16 @@
     width: 1px;
   }
 
-  &.pull-left, &.align-left {
+  &.align-left,
+  &.pull-left {
     @media (min-width: @screen-sm) {
       margin-right: @margin10;
       float: left;
     }
   }
 
-  &.pull-right, &.align-right {
+  &.align-right,
+  &.pull-right {
     @media (min-width: @screen-sm) {
       margin-left: @margin10;
       float: right;
@@ -61,7 +65,7 @@
 
   img {
     float: none;
-    max-width: none!important;
+    max-width: 100%;
     height: auto;
   }
   @media (max-width: @screen-xs-max) {
@@ -76,21 +80,26 @@ img {
     float: left;
     margin: 5px 20px 10px 0;
   }
+
   &.img-right {
     float: right;
     margin: 5px 0 10px 20px;
   }
 }
 
-.figure-img, figure img {
+.figure-img,
+figure img {
   margin-bottom: 8px;
   line-height: 1;
 }
 
-.figure-caption, figcaption {
+.figure-caption,
+figcaption {
   font-size: @figure-caption-font-size;
   color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;
   padding-bottom: 10px;
   width: 100%;
+  display: table-caption;
+  caption-side: bottom;
 }

@@ -5713,7 +5713,7 @@ figure.image {
 .figure img,
 figure img {
   float: none;
-  max-width: none!important;
+  max-width: 100%;
   height: auto;
 }
 @media (max-width: 767px) {
@@ -5738,10 +5738,12 @@ figure img {
 }
 .figure-caption,
 figcaption {
+  display: table-caption;
   width: 100%;
   padding-bottom: 10px;
   font-size: .9em;
   color: #777;
+  caption-side: bottom;
   border-bottom: 1px solid #dfdfdf;
 }
 .alert {
