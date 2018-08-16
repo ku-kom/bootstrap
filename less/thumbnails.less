@@ -42,16 +42,19 @@ figure {
   display: table;
   clear: both;
 
-  // &.image {
-  //   // Makes figcaption fit image width
-  //   width: 1px;
-  // }
+  &.image {
+    // Makes figcaption fit image width
+    min-width: 1px;
+  }
 
   &.align-left,
   &.pull-left {
     @media (min-width: @screen-sm) {
       margin-right: @margin10;
       float: left;
+    }
+    img {
+      margin: 5px 20px 10px 0;
     }
   }
 
@@ -61,6 +64,9 @@ figure {
       margin-left: @margin10;
       float: right;
     }
+    img {
+      margin: 5px 0 10px 20px;
+    }
   }
 
   img {
@@ -68,24 +74,23 @@ figure {
     max-width: 100%;
     height: auto;
   }
-  @media (max-width: @screen-xs-max) {
-    width: 100%;
-    float: none!important;
-    &:extend(.clearfix all);
-  }
+  // @media (max-width: @screen-xs-max) {
+  //   float: none!important;
+  //   &:extend(.clearfix all);
+  // }
 }
 
-img {
-  &.img-left {
-    float: left;
-    margin: 5px 20px 10px 0;
-  }
-
-  &.img-right {
-    float: right;
-    margin: 5px 0 10px 20px;
-  }
-}
+// img {
+//   &.img-left {
+//     float: left;
+//     margin: 5px 20px 10px 0;
+//   }
+//
+//   &.img-right {
+//     float: right;
+//     margin: 5px 0 10px 20px;
+//   }
+// }
 
 .figure-img,
 figure img {
@@ -98,7 +103,7 @@ figcaption {
   font-size: @figure-caption-font-size;
   color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;
-  padding-bottom: 10px 10px 10px 0;
+  padding: 10px 10px 10px 0;
   width: 100%;
   display: table-caption;
   caption-side: bottom;
