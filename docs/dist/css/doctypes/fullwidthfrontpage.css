@@ -46,14 +46,14 @@ html:lang(en) .ku-branding .ku-branding-text {
 
 .jumpboard {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -140,7 +140,7 @@ html:lang(en) .ku-branding .ku-branding-text {
   .jumpboard {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .jumpcolumn:nth-child(3), .jumpcolumn:nth-child(4) {
     padding-top: 23px;
@@ -161,7 +161,7 @@ html:lang(en) .ku-branding .ku-branding-text {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /*Target first row - make it full width for sliders*/
   .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
     padding-right: 0;
@@ -172,6 +172,11 @@ html:lang(en) .ku-branding .ku-branding-text {
   .jumpboard {
     padding: 0;
     background: #f8f8f5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
   }
   .jumpboard>.jumpcolumn {
     max-height: none;
@@ -205,15 +210,5 @@ html:lang(en) .ku-branding .ku-branding-text {
   }
   .jumpboard .jumpcolumn .jumplinks li a:active, .jumpboard .jumpcolumn .jumplinks li a:hover, .jumpboard .jumpcolumn .jumplinks li a:focus {
     background-color: #f1f1f1;
-  }
-}
-
-@media (min-width: 992px) {
-  .jumpboard {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            -webkit-flex-direction: row;
-            flex-direction: row;
   }
 }

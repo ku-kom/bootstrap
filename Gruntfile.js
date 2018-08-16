@@ -209,7 +209,8 @@ module.exports = function (grunt) {
 
     autoprefixer: {
       options: {
-        browsers: configBridge.config.autoprefixerBrowsers
+        browsers: configBridge.config.autoprefixerBrowsers,
+        cascade: false
       },
       core: {
         options: {
