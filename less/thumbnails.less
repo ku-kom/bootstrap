@@ -49,24 +49,14 @@ figure {
 
   &.align-left,
   &.pull-left {
-    @media (min-width: @screen-sm) {
-      margin-right: @margin10;
-      float: left;
-    }
-    img {
-      margin: 5px 20px 10px 0;
-    }
+    margin-right: 15px;
+    float: left;
   }
 
   &.align-right,
   &.pull-right {
-    @media (min-width: @screen-sm) {
-      margin-left: @margin10;
-      float: right;
-    }
-    img {
-      margin: 5px 0 10px 20px;
-    }
+    margin-left: 15px;
+    float: right;
   }
 
   img {
@@ -74,12 +64,7 @@ figure {
     max-width: 100%;
     height: auto;
   }
-  // @media (max-width: @screen-xs-max) {
-  //   float: none!important;
-  //   &:extend(.clearfix all);
-  // }
 }
-
 // img {
 //   &.img-left {
 //     float: left;

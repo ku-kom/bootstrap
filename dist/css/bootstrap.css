@@ -5693,35 +5693,19 @@ figure {
 figure.image {
   min-width: 1px;
 }
-@media (min-width: 768px) {
-  .figure.align-left,
-  figure.align-left,
-  .figure.pull-left,
-  figure.pull-left {
-    float: left;
-    margin-right: 10px;
-  }
+.figure.align-left,
+figure.align-left,
+.figure.pull-left,
+figure.pull-left {
+  float: left;
+  margin-right: 15px;
 }
-.figure.align-left img,
-figure.align-left img,
-.figure.pull-left img,
-figure.pull-left img {
-  margin: 5px 20px 10px 0;
-}
-@media (min-width: 768px) {
-  .figure.align-right,
-  figure.align-right,
-  .figure.pull-right,
-  figure.pull-right {
-    float: right;
-    margin-left: 10px;
-  }
-}
-.figure.align-right img,
-figure.align-right img,
-.figure.pull-right img,
-figure.pull-right img {
-  margin: 5px 0 10px 20px;
+.figure.align-right,
+figure.align-right,
+.figure.pull-right,
+figure.pull-right {
+  float: right;
+  margin-left: 15px;
 }
 .figure img,
 figure img {
