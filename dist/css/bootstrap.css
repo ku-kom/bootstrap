@@ -8475,19 +8475,20 @@ main:after,
 
   -webkit-tap-highlight-color: transparent;
 }
+@media (min-width: 768px) {
+  .slick-slider {
+    height: 289px;
+  }
+}
 .slick-slider.slick-initialized {
   visibility: visible;
 }
 .slick-list {
   position: relative;
+  height: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
-}
-@media (min-width: 992px) {
-  .slick-list {
-    height: 100%;
-  }
 }
 .slick-list:focus {
   outline: none;
@@ -8506,11 +8507,7 @@ main:after,
   top: 0;
   left: 0;
   display: block;
-}
-@media (min-width: 992px) {
-  .slick-track {
-    height: 100%;
-  }
+  height: 100%;
 }
 .slick-track:after,
 .slick-track:before {
@@ -8541,6 +8538,8 @@ main:after,
   display: block;
   max-width: 100%;
   height: auto;
+
+  -webkit-backface-visibility: hidden;
 }
 .slick-slide.slick-loading img {
   display: none;

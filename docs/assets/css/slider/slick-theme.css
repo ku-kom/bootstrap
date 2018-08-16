@@ -38,7 +38,6 @@
 .gallery-nav .slick-slide:hover img {
   filter: brightness(90%) blur(0);
   -webkit-filter: brightness(90%) blur(0);
-  -webkit-backface-visibility: hidden;
 }
 
 .gallery-nav .slick-track {
@@ -68,9 +67,6 @@
   /* Slider height for iPad */
   .slide-wrapper {
     background: #eee;
-  }
-  .slick-track {
-    height: 289px;
   }
 }
 

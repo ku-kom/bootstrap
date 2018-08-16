@@ -4,9 +4,9 @@
 }
 
 .slick-slider {
-  // @media (min-width: @screen-md-min) {
-  //   height: 289px; // KU
-  // }
+  @media (min-width: @screen-sm-min) {
+    height: 289px; // KU
+  }
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -27,9 +27,9 @@
   //display: block;
   margin: 0;
   padding: 0;
-  @media (min-width: @screen-md-min) {
+  //@media (min-width: @screen-md-min) {
     height: 100%; // KU
-  }
+  //}
 
   &:focus {
     outline: none;
@@ -51,9 +51,9 @@
   left: 0;
   top: 0;
   display: block;
-  @media (min-width: @screen-md-min) {
+  //@media (min-width: @screen-md-min) {
     height: 100%; // KU
-  }
+  //}
 
   &:after,
   &:before {
@@ -93,6 +93,7 @@
     max-width: 100%;
     height: auto;
     position: relative;
+    -webkit-backface-visibility: hidden;
     // @media (min-width: @screen-md-min) {
     //   max-width: none!important; // KU
     //   width: 100%;
@@ -106,7 +107,7 @@
   &.slick-loading img {
     display: none;
   }
-  display: none;
+  //display: none;
 
   &.dragging img {
     pointer-events: none;
