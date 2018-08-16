@@ -5674,9 +5674,9 @@ a.badge:focus {
   margin-right: auto;
   margin-left: auto;
 }
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
+a .thumbnail:hover,
+a.thumbnail.active,
+a.thumbnail:focus {
   border-color: #165aad;
 }
 .thumbnail .caption {
@@ -5686,6 +5686,7 @@ a.thumbnail.active {
 .figure,
 figure {
   display: table;
+  margin: 0;
   clear: both;
 }
 .figure.image,
@@ -5693,19 +5694,19 @@ figure.image {
   width: 1px;
 }
 @media (min-width: 768px) {
-  .figure.pull-left,
-  figure.pull-left,
   .figure.align-left,
-  figure.align-left {
+  figure.align-left,
+  .figure.pull-left,
+  figure.pull-left {
     float: left;
     margin-right: 10px;
   }
 }
 @media (min-width: 768px) {
-  .figure.pull-right,
-  figure.pull-right,
   .figure.align-right,
-  figure.align-right {
+  figure.align-right,
+  .figure.pull-right,
+  figure.pull-right {
     float: right;
     margin-left: 10px;
   }
@@ -5740,7 +5741,7 @@ figure img {
 figcaption {
   display: table-caption;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 10px 10px 10px 0;
   font-size: .9em;
   color: #777;
   caption-side: bottom;
