@@ -619,7 +619,8 @@
     border: 1px solid #252525;
   }
   .gridbox.size1 .box2 img {
-    object-fit: cover;
+    max-width: 100%;
+    max-height: none;
   }
   body:not(.FullWidthFrontpage) .gridbox.text-down:hover .header {
     background: 0;

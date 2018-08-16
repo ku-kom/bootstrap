@@ -45,6 +45,13 @@ html:lang(en) .ku-branding .ku-branding-text {
 }
 
 .jumpboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -129,9 +136,10 @@ html:lang(en) .ku-branding .ku-branding-text {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .jumpboard {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }

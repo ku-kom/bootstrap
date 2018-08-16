@@ -8573,11 +8573,40 @@ main:after,
   height: auto;
   border: 1px solid transparent;
 }
+.slide-link {
+  position: relative;
+}
 .slide-link:focus,
 .slide-link:active,
 .slide-link:visited,
 .slide-link:hover {
   text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .slide-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    height: inherit;
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .slick-slider .caption {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+            align-self: flex-end;
+  }
 }
 .slick-arrow.slick-hidden {
   display: none;
