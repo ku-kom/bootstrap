@@ -5689,10 +5689,6 @@ figure {
   margin: 0;
   clear: both;
 }
-.figure.image,
-figure.image {
-  width: 1px;
-}
 @media (min-width: 768px) {
   .figure.align-left,
   figure.align-left,
