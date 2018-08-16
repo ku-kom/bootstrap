@@ -8584,10 +8584,10 @@ main:after,
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .slide-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
+    display: -webkit-inline-box !important;
+    display: -webkit-inline-flex !important;
+    display: -ms-inline-flexbox !important;
+    display:         inline-flex !important;
     height: inherit;
             flex-direction: column;
 
@@ -8615,7 +8615,7 @@ main:after,
   position: absolute;
   top: 50%;
   z-index: 2;
-  display: block;
+  display: none;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -8653,6 +8653,11 @@ main:after,
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  .slick-arrow {
+    display: block;
+  }
 }
 .slick-slider:hover .slick-prev {
   left: 0;

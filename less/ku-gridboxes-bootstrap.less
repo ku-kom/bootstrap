@@ -513,6 +513,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gcrow .gccolumn .gridbox {
   .all-single-column();
 
@@ -586,6 +587,19 @@
     }
   }
 }
+@media (max-width: @screen-xs-max) {
+  .gridbox {
+    &.size1 {
+      .box2 {
+        img {
+          max-width: 100%;
+          width: 100%;
+          max-height: none;
+        }
+      }
+    }
+  }
+}
 @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
   .gridbox {
     &.with-img {
@@ -600,13 +614,6 @@
       }
     }
 
-    &.size1 {
-      .box2 {
-        img {
-          width: 100%;
-        }
-      }
-    }
     // Frontpage only
     .FullWidthFrontpage & {
       &.outlined {
@@ -797,6 +804,7 @@
             }
           }
         }
+
         &.text-over.with-img {
           // Trying to fix visible background behind image
           background: none;
@@ -829,6 +837,7 @@
         .header {
           margin-top: 5px;
         }
+
         .box1 {
           padding: 0 24px 10px 15px;
           flex: 0 1 51.6%;
@@ -963,6 +972,7 @@
 
   &:hover {
     text-decoration: none;
+
     .gridbox {
       img {
         filter: brightness(90%) blur(0);

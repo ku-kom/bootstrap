@@ -133,7 +133,7 @@
   .states(none);
   position: relative;
   @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-    display: flex;
+    display: inline-flex!important;
     flex-direction: column;
     height: inherit;
   }
@@ -157,7 +157,7 @@
   line-height: 0;
   position: absolute;
   top: 50%;
-  display: block;
+  display: none;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -195,6 +195,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: @custom-icon-font-family-name;
+  }
+  
+  @media (min-width: @screen-sm) {
+    // Only display arrows in desktop
+    display: block;
   }
 }
 
