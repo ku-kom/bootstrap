@@ -1606,7 +1606,7 @@ h6 small {
 }
 .h1,
 h1 {
-  margin-top: 0;
+  margin-top: 5px;
   font-size: 24px;
   font-weight: 400;
 }
@@ -8194,6 +8194,9 @@ main:after,
 }
 .readAll {
   margin-bottom: 0;
+}
+.cal-sorting .input-group.date {
+  border-collapse: collapse;
 }
 .search-news {
   padding: 5px 15px!important;
