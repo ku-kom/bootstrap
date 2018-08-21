@@ -546,6 +546,11 @@
     color: #252525;
   }
 }
+@media (max-width: 480px) {
+  .gridbox.size3.with-img .box2 img {
+    height: 100%;
+  }
+}
 @media (max-width: 767px) {
   .gridbox.size1 .box2 img {
     width: 100%;
@@ -554,7 +559,6 @@
   }
   .gridbox.size3.with-img .box2 img {
     max-width: 100%;
-    height: 100%;
     max-height: none;
   }
   .gridbox.size3.img-left .box2 img,
