@@ -8339,13 +8339,11 @@ main:after,
   position: relative;
   display: block;
   padding: 0 18px;
-  overflow: hidden;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
   color: #666;
   text-decoration: none;
-  text-overflow: ellipsis;
   text-transform: uppercase;
   letter-spacing: .06em;
   white-space: nowrap;
