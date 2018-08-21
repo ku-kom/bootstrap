@@ -9581,7 +9581,7 @@ nav {
 .main-content .row + .row {
   margin-top: 23px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .main-content [class*="col-"] + [class*="col-"] {
     margin-top: 23px;
   }
