@@ -407,6 +407,10 @@
 .gridbox.size3:not(.with-img) .box1 .text {
   display: block;
 }
+.gridbox.size3.img-left .box2 img,
+.gridbox.size3.img-right .box2 img {
+  width: 100%;
+}
 .gridbox.size4 {
   height: 81px;
 }
@@ -549,6 +553,10 @@
 @media (max-width: 767px) {
   .gridbox.size1 .box2 img {
     width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+  .gridbox.size3.with-img .box2 img {
     max-width: 100%;
     max-height: none;
   }

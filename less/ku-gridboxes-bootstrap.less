@@ -476,6 +476,13 @@
         }
       }
     }
+    &.img-left, &.img-right {
+      .box2 {
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
   // Height 81px
   &.size4 {
@@ -513,7 +520,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gcrow .gccolumn .gridbox {
   .all-single-column();
 
@@ -598,6 +604,17 @@
         }
       }
     }
+
+    &.size3 {
+      &.with-img {
+        .box2 {
+          img {
+            max-height: none;
+            max-width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
@@ -613,7 +630,6 @@
         }
       }
     }
-
     // Frontpage only
     .FullWidthFrontpage & {
       &.outlined {
