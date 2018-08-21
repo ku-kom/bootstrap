@@ -589,13 +589,14 @@
 }
 @media (max-width: @screen-xs) {
   .gridbox {
-    &.size3 {
-      &.with-img {
-        .box2 {
-          img {
-            height: 100%;
-          }
-        }
+    // New heights for boxes in mobile view:
+    &.with-img {
+      &.size3 {
+        height: 170px;
+      }
+
+      &.size2 {
+        height: 220px;
       }
     }
   }
