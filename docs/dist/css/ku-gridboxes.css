@@ -546,14 +546,6 @@
     color: #252525;
   }
 }
-@media (max-width: 480px) {
-  .gridbox.with-img.size3 {
-    height: 170px;
-  }
-  .gridbox.with-img.size2 {
-    height: 220px;
-  }
-}
 @media (max-width: 767px) {
   .gridbox.size1 .box2 img {
     width: 100%;

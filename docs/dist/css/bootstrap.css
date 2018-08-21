@@ -8313,6 +8313,7 @@ main:after,
 .entries .entry {
   position: relative;
   width: 100%;
+  min-width: 0;
   padding: 10px 15px 10px 20px;
   margin-top: 5px;
   text-align: left;
@@ -8323,9 +8324,9 @@ main:after,
   border-bottom: 1px solid #fff;
 
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media only screen and (min-width: 992px) {
   .entries .entry {
@@ -8338,11 +8339,13 @@ main:after,
   position: relative;
   display: block;
   padding: 0 18px;
+  overflow: hidden;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
   color: #666;
   text-decoration: none;
+  text-overflow: ellipsis;
   text-transform: uppercase;
   letter-spacing: .06em;
   white-space: nowrap;

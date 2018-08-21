@@ -41,7 +41,8 @@
   }
 
   .entry {
-    flex: 1 1 auto;
+    flex: 1;
+    min-width: 0;
     text-align: left;
     border-bottom: 1px solid @white-color;
     position: relative;
@@ -72,6 +73,8 @@
       text-decoration: none;
       color: @gray-666;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       .icon-arrow;
 
       &:hover {
