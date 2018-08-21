@@ -8332,13 +8332,12 @@ main:after,
     width: auto;
     padding: 10px 15px;
     margin-top: 0;
-    text-align: center;
   }
 }
 .entries .entry > a {
   position: relative;
   display: block;
-  padding-left: 18px;
+  padding: 0 18px;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
@@ -8385,6 +8384,7 @@ main:after,
   font-variant: normal;
   line-height: 1;
   color: #901a1e;
+  text-decoration: none;
   text-transform: none;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
