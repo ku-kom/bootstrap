@@ -7734,6 +7734,10 @@ main:after,
   margin: 5px 5px 5px 20px;
 }
 .local-footer {
+  font-size: .85em;
+  line-height: 1.43em;
+  color: #777;
+
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
           align-self: flex-end;
