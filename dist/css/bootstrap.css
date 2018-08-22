@@ -5337,9 +5337,9 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .ku-nav .btn-global-search .btn {
   color: #444;
   background-color: #fff;
-  background-image: none;
-  border-top-right-radius: 2px !important;
-  border-bottom-right-radius: 2px !important;
+}
+.ku-nav .btn-global-search .btn.global-search-options-toggle {
+  font-size: 12px;
 }
 .ku-nav .btn-global-search .dropdown-toggle {
   position: relative;
@@ -5355,11 +5355,19 @@ html:lang(en) .navbar-inverse .topbar-logo {
   top: 50%;
   right: 8px;
   font-family: 'Glyphicons Halflings';
-  font-size: 10px;
+  font-size: 8px;
   color: #b6b6b6;
   content: "\e252";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.ku-nav .global-search-query {
+  width: 170px!important;
+}
+.ku-nav .global-search-submit .btn {
+  background-image: none;
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
 }
 .ku-nav .global-search-submit .glyphicon-search {
   color: #b6b6b6;

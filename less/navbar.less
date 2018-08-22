@@ -860,10 +860,12 @@
     .btn {
       color: @gray-444;
       background-color: @white-color;
-      background-image: none; // remove gradient from default button
-      border-top-right-radius: @border-radius-base!important;
-      border-bottom-right-radius: @border-radius-base!important;
+
+      &.global-search-options-toggle {
+        font-size: 12px;
+      }
     }
+
     .dropdown-toggle {
       width: 90px;
       position: relative;
@@ -875,7 +877,7 @@
         content: "\e252";
         font-family: 'Glyphicons Halflings';
         color: @ku-search-icons;
-        font-size: 10px;
+        font-size: 8px;
         position: absolute;
         top: 50%;
         right: 8px;
@@ -884,7 +886,18 @@
     }
   }
 
+  .global-search-query {
+    // Global search input width:
+    width: 170px!important;
+  }
+
   .global-search-submit {
+    .btn {
+      background-image: none; // remove gradient from default button
+      border-top-right-radius: @border-radius-base!important;
+      border-bottom-right-radius: @border-radius-base!important;
+    }
+
     .glyphicon-search {
       color: @ku-search-icons;
     }
