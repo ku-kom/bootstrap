@@ -100,50 +100,7 @@
       }
     }
   }
-
-  .btn-global-search {
-    .dropdown-toggle {
-      width: 90px;
-      position: relative;
-      text-align: left;
-      padding-right: 20px;
-      .text-overflow();
-
-      &::after {
-        content: "\e252";
-        font-family: @icon-font-name;
-        color: #bbb;
-        font-size: 10px;
-        position: absolute;
-        top: 50%;
-        right: 8px;
-        transform: translateY(-50%);
-      }
-    }
-  }
-  .global-search-submit {
-    .glyphicon-search {
-      color: @ku-search-icons;
-    }
-  }
 }
-
-.search_form {
-  margin-top: 6px;
-  .dropdown-menu {
-    li {
-      padding: 3px 20px;
-      font-size: 1.085em;
-
-      &.selected,
-      &:hover {
-        background-color: #efefef;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
 // Navbar heading
 //
 // Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
@@ -218,8 +175,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-collapse,
-  > .navbar-header {
+  > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -350,8 +307,8 @@
       border: 0;
       box-shadow: none;
 
-      .dropdown-header,
-      > li > a {
+      > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
 
@@ -893,6 +850,52 @@
       // }
       @media (min-width: @screen-md-min) {
         width: 28%;
+      }
+    }
+  }
+}
+
+.ku-nav {
+  .btn-global-search {
+    .dropdown-toggle {
+      width: 90px;
+      position: relative;
+      text-align: left;
+      padding-right: 20px;
+      .text-overflow();
+
+      &::after {
+        content: "\e252";
+        font-family: @icon-font-name;
+        color: #bbb;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .global-search-submit {
+    .glyphicon-search {
+      color: @ku-search-icons;
+    }
+  }
+
+  .search_form {
+    margin-top: 6px;
+
+    .dropdown-menu {
+      li {
+        padding: 3px 20px;
+        font-size: 1.085em;
+
+        &.selected,
+        &:hover {
+          background-color: #efefef;
+          cursor: pointer;
+        }
       }
     }
   }
