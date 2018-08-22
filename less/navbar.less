@@ -857,6 +857,13 @@
 
 .ku-nav {
   .btn-global-search {
+    .btn {
+      color: @gray-444;
+      background-color: @white-color;
+      background-image: none; // remove gradient from default button
+      border-top-right-radius: @border-radius-base!important;
+      border-bottom-right-radius: @border-radius-base!important;
+    }
     .dropdown-toggle {
       width: 90px;
       position: relative;
@@ -866,8 +873,8 @@
 
       &::after {
         content: "\e252";
-        font-family: @icon-font-name;
-        color: #bbb;
+        font-family: 'Glyphicons Halflings';
+        color: @ku-search-icons;
         font-size: 10px;
         position: absolute;
         top: 50%;

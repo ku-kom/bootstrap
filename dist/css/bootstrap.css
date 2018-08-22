@@ -5334,6 +5334,13 @@ html:lang(en) .navbar-inverse .topbar-logo {
     width: 28%;
   }
 }
+.ku-nav .btn-global-search .btn {
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+}
 .ku-nav .btn-global-search .dropdown-toggle {
   position: relative;
   width: 90px;
@@ -5347,9 +5354,9 @@ html:lang(en) .navbar-inverse .topbar-logo {
   position: absolute;
   top: 50%;
   right: 8px;
-  font-family: "glyphicons-halflings-regular";
+  font-family: 'Glyphicons Halflings';
   font-size: 10px;
-  color: #bbb;
+  color: #b6b6b6;
   content: "\e252";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -9754,11 +9761,6 @@ nav {
 }
 @-ms-viewport {
   width: device-width;
-}
-.btn-global-search .btn {
-  height: 32px;
-  background-color: #fff;
-  background-image: none;
 }
 .scrolltop {
   position: fixed;
