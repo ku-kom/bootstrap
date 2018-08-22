@@ -4732,15 +4732,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: absolute;
   top: 50%;
   right: 8px;
-  font-family: 'Glyphicons Halflings';
+  font-family: "glyphicons-halflings-regular";
   font-size: 10px;
   color: #bbb;
   content: "\e252";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.ku-nav #submit-button .glyphicon {
-  color: #9d9d9d;
+.ku-nav .global-search-submit .glyphicon-search {
+  color: #b6b6b6;
+}
+.search_form {
+  margin-top: 6px;
 }
 .search_form .dropdown-menu li {
   padding: 3px 20px;

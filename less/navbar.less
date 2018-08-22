@@ -111,7 +111,7 @@
 
       &::after {
         content: "\e252";
-        font-family: 'Glyphicons Halflings';
+        font-family: @icon-font-name;
         color: #bbb;
         font-size: 10px;
         position: absolute;
@@ -121,13 +121,15 @@
       }
     }
   }
-
-  #submit-button .glyphicon {
-    color: @ku-search-icons;
+  .global-search-submit {
+    .glyphicon-search {
+      color: @ku-search-icons;
+    }
   }
 }
 
 .search_form {
+  margin-top: 6px;
   .dropdown-menu {
     li {
       padding: 3px 20px;
