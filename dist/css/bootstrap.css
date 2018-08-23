@@ -38,9 +38,6 @@ line-height: 1.15;
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
-margin: 0;
-}
 /**
  * Add the correct display in IE 9-.
  */
@@ -2906,10 +2903,7 @@ box-sizing: border-box;
 }
 input[type="radio"],
 input[type="checkbox"] {
-margin-top: 2px;
-  margin-right: 2px;
-  margin-bottom: 0;
-  margin-left: 0;
+margin: 2px 0 0;
   line-height: normal;
 }
 input[type="file"] {
