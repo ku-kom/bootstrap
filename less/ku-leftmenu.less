@@ -173,7 +173,7 @@
           &::before {
             content: "\e080";
             font-family: 'Glyphicons Halflings';
-            font-size: 8px;
+            font-size: 7px;
             color: @ku-red;
             position: absolute;
             left: 0;
@@ -248,32 +248,34 @@
               display: block;
 
               &::before {
-                font-size: 8px;
-                content: "\25A0";
-                color: @ku-red;
+                content: "";
+                height: 4px;
+                width: 4px;
+                top: 7px;
+                background-color: @ku-red;
 
                 .theme-samf & {
-                  color: @samf;
+                  background-color: @samf;
                 }
 
                 .theme-hum & {
-                  color: @hum;
+                  background-color: @hum;
                 }
 
                 .theme-science & {
-                  color: @science;
+                  background-color: @science;
                 }
 
                 .theme-sund & {
-                  color: @sund;
+                  background-color: @sund;
                 }
 
                 .theme-jur & {
-                  color: @jura;
+                  background-color: @jura;
                 }
 
                 .theme-teo & {
-                  color: @teol;
+                  background-color: @teol;
                 }
               }
 
@@ -289,8 +291,9 @@
               li {
                 > a {
                   &::before {
-                    font-size: 7px;
-                    top: 4px;
+                    height: 3px;
+                    width: 3px;
+                    top: 8px;
                     }
                   }
 
@@ -301,8 +304,9 @@
                       padding-left: 9px;
 
                       &::before {
-                        font-size: 6px;
-                        top: 6px;
+                        height: 2px;
+                        width: 2px;
+                        top: 9px;
                       }
                     }
                   }

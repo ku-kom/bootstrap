@@ -5732,8 +5732,7 @@ float: none;
 }
 .figure-img,
 figure img {
-margin-bottom: 8px;
-  line-height: 1;
+line-height: 1;
 }
 .figure-caption,
 figcaption {
@@ -7447,7 +7446,7 @@ position: absolute;
   top: 5px;
   left: 0;
   font-family: 'Glyphicons Halflings';
-  font-size: 8px;
+  font-size: 7px;
   color: #901a1e;
   content: "\e080";
   border: 1px solid #d7d7d7;
@@ -7501,27 +7500,29 @@ display: block;
   padding: 2px 5px 2px 10px;
 }
 .ku-leftmenu ul.nav > li ul li > a::before {
-font-size: 8px;
-  color: #901a1e;
-  content: "\25A0";
+top: 7px;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background-color: #901a1e;
 }
 .theme-samf .ku-leftmenu ul.nav > li ul li > a::before {
-color: #e13718;
+background-color: #e13718;
 }
 .theme-hum .ku-leftmenu ul.nav > li ul li > a::before {
-color: #365aa5;
+background-color: #365aa5;
 }
 .theme-science .ku-leftmenu ul.nav > li ul li > a::before {
-color: #46743c;
+background-color: #46743c;
 }
 .theme-sund .ku-leftmenu ul.nav > li ul li > a::before {
-color: #2a216a;
+background-color: #2a216a;
 }
 .theme-jur .ku-leftmenu ul.nav > li ul li > a::before {
-color: #999632;
+background-color: #999632;
 }
 .theme-teo .ku-leftmenu ul.nav > li ul li > a::before {
-color: #66609e;
+background-color: #66609e;
 }
 .ku-leftmenu ul.nav > li ul li > a:hover::before {
 text-decoration: none;
@@ -7530,15 +7531,17 @@ text-decoration: none;
 padding-left: 10px;
 }
 .ku-leftmenu ul.nav > li ul li ul li > a::before {
-top: 4px;
-  font-size: 7px;
+top: 8px;
+  width: 3px;
+  height: 3px;
 }
 .ku-leftmenu ul.nav > li ul li ul li ul li > a {
 padding-left: 9px;
 }
 .ku-leftmenu ul.nav > li ul li ul li ul li > a::before {
-top: 6px;
-  font-size: 6px;
+top: 9px;
+  width: 2px;
+  height: 2px;
 }
 .ku-leftmenu .menu-seperator {
 margin: 20px 0;
