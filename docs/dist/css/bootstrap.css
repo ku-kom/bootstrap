@@ -8233,15 +8233,10 @@ padding: 5px 15px!important;
 height: 30px;
   }
 }
-.search-news .search-news-query {
--webkit-box-flex: 1;
-  -webkit-flex: 1 0 210px;
-      -ms-flex: 1 0 210px;
-          flex: 1 0 210px;
-}
 @media only screen and (min-width: 991px) {
 .search-news .search-news-query {
-height: 100%;
+width: 85px;
+    height: 100%;
   }
 }
 .search-news .btn {
