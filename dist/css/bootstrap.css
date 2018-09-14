@@ -2606,11 +2606,6 @@ table {
 border-collapse: collapse;
   background-color: transparent;
 }
-@media (max-width: 768px) {
-html:not(.non-responsive) table {
-font-size: 12px;
-  }
-}
 caption {
 padding-top: 8px;
   padding-bottom: 8px;
