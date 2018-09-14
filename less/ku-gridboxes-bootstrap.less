@@ -645,7 +645,20 @@
         }
       }
     }
+
     &.with-img {
+      &.size2, &.size3 {
+        .box2 {
+          img {
+            // Testing alternative positioning of images in tablet view
+            height: 100%;
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: translate3d(0,0,0);
+          }
+        }
+      }
       .text {
         display: block;
       }

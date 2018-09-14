@@ -622,6 +622,15 @@ border: 1px solid #252525;
 max-width: 100%;
     max-height: none;
   }
+  .gridbox.with-img.size2 .box2 img,
+  .gridbox.with-img.size3 .box2 img {
+position: relative;
+    top: auto;
+    left: auto;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
   .gridbox.with-img .text {
 display: block;
   }
