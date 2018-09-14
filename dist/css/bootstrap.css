@@ -9633,6 +9633,9 @@ display: block;
 .right-side {
 float: right;
 }
+.right-side .flexiblebox-as-rightbox:first-child {
+margin-top: 23px;
+}
 .gcitem {
 position: relative;
 }
