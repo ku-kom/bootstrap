@@ -9633,8 +9633,10 @@ display: block;
 .right-side {
 float: right;
 }
+@media (min-width: 768px) {
 .right-side .flexiblebox-as-rightbox:first-child {
 margin-top: 23px;
+  }
 }
 .gcitem {
 position: relative;
@@ -9647,8 +9649,8 @@ margin-top: 23px;
 margin-top: 23px;
   }
 }
-.single-column .column1 blockquote,
-.rightbox blockquote {
+.rightbox blockquote,
+.single-column .column1 blockquote {
 width: 100%!important;
 }
 .divider {

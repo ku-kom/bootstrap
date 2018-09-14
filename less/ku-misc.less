@@ -83,8 +83,10 @@ nav {
 
 .right-side {
   .pull-right;
-  .flexiblebox-as-rightbox:first-child {
-    margin-top: @grid-gutter-height;
+  @media (min-width: @screen-sm) {
+    .flexiblebox-as-rightbox:first-child {
+      margin-top: @grid-gutter-height;
+    }
   }
 }
 // KU grid:
@@ -92,11 +94,11 @@ nav {
 .gcitem {
   position: relative;
   &:extend(.clearfix all);
+
   & + .gcitem {
     margin-top: @grid-gutter-height;
   }
 }
-
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   .gccolumn {
     &[class^="col-"][class$="-12"] {
@@ -106,8 +108,8 @@ nav {
   }
 }
 
-.single-column .column1,
-.rightbox {
+.rightbox,
+.single-column .column1 {
   blockquote {
     width: 100%!important;
   }
@@ -243,9 +245,7 @@ nav {
 @-ms-viewport {
   width: device-width;
 }
-
 // Global scroll to top
-
 .scrolltop {
   position: fixed;
   bottom: 3%;
