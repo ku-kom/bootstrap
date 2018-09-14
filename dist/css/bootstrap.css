@@ -1415,7 +1415,7 @@ position: relative;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 body {
 -webkit-overflow-scrolling: touch;
   }

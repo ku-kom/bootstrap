@@ -573,7 +573,7 @@ color: inherit;
     background: 0;
   }
 }
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 768px) {
 .gridbox.size1 .box2 {
 -webkit-box-flex: 0;
     -webkit-flex: 0 1 185px;
