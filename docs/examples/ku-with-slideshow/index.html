@@ -16,42 +16,83 @@ category: slider
           <div class="col-sm-12">
             <div class="slide-wrapper">
               <div class="slideshow">
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+1" alt="">
-                  <div class="caption text-bottom">
-                    <div>Københavns Univeristet</div>
-                    <h2>Nye rundvisninger i botanisk have</h2>
-                  </div>
-              </a>
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+2" alt="">
-                  <div class="caption text-right-short">
-                    <div>Alumnernes dag</div>
-                    <h2>Forskning. Samtaler. Festmiddag.</h2>
-                  </div>
-              </a>
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+3" alt="">
-                  <div class="caption text-left">
-                    <div>Bliv klogere på dit studievalg</div>
-                    <h2>Kom til åbent hus</h2>
-                  </div>
-              </a>
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+4" alt="">
-                  <div class="caption text-left-short">
-                    <div>Bliv klogere på dit studievalg</div>
-                    <h2>Kom til åbent hus</h2>
-                  </div>
-              </a>
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+5" alt="">
-              </a>
-              <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+6" alt="">
-              </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+1" alt="">
+                    <div class="caption text-bottom">
+                      <div>Københavns Univeristet</div>
+                      <h2>Nye rundvisninger i botanisk have</h2>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+2" alt="">
+                    <div class="caption text-right-short">
+                      <div>Alumnernes dag</div>
+                      <h2>Forskning. Samtaler. Festmiddag.</h2>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+3" alt="">
+                    <div class="caption text-left">
+                      <div>Bliv klogere på dit studievalg</div>
+                      <h2>Kom til åbent hus</h2>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+4" alt="">
+                    <div class="caption text-left-short">
+                      <div>Bliv klogere på dit studievalg</div>
+                      <h2>Kom til åbent hus</h2>
+                    </div>
+                </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+5" alt="">
+                </a>
+                <a href="#" class="slide-link">
+                    <img src="https://placehold.it/825x450?text=Slide+6" alt="">
+                </a>
+              </div>
             </div>
-            </div>
+            <h3>Code to display slideshow</h3>
+            <strong>HTML</strong>
+            <pre class="prettyprint lang-html">
+&lt;div class=&quot;slide-wrapper&quot;&gt;
+  &lt;div class=&quot;slideshow&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
+        &lt;img src=&quot;https://placehold.it/825x450?text=Slide+1&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
+        &lt;img src=&quot;https://placehold.it/825x450?text=Slide+2&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
+        &lt;img src=&quot;https://placehold.it/825x450?text=Slide+3&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
+        &lt;img src=&quot;https://placehold.it/825x450?text=Slide+4&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <strong>Script</strong>
+            <pre class="prettyprint lang-js">
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js&quot;&gt;&lt;/script&gt;
+  $(document).ready(function() {
+    var $slideshow = $('.slideshow').not('.slick-initialized');
+    $slideshow.on('init', function(event, slick) {
+      $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
+    });
+    $slideshow.slick({
+      autoplay: true,
+      dots: true,
+      fade: true,
+      arrows: true,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }]
+    });
+  });
+&lt;/script&gt;</pre>
           </div>
         </div>
       </div>
@@ -61,15 +102,17 @@ category: slider
 </main>
 <!-- Slider  -->
 <script type="text/javascript" src="../../assets/js/slider/slick.min.js"></script>
+<!-- https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js -->
 <script type="text/javascript">
   $(document).ready(function() {
     $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
-    var $slideshow = $('.slideshow');
+    var $slideshow = $('.slideshow').not('.slick-initialized');
     $slideshow.on('init', function(event, slick) {
       $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
     });
+
     $slideshow.slick({
-      //autoplay: true,
+      autoplay: false,
       dots: true,
       fade: true,
       arrows: true,

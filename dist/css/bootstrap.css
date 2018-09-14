@@ -1910,13 +1910,13 @@ padding: 0;
 }
 pre {
 display: block;
-  padding: 8.5px;
+  padding: 8.5px !important;
   margin: 0 0 9px;
-  font-size: 11px;
   line-height: 1.5;
   color: #252525;
   word-break: break-all;
   word-wrap: break-word;
+  white-space: pre-wrap;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 2px;
