@@ -53,8 +53,8 @@ nav {
     //     margin-top: @grid-gutter-height;
     //   }
     // }
-    [class^="col-"][class$="-12"] + {
-      [class^="col-"][class$="-12"] {
+    [class^="col-"][class$="-12"] {
+      &+ [class^="col-"][class$="-12"] {
         margin-top: @grid-gutter-height;
       }
     }
