@@ -1,5 +1,5 @@
 /* Datatables */
-@import url("../../../dist/css/datatables.min.css");
+@import url("../datatables.min.css");
 
 #medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
