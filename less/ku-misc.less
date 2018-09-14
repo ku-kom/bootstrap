@@ -48,10 +48,13 @@ nav {
     }
   }
   @media (max-width: @screen-sm-max) {
-    [class*="col-"] {
-      + [class*="col-"] {
-        margin-top: @grid-gutter-height;
-      }
+    // [class*="col-"] {
+    //   + [class*="col-"] {
+    //     margin-top: @grid-gutter-height;
+    //   }
+    // }
+    [class^="col-"][class$="-12"] {
+      margin-top: @grid-gutter-height;
     }
   }
 }
