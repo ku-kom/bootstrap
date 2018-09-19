@@ -9605,11 +9605,18 @@ margin-top: 23px;
 margin-top: 23px;
   }
 }
+@media (max-width: 767px) {
+.main-area .row.double-column [class*="col-"]:nth-child(2n) {
+margin-bottom: 23px;
+  }
+}
 #gridsidebar .row > [class*="col-"] {
 margin-bottom: 23px;
 }
 .main-area {
--webkit-box-flex: 1;
+margin-bottom: 23px;
+
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
           flex-grow: 1;
