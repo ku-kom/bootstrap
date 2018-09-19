@@ -62,7 +62,10 @@ nav {
       &.double-column {
         [class*="col-"] {
           &:nth-child(2n) {
-              margin-bottom: 23px;
+            margin-bottom: 23px;
+          }
+          + [class*="col-"] {
+            margin-top: 0;
           }
         }
       }

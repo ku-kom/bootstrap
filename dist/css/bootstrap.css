@@ -1876,7 +1876,7 @@ margin-bottom: 18px;
 h2.deloverskrift {
 padding: 10px 5px 8px 0;
   margin: 0;
-  font-size: 1.85em;
+  font-size: 22px;
   line-height: 1.2;
   letter-spacing: .7px;
   border-bottom: 1px solid #bebebe;
@@ -9609,9 +9609,12 @@ margin-top: 23px;
 .main-area .row.double-column [class*="col-"]:nth-child(2n) {
 margin-bottom: 23px;
   }
+  .main-area .row.double-column [class*="col-"] + [class*="col-"] {
+margin-top: 0;
+  }
 }
-#gridsidebar .row > [class*="col-"] {
-margin-bottom: 23px;
+#gridsidebar .row [class*="col-"] + [class*="col-"] {
+margin-top: 23px;
 }
 .main-area {
 margin-bottom: 23px;
