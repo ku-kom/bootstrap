@@ -57,14 +57,14 @@ nav {
 }
 
 .main-area {
-  @media (max-width: @screen-xs-max) {
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
     .row {
       &.double-column {
-        [class*="col-"] {
+        .col-sm-6 {
           &:nth-child(2n) {
             margin-bottom: 23px;
           }
-          + [class*="col-"] {
+          + .col-sm-6 {
             margin-top: 0;
           }
         }

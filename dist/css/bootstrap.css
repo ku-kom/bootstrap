@@ -9605,11 +9605,11 @@ margin-top: 23px;
 margin-top: 23px;
   }
 }
-@media (max-width: 767px) {
-.main-area .row.double-column [class*="col-"]:nth-child(2n) {
+@media (min-width: 768px) and (max-width: 991px) {
+.main-area .row.double-column .col-sm-6:nth-child(2n) {
 margin-bottom: 23px;
   }
-  .main-area .row.double-column [class*="col-"] + [class*="col-"] {
+  .main-area .row.double-column .col-sm-6 + .col-sm-6 {
 margin-top: 0;
   }
 }
