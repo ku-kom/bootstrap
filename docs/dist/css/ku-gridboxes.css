@@ -420,7 +420,7 @@ display: none;
 height: 55px;
 }
 .gridbox.size5 .box1 .header {
-padding-bottom: 4px;
+padding-top: 6px;
 }
 .gridbox.size5 .box1 .text {
 display: none;
@@ -461,6 +461,9 @@ width: 100%;
 .gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
 .gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
 width: 100%;
+  overflow: auto;
+  white-space: normal;
+  border-right: 0;
 }
 @media (min-width: 480px) and (max-width: 767px) {
 .gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
@@ -1008,7 +1011,10 @@ max-width: none;
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
 padding: 8px 0 8px 10px;
+    overflow: auto;
     font-size: 1.1em;
+    white-space: normal;
+    border-right: 0;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 {
