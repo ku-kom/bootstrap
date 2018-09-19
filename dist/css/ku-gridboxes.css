@@ -609,9 +609,9 @@ position: relative;
   .gridbox.size2.with-img .box2,
   .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 0 133px;
-        -ms-flex: 0 0 133px;
-            flex: 0 0 133px;
+    -webkit-flex: 0 0 235px;
+        -ms-flex: 0 0 235px;
+            flex: 0 0 235px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -815,9 +815,9 @@ position: relative;
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 0 133px;
-        -ms-flex: 0 0 133px;
-            flex: 0 0 133px;
+    -webkit-flex: 0 0 235px;
+        -ms-flex: 0 0 235px;
+            flex: 0 0 235px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -1024,9 +1024,9 @@ display: none;
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box2,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 0 133px;
-        -ms-flex: 0 0 133px;
-            flex: 0 0 133px;
+    -webkit-flex: 0 1 235px;
+        -ms-flex: 0 1 235px;
+            flex: 0 1 235px;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
