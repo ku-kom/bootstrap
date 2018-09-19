@@ -461,9 +461,14 @@ width: 100%;
 .gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
 .gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
 width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 25px solid transparent;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+.gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
+  .gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
+overflow: hidden;
+    white-space: nowrap;
+    border-right: 25px solid transparent;
+  }
 }
 .gcrow .gccolumn .gridbox.size2.with-img.outlined .box1,
 .gcrow .gccolumn .gridbox.size3.with-img.outlined .box1 {
@@ -604,9 +609,9 @@ position: relative;
   .gridbox.size2.with-img .box2,
   .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 1 235px;
-        -ms-flex: 0 1 235px;
-            flex: 0 1 235px;
+    -webkit-flex: 0 0 133px;
+        -ms-flex: 0 0 133px;
+            flex: 0 0 133px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -810,9 +815,9 @@ position: relative;
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 1 235px;
-        -ms-flex: 0 1 235px;
-            flex: 0 1 235px;
+    -webkit-flex: 0 0 133px;
+        -ms-flex: 0 0 133px;
+            flex: 0 0 133px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -1003,10 +1008,7 @@ max-width: none;
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
 padding: 8px 0 8px 10px;
-    overflow: hidden;
     font-size: 1.1em;
-    white-space: nowrap;
-    border-right: 25px solid transparent;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 {
@@ -1022,13 +1024,21 @@ display: none;
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box2,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box2 {
 -webkit-box-flex: 0;
-    -webkit-flex: 0 1 235px;
-        -ms-flex: 0 1 235px;
-            flex: 0 1 235px;
+    -webkit-flex: 0 0 133px;
+        -ms-flex: 0 0 133px;
+            flex: 0 0 133px;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
 bottom: 9px;
+  }
+}
+@media (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
+#gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
+  #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
+overflow: hidden;
+    white-space: nowrap;
+    border-right: 25px solid transparent;
   }
 }
 .boxlink {
