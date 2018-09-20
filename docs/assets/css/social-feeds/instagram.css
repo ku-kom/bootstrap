@@ -18,7 +18,7 @@ Needs html like this:
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  cursor: pointer;
+  visibility: hidden;
 }
 
 #ig.gridbox.subcolor_6::before {
@@ -91,7 +91,7 @@ Needs html like this:
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   #imageBox .batch img {
     height: 112% !important;
     min-width: none;
@@ -107,7 +107,7 @@ Needs html like this:
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   #imageBox .batch .inner {
     display: block;
   }

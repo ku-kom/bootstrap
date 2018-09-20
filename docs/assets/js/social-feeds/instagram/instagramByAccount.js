@@ -14,9 +14,11 @@
  </div>
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
 (function($) {
+  'use strict';
   var $wrapper = $("#ig");
   var $container = $("#imageBox");
-  var $token = $wrapper.attr("data-token").trim();
+  var $token = $wrapper.attr("data-token");
+  console.log($token);
   var $user = $wrapper.attr("data-account").trim();
   var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
   var $batchClass = "batch";
@@ -25,7 +27,7 @@
     // Fetch Instagram images by hashtag
     var $number = $wrapper.attr("data-images");
     var $images = 12;
-    var $numbers = (window.matchMedia('(max-width: 500px)').matches) ? 1 : parseInt($number);
+    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number);
     $container.empty();
     if (access_token) {
       var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;
@@ -124,7 +126,6 @@
   var it;
 
   function resizedw() {
-    $(".loading").show();
     getInstagramByHash($token);
   }
   window.onresize = function() {

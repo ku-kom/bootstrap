@@ -6,7 +6,7 @@
  * (function($) {
  *     Execute code...
  * })(jQuery);
-*
+ *
  * ========================================================================*/
 
 (function($) {
@@ -61,14 +61,6 @@
     $($scroller).appendTo('#globalfooter');
   }
 
-  // Init scroller
-  scrollFunction();
-
-  // Run on scroll
-  window.onscroll = function() {
-    scrollFunction()
-  };
-
   // Show/hide scroller
   function scrollFunction() {
     var $scroll = $('#scrolltop');
@@ -80,6 +72,14 @@
       }
     }
   }
+
+  // Init scroller
+  scrollFunction();
+
+  // Run on scroll
+  window.onscroll = function() {
+    scrollFunction()
+  };
 
   // Smooth scrolling to top on click event
   $('#scrolltop').click(function() {
@@ -105,4 +105,4 @@
   //   }
   // });
 
- })(jQuery);
+})(jQuery);

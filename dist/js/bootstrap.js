@@ -1850,7 +1850,7 @@ if (typeof jQuery === 'undefined') {
  * (function($) {
  *     Execute code...
  * })(jQuery);
-*
+ *
  * ========================================================================*/
 
 (function($) {
@@ -1905,14 +1905,6 @@ if (typeof jQuery === 'undefined') {
     $($scroller).appendTo('#globalfooter');
   }
 
-  // Init scroller
-  scrollFunction();
-
-  // Run on scroll
-  window.onscroll = function() {
-    scrollFunction()
-  };
-
   // Show/hide scroller
   function scrollFunction() {
     var $scroll = $('#scrolltop');
@@ -1924,6 +1916,14 @@ if (typeof jQuery === 'undefined') {
       }
     }
   }
+
+  // Init scroller
+  scrollFunction();
+
+  // Run on scroll
+  window.onscroll = function() {
+    scrollFunction()
+  };
 
   // Smooth scrolling to top on click event
   $('#scrolltop').click(function() {
@@ -1949,4 +1949,4 @@ if (typeof jQuery === 'undefined') {
   //   }
   // });
 
- })(jQuery);
+})(jQuery);
