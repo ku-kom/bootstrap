@@ -5755,6 +5755,10 @@ display: table-caption;
   caption-side: bottom;
   border-bottom: 1px solid #dfdfdf;
 }
+.fritekst_over_img {
+position: absolute;
+  margin-top: -39px;
+}
 .alert {
 padding: 15px;
   margin-bottom: 18px;
