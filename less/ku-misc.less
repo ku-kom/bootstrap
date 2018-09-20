@@ -82,7 +82,7 @@ nav {
 
 .main-area {
   flex-grow: 1;
-  margin-bottom: @grid-gutter-height;
+  margin-bottom: 10px;
   @media (max-width: @screen-xs-max) {
     padding-left: (@grid-gutter-width / 2);
     padding-right: (@grid-gutter-width / 2);
@@ -98,6 +98,18 @@ nav {
   }
 }
 
+.flexiblebox-as-rightbox {
+  + .rightbox-normal {
+    margin-top: @grid-gutter-height;
+  }
+}
+
+.rightbox-normal {
+  + .flexiblebox-as-rightbox {
+    margin-top: @grid-gutter-height;
+  }
+}
+
 .right-side {
   .pull-right;
   @media (min-width: @screen-sm) {
@@ -106,6 +118,7 @@ nav {
     }
   }
 }
+
 // KU grid:
 
 .gcitem {

@@ -65,17 +65,25 @@ figure {
     height: auto;
   }
 }
-// img {
-//   &.img-left {
-//     float: left;
-//     margin: 5px 20px 10px 0;
-//   }
-//
-//   &.img-right {
-//     float: right;
-//     margin: 5px 0 10px 20px;
-//   }
-// }
+
+// KU specific - editor classes
+img {
+  &.img-left {
+    float: left;
+    margin: 5px 20px 10px 0;
+  }
+
+  &.img-right {
+    float: right;
+    margin: 5px 0 10px 20px;
+  }
+  &.img-default {
+    // "På linje med tekst"
+    margin: 15px 0;
+    float: none;
+    &:extend(.clearfix all);
+  }
+}
 
 .figure-img,
 figure img {
