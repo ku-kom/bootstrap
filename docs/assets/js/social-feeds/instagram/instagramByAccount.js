@@ -15,6 +15,7 @@
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
 (function($) {
   'use strict';
+  $(document).ready(function () {
   var $wrapper = $("#ig");
   var $container = $("#imageBox");
   var $token = $wrapper.attr("data-token");
@@ -134,5 +135,6 @@
       resizedw();
     }, 200);
   };
+  });
 
 })(jQuery);

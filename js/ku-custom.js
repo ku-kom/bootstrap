@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright 2017
+ * Copyright 2018
  * University of Copenhagen, FA Communications
  * Important!!: Alle functions to be run must be wrapped in:
  *
