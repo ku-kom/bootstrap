@@ -1,25 +1,31 @@
 /* NEL, KU KOM Script to fetch images from Instagram by access token.
-* Login to Instagram to register an application and generate an access token using this url - replace with your values:
-* https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
-* Needs html like this: <div id="ig" data-token="5348587340570573570" data-images="6" class="instagram-box"></div>
-* data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
+ * Login to Instagram to register an application and generate an access token using this url - replace with your values:
+ * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+ * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="gridbox with-img subcolor_6 size2">
+   <div class="box1">
+   <a href="https://www.instagram.com/university_of_copenhagen/">
+     <div class="header">@university_of_copenhagen på Instagram</div>
+   </a>
+   </div>
+   <div class="ig_box2">
+     <div class="ku-loading"></div>
+     <div id="imageBox"></div>
+   </div>
+ </div>
+ The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
 (function($) {
   var $wrapper = $("#ig");
   var $container = $("#imageBox");
   var $token = $wrapper.attr("data-token").trim();
   var $user = $wrapper.attr("data-account").trim();
-  var $accountName = (typeof $user === 'undefined')
-    ? 'university_of_copenhagen'
-    : $user;
+  var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
   var $batchClass = "batch";
 
   function getInstagramByHash(access_token) {
     // Fetch Instagram images by hashtag
     var $number = $wrapper.attr("data-images");
     var $images = 12;
-    var $numbers = (window.matchMedia('(max-width: 500px)').matches)
-      ? 1
-      : parseInt($number);
+    var $numbers = (window.matchMedia('(max-width: 500px)').matches) ? 1 : parseInt($number);
     $container.empty();
     if (access_token) {
       var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;
@@ -105,7 +111,7 @@
 
   var checkRange = function(y) {
     return (y >= min && y <= max);
-  }
+  };
 
   $wrapper.click(function(e) {
     if (checkRange(e.pageY)) {

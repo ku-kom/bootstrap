@@ -223,6 +223,7 @@ module.exports = function (grunt) {
           'dist/css/ku-gridboxes.css',
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
+          'docs/assets/css/social-feeds/instagram.css',
           'dist/css/faculties/*.css'
         ]
       },
@@ -279,8 +280,16 @@ module.exports = function (grunt) {
         dest: 'dist/css/<%= pkg.name %>.min.css'
       },
       minifyCustom: {
-        src: 'dist/css/ku-gridboxes.css',
-        dest: 'dist/css/ku-gridboxes.min.css'
+        expand: true,
+        src: [
+          'dist/css/ku-gridboxes.css',
+          'docs/assets/css/social-feeds/instagram.css',
+          'docs/assets/css/datatables/datatables.css',
+          'docs/assets/css/multiple-select/multiple-select.css'
+        ],
+        dest: 'dist/css/',
+        ext: '.min.css',
+        flatten: true
       },
       docs: {
         src: [
@@ -289,16 +298,6 @@ module.exports = function (grunt) {
           'docs/assets/css/src/docs.css'
         ],
         dest: 'docs/assets/css/docs.min.css',
-        flatten: true
-      },
-      assets: {
-        expand: true,
-        src: [
-          'docs/assets/css/datatables/datatables.css',
-          'docs/assets/css/multiple-select/multiple-select.css'
-        ],
-        dest: 'dist/css/',
-        ext: '.min.css',
         flatten: true
       }
     },
@@ -526,7 +525,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:assets']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
