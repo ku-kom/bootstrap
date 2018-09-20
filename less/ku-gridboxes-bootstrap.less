@@ -967,13 +967,13 @@
             .header {
               padding: 8px 0 8px 10px;
               font-size: 1.1em;
-              border-right: 0;
-              white-space: normal;
-              overflow: auto;
+              border-right: 25px solid transparent;
+              white-space: nowrap;
+              overflow: hidden;
               @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
-                border-right: 25px solid transparent;
-                white-space: nowrap;
-                overflow: hidden;
+                border-right: 0;
+                white-space: normal;
+                overflow: auto;
               }
             }
 

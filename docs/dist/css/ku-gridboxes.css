@@ -461,16 +461,16 @@ width: 100%;
 .gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
 .gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
 width: 100%;
-  overflow: auto;
-  white-space: normal;
-  border-right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 25px solid transparent;
 }
 @media (min-width: 480px) and (max-width: 767px) {
 .gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
   .gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
-overflow: hidden;
-    white-space: nowrap;
-    border-right: 25px solid transparent;
+overflow: auto;
+    white-space: normal;
+    border-right: 0;
   }
 }
 .gcrow .gccolumn .gridbox.size2.with-img.outlined .box1,
@@ -1011,10 +1011,10 @@ max-width: none;
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
 padding: 8px 0 8px 10px;
-    overflow: auto;
+    overflow: hidden;
     font-size: 1.1em;
-    white-space: normal;
-    border-right: 0;
+    white-space: nowrap;
+    border-right: 25px solid transparent;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 {
@@ -1042,9 +1042,9 @@ bottom: 9px;
 @media (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
 #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
-overflow: hidden;
-    white-space: nowrap;
-    border-right: 25px solid transparent;
+overflow: auto;
+    white-space: normal;
+    border-right: 0;
   }
 }
 .boxlink {
