@@ -722,17 +722,6 @@
     }
   }
 }
-// @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
-//   .gridbox {
-//     &.size2, &.size3 {
-//       &.with-img {
-//         .box1 {
-//           position: initial;
-//         }
-//       }
-//     }
-//   }
-// }
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
@@ -809,6 +798,15 @@
         .header {
           background: transparent;
           color: inherit;
+        }
+      }
+      &.size1 {
+        &.with-img {
+          .box2 {
+            img {
+              max-height: 146%;
+            }
+          }
         }
       }
     }

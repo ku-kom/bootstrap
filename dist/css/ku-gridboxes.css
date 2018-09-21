@@ -806,6 +806,15 @@ background: 0;
 color: inherit;
     background: transparent;
   }
+  .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
+  .one-three-column .column2 .gridbox.size1.with-img .box2 img,
+  .one-two-column .column2 .gridbox.size1.with-img .box2 img,
+  .single-column .column1 .gridbox.size1.with-img .box2 img,
+  .three-one-column .column1 .gridbox.size1.with-img .box2 img,
+  .two-one-column .column1 .gridbox.size1.with-img .box2 img,
+  .two-one-one-column .column1 .gridbox.size1.with-img .box2 img {
+max-height: 146%;
+  }
   .gridbox.with-img .text {
 display: none;
   }

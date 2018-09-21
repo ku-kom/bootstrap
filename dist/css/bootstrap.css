@@ -1430,11 +1430,11 @@ color: #165aad;
   text-decoration: none;
 }
 a:hover {
-color: #165aad;
+color: #3d239c;
   text-decoration: underline;
 }
 a:focus {
-color: #165aad;
+color: #3d239c;
   text-decoration: none;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -3881,7 +3881,7 @@ border-color: transparent;
 }
 .btn-link:hover,
 .btn-link:focus {
-color: #165aad;
+color: #3d239c;
   text-decoration: underline;
   background-color: transparent;
 }
