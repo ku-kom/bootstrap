@@ -921,6 +921,11 @@ padding-right: 24px;
     -ms-flex-order: 2;
             order: 2;
   }
+  .single-column .column1.with-img.size2 .box1 .header,
+  .single-column .column1.with-img.size3 .box1 .header {
+white-space: normal;
+    border-right: 0;
+  }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 {
             flex-direction: row;

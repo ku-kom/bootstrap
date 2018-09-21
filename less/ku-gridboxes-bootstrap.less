@@ -728,7 +728,6 @@
     }
   }
 }
-
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
@@ -871,7 +870,7 @@
       }
     }
   }
-  // Styling for full width .size1 boxes
+  // Styling for full width boxes
   .single-column .column1 {
     .size1 {
       flex-direction: row;
@@ -939,6 +938,16 @@
         .box2 {
           flex: 1;
           order: 2;
+        }
+      }
+    }
+    &.with-img {
+      &.size2, &.size3 {
+        .box1 {
+          .header {
+            border-right: 0;
+            white-space: normal;
+          }
         }
       }
     }
