@@ -591,6 +591,11 @@ border: 1px solid #252525;
 max-width: 100%;
     max-height: none;
   }
+  .gridbox.with-img.size2 .box1 .header,
+  .gridbox.with-img.size3 .box1 .header {
+white-space: normal;
+    border-right: 0;
+  }
   .gridbox.with-img.size2 .box2 img,
   .gridbox.with-img.size3 .box2 img {
 position: relative;
@@ -630,13 +635,6 @@ background: transparent;
   .FullWidthFrontpage .two-one-column .column1 .gridbox.with-img.outlined .header,
   .FullWidthFrontpage .two-one-one-column .column1 .gridbox.with-img.outlined .header {
 color: inherit;
-  }
-}
-@media (min-width: 768px) {
-.single-column .column1 .gridbox.size2.with-img .box1 .header,
-  .single-column .column1 .gridbox.size3.with-img .box1 .header {
-white-space: normal;
-    border-right: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

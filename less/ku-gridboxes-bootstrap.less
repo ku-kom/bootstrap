@@ -648,6 +648,12 @@
 
     &.with-img {
       &.size2, &.size3 {
+        .box1 {
+          .header {
+            border-right: 0;
+            white-space: normal;
+          }
+        }
         .box2 {
           img {
             // Testing alternative positioning of images in tablet view
@@ -722,22 +728,7 @@
     }
   }
 }
-@media (min-width: @screen-sm) {
-  .single-column .column1 {
-    .gridbox {
-      &.size2, &.size3 {
-        &.with-img {
-          .box1 {
-            .header {
-              border-right: 0;
-              white-space: normal;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
