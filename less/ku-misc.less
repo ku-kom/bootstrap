@@ -37,7 +37,7 @@ nav {
 }
 
 .main-content {
-  padding-top: @grid-gutter-height;
+
   @media (max-width: @screen-xs-max) {
     padding-bottom: @grid-gutter-height;
   }
@@ -54,6 +54,10 @@ nav {
       }
     }
   }
+}
+
+#main-content >p:first-child {
+  margin-top: 0;
 }
 
 .main-area {

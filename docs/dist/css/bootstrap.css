@@ -1745,7 +1745,8 @@ padding-bottom: 8px;
 }
 ol,
 ul {
-margin-top: 0;
+padding-left: 20px;
+  margin-top: 0;
   margin-bottom: 9px;
 }
 ol ol,
@@ -9548,9 +9549,6 @@ nav {
     -ms-flex: none;
         flex: none;
 }
-.main-content {
-padding-top: 23px;
-}
 @media (max-width: 767px) {
 .main-content {
 padding-bottom: 23px;
@@ -9563,6 +9561,9 @@ margin-top: 23px;
 .main-content [class*="col-"] + [class*="col-"] {
 margin-top: 23px;
   }
+}
+#main-content > p:first-child {
+margin-top: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 .main-area .row.double-column .col-sm-6 + .col-sm-6 {
