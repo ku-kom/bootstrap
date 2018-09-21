@@ -412,67 +412,67 @@ display: none;
 /*
 * Mobile: All column types must behave like single column boxes
 */
-.gcrow .gccolumn .gridbox.size1.with-img .box2 {
+.gridbox.size1.with-img .box2 {
 -webkit-flex: 0 1 133px;
     -ms-flex: 0 1 133px;
         flex: 0 1 133px;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.text-over.text-down .box1,
-.gcrow .gccolumn .gridbox.size3.with-img.text-over.text-down .box1 {
+.gridbox.size2.with-img.text-over.text-down .box1,
+.gridbox.size3.with-img.text-over.text-down .box1 {
 position: absolute;
   bottom: 0;
   left: 0;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.text-over.text-top .box1,
-.gcrow .gccolumn .gridbox.size3.with-img.text-over.text-top .box1 {
+.gridbox.size2.with-img.text-over.text-top .box1,
+.gridbox.size3.with-img.text-over.text-top .box1 {
 position: absolute;
   top: 0;
   left: 0;
 }
-.gcrow .gccolumn .gridbox.size2.with-img .box1,
-.gcrow .gccolumn .gridbox.size3.with-img .box1 {
+.gridbox.size2.with-img .box1,
+.gridbox.size3.with-img .box1 {
 width: 100%;
 
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.gcrow .gccolumn .gridbox.size2.with-img .box1 .header,
-.gcrow .gccolumn .gridbox.size3.with-img .box1 .header {
+.gridbox.size2.with-img .box1 .header,
+.gridbox.size3.with-img .box1 .header {
 width: 100%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 25px solid transparent;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.outlined .box1,
-.gcrow .gccolumn .gridbox.size3.with-img.outlined .box1 {
+.gridbox.size2.with-img.outlined .box1,
+.gridbox.size3.with-img.outlined .box1 {
 position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5 .header,
-.gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5 .header {
+.gridbox.size2.with-img.outlined.subcolor_5 .header,
+.gridbox.size3.with-img.outlined.subcolor_5 .header {
 color: #606060;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_6 .header,
-.gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_6 .header {
+.gridbox.size2.with-img.outlined.subcolor_6 .header,
+.gridbox.size3.with-img.outlined.subcolor_6 .header {
 color: #606060;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_7 .header,
-.gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_7 .header {
+.gridbox.size2.with-img.outlined.subcolor_7 .header,
+.gridbox.size3.with-img.outlined.subcolor_7 .header {
 color: #fff;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.text-top .box1,
-.gcrow .gccolumn .gridbox.size3.with-img.text-top .box1 {
+.gridbox.size2.with-img.text-top .box1,
+.gridbox.size3.with-img.text-top .box1 {
 position: relative;
 
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
 }
-.gcrow .gccolumn .gridbox.size2.with-img.text-top .box2,
-.gcrow .gccolumn .gridbox.size3.with-img.text-top .box2 {
+.gridbox.size2.with-img.text-top .box2,
+.gridbox.size3.with-img.text-top .box2 {
 -webkit-order: 2;
   -ms-flex-order: 2;
         order: 2;
@@ -480,7 +480,7 @@ position: relative;
       -ms-flex: 1;
           flex: 1;
 }
-.gcrow .gccolumn .gridbox.full .header {
+.gridbox.full .header {
 padding-right: 10px;
   background: transparent;
 }
@@ -537,7 +537,7 @@ max-width: 100%;
 width: 100%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 991px) {
 .gridbox.size1 .box2 {
 -webkit-flex: 0 1 185px;
     -ms-flex: 0 1 185px;
@@ -630,12 +630,6 @@ background: transparent;
   .FullWidthFrontpage .two-one-column .column1 .gridbox.with-img.outlined .header,
   .FullWidthFrontpage .two-one-one-column .column1 .gridbox.with-img.outlined .header {
 color: inherit;
-  }
-}
-@media (min-width: 480px) and (max-width: 991px) {
-.gridbox.size2.with-img .box1,
-  .gridbox.size3.with-img .box1 {
-position: initial;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
