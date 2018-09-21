@@ -633,8 +633,8 @@ color: inherit;
   }
 }
 @media (min-width: 768px) {
-.single-column .column1 .gridbox.size2.with-img .box1,
-  .single-column .column1 .gridbox.size3.with-img .box1 {
+.single-column .column1 .gridbox.size2.with-img .box1 .header,
+  .single-column .column1 .gridbox.size3.with-img .box1 .header {
 white-space: normal;
     border-right: 0;
   }
