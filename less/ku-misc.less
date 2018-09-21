@@ -37,7 +37,6 @@ nav {
 }
 
 .main-content {
-
   @media (max-width: @screen-xs-max) {
     padding-bottom: @grid-gutter-height;
   }
@@ -56,7 +55,7 @@ nav {
   }
 }
 
-#main-content >p:first-child {
+#main-content > p:first-child {
   margin-top: 0;
 }
 
@@ -122,15 +121,17 @@ nav {
     }
   }
 }
-
 // KU grid:
-
 .gcitem {
   position: relative;
   &:extend(.clearfix all);
 
   & + .gcitem {
     margin-top: @grid-gutter-height;
+  }
+
+  &.picture h1.title {
+    display: none;
   }
 }
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
