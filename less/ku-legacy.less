@@ -1,3 +1,29 @@
 //
 // CSS for legacy elements - delete when nesseary.
 // --------------------------------------------------
+// Nyhedsbokse
+
+.gcitem {
+  .nyhed {
+    .nyhed-illustration {
+      & +.nyhedswrap {
+        .nyhed-tema {
+          line-height: normal;
+          margin: 4px 0 2px;
+
+          & + h2 {
+            margin-top: 2px;
+
+            a {
+              color: @text-color;
+            }
+          }
+        }
+
+        .nyhed-teaser {
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
+}
