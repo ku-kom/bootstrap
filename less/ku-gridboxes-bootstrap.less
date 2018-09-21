@@ -514,7 +514,7 @@
 * Mobile: All column types must behave like single column boxes
 */
 
-.gcrow .gccolumn .gridbox {
+.gridbox {
   .all-single-column();
 
   &.full {
@@ -722,17 +722,20 @@
     }
   }
 }
-// @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
-//   .gridbox {
-//     &.size2, &.size3 {
-//       &.with-img {
-//         .box1 {
-//           position: initial;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+  .gridbox {
+    .img-text-aligned();
+  }
+  // .gridbox {
+  //   &.size2, &.size3 {
+  //     &.with-img {
+  //       .box1 {
+  //         position: initial;
+  //       }
+  //     }
+  //   }
+  // }
+}
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
