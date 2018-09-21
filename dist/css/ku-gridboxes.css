@@ -921,8 +921,8 @@ padding-right: 24px;
     -ms-flex-order: 2;
             order: 2;
   }
-  .single-column .column1.with-img.size2 .box1 .header,
-  .single-column .column1.with-img.size3 .box1 .header {
+  .single-column .column1 .size2.with-img .box1 .header,
+  .single-column .column1 .size3.with-img .box1 .header {
 white-space: normal;
     border-right: 0;
   }
