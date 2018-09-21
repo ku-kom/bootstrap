@@ -556,7 +556,7 @@ position: absolute;
   }
   .gridbox.size2.with-img .box1,
   .gridbox.size3.with-img .box1 {
-position: initial;
+position: initial!important;
 
     -webkit-flex: 1;
         -ms-flex: 1;
@@ -729,7 +729,7 @@ position: absolute;
   .three-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 {
-position: initial;
+position: initial!important;
 
     -webkit-flex: 1;
         -ms-flex: 1;

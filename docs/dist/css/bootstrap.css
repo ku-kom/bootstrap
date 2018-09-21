@@ -8132,8 +8132,7 @@ min-width: 65px;
 display: block;
 }
 .media-list .media {
-padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
 }
 .media-list .media .media-heading {
 font-size: 14px;
