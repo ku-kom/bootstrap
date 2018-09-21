@@ -1399,6 +1399,7 @@ position: relative;
   height: 100%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.5;
   color: #252525;
           flex-direction: column;
