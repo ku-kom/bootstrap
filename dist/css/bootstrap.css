@@ -9837,17 +9837,17 @@ display: block;
 display: none;
   }
 }
-.gcitem .nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
+.gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
 margin: 4px 0 2px;
   line-height: normal;
 }
-.gcitem .nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema + h2 {
+.gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema + h2 {
 margin-top: 2px;
 }
-.gcitem .nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema + h2 a {
+.gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema + h2 a {
 color: #252525;
 }
-.gcitem .nyhed .nyhed-illustration + .nyhedswrap .nyhed-teaser {
+.gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-teaser {
 margin: 0 0 20px;
 }
 .mce-content-body#content {
