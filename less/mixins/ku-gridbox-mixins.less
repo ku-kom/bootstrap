@@ -58,6 +58,9 @@
       &.outlined {
         .box1 {
           position: absolute;
+          @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+            position: initial;
+          }
           left: 0;
           bottom: 0;
           width: 100%;

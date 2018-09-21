@@ -13,7 +13,6 @@
 */
 .gridbox {
 position: relative;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
@@ -22,8 +21,6 @@ position: relative;
           flex-direction: column;
   border-radius: 2px;
 
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
@@ -160,11 +157,9 @@ color: #fff;
 position: relative;
   z-index: 4;
 
-  -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
-  -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -183,11 +178,9 @@ font-size: 13px;
 .gridbox .box2 {
 padding: 5px 10px 10px;
 
-  -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
-  -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -240,10 +233,9 @@ right: 0;
           transform: translateY(-50%) translateX(0) translate3d(0, 0, 0);
 }
 .gridbox:not(.with-img) .box1 {
--webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+-webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
 }
 .gridbox:not(.with-img) .box1 .header {
 color: inherit;
@@ -264,32 +256,28 @@ color: #252525;
   border-right: 5px solid transparent;
 }
 .gridbox.text-top .box1 {
--webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
+-webkit-order: 1;
   -ms-flex-order: 1;
-          order: 1;
+        order: 1;
 }
 .gridbox.text-top .box2 {
--webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
+-webkit-order: 2;
   -ms-flex-order: 2;
-          order: 2;
+        order: 2;
 }
 .gridbox.text-top::before {
 top: 10px;
   bottom: auto;
 }
 .gridbox.text-down .box1 {
--webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
+-webkit-order: 2;
   -ms-flex-order: 2;
-          order: 2;
+        order: 2;
 }
 .gridbox.text-down .box2 {
--webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
+-webkit-order: 1;
   -ms-flex-order: 1;
-          order: 1;
+        order: 1;
 }
 .gridbox.text-over .header {
 position: absolute;
@@ -305,10 +293,9 @@ background: #fff !important;
 background: #e7e7e7 !important;
 }
 .gridbox.outlined:not(.with-img) .box1 {
--webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
+-webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
 }
 .gridbox.outlined:not(.with-img) .box2 {
 display: none;
@@ -327,11 +314,9 @@ height: 289px;
 .gridbox.size1.with-img .box1 {
 padding: 5px 10px 10px;
 
-  -webkit-box-ordinal-group: 3;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -364,11 +349,9 @@ display: none;
   color: #252525;
 }
 .gridbox.size1 .box2 {
--webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
+-webkit-order: 1;
   -ms-flex-order: 1;
-          order: 1;
-  -webkit-box-flex: 0;
+        order: 1;
   -webkit-flex: 0 0 133px;
       -ms-flex: 0 0 133px;
           flex: 0 0 133px;
@@ -387,10 +370,9 @@ max-width: none;
   max-height: 100%;
 }
 .gridbox.size2:not(.with-img) .box1 {
--webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
+-webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
 }
 .gridbox.size2:not(.with-img) .box1 .text {
 display: block;
@@ -399,10 +381,9 @@ display: block;
 height: 133px;
 }
 .gridbox.size3:not(.with-img) .box1 {
--webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
+-webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
 }
 .gridbox.size3:not(.with-img) .box1 .text {
 display: block;
@@ -432,10 +413,9 @@ display: none;
 * Mobile: All column types must behave like single column boxes
 */
 .gcrow .gccolumn .gridbox.size1.with-img .box2 {
--webkit-box-flex: 0;
-  -webkit-flex: 0 1 133px;
-      -ms-flex: 0 1 133px;
-          flex: 0 1 133px;
+-webkit-flex: 0 1 133px;
+    -ms-flex: 0 1 133px;
+        flex: 0 1 133px;
 }
 .gcrow .gccolumn .gridbox.size2.with-img.text-over.text-down .box1,
 .gcrow .gccolumn .gridbox.size3.with-img.text-over.text-down .box1 {
@@ -453,7 +433,6 @@ position: absolute;
 .gcrow .gccolumn .gridbox.size3.with-img .box1 {
 width: 100%;
 
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -496,18 +475,15 @@ color: #fff;
 .gcrow .gccolumn .gridbox.size3.with-img.text-top .box1 {
 position: relative;
 
-  -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
 }
 .gcrow .gccolumn .gridbox.size2.with-img.text-top .box2,
 .gcrow .gccolumn .gridbox.size3.with-img.text-top .box2 {
--webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
+-webkit-order: 2;
   -ms-flex-order: 2;
-          order: 2;
-  -webkit-box-flex: 1;
+        order: 2;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -571,10 +547,9 @@ width: 100%;
 }
 @media (min-width: 480px) and (max-width: 767px) {
 .gridbox.size1 .box2 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 1 185px;
-        -ms-flex: 0 1 185px;
-            flex: 0 1 185px;
+-webkit-flex: 0 1 185px;
+    -ms-flex: 0 1 185px;
+        flex: 0 1 185px;
   }
   .gridbox.size1 .box2 iframe {
 position: absolute;
@@ -584,8 +559,6 @@ position: absolute;
   .gridbox.size3.with-img {
             flex-direction: row;
 
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
@@ -593,11 +566,9 @@ position: absolute;
   .gridbox.size3.with-img .box1 {
 position: initial;
 
-    -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
@@ -611,11 +582,9 @@ position: relative;
   }
   .gridbox.size2.with-img .box2,
   .gridbox.size3.with-img .box2 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 0 235px;
-        -ms-flex: 0 0 235px;
-            flex: 0 0 235px;
-    -webkit-box-ordinal-group: 2;
+-webkit-flex: 0 0 235px;
+    -ms-flex: 0 0 235px;
+        flex: 0 0 235px;
     -webkit-order: 1;
     -ms-flex-order: 1;
             order: 1;
@@ -671,6 +640,12 @@ background: transparent;
 color: inherit;
   }
 }
+@media (min-width: 480px) and (max-width: 991px) {
+.gridbox.size2.with-img .box1,
+  .gridbox.size3.with-img .box1 {
+position: initial;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
 .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img,
@@ -679,8 +654,6 @@ color: inherit;
             flex-direction: column!important;
     border: 0;
 
-    -webkit-box-orient: vertical!important;
-    -webkit-box-direction: normal!important;
     -webkit-flex-direction: column!important;
         -ms-flex-direction: column!important;
   }
@@ -723,10 +696,9 @@ color: #606060;
   .three-one-column .column1 .gridbox.size1 .box2,
   .two-one-column .column1 .gridbox.size1 .box2,
   .two-one-one-column .column1 .gridbox.size1 .box2 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 1 185px;
-        -ms-flex: 0 1 185px;
-            flex: 0 1 185px;
+-webkit-flex: 0 1 185px;
+    -ms-flex: 0 1 185px;
+        flex: 0 1 185px;
   }
   .one-one-two-column .column3 .gridbox.size1 .box2 iframe,
   .one-three-column .column2 .gridbox.size1 .box2 iframe,
@@ -754,8 +726,6 @@ position: absolute;
   .two-one-one-column .column1 .gridbox.size3.with-img {
             flex-direction: row;
 
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
@@ -775,11 +745,9 @@ position: absolute;
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 {
 position: initial;
 
-    -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
@@ -817,11 +785,9 @@ position: relative;
   .three-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 0 235px;
-        -ms-flex: 0 0 235px;
-            flex: 0 0 235px;
-    -webkit-box-ordinal-group: 2;
+-webkit-flex: 0 0 235px;
+    -ms-flex: 0 0 235px;
+        flex: 0 0 235px;
     -webkit-order: 1;
     -ms-flex-order: 1;
             order: 1;
@@ -895,8 +861,6 @@ top: 50%;
             flex-direction: row;
     background: #fff;
 
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
@@ -907,11 +871,9 @@ margin-top: 5px;
 max-width: 390px;
     padding: 0 24px 10px 15px;
 
-    -webkit-box-flex: 0;
     -webkit-flex: 0 1 51.6%;
         -ms-flex: 0 1 51.6%;
             flex: 0 1 51.6%;
-    -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
@@ -930,11 +892,9 @@ display: block;
     font-size: 14.1px;
   }
   .single-column .column1 .size1.with-img .box2 {
--webkit-box-flex: 1!important;
-    -webkit-flex: 1!important;
-        -ms-flex: 1!important;
-            flex: 1!important;
-    -webkit-box-ordinal-group: 2;
+-webkit-flex: 1!important;
+    -ms-flex: 1!important;
+        flex: 1!important;
     -webkit-order: 1;
     -ms-flex-order: 1;
             order: 1;
@@ -944,8 +904,7 @@ object-fit: cover;
   }
   .single-column .column1 .size1.with-img:hover .header > span {
 text-shadow: 3px 0 #fff, 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff, -3px 0 #fff;
-    background-image: -webkit-linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
-    background-image:         linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
+    background-image: linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
     background-repeat: repeat-x;
     background-position: 0 93%;
     background-size: 1px 1px;
@@ -955,11 +914,9 @@ padding-right: 24px;
     padding-left: 0;
   }
   .single-column .column1 .size1.img-flip-right .box2 {
--webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-ordinal-group: 3;
+-webkit-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
@@ -968,17 +925,14 @@ padding-right: 24px;
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 {
             flex-direction: row;
 
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box1,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box1 {
--webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
+-webkit-order: 1;
     -ms-flex-order: 1;
-            order: 1;
+        order: 1;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .text,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .text {
@@ -986,11 +940,9 @@ display: block;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box2,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box2 {
--webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
+-webkit-order: 2;
     -ms-flex-order: 2;
-            order: 2;
-    -webkit-box-flex: 0;
+        order: 2;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -1003,8 +955,6 @@ max-width: none;
   #gridsidebar .single-column .column1 .gridbox.size3.with-img {
             flex-direction: column;
 
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
   }
@@ -1018,10 +968,9 @@ padding: 8px 0 8px 10px;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+-webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1 .text,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 .text {
@@ -1029,10 +978,9 @@ display: none;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box2,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box2 {
--webkit-box-flex: 0;
-    -webkit-flex: 0 1 235px;
-        -ms-flex: 0 1 235px;
-            flex: 0 1 235px;
+-webkit-flex: 0 1 235px;
+    -ms-flex: 0 1 235px;
+        flex: 0 1 235px;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
