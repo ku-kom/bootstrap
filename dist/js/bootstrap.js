@@ -1855,11 +1855,14 @@ if (typeof jQuery === 'undefined') {
 
 (function($) {
 
-  var editMode;
+  // Language of the current page - fallback to English
+  var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
+
+  var $editMode;
   if ($('html').hasClass('ku-bs')) {
     // False if in Obvius editor mode (Bootstrap templates has class .ku-bs but not in backend).
     // Use this variable to determine if certain stuff should run or load.
-    editMode = false;
+    $editMode = false;
   }
 
   // Toggle icon in accordions
@@ -1878,11 +1881,22 @@ if (typeof jQuery === 'undefined') {
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
   // Open / close all accordions
-  $('.closeall').click(function() {
-    $('.panel-collapse.in').collapse('hide');
-  });
-  $('.openall').click(function() {
-    $('.panel-collapse:not(".in")').collapse('show');
+  var activeAccordion = true;
+  $('.toggleAccordions').click(function() {
+    if (activeAccordion) {
+      activeAccordion = false;
+      $('.panel-collapse').collapse('show');
+      $('.panel-title').attr('data-toggle', '');
+      var $close = $(this).data($lang + '-close');
+      $(this).text($close);
+    } else {
+      activeAccordion = true;
+      $('.panel-collapse').collapse('hide');
+      $('.panel-title').attr('data-toggle', 'collapse');
+      var $open = $(this).data($lang + '-open');
+      $(this).text($open);
+    }
+    $(this).toggleClass('expanded');
   });
 
   // Truncate multiple lines of text in News in global menu
@@ -1902,14 +1916,14 @@ if (typeof jQuery === 'undefined') {
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
   // Add scroller after last element
-  if (editMode === false) {
+  if ($editMode === false) {
     $($scroller).appendTo('#globalfooter');
   }
 
   // Show/hide scroller
   function scrollFunction() {
     var $scroll = $('#scrolltop');
-    if (editMode === false && $scroll) {
+    if ($editMode === false && $scroll) {
       if (document.documentElement.scrollTop > 60) {
         $scroll.addClass('in');
       } else {
