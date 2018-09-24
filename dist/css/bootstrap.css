@@ -8433,9 +8433,6 @@ background-color: #66609e;
   }
 }
 /* Slider */
-.slide-wrapper {
-visibility: hidden;
-}
 .slick-slider {
 position: relative;
   display: block;

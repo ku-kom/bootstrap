@@ -1,8 +1,4 @@
-.slick-slider * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
+/* Slick theme for slides count and galleries - not necessary for standard slideshows */
 /* Current and total slides */
 
 .slide-wrapper .slider-count {

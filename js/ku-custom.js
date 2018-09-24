@@ -42,13 +42,14 @@
   });
 
   // Truncate multiple lines of text in News in global menu
-  var $chars = 80; // number of characters
+  var $chars = 70; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
   if ($news) {
     $news.each(function(i, v) {
-      var txt = $(this).text();
-      if (txt.length > $chars) {
+      var $txt = $(this).text();
+      if ($txt.length > $chars) {
         $(this).html($(this).html().substring(0, $chars) + '...');
+        $(this).addClass('truncated');
       }
     });
   }
@@ -93,9 +94,7 @@
   // $('a[href*="#"]:not([href="#"])').click(function() {
   //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
   //     var target = $(this.hash);
-  //     target = target.length
-  //       ? target
-  //       : $('[name=' + this.hash.slice(1) + ']');
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
   //     if (target.length) {
   //       $('html, body').animate({
   //         scrollTop: target.offset().top
