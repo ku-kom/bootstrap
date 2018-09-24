@@ -268,10 +268,9 @@
         -ms-interpolation-mode: bicubic;
         object-fit: cover;
         position: absolute;
-        top: 50%;
+        top: 51%;
         left: 50%;
-        //bottom: 0;
-        transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
+        transform: translateY(-51%) translateX(-50%) translate3d(0,0,0);
         backface-visibility: hidden;
         filter: brightness(100%) blur(0);
         //image-rendering: -webkit-optimize-contrast;
@@ -280,16 +279,16 @@
     // Position image left
     &.img-left {
       img {
-        left: 0;
-        transform: translateY(-50%) translateX(0) translate3d(0,0,0);
+        left: 0!important;
+        transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
       }
     }
     // Position image right
     &.img-right {
       img {
-        left: auto;
+        left: auto!important;
         right: 0;
-        transform: translateY(-50%) translateX(0) translate3d(0,0,0);
+        transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
       }
     }
   }

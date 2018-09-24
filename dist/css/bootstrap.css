@@ -9632,6 +9632,9 @@ float: right;
 .right-side .flexiblebox-as-rightbox:first-child {
 margin-top: 23px;
   }
+  .right-side .rightbox-normal:first-child {
+margin-top: 8px;
+  }
 }
 .gcitem {
 position: relative;

@@ -209,15 +209,15 @@ position: relative;
 }
 .gridbox.with-img .box2 img {
 position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   display: block;
   max-width: none;
   max-height: 100%;
           filter: brightness(100%) blur(0);
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
-          transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
+  -webkit-transform: translateY(-51%) translateX(-50%) translate3d(0, 0, 0);
+          transform: translateY(-51%) translateX(-50%) translate3d(0, 0, 0);
 
   object-fit: cover;
   -webkit-backface-visibility: hidden;
@@ -225,15 +225,15 @@ position: absolute;
   -webkit-filter: brightness(100%) blur(0);
 }
 .gridbox.with-img.img-left img {
-left: 0;
-  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0);
-          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0);
+left: 0!important;
+  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
 }
 .gridbox.with-img.img-right img {
 right: 0;
-  left: auto;
-  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0);
-          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0);
+  left: auto!important;
+  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
 }
 .gridbox:not(.with-img) .box1 {
 -webkit-flex: 1 1 auto;
