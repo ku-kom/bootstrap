@@ -137,6 +137,9 @@ border: 1px solid #4d4444;
 background: #e7e7e7;
   border: 1px solid #4d4444;
 }
+.gridbox.subcolor_7.outlined::before {
+color: #625757;
+}
 .gridbox.subcolor_7.full {
 color: #fff;
   background: #625757;
