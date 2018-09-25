@@ -7569,7 +7569,7 @@ top: 9px;
   width: 2px;
   height: 2px;
 }
-.ku-leftmenu > ul + ul {
+.ku-leftmenu ul + ul {
 margin-top: 20px;
   border-top: 1px solid #ccc;
 }
