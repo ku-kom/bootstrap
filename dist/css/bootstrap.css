@@ -7337,7 +7337,7 @@ padding-top: 30px;
 }
 .ku-leftmenu .ku-navbar-header {
 padding-left: 6px;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   font-weight: bold;
   line-height: 1;
   border-left: 8px solid #901a1e;
@@ -7593,12 +7593,20 @@ top: 9px;
   height: 2px;
 }
 #leftmenu_2 {
-margin-top: 20px;
+padding-left: 0;
+  margin-top: 20px;
   border-top: 1px solid #ccc;
 }
+#leftmenu_2 li:first-child {
+padding-top: 20px;
+}
 #leftmenu_2 + ul {
-margin-top: 20px;
+padding-left: 0;
+  margin-top: 20px;
   border-top: 1px solid #ccc;
+}
+#leftmenu_2 + ul li:first-child {
+padding-top: 20px;
 }
 @media (max-width: 767px) {
 html:not(.non-responsive) .ku-leftmenu {
