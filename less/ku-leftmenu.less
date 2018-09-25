@@ -168,37 +168,39 @@
     }
   }
 
-  ul.nav {
+  ul {
     //First level
     > li {
       &.active {
-        &::before {
-          background-color: @ku-red;
+        > a {
+          &::before {
+            background-color: @ku-red;
 
-          .theme-samf & {
-            background-color: @samf;
-          }
+            .theme-samf & {
+              background-color: @samf;
+            }
 
-          .theme-hum & {
-            background-color: @hum;
-          }
+            .theme-hum & {
+              background-color: @hum;
+            }
 
-          .theme-science & {
-            background-color: @science;
-          }
+            .theme-science & {
+              background-color: @science;
+            }
 
-          .theme-sund & {
-            background-color: @sund;
-          }
+            .theme-sund & {
+              background-color: @sund;
+            }
 
-          .theme-jur & {
-            background-color: @jura;
-          }
+            .theme-jur & {
+              background-color: @jura;
+            }
 
-          .theme-teo & {
-            background-color: @teol;
+            .theme-teo & {
+              background-color: @teol;
+            }
+            color: @white-color;
           }
-          color: @white-color;
         }
       }
 
@@ -285,6 +287,7 @@
               height: 4px;
               width: 4px;
               top: 7px;
+              border: 0;
               background-color: @ku-red;
 
               .theme-samf & {
@@ -351,8 +354,11 @@
     }
   }
 }
+
 #leftmenu_2 {
   // Extra menus
+  border-top: 1px solid @gray;
+  margin-top: @margin20;
   & + ul {
     border-top: 1px solid @gray;
     margin-top: @margin20;
