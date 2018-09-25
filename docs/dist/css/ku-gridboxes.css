@@ -227,19 +227,6 @@ display: block;
           backface-visibility: hidden;
   -webkit-filter: brightness(100%) blur(0);
 }
-.gridbox.with-img.img-left img {
-position: absolute;
-  left: 0!important;
-  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
-          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
-}
-.gridbox.with-img.img-right img {
-position: absolute;
-  right: 0;
-  left: auto!important;
-  -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
-          transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
-}
 .gridbox:not(.with-img) .box1 {
 -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
