@@ -53,6 +53,13 @@ nav {
       }
     }
   }
+
+  ol,
+  ul {
+    li {
+      line-height: 2;
+    }
+  }
 }
 
 #main-content > p:first-child {
@@ -119,12 +126,14 @@ nav {
     .flexiblebox-as-rightbox:first-child {
       margin-top: @grid-gutter-height;
     }
+
     .rightbox-normal:first-child {
       margin-top: 8px;
     }
   }
 }
 // KU grid:
+
 .gcitem {
   position: relative;
   &:extend(.clearfix all);

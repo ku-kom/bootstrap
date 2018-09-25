@@ -1,6 +1,10 @@
 /* Datatables */
 @import url("../datatables.min.css");
 
+#medarbejdertable_wrapper {
+  margin-top: 18px;
+}
+
 #medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
    width: 8em;

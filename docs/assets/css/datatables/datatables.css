@@ -44,11 +44,13 @@
   font-weight: normal;
   text-align: left;
   white-space: nowrap;
+  margin-bottom: 0;
 }
 
 .dataTables_wrapper .dataTables_length select {
-  width: 75px;
+  /* width: 75px; */
   display: inline-block;
+  margin: 0 5px;
 }
 
 .dataTables_wrapper .dataTables_filter {
@@ -75,7 +77,7 @@
 .dataTables_wrapper .dataTables_paginate {
   margin: 0;
   white-space: nowrap;
-  text-align: right;
+  text-align: center;
 }
 
 .dataTables_wrapper .dataTables_paginate ul.pagination {

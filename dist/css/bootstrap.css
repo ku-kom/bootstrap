@@ -1603,6 +1603,7 @@ h1 {
 margin-top: 5px;
   font-size: 24px;
   font-weight: 400;
+  line-height: 1.3333333;
 }
 .h2,
 h2 {
@@ -7282,7 +7283,7 @@ bottom: -20px;
 .ku-branding .ku-branding-text {
 position: absolute;
   bottom: 16px;
-  left: 83px;
+  left: 90px;
   max-height: 83px;
   padding-right: 10px;
   letter-spacing: .936px;
@@ -9621,6 +9622,10 @@ margin-top: 23px;
 .main-content [class*="col-"] + [class*="col-"] {
 margin-top: 23px;
   }
+}
+.main-content ol li,
+.main-content ul li {
+line-height: 2;
 }
 #main-content > p:first-child {
 margin-top: 0;
