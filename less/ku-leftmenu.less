@@ -164,6 +164,13 @@
           }
         }
       }
+      & > ul {
+        border-top: 1px solid @gray;
+
+        & + ul {
+          margin-top: @margin20;
+        }
+      }
     }
 
     ul.nav {
@@ -318,9 +325,11 @@
       }
     }
 
-    .menu-seperator {
-      margin: @margin20 0;
-    }
+    // .menu-seperator {
+    //   margin: @margin20 0;
+    // }
+
+
   }
 
 // Left menu slide in/out for mobiles

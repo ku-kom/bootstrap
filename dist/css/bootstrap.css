@@ -5413,7 +5413,7 @@ display: none;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    margin-top: 23px;
+    margin: 23px 0 5px 0;
   }
 }
 .breadcrumb {
@@ -5768,7 +5768,8 @@ display: table-caption;
   caption-side: bottom;
   border-bottom: 1px solid #dfdfdf;
 }
-.fritekst_over_img {
+.fritekst_over_img,
+.uden-boks-top {
 position: absolute;
   margin-top: -39px;
 }
@@ -7466,6 +7467,12 @@ position: absolute;
   top: 3px;
   left: 0;
 }
+.ku-leftmenu ul > ul {
+border-top: 1px solid #ccc;
+}
+.ku-leftmenu ul > ul + ul {
+margin-top: 20px;
+}
 .ku-leftmenu ul.nav > li > a::before {
 position: absolute;
   top: 5px;
@@ -7567,9 +7574,6 @@ padding-left: 9px;
 top: 9px;
   width: 2px;
   height: 2px;
-}
-.ku-leftmenu .menu-seperator {
-margin: 20px 0;
 }
 @media (max-width: 767px) {
 html:not(.non-responsive) .ku-leftmenu {

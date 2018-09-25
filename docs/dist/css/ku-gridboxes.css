@@ -204,33 +204,38 @@ display: none;
 }
 .gridbox.with-img .box2 {
 position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   padding: 0 !important;
   overflow: hidden;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 }
 .gridbox.with-img .box2 img {
-position: absolute;
-  top: 51%;
-  left: 50%;
-  display: block;
-  max-width: none;
-  max-height: 100%;
+display: block;
           filter: brightness(100%) blur(0);
   -ms-interpolation-mode: bicubic;
-  -webkit-transform: translateY(-51%) translateX(-50%) translate3d(0, 0, 0);
-          transform: translateY(-51%) translateX(-50%) translate3d(0, 0, 0);
 
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
   object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-filter: brightness(100%) blur(0);
 }
 .gridbox.with-img.img-left img {
-left: 0!important;
+position: absolute;
+  left: 0!important;
   -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
           transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
 }
 .gridbox.with-img.img-right img {
-right: 0;
+position: absolute;
+  right: 0;
   left: auto!important;
   -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
           transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
@@ -367,10 +372,6 @@ background: #e7e7e7;
 }
 .gridbox.size2 {
 height: 185px;
-}
-.gridbox.size2.with-img .box2 img {
-max-width: none;
-  max-height: 100%;
 }
 .gridbox.size2:not(.with-img) .box1 {
 -webkit-flex: 0 1 100%;
@@ -852,13 +853,6 @@ color: #252525;
   .triple-column [class*=column] .gridbox.size3.text-over.with-img,
   .two-one-column .column2 .gridbox.size3.text-over.with-img {
 background: none;
-  }
-  .double-column [class*=column] .gridbox.with-img .box2 img {
-top: 50%;
-    left: 50%;
-    min-width: 100%;
-    -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
-            transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
   }
   .single-column .column1 .size1 {
             flex-direction: row;
