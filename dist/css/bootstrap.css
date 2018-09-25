@@ -5413,7 +5413,7 @@ display: none;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    margin: 23px 0 5px 0;
+    margin: 23px 0 10px 0;
   }
 }
 .breadcrumb {
@@ -7467,12 +7467,6 @@ position: absolute;
   top: 3px;
   left: 0;
 }
-.ku-leftmenu ul > ul {
-border-top: 1px solid #ccc;
-}
-.ku-leftmenu ul > ul + ul {
-margin-top: 20px;
-}
 .ku-leftmenu ul.nav > li > a::before {
 position: absolute;
   top: 5px;
@@ -7574,6 +7568,10 @@ padding-left: 9px;
 top: 9px;
   width: 2px;
   height: 2px;
+}
+.ku-leftmenu > ul + ul {
+margin-top: 20px;
+  border-top: 1px solid #ccc;
 }
 @media (max-width: 767px) {
 html:not(.non-responsive) .ku-leftmenu {
