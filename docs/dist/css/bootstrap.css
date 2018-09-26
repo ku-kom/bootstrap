@@ -7473,26 +7473,33 @@ position: absolute;
   top: 3px;
   left: 0;
 }
-.ku-leftmenu ul > li.active > a::before {
+.ku-leftmenu ul > li.active > a::before,
+.ku-leftmenu ul > li.active-sub > a::before {
 color: #fff;
   background-color: #901a1e;
 }
-.theme-samf .ku-leftmenu ul > li.active > a::before {
+.theme-samf .ku-leftmenu ul > li.active > a::before,
+.theme-samf .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #e13718;
 }
-.theme-hum .ku-leftmenu ul > li.active > a::before {
+.theme-hum .ku-leftmenu ul > li.active > a::before,
+.theme-hum .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #365aa5;
 }
-.theme-science .ku-leftmenu ul > li.active > a::before {
+.theme-science .ku-leftmenu ul > li.active > a::before,
+.theme-science .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #46743c;
 }
-.theme-sund .ku-leftmenu ul > li.active > a::before {
+.theme-sund .ku-leftmenu ul > li.active > a::before,
+.theme-sund .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #2a216a;
 }
-.theme-jur .ku-leftmenu ul > li.active > a::before {
+.theme-jur .ku-leftmenu ul > li.active > a::before,
+.theme-jur .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #999632;
 }
-.theme-teo .ku-leftmenu ul > li.active > a::before {
+.theme-teo .ku-leftmenu ul > li.active > a::before,
+.theme-teo .ku-leftmenu ul > li.active-sub > a::before {
 background-color: #66609e;
 }
 .ku-leftmenu ul > li > a::before {
@@ -9969,6 +9976,44 @@ margin: 0 0 20px;
 }
 #banners-3col {
 padding: 0;
+}
+/* KU custom elements */
+.find-researcher {
+position: relative;
+  height: 130px;
+  margin-top: -10px;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #bebec0 0%, #b0b2b6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbebec0', endColorstr='#ffb0b2b6', GradientType=1);
+  background-repeat: repeat-x;
+}
+.find-researcher-bg {
+width: 100%;
+  height: 130px;
+  margin-bottom: 0 !important;
+  background: url("https://bootstrap.secure.ku.dk/img/find_en_forsker.png") no-repeat 80% 25px;
+  background-size: 140px;
+}
+.find-researcher-bg .search-text {
+margin-top: 18px;
+  margin-bottom: 30px !important;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #565656;
+}
+.find-researcher-bg .search-text .text-normal {
+font-weight: 300;
+}
+.find-researcher form {
+width: 94%;
+}
+.find-researcher form .input-group input[type="text"] {
+opacity: .85;
+}
+.find-researcher form .input-group .input-group-btn .btn {
+font-weight: 700;
+  color: #901a1e;
 }
 .mce-content-body#content {
 display: block;
