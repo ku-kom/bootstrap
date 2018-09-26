@@ -9996,7 +9996,7 @@ width: 100%;
 }
 .find-researcher-bg .search-text {
 margin-top: 18px;
-  margin-bottom: 30px !important;
+  margin-bottom: 20px;
   margin-left: 15px;
   font-size: 18px;
   font-weight: 600;
@@ -10007,9 +10007,15 @@ font-weight: 300;
 }
 .find-researcher form {
 width: 94%;
+  margin: 0 auto;
+}
+.find-researcher form .input-group {
+border: 1px solid #666;
+  border-radius: 2px;
 }
 .find-researcher form .input-group input[type="text"] {
-opacity: .85;
+border: 0;
+  opacity: .85;
 }
 .find-researcher form .input-group .input-group-btn .btn {
 font-weight: 700;
