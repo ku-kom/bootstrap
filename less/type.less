@@ -63,9 +63,12 @@ h6 {
 .h1,
 h1 {
   font-size: @font-size-h1;
+  @media (max-width: @screen-xs-max) {
+    margin-top: 20px;
+  }
   margin-top: 5px;
   font-weight: 400;
-  // KU: 
+  // KU:
   line-height: @line-height-small;
 }
 

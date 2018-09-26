@@ -1605,6 +1605,12 @@ margin-top: 5px;
   font-weight: 400;
   line-height: 1.3333333;
 }
+@media (max-width: 767px) {
+.h1,
+  h1 {
+margin-top: 20px;
+  }
+}
 .h2,
 h2 {
 font-size: 20.4px;
@@ -7496,6 +7502,7 @@ position: absolute;
   left: 0;
   font-family: 'Glyphicons Halflings';
   font-size: 7px;
+  font-weight: 400;
   color: #901a1e;
   content: "\e080";
   border: 1px solid #d7d7d7;
@@ -9622,10 +9629,6 @@ margin-top: 23px;
 .main-content [class*="col-"] + [class*="col-"] {
 margin-top: 23px;
   }
-}
-.main-content ol li,
-.main-content ul li {
-line-height: 2;
 }
 #main-content > p:first-child {
 margin-top: 0;
