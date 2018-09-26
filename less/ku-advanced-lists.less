@@ -17,7 +17,7 @@
       display: none;
       @media screen and (min-width: @screen-sm-min) {
         display: block;
-        flex: 1 0 33%;
+        flex: 0 0 @default-col-width;
         background-position: center;
         background-size: cover;
 
@@ -54,8 +54,12 @@
   }
 
   &.img-left {
+    .list-img {
+      flex: 0 0 @default-col-width;
+    }
     .list-content {
       order: 2;
+      flex: 1;
     }
   }
 }

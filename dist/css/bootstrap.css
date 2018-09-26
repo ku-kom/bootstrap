@@ -8158,9 +8158,9 @@ display: block;
     background-position: center;
     background-size: cover;
 
-    -webkit-flex: 1 0 33%;
-        -ms-flex: 1 0 33%;
-            flex: 1 0 33%;
+    -webkit-flex: 0 0 235px;
+        -ms-flex: 0 0 235px;
+            flex: 0 0 235px;
   }
   .advanced-list li .list-img img {
 height: 100%;
@@ -8189,10 +8189,18 @@ background-color: #e7e6e6;
 .advanced-list li + li {
 margin-top: 5px;
 }
+.advanced-list.img-left .list-img {
+-webkit-flex: 0 0 235px;
+    -ms-flex: 0 0 235px;
+        flex: 0 0 235px;
+}
 .advanced-list.img-left .list-content {
 -webkit-order: 2;
   -ms-flex-order: 2;
         order: 2;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .media-list .media-left,
 .media-list .media-right {
@@ -9920,6 +9928,9 @@ color: #252525;
 }
 .gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-teaser {
 margin: 0 0 20px;
+}
+#banners-3col {
+padding: 0;
 }
 .mce-content-body#content {
 display: block;
