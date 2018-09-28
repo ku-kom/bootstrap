@@ -71,21 +71,52 @@ category: slider
             <pre class="prettyprint lang-js">
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
-  $(document).ready(function() {
-    var $slideshow = $('.slideshow');
-    $slideshow.slick({
-      autoplay: true,
-      dots: true,
-      fade: true,
-      arrows: true,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }]
-    });
+$(document).ready(function() {
+  // Variables
+  var $slideshow = $('.slide-gallery');
+  var $thumbsShow = $('.gallery-nav');
+  var $countThumbs = $thumbsShow.find('.nav-item').length;
+  var $totalThumbs = ($countThumbs) ? $countThumbs : 1;
+
+  // Main slider options
+  var slickOptions = {
+    //slide: 'a',
+    fade: true,
+    asNavFor: $thumbsShow,
+    responsive: [{
+      breakpoint: 480,
+      settings: {
+        arrows: false
+      }
+    }]
+  }
+
+  // Navigation slider options
+  var slickNavOptions = {
+    slidesToShow: $totalThumbs,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: $slideshow,
+    focusOnSelect: true,
+    useTransform: false
+  }
+
+  // Run on slider load
+  $slideshow.on('init', function(event, slick) {
+    // Add number of slides to counter
+    $('<div class="slider-count"><span id="currentSlide">1</span> af <span id="total">' + slick.slideCount + '</span></div>').insertAfter($(this));
   });
+
+  // Init sliders
+  var slider = $slideshow.slick(slickOptions);
+  var nav = $thumbsShow.slick(slickNavOptions);
+
+  // Run when slides change
+  $slideshow.on('afterChange', function(event, slick, currentSlide) {
+    // Update slide counter
+    $('.slider-count #currentSlide').html(currentSlide + 1);
+  });
+});
 &lt;/script&gt;</pre>
           </div>
         </div>

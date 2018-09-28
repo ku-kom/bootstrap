@@ -17,18 +17,16 @@
 .gallery-nav .slick-track {
   left: 0 !important;
 }
-
+.gallery-nav .nav-item {
+  height: 100%;
+}
 .gallery-nav img {
   cursor: pointer;
-  top: auto;
-  left: auto;
-  -webkit-transform: none;
-  transform: none;
+  padding: 0 1px 0 1px;
 }
 
 .gallery-nav .slick-slide {
-  border-left: 2px solid #fff;
-  /* border-bottom: 1px solid #fff; */
+  border-left: 3px solid #fff;
 }
 
 .gallery-nav .slick-slide:hover img {
@@ -55,6 +53,11 @@
   -webkit-box-flex: 1 !important;
   -ms-flex: 1 0 auto !important;
   flex: 1 0 auto !important;
+}
+
+.gallery-nav .slick-slide.slick-active img {
+  filter: brightness(90%) blur(0);
+  -webkit-filter: brightness(90%) blur(0);
 }
 
 /* Slider gallery end */
