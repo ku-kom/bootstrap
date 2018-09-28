@@ -9984,19 +9984,19 @@ position: relative;
   margin-top: -10px;
   overflow: hidden;
 }
-.find-box[class$="-bg"] {
+.find-box [class$="-bg"] {
 width: 100%;
   height: 130px;
   margin-bottom: 0 !important;
   background: url("https://bootstrap.secure.ku.dk/img/find_en_forsker.png") no-repeat 80% 25px;
   background-size: 140px;
 }
-.find-box[class$="-bg"] .search-text {
+.find-box [class$="-bg"] .search-text {
 margin: 20px 5px 20px 15px;
   font-size: 18px;
   font-weight: 600;
 }
-.find-box[class$="-bg"] .search-text .text-normal {
+.find-box [class$="-bg"] .search-text .text-normal {
 font-weight: 300;
 }
 .find-box form {
