@@ -1,6 +1,7 @@
 /* KU custom elements */
 // Find en forsker search box
 
+.find-kunet,
 .find-researcher {
   height: 130px;
   margin-top: -10px;
@@ -31,10 +32,10 @@
     width: 94%;
     margin: 0 auto;
 
-
     .input-group {
       border: 1px solid @gray-666;
       border-radius: @border-radius-base;
+
       input[type="text"] {
         opacity: 0.85;
         border: 0;
@@ -47,5 +48,14 @@
         }
       }
     }
+  }
+}
+// Find på KUnet
+
+.find-kunet {
+  #gradient >.horizontal(#a80505, #7e0202);
+
+  .find-kunet-bg .search-text {
+    color: #efefef;
   }
 }
