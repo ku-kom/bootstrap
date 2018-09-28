@@ -7475,7 +7475,7 @@ position: absolute;
 }
 .ku-leftmenu ul > li.active > a::before,
 .ku-leftmenu ul > li.active-sub > a::before {
-color: #fff;
+color: #fff !important;
   background-color: #901a1e;
 }
 .theme-samf .ku-leftmenu ul > li.active > a::before,
