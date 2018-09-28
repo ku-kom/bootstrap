@@ -55,7 +55,7 @@
   flex: 1 0 auto !important;
 }
 
-.gallery-nav .slick-slide.slick-active img {
+.gallery-nav .slick-slide.slick-current img {
   filter: brightness(90%) blur(0);
   -webkit-filter: brightness(90%) blur(0);
 }
