@@ -9978,61 +9978,58 @@ margin: 0 0 20px;
 padding: 0;
 }
 /* KU custom elements */
-.find-kunet,
-.find-researcher {
+.find-box {
 position: relative;
   height: 130px;
   margin-top: -10px;
   overflow: hidden;
-  background-image: linear-gradient(to right, #bebec0 0%, #b0b2b6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbebec0', endColorstr='#ffb0b2b6', GradientType=1);
-  background-repeat: repeat-x;
 }
-.find-kunet-bg,
-.find-researcher-bg {
+.find-box-bg {
 width: 100%;
   height: 130px;
   margin-bottom: 0 !important;
   background: url("https://bootstrap.secure.ku.dk/img/find_en_forsker.png") no-repeat 80% 25px;
   background-size: 140px;
 }
-.find-kunet-bg .search-text,
-.find-researcher-bg .search-text {
+.find-box-bg .search-text {
 margin: 15px 5px 20px 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #565656;
 }
-.find-kunet-bg .search-text .text-normal,
-.find-researcher-bg .search-text .text-normal {
+.find-box-bg .search-text .text-normal {
 font-weight: 300;
 }
-.find-kunet form,
-.find-researcher form {
+.find-box form {
 width: 94%;
   margin: 0 auto;
 }
-.find-kunet form .input-group,
-.find-researcher form .input-group {
+.find-box form .input-group {
 border: 1px solid #666;
   border-radius: 2px;
 }
-.find-kunet form .input-group input[type="text"],
-.find-researcher form .input-group input[type="text"] {
+.find-box form .input-group input[type="text"] {
 border: 0;
   opacity: .85;
 }
-.find-kunet form .input-group .input-group-btn .btn,
-.find-researcher form .input-group .input-group-btn .btn {
+.find-box form .input-group .input-group-btn .btn {
 font-weight: 700;
   color: #901a1e;
+  border-left: 1px solid #666;
+}
+.find-researcher {
+background-image: linear-gradient(to right, #bebec0 0%, #b0b2b6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbebec0', endColorstr='#ffb0b2b6', GradientType=1);
+  background-repeat: repeat-x;
+}
+.find-researcher .search-text {
+color: #565656;
 }
 .find-kunet {
 background-image: linear-gradient(to right, #a80505 0%, #7e0202 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa80505', endColorstr='#ff7e0202', GradientType=1);
   background-repeat: repeat-x;
 }
-.find-kunet .find-kunet-bg .search-text {
+.find-kunet .search-text {
 color: #efefef;
 }
 .mce-content-body#content {
