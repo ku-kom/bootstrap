@@ -49,10 +49,14 @@
   <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 
 {% highlight js %}
-$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+&lt;script&gt;
+$(function() {
+  $('#tabslist a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+});
+&lt;/script&gt;
 {% endhighlight %}
 
   <p>You can activate individual tabs in several ways:</p>
@@ -70,7 +74,7 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 <div>
 
   <!-- Nav tabs -->
-  <ul class="nav nav-pills" role="tablist">
+  <ul id="tabslist" class="nav nav-pills" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
