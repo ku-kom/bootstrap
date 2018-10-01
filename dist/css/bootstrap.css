@@ -7473,33 +7473,26 @@ position: absolute;
   top: 3px;
   left: 0;
 }
-.ku-leftmenu ul > li.active > a::before,
-.ku-leftmenu ul > li.active-sub > a::before {
+.ku-leftmenu ul > li[class^="active"] > a::before {
 color: #fff !important;
   background-color: #901a1e;
 }
-.theme-samf .ku-leftmenu ul > li.active > a::before,
-.theme-samf .ku-leftmenu ul > li.active-sub > a::before {
+.theme-samf .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #e13718;
 }
-.theme-hum .ku-leftmenu ul > li.active > a::before,
-.theme-hum .ku-leftmenu ul > li.active-sub > a::before {
+.theme-hum .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #365aa5;
 }
-.theme-science .ku-leftmenu ul > li.active > a::before,
-.theme-science .ku-leftmenu ul > li.active-sub > a::before {
+.theme-science .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #46743c;
 }
-.theme-sund .ku-leftmenu ul > li.active > a::before,
-.theme-sund .ku-leftmenu ul > li.active-sub > a::before {
+.theme-sund .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #2a216a;
 }
-.theme-jur .ku-leftmenu ul > li.active > a::before,
-.theme-jur .ku-leftmenu ul > li.active-sub > a::before {
+.theme-jur .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #999632;
 }
-.theme-teo .ku-leftmenu ul > li.active > a::before,
-.theme-teo .ku-leftmenu ul > li.active-sub > a::before {
+.theme-teo .ku-leftmenu ul > li[class^="active"] > a::before {
 background-color: #66609e;
 }
 .ku-leftmenu ul > li > a::before {

@@ -171,7 +171,8 @@
   ul {
     //First level
     > li {
-      &.active, &.active-sub {
+      // Class name begins with active...
+      &[class^="active"] {
         > a {
           &::before {
             background-color: @ku-red;
