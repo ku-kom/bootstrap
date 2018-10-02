@@ -8,7 +8,6 @@
   background-color: @panel-bg;
   //border: 1px solid transparent;
   //border-radius: @panel-border-radius;
-
   // KU:
   & + .panel {
     margin-top: @grid-gutter-height;
@@ -42,11 +41,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small > a,
+  > .small,
    > a,
    > small,
    > small > a,
-  > .small {
+  > .small > a {
     color: inherit;
   }
 }
@@ -66,8 +65,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .list-group,
-  > .panel-collapse > .list-group {
+  > .panel-collapse > .list-group,
+  > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -113,9 +112,9 @@
 // watch it go full width.
 
 .panel {
-  > .table,
+  > .panel-collapse > .table,
    > .table-responsive > .table,
-  > .panel-collapse > .table {
+  > .table {
     margin-bottom: 0;
 
     caption {
@@ -288,7 +287,6 @@
     padding: 0;
     // min-height: 57px;
     // display: flex;
-
     & > .panel-title {
       .boxtop();
     }
@@ -320,6 +318,14 @@
 
     .theme-teo & {
       border-top: 1px solid @teol;
+    }
+  }
+  // KU
+  & > .panel-heading {
+    &.hidden {
+      > .panel-body {
+        border-top: 0;
+      }
     }
   }
 }
