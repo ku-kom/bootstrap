@@ -20,7 +20,7 @@ encoding:         UTF-8
 
 timezone: Europe/Copenhagen
 
-gems:
+plugins:
   - jekyll-sitemap
 
 # Custom vars
