@@ -11,6 +11,7 @@ slug: examples
         {% include ku-leftmenu.html %}
       </div>
       <div class="col-xs-6 col-sm-8 col-md-9 main-content">
+        <h1>Medarbejderoversigt</h1>
         <div class="row">
           <div class="col-sm-12">
             <table id="datatable" class="table responsive table-hover" data-page-length="25">
@@ -23,15 +24,6 @@ slug: examples
                   <th>Løn</th>
                 </tr>
               </thead>
-              <tfoot>
-                <tr>
-                  <th>Navn</th>
-                  <th>Position</th>
-                  <th>Alder</th>
-                  <th>Startdato</th>
-                  <th>Løn</th>
-                </tr>
-              </tfoot>
               <tbody>
                 <tr>
                   <td>Tiger Nixon</td>
@@ -433,6 +425,15 @@ slug: examples
                   <td>$112,000</td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <th>Navn</th>
+                  <th>Position</th>
+                  <th>Alder</th>
+                  <th>Startdato</th>
+                  <th>Løn</th>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -442,7 +443,7 @@ slug: examples
   {% include local-footer.html %}
 </main>
 <!-- DataTables.js -->
-<script type="text/javascript">
+<script>
   $(document).ready(function() {
     // Apply searchbox for columns
     $('#datatable tfoot th').each(function() {

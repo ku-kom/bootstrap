@@ -20,5 +20,8 @@
   "ids": null,
   "fallback-colors": null,
   "import": null,
-  "overqualified-elements": null
+  "overqualified-elements": null,
+  "bulletproof-font-face": null,
+  "order-alphabetical": null,
+  "font-sizes": null
 }

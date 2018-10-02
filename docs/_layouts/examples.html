@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ku-bs theme-faelles {% if page.category == 'non-responsive' %}non-responsive{% endif %}" lang="da">
+<html class="ku-bs theme-faelles {% if page.category == 'non-responsive' %}non-responsive{% endif %}" lang="{% if page.category == 'kurser' %}da{% else %}en{% endif %}">
   <head>
     {% include header.html %}
   </head>
