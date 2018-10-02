@@ -14,6 +14,10 @@
 .dataTables_wrapper tfoot {
     display: table-header-group;
 }
+.dataTables_wrapper tbody +tfoot {
+  /* Hide bottom tfoot */
+    display: none;
+}
 .dataTables_wrapper tfoot th input {
     font-weight: normal;
 }

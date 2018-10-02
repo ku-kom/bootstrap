@@ -445,11 +445,23 @@ slug: examples
 <!-- DataTables.js -->
 <script>
   $(document).ready(function() {
-    // Apply searchbox for columns
-    $('#datatable tfoot th').each(function() {
-      var title = $(this).text().toLowerCase();
-      $(this).html('<input type="text" class="form-control input-sm ku-filters" placeholder="Søg i ' + title + '" />');
+    var $tfoot = $('<tfoot>'),
+    $search_tr = $('<tr>').appendTo($tfoot);
+    $('#datatable thead th').each(function() {
+        var title = $(this).text().toLowerCase(),
+            input_html = [
+                '<th>',
+                '<input',
+                ' type="text"',
+                ' class="form-control input-sm"',
+                ' placeholder="Søg i ', title, '"',
+                '>',
+                '</th>'
+            ].join(""),
+            $input = $(input_html);
+        $search_tr.append($input);
     });
+    $tfoot.insertAfter($('#datatable thead').first());
 
     // DataTable
     var table = $('#datatable').DataTable({
@@ -457,7 +469,6 @@ slug: examples
       "dom": '<"listing"l>tip',
       ordering: true,
       autoWidth: false,
-      fixedHeader: true,
       responsive: true
     });
 
