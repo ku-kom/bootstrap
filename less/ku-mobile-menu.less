@@ -13,8 +13,11 @@
   background-color: @white-color;
   color: @text-color;
 
-  .local1_mmenu,
-  .local2_mmenu {
+  // .local1_mmenu,
+  // .local2__mmenu
+  li {
+    // Contains class that starts with...
+    &[class*="local"]{
     // Faculty colors for sublevel 1
     background: @ku-red;
     color: @white-color;
@@ -88,6 +91,7 @@
     &::after {
       border: none;
     }
+  }
   }
 
   .local1_mmenu {
