@@ -468,14 +468,13 @@ slug: examples
       language: getLanguage(),
       "dom": '<"listing"l>tip',
       ordering: true,
-      autoWidth: false,
-      responsive: true
+      "autoWidth": false,
+      "responsive": true
     });
 
     // Apply Datatable column the search
     table.columns().every(function() {
       var that = this;
-
       $('input', this.footer()).on('keyup change', function() {
         if (that.search() !== this.value) {
           that

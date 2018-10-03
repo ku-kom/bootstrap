@@ -20,21 +20,23 @@
 }
 .dataTables_wrapper tfoot th input {
     font-weight: normal;
+    width: 100%!important;
 }
 .dataTable {
   clear: both;
   margin-top: 6px !important;
   margin-bottom: 6px !important;
-  /* max-width: none !important; */
+  max-width: none !important;
+  word-wrap: break-word;
   /*border-collapse: separate !important;*/
 }
 .dataTable>tbody>tr:hover {
   background-color: #f5f5f5;
 }
 
-.dataTable td, .dataTable th {
+/* .dataTable td, .dataTable th {
   box-sizing: content-box;
-}
+} */
 
 .dataTable td.dataTables_empty, .dataTable th.dataTables_empty {
   text-align: center;
