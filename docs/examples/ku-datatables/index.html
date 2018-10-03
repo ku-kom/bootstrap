@@ -445,16 +445,18 @@ slug: examples
 <!-- DataTables.js -->
 <script>
   $(document).ready(function() {
-    var $tfoot = $('<tfoot>'),
-    $search_tr = $('<tr>').appendTo($tfoot);
+    $tfoot = $('<tfoot>'),
+    $search_tr = $('<tr>').appendTo($tfoot),
+    $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en',
+    $placeholder = ($lang == 'da') ? 'Søg i' : 'Search in';
     $('#datatable thead th').each(function() {
-        var title = $(this).text().toLowerCase(),
+        var $title = $(this).text().toLowerCase(),
             input_html = [
                 '<th>',
                 '<input',
                 ' type="text"',
                 ' class="form-control input-sm"',
-                ' placeholder="Søg i ', title, '"',
+                ' placeholder="', $placeholder , ' ', $title, '"',
                 '>',
                 '</th>'
             ].join(""),
@@ -468,14 +470,13 @@ slug: examples
       language: getLanguage(),
       "dom": '<"listing"l>tip',
       ordering: true,
-      autoWidth: false,
-      responsive: true
+      "autoWidth": false,
+      "responsive": true
     });
 
     // Apply Datatable column the search
     table.columns().every(function() {
       var that = this;
-
       $('input', this.footer()).on('keyup change', function() {
         if (that.search() !== this.value) {
           that
@@ -514,7 +515,7 @@ slug: examples
       var url = paths + $langMap[$lang].path + '.json';
       //console.log(url);
       $.ajax({
-        async: false,
+        async: true,
         url: url,
         success: function(obj) {
           $tmp = $.extend({}, obj, $langMap[$lang].mods);
