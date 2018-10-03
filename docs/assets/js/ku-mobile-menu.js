@@ -213,13 +213,14 @@
           });
   
           // Look for local menu 2 and add to menu
-          if( $('#leftmenu_2') ) {
-              var $new_localmenu2 = $('#leftmenu_2 > li').clone();
-              $new_localmenu2.each(function() {
-                  $(this).addClass('local2_mmenu');
+          var $menus = $('#leftmenu_container > ul');
+          $menus.each(function(){
+              var $ul = $(this).children().clone();
+              $ul.each(function(){
+                  $(this).addClass('local2__mmenu');
               });
-              $menu_ul.append($new_localmenu2);
-          }
+              $menu_ul.append($ul);
+          });
   
           // Clean up class names for navbar before adding to menu
           $new_navbar.each(function() {
