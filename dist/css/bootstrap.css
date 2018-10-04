@@ -10228,6 +10228,3 @@ body.editor-accordions {
   padding: 0 15px;
   background-color: #fbfbf7;
 }
-body.editor-accordions .mce-tinymce.mce-container.mce-panel {
-  max-width: 100%;
-}
