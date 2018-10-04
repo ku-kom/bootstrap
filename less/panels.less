@@ -290,6 +290,13 @@
     & > .panel-title {
       .boxtop();
     }
+    // KU
+    &.hidden {
+      display: none;
+      + .panel-body {
+        border-top: 0;
+      }
+    }
   }
 
   & > .panel-body {

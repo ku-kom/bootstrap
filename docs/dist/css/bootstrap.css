@@ -6427,6 +6427,12 @@ button.list-group-item-danger.active:focus {
   color: #252525;
   letter-spacing: .6px;
 }
+.panel-default > .panel-heading.hidden {
+  display: none;
+}
+.panel-default > .panel-heading.hidden + .panel-body {
+  border-top: 0;
+}
 .panel-default > .panel-body {
   padding: 1px 0 0;
   border-top: 1px solid #901a1e;
