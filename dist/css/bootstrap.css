@@ -10224,3 +10224,7 @@ nav {
   padding-left: 0;
   font-weight: 600;
 }
+body.editor-accordions {
+  padding: 0 15px;
+  background-color: #fbfbf7;
+}
