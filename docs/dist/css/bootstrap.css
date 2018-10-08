@@ -5866,19 +5866,17 @@ figure img {
   max-width: 100%;
   height: auto;
 }
+.figure + *,
+figure + * {
+  clear: both;
+}
 img.img-left {
   float: left;
   margin: 5px 20px 10px 0;
 }
-img.img-left + * {
-  clear: both;
-}
 img.img-right {
   float: right;
   margin: 5px 0 10px 20px;
-}
-img.img-right + * {
-  clear: both;
 }
 img.img-default {
   float: none;
