@@ -213,6 +213,7 @@
     order: 1;
     flex: 0 1 auto;
     position: relative;
+    overflow: hidden;
 
     .header {
       color: inherit;
@@ -865,20 +866,6 @@
     }
   }
 
-  // .double-column [class*=column] {
-  //   .gridbox {
-  //     &.with-img {
-  //       .box2 {
-  //         img {
-  //           min-width: 100%;
-  //           top: 50%;
-  //           left: 50%;
-  //           transform: translateY(-50%) translateX(-50%) translate3d(0,0,0);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
   // Styling for full width boxes
   .single-column .column1 {
     .size1 {
@@ -891,7 +878,7 @@
         }
 
         .box1 {
-          padding: 0 24px 10px 15px;
+          padding: 0 0 5px @grid-gutter-by-half;
           flex: 0 1 51.6%;
           max-width: 390px; // preventing that too much text will expand this box
           order: 2;
@@ -941,7 +928,7 @@
       &.img-flip-right {
         .box1 {
           padding-left: 0;
-          padding-right: 24px;
+          padding-right: @grid-gutter-by-half;
         }
 
         .box2 {

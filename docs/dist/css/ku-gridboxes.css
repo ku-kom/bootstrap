@@ -159,6 +159,7 @@
 .gridbox .box1 {
   position: relative;
   z-index: 4;
+  overflow: hidden;
 
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -853,7 +854,7 @@
   }
   .single-column .column1 .size1.with-img .box1 {
     max-width: 390px;
-    padding: 0 24px 10px 15px;
+    padding: 0 0 5px 13px;
 
     -webkit-flex: 0 1 51.6%;
         -ms-flex: 0 1 51.6%;
@@ -894,7 +895,7 @@
     background-size: 1px 1px;
   }
   .single-column .column1 .size1.img-flip-right .box1 {
-    padding-right: 24px;
+    padding-right: 13px;
     padding-left: 0;
   }
   .single-column .column1 .size1.img-flip-right .box2 {
