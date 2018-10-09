@@ -8413,6 +8413,9 @@ main:after,
   line-height: 15px;
   color: #777;
 }
+.nyhedsliste-rightbox .media .news-teaser {
+  margin-top: 0;
+}
 .nyhedsboks .panel-body {
   padding-top: 10px;
 }
