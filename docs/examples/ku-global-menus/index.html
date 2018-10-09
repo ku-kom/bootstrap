@@ -1,0 +1,42 @@
+---
+layout: examples
+title: KU standard template with left menu
+slug: examples
+---
+<main tabindex="0" id="content">
+  {% include ku-branding.html %}
+  <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-xs-9 col-sm-8 col-md-9 main-content">
+        <div class="row breadcrumbs">
+          <div class="col-sm-12">
+            <ul class="breadcrumb">
+              <li><a href="#">Komunikation</a></li>
+              <li class="active">Om afdelingen</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <h1>Global menus</h1>
+              <p>Global menus are avaliable as html snippets that will be updated automatically by KU. It can be included into external systems using serverside code such as php, java, etc. in order to keep menus consistent with the rest of the KU domain.</p>
+              <p>The urls are:</p>
+              <h3>Top menu</h3>
+              <p>Danish: <code>https://cms.ku.dk/menu-spippets/global-topmenu.html</code><br></p>
+              <p>English: <code>https://cms.ku.dk/menu-spippets/eng-global-topmenu.html</code><br></p>
+              <h3>Second level top menu</h3>
+              <p>Danish: <code>https://cms.ku.dk/menu-spippets/global-second-level-menu.html</code><br></p>
+              <p>English: <code>https://cms.ku.dk/menu-spippets/eng-global-second-level-menu.html</code><br></p>
+              <h3>Footer</h3>
+              <p>Danish: <code>https://cms.ku.dk/menu-spippets/global-footer.html</code><br></p>
+              <p>English: <code>https://cms.ku.dk/menu-spippets/eng-global-footer.html</code><br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>
