@@ -8557,6 +8557,7 @@ main:after,
     width: auto;
     padding: 10px 15px;
     margin-top: 0;
+    text-align: center;
   }
 }
 .entries .entry > a {
