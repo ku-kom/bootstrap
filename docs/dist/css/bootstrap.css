@@ -7416,7 +7416,7 @@ main:after,
 }
 .ku-branding .ku-branding-text {
   position: absolute;
-  bottom: 16px;
+  bottom: 10px;
   left: 90px;
   max-height: 83px;
   padding-right: 10px;
@@ -7431,6 +7431,7 @@ main:after,
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     font-size: 18px;
+    line-height: 1.2;
   }
 }
 .ku-branding .ku-branding-text .ku-branding-text-sub {
@@ -8365,6 +8366,7 @@ main:after,
   display: block;
 }
 .media-list .media {
+  padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
 }
 .media-list .media .media-heading {
@@ -8414,7 +8416,7 @@ main:after,
   color: #777;
 }
 .nyhedsliste-rightbox .media .news-teaser {
-  margin-top: 0;
+  margin-top: 3px;
 }
 .nyhedsboks .panel-body {
   padding-top: 10px;
