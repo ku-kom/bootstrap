@@ -7416,7 +7416,7 @@ main:after,
 }
 .ku-branding .ku-branding-text {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 90px;
   max-height: 83px;
   padding-right: 10px;
@@ -7475,7 +7475,7 @@ main:after,
   padding-left: 6px;
   margin-bottom: 30px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
   border-left: 8px solid #901a1e;
 }
 .ku-leftmenu .ku-navbar-header a {
