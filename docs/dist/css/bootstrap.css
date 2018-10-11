@@ -7645,9 +7645,9 @@ main:after,
   top: 5px;
   left: 0;
   display: inline-block;
-  width: 8px;
+  width: 9px;
   height: 10px;
-  padding: 0;
+  padding: 0 1px 0 0;
   font-family: 'Glyphicons Halflings';
   font-size: 7px;
   font-style: normal;
