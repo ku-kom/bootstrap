@@ -7436,16 +7436,21 @@ main:after,
   text-decoration: none;
 }
 .ku-branding .ku-branding-text .ku-branding-text-major {
-  font-size: 1.1em;
+  font-size: 13px;
+  line-height: 1.2;
 }
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     font-size: 18px;
-    line-height: 1.2;
   }
 }
 .ku-branding .ku-branding-text .ku-branding-text-sub {
-  font-size: 14px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .ku-branding .ku-branding-text .ku-branding-text-sub {
+    font-size: 14px;
+  }
 }
 .ku-branding .ku-branding-text a {
   color: inherit;
