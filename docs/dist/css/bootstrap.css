@@ -6321,10 +6321,15 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: inherit;
   letter-spacing: .25px;
+}
+@media (min-width: 992px) {
+  .panel-title {
+    font-size: 16px;
+  }
 }
 .panel-title > .small,
 .panel-title > a,
@@ -7390,8 +7395,8 @@ main:after,
 }
 @media (max-width: 767px) {
   .ku-branding {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 13px;
+    padding-left: 13px;
   }
 }
 .ku-branding .ku-branding-logo {
@@ -7417,10 +7422,15 @@ main:after,
 .ku-branding .ku-branding-text {
   position: absolute;
   bottom: 15px;
-  left: 90px;
+  left: 80px;
   max-height: 83px;
   padding-right: 10px;
   letter-spacing: .936px;
+}
+@media (min-width: 768px) {
+  .ku-branding .ku-branding-text {
+    left: 90px;
+  }
 }
 .ku-branding .ku-branding-text a {
   text-decoration: none;
@@ -7754,7 +7764,7 @@ main:after,
     top: 0;
     right: 0;
     z-index: 1040;
-    padding: 7px 10px;
+    padding: 6px 10px;
     margin-right: 10px;
     background-color: #777;
   }
@@ -8473,6 +8483,7 @@ main:after,
   }
 }
 .manchet {
+  margin: 10px 0;
   font-weight: 700;
 }
 .manchet h3 {
@@ -9790,11 +9801,6 @@ nav {
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-}
-@media (max-width: 767px) {
-  .main-content {
-    padding-bottom: 23px;
-  }
 }
 .main-content .row + .row {
   margin-top: 23px;

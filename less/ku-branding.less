@@ -4,8 +4,8 @@
   background-color: @white-color;
   position: relative;
   @media (max-width: @screen-xs-max) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: @grid-gutter-by-half;
+    padding-right: @grid-gutter-by-half;
   }
 
   .ku-branding-logo {
@@ -18,7 +18,7 @@
     position: relative;
     left: 3px;
     bottom: -6px;
-    @media (max-width: @screen-sm-min) {
+    @media (max-width: @screen-sm) {
       width: 50px;
       bottom: -20px;
       left: @grid-gutter-by-half;
@@ -28,7 +28,10 @@
   .ku-branding-text {
     max-height: @ku-branding-box-height;
     position: absolute;
-    left: 90px;
+    left: 80px;
+    @media (min-width: @screen-sm) {
+      left: 90px;
+    }
     bottom: 15px;
     letter-spacing: 0.936px;
     padding-right: 10px;
@@ -38,7 +41,7 @@
 
     .ku-branding-text-major {
       font-size: 1.1em;
-      @media (min-width: @screen-sm-min) {
+      @media (min-width: @screen-sm) {
         font-size: @ku-branding-text-font-size;
         line-height: 1.2;
       }
