@@ -1,0 +1,21 @@
+.gdpr-tooltip {
+  padding: 6px 8px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1;
+  color: #252525;
+  text-align: center;
+  background-color: #eee;
+}
+
+.gdpr-label {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.gdpr-label>input[type="checkbox"] {
+  margin: 3px 4px 0 3px;
+}
