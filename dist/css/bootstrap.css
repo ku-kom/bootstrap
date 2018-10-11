@@ -8483,6 +8483,10 @@ main:after,
   color: #808080;
   text-transform: uppercase;
 }
+.manchet p {
+  display: inline;
+  letter-spacing: .3px;
+}
 .media-events .media-heading a {
   color: inherit;
 }
