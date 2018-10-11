@@ -7644,12 +7644,22 @@ main:after,
   position: absolute;
   top: 5px;
   left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  padding: 0;
   font-family: 'Glyphicons Halflings';
   font-size: 7px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
   color: #901a1e;
-  content: "\e080";
+  content: "\e258";
   border: 1px solid #d7d7d7;
+  border-radius: 2px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .theme-samf .ku-leftmenu ul > li > a::before {
   color: #e13718;

@@ -207,14 +207,25 @@
 
       > a {
         &::before {
-          content: "\e080";
+          position: absolute;
+          top: 5px;
+          left: 0;
           font-family: 'Glyphicons Halflings';
           font-size: 7px;
-          font-weight: 400;
+          font-weight: 700;
+          height: 10px;
+          width: 8px;
+          line-height: 10px;
+          display: inline-block;
+          padding: 0;
+          font-style: normal;
+          border-radius: 2px;
+          content: "\e258";
+          border: 1px solid #d7d7d7;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
           color: @ku-red;
-          position: absolute;
-          left: 0;
-          top: 5px;
+
 
           .theme-samf & {
             color: @samf;
