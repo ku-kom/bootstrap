@@ -5893,7 +5893,7 @@ figcaption {
   width: 100%;
   padding: 10px 10px 10px 0;
   font-size: .9em;
-  color: #777;
+  color: #666;
   caption-side: bottom;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -7396,7 +7396,7 @@ main:after,
 }
 .ku-branding .ku-branding-logo {
   position: relative;
-  bottom: -5px;
+  bottom: -6px;
   left: 3px;
   z-index: 10;
   width: 61px;
@@ -8471,6 +8471,17 @@ main:after,
     height: 100%;
     padding-top: 4px;
   }
+}
+.manchet {
+  font-weight: 700;
+}
+.manchet h3 {
+  display: inline;
+  padding-right: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #808080;
+  text-transform: uppercase;
 }
 .media-events .media-heading a {
   color: inherit;
