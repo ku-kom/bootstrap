@@ -7726,12 +7726,13 @@ main:after,
 }
 .ku-leftmenu ul > li ul li > a::before {
   top: 6px;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   padding: 0;
   content: "";
   background-color: #901a1e;
   border: 0;
+  border-radius: 0;
 }
 .theme-samf .ku-leftmenu ul > li ul li > a::before {
   background-color: #e13718;
@@ -7761,15 +7762,14 @@ main:after,
   top: 8px;
   width: 4px;
   height: 4px;
-  border-radius: 0;
 }
 .ku-leftmenu ul > li ul li ul li ul li > a {
   padding-left: 9px;
 }
 .ku-leftmenu ul > li ul li ul li ul li > a::before {
   top: 8px;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
 }
 #leftmenu_2 {
   padding-left: 0;
