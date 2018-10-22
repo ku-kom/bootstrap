@@ -233,17 +233,17 @@
           top: 5px;
           left: 0;
           font-family: 'Glyphicons Halflings';
-          font-size: 7px;
-          font-weight: 700;
+          font-size: 8.3px;
+          font-weight: 400;
           height: 10px;
-          width: 9px;
-          line-height: 10px;
+          width: 10px;
+          line-height: 8px;
           display: inline-block;
-          padding: 0 1px 0 0;
+          padding: 0 2px 9px 0;
           font-style: normal;
-          border-radius: 2px;
-          content: "\e258";
-          border: 1px solid #d7d7d7;
+          border-radius: 1px;
+          content: "\e080";
+          border: 1px solid #d6d6d6;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           color: @ku-red;
@@ -271,7 +271,6 @@
           .theme-teo & {
             color: @teol;
           }
-          border: 1px solid #d7d7d7;
         }
 
         &:hover {
@@ -318,9 +317,10 @@
 
             &::before {
               content: "";
-              height: 4px;
-              width: 4px;
-              top: 7px;
+              height: 6px;
+              width: 6px;
+              top: 6px;
+              padding: 0;
               border: 0;
               background-color: @ku-red;
 
@@ -361,9 +361,10 @@
             li {
               > a {
                 &::before {
-                  height: 3px;
-                  width: 3px;
+                  height: 4px;
+                  width: 4px;
                   top: 8px;
+                  border-radius: 0;
                 }
               }
 
@@ -376,7 +377,7 @@
                     &::before {
                       height: 2px;
                       width: 2px;
-                      top: 9px;
+                      top: 8px;
                     }
                   }
                 }

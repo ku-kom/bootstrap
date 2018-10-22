@@ -7654,18 +7654,18 @@ main:after,
   top: 5px;
   left: 0;
   display: inline-block;
-  width: 9px;
+  width: 10px;
   height: 10px;
-  padding: 0 1px 0 0;
+  padding: 0 2px 9px 0;
   font-family: 'Glyphicons Halflings';
-  font-size: 7px;
+  font-size: 8.3px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 10px;
+  font-weight: 400;
+  line-height: 8px;
   color: #901a1e;
-  content: "\e258";
-  border: 1px solid #d7d7d7;
-  border-radius: 2px;
+  content: "\e080";
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7719,9 +7719,10 @@ main:after,
   padding: 2px 5px 2px 10px;
 }
 .ku-leftmenu ul > li ul li > a::before {
-  top: 7px;
-  width: 4px;
-  height: 4px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  padding: 0;
   content: "";
   background-color: #901a1e;
   border: 0;
@@ -7752,14 +7753,15 @@ main:after,
 }
 .ku-leftmenu ul > li ul li ul li > a::before {
   top: 8px;
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 0;
 }
 .ku-leftmenu ul > li ul li ul li ul li > a {
   padding-left: 9px;
 }
 .ku-leftmenu ul > li ul li ul li ul li > a::before {
-  top: 9px;
+  top: 8px;
   width: 2px;
   height: 2px;
 }
