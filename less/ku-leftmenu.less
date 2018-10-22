@@ -10,8 +10,18 @@
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 30px;
-    padding-left: 6px;
-    border-left: 8px solid @ku-red;
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 2px;
+      background-color: @ku-red;
+    }
 
     a {
       color: inherit;
@@ -23,7 +33,9 @@
     }
 
     .theme-samf & {
-      border-left: 8px solid @samf;
+      &::before {
+        background-color: @samf;
+      }
 
       a {
         &:hover {
@@ -33,7 +45,9 @@
     }
 
     .theme-hum & {
-      border-left: 8px solid @hum;
+      &::before {
+        background-color: @hum;
+      }
 
       a {
         &:hover {
@@ -43,7 +57,9 @@
     }
 
     .theme-science & {
-      border-left: 8px solid @science;
+      &::before {
+        background-color: @science;
+      }
 
       a {
         &:hover {
@@ -53,7 +69,9 @@
     }
 
     .theme-sund & {
-      border-left: 8px solid @sund;
+      &::before {
+        background-color: @sund;
+      }
 
       a {
         &:hover {
@@ -63,7 +81,9 @@
     }
 
     .theme-jur & {
-      border-left: 8px solid @jura;
+      &::before {
+        background-color: @jura;
+      }
 
       a {
         &:hover {
@@ -73,7 +93,9 @@
     }
 
     .theme-teo & {
-      border-left: 8px solid @teol;
+      &::before {
+        background-color: @teol;
+      }
 
       a {
         &:hover {
@@ -225,7 +247,6 @@
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           color: @ku-red;
-
 
           .theme-samf & {
             color: @samf;

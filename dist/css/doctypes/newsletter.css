@@ -18,6 +18,7 @@ body.Newsletter .right-side .panel-body {
   color: #252525;
   text-align: center;
   background-color: #eee;
+  outline: none;
 }
 
 .gdpr-tooltip:hover {
