@@ -21,6 +21,7 @@
       left: 0;
       top: 2px;
       background-color: @ku-red;
+      border-radius: @border-radius-base;
     }
 
     a {
@@ -229,23 +230,21 @@
 
       > a {
         &::before {
+          .icon;
           position: absolute;
           top: 5px;
           left: 0;
-          font-family: 'Glyphicons Halflings';
-          font-size: 8.3px;
-          font-weight: 400;
+          //font-family: 'Glyphicons Halflings';
+          font-size: 8px;
+          font-weight: 600;
           height: 10px;
           width: 10px;
-          line-height: 8px;
           display: inline-block;
-          padding: 0 2px 9px 0;
-          font-style: normal;
-          border-radius: 1px;
-          content: "\e080";
+          padding: 0 0 0 2px;
+          border-radius: @border-radius-base;
+          //content: "\e080";
+          content: @icon-arrow;
           border: 1px solid #d6d6d6;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
           color: @ku-red;
 
           .theme-samf & {

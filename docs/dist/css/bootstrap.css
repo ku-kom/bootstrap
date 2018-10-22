@@ -7501,6 +7501,7 @@ main:after,
   height: 10px;
   content: "";
   background-color: #901a1e;
+  border-radius: 2px;
 }
 .ku-leftmenu .ku-navbar-header a {
   color: inherit;
@@ -7656,17 +7657,22 @@ main:after,
   display: inline-block;
   width: 10px;
   height: 10px;
-  padding: 0 2px 9px 0;
-  font-family: 'Glyphicons Halflings';
-  font-size: 8.3px;
+  padding: 0 0 0 2px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 8px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 8px;
+  font-weight: normal;
+  font-weight: 600;
+  font-variant: normal;
+  line-height: 1;
   color: #901a1e;
-  content: "\e080";
+  text-transform: none;
+  content: "\61";
   border: 1px solid #d6d6d6;
-  border-radius: 1px;
+  border-radius: 2px;
 
+  speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
