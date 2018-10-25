@@ -10200,7 +10200,7 @@ nav {
 }
 .linkslist .menu-trigger {
   display: block;
-  padding: 5px;
+  padding: 10px 15px;
   color: initial;
   text-decoration: none;
   border: 1px solid #ddd;
@@ -10232,6 +10232,7 @@ nav {
   list-style: none;
 }
 .linkslist .menu-list.open {
+  position: absolute;
   top: 100%;
   left: 0;
   z-index: 180;
