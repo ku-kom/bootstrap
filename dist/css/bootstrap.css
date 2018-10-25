@@ -10199,6 +10199,7 @@ nav {
   background-color: #fff;
 }
 .linkslist .menu-trigger {
+  position: relative;
   display: block;
   padding: 10px 15px;
   color: initial;
