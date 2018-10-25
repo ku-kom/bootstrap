@@ -1,5 +1,6 @@
 /* KU custom elements */
 // Find something boxes:
+
 .find-box {
   height: 130px;
   margin-top: -10px;
@@ -48,6 +49,7 @@
   }
 }
 // Find en forsker search box
+
 .find-researcher {
   #gradient >.horizontal(#bebec0, #b0b2b6);
 
@@ -62,5 +64,56 @@
 
   .search-text {
     color: #efefef;
+  }
+}
+// Custom dropdown lists
+
+.linkslist {
+  position: relative;
+  background-color: @white-color;
+
+  .menu-trigger {
+    display: block;
+    text-decoration: none;
+    color: initial;
+
+    &::before {
+      font-size: 10px;
+      color: initial;
+      font-weight: normal;
+      margin-right: 5px;
+      right: 7px;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%) rotate(90deg) translate3d(0, 0, 0);
+      text-decoration: none;
+      display: inline-block;
+      font-family: @custom-icon-font-family-name;
+      text-transform: none;
+      content: @icon-arrow;
+    }
+
+    &.active {
+      &::before {
+        transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  .menu-list {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+
+    &.open {
+      display: block;
+      margin-top: -1px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 180;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    }
   }
 }
