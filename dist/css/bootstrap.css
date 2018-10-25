@@ -10219,7 +10219,7 @@ nav {
   -webkit-transform: translateY(-50%) rotate(90deg) translate3d(0, 0, 0);
           transform: translateY(-50%) rotate(90deg) translate3d(0, 0, 0);
 }
-.linkslist .menu-trigger.active::before {
+.linkslist .menu-trigger.open::before {
   -webkit-transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
           transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
 }
@@ -10230,7 +10230,6 @@ nav {
   list-style: none;
 }
 .linkslist .menu-list.open {
-  position: absolute;
   top: 100%;
   left: 0;
   z-index: 180;
