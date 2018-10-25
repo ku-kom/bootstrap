@@ -10200,8 +10200,10 @@ nav {
 }
 .linkslist .menu-trigger {
   display: block;
+  padding: 5px;
   color: initial;
   text-decoration: none;
+  border: 1px solid #ddd;
 }
 .linkslist .menu-trigger::before {
   position: absolute;
