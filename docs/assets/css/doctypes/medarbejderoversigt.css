@@ -15,6 +15,6 @@
    width: 8em;
 }
 
-#medarbejdertable tr th:last-child() input {
+#medarbejdertable tr th:last-child input {
    display: none;
 }
