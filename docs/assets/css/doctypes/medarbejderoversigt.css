@@ -5,9 +5,16 @@
   margin-top: 18px;
 }
 
-#medarbejdertable tr th:nth-child(4) {
+#medarbejdertable tr th {
   white-space: nowrap;
 }
+
+
+#medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
+   width: 8em;
+}
+
+#medarbejdertable tr th:last-child() input {
    display: none;
 }
