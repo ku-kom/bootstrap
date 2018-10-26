@@ -10201,8 +10201,7 @@ nav {
   position: relative;
   display: block;
   padding: 10px 15px;
-  color: initial;
-  text-decoration: none;
+  cursor: pointer;
   border: 1px solid #ddd;
 }
 .linkslist .menu-trigger::before {
@@ -10237,6 +10236,7 @@ nav {
   left: 0;
   z-index: 180;
   display: block;
+  width: 100%;
   margin-top: -1px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }

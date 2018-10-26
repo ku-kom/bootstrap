@@ -1,0 +1,58 @@
+<div class="bs-docs-section">
+  <h1 id="ku-dropdowns" class="page-header">KU drop downs</h1>
+  <p>Component which can display a list of clickable links.</p>
+  <div class="bs-example" data-example-id="ku-dropdowns">
+    <div class="linkslist">
+      <div class="menu-trigger" href="#">Vælg emne</div>
+      <ul class="list-group menu-list">
+        <li class="list-group-item"><a href="https://www.google.com" title="Google">Google</a></li>
+        <li class="list-group-item"><a href="https://www.bbc.co.uk" title="Go to BBC">BBC</a></li>
+        <li class="list-group-item"><a href="https://www.facebook.com" title="Go to Facebook">Facebook</a></li>
+      </ul>
+    </div>
+    <script>
+    $(function() {
+        $(".menu-trigger").click(function() {
+          $(this).toggleClass("open");
+          $(this).next(".menu-list").toggleClass("open");
+        });
+        $(document).click(function(e) {
+          e.stopPropagation();
+          var el = $(".linkslist");
+          //check if the clicked area is dropdown or not
+          if (el.has(e.target).length === 0) {
+            $(".menu-trigger").removeClass("open");
+            $(".menu-list").removeClass("open");
+          }
+        });
+      });
+    </script>
+  </div>
+  {% highlight html %}
+  &lt;script&gt;
+  $(function() {
+      $(".menu-trigger").click(function() {
+        $(this).toggleClass("open");
+        $(this).next(".menu-list").toggleClass("open");
+      });
+      $(document).click(function(e) {
+        e.stopPropagation();
+        var el = $(".linkslist");
+        //check if the clicked area is dropdown or not
+        if (el.has(e.target).length === 0) {
+          $(".menu-trigger").removeClass("open");
+          $(".menu-list").removeClass("open");
+        }
+      });
+    });
+  &lt;/script&gt;
+  <div class="linkslist">
+    <div class="menu-trigger" href="#">Vælg emne</div>
+    <ul class="list-group menu-list">
+      <li class="list-group-item"><a href="https://www.google.com" title="Google">Google</a></li>
+      <li class="list-group-item"><a href="https://www.bbc.co.uk" title="Go to BBC">BBC</a></li>
+      <li class="list-group-item"><a href="https://www.facebook.com" title="Go to Facebook">Facebook</a></li>
+    </ul>
+  </div>
+  {% endhighlight %}
+</div>
