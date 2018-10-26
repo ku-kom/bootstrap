@@ -6579,7 +6579,13 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-accordion > .panel-heading .panel-title {
+  font-size: 16px;
   line-height: 20px;
+}
+@media (min-width: 992px) {
+  .panel-accordion > .panel-heading .panel-title {
+    font-size: 14.4px;
+  }
 }
 .panel-accordion > .panel-heading .panel-title a {
   display: block;
