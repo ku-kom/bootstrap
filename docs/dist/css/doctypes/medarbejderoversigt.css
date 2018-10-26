@@ -12,7 +12,7 @@
 
 #medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
-   width: 8em;
+   width: 8em!important;
 }
 
 #medarbejdertable tr th:last-child input {

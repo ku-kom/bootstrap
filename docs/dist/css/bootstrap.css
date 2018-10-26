@@ -6309,7 +6309,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 10px;
-  overflow: hidden;
 }
 .panel-heading {
   padding: 6px 10px;
@@ -10227,6 +10226,7 @@ nav {
           transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
 }
 .linkslist .menu-list {
+  position: absolute;
   display: none;
   padding-left: 0;
   margin-top: 0;
