@@ -7722,7 +7722,7 @@ main:after,
   background-color: #66609e;
 }
 .ku-leftmenu ul > li ul {
-  padding-left: 15px;
+  padding-left: 20px;
   list-style-type: none;
 }
 .ku-leftmenu ul > li ul li > a {
@@ -7761,7 +7761,7 @@ main:after,
   text-decoration: none;
 }
 .ku-leftmenu ul > li ul li ul {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .ku-leftmenu ul > li ul li ul li > a::before {
   top: 8px;
