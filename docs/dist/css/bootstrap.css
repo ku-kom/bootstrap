@@ -10210,7 +10210,11 @@ nav {
   cursor: pointer;
   border: 1px solid #ddd;
 }
-.linkslist .menu-trigger::before {
+.linkslist input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+.linkslist input[type="checkbox"] + label::after {
   position: absolute;
   top: 50%;
   right: 7px;
@@ -10219,32 +10223,43 @@ nav {
   font-family: "ku-symbols";
   font-size: 10px;
   font-weight: normal;
-  color: initial;
   text-decoration: none;
   text-transform: none;
   content: "\61";
   -webkit-transform: translateY(-50%) rotate(90deg) translate3d(0, 0, 0);
           transform: translateY(-50%) rotate(90deg) translate3d(0, 0, 0);
 }
-.linkslist .menu-trigger.open::before {
+.linkslist input[type="checkbox"]:checked + label::after {
   -webkit-transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
           transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
 }
-.linkslist .menu-list {
-  position: absolute;
-  display: none;
+.linkslist input[type="checkbox"] ~ ul.menu-list {
+  height: 0;
   padding-left: 0;
   margin-top: 0;
   list-style: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
-.linkslist .menu-list.open {
+.linkslist input[type="checkbox"] ~ ul.menu-list li a {
+  display: block;
+  color: inherit;
+}
+.linkslist input[type="checkbox"]:checked ~ ul.menu-list {
+  position: absolute;
   top: 100%;
   left: 0;
   z-index: 180;
-  display: block;
   width: 100%;
+  height: auto;
   margin-top: -1px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  transition: -webkit-transform .2s ease-out;
+  transition:         transform .2s ease-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 .mce-content-body#content {
   display: block;
