@@ -276,7 +276,6 @@
         object-fit: cover;
         backface-visibility: hidden;
         filter: brightness(100%) blur(0);
-        //image-rendering: -webkit-optimize-contrast;
       }
     }
     // Position image left
@@ -451,15 +450,6 @@
   &.size2 {
     height: @gridbox2;
 
-    // &.with-img {
-    //   .box2 {
-    //     img {
-    //       max-height: 100%;
-    //       max-width: none;
-    //     }
-    //   }
-    // }
-
     &:not(.with-img) {
       .box1 {
         flex: 0 1 100%;
@@ -604,28 +594,6 @@
         }
       }
     }
-
-    //&.size3 {
-      // Since all the image is in view, this has been disabled
-      // &.with-img {
-      //   .box2 {
-      //     img {
-      //       max-height: none;
-      //       max-width: 100%;
-      //     }
-      //   }
-      // }
-
-      // &.img-left,
-      // &.img-right {
-      //
-      //   .box2 {
-      //     img {
-      //       width: 100%;
-      //     }
-      //   }
-      //}
-    //}
   }
 }
 @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
