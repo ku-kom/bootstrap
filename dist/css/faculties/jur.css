@@ -114,6 +114,9 @@
 .gridbox.subcolor_3.text-down:hover {
   background: #6d7a6c;
 }
+.gridbox.subcolor_3.text-down::before {
+  color: #fff;
+}
 .gridbox.subcolor_4 {
   background: #a3650c;
   color: #fff;
