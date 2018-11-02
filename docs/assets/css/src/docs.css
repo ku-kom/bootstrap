@@ -626,7 +626,7 @@ h2 code, h3 code, h4 code {
 /* Space things out */
 
 .bs-docs-section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .bs-docs-section:last-child {

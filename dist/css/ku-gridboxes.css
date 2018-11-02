@@ -520,14 +520,6 @@
     max-width: 100%;
     max-height: none;
   }
-  .gridbox.size3.with-img .box2 img {
-    max-width: 100%;
-    max-height: none;
-  }
-  .gridbox.size3.img-left .box2 img,
-  .gridbox.size3.img-right .box2 img {
-    width: 100%;
-  }
 }
 @media (min-width: 480px) and (max-width: 991px) {
   .gridbox.size1 .box2 {
