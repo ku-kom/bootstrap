@@ -13,6 +13,22 @@ table {
   //     font-size: @font-size-base;
   //   }
   // }
+
+// KU specific:
+  &.list {
+    tr {
+      th {
+        border-top: 1px solid @gray-d7;
+        border-bottom: 2px solid @gray-d7;
+        padding-top: @table-cell-padding;
+        padding-bottom: @table-cell-padding;
+        color: #4a4949;
+      }
+      td {
+        padding: @table-cell-padding 4px @table-cell-padding 0;
+      }
+    }
+  }
 }
 caption {
   padding-top: @table-cell-padding;

@@ -2725,6 +2725,16 @@ table {
   border-collapse: collapse;
   background-color: transparent;
 }
+table.list tr th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #4a4949;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 2px solid #d7d7d7;
+}
+table.list tr td {
+  padding: 8px 4px 8px 0;
+}
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
