@@ -204,7 +204,10 @@
           $new_topbar = $('#topbar_menu > li').clone(),
           $new_search = $('.global-search').first().clone(),
           API;
-  
+      if (!$menu_ul.length) {
+          $menu_ul = $(".mm-navbars-top").append("<ul class='mm-listview'></ul>");
+      }
+
       if ($.fn.mmenu) {
   
           // Clean up class names for local menu 1
