@@ -23,7 +23,7 @@
       img {
         flex: none;
         object-fit: cover;
-        .image-fadeOut();
+        .image-fadeIn();
       }
     }
   }
@@ -45,7 +45,7 @@
     }
   }
 
-  .nyheds-wrap {
+  .nyhedswrap {
     padding: 10px;
   }
 
@@ -54,6 +54,7 @@
   }
 
   .nyhed-tema {
+    margin: 4px 0 2px 0;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.36px;
@@ -71,7 +72,7 @@
 
   &:hover {
     img {
-      .image-fadeIn();
+      .image-fadeOut();
     }
   }
 }

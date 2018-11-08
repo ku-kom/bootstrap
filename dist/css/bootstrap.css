@@ -10192,13 +10192,13 @@ nav {
           flex: inherit;
 }
 .gridnyhed .nyhed-illustration a img {
-          filter: brightness(90%) blur(0);
+          filter: brightness(100%) blur(0);
 
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
   object-fit: cover;
-  -webkit-filter: brightness(90%) blur(0);
+  -webkit-filter: brightness(100%) blur(0);
 }
 @media (min-width: 992px) {
   .gridnyhed .nyhed-illustration {
@@ -10217,13 +10217,14 @@ nav {
   display: inline;
   color: #4a4949;
 }
-.gridnyhed .nyheds-wrap {
+.gridnyhed .nyhedswrap {
   padding: 10px;
 }
 .gridnyhed .nyhed-teaser {
   display: block;
 }
 .gridnyhed .nyhed-tema {
+  margin: 4px 0 2px 0;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .36px;
@@ -10237,9 +10238,9 @@ nav {
   }
 }
 .gridnyhed:hover img {
-          filter: brightness(100%) blur(0);
+          filter: brightness(90%) blur(0);
 
-  -webkit-filter: brightness(100%) blur(0);
+  -webkit-filter: brightness(90%) blur(0);
 }
 .find-box {
   position: relative;
