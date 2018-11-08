@@ -10160,6 +10160,7 @@ nav {
   display: -ms-flexbox;
   display:         flex;
   height: 389px;
+  overflow: hidden;
           flex-direction: column;
   background-color: #f2f2f2;
 
@@ -10174,9 +10175,9 @@ nav {
 .gridnyhed .nyhed-illustration {
   overflow: hidden;
 
-  -webkit-flex: 0 1 200px;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -webkit-flex: 0 0 200px;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
 }
 .gridnyhed .nyhed-illustration a {
   display: -webkit-flex;
