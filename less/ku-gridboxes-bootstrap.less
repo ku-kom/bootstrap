@@ -22,7 +22,7 @@
 
   &:hover {
     img {
-      filter: brightness(90%) blur(0);
+      .image-fadeOut();
     }
   }
 
@@ -275,7 +275,7 @@
         -ms-interpolation-mode: bicubic;
         object-fit: cover;
         backface-visibility: hidden;
-        filter: brightness(100%) blur(0);
+        .image-fadeIn();
       }
     }
     // Position image left
@@ -1001,7 +1001,7 @@
 
     .gridbox {
       img {
-        filter: brightness(90%) blur(0);
+        .image-fadeOut();
       }
     }
   }
