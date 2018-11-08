@@ -10159,12 +10159,17 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  height: 289px;
+  height: 389px;
           flex-direction: column;
   background-color: #f2f2f2;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
+}
+@media (min-width: 992px) {
+  .gridnyhed {
+    height: 289px;
+  }
 }
 .gridnyhed .nyhed-illustration {
   overflow: hidden;
@@ -10206,11 +10211,14 @@ nav {
   font-size: 17px;
   font-weight: 700;
   line-height: 120%;
-  color: #4a4949;
   letter-spacing: .85px;
 }
 .gridnyhed h2 a {
   display: inline;
+  color: #4a4949;
+}
+.gridnyhed .nyheds-wrap {
+  padding: 10px;
 }
 .gridnyhed .nyhed-teaser {
   display: block;

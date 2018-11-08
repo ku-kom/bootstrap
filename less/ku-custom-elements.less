@@ -2,7 +2,10 @@
 // Gamle nyhedsbokse:
 
 .gridnyhed {
-  height: @gridbox1;
+  height: 389px;
+  @media (min-width: @screen-md) {
+    height: @gridbox1;
+  }
   background-color: @grey-newsbox;
   display: flex;
   flex-direction: column;
@@ -31,15 +34,19 @@
   }
 
   h2 {
-    color: @ku-news-gray;
     font-size: 17px;
     line-height: 120%;
     letter-spacing: 0.85px;
     font-weight: 700;
 
     a {
+      color: @ku-news-gray;
       display: inline;
     }
+  }
+
+  .nyheds-wrap {
+    padding: 10px;
   }
 
   .nyhed-teaser {
