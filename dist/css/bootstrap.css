@@ -7422,6 +7422,7 @@ main:after,
 }
 .ku-branding .ku-branding-logo .logo-img {
   display: block;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
