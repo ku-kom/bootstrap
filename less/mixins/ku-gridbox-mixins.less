@@ -95,6 +95,7 @@
 * Tablet style: Grid front page with left menu - all boxes img left text right:
 *    .img-text-aligned();
 */
+
 .img-text-aligned() {
   &.size1 {
     .box2 {
@@ -115,7 +116,7 @@
       .box1 {
         flex: 1;
         order: 2;
-        position: initial!important;
+        position: relative;
 
         .header {
           position: relative;
@@ -131,4 +132,18 @@
       }
     }
   }
+}
+
+.img-fix-for-ie() {
+  // IE doesn't understand flex and object-cover, so we have to give special treatment...  #?$¤!%...
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    backface-visibility: hidden;
+}
+.img-fix-for-ie-size2() {
+  height: 100%;
+  max-width: none;
 }

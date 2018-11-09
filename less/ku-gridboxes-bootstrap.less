@@ -179,6 +179,7 @@
           border: 1px solid @brown-hover;
         }
       }
+
       &::before {
         color: @brown;
       }
@@ -414,8 +415,8 @@
 
         .header {
           color: @ku-news-gray;
-          font-size: 1.42em;
-          line-height: 1.399em;
+          font-size: 1.3em;
+          line-height: 1.2em;
           text-transform: none;
           padding: 0;
           margin: 15px 0 5px;
@@ -510,6 +511,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -605,6 +607,10 @@
       &::before {
         color: inherit;
       }
+
+      .box1 {
+        position: relative!important;
+      }
     }
 
     &.text-down {
@@ -626,22 +632,13 @@
       &.size2,
       &.size3 {
         .box1 {
+          position: relative!important;
           .header {
             border-right: 0;
             white-space: normal;
           }
         }
 
-        .box2 {
-          img {
-            // Testing alternative positioning of images in tablet view
-            height: 100%;
-            position: relative;
-            top: auto;
-            left: auto;
-            transform: translate3d(0,0,0);
-          }
-        }
       }
 
       .text {
@@ -835,7 +832,6 @@
       }
     }
   }
-
   // Styling for full width boxes
   .single-column .column1 {
     .size1 {
@@ -988,6 +984,44 @@
           }
         }
       }
+    }
+  }
+}
+
+// Special styles for Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  .gridbox.with-img {
+    .box2 img {
+      .img-fix-for-ie();
+    }
+    &.size2 {
+      .box2 img {
+        .img-fix-for-ie-size2();
+      }
+    }
+    &.double-column {
+      .box2 img {
+        height: 110%;
+      }
+    }
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* IE Edge */
+  .gridbox.with-img {
+    .box2 img {
+      .img-fix-for-ie();
+    }
+    &.size2 {
+      .box2 img {
+        .img-fix-for-ie-size2();
+      }
+    }
+  }
+  &.double-column {
+    .box2 img {
+      height: 110%;
     }
   }
 }
