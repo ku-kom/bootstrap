@@ -2718,6 +2718,7 @@ pre code {
   }
 }
 table {
+  font-size: 12px;
   border-collapse: collapse;
   background-color: transparent;
 }
@@ -5048,6 +5049,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 #topbar_menu {
   height: 100%;
   margin-right: 0;
+  font-size: 13px;
 }
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
@@ -5464,7 +5466,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
-    left: 13px;
+    left: 24px;
     width: 25%;
   }
 }
@@ -10242,7 +10244,6 @@ nav {
 .find-box {
   position: relative;
   height: 130px;
-  margin-top: -10px;
   overflow: hidden;
 }
 .find-box [class$="-bg"] {
