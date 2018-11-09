@@ -1425,7 +1425,7 @@ body {
   display:         flex;
   height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #252525;
@@ -1440,9 +1440,6 @@ body {
 @media (max-width: 767px) {
   body {
     -webkit-overflow-scrolling: touch;
-  }
-  html:not(.non-responsive) body {
-    font-size: 14px;
   }
 }
 button,
@@ -1531,7 +1528,6 @@ hr {
   .btn,
   .form-control {
     height: auto!important;
-    font-size: 14px !important;
   }
 }
 .h1,
