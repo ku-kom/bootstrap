@@ -9,7 +9,7 @@
  *
  * ========================================================================*/
 
-(function($) {
+(function ($) {
 
   // Language of the current page - fallback to English
   var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
@@ -22,7 +22,7 @@
   }
 
   // Toggle icon in accordions
-  $('.panel-accordion').each(function() {
+  $('.panel-accordion').each(function () {
     if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
       $(this).find('.panel-heading').addClass('open');
     }
@@ -38,7 +38,7 @@
 
   // Open / close all accordions
   var activeAccordion = true;
-  $('.toggleAccordions').click(function() {
+  $('.toggleAccordions').click(function () {
     if (activeAccordion) {
       activeAccordion = false;
       $('.panel-collapse').collapse('show');
@@ -59,7 +59,7 @@
   var $chars = 70; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
   if ($news) {
-    $news.each(function(i, v) {
+    $news.each(function (i, v) {
       var $txt = $(this).text();
       if ($txt.length > $chars) {
         $(this).html($(this).html().substring(0, $chars) + '...');
@@ -68,17 +68,16 @@
     });
   }
 
-  // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled':
-
-function makeGlobalMenuClickable() {
-  if (window.matchMedia('(min-width: 767px)').matches) {
-    var $menu = $('#navbar_menu li.dropdown');
-    $menu.each(function() {
-      $(this).children('.dropdown-toggle').addClass('disabled');
-    });
+  // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled' for desktop only:
+  function makeGlobalMenuClickable() {
+    if (window.matchMedia('(min-width: 767px)').matches) {
+      var $menu = $('#navbar_menu li.dropdown');
+      $menu.each(function () {
+        $(this).children('.dropdown-toggle').addClass('disabled');
+      });
+    }
   }
-}
-makeGlobalMenuClickable();
+  makeGlobalMenuClickable();
 
   // Element to click for smooth scroll to top
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
@@ -104,30 +103,17 @@ makeGlobalMenuClickable();
   scrollFunction();
 
   // Run on scroll
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction()
   };
 
   // Smooth scrolling to top on click event
-  $('#scrolltop').click(function() {
-    $('html, body').animate({
+  $('#scrolltop').click(function () {
+    var $root = $('html, body');
+    $root.animate({
       scrollTop: 0
     }, 500);
     return false;
   });
-
-  // Animate scrolling on anchors in general
-  // $('a[href*="#"]:not([href="#"])').click(function() {
-  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  //     if (target.length) {
-  //       $('html, body').animate({
-  //         scrollTop: target.offset().top
-  //       }, 500);
-  //       return false;
-  //     }
-  //   }
-  // });
 
 })(jQuery);
