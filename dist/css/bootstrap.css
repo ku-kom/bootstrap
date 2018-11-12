@@ -4142,7 +4142,7 @@ tbody.collapse.in {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 12px;
+  font-size: 1em;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4819,7 +4819,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .ku-nav {
-  font-size: 1.085em;
+  font-size: 1em;
 }
 .ku-nav .navbar-nav > li > .dropdown-menu {
   border-top: none;

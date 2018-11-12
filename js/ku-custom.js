@@ -68,6 +68,18 @@
     });
   }
 
+  // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled':
+
+function makeGlobalMenuClickable() {
+  if (window.matchMedia('(min-width: 767px)').matches) {
+    var $menu = $('#navbar_menu li.dropdown');
+    $menu.each(function() {
+      $(this).children('.dropdown-toggle').addClass('disabled');
+    });
+  }
+}
+makeGlobalMenuClickable();
+
   // Element to click for smooth scroll to top
   var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
 
