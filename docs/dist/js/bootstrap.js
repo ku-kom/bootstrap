@@ -1880,25 +1880,6 @@ if (typeof jQuery === 'undefined') {
   $('.panel-accordion').on('hide.bs.collapse', toggleClass);
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
-  // Open / close all accordions
-  var activeAccordion = true;
-  $('.toggleAccordions').click(function () {
-    if (activeAccordion) {
-      activeAccordion = false;
-      $('.panel-collapse').collapse('show');
-      $('.panel-title').attr('data-toggle', '');
-      var $close = $(this).data($lang + '-close');
-      $(this).text($close);
-    } else {
-      activeAccordion = true;
-      $('.panel-collapse').collapse('hide');
-      $('.panel-title').attr('data-toggle', 'collapse');
-      var $open = $(this).data($lang + '-open');
-      $(this).text($open);
-    }
-    $(this).toggleClass('expanded');
-  });
-
   // Truncate multiple lines of text in News in global menu
   var $chars = 70; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
@@ -1952,6 +1933,7 @@ if (typeof jQuery === 'undefined') {
   };
 
   // Smooth scrolling to top on click event
+
   $('#scrolltop').click(function () {
     var $root = $('html, body');
     $root.animate({
