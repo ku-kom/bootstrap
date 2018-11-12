@@ -333,12 +333,11 @@
   padding: 0;
   margin: 15px 0 5px;
   font-size: 1.3em;
-  line-height: 1.2em;
+  line-height: 1.3em;
   color: #4a4949;
   text-transform: none;
 }
 .gridbox.size1.with-img .box1 .text {
-  display: none;
   padding: 0 15px 5px 0;
   font-size: 1.1em;
   font-weight: 400;
