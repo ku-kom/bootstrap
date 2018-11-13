@@ -4144,7 +4144,7 @@ tbody.collapse.in {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 1em;
+  font-size: 12px;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -5527,12 +5527,19 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .ku-nav .search_form .dropdown-menu li {
   padding: 3px 20px;
-  font-size: 1.085em;
 }
 .ku-nav .search_form .dropdown-menu li.selected,
 .ku-nav .search_form .dropdown-menu li:hover {
   cursor: pointer;
   background-color: #efefef;
+}
+.ku-nav .global-search-options-filter {
+  right: 1px;
+  margin-top: 0;
+  border-top: 0;
+}
+.ku-nav .global-search-submit {
+  margin-left: -2px;
 }
 .breadcrumbs {
   display: none;
