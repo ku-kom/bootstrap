@@ -1425,12 +1425,13 @@ body {
   display:         flex;
   height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13.5px;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
   line-height: 1.45;
   color: #252525;
+  letter-spacing: .3px;
           flex-direction: column;
   background-color: #f8f8f8;
 
@@ -1442,6 +1443,7 @@ body {
 @media (max-width: 767px) {
   body {
     -webkit-overflow-scrolling: touch;
+    font-size: 14px;
   }
 }
 button,
@@ -10378,7 +10380,7 @@ nav {
 #warning-banner-header {
   padding: 0;
   margin: 0;
-  font-size: 3em;
+  font-size: 40px;
 }
 .mce-content-body#content {
   display: block;
