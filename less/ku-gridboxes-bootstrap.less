@@ -392,7 +392,7 @@
   }
   // Height 298px
   &.size1 {
-    height: @gridbox1;
+    //height: @gridbox1;
     background: @ku-gray;
 
     &.with-img {
@@ -450,7 +450,7 @@
   }
   // Height 185px
   &.size2 {
-    height: @gridbox2;
+    //height: @gridbox2;
 
     &:not(.with-img) {
       .box1 {
@@ -464,7 +464,7 @@
   }
   // Height 133px
   &.size3 {
-    height: @gridbox3;
+    //height: @gridbox3;
 
     &:not(.with-img) {
       .box1 {
@@ -478,7 +478,7 @@
   }
   // Height 81px
   &.size4 {
-    height: @gridbox4;
+    //height: @gridbox4;
 
     .box1 {
       .text {
@@ -492,7 +492,7 @@
   }
   // Height 55px
   &.size5 {
-    height: @gridbox5;
+    //height: @gridbox5;
 
     .box1 {
       .header {
@@ -524,18 +524,21 @@
   }
 }
 @media (max-width: @screen-xs) {
+  // All flexboxes now require dynamic height as they are stacked in mobile
+  .gridbox {
+    height: auto;
+    .box1 {
+      flex: 0 1 auto;
+    }
+  }
   .gridbox {
     .text {
       display: none;
     }
 
-    &.size2,
-    &.size3 {
-      &:not(.with-img) {
-        &.full,
-        &.outlined {
-          height: auto;
-        }
+    &.size1 {
+      .text {
+        display: block;
       }
     }
 
@@ -586,6 +589,26 @@
     }
   }
 }
+@media (min-width: @screen-xs-flip) {
+  // Set gridbox height for mobile upwards
+  .gridbox {
+    &.size1 {
+      height: @gridbox1;
+    }
+    &.size2 {
+      height: @gridbox2;
+    }
+    &.size3 {
+      height: @gridbox3;
+    }
+    &.size4 {
+      height: @gridbox4;
+    }
+    &.size5 {
+      height: @gridbox5;
+    }
+  }
+}
 @media (max-width: @screen-xs-max) {
   .gridbox {
     &.size1 {
@@ -599,16 +622,6 @@
     }
   }
 }
-@media (max-width: @screen-sm-max) {
-  // All flexboxes now require dynamic height as they are stacked in mobile and tablet
-  .gridbox {
-    height: auto;
-    .box1 {
-      flex: 0 1 auto;
-    }
-  }
-}
-
 @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
   // Tablet
   .gridbox {
