@@ -599,6 +599,16 @@
     }
   }
 }
+@media (max-width: @screen-sm-max) {
+  // All flexboxes now require dynamic height as they are stacked in mobile and tablet
+  .gridbox {
+    height: auto;
+    .box1 {
+      flex: 0 1 auto;
+    }
+  }
+}
+
 @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
   // Tablet
   .gridbox {
@@ -1001,9 +1011,13 @@
         .img-fix-for-ie-size2();
       }
     }
-    &.double-column {
-      .box2 img {
-        height: 110%;
+  }
+  .double-column {
+    .gridbox.with-img {
+      &.size2 {
+        .box2 img {
+          height: 110%;
+        }
       }
     }
   }
@@ -1020,9 +1034,13 @@
       }
     }
   }
-  &.double-column {
-    .box2 img {
-      height: 110%;
+  .double-column {
+    .gridbox.with-img {
+      &.size2 {
+        .box2 img {
+          height: 110%;
+        }
+      }
     }
   }
 }
