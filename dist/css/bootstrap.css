@@ -5540,9 +5540,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
   margin-top: 0;
   border-top: 0;
 }
-.ku-nav .global-search-submit {
-  margin-left: -2px;
-}
 .breadcrumbs {
   display: none;
 
@@ -7980,8 +7977,8 @@ main:after,
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after,
-#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after {
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after,
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after {
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
@@ -8000,6 +7997,9 @@ main:after,
 }
 #mobileleftmenu .search-placeholder .dropdown-menu li + li {
   margin-top: 2px;
+}
+#mobileleftmenu .search-placeholder .global-search-submit {
+  margin-left: -2px;
 }
 #mobileleftmenu .mm-menu .mm-navbar > *,
 #mobileleftmenu .mm-menu .mm-navbar a {

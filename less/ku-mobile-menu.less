@@ -8,6 +8,7 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
+
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
@@ -188,8 +189,8 @@
   }
 
   .mm-listview {
-    > .local1_mmenu,
-    > .local2_mmenu {
+    > .local2_mmenu,
+    > .local1_mmenu {
       > .mm-next {
         &::after {
           color: @white-color;
@@ -216,6 +217,10 @@
           margin-top: 2px;
         }
       }
+    }
+
+    .global-search-submit {
+      margin-left: -2px;
     }
   }
 
