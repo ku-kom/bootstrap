@@ -10367,9 +10367,10 @@ nav {
 }
 #warning-banner-inner {
   max-width: 874px;
-  padding: 1em 1em 1em 100px;
+  padding: 15px 15px 15px 115px;
   margin: 0 auto;
   background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
+  background-size: 100px;
 }
 #warning-banner-inner p {
   font-size: 16px;
