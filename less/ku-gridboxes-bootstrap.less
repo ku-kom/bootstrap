@@ -15,6 +15,7 @@
 .gridbox {
   width: 100%;
   position: relative;
+  font-size: @font-size-base;
   line-height: @line-height-small;
   border-radius: 2px;
   display: flex;
@@ -22,7 +23,7 @@
 
   &:hover {
     img {
-      filter: brightness(90%) blur(0);
+      .image-fadeOut();
     }
   }
 
@@ -179,6 +180,7 @@
           border: 1px solid @brown-hover;
         }
       }
+
       &::before {
         color: @brown;
       }
@@ -275,7 +277,7 @@
         -ms-interpolation-mode: bicubic;
         object-fit: cover;
         backface-visibility: hidden;
-        filter: brightness(100%) blur(0);
+        .image-fadeIn();
       }
     }
     // Position image left
@@ -390,7 +392,7 @@
   }
   // Height 298px
   &.size1 {
-    height: @gridbox1;
+    //height: @gridbox1;
     background: @ku-gray;
 
     &.with-img {
@@ -414,15 +416,15 @@
 
         .header {
           color: @ku-news-gray;
-          font-size: 1.42em;
-          line-height: 1.399em;
+          font-size: 1.3em;
+          line-height: 1.3em;
           text-transform: none;
           padding: 0;
           margin: 15px 0 5px;
         }
 
         .text {
-          display: none;
+          // display: none;
           font-size: 1.1em;
           font-weight: 400;
           line-height: 1.45em;
@@ -448,7 +450,7 @@
   }
   // Height 185px
   &.size2 {
-    height: @gridbox2;
+    //height: @gridbox2;
 
     &:not(.with-img) {
       .box1 {
@@ -462,7 +464,7 @@
   }
   // Height 133px
   &.size3 {
-    height: @gridbox3;
+    //height: @gridbox3;
 
     &:not(.with-img) {
       .box1 {
@@ -476,7 +478,7 @@
   }
   // Height 81px
   &.size4 {
-    height: @gridbox4;
+    //height: @gridbox4;
 
     .box1 {
       .text {
@@ -490,7 +492,7 @@
   }
   // Height 55px
   &.size5 {
-    height: @gridbox5;
+    //height: @gridbox5;
 
     .box1 {
       .header {
@@ -510,6 +512,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -521,18 +524,21 @@
   }
 }
 @media (max-width: @screen-xs) {
+  // All flexboxes now require dynamic height as they are stacked in mobile
+  .gridbox {
+    height: auto;
+    .box1 {
+      flex: 0 1 auto;
+    }
+  }
   .gridbox {
     .text {
       display: none;
     }
 
-    &.size2,
-    &.size3 {
-      &:not(.with-img) {
-        &.full,
-        &.outlined {
-          height: auto;
-        }
+    &.size1 {
+      .text {
+        display: block;
       }
     }
 
@@ -583,6 +589,26 @@
     }
   }
 }
+@media (min-width: @screen-xs-flip) {
+  // Set gridbox height for mobile upwards
+  .gridbox {
+    &.size1 {
+      height: @gridbox1;
+    }
+    &.size2 {
+      height: @gridbox2;
+    }
+    &.size3 {
+      height: @gridbox3;
+    }
+    &.size4 {
+      height: @gridbox4;
+    }
+    &.size5 {
+      height: @gridbox5;
+    }
+  }
+}
 @media (max-width: @screen-xs-max) {
   .gridbox {
     &.size1 {
@@ -605,6 +631,10 @@
       &::before {
         color: inherit;
       }
+
+      .box1 {
+        position: relative!important;
+      }
     }
 
     &.text-down {
@@ -626,22 +656,13 @@
       &.size2,
       &.size3 {
         .box1 {
+          position: relative!important;
           .header {
             border-right: 0;
             white-space: normal;
           }
         }
 
-        .box2 {
-          img {
-            // Testing alternative positioning of images in tablet view
-            height: 100%;
-            position: relative;
-            top: auto;
-            left: auto;
-            transform: translate3d(0,0,0);
-          }
-        }
       }
 
       .text {
@@ -788,6 +809,9 @@
 
       &.size1 {
         &.with-img {
+          .text {
+            display: none;
+          }
           .box2 {
             img {
               max-height: 146%;
@@ -835,7 +859,6 @@
       }
     }
   }
-
   // Styling for full width boxes
   .single-column .column1 {
     .size1 {
@@ -992,6 +1015,52 @@
   }
 }
 
+// Special styles for Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  .gridbox.with-img {
+    .box2 img {
+      .img-fix-for-ie();
+    }
+    &.size2 {
+      .box2 img {
+        .img-fix-for-ie-size2();
+      }
+    }
+  }
+  .double-column {
+    .gridbox.with-img {
+      &.size2 {
+        .box2 img {
+          height: 110%;
+        }
+      }
+    }
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* IE Edge */
+  .gridbox.with-img {
+    .box2 img {
+      .img-fix-for-ie();
+    }
+    &.size2 {
+      .box2 img {
+        .img-fix-for-ie-size2();
+      }
+    }
+  }
+  .double-column {
+    .gridbox.with-img {
+      &.size2 {
+        .box2 img {
+          height: 110%;
+        }
+      }
+    }
+  }
+}
+
 .boxlink {
   color: inherit!important;
   display: block;
@@ -1001,7 +1070,7 @@
 
     .gridbox {
       img {
-        filter: brightness(90%) blur(0);
+        .image-fadeOut();
       }
     }
   }

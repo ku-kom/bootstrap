@@ -21,6 +21,7 @@
 @gray-lighter:           #eee;
 
 @semi-white:             #f1f1f1;
+@grey-newsbox:           #f2f2f2;
 @gray-f5:                #f5f5f5;
 @white-color:            #fff;
 
@@ -31,7 +32,7 @@
 @ku-footer-icon-size:    28px;
 
 // KU specific colors
-
+@beredsskabs-banner-bg: #ffe100;
 @ku-red:                #901a1e;
 @ku-red-hover:          #7b161a;
 @ku-jumpboard:          #921819;
@@ -158,7 +159,7 @@
 //** Global textual link color.
 @link-color:            #165aad;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      @link-visited-color;
+@link-hover-color:      @link-color;
 @link-visited-color:      #3d239c;
 //** Link hover decoration.
 @link-hover-decoration: underline;
@@ -187,7 +188,7 @@
 @font-size-h6:            @font-size-base;
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.5; // 18/12
+@line-height-base:        1.45; // 18/12
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~16px
 
@@ -459,6 +460,9 @@
 @screen-xs-max:              (@screen-sm-min - 1);
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
+
+// KU specific
+@screen-xs-flip: (@screen-xs + 1);
 
 
 //== Grid system

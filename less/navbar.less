@@ -27,7 +27,7 @@
 }
 
 .ku-nav {
-  font-size: 1.085em;
+  font-size: 1em;
 
   .navbar-nav {
     > li {
@@ -341,6 +341,7 @@
 #topbar_menu {
   height: 100%;
   margin-right: 0;
+  font-size: 13px;
 
   &.navbar-nav {
     > li {
@@ -675,13 +676,13 @@
       }
 
       &.engelsk {
-        width: 71px;
+        width: 75px;
         background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
         background-position: right 8px;
       }
 
       &.dansk {
-        width: 67px;
+        width: 71px;
         background-image: url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
         background-position: right 9px;
       }
@@ -839,7 +840,7 @@
       width: 36%;
     }
     @media (min-width: @screen-md-min) {
-      left: (@grid-gutter-width / 2);
+      left: 24px;
       width: 25%;
     }
     // English version
@@ -914,14 +915,19 @@
     .dropdown-menu {
       li {
         padding: 3px 20px;
-        font-size: 1.085em;
 
         &.selected,
-        &:hover {
+        &:hover, &:active {
           background-color: #efefef;
           cursor: pointer;
         }
       }
     }
+  }
+
+  .global-search-options-filter {
+    margin-top: 0;
+    border-top: 0;
+    right: 1px;
   }
 }

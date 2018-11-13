@@ -255,7 +255,7 @@
   position: relative;
   padding-left: 10px;
   cursor: pointer;
-  padding-bottom: 36px;
+  padding-bottom: 45px;
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {

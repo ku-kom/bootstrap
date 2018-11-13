@@ -1,9 +1,86 @@
 /* KU custom elements */
-// Find something boxes:
+// Gamle nyhedsbokse:
+
+.gridnyhed {
+  height: 389px;
+  @media (min-width: @screen-md) {
+    height: @gridbox1;
+  }
+  background-color: @grey-newsbox;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .nyhed-illustration {
+    flex: 0 0 200px;
+    overflow: hidden;
+
+    a {
+      display: flex;
+      justify-content: center;
+      flex: inherit;
+      height: 100%;
+
+      img {
+        flex: none;
+        object-fit: cover;
+        .image-fadeIn();
+      }
+    }
+  }
+  @media (min-width: @screen-md) {
+    .nyhed-illustration {
+      flex: 0 1 160px;
+    }
+  }
+
+  h2 {
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.85px;
+    font-weight: 700;
+
+    a {
+      color: @ku-news-gray;
+      display: inline;
+    }
+  }
+
+  .nyhedswrap {
+    padding: 10px;
+  }
+
+  .nyhed-teaser {
+    display: block;
+  }
+
+  .nyhed-tema {
+    margin: 4px 0 2px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+
+    span {
+      // Hide date
+      display: none;
+    }
+  }
+  @media (min-width: @screen-md) {
+    .nyhed-teaser {
+      display: none;
+    }
+  }
+
+  &:hover {
+    img {
+      .image-fadeOut();
+    }
+  }
+}
+// "Find something" boxes:
 
 .find-box {
   height: 130px;
-  margin-top: -10px;
   position: relative;
   overflow: hidden;
 
@@ -109,6 +186,7 @@
       margin-top: 0;
       height: 0;
       transform: scaleY(0);
+
       li {
         a {
           display: block;
@@ -132,4 +210,27 @@
       transform: scaleY(1);
     }
   }
+}
+
+// Beredskabsbanner
+#warning-banner {
+  background-color: @beredsskabs-banner-bg;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+#warning-banner-inner {
+  margin: 0 auto;
+  padding: 15px 15px 15px 115px;
+  max-width: 874px;
+  background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
+  background-size: 100px;
+  p {
+    font-size: 16px;
+  }
+}
+#warning-banner-header {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }

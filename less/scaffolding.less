@@ -35,8 +35,11 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: @font-family-base;
-  font-size: @font-size-base;
+  font-size: 13.5px;
+  font-style: normal;
+  font-variant: normal;
   font-weight: 400;
+  letter-spacing: 0.3px;
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
@@ -46,9 +49,7 @@ body {
   position: relative;
   @media (max-width: @screen-xs-max) {
     -webkit-overflow-scrolling: touch;
-    html:not(.non-responsive) & {
-      font-size: @font-size-large;
-    }
+    font-size: @font-size-large;
   }
 }
 
@@ -174,7 +175,7 @@ hr {
 @media (max-width: @screen-sm-min) {
   .btn,
   .form-control {
-    font-size: @font-size-large!important;
+    // font-size: @font-size-large!important;
     height: auto!important;
   }
 }
