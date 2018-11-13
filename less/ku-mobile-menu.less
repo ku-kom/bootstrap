@@ -8,90 +8,88 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   background-color: @white-color;
   color: @text-color;
-
   // .local1_mmenu,
   // .local2__mmenu
   li {
     // Contains class that starts with...
-    &[class*="local"]{
-    // Faculty colors for sublevel 1
-    background: @ku-red;
-    color: @white-color;
-    border-top: 1px solid darken(@ku-red, 5%);
-
-    .theme-samf & {
-      background: @samf;
-      border-top: 1px solid darken(@samf, 5%);
-    }
-
-    .theme-hum & {
-      background: @hum;
-      border-top: 1px solid darken(@hum, 5%);
-    }
-
-    .theme-science & {
-      background: @science;
-      border-top: 1px solid darken(@science, 5%);
-    }
-
-    .theme-sund & {
-      background: @sund;
-      border-top: 1px solid darken(@sund, 5%);
-    }
-
-    .theme-jur & {
-      background: @jura;
-      border-top: 1px solid darken(@jura, 5%);
-    }
-
-    .theme-teo & {
-      background: @teol;
-      border-top: 1px solid darken(@teol, 5%);
-    }
-
-    &.mm-selected > a:not(.mm-next) {
-      // selected view
-      font-weight: 600;
-      background: darken(@ku-red, 6%);
+    &[class*="local"] {
+      // Faculty colors for sublevel 1
+      background: @ku-red;
+      color: @white-color;
+      border-top: 1px solid darken(@ku-red, 5%);
 
       .theme-samf & {
-        background: darken(@samf, 6%);
+        background: @samf;
+        border-top: 1px solid darken(@samf, 5%);
       }
 
       .theme-hum & {
-        background: darken(@hum, 6%);
+        background: @hum;
+        border-top: 1px solid darken(@hum, 5%);
       }
 
       .theme-science & {
-        background: darken(@science, 6%);
+        background: @science;
+        border-top: 1px solid darken(@science, 5%);
       }
 
       .theme-sund & {
-        background: darken(@sund, 6%);
+        background: @sund;
+        border-top: 1px solid darken(@sund, 5%);
       }
 
       .theme-jur & {
-        background: darken(@jura, 6%);
+        background: @jura;
+        border-top: 1px solid darken(@jura, 5%);
       }
 
       .theme-teo & {
-        background: darken(@teol, 6%);
+        background: @teol;
+        border-top: 1px solid darken(@teol, 5%);
+      }
+
+      &.mm-selected > a:not(.mm-next) {
+        // selected view
+        font-weight: 600;
+        background: darken(@ku-red, 6%);
+
+        .theme-samf & {
+          background: darken(@samf, 6%);
+        }
+
+        .theme-hum & {
+          background: darken(@hum, 6%);
+        }
+
+        .theme-science & {
+          background: darken(@science, 6%);
+        }
+
+        .theme-sund & {
+          background: darken(@sund, 6%);
+        }
+
+        .theme-jur & {
+          background: darken(@jura, 6%);
+        }
+
+        .theme-teo & {
+          background: darken(@teol, 6%);
+        }
+      }
+
+      > .mm-panel {
+        background-color: lighten(@gray-light, 40%);
+        color: @text-color;
+      }
+
+      &::after {
+        border: none;
       }
     }
-
-    > .mm-panel {
-      background-color: lighten(@gray-light, 40%);
-      color: @text-color;
-    }
-
-    &::after {
-      border: none;
-    }
-  }
   }
 
   .local1_mmenu {
@@ -163,7 +161,6 @@
         right: 20px;
       }
     }
-
     // Opened
     &.mm-opened {
       > .mm-next {
@@ -171,7 +168,6 @@
           transform: rotate(90deg);
         }
       }
-
       // Sublevels
       .mm-listview {
         > .mm-next {
@@ -179,7 +175,6 @@
             transform: rotate(0);
           }
         }
-
         // Opened
         .mm-opened {
           > .mm-next {
@@ -193,8 +188,8 @@
   }
 
   .mm-listview {
-    > .local2_mmenu,
-    > .local1_mmenu {
+    > .local1_mmenu,
+    > .local2_mmenu {
       > .mm-next {
         &::after {
           color: @white-color;
@@ -208,11 +203,19 @@
     background-color: @gray-lighter;
 
     .dropdown-menu {
-      padding-top: 0;
       margin-top: 0;
       top: 100%;
       border-top: 0;
       right: 15px;
+      font-size: @font-size-large;
+
+      li {
+        padding: 2px 15px;
+
+        &+ li {
+          margin-top: 2px;
+        }
+      }
     }
   }
 

@@ -1459,11 +1459,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #3d239c;
+  color: #165aad;
   text-decoration: underline;
 }
 a:focus {
-  color: #3d239c;
+  color: #165aad;
   text-decoration: none;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -4017,7 +4017,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:focus,
 .btn-link:hover {
-  color: #3d239c;
+  color: #165aad;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4146,6 +4146,7 @@ tbody.collapse.in {
   margin: 2px 0 0;
   font-size: 12px;
   text-align: left;
+  letter-spacing: normal;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -5529,7 +5530,8 @@ html:lang(en) .navbar-inverse .topbar-logo {
   padding: 3px 20px;
 }
 .ku-nav .search_form .dropdown-menu li.selected,
-.ku-nav .search_form .dropdown-menu li:hover {
+.ku-nav .search_form .dropdown-menu li:hover,
+.ku-nav .search_form .dropdown-menu li:active {
   cursor: pointer;
   background-color: #efefef;
 }
@@ -7978,8 +7980,8 @@ main:after,
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after,
-#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after {
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-next::after,
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-next::after {
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
@@ -7989,9 +7991,15 @@ main:after,
 #mobileleftmenu .search-placeholder .dropdown-menu {
   top: 100%;
   right: 15px;
-  padding-top: 0;
   margin-top: 0;
+  font-size: 14px;
   border-top: 0;
+}
+#mobileleftmenu .search-placeholder .dropdown-menu li {
+  padding: 2px 15px;
+}
+#mobileleftmenu .search-placeholder .dropdown-menu li + li {
+  margin-top: 2px;
 }
 #mobileleftmenu .mm-menu .mm-navbar > *,
 #mobileleftmenu .mm-menu .mm-navbar a {
