@@ -220,7 +220,7 @@
           $menus.each(function(){
               var $ul = $(this).children().clone();
               $ul.each(function(){
-                  $(this).addClass('local2__mmenu');
+                  $(this).addClass('local2_mmenu');
               });
               $menu_ul.append($ul);
           });
