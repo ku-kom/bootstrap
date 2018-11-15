@@ -8,14 +8,27 @@
   width: inherit;
 }
 
+head:first-child+body .nav {
+  background-position: unset;
+}
+
 .publikationsliste .nav li {
   padding-bottom: unset;
-  text-align: inset;
+  text-align: unset;
 }
 
 .publikationsliste .nav a {
   font-size: inherit;
   font-weight: inherit;
+}
+
+.publikationsliste .dropdown {
+  background: none;
+  left: unset;
+  position: relative;
+  text-align: left;
+  top: unset;
+  width: unset;
 }
 
 .publikationsliste #content {
@@ -25,10 +38,12 @@
   padding-top: 0;
   color: inherit;
 }
+
 div.portal_navigator {
   font-size: inherit;
 }
-ol.portal_list > li {
+
+ol.portal_list>li {
   font-size: inherit;
 }
 
@@ -40,4 +55,40 @@ ol.portal_list li p.type {
 .publikationsliste .label {
   color: inherit;
   font-size: 12px;
+}
+
+ol.portal_list li h2.title a, ol.portal_list li a {
+  font-size: 14px;
+  color: #252525;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: .6px;
+}
+
+.downloadstatistics-box h3 {
+  border-bottom: 1px solid #901a1e;
+}
+
+.theme-samf .downloadstatistics-box h3 {
+  border-bottom: 1px solid #e13718;
+}
+
+.theme-hum .downloadstatistics-box h3 {
+  border-bottom: 1px solid #365aa5;
+}
+
+.theme-science .downloadstatistics-box h3 {
+  border-bottom: 1px solid #46743c;
+}
+
+.theme-sund .downloadstatistics-box h3 {
+  border-bottom: 1px solid #2a216a;
+}
+
+.theme-jur .downloadstatistics-box h3 {
+  border-bottom: 1px solid #999632;
+}
+
+.theme-teo .downloadstatistics-box h3 {
+  border-bottom: 1px solid #66609e;
 }
