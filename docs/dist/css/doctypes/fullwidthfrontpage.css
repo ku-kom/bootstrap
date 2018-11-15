@@ -160,12 +160,12 @@ html:lang(en) .ku-branding .ku-branding-text {
 
 @media screen and (max-width: 767px) {
   /*Target first row - make it full width for sliders*/
-  .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
+  /* .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
     padding-right: 0;
     padding-left: 0;
     width: 100vw;
     max-width: 100%;
-  }
+  } */
   .jumpboard {
     padding: 0;
     background: #f8f8f5;

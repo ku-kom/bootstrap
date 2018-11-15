@@ -9703,6 +9703,10 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   text-shadow: 0 1px 0 #fff;
   border-width: 1px 0;
 }
+.datepicker-days .table-striped .day.active {
+  font-weight: 700;
+  background-color: #ccc;
+}
 @media (min-width: 767px) {
   .privacy-policy {
     position: fixed;

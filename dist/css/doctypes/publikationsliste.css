@@ -60,6 +60,7 @@ ol.portal_list li p.type {
 .publikationsliste .label {
   color: inherit;
   font-size: 12px;
+  font-weight: 400;
 }
 ol.portal_list li.portal_list_item_group {
     color: #252525;
