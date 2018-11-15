@@ -216,7 +216,7 @@
           });
   
           // Look for local menu 2 and add to menu
-          var $menus = $('#leftmenu_container > ul');
+          var $menus = $('#leftmenu_container > ul:not(:first)'); // skip first ul which contains menu 1
           $menus.each(function(){
               var $ul = $(this).children().clone();
               $ul.each(function(){
