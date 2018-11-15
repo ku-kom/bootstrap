@@ -1,0 +1,43 @@
+/* Publikationslister - CURIS/Pure  */
+.publikationsliste .nav {
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  height: auto;
+  width: inherit;
+}
+
+.publikationsliste .nav li {
+  padding-bottom: unset;
+  text-align: inset;
+}
+
+.publikationsliste .nav a {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.publikationsliste #content {
+  border-top: none;
+  width: initial;
+  float: none;
+  padding-top: 0;
+  color: inherit;
+}
+div.portal_navigator {
+  font-size: inherit;
+}
+ol.portal_list > li {
+  font-size: inherit;
+}
+
+ol.portal_list li p.type {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.publikationsliste .label {
+  color: inherit;
+  font-size: 12px;
+}
