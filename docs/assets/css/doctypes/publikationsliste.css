@@ -61,7 +61,9 @@ ol.portal_list li p.type {
   color: inherit;
   font-size: 12px;
 }
-
+ol.portal_list li.portal_list_item_group {
+    color: #252525;
+}
 span.downloads_count {
   width: 77px;
   border-bottom: 2px solid #b0adad;
@@ -94,6 +96,7 @@ div.rendering p.type, ol.portal_list>li {
 .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #901a1e;
   padding-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 .theme-samf .downloadstatistics-box h3, .theme-samf #latest_publication_box_custom h3 {
