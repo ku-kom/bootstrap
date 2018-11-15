@@ -783,13 +783,13 @@
   .two-one-one-column .column1 .gridbox .text {
     display: block;
   }
-  .one-one-two-column .column3 .gridbox.with-img:hover .header,
-  .one-three-column .column2 .gridbox.with-img:hover .header,
-  .one-two-column .column2 .gridbox.with-img:hover .header,
-  .single-column .column1 .gridbox.with-img:hover .header,
-  .three-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-one-column .column1 .gridbox.with-img:hover .header {
+  .one-one-two-column .column3 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .one-three-column .column2 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .one-two-column .column2 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .single-column .column1 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .three-one-column .column1 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .two-one-column .column1 .gridbox.with-img:not(#gridsidebar):hover .header,
+  .two-one-one-column .column1 .gridbox.with-img:not(#gridsidebar):hover .header {
     background: 0;
   }
   .one-one-two-column .column3 .gridbox.outlined .header,
@@ -966,9 +966,9 @@
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 {
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box1 .text,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box1 .text {

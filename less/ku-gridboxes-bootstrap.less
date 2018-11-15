@@ -792,7 +792,7 @@
         display: block;
       }
 
-      &.with-img {
+      &.with-img:not(#gridsidebar) {
         &:hover {
           .header {
             background: 0;
@@ -994,7 +994,9 @@
             }
 
             .box1 {
-              flex: 0 1 auto;
+              position: absolute;
+              bottom: 0;
+              left: 0;
 
               .text {
                 display: none;
