@@ -10397,6 +10397,11 @@ nav {
   margin: 0;
   font-size: 40px;
 }
+.textbox-grey {
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 2px;
+}
 .mce-content-body#content {
   display: block;
   width: 100%;

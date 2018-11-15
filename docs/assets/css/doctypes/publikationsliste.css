@@ -65,30 +65,43 @@ ol.portal_list li h2.title a, ol.portal_list li a {
   letter-spacing: .6px;
 }
 
-.downloadstatistics-box h3 {
-  border-bottom: 1px solid #901a1e;
+ol.portal_list li a>span>strong {
+  font-weight: 600;
 }
 
-.theme-samf .downloadstatistics-box h3 {
+div.rendering p.type, ol.portal_list > li {
+    color: #252525;
+}
+
+#latest_publication_box_custom h3 > a {
+  color: #252525;
+}
+
+.downloadstatistics-box h3, #latest_publication_box_custom h3 {
+  border-bottom: 1px solid #901a1e;
+  padding-bottom: 9px;
+}
+
+.theme-samf .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #e13718;
 }
 
-.theme-hum .downloadstatistics-box h3 {
+.theme-hum .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #365aa5;
 }
 
-.theme-science .downloadstatistics-box h3 {
+.theme-science .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #46743c;
 }
 
-.theme-sund .downloadstatistics-box h3 {
+.theme-sund .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #2a216a;
 }
 
-.theme-jur .downloadstatistics-box h3 {
+.theme-jur .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #999632;
 }
 
-.theme-teo .downloadstatistics-box h3 {
+.theme-teo .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #66609e;
 }
