@@ -1,10 +1,10 @@
 window.searchCallbacks = [];
 jQuery(function() {
-  var forms = $('.global-search'),
+  var forms = jQuery('.global-search'),
     current_engine = {};
   function initSearchForm() {
     forms.each(function() {
-      var form = $(this),
+      var form = jQuery(this),
         field = form.find('.global-search-query'),
         filter = form.find('.global-search-options-filter'),
         filter_btn = form.find('.global-search-options-toggle');
@@ -13,7 +13,7 @@ jQuery(function() {
 
       for (var se in window.searchEngines) {
         var engine = window.searchEngines[se],
-          option = $(document.createElement('li'));
+          option = jQuery(document.createElement('li'));
         option.text(engine.label);
         option.attr('data-label', engine.label);
         option.attr('data-value', se);
