@@ -512,6 +512,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -614,6 +615,150 @@
     }
   }
 }
+@media (max-width: @screen-xs-max) {
+  .gridbox {
+    &.size1 {
+      .box2 {
+        img {
+          max-width: 100%;
+          width: 100%;
+          max-height: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+  // Tablet
+  .gridbox {
+    .img-text-aligned();
+
+    &.outlined {
+      &::before {
+        color: inherit;
+      }
+
+      .box1 {
+        position: relative!important;
+      }
+    }
+
+    &.text-down {
+      &.subcolor_6 {
+        border: 1px solid @gray-dark;
+      }
+    }
+
+    &.size1 {
+      .box2 {
+        img {
+          max-height: none;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &.with-img {
+      &.size2,
+      &.size3 {
+        .box1 {
+          position: relative!important;
+
+          .header {
+            border-right: 0;
+            white-space: normal;
+          }
+        }
+      }
+
+      .text {
+        display: block;
+      }
+
+      &:hover {
+        .header {
+          background: transparent;
+        }
+      }
+    }
+    // Frontpage only
+    .FullWidthFrontpage & {
+      &.outlined {
+        .header {
+          background: 0;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  body:not(.FullWidthFrontpage) {
+    .gridbox {
+      &.text-down {
+        &:hover {
+          .header {
+            background: 0;
+          }
+        }
+      }
+
+      &.outlined {
+        .header {
+          background: 0;
+          color: inherit!important;
+        }
+      }
+    }
+  }
+  // Tablet: For full-width front page only
+  .FullWidthFrontpage {
+    // Multiple columns span
+    .one-one-two-column .column3,
+    .one-two-column .column2,
+    .single-column .column1,
+    .two-one-column .column1,
+    .two-one-one-column .column1 {
+      .gridbox {
+        &.with-img {
+          .header {
+            background: transparent;
+          }
+
+          &.outlined {
+            .header {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+  // Tablet: For full-width frontpage only
+  .FullWidthFrontpage {
+    .col-sm-6,
+    .double-column .col-sm-6 {
+      .gridbox {
+        &.size2,
+        &.size3 {
+          &.with-img {
+            flex-direction: column!important;
+            border: 0;
+
+            .box1 {
+              position: absolute!important;
+            }
+
+            .text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: @screen-md) {
   //Frontpage only
   .one-one-two-column .column1,
@@ -652,7 +797,6 @@
       .text {
         display: block;
       }
-
       // &.with-img {
       //   &:hover {
       //     .header {
@@ -660,7 +804,6 @@
       //     }
       //   }
       // }
-
       &.outlined {
         .header {
           background: transparent;
@@ -684,20 +827,18 @@
     }
   }
 
-  :not(#gridsidebar) {
-    .one-one-two-column .column3,
-    .one-three-column .column2,
-    .one-two-column .column2,
-    .single-column .column1,
-    .three-one-column .column1,
-    .two-one-column .column1,
-    .two-one-one-column .column1 {
-      .gridbox {
-        &.with-img {
-          &:hover {
-            .header {
-              background: 0;
-            }
+  .one-one-two-column .column3,
+  .one-three-column .column2,
+  .one-two-column .column2,
+  .three-one-column .column1,
+  .two-one-column .column1,
+  .two-one-one-column .column1,
+  :not(#gridsidebar) .single-column .column1 {
+    .gridbox {
+      &.with-img {
+        &:hover {
+          .header {
+            background: 0;
           }
         }
       }
@@ -898,151 +1039,6 @@
     }
   }
 }
-@media (max-width: @screen-xs-max) {
-  .gridbox {
-    &.size1 {
-      .box2 {
-        img {
-          max-width: 100%;
-          width: 100%;
-          max-height: none;
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
-  // Tablet
-  .gridbox {
-    .img-text-aligned();
-
-    &.outlined {
-      &::before {
-        color: inherit;
-      }
-
-      .box1 {
-        position: relative!important;
-      }
-    }
-
-    &.text-down {
-      &.subcolor_6 {
-        border: 1px solid @gray-dark;
-      }
-    }
-
-    &.size1 {
-      .box2 {
-        img {
-          max-height: none;
-          max-width: 100%;
-        }
-      }
-    }
-
-    &.with-img {
-      &.size2,
-      &.size3 {
-        .box1 {
-          position: relative!important;
-
-          .header {
-            border-right: 0;
-            white-space: normal;
-          }
-        }
-      }
-
-      .text {
-        display: block;
-      }
-
-      &:hover {
-        .header {
-          background: transparent;
-        }
-      }
-    }
-    // Frontpage only
-    .FullWidthFrontpage & {
-      &.outlined {
-        .header {
-          background: 0;
-          color: inherit;
-        }
-      }
-    }
-  }
-
-  body:not(.FullWidthFrontpage) {
-    .gridbox {
-      &.text-down {
-        &:hover {
-          .header {
-            background: 0;
-          }
-        }
-      }
-
-      &.outlined {
-        .header {
-          background: 0;
-          color: inherit!important;
-        }
-      }
-    }
-  }
-  // Tablet: For full-width front page only
-  .FullWidthFrontpage {
-    // Multiple columns span
-    .one-one-two-column .column3,
-    .one-two-column .column2,
-    .single-column .column1,
-    .two-one-column .column1,
-    .two-one-one-column .column1 {
-      .gridbox {
-        &.with-img {
-          .header {
-            background: transparent;
-          }
-
-          &.outlined {
-            .header {
-              color: inherit;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-  // Tablet: For full-width frontpage only
-  .FullWidthFrontpage {
-    .col-sm-6,
-    .double-column .col-sm-6 {
-      .gridbox {
-        &.size2,
-        &.size3 {
-          &.with-img {
-            flex-direction: column!important;
-            border: 0;
-
-            .box1 {
-              position: absolute!important;
-            }
-
-            .text {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 // Special styles for Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
