@@ -783,15 +783,6 @@
   .two-one-one-column .column1 .gridbox .text {
     display: block;
   }
-  .one-one-two-column .column3 .gridbox.with-img:hover .header,
-  .one-three-column .column2 .gridbox.with-img:hover .header,
-  .one-two-column .column2 .gridbox.with-img:hover .header,
-  .single-column .column1 .gridbox.with-img:hover .header,
-  .three-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-one-column .column1 .gridbox.with-img:hover .header {
-    background: 0;
-  }
   .one-one-two-column .column3 .gridbox.outlined .header,
   .one-three-column .column2 .gridbox.outlined .header,
   .one-two-column .column2 .gridbox.outlined .header,
