@@ -781,7 +781,7 @@
   .one-one-two-column .column3,
   .one-three-column .column2,
   .one-two-column .column2,
-  .single-column .column1,
+  //.single-column .column1,
   .three-one-column .column1,
   .two-one-column .column1,
   .two-one-one-column .column1 {
@@ -792,7 +792,7 @@
         display: block;
       }
 
-      &.with-img:not(#gridsidebar) {
+      &.with-img {
         &:hover {
           .header {
             background: 0;
@@ -1010,6 +1010,18 @@
             &::before {
               bottom: 9px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  :not(#gridsidebar) .single-column .column1 {
+    .gridbox {
+      &.with-img {
+        &:hover {
+          .header {
+            background: 0;
           }
         }
       }

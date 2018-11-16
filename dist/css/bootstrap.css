@@ -7676,7 +7676,7 @@ main:after,
 }
 .ku-leftmenu ul > li > a::before {
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 0;
   display: inline-block;
   width: 10px;
