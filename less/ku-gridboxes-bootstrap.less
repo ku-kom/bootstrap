@@ -451,7 +451,6 @@
   // Height 185px
   &.size2 {
     //height: @gridbox2;
-
     &:not(.with-img) {
       .box1 {
         flex: 0 1 100%;
@@ -465,7 +464,6 @@
   // Height 133px
   &.size3 {
     //height: @gridbox3;
-
     &:not(.with-img) {
       .box1 {
         flex: 0 1 100%;
@@ -479,7 +477,6 @@
   // Height 81px
   &.size4 {
     //height: @gridbox4;
-
     .box1 {
       .text {
         display: none;
@@ -493,7 +490,6 @@
   // Height 55px
   &.size5 {
     //height: @gridbox5;
-
     .box1 {
       .header {
         padding-top: 6px;
@@ -512,7 +508,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -527,10 +522,12 @@
   // All flexboxes now require dynamic height as they are stacked in mobile
   .gridbox {
     height: auto;
+
     .box1 {
       flex: 0 1 auto;
     }
   }
+
   .gridbox {
     .text {
       display: none;
@@ -595,15 +592,19 @@
     &.size1 {
       height: @gridbox1;
     }
+
     &.size2 {
       height: @gridbox2;
     }
+
     &.size3 {
       height: @gridbox3;
     }
+
     &.size4 {
       height: @gridbox4;
     }
+
     &.size5 {
       height: @gridbox5;
     }
@@ -657,12 +658,12 @@
       &.size3 {
         .box1 {
           position: relative!important;
+
           .header {
             border-right: 0;
             white-space: normal;
           }
         }
-
       }
 
       .text {
@@ -792,13 +793,13 @@
         display: block;
       }
 
-      // &.with-img {
-      //   &:hover {
-      //     .header {
-      //       background: 0;
-      //     }
-      //   }
-      // }
+      &.with-img {
+        &:hover {
+          .header {
+            background: 0;
+          }
+        }
+      }
 
       &.outlined {
         .header {
@@ -812,6 +813,7 @@
           .text {
             display: none;
           }
+
           .box2 {
             img {
               max-height: 146%;
@@ -822,14 +824,14 @@
     }
   }
 
-:not(#gridsidebar) {
-  .one-one-two-column .column3,
-  .one-three-column .column2,
-  .one-two-column .column2,
-  .single-column .column1,
-  .three-one-column .column1,
-  .two-one-column .column1,
-  .two-one-one-column .column1 {
+  :not(#gridsidebar) {
+    .one-one-two-column .column3,
+    .one-three-column .column2,
+    .one-two-column .column2,
+    .single-column .column1,
+    .three-one-column .column1,
+    .two-one-column .column1,
+    .two-one-one-column .column1 {
       .gridbox {
         &.with-img {
           &:hover {
@@ -839,8 +841,8 @@
           }
         }
       }
+    }
   }
-}
 
   .gridbox {
     &.with-img {
@@ -1036,7 +1038,6 @@
     }
   }
 }
-
 // Special styles for Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
@@ -1044,12 +1045,14 @@
     .box2 img {
       .img-fix-for-ie();
     }
+
     &.size2 {
       .box2 img {
         .img-fix-for-ie-size2();
       }
     }
   }
+
   .double-column {
     .gridbox.with-img {
       &.size2 {
@@ -1066,12 +1069,14 @@
     .box2 img {
       .img-fix-for-ie();
     }
+
     &.size2 {
       .box2 img {
         .img-fix-for-ie-size2();
       }
     }
   }
+
   .double-column {
     .gridbox.with-img {
       &.size2 {
