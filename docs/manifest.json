@@ -9,11 +9,11 @@
   "background_color": "#fff",
   "theme_color": "#901a1e",
   "icons": [{
-    "src": "http://cms.ku.dk/billeder/apple-touch-icon.png",
+    "src": "https://cms.ku.dk/billeder/apple-touch-icon.png",
     "sizes": "180x180",
     "type": "image/png"
   }, {
-    "src": "http://cms.ku.dk/billeder/apple-touch-icon512.png",
+    "src": "https://cms.ku.dk/billeder/apple-touch-icon512.png",
     "sizes": "152x152",
     "type": "image/png"
   }],
