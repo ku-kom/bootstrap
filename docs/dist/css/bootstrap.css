@@ -7692,6 +7692,7 @@ main:after,
   top: 6px;
   left: 1px;
   display: inline-block;
+  width: 9px;
   padding: 0 0 0 2px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -7728,7 +7729,6 @@ main:after,
 }
 .ku-leftmenu ul > li > a:hover::before {
   z-index: 1;
-  width: 9px;
   color: #fff;
 }
 .ku-leftmenu ul > li > a:hover::after {
