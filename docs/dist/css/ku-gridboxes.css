@@ -674,6 +674,7 @@
   .one-one-two-column .column3 .gridbox.size1 .box2,
   .one-three-column .column2 .gridbox.size1 .box2,
   .one-two-column .column2 .gridbox.size1 .box2,
+  .single-column .column1 .gridbox.size1 .box2,
   .three-one-column .column1 .gridbox.size1 .box2,
   .two-one-column .column1 .gridbox.size1 .box2,
   .two-one-one-column .column1 .gridbox.size1 .box2 {
@@ -684,6 +685,7 @@
   .one-one-two-column .column3 .gridbox.size1 .box2 iframe,
   .one-three-column .column2 .gridbox.size1 .box2 iframe,
   .one-two-column .column2 .gridbox.size1 .box2 iframe,
+  .single-column .column1 .gridbox.size1 .box2 iframe,
   .three-one-column .column1 .gridbox.size1 .box2 iframe,
   .two-one-column .column1 .gridbox.size1 .box2 iframe,
   .two-one-one-column .column1 .gridbox.size1 .box2 iframe {
@@ -693,12 +695,14 @@
   .one-one-two-column .column3 .gridbox.size2.with-img,
   .one-three-column .column2 .gridbox.size2.with-img,
   .one-two-column .column2 .gridbox.size2.with-img,
+  .single-column .column1 .gridbox.size2.with-img,
   .three-one-column .column1 .gridbox.size2.with-img,
   .two-one-column .column1 .gridbox.size2.with-img,
   .two-one-one-column .column1 .gridbox.size2.with-img,
   .one-one-two-column .column3 .gridbox.size3.with-img,
   .one-three-column .column2 .gridbox.size3.with-img,
   .one-two-column .column2 .gridbox.size3.with-img,
+  .single-column .column1 .gridbox.size3.with-img,
   .three-one-column .column1 .gridbox.size3.with-img,
   .two-one-column .column1 .gridbox.size3.with-img,
   .two-one-one-column .column1 .gridbox.size3.with-img {
@@ -710,12 +714,14 @@
   .one-one-two-column .column3 .gridbox.size2.with-img .box1,
   .one-three-column .column2 .gridbox.size2.with-img .box1,
   .one-two-column .column2 .gridbox.size2.with-img .box1,
+  .single-column .column1 .gridbox.size2.with-img .box1,
   .three-one-column .column1 .gridbox.size2.with-img .box1,
   .two-one-column .column1 .gridbox.size2.with-img .box1,
   .two-one-one-column .column1 .gridbox.size2.with-img .box1,
   .one-one-two-column .column3 .gridbox.size3.with-img .box1,
   .one-three-column .column2 .gridbox.size3.with-img .box1,
   .one-two-column .column2 .gridbox.size3.with-img .box1,
+  .single-column .column1 .gridbox.size3.with-img .box1,
   .three-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 {
@@ -731,12 +737,14 @@
   .one-one-two-column .column3 .gridbox.size2.with-img .box1 .header,
   .one-three-column .column2 .gridbox.size2.with-img .box1 .header,
   .one-two-column .column2 .gridbox.size2.with-img .box1 .header,
+  .single-column .column1 .gridbox.size2.with-img .box1 .header,
   .three-one-column .column1 .gridbox.size2.with-img .box1 .header,
   .two-one-column .column1 .gridbox.size2.with-img .box1 .header,
   .two-one-one-column .column1 .gridbox.size2.with-img .box1 .header,
   .one-one-two-column .column3 .gridbox.size3.with-img .box1 .header,
   .one-three-column .column2 .gridbox.size3.with-img .box1 .header,
   .one-two-column .column2 .gridbox.size3.with-img .box1 .header,
+  .single-column .column1 .gridbox.size3.with-img .box1 .header,
   .three-one-column .column1 .gridbox.size3.with-img .box1 .header,
   .two-one-column .column1 .gridbox.size3.with-img .box1 .header,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 .header {
@@ -748,12 +756,14 @@
   .one-one-two-column .column3 .gridbox.size2.with-img .box2,
   .one-three-column .column2 .gridbox.size2.with-img .box2,
   .one-two-column .column2 .gridbox.size2.with-img .box2,
+  .single-column .column1 .gridbox.size2.with-img .box2,
   .three-one-column .column1 .gridbox.size2.with-img .box2,
   .two-one-column .column1 .gridbox.size2.with-img .box2,
   .two-one-one-column .column1 .gridbox.size2.with-img .box2,
   .one-one-two-column .column3 .gridbox.size3.with-img .box2,
   .one-three-column .column2 .gridbox.size3.with-img .box2,
   .one-two-column .column2 .gridbox.size3.with-img .box2,
+  .single-column .column1 .gridbox.size3.with-img .box2,
   .three-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
@@ -767,22 +777,16 @@
   .one-one-two-column .column3 .gridbox .text,
   .one-three-column .column2 .gridbox .text,
   .one-two-column .column2 .gridbox .text,
+  .single-column .column1 .gridbox .text,
   .three-one-column .column1 .gridbox .text,
   .two-one-column .column1 .gridbox .text,
   .two-one-one-column .column1 .gridbox .text {
     display: block;
   }
-  .one-one-two-column .column3 .gridbox.with-img:hover .header,
-  .one-three-column .column2 .gridbox.with-img:hover .header,
-  .one-two-column .column2 .gridbox.with-img:hover .header,
-  .three-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-one-column .column1 .gridbox.with-img:hover .header {
-    background: 0;
-  }
   .one-one-two-column .column3 .gridbox.outlined .header,
   .one-three-column .column2 .gridbox.outlined .header,
   .one-two-column .column2 .gridbox.outlined .header,
+  .single-column .column1 .gridbox.outlined .header,
   .three-one-column .column1 .gridbox.outlined .header,
   .two-one-column .column1 .gridbox.outlined .header,
   .two-one-one-column .column1 .gridbox.outlined .header {
@@ -792,6 +796,7 @@
   .one-one-two-column .column3 .gridbox.size1.with-img .text,
   .one-three-column .column2 .gridbox.size1.with-img .text,
   .one-two-column .column2 .gridbox.size1.with-img .text,
+  .single-column .column1 .gridbox.size1.with-img .text,
   .three-one-column .column1 .gridbox.size1.with-img .text,
   .two-one-column .column1 .gridbox.size1.with-img .text,
   .two-one-one-column .column1 .gridbox.size1.with-img .text {
@@ -800,10 +805,20 @@
   .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
   .one-three-column .column2 .gridbox.size1.with-img .box2 img,
   .one-two-column .column2 .gridbox.size1.with-img .box2 img,
+  .single-column .column1 .gridbox.size1.with-img .box2 img,
   .three-one-column .column1 .gridbox.size1.with-img .box2 img,
   .two-one-column .column1 .gridbox.size1.with-img .box2 img,
   .two-one-one-column .column1 .gridbox.size1.with-img .box2 img {
     max-height: 146%;
+  }
+  :not(#gridsidebar) .one-one-two-column .column3 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .one-three-column .column2 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .one-two-column .column2 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .three-one-column .column1 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .two-one-column .column1 .gridbox.with-img:hover .header,
+  :not(#gridsidebar) .two-one-one-column .column1 .gridbox.with-img:hover .header {
+    background: 0;
   }
   .gridbox.with-img .text {
     display: none;
@@ -968,9 +983,6 @@
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
     bottom: 9px;
-  }
-  :not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header {
-    background: 0;
   }
 }
 @media (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
