@@ -814,13 +814,13 @@
   .two-one-one-column .column1 .gridbox.size1.with-img .box2 img {
     max-height: 146%;
   }
+  .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
   .one-one-two-column .column3 .gridbox.with-img:hover .header,
   .one-three-column .column2 .gridbox.with-img:hover .header,
   .one-two-column .column2 .gridbox.with-img:hover .header,
   .three-one-column .column1 .gridbox.with-img:hover .header,
   .two-one-column .column1 .gridbox.with-img:hover .header,
-  .two-one-one-column .column1 .gridbox.with-img:hover .header,
-  .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header {
+  .two-one-one-column .column1 .gridbox.with-img:hover .header {
     background: 0;
   }
   .gridbox.with-img .text {

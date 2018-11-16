@@ -512,7 +512,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -797,13 +796,7 @@
       .text {
         display: block;
       }
-      // &.with-img {
-      //   &:hover {
-      //     .header {
-      //       background: 0;
-      //     }
-      //   }
-      // }
+
       &.outlined {
         .header {
           background: transparent;
@@ -827,13 +820,14 @@
     }
   }
 
+// Desktop text-down with img style for multiple column spans
+  .gridcontent:not(#gridsidebar) .single-column .column1,
   .one-one-two-column .column3,
   .one-three-column .column2,
   .one-two-column .column2,
   .three-one-column .column1,
   .two-one-column .column1,
-  .two-one-one-column .column1,
-  .gridcontent:not(#gridsidebar) .single-column .column1 {
+  .two-one-one-column .column1 {
     .gridbox {
       &.with-img {
         &:hover {
