@@ -10434,6 +10434,11 @@ nav {
   text-align: left;
   background-color: #fff;
 }
+.mce-content-body#content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .mce-content-body blockquote {
   position: relative;
   float: right;
