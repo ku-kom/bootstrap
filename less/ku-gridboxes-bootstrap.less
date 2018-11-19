@@ -480,7 +480,8 @@
   }
   // Height 81px
   &.size4 {
-    //height: @gridbox4;
+    height: @gridbox4;
+
     .box1 {
       .text {
         display: none;
@@ -493,7 +494,8 @@
   }
   // Height 55px
   &.size5 {
-    //height: @gridbox5;
+    height: @gridbox5;
+
     .box1 {
       .header {
         padding-top: 6px;
@@ -512,6 +514,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -603,14 +606,6 @@
 
     &.size3 {
       height: @gridbox3;
-    }
-
-    &.size4 {
-      height: @gridbox4;
-    }
-
-    &.size5 {
-      height: @gridbox5;
     }
   }
 }
@@ -819,8 +814,7 @@
       }
     }
   }
-
-// Desktop text-down with img style for multiple column spans
+  // Desktop text-down with img style for multiple column spans
   .gridcontent:not(#gridsidebar) .single-column .column1,
   .one-one-two-column .column3,
   .one-three-column .column2,

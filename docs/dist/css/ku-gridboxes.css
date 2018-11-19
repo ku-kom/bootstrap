@@ -376,11 +376,17 @@
 .gridbox.size3:not(.with-img) .box1 .text {
   display: block;
 }
+.gridbox.size4 {
+  height: 81px;
+}
 .gridbox.size4 .box1 .text {
   display: none;
 }
 .gridbox.size4 .box2 {
   display: none;
+}
+.gridbox.size5 {
+  height: 55px;
 }
 .gridbox.size5 .box1 .header {
   padding-top: 6px;
@@ -518,12 +524,6 @@
   }
   .gridbox.size3 {
     height: 133px;
-  }
-  .gridbox.size4 {
-    height: 81px;
-  }
-  .gridbox.size5 {
-    height: 55px;
   }
 }
 @media (max-width: 767px) {

@@ -5472,7 +5472,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
     left: 24px;
-    width: 25%;
+    width: 27%;
   }
 }
 html:lang(en) .navbar-inverse .topbar-logo {
