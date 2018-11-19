@@ -7676,7 +7676,7 @@ main:after,
 }
 .ku-leftmenu ul > li > a::after {
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 0;
   width: 10px;
   height: 11px;
@@ -7686,7 +7686,7 @@ main:after,
 }
 .ku-leftmenu ul > li > a::before {
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 1px;
   display: inline-block;
   width: 9px;
@@ -10053,6 +10053,9 @@ nav {
 }
 .custom-search > .row {
   margin: 0;
+}
+.custom-search .input-group .input-group-addon {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .page-icons {
