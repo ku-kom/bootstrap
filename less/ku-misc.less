@@ -121,14 +121,17 @@ nav {
 
 .right-side {
   .pull-right;
-  @media (min-width: @screen-sm-max) {
-    //.flexiblebox-as-rightbox:first-child {
+  @media (min-width: @screen-sm) {
+    .flexiblebox-as-rightbox:first-child {
       margin-top: @grid-gutter-height;
-    //}
+    }
 
     .rightbox-normal:first-child {
       margin-top: 8px;
     }
+  }
+  @media (max-width: @screen-sm-max) {
+    margin-top: @grid-gutter-height;
   }
 }
 // KU grid:

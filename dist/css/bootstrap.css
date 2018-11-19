@@ -7606,7 +7606,7 @@ main:after,
 .ku-leftmenu ul li a {
   position: relative;
   display: inline-block;
-  padding: 0 5px 3px 15px;
+  padding: 3px 5px 3px 15px;
   font-size: 1em;
   color: #252525;
   vertical-align: top;
@@ -7676,7 +7676,7 @@ main:after,
 }
 .ku-leftmenu ul > li > a::after {
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 0;
   width: 10px;
   height: 11px;
@@ -7686,7 +7686,7 @@ main:after,
 }
 .ku-leftmenu ul > li > a::before {
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 1px;
   display: inline-block;
   width: 9px;
@@ -9722,6 +9722,63 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   text-shadow: 0 1px 0 #fff;
   border-width: 1px 0;
 }
+.datepicker-days .table-striped .day.today {
+  color: #000;
+  background-color: #ffdb99;
+  border-color: #ffb733;
+}
+.datepicker-days .table-striped .day.today:focus,
+.datepicker-days .table-striped .day.today.focus {
+  color: #000;
+  background-color: #ffc966;
+  border-color: #b37400;
+}
+.datepicker-days .table-striped .day.today:hover {
+  color: #000;
+  background-color: #ffc966;
+  border-color: #f59e00;
+}
+.datepicker-days .table-striped .day.today:active,
+.datepicker-days .table-striped .day.today.active,
+.datepicker-days .table-striped .day.today .open > .dropdown-toggle {
+  color: #000;
+  background-color: #ffc966;
+  border-color: #f59e00;
+}
+.datepicker-days .table-striped .day.today:active:hover,
+.datepicker-days .table-striped .day.today.active:hover,
+.datepicker-days .table-striped .day.today .open > .dropdown-toggle:hover,
+.datepicker-days .table-striped .day.today:active:focus,
+.datepicker-days .table-striped .day.today.active:focus,
+.datepicker-days .table-striped .day.today .open > .dropdown-toggle:focus,
+.datepicker-days .table-striped .day.today:active.focus,
+.datepicker-days .table-striped .day.today.active.focus,
+.datepicker-days .table-striped .day.today .open > .dropdown-toggle.focus {
+  color: #000;
+  background-color: #ffbc42;
+  border-color: #b37400;
+}
+.datepicker-days .table-striped .day.today:active,
+.datepicker-days .table-striped .day.today.active,
+.open > .dropdown-toggle.datepicker-days .table-striped .day.today {
+  background-image: none;
+}
+.datepicker-days .table-striped .day.today.disabled:hover,
+.datepicker-days .table-striped .day.today[disabled]:hover,
+fieldset[disabled] .datepicker-days .table-striped .day.today:hover,
+.datepicker-days .table-striped .day.today.disabled:focus,
+.datepicker-days .table-striped .day.today[disabled]:focus,
+fieldset[disabled] .datepicker-days .table-striped .day.today:focus,
+.datepicker-days .table-striped .day.today.disabled.focus,
+.datepicker-days .table-striped .day.today[disabled].focus,
+fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
+  background-color: #ffdb99;
+  border-color: #ffb733;
+}
+.datepicker-days .table-striped .day.today .badge {
+  color: #ffdb99;
+  background-color: #000;
+}
 .datepicker-days .table-striped .day.active {
   font-weight: 700;
   background-color: #ccc;
@@ -9944,12 +10001,17 @@ nav {
 .right-side {
   float: right;
 }
-@media (min-width: 991px) {
-  .right-side {
+@media (min-width: 768px) {
+  .right-side .flexiblebox-as-rightbox:first-child {
     margin-top: 23px;
   }
   .right-side .rightbox-normal:first-child {
     margin-top: 8px;
+  }
+}
+@media (max-width: 991px) {
+  .right-side {
+    margin-top: 23px;
   }
 }
 .gcitem {
