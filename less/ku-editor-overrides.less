@@ -17,7 +17,8 @@
     img {
       .img-responsive;
     }
-}
+  }
+
   blockquote {
     float: right;
     border-top: 1px solid #901a1e;
@@ -103,30 +104,29 @@
     color: #252525;
   }
   // Tables are always outlined in editor
-
   table {
     border: 1px solid @table-border-color;
-    > thead,
+
     > tbody,
-    > tfoot {
+     > tfoot,
+    > thead {
       > tr {
-        > th,
-        > td {
+        > td,
+        > th {
           border: 1px solid @table-border-color;
         }
       }
     }
+
     > thead > tr {
-      > th,
-      > td {
+      > td,
+      > th {
         border-bottom-width: 2px;
       }
     }
   }
 }
-
 // Flexible box dialog
-
 #gridcontent-dialog-edit-flexiblebox {
   .image-alignment-picker {
     .radio {
@@ -139,12 +139,12 @@
     }
   }
 }
-
 // Editor accordions popup dialog
+
 body {
   &.editor-accordions {
     background-color: #fbfbf7;
-    padding: 0px 15px;
+    padding: 0 15px;
   }
 }
 
