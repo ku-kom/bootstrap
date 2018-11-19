@@ -9944,8 +9944,8 @@ nav {
 .right-side {
   float: right;
 }
-@media (min-width: 768px) {
-  .right-side .flexiblebox-as-rightbox:first-child {
+@media (min-width: 991px) {
+  .right-side {
     margin-top: 23px;
   }
   .right-side .rightbox-normal:first-child {

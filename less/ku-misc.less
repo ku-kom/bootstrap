@@ -49,7 +49,6 @@ nav {
       }
     }
   }
-
   // ol,
   // ul {
   //   li {
@@ -83,6 +82,7 @@ nav {
         margin-top: @grid-gutter-height;
       }
     }
+
     + .row {
       margin-top: @grid-gutter-height;
     }
@@ -121,10 +121,10 @@ nav {
 
 .right-side {
   .pull-right;
-  @media (min-width: @screen-sm) {
-    .flexiblebox-as-rightbox:first-child {
+  @media (min-width: @screen-sm-max) {
+    //.flexiblebox-as-rightbox:first-child {
       margin-top: @grid-gutter-height;
-    }
+    //}
 
     .rightbox-normal:first-child {
       margin-top: 8px;
