@@ -291,6 +291,12 @@ module.exports = function (grunt) {
         ext: '.min.css',
         flatten: true
       },
+      minifyDoctypes: {
+        expand: true,
+        cwd: 'dist/css/doctypes/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/doctypes/'
+      },
       docs: {
         src: [
           'docs/assets/css/src/ie10-viewport-bug-workaround.css',
@@ -528,7 +534,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyDoctypes']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

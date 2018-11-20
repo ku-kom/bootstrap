@@ -62,9 +62,11 @@ ol.portal_list li p.type {
   font-size: 12px;
   font-weight: 400;
 }
+
 ol.portal_list li.portal_list_item_group {
-    color: #252525;
+  color: #252525;
 }
+
 span.downloads_count {
   width: 77px;
   border-bottom: 2px solid #b0adad;
@@ -122,4 +124,18 @@ div.rendering p.type, ol.portal_list>li {
 
 .theme-teo .downloadstatistics-box h3, .theme-teo #latest_publication_box_custom h3 {
   border-bottom: 1px solid #66609e;
+}
+
+ul.tabs li a {
+  color: #252525;
+  background-color: #f3f3f3;
+  background-image: none;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+
+ul.tabs li.selected a {
+  color: #fff;
+  background-color: #999;
+  font-weight: inherit;
 }
