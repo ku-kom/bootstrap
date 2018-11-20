@@ -81,13 +81,7 @@ $(document).ready(function() {
       autoplay: true,
       dots: true,
       fade: true,
-      arrows: true,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }]
+      arrows: true
     });
   });
 &lt;/script&gt;</pre>
@@ -103,7 +97,7 @@ $(document).ready(function() {
 <!-- https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js -->
 <script>
   $(document).ready(function() {
-    $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
+    //$('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
     var $slideshow = $('.slideshow'); //.not('.slick-initialized');
     // $slideshow.on('init', function(event, slick) {
     //   $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
@@ -114,12 +108,6 @@ $(document).ready(function() {
       dots: true,
       fade: true,
       arrows: true,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }]
     });
 
   });

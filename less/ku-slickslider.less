@@ -1,5 +1,4 @@
 /* Slider */
-
 .slick-slider {
   // @media (min-width: @screen-sm-min) {
   //   height: 289px;
@@ -275,5 +274,50 @@
   .slick-active {
     background: rgba(0, 0, 0, 0.5);
     outline: none;
+  }
+}
+// Captions - KU specific
+.slick-slide {
+  .caption {
+    display: none;
+  }
+
+  &.slick-current {
+    .caption {
+      display: block;
+      position: relative;
+      width: 100%;
+      line-height: 1.333333;
+      padding: 15px;
+      border: 1px solid #ddd;
+      background: rgba(255, 255, 255, 1);
+
+      h2 {
+        margin-top: 0;
+      }
+
+      &.text-bottom {
+        bottom: 0;
+        left: 0;
+        color: #252525;
+        background: rgba(255, 255, 255, .7);
+      }
+    }
+
+    &:hover .caption {
+      text-decoration: none;
+    }
+  }
+  @media (min-width: @screen-md) {
+    &.slick-current {
+      .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(255, 255, 255, .7);
+        border: 0;
+      }
+    }
   }
 }

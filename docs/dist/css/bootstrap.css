@@ -9033,6 +9033,40 @@ main:after,
   background: rgba(0, 0, 0, .5);
   outline: none;
 }
+.slick-slide .caption {
+  display: none;
+}
+.slick-slide.slick-current .caption {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  line-height: 1.333333;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.slick-slide.slick-current .caption h2 {
+  margin-top: 0;
+}
+.slick-slide.slick-current .caption.text-bottom {
+  bottom: 0;
+  left: 0;
+  color: #252525;
+  background: rgba(255, 255, 255, .7);
+}
+.slick-slide.slick-current:hover .caption {
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .slick-slide.slick-current .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, .7);
+    border: 0;
+  }
+}
 /*  https://bootstrap-datepicker.readthedocs.io/en/stable/index.html
 * Bootstrap datepicker
 */
