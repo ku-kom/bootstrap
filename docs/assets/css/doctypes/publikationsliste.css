@@ -134,10 +134,12 @@ div.rendering p.type, ol.portal_list>li {
 
 .view_container ul.tabs li a {
   color: #252525;
+  background: none;
   background-color: #f3f3f3;
-  background-image: none;
   padding: 10px 10px;
-  border-radius: 2px;
+  border: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .view_container ul.tabs li.selected a {
@@ -147,7 +149,7 @@ div.rendering p.type, ol.portal_list>li {
 }
 
 .quick_nav {
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px 0!important;
 }
 
 .quick_nav, .portal_navigator_result {
