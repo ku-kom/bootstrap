@@ -10597,3 +10597,32 @@ body.editor-accordions {
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
+.login-container {
+  max-width: 500px;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .login-container {
+    margin-top: 50px;
+  }
+}
+.login-container .with-icons .glyphicon {
+  top: 0;
+  padding-right: 9px;
+  font-size: 11px;
+}
+.login-container .with-icons > span {
+  color: #999;
+}
+.login-container .login-header {
+  margin-bottom: 23px;
+}
+@media (max-width: 991px) {
+  .login-container [class*="col-"] + [class*="col-"] {
+    margin-top: 5px;
+  }
+}
+.remember-me input[type=checkbox] {
+  margin-top: 1px;
+}

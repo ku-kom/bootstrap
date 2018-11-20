@@ -1,0 +1,56 @@
+---
+layout: login
+title: CMS login
+slug: login
+---
+<main tabindex="0" id="content">
+  {% include ku-branding.html %}
+  <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-12 main-content">
+        <div class="login-container">
+          <form class="form-horizontal">
+            <h3 class="login-header">Indtast brugernavn og adgangskode<br />for at logge på Obvius CMS</h3>
+           <div class="form-group form-group-lg">
+             <label for="inputUser" class="col-sm-3 control-label">Brugernavn</label>
+             <div class="col-sm-9">
+               <div class="input-group with-icons">
+                <span class="input-group-addon glyphicon glyphicon-user" id="userlogo" aria-hidden="true"></span>
+                  <input type="text" class="form-control" id="inputUser" placeholder="Brugernavn" aria-describedby="userlogo" autofocus>
+               </div>
+             </div>
+           </div>
+           <div class="form-group form-group-lg">
+             <label for="inputPassword" class="col-sm-3 control-label">Adgangskode</label>
+             <div class="col-sm-9">
+               <div class="input-group with-icons">
+                <span class="input-group-addon icon icon-padlock" id="userpass" aria-hidden="true"></span>
+               <input type="password" class="form-control" id="inputPassword" placeholder="Adgangskode" aria-describedby="userpass">
+               </div>
+             </div>
+           </div>
+           <div class="form-group">
+             <div class="col-sm-offset-3 col-sm-9">
+               <div class="checkbox remember-me">
+                 <label>
+                 <input type="checkbox"> Husk mig
+               </label>
+               </div>
+             </div>
+           </div>
+           <div class="form-group">
+             <div class="col-sm-offset-3 col-sm-9">
+               <button type="submit" id="signin" class="btn btn-default btn-lg btn-block">Log ind</button>
+             </div>
+           </div>
+           <div class="form-group">
+             <div class="col-sm-offset-3 col-sm-9">
+           <a href="#" class="forgot-password">Hjælp, jeg har glemt min adgangskode.</a>
+             </div>
+           </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
