@@ -126,7 +126,13 @@ div.rendering p.type, ol.portal_list>li {
   border-bottom: 1px solid #66609e;
 }
 
-ul.tabs li a {
+.view_container ul.tabs {
+  height: auto;
+  width: 100%;
+  float: left;
+}
+
+.view_container ul.tabs li a {
   color: #252525;
   background-color: #f3f3f3;
   background-image: none;
@@ -134,8 +140,21 @@ ul.tabs li a {
   border-radius: 2px;
 }
 
-ul.tabs li.selected a {
+.view_container ul.tabs li.selected a {
   color: #fff;
   background-color: #999;
   font-weight: inherit;
+}
+
+.quick_nav {
+  margin: 5px 0 15px 0;
+}
+
+.quick_nav, .portal_navigator_result {
+  float: left;
+}
+
+.organisations-relations .for_publications .portal_navigator_top {
+  float: left;
+  width: 100%;
 }
