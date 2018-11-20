@@ -62,7 +62,7 @@
 
 /* Slider gallery end */
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   /* Slider height for iPad */
   .slide-wrapper {
     background: #eee;

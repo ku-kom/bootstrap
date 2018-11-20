@@ -1,4 +1,13 @@
 /* Slider */
+
+.slideshow {
+  visibility: hidden;
+
+  &.slick-initialized {
+    visibility: visible;
+  }
+}
+
 .slick-slider {
   // @media (min-width: @screen-sm-min) {
   //   height: 289px;
@@ -277,6 +286,7 @@
   }
 }
 // Captions - KU specific
+
 .slick-slide {
   .caption {
     display: none;

@@ -8776,6 +8776,12 @@ main:after,
   }
 }
 /* Slider */
+.slideshow {
+  visibility: hidden;
+}
+.slideshow.slick-initialized {
+  visibility: visible;
+}
 .slick-slider {
   position: relative;
   display: block;
