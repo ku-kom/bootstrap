@@ -1814,8 +1814,7 @@ dl {
 }
 dd,
 dt {
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 4px;
   line-height: 1.5;
 }
 dt {
@@ -1825,6 +1824,11 @@ dd {
   margin-left: 0;
 }
 @media (min-width: 768px) {
+  .dl-horizontal dt,
+  .dl-horizontal dd {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -3658,7 +3662,9 @@ fieldset[disabled] a .btn {
   content: "\e079";
 }
 .btn-default {
+  font-weight: 600;
   color: #252525;
+  text-transform: uppercase;
   background-color: #f4f4f4;
   border-color: #b6b6b6;
 }
@@ -8852,6 +8858,7 @@ main:after,
 }
 .slick-slide img {
   display: block;
+          filter: brightness(100%) blur(0);
 
   -webkit-flex: none;
       -ms-flex: none;
@@ -9063,7 +9070,7 @@ main:after,
   bottom: 0;
   left: 0;
   color: #252525;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, .8);
 }
 .slick-slide.slick-current:hover .caption {
   text-decoration: none;
@@ -9074,7 +9081,7 @@ main:after,
     bottom: 0;
     left: 0;
     z-index: 2;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     border: 0;
   }
 }
@@ -10269,6 +10276,67 @@ nav {
   border-radius: 100%;
   -webkit-animation: ku-loading .6s infinite linear;
           animation: ku-loading .6s infinite linear;
+}
+.jump-to {
+  position: relative;
+  display: block;
+  font-size: 0;
+  color: #252525;
+}
+.jump-to:before {
+  content: "\e144";
+}
+.jump-to::before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 6px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  border: 1px solid #666;
+  border-radius: 50%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.jump-to::after {
+  position: absolute!important;
+  top: 15px!important;
+  left: 15px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding-left: 1px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  content: "#";
+  background-color: #d54e21;
+  border-radius: 50px;
+}
+.jump-to:active,
+.jump-to:hover {
+  color: inherit;
+}
+.jump-to:active::after,
+.jump-to:hover::after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding-top: 2px;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "\e178";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .visible-desktop {
   display: block;

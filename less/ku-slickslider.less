@@ -92,7 +92,7 @@
     flex: none;
     object-fit: cover;
     backface-visibility: hidden;
-    -webkit-filter: brightness(100%) blur(0);
+    .image-fadeIn();
   }
 
   &.slick-loading img {
@@ -317,7 +317,7 @@
         bottom: 0;
         left: 0;
         color: #252525;
-        background: rgba(@white-color, .7);
+        background: rgba(@white-color, .8);
       }
     }
 
@@ -332,7 +332,7 @@
         bottom: 0;
         left: 0;
         z-index: 2;
-        background: rgba(@white-color, .7);
+        background: rgba(@white-color, .8);
         border: 0;
       }
     }

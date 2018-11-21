@@ -356,8 +356,53 @@ nav {
   top: 50%;
   left: 50%;
 }
-// KU: For legacy html: Should be removed
+// Jump to ID
 
+.jump-to {
+  font-size: 0;
+  display: block;
+  position: relative;
+  color: @text-color;
+  .glyphicon-link;
+
+  &::before {
+    .glyphicon;
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid @gray-666;
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: inline-block;
+    position: absolute!important;
+    top: 15px!important;
+    left: 15px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 1px;
+    content: "#";
+    color: #fff;
+    background-color: #d54e21;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+  }
+
+  &:active,
+  &:hover {
+    color: inherit;
+
+    &::after {
+      .glyphicon;
+      //content: "\e093";
+      content:"\e178";
+      padding-top: 2px;
+      transform: rotate(90deg);
+    }
+  }
+}
+// KU: For legacy html: Should be removed
 .visible-desktop {
   display: block;
 }
