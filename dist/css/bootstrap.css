@@ -10641,6 +10641,7 @@ body.editor-accordions {
   max-width: 450px;
   height: 100%;
   margin: 0 auto;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   .login-container {
@@ -10656,8 +10657,8 @@ body.editor-accordions {
   color: #999;
 }
 .login-container .login-header {
-  margin-bottom: 23px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 @media (max-width: 991px) {
   .login-container [class*="col-"] + [class*="col-"] {
