@@ -1,8 +1,8 @@
 /* Front page styling */
 
-.ku-branding-text-major, .ku-branding-text-sub {
+/* .ku-branding-text-major, .ku-branding-text-sub {
   display: none;
-}
+} */
 
 .ku-branding .ku-branding-text {
   background: url('https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg') 5px 66% no-repeat;
