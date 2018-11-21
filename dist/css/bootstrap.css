@@ -8903,6 +8903,7 @@ main:after,
   display: -ms-inline-flexbox !important;
   display:         inline-flex !important;
   height: 100%;
+  color: #252525;
           flex-direction: column;
 
   -webkit-flex-direction: column;
@@ -8916,6 +8917,9 @@ main:after,
 .slide-link:visited,
 .slide-link:hover {
   text-decoration: none;
+}
+.slide-link:hover .slide-content {
+  color: #252525;
 }
 .slick-arrow.slick-hidden {
   display: none;
