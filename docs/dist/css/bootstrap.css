@@ -10657,6 +10657,7 @@ body.editor-accordions {
 }
 .login-container .login-header {
   margin-bottom: 23px;
+  font-size: 18px;
 }
 @media (max-width: 991px) {
   .login-container [class*="col-"] + [class*="col-"] {
