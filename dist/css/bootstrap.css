@@ -9047,12 +9047,13 @@ main:after,
   display: block;
   width: 100%;
   padding: 15px;
-  line-height: 1.333333;
+  line-height: 1.3333333;
   background: #fff;
   border: 1px solid #ddd;
 }
 .slick-slide.slick-current .caption h2 {
   margin-top: 0;
+  color: #252525;
 }
 .slick-slide.slick-current .caption.text-bottom {
   bottom: 0;
