@@ -268,3 +268,48 @@
     color: #fff;
   }
 }
+.slideshow .slick-current .faculty_color {
+  background: #2a216a;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .faculty_color {
+    background: rgba(42, 33, 106, 0.83);
+  }
+}
+.slideshow .slick-current .subcolor_1 {
+  background: #77b6e5;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_1 {
+    background: rgba(119, 182, 229, 0.83);
+  }
+}
+.slideshow .slick-current .subcolor_2 {
+  background: #0f4576;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_2 {
+    background: rgba(15, 69, 118, 0.83);
+  }
+}
+.slideshow .slick-current .subcolor_3 {
+  background: #00706e;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_3 {
+    background: rgba(0, 112, 110, 0.83);
+  }
+}
+.slideshow .slick-current .subcolor_4 {
+  background: #b0d54e;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_4 {
+    background: rgba(176, 213, 78, 0.83);
+  }
+}

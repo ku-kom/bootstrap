@@ -9,9 +9,9 @@
 }
 
 .slick-slider {
-  // @media (min-width: @screen-sm-min) {
-  //   height: 289px;
-  // }
+  @media (min-width: @screen-sm) {
+    height: 289px;
+  }
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -88,6 +88,9 @@
   }
 
   img {
+    @media (min-width: @screen-sm) {
+      min-height: 100%;
+    }
     display: block;
     flex: none;
     object-fit: cover;
@@ -121,6 +124,26 @@
     border: 1px solid transparent;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  .slick-slide img {
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    -ms-interpolation-mode: bicubic;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* IE Edge */
+  .slick-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+  }
+}
 
 .slider-count {
   text-align: center;
@@ -136,8 +159,9 @@
   .states(none);
   position: relative;
   color: @text-color;
+
   &:hover {
-    .slide-content {
+    .caption {
       color: @text-color;
     }
   }
@@ -300,24 +324,34 @@
 
   &.slick-current {
     .caption {
+      // Textbar bottom
       display: block;
       position: relative;
       width: 100%;
       line-height: @line-height-small;
       padding: 15px;
-      border: 1px solid @gray-ddd;
-      background: rgba(@white-color, 1);
+      color: @text-color;
+      background: rgba(@white-color, .8);
 
       h2 {
         margin-top: 0;
-        color: @text-color;
+        color: inherit;
       }
 
-      &.text-bottom {
-        bottom: 0;
-        left: 0;
-        color: #252525;
-        background: rgba(@white-color, .8);
+      &.subcolor_5 {
+        background: fade(@ku-gray, 90%);
+        color: @ku-gridbox-text;
+      }
+
+      &.subcolor_6 {
+        background: fade(@white-color, 90%);
+        color: @ku-gridbox-text;
+        border-bottom: 1px solid @gray-ddd;
+      }
+
+      &.subcolor_7 {
+        background: fade(@brown, 83%);
+        color: @white-color;
       }
     }
 
@@ -325,7 +359,7 @@
       text-decoration: none;
     }
   }
-  @media (min-width: @screen-md) {
+  @media (min-width: @screen-sm) {
     &.slick-current {
       .caption {
         position: absolute;
@@ -334,6 +368,38 @@
         z-index: 2;
         background: rgba(@white-color, .8);
         border: 0;
+
+        &.textblock-50-left {
+          right: auto;
+          left: 0;
+          padding: 15px;
+          width: 50%;
+          height: 100%;
+        }
+
+        &.textblock-50-right {
+          right: 0;
+          left: auto;
+          padding: 15px;
+          width: 50%;
+          height: 100%;
+        }
+
+        &.textlabel-50-left {
+          top: 50%;
+          transform: translateY(-50%);
+          width: 50%;
+          min-height: 70%;
+        }
+
+        &.textlabel-50-right {
+          top: 50%;
+          right: 0;
+          left: auto;
+          transform: translateY(-50%);
+          width: 50%;
+          min-height: 70%;
+        }
       }
     }
   }
