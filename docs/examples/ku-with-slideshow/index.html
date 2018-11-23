@@ -11,40 +11,51 @@ category: slider
       <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
         {% include ku-leftmenu.html %}
       </div>
-      <div class="col-xs-9 col-sm-8 col-md-9 main-content">
+      <div class="col-xs-6 col-sm-8 col-md-6 main-content">
         <div class="row">
           <div class="col-sm-12">
             <div class="slideshow">
               <a href="#" class="slide-link">
-                  <img src="https://placehold.it/825x450?text=Slide+1" alt="">
-                  <div class="caption text-bottom">
-                    <div>Københavns Univeristet</div>
+                  <img src="https://cms.ku.dk/testarea/nanna/billeder/1100x600_2.jpg" alt="">
+                  <div class="caption faculty_color">
+                    <div>Københavns Universitet</div>
                     <h2>Nye rundvisninger i botanisk have</h2>
                   </div>
               </a>
               <a href="#" class="slide-link">
                   <img src="https://placehold.it/825x450?text=Slide+2" alt="">
-                  <div class="caption text-right-short">
+                  <div class="caption subcolor_1 textblock-50-left">
                     <div>Alumnernes dag</div>
                     <h2>Forskning. Samtaler. Festmiddag.</h2>
                   </div>
               </a>
               <a href="#" class="slide-link">
                   <img src="https://placehold.it/825x450?text=Slide+3" alt="">
-                  <div class="caption text-left">
+                  <div class="caption subcolor_2 textblock-50-right">
                     <div>Bliv klogere på dit studievalg</div>
                     <h2>Kom til åbent hus</h2>
                   </div>
               </a>
               <a href="#" class="slide-link">
                   <img src="https://placehold.it/825x450?text=Slide+4" alt="">
-                  <div class="caption text-left-short">
+                  <div class="caption subcolor_3 textlabel-50-left">
                     <div>Bliv klogere på dit studievalg</div>
                     <h2>Kom til åbent hus</h2>
                   </div>
               </a>
               <a href="#" class="slide-link">
                   <img src="https://placehold.it/825x450?text=Slide+5" alt="">
+                  <div class="caption subcolor_4 textlabel-50-right">
+                    <div>Bliv klogere på dit studievalg</div>
+                    <h2>Kom til åbent hus</h2>
+                  </div>
+              </a>
+              <a href="#" class="slide-link">
+                  <img src="https://placehold.it/825x450?text=Slide+5" alt="">
+                  <div class="caption subcolor_5">
+                    <div>Bliv klogere på dit studievalg</div>
+                    <h2>Kom til åbent hus</h2>
+                  </div>
               </a>
               <a href="#" class="slide-link">
                   <img src="https://placehold.it/825x450?text=Slide+6" alt="">
@@ -56,8 +67,8 @@ category: slider
   &lt;div class=&quot;slideshow&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
         &lt;img src=&quot;https://placehold.it/825x450?text=Slide+1&quot; alt=&quot;&quot;&gt;
-        &lt;div class=&quot;caption text-bottom&quot;&gt;
-          &lt;div>Københavns Univeristet&lt;/div&gt;
+        &lt;div class=&quot;caption&quot;&gt;
+          &lt;div>Københavns Universitet&lt;/div&gt;
           &lt;h2>Nye rundvisninger i botanisk have&lt;/h2&gt;
         &lt;/div&gt;
     &lt;/a&gt;
@@ -81,16 +92,24 @@ $(document).ready(function() {
       autoplay: true,
       dots: true,
       fade: true,
-      arrows: true,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }]
+      arrows: true
     });
   });
 &lt;/script&gt;</pre>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-3 right-side gridcontent" id="gridsidebar">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Right side</h2>
+              </div>
+              <div class="panel-body">
+                <p>This is a right side panel element. It can contain almost anything.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,7 +122,7 @@ $(document).ready(function() {
 <!-- https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js -->
 <script>
   $(document).ready(function() {
-    $('head').append('<link rel="stylesheet" href="../../assets/css/slider/slick-theme.css">');
+    $('head').append('<link rel="stylesheet" type="text/css" href="../../dist/css/faculties/faelles.css">');
     var $slideshow = $('.slideshow'); //.not('.slick-initialized');
     // $slideshow.on('init', function(event, slick) {
     //   $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
@@ -114,12 +133,6 @@ $(document).ready(function() {
       dots: true,
       fade: true,
       arrows: true,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }]
     });
 
   });

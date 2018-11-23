@@ -60,13 +60,16 @@ ol.portal_list li p.type {
 .publikationsliste .label {
   color: inherit;
   font-size: 12px;
+  font-weight: 400;
 }
+
 ol.portal_list li.portal_list_item_group {
-    color: #252525;
+  color: #252525;
 }
+
 span.downloads_count {
   width: 77px;
-  border-bottom: 2px solid #b0adad;
+  border-bottom: 1px solid #b0adad;
 }
 
 li.portal_list_item_most_downloaded div.portal_content_properties {
@@ -121,4 +124,53 @@ div.rendering p.type, ol.portal_list>li {
 
 .theme-teo .downloadstatistics-box h3, .theme-teo #latest_publication_box_custom h3 {
   border-bottom: 1px solid #66609e;
+}
+
+.view_container ul.tabs {
+  height: auto;
+  width: 100%;
+  float: left;
+}
+
+.view_container ul.tabs li a {
+  color: #252525;
+  background: none;
+  background-color: #f3f3f3;
+  padding: 10px 10px;
+  border: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.view_container ul.tabs li.selected a {
+  color: #fff;
+  background-color: #999;
+  font-weight: inherit;
+}
+
+.quick_nav {
+  margin: 0 0 15px 0!important;
+}
+
+.quick_nav, .portal_navigator_result {
+  float: left;
+  width: 100%;
+}
+
+.organisations-relations .for_publications .portal_navigator_top {
+  float: left;
+  width: 100%;
+}
+
+table.properties>tbody>tr:hover {
+    background-color: #f5f5f5;
+}
+
+.organisations-relations table.properties td {
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+.organisations-relations table.properties tr>td:nth-child(1),
+.organisations-relations table.properties tr>td:nth-child(2) {
+  padding-right: 5px;
 }

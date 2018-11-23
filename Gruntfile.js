@@ -291,6 +291,12 @@ module.exports = function (grunt) {
         ext: '.min.css',
         flatten: true
       },
+      minifyDoctypes: {
+        expand: true,
+        cwd: 'dist/css/doctypes/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/doctypes/'
+      },
       docs: {
         src: [
           'docs/assets/css/src/ie10-viewport-bug-workaround.css',
@@ -427,11 +433,13 @@ module.exports = function (grunt) {
     watch: {
       src: {
         files: '<%= jshint.core.src %>',
-        tasks: ['jshint:core', 'qunit', 'concat']
+        //tasks: ['jshint:core', 'qunit', 'concat']
+        tasks: ['jshint:core', 'concat']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
+        //tasks: ['jshint:test', 'qunit']
+        tasks: ['jshint:test']
       },
       less: {
         files: 'less/**/*.less',
@@ -518,14 +526,15 @@ module.exports = function (grunt) {
     testSubtasks.push('saucelabs-qunit');
   }
   grunt.registerTask('test', testSubtasks);
-  grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
+  //grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
+    grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt']);
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyDoctypes']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

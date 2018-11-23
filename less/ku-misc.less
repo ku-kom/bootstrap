@@ -49,7 +49,6 @@ nav {
       }
     }
   }
-
   // ol,
   // ul {
   //   li {
@@ -83,6 +82,7 @@ nav {
         margin-top: @grid-gutter-height;
       }
     }
+
     + .row {
       margin-top: @grid-gutter-height;
     }
@@ -129,6 +129,9 @@ nav {
     .rightbox-normal:first-child {
       margin-top: 8px;
     }
+  }
+  @media (max-width: @screen-sm-max) {
+    margin-top: @grid-gutter-height;
   }
 }
 // KU grid:
@@ -189,6 +192,12 @@ nav {
 
   > .row {
     margin: 0;
+  }
+
+  .input-group {
+    .input-group-addon {
+      cursor: pointer;
+    }
   }
 }
 @media (min-width: @screen-sm) {
@@ -347,8 +356,30 @@ nav {
   top: 50%;
   left: 50%;
 }
-// KU: For legacy html: Should be removed
+// Jump to ID
 
+.jump-to {
+  font-size: 0;
+  display: block;
+  position: relative;
+  color: @gray-666;
+  .glyphicon-transfer;
+
+  &::before {
+    .glyphicon;
+    transform: rotate(90deg);
+    font-size: 12px;
+    color: inherit;
+    padding: 6px;
+    border: 1px solid @gray-666;
+    border-radius: 50%;
+  }
+  &:active,
+  &:hover {
+    color: inherit;
+  }
+}
+// KU: For legacy html: Should be removed
 .visible-desktop {
   display: block;
 }

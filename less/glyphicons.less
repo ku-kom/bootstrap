@@ -7,6 +7,7 @@
 //
 // <a href="#"><span class="icon icon-facebook"></span> Star</a>
 // Import the fonts
+// Remember: Custom font icons are stored in the cms.
 @font-face {
   font-family: @custom-icon-font-family-name;
   src: url("@{custom-icon-font-path}@{custom-icon-font-name}.eot");
@@ -1615,6 +1616,7 @@
   }
 }
 // KU custom font
+@icon-menu_arrow: "\78";
 @icon-facebook: "\66";
 @icon-futurity: "\75";
 @icon-instagram: "\69";
@@ -1796,6 +1798,12 @@
 
   &:hover {
     background-color: @ku-red;
+  }
+}
+
+.icon-menu_arrow {
+  &:before {
+    content: @icon-menu_arrow;
   }
 }
 

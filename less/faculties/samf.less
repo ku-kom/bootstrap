@@ -240,7 +240,7 @@
     }
   }
 }
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-md) {
   // Outline style for multiple column spans
   .double-column [class*=column],
   .one-two-column .column1,
@@ -292,6 +292,52 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+// Slick slider colors
+
+.slideshow {
+  .slick-current {
+    .faculty_color {
+      background: @samf;
+      color: @white-color;
+      @media (min-width: @screen-sm) {
+        background: fade(@samf, 83%);
+      }
+    }
+
+    .subcolor_1 {
+      background: @samf-sub_1;
+      color: @white-color;
+      @media (min-width: @screen-sm) {
+        background: fade(@samf-sub_1, 83%);
+      }
+    }
+
+    .subcolor_2 {
+      background: @samf-sub_2;
+      color: @white-color;
+      @media (min-width: @screen-sm) {
+        background: fade(@samf-sub_2, 83%);
+      }
+    }
+
+    .subcolor_3 {
+      background: @samf-sub_3;
+      color: @white-color;
+      @media (min-width: @screen-sm) {
+        background: fade(@samf-sub_3, 83%);
+      }
+    }
+
+    .subcolor_4 {
+      background: @samf-sub_4;
+      color: @white-color;
+      @media (min-width: @screen-sm) {
+        background: fade(@samf-sub_4, 83%);
       }
     }
   }

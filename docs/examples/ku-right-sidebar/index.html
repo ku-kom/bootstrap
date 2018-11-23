@@ -20,6 +20,7 @@ slug: examples
             <h2>Heading</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
           </div>
+          <div class="col-sm-12"></div>
           <div class="col-sm-12 col-md-6">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -42,9 +43,22 @@ slug: examples
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-8 col-md-3 right-side">
+      <div class="col-xs-12 col-sm-8 col-md-3 right-side gridcontent" id="gridsidebar">
         <div class="row">
           <div class="col-sm-12">
+            <div class="flexiblebox-as-rightbox">
+              <a href="#" class="boxlink">
+                  <div class="gridbox with-img faculty_color text-down text-over size3">
+                      <div class="box1">
+                          <div class="header"><span>Primær tekst</span></div>
+                          <div class="text">
+                            <p>Sekundær tekst</p>
+                          </div>
+                      </div>
+                      <div class="box2"><img src="https://cms.secure.ku.dk/testarea/nanna/billeder/550x300.jpg" alt="Img alt text"></div>
+                  </div>
+              </a>
+            </div>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h2 class="panel-title">Right side</h2>
@@ -75,12 +89,21 @@ slug: examples
             </div>
           </div>
             <div class="col-sm-12">
-            <div class="social-embed twitter"><h2>#kbhuni & #ucph</h2></div>
-            <div><p>Twitterfeeds...</p></div>
-          </div>
+              <div class="social-embed facebook"><h2>UCPH @ Facebook</h2></div>
+                <div><p>Facebook feeds...</p></div>
+            </div>
+            <div class="col-sm-12">
+              <div class="social-embed twitter"><h2>#kbhuni & #ucph</h2></div>
+                <div><p>Twitter feeds...</p></div>
+            </div>
         </div>
       </div>
     </div>
   </div>
   {% include local-footer.html %}
 </main>
+<script>
+$(function () {
+   $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='../../dist/css/faculties/faelles.css' type='text/css' media='screen'>");
+});
+</script>

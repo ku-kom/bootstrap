@@ -266,8 +266,7 @@ dl {
 dd,
 dt {
   line-height: @line-height-base;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 4px;
 }
 
 dt {
@@ -287,6 +286,10 @@ dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
   }
   @media (min-width: @dl-horizontal-breakpoint) {
+    dt, dd {
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
     dt {
       float: left;
       width: (@dl-horizontal-offset - 20);

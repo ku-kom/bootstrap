@@ -1,0 +1,40 @@
+// KU CMS login page
+
+.login-container {
+  max-width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  @media (min-width: @screen-sm) {
+    margin-top: 50px;
+  }
+
+  .with-icons {
+    .glyphicon {
+      font-size: 11px;
+      top: 0;
+      padding-right: 9px;
+    }
+
+    > span {
+      color: @gray-999;
+    }
+  }
+
+  .login-header {
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 17px;
+  }
+  @media (max-width: @screen-sm-max) {
+    [class*="col-"] + [class*="col-"] {
+      margin-top: 5px;
+    }
+  }
+}
+
+.remember-me {
+  input[type=checkbox] {
+    margin-top: 1px;
+  }
+}
