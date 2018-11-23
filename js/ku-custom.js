@@ -101,6 +101,7 @@
   function shareURL() {
     // Get full url - use to append to scripts for sharing on social media
     var $url = window.location.href;
+    $url = encodeURI($url);
     if ($url) {
       $(this).attr('href', function () {
         return this.href + $url;
