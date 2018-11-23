@@ -9,6 +9,7 @@
 }
 
 .slick-slider {
+  height: 320px;
   @media (min-width: @screen-sm) {
     height: 289px;
   }
@@ -128,6 +129,7 @@
   /* IE 11 */
   .slick-slide img {
     min-height: 100%;
+    max-width: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -138,6 +140,7 @@
 @supports (-ms-ime-align: auto) {
   /* IE Edge */
   .slick-slide img {
+    max-width: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -327,6 +330,7 @@
       // Textbar bottom
       display: block;
       position: relative;
+      bottom: 0;
       width: 100%;
       line-height: @line-height-small;
       padding: 15px;
@@ -364,7 +368,6 @@
     &.slick-current {
       .caption {
         position: absolute;
-        bottom: 0;
         left: 0;
         z-index: 2;
         background: rgba(@white-color, .8);
@@ -388,6 +391,7 @@
 
         &.textlabel-50-left {
           top: 50%;
+          bottom: auto;
           transform: translateY(-50%);
           width: 50%;
           min-height: 70%;
@@ -395,6 +399,7 @@
 
         &.textlabel-50-right {
           top: 50%;
+          bottom: auto;
           right: 0;
           left: auto;
           transform: translateY(-50%);

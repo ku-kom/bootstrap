@@ -8792,6 +8792,7 @@ main:after,
 .slick-slider {
   position: relative;
   display: block;
+  height: 320px;
   box-sizing: border-box;
   clear: both;
   -ms-touch-action: pan-y;
@@ -8917,6 +8918,7 @@ main:after,
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: none;
     min-height: 100%;
     -ms-interpolation-mode: bicubic;
     -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
@@ -8929,6 +8931,7 @@ main:after,
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: none;
     -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
             transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
   }
@@ -9088,6 +9091,7 @@ main:after,
 }
 .slick-slide.slick-current .caption {
   position: relative;
+  bottom: 0;
   display: block;
   width: 100%;
   padding: 15px;
@@ -9097,6 +9101,7 @@ main:after,
 }
 .slick-slide.slick-current .caption h2 {
   margin-top: 0;
+  margin-bottom: 5px;
   color: inherit;
 }
 .slick-slide.slick-current .caption.subcolor_5 {
@@ -9118,7 +9123,6 @@ main:after,
 @media (min-width: 768px) {
   .slick-slide.slick-current .caption {
     position: absolute;
-    bottom: 0;
     left: 0;
     z-index: 2;
     background: rgba(255, 255, 255, .8);
@@ -9140,6 +9144,7 @@ main:after,
   }
   .slick-slide.slick-current .caption.textlabel-50-left {
     top: 50%;
+    bottom: auto;
     width: 50%;
     min-height: 70%;
     -webkit-transform: translateY(-50%);
@@ -9148,6 +9153,7 @@ main:after,
   .slick-slide.slick-current .caption.textlabel-50-right {
     top: 50%;
     right: 0;
+    bottom: auto;
     left: auto;
     width: 50%;
     min-height: 70%;
