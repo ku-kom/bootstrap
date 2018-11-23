@@ -8939,9 +8939,9 @@ main:after,
 }
 .slide-link {
   position: relative;
-  display: -webkit-inline-flex !important;
-  display: -ms-inline-flexbox !important;
-  display:         inline-flex !important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display:         flex!important;
   height: 100%;
   color: #252525;
           flex-direction: column;
@@ -9035,7 +9035,7 @@ main:after,
 }
 .slick-dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   display: block;
   width: 100%;
   padding: 0;
@@ -9046,10 +9046,10 @@ main:after,
 .slick-dots li {
   position: relative;
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   padding: 0;
-  margin: 0 5px;
+  margin: 0 4px;
   cursor: pointer;
   background: rgba(0, 0, 0, .3);
   border-radius: 50%;
