@@ -5493,7 +5493,9 @@ html:lang(en) .navbar-inverse .topbar-logo {
   }
 }
 .ku-nav .btn-global-search .btn {
+  font-weight: 400;
   color: #444;
+  text-transform: capitalize;
   background-color: #fff;
 }
 .ku-nav .btn-global-search .btn.global-search-options-toggle {
