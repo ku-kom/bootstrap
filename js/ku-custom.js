@@ -101,10 +101,11 @@
 })(jQuery);
 
 function shareURL(data) {
+  // Usage, e.g.: onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u="
   // Get full url - use to append to paths for sharing on social media
   var url = window.location.href;
   var src = data;
   if (src) {
-    window.location.href = encodeURI(url) + encodeURI(src);
+    window.location.href = encodeURI(src) + encodeURI(url);
   }
 }
