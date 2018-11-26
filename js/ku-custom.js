@@ -98,15 +98,13 @@
     return false;
   });
 
-  function shareURL() {
-    // Get full url - use to append to scripts for sharing on social media
-    var $url = window.location.href;
-    $url = encodeURI($url);
-    if ($url) {
-      $(this).attr('href', function () {
-        return this.href + $url;
-      });
-    }
-  }
-
 })(jQuery);
+
+function shareURL(data) {
+  // Get full url - use to append to paths for sharing on social media
+  var url = window.location.href;
+  var src = data;
+  if (src) {
+    window.location.href = encodeURI(url) + encodeURI(src);
+  }
+}
