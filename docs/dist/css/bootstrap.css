@@ -9094,11 +9094,6 @@ main:after,
   color: #252525;
   background: #fff;
 }
-@media (min-width: 768px) {
-  .slick-slide.slick-current .caption {
-    background: rgba(255, 255, 255, .8);
-  }
-}
 .slick-slide.slick-current .caption h2 {
   margin-top: 0;
   margin-bottom: 5px;
@@ -9106,16 +9101,31 @@ main:after,
 }
 .slick-slide.slick-current .caption.subcolor_5 {
   color: #606060;
-  background: rgba(238, 238, 238, .9);
+  background: #eee;
+}
+@media (min-width: 768px) {
+  .slick-slide.slick-current .caption.subcolor_5 {
+    background: rgba(238, 238, 238, .83);
+  }
 }
 .slick-slide.slick-current .caption.subcolor_6 {
   color: #606060;
-  background: rgba(255, 255, 255, .9);
+  background: #fff;
   border-bottom: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .slick-slide.slick-current .caption.subcolor_6 {
+    background: rgba(255, 255, 255, .85);
+  }
 }
 .slick-slide.slick-current .caption.subcolor_7 {
   color: #fff;
-  background: rgba(98, 87, 87, .83);
+  background: #625757;
+}
+@media (min-width: 768px) {
+  .slick-slide.slick-current .caption.subcolor_7 {
+    background: rgba(98, 87, 87, .83);
+  }
 }
 .slick-slide.slick-current:hover .caption {
   text-decoration: none;
