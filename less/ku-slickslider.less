@@ -208,7 +208,7 @@
 
   &:before {
     font-size: 32px;
-    opacity: 0.75;
+    opacity: 0.65;
     color: @white-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -270,7 +270,7 @@
     display: inline-block;
     width: 6px;
     height: 6px;
-    margin: 0 4px;
+    margin: 0 3px;
     padding: 0;
     cursor: pointer;
     background: rgba(@gray-base, 0.3);
@@ -341,19 +341,28 @@
       }
 
       &.subcolor_5 {
-        background: fade(@ku-gray, 90%);
+        background: @ku-gray;
         color: @ku-gridbox-text;
+        @media (min-width: @screen-sm) {
+          background: fade(@ku-gray, 83%);
+        }
       }
 
       &.subcolor_6 {
-        background: fade(@white-color, 90%);
+        background: @white-color;
         color: @ku-gridbox-text;
         border-bottom: 1px solid @gray-ddd;
+        @media (min-width: @screen-sm) {
+          background: fade(@white-color, 85%);
+        }
       }
 
       &.subcolor_7 {
-        background: fade(@brown, 83%);
+        background: @brown;
         color: @white-color;
+        @media (min-width: @screen-sm) {
+          background: fade(@brown, 83%);
+        }
       }
     }
 

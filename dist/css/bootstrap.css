@@ -9000,7 +9000,7 @@ main:after,
   font-family: "ku-symbols";
   font-size: 32px;
   color: #fff;
-  opacity: .75;
+  opacity: .65;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9047,7 +9047,7 @@ main:after,
   width: 6px;
   height: 6px;
   padding: 0;
-  margin: 0 4px;
+  margin: 0 3px;
   cursor: pointer;
   background: rgba(0, 0, 0, .3);
   border-radius: 50%;
