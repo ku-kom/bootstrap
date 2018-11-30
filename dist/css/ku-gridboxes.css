@@ -316,9 +316,9 @@
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .gridbox.size1.with-img .box1 .header-small {
   margin: 5px 0;
