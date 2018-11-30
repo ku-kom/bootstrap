@@ -5351,11 +5351,11 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   text-decoration: underline;
 }
 .navbar-inverse .navbar-nav > li > a.dansk,
-.navbar-inverse .navbar-nav > li > a.engelsk {
+.navbar-inverse .navbar-nav > li > a.english {
   display: inline-block;
   background-repeat: no-repeat;
 }
-.navbar-inverse .navbar-nav > li > a.engelsk {
+.navbar-inverse .navbar-nav > li > a.english {
   width: 75px;
   background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
   background-position: right 8px;
@@ -8785,10 +8785,14 @@ main:after,
   }
 }
 /* Slider */
-.slideshow {
+.slideshow,
+.slide-gallery,
+.gallery-nav {
   visibility: hidden;
 }
-.slideshow.slick-initialized {
+.slideshow.slick-initialized,
+.slide-gallery.slick-initialized,
+.gallery-nav.slick-initialized {
   visibility: visible;
 }
 .slick-slider {
