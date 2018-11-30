@@ -26,7 +26,7 @@
 }
 
 .gallery-nav .slick-slide {
-  border-left: 3px solid #fff;
+  border: 1px solid #fff;
 }
 
 .gallery-nav .slick-slide:hover img {
