@@ -8380,9 +8380,9 @@ main:after,
   padding: 15px;
   line-height: 1.3333333;
 
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   -webkit-order: 2;
   -ms-flex-order: 2;
           order: 2;
@@ -8401,12 +8401,20 @@ main:after,
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .advanced-list li .advanced-link:hover {
-  background-color: #e7e6e6;
+  background-color: #e6e6e6;
+}
+.advanced-list li .advanced-link:hover .list-img {
+          filter: brightness(90%) blur(0);
+
+  -webkit-filter: brightness(90%) blur(0);
+}
+.advanced-list li .advanced-link:active {
+  background-color: #e6e6e6;
 }
 .advanced-list li + li {
   margin-top: 5px;
@@ -10581,8 +10589,7 @@ nav {
   border: 1px solid #ddd;
 }
 .linkslist input[type="checkbox"] {
-  position: absolute;
-  left: -9999px;
+  display: none;
 }
 .linkslist input[type="checkbox"] + label::after {
   position: absolute;
