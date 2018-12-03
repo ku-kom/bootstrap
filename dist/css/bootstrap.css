@@ -8925,8 +8925,6 @@ main:after,
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: none;
-    height: 100%;
     min-height: 100%;
     -ms-interpolation-mode: bicubic;
     -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
@@ -8943,8 +8941,6 @@ main:after,
       position: absolute;
       top: 50%;
       left: 50%;
-      max-width: none;
-      height: 100%;
       min-height: 100%;
       -ms-interpolation-mode: bicubic;
       -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
