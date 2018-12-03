@@ -241,10 +241,9 @@
 
           // Initialize jQuery MMenu
           API = $menu.mmenu({
-              lazySubmenus: true,
               slidingSubmenus: false,
-              onClick: {
-              setSelected: true
+                  onClick: {
+                  setSelected: true
               },
               extensions: [
                   "multiline",
