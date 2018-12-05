@@ -1,13 +1,11 @@
 /* Slick theme for slides count and galleries - not necessary for standard slideshows */
 /* Current and total slides */
-
 .slide-wrapper .slider-count {
   text-align: center;
   margin-top: 8px;
 }
 
 /* Slider gallery start */
-
 .gallery-nav {
   /*margin-top: 1px;*/
   margin-top: 10px;
@@ -17,12 +15,16 @@
 .gallery-nav .slick-track {
   left: 0 !important;
 }
+
 .gallery-nav .nav-item {
   height: 100%;
 }
+
 .gallery-nav img {
   cursor: pointer;
-  padding: 0 1px 0 1px;
+  max-width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .gallery-nav .slick-slide {
@@ -60,9 +62,8 @@
   -webkit-filter: brightness(90%) blur(0);
 }
 
-/* Slider gallery end */
-
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* Slider height for iPad */
   .slide-wrapper {
     background: #eee;
@@ -72,5 +73,21 @@
 @media screen and (min-width: 768px) {
   .gallery-nav .slick-slide {
     min-width: 25% !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  /* IE 11 */
+  .gallery-nav .nav-item {
+    height: 100px;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+
+  /* IE Edge */
+  .gallery-nav .nav-item {
+    height: 100px;
   }
 }
