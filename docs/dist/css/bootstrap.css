@@ -8884,7 +8884,8 @@ main:after,
 }
 @media (min-width: 768px) {
   .slick-slide img {
-    min-height: 100%;
+    max-width: none!important;
+    height: 100%!important;
   }
 }
 .slick-slide.slick-loading img {
