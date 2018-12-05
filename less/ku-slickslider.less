@@ -232,10 +232,9 @@
   &:hover {
     .slick-prev {
       left: 0;
+      .icon-arrow-back;
 
       &:before {
-        content: @icon-arrow;
-        transform: rotate(180deg) translate3d(0,0,0);
         display: inline-block;
       }
     }
@@ -337,7 +336,7 @@
       line-height: @line-height-small;
       padding: 15px;
       color: @text-color;
-      background: @white-color;
+      background: @gray-f5;
 
       h2 {
         margin-top: 0;
@@ -354,7 +353,7 @@
       }
 
       &.subcolor_6 {
-        background: @white-color;
+        background: @gray-f5;
         color: @ku-gridbox-text;
         border-bottom: 1px solid @gray-ddd;
         @media (min-width: @screen-sm) {
