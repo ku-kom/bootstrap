@@ -3646,8 +3646,6 @@ textarea.form-tooltip {
 .btn[disabled],
 fieldset[disabled] .btn {
   cursor: not-allowed;
-  zoom: 1;
-  filter: alpha(opacity=65);
   box-shadow: none;
   opacity: .65;
 }
@@ -6710,8 +6708,6 @@ button.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  zoom: 1;
-  filter: alpha(opacity=20);
   opacity: .2;
 }
 .close:hover,
@@ -6719,8 +6715,6 @@ button.list-group-item-danger.active:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  zoom: 1;
-  filter: alpha(opacity=50);
   opacity: .5;
 }
 button.close {
@@ -6784,13 +6778,9 @@ button.close {
   background-color: #000;
 }
 .modal-backdrop.fade {
-  zoom: 1;
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 .modal-backdrop.in {
-  zoom: 1;
-  filter: alpha(opacity=50);
   opacity: .5;
 }
 .modal-header {
@@ -6866,15 +6856,11 @@ button.close {
   word-spacing: normal;
   word-wrap: normal;
   white-space: normal;
-  zoom: 1;
-  filter: alpha(opacity=0);
   opacity: 0;
 
   line-break: auto;
 }
 .tooltip.in {
-  zoom: 1;
-  filter: alpha(opacity=90);
   opacity: .9;
 }
 .tooltip.top {
@@ -8670,7 +8656,6 @@ main:after,
   margin-top: 5px;
   text-align: left;
   background-image: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3f3f1', endColorstr='#ffedece9', GradientType=0);
   background-repeat: repeat-x;
   border-bottom: 1px solid #fff;
 
@@ -9183,6 +9168,8 @@ main:after,
     bottom: auto;
     width: 50%;
     min-height: 70%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -9193,6 +9180,8 @@ main:after,
     left: auto;
     width: 50%;
     min-height: 70%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -9966,7 +9955,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     color: #901a1e;
     text-transform: uppercase;
     background-image: linear-gradient(to bottom, #eee 0%, #cfcfcf 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffcfcfcf', GradientType=0);
     background-repeat: repeat-x;
   }
   .privacy-policy .laes_mere_cookies {
@@ -10579,7 +10567,6 @@ nav {
 }
 .find-researcher {
   background-image: linear-gradient(to right, #bebec0 0%, #b0b2b6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbebec0', endColorstr='#ffb0b2b6', GradientType=1);
   background-repeat: repeat-x;
 }
 .find-researcher .search-text {
@@ -10587,7 +10574,6 @@ nav {
 }
 .find-kunet {
   background-image: linear-gradient(to right, #a80505 0%, #7e0202 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa80505', endColorstr='#ff7e0202', GradientType=1);
   background-repeat: repeat-x;
 }
 .find-kunet .search-text {
