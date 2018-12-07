@@ -1404,6 +1404,9 @@ template {
 .icon-padlock:before {
   content: "\64";
 }
+.icon-forbidden:before {
+  color: #999;
+}
 .icon-forbidden:after {
   position: absolute;
   top: -5px;
