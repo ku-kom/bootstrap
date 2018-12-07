@@ -335,6 +335,7 @@
       width: 100%;
       line-height: @line-height-small;
       padding: 15px;
+      font-size: 14px;
       color: @text-color;
       background: @gray-f5;
 
@@ -342,6 +343,8 @@
         margin-top: 0;
         margin-bottom: 5px;
         color: inherit;
+        font-size: 24px;
+        line-height: 1.2;
       }
 
       &.subcolor_5 {
@@ -355,7 +358,6 @@
       &.subcolor_6 {
         background: @gray-f5;
         color: @ku-gridbox-text;
-        border-bottom: 1px solid @gray-ddd;
         @media (min-width: @screen-sm) {
           background: fade(@white-color, 85%);
         }
@@ -380,7 +382,7 @@
         position: absolute;
         left: 0;
         z-index: 2;
-        background: rgba(@white-color, .8);
+        background: rgba(@white-color, .9);
         border: 0;
 
         &.textblock-50-left {
