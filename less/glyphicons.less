@@ -1648,6 +1648,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 // Social icons to use anywhere
 
@@ -1854,5 +1855,19 @@
 .icon-padlock {
   &:before {
     content: @icon-padlock;
+  }
+}
+
+.icon-forbidden {
+  &:after {
+    top: -5px;
+    left: 44%;
+    height: 113%;
+    width: 1px;
+    position: absolute;
+    content: "";
+    border-left: 3px solid lighten(@brand-danger, 10%);
+    transform: rotateZ(45deg);
+    transform-origin: left center;
   }
 }

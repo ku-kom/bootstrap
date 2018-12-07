@@ -1248,6 +1248,7 @@ template {
   content: "\e260";
 }
 .icon {
+  position: relative;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   font-style: normal;
@@ -1402,6 +1403,19 @@ template {
 }
 .icon-padlock:before {
   content: "\64";
+}
+.icon-forbidden:after {
+  position: absolute;
+  top: -5px;
+  left: 44%;
+  width: 1px;
+  height: 113%;
+  content: "";
+  border-left: 3px solid #a61e23;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
 }
 * {
   box-sizing: border-box;
@@ -1865,6 +1879,7 @@ blockquote:before {
 }
 blockquote:before {
   position: absolute;
+  position: relative;
   top: -15px;
   left: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -8053,6 +8068,7 @@ nav {
   border-radius: 2px;
 }
 .ku-leftmenu ul > li > a::before {
+  position: relative;
   position: absolute;
   top: 7px;
   left: 1px;
@@ -8334,6 +8350,7 @@ nav {
   top: 40px;
 }
 #mobileleftmenu .mm-listview li .mm-next::after {
+  position: relative;
   right: 20px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -8557,6 +8574,7 @@ nav {
           justify-content: center;
 }
 .social-items .social-item .social-icon::before {
+  position: relative;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   font-style: normal;
@@ -8643,6 +8661,7 @@ nav {
     background: #fff;
   }
   html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading:after {
+    position: relative;
     position: absolute;
     top: 55%;
     right: 15px;
@@ -9087,6 +9106,7 @@ nav {
 }
 .entries .entry > a:before {
   position: absolute;
+  position: relative;
   top: 50%;
   left: 0;
   display: inline;
