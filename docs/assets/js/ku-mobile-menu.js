@@ -87,7 +87,7 @@
         $localmenu1 = $('#mobileleftmenu > ul > li'),
         $new_navbar = $('#navbar_menu > li').clone(),
         $new_topbar = $('#topbar_menu > li').clone(),
-        $new_search = $('#globalSearch').detach(),
+        $new_search = $('.global-search').first().detach(),
         API;
 
     if ($.fn.mmenu) {
@@ -124,12 +124,10 @@
             },
             extensions: [
                 "multiline",
-                "pagedim-black"
+                "pagedim-black",
+                "position-front",
+                "position-right"
             ],
-            offCanvas: {
-                position: 'right',
-                zposition: 'front'
-            },
             setSelected: {
                 parent: true,
                 current: 'detect'

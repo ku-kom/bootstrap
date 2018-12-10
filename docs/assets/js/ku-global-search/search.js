@@ -1,7 +1,7 @@
 window.searchCallbacks = [];
 jQuery(function(jQuery) {
   var forms = jQuery('.global-search'),
-    current_engine = {};
+      current_engine = {};
   function initSearchForm() {
     forms.each(function() {
       var form = jQuery(this),
@@ -48,7 +48,7 @@ jQuery(function(jQuery) {
     });
   }
 
-  if (window.searchEngines) {
+  if (window.searchEngines.length > 0) {
     initSearchForm();
   } else {
     forms.remove();
