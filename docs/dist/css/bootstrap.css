@@ -1368,6 +1368,12 @@ template {
 .icon-youtube:hover {
   background-color: #d12223;
 }
+.icon-tablet:before {
+  content: "\77";
+}
+.icon-desktop:before {
+  content: "\7a";
+}
 .icon-phone:before {
   content: "\70";
 }
@@ -1382,6 +1388,7 @@ template {
   content: "\61";
 }
 .icon-arrow-back:before {
+  display: inline-block;
   content: "\61";
   -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
           transform: rotate(180deg) translate3d(0, 0, 0);
@@ -9432,6 +9439,7 @@ nav {
   left: 0;
 }
 .slick-slider:hover .slick-prev:before {
+  display: inline-block;
   content: "\61";
   -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
           transform: rotate(180deg) translate3d(0, 0, 0);

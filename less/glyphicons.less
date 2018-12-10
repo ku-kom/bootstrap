@@ -1628,6 +1628,8 @@
 @icon-conversation: "\6f";
 @icon-vimeo: "\62";
 @icon-youtube: "\79";
+@icon-tablet: "\77";
+@icon-desktop: "\7a";
 @icon-phone: "\70";
 @icon-arrow: "\61";
 @icon-quote: "\71";
@@ -1792,6 +1794,17 @@
   }
 }
 
+.icon-tablet {
+  &:before {
+    content: @icon-tablet;
+  }
+}
+.icon-desktop {
+  &:before {
+    content: @icon-desktop;
+  }
+}
+
 .icon-phone {
   &:before {
     content: @icon-phone;
@@ -1819,6 +1832,7 @@
   &:before {
     content: @icon-arrow;
     transform: rotate(180deg) translate3d(0,0,0);
+    display: inline-block;
   }
 }
 
