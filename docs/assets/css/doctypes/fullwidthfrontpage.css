@@ -4,7 +4,7 @@
   display: none;
 } */
 
-.ku-branding .ku-branding-text {
+/* .ku-branding .ku-branding-text {
   background: url('https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg') 5px 66% no-repeat;
   background-size: 75%;
   height: 100%;
@@ -29,7 +29,7 @@ html:lang(en) .ku-branding .ku-branding-text {
   html:lang(en) .ku-branding .ku-branding-text {
     background: url('https://bootstrap.secure.ku.dk/img/ku_header_en.svg') left 72% no-repeat;
   }
-}
+} */
 
 .main-content {
   padding-top: 0;

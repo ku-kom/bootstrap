@@ -8,13 +8,16 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
-  background-color: @white-color;
+  //background-color: @white-color;
   color: @text-color;
   // .local1_mmenu,
   // .local2__mmenu
   li {
+    &.navbar_mmenu {
+      background-color: @white-color;
+      color: @text-color;
+    }
     // Contains class that starts with...
     &[class*="local"] {
       // Faculty colors for sublevel 1
@@ -52,7 +55,7 @@
         border-top: 1px solid darken(@teol, 5%);
       }
 
-      &.mm-selected > a:not(.mm-next) {
+      &.mm-selected > a:not(.mm-btn_next) {
         // selected view
         font-weight: 600;
         background: darken(@ku-red, 6%);
@@ -99,7 +102,14 @@
     }
   }
 
-  .mm-title {
+  .mm-navbar {
+    &:first-of-type {
+      padding: 0;
+    }
+  }
+
+  .mm-navbar__title {
+    text-align: left;
     background-color: @ku-red;
     color: @white-color;
     font-size: larger;
@@ -152,9 +162,10 @@
   }
   // Use KU Arrows
   .mm-listview li {
-    .mm-next {
+    .mm-btn_next {
       &::after {
         .icon;
+        position: absolute;
         content: @icon-arrow;
         color: @text-color;
         border: 0;
@@ -163,22 +174,22 @@
       }
     }
     // Opened
-    &.mm-opened {
-      > .mm-next {
+    &.mm-listitem_opened {
+      > .mm-btn_next {
         &::after {
           transform: rotate(90deg);
         }
       }
       // Sublevels
       .mm-listview {
-        > .mm-next {
+        > .mm-btn_next {
           &::after {
             transform: rotate(0);
           }
         }
         // Opened
-        .mm-opened {
-          > .mm-next {
+        .mm-listitem_opened {
+          > .mm-btn_next {
             &::after {
               transform: rotate(90deg);
             }
@@ -189,9 +200,9 @@
   }
 
   .mm-listview {
-    > .local2_mmenu,
-    > .local1_mmenu {
-      > .mm-next {
+    > .local1_mmenu,
+    > .local2_mmenu {
+      > .mm-btn_next {
         &::after {
           color: @white-color;
         }
@@ -230,8 +241,8 @@
   }
 
   .navbar_mmenu {
-    &.mm-opened {
-      & > a:not(.mm-next) {
+    &.mm-listitem_opened {
+      & > a:not(.mm-btn_next) {
         font-weight: 700;
       }
     }

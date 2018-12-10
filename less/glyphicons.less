@@ -1628,6 +1628,8 @@
 @icon-conversation: "\6f";
 @icon-vimeo: "\62";
 @icon-youtube: "\79";
+@icon-tablet: "\77";
+@icon-desktop: "\7a";
 @icon-phone: "\70";
 @icon-arrow: "\61";
 @icon-quote: "\71";
@@ -1648,6 +1650,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 // Social icons to use anywhere
 
@@ -1791,6 +1794,18 @@
   }
 }
 
+.icon-tablet {
+  &:before {
+    content: @icon-tablet;
+  }
+}
+.icon-desktop {
+  font-weight: 700;
+  &:before {
+    content: @icon-desktop;
+  }
+}
+
 .icon-phone {
   &:before {
     content: @icon-phone;
@@ -1818,6 +1833,7 @@
   &:before {
     content: @icon-arrow;
     transform: rotate(180deg) translate3d(0,0,0);
+    display: inline-block;
   }
 }
 
@@ -1854,5 +1870,25 @@
 .icon-padlock {
   &:before {
     content: @icon-padlock;
+  }
+}
+
+.icon-forbidden {
+  &:before {
+    color: @gray-999;
+  }
+  &:after {
+    top: -8px;
+    left: 47%;
+    height: 120%;
+    width: 1px;
+    position: absolute;
+    content: "";
+    border-left: 3px solid lighten(@brand-danger, 10%);
+    transform: rotateZ(50deg);
+    transform-origin: left center;
+  }
+  &[data-forbidden="*"] {
+    cursor: pointer;
   }
 }

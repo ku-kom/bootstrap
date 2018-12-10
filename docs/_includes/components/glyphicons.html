@@ -1,21 +1,14 @@
 <div class="bs-docs-section">
   <h1 id="glyphicons" class="page-header">Glyphicons</h1>
-
   <h2 id="glyphicons-glyphs">Available glyphs</h2>
-  <p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank
-    you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
+  <p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a
+    thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
   <div class="bs-glyphicons">
-    <ul class="bs-glyphicons-list">
-      {% for iconClassName in site.data.glyphicons %}
-      <li>
+    <ul class="bs-glyphicons-list"> {% for iconClassName in site.data.glyphicons %} <li>
         <span class="glyphicon {{ iconClassName }}" aria-hidden="true"></span>
         <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
-      </li>
-      {% endfor %}
-    </ul>
+      </li> {% endfor %} </ul>
   </div>
-
-
   <h2 id="glyphicons-how-to-use">How to use</h2>
   <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
   <div class="bs-callout bs-callout-danger" id="callout-glyphicons-dont-mix">
@@ -38,17 +31,13 @@
   </div>
   <div class="bs-callout bs-callout-warning" id="callout-glyphicons-accessibility">
     <h4>Accessible icons</h4>
-    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them
-      with the <code>aria-hidden="true"</code> attribute.</p>
-    <p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the <code>.sr-only</code> class.</p>
-    <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive
-      technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
-  </div>
-  {% highlight html %}
-  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> {% endhighlight %}
-
-
-  <h2 id="glyphicons-examples">Examples</h2>
+    <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we
+      hide them with the <code>aria-hidden="true"</code> attribute.</p>
+    <p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the <code>.sr-only</code>
+      class.</p>
+    <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of
+      assistive technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
+  </div> {% highlight html %} <span class="glyphicon glyphicon-search" aria-hidden="true"></span> {% endhighlight %} <h2 id="glyphicons-examples">Examples</h2>
   <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
   <div class="bs-example" data-example-id="glyphicons-general">
     <div class="btn-toolbar" role="toolbar">
@@ -65,30 +54,20 @@
       <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
       <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star</button>
     </div>
-  </div>
-  {% highlight html %}
-  <button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
-
+  </div> {% highlight html %} <button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+  </button>
   <button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button> {% endhighlight %}
-  <p>An icon used in an <a href="#alerts">alert</a> to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star </button> {% endhighlight %} <p>An icon used in an <a href="#alerts">alert</a> to convey that it's an error message, with additional <code>.sr-only</code> text to convey this
+    hint to users of assistive technologies.</p>
   <div class="bs-example" data-example-id="glyphicons-accessibility">
     <div class="alert alert-danger" role="alert">
       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span class="sr-only">Error:</span> Enter a valid email address
-    </div>
-  </div>
-  {% highlight html %}
-  <div class="alert alert-danger" role="alert">
+      <span class="sr-only">Error:</span> Enter a valid email address </div>
+  </div> {% highlight html %} <div class="alert alert-danger" role="alert">
     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-    <span class="sr-only">Error:</span> Enter a valid email address
-  </div>
-  {% endhighlight %}
+    <span class="sr-only">Error:</span> Enter a valid email address </div> {% endhighlight %}
 </div>
-
 <!-- KU custom font icon -->
 <h2 id="ku-icon-examples">KU custom icons</h2>
 <p>Special KU icons not included in the Glyphicons above.</p>
@@ -129,6 +108,12 @@
       <a href="#" title="RSS"><span class="icon icon-rss" aria-hidden="true"></span></a>
     </li>
     <li>
+      <a href="#" title="MyUCPH"><span class="icon icon-phone" aria-hidden="true"></span></a>
+    </li>
+  </ul>
+  <h3>Other icons</h3>
+  <ul class="bs-icons-list list-inline">
+    <li>
       <span class="icon icon-ku-logo" aria-hidden="true"></span>
     </li>
     <li>
@@ -141,11 +126,19 @@
       <span class="icon icon-arrow-back" aria-hidden="true"></span>
     </li>
     <li>
+      <span class="icon icon-exclamation" aria-hidden="true"></span>
+    </li>
+    <li>
       <span class="icon icon-quote" aria-hidden="true"></span>
     </li>
+    <li>
+      <span class="icon icon-tablet" aria-hidden="true"></span>
+    </li>
+    <li>
+      <span class="icon icon-desktop" aria-hidden="true"></span>
+    </li>
   </ul>
-</div>
-{% highlight html %}
+</div> {% highlight html %}
 <ul class="social-icons">
   <li>
     <a href="#" title="Facebook"><span class="icon icon-facebook" aria-hidden="true"></span></a>
@@ -180,6 +173,9 @@
   <li>
     <a href="#" title="RSS"><span class="icon icon-rss" aria-hidden="true"></span></a>
   </li>
+</ul>
+<h3>Other icons</h3>
+<ul class="bs-glyphicons-list">
   <li>
     <span class="icon icon-ku-logo" aria-hidden="true"></span>
   </li>
@@ -193,21 +189,44 @@
     <span class="icon icon-arrow-back" aria-hidden="true"></span>
   </li>
   <li>
+    <span class="icon icon-exclamation" aria-hidden="true"></span>
+  </li>
+  <li>
     <span class="icon icon-quote" aria-hidden="true"></span>
+  </li>
+  <li>
+    <span class="icon icon-tablet" aria-hidden="true"></span>
+  </li>
+  <li>
+    <span class="icon icon-desktop" aria-hidden="true"></span>
   </li>
 </ul>
 {% endhighlight %}
-<h2 id="share">Share content on social media</h2>
-<p>Use the <code>onclick="shareURL()"</code> function and the <code>data-share</code> attribute hold the link to each media like in the example below.
-<ul>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u=" href="#">Share on Facebook</a></li>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.linkedin.com/shareArticle?mini=true&amp;url=" href="#">Share on LinkedIn</a></li>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://twitter.com/home?status=" href="#">Share on Twitter</a></li>
-</ul>
+<script>
+  $(function() {
+    $("[data-forbidden]").click(function() {
+      $(this).toggleClass('icon-forbidden');
+      $(this).attr('data-forbidden',$(this).attr('data-forbidden') ==='true'?'false':'true');
+      $(this).attr('title',$(this).attr('title') ==='Show'?'Hide':'Show');
+    });
+  });
+</script>
+<p id="icon-forbidden">Add a "closed" feature to icons - add <code>icon-forbidden</code>.</p>
+<p><span title="Show" class="docs-forbidden-icon glyphicon glyphicon-phone icon-forbidden" data-forbidden="true" aria-hidden="true"></span>
+  <span title="Show" class="docs-forbidden-icon icon icon-tablet icon-forbidden" data-forbidden="true" aria-hidden="true"></span>
+  <span title="Show" class="docs-forbidden-icon icon icon-desktop icon-forbidden" data-forbidden="true" aria-hidden="true"></span></p>
 {% highlight html %}
-<ul>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u=" href="#">Share on Facebook</a></li>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.linkedin.com/shareArticle?mini=true&amp;url=" href="#">Share on LinkedIn</a></li>
-  <li><a onclick="shareURL($(this).data('share'))" data-share="https://twitter.com/home?status=" href="#">Share on Twitter</a></li>
-</ul>
+<span class="glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span>
+<span class="icon icon-tablet icon-forbidden" aria-hidden="true"></span>
+<span class="icon icon-desktop icon-forbidden" aria-hidden="true"></span>
 {% endhighlight %}
+<h2 id="share">Share content on social media</h2>
+<p>Use the <code>onclick="shareURL()"</code> function and the <code>data-share</code> attribute hold the link to each media like in the example below. <ul>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u=" href="#">Share on Facebook</a></li>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.linkedin.com/shareArticle?mini=true&amp;url=" href="#">Share on LinkedIn</a></li>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://twitter.com/home?status=" href="#">Share on Twitter</a></li>
+  </ul> {% highlight html %} <ul>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u=" href="#">Share on Facebook</a></li>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://www.linkedin.com/shareArticle?mini=true&amp;url=" href="#">Share on LinkedIn</a></li>
+    <li><a onclick="shareURL($(this).data('share'))" data-share="https://twitter.com/home?status=" href="#">Share on Twitter</a></li>
+  </ul> {% endhighlight %}
