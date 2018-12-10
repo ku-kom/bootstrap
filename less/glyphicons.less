@@ -1879,13 +1879,16 @@
   }
   &:after {
     top: -8px;
-    left: 50%;
-    height: 113%;
+    left: 47%;
+    height: 120%;
     width: 1px;
     position: absolute;
     content: "";
     border-left: 3px solid lighten(@brand-danger, 10%);
     transform: rotateZ(50deg);
     transform-origin: left center;
+  }
+  &[data-forbidden="*"] {
+    cursor: pointer;
   }
 }

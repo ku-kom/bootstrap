@@ -200,11 +200,21 @@
   <li>
     <span class="icon icon-desktop" aria-hidden="true"></span>
   </li>
-</ul> {% endhighlight %}
+</ul>
+{% endhighlight %}
+<script>
+  $(function() {
+    $("[data-forbidden]").click(function() {
+      $(this).toggleClass('icon-forbidden');
+      $(this).attr('data-forbidden',$(this).attr('data-forbidden') ==='true'?'false':'true');
+      $(this).attr('title',$(this).attr('title') ==='Show'?'Hide':'Show');
+    });
+  });
+</script>
 <p id="icon-forbidden">Add a "closed" feature to icons - add <code>icon-forbidden</code>.</p>
-<p><span class="docs-forbidden-icon glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span>
-  <span class="docs-forbidden-icon icon icon-tablet icon-forbidden" aria-hidden="true"></span>
-  <span class="docs-forbidden-icon icon icon-desktop icon-forbidden" aria-hidden="true"></p>
+<p><span title="Show" class="docs-forbidden-icon glyphicon glyphicon-phone icon-forbidden" data-forbidden="true" aria-hidden="true"></span>
+  <span title="Show" class="docs-forbidden-icon icon icon-tablet icon-forbidden" data-forbidden="true" aria-hidden="true"></span>
+  <span title="Show" class="docs-forbidden-icon icon icon-desktop icon-forbidden" data-forbidden="true" aria-hidden="true"></span></p>
 {% highlight html %}
 <span class="glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span>
 <span class="icon icon-tablet icon-forbidden" aria-hidden="true"></span>
