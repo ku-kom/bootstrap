@@ -8332,6 +8332,7 @@ nav {
 #mobileleftmenu .mm-navbar__title {
   font-size: larger;
   color: #fff;
+  text-align: left;
   background-color: #901a1e;
   border-bottom: solid 1px #ae1f24;
 }

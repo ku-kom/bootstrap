@@ -157,10 +157,10 @@
         // Add search to MMenu
         $('.search-placeholder').first().append($new_search);
 
-        // Make sure selected item also displays sub-items
-        var selectedItem = $('.mm-selected');
-        selectedItem.addClass('mm-opened');
-        selectedItem.children('.mm-panel').removeClass('mm-hidden');
+          // Make sure selected item also displays sub-items
+          var selectedItem = $('.mm-selected');
+          selectedItem.addClass('mm-listitem_opened');
+          selectedItem.children('.mm-panel').removeClass('mm-hidden');
 
     }
 
