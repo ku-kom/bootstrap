@@ -1371,6 +1371,9 @@ template {
 .icon-tablet:before {
   content: "\77";
 }
+.icon-desktop {
+  font-weight: 700;
+}
 .icon-desktop:before {
   content: "\7a";
 }
