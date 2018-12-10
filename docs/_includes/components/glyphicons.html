@@ -126,9 +126,6 @@
       <span class="icon icon-arrow-back" aria-hidden="true"></span>
     </li>
     <li>
-      <span class="icon icon-desktop" aria-hidden="true"></span>
-    </li>
-    <li>
       <span class="icon icon-exclamation" aria-hidden="true"></span>
     </li>
     <li>
@@ -205,8 +202,13 @@
   </li>
 </ul> {% endhighlight %}
 <p id="icon-forbidden">Add a "closed" feature to icons - add <code>icon-forbidden</code>.</p>
-<p><span class="docs-forbidden-icon glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span></p> {% highlight html %}
+<p><span class="docs-forbidden-icon glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span>
+  <span class="docs-forbidden-icon icon icon-tablet icon-forbidden" aria-hidden="true"></span>
+  <span class="docs-forbidden-icon icon icon-desktop icon-forbidden" aria-hidden="true"></p>
+{% highlight html %}
 <span class="glyphicon glyphicon-phone icon-forbidden" aria-hidden="true"></span>
+<span class="icon icon-tablet icon-forbidden" aria-hidden="true"></span>
+<span class="icon icon-desktop icon-forbidden" aria-hidden="true"></span>
 {% endhighlight %}
 <h2 id="share">Share content on social media</h2>
 <p>Use the <code>onclick="shareURL()"</code> function and the <code>data-share</code> attribute hold the link to each media like in the example below. <ul>

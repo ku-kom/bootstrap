@@ -1419,14 +1419,14 @@ template {
 }
 .icon-forbidden:after {
   position: absolute;
-  top: -5px;
-  left: 44%;
+  top: -8px;
+  left: 50%;
   width: 1px;
   height: 113%;
   content: "";
   border-left: 3px solid #a61e23;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
   -webkit-transform-origin: left center;
           transform-origin: left center;
 }
