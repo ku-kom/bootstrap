@@ -158,8 +158,6 @@
     // Make sure selected item also displays sub-items
     var selectedItem = $('.mm-selected');
     selectedItem.addClass('mm-listitem_opened');
-    var openedSub = $('.mm-opened');
-    openedSub.addClass('mm-listitem_opened');
     selectedItem.children('.mm-panel').removeClass('mm-hidden');
   }
 
