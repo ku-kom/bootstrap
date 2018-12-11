@@ -77,99 +77,98 @@
 * ====================================================================== */
 
 (function ($) {
-    'use strict';
+  'use strict';
 
-    var $cachedWidth = $('body').prop('clientWidth');
+  var $cachedWidth = $('body').prop('clientWidth');
 
-    // Global and left menu merging
-    var $menu = $('#mobileleftmenu'),
-        $menu_ul = $('#mobileleftmenu > ul').first(),
-        $localmenu1 = $('#mobileleftmenu > ul > li'),
-        $new_navbar = $('#navbar_menu > li').clone(),
-        $new_topbar = $('#topbar_menu > li').clone(),
-        $new_search = $('.global-search').first().detach(),
-        API;
+  // Global and left menu merging
+  var $menu = $('#mobileleftmenu'),
+    $menu_ul = $('#mobileleftmenu > ul').first(),
+    $localmenu1 = $('#mobileleftmenu > ul > li'),
+    $new_navbar = $('#navbar_menu > li').clone(),
+    $new_topbar = $('#topbar_menu > li').clone(),
+    $new_search = $('.global-search').first().detach(),
+    API;
 
-    if ($.fn.mmenu) {
+  if ($.fn.mmenu) {
 
-        // Clean up class names for local menu 1
-        $localmenu1.each(function() {
-            $(this).addClass('local1_mmenu');
-        });
+    // Clean up class names for local menu 1
+    $localmenu1.each(function () {
+      $(this).addClass('local1_mmenu');
+    });
 
-        // Look for local menu 2 and add to menu
-        if( $('#leftmenu_2') ) {
-            var $new_localmenu2 = $('#leftmenu_2 > li').clone();
-            $new_localmenu2.each(function() {
-                $(this).addClass('local2_mmenu');
-            });
-            $menu_ul.append($new_localmenu2);
-        }
+    // Look for local menu 2 and add to menu
+    if ($('#leftmenu_2')) {
+      var $new_localmenu2 = $('#leftmenu_2 > li').clone();
+      $new_localmenu2.each(function () {
+        $(this).addClass('local2_mmenu');
+      });
+      $menu_ul.append($new_localmenu2);
+    }
 
-        // Clean up class names for navbar before adding to menu
-        $new_navbar.each(function() {
-            $(this).addClass('navbar_mmenu').removeClass('dropdown');
-            $(this).find('ul').removeClass('dropdown-menu');
-        })
-        $menu_ul.append($new_navbar);
+    // Clean up class names for navbar before adding to menu
+    $new_navbar.each(function () {
+      $(this).addClass('navbar_mmenu').removeClass('dropdown');
+      $(this).find('ul').removeClass('dropdown-menu');
+    })
+    $menu_ul.append($new_navbar);
 
-        // Add toolbar to menu
-        $menu_ul.append($new_topbar);
+    // Add toolbar to menu
+    $menu_ul.append($new_topbar);
 
-        // Initialize jQuery MMenu
-        API = $menu.mmenu({
-            slidingSubmenus: false,
-                onClick: {
-                setSelected: true
-            },
-            extensions: [
-                "multiline",
-                "pagedim-black",
-                "position-front",
-                "position-right"
-            ],
-            setSelected: {
-                parent: true,
-                current: 'detect'
-            },
-            navbar: {
-                title: pageTitle // pageTitle is global var set in switch template
-            },
-            navbars: [
-                {
-                   "position": "top",
-                   "content": [
+    // Initialize jQuery MMenu
+    API = $menu.mmenu({
+      slidingSubmenus: false,
+      onClick: {
+        setSelected: true
+      },
+      extensions: [
+          "multiline",
+          "pagedim-black",
+          "position-front",
+          "position-right"
+      ],
+      setSelected: {
+        parent: true,
+        current: 'detect'
+      },
+      navbar: {
+        title: pageTitle // pageTitle is global var set in switch template
+      },
+      navbars: [
+        {
+          "position": "top",
+          "content": [
                        '<span class="search-placeholder"></span>'
                    ]
                 }
             ],
-            lazySubmenus: {
-                load: true
-            }
-        },
-        {
-            // configuration
-            offCanvas: {
-                pageSelector: "#pagewrapper"
-            }
-        }).data('mmenu');
+      lazySubmenus: {
+        load: true
+      }
+    }, {
+      offCanvas: {
+        pageSelector: "#pagewrapper"
+      }
+    }).data('mmenu');
 
-        // Add search to MMenu
-        $('.search-placeholder').first().append($new_search);
+    // Add search to MMenu
+    $('.search-placeholder').first().append($new_search);
 
-          // Make sure selected item also displays sub-items
-          var selectedItem = $('.mm-selected');
-          selectedItem.addClass('mm-listitem_opened');
-          selectedItem.children('.mm-panel').removeClass('mm-hidden');
+    // Make sure selected item also displays sub-items
+    var selectedItem = $('.mm-selected');
+    selectedItem.addClass('mm-listitem_opened');
+    var openedSub = $('.mm-opened');
+    openedSub.addClass('mm-listitem_opened');
+    selectedItem.children('.mm-panel').removeClass('mm-hidden');
+  }
 
+  $(window).resize(function () {
+    var $newWidth = $('body').prop('clientWidth');
+    if ($newWidth !== $cachedWidth) {
+      // Close mobile menu on resize
+      API.close();
+      $cachedWidth = $newWidth;
     }
-
-    $(window).resize(function () {
-        var $newWidth = $('body').prop('clientWidth');
-        if ($newWidth !== $cachedWidth) {
-            // Close mobile menu on resize
-            API.close();
-            $cachedWidth = $newWidth;
-        }
-    });
+  });
 })(jQuery);
