@@ -7543,6 +7543,9 @@ nav {
   .right-side .rightbox-normal:first-child {
     margin-top: 8px;
   }
+  .right-side .flexiblebox:first-child {
+    margin-top: 23px;
+  }
 }
 @media (max-width: 991px) {
   .right-side {
@@ -9099,7 +9102,6 @@ nav {
 .entries .entry > a {
   position: relative;
   display: block;
-  padding: 0 18px;
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
@@ -9131,8 +9133,8 @@ nav {
   color: #666;
 }
 .entries .entry > a:before {
-  position: absolute;
   position: relative;
+  position: absolute!important;
   top: 50%;
   left: 0;
   display: inline;
@@ -9147,8 +9149,8 @@ nav {
   color: #901a1e;
   text-decoration: none;
   text-transform: none;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateZ(-50%);
+          transform: translateZ(-50%);
 
   speak: none;
   -webkit-font-smoothing: antialiased;
@@ -10493,6 +10495,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 #banners-3col {
   padding: 0;
+}
+ul.stripped {
+  padding-left: 0;
+  list-style-type: none;
 }
 /* KU custom elements */
 .gridnyhed {
