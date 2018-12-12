@@ -1399,6 +1399,9 @@ template {
 .icon-quote:before {
   content: "\71";
 }
+.icon-ku-logo {
+  font-size: 20px;
+}
 .icon-ku-logo:before {
   content: "\6b";
 }
