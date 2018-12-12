@@ -129,8 +129,7 @@
           "position-right"
       ],
       setSelected: {
-        parent: true,
-        current: 'detect'
+        parent: true
       },
       navbar: {
         title: pageTitle // pageTitle is global var set in switch template
