@@ -9134,7 +9134,6 @@ nav {
 }
 .entries .entry > a:before {
   position: relative;
-  position: absolute!important;
   top: 50%;
   left: 0;
   display: inline;
