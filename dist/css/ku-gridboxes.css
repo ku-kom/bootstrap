@@ -333,7 +333,7 @@
 }
 .gridbox.size1.with-img .box1 .header {
   padding: 0;
-  margin: 15px 0 5px;
+  margin: 10px 0 5px;
   font-size: 1.3em;
   line-height: 1.3em;
   color: #4a4949;
@@ -795,15 +795,6 @@
   .two-one-one-column .column1 .gridbox.outlined .header {
     color: inherit;
     background: transparent;
-  }
-  .one-one-two-column .column3 .gridbox.size1.with-img .text,
-  .one-three-column .column2 .gridbox.size1.with-img .text,
-  .one-two-column .column2 .gridbox.size1.with-img .text,
-  .single-column .column1 .gridbox.size1.with-img .text,
-  .three-one-column .column1 .gridbox.size1.with-img .text,
-  .two-one-column .column1 .gridbox.size1.with-img .text,
-  .two-one-one-column .column1 .gridbox.size1.with-img .text {
-    display: none;
   }
   .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
   .one-three-column .column2 .gridbox.size1.with-img .box2 img,

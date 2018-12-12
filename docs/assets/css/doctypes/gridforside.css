@@ -15,6 +15,10 @@ h1 {
   margin-top: 20px;
 }
 
+.double-column .gridnyhed .nyhed-teaser {
+  display: block;
+}
+
 @media screen and (min-width: 992px) {
   /* Flexible box tweaks*/
   .GridForside .double-column .gridbox.size1 {
