@@ -9083,7 +9083,7 @@ nav {
   position: relative;
   width: 100%;
   min-width: 0;
-  padding: 10px 15px 10px 20px;
+  padding: 10px 15px;
   margin-top: 5px;
   text-align: left;
   background-image: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
