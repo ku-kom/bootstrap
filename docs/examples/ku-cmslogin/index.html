@@ -1,0 +1,60 @@
+---
+layout: login
+title: Københavns Universitet, CMS login
+slug: login
+---
+<main tabindex="0" id="content">
+  {% include ku-branding.html %}
+  <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-12 main-content">
+        <div class="login-container">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <h3 class="login-header">Vælg login-metode for at logge på Obvius CMS</h3>
+              </div>
+            </div>
+            <div class="row login-message">
+              <div class="col-sm-12">
+                <div class="alert alert-info" role="alert">
+                 <span class="sr-only">Info:</span>
+                  <h4>Login</h4>
+                  <p>Du er blevet logget ud. Vælg en login-metode nedenfor.</p>
+               </div>
+              </div>
+            </div>
+           <div class="form-group form-group-lg">
+             <div class="col-sm-12">
+               <button type="submit" id="signin-ku" class="btn btn-default btn-lg btn-block">Login med KU-login</button>
+             </div>
+           </div>
+           <div class="form-group form-group-lg">
+             <div class="col-sm-12">
+               <button type="submit" id="signin-cms" class="btn btn-default btn-lg btn-block">Login med CMS-login</button>
+             </div>
+           </div>
+           <div class="form-group">
+             <div class="col-sm-12">
+               <div class="checkbox remember-me">
+                 <label>
+                 <input type="checkbox"> Husk mit valg af login
+               </label>
+               </div>
+             </div>
+           </div>
+           <div class="row error-message">
+             <div class="col-sm-12">
+               <div class="alert alert-warning" role="alert">
+                <span class="sr-only">Error:</span>
+                 <h4>Fejl</h4>
+                 <p>Dit KU-brugernavn kan ikke matches til en bruger i Obvius CMS. <a href="#" class="alert-link">Kontakt FA-KOM.</a></p>
+              </div>
+             </div>
+           </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

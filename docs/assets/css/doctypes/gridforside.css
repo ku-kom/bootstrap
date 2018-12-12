@@ -21,7 +21,7 @@ h1 {
     height: 335px;
   }
 
-  .GridForside .double-column .gridbox.size1 .text {
+  .GridForside .double-column .gridbox.size1 .text,  .two-one-column .column1 .gridbox.size1 .text, .one-two-column .column2 .gridbox.size1 .text  {
     display: block;
   }
 }
