@@ -1,5 +1,4 @@
 /* Slider */
-
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -126,7 +125,6 @@
     border: 1px solid transparent;
   }
 }
-
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
   .slick-slide img {
@@ -264,7 +262,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   display: block;
   width: 100%;
   padding: 0;
@@ -328,31 +326,39 @@
 
   &.slick-current {
     .caption {
-      // Textbar bottom
+      // Textbar bottom as default
       display: block;
       position: relative;
       bottom: 0;
       width: 100%;
+      font-size: 16px;
+      letter-spacing: .7px;
       line-height: @line-height-small;
-      padding: 15px;
+      padding: 12px 15px 10px 20px;
       font-size: 14px;
       color: @text-color;
       background: @gray-f5;
 
       h2 {
         margin-top: 0;
-        margin-bottom: 5px;
-
+        margin-bottom: 10px;
         color: inherit;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 1.2;
+      }
+
+      p {
+        margin: 0 0 6px;
       }
 
       &.subcolor_5 {
         background: @ku-gray;
         color: @ku-gridbox-text;
         @media (min-width: @screen-sm) {
-          background: fade(@ku-gray, 83%);
+          background: fade(@ku-gray, 90%);
+        }
+        &.full-bg {
+          background: @ku-gray;
         }
       }
 
@@ -360,7 +366,10 @@
         background: @gray-f5;
         color: @ku-gridbox-text;
         @media (min-width: @screen-sm) {
-          background: fade(@white-color, 85%);
+          background: fade(@white-color, 90%);
+        }
+        &.full-bg {
+          background: @gray-f5;
         }
       }
 
@@ -370,6 +379,15 @@
         @media (min-width: @screen-sm) {
           background: fade(@brown, 83%);
         }
+        &.full-bg {
+          background: @brown;
+        }
+      }
+      &.full-bg {
+        position: absolute;
+        top: 0;
+        padding: 25px;
+        width: 100%;
       }
     }
 
@@ -380,39 +398,40 @@
   @media (min-width: @screen-sm) {
     &.slick-current {
       .caption {
+        overflow: hidden;
         position: absolute;
         left: 0;
         z-index: 2;
         background: rgba(@white-color, .9);
         border: 0;
 
-        &.textblock-50-left {
+        &.textblock-left {
           right: auto;
           left: 0;
           padding: 15px;
-          width: 50%;
+          width: 45%;
           height: 100%;
         }
 
-        &.textblock-50-right {
+        &.textblock-right {
           right: 0;
           left: auto;
           padding: 15px;
-          width: 50%;
+          width: 45%;
           height: 100%;
         }
 
-        &.textlabel-50-left {
+        &.textlabel-left {
           top: 50%;
           bottom: auto;
           transform: translateY(-50%);
-          width: 50%;
+          width: 45%;
           min-height: 70%;
-          .border-right-radius(2);
+          .border-right-radius(2px);
         }
 
-        &.textlabel-50-right {
-          top: 50%;
+        &.textlabel-right {
+          top: 45%;
           bottom: auto;
           right: 0;
           left: auto;
@@ -421,6 +440,14 @@
           min-height: 70%;
           .border-left-radius(2px);
         }
+      }
+    }
+  }
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    .caption {
+      // Special caption width for iPad
+      &.textblock-left, &.textblock-right, &.textlabel-left, &.textlabel-right {
+        width: 50%;
       }
     }
   }

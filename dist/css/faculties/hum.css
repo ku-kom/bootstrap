@@ -16,7 +16,7 @@
   color: #fff;
 }
 .gridbox.faculty_color .header {
-  background: rgba(54, 90, 165, 0.83);
+  background: rgba(54, 90, 165, 0.93);
   color: #fff;
 }
 .gridbox.faculty_color.text-top .header {
@@ -274,8 +274,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .faculty_color {
-    background: rgba(54, 90, 165, 0.83);
+    background: rgba(54, 90, 165, 0.93);
   }
+}
+.slideshow .slick-current .faculty_color.full-bg {
+  background: #365aa5;
 }
 .slideshow .slick-current .subcolor_1 {
   background: #1d2e4a;
@@ -283,8 +286,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_1 {
-    background: rgba(29, 46, 74, 0.83);
+    background: rgba(29, 46, 74, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_1.full-bg {
+  background: #1d2e4a;
 }
 .slideshow .slick-current .subcolor_2 {
   background: #b7b5b5;
@@ -292,8 +298,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_2 {
-    background: rgba(183, 181, 181, 0.83);
+    background: rgba(183, 181, 181, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_2.full-bg {
+  background: #b7b5b5;
 }
 .slideshow .slick-current .subcolor_3 {
   background: #7d899b;
@@ -301,8 +310,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_3 {
-    background: rgba(125, 137, 155, 0.83);
+    background: rgba(125, 137, 155, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_3.full-bg {
+  background: #7d899b;
 }
 .slideshow .slick-current .subcolor_4 {
   background: #e7400d;
@@ -310,6 +322,9 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_4 {
-    background: rgba(231, 64, 13, 0.83);
+    background: rgba(231, 64, 13, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_4.full-bg {
+  background: #e7400d;
 }
