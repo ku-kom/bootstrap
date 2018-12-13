@@ -179,3 +179,8 @@ table.properties>tbody>tr:hover {
 .striped-list li {
   padding: 5px;
 }
+
+.rendering h2 {
+  margin: 0px;
+  font-size: 20.4px !important;
+}
