@@ -11,8 +11,7 @@
 #mobileleftmenu {
   //background-color: @white-color;
   color: @text-color;
-  // .local1_mmenu,
-  // .local2__mmenu
+
   li {
     &.navbar_mmenu {
       background-color: @white-color;
@@ -247,6 +246,14 @@
       & > a:not(.mm-btn_next) {
         font-weight: 700;
       }
+    }
+  }
+
+  // Hide sub level buttons in news
+
+  ul.nyheder {
+    .mm-btn_next {
+      display: none;
     }
   }
 }
