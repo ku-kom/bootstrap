@@ -8449,6 +8449,9 @@ nav {
 #mobileleftmenu .navbar_mmenu.mm-listitem_opened > a:not(.mm-btn_next) {
   font-weight: 700;
 }
+#mobileleftmenu ul.nyheder .mm-btn_next {
+  display: none;
+}
 .local-footer {
   font-size: .85em;
   line-height: 1.43em;
