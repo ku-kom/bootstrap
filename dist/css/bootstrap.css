@@ -8449,6 +8449,9 @@ nav {
 #mobileleftmenu .navbar_mmenu.mm-listitem_opened > a:not(.mm-btn_next) {
   font-weight: 700;
 }
+#mobileleftmenu ul.nyheder li > a {
+  padding: 10px 12px;
+}
 #mobileleftmenu ul.nyheder img {
   width: 55px;
   height: 55px;
