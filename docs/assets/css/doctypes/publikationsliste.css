@@ -182,5 +182,8 @@ table.properties>tbody>tr:hover {
 
 .rendering h2 {
   margin: 0px;
-  font-size: 20.4px !important;
+}
+
+.person_view .rendering h2 {
+  font-size: 20.4px;
 }
