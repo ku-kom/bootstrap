@@ -9605,6 +9605,14 @@ nav {
 .slick-slide.slick-current:hover .caption {
   text-decoration: none;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .slick-slide .caption.textblock-left,
+  .slick-slide .caption.textblock-right,
+  .slick-slide .caption.textlabel-left,
+  .slick-slide .caption.textlabel-right {
+    width: 50%;
+  }
+}
 @media (min-width: 768px) {
   .slick-slide.slick-current .caption {
     position: absolute;
@@ -9652,14 +9660,6 @@ nav {
   }
   .slick-slide.slick-current .caption.full-bg {
     padding: 30px 45px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .slick-slide .caption.textblock-left,
-  .slick-slide .caption.textblock-right,
-  .slick-slide .caption.textlabel-left,
-  .slick-slide .caption.textlabel-right {
-    width: 50%;
   }
 }
 /*  https://bootstrap-datepicker.readthedocs.io/en/stable/index.html
