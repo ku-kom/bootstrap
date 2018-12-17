@@ -535,9 +535,6 @@
   }
 
   .gridbox {
-    // .text {
-    //   display: none;
-    // }
 
     &.size1 {
       .text {
@@ -548,6 +545,9 @@
     &.size2 {
       &.with-img {
         height: 220px;
+        .text {
+          display: block;
+        }
         // Video has natural height
         &.with-iframe {
           height: inherit;
@@ -558,6 +558,9 @@
     &.size3 {
       &.with-img {
         height: 170px;
+        .text {
+          display: block;
+        }
         // Video has natural height
         &.with-iframe {
           height: inherit;
@@ -569,9 +572,9 @@
       &.with-img {
         border: 0!important;
 
-        .text {
-          display: none;
-        }
+        // .text {
+        //   display: none;
+        // }
 
         &::before {
           color: @white-color;
