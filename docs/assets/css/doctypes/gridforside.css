@@ -22,7 +22,7 @@ h1 {
 @media screen and (min-width: 992px) {
   /* Flexible box tweaks*/
   .GridForside .double-column .gridbox.size1 .box2 {
-    flex: 1 0 50%;
+    flex: 0 0 50%;
   }
 
   .GridForside .double-column .gridbox.size1 .text,  .two-one-column .column1 .gridbox.size1 .text, .one-two-column .column2 .gridbox.size1 .text  {
