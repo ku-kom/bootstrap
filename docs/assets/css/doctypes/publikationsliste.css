@@ -175,3 +175,15 @@ table.properties>tbody>tr:hover {
 .organisations-relations table.properties tr>td:nth-child(2) {
   padding-right: 5px;
 }
+
+.striped-list li {
+  padding: 5px;
+}
+
+.rendering h2 {
+  margin: 0px;
+}
+
+.person_view .rendering h2 {
+  font-size: 20.4px!important;
+}
