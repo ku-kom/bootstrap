@@ -350,9 +350,9 @@
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
-  -webkit-flex: 0 0 133px;
-      -ms-flex: 0 0 133px;
-          flex: 0 0 133px;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 .gridbox.size1:before {
   display: none;

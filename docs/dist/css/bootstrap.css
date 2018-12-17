@@ -1699,7 +1699,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 0 0 20px;
+  margin: 10px 0;
 }
 .small,
 small {
@@ -7497,7 +7497,7 @@ nav {
 .main-content .row + .row {
   margin-top: 23px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .main-content [class*="col-"] + [class*="col-"] {
     margin-top: 23px;
   }
@@ -10894,13 +10894,9 @@ body.editor-accordions {
 }
 .login-container {
   max-width: 450px;
-<<<<<<< HEAD
-  height: 100%;
   margin: 10px auto 0;
-=======
   margin: 0 auto;
   margin-top: 10px;
->>>>>>> master
 }
 @media (min-width: 768px) {
   .login-container {
