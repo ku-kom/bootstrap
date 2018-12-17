@@ -182,6 +182,7 @@ html:lang(en) .ku-branding .ku-branding-text {
   .jumpboard>.jumpcolumn {
     max-height: none;
     padding: 0;
+    margin-top: 0;
   }
   .jumpboard .jumpcolumn:first-child .jumpheading {
     border-top: 1px solid #ccc;
