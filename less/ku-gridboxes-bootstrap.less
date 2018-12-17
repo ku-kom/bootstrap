@@ -513,7 +513,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -529,13 +528,16 @@
   .gridbox {
     height: auto;
 
+    .text {
+      display: none;
+    }
+
     .box1 {
       flex: 0 1 auto;
     }
   }
 
   .gridbox {
-
     &.size1 {
       .text {
         display: block;
@@ -545,8 +547,9 @@
     &.size2 {
       &.with-img {
         height: 220px;
+
         .text {
-          display: block;
+          display: none;
         }
         // Video has natural height
         &.with-iframe {
@@ -558,8 +561,9 @@
     &.size3 {
       &.with-img {
         height: 170px;
+
         .text {
-          display: block;
+          display: none;
         }
         // Video has natural height
         &.with-iframe {
@@ -572,9 +576,9 @@
       &.with-img {
         border: 0!important;
 
-        // .text {
-        //   display: none;
-        // }
+        .text {
+          display: block;
+        }
 
         &::before {
           color: @white-color;
@@ -806,7 +810,6 @@
           // .text {
           //   display: none;
           // }
-
           .box2 {
             img {
               max-height: 146%;

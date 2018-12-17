@@ -476,6 +476,9 @@
   .gridbox {
     height: auto;
   }
+  .gridbox .text {
+    display: none;
+  }
   .gridbox .box1 {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
@@ -488,7 +491,7 @@
     height: 220px;
   }
   .gridbox.size2.with-img .text {
-    display: block;
+    display: none;
   }
   .gridbox.size2.with-img.with-iframe {
     height: inherit;
@@ -497,13 +500,16 @@
     height: 170px;
   }
   .gridbox.size3.with-img .text {
-    display: block;
+    display: none;
   }
   .gridbox.size3.with-img.with-iframe {
     height: inherit;
   }
   .gridbox.outlined.with-img {
     border: 0!important;
+  }
+  .gridbox.outlined.with-img .text {
+    display: block;
   }
   .gridbox.outlined.with-img::before {
     color: #fff;
