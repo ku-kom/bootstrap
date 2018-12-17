@@ -44,16 +44,12 @@ nav {
   }
   @media (max-width: @screen-xs-max) {
     [class^="col-"][class$="-12"] {
-      // Match col and 12
-      margin-top: @grid-gutter-height;
+      + [class^="col-"][class$="-12"] {
+        // Match col and 12
+        margin-top: @grid-gutter-height;
+      }
     }
   }
-  // ol,
-  // ul {
-  //   li {
-  //     line-height: 2;
-  //   }
-  // }
 }
 
 #main-content > p:first-child {
