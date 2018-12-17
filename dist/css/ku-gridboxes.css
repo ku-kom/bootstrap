@@ -350,9 +350,9 @@
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
-  -webkit-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 .gridbox.size1:before {
   display: none;
@@ -401,9 +401,9 @@
 * Mobile: All column types must behave like single column boxes
 */
 .gridbox.size1.with-img .box2 {
-  -webkit-flex: 0 1 133px;
-      -ms-flex: 0 1 133px;
-          flex: 0 1 133px;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 .gridbox.size2.with-img.text-over.text-down .box1,
 .gridbox.size3.with-img.text-over.text-down .box1 {
@@ -941,9 +941,9 @@
     -webkit-order: 2;
     -ms-flex-order: 2;
             order: 2;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box2 img,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box2 img {
