@@ -43,8 +43,9 @@ nav {
     }
   }
   @media (max-width: @screen-xs-max) {
-    [class*="col-"] {
-      + [class*="col-"] {
+    [class^="col-"] {
+        + [class$="-12"] {
+          // Match col and 12
         margin-top: @grid-gutter-height;
       }
     }

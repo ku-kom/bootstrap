@@ -44,6 +44,11 @@ html:lang(en) .ku-branding .ku-branding-text {
   display: none;
 }
 
+.media-list .eventteaser {
+  /* Hide teaser text on front pages */
+  display: none;
+}
+
 .jumpboard {
   display: -webkit-box;
   display: -ms-flexbox;
