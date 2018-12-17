@@ -2,6 +2,7 @@
 // CSS for legacy CMS elements - delete when not necessary.
 // --------------------------------------------------
 // Gamle nyhedsbokse
+
 .gcitem {
   &.nyhed {
     .nyhed-illustration {
@@ -26,18 +27,77 @@
     }
   }
 }
-
 // Banner doctype
 
 #banners-3col {
   padding: 0;
 }
-
-
 // Old advanced lists
+
 ul {
   &.stripped {
     list-style-type: none;
     padding-left: 0;
+  }
+}
+
+.udd_table {
+  border-collapse: collapse;
+  border-color: #d7d7d7;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  line-height: 1.5;
+  margin: 0 1px 0 0;
+  padding: 0;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+
+  .udd_table_td_noborder {
+    border-right: 0;
+    height: 20px;
+    padding: 0;
+  }
+
+  td {
+    border-color: #d7d7d7;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    margin: 0;
+    padding: 10px 8px 10px 12px;
+    vertical-align: top;
+
+    &.udd_table_td_bgcolor {
+      padding: 0;
+      text-align: center;
+      background-color: #f3f3f3;
+      width: 10%;
+      border-left: 1px solid #d7d7d7;
+      vertical-align: middle;
+    }
+  }
+
+  .udd_table_td_fixedwidth2 {
+    width: 45%;
+  }
+
+  .udd_table_td_fixedwidth4 {
+    width: 22.5%;
+  }
+
+  .udd_table_tr_bottom {
+    border-bottom: 1px solid #d7d7d7;
+  }
+}
+
+.standard_table {
+  border-collapse: collapse;
+  border: 1px solid #d7d7d7;
+
+  td {
+    padding: 10px 8px 10px 12px;
+    vertical-align: top;
   }
 }

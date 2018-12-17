@@ -481,9 +481,6 @@
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
   }
-  .gridbox .text {
-    display: none;
-  }
   .gridbox.size1 .text {
     display: block;
   }
