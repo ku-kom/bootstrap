@@ -41,7 +41,7 @@
               var img = response.data[i].images.standard_resolution.url;
               var link = response.data[i].link;
               var desc = response.data[i].caption.text;
-              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '"></a>');
+              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="'+ $user +'"></a>');
             }
             var batch;
             $('a', $container).each(function (k, e) {
@@ -131,7 +131,7 @@
     function resizedw() {
       getInstagramByHash($token);
     }
-    
+
     window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {

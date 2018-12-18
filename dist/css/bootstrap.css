@@ -7766,7 +7766,7 @@ nav {
   }
 }
 .ku-loading {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 25px;
@@ -9335,7 +9335,7 @@ nav {
   visibility: hidden;
 }
 .slick-loading .slick-slide .slick-list {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 25px;
