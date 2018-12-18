@@ -440,7 +440,7 @@
     .box2 {
       order: 1;
       // image height
-      flex: 0 0 50%;
+      flex: 0 0 @gridbox3;
     }
 
     &:before {
@@ -548,9 +548,6 @@
       &.with-img {
         height: 220px;
 
-        .text {
-          display: none;
-        }
         // Video has natural height
         &.with-iframe {
           height: inherit;
@@ -562,9 +559,6 @@
       &.with-img {
         height: 170px;
 
-        .text {
-          display: none;
-        }
         // Video has natural height
         &.with-iframe {
           height: inherit;
@@ -575,10 +569,6 @@
     &.outlined {
       &.with-img {
         border: 0!important;
-
-        .text {
-          display: block;
-        }
 
         &::before {
           color: @white-color;
