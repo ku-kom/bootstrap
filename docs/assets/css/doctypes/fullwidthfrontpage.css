@@ -145,9 +145,8 @@ html:lang(en) .ku-branding .ku-branding-text {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .jumpcolumn:nth-child(3), .jumpcolumn:nth-child(4) {
+  .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
     padding-top: 23px;
-    margin-top: 15px;
   }
   .jumpboard:after {
     position: absolute;

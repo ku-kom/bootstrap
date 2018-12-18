@@ -18,10 +18,10 @@
     var $wrapper = $("#ig");
     var $container = $("#imageBox");
     var $token = $wrapper.attr("data-token");
-    console.log($token);
     var $user = $wrapper.attr("data-account").trim();
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
     var $batchClass = "batch";
+    var $cachedWidth = $('body').prop('clientWidth');
 
     function getInstagramByHash(access_token) {
       // Fetch Instagram images by hashtag
@@ -129,11 +129,15 @@
       getInstagramByHash($token);
     }
     window.onresize = function() {
+      var $newWidth = $('body').prop('clientWidth');
+      if ($newWidth !== $cachedWidth) {
       clearTimeout(it);
       it = setTimeout(function() {
         resizedw();
       }, 200);
-    };
+      $cachedWidth = $newWidth;
+    }
+  };
   });
 
 })(jQuery);
