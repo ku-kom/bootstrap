@@ -447,18 +447,18 @@ module.exports = function (grunt) {
       }
     },
 
-    'saucelabs-qunit': {
-      all: {
-        options: {
-          build: process.env.TRAVIS_JOB_ID,
-          throttled: 10,
-          maxRetries: 3,
-          maxPollRetries: 4,
-          urls: ['http://127.0.0.1:3000/js/tests/index.html?hidepassed'],
-          browsers: grunt.file.readYAML('grunt/sauce_browsers.yml')
-        }
-      }
-    },
+    // 'saucelabs-qunit': {
+    //   all: {
+    //     options: {
+    //       build: process.env.TRAVIS_JOB_ID,
+    //       throttled: 10,
+    //       maxRetries: 3,
+    //       maxPollRetries: 4,
+    //       urls: ['http://127.0.0.1:3000/js/tests/index.html?hidepassed'],
+    //       browsers: grunt.file.readYAML('grunt/sauce_browsers.yml')
+    //     }
+    //   }
+    // },
 
     exec: {
       npmUpdate: {
@@ -517,14 +517,14 @@ module.exports = function (grunt) {
     testSubtasks.push('validate-html');
   }
   // Only run Sauce Labs tests if there's a Sauce access key
-  if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
-      // Skip Sauce if running a different subset of the test suite
-      runSubset('sauce-js-unit') &&
-      // Skip Sauce on Travis when [skip sauce] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
-    testSubtasks.push('connect');
-    testSubtasks.push('saucelabs-qunit');
-  }
+  // if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
+  //     // Skip Sauce if running a different subset of the test suite
+  //     runSubset('sauce-js-unit') &&
+  //     // Skip Sauce on Travis when [skip sauce] is in the commit message
+  //     isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
+  //   testSubtasks.push('connect');
+  //   testSubtasks.push('saucelabs-qunit');
+  // }
   grunt.registerTask('test', testSubtasks);
   //grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
     grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt']);
