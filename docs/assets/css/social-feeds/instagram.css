@@ -85,6 +85,7 @@ Needs html like this:
 }
 
 #imageBox .batch img:hover {
+  -webkit-filter: brightness(90%) blur(0);
   filter: brightness(90%) blur(0);
 }
 
@@ -96,7 +97,9 @@ Needs html like this:
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
     transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-interpolation-mode: bicubic;
   }
@@ -109,7 +112,9 @@ Needs html like this:
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
     transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-interpolation-mode: bicubic;
   }

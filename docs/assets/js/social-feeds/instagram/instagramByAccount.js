@@ -12,11 +12,12 @@
    </div>
  </div>
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
-(function($) {
+(function ($) {
   'use strict';
-  $(document).ready(function() {
+  $(document).ready(function () {
     var $wrapper = $("#ig");
     var $container = $("#imageBox");
+    var $loading = $(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account").trim();
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
@@ -34,7 +35,7 @@
         $.ajax({
           url: $url,
           type: 'GET',
-          success: function(response) {
+          success: function (response) {
             //console.log(response);
             for (var i = 0; i < $images; i++) {
               var img = response.data[i].images.standard_resolution.url;
@@ -43,7 +44,7 @@
               $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '"></a>');
             }
             var batch;
-            $('a', $container).each(function(k, e) {
+            $('a', $container).each(function (k, e) {
               if (k % $numbers == 0) {
                 batch = $('<div/>').addClass($batchClass).appendTo($container);
               }
@@ -52,10 +53,11 @@
             var wrap = "<div class='inner'></div>";
             $('.' + $batchClass).wrapInner(wrap);
           },
-          error: function(xhr, status, error) {
+          error: function (xhr, status, error) {
             console.log(xhr.responseText);
           },
-          complete: function() {
+          complete: function () {
+            $loading.hide();
             $container.rotator();
             $wrapper.css('visibility', 'visible');
           }
@@ -63,25 +65,25 @@
       }
     }
 
-    $.fn.rotator = function(options) {
+    $.fn.rotator = function (options) {
       options = $.extend({
         blocks: '.' + $batchClass,
         speed: 6000,
         fadeSpeed: 800
       }, options);
-      var setZIndex = function(element) {
+      var setZIndex = function (element) {
         var index = $(options.blocks, element).length;
-        $(options.blocks, element).each(function() {
+        $(options.blocks, element).each(function () {
           index--;
           $(this).css('zIndex', index);
         });
       };
-      var rotate = function(element) {
+      var rotate = function (element) {
         var blocks = $(options.blocks, element),
           len = blocks.length,
           index = -1;
         blocks.fadeIn(options.fadeSpeed);
-        var timer = setInterval(function() {
+        var timer = setInterval(function () {
           index++;
           var block = blocks.eq(index);
           if (index == len) {
@@ -93,7 +95,7 @@
           }
         }, options.speed);
       };
-      return this.each(function() {
+      return this.each(function () {
         var elem = $(this);
         setZIndex(elem);
         rotate(elem);
@@ -101,6 +103,7 @@
     };
 
     if ($token) {
+      // Init script
       getInstagramByHash($token);
     } else {
       console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
@@ -111,11 +114,11 @@
     var max = $wrapper.offset().top + $wrapper.outerHeight();
     var min = max - 30; // 30 is the height of the ::before
 
-    var checkRange = function(y) {
+    var checkRange = function (y) {
       return (y >= min && y <= max);
     };
 
-    $wrapper.click(function(e) {
+    $wrapper.click(function (e) {
       if (checkRange(e.pageY)) {
         // do click action
         location.href = "https://www.instagram.com/" + $accountName;
@@ -128,16 +131,18 @@
     function resizedw() {
       getInstagramByHash($token);
     }
-    window.onresize = function() {
+    
+    window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
-      clearTimeout(it);
-      it = setTimeout(function() {
-        resizedw();
-      }, 200);
-      $cachedWidth = $newWidth;
-    }
-  };
+        $loading.show();
+        clearTimeout(it);
+        it = setTimeout(function () {
+          resizedw();
+        }, 200);
+        $cachedWidth = $newWidth;
+      }
+    };
   });
 
 })(jQuery);
