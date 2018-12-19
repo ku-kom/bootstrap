@@ -1613,7 +1613,7 @@ h5 small,
 h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #757575;
 }
 .h1,
 .h2,
@@ -1735,7 +1735,7 @@ mark {
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777;
+  color: #757575;
 }
 .text-primary {
   color: #6a979b;
@@ -1874,7 +1874,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #777;
+  border-bottom: 1px dotted #757575;
 }
 .initialism {
   font-size: 90%;
@@ -1926,7 +1926,7 @@ blockquote small {
   display: block;
   font-size: 80%;
   line-height: 1.5;
-  color: #777;
+  color: #757575;
 }
 blockquote .small:before,
 blockquote footer:before,
@@ -2782,7 +2782,7 @@ table.list tr td {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777;
+  color: #757575;
   text-align: left;
 }
 th {
@@ -4128,7 +4128,7 @@ input[type="button"].btn-block {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #757575;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 
@@ -4238,7 +4238,7 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:focus,
 .dropdown-menu > .disabled > a:hover {
-  color: #777;
+  color: #757575;
 }
 .dropdown-menu > .disabled > a:focus,
 .dropdown-menu > .disabled > a:hover {
@@ -4267,7 +4267,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 11px;
   line-height: 1.5;
-  color: #777;
+  color: #757575;
   white-space: nowrap;
 }
 .dropdown-backdrop {
@@ -4668,7 +4668,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li.disabled > a:focus,
 .nav > li.disabled > a:hover {
-  color: #777;
+  color: #757575;
   text-decoration: none;
   cursor: not-allowed;
   background-color: #f3f3f3;
@@ -4882,7 +4882,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     z-index: 2;
     font-family: 'Glyphicons Halflings';
     font-size: 12px;
-    color: #777;
+    color: #757575;
     content: '\e080';
   }
   .ku-nav ul.nav li.dropdown.open:after {
@@ -5368,7 +5368,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 }
 .navbar-inverse {
   height: 28px;
-  background-color: #777;
+  background-color: #757575;
   border-color: #ccc;
 }
 .navbar-inverse .navbar-brand {
@@ -5690,7 +5690,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777;
+  color: #757575;
   cursor: not-allowed;
   background-color: #fff;
   border-color: #ddd;
@@ -5762,7 +5762,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #777;
+  color: #757575;
   cursor: not-allowed;
   background-color: #fff;
 }
@@ -5792,11 +5792,11 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #777;
+  background-color: #757575;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #5e5e5e;
+  background-color: #5b5b5b;
 }
 .label-primary {
   background-color: #6a979b;
@@ -5844,7 +5844,7 @@ a.label:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  background-color: #777;
+  background-color: #757575;
   border-radius: 10px;
 }
 .badge:empty {
@@ -6200,7 +6200,7 @@ button.list-group-item {
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-  color: #777;
+  color: #757575;
   cursor: not-allowed;
   background-color: #eee;
 }
@@ -6212,7 +6212,7 @@ button.list-group-item {
 .list-group-item.disabled .list-group-item-text,
 .list-group-item.disabled:hover .list-group-item-text,
 .list-group-item.disabled:focus .list-group-item-text {
-  color: #777;
+  color: #757575;
 }
 .list-group-item.active,
 .list-group-item.active:hover,
@@ -6667,7 +6667,7 @@ button.list-group-item-danger.active:focus {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #757575;
   content: "\002b";
 
   -webkit-font-smoothing: antialiased;
@@ -7614,7 +7614,7 @@ nav {
   }
   .ical a {
     font-size: 1.2em;
-    color: #777;
+    color: #757575;
   }
   .row-equal-height {
     display: -webkit-flex;
@@ -8256,14 +8256,14 @@ nav {
     z-index: 1040;
     padding: 6px 10px;
     margin-right: 10px;
-    background-color: #777;
+    background-color: #757575;
   }
   .leftmenu-toggle:hover {
     background-color: #222;
   }
   .leftmenu-toggle:active,
   .leftmenu-toggle:focus {
-    background-color: #777;
+    background-color: #757575;
   }
 }
 /* Media queries */
@@ -8333,7 +8333,7 @@ nav {
 }
 #mobileleftmenu li[class*="local"] > .mm-panel {
   color: #252525;
-  background-color: #ddd;
+  background-color: #dbdbdb;
 }
 #mobileleftmenu li[class*="local"]::after {
   border: none;
@@ -8466,7 +8466,7 @@ nav {
 .local-footer {
   font-size: .85em;
   line-height: 1.43em;
-  color: #777;
+  color: #757575;
 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
@@ -8499,7 +8499,7 @@ nav {
   margin: 0 auto;
   overflow: hidden;
   color: #fff;
-  background: #777;
+  background: #757575;
 
   -webkit-flex: none;
       -ms-flex: none;
@@ -8507,7 +8507,7 @@ nav {
 }
 @media (min-width: 768px) {
   #globalfooter {
-    background: linear-gradient(to bottom, #777 0%, #868686 25%, #8e8d8d 50%, #888 80%, #808080 100%);
+    background: linear-gradient(to bottom, #757575 0%, #868686 25%, #8e8d8d 50%, #888 80%, #808080 100%);
   }
 }
 #globalfooter .footercontent {
@@ -8647,7 +8647,7 @@ nav {
 }
 @media (max-width: 767px) {
   html:not(.non-responsive) #globalfooter {
-    background: #777;
+    background: #757575;
   }
   html:not(.non-responsive) #globalfooter .container {
     padding-right: 0;
@@ -8947,13 +8947,13 @@ nav {
 .nyhedsliste.smal .media .nyhedsliste_dato {
   float: right;
   font-weight: 600;
-  color: #777;
+  color: #757575;
 }
 .nyhedsliste-rightbox .media .news-date2 {
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
-  color: #777;
+  color: #757575;
 }
 .nyhedsliste-rightbox .media .news-teaser {
   margin-top: 3px;
@@ -10183,7 +10183,7 @@ fieldset[disabled] .datepicker .range.today span.focus {
 .datepicker .selected span,
 .datepicker .selected.highlighted span {
   color: #fff;
-  background-color: #777;
+  background-color: #757575;
   border-color: #ccc;
 }
 .datepicker .selected span:focus,
@@ -10191,13 +10191,13 @@ fieldset[disabled] .datepicker .range.today span.focus {
 .datepicker .selected span.focus,
 .datepicker .selected.highlighted span.focus {
   color: #fff;
-  background-color: #5e5e5e;
+  background-color: #5b5b5b;
   border-color: #8c8c8c;
 }
 .datepicker .selected span:hover,
 .datepicker .selected.highlighted span:hover {
   color: #fff;
-  background-color: #5e5e5e;
+  background-color: #5b5b5b;
   border-color: #adadad;
 }
 .datepicker .selected span:active,
@@ -10207,7 +10207,7 @@ fieldset[disabled] .datepicker .range.today span.focus {
 .datepicker .selected span .open > .dropdown-toggle,
 .datepicker .selected.highlighted span .open > .dropdown-toggle {
   color: #fff;
-  background-color: #5e5e5e;
+  background-color: #5b5b5b;
   border-color: #adadad;
 }
 .datepicker .selected span:active:hover,
@@ -10229,7 +10229,7 @@ fieldset[disabled] .datepicker .range.today span.focus {
 .datepicker .selected span .open > .dropdown-toggle.focus,
 .datepicker .selected.highlighted span .open > .dropdown-toggle.focus {
   color: #fff;
-  background-color: #4c4c4c;
+  background-color: #4a4a4a;
   border-color: #8c8c8c;
 }
 .datepicker .selected span:active,
@@ -10258,12 +10258,12 @@ fieldset[disabled] .datepicker .selected.highlighted span:focus,
 .datepicker .selected.highlighted span[disabled].focus,
 fieldset[disabled] .datepicker .selected span.focus,
 fieldset[disabled] .datepicker .selected.highlighted span.focus {
-  background-color: #777;
+  background-color: #757575;
   border-color: #ccc;
 }
 .datepicker .selected span .badge,
 .datepicker .selected.highlighted span .badge {
-  color: #777;
+  color: #757575;
   background-color: #fff;
 }
 .datepicker .active span,
@@ -10332,7 +10332,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   width: 12px;
   padding: 0 2px 0 5px;
   font-size: 10px;
-  color: #777;
+  color: #757575;
   vertical-align: middle;
 }
 .input-group.date .input-group-addon {
@@ -10430,7 +10430,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     z-index: 1070 !important;
     padding: 20px;
     color: #fff;
-    background: rgba(165, 165, 165, .7);
+    background: rgba(163, 163, 163, .7);
   }
   .privacy-policy .h2 {
     margin-top: 0;
