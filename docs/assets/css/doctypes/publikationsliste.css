@@ -181,9 +181,10 @@ table.properties>tbody>tr:hover {
 }
 
 .rendering h2 {
-  margin: 0px;
+  margin: 0;
 }
 
-.person_view .rendering h2 {
-  font-size: 20.4px!important;
+.striped-list h2.title {
+  font-size: 14px;
+  font-weight: 600;
 }

@@ -1,2 +1,10 @@
 /* Publikationslister - CURIS/Pure  */
 @import url("publikationsliste.css");
+
+h2.title a, h2.title a:visited {
+  color: #252525;
+}
+
+h2.title {
+  font-weight: 600;
+}
