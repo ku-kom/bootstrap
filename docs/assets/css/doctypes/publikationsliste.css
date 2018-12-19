@@ -180,11 +180,23 @@ table.properties>tbody>tr:hover {
   padding: 5px;
 }
 
+.person_text h2.title {
+  font-size: 16px!important;
+  font-weight: 600!important;
+}
+
 .rendering h2 {
   margin: 0;
 }
 
 .striped-list h2.title {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 14px!important;
+  font-weight: 600!important;
+}
+.view_title .title {
+  font-size: 18px!important;
+}
+.view_title .type {
+  font-size: 16px!important;
+  font-weight: 600!important;
 }
