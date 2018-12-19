@@ -4664,7 +4664,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .nav > li.disabled > a {
-  color: #999;
+  color: #757575;
 }
 .nav > li.disabled > a:focus,
 .nav > li.disabled > a:hover {
@@ -4788,7 +4788,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
   color: #fff;
-  background-color: #999;
+  background-color: #757575;
 }
 .nav-stacked > li {
   float: none;
@@ -5681,8 +5681,8 @@ html:lang(en) .navbar-inverse .topbar-logo {
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: #999;
-  border-color: #999;
+  background-color: #757575;
+  border-color: #757575;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -10427,14 +10427,14 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1070 !important;
+    z-index: 1020!important;
     padding: 20px;
     color: #fff;
-    background: rgba(163, 163, 163, .7);
+    background: rgba(163, 163, 163, .9);
   }
   .privacy-policy .h2 {
     margin-top: 0;
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy-policy p {
     margin: 0 0 2px;
