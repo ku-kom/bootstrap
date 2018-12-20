@@ -12,17 +12,24 @@
   & + .panel {
     margin-top: @grid-gutter-height;
   }
-  & > ul {
-    &:first-child {
-      margin-top: 10px;
-    }
-  }
 }
 // Panel contents
 
 .panel-body {
   padding: @panel-body-padding;
   &:extend(.clearfix all);
+
+  & > ul {
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  ul {
+    li {
+      padding: 3px 0;
+    }
+  }
 }
 // Optional heading
 
@@ -299,6 +306,7 @@
     // KU
     &.hidden {
       display: none;
+
       + .panel-body {
         border-top: 0;
       }

@@ -6369,11 +6369,14 @@ button.list-group-item-danger.active:focus {
 .panel + .panel {
   margin-top: 23px;
 }
-.panel > ul:first-child {
-  margin-top: 10px;
-}
 .panel-body {
   padding: 10px;
+}
+.panel-body > ul:first-child {
+  margin-top: 10px;
+}
+.panel-body ul li {
+  padding: 3px 0;
 }
 .panel-heading {
   padding: 6px 10px;
