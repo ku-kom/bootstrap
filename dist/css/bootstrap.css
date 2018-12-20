@@ -5603,7 +5603,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    margin-top: 23px;
+    margin-top: 29px;
     margin-bottom: 10px;
   }
 }
@@ -5906,7 +5906,7 @@ a.thumbnail:focus {
 .figure,
 figure {
   display: table;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px;
   clear: both;
 }
 .figure.image,
@@ -5959,7 +5959,7 @@ figcaption {
   width: 100%;
   padding: 10px 10px 10px 0;
   font-size: .9em;
-  color: #666;
+  color: #757575;
   caption-side: bottom;
   border-bottom: 1px solid #dfdfdf;
 }

@@ -38,7 +38,7 @@
 .figure,
 figure {
   // Ensures the caption's text aligns with the image.
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px;
   display: table;
   clear: both;
 
@@ -64,12 +64,13 @@ figure {
     max-width: 100%;
     height: auto;
   }
+
   &+* {
     clear: both;
   }
 }
-
 // KU specific - editor classes
+
 img {
   &.img-left {
     float: left;
@@ -80,6 +81,7 @@ img {
     float: right;
     margin: 5px 0 10px 20px;
   }
+
   &.img-default {
     // "På linje med tekst"
     margin: 15px 0;
@@ -96,7 +98,7 @@ figure img {
 .figure-caption,
 figcaption {
   font-size: @figure-caption-font-size;
-  color: @gray-666;
+  color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;
   padding: 10px 10px 10px 0;
   width: 100%;
@@ -104,7 +106,8 @@ figcaption {
   caption-side: bottom;
 }
 
-.fritekst_over_img, .uden-boks-top {
+.fritekst_over_img,
+.uden-boks-top {
   // We no longer support this!
   // position: absolute;
   // margin-top: -39px;
