@@ -6369,6 +6369,9 @@ button.list-group-item-danger.active:focus {
 .panel + .panel {
   margin-top: 23px;
 }
+.panel > ul:first-child {
+  margin-top: 10px;
+}
 .panel-body {
   padding: 10px;
 }
