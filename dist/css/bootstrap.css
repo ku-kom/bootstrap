@@ -1701,6 +1701,9 @@ h6 {
 p {
   margin: 10px 0;
 }
+p:empty {
+  display: none;
+}
 .small,
 small {
   font-size: 91%;

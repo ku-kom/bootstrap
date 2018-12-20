@@ -193,6 +193,9 @@ table.properties>tbody>tr:hover {
   font-weight: 600 !important;
   color: #252525!important;
 }
+#purecontent .person_text h2.title a {
+  color: #252525!important;
+}
 
 .rendering h2 {
   margin: 0;
