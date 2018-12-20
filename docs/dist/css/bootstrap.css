@@ -1903,7 +1903,7 @@ blockquote:before {
   left: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1920,17 +1920,13 @@ blockquote p:last-child,
 blockquote ul:last-child {
   margin-bottom: 0;
 }
-blockquote .small,
-blockquote footer,
-blockquote small {
+blockquote footer {
   display: block;
   font-size: 80%;
   line-height: 1.5;
   color: #757575;
 }
-blockquote .small:before,
-blockquote footer:before,
-blockquote small:before {
+blockquote footer:before {
   content: '\2014 \00A0';
 }
 blockquote.full-width {
@@ -7135,8 +7131,6 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-blockquote.full-width:before,
-blockquote.full-width:after,
 .container:before,
 .container:after,
 .container-fluid:before,
@@ -7182,7 +7176,6 @@ main:after,
 }
 .clearfix:after,
 .dl-horizontal dd:after,
-blockquote.full-width:after,
 .container:after,
 .container-fluid:after,
 .row:after,

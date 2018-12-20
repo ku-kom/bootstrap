@@ -338,7 +338,7 @@ blockquote {
     position: absolute;
     top: 10px;
     left: 0;
-    font-size: 50px;
+    font-size: 45px;
     color: @blockquote-icon-color;
     .icon;
   }
@@ -350,11 +350,8 @@ blockquote {
       margin-bottom: 0;
     }
   }
-  // Note: Deprecated small and .small as of v3.1.0
-  // Context: https://github.com/twbs/bootstrap/issues/11660
-  .small,
-  footer,
-  small {
+
+  footer {
     display: block;
     font-size: 80%; // back to default font-size
     line-height: @line-height-base;
@@ -370,7 +367,6 @@ blockquote {
     padding: 0;
     margin: 5px 0;
     float: none;
-    &:extend(.clearfix all);
   }
 }
 // Opposite alignment of blockquote
