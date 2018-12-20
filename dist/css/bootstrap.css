@@ -7546,6 +7546,9 @@ nav {
 .rightbox-normal + .flexiblebox-as-rightbox {
   margin-top: 23px;
 }
+.rightbox-calendar-widget + .rightbox-normal {
+  margin-top: 23px;
+}
 .right-side {
   float: right;
 }
