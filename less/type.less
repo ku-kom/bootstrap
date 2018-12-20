@@ -286,10 +286,12 @@ dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
   }
   @media (min-width: @dl-horizontal-breakpoint) {
-    dt, dd {
+    dd,
+    dt {
       margin-top: 1px;
       margin-bottom: 1px;
     }
+
     dt {
       float: left;
       width: (@dl-horizontal-offset - 20);
@@ -334,7 +336,7 @@ blockquote {
 
   &:before {
     position: absolute;
-    top: -15px;
+    top: 10px;
     left: 0;
     font-size: 50px;
     color: @blockquote-icon-color;
@@ -365,7 +367,10 @@ blockquote {
 
   &.full-width {
     width: 100%;
-    padding-left: 0;
+    padding: 0;
+    margin: 5px 0;
+    float: none;
+    &:extend(.clearfix all);
   }
 }
 // Opposite alignment of blockquote

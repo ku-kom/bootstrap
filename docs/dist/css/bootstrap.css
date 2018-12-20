@@ -1857,8 +1857,8 @@ dd {
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  .dl-horizontal dt,
-  .dl-horizontal dd {
+  .dl-horizontal dd,
+  .dl-horizontal dt {
     margin-top: 1px;
     margin-bottom: 1px;
   }
@@ -1899,7 +1899,7 @@ blockquote:before {
 blockquote:before {
   position: absolute;
   position: relative;
-  top: -15px;
+  top: 10px;
   left: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -1934,8 +1934,10 @@ blockquote small:before {
   content: '\2014 \00A0';
 }
 blockquote.full-width {
+  float: none;
   width: 100%;
-  padding-left: 0;
+  padding: 0;
+  margin: 5px 0;
 }
 address {
   margin-bottom: 18px;
@@ -7133,6 +7135,8 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
+blockquote.full-width:before,
+blockquote.full-width:after,
 .container:before,
 .container:after,
 .container-fluid:before,
@@ -7178,6 +7182,7 @@ main:after,
 }
 .clearfix:after,
 .dl-horizontal dd:after,
+blockquote.full-width:after,
 .container:after,
 .container-fluid:after,
 .row:after,

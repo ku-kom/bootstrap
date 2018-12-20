@@ -191,6 +191,7 @@ table.properties>tbody>tr:hover {
 .person_text h2.title {
   font-size: 16px !important;
   font-weight: 600 !important;
+  color: #252525!important;
 }
 
 .rendering h2 {
