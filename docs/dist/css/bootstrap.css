@@ -439,12 +439,14 @@ template {
 @font-face {
   font-family: "ku-symbols";
 
+  font-display: auto;
   src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot");
   src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot?#iefix") format('embedded-opentype'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff2") format('woff2'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff") format('woff'), url("https://bootstrap.secure.ku.dk/fonts/KU.ttf") format('truetype'), url("https://bootstrap.secure.ku.dk/fonts/KU.svg#ku_symbols") format('svg');
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
 
+  font-display: auto;
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
 }
@@ -6375,8 +6377,9 @@ button.list-group-item-danger.active:focus {
 .panel-body > ul:first-child {
   margin-top: 10px;
 }
-.panel-body ul li {
-  padding: 3px 0;
+.panel-body ul:not(.list-group) li {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .panel-heading {
   padding: 6px 10px;
