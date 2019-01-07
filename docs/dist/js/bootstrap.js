@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.3.7 (https://ku-kom.github.io/bootstrap/)
- * Copyright 2011-2018 University of Copenhagen, based on Twitter, Inc.
+ * Copyright 2011-2019 University of Copenhagen, based on Twitter, Inc.
  * Licensed under the MIT license
  */
 

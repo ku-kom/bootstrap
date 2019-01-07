@@ -26,3 +26,6 @@ div.portal_content_properties span.file_attachment {
   line-height: 14px;
   font-size: 13px !important;
 }
+div.tabbed-search-box ul.box-tabs {
+  display: flex;
+}

@@ -76,12 +76,12 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  jekyll (~> 3.8, >= 3.8.5)
+  jekyll (~> 3.8.5)
   jekyll-sitemap (~> 1.2)
   nokogiri (= 1.8.4)
   tzinfo (>= 1.2.5)
   tzinfo-data (>= 1.0.0)
-  wdm (>= 0.1.0)
+  wdm (>= 0.1.1)
 
 BUNDLED WITH
    1.16.4
