@@ -1424,10 +1424,10 @@ template {
 }
 .icon-forbidden:after {
   position: absolute;
-  top: -8px;
+  top: -3px;
   left: 47%;
   width: 1px;
-  height: 120%;
+  height: 111%;
   content: "";
   border-left: 3px solid #a61e23;
   -webkit-transform: rotateZ(50deg);
