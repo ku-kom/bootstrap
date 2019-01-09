@@ -74,7 +74,7 @@
   <script src="{{ site.baseurl }}/dist/js/datatables.min.js"></script>
   {% endif %}
   <!-- Automatically create anchors for documentation - not for production -->
-  <script src="{{ site.baseurl }}/assets/js/vendor/anchor.min.js"></script>
+  <script async defer src="{{ site.baseurl }}/assets/js/vendor/anchor.min.js"></script>
   <script>
     $(function() {
       anchors.options.placement = 'left';
@@ -87,13 +87,13 @@
 <![endif]-->
   {% if page.slug == "examples"%}
   <!-- Bootstrap add-ons -->
-  <script src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/multiple-select/multiple-select.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/datatables/datatables.js"></script>
+  <script async defer src="{{ site.baseurl }}/assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+  <script async defer src="{{ site.baseurl }}/assets/js/multiple-select/multiple-select.js"></script>
+  <script async defer src="{{ site.baseurl }}/assets/js/datatables/datatables.js"></script>
   {% endif %}
 {% endif %}
 {% if page.category == "slider" %}
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script async defer src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 {% endif %}
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
