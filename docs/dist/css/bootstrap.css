@@ -8953,6 +8953,9 @@ nav {
 #calendarlist .eventdate {
   margin-bottom: 5px;
 }
+.rightbox:not(#gridsidebar) .calendarbox .media:first-child {
+  border-top: 0;
+}
 #minicalendar .panel-body {
   padding: 6px 0 0;
   border-top: 0;
@@ -8961,9 +8964,6 @@ nav {
   padding-top: 10px;
   padding-top: 0!important;
   border-top: 0;
-}
-.calendarbox .panel-body {
-  padding-top: 10px;
 }
 .eventdate {
   margin-top: 0;
