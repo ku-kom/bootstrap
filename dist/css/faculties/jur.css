@@ -277,8 +277,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .faculty_color {
-    background: rgba(153, 150, 50, 0.83);
+    background: rgba(153, 150, 50, 0.93);
   }
+}
+.slideshow .slick-current .faculty_color.full-bg {
+  background: #999632;
 }
 .slideshow .slick-current .subcolor_1 {
   background: #ff7d02;
@@ -286,8 +289,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_1 {
-    background: rgba(255, 125, 2, 0.83);
+    background: rgba(255, 125, 2, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_1.full-bg {
+  background: #ff7d02;
 }
 .slideshow .slick-current .subcolor_2 {
   background: #33838a;
@@ -295,8 +301,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_2 {
-    background: rgba(51, 131, 138, 0.83);
+    background: rgba(51, 131, 138, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_2.full-bg {
+  background: #33838a;
 }
 .slideshow .slick-current .subcolor_3 {
   background: #849482;
@@ -304,8 +313,11 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_3 {
-    background: rgba(132, 148, 130, 0.83);
+    background: rgba(132, 148, 130, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_3.full-bg {
+  background: #849482;
 }
 .slideshow .slick-current .subcolor_4 {
   background: #a3650c;
@@ -313,6 +325,9 @@
 }
 @media (min-width: 768px) {
   .slideshow .slick-current .subcolor_4 {
-    background: rgba(163, 101, 12, 0.83);
+    background: rgba(163, 101, 12, 0.93);
   }
+}
+.slideshow .slick-current .subcolor_4.full-bg {
+  background: #a3650c;
 }

@@ -18,6 +18,19 @@
 .panel-body {
   padding: @panel-body-padding;
   &:extend(.clearfix all);
+
+  & > ul {
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  ul:not(.list-group) {
+    li {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
 }
 // Optional heading
 
@@ -294,6 +307,7 @@
     // KU
     &.hidden {
       display: none;
+
       + .panel-body {
         border-top: 0;
       }

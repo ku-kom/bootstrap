@@ -104,16 +104,16 @@
 <script>
   var pageTitle = 'Titel';
 </script>
-<script src="https://bootstrap.secure.ku.dk/scripts/valid_search_engines_da.js"></script>
+<script async defer src="https://bootstrap.secure.ku.dk/scripts/valid_search_engines_da.js"></script>
 {% if site.github %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script async defer src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 {% else %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
 {% if page.slug != "examples" %}
 <!-- Documentation extra - not for production -->
-<script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
+<script async defer src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 <!-- //Documentation extra - not for production -->
 {% endif %}
  {% endif %}
@@ -125,7 +125,7 @@
   <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
   <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
   {% endif %}
-<script src="{{ site.baseurl }}/assets/js/ku-global-search/search.js"></script>
+<script async defer src="{{ site.baseurl }}/assets/js/ku-global-search/search.js"></script>
 <script>
   // Only use under development - set active left menu item
   $(function() {

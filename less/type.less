@@ -104,6 +104,11 @@ h6 {
 
 p {
   margin: 10px 0;
+
+  &:empty {
+    //Hide empty p-tags comming from the editor
+    display: none;
+  }
 }
 // .lead {
 //   margin-bottom: @line-height-computed;
@@ -286,10 +291,12 @@ dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
   }
   @media (min-width: @dl-horizontal-breakpoint) {
-    dt, dd {
+    dd,
+    dt {
       margin-top: 1px;
       margin-bottom: 1px;
     }
+
     dt {
       float: left;
       width: (@dl-horizontal-offset - 20);
@@ -334,9 +341,9 @@ blockquote {
 
   &:before {
     position: absolute;
-    top: -15px;
+    top: 10px;
     left: 0;
-    font-size: 50px;
+    font-size: 45px;
     color: @blockquote-icon-color;
     .icon;
   }
@@ -348,11 +355,8 @@ blockquote {
       margin-bottom: 0;
     }
   }
-  // Note: Deprecated small and .small as of v3.1.0
-  // Context: https://github.com/twbs/bootstrap/issues/11660
-  .small,
-  footer,
-  small {
+
+  footer {
     display: block;
     font-size: 80%; // back to default font-size
     line-height: @line-height-base;
@@ -365,7 +369,9 @@ blockquote {
 
   &.full-width {
     width: 100%;
-    padding-left: 0;
+    padding: 0;
+    margin: 5px 0;
+    float: none;
   }
 }
 // Opposite alignment of blockquote

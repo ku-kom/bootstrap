@@ -300,9 +300,6 @@
 .gridbox.outlined:not(.with-img) .box2 {
   display: none;
 }
-.gridbox.outlined .text {
-  display: block;
-}
 .gridbox .text {
   padding: 0 25px 5px 10px;
   color: inherit;
@@ -323,7 +320,7 @@
 .gridbox.size1.with-img .box1 .header-small {
   margin: 5px 0;
   font-weight: bold;
-  color: #777;
+  color: #757575;
   text-transform: uppercase;
   letter-spacing: .4px;
 }
@@ -333,7 +330,7 @@
 }
 .gridbox.size1.with-img .box1 .header {
   padding: 0;
-  margin: 15px 0 5px;
+  margin: 10px 0 5px;
   font-size: 1.3em;
   line-height: 1.3em;
   color: #4a4949;
@@ -401,9 +398,9 @@
 * Mobile: All column types must behave like single column boxes
 */
 .gridbox.size1.with-img .box2 {
-  -webkit-flex: 0 1 133px;
-      -ms-flex: 0 1 133px;
-          flex: 0 1 133px;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 .gridbox.size2.with-img.text-over.text-down .box1,
 .gridbox.size3.with-img.text-over.text-down .box1 {
@@ -476,13 +473,13 @@
   .gridbox {
     height: auto;
   }
+  .gridbox .text {
+    display: none;
+  }
   .gridbox .box1 {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-  }
-  .gridbox .text {
-    display: none;
   }
   .gridbox.size1 .text {
     display: block;
@@ -501,9 +498,6 @@
   }
   .gridbox.outlined.with-img {
     border: 0!important;
-  }
-  .gridbox.outlined.with-img .text {
-    display: none;
   }
   .gridbox.outlined.with-img::before {
     color: #fff;
@@ -795,15 +789,6 @@
   .two-one-one-column .column1 .gridbox.outlined .header {
     color: inherit;
     background: transparent;
-  }
-  .one-one-two-column .column3 .gridbox.size1.with-img .text,
-  .one-three-column .column2 .gridbox.size1.with-img .text,
-  .one-two-column .column2 .gridbox.size1.with-img .text,
-  .single-column .column1 .gridbox.size1.with-img .text,
-  .three-one-column .column1 .gridbox.size1.with-img .text,
-  .two-one-column .column1 .gridbox.size1.with-img .text,
-  .two-one-one-column .column1 .gridbox.size1.with-img .text {
-    display: none;
   }
   .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
   .one-three-column .column2 .gridbox.size1.with-img .box2 img,

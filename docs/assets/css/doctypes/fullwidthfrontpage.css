@@ -44,6 +44,11 @@ html:lang(en) .ku-branding .ku-branding-text {
   display: none;
 }
 
+.media-list .eventteaser {
+  /* Hide teaser text on front pages */
+  display: none;
+}
+
 .jumpboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +67,7 @@ html:lang(en) .ku-branding .ku-branding-text {
 
 .jumpboard .jumpcolumn {
   margin-bottom: 0 !important;
+  margin-top: 0!important;
   border-right: 1px solid #fff;
   padding-left: 23px;
   padding-right: 23px;
@@ -122,7 +128,7 @@ html:lang(en) .ku-branding .ku-branding-text {
   z-index: 2;
   position: relative;
   top: -1px;
-  margin-left: 5px;
+  margin-left: 4px;
   font-family: 'ku-symbols';
   font-size: 14px;
   font-style: normal;
@@ -139,9 +145,8 @@ html:lang(en) .ku-branding .ku-branding-text {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .jumpcolumn:nth-child(3), .jumpcolumn:nth-child(4) {
+  .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
     padding-top: 23px;
-    margin-top: 15px;
   }
   .jumpboard:after {
     position: absolute;

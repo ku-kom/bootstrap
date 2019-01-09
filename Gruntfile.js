@@ -403,22 +403,6 @@ module.exports = function (grunt) {
         ]
       }
     },
-
-    // pug: {
-    //   options: {
-    //     pretty: true,
-    //     data: getLessVarsData
-    //   },
-    //   customizerVars: {
-    //     src: 'docs/_pug/customizer-variables.pug',
-    //     dest: 'docs/_includes/customizer-variables.html'
-    //   },
-    //   customizerNav: {
-    //     src: 'docs/_pug/customizer-nav.pug',
-    //     dest: 'docs/_includes/nav/customize.html'
-    //   }
-    // },
-
     htmllint: {
       options: {
         ignore: [
@@ -446,20 +430,6 @@ module.exports = function (grunt) {
         tasks: 'less'
       }
     },
-
-    'saucelabs-qunit': {
-      all: {
-        options: {
-          build: process.env.TRAVIS_JOB_ID,
-          throttled: 10,
-          maxRetries: 3,
-          maxPollRetries: 4,
-          urls: ['http://127.0.0.1:3000/js/tests/index.html?hidepassed'],
-          browsers: grunt.file.readYAML('grunt/sauce_browsers.yml')
-        }
-      }
-    },
-
     exec: {
       npmUpdate: {
         command: 'npm update'
@@ -516,18 +486,9 @@ module.exports = function (grunt) {
       isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
     testSubtasks.push('validate-html');
   }
-  // Only run Sauce Labs tests if there's a Sauce access key
-  if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
-      // Skip Sauce if running a different subset of the test suite
-      runSubset('sauce-js-unit') &&
-      // Skip Sauce on Travis when [skip sauce] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
-    testSubtasks.push('connect');
-    testSubtasks.push('saucelabs-qunit');
-  }
+
   grunt.registerTask('test', testSubtasks);
-  //grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
-    grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt']);
+  grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt']);
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
@@ -541,7 +502,6 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
-
   grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
 
   grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function () {
@@ -557,6 +517,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data']);
   grunt.registerTask('docs-github', ['jekyll:github', 'htmlmin']);
-
   grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress']);
 };

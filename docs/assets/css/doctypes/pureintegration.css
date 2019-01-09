@@ -1,2 +1,31 @@
 /* Publikationslister - CURIS/Pure  */
 @import url("publikationsliste.css");
+
+.heading-blocks h3, .search_box_elsewhere h3, #custom_press_box h3 {
+  border-bottom: 1px solid #901a1e;
+  background-image: none !important;
+  border-top: 0;
+  font-size: 16.08px;
+  line-height: 1.25;
+  letter-spacing: 0.6px;
+  color: #252525;
+  min-height: 16px;
+  font-weight: 600;
+  padding: 0 0 5px;
+}
+
+div.rendering p.type, ol.portal_list>li {
+  padding: 5px;
+}
+
+div.portal_content_properties span.file_attachment {
+  margin-right: 10px;
+}
+
+.portal_list h2.title {
+  line-height: 14px;
+  font-size: 13px !important;
+}
+div.tabbed-search-box ul.box-tabs {
+  display: flex;
+}

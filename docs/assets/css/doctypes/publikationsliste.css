@@ -99,7 +99,7 @@ div.rendering p.type, ol.portal_list>li {
 .downloadstatistics-box h3, #latest_publication_box_custom h3 {
   border-bottom: 1px solid #901a1e;
   padding-bottom: 9px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .theme-samf .downloadstatistics-box h3, .theme-samf #latest_publication_box_custom h3 {
@@ -130,6 +130,8 @@ div.rendering p.type, ol.portal_list>li {
   height: auto;
   width: 100%;
   float: left;
+  clear: both;
+  margin: 20px 0;
 }
 
 .view_container ul.tabs li a {
@@ -162,6 +164,12 @@ div.rendering p.type, ol.portal_list>li {
   width: 100%;
 }
 
+.export_cv {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
 table.properties>tbody>tr:hover {
   background-color: #f5f5f5;
 }
@@ -174,4 +182,39 @@ table.properties>tbody>tr:hover {
 .organisations-relations table.properties tr>td:nth-child(1),
 .organisations-relations table.properties tr>td:nth-child(2) {
   padding-right: 5px;
+}
+
+.striped-list li {
+  padding: 5px;
+}
+
+#purecontent .person_text h2.title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #252525!important;
+}
+#purecontent .person_text h2.title a {
+  color: #252525!important;
+}
+
+.rendering h2 {
+  margin: 0;
+}
+
+.striped-list h2.title {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.view_title .title {
+  font-size: 18px !important;
+}
+
+.view_title .type {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.portal-dropdown .dropdown-menu li {
+  width: 100%;
 }

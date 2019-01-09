@@ -69,18 +69,55 @@ Needs html like this:
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
 }
 
 #imageBox .batch img {
   margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
-  transform: translateY(-50%) translateX(-50%) translate3d(0, 0, 0);
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   object-fit: cover;
   border: 1px solid #fff;
+}
+
+#imageBox .batch img:hover {
+  -webkit-filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
+}
+
+/* Special styles for Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  #imageBox .batch img {
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  /* IE Edge */
+  #imageBox .batch img {
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-interpolation-mode: bicubic;
+  }
 }
 
 #imageBox .batch .inner {
