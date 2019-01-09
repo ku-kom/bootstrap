@@ -87,7 +87,7 @@
     $localmenu1 = $('#mobileleftmenu > ul > li'),
     $new_navbar = $('#navbar_menu > li').clone(),
     $new_topbar = $('#topbar_menu > li').clone(),
-    $new_search = $('.global-search').first().detach(),
+    $new_search = $('.global-search').first().clone(), //detach(),
     API;
 
   if ($.fn.mmenu) {
