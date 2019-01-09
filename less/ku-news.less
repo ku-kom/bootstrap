@@ -93,6 +93,7 @@
     margin-bottom: 5px;
   }
 }
+
 .rightbox:not(#gridsidebar) {
   .calendarbox {
     .media {
@@ -103,6 +104,21 @@
   }
 }
 // Arrangementer - højre kolonne
+
+.right-side {
+  #gridsidebar {
+    .media-list {
+      .media-event {
+        .media-body {
+          & > .media-right {
+            // Float images right for calendars in right column only
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
 
 #minicalendar {
   .panel-body {
@@ -119,12 +135,6 @@
   }
 }
 
-.calendarbox {
-  .panel-body {
-    padding-top: 10px;
-  }
-}
-
 .eventdate {
   margin-top: 0;
 }
@@ -133,8 +143,9 @@
   margin-bottom: 0;
 }
 // Search news forms
+
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px!important !important;
 
   form {
     display: flex;

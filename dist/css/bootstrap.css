@@ -8975,6 +8975,9 @@ nav {
 .rightbox:not(#gridsidebar) .calendarbox .media:first-child {
   border-top: 0;
 }
+.right-side #gridsidebar .media-list .media-event .media-body > .media-right {
+  float: right;
+}
 #minicalendar .panel-body {
   padding: 6px 0 0;
   border-top: 0;
@@ -8984,9 +8987,6 @@ nav {
   padding-top: 0!important;
   border-top: 0;
 }
-.calendarbox .panel-body {
-  padding-top: 10px;
-}
 .eventdate {
   margin-top: 0;
 }
@@ -8994,7 +8994,7 @@ nav {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px!important !important;
 }
 .search-news form {
   display: -webkit-flex;
