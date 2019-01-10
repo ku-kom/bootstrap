@@ -30,9 +30,6 @@
 
   -webkit-filter: brightness(90%) blur(0);
 }
-.gridbox p {
-  margin: 0 0 20px;
-}
 .gridbox.subcolor_5 {
   background: #eee;
 }
