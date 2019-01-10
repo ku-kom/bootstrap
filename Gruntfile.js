@@ -67,12 +67,6 @@ module.exports = function (grunt) {
       core: {
         src: 'js/*min.js'
       },
-      test: {
-        options: {
-          jshintrc: 'js/tests/unit/.jshintrc'
-        },
-        src: 'js/tests/unit/*.js'
-      },
       assets: {
         src: ['docs/assets/js/src/*.js', '!docs/assets/js/*.min.js']
       }
@@ -138,10 +132,6 @@ module.exports = function (grunt) {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
-      // customize: {
-      //   src: configBridge.paths.customizerJs,
-      //   dest: 'docs/assets/js/customize.min.js'
-      // },
       docsJs: {
         src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
@@ -162,13 +152,6 @@ module.exports = function (grunt) {
         }
       ]
     }
-    },
-
-    qunit: {
-      options: {
-        inject: 'js/tests/unit/phantom.js'
-      },
-      files: 'js/tests/index.html'
     },
 
     less: {
@@ -417,13 +400,7 @@ module.exports = function (grunt) {
     watch: {
       src: {
         files: '<%= jshint.core.src %>',
-        //tasks: ['jshint:core', 'qunit', 'concat']
         tasks: ['jshint:core', 'concat']
-      },
-      test: {
-        files: '<%= jshint.test.src %>',
-        //tasks: ['jshint:test', 'qunit']
-        tasks: ['jshint:test']
       },
       less: {
         files: 'less/**/*.less',
@@ -488,7 +465,7 @@ module.exports = function (grunt) {
   }
 
   grunt.registerTask('test', testSubtasks);
-  grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt']);
+  grunt.registerTask('test-js', ['jshint:core', 'jshint:grunt', 'jscs:core', 'jscs:grunt']);
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
@@ -513,7 +490,7 @@ module.exports = function (grunt) {
   // Docs task.
   grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
   grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
-  grunt.registerTask('docs-js', ['uglify:docsJs']); //, 'uglify:customize'
+  grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data']);
   grunt.registerTask('docs-github', ['jekyll:github', 'htmlmin']);
