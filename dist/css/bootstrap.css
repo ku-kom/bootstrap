@@ -5370,9 +5370,14 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   color: #ccc;
 }
 .navbar-inverse {
-  height: 28px;
+  height: 40px;
   background-color: #757575;
   border-color: #ccc;
+}
+@media (min-width: 768px) {
+  .navbar-inverse {
+    height: 28px;
+  }
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -5498,7 +5503,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 .navbar-inverse .topbar-logo {
   position: absolute;
-  top: 8px;
+  top: 13px;
   left: 15px;
   display: block;
   width: 70%;
@@ -5508,30 +5513,20 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   background-position: left center;
   background-size: contain;
 }
-@media (min-width: 767px) {
-  .navbar-inverse .topbar-logo {
-    width: 60%;
-  }
+html:lang(en) .navbar-inverse .topbar-logo {
+  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .topbar-logo {
+    top: 8px;
     width: 36%;
   }
 }
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
+    top: 8px;
     left: 24px;
     width: 27%;
-  }
-}
-html:lang(en) .navbar-inverse .topbar-logo {
-  left: 20px;
-  width: 75%;
-  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
-}
-@media (min-width: 992px) {
-  html:lang(en) .navbar-inverse .topbar-logo {
-    width: 28%;
   }
 }
 .ku-nav .btn-global-search .btn {
@@ -5581,8 +5576,8 @@ html:lang(en) .navbar-inverse .topbar-logo {
   padding: 3px 20px;
 }
 .ku-nav .search_form .dropdown-menu li.selected,
-.ku-nav .search_form .dropdown-menu li:hover,
-.ku-nav .search_form .dropdown-menu li:active {
+.ku-nav .search_form .dropdown-menu li:active,
+.ku-nav .search_form .dropdown-menu li:hover {
   cursor: pointer;
   background-color: #efefef;
 }
@@ -5909,12 +5904,12 @@ a.thumbnail:focus {
 .figure,
 figure {
   display: table;
-  margin: 5px 0 15px;
   clear: both;
 }
 .figure.image,
 figure.image {
   min-width: 1px;
+  margin: 5px 0 15px;
 }
 .figure.align-left,
 figure.align-left,
@@ -8259,7 +8254,7 @@ nav {
   }
   .leftmenu-toggle {
     position: fixed;
-    top: 0;
+    top: 5px;
     right: 0;
     z-index: 1040;
     padding: 6px 10px;

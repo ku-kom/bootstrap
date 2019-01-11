@@ -641,7 +641,11 @@
 
 .navbar-inverse {
   background-color: @navbar-inverse-bg;
-  height: @ku-topbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  height: @navbar-height;
+  @media (min-width: @screen-sm) {
+    height: @ku-topbar-height;
+  }
+  // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   border-color: @navbar-inverse-border;
 
   .navbar-brand {
@@ -830,27 +834,21 @@
     position: absolute;
     height: 13px;
     width: 70%;
-    top: 8px;
+    top: 13px;
     left: 15px;
     display: block;
-    @media (min-width: @screen-xs-max) {
-      width: 60%;
+
+    html:lang(en) & {
+      background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
     }
     @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+      top: 8px;
       width: 36%;
     }
     @media (min-width: @screen-md) {
+      top: 8px;
       left: 24px;
       width: 27%;
-    }
-    // English version
-    html:lang(en) & {
-      background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
-      width: 75%;
-      left: @margin20;
-      @media (min-width: @screen-md-min) {
-        width: 28%;
-      }
     }
   }
 }
@@ -913,7 +911,8 @@
         padding: 3px 20px;
 
         &.selected,
-        &:hover, &:active {
+        &:active,
+        &:hover {
           background-color: #efefef;
           cursor: pointer;
         }
