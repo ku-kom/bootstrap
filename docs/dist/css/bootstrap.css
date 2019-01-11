@@ -1264,15 +1264,8 @@ template {
   -moz-osx-font-smoothing: grayscale;
 }
 .social-icons {
-  padding-left: 0;
-  margin-top: 2px;
-  margin-left: -5px;
-  list-style: none;
-}
-.social-icons > li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 5px!important;
 }
 .social-icons .icon {
   display: -webkit-flex;
@@ -1701,7 +1694,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 10px 0;
+  margin: 0 0 20px 0;
 }
 p:empty {
   display: none;
@@ -2889,7 +2882,7 @@ th {
 .table-noborder > tbody > tr > th,
 .table-noborder > tfoot > tr > th,
 .table-noborder > thead > tr > th {
-  pborder: 0;
+  border: 0;
 }
 table col[class*="col-"] {
   position: static;
@@ -8900,6 +8893,9 @@ nav {
             flex: 1;
   }
 }
+.media-list {
+  margin-top: 0;
+}
 .media-list .media-left,
 .media-list .media-right {
   min-width: 65px;
@@ -10606,6 +10602,9 @@ ul.stripped {
 .standard_table td {
   padding: 10px 8px 10px 12px;
   vertical-align: top;
+}
+.fritekst_top_img {
+  margin-bottom: 10px;
 }
 /* KU custom elements */
 .gridnyhed {
