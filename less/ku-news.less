@@ -2,6 +2,8 @@
 // Global menu news
 
 .media-list {
+  margin-top: 0!important;
+
   .media-left,
   .media-right {
     min-width: @ku-thumbnails-size;
@@ -12,8 +14,13 @@
   }
 
   .media {
-    border-bottom: 1px solid @gray;
+    margin-top: 0;
+    padding-top: 15px;
     padding-bottom: 5px;
+
+    &+ .media {
+      border-top: 1px solid @gray;
+    }
 
     .media-heading {
       .nyhedsoverskrift();
@@ -25,6 +32,12 @@
       }
     }
 
+    .media-body {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
     .media-object {
       .img-thumbnail;
     }
@@ -32,10 +45,6 @@
 
   &.smal {
     .media {
-      &:first-child {
-        border-top: 1px solid @gray;
-        padding-top: 15px;
-      }
       // If no media-object, indent content
       & > .media-body:first-child {
         padding-left: @ku-thumbnails-size;
@@ -89,6 +98,9 @@
 // Arrangementer - midterkolonne:
 
 #calendarlist {
+  border-top: 1px solid @gray;
+  border-bottom: 1px solid @gray;
+
   .eventdate {
     margin-bottom: 5px;
   }
@@ -133,7 +145,7 @@
 // Search news forms
 
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px !important;
 
   form {
     display: flex;
@@ -174,5 +186,11 @@
   p {
     display: inline;
     letter-spacing: 0.3px;
+  }
+}
+
+.custom-search-results {
+  .nyhedsliste_dato {
+    color: @text-color!important;
   }
 }
