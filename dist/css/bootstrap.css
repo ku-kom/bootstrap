@@ -8909,6 +8909,7 @@ nav {
   display: block;
 }
 .media-list .media {
+  padding-top: 15px;
   padding-bottom: 5px;
   margin-top: 0;
 }
@@ -8939,9 +8940,6 @@ nav {
   border: 1px solid #ddd;
   border-radius: 2px;
   transition: all .2s ease-in-out;
-}
-.media-list.smal .media {
-  padding-top: 15px;
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;

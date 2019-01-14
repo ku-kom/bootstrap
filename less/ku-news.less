@@ -15,6 +15,7 @@
 
   .media {
     margin-top: 0;
+    padding-top: 15px;
     padding-bottom: 5px;
 
     &+ .media {
@@ -29,6 +30,7 @@
         color: inherit;
         display: block;
       }
+
       p {
         margin-bottom: 10px;
       }
@@ -41,7 +43,6 @@
 
   &.smal {
     .media {
-      padding-top: 15px;
       // If no media-object, indent content
       & > .media-body:first-child {
         padding-left: @ku-thumbnails-size;
