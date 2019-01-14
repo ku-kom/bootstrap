@@ -2,7 +2,7 @@
 // Global menu news
 
 .media-list {
-  margin-top: 0;
+  margin-top: 0!important;
 
   .media-left,
   .media-right {
@@ -14,7 +14,9 @@
   }
 
   .media {
+    margin-top: 0;
     padding-bottom: 5px;
+
     &+ .media {
       border-top: 1px solid @gray;
     }
@@ -27,6 +29,9 @@
         color: inherit;
         display: block;
       }
+      p {
+        margin-bottom: 10px;
+      }
     }
 
     .media-object {
@@ -36,9 +41,7 @@
 
   &.smal {
     .media {
-      &:first-child {
-        padding-top: 15px;
-      }
+      padding-top: 15px;
       // If no media-object, indent content
       & > .media-body:first-child {
         padding-left: @ku-thumbnails-size;

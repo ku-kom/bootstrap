@@ -8898,7 +8898,7 @@ nav {
   }
 }
 .media-list {
-  margin-top: 0;
+  margin-top: 0!important;
 }
 .media-list .media-left,
 .media-list .media-right {
@@ -8910,6 +8910,7 @@ nav {
 }
 .media-list .media {
   padding-bottom: 5px;
+  margin-top: 0;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;
@@ -8925,6 +8926,9 @@ nav {
   font-size: inherit;
   color: inherit;
 }
+.media-list .media .media-heading p {
+  margin-bottom: 10px;
+}
 .media-list .media .media-object {
   display: block;
   max-width: 100%;
@@ -8936,7 +8940,7 @@ nav {
   border-radius: 2px;
   transition: all .2s ease-in-out;
 }
-.media-list.smal .media:first-child {
+.media-list.smal .media {
   padding-top: 15px;
 }
 .media-list.smal .media > .media-body:first-child {
