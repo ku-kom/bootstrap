@@ -1671,6 +1671,10 @@ h1 {
     margin-top: 20px;
   }
 }
+.h1 > strong,
+h1 > strong {
+  font-weight: inherit;
+}
 .h2,
 h2 {
   font-size: 20.4px;
@@ -8932,6 +8936,8 @@ nav {
 }
 .media-list.smal .media:first-child {
   padding-top: 15px;
+}
+.media-list.smal .media + .media {
   border-top: 1px solid #ccc;
 }
 .media-list.smal .media > .media-body:first-child {
