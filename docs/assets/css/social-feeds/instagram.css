@@ -34,7 +34,7 @@ Needs html like this:
   z-index: 100;
 }
 
-#ig.gridbox .header {
+#ig.gridbox .header, #ig.gridbox.with-img:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9);
 }

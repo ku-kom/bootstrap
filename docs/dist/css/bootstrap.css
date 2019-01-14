@@ -439,14 +439,14 @@ template {
 @font-face {
   font-family: "ku-symbols";
 
-  font-display: auto;
+  font-display: swap;
   src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot");
   src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot?#iefix") format('embedded-opentype'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff2") format('woff2'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff") format('woff'), url("https://bootstrap.secure.ku.dk/fonts/KU.ttf") format('truetype'), url("https://bootstrap.secure.ku.dk/fonts/KU.svg#ku_symbols") format('svg');
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  font-display: auto;
+  font-display: swap;
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
 }
@@ -1264,15 +1264,8 @@ template {
   -moz-osx-font-smoothing: grayscale;
 }
 .social-icons {
-  padding-left: 0;
-  margin-top: 2px;
-  margin-left: -5px;
-  list-style: none;
-}
-.social-icons > li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 5px!important;
 }
 .social-icons .icon {
   display: -webkit-flex;
@@ -1506,6 +1499,9 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+a:visited {
+  color: #3d239c;
+}
 figure {
   margin: 0;
 }
@@ -1675,6 +1671,10 @@ h1 {
     margin-top: 20px;
   }
 }
+.h1 > strong,
+h1 > strong {
+  font-weight: inherit;
+}
 .h2,
 h2 {
   font-size: 20.4px;
@@ -1701,7 +1701,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 10px 0;
+  margin: 0 0 20px 0;
 }
 p:empty {
   display: none;
@@ -2889,7 +2889,7 @@ th {
 .table-noborder > tbody > tr > th,
 .table-noborder > tfoot > tr > th,
 .table-noborder > thead > tr > th {
-  pborder: 0;
+  border: 0;
 }
 table col[class*="col-"] {
   position: static;
@@ -5370,9 +5370,14 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   color: #ccc;
 }
 .navbar-inverse {
-  height: 28px;
+  height: 40px;
   background-color: #757575;
   border-color: #ccc;
+}
+@media (min-width: 768px) {
+  .navbar-inverse {
+    height: 28px;
+  }
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -5498,7 +5503,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 .navbar-inverse .topbar-logo {
   position: absolute;
-  top: 8px;
+  top: 13px;
   left: 15px;
   display: block;
   width: 70%;
@@ -5508,30 +5513,20 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   background-position: left center;
   background-size: contain;
 }
-@media (min-width: 767px) {
-  .navbar-inverse .topbar-logo {
-    width: 60%;
-  }
+html:lang(en) .navbar-inverse .topbar-logo {
+  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .topbar-logo {
+    top: 8px;
     width: 36%;
   }
 }
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
+    top: 8px;
     left: 24px;
     width: 27%;
-  }
-}
-html:lang(en) .navbar-inverse .topbar-logo {
-  left: 20px;
-  width: 75%;
-  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
-}
-@media (min-width: 992px) {
-  html:lang(en) .navbar-inverse .topbar-logo {
-    width: 28%;
   }
 }
 .ku-nav .btn-global-search .btn {
@@ -5581,8 +5576,8 @@ html:lang(en) .navbar-inverse .topbar-logo {
   padding: 3px 20px;
 }
 .ku-nav .search_form .dropdown-menu li.selected,
-.ku-nav .search_form .dropdown-menu li:hover,
-.ku-nav .search_form .dropdown-menu li:active {
+.ku-nav .search_form .dropdown-menu li:active,
+.ku-nav .search_form .dropdown-menu li:hover {
   cursor: pointer;
   background-color: #efefef;
 }
@@ -5909,12 +5904,12 @@ a.thumbnail:focus {
 .figure,
 figure {
   display: table;
-  margin: 5px 0 15px;
   clear: both;
 }
 .figure.image,
 figure.image {
   min-width: 1px;
+  margin: 5px 0 15px;
 }
 .figure.align-left,
 figure.align-left,
@@ -6377,7 +6372,7 @@ button.list-group-item-danger.active:focus {
 .panel-body > ul:first-child {
   margin-top: 10px;
 }
-.panel-body ul:not(.list-group) li {
+.panel-body ul:not([class]) li {
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -8259,7 +8254,7 @@ nav {
   }
   .leftmenu-toggle {
     position: fixed;
-    top: 0;
+    top: 5px;
     right: 0;
     z-index: 1040;
     padding: 6px 10px;
@@ -8495,9 +8490,6 @@ nav {
   .local-footer .footer-data {
     text-align: left;
   }
-}
-.local-footer a:not(.btn):visited {
-  color: #3d239c;
 }
 #globalfooter {
   position: relative;
@@ -8905,6 +8897,9 @@ nav {
             flex: 1;
   }
 }
+.media-list {
+  margin-top: 0!important;
+}
 .media-list .media-left,
 .media-list .media-right {
   min-width: 65px;
@@ -8914,8 +8909,12 @@ nav {
   display: block;
 }
 .media-list .media {
+  padding-top: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+}
+.media-list .media + .media {
+  border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
   font-size: 14px;
@@ -8928,6 +8927,9 @@ nav {
   font-size: inherit;
   color: inherit;
 }
+.media-list .media .media-body p {
+  margin-bottom: 10px;
+}
 .media-list .media .media-object {
   display: block;
   max-width: 100%;
@@ -8938,10 +8940,6 @@ nav {
   border: 1px solid #ddd;
   border-radius: 2px;
   transition: all .2s ease-in-out;
-}
-.media-list.smal .media:first-child {
-  padding-top: 15px;
-  border-top: 1px solid #ccc;
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
@@ -8969,6 +8967,10 @@ nav {
 .nyhedsboks .panel-body {
   padding-top: 10px;
 }
+#calendarlist {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 #calendarlist .eventdate {
   margin-bottom: 5px;
 }
@@ -8991,7 +8993,7 @@ nav {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px !important;
 }
 .search-news form {
   display: -webkit-flex;
@@ -9035,9 +9037,6 @@ nav {
 .manchet p {
   display: inline;
   letter-spacing: .3px;
-}
-.media-events .media-heading a {
-  color: inherit;
 }
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
@@ -10611,6 +10610,9 @@ ul.stripped {
 .standard_table td {
   padding: 10px 8px 10px 12px;
   vertical-align: top;
+}
+.fritekst_top_img {
+  margin-bottom: 10px;
 }
 /* KU custom elements */
 .gridnyhed {

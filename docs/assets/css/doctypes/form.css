@@ -1,2 +1,10 @@
 /* Multiple select styles */
 @import url("../multiple-select.min.css");
+
+.gdpr-notice {
+  margin: 10px 0;
+}
+.gdpr-notice input[type="checkbox"] {
+  margin: 3px 4px 0 3px;
+  bottom: -2px;
+}
