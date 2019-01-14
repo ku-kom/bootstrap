@@ -8910,7 +8910,9 @@ nav {
 }
 .media-list .media {
   padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
+}
+.media-list .media + .media {
+  border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
   font-size: 14px;
@@ -8936,9 +8938,6 @@ nav {
 }
 .media-list.smal .media:first-child {
   padding-top: 15px;
-}
-.media-list.smal .media + .media {
-  border-top: 1px solid #ccc;
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
@@ -8988,7 +8987,7 @@ nav {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px!important !important;
 }
 .search-news form {
   display: -webkit-flex;

@@ -14,8 +14,10 @@
   }
 
   .media {
-    border-bottom: 1px solid @gray;
     padding-bottom: 5px;
+    &+ .media {
+      border-top: 1px solid @gray;
+    }
 
     .media-heading {
       .nyhedsoverskrift();
@@ -36,10 +38,6 @@
     .media {
       &:first-child {
         padding-top: 15px;
-      }
-
-      &+ .media {
-        border-top: 1px solid @gray;
       }
       // If no media-object, indent content
       & > .media-body:first-child {
