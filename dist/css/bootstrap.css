@@ -6372,6 +6372,10 @@ button.list-group-item-danger.active:focus {
 .panel-body > ul:first-child {
   margin-top: 10px;
 }
+.panel-body ul:not([class]) li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 .panel-heading {
   padding: 6px 10px;
   border-bottom: 1px solid transparent;
@@ -8963,6 +8967,10 @@ nav {
 .nyhedsboks .panel-body {
   padding-top: 10px;
 }
+#calendarlist {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 #calendarlist .eventdate {
   margin-bottom: 5px;
 }
@@ -8985,7 +8993,7 @@ nav {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px!important;
+  padding: 5px 15px !important;
 }
 .search-news form {
   display: -webkit-flex;
