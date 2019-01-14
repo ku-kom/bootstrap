@@ -1499,6 +1499,9 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+a:visited {
+  color: #3d239c;
+}
 figure {
   margin: 0;
 }
@@ -8483,9 +8486,6 @@ nav {
   .local-footer .footer-data {
     text-align: left;
   }
-}
-.local-footer a:not(.btn):visited {
-  color: #3d239c;
 }
 #globalfooter {
   position: relative;
