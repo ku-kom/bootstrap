@@ -6372,10 +6372,6 @@ button.list-group-item-danger.active:focus {
 .panel-body > ul:first-child {
   margin-top: 10px;
 }
-.panel-body ul:not(.list-group) li {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 .panel-heading {
   padding: 6px 10px;
   border-bottom: 1px solid transparent;
@@ -8927,7 +8923,7 @@ nav {
   font-size: inherit;
   color: inherit;
 }
-.media-list .media .media-heading p {
+.media-list .media .media-body p {
   margin-bottom: 10px;
 }
 .media-list .media .media-object {
@@ -8989,7 +8985,7 @@ nav {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px!important !important;
+  padding: 5px 15px!important;
 }
 .search-news form {
   display: -webkit-flex;

@@ -6372,10 +6372,6 @@ button.list-group-item-danger.active:focus {
 .panel-body > ul:first-child {
   margin-top: 10px;
 }
-.panel-body ul:not(.list-group) li {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 .panel-heading {
   padding: 6px 10px;
   border-bottom: 1px solid transparent;
@@ -8898,7 +8894,7 @@ nav {
   }
 }
 .media-list {
-  margin-top: 0;
+  margin-top: 0!important;
 }
 .media-list .media-left,
 .media-list .media-right {
@@ -8909,8 +8905,12 @@ nav {
   display: block;
 }
 .media-list .media {
+  padding-top: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+}
+.media-list .media + .media {
+  border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
   font-size: 14px;
@@ -8923,6 +8923,9 @@ nav {
   font-size: inherit;
   color: inherit;
 }
+.media-list .media .media-body p {
+  margin-bottom: 10px;
+}
 .media-list .media .media-object {
   display: block;
   max-width: 100%;
@@ -8933,12 +8936,6 @@ nav {
   border: 1px solid #ddd;
   border-radius: 2px;
   transition: all .2s ease-in-out;
-}
-.media-list.smal .media:first-child {
-  padding-top: 15px;
-}
-.media-list.smal .media + .media {
-  border-top: 1px solid #ccc;
 }
 .media-list.smal .media > .media-body:first-child {
   padding-left: 65px;
