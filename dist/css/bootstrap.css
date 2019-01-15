@@ -10798,24 +10798,6 @@ ul.stripped {
   padding-left: 0;
   margin-top: 0;
   list-style: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-.linkslist input[type="checkbox"] ~ ul.menu-list:before,
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
-  display: table;
-  content: " ";
-}
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
-  clear: both;
-}
-.linkslist input[type="checkbox"] ~ ul.menu-list:before,
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
-  display: table;
-  content: " ";
-}
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
-  clear: both;
 }
 .linkslist input[type="checkbox"] ~ ul.menu-list li a {
   display: block;
