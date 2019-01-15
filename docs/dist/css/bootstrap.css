@@ -7177,7 +7177,9 @@ main:after,
 .spacer:before,
 .spacer:after,
 .ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.linkslist input[type="checkbox"] ~ ul.menu-list:before,
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
   display: table;
   content: " ";
 }
@@ -7202,7 +7204,8 @@ main:after,
 .gcitem:after,
 .divider:after,
 .spacer:after,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
   clear: both;
 }
 .center-block {
@@ -10794,6 +10797,7 @@ ul.stripped {
           transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
 }
 .linkslist input[type="checkbox"] ~ ul.menu-list {
+  float: left;
   height: 0;
   padding-left: 0;
   margin-top: 0;
