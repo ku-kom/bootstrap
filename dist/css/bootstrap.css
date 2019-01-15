@@ -8902,11 +8902,14 @@ nav {
 }
 .media-list .media-left,
 .media-list .media-right {
-  min-width: 65px;
+  min-width: 68px;
 }
 .media-list .media-left a,
 .media-list .media-right a {
   display: block;
+}
+.media-list .media-left {
+  padding-right: 13px;
 }
 .media-list .media {
   padding-top: 15px;
@@ -8928,7 +8931,8 @@ nav {
   color: inherit;
 }
 .media-list .media .media-body p {
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 .media-list .media .media-object {
   display: block;
@@ -8942,7 +8946,7 @@ nav {
   transition: all .2s ease-in-out;
 }
 .media-list.smal .media > .media-body:first-child {
-  padding-left: 65px;
+  padding-left: 68px;
 }
 @media (min-width: 768px) {
   .nyhedsliste.smal .media .media-heading {
