@@ -8936,6 +8936,7 @@ nav {
 }
 .media-list .media .media-object {
   display: block;
+  width: 55px;
   max-width: 100%;
   height: auto;
   padding: 2px;
