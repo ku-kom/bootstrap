@@ -8906,7 +8906,7 @@ nav {
 }
 .media-list .media-left,
 .media-list .media-right {
-  min-width: 68px;
+  min-width: 74px;
 }
 .media-list .media-left a,
 .media-list .media-right a {
@@ -8924,6 +8924,7 @@ nav {
   border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
+  margin-bottom: 7px;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -8935,7 +8936,6 @@ nav {
   color: inherit;
 }
 .media-list .media .media-body p {
-  margin-top: 10px;
   margin-bottom: 7px;
 }
 .media-list .media .media-object {
@@ -8943,6 +8943,7 @@ nav {
   width: 55px;
   max-width: 100%;
   height: auto;
+  box-sizing: content-box;
   padding: 2px;
   line-height: 1.5;
   background-color: #fff;
@@ -8951,7 +8952,7 @@ nav {
   transition: all .2s ease-in-out;
 }
 .media-list.smal .media > .media-body:first-child {
-  padding-left: 68px;
+  padding-left: 74px;
 }
 @media (min-width: 768px) {
   .nyhedsliste.smal .media .media-heading {
