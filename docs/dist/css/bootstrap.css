@@ -6702,8 +6702,12 @@ button.list-group-item-danger.active:focus {
 .panel-accordion .panel-collapse {
   border-top: 1px solid #f1f1f1;
 }
-.panel-accordion + .panel-accordion {
+.panel-accordion + .panel-accordion,
+.panel-accordion ~ .panel-accordion {
   margin-top: 4px;
+}
+.accordion-hidden {
+  display: none;
 }
 .embed-responsive {
   position: relative;
