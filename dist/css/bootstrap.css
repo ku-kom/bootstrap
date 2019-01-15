@@ -7177,9 +7177,7 @@ main:after,
 .spacer:before,
 .spacer:after,
 .ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after,
-.linkslist input[type="checkbox"] ~ ul.menu-list:before,
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+.ku-branding .ku-branding-line:after {
   display: table;
   content: " ";
 }
@@ -7204,8 +7202,7 @@ main:after,
 .gcitem:after,
 .divider:after,
 .spacer:after,
-.ku-branding .ku-branding-line:after,
-.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+.ku-branding .ku-branding-line:after {
   clear: both;
 }
 .center-block {
