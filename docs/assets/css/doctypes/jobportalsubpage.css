@@ -12,6 +12,25 @@
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+.pxs_search_field {
+  margin: 0 10px 23px 0;
+  max-width: 35%;
+}
+
 table.vacancy {
   width: 100%;
+  max-width: 100%;
+  margin-bottom: 18px;
+}
+
+table.vacancy>tbody>tr>td,
+table.vacancy>tfoot>tr>td,
+table.vacancy>thead>tr>td,
+table.vacancy>tbody>tr>th,
+table.vacancy>tfoot>tr>th,
+table.vacancy>thead>tr>th {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
 }
