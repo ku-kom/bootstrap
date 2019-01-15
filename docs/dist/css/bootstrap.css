@@ -6705,6 +6705,9 @@ button.list-group-item-danger.active:focus {
 .panel-accordion + .panel-accordion {
   margin-top: 4px;
 }
+.accordion-hidden {
+  display: none;
+}
 .embed-responsive {
   position: relative;
   display: block;
