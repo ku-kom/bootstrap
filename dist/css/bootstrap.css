@@ -10693,7 +10693,7 @@ ul.stripped {
   display: block;
 }
 .gridnyhed .nyhed-tema {
-  margin: 4px 0 2px 0;
+  margin: 4px 0 2px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .36px;
@@ -10797,7 +10797,7 @@ ul.stripped {
           transform: translateY(-50%) rotate(0deg) translate3d(0, 0, 0);
 }
 .linkslist input[type="checkbox"] ~ ul.menu-list {
-  float: left;
+  position: absolute;
   width: 100%;
   height: 0;
   padding-left: 0;
@@ -10806,12 +10806,7 @@ ul.stripped {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
-.linkslist input[type="checkbox"] ~ ul.menu-list li a {
-  display: block;
-  color: inherit;
-}
 .linkslist input[type="checkbox"]:checked ~ ul.menu-list {
-  position: absolute;
   top: 100%;
   left: 0;
   z-index: 180;
@@ -10824,6 +10819,10 @@ ul.stripped {
           transform: scaleY(1);
   -webkit-transform-origin: top;
           transform-origin: top;
+}
+.linkslist input[type="checkbox"]:checked ~ ul.menu-list li a {
+  display: block;
+  color: inherit;
 }
 #warning-banner {
   position: relative;

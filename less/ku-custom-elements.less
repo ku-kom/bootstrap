@@ -55,7 +55,7 @@
   }
 
   .nyhed-tema {
-    margin: 4px 0 2px 0;
+    margin: 4px 0 2px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.36px;
@@ -182,7 +182,7 @@
 
     &~ul.menu-list {
       &:extend(.clearfix all);
-      float: left;
+      position: absolute;
       width: 100%;
       list-style: none;
       padding-left: 0;
@@ -190,17 +190,10 @@
       height: 0;
       transform: scaleY(0);
 
-      li {
-        a {
-          display: block;
-          color: inherit;
-        }
-      }
     }
 
     &:checked~ul.menu-list {
       margin-top: -1px;
-      position: absolute;
       top: 100%;
       left: 0;
       z-index: 180;
@@ -209,35 +202,42 @@
       transform-origin: top;
       transition: transform 0.2s ease-out;
       transform: scaleY(1);
+      li {
+        a {
+          display: block;
+          color: inherit;
+        }
+      }
     }
   }
 }
-
 // Beredskabsbanner
+
 #warning-banner {
   background-color: @beredsskabs-banner-bg;
   padding: 0;
   position: relative;
   width: 100%;
 }
+
 #warning-banner-inner {
   margin: 0 auto;
   padding: 15px 15px 15px 115px;
   max-width: 874px;
   background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
   background-size: 100px;
+
   p {
     font-size: 16px;
   }
 }
+
 #warning-banner-header {
   font-size: 40px;
   margin: 0;
   padding: 0;
 }
-
 // Textboxes
-
 .textbox-grey {
   background-color: @gray-lighter;
   padding: 15px;
