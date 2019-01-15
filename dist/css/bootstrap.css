@@ -10798,6 +10798,8 @@ ul.stripped {
   padding-left: 0;
   margin-top: 0;
   list-style: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 .linkslist input[type="checkbox"] ~ ul.menu-list li a {
   display: block;
