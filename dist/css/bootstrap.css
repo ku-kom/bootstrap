@@ -6396,11 +6396,11 @@ button.list-group-item-danger.active:focus {
     font-size: 16px;
   }
 }
-.panel-title > .small,
+.panel-title > .small > a,
 .panel-title > a,
 .panel-title > small,
 .panel-title > small > a,
-.panel-title > .small > a {
+.panel-title > .small {
   color: inherit;
 }
 .panel-footer {
@@ -6409,20 +6409,20 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.panel > .panel-collapse > .list-group,
-.panel > .list-group {
+.panel > .list-group,
+.panel > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
-.panel > .panel-collapse > .list-group .list-group-item,
-.panel > .list-group .list-group-item {
+.panel > .list-group .list-group-item,
+.panel > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
 }
-.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
-.panel > .list-group:first-child .list-group-item:first-child {
+.panel > .list-group:first-child .list-group-item:first-child,
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
 }
-.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
-.panel > .list-group:last-child .list-group-item:last-child {
+.panel > .list-group:last-child .list-group-item:last-child,
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
 }
 .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
@@ -6435,14 +6435,14 @@ button.list-group-item-danger.active:focus {
 .list-group + .panel-footer {
   border-top-width: 0;
 }
-.panel > .panel-collapse > .table,
+.panel > .table,
 .panel > .table-responsive > .table,
-.panel > .table {
+.panel > .panel-collapse > .table {
   margin-bottom: 0;
 }
-.panel > .panel-collapse > .table caption,
+.panel > .table caption,
 .panel > .table-responsive > .table caption,
-.panel > .table caption {
+.panel > .panel-collapse > .table caption {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -6695,6 +6695,10 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading.open {
   background-color: #fff;
+}
+.panel-accordion > .panel-heading.open .panel-title a:before {
+  right: 8px;
+  content: "\2212";
 }
 .panel-accordion .panel-body {
   padding: 10px;
@@ -8906,7 +8910,7 @@ nav {
 }
 .media-list .media-left,
 .media-list .media-right {
-  min-width: 68px;
+  min-width: 74px;
 }
 .media-list .media-left a,
 .media-list .media-right a {
@@ -8924,6 +8928,7 @@ nav {
   border-top: 1px solid #ccc;
 }
 .media-list .media .media-heading {
+  margin-bottom: 7px;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -8935,7 +8940,6 @@ nav {
   color: inherit;
 }
 .media-list .media .media-body p {
-  margin-top: 10px;
   margin-bottom: 7px;
 }
 .media-list .media .media-object {
@@ -8943,6 +8947,7 @@ nav {
   width: 55px;
   max-width: 100%;
   height: auto;
+  box-sizing: content-box;
   padding: 2px;
   line-height: 1.5;
   background-color: #fff;
@@ -8951,7 +8956,7 @@ nav {
   transition: all .2s ease-in-out;
 }
 .media-list.smal .media > .media-body:first-child {
-  padding-left: 68px;
+  padding-left: 74px;
 }
 @media (min-width: 768px) {
   .nyhedsliste.smal .media .media-heading {
@@ -8985,6 +8990,9 @@ nav {
 }
 .right-side .media-list .media-event .media-body > .media-right {
   float: right;
+}
+.right-side .media-list .media-event .media-body > .media-right .media-object {
+  margin-bottom: 5px;
 }
 #minicalendar .panel-body {
   padding: 6px 0 0;
