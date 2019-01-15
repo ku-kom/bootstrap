@@ -10761,6 +10761,7 @@ ul.stripped {
 }
 .linkslist {
   position: relative;
+  margin: 10px 0;
   background-color: #fff;
 }
 .linkslist .menu-trigger {
@@ -10799,6 +10800,22 @@ ul.stripped {
   list-style: none;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
+}
+.linkslist input[type="checkbox"] ~ ul.menu-list:before,
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+  display: table;
+  content: " ";
+}
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+  clear: both;
+}
+.linkslist input[type="checkbox"] ~ ul.menu-list:before,
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+  display: table;
+  content: " ";
+}
+.linkslist input[type="checkbox"] ~ ul.menu-list:after {
+  clear: both;
 }
 .linkslist input[type="checkbox"] ~ ul.menu-list li a {
   display: block;
