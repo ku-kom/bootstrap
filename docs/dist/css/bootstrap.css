@@ -2891,6 +2891,10 @@ th {
 .table-noborder > thead > tr > th {
   border: 0;
 }
+.table-cellspacing {
+  border-spacing: 5px;
+  border-collapse: separate;
+}
 table col[class*="col-"] {
   position: static;
   display: table-column;
