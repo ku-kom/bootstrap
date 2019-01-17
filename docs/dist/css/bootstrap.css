@@ -9503,7 +9503,7 @@ nav {
   }
 }
 .slick-slider:hover .slick-prev {
-  left: 0;
+  left: -3;
 }
 .slick-slider:hover .slick-prev:before {
   display: inline-block;
@@ -9515,7 +9515,7 @@ nav {
   display: inline-block;
 }
 .slick-slider:hover .slick-next {
-  right: 0;
+  right: -3px;
 }
 .slick-slider:hover .slick-next:before {
   content: "\61";
@@ -9584,8 +9584,7 @@ nav {
   bottom: 0;
   display: block;
   width: 100%;
-  padding: 12px 15px 10px 20px;
-  font-size: 16px;
+  padding: 16px 20px 20px 30px;
   font-size: 14px;
   line-height: 1.3333333;
   color: #252525;
@@ -9595,7 +9594,7 @@ nav {
 .slick-slide.slick-current .caption h2 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.2;
   color: inherit;
 }
@@ -9661,8 +9660,12 @@ nav {
     left: 0;
     z-index: 2;
     overflow: hidden;
+    font-size: 16px;
     background: rgba(255, 255, 255, .9);
     border: 0;
+  }
+  .slick-slide.slick-current .caption h2 {
+    font-size: 26px;
   }
   .slick-slide.slick-current .caption.textblock-left {
     right: auto;
