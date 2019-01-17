@@ -797,15 +797,6 @@
     color: inherit;
     background: transparent;
   }
-  .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
-  .one-three-column .column2 .gridbox.size1.with-img .box2 img,
-  .one-two-column .column2 .gridbox.size1.with-img .box2 img,
-  .single-column .column1 .gridbox.size1.with-img .box2 img,
-  .three-one-column .column1 .gridbox.size1.with-img .box2 img,
-  .two-one-column .column1 .gridbox.size1.with-img .box2 img,
-  .two-one-one-column .column1 .gridbox.size1.with-img .box2 img {
-    max-height: 146%;
-  }
   .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
   .one-one-two-column .column3 .gridbox.with-img:hover .header,
   .one-three-column .column2 .gridbox.with-img:hover .header,
@@ -1008,6 +999,12 @@
   }
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
+  }
+  .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
+  .two-one-column .column2 .gridbox.with-img.size1 .box2 img,
+  .triple-column [class*=column] .gridbox.with-img.size1 .box2 img {
+    max-width: none;
+    height: 100%;
   }
 }
 @supports (-ms-ime-align: auto) {

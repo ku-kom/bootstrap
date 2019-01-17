@@ -1951,5 +1951,7 @@ function shareURL(data) {
   var src = data;
   if (src) {
     window.location.href = encodeURI(src) + encodeURI(url);
+  } else {
+    console.log('Provide data-share attribute');
   }
 }

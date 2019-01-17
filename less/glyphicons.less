@@ -1657,8 +1657,16 @@
 // Social icons to use anywhere
 
 .social-icons {
-    display: inline-block;
-    padding-left: 5px!important;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 5px!important;
+
+  li {
+    + li {
+      margin-left: 6px;
+    }
+  }
 
   .icon {
     width: 31px;
@@ -1802,8 +1810,10 @@
     content: @icon-tablet;
   }
 }
+
 .icon-desktop {
   font-weight: 700;
+
   &:before {
     content: @icon-desktop;
   }
@@ -1848,6 +1858,7 @@
 
 .icon-ku-logo {
   font-size: 20px;
+
   &:before {
     content: @icon-ku-logo;
   }
@@ -1881,6 +1892,7 @@
   &:before {
     color: @gray-999;
   }
+
   &:after {
     top: -3px;
     left: 47%;
@@ -1892,6 +1904,7 @@
     transform: rotateZ(50deg);
     transform-origin: left center;
   }
+
   &[data-forbidden="*"] {
     cursor: pointer;
   }
