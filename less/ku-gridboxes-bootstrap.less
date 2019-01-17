@@ -792,19 +792,6 @@
           color: inherit;
         }
       }
-
-      &.size1 {
-        &.with-img {
-          // .text {
-          //   display: none;
-          // }
-          .box2 {
-            img {
-              max-height: 146%;
-            }
-          }
-        }
-      }
     }
   }
   // Desktop text-down with img style for multiple column spans
@@ -1040,6 +1027,19 @@
       &.size2 {
         .box2 img {
           height: 110%;
+        }
+      }
+    }
+  }
+  // Single columns
+  .one-two-column .column1,
+  .two-one-column .column2,
+  .triple-column [class*=column] {
+    .gridbox.with-img {
+      &.size1 {
+        .box2 img {
+          height: 100%;
+          max-width: none;
         }
       }
     }

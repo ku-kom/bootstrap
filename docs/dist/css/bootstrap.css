@@ -1264,8 +1264,18 @@ template {
   -moz-osx-font-smoothing: grayscale;
 }
 .social-icons {
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   padding-left: 5px!important;
+  list-style: none;
+
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.social-icons li + li {
+  margin-left: 6px;
 }
 .social-icons .icon {
   display: -webkit-flex;
@@ -7562,6 +7572,9 @@ nav {
 .rightbox-normal + .flexiblebox-as-rightbox {
   margin-top: 23px;
 }
+.rightbox-normal + .rightBoxPicture {
+  margin-top: 23px;
+}
 .rightbox-calendar-widget + .rightbox-normal {
   margin-top: 23px;
 }
@@ -7583,6 +7596,12 @@ nav {
   .right-side {
     margin-top: 23px;
   }
+}
+.right-side .rightBoxPicture .panel-head {
+  display: none;
+}
+.right-side .rightBoxPicture .panel-body {
+  border-top: 0;
 }
 .gcitem {
   position: relative;

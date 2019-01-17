@@ -111,6 +111,10 @@ nav {
   + .flexiblebox-as-rightbox {
     margin-top: @grid-gutter-height;
   }
+
+  + .rightBoxPicture {
+    margin-top: @grid-gutter-height;
+  }
 }
 
 .rightbox-calendar-widget {
@@ -136,6 +140,16 @@ nav {
   }
   @media (max-width: @screen-sm-max) {
     margin-top: @grid-gutter-height;
+  }
+
+  .rightBoxPicture {
+    .panel-head {
+      display: none;
+    }
+
+    .panel-body {
+      border-top: 0;
+    }
   }
 }
 // KU grid:
@@ -295,7 +309,6 @@ nav {
 .ie9 img[src$=".svg"] {
   width: 100%;
 }
-
 //Fix viewport width on Windows phone: http://getbootstrap.com/getting-started/#support-ie10-width
 @-ms-viewport {
   width: device-width;
