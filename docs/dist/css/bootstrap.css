@@ -1341,7 +1341,7 @@ template {
   content: "\6c";
 }
 .icon-linkedin:hover {
-  background-color: #0078b6;
+  background-color: #0073b1;
 }
 .icon-coursera:before {
   content: "\63";
@@ -4061,6 +4061,240 @@ fieldset[disabled] .btn-danger.focus {
 .btn-danger .badge {
   color: #7b161a;
   background-color: #fff;
+}
+.btn-social {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+.btn-social.facebook {
+  padding-right: 4px;
+  color: #fff;
+  background-color: #4267b2;
+  border-color: #364e92;
+}
+.btn-social.facebook:focus,
+.btn-social.facebook.focus {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #141c35;
+}
+.btn-social.facebook:hover {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #253665;
+}
+.btn-social.facebook:active,
+.btn-social.facebook.active,
+.btn-social.facebook .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #253665;
+}
+.btn-social.facebook:active:hover,
+.btn-social.facebook.active:hover,
+.btn-social.facebook .open > .dropdown-toggle:hover,
+.btn-social.facebook:active:focus,
+.btn-social.facebook.active:focus,
+.btn-social.facebook .open > .dropdown-toggle:focus,
+.btn-social.facebook:active.focus,
+.btn-social.facebook.active.focus,
+.btn-social.facebook .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #2b4273;
+  border-color: #141c35;
+}
+.btn-social.facebook:active,
+.btn-social.facebook.active,
+.open > .dropdown-toggle.btn-social.facebook {
+  background-image: none;
+}
+.btn-social.facebook.disabled:hover,
+.btn-social.facebook[disabled]:hover,
+fieldset[disabled] .btn-social.facebook:hover,
+.btn-social.facebook.disabled:focus,
+.btn-social.facebook[disabled]:focus,
+fieldset[disabled] .btn-social.facebook:focus,
+.btn-social.facebook.disabled.focus,
+.btn-social.facebook[disabled].focus,
+fieldset[disabled] .btn-social.facebook.focus {
+  background-color: #4267b2;
+  border-color: #364e92;
+}
+.btn-social.facebook .badge {
+  color: #4267b2;
+  background-color: #fff;
+}
+.btn-social.facebook::after {
+  position: relative;
+  top: -2px;
+  margin-left: 2px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  line-height: 18px;
+  text-transform: none;
+  content: "\66";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-social.linkedin {
+  color: #fff;
+  background-color: #0073b1;
+  border-color: #084461;
+}
+.btn-social.linkedin:focus,
+.btn-social.linkedin.focus {
+  color: #fff;
+  background-color: #00527e;
+  border-color: #000;
+}
+.btn-social.linkedin:hover {
+  color: #fff;
+  background-color: #00527e;
+  border-color: #031c28;
+}
+.btn-social.linkedin:active,
+.btn-social.linkedin.active,
+.btn-social.linkedin .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #00527e;
+  border-color: #031c28;
+}
+.btn-social.linkedin:active:hover,
+.btn-social.linkedin.active:hover,
+.btn-social.linkedin .open > .dropdown-toggle:hover,
+.btn-social.linkedin:active:focus,
+.btn-social.linkedin.active:focus,
+.btn-social.linkedin .open > .dropdown-toggle:focus,
+.btn-social.linkedin:active.focus,
+.btn-social.linkedin.active.focus,
+.btn-social.linkedin .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #003b5a;
+  border-color: #000;
+}
+.btn-social.linkedin:active,
+.btn-social.linkedin.active,
+.open > .dropdown-toggle.btn-social.linkedin {
+  background-image: none;
+}
+.btn-social.linkedin.disabled:hover,
+.btn-social.linkedin[disabled]:hover,
+fieldset[disabled] .btn-social.linkedin:hover,
+.btn-social.linkedin.disabled:focus,
+.btn-social.linkedin[disabled]:focus,
+fieldset[disabled] .btn-social.linkedin:focus,
+.btn-social.linkedin.disabled.focus,
+.btn-social.linkedin[disabled].focus,
+fieldset[disabled] .btn-social.linkedin.focus {
+  background-color: #0073b1;
+  border-color: #084461;
+}
+.btn-social.linkedin .badge {
+  color: #0073b1;
+  background-color: #fff;
+}
+.btn-social.linkedin::after {
+  position: relative;
+  top: 2px;
+  margin-left: 7px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  line-height: 16px;
+  text-transform: none;
+  content: "\6c";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-social.twitter {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #0075a2;
+}
+.btn-social.twitter:focus,
+.btn-social.twitter.focus {
+  color: #fff;
+  background-color: #0c85d0;
+  border-color: #001922;
+}
+.btn-social.twitter:hover {
+  color: #fff;
+  background-color: #0c85d0;
+  border-color: #004965;
+}
+.btn-social.twitter:active,
+.btn-social.twitter.active,
+.btn-social.twitter .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #0c85d0;
+  border-color: #004965;
+}
+.btn-social.twitter:active:hover,
+.btn-social.twitter.active:hover,
+.btn-social.twitter .open > .dropdown-toggle:hover,
+.btn-social.twitter:active:focus,
+.btn-social.twitter.active:focus,
+.btn-social.twitter .open > .dropdown-toggle:focus,
+.btn-social.twitter:active.focus,
+.btn-social.twitter.active.focus,
+.btn-social.twitter .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #0a70ae;
+  border-color: #001922;
+}
+.btn-social.twitter:active,
+.btn-social.twitter.active,
+.open > .dropdown-toggle.btn-social.twitter {
+  background-image: none;
+}
+.btn-social.twitter.disabled:hover,
+.btn-social.twitter[disabled]:hover,
+fieldset[disabled] .btn-social.twitter:hover,
+.btn-social.twitter.disabled:focus,
+.btn-social.twitter[disabled]:focus,
+fieldset[disabled] .btn-social.twitter:focus,
+.btn-social.twitter.disabled.focus,
+.btn-social.twitter[disabled].focus,
+fieldset[disabled] .btn-social.twitter.focus {
+  background-color: #1da1f2;
+  border-color: #0075a2;
+}
+.btn-social.twitter .badge {
+  color: #1da1f2;
+  background-color: #fff;
+}
+.btn-social.twitter::after {
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  line-height: 16px;
+  text-transform: none;
+  content: "\74";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .btn-link {
   font-weight: normal;
