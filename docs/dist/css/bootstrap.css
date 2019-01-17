@@ -9584,7 +9584,7 @@ nav {
   bottom: 0;
   display: block;
   width: 100%;
-  padding: 16px 20px 20px 30px;
+  padding: 15px;
   font-size: 14px;
   line-height: 1.3333333;
   color: #252525;
@@ -9659,6 +9659,7 @@ nav {
     position: absolute;
     left: 0;
     z-index: 2;
+    padding: 12px 15px 10px 20px;
     overflow: hidden;
     font-size: 16px;
     background: rgba(255, 255, 255, .9);
@@ -9673,6 +9674,7 @@ nav {
     width: 45%;
     height: 100%;
     padding: 15px;
+    padding: 16px 20px 20px 30px;
   }
   .slick-slide.slick-current .caption.textblock-right {
     right: 0;
@@ -9680,12 +9682,14 @@ nav {
     width: 45%;
     height: 100%;
     padding: 15px;
+    padding: 16px 30px 20px 20px;
   }
   .slick-slide.slick-current .caption.textlabel-left {
     top: 50%;
     bottom: auto;
     width: 45%;
     min-height: 70%;
+    padding: 16px 20px 20px 30px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     -webkit-transform: translateY(-50%);
@@ -9698,6 +9702,7 @@ nav {
     left: auto;
     width: 50%;
     min-height: 70%;
+    padding: 16px 30px 20px 20px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     -webkit-transform: translateY(-50%);
