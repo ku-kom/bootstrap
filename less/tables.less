@@ -37,17 +37,18 @@ th {
   text-align: left;
 }
 // Baseline styles
+
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: @line-height-computed;
   // Cells
-  > tbody,
-   > tfoot,
-  > thead {
+  > tfoot,
+   > thead,
+  > tbody {
     > tr {
-      > td,
-      > th {
+      > th,
+      > td {
         padding: @table-cell-padding;
         line-height: @line-height-base;
         vertical-align: top;
@@ -61,12 +62,12 @@ th {
     border-bottom: 1px solid @table-border-color;
   }
   // Remove top border from thead by default
-  > colgroup + thead,
+  > caption + thead,
    > thead:first-child,
-  > caption + thead {
+  > colgroup + thead {
     > tr:first-child {
-      > td,
-      > th {
+      > th,
+      > td {
         border-top: 0;
       }
     }
@@ -89,6 +90,7 @@ th {
   }
 }
 // KU table columns widths
+
 .pct_10 {
   width: 10%;
 }
@@ -121,13 +123,14 @@ th {
   width: 45%;
 }
 // Condensed table w/ half padding
+
 .table-condensed {
-  > tbody,
-   > tfoot,
-  > thead {
+  > tfoot,
+   > thead,
+  > tbody {
     > tr {
-      > td,
-      > th {
+      > th,
+      > td {
         padding: @table-condensed-cell-padding;
       }
     }
@@ -140,20 +143,20 @@ th {
 .table-bordered {
   border: 1px solid @table-border-color;
 
-  > tbody,
-   > tfoot,
-  > thead {
+  > tfoot,
+   > thead,
+  > tbody {
     > tr {
-      > td,
-      > th {
+      > th,
+      > td {
         border: 1px solid @table-border-color;
       }
     }
   }
 
   > thead > tr {
-    > td,
-    > th {
+    > th,
+    > td {
       border-bottom-width: 2px;
     }
   }
@@ -179,25 +182,30 @@ th {
 // KU specific
 
 .table-noborder {
-  > tbody,
-   > tfoot,
-  > thead {
+  > tfoot,
+   > thead,
+  > tbody {
     > tr {
-      > td,
-      > th {
+      > th,
+      > td {
         border: 0;
       }
     }
   }
 }
-
-
 // KU specific - replaces >table cellspacing="5">:
+
 .table-cellspacing {
   border-spacing: 5px;
   border-collapse: separate;
-}
 
+  > tr {
+    > th,
+    > td {
+      border: 0;
+    }
+  }
+}
 // Table cell sizing
 //
 // Reset default table behavior
@@ -246,12 +254,12 @@ table {
     > .table {
       margin-bottom: 0;
       // Ensure the content doesn't wrap
-      > tbody,
-       > tfoot,
-      > thead {
+      > tfoot,
+       > thead,
+      > tbody {
         > tr {
-          > td,
-          > th {
+          > th,
+          > td {
             white-space: nowrap;
           }
         }
@@ -261,17 +269,17 @@ table {
     > .table-bordered {
       border: 0;
       // Nuke the appropriate borders so that the parent can handle them
-      > tbody,
-       > tfoot,
-      > thead {
+      > tfoot,
+       > thead,
+      > tbody {
         > tr {
-          > td:first-child,
-          > th:first-child {
+          > th:first-child,
+          > td:first-child {
             border-left: 0;
           }
 
-          > td:last-child,
-          > th:last-child {
+          > th:last-child,
+          > td:last-child {
             border-right: 0;
           }
         }
@@ -279,11 +287,11 @@ table {
       // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
       // chances are there will be only one `tr` in a `thead` and that would
       // remove the border altogether.
-      > tfoot,
-      > tbody {
+      > tbody,
+      > tfoot {
         > tr:last-child {
-          > td,
-          > th {
+          > th,
+          > td {
             border-bottom: 0;
           }
         }
