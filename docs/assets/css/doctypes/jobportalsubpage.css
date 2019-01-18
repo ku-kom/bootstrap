@@ -1,5 +1,6 @@
 #pxs_search {
   width: 100%;
+  max-width: 75%;
   height: 32px;
   padding: 6px 10px;
   line-height: 1.5;
@@ -37,4 +38,10 @@ table.vacancies>thead>tr>th {
 
 table.vacancies>tbody>tr:nth-of-type(odd) {
   background-color: #eee;
+}
+
+.google_maps_frame {
+  width: 100%;
+  border: 0;
+  margin-top: 10px;
 }
