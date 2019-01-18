@@ -1623,6 +1623,14 @@ h6 small {
   line-height: 1;
   color: #757575;
 }
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty {
+  display: none;
+}
 .h1,
 .h2,
 .h3,
@@ -1711,7 +1719,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 8px 0 20px 0;
+  margin: 8px 0 15px 0;
 }
 p:empty {
   display: none;
@@ -9149,9 +9157,6 @@ nav {
             flex: 1;
   }
 }
-.media-list {
-  margin-top: 0!important;
-}
 .media-list .media-left,
 .media-list .media-right {
   min-width: 74px;
@@ -9167,6 +9172,9 @@ nav {
   padding-top: 15px;
   padding-bottom: 5px;
   margin-top: 0;
+}
+.media-list .media:first-child {
+  padding-top: 0;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;
