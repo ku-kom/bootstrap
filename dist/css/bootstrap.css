@@ -1711,7 +1711,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 0 0 20px 0;
+  margin: 8px 0 20px 0;
 }
 p:empty {
   display: none;
