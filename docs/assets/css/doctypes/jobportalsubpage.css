@@ -17,20 +17,24 @@
   max-width: 35%;
 }
 
-table.vacancy {
+table.vacancies {
   width: 100%;
   max-width: 100%;
   margin-bottom: 18px;
 }
 
-table.vacancy>tbody>tr>td,
-table.vacancy>tfoot>tr>td,
-table.vacancy>thead>tr>td,
-table.vacancy>tbody>tr>th,
-table.vacancy>tfoot>tr>th,
-table.vacancy>thead>tr>th {
+table.vacancies>tbody>tr>td,
+table.vacancies>tfoot>tr>td,
+table.vacancies>thead>tr>td,
+table.vacancies>tbody>tr>th,
+table.vacancies>tfoot>tr>th,
+table.vacancies>thead>tr>th {
   padding: 8px;
   line-height: 1.5;
   vertical-align: top;
   border-top: 1px solid #ddd;
+}
+
+table.vacancies>tbody>tr:nth-of-type(odd) {
+  background-color: #eee;
 }
