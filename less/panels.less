@@ -56,11 +56,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small,
+  > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 }
@@ -80,8 +80,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .panel-collapse > .list-group,
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -127,9 +127,9 @@
 // watch it go full width.
 
 .panel {
-  > .panel-collapse > .table,
+  > .table,
    > .table-responsive > .table,
-  > .table {
+  > .panel-collapse > .table {
     margin-bottom: 0;
 
     caption {
@@ -425,6 +425,15 @@
     // Open accordion
     &.open {
       background-color: @white-color;
+
+      .panel-title {
+        a {
+          &:before {
+            content: "\2212";
+            right: 8px;
+          }
+        }
+      }
     }
   }
 
@@ -436,7 +445,13 @@
     border-top: 1px solid @semi-white;
   }
 
-  + .panel-accordion {
+  + .panel-accordion,
+  ~ .panel-accordion {
     margin-top: 4px;
   }
+}
+// KU specific style to fix spacing in editor accordion plugin:
+
+.accordion-hidden {
+  display: none;
 }

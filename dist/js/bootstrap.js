@@ -1852,9 +1852,25 @@ if (typeof jQuery === 'undefined') {
  * })(jQuery);
  *
  * ========================================================================*/
+function shareURL(dest) {
+  // Usage, e.g.: onclick="shareURL('facebook')"
+
+  var urlMap = {
+    facebook: 'https://www.facebook.com/sharer/sharer.php?u=',
+    linkedin: 'https://www.linkedin.com/shareArticle?mini=true&amp;url=',
+    twitter: 'https://twitter.com/home?status='
+  };
+  // Get current url
+  var url = window.location.href;
+  var media = dest.toLowerCase().trim();
+  if (media) {
+    window.location.href = encodeURI(urlMap[media]) + encodeURI(url);
+  } else {
+    console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
+  }
+}
 
 (function ($) {
-
   // Language of the current page - fallback to English
   var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
 
@@ -1943,13 +1959,3 @@ if (typeof jQuery === 'undefined') {
   });
 
 })(jQuery);
-
-function shareURL(data) {
-  // Usage, e.g.: onclick="shareURL($(this).data('share'))" data-share="https://www.facebook.com/sharer/sharer.php?u="
-  // Get full url - use to append to paths for sharing on social media
-  var url = window.location.href;
-  var src = data;
-  if (src) {
-    window.location.href = encodeURI(src) + encodeURI(url);
-  }
-}

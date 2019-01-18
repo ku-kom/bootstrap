@@ -215,7 +215,7 @@
 
   &:before {
     font-size: 32px;
-    opacity: 0.65;
+    opacity: 0.55;
     color: @white-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -230,7 +230,7 @@
 .slick-slider {
   &:hover {
     .slick-prev {
-      left: 0;
+      left: -3px;
       .icon-arrow-back;
 
       &:before {
@@ -239,7 +239,7 @@
     }
 
     .slick-next {
-      right: 0;
+      right: -3px;
 
       &:before {
         content: @icon-arrow;
@@ -332,10 +332,9 @@
       position: relative;
       bottom: 0;
       width: 100%;
-      font-size: 16px;
       letter-spacing: 0.7px;
       line-height: @line-height-small;
-      padding: 12px 15px 10px 20px;
+      padding: 15px;
       font-size: 14px;
       color: @text-color;
       background: @gray-f5;
@@ -344,7 +343,7 @@
         margin-top: 0;
         margin-bottom: 10px;
         color: inherit;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 1.2;
       }
 
@@ -414,12 +413,17 @@
   @media (min-width: @screen-sm) {
     &.slick-current {
       .caption {
+        font-size: 16px;
+        padding: 12px 15px 10px 20px;
         overflow: hidden;
         position: absolute;
         left: 0;
         z-index: 2;
         background: rgba(@white-color, .9);
         border: 0;
+        h2 {
+          font-size: 26px;
+        }
 
         &.textblock-left {
           right: auto;
@@ -427,6 +431,7 @@
           padding: 15px;
           width: 45%;
           height: 100%;
+          padding: 16px 20px 20px 30px;
         }
 
         &.textblock-right {
@@ -435,6 +440,7 @@
           padding: 15px;
           width: 45%;
           height: 100%;
+          padding: 16px 30px 20px 20px;
         }
 
         &.textlabel-left {
@@ -443,6 +449,7 @@
           transform: translateY(-50%);
           width: 45%;
           min-height: 70%;
+          padding: 16px 20px 20px 30px;
           .border-right-radius(2px);
         }
 
@@ -454,6 +461,7 @@
           transform: translateY(-50%);
           width: 50%;
           min-height: 70%;
+          padding: 16px 30px 20px 20px;
           .border-left-radius(2px);
         }
 

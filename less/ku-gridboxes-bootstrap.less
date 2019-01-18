@@ -515,24 +515,15 @@
     }
   }
 }
-@media (max-width: @screen-xs) {
-  // All flexboxes now require dynamic height as they are stacked in mobile
-  .gridbox {
-    height: auto;
-
-    .text {
-      display: none;
-    }
-
-    .box1 {
-      flex: 0 1 auto;
-    }
-  }
-
+@media all and (max-width: @screen-xs) {
   .gridbox {
     &.size1 {
       .text {
         display: block;
+      }
+
+      .box2 {
+        flex: 1 0 @gridbox2;
       }
     }
 
@@ -579,8 +570,38 @@
     }
   }
 }
-@media (min-width: @screen-xs-flip) {
-  // Set gridbox height for mobile upwards
+@media all and (max-width: @screen-xs-max) {
+  // All flexboxes now require dynamic height as they are stacked in mobile
+  .gridbox {
+    height: auto;
+
+    .text {
+      display: none;
+    }
+
+    .box1 {
+      flex: 0 1 auto;
+    }
+  }
+
+  .gridbox {
+    &.size1 {
+      &.with-img {
+        .box2 {
+          flex: 1 0 @gridbox2;
+
+          img {
+            max-width: 100%;
+            width: 100%;
+            max-height: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: @screen-sm) {
+  // Set gridbox height for tablet upwards
   .gridbox {
     &.size1 {
       height: @gridbox1;
@@ -595,20 +616,7 @@
     }
   }
 }
-@media (max-width: @screen-xs-max) {
-  .gridbox {
-    &.size1 {
-      .box2 {
-        img {
-          max-width: 100%;
-          width: 100%;
-          max-height: none;
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+@media all and (min-width: @screen-xs) and (max-width: @screen-sm-max) {
   // Tablet
   .gridbox {
     .img-text-aligned();
@@ -714,7 +722,7 @@
     }
   }
 }
-@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+@media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet: For full-width frontpage only
   .FullWidthFrontpage {
     .col-sm-6,
@@ -739,7 +747,7 @@
     }
   }
 }
-@media (min-width: @screen-md) {
+@media all and (min-width: @screen-md) {
   //Frontpage only
   .one-one-two-column .column1,
   .one-one-two-column .column2,
@@ -782,19 +790,6 @@
         .header {
           background: transparent;
           color: inherit;
-        }
-      }
-
-      &.size1 {
-        &.with-img {
-          // .text {
-          //   display: none;
-          // }
-          .box2 {
-            img {
-              max-height: 146%;
-            }
-          }
         }
       }
     }
@@ -1032,6 +1027,19 @@
       &.size2 {
         .box2 img {
           height: 110%;
+        }
+      }
+    }
+  }
+  // Single columns
+  .one-two-column .column1,
+  .two-one-column .column2,
+  .triple-column [class*=column] {
+    .gridbox.with-img {
+      &.size1 {
+        .box2 img {
+          height: 100%;
+          max-width: none;
         }
       }
     }

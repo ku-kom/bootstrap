@@ -466,20 +466,14 @@
   padding-right: 10px;
   background: transparent;
 }
-@media (max-width: 480px) {
-  .gridbox {
-    height: auto;
-  }
-  .gridbox .text {
-    display: none;
-  }
-  .gridbox .box1 {
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-  }
+@media all and (max-width: 480px) {
   .gridbox.size1 .text {
     display: block;
+  }
+  .gridbox.size1 .box2 {
+    -webkit-flex: 1 0 185px;
+        -ms-flex: 1 0 185px;
+            flex: 1 0 185px;
   }
   .gridbox.size2.with-img {
     height: 220px;
@@ -506,7 +500,30 @@
     color: #252525;
   }
 }
-@media (min-width: 481px) {
+@media all and (max-width: 767px) {
+  .gridbox {
+    height: auto;
+  }
+  .gridbox .text {
+    display: none;
+  }
+  .gridbox .box1 {
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .gridbox.size1.with-img .box2 {
+    -webkit-flex: 1 0 185px;
+        -ms-flex: 1 0 185px;
+            flex: 1 0 185px;
+  }
+  .gridbox.size1.with-img .box2 img {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+}
+@media all and (min-width: 768px) {
   .gridbox.size1 {
     height: 289px;
   }
@@ -517,14 +534,7 @@
     height: 133px;
   }
 }
-@media (max-width: 767px) {
-  .gridbox.size1 .box2 img {
-    width: 100%;
-    max-width: 100%;
-    max-height: none;
-  }
-}
-@media (min-width: 480px) and (max-width: 991px) {
+@media all and (min-width: 480px) and (max-width: 991px) {
   .gridbox.size1 .box2 {
     -webkit-flex: 0 1 185px;
         -ms-flex: 0 1 185px;
@@ -622,7 +632,7 @@
     color: inherit;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
   .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img,
@@ -646,7 +656,7 @@
     display: none;
   }
 }
-@media (min-width: 992px) {
+@media all and (min-width: 992px) {
   .one-one-two-column .column1 .gridbox.with-img.outlined,
   .one-one-two-column .column2 .gridbox.with-img.outlined,
   .two-one-one-column .column2 .gridbox.with-img.outlined,
@@ -786,15 +796,6 @@
   .two-one-one-column .column1 .gridbox.outlined .header {
     color: inherit;
     background: transparent;
-  }
-  .one-one-two-column .column3 .gridbox.size1.with-img .box2 img,
-  .one-three-column .column2 .gridbox.size1.with-img .box2 img,
-  .one-two-column .column2 .gridbox.size1.with-img .box2 img,
-  .single-column .column1 .gridbox.size1.with-img .box2 img,
-  .three-one-column .column1 .gridbox.size1.with-img .box2 img,
-  .two-one-column .column1 .gridbox.size1.with-img .box2 img,
-  .two-one-one-column .column1 .gridbox.size1.with-img .box2 img {
-    max-height: 146%;
   }
   .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
   .one-one-two-column .column3 .gridbox.with-img:hover .header,
@@ -970,7 +971,7 @@
     bottom: 9px;
   }
 }
-@media (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
     overflow: auto;
@@ -998,6 +999,12 @@
   }
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
+  }
+  .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
+  .two-one-column .column2 .gridbox.with-img.size1 .box2 img,
+  .triple-column [class*=column] .gridbox.with-img.size1 .box2 img {
+    max-width: none;
+    height: 100%;
   }
 }
 @supports (-ms-ime-align: auto) {
