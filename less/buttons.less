@@ -96,6 +96,53 @@
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 }
+// KU specific:
+
+.btn-social {
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+
+  &.facebook {
+    .button-variant(@white-color; @ku-facebook; #364e92);
+    padding-right: 4px;
+
+    &::after {
+      .icon;
+      content: @icon-facebook;
+      top: -2px;
+      margin-left: 2px;
+      line-height: 18px;
+      font-size: 18px;
+    }
+  }
+
+  &.linkedin {
+    .button-variant(@white-color; @ku-linkedin; #084461);
+
+    &::after {
+      .icon;
+      content: @icon-linkedin;
+      line-height: 16px;
+      font-size: 22px;
+      top: 2px;
+      margin-left: 7px;
+    }
+  }
+
+  &.twitter {
+    .button-variant(@white-color; @ku-twitter; #0075a2);
+
+    &::after {
+      .icon;
+      content: @icon-twitter;
+      line-height: 16px;
+      font-size: 20px;
+      top: 2px;
+      margin-left: 5px;
+    }
+  }
+}
 // Link buttons
 // -------------------------
 // Make a button look and behave like a link
@@ -175,6 +222,7 @@ input[type="button"] {
   }
 }
 // KU specific:
+
 .btn {
   &.toggleAccordions {
     position: relative;
