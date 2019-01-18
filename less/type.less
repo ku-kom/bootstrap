@@ -30,6 +30,17 @@ h6 {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:empty {
+    display: none;
+  }
+}
+
 .h1,
 .h2,
 .h3,
@@ -106,7 +117,7 @@ h6 {
 // -------------------------
 
 p {
-  margin: 8px 0 20px 0;
+  margin: 8px 0 15px 0;
 
   &:empty {
     //Hide empty p-tags comming from the editor
