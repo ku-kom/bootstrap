@@ -1711,7 +1711,7 @@ h6 {
   font-weight: 600;
 }
 p {
-  margin: 0 0 20px 0;
+  margin: 8px 0 20px 0;
 }
 p:empty {
   display: none;
@@ -1949,6 +1949,10 @@ blockquote.full-width {
   width: 100%;
   padding: 0;
   margin: 5px 0;
+}
+.rightbox blockquote,
+.single-column .column1 blockquote {
+  width: 100%!important;
 }
 address {
   margin-bottom: 18px;
@@ -4067,12 +4071,28 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-social {
+  position: relative;
+  padding-right: 30px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .7px;
 }
+.btn-social::after {
+  position: relative;
+  position: absolute!important;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .btn-social.facebook {
-  padding-right: 4px;
   color: #fff;
   background-color: #4267b2;
   border-color: #364e92;
@@ -4130,23 +4150,10 @@ fieldset[disabled] .btn-social.facebook.focus {
   background-color: #fff;
 }
 .btn-social.facebook::after {
-  position: relative;
-  top: -2px;
+  top: 2px;
   margin-left: 2px;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  line-height: 18px;
-  text-transform: none;
+  font-size: 27px;
   content: "\66";
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .btn-social.linkedin {
   color: #fff;
@@ -4206,23 +4213,10 @@ fieldset[disabled] .btn-social.linkedin.focus {
   background-color: #fff;
 }
 .btn-social.linkedin::after {
-  position: relative;
-  top: 2px;
+  top: 5px;
   margin-left: 7px;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  line-height: 16px;
-  text-transform: none;
+  font-size: 24px;
   content: "\6c";
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .btn-social.twitter {
   color: #fff;
@@ -4282,23 +4276,10 @@ fieldset[disabled] .btn-social.twitter.focus {
   background-color: #fff;
 }
 .btn-social.twitter::after {
-  position: relative;
-  top: 2px;
+  top: 4px;
   margin-left: 5px;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  line-height: 16px;
-  text-transform: none;
+  font-size: 22px;
   content: "\74";
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .btn-link {
   font-weight: normal;
@@ -7854,10 +7835,6 @@ nav {
   .gccolumn[class^="col-"][class$="-12"] {
     margin-top: 23px;
   }
-}
-.rightbox blockquote,
-.single-column .column1 blockquote {
-  width: 100%!important;
 }
 .divider {
   margin: 10px 0;
