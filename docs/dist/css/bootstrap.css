@@ -6172,10 +6172,6 @@ figure img {
   max-width: 100%;
   height: auto;
 }
-.figure + *,
-figure + * {
-  clear: both;
-}
 img.img-left {
   float: left;
   margin: 5px 20px 10px 0;
