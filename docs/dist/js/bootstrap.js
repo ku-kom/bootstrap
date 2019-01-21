@@ -1862,9 +1862,16 @@ function shareURL(dest) {
   };
   // Get current url
   var url = window.location.href;
-  var media = dest.toLowerCase().trim();
-  if (media) {
-    window.location.href = encodeURI(urlMap[media]) + encodeURI(url);
+  var param = dest.toLowerCase().trim();
+
+  var media = $.map(urlMap, function (i, e) {
+    // return keys
+    return e;
+  });
+
+  if ($.inArray(param, media) !== -1) {
+    // if supplied parameter matches one of the possible media channels, continue the execution.
+    window.location.href = encodeURI(urlMap[param]) + encodeURI(url);
   } else {
     console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
   }
