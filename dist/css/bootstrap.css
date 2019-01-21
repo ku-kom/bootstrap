@@ -6144,8 +6144,7 @@ a.thumbnail:focus {
 }
 .figure,
 figure {
-  display: inline-block;
-  max-width: 100%;
+  display: table;
   clear: both;
 }
 .figure.image,
@@ -6191,6 +6190,7 @@ figure img {
 }
 .figure-caption,
 figcaption {
+  display: table-caption;
   width: 100%;
   padding: 10px 10px 10px 0;
   font-size: .9em;
