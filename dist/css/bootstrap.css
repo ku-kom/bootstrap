@@ -9211,7 +9211,7 @@ nav {
 @media (min-width: 768px) {
   .nyhedsliste.smal .media .media-heading {
     display: inline-block;
-    max-width: 84%;
+    max-width: 82%;
   }
 }
 .nyhedsliste.smal .media .nyhedsliste_dato {
