@@ -101,27 +101,27 @@ nav {
   }
 }
 
-.flexiblebox-as-rightbox {
-  + .rightbox-normal {
-    margin-top: @grid-gutter-height;
-  }
-}
-
-.rightbox-normal {
-  + .flexiblebox-as-rightbox {
-    margin-top: @grid-gutter-height;
-  }
-
-  + .rightBoxPicture {
-    margin-top: @grid-gutter-height;
-  }
-}
-
-.rightbox-calendar-widget {
-  + .rightbox-normal {
-    margin-top: @grid-gutter-height;
-  }
-}
+// .flexiblebox-as-rightbox {
+//   + .rightbox-normal {
+//     margin-top: @grid-gutter-height;
+//   }
+// }
+//
+// .rightbox-normal {
+//   + .flexiblebox-as-rightbox {
+//     margin-top: @grid-gutter-height;
+//   }
+//
+//   + .rightBoxPicture {
+//     margin-top: @grid-gutter-height;
+//   }
+// }
+//
+// .rightbox-calendar-widget {
+//   + .rightbox-normal {
+//     margin-top: @grid-gutter-height;
+//   }
+// }
 
 .right-side {
   .pull-right;
@@ -158,9 +158,9 @@ nav {
   position: relative;
   &:extend(.clearfix all);
 
-  & + .gcitem {
-    margin-top: @grid-gutter-height;
-  }
+
+    margin-bottom: @grid-gutter-height;
+
 
   &.picture h1.title {
     display: none;
@@ -170,7 +170,7 @@ nav {
   .gccolumn {
     &[class^="col-"][class$="-12"] {
       // Stacking full width columns i tablet view
-      margin-top: @grid-gutter-height;
+      margin-bottom: @grid-gutter-height;
     }
   }
 }

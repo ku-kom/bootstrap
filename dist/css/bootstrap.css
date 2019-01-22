@@ -7795,18 +7795,6 @@ nav {
   max-width: 100%;
   height: auto;
 }
-.flexiblebox-as-rightbox + .rightbox-normal {
-  margin-top: 23px;
-}
-.rightbox-normal + .flexiblebox-as-rightbox {
-  margin-top: 23px;
-}
-.rightbox-normal + .rightBoxPicture {
-  margin-top: 23px;
-}
-.rightbox-calendar-widget + .rightbox-normal {
-  margin-top: 23px;
-}
 .right-side {
   float: right;
 }
@@ -7834,16 +7822,14 @@ nav {
 }
 .gcitem {
   position: relative;
-}
-.gcitem + .gcitem {
-  margin-top: 23px;
+  margin-bottom: 23px;
 }
 .gcitem.picture h1.title {
   display: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .gccolumn[class^="col-"][class$="-12"] {
-    margin-top: 23px;
+    margin-bottom: 23px;
   }
 }
 .divider {
