@@ -1724,6 +1724,9 @@ p {
 p:empty {
   display: none;
 }
+p:empty + p {
+  margin-top: 0;
+}
 .small,
 small {
   font-size: 91%;
@@ -7747,8 +7750,8 @@ nav {
       -ms-flex: none;
           flex: none;
 }
-.main-content .row {
-  margin-bottom: 23px;
+.main-content .row + .row {
+  margin-top: 23px;
 }
 @media (max-width: 991px) {
   .main-content [class*="col-"] + [class*="col-"] {

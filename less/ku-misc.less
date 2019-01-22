@@ -38,9 +38,9 @@ nav {
 
 .main-content {
   .row {
-
-      margin-bottom: @grid-gutter-height;
-
+    + .row {
+      margin-top: @grid-gutter-height;
+    }
   }
   @media (max-width: @screen-sm-max) {
     [class*="col-"] {
