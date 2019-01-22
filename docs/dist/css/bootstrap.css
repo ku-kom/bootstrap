@@ -6606,9 +6606,6 @@ button.list-group-item-danger.active:focus {
 .panel {
   background-color: #fff;
 }
-.panel + .panel {
-  margin-top: 23px;
-}
 .panel-body {
   padding: 10px;
 }
@@ -7795,16 +7792,17 @@ nav {
   max-width: 100%;
   height: auto;
 }
+.rightbox-normal,
+.flexiblebox-as-rightbox,
+.rightbox-calendar-widget,
+.rightBoxPicture {
+  margin-bottom: 23px;
+}
 .right-side {
   float: right;
 }
 @media (min-width: 768px) {
   .right-side .gcitem:first-child {
-    margin-top: 23px;
-  }
-}
-@media (max-width: 991px) {
-  .right-side {
     margin-top: 23px;
   }
 }
