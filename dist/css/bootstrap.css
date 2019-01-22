@@ -7799,13 +7799,7 @@ nav {
   float: right;
 }
 @media (min-width: 768px) {
-  .right-side .flexiblebox-as-rightbox:first-child {
-    margin-top: 23px;
-  }
-  .right-side .rightbox-normal:first-child {
-    margin-top: 8px;
-  }
-  .right-side .flexiblebox:first-child {
+  .right-side .gcitem:first-child {
     margin-top: 23px;
   }
 }
@@ -7824,8 +7818,12 @@ nav {
   position: relative;
   margin-bottom: 23px;
 }
-.gcitem.picture h1.title {
+.gcitem.picture .title,
+.gcitem .picture-visning2 .title {
   display: none;
+}
+.gccolumn .gcitem:last-child {
+  margin-bottom: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .gccolumn[class^="col-"][class$="-12"] {
