@@ -1871,7 +1871,11 @@ function shareURL(dest) {
 
   if ($.inArray(param, media) !== -1) {
     // if supplied parameter matches one of the possible media channels, continue the execution.
-    window.location.href = encodeURI(urlMap[param]) + encodeURI(url);
+    // LinkedIn has extra parametres appending the url:
+    var isLinkedin = (param == 'linkedin') ? true : false;
+    var suffix = (isLinkedin === true) ? '&amp;title=&amp;summary=&amp;source=' : '';
+    // Open in a new window:
+    window.open(encodeURI(urlMap[param]) + encodeURI(url) + suffix);
   } else {
     console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
   }

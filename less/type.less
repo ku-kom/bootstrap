@@ -122,6 +122,10 @@ p {
   &:empty {
     //Hide empty p-tags comming from the editor
     display: none;
+
+    &+ p {
+      margin-top: 0;
+    }
   }
 }
 // .lead {

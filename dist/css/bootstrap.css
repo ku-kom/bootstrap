@@ -1724,6 +1724,9 @@ p {
 p:empty {
   display: none;
 }
+p:empty + p {
+  margin-top: 0;
+}
 .small,
 small {
   font-size: 91%;
