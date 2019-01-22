@@ -7750,8 +7750,8 @@ nav {
       -ms-flex: none;
           flex: none;
 }
-.main-content .row + .row {
-  margin-top: 23px;
+.main-content .row {
+  margin-bottom: 23px;
 }
 @media (max-width: 991px) {
   .main-content [class*="col-"] + [class*="col-"] {
@@ -7766,10 +7766,10 @@ nav {
     margin-top: 0;
   }
 }
-#gridsidebar .row [class*="col-"] + [class*="col-"] {
-  margin-top: 23px;
+#gridsidebar .row {
+  margin-bottom: 23px;
 }
-#gridsidebar .row + .row {
+#gridsidebar .row [class*="col-"] + [class*="col-"] {
   margin-top: 23px;
 }
 .main-area {
