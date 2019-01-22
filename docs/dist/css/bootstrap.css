@@ -7747,8 +7747,8 @@ nav {
       -ms-flex: none;
           flex: none;
 }
-.main-content .row + .row {
-  margin-top: 23px;
+.main-content .row {
+  margin-bottom: 23px;
 }
 @media (max-width: 991px) {
   .main-content [class*="col-"] + [class*="col-"] {
