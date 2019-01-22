@@ -7751,8 +7751,8 @@ nav {
   margin-bottom: 23px;
 }
 @media (max-width: 991px) {
-  .main-content [class*="col-"] + [class*="col-"] {
-    margin-top: 23px;
+  .main-content [class*="col-"] {
+    margin-bottom: 23px;
   }
 }
 #main-content > p:first-child {
@@ -7766,8 +7766,8 @@ nav {
 #gridsidebar .row {
   margin-bottom: 23px;
 }
-#gridsidebar .row [class*="col-"] + [class*="col-"] {
-  margin-top: 23px;
+#gridsidebar .row [class*="col-"] {
+  margin-bottom: 23px;
 }
 .main-area {
   margin-bottom: 10px;
@@ -7792,10 +7792,10 @@ nav {
   max-width: 100%;
   height: auto;
 }
-.rightbox-normal,
 .flexiblebox-as-rightbox,
+.rightBoxPicture,
 .rightbox-calendar-widget,
-.rightBoxPicture {
+.rightbox-normal {
   margin-bottom: 23px;
 }
 .right-side {
@@ -7803,6 +7803,12 @@ nav {
 }
 @media (min-width: 768px) {
   .right-side .gcitem:first-child {
+    margin-top: 23px;
+  }
+  .right-side .rightbox-normal:first-child {
+    margin-top: 8px;
+  }
+  .right-side .flexiblebox:first-child {
     margin-top: 23px;
   }
 }

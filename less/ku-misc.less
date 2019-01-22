@@ -42,9 +42,7 @@ nav {
   }
   @media (max-width: @screen-sm-max) {
     [class*="col-"] {
-      + [class*="col-"] {
-        margin-top: @grid-gutter-height;
-      }
+      margin-bottom: @grid-gutter-height;
     }
   }
 }
@@ -70,9 +68,7 @@ nav {
 #gridsidebar {
   .row {
     [class*="col-"] {
-      + [class*="col-"] {
-        margin-top: @grid-gutter-height;
-      }
+      margin-bottom: @grid-gutter-height;
     }
     margin-bottom: @grid-gutter-height;
   }
@@ -95,31 +91,12 @@ nav {
     .img-responsive;
   }
 }
-// .flexiblebox-as-rightbox {
-//   + .rightbox-normal {
-//     margin-top: @grid-gutter-height;
-//   }
-// }
-//
-// .rightbox-normal {
-//   + .flexiblebox-as-rightbox {
-//     margin-top: @grid-gutter-height;
-//   }
-//
-//   + .rightBoxPicture {
-//     margin-top: @grid-gutter-height;
-//   }
-// }
-//
-// .rightbox-calendar-widget {
-//   + .rightbox-normal {
-//     margin-top: @grid-gutter-height;
-//   }
-// }
 
-.rightbox-normal, .flexiblebox-as-rightbox, .rightbox-calendar-widget, .rightBoxPicture {
-
-margin-bottom: @grid-gutter-height;
+.flexiblebox-as-rightbox,
+.rightBoxPicture,
+.rightbox-calendar-widget,
+.rightbox-normal {
+  margin-bottom: @grid-gutter-height;
 }
 
 .right-side {
@@ -128,17 +105,15 @@ margin-bottom: @grid-gutter-height;
     .gcitem:first-child {
       margin-top: @grid-gutter-height;
     }
-    // .rightbox-normal:first-child {
-    //   margin-top: 8px;
-    // }
-    //
-    // .flexiblebox:first-child {
-    //   margin-top: @grid-gutter-height;
-    // }
+
+    .rightbox-normal:first-child {
+      margin-top: 8px;
+    }
+
+    .flexiblebox:first-child {
+      margin-top: @grid-gutter-height;
+    }
   }
-  // @media (max-width: @screen-sm-max) {
-  //   margin-top: @grid-gutter-height;
-  // }
 
   .rightBoxPicture {
     .panel-head {
