@@ -38,48 +38,18 @@ nav {
 
 .main-content {
   .row {
-    + .row {
-      margin-top: @grid-gutter-height;
-    }
+    margin-bottom: @grid-gutter-height;
   }
   @media (max-width: @screen-sm-max) {
     [class*="col-"] {
-      + [class*="col-"] {
-        margin-top: @grid-gutter-height;
+      &:not(:last-child) {
+        margin-bottom: @grid-gutter-height;
       }
     }
   }
-}
 
-#main-content > p:first-child {
-  margin-top: 0;
-}
-
-.main-area {
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-    .row {
-      &.double-column {
-        .col-sm-6 {
-          + .col-sm-6 {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-#gridsidebar {
-  .row {
-    [class*="col-"] {
-      + [class*="col-"] {
-        margin-top: @grid-gutter-height;
-      }
-    }
-
-    + .row {
-      margin-top: @grid-gutter-height;
-    }
+  & > p:first-child {
+    margin-top: 0;
   }
 }
 
@@ -99,34 +69,61 @@ nav {
   img {
     .img-responsive;
   }
-}
-
-.flexiblebox-as-rightbox {
-  + .rightbox-normal {
-    margin-top: @grid-gutter-height;
+  // KU grid:
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    .row {
+      &.double-column {
+        .col-sm-6 {
+          + .col-sm-6 {
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 }
 
+#gridsidebar {
+  .row {
+    [class*="col-"] {
+      &:not(:last-child) {
+        margin-bottom: @grid-gutter-height;
+      }
+    }
+    margin-bottom: @grid-gutter-height;
+  }
+}
+
+.gcitem {
+  position: relative;
+  &:extend(.clearfix all);
+  margin-bottom: @grid-gutter-height;
+
+  &.picture .title,
+  .picture-visning2 .title {
+    display: none;
+  }
+}
+
+.gccolumn {
+  .gcitem {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.flexiblebox-as-rightbox,
+.rightBoxPicture,
+.rightbox-calendar-widget,
 .rightbox-normal {
-  + .flexiblebox-as-rightbox {
-    margin-top: @grid-gutter-height;
-  }
-
-  + .rightBoxPicture {
-    margin-top: @grid-gutter-height;
-  }
-}
-
-.rightbox-calendar-widget {
-  + .rightbox-normal {
-    margin-top: @grid-gutter-height;
-  }
+  margin-bottom: @grid-gutter-height;
 }
 
 .right-side {
   .pull-right;
   @media (min-width: @screen-sm) {
-    .flexiblebox-as-rightbox:first-child {
+    .gcitem:first-child {
       margin-top: @grid-gutter-height;
     }
 
@@ -137,9 +134,6 @@ nav {
     .flexiblebox:first-child {
       margin-top: @grid-gutter-height;
     }
-  }
-  @media (max-width: @screen-sm-max) {
-    margin-top: @grid-gutter-height;
   }
 
   .rightBoxPicture {
@@ -152,25 +146,11 @@ nav {
     }
   }
 }
-// KU grid:
-
-.gcitem {
-  position: relative;
-  &:extend(.clearfix all);
-
-  & + .gcitem {
-    margin-top: @grid-gutter-height;
-  }
-
-  &.picture h1.title {
-    display: none;
-  }
-}
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   .gccolumn {
     &[class^="col-"][class$="-12"] {
       // Stacking full width columns i tablet view
-      margin-top: @grid-gutter-height;
+      margin-bottom: @grid-gutter-height;
     }
   }
 }
