@@ -402,15 +402,17 @@
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
     .caption {
       // Special caption width for iPad
-      &.textblock-left,
-      &.textblock-right,
-      &.textlabel-left,
-      &.textlabel-right {
-        width: 50%;
-      }
+      // &.textblock-left,
+      // &.textblock-right,
+      // &.textlabel-left,
+      // &.textlabel-right {
+        position: absolute!important;
+        left: 0;
+        bottom: 0;
+      // }
     }
   }
-  @media (min-width: @screen-sm) {
+  @media (min-width: @screen-md) {
     &.slick-current {
       .caption {
         font-size: 16px;

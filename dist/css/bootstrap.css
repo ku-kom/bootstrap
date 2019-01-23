@@ -7750,9 +7750,15 @@ nav {
 .main-content .row {
   margin-bottom: 23px;
 }
+.main-content .row:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 991px) {
-  .main-content [class*="col-"]:not(:last-child) {
+  .main-content [class*="col-"] {
     margin-bottom: 23px;
+  }
+  .main-content [class*="col-"]:last-child {
+    margin-bottom: 0;
   }
 }
 .main-content > p:first-child {
@@ -7789,8 +7795,11 @@ nav {
 #gridsidebar .row {
   margin-bottom: 23px;
 }
-#gridsidebar .row [class*="col-"]:not(:last-child) {
+#gridsidebar .row [class*="col-"] {
   margin-bottom: 23px;
+}
+#gridsidebar .row [class*="col-"]:last-child {
+  margin-bottom: 0;
 }
 .gcitem {
   position: relative;
@@ -9889,14 +9898,13 @@ nav {
   text-decoration: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .slick-slide .caption.textblock-left,
-  .slick-slide .caption.textblock-right,
-  .slick-slide .caption.textlabel-left,
-  .slick-slide .caption.textlabel-right {
-    width: 50%;
+  .slick-slide .caption {
+    position: absolute!important;
+    bottom: 0;
+    left: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .slick-slide.slick-current .caption {
     position: absolute;
     left: 0;
