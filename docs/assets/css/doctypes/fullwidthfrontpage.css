@@ -1,9 +1,7 @@
 /* Front page styling */
-
 /* .ku-branding-text-major, .ku-branding-text-sub {
   display: none;
 } */
-
 /* .ku-branding .ku-branding-text {
   background: url('https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg') 5px 66% no-repeat;
   background-size: 75%;
@@ -30,10 +28,15 @@ html:lang(en) .ku-branding .ku-branding-text {
     background: url('https://bootstrap.secure.ku.dk/img/ku_header_en.svg') left 72% no-repeat;
   }
 } */
-
 .main-content {
   padding-top: 0;
   padding-bottom: 23px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .gcrow:not(.double-column):not(.quad-column) [class*=col-sm-6] {
+    margin-bottom: 0;
+  }
 }
 
 .topbar-logo {
@@ -67,7 +70,7 @@ html:lang(en) .ku-branding .ku-branding-text {
 
 .jumpboard .jumpcolumn {
   margin-bottom: 0 !important;
-  margin-top: 0!important;
+  margin-top: 0 !important;
   border-right: 1px solid #fff;
   padding-left: 23px;
   padding-right: 23px;
@@ -145,9 +148,11 @@ html:lang(en) .ku-branding .ku-branding-text {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
     padding-top: 23px;
   }
+
   .jumpboard:after {
     position: absolute;
     top: 47%;
@@ -158,12 +163,14 @@ html:lang(en) .ku-branding .ku-branding-text {
     -webkit-transform: translateY(-47%);
     transform: translateY(-47%);
   }
+
   .jumpboard .jumpcolumn {
     border-right: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
+
   /*Target first row - make it full width for sliders*/
   /* .FullWidthFrontpage .main-content .row:first-child .gccolumn.column1 {
     padding-right: 0;
@@ -176,16 +183,19 @@ html:lang(en) .ku-branding .ku-branding-text {
     background: #f8f8f5;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .jumpboard>.jumpcolumn {
     max-height: none;
     padding: 0;
   }
+
   .jumpboard .jumpcolumn:first-child .jumpheading {
     border-top: 1px solid #ccc;
   }
+
   .jumpboard .jumpcolumn .jumpheading {
     border-bottom: 1px solid #ccc;
     background: #eee;
@@ -194,6 +204,7 @@ html:lang(en) .ku-branding .ku-branding-text {
     margin: 0;
     padding: 7px 35px 10px 20px;
   }
+
   .jumpboard .jumpcolumn .jumpheading:after {
     font-size: 16px;
     position: absolute;
@@ -202,13 +213,16 @@ html:lang(en) .ku-branding .ku-branding-text {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   .jumpboard .jumpcolumn .jumplinks li {
     border-bottom: 1px solid #ccc;
     margin: 0;
   }
+
   .jumpboard .jumpcolumn .jumplinks li a {
     padding: 10px 20px 12px 20px;
   }
+
   .jumpboard .jumpcolumn .jumplinks li a:active, .jumpboard .jumpcolumn .jumplinks li a:hover, .jumpboard .jumpcolumn .jumplinks li a:focus {
     background-color: #f1f1f1;
   }

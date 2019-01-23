@@ -39,17 +39,19 @@ nav {
 .main-content {
   .row {
     margin-bottom: @grid-gutter-height;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media (max-width: @screen-sm-max) {
     [class*="col-"] {
-      &:not(:last-child) {
-        margin-bottom: @grid-gutter-height;
+      margin-bottom: @grid-gutter-height;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
-  }
-
-  & > p:first-child {
-    margin-top: 0;
   }
 }
 
@@ -86,8 +88,10 @@ nav {
 #gridsidebar {
   .row {
     [class*="col-"] {
-      &:not(:last-child) {
-        margin-bottom: @grid-gutter-height;
+      margin-bottom: @grid-gutter-height;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
     margin-bottom: @grid-gutter-height;
@@ -111,6 +115,11 @@ nav {
       margin-bottom: 0;
     }
   }
+  .row {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .flexiblebox-as-rightbox,
@@ -127,22 +136,12 @@ nav {
       margin-top: @grid-gutter-height;
     }
 
-    .rightbox-normal:first-child {
-      margin-top: 8px;
-    }
-
     .flexiblebox:first-child {
       margin-top: @grid-gutter-height;
     }
-  }
 
-  .rightBoxPicture {
-    .panel-head {
-      display: none;
-    }
-
-    .panel-body {
-      border-top: 0;
+    .rightbox-normal:first-child {
+      margin-top: @grid-gutter-height;
     }
   }
 }
