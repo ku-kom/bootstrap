@@ -7751,7 +7751,7 @@ nav {
   margin-bottom: 23px;
 }
 @media (max-width: 991px) {
-  .main-content [class*="col-"] {
+  .main-content [class*="col-"]:not(:last-child) {
     margin-bottom: 23px;
   }
 }

@@ -42,7 +42,9 @@ nav {
   }
   @media (max-width: @screen-sm-max) {
     [class*="col-"] {
-      margin-bottom: @grid-gutter-height;
+      &:not(:last-child) {
+        margin-bottom: @grid-gutter-height;
+      }
     }
   }
 
