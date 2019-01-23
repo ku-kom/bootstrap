@@ -7755,19 +7755,8 @@ nav {
     margin-bottom: 23px;
   }
 }
-#main-content > p:first-child {
+.main-content > p:first-child {
   margin-top: 0;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-area .row.double-column .col-sm-6 + .col-sm-6 {
-    margin-top: 0;
-  }
-}
-#gridsidebar .row {
-  margin-bottom: 23px;
-}
-#gridsidebar .row [class*="col-"] {
-  margin-bottom: 23px;
 }
 .main-area {
   margin-bottom: 10px;
@@ -7791,6 +7780,28 @@ nav {
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-area .row.double-column .col-sm-6 + .col-sm-6 {
+    margin-top: 0;
+  }
+}
+#gridsidebar .row {
+  margin-bottom: 23px;
+}
+#gridsidebar .row [class*="col-"]:not(:last-child) {
+  margin-bottom: 23px;
+}
+.gcitem {
+  position: relative;
+  margin-bottom: 23px;
+}
+.gcitem.picture .title,
+.gcitem .picture-visning2 .title {
+  display: none;
+}
+.gccolumn .gcitem:last-child {
+  margin-bottom: 0;
 }
 .flexiblebox-as-rightbox,
 .rightBoxPicture,
@@ -7817,17 +7828,6 @@ nav {
 }
 .right-side .rightBoxPicture .panel-body {
   border-top: 0;
-}
-.gcitem {
-  position: relative;
-  margin-bottom: 23px;
-}
-.gcitem.picture .title,
-.gcitem .picture-visning2 .title {
-  display: none;
-}
-.gccolumn .gcitem:last-child {
-  margin-bottom: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .gccolumn[class^="col-"][class$="-12"] {
@@ -9169,6 +9169,9 @@ nav {
 .media-list .media + .media {
   border-top: 1px solid #ccc;
 }
+.media-list .media + .media:last-child {
+  border-bottom: 1px solid #ccc;
+}
 .media-list .media .media-heading {
   margin-bottom: 7px;
   font-size: 14px;
@@ -9197,7 +9200,8 @@ nav {
   border-radius: 2px;
   transition: all .2s ease-in-out;
 }
-.media-list.smal .media > .media-body:first-child {
+.media-list.smal .media > .media-left + .media-body:first-child,
+.media-list.smal .media .media-right + .media-body:first-child {
   padding-left: 74px;
 }
 @media (min-width: 768px) {
@@ -9220,13 +9224,12 @@ nav {
 .nyhedsliste-rightbox .media .news-teaser {
   margin-top: 3px;
 }
-.nyhedsboks .panel-body {
-  padding-top: 10px;
-}
 #calendarlist {
   padding-top: 15px;
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+}
+#calendarlist.smal .media-body:first-child {
+  padding-left: 74px;
 }
 #calendarlist .eventdate {
   margin-bottom: 5px;
@@ -9841,7 +9844,7 @@ nav {
   margin: 0 0 6px;
 }
 .slick-slide.slick-current .caption.subcolor_5 {
-  color: #606060;
+  color: #252525;
   background: #eee;
 }
 @media (min-width: 768px) {
@@ -9853,7 +9856,7 @@ nav {
   background: #eee;
 }
 .slick-slide.slick-current .caption.subcolor_6 {
-  color: #606060;
+  color: #252525;
   background: #f5f5f5;
 }
 @media (min-width: 768px) {
@@ -9935,11 +9938,11 @@ nav {
             transform: translateY(-50%);
   }
   .slick-slide.slick-current .caption.textlabel-right {
-    top: 45%;
+    top: 50%;
     right: 0;
     bottom: auto;
     left: auto;
-    width: 50%;
+    width: 45%;
     min-height: 70%;
     padding: 16px 30px 20px 20px;
     border-top-left-radius: 2px;

@@ -1872,8 +1872,10 @@ function shareURL(dest) {
   if ($.inArray(param, media) !== -1) {
     // if supplied parameter matches one of the possible media channels, continue the execution.
     // LinkedIn has extra parametres appending the url:
+    var docTitle = document.title || '';
+    var source = location.hostname || '';
     var isLinkedin = (param == 'linkedin') ? true : false;
-    var suffix = (isLinkedin === true) ? '&amp;title=&amp;summary=&amp;source=' : '';
+    var suffix = (isLinkedin === true) ? '&title=' + encodeURIComponent(docTitle) + '&summary=&source=' + encodeURI(source) : '';
     // Open in a new window:
     window.open(encodeURI(urlMap[param]) + encodeURI(url) + suffix);
   } else {

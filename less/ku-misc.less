@@ -45,32 +45,9 @@ nav {
       margin-bottom: @grid-gutter-height;
     }
   }
-}
 
-#main-content > p:first-child {
-  margin-top: 0;
-}
-
-.main-area {
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-    .row {
-      &.double-column {
-        .col-sm-6 {
-          + .col-sm-6 {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-#gridsidebar {
-  .row {
-    [class*="col-"] {
-      margin-bottom: @grid-gutter-height;
-    }
-    margin-bottom: @grid-gutter-height;
+  & > p:first-child {
+    margin-top: 0;
   }
 }
 
@@ -89,6 +66,48 @@ nav {
 
   img {
     .img-responsive;
+  }
+  // KU grid:
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    .row {
+      &.double-column {
+        .col-sm-6 {
+          + .col-sm-6 {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#gridsidebar {
+  .row {
+    [class*="col-"] {
+      &:not(:last-child) {
+        margin-bottom: @grid-gutter-height;
+      }
+    }
+    margin-bottom: @grid-gutter-height;
+  }
+}
+
+.gcitem {
+  position: relative;
+  &:extend(.clearfix all);
+  margin-bottom: @grid-gutter-height;
+
+  &.picture .title,
+  .picture-visning2 .title {
+    display: none;
+  }
+}
+
+.gccolumn {
+  .gcitem {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -122,26 +141,6 @@ nav {
 
     .panel-body {
       border-top: 0;
-    }
-  }
-}
-// KU grid:
-
-.gcitem {
-  position: relative;
-  &:extend(.clearfix all);
-  margin-bottom: @grid-gutter-height;
-
-  &.picture .title,
-  .picture-visning2 .title {
-    display: none;
-  }
-}
-
-.gccolumn {
-  .gcitem {
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 }

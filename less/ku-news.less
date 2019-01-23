@@ -2,7 +2,6 @@
 // Global menu news
 
 .media-list {
-
   .media-left,
   .media-right {
     min-width: @ku-thumbnails-size;
@@ -20,12 +19,16 @@
     margin-top: 0;
     padding-top: 15px;
     padding-bottom: 5px;
+
     &:first-child {
       padding-top: 0;
     }
 
     &+ .media {
       border-top: 1px solid @gray;
+      &:last-child {
+        border-bottom: 1px solid @gray;
+      }
     }
 
     .media-heading {
@@ -55,8 +58,11 @@
   &.smal {
     .media {
       // If no media-object, indent content
-      & > .media-body:first-child {
-        padding-left: @ku-thumbnails-size;
+      & > .media-left,
+      .media-right {
+        & + .media-body:first-child {
+          padding-left: @ku-thumbnails-size;
+        }
       }
     }
   }
@@ -99,17 +105,22 @@
   }
 }
 
-.nyhedsboks {
-  .panel-body {
-    padding-top: 10px;
-  }
-}
+// .nyhedsboks {
+//   .panel-body {
+//     padding-top: 10px;
+//   }
+// }
 // Arrangementer - midterkolonne:
 
 #calendarlist {
   padding-top: 15px;
   border-top: 1px solid @gray;
-  border-bottom: 1px solid @gray;
+
+  &.smal {
+    .media-body:first-child {
+      padding-left: @ku-thumbnails-size;
+    }
+  }
 
   .eventdate {
     margin-bottom: 5px;
