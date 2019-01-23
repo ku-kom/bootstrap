@@ -1,0 +1,330 @@
+/*
+* KU gridboxes mixin - for Bootstrap templates only
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
+/*
+* Tablet style: Grid front page with left menu - all boxes img left text right:
+*    .img-text-aligned();
+*/
+.gridbox.faculty_color {
+  background: #365aa5;
+  color: #fff;
+}
+.gridbox.faculty_color .header {
+  background: rgba(54, 90, 165, 0.93);
+  color: #fff;
+}
+.gridbox.faculty_color.text-top .header {
+  background: #365aa5;
+}
+.gridbox.faculty_color.outlined {
+  border: 1px solid #365aa5;
+  color: #365aa5;
+}
+.gridbox.faculty_color.outlined:hover {
+  background: #e7e7e7;
+  border: 1px solid #304f91;
+}
+.gridbox.faculty_color.full:hover {
+  background: #304f91;
+}
+.gridbox.faculty_color.text-down:hover {
+  background: #304f91;
+}
+.gridbox.subcolor_1 {
+  background: #1d2e4a;
+  color: #fff;
+}
+.gridbox.subcolor_1 .header {
+  background: rgba(29, 46, 74, 0.83);
+  color: #fff;
+}
+.gridbox.subcolor_1.text-top .header {
+  background: #1d2e4a;
+  color: #fff;
+}
+.gridbox.subcolor_1.outlined {
+  border: 1px solid #1d2e4a;
+  color: #1d2e4a;
+}
+.gridbox.subcolor_1.outlined:hover {
+  background: #e7e7e7;
+  border: 1px solid #131e30;
+}
+.gridbox.subcolor_1.full:hover {
+  background: #131e30;
+}
+.gridbox.subcolor_1.text-down:hover {
+  background: #131e30;
+}
+.gridbox.subcolor_2 {
+  background: #b7b5b5;
+  color: #fff;
+}
+.gridbox.subcolor_2 .header {
+  background: rgba(183, 181, 181, 0.83);
+  color: #fff;
+}
+.gridbox.subcolor_2.text-top .header {
+  background: #b7b5b5;
+  color: #fff;
+}
+.gridbox.subcolor_2.outlined {
+  border: 1px solid #b7b5b5;
+  color: #b7b5b5;
+}
+.gridbox.subcolor_2.outlined:hover {
+  background: #e7e7e7;
+  border: 1px solid #a3a2a2;
+}
+.gridbox.subcolor_2.full:hover {
+  background: #a3a2a2;
+}
+.gridbox.subcolor_2.text-down:hover {
+  background: #a3a2a2;
+}
+.gridbox.subcolor_3 {
+  background: #7d899b;
+  color: #fff;
+}
+.gridbox.subcolor_3 .header {
+  background: rgba(125, 137, 155, 0.83);
+  color: #fff;
+}
+.gridbox.subcolor_3.text-top .header {
+  background: #7d899b;
+  color: #fff;
+}
+.gridbox.subcolor_3.outlined {
+  border: 1px solid #7d899b;
+  color: #606060;
+}
+.gridbox.subcolor_3.outlined:hover {
+  background: #e7e7e7;
+  border: 1px solid #6b7585;
+}
+.gridbox.subcolor_3.full:hover {
+  background: #6b7585;
+}
+.gridbox.subcolor_3.text-down:hover {
+  background: #6b7585;
+}
+.gridbox.subcolor_4 {
+  background: #e7400d;
+  color: #fff;
+}
+.gridbox.subcolor_4 .header {
+  background: rgba(231, 64, 13, 0.83);
+  color: #fff;
+}
+.gridbox.subcolor_4.text-top .header {
+  color: #fff;
+  background: #e7400d;
+}
+.gridbox.subcolor_4.outlined {
+  border: 1px solid #e7400d;
+  color: #e7400d;
+}
+.gridbox.subcolor_4.outlined:hover {
+  background: #e7e7e7;
+  border: 1px solid #d13a0d;
+}
+.gridbox.subcolor_4.full:hover {
+  background: #d13a0d;
+}
+.gridbox.subcolor_4.text-down:hover {
+  background: #d13a0d;
+}
+@media (min-width: 480px) {
+  .one-one-two-column .column2 .gridbox.outlined.faculty_color::before,
+  .one-two-column .column2 .gridbox.outlined.faculty_color::before,
+  .single-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-one-column .column1 .gridbox.outlined.faculty_color::before {
+    color: #365aa5;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_1::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_1::before,
+  .single-column .column1 .gridbox.outlined.subcolor_1::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_1::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_1::before {
+    color: #1d2e4a;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_2::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_2::before,
+  .single-column .column1 .gridbox.outlined.subcolor_2::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_2::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_2::before {
+    color: #b7b5b5;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_3::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_3::before,
+  .single-column .column1 .gridbox.outlined.subcolor_3::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_3::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_3::before {
+    color: #7d899b;
+  }
+  .one-one-two-column .column2 .gridbox.outlined.subcolor_4::before,
+  .one-two-column .column2 .gridbox.outlined.subcolor_4::before,
+  .single-column .column1 .gridbox.outlined.subcolor_4::before,
+  .two-one-column .column1 .gridbox.outlined.subcolor_4::before,
+  .two-one-one-column .column1 .gridbox.outlined.subcolor_4::before {
+    color: #e7400d;
+  }
+}
+@media (min-width: 992px) {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img {
+    border: 0;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img::before,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img::before,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img::before,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img::before,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img::before,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img::before {
+    color: #fff;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.faculty_color .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.faculty_color .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.faculty_color .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.faculty_color .header {
+    background: rgba(54, 90, 165, 0.83);
+    color: #fff;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_1 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_1 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_1 .header {
+    background: rgba(29, 46, 74, 0.83);
+    color: #fff;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_2 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_2 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_2 .header {
+    background: rgba(183, 181, 181, 0.83);
+    color: #fff;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_3 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_3 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_3 .header {
+    background: rgba(125, 137, 155, 0.83);
+    color: #fff;
+  }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_4 .header,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_4 .header,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_4 .header {
+    background: rgba(231, 64, 13, 0.83);
+    color: #fff;
+  }
+}
+.slideshow .slick-current .faculty_color {
+  background: #365aa5;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .faculty_color {
+    background: rgba(54, 90, 165, 0.93);
+  }
+}
+.slideshow .slick-current .faculty_color.full-bg {
+  background: #365aa5;
+}
+.slideshow .slick-current .subcolor_1 {
+  background: #1d2e4a;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_1 {
+    background: rgba(29, 46, 74, 0.93);
+  }
+}
+.slideshow .slick-current .subcolor_1.full-bg {
+  background: #1d2e4a;
+}
+.slideshow .slick-current .subcolor_2 {
+  background: #b7b5b5;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_2 {
+    background: rgba(183, 181, 181, 0.93);
+  }
+}
+.slideshow .slick-current .subcolor_2.full-bg {
+  background: #b7b5b5;
+}
+.slideshow .slick-current .subcolor_3 {
+  background: #7d899b;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_3 {
+    background: rgba(125, 137, 155, 0.93);
+  }
+}
+.slideshow .slick-current .subcolor_3.full-bg {
+  background: #7d899b;
+}
+.slideshow .slick-current .subcolor_4 {
+  background: #e7400d;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .slideshow .slick-current .subcolor_4 {
+    background: rgba(231, 64, 13, 0.93);
+  }
+}
+.slideshow .slick-current .subcolor_4.full-bg {
+  background: #e7400d;
+}
