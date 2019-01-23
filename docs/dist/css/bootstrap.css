@@ -7809,6 +7809,9 @@ nav {
 .gccolumn .gcitem:last-child {
   margin-bottom: 0;
 }
+.gccolumn .row:last-child {
+  margin-bottom: 0;
+}
 .flexiblebox-as-rightbox,
 .rightBoxPicture,
 .rightbox-calendar-widget,
@@ -7822,18 +7825,12 @@ nav {
   .right-side .gcitem:first-child {
     margin-top: 23px;
   }
-  .right-side .rightbox-normal:first-child {
-    margin-top: 8px;
-  }
   .right-side .flexiblebox:first-child {
     margin-top: 23px;
   }
-}
-.right-side .rightBoxPicture .panel-head {
-  display: none;
-}
-.right-side .rightBoxPicture .panel-body {
-  border-top: 0;
+  .right-side .rightbox-normal:first-child {
+    margin-top: 23px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .gccolumn[class^="col-"][class$="-12"] {
@@ -8081,6 +8078,12 @@ nav {
 }
 .picture-standard h2 {
   display: none;
+}
+.rightBoxPicture .panel-head {
+  display: none;
+}
+.rightBoxPicture .panel-body {
+  border-top: 0;
 }
 .ku-branding {
   position: relative;
