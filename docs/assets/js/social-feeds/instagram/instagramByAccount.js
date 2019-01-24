@@ -7,9 +7,7 @@
        <div class="header">@university_of_copenhagen på Instagram</div>
      </a>
    </div>
-   <div class="ig_box2">
      <div id="imageBox"></div>
-   </div>
  </div>
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
 (function ($) {

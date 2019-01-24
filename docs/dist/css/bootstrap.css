@@ -11128,6 +11128,7 @@ ul.stripped {
   margin-top: 10px;
   font-size: 12px;
   background-color: #d0dbe1;
+  border-radius: 2px;
 }
 .factbox h3 {
   margin: 0;
