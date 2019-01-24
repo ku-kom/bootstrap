@@ -11122,7 +11122,24 @@ ul.stripped {
   border-radius: 2px;
 }
 .factbox {
+  font-size: 12px;
   background-color: #d0dbe1;
+}
+.factbox::before {
+  position: relative;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  color: #818181;
+  text-transform: none;
+  content: "\71";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .mce-content-body#content {
   display: block;
