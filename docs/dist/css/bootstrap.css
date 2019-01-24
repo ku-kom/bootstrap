@@ -11121,6 +11121,9 @@ ul.stripped {
   background-color: #eee;
   border-radius: 2px;
 }
+.factbox {
+  background-color: #d0dbe1;
+}
 .mce-content-body#content {
   display: block;
   width: 100%;
