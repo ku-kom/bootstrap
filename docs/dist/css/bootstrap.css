@@ -11122,8 +11122,10 @@ ul.stripped {
   border-radius: 2px;
 }
 .factbox {
+  position: relative;
   width: 45%;
-  padding: 15px;
+  padding: 25px 15px 15px;
+  margin-top: 10px;
   font-size: 12px;
   background-color: #d0dbe1;
 }
@@ -11132,8 +11134,11 @@ ul.stripped {
 }
 .factbox::before {
   position: relative;
+  position: absolute;
+  top: -12px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
+  font-size: 44px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
