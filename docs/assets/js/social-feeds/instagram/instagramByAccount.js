@@ -19,8 +19,8 @@
     var $container = $("#imageBox");
     var $loading = $(".ku-loading");
     var $token = $wrapper.attr("data-token");
-    var $user = $wrapper.attr("data-account").trim();
-    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
+    var $user = $wrapper.attr("data-account");
+    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $cachedWidth = $('body').prop('clientWidth');
 
