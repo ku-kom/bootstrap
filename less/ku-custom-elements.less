@@ -246,9 +246,11 @@
 // Faktaboks
 
 .factbox {
+  position: relative;
   background-color: @factbox-bg;
   font-size: 12px;
-  padding: 15px;
+  padding: 25px 15px 15px;
+  margin-top: 10px;
   width: 45%;
 
   h3 {
@@ -256,7 +258,10 @@
   }
   &::before {
     .icon;
+    position: absolute;
+    top: -12px;
     content: @icon-quote;
+    font-size: 44px;
     color: #818181;
   }
 }
