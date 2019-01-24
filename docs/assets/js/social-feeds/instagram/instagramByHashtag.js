@@ -1,9 +1,11 @@
 /* NEL, KU KOM
- * Script to fetch images from Instagram by hashtag.
+ * Script to fetch images from Instagram by hashtag. Based on scrapung - may stop working at any time.
  * Needs html like this: <div id="instagram_hash" data-hashtag="blivstuderendepåKinastudier" data-images="6" class="instagram-box"></div>
  * data-hashtag represents the hashtag to search for.
  * data-images pepresents the number of images to display at a time. */
-$(document).ready(function () {
+(function ($) {
+  'use strict';
+  $(document).ready(function () {
   var $cachedWidth = $('body').prop('clientWidth');
   var $wrapper = $('#instagram_hash');
   var $container = $("#imageBox");
@@ -21,13 +23,13 @@ $(document).ready(function () {
       var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
       $.ajax({
         url: $url,
-        type: 'post',
+        type: 'GET',
         dataType: "json",
         data: ({
           hashtag: $hash
         }),
         success: function (data) {
-          //console.log(data);
+          console.log(data);
           var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
           $.each(entry, function (i, v) {
             var img = entry[i].node.thumbnail_src;
@@ -49,6 +51,7 @@ $(document).ready(function () {
           console.log(xhr.responseText);
         },
         complete: function () {
+          console.log('Completed');
           $loading.hide();
           $container.rotator();
           $wrapper.css('visibility', 'visible');
@@ -56,6 +59,7 @@ $(document).ready(function () {
       });
     }
   }
+
   $.fn.rotator = function (options) {
     options = $.extend({
       blocks: '.' + $batchClass,
@@ -111,7 +115,7 @@ $(document).ready(function () {
     };
     if (checkRange(e.pageY)) {
       // do click action
-      location.href = "https://www.instagram.com/" + $accountName;
+      location.href = "https://www.instagram.com/explore/tags/" + $hash;
     }
   });
 
@@ -130,3 +134,5 @@ $(document).ready(function () {
     }
   };
 });
+
+})(jQuery);

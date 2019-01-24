@@ -35,12 +35,12 @@
         $.ajax({
           url: $url,
           type: 'GET',
-          success: function (response) {
-            //console.log(response);
+          success: function (data) {
+            //console.log(data);
             for (var i = 0; i < $images; i++) {
-              var img = response.data[i].images.standard_resolution.url;
-              var link = response.data[i].link;
-              var desc = response.data[i].caption.text;
+              var img = data.data[i].images.standard_resolution.url;
+              var link = data.data[i].link;
+              var desc = data.data[i].caption.text;
               $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="'+ $user +'"></a>');
             }
             var batch;
