@@ -17,7 +17,7 @@
   $(document).ready(function () {
     var $wrapper = $("#ig");
     var $container = $("#imageBox");
-    var $loading = $(".ku-loading");
+    var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
