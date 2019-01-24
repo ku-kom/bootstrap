@@ -11160,13 +11160,17 @@ form.gdpr-accept {
   margin-top: 10px;
 }
 form.gdpr-accept .gdpr-label {
-  margin: 10px 0;
+  margin: 10px 0 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.3;
 }
 form.gdpr-accept .gdpr-label input[type=checkbox] {
   top: 2px;
   margin-right: 3px;
+}
+form.gdpr-accept .btn + .btn {
+  margin-left: 10px;
 }
 .mce-content-body#content {
   display: block;
