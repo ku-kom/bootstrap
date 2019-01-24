@@ -20,11 +20,11 @@
     var $loading = $(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
-    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
+    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $cachedWidth = $('body').prop('clientWidth');
 
-    function getInstagramByHash(access_token) {
+    function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       var $images = 12;
@@ -36,7 +36,7 @@
           url: $url,
           type: 'GET',
           success: function (response) {
-            //console.log(response);
+            console.log(response);
             for (var i = 0; i < $images; i++) {
               var img = response.data[i].images.standard_resolution.url;
               var link = response.data[i].link;
@@ -104,7 +104,8 @@
 
     if ($token) {
       // Init script
-      getInstagramByHash($token);
+      getInstagramByAccount($token);
+      console.log('getInstagramByAccount ran');
     } else {
       console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
     }
@@ -128,17 +129,13 @@
     //On resize, wait and reload function
     var it;
 
-    function resizedw() {
-      getInstagramByHash($token);
-    }
-
     window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          resizedw();
+          getInstagramByAccount($token);
         }, 200);
         $cachedWidth = $newWidth;
       }

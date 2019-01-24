@@ -144,7 +144,8 @@ module.exports = function (grunt) {
               'docs/assets/js/datatables/datatables.js',
               'docs/assets/js/multiple-select/multiple-select.js',
               'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js',
-              'docs/assets/js/social-feeds/instagram/instagramByAccount.js'
+              'docs/assets/js/social-feeds/instagram/instagramByAccount.js',
+              'docs/assets/js/social-feeds/instagram/instagramByHashtag.js'
             ],
             dest: 'dist/js/',
             ext: '.min.js',
