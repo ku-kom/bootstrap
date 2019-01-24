@@ -19,13 +19,13 @@
     var $container = $("#imageBox");
     var $loading = $(".ku-loading");
     var $token = $wrapper.attr("data-token");
-    var $user = $wrapper.attr("data-account").trim();
-    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
+    var $user = $wrapper.attr("data-account");
+    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $cachedWidth = $('body').prop('clientWidth');
 
-    function getInstagramByHash(access_token) {
-      // Fetch Instagram images by hashtag
+    function getInstagramByAccount(access_token) {
+      // Fetch Instagram images
       var $number = $wrapper.attr("data-images");
       var $images = 12;
       var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number);
@@ -41,7 +41,7 @@
               var img = response.data[i].images.standard_resolution.url;
               var link = response.data[i].link;
               var desc = response.data[i].caption.text;
-              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="'+ $user +'"></a>');
+              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
             $('a', $container).each(function (k, e) {
@@ -104,7 +104,7 @@
 
     if ($token) {
       // Init script
-      getInstagramByHash($token);
+      getInstagramByAccount($token);
     } else {
       console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
     }
@@ -128,17 +128,13 @@
     //On resize, wait and reload function
     var it;
 
-    function resizedw() {
-      getInstagramByHash($token);
-    }
-
     window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          resizedw();
+          getInstagramByAccount($token);
         }, 200);
         $cachedWidth = $newWidth;
       }
