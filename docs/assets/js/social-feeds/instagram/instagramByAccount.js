@@ -36,7 +36,7 @@
           url: $url,
           type: 'GET',
           success: function (response) {
-            console.log(response);
+            //console.log(response);
             for (var i = 0; i < $images; i++) {
               var img = response.data[i].images.standard_resolution.url;
               var link = response.data[i].link;
@@ -105,21 +105,19 @@
     if ($token) {
       // Init script
       getInstagramByAccount($token);
-      console.log('getInstagramByAccount ran');
     } else {
       console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
     }
 
-    // Action when gridbox arrow is clicked
-    // clickable range - never changes
-    var max = $wrapper.offset().top + $wrapper.outerHeight();
-    var min = max - 30; // 30 is the height of the ::before
-
-    var checkRange = function (y) {
-      return (y >= min && y <= max);
-    };
-
     $wrapper.click(function (e) {
+      // Action when gridbox arrow is clicked
+      // clickable range - never changes
+      var max = $(this).offset().top + $(this).outerHeight();
+      var min = max - 30; // 30 is the height of the ::before arrow
+
+      var checkRange = function (y) {
+        return (y >= min && y <= max);
+      };
       if (checkRange(e.pageY)) {
         // do click action
         location.href = "https://www.instagram.com/" + $accountName;
