@@ -11,14 +11,14 @@
     var $container = $("#imageBox");
     var $hash = $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
-    var $loading = $(".ku-loading");
+    var $loading = $wrapper.find(".ku-loading");
 
     function getInstagramByHash(hashtag) {
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       var $images = 12;
-      var $numbers = (window.matchMedia('(max-width: 500px)').matches) ? 1 : parseInt($number);
-      $wrapper.empty();
+      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number);
+      $container.empty();
       if (hashtag) {
         var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
         $.ajax({
@@ -34,13 +34,13 @@
             $.each(entry, function (i, v) {
               var img = entry[i].node.thumbnail_src;
               var shortcode = entry[i].node.shortcode;
-              $wrapper.append('<a href="https://www.instagram.com/p/' + shortcode + ' " target="_blank"><img src="' + img + '" alt="' + hashtag + '"></a>');
+              $container.append('<a href="https://www.instagram.com/p/' + shortcode + ' " target="_blank"><img src="' + img + '" alt="' + hashtag + '"></a>');
               return i < $images - 1;
             });
             var batch;
-            $('a', $wrapper).each(function (k, e) {
+            $('a', $container).each(function (k, e) {
               if (k % $numbers == 0) {
-                batch = $('<div/>').addClass($batchClass).appendTo($wrapper);
+                batch = $('<div/>').addClass($batchClass).appendTo($container);
               }
               batch.append(e);
             });
@@ -52,7 +52,7 @@
           },
           complete: function () {
             $loading.hide();
-            $wrapper.rotator();
+            $container.rotator();
             $wrapper.css('visibility', 'visible');
           }
         });
