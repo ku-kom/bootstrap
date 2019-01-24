@@ -247,4 +247,17 @@
 
 .factbox {
   background-color: @factbox-bg;
+  font-size: 12px;
+  width: 45%;
+  &::before {
+    .icon;
+    content: @icon-quote;
+    color: #818181;
+  }
+}
+
+.rightbox, .column1 {
+  .factbox {
+    width: 100%!important;
+  }
 }

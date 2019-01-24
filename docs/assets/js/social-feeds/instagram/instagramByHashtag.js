@@ -23,13 +23,13 @@
       var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
       $.ajax({
         url: $url,
-        type: 'GET',
+        type: 'POST',
         dataType: "json",
         data: ({
           hashtag: $hash
         }),
         success: function (data) {
-          console.log(data);
+          //console.log(data);
           var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
           $.each(entry, function (i, v) {
             var img = entry[i].node.thumbnail_src;
@@ -51,7 +51,6 @@
           console.log(xhr.responseText);
         },
         complete: function () {
-          console.log('Completed');
           $loading.hide();
           $container.rotator();
           $wrapper.css('visibility', 'visible');
