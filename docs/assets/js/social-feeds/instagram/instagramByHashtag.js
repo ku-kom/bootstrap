@@ -3,8 +3,8 @@
  * Needs html like this: <div id="instagram_hash" data-hashtag="blivstuderendepåKinastudier" data-images="6" class="instagram-box"></div>
  * data-hashtag represents the hashtag to search for.
  * data-images pepresents the number of images to display at a time. */
-(function ($) {
-  'use strict';
+// (function ($) {
+  //'use strict';
   $(document).ready(function () {
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#instagram_hash');
@@ -57,7 +57,6 @@
           }
         });
       }
-      return false;
     }
 
     $.fn.rotator = function (options) {
@@ -119,4 +118,4 @@
       }
     };
   });
-})(jQuery);
+//})(jQuery);
