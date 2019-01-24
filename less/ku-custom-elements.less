@@ -188,7 +188,6 @@
       margin-top: 0;
       height: 0;
       transform: scaleY(0);
-
     }
 
     &:checked~ul.menu-list {
@@ -201,6 +200,7 @@
       transform-origin: top;
       transition: transform 0.2s ease-out;
       transform: scaleY(1);
+
       li {
         a {
           display: block;
@@ -237,14 +237,13 @@
   padding: 0;
 }
 // Textboxes
+
 .textbox-grey {
   background-color: @gray-lighter;
   padding: 15px;
   border-radius: @border-radius-base;
 }
-
 // Faktaboks
-
 .factbox {
   position: relative;
   background-color: @factbox-bg;
@@ -257,6 +256,7 @@
   h3 {
     margin: 0;
   }
+
   &::before {
     .icon;
     position: absolute;
@@ -267,8 +267,25 @@
   }
 }
 
-.rightbox, .column1 {
+.column1,
+.rightbox {
   .factbox {
     width: 100%!important;
+  }
+}
+
+// Newsletter and GDPR
+
+form.gdpr-accept {
+  margin-top: 10px;
+  .gdpr-label {
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0;
+
+    input[type=text] {
+      margin-right: 3px;
+      top: 2px;
+    }
   }
 }

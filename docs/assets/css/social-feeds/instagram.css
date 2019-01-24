@@ -24,7 +24,7 @@ Needs html like this:
 }
 
 [id*="ig"].gridbox .box1 {
-  position: absolute;
+  position: absolute!absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -34,7 +34,7 @@ Needs html like this:
   z-index: 100;
 }
 
-[id*="ig"].gridbox .header, [id*="ig"].gridbox.with-img:hover .header {
+[id*="ig"].gridbox .header, [id*="ig"].gridbox:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9);
 }
