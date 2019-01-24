@@ -99,6 +99,21 @@ $(document).ready(function () {
     console.log('Add Instagram hashtag and number of images to display using data-hashtag="" and data-images="" on the container');
   }
 
+  $wrapper.click(function (e) {
+    // Action when gridbox arrow is clicked
+    // clickable range - never changes
+    var max = $(this).offset().top + $(this).outerHeight();
+    var min = max - 30; // 30 is the height of the ::before arrow
+
+    var checkRange = function (y) {
+      return (y >= min && y <= max);
+    };
+    if (checkRange(e.pageY)) {
+      // do click action
+      location.href = "https://www.instagram.com/" + $accountName;
+    }
+  });
+
   //On resize, wait and reload function
   var it;
 
