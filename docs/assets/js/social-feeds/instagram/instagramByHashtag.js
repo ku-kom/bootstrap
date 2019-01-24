@@ -7,7 +7,7 @@
   'use strict';
   $(document).ready(function () {
     var $cachedWidth = $('body').prop('clientWidth');
-    var $wrapper = $('#ig');
+    var $wrapper = $('#ig_hashtag');
     var $container = $("#imageBox");
     var $hash = $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
@@ -51,12 +51,8 @@
             console.log(xhr.responseText);
           },
           complete: function () {
-            //$loading.hide();
-            //$container.rotator();
-            setTimeout(function() {
-              $loading.hide();
-              $container.rotator();
-          }, 1000);
+            $loading.hide();
+            $container.rotator();
             $wrapper.css('visibility', 'visible');
           }
         });
@@ -65,7 +61,7 @@
 
     $.fn.rotator = function (options) {
       options = $.extend({
-        blocks: '.' + $batchClass,
+        blocks: $wrapper.find('.' + $batchClass),
         speed: 6000,
         fadeSpeed: 800
       }, options);

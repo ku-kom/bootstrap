@@ -11,19 +11,19 @@ Needs html like this:
   </div>
 </div>
 */
-#ig.gridbox {
+[id*="ig"].gridbox {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   visibility: hidden;
 }
 
-#ig.gridbox::before {
+[id*="ig"].gridbox::before {
   z-index: 101;
   cursor: pointer;
 }
 
-#ig.gridbox .box1 {
+[id*="ig"].gridbox .box1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -34,17 +34,17 @@ Needs html like this:
   z-index: 100;
 }
 
-#ig.gridbox .header, #ig.gridbox.with-img:hover .header {
+[id*="ig"].gridbox .header, [id*="ig"].gridbox.with-img:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9);
 }
 
-#ig:hover a {
+[id*="ig"]:hover a {
   color: inherit;
   display: block;
 }
 
-#ig:hover img {
+[id*="ig"]:hover img {
   -webkit-filter: none;
   filter: none;
 }
@@ -91,6 +91,7 @@ Needs html like this:
 
 /* Special styles for Internet Explorer */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
   /* IE 11 */
   #imageBox .batch img {
     min-height: 100%;
@@ -106,6 +107,7 @@ Needs html like this:
 }
 
 @supports (-ms-ime-align: auto) {
+
   /* IE Edge */
   #imageBox .batch img {
     min-height: 100%;
