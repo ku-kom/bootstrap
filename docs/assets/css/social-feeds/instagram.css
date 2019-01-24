@@ -1,6 +1,6 @@
 /* CSS for Instagram feeds stacked in batches of 1-6 images rotating
 Needs html like this:
-<div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="instagram gridbox with-img  size2">
+<div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="gridbox with-img  size2">
   <div class="box1">
   <a href="https://www.instagram.com/university_of_copenhagen/">
     <div class="header">@university_of_copenhagen på Instagram</div>
@@ -11,19 +11,19 @@ Needs html like this:
   </div>
 </div>
 */
-.instagram.gridbox {
+#ig.gridbox {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   visibility: hidden;
 }
 
-.instagram.gridbox::before {
+#ig.gridbox::before {
   z-index: 101;
   cursor: pointer;
 }
 
-.instagram.gridbox .box1 {
+#ig.gridbox .box1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -34,17 +34,17 @@ Needs html like this:
   z-index: 100;
 }
 
-.instagram.gridbox .header, .instagram.gridbox.with-img:hover .header {
+#ig.gridbox .header, #ig.gridbox.with-img:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9);
 }
 
-.instagram:hover a {
+#ig:hover a {
   color: inherit;
   display: block;
 }
 
-.instagram:hover img {
+#ig:hover img {
   -webkit-filter: none;
   filter: none;
 }
