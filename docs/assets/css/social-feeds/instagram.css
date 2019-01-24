@@ -36,7 +36,7 @@ Needs html like this:
 
 [id*="ig"].gridbox .header, [id*="ig"].gridbox:hover .header {
   color: #606060;
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .9)!important;
 }
 
 [id*="ig"]:hover a {
