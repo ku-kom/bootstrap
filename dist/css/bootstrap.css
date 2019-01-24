@@ -1962,7 +1962,7 @@ blockquote.full-width {
   margin: 5px 0;
 }
 .rightbox blockquote,
-.single-column .column1 blockquote {
+.column1 blockquote {
   width: 100%!important;
 }
 address {
@@ -11122,8 +11122,13 @@ ul.stripped {
   border-radius: 2px;
 }
 .factbox {
+  width: 45%;
+  padding: 15px;
   font-size: 12px;
   background-color: #d0dbe1;
+}
+.factbox h3 {
+  margin: 0;
 }
 .factbox::before {
   position: relative;
@@ -11140,6 +11145,10 @@ ul.stripped {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.rightbox .factbox,
+.column1 .factbox {
+  width: 100%!important;
 }
 .mce-content-body#content {
   display: block;
