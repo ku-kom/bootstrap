@@ -24,7 +24,7 @@ Needs html like this:
 }
 
 [id*="ig"].gridbox .box1 {
-  position: absolute!absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
