@@ -97,22 +97,23 @@
       });
     };
 
-
-    getInstagramByHash($hash);
+    // Init script
+    if ($hash) {
+      getInstagramByHash($hash);
+    } else {
+      console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
+    }
 
     //On resize, wait and reload function
     var it;
 
-    function resizedw() {
-      getInstagramByHash($hash);
-    }
     window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          resizedw();
+          getInstagramByHash($hash);
         }, 200);
         $cachedWidth = $newWidth;
       }
