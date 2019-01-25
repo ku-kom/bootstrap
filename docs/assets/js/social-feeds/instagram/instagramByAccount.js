@@ -1,6 +1,6 @@
 /* NEL, KU KOM Script to fetch images from Instagram by access token.
  * Login to Instagram to register an application and generate an access token using this url - replace with your values:
- * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+ * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
  * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="gridbox with-img size2">
    <div class="box1">
      <a href="https://www.instagram.com/university_of_copenhagen/">

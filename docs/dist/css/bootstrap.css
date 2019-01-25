@@ -11164,8 +11164,7 @@ form.gdpr-accept .gdpr-label {
   line-height: 1.3;
 }
 form.gdpr-accept .gdpr-label input[type=checkbox] {
-  top: 2px;
-  margin-right: 3px;
+  margin-right: 6px;
 }
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
