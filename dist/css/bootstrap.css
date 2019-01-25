@@ -1961,7 +1961,7 @@ blockquote.full-width {
   padding: 0;
   margin: 5px 0;
 }
-.rightbox blockquote,
+.right-side blockquote,
 .column1 blockquote {
   width: 100%!important;
 }
@@ -11125,29 +11125,34 @@ ul.stripped {
   float: right;
   width: 45%;
   padding: 15px;
-  margin-bottom: 5px;
-  margin-left: 15px;
+  margin: 4px 0 10px 20px;
   font-size: 12px;
   line-height: 1.4;
-  background-color: #d0dbe1;
+  background-color: #e7e7e7;
   border-radius: 2px;
 }
 .factbox h3 {
-  margin: 0 0 3px;
-}
-@media (max-width: 768px) {
-  .factbox {
-    width: 100%;
-    margin: 10px 0;
-  }
+  margin: 0 0 10px;
 }
 .factbox-left {
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .factbox {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: unset;
+  }
 }
 .column1 .factbox,
-.rightbox .factbox {
+.rightbox-normal .factbox {
+  float: none;
   width: 100%!important;
+  margin: 0;
 }
 form.gdpr-accept {
   margin-top: 10px;
@@ -11159,8 +11164,7 @@ form.gdpr-accept .gdpr-label {
   line-height: 1.3;
 }
 form.gdpr-accept .gdpr-label input[type=checkbox] {
-  top: 2px;
-  margin-right: 3px;
+  margin-right: 6px;
 }
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
@@ -11179,80 +11183,8 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
-.mce-content-body blockquote {
-  position: relative;
-  float: right;
-  padding-top: 20px;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-  border-top: 1px solid #901a1e;
-}
-.mce-content-body blockquote::before {
-  position: absolute;
-  top: 4px;
-  left: -2px;
-  font-size: 25px;
-  font-style: italic;
-  line-height: 1;
-  color: #901a1e;
-  content: '\"';
-}
-.mce-content-body blockquote.full-width {
-  float: none;
-  width: 100%;
-  max-width: 100%;
-  clear: both;
-}
-.mce-content-body blockquote footer {
-  font-size: .9em;
-  font-weight: normal;
-}
-.mce-content-body ul.advanced_list {
-  padding: 0;
-  margin: 0;
-}
-.mce-content-body ul.advanced_list div {
-  position: relative;
-  width: 255px;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 5px 5px 5px 10px;
-  font-size: 1em;
-  line-height: 14px;
-  letter-spacing: .02em;
-  background-color: #f5f5f5;
-}
-.mce-content-body ul.full_link li:hover div {
-  background-color: #e7e6e6;
-}
-.mce-content-body ul.advanced_list p {
-  padding: 0;
-  margin: 0;
-  line-height: 13px;
-}
-.mce-content-body ul.advanced_list li {
-  position: relative;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin-bottom: 8px;
-  list-style-type: none;
-  background: right no-repeat #f5f5f5;
-}
-.mce-content-body ul.advanced_list h2 {
-  padding: 0;
-  margin: 0 0 4px;
-  font-size: 1em;
-  font-weight: 700;
-  letter-spacing: .6px;
-}
-.mce-content-body ul.advanced_list h2 a,
-.mce-content-body ul.advanced_list h2 a:visited {
-  color: #252525;
-}
 .mce-content-body table {
-  border: 1px solid #ddd;
+  border: 1px dotted #ddd;
 }
 .mce-content-body table > tbody > tr > td,
 .mce-content-body table > tfoot > tr > td,
@@ -11260,11 +11192,7 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table > tbody > tr > th,
 .mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th {
-  border: 1px solid #ddd;
-}
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > thead > tr > th {
-  border-bottom-width: 2px;
+  border: 1px dotted #ddd;
 }
 #gridcontent-dialog-edit-flexiblebox .image-alignment-picker .radio:first-child .control-label {
   padding-left: 0;

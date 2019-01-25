@@ -8,7 +8,7 @@
   $(document).ready(function () {
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#ig_hashtag');
-    var $container = $("#imageBox");
+    var $container = $wrapper.find("#imageBox");
     var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $loading = $wrapper.find(".ku-loading");
