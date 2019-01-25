@@ -1631,6 +1631,14 @@ h5:empty,
 h6:empty {
   display: none;
 }
+h1 > strong,
+h2 > strong,
+h3 > strong,
+h4 > strong,
+h5 > strong,
+h6 > strong {
+  font-weight: inherit;
+}
 .h1,
 .h2,
 .h3,
@@ -1688,10 +1696,6 @@ h1 {
   h1 {
     margin-top: 20px;
   }
-}
-.h1 > strong,
-h1 > strong {
-  font-weight: inherit;
 }
 .h2,
 h2 {
