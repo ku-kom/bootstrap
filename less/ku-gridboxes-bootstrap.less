@@ -363,11 +363,21 @@
     }
   }
 
+  &.full {
+    .header {
+      word-wrap: break-word;
+    }
+  }
+
   &.outlined {
     background: @white-color!important;
 
     &:hover {
       background: @ku-gray-hover!important;
+    }
+
+    .header {
+      word-wrap: break-word;
     }
 
     &:not(.with-img) {
@@ -504,7 +514,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -1033,8 +1042,8 @@
   }
   // Single columns
   .one-two-column .column1,
-  .two-one-column .column2,
-  .triple-column [class*=column] {
+  .triple-column [class*=column],
+  .two-one-column .column2 {
     .gridbox.with-img {
       &.size1 {
         .box2 img {
