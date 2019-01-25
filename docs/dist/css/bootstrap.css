@@ -11138,13 +11138,14 @@ ul.stripped {
   .factbox {
     width: 100%;
     margin: 10px 0;
-    font-weight: 13px;
+    font-size: 13px;
     line-height: unset;
   }
 }
 .factbox-left {
   float: left;
   margin-right: 15px;
+  margin-left: 0;
 }
 .column1 .factbox,
 .right-side .factbox {
