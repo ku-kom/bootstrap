@@ -39,7 +39,8 @@
   margin-top: 6px !important;
   margin-bottom: 6px !important;
   max-width: none !important;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
+  table-layout: auto!important;
   /*border-collapse: separate !important;*/
 }
 
