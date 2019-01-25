@@ -239,6 +239,7 @@
 // Textboxes
 
 .textbox-grey {
+  // To-do: delete this as it's been replaced by .wellcd..
   background-color: @gray-lighter;
   padding: 15px;
   border-radius: @border-radius-base;
@@ -246,25 +247,26 @@
 // Faktaboks
 
 .factbox {
-  position: relative;
+  // Default right aligned
   background-color: @factbox-bg;
   font-size: 12px;
-  padding: 25px 15px 15px;
-  margin-top: 10px;
+  padding: 15px;
   width: 45%;
   border-radius: @border-radius-base;
+  float: right;
+  margin-left: 10px;
 
   h3 {
-    margin: 0;
+    margin: 0 0 3px;
   }
 
-  &::before {
-    .icon;
-    position: absolute;
-    top: -12px;
-    content: @icon-quote;
-    font-size: 44px;
-    color: #818181;
+  &.left {
+    float: left;
+    margin-right: 10px;
+  }
+  @media (max-width: @screen-sm) {
+    margin: 10px 0;
+    width: 100%;
   }
 }
 
@@ -275,6 +277,7 @@
   }
 }
 // Newsletter and GDPR
+
 form.gdpr-accept {
   margin-top: 10px;
 

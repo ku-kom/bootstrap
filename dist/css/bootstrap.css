@@ -6981,7 +6981,7 @@ button.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
-  padding: 19px;
+  padding: 15px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
@@ -11122,35 +11122,26 @@ ul.stripped {
   border-radius: 2px;
 }
 .factbox {
-  position: relative;
+  float: right;
   width: 45%;
-  padding: 25px 15px 15px;
-  margin-top: 10px;
+  padding: 15px;
+  margin-left: 10px;
   font-size: 12px;
   background-color: #d0dbe1;
   border-radius: 2px;
 }
 .factbox h3 {
-  margin: 0;
+  margin: 0 0 3px;
 }
-.factbox::before {
-  position: relative;
-  position: absolute;
-  top: -12px;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  color: #818181;
-  text-transform: none;
-  content: "\71";
-
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.factbox.left {
+  float: left;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .factbox {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 .column1 .factbox,
 .rightbox .factbox {
