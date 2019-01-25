@@ -9,7 +9,7 @@
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#ig_hashtag');
     var $container = $("#imageBox");
-    var $hash = $wrapper.attr("data-hashtag").toLowerCase().trim();
+    var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $loading = $wrapper.find(".ku-loading");
 
@@ -100,7 +100,7 @@
     if ($hash) {
       getInstagramByHash($hash);
     } else {
-      console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
+      console.log('Add Instagram hashtag to search for and number of images to display using data-hashtag="" and data-images="" on the container');
     }
 
     //On resize, wait and reload function
