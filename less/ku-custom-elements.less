@@ -255,29 +255,33 @@
   width: 45%;
   border-radius: @border-radius-base;
   float: right;
-  margin: 5px 0 9px 20px;
+  margin: 4px 0 10px 20px;
 
   h3 {
     margin: 0 0 10px;
   }
 
-  @media (max-width: @screen-sm) {
-    margin: 10px 0;
-    width: 100%;
-    font-size: 13px;
-    line-height: unset;
-  }
+
   &-left {
     float: left;
     margin-right: 20px;
     margin-left: 0;
   }
+  @media (max-width: @screen-sm) {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: unset;
+    float: none;
+  }
 }
 
 .column1,
-.right-side {
+.rightbox-normal {
   .factbox {
     width: 100%!important;
+    margin: 0;
+    float: none;
   }
 }
 // Newsletter and GDPR
