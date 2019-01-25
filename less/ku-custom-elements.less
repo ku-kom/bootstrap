@@ -239,7 +239,7 @@
 // Textboxes
 
 .textbox-grey {
-  // To-do: delete this as it's been replaced by .wellcd..
+  // To-do: delete this as it's been replaced by .well
   background-color: @gray-lighter;
   padding: 15px;
   border-radius: @border-radius-base;
@@ -250,23 +250,25 @@
   // Default right aligned
   background-color: @factbox-bg;
   font-size: 12px;
+  line-height: 1.4;
   padding: 15px;
   width: 45%;
   border-radius: @border-radius-base;
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-bottom: 5px;
 
   h3 {
     margin: 0 0 3px;
   }
 
-  &.left {
-    float: left;
-    margin-right: 10px;
-  }
   @media (max-width: @screen-sm) {
     margin: 10px 0;
     width: 100%;
+  }
+  &-left {
+    float: left;
+    margin-right: 15px;
   }
 }
 
