@@ -14,7 +14,7 @@
   'use strict';
   $(document).ready(function () {
     var $wrapper = $("#ig");
-    var $container = $("#imageBox");
+    var $container = $wrapper.find("#imageBox");
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");

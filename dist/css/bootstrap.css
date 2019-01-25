@@ -1961,7 +1961,7 @@ blockquote.full-width {
   padding: 0;
   margin: 5px 0;
 }
-.rightbox blockquote,
+.right-side blockquote,
 .column1 blockquote {
   width: 100%!important;
 }
@@ -11125,8 +11125,7 @@ ul.stripped {
   float: right;
   width: 45%;
   padding: 15px;
-  margin-bottom: 5px;
-  margin-left: 15px;
+  margin: 5px 0 5px 10px;
   font-size: 12px;
   line-height: 1.4;
   background-color: #d0dbe1;
@@ -11139,6 +11138,8 @@ ul.stripped {
   .factbox {
     width: 100%;
     margin: 10px 0;
+    font-weight: 13px;
+    line-height: unset;
   }
 }
 .factbox-left {
@@ -11146,7 +11147,7 @@ ul.stripped {
   margin-right: 15px;
 }
 .column1 .factbox,
-.rightbox .factbox {
+.right-side .factbox {
   width: 100%!important;
 }
 form.gdpr-accept {
