@@ -11157,6 +11157,9 @@ ul.stripped {
 form.gdpr-accept {
   margin-top: 10px;
 }
+form.gdpr-accept label[for="email"] {
+  margin-bottom: 5px;
+}
 form.gdpr-accept .gdpr-label {
   margin: 10px 0 15px;
   font-size: 12px;
