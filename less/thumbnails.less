@@ -75,6 +75,13 @@ figure {
     width: 100%;
   }
 }
+@-moz-document url-prefix() {
+  // Firefox only
+  .figure,
+  figure {
+    display: block;
+  }
+}
 // KU specific - editor classes
 
 img {
@@ -107,7 +114,7 @@ figcaption {
   color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;
   padding: 10px 10px 10px 0;
-  width: 100%;
+  // width: 100%;
   display: table-caption;
   caption-side: bottom;
 }

@@ -6192,6 +6192,12 @@ figure img {
     width: 100%;
   }
 }
+@-moz-document url-prefix() {
+  .figure,
+  figure {
+    display: block;
+  }
+}
 img.img-left {
   float: left;
   margin: 5px 20px 10px 0;
@@ -6211,7 +6217,6 @@ figure img {
 .figure-caption,
 figcaption {
   display: table-caption;
-  width: 100%;
   padding: 10px 10px 10px 0;
   font-size: .9em;
   color: #757575;
