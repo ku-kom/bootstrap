@@ -6193,10 +6193,6 @@ figure img {
   }
 }
 @-moz-document url-prefix() {
-  .figure,
-  figure {
-    display: block;
-  }
 }
 img.img-left {
   float: left;
