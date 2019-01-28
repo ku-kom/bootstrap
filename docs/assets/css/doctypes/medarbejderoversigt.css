@@ -10,6 +10,9 @@
   white-space: nowrap;
 }
 
+#medarbejdertable tr th {
+    border-bottom: 20;
+}
 
 #medarbejdertable tr th:nth-child(4),
 #medarbejdertable tr th:nth-child(4) input {
