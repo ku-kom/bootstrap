@@ -40,7 +40,7 @@ figure {
   // Ensures the caption's text aligns with the image.
   display: table;
   table-layout: fixed;
-  width: 100%;
+  max-width: 100%;
   clear: both;
 
   &.image {
@@ -65,6 +65,14 @@ figure {
     float: none;
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  .figure,
+  figure {
+    width: 100%;
   }
 }
 // KU specific - editor classes
