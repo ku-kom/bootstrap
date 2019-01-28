@@ -6192,8 +6192,6 @@ figure img {
     width: 100%;
   }
 }
-@-moz-document url-prefix() {
-}
 img.img-left {
   float: left;
   margin: 5px 20px 10px 0;
