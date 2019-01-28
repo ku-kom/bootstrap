@@ -6156,7 +6156,7 @@ a.thumbnail:focus {
 .figure,
 figure {
   display: table;
-  max-width: 100%;
+  width: 100%;
   clear: both;
   table-layout: fixed;
 }
@@ -6182,25 +6182,8 @@ figure.pull-right {
 .figure img,
 figure img {
   float: none;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* IE 11 */
-  .figure,
-  figure {
-    width: 100%;
-  }
-}
-@-moz-document url-prefix() {
-  .figure,
-  figure {
-    display: block;
-  }
-  .figure-caption,
-  figcaption {
-    width: 100%;
-  }
 }
 img.img-left {
   float: left;
