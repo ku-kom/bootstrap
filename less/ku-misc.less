@@ -2,164 +2,7 @@
 // KU misc.
 // Various extra classes that don't belong in other .less files
 // ---------------------------------------------------------------
-// Main content part
 
-#pagewrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: 100%;
-}
-
-main {
-  flex: 1 0 auto;
-  background-color: @white-color;
-  backface-visibility: hidden; //Fix weired flickering
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  &:extend(.clearfix all);
-  @media (min-width: @screen-sm-min) {
-    width: @container-sm;
-    margin: 0 auto;
-  }
-  @media (min-width: @screen-md-min) {
-    width: @container-md;
-  }
-  @media (min-width: @screen-lg-min) {
-    width: @container-lg;
-  }
-}
-
-footer,
-header,
-nav {
-  flex: none;
-}
-
-.main-content {
-  .row {
-    margin-bottom: @grid-gutter-height;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  @media (max-width: @screen-sm-max) {
-    [class*="col-"] {
-      margin-bottom: @grid-gutter-height;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
-.main-area {
-  flex-grow: 1;
-  margin-bottom: 10px;
-  @media (max-width: @screen-xs-max) {
-    padding-left: (@grid-gutter-width / 2);
-    padding-right: (@grid-gutter-width / 2);
-  }
-
-  &:focus {
-    outline: 0;
-    user-focus: none;
-  }
-
-  img {
-    .img-responsive;
-  }
-  // KU grid:
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-    .row {
-      &.double-column {
-        .col-sm-6 {
-          + .col-sm-6 {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-#gridsidebar {
-  .row {
-    [class*="col-"] {
-      margin-bottom: @grid-gutter-height;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    margin-bottom: @grid-gutter-height;
-  }
-}
-
-.gcitem {
-  position: relative;
-  &:extend(.clearfix all);
-  margin-bottom: @grid-gutter-height;
-
-  &.picture .title,
-  .picture-visning2 .title {
-    display: none;
-  }
-}
-
-.gccolumn {
-  .gcitem {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .row {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.flexiblebox-as-rightbox,
-.rightBoxPicture,
-.rightbox-calendar-widget,
-.rightbox-normal {
-  margin-bottom: @grid-gutter-height;
-}
-
-.right-side {
-  .pull-right;
-  @media (min-width: @screen-sm) {
-    .gcitem:first-child {
-      margin-top: @grid-gutter-height;
-    }
-
-    .flexiblebox:first-child {
-      margin-top: @grid-gutter-height;
-    }
-
-    .rightbox-normal:first-child {
-      margin-top: @grid-gutter-height;
-    }
-  }
-}
-
-.rightbox {
-  .rightbox-normal:last-child {
-    margin-bottom: 0;
-  }
-}
-@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-  .gccolumn {
-    &[class^="col-"][class$="-12"] {
-      // Stacking full width columns i tablet view
-      margin-bottom: @grid-gutter-height;
-    }
-  }
-}
 
 .divider {
   margin: @margin10 0;
@@ -260,25 +103,13 @@ nav {
     }
   }
 }
-@media (max-width: @screen-sm-max) {
-  // Margin top for mobile and tablets
-  .mobile-margin-top-10 {
-    margin-top: @margin10;
-  }
-}
+
 @media (max-width: @screen-sm) {
   .jumpbox {
     display: none;
   }
 }
-//KU remove gutter from columns
 
-.no-gutter {
-  > [class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
 
 .relative {
   position: relative;
@@ -374,13 +205,12 @@ nav {
     color: inherit;
   }
 }
-
-@media (max-width: @screen-xs-max) {
-  .visible-mobile {
-    display: block;
-  }
-
-  .visible-desktop {
-    display: none;
-  }
-}
+// @media (max-width: @screen-xs-max) {
+//   .visible-mobile {
+//     display: block;
+//   }
+//
+//   .visible-desktop {
+//     display: none;
+//   }
+// }
