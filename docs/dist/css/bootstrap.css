@@ -2929,9 +2929,6 @@ th {
 .table-cellspacing > tr > td {
   border: 0;
 }
-.standard_table {
-  table-layout: auto;
-}
 table col[class*="col-"] {
   position: static;
   display: table-column;
@@ -8046,6 +8043,7 @@ nav {
 .jump-to {
   position: relative;
   display: block;
+  float: right;
   font-size: 0;
   color: #666;
 }
@@ -8072,14 +8070,9 @@ nav {
   -moz-osx-font-smoothing: grayscale;
 }
 .jump-to:active,
+.jump-to:focus,
 .jump-to:hover {
   color: inherit;
-}
-.visible-desktop {
-  display: block;
-}
-.visible-mobile {
-  display: none;
 }
 @media (max-width: 767px) {
   .visible-mobile {
@@ -10896,6 +10889,7 @@ ul.stripped {
   border-bottom: 1px solid #d7d7d7;
 }
 .standard_table {
+  table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #d7d7d7;
 }
@@ -10905,6 +10899,12 @@ ul.stripped {
 }
 .fritekst_top_img {
   margin-bottom: 10px;
+}
+.visible-desktop {
+  display: block;
+}
+.visible-mobile {
+  display: none;
 }
 /* KU custom elements */
 .gridnyhed {

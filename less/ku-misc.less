@@ -115,6 +115,7 @@ nav {
       margin-bottom: 0;
     }
   }
+
   .row {
     &:last-child {
       margin-bottom: 0;
@@ -344,6 +345,7 @@ nav {
 // Jump to ID
 
 .jump-to {
+  float: right;
   font-size: 0;
   display: block;
   position: relative;
@@ -361,19 +363,12 @@ nav {
   }
 
   &:active,
+  &:focus,
   &:hover {
     color: inherit;
   }
 }
-// KU: For legacy html: Should be removed
 
-.visible-desktop {
-  display: block;
-}
-
-.visible-mobile {
-  display: none;
-}
 @media (max-width: @screen-xs-max) {
   .visible-mobile {
     display: block;
