@@ -11130,9 +11130,16 @@ ul.stripped {
   font-size: 40px;
 }
 .textbox-grey {
+  min-height: 20px;
   padding: 15px;
-  background-color: #eee;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
   border-radius: 2px;
+}
+.textbox-grey blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, .15);
 }
 .factbox {
   float: right;
