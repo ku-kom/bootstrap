@@ -7850,6 +7850,27 @@ nav {
     margin-bottom: 23px;
   }
 }
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 991px) {
+  .mobile-margin-top-10 {
+    margin-top: 10px;
+  }
+}
+.picture-standard h2 {
+  display: none;
+}
+.rightBoxPicture .panel-head {
+  display: none;
+}
+.rightBoxPicture .panel-body {
+  border-top: 0;
+}
+.gcitem > figure:first-child {
+  margin-top: 0;
+}
 .divider {
   margin: 10px 0;
 }
@@ -7940,19 +7961,10 @@ nav {
     color: #fff !important;
   }
 }
-@media (max-width: 991px) {
-  .mobile-margin-top-10 {
-    margin-top: 10px;
-  }
-}
 @media (max-width: 768px) {
   .jumpbox {
     display: none;
   }
-}
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
 }
 .relative {
   position: relative;
@@ -8076,23 +8088,6 @@ nav {
 .jump-to:focus,
 .jump-to:hover {
   color: inherit;
-}
-@media (max-width: 767px) {
-  .visible-mobile {
-    display: block;
-  }
-  .visible-desktop {
-    display: none;
-  }
-}
-.picture-standard h2 {
-  display: none;
-}
-.rightBoxPicture .panel-head {
-  display: none;
-}
-.rightBoxPicture .panel-body {
-  border-top: 0;
 }
 .ku-branding {
   position: relative;
