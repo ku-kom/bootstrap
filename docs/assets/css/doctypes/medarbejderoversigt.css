@@ -23,6 +23,7 @@
 #medarbejdertable tr th:nth-last-of-type(-n+2) {
   /* Target last to columns */
   padding-right: 8px;
+  cursor: default;
 }
 
 #medarbejdertable tr th:nth-last-of-type(-n+2):after {
