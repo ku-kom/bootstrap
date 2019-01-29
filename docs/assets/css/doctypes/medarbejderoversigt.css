@@ -11,7 +11,7 @@
 }
 
 #medarbejdertable tr th {
-    border-bottom: 20;
+    border-bottom: 0;
 }
 
 #medarbejdertable tr th:nth-child(4),
