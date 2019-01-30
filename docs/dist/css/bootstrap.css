@@ -7842,6 +7842,9 @@ nav {
     margin-top: 23px;
   }
 }
+.rightbox .rightbox-normal:first-child {
+  margin-top: 0;
+}
 .rightbox .rightbox-normal:last-child {
   margin-bottom: 0;
 }
