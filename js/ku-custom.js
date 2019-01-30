@@ -13,7 +13,7 @@ function shareURL(dest) {
 
   var urlMap = {
     facebook: 'https://www.facebook.com/sharer/sharer.php?u=',
-    linkedin: 'https://www.linkedin.com/shareArticle?mini=true&amp;url=',
+    linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url=',
     twitter: 'https://twitter.com/home?status='
   };
   // Get current url
