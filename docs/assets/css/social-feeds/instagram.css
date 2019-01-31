@@ -23,7 +23,7 @@ Needs html like this:
   cursor: pointer;
 }
 
-[id*="ig"].gridbox .box1 {
+[id*="ig"].gridbox.with-img .box1 {
   position: absolute!important;
   bottom: 0;
   left: 0;
