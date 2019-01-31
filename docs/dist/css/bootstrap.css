@@ -2929,6 +2929,9 @@ th {
 .table-cellspacing > tr > td {
   border: 0;
 }
+.table-with-img-col > tbody > tr > td:first-child {
+  padding-left: 0;
+}
 table col[class*="col-"] {
   position: static;
   display: table-column;
