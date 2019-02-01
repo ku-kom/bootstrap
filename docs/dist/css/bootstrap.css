@@ -11204,12 +11204,42 @@ form.gdpr-accept .btn + .btn {
   border: 1px dotted #ddd;
 }
 .mce-content-body table > tbody > tr > td,
-.mce-content-body table > tfoot > tr > td,
 .mce-content-body table > thead > tr > td,
+.mce-content-body table > tfoot > tr > td,
 .mce-content-body table > tbody > tr > th,
-.mce-content-body table > tfoot > tr > th,
-.mce-content-body table > thead > tr > th {
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tfoot > tr > th {
   border: 1px dotted #ddd;
+}
+.mce-content-body .slide-wrapper,
+.mce-content-body .slideshow {
+  height: 289px;
+  overflow: hidden;
+  visibility: visible;
+  border: 1px solid #ccc;
+}
+.mce-content-body .slide-wrapper::before,
+.mce-content-body .slideshow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "Slideshow...";
+  -webkit-transform: translatex(-50%) translatey(-50%);
+          transform: translatex(-50%) translatey(-50%);
+}
+.mce-content-body .slide-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mce-content-body .slide-wrapper .gallery-nav {
+  display: none;
+}
+.mce-content-body .slide-wrapper .slide-link {
+  position: relative;
+}
+.mce-content-body .slide-wrapper .slide-link:not(:first-child) {
+  display: none;
 }
 #gridcontent-dialog-edit-flexiblebox .image-alignment-picker .radio:first-child .control-label {
   padding-left: 0;
