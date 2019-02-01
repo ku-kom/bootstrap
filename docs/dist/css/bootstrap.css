@@ -9889,7 +9889,7 @@ nav {
   background: #625757;
 }
 .slick-slide.slick-current .caption.full-bg {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
