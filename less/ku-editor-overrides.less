@@ -39,6 +39,7 @@
     height: 289px;
     overflow: hidden;
     border: 1px solid #ccc;
+    position: relative;
   }
 
   .slide-wrapper::before,
@@ -49,6 +50,7 @@
     -webkit-transform: translatex(-50%) translatey(-50%);
     transform: translatex(-50%) translatey(-50%);
     position: absolute;
+    z-index: 10;
   }
 
   .slide-link {
