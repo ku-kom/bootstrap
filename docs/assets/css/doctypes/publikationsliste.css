@@ -33,7 +33,7 @@ head:first-child+body .nav {
 
 #content {
   border-top: none;
-  width: initial;
+  width: auto!important;
   float: none;
   padding-top: 0;
   color: inherit;

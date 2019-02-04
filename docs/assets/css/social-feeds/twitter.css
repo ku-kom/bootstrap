@@ -21,11 +21,6 @@
   margin-top: 3px;
 }
 
-#twitter-feed .description {
-  float: none;
-  clear: both;
-}
-
 .imgInfo, .twitterInfo {
   float: left;
 }
