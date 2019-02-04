@@ -401,9 +401,9 @@
 * Mobile: All column types must behave like single column boxes
 */
 .gridbox.size1.with-img .box2 {
-  -webkit-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  -webkit-flex: 0 0 55%;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
 }
 .gridbox.size2.with-img.text-over.text-down .box1,
 .gridbox.size3.with-img.text-over.text-down .box1 {
