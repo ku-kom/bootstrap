@@ -208,6 +208,7 @@ module.exports = function (grunt) {
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
           'docs/assets/css/social-feeds/instagram.css',
+          'docs/assets/css/social-feeds/twitter.css',
           'dist/css/faculties/*.css'
         ]
       },
@@ -268,6 +269,7 @@ module.exports = function (grunt) {
         src: [
           'dist/css/ku-gridboxes.css',
           'docs/assets/css/social-feeds/instagram.css',
+          'docs/assets/css/social-feeds/twitter.css',
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css'
         ],
