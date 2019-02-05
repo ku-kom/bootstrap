@@ -218,3 +218,7 @@ table.properties>tbody>tr:hover {
 .portal-dropdown .dropdown-menu li {
   width: 100%;
 }
+
+div.rendering ul.relations {
+  clear: both;
+}

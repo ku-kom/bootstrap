@@ -209,6 +209,7 @@ module.exports = function (grunt) {
           'docs/assets/css/multiple-select/multiple-select.css',
           'docs/assets/css/social-feeds/instagram.css',
           'docs/assets/css/social-feeds/twitter.css',
+          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
           'dist/css/faculties/*.css'
         ]
       },
@@ -221,6 +222,12 @@ module.exports = function (grunt) {
         src: ['**/*.css'],
         dest: 'dist/css/doctypes/',
         flatten: true
+      },
+      minifyFAK: {
+        expand: true,
+        cwd: 'dist/css/faculties/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/faculties/'
       },
       examples: {
         expand: true,
@@ -271,11 +278,18 @@ module.exports = function (grunt) {
           'docs/assets/css/social-feeds/instagram.css',
           'docs/assets/css/social-feeds/twitter.css',
           'docs/assets/css/datatables/datatables.css',
-          'docs/assets/css/multiple-select/multiple-select.css'
+          'docs/assets/css/multiple-select/multiple-select.css',
+          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css'
         ],
         dest: 'dist/css/',
         ext: '.min.css',
         flatten: true
+      },
+      minifyFAK: {
+        expand: true,
+        cwd: 'dist/css/faculties/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/faculties/'
       },
       minifyDoctypes: {
         expand: true,
@@ -475,7 +489,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyDoctypes']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:minifyFAK', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

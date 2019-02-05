@@ -155,6 +155,12 @@ nav {
       margin-bottom: 0;
     }
   }
+
+  .panel-default {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   .gccolumn {
@@ -165,6 +171,7 @@ nav {
   }
 }
 //KU remove gutter from columns
+
 .no-gutter {
   > [class*='col-'] {
     padding-right: 0;
