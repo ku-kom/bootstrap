@@ -234,6 +234,6 @@ table.properties>tbody>tr:hover {
   padding: 0;
 }
 
-.pureportal .view_container ul.tabs li:first-child, .pureportal .view_container ul.tabs li:nth-child(3) {
+.pureportal .view_container ul.tabs li:first-child {
   display: none;
 }
