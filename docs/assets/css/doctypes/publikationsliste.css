@@ -219,6 +219,6 @@ table.properties>tbody>tr:hover {
   width: 100%;
 }
 
-div.rendering ul.relations {
+.publications_view .rendering ul.relations {
   clear: both;
 }
