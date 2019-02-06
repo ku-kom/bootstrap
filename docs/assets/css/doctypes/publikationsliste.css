@@ -42,6 +42,9 @@ head:first-child+body .nav {
 div.portal_navigator {
   font-size: inherit;
 }
+ol.portal_list {
+  float: left;
+}
 
 ol.portal_list>li {
   font-size: inherit;
