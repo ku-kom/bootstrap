@@ -29,3 +29,7 @@ div.portal_content_properties span.file_attachment {
 div.tabbed-search-box ul.box-tabs {
   display: flex;
 }
+
+.altmetric-embed {
+  margin-top: 23px;
+}
