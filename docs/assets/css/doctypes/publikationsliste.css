@@ -226,3 +226,10 @@ table.properties>tbody>tr:hover {
 .person_photo {
   margin-left: 5px;
 }
+
+.portal_navigator_bottom {
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
