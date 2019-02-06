@@ -114,3 +114,25 @@ ul {
 .visible-mobile {
   display: none;
 }
+
+// Old image and camption style
+
+.img-with-caption {
+  float: right;
+  margin: 5px 0 10px 20px;
+}
+
+.img-with-caption-left {
+  float: left;
+  margin: 5px 20px 10px 0;
+}
+
+div[class^="img-with-caption"] {
+  // Caption
+  p {
+    padding: 10px 0;
+    font-size: @figure-caption-font-size;
+    color: @gray-light;
+    border-bottom: 1px solid @figure-caption-border-color;
+  }
+}
