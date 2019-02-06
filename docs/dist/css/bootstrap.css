@@ -9197,6 +9197,7 @@ nav {
   color: inherit;
 }
 .media-list .media .media-body p {
+  margin-top: 0;
   margin-bottom: 7px;
 }
 .media-list .media .media-object {
@@ -10917,6 +10918,7 @@ ul.stripped {
 }
 div[class^="img-with-caption"] p {
   padding: 10px 0;
+  margin: 0;
   font-size: .9em;
   color: #757575;
   border-bottom: 1px solid #dfdfdf;
