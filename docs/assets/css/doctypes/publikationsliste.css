@@ -222,3 +222,7 @@ table.properties>tbody>tr:hover {
 .publications_view .rendering ul.relations {
   clear: both;
 }
+
+.person_photo {
+  margin-left: 5px;
+}
