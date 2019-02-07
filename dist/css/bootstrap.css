@@ -7841,7 +7841,7 @@ nav {
   .right-side .flexiblebox:first-child {
     margin-top: 23px;
   }
-  .right-side .rightbox-normal:first-child {
+  .right-side .panel:first-child {
     margin-top: 23px;
   }
 }
@@ -7851,7 +7851,7 @@ nav {
 .rightbox .rightbox-normal:last-child {
   margin-bottom: 0;
 }
-.rightbox .panel-default:last-child {
+.rightbox .panel:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
