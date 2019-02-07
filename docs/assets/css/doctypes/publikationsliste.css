@@ -239,4 +239,5 @@ table.properties>tbody>tr:hover {
 
 .publikationsliste .view_container ul.tabs > li:nth-child(1), .publikationsliste .view_container ul.tabs >li:nth-child(3) {
   display: none;
+  width: 0;
 }
