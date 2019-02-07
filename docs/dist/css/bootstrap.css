@@ -8533,6 +8533,9 @@ nav {
   #mobileleftmenu {
     display: none;
   }
+  .mm-page {
+    height: 100%;
+  }
 }
 /* KU theme colors for jQuery MMenu */
 #mobileleftmenu {
