@@ -5034,6 +5034,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li > a {
   color: #252525;
   background-color: #f3f3f3;
+  border: 1px solid #ccc;
   border-radius: 2px;
 }
 .nav-pills > li > a:hover {
