@@ -5053,6 +5053,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-stacked > li + li {
   margin-top: 2px;
 }
+.nav-stacked > li.active > a {
+  border-color: #757575;
+}
 .nav-justified {
   width: 100%;
 }

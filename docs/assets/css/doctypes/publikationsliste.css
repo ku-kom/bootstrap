@@ -33,7 +33,7 @@ head:first-child+body .nav {
 
 #content {
   border-top: none;
-  width: auto!important;
+  width: auto !important;
   float: none;
   padding-top: 0;
   color: inherit;
@@ -42,6 +42,7 @@ head:first-child+body .nav {
 div.portal_navigator {
   font-size: inherit;
 }
+
 ol.portal_list {
   float: left;
 }
@@ -194,10 +195,11 @@ table.properties>tbody>tr:hover {
 #purecontent .person_text h2.title {
   font-size: 16px !important;
   font-weight: 600 !important;
-  color: #252525!important;
+  color: #252525 !important;
 }
+
 #purecontent .person_text h2.title a {
-  color: #252525!important;
+  color: #252525 !important;
 }
 
 .rendering h2 {
@@ -237,7 +239,13 @@ table.properties>tbody>tr:hover {
   padding: 0;
 }
 
-.publikationsliste .view_container ul.tabs > li:nth-child(1), .publikationsliste .view_container ul.tabs >li:nth-child(3) {
+.publikationsliste .view_container ul.tabs>li:nth-child(1), .publikationsliste .view_container ul.tabs>li:nth-child(3) {
   display: none;
   width: 0;
+}
+
+@media all and (max-width: 480px) {
+  .pureportal .portal_columns_body .portal_columns_column {
+    width: 100% !important;
+  }
 }
