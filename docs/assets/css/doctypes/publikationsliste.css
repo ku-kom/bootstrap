@@ -243,9 +243,16 @@ table.properties>tbody>tr:hover {
   display: none;
   width: 0;
 }
+.search_tips {
+  margin-bottom: 10px;
+}
 
 @media all and (max-width: 480px) {
   .pureportal .portal_columns_body .portal_columns_column {
     width: 100% !important;
+  }
+
+  .pureportal .portal_columns_body .portal_columns_column>div:first-child {
+    padding: 0;
   }
 }
