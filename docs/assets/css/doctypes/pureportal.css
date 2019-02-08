@@ -8,3 +8,19 @@ h2.title a, h2.title a:visited {
 h2.title {
   font-weight: 600;
 }
+
+.portal_search_body .portal_list {
+  width: 100%;
+}
+
+.tabbed-search-box ul.box-tabs li a {
+  font-size: 13px;
+}
+
+div.tabbed-search-box div.gradient-search-box {
+  max-width: none;
+}
+
+div.tabbed-search-box div.gradient-search-box input.portal_searchfield, div.search_box input.portal_searchfield {
+  width: 100%;
+}
