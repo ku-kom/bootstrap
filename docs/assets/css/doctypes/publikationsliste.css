@@ -9,6 +9,7 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
   #navbar {
     display: flex !important;
   }
@@ -17,6 +18,13 @@
     flex: 1;
   }
 
+  .nyheder.dropdown-menu {
+    width: 252px;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  /* IE Edge */
   .nyheder.dropdown-menu {
     width: 252px;
   }
