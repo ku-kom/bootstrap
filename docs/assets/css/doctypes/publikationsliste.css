@@ -220,6 +220,10 @@ table.properties>tbody>tr:hover {
   font-weight: 600 !important;
 }
 
+.column-layout-standard .view_title .type {
+  font-size: 12px !important;
+}
+
 .portal-dropdown .dropdown-menu li {
   width: 100%;
 }
@@ -248,6 +252,10 @@ table.properties>tbody>tr:hover {
 }
 .ku-leftmenu .nav ul ul a {
   border: 0;
+}
+
+ol.portal_list li.portal_list_item_group {
+  font-size: 14px;
 }
 
 @media all and (max-width: 480px) {
