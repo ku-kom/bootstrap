@@ -50,3 +50,7 @@ div.tabbed-search-box ul.box-tabs {
 .pureportal .tabbed-search-box .gradient-search-box input.portal_searchfield, .search_box input.portal_searchfield {
   width: 100%!important;
 }
+
+.ku-leftmenu .nav ul ul a {
+  border: 0;
+}
