@@ -1,0 +1,23 @@
+// News and events
+
+.img-right() {
+  .media-list {
+    .media {
+      .media-left {
+        display: none;
+      }
+    }
+  }
+}
+
+.img-left() {
+  .media-list {
+    .media {
+      .media-body {
+        > .media-right, + .media-right {
+          display: none;
+        }
+      }
+    }
+  }
+}

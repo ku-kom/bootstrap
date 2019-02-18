@@ -106,11 +106,6 @@
   }
 }
 
-// .nyhedsboks {
-//   .panel-body {
-//     padding-top: 10px;
-//   }
-// }
 // Arrangementer - midterkolonne:
 
 #calendarlist {
@@ -219,4 +214,25 @@
   .nyhedsliste_dato {
     color: @text-color!important;
   }
+}
+
+// Float images right on single column spans:
+
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .img-right();
+}
+
+// Float images left on multiple column spans
+.single-column .column1,
+.one-one-two-column .column3,
+.one-three-column .column2,
+.one-two-column .column2,
+.three-one-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1 {
+  .img-left();
 }
