@@ -10,10 +10,15 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #navbar {
-    display: flex!important;
+    display: flex !important;
   }
+
   #navbar_menu {
     flex: 1;
+  }
+
+  .nyheder.dropdown-menu {
+    width: 252px;
   }
 }
 
@@ -42,8 +47,8 @@ head:first-child+body .nav {
 
 .dropdown ul {
   border: 0;
-  width: auto;
-  min-width: 250px;
+  width: fit-content;
+  min-width: 160px;
 }
 
 .dropdown ul li.dropdown-mwnu {
@@ -233,7 +238,7 @@ table.properties>tbody>tr:hover {
 
 .view_title .title {
   font-size: 18px !important;
-  color: #252525!important;
+  color: #252525 !important;
 }
 
 .view_title .type {
@@ -269,9 +274,11 @@ table.properties>tbody>tr:hover {
   display: none;
   width: 0;
 }
+
 .search_tips {
-  margin-bottom: 10px;
+  margin-bottom: 10px!important;
 }
+
 .ku-leftmenu .nav ul ul a {
   border: 0;
 }
@@ -285,7 +292,7 @@ div.portal_navigator_ordering .portal_navigator_popup_content a {
 }
 
 #purecontent .person_relations_list .for_publications .portal_navigator_top {
-    display: none !important;
+  display: none !important;
 }
 
 @media all and (max-width: 480px) {
@@ -294,6 +301,6 @@ div.portal_navigator_ordering .portal_navigator_popup_content a {
   }
 
   .pureportal .portal_columns_body .portal_columns_column>div:first-child {
-    padding: 0!important;
+    padding: 0 !important;
   }
 }
