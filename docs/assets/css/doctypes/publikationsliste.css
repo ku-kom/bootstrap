@@ -9,7 +9,7 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #navbar_menu {
+  #navbar {
     display: flex!important;
   }
 }
@@ -30,11 +30,15 @@ head:first-child+body .nav {
 
 .dropdown {
   background: none;
-  left: unset;
+  left: 0;
   position: relative;
   text-align: left;
   top: unset;
-  width: unset;
+  width: auto;
+}
+
+.dropdown ul {
+  border: 0;
 }
 
 #content {
