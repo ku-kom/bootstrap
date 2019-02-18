@@ -33,6 +33,7 @@
         $.ajax({
           url: $url,
           type: 'GET',
+          dataType: "jsonp",
           success: function (data) {
             //console.log(data);
             for (var i = 0; i < $images; i++) {
