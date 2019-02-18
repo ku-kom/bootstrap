@@ -26,6 +26,7 @@
 
     &+ .media {
       border-top: 1px solid @gray;
+
       &:last-child {
         border-bottom: 1px solid @gray;
       }
@@ -105,7 +106,6 @@
     }
   }
 }
-
 // Arrangementer - midterkolonne:
 
 #calendarlist {
@@ -215,9 +215,9 @@
     color: @text-color!important;
   }
 }
-
 // Float images right on single column spans:
 
+#gridsidebar .single-column .column1,
 .double-column [class*=column],
 .one-two-column .column1,
 .quad-column [class*=column],
@@ -225,9 +225,9 @@
 .two-one-column .column2 {
   .img-right();
 }
-
 // Float images left on multiple column spans
-.single-column .column1,
+
+.gridcontent:not(#gridsidebar) .single-column .column1,
 .one-one-two-column .column3,
 .one-three-column .column2,
 .one-two-column .column2,
