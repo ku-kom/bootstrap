@@ -8,6 +8,12 @@
   width: inherit;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #navbar_menu {
+    display: flex!important;
+  }
+}
+
 head:first-child+body .nav {
   background-position: unset;
 }
@@ -33,7 +39,8 @@ head:first-child+body .nav {
 
 #content {
   border-top: none;
-  width: auto !important;
+  width: 100% !important;
+  max-width: 1070px;
   float: none;
   padding-top: 0;
   color: inherit;
@@ -213,6 +220,7 @@ table.properties>tbody>tr:hover {
 
 .view_title .title {
   font-size: 18px !important;
+  color: #252525!important;
 }
 
 .view_title .type {
@@ -222,6 +230,7 @@ table.properties>tbody>tr:hover {
 
 .column-layout-standard .view_title .type {
   font-size: 12px !important;
+  padding-left: 0;
 }
 
 .portal-dropdown .dropdown-menu li {
