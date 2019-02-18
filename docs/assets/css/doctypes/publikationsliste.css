@@ -246,6 +246,9 @@ table.properties>tbody>tr:hover {
 .search_tips {
   margin-bottom: 10px;
 }
+.ku-leftmenu .nav ul ul a {
+  border: 0;
+}
 
 @media all and (max-width: 480px) {
   .pureportal .portal_columns_body .portal_columns_column {
