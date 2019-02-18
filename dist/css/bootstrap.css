@@ -9324,39 +9324,6 @@ nav {
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
 }
-#gridsidebar .single-column .column1 .media-list .media .media-left,
-.double-column [class*=column] .media-list .media .media-left,
-.one-two-column .column1 .media-list .media .media-left,
-.quad-column [class*=column] .media-list .media .media-left,
-.triple-column [class*=column] .media-list .media .media-left,
-.two-one-column .column2 .media-list .media .media-left {
-  display: none;
-}
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column3 .media-list .media .media-body > .media-right,
-.one-three-column .column2 .media-list .media .media-body > .media-right,
-.one-two-column .column2 .media-list .media .media-body > .media-right,
-.three-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-one-column .column1 .media-list .media .media-body > .media-right,
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body + .media-right,
-.one-one-two-column .column3 .media-list .media .media-body + .media-right,
-.one-three-column .column2 .media-list .media .media-body + .media-right,
-.one-two-column .column2 .media-list .media .media-body + .media-right,
-.three-one-column .column1 .media-list .media .media-body + .media-right,
-.two-one-column .column1 .media-list .media .media-body + .media-right,
-.two-one-one-column .column1 .media-list .media .media-body + .media-right {
-  display: none;
-}
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list.smal .media-body:first-child,
-.one-one-two-column .column3 .media-list.smal .media-body:first-child,
-.one-three-column .column2 .media-list.smal .media-body:first-child,
-.one-two-column .column2 .media-list.smal .media-body:first-child,
-.three-one-column .column1 .media-list.smal .media-body:first-child,
-.two-one-column .column1 .media-list.smal .media-body:first-child,
-.two-one-one-column .column1 .media-list.smal .media-body:first-child {
-  padding-left: 74px;
-}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -258,6 +258,14 @@ ol.portal_list li.portal_list_item_group {
   font-size: 14px;
 }
 
+div.portal_navigator_ordering .portal_navigator_popup_content a {
+  padding-right: 3px;
+}
+
+#purecontent .person_relations_list .for_publications .portal_navigator_top {
+    display: none !important;
+}
+
 @media all and (max-width: 480px) {
   .pureportal .portal_columns_body .portal_columns_column {
     width: 100% !important;
