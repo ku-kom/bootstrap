@@ -12,6 +12,9 @@
   #navbar {
     display: flex!important;
   }
+  #navbar_menu {
+    flex: 1;
+  }
 }
 
 head:first-child+body .nav {
@@ -38,6 +41,12 @@ head:first-child+body .nav {
 }
 
 .dropdown ul {
+  border: 0;
+  width: auto;
+  min-width: 250px;
+}
+
+.dropdown ul li.dropdown-mwnu {
   border: 0;
 }
 
