@@ -253,6 +253,6 @@ table.properties>tbody>tr:hover {
   }
 
   .pureportal .portal_columns_body .portal_columns_column>div:first-child {
-    padding: 0;
+    padding: 0!important;
   }
 }
