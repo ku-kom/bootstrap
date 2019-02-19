@@ -9430,7 +9430,7 @@ nav {
   display: block!important;
 }
 .GridStandard .double-column [class*=column] .news-teaser {
-  margin-left: 0;
+  margin-left: 0!important;
 }
 .entries {
   display: -webkit-flex;
