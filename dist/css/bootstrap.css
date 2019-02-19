@@ -5218,18 +5218,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
 .container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
+.container-fluid > .navbar-collapse,
+.container > .navbar-header,
+.container-fluid > .navbar-header {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
   .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
+  .container-fluid > .navbar-collapse,
+  .container > .navbar-header,
+  .container-fluid > .navbar-header {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5330,8 +5330,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5795,8 +5795,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
   text-transform: capitalize;
   background-color: #fff;
 }
-.ku-nav .btn-global-search .btn.global-search-options-toggle {
-  font-size: 12px;
+@media (min-width: 992px) {
+  .ku-nav .btn-global-search .btn.global-search-options-toggle {
+    font-size: 12px;
+  }
 }
 .ku-nav .btn-global-search .dropdown-toggle {
   position: relative;
@@ -9904,7 +9906,6 @@ nav {
   background: #625757;
 }
 .slick-slide.slick-current .caption.full-bg {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
