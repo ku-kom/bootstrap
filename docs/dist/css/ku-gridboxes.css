@@ -639,6 +639,9 @@
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
+  .gridbox.size1.with-img .text {
+    display: none;
+  }
   .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img,

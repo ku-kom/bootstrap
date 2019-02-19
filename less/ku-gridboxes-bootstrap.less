@@ -514,6 +514,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -524,7 +525,6 @@
     }
   }
 }
-
 @media all and (max-width: @screen-xs) {
   .gridbox {
     &.size1 {
@@ -600,6 +600,7 @@
         .text {
           display: block;
         }
+
         .box2 {
           flex: 1 0 @gridbox2;
 
@@ -732,7 +733,17 @@
   }
 }
 @media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-  // Tablet: For full-width frontpage only
+  // Tablet
+  .gridbox {
+    &.size1 {
+      &.with-img {
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+  //For full-width frontpage only
   .FullWidthFrontpage {
     .col-sm-6,
     .double-column .col-sm-6 {
