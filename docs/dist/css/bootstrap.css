@@ -9379,6 +9379,20 @@ nav {
 .one-one-two-column .column2 .media-list .media .media-left {
   display: none;
 }
+#gridsidebar .single-column .column1 .media-list .media .media-body,
+.GridStandard .double-column [class*=column] .media-list .media .media-body,
+.one-two-column .column1 .media-list .media .media-body,
+.quad-column [class*=column] .media-list .media .media-body,
+.triple-column [class*=column] .media-list .media .media-body,
+.one-three-column .column1 .media-list .media .media-body,
+.three-one-column .column2 .media-list .media .media-body,
+.two-one-column .column2 .media-list .media .media-body,
+.two-one-one-column .column2 .media-list .media .media-body,
+.two-one-one-column .column3 .media-list .media .media-body,
+.one-one-two-column .column1 .media-list .media .media-body,
+.one-one-two-column .column2 .media-list .media .media-body {
+  padding-left: 0;
+}
 #gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
 .GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right,
 .one-two-column .column1 .media-list .media .media-body > .media-right,
@@ -11354,9 +11368,6 @@ body.editor-accordions {
   display: inline-block;
 }
 .accordion-hidden {
-  margin: 0;
-}
-.accordion-hidden + .accordion-hidden {
   display: none;
 }
 .login-container {

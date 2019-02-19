@@ -8,6 +8,7 @@
         display: none;
       }
       .media-body {
+        padding-left: 0;
         & > .media-right {
           float: right;
         }
@@ -29,14 +30,14 @@
       }
 
       .news-teaser {
-        margin-left: 74px;
+        margin-left: @ku-thumbnails-size;
       }
     }
 
     &.smal {
       .media-body {
         &:first-child {
-          padding-left: 74px;
+          padding-left: @ku-thumbnails-size;
         }
       }
     }
