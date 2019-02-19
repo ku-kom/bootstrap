@@ -9235,6 +9235,7 @@ nav {
 }
 .nyhedsliste.smal .media .nyhedsliste_dato {
   float: right;
+  margin-left: 7px;
   font-weight: 600;
   color: #757575;
 }
@@ -9370,41 +9371,41 @@ nav {
   float: right;
 }
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
+.gridcontent:not(.GridStandard) .double-column [class*=column] .media-list .media .media-body > .media-right,
 .one-one-two-column .column3 .media-list .media .media-body > .media-right,
 .one-three-column .column2 .media-list .media .media-body > .media-right,
 .one-two-column .column2 .media-list .media .media-body > .media-right,
 .three-one-column .column1 .media-list .media .media-body > .media-right,
 .two-one-column .column1 .media-list .media .media-body > .media-right,
 .two-one-one-column .column1 .media-list .media .media-body > .media-right,
-.double-column [class*=column] .media-list .media .media-body > .media-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body + .media-right,
+.gridcontent:not(.GridStandard) .double-column [class*=column] .media-list .media .media-body + .media-right,
 .one-one-two-column .column3 .media-list .media .media-body + .media-right,
 .one-three-column .column2 .media-list .media .media-body + .media-right,
 .one-two-column .column2 .media-list .media .media-body + .media-right,
 .three-one-column .column1 .media-list .media .media-body + .media-right,
 .two-one-column .column1 .media-list .media .media-body + .media-right,
-.two-one-one-column .column1 .media-list .media .media-body + .media-right,
-.double-column [class*=column] .media-list .media .media-body + .media-right {
+.two-one-one-column .column1 .media-list .media .media-body + .media-right {
   display: none;
 }
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .news-teaser,
+.gridcontent:not(.GridStandard) .double-column [class*=column] .media-list .media .news-teaser,
 .one-one-two-column .column3 .media-list .media .news-teaser,
 .one-three-column .column2 .media-list .media .news-teaser,
 .one-two-column .column2 .media-list .media .news-teaser,
 .three-one-column .column1 .media-list .media .news-teaser,
 .two-one-column .column1 .media-list .media .news-teaser,
-.two-one-one-column .column1 .media-list .media .news-teaser,
-.double-column [class*=column] .media-list .media .news-teaser {
+.two-one-one-column .column1 .media-list .media .news-teaser {
   margin-left: 74px;
 }
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list.smal .media-body:first-child,
+.gridcontent:not(.GridStandard) .double-column [class*=column] .media-list.smal .media-body:first-child,
 .one-one-two-column .column3 .media-list.smal .media-body:first-child,
 .one-three-column .column2 .media-list.smal .media-body:first-child,
 .one-two-column .column2 .media-list.smal .media-body:first-child,
 .three-one-column .column1 .media-list.smal .media-body:first-child,
 .two-one-column .column1 .media-list.smal .media-body:first-child,
-.two-one-one-column .column1 .media-list.smal .media-body:first-child,
-.double-column [class*=column] .media-list.smal .media-body:first-child {
+.two-one-one-column .column1 .media-list.smal .media-body:first-child {
   padding-left: 74px;
 }
 .entries {
