@@ -215,6 +215,20 @@
     color: @text-color!important;
   }
 }
+
+// Float images left on multiple column spans
+
+.gridcontent:not(#gridsidebar) .single-column .column1,
+.one-one-two-column .column3,
+.one-three-column .column2,
+.one-two-column .column2,
+.three-one-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1,
+.double-column [class*=column] {
+  .img-left();
+}
+
 // Float images right on single column spans:
 
 #gridsidebar .single-column .column1,
@@ -230,16 +244,4 @@
 .one-one-two-column .column1,
 .one-one-two-column .column2, {
   .img-right();
-}
-// Float images left on multiple column spans
-
-.gridcontent:not(#gridsidebar) .single-column .column1,
-.one-one-two-column .column3,
-.one-three-column .column2,
-.one-two-column .column2,
-.three-one-column .column1,
-.two-one-column .column1,
-.two-one-one-column .column1,
-.double-column [class*=column] {
-  .img-left();
 }

@@ -92,15 +92,19 @@ body {
   &.editor-accordions {
     background-color: #fbfbf7;
     padding: 0 15px;
-    // KU specific style to fix spacing in editor accordion plugin:
-
-    .accordion-hidden {
-      display: none;
-    }
   }
 }
 
 .mce-container-body [aria-label~="accordion"] {
   // Show accordion icon in the editor - because it's hidden from old templates
   display: inline-block;
+}
+
+// KU specific style to fix spacing in editor accordion plugin:
+
+.accordion-hidden {
+  margin: 0;
+  & + & {
+    display: none;
+  }
 }

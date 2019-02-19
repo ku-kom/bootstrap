@@ -9327,34 +9327,6 @@ nav {
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
 }
-#gridsidebar .single-column .column1 .media-list .media .media-left,
-.GridStandard .double-column [class*=column] .media-list .media .media-left,
-.one-two-column .column1 .media-list .media .media-left,
-.quad-column [class*=column] .media-list .media .media-left,
-.triple-column [class*=column] .media-list .media .media-left,
-.one-three-column .column1 .media-list .media .media-left,
-.three-one-column .column2 .media-list .media .media-left,
-.two-one-column .column2 .media-list .media .media-left,
-.two-one-one-column .column2 .media-list .media .media-left,
-.two-one-one-column .column3 .media-list .media .media-left,
-.one-one-two-column .column1 .media-list .media .media-left,
-.one-one-two-column .column2 .media-list .media .media-left {
-  display: none;
-}
-#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
-.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right,
-.one-two-column .column1 .media-list .media .media-body > .media-right,
-.quad-column [class*=column] .media-list .media .media-body > .media-right,
-.triple-column [class*=column] .media-list .media .media-body > .media-right,
-.one-three-column .column1 .media-list .media .media-body > .media-right,
-.three-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column3 .media-list .media .media-body > .media-right,
-.one-one-two-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column2 .media-list .media .media-body > .media-right {
-  float: right;
-}
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
 .one-one-two-column .column3 .media-list .media .media-body > .media-right,
 .one-three-column .column2 .media-list .media .media-body > .media-right,
@@ -9392,6 +9364,34 @@ nav {
 .two-one-one-column .column1 .media-list.smal .media-body:first-child,
 .double-column [class*=column] .media-list.smal .media-body:first-child {
   padding-left: 74px;
+}
+#gridsidebar .single-column .column1 .media-list .media .media-left,
+.GridStandard .double-column [class*=column] .media-list .media .media-left,
+.one-two-column .column1 .media-list .media .media-left,
+.quad-column [class*=column] .media-list .media .media-left,
+.triple-column [class*=column] .media-list .media .media-left,
+.one-three-column .column1 .media-list .media .media-left,
+.three-one-column .column2 .media-list .media .media-left,
+.two-one-column .column2 .media-list .media .media-left,
+.two-one-one-column .column2 .media-list .media .media-left,
+.two-one-one-column .column3 .media-list .media .media-left,
+.one-one-two-column .column1 .media-list .media .media-left,
+.one-one-two-column .column2 .media-list .media .media-left {
+  display: none;
+}
+#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
+.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right,
+.one-two-column .column1 .media-list .media .media-body > .media-right,
+.quad-column [class*=column] .media-list .media .media-body > .media-right,
+.triple-column [class*=column] .media-list .media .media-body > .media-right,
+.one-three-column .column1 .media-list .media .media-body > .media-right,
+.three-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column3 .media-list .media .media-body > .media-right,
+.one-one-two-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column2 .media-list .media .media-body > .media-right {
+  float: right;
 }
 .entries {
   display: -webkit-flex;
@@ -11350,11 +11350,14 @@ body.editor-accordions {
   padding: 0 15px;
   background-color: #fbfbf7;
 }
-body.editor-accordions .accordion-hidden {
-  display: none;
-}
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
+}
+.accordion-hidden {
+  margin: 0;
+}
+.accordion-hidden + .accordion-hidden {
+  display: none;
 }
 .login-container {
   max-width: 450px;
