@@ -216,28 +216,23 @@
     color: @text-color!important;
   }
 }
-
 // Float images right on single column spans:
-
 #gridsidebar .single-column .column1,
- .GridStandard .double-column [class*=column],
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.one-three-column .column1,
 .one-two-column .column1,
 .quad-column [class*=column],
-.triple-column [class*=column],
-.one-three-column .column1,
 .three-one-column .column2,
+.triple-column [class*=column],
 .two-one-column .column2,
 .two-one-one-column .column2,
-.two-one-one-column .column3,
-.one-one-two-column .column1,
-.one-one-two-column .column2, {
+.two-one-one-column .column3 {
   .img-right();
 }
-
 // Float images left on multiple column spans
-
+.double-column [class*=column],
 .gridcontent:not(#gridsidebar) .single-column .column1,
-.gridcontent:not(.GridStandard) .double-column [class*=column],
 .one-one-two-column .column3,
 .one-three-column .column2,
 .one-two-column .column2,
@@ -245,4 +240,12 @@
 .two-one-column .column1,
 .two-one-one-column .column1 {
   .img-left();
+}
+// GridStandard double columns override
+.GridStandard .double-column [class*=column] {
+  .img-right();
+
+  .media-right {
+    display: block;
+  }
 }
