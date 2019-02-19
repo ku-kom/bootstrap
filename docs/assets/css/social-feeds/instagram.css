@@ -16,6 +16,7 @@ Needs html like this:
   -ms-flex-direction: column;
   flex-direction: column;
   visibility: hidden;
+  height: 185px!important;
 }
 
 [id*="ig"].gridbox::before {
