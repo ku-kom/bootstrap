@@ -9429,6 +9429,9 @@ nav {
 .GridStandard .double-column [class*=column] .media-right {
   display: block!important;
 }
+.GridStandard .double-column [class*=column] .news-teaser {
+  margin-left: 0;
+}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;
