@@ -524,6 +524,7 @@
     }
   }
 }
+
 @media all and (max-width: @screen-xs) {
   .gridbox {
     &.size1 {
@@ -596,6 +597,9 @@
   .gridbox {
     &.size1 {
       &.with-img {
+        .text {
+          display: block;
+        }
         .box2 {
           flex: 1 0 @gridbox2;
 
@@ -666,10 +670,6 @@
             white-space: normal;
           }
         }
-      }
-
-      .text {
-        display: block;
       }
 
       &:hover {

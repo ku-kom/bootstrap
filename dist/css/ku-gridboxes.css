@@ -518,6 +518,9 @@
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
   }
+  .gridbox.size1.with-img .text {
+    display: block;
+  }
   .gridbox.size1.with-img .box2 {
     -webkit-flex: 1 0 185px;
         -ms-flex: 1 0 185px;
@@ -605,9 +608,6 @@
   .gridbox.with-img.size3 .box1 .header {
     white-space: normal;
     border-right: 0;
-  }
-  .gridbox.with-img .text {
-    display: block;
   }
   .gridbox.with-img:hover .header {
     background: transparent;

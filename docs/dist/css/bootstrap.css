@@ -4943,7 +4943,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .ku-nav {
     display: block;
   }
@@ -5219,18 +5219,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse,
 .container > .navbar-header,
-.container-fluid > .navbar-header {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse,
   .container > .navbar-header,
-  .container-fluid > .navbar-header {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5331,8 +5331,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5360,6 +5360,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   height: 100%;
   margin-right: 0;
   font-size: 13px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #topbar_menu {
+    font-size: 12px;
+  }
 }
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
@@ -9855,8 +9860,8 @@ nav {
 }
 .slick-slide.slick-current .caption h2 {
   margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin-bottom: 5px;
+  font-size: 20px;
   line-height: 1.2;
   color: inherit;
 }
@@ -9931,6 +9936,7 @@ nav {
     border: 0;
   }
   .slick-slide.slick-current .caption h2 {
+    margin-bottom: 10px;
     font-size: 26px;
   }
   .slick-slide.slick-current .caption.textblock-left {
