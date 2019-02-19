@@ -1,15 +1,23 @@
 // News and events
 
+// Float image right
 .img-right() {
   .media-list {
     .media {
       .media-left {
         display: none;
       }
+      .media-body {
+        & > .media-right {
+          float: right;
+        }
+      }
     }
   }
 }
 
+
+// Float image left
 .img-left() {
   .media-list {
     .media {
