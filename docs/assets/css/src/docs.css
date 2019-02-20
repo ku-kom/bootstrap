@@ -119,6 +119,9 @@ h2 code, h3 code, h4 code {
 .bs-example-images .img-thumbnail {
   display: inline-block;
 }
+#ku-dropdowns-box {
+  overflow: visible;
+}
 
 /* [data-example-id="img-with-captions"], [data-example-id="img-with-captions-aligned"] {
   overflow: hidden;
