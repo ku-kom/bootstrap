@@ -190,12 +190,8 @@
     color: inherit;
   }
 }
-// @media (max-width: @screen-xs-max) {
-//   .visible-mobile {
-//     display: block;
-//   }
-//
-//   .visible-desktop {
-//     display: none;
-//   }
-// }
+.embed-responsive {
+  &+ .embed-responsive {
+    margin-top: @grid-gutter-height;
+  }
+}
