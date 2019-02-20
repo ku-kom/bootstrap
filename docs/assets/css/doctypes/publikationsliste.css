@@ -244,7 +244,9 @@ table.properties>tbody>tr:hover {
   font-weight: 600 !important;
   color: #252525 !important;
 }
-
+.striped-list h2.title a {
+  color: inherit !important;
+}
 .view_title .title {
   font-size: 18px !important;
   color: #252525 !important;
