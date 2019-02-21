@@ -11288,11 +11288,14 @@ body.editor-accordions {
   padding: 0 15px;
   background-color: #fbfbf7;
 }
+.accordion-hidden {
+  display: none;
+}
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-.accordion-hidden {
-  display: none;
+.mce-container-body .accordion-hidden {
+  display: block;
 }
 .login-container {
   max-width: 450px;
