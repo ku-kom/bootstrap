@@ -21,12 +21,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -59,7 +59,6 @@
     left: 0;
   }
   // Slider gallery
-
   .slide-wrapper .gallery-nav {
     display: none;
   }
@@ -104,9 +103,15 @@ body {
     // Show accordion icon in the editor - because it's hidden from old templates
     display: inline-block;
   }
-  .accordion-hidden {
-    display: block;
-  }
 }
 
-// KU specific style to fix spacing in editor accordion plugin:
+body {
+  &#content {
+    &.mce-content-body {
+      // Put cursor below accordions
+      .accordion-hidden {
+        display: none;
+      }
+    }
+  }
+}
