@@ -11333,3 +11333,15 @@ body#content.mce-content-body .accordion-hidden {
 .remember-me input[type=checkbox] {
   margin-top: 1px;
 }
+.usabilla {
+  max-width: 469px;
+  padding-top: 14px;
+  margin: 0 10px 10px;
+  clear: both;
+  border-top: 1px solid #ccc;
+}
+.usabilla-desktop {
+  padding-top: 14px;
+  margin-top: 23px;
+  border-top: 1px solid #ccc;
+}
