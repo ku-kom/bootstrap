@@ -508,7 +508,7 @@
 }
 @media all and (max-width: 767px) {
   .gridbox {
-    height: auto;
+    height: auto!important;
   }
   .gridbox .text {
     display: none;
