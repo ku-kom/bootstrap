@@ -507,9 +507,6 @@
   }
 }
 @media all and (max-width: 767px) {
-  .gridbox {
-    height: auto!important;
-  }
   .gridbox .text {
     display: none;
   }
@@ -517,6 +514,9 @@
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+  .gridbox:not(.with-img) {
+    height: auto!important;
   }
   .gridbox.size1.with-img .text {
     display: block;

@@ -583,7 +583,6 @@
 @media all and (max-width: @screen-xs-max) {
   // All flexboxes now require dynamic height as they are stacked in mobile
   .gridbox {
-    height: auto!important;
 
     .text {
       display: none;
@@ -591,6 +590,9 @@
 
     .box1 {
       flex: 0 1 auto;
+    }
+    &:not(.with-img) {
+      height: auto!important;
     }
   }
 
