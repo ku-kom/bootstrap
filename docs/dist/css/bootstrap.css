@@ -7851,6 +7851,9 @@ nav {
   .right-side .panel:first-child {
     margin-top: 23px;
   }
+  .right-side .flexiblebox-as-rightbox:first-child {
+    margin-top: 23px;
+  }
 }
 .rightbox .rightbox-normal:first-child {
   margin-top: 0;
@@ -11296,6 +11299,7 @@ body.editor-accordions {
 }
 body#content.mce-content-body .accordion-hidden {
   display: block;
+  margin: 0;
 }
 .login-container {
   max-width: 450px;
