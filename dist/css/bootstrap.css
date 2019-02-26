@@ -5885,7 +5885,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
     content: ">\00a0";
   }
   .breadcrumb > .active {
-    color: #6f727b;
+    color: #737682;
   }
 }
 .pagination {
