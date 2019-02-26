@@ -5856,19 +5856,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .breadcrumbs {
   display: none;
-
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
 }
 @media (min-width: 768px) {
   .breadcrumbs {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
+    display: block;
     margin-top: 29px;
     margin-bottom: 10px;
   }
@@ -5889,12 +5880,12 @@ html:lang(en) .navbar-inverse .topbar-logo {
     display: inline-block;
   }
   .breadcrumb > li + li:before {
-    padding: 0 5px;
+    padding: 0 2px 0 3px;
     color: #252525;
     content: ">\00a0";
   }
   .breadcrumb > .active {
-    color: #a9adb2;
+    color: #6f727b;
   }
 }
 .pagination {
