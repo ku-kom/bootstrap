@@ -101,8 +101,7 @@ nav {
   &:extend(.clearfix all);
   margin-bottom: @grid-gutter-height;
 
-  &.picture .title,
-  .picture-visning2 .title {
+  &.picture .title {
     display: none;
   }
 }
@@ -134,20 +133,13 @@ nav {
     margin-top: @grid-gutter-height;
   }
   @media (min-width: @screen-sm) {
-    .gcitem:first-child {
-      margin-top: @grid-gutter-height;
-    }
-
-    .flexiblebox:first-child {
-      margin-top: @grid-gutter-height;
-    }
-
-    .panel:first-child {
-      margin-top: @grid-gutter-height;
-    }
-
-    .flexiblebox-as-rightbox:first-child {
-      margin-top: @grid-gutter-height;
+    .flexiblebox,
+    .flexiblebox-as-rightbox,
+    .gcitem,
+    .panel {
+      &:first-child {
+        margin-top: @grid-gutter-height;
+      }
     }
   }
 }
@@ -189,12 +181,6 @@ nav {
   // Margin top for mobile and tablets
   .mobile-margin-top-10 {
     margin-top: @margin10;
-  }
-}
-
-.picture-standard {
-  h2 {
-    display: none;
   }
 }
 
