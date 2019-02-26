@@ -9319,7 +9319,7 @@ nav {
   padding-right: 5px;
   font-size: 1em;
   font-weight: 700;
-  color: #808080;
+  color: #757575;
   text-transform: uppercase;
 }
 .manchet p {
@@ -10858,6 +10858,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 ul.stripped {
   padding-left: 0;
   list-style-type: none;
+}
+ul.stripped li {
+  background-repeat: no-repeat;
 }
 .udd_table {
   width: 100%;
