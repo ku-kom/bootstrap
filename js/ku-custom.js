@@ -89,19 +89,10 @@ function shareURL(dest) {
   }
   makeGlobalMenuClickable();
 
-  // Element to click for smooth scroll to top
-  var $scrollText = ($('html').attr('lang') == 'da') ? "Scroll til toppen" : 'Scroll to top';
-  var $scroller = '<div class="scrolltop fade" id="scrolltop" title="'+ $scrollText +'" aria-label="'+ $scrollText +'"><span class="glyphicon-menu-up"></span></div>';
-
-  // Add scroller after last element
-  if ($editMode === false) {
-    $($scroller).appendTo('#globalfooter');
-  }
-
   // Show/hide scroller
   function scrollFunction() {
     var $scroll = $('#scrolltop');
-    if ($editMode === false && $scroll) {
+    if ($scroll) {
       if (document.documentElement.scrollTop > 60) {
         $scroll.addClass('in');
       } else {
