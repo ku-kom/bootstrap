@@ -6196,7 +6196,7 @@ figure img {
   /* IE 11 */
   .figure.image img,
   figure.image img {
-    width: 100%;
+    width: 100%!important;
   }
 }
 img.img-left {
