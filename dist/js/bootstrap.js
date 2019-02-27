@@ -1934,7 +1934,8 @@ function shareURL(dest) {
   makeGlobalMenuClickable();
 
   // Element to click for smooth scroll to top
-  var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
+  var $scrollText = ($('html').attr('lang') == 'da') ? "Scroll til toppen" : 'Scroll to top';
+  var $scroller = '<div class="scrolltop fade" id="scrolltop" title="'+ $scrollText +'" aria-label="'+ $scrollText +'"><span class="glyphicon-menu-up"></span></div>';
 
   // Add scroller after last element
   if ($editMode === false) {
