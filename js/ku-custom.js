@@ -89,7 +89,7 @@ function shareURL(dest) {
   }
   makeGlobalMenuClickable();
 
-  // Show/hide scroller
+  // Show/hide scroller if it exists
   function scrollFunction() {
     var $scroll = $('#scrolltop');
     if ($scroll) {
