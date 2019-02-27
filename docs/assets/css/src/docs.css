@@ -119,10 +119,13 @@ h2 code, h3 code, h4 code {
 .bs-example-images .img-thumbnail {
   display: inline-block;
 }
-
-[data-example-id="img-with-captions"], [data-example-id="img-with-captions-aligned"] {
-  overflow: hidden;
+#ku-dropdowns-box {
+  overflow: visible;
 }
+
+/* [data-example-id="img-with-captions"], [data-example-id="img-with-captions-aligned"] {
+  overflow: hidden;
+} */
 
 /*
  * Fancy skip link
@@ -839,7 +842,6 @@ h1[id] {
   float: none;
   padding: 45px 15px 15px;
   margin: 0 -15px 15px;
-  /* overflow: hidden; */
   clear: both;
   border-color: #e5e5e5 #eee #eee;
   border-style: solid;
@@ -852,7 +854,7 @@ h1[id] {
   content: " ";
 }
 
-[data-example-id*='blockquote'] {
+[data-example-id*='blockquote'], [data-example-id*='ku-factboxes'] {
   overflow: hidden;
 }
 

@@ -31,12 +31,9 @@
 .slick-list {
   position: relative;
   overflow: hidden;
-  //display: block;
   margin: 0;
   padding: 0;
-  //@media (min-width: @screen-md-min) {
   height: 100%; // KU
-  //}
   &:focus {
     outline: none;
   }
@@ -57,9 +54,7 @@
   left: 0;
   top: 0;
   display: block;
-  //@media (min-width: @screen-md-min) {
   height: 100%; // KU
-  //}
   &:after,
   &:before {
     content: "";
@@ -182,7 +177,7 @@
   line-height: 0;
   position: absolute;
   top: 50%;
-  display: none;
+  visibility: hidden;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -223,7 +218,7 @@
   }
   @media (min-width: @screen-sm) {
     // Only display arrows in desktop
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -334,16 +329,16 @@
       width: 100%;
       letter-spacing: 0.7px;
       line-height: @line-height-small;
-      padding: 15px;
+      padding: 10px;
       font-size: 14px;
       color: @text-color;
       background: @gray-f5;
 
       h2 {
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         color: inherit;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.2;
       }
 
@@ -353,7 +348,7 @@
 
       &.subcolor_5 {
         background: @ku-gray;
-        color: @ku-gridbox-text;
+        color: @text-color;
         @media (min-width: @screen-sm) {
           background: fade(@ku-gray, 90%);
         }
@@ -365,7 +360,7 @@
 
       &.subcolor_6 {
         background: @gray-f5;
-        color: @ku-gridbox-text;
+        color: @text-color;
         @media (min-width: @screen-sm) {
           background: fade(@white-color, 90%);
         }
@@ -388,9 +383,12 @@
       }
 
       &.full-bg {
-        position: absolute;
         top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         padding: 15px;
+        height: 100%;
         width: 100%;
       }
     }
@@ -401,16 +399,13 @@
   }
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
     .caption {
-      // Special caption width for iPad
-      &.textblock-left,
-      &.textblock-right,
-      &.textlabel-left,
-      &.textlabel-right {
-        width: 50%;
-      }
+      // Special caption iPad
+        position: absolute!important;
+        left: 0;
+        bottom: 0;
     }
   }
-  @media (min-width: @screen-sm) {
+  @media (min-width: @screen-md) {
     &.slick-current {
       .caption {
         font-size: 16px;
@@ -423,6 +418,7 @@
         border: 0;
         h2 {
           font-size: 26px;
+          margin-bottom: 10px;
         }
 
         &.textblock-left {
@@ -454,12 +450,12 @@
         }
 
         &.textlabel-right {
-          top: 45%;
+          top: 50%;
           bottom: auto;
           right: 0;
           left: auto;
           transform: translateY(-50%);
-          width: 50%;
+          width: 45%;
           min-height: 70%;
           padding: 16px 30px 20px 20px;
           .border-left-radius(2px);

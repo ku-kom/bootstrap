@@ -101,6 +101,7 @@
     </div>
   </div>
 </footer>
+<div class="scrolltop fade" id="scrolltop" title="Scroll to top" aria-label="Scroll to top"><span class="glyphicon-menu-up"></span></div>
 <script>
   var pageTitle = 'Titel';
 </script>
@@ -111,28 +112,28 @@
 <script async defer src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 {% else %}
 <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
+{% endif %}
+{% if page.category == "kurser" %}
+<!-- Kurser.ku.dk -->
+<script src="{{ site.baseurl }}/assets/js/kurser.ku.dk/kurser.min.js"></script>
+{% endif %}
 {% if page.slug != "examples" %}
 <!-- Documentation extra - not for production -->
 <script async defer src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 <!-- //Documentation extra - not for production -->
 {% endif %}
- {% endif %}
-  {% if page.category == "kurser" %}
-  <!-- Kurser.ku.dk -->
-  <script src="{{ site.baseurl }}/assets/js/kurser.ku.dk/kurser.min.js"></script>
-  {% endif %}
-  <!-- {% if page.slug == "examples" %}
-  <script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
-  <script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
-  {% endif %} -->
+<!-- {% if page.slug == "examples" %}
+<script src="{{ site.baseurl }}/assets/js/mmenu/jquery.mmenu.all.min.js"></script>
+<script src="{{ site.baseurl }}/custom/ku-mobile-menu.js"></script>
+{% endif %} -->
 <script async defer src="{{ site.baseurl }}/assets/js/ku-global-search/search.js"></script>
 <script>
   // Only use under development - set active left menu item
   $(function() {
     setActiveLinks();
 
-    $('.nav li a').click(function() {
-      $('.nav li').removeClass('active');
+    $('#leftmenu .nav li a').click(function() {
+      $('#leftmenu .nav li').removeClass('active');
       $(this).parent().addClass('active');
     });
 

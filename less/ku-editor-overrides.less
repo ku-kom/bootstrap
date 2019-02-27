@@ -2,7 +2,6 @@
 // Overrides for existing ku pages, eg. editor styles
 // Remove these styles when all pages use Bootstrap
 // ------------------
-// Old blockquotes inside TinyMCE
 
 .mce-content-body {
   &#content {
@@ -18,115 +17,62 @@
       .img-responsive;
     }
   }
-
-  blockquote {
-    float: right;
-    border-top: 1px solid #901a1e;
-    padding-top: 20px;
-    margin: 0;
-    position: relative;
-    font-size: 12px;
-    font-weight: 700;
-
-    &::before {
-      content: '\"';
-      color: #901a1e;
-      position: absolute;
-      top: 4px;
-      left: -2px;
-      font-style: italic;
-      font-size: 25px;
-      line-height: 1;
-    }
-
-    &.full-width {
-      max-width: 100%;
-      width: 100%;
-      clear: both;
-      float: none;
-    }
-
-    footer {
-      font-weight: normal;
-      font-size: 0.9em;
-    }
-  }
-
-  ul.advanced_list {
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.advanced_list div {
-    width: 255px;
-    font-size: 1em;
-    letter-spacing: 0.02em;
-    line-height: 14px;
-    background-color: #f5f5f5;
-    padding: 5px 5px 5px 10px;
-    position: relative;
-    // min-height: 80px;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  ul.full_link li:hover div {
-    background-color: #e7e6e6;
-  }
-
-  ul.advanced_list p {
-    margin: 0;
-    padding: 0;
-    line-height: 13px;
-  }
-
-  ul.advanced_list li {
-    list-style-type: none;
-    background: right no-repeat #f5f5f5;
-    margin-bottom: 8px;
-    padding: 0;
-    // min-height: 80px;
-    position: relative;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  ul.advanced_list h2 {
-    font-size: 1em;
-    letter-spacing: 0.6px;
-    font-weight: 700;
-    margin: 0 0 4px;
-    padding: 0;
-  }
-
-  ul.advanced_list h2 a,
-  ul.advanced_list h2 a:visited {
-    color: #252525;
-  }
   // Tables are always outlined in editor
   table {
-    border: 1px solid @table-border-color;
+    border: 1px dotted @table-border-color;
 
-    > tbody,
-     > tfoot,
-    > thead {
+    > tfoot,
+     > thead,
+    > tbody {
       > tr {
-        > td,
-        > th {
-          border: 1px solid @table-border-color;
+        > th,
+        > td {
+          border: 1px dotted @table-border-color;
         }
       }
     }
+  }
+  // Slider is somewhat visible inside the Editor
+  .slide-wrapper,
+  .slideshow {
+    visibility: visible;
+    height: 289px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+  }
 
-    > thead > tr {
-      > td,
-      > th {
-        border-bottom-width: 2px;
-      }
-    }
+  .slide-wrapper::before,
+  .slideshow::before {
+    content: "Slideshow...";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translatex(-50%) translatey(-50%);
+    transform: translatex(-50%) translatey(-50%);
+    position: absolute;
+    z-index: 10;
+  }
+
+  .slide-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  // Slider gallery
+  .slide-wrapper .gallery-nav {
+    display: none;
+  }
+
+  .slide-wrapper .slide-link {
+    position: relative;
+  }
+
+  .slide-wrapper .slide-link:not(:first-child) {
+    display: none;
   }
 }
 // Flexible box dialog
+
 #gridcontent-dialog-edit-flexiblebox {
   .image-alignment-picker {
     .radio {
@@ -148,7 +94,25 @@ body {
   }
 }
 
-.mce-container-body [aria-label~="accordion"] {
-  // Show accordion icon in the editor - because it's hidden from old templates
-  display: inline-block;
+.accordion-hidden {
+  display: none;
+}
+
+.mce-container-body {
+  [aria-label~="accordion"] {
+    // Show accordion icon in the editor - because it's hidden from old templates
+    display: inline-block;
+  }
+}
+
+body {
+  &#content {
+    &.mce-content-body {
+      // Put cursor below accordions
+      .accordion-hidden {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
 }

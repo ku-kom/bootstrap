@@ -29,3 +29,24 @@ div.portal_content_properties span.file_attachment {
 div.tabbed-search-box ul.box-tabs {
   display: flex;
 }
+
+.altmetric-embed {
+  margin-top: 23px;
+}
+
+.pureportal .portal_search_body .portal_list {
+  width: 100%;
+}
+
+.pureportal .tabbed-search-box ul.box-tabs li a {
+  font-size: 13px;
+}
+
+.pureportal .tabbed-search-box .gradient-search-box {
+  max-width: none!important;
+  border-color: #ccc;
+}
+
+.pureportal .tabbed-search-box .gradient-search-box input.portal_searchfield, .search_box input.portal_searchfield {
+  width: 100%!important;
+}

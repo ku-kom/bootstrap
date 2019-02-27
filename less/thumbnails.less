@@ -39,6 +39,8 @@
 figure {
   // Ensures the caption's text aligns with the image.
   display: table;
+  table-layout: fixed;
+  max-width: 100%;
   clear: both;
 
   &.image {
@@ -64,9 +66,17 @@ figure {
     max-width: 100%;
     height: auto;
   }
-
-  &+* {
-    clear: both;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  .figure,
+  figure {
+    //width: 100%;
+    &.image {
+      img {
+        width: 100%!important;
+      }
+    }
   }
 }
 // KU specific - editor classes
@@ -101,14 +111,13 @@ figcaption {
   color: @gray-light;
   border-bottom: 1px solid @figure-caption-border-color;
   padding: 10px 10px 10px 0;
-  width: 100%;
+  // width: 100%;
   display: table-caption;
   caption-side: bottom;
 }
-
-.fritekst_over_img,
-.uden-boks-top {
-  // We no longer support this!
-  // position: absolute;
-  // margin-top: -39px;
-}
+// .fritekst_over_img,
+// .uden-boks-top {
+// We no longer support this!
+// position: absolute;
+// margin-top: -39px;
+// }

@@ -10,12 +10,33 @@
   white-space: nowrap;
 }
 
-
-#medarbejdertable tr th:nth-child(4),
-#medarbejdertable tr th:nth-child(4) input {
-   width: 8em!important;
+#medarbejdertable tr th {
+  border-bottom: 0;
 }
 
+
+
 #medarbejdertable tr th:last-child input {
-   display: none;
+  display: none;
+}
+
+#medarbejdertable tr th:nth-last-of-type(-n+2) {
+  /* Target last to columns */
+  padding-right: 8px;
+  cursor: default;
+}
+
+#medarbejdertable tr th:nth-last-of-type(-n+2):after {
+  /* Target last to columns */
+  display: none;
+}
+
+#medarbejdertable tr th:nth-last-child(2) {
+  /* Target last but one - the phone cells */
+  width: 25%!important;
+}
+
+#medarbejdertable tr th:last-child {
+  /* Target last - the e-mail cells */
+  width: 20%!important;
 }

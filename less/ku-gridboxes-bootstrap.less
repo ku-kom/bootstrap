@@ -363,11 +363,21 @@
     }
   }
 
+  &.full {
+    .header {
+      word-wrap: break-word;
+    }
+  }
+
   &.outlined {
     background: @white-color!important;
 
     &:hover {
       background: @ku-gray-hover!important;
+    }
+
+    .header {
+      word-wrap: break-word;
     }
 
     &:not(.with-img) {
@@ -573,7 +583,6 @@
 @media all and (max-width: @screen-xs-max) {
   // All flexboxes now require dynamic height as they are stacked in mobile
   .gridbox {
-    height: auto;
 
     .text {
       display: none;
@@ -582,11 +591,18 @@
     .box1 {
       flex: 0 1 auto;
     }
+    &:not(.with-img) {
+      height: auto!important;
+    }
   }
 
   .gridbox {
     &.size1 {
       &.with-img {
+        .text {
+          display: block;
+        }
+
         .box2 {
           flex: 1 0 @gridbox2;
 
@@ -659,10 +675,6 @@
         }
       }
 
-      .text {
-        display: block;
-      }
-
       &:hover {
         .header {
           background: transparent;
@@ -723,7 +735,17 @@
   }
 }
 @media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-  // Tablet: For full-width frontpage only
+  // Tablet
+  .gridbox {
+    &.size1 {
+      &.with-img {
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+  //For full-width frontpage only
   .FullWidthFrontpage {
     .col-sm-6,
     .double-column .col-sm-6 {
@@ -1033,8 +1055,8 @@
   }
   // Single columns
   .one-two-column .column1,
-  .two-one-column .column2,
-  .triple-column [class*=column] {
+  .triple-column [class*=column],
+  .two-one-column .column2 {
     .gridbox.with-img {
       &.size1 {
         .box2 img {

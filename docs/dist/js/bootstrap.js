@@ -1857,14 +1857,27 @@ function shareURL(dest) {
 
   var urlMap = {
     facebook: 'https://www.facebook.com/sharer/sharer.php?u=',
-    linkedin: 'https://www.linkedin.com/shareArticle?mini=true&amp;url=',
+    linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url=',
     twitter: 'https://twitter.com/home?status='
   };
   // Get current url
   var url = window.location.href;
-  var media = dest.toLowerCase().trim();
-  if (media) {
-    window.location.href = encodeURI(urlMap[media]) + encodeURI(url);
+  var param = dest.toLowerCase().trim();
+
+  var media = $.map(urlMap, function (i, e) {
+    // return keys
+    return e;
+  });
+
+  if ($.inArray(param, media) !== -1) {
+    // if supplied parameter matches one of the possible media channels, continue the execution.
+    // LinkedIn has extra parametres appending the url:
+    var docTitle = document.title || '';
+    var source = location.hostname || '';
+    var isLinkedin = (param == 'linkedin') ? true : false;
+    var suffix = (isLinkedin === true) ? '&title=' + encodeURIComponent(docTitle) + '&summary=&source=' + encodeURI(source) : '';
+    // Open in a new window:
+    window.open(encodeURI(urlMap[param]) + encodeURI(url) + suffix);
   } else {
     console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
   }
@@ -1911,7 +1924,7 @@ function shareURL(dest) {
 
   // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled' for desktop only:
   function makeGlobalMenuClickable() {
-    if (window.matchMedia('(min-width: 767px)').matches) {
+    if (window.matchMedia('(min-width: 768px)').matches) {
       var $menu = $('#navbar_menu li.dropdown');
       $menu.each(function () {
         $(this).children('.dropdown-toggle').addClass('disabled');
@@ -1920,18 +1933,10 @@ function shareURL(dest) {
   }
   makeGlobalMenuClickable();
 
-  // Element to click for smooth scroll to top
-  var $scroller = '<div class=\'scrolltop fade\' id=\'scrolltop\' title=\'Top\'><span class=\'glyphicon-menu-up\'></span></div>';
-
-  // Add scroller after last element
-  if ($editMode === false) {
-    $($scroller).appendTo('#globalfooter');
-  }
-
-  // Show/hide scroller
+  // Show/hide scroller if it exists
   function scrollFunction() {
     var $scroll = $('#scrolltop');
-    if ($editMode === false && $scroll) {
+    if ($scroll) {
       if (document.documentElement.scrollTop > 60) {
         $scroll.addClass('in');
       } else {

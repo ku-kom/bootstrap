@@ -341,6 +341,10 @@
 #topbar_menu {
   height: 100%;
   margin-right: 0;
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    // iPad
+    font-size: 12px;
+  }
   font-size: 13px;
 
   &.navbar-nav {
@@ -862,7 +866,9 @@
       background-color: @white-color;
 
       &.global-search-options-toggle {
-        font-size: 12px;
+        @media (min-width: @screen-md) {
+          font-size: 12px;
+        }
       }
     }
 

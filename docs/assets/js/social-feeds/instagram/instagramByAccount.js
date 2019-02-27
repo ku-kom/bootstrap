@@ -1,30 +1,28 @@
 /* NEL, KU KOM Script to fetch images from Instagram by access token.
  * Login to Instagram to register an application and generate an access token using this url - replace with your values:
- * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+ * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
  * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="gridbox with-img size2">
    <div class="box1">
      <a href="https://www.instagram.com/university_of_copenhagen/">
        <div class="header">@university_of_copenhagen på Instagram</div>
      </a>
    </div>
-   <div class="ig_box2">
      <div id="imageBox"></div>
-   </div>
  </div>
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
 (function ($) {
   'use strict';
   $(document).ready(function () {
     var $wrapper = $("#ig");
-    var $container = $("#imageBox");
-    var $loading = $(".ku-loading");
+    var $container = $wrapper.find("#imageBox");
+    var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
-    var $user = $wrapper.attr("data-account").trim();
-    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user;
+    var $user = $wrapper.attr("data-account");
+    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $cachedWidth = $('body').prop('clientWidth');
 
-    function getInstagramByHash(access_token) {
+    function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       var $images = 12;
@@ -35,13 +33,14 @@
         $.ajax({
           url: $url,
           type: 'GET',
-          success: function (response) {
-            //console.log(response);
+          dataType: "jsonp",
+          success: function (data) {
+            //console.log(data);
             for (var i = 0; i < $images; i++) {
-              var img = response.data[i].images.standard_resolution.url;
-              var link = response.data[i].link;
-              var desc = response.data[i].caption.text;
-              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="'+ $user +'"></a>');
+              var img = data.data[i].images.standard_resolution.url;
+              var link = data.data[i].link;
+              var desc = data.data[i].caption.text;
+              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
             $('a', $container).each(function (k, e) {
@@ -67,7 +66,7 @@
 
     $.fn.rotator = function (options) {
       options = $.extend({
-        blocks: '.' + $batchClass,
+        blocks: $wrapper.find('.' + $batchClass),
         speed: 6000,
         fadeSpeed: 800
       }, options);
@@ -104,21 +103,20 @@
 
     if ($token) {
       // Init script
-      getInstagramByHash($token);
+      getInstagramByAccount($token);
     } else {
       console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
     }
 
-    // Action when gridbox arrow is clicked
-    // clickable range - never changes
-    var max = $wrapper.offset().top + $wrapper.outerHeight();
-    var min = max - 30; // 30 is the height of the ::before
-
-    var checkRange = function (y) {
-      return (y >= min && y <= max);
-    };
-
     $wrapper.click(function (e) {
+      // Action when gridbox arrow is clicked
+      // clickable range - never changes
+      var max = $(this).offset().top + $(this).outerHeight();
+      var min = max - 30; // 30 is the height of the ::before arrow
+
+      var checkRange = function (y) {
+        return (y >= min && y <= max);
+      };
       if (checkRange(e.pageY)) {
         // do click action
         location.href = "https://www.instagram.com/" + $accountName;
@@ -128,17 +126,13 @@
     //On resize, wait and reload function
     var it;
 
-    function resizedw() {
-      getInstagramByHash($token);
-    }
-
     window.onresize = function () {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          resizedw();
+          getInstagramByAccount($token);
         }, 200);
         $cachedWidth = $newWidth;
       }

@@ -41,6 +41,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
+  table-layout: fixed;
   margin-bottom: @line-height-computed;
   // Cells
   > tfoot,
@@ -206,6 +207,20 @@ th {
     }
   }
 }
+
+// table with images in first td of each tr - remove left padding
+.table-with-img-col {
+  > tbody {
+    > tr {
+      > td {
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
 // Table cell sizing
 //
 // Reset default table behavior

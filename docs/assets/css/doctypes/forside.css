@@ -6,3 +6,7 @@
 h1 {
   margin-top: 20px;
 }
+
+#main-content>p:first-child {
+  margin-top: 0;
+}

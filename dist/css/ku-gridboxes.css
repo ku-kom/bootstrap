@@ -283,11 +283,17 @@
   left: 0;
   color: inherit;
 }
+.gridbox.full .header {
+  word-wrap: break-word;
+}
 .gridbox.outlined {
   background: #fff !important;
 }
 .gridbox.outlined:hover {
   background: #e7e7e7 !important;
+}
+.gridbox.outlined .header {
+  word-wrap: break-word;
 }
 .gridbox.outlined:not(.with-img) .box1 {
   -webkit-flex: 0 1 100%;
@@ -395,9 +401,9 @@
 * Mobile: All column types must behave like single column boxes
 */
 .gridbox.size1.with-img .box2 {
-  -webkit-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  -webkit-flex: 0 0 55%;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
 }
 .gridbox.size2.with-img.text-over.text-down .box1,
 .gridbox.size3.with-img.text-over.text-down .box1 {
@@ -501,9 +507,6 @@
   }
 }
 @media all and (max-width: 767px) {
-  .gridbox {
-    height: auto;
-  }
   .gridbox .text {
     display: none;
   }
@@ -511,6 +514,12 @@
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+  .gridbox:not(.with-img) {
+    height: auto!important;
+  }
+  .gridbox.size1.with-img .text {
+    display: block;
   }
   .gridbox.size1.with-img .box2 {
     -webkit-flex: 1 0 185px;
@@ -600,9 +609,6 @@
     white-space: normal;
     border-right: 0;
   }
-  .gridbox.with-img .text {
-    display: block;
-  }
   .gridbox.with-img:hover .header {
     background: transparent;
   }
@@ -633,6 +639,9 @@
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
+  .gridbox.size1.with-img .text {
+    display: none;
+  }
   .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img,
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img,
@@ -1001,8 +1010,8 @@
     height: 110%;
   }
   .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
-  .two-one-column .column2 .gridbox.with-img.size1 .box2 img,
-  .triple-column [class*=column] .gridbox.with-img.size1 .box2 img {
+  .triple-column [class*=column] .gridbox.with-img.size1 .box2 img,
+  .two-one-column .column2 .gridbox.with-img.size1 .box2 img {
     max-width: none;
     height: 100%;
   }

@@ -8,6 +8,28 @@
   width: inherit;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE 11 */
+  #navbar {
+    display: flex !important;
+  }
+
+  #navbar_menu {
+    flex: 1;
+  }
+
+  .nyheder.dropdown-menu {
+    width: 252px;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  /* IE Edge */
+  .nyheder.dropdown-menu {
+    width: 252px;
+  }
+}
+
 head:first-child+body .nav {
   background-position: unset;
 }
@@ -24,16 +46,27 @@ head:first-child+body .nav {
 
 .dropdown {
   background: none;
-  left: unset;
+  left: 0;
   position: relative;
   text-align: left;
   top: unset;
-  width: unset;
+  width: auto;
+}
+
+.dropdown ul {
+  border: 0;
+  width: fit-content;
+  min-width: 160px;
+}
+
+.dropdown ul li.dropdown-mwnu {
+  border: 0;
 }
 
 #content {
   border-top: none;
-  width: initial;
+  width: 100% !important;
+  max-width: 1070px;
   float: none;
   padding-top: 0;
   color: inherit;
@@ -41,6 +74,10 @@ head:first-child+body .nav {
 
 div.portal_navigator {
   font-size: inherit;
+}
+
+ol.portal_list {
+  float: left;
 }
 
 ol.portal_list>li {
@@ -191,10 +228,11 @@ table.properties>tbody>tr:hover {
 #purecontent .person_text h2.title {
   font-size: 16px !important;
   font-weight: 600 !important;
-  color: #252525!important;
+  color: #252525 !important;
 }
+
 #purecontent .person_text h2.title a {
-  color: #252525!important;
+  color: inherit !important;
 }
 
 .rendering h2 {
@@ -204,10 +242,14 @@ table.properties>tbody>tr:hover {
 .striped-list h2.title {
   font-size: 14px !important;
   font-weight: 600 !important;
+  color: #252525 !important;
 }
-
+.striped-list h2.title a {
+  color: inherit !important;
+}
 .view_title .title {
   font-size: 18px !important;
+  color: #252525 !important;
 }
 
 .view_title .type {
@@ -215,6 +257,62 @@ table.properties>tbody>tr:hover {
   font-weight: 600 !important;
 }
 
+.column-layout-standard .view_title .type {
+  font-size: 12px !important;
+  padding-left: 0;
+}
+
 .portal-dropdown .dropdown-menu li {
   width: 100%;
+}
+
+.publications_view .rendering ul.relations {
+  clear: both;
+}
+
+.person_photo {
+  margin-left: 5px;
+}
+
+.portal_navigator_bottom {
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+.publikationsliste .view_container ul.tabs>li:nth-child(1), .publikationsliste .view_container ul.tabs>li:nth-child(3) {
+  /* Hide certain tabs */
+  display: none;
+  width: 0;
+}
+
+.search_tips {
+  margin-bottom: 10px!important;
+}
+
+.ku-leftmenu .nav ul ul a {
+  border: 0;
+}
+
+ol.portal_list li.portal_list_item_group {
+  font-size: 14px;
+}
+
+div.portal_navigator_ordering .portal_navigator_popup_content a {
+  padding-right: 3px;
+}
+
+#purecontent .person_relations_list .for_publications .portal_navigator_top {
+  display: none !important;
+}
+
+@media all and (max-width: 480px) {
+  .pureportal .portal_columns_body .portal_columns_column {
+    width: 100% !important;
+  }
+
+  .pureportal .portal_columns_body .portal_columns_column>div:first-child {
+    padding: 0 !important;
+  }
 }

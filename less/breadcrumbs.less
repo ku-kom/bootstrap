@@ -4,20 +4,16 @@
 
 .breadcrumbs {
   display: none;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (min-width: @screen-sm) {
-  .breadcrumbs {
+  @media (min-width: @screen-sm) {
     margin-top: 29px;
-    margin-bottom: 10px;;
-    display: flex;
+    margin-bottom: 10px;
+    display: block;
   }
 }
 
 .breadcrumb {
   display: none;
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-sm) {
     display: block;
     padding: 0 @breadcrumb-padding-horizontal @breadcrumb-padding-horizontal 0;
     margin-bottom: @margin0;
@@ -30,7 +26,7 @@
 
       + li:before {
         content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
-        padding: 0 5px;
+        padding: 0 2px 0 3px;
         color: @breadcrumb-color;
       }
     }

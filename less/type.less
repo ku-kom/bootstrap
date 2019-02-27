@@ -30,6 +30,20 @@ h6 {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:empty {
+    display: none;
+  }
+  &> strong {
+    font-weight: inherit;
+  }
+}
+
 .h1,
 .h2,
 .h3,
@@ -68,9 +82,6 @@ h1 {
   }
   margin-top: 5px;
   font-weight: 400;
-  &> strong {
-    font-weight: inherit;
-  }
 }
 
 .h2,
@@ -106,11 +117,15 @@ h6 {
 // -------------------------
 
 p {
-  margin: 8px 0 20px 0;
+  margin: 8px 0 15px 0;
 
   &:empty {
     //Hide empty p-tags comming from the editor
     display: none;
+
+    &+ p {
+      margin-top: 0;
+    }
   }
 }
 // .lead {
@@ -378,8 +393,7 @@ blockquote {
   }
 }
 
-.rightbox,
-.single-column .column1 {
+.right-side, .column1 {
   blockquote {
     width: 100%!important;
   }

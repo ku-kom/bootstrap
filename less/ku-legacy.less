@@ -38,6 +38,9 @@ ul {
   &.stripped {
     list-style-type: none;
     padding-left: 0;
+    li {
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -95,6 +98,7 @@ ul {
 .standard_table {
   border-collapse: collapse;
   border: 1px solid #d7d7d7;
+  table-layout: fixed;
 
   td {
     padding: 10px 8px 10px 12px;
@@ -104,4 +108,35 @@ ul {
 
 .fritekst_top_img {
   margin-bottom: 10px;
+}
+
+.visible-desktop {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+// Old image and camption style
+
+.img-with-caption {
+  float: right;
+  margin: 5px 0 10px 20px;
+}
+
+.img-with-caption-left {
+  float: left;
+  margin: 5px 20px 10px 0;
+}
+
+div[class^="img-with-caption"] {
+  // Caption
+  p {
+    padding: 10px 0;
+    margin: 0;
+    font-size: @figure-caption-font-size;
+    color: @gray-light;
+    border-bottom: 1px solid @figure-caption-border-color;
+  }
 }

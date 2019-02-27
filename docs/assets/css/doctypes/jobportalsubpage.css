@@ -36,7 +36,7 @@ table.vacancies>thead>tr>th {
   border-top: 1px solid #ddd;
 }
 
-table.vacancies>tbody>tr:nth-of-type(odd) {
+table.vacancies>tbody>tr:nth-of-type(even) {
   background-color: #eee;
 }
 

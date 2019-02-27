@@ -88,13 +88,13 @@ slug: examples
 
                 // Switch branding logo
                 var $fak = classToAdd.replace('theme-', '');
-                
+
                 if ($('html').hasClass(classToAdd)) {
                   $('.ku-branding-logo img').attr('src', '../../images/branding/' + $fak + '.svg');
                 }
 
                 // Set path of FAK stylesheets
-                if ($path === true) {
+                if (isLocalhost === true) {
                   var $style = '../../dist/css/faculties/';
                 } else {
                   var $style = '../../../dist/css/faculties/';

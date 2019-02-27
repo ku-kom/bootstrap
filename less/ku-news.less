@@ -2,8 +2,6 @@
 // Global menu news
 
 .media-list {
-  margin-top: 0!important;
-
   .media-left,
   .media-right {
     min-width: @ku-thumbnails-size;
@@ -22,8 +20,16 @@
     padding-top: 15px;
     padding-bottom: 5px;
 
+    &:first-child {
+      padding-top: 0;
+    }
+
     &+ .media {
       border-top: 1px solid @gray;
+
+      &:last-child {
+        border-bottom: 1px solid @gray;
+      }
     }
 
     .media-heading {
@@ -39,6 +45,7 @@
 
     .media-body {
       p {
+        margin-top: 0;
         margin-bottom: 7px;
       }
     }
@@ -53,8 +60,11 @@
   &.smal {
     .media {
       // If no media-object, indent content
-      & > .media-body:first-child {
-        padding-left: @ku-thumbnails-size;
+      & > .media-left,
+      .media-right {
+        & + .media-body:first-child {
+          padding-left: @ku-thumbnails-size;
+        }
       }
     }
   }
@@ -65,14 +75,15 @@
   &.smal {
     .media {
       .media-heading {
-        @media (min-width: @screen-sm-min) {
+        @media (min-width: @screen-sm) {
           // Make room for the date:
           display: inline-block;
-          max-width: 84%;
+          max-width: 82%;
         }
       }
 
       .nyhedsliste_dato {
+        margin-left: 7px;
         color: @gray-light;
         font-weight: 600;
         .pull-right();
@@ -96,17 +107,17 @@
     }
   }
 }
-
-.nyhedsboks {
-  .panel-body {
-    padding-top: 10px;
-  }
-}
 // Arrangementer - midterkolonne:
 
 #calendarlist {
+  padding-top: 15px;
   border-top: 1px solid @gray;
-  border-bottom: 1px solid @gray;
+
+  &.smal {
+    .media-body:first-child {
+      padding-left: @ku-thumbnails-size;
+    }
+  }
 
   .eventdate {
     margin-bottom: 5px;
@@ -186,7 +197,7 @@
   margin: 10px 0;
 
   h3 {
-    color: #808080;
+    color: @gray-light;
     font-weight: 700;
     font-size: 1em;
     display: inline;
@@ -205,3 +216,39 @@
     color: @text-color!important;
   }
 }
+// Float images right on single column spans:
+// #gridsidebar .single-column .column1,
+// .one-one-two-column .column1,
+// .one-one-two-column .column2,
+// .one-three-column .column1,
+// .one-two-column .column1,
+// .quad-column [class*=column],
+// .three-one-column .column2,
+// .triple-column [class*=column],
+// .two-one-column .column2,
+// .two-one-one-column .column2,
+// .two-one-one-column .column3 {
+//   .img-right();
+// }
+// Float images left on multiple column spans
+// .double-column [class*=column],
+// .gridcontent:not(#gridsidebar) .single-column .column1,
+// .one-one-two-column .column3,
+// .one-three-column .column2,
+// .one-two-column .column2,
+// .three-one-column .column1,
+// .two-one-column .column1,
+// .two-one-one-column .column1 {
+//   .img-left();
+// }
+// GridStandard double columns override
+// .GridStandard .double-column [class*=column] {
+//   .img-right();
+//
+//   .media-right {
+//     display: block!important;
+//   }
+//   .news-teaser {
+//     margin-left: 0!important;
+//   }
+// }

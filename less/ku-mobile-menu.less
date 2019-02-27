@@ -2,9 +2,13 @@
 // KU mobile menu
 // --------------------------------------------------
 /* Media queries */
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm) {
   #mobileleftmenu {
     display: none;
+  }
+  .mm-page {
+    // Keep flexbox working after Mmenu is injected
+    height: 100%;
   }
 }
 /* KU theme colors for jQuery MMenu */
