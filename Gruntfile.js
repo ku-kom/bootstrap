@@ -70,7 +70,7 @@ module.exports = function (grunt) {
       assets: {
         src: [
           'docs/assets/js/src/*.js',
-          // 'docs/assets/js/videoControls/*.js',
+          'docs/assets/js/video-controls/*.js',
           'docs/assets/js/social-feeds/*.js',
           '!docs/assets/js/*.min.js'
         ]

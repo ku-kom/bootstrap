@@ -5,8 +5,8 @@ scss:
 
 javascript:
   enabled: true
-  config_file: js/.jshintrc
+  config_file: .jshintrc
 
 jscs:
   enabled: true
-  config_file: js/.jscsrc
+  config_file: .jscsrc
