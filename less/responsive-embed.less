@@ -33,3 +33,28 @@
 .embed-responsive-4by3 {
   padding-bottom: 75%;
 }
+
+
+.video-container {
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+}
+
+.media-controls {
+  margin-top: 5px;
+  /* For Safari 5.1 */
+  z-index: 2147483647;
+}
+
+.media-controls button {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+@media all and (min-width: @screen-sm) {
+  .media-controls button {
+    font-size: inherit;
+    margin-right: 3px;
+  }
+}

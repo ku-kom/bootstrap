@@ -68,7 +68,12 @@ module.exports = function (grunt) {
         src: 'js/*min.js'
       },
       assets: {
-        src: ['docs/assets/js/src/*.js', '!docs/assets/js/*.min.js']
+        src: [
+          'docs/assets/js/src/*.js',
+          // 'docs/assets/js/videoControls/*.js',
+          'docs/assets/js/social-feeds/*.js',
+          '!docs/assets/js/*.min.js'
+        ]
       }
     },
 
@@ -145,7 +150,8 @@ module.exports = function (grunt) {
               'docs/assets/js/multiple-select/multiple-select.js',
               'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js',
               'docs/assets/js/social-feeds/instagram/instagramByAccount.js',
-              'docs/assets/js/social-feeds/instagram/instagramByHashtag.js'
+              'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
+              'docs/assets/js/videoControls/videoControls.js'
             ],
             dest: 'dist/js/',
             ext: '.min.js',
