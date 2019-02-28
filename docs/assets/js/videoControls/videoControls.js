@@ -9,7 +9,12 @@ var video,
   playPauseBtn,
   muteBtn,
   progressBar,
-  fullScreen;
+  fullScreen,
+  updateProgressBar,
+  changeButtonType,
+  canPlayVideo,
+  resetPlayer,
+  upperCaseFirst;
 
 var initialisevideo = function () {
   // Get a handle to the player
