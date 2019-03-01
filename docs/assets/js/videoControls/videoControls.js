@@ -1,13 +1,12 @@
-// Sample Media Player using HTML5's Media API
-//
-// https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player
-// Modified for Bootstrap by Nanna Ellegaard 2019
-//
+/* Media Player controls using HTML5's Media API
+*
+* Modified for Bootstrap by Nanna Ellegaard 2019
+*/
 
-// Variables to store handles to various required elements
 var video,
   playPauseBtn,
   muteBtn,
+  volume,
   progressBar,
   fullScreen,
   updateProgressBar,
@@ -23,6 +22,7 @@ var initialisevideo = function () {
   // Get handles to each of the buttons and required elements
   playPauseBtn = document.getElementById('play-pause-button');
   muteBtn = document.getElementById('mute-button');
+  volume = document.getElementById('vol-control');
   progressBar = document.getElementById('progress-bar');
   fullScreen = document.getElementById('fullscreen-button');
 
@@ -44,11 +44,15 @@ var initialisevideo = function () {
   }, false);
 
   // need to work on this one more...how to know it's muted?
-  video.addEventListener('volumechange', function (e) {
-    // Update the button to be mute/unmute
-    if (video.muted) changeButtonType(muteBtn, 'volume-up');
-    else changeButtonType(muteBtn, 'volume-off');
-  }, false);
+  // video.addEventListener('volumechange', function () {
+  //   // Update the button to be mute/unmute
+  //   if (video.muted) {
+  //     changeButtonType(muteBtn, 'volume-up');
+  //   }
+  //   else {
+  //     changeButtonType(muteBtn, 'volume-off');
+  //   }
+  // }, false);
 
   video.addEventListener('ended', function () {
     this.pause();
@@ -79,10 +83,17 @@ var stopPlayer = function () {
 };
 
 // Changes the volume on the media player
-var changeVolume = function (direction) {
-  if (direction === '+') video.volume += video.volume == 1 ? 0 : 0.1;
-  else video.volume -= (video.volume == 0 ? 0 : 0.1);
-  video.volume = parseFloat(video.volume).toFixed(1);
+// var changeVolume = function (direction) {
+//   if (direction === '+') video.volume += video.volume == 1 ? 0 : 0.1;
+//   else video.volume -= (video.volume == 0 ? 0 : 0.1);
+//   video.volume = parseFloat(video.volume).toFixed(1);
+// };
+
+// Changes the volume on the media player using a slider
+var setVolume = function (val) {
+    var vol = val / 100;
+    video.volume = vol;
+    volume.setAttribute("aria-valuenow", + vol);
 };
 
 // Toggles the media player's mute and unmute status
