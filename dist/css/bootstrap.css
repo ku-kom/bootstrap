@@ -9208,7 +9208,7 @@ nav {
   padding-bottom: 15px;
 }
 .media-list .media.media-event:first-child {
-  padding-bottom: 3px;
+  padding-top: 3px;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;
