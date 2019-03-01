@@ -7008,7 +7008,7 @@ button.list-group-item-danger.active:focus {
   margin-right: 5px;
   font-size: 20px;
 }
-.mdia-controls input[type=range] {
+.media-controls input[type=range] {
   display: inline-block;
   width: auto;
   vertical-align: middle;

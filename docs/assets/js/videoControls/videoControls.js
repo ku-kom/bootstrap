@@ -6,7 +6,7 @@
 var video,
   playPauseBtn,
   muteBtn,
-  volume,
+  volumeBtn,
   progressBar,
   fullScreen,
   updateProgressBar,
@@ -22,7 +22,7 @@ var initialisevideo = function () {
   // Get handles to each of the buttons and required elements
   playPauseBtn = document.getElementById('play-pause-button');
   muteBtn = document.getElementById('mute-button');
-  volume = document.getElementById('vol-control');
+  volumeBtn = document.getElementById('vol-control');
   progressBar = document.getElementById('progress-bar');
   fullScreen = document.getElementById('fullscreen-button');
 
@@ -44,15 +44,15 @@ var initialisevideo = function () {
   }, false);
 
   // need to work on this one more...how to know it's muted?
-  // video.addEventListener('volumechange', function () {
-  //   // Update the button to be mute/unmute
-  //   if (video.muted) {
-  //     changeButtonType(muteBtn, 'volume-up');
-  //   }
-  //   else {
-  //     changeButtonType(muteBtn, 'volume-off');
-  //   }
-  // }, false);
+  video.addEventListener('volumechange', function () {
+    // Update the button to be mute/unmute
+    if (video.muted) {
+      changeButtonType(muteBtn, 'volume-up');
+    }
+    else {
+      changeButtonType(muteBtn, 'volume-off');
+    }
+  }, false);
 
   video.addEventListener('ended', function () {
     this.pause();
@@ -93,7 +93,7 @@ var stopPlayer = function () {
 var setVolume = function (val) {
     var vol = val / 100;
     video.volume = vol;
-    volume.setAttribute("aria-valuenow", + vol);
+    volumeBtn.setAttribute("aria-valuenow", + vol);
 };
 
 // Toggles the media player's mute and unmute status
