@@ -9202,13 +9202,10 @@ nav {
   margin-top: 0;
 }
 .media-list .media:first-child {
-  padding-top: 0;
+  padding-top: 3px;
 }
 .media-list .media.media-event {
   padding-bottom: 15px;
-}
-.media-list .media.media-event:first-child {
-  padding-top: 3px;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;
