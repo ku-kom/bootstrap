@@ -1,7 +1,7 @@
 /* Media Player controls using HTML5's Media API
-*
-* Modified for Bootstrap by Nanna Ellegaard 2019
-*/
+ *
+ * Modified for Bootstrap by Nanna Ellegaard 2019
+ */
 
 var video,
   playPauseBtn,
@@ -48,8 +48,7 @@ var initialisevideo = function () {
     // Update the button to be mute/unmute
     if (video.muted) {
       changeButtonType(muteBtn, 'volume-up');
-    }
-    else {
+    } else {
       changeButtonType(muteBtn, 'volume-off');
     }
   }, false);
@@ -91,9 +90,10 @@ var stopPlayer = function () {
 
 // Changes the volume on the media player using a slider
 var setVolume = function (val) {
-    var vol = val / 100;
-    video.volume = vol;
-    volumeBtn.setAttribute("aria-valuenow", + vol);
+  video.muted = false;
+  var vol = val / 100;
+  video.volume = vol;
+  volumeBtn.setAttribute("aria-valuenow", +vol);
 };
 
 // Toggles the media player's mute and unmute status
