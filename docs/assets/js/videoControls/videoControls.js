@@ -43,15 +43,14 @@ var initialisevideo = function () {
     changeButtonType(playPauseBtn, 'play');
   }, false);
 
-  // need to work on this one more...how to know it's muted?
-  video.addEventListener('volumechange', function () {
-    // Update the button to be mute/unmute
-    if (video.muted) {
-      changeButtonType(muteBtn, 'volume-up');
-    } else {
-      changeButtonType(muteBtn, 'volume-off');
-    }
-  }, false);
+  // video.addEventListener('volumechange', function () {
+  //   // Update the button to be mute/unmute
+  //   if (video.muted) {
+  //     changeButtonType(muteBtn, 'volume-up');
+  //   } else {
+  //     changeButtonType(muteBtn, 'volume-off');
+  //   }
+  // }, false);
 
   video.addEventListener('ended', function () {
     this.pause();
@@ -81,7 +80,7 @@ var stopPlayer = function () {
   video.currentTime = 0;
 };
 
-// Changes the volume on the media player
+// Changes the volume on the media player using +/- buttons
 // var changeVolume = function (direction) {
 //   if (direction === '+') video.volume += video.volume == 1 ? 0 : 0.1;
 //   else video.volume -= (video.volume == 0 ? 0 : 0.1);
@@ -93,7 +92,7 @@ var setVolume = function (val) {
   video.muted = false;
   var vol = val / 100;
   video.volume = vol;
-  volumeBtn.setAttribute("aria-valuenow", +vol);
+  volumeBtn.setAttribute("aria-valuenow", vol);
 };
 
 // Toggles the media player's mute and unmute status
@@ -101,11 +100,13 @@ var toggleMute = function () {
   if (video.muted) {
     // Change the cutton to be a mute button
     changeButtonType(muteBtn, 'volume-off');
+    muteBtn.title = 'Unmuted';
     // Unmute the media player
     video.muted = false;
   } else {
     // Change the button to be an unmute button
     changeButtonType(muteBtn, 'volume-up');
+    muteBtn.title = 'Muted';
     // Mute the media player
     video.muted = true;
   }
@@ -124,7 +125,7 @@ var updateProgressBar = function () {
   // Update the progress bar's values
   progressBar.value = percentage;
   progressBar.style.width = percentage + '%';
-  progressBar.setAttribute("aria-valuenow", +percentage);
+  progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '%';
   var sronly = progressBar.querySelector('.sr-only');
   sronly.innerHTML = percentage + "% afspillet";
