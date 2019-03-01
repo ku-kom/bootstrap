@@ -9,6 +9,14 @@
     a {
       display: block;
     }
+    .media-event {
+      &:first-child {
+        padding-bottom: 15px;
+      }
+      &:last-child {
+        padding-bottom: 15px;
+      }
+    }
   }
 
   .media-left {
@@ -78,7 +86,7 @@
         @media (min-width: @screen-sm) {
           // Make room for the date:
           display: inline-block;
-          max-width: 82%;
+          max-width: 68%;
         }
       }
 
@@ -87,6 +95,10 @@
         color: @gray-light;
         font-weight: 600;
         .pull-right();
+      }
+
+      .nyhedsliste_indhold {
+        clear: both;
       }
     }
   }
@@ -107,6 +119,7 @@
     }
   }
 }
+
 // Arrangementer - midterkolonne:
 
 #calendarlist {
@@ -159,6 +172,10 @@
 
 .eventdate {
   margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: @gray-light;
 }
 
 .readAll {
@@ -217,38 +234,38 @@
   }
 }
 // Float images right on single column spans:
-// #gridsidebar .single-column .column1,
-// .one-one-two-column .column1,
-// .one-one-two-column .column2,
-// .one-three-column .column1,
-// .one-two-column .column1,
-// .quad-column [class*=column],
-// .three-one-column .column2,
-// .triple-column [class*=column],
-// .two-one-column .column2,
-// .two-one-one-column .column2,
-// .two-one-one-column .column3 {
-//   .img-right();
-// }
+#gridsidebar .single-column .column1,
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.one-three-column .column1,
+.one-two-column .column1,
+.quad-column [class*=column],
+.three-one-column .column2,
+.triple-column [class*=column],
+.two-one-column .column2,
+.two-one-one-column .column2,
+.two-one-one-column .column3 {
+  .img-right();
+}
 // Float images left on multiple column spans
-// .double-column [class*=column],
-// .gridcontent:not(#gridsidebar) .single-column .column1,
-// .one-one-two-column .column3,
-// .one-three-column .column2,
-// .one-two-column .column2,
-// .three-one-column .column1,
-// .two-one-column .column1,
-// .two-one-one-column .column1 {
-//   .img-left();
-// }
+.double-column [class*=column],
+.gridcontent:not(#gridsidebar) .single-column .column1,
+.one-one-two-column .column3,
+.one-three-column .column2,
+.one-two-column .column2,
+.three-one-column .column1,
+.two-one-column .column1,
+.two-one-one-column .column1 {
+  .img-left();
+}
 // GridStandard double columns override
-// .GridStandard .double-column [class*=column] {
-//   .img-right();
-//
-//   .media-right {
-//     display: block!important;
-//   }
-//   .news-teaser {
-//     margin-left: 0!important;
-//   }
-// }
+.GridStandard .double-column [class*=column] {
+  .img-right();
+
+  .media-right {
+    display: block!important;
+  }
+  .news-teaser {
+    margin-left: 0!important;
+  }
+}
