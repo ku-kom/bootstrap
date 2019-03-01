@@ -9193,14 +9193,6 @@ nav {
 .media-list .media-right a {
   display: block;
 }
-.media-list .media-left .media-event:first-child,
-.media-list .media-right .media-event:first-child {
-  padding-bottom: 15px;
-}
-.media-list .media-left .media-event:last-child,
-.media-list .media-right .media-event:last-child {
-  padding-bottom: 15px;
-}
 .media-list .media-left {
   padding-right: 13px;
 }
@@ -9211,6 +9203,12 @@ nav {
 }
 .media-list .media:first-child {
   padding-top: 0;
+}
+.media-list .media.media-event:first-child {
+  padding-bottom: 15px;
+}
+.media-list .media.media-event:last-child {
+  padding-bottom: 15px;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;

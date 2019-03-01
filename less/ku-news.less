@@ -9,14 +9,6 @@
     a {
       display: block;
     }
-    .media-event {
-      &:first-child {
-        padding-bottom: 15px;
-      }
-      &:last-child {
-        padding-bottom: 15px;
-      }
-    }
   }
 
   .media-left {
@@ -30,6 +22,16 @@
 
     &:first-child {
       padding-top: 0;
+    }
+
+    &.media-event {
+      &:first-child {
+        padding-bottom: 15px;
+      }
+
+      &:last-child {
+        padding-bottom: 15px;
+      }
     }
 
     &+ .media {
@@ -119,9 +121,7 @@
     }
   }
 }
-
 // Arrangementer - midterkolonne:
-
 #calendarlist {
   padding-top: 15px;
   border-top: 1px solid @gray;
@@ -234,6 +234,7 @@
   }
 }
 // Float images right on single column spans:
+
 #gridsidebar .single-column .column1,
 .one-one-two-column .column1,
 .one-one-two-column .column2,
@@ -248,6 +249,7 @@
   .img-right();
 }
 // Float images left on multiple column spans
+
 .double-column [class*=column],
 .gridcontent:not(#gridsidebar) .single-column .column1,
 .one-one-two-column .column3,
@@ -259,12 +261,14 @@
   .img-left();
 }
 // GridStandard double columns override
+
 .GridStandard .double-column [class*=column] {
   .img-right();
 
   .media-right {
     display: block!important;
   }
+
   .news-teaser {
     margin-left: 0!important;
   }
