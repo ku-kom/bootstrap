@@ -9204,11 +9204,11 @@ nav {
 .media-list .media:first-child {
   padding-top: 0;
 }
-.media-list .media.media-event:first-child {
+.media-list .media.media-event {
   padding-bottom: 15px;
 }
-.media-list .media.media-event:last-child {
-  padding-bottom: 15px;
+.media-list .media.media-event:first-child {
+  padding-bottom: 3px;
 }
 .media-list .media + .media {
   border-top: 1px solid #ccc;
