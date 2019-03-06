@@ -11327,11 +11327,14 @@ body.editor-accordions {
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-body#content.mce-content-body .accordion-hidden:focus-within {
+body#content.mce-content-body .accordion-hidden {
   display: block;
   margin: 0;
 }
-body#content.mce-content-body .accordion-hidden ~ .accordion-hidden {
+body#content.mce-content-body .accordion-hidden + .accordion-hidden {
+  display: none;
+}
+body#content.mce-content-body .accordion-hidden + .accordion-hidden ~ .accordion-hidden {
   display: none;
 }
 .login-container {
