@@ -11334,8 +11334,8 @@ body#content.mce-content-body .accordion-hidden {
 body#content.mce-content-body .accordion-hidden + .accordion-hidden {
   display: none;
 }
-body#content.mce-content-body .accordion-hidden + .accordion-hidden ~ .accordion-hidden {
-  display: none;
+body#content .panel-accordion + .accordion-hidden + .panel-accordion {
+  margin-top: -16px;
 }
 .login-container {
   max-width: 450px;
