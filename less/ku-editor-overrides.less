@@ -120,7 +120,8 @@ body {
     }
 
     .panel-accordion {
-      + .accordion-hidden {
+      // Remove unwanted spacing in Accordion Editor dialog
+      ~ .accordion-hidden {
         + .panel-accordion {
           margin-top: -16px;
         }
