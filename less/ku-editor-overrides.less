@@ -110,8 +110,14 @@ body {
     &.mce-content-body {
       // Put cursor below accordions
       .accordion-hidden {
-        display: block;
-        margin: 0;
+        &:focus-within {
+          display: block;
+          margin: 0;
+        }
+        // - but hide sibsequent cursor blocks
+        ~ .accordion-hidden {
+          display: none;
+        }
       }
     }
   }

@@ -11327,9 +11327,12 @@ body.editor-accordions {
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-body#content.mce-content-body .accordion-hidden {
+body#content.mce-content-body .accordion-hidden:focus-within {
   display: block;
   margin: 0;
+}
+body#content.mce-content-body .accordion-hidden ~ .accordion-hidden {
+  display: none;
 }
 .login-container {
   max-width: 450px;
