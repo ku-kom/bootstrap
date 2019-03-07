@@ -83,7 +83,7 @@ var setVolume = function (val) {
   video.muted = false;
   var vol = val / 100;
   video.volume = vol;
-  volumeBtn.title = val + '%'
+  volumeBtn.title = 'Volume: ' + val + '%'
   volumeBtn.setAttribute("aria-valuenow", vol);
 };
 

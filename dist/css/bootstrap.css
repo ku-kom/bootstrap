@@ -8067,19 +8067,17 @@ nav {
   }
 }
 .ku-loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  overflow: auto;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  vertical-align: text-bottom;
   border-top: 3px solid #901a1e;
   border-right: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
   border-left: 3px solid #ccc;
-  border-radius: 100%;
-  -webkit-animation: ku-loading .6s infinite linear;
-          animation: ku-loading .6s infinite linear;
+  border-radius: 50%;
+  -webkit-animation: ku-loading .75s infinite linear;
+          animation: ku-loading .75s infinite linear;
 }
 .jump-to {
   position: relative;
@@ -9092,14 +9090,14 @@ nav {
 }
 .advanced-list li .list-img {
   display: block;
-  height: 133px;
+  height: 185px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  -webkit-flex: 0 0 133px;
-      -ms-flex: 0 0 133px;
-          flex: 0 0 133px;
+  -webkit-flex: 0 0 185px;
+      -ms-flex: 0 0 185px;
+          flex: 0 0 185px;
   -webkit-order: 1;
   -ms-flex-order: 1;
           order: 1;
@@ -9662,19 +9660,17 @@ nav {
   visibility: hidden;
 }
 .slick-loading .slick-slide .slick-list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  overflow: auto;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  vertical-align: text-bottom;
   border-top: 3px solid #901a1e;
   border-right: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
   border-left: 3px solid #ccc;
-  border-radius: 100%;
-  -webkit-animation: ku-loading .6s infinite linear;
-          animation: ku-loading .6s infinite linear;
+  border-radius: 50%;
+  -webkit-animation: ku-loading .75s infinite linear;
+          animation: ku-loading .75s infinite linear;
 }
 .slick-vertical .slick-slide {
   display: block;
