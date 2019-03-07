@@ -353,7 +353,7 @@ blockquote {
   float: right;
   position: relative;
   padding: 0 0 (@line-height-computed / 2) @line-height-computed;
-  margin: 0 0 10px 10px;
+  margin: 0 0 7px 10px;
   font-size: @blockquote-font-size;
   .icon-quote;
 
@@ -366,8 +366,11 @@ blockquote {
     line-height: 0.5;
   }
 
+  p {
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
   ol,
-  p,
   ul {
     &:last-child {
       margin-bottom: 0;

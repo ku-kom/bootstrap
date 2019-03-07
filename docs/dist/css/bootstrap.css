@@ -1915,7 +1915,7 @@ blockquote {
   float: right;
   width: 100%;
   padding: 0 0 9px 18px;
-  margin: 0 0 10px 10px;
+  margin: 0 0 7px 10px;
   font-size: 15px;
 }
 @media (min-width: 768px) {
@@ -1945,8 +1945,11 @@ blockquote:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+blockquote p {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
 blockquote ol:last-child,
-blockquote p:last-child,
 blockquote ul:last-child {
   margin-bottom: 0;
 }
