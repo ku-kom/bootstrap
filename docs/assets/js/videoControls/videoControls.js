@@ -43,15 +43,6 @@ var initialisevideo = function () {
     changeButtonType(playPauseBtn, 'play');
   }, false);
 
-  // video.addEventListener('volumechange', function () {
-  //   // Update the button to be mute/unmute
-  //   if (video.muted) {
-  //     changeButtonType(muteBtn, 'volume-up');
-  //   } else {
-  //     changeButtonType(muteBtn, 'volume-off');
-  //   }
-  // }, false);
-
   video.addEventListener('ended', function () {
     this.pause();
   }, false);
@@ -92,6 +83,7 @@ var setVolume = function (val) {
   video.muted = false;
   var vol = val / 100;
   video.volume = vol;
+  volumeBtn.title = val + '%'
   volumeBtn.setAttribute("aria-valuenow", vol);
 };
 
