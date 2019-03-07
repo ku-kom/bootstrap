@@ -3,7 +3,6 @@
 // Various extra classes that don't belong in other .less files
 // ---------------------------------------------------------------
 
-
 .divider {
   margin: @margin10 0;
   &:extend(.clearfix all);
@@ -20,11 +19,42 @@
   outline: 0;
   user-focus: none;
 }
+// Input placeholder styling
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: @placeholder-text-color;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: @placeholder-text-color;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: @placeholder-text-color;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: @placeholder-text-color;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: @placeholder-text-color;
+}
+
+::placeholder {
+  /* Most modern browsers */
+  color: @placeholder-text-color;
+}
 
 .page-icons {
   display: none;
 }
-
 @media (min-width: @screen-sm) {
   // Utility icon
   .page-icons {
@@ -88,13 +118,11 @@
     }
   }
 }
-
 @media (max-width: @screen-sm) {
   .jumpbox {
     display: none;
   }
 }
-
 
 .relative {
   position: relative;
@@ -188,6 +216,7 @@
     color: inherit;
   }
 }
+
 .embed-responsive {
   &+ .embed-responsive {
     margin-top: @grid-gutter-height;

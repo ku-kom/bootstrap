@@ -5834,9 +5834,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
   border-top-right-radius: 2px !important;
   border-bottom-right-radius: 2px !important;
 }
-.ku-nav .global-search-submit .glyphicon-search {
-  color: #b6b6b6;
-}
 .ku-nav .search_form {
   margin-top: 6px;
 }
@@ -7918,6 +7915,40 @@ nav {
   outline: 0;
 
   user-focus: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #757575;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #757575;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #757575;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #757575;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #757575;
+}
+::-webkit-input-placeholder {
+  /* Most modern browsers */
+  color: #757575;
+}
+:-ms-input-placeholder {
+  /* Most modern browsers */
+  color: #757575;
+}
+::placeholder {
+  /* Most modern browsers */
+  color: #757575;
 }
 .page-icons {
   display: none;
