@@ -140,3 +140,14 @@ div[class^="img-with-caption"] {
     border-bottom: 1px solid @figure-caption-border-color;
   }
 }
+
+// Old Blockquotes html
+p[align="right"] {
+  font-size: 80%;
+  line-height: 1.5;
+  color: #757575;
+  text-align: left;
+  &:before {
+    content: '\2014 \00A0';
+  }
+}

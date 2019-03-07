@@ -11070,6 +11070,15 @@ div[class^="img-with-caption"] p {
   color: #757575;
   border-bottom: 1px solid #dfdfdf;
 }
+p[align="right"] {
+  font-size: 80%;
+  line-height: 1.5;
+  color: #757575;
+  text-align: left;
+}
+p[align="right"]:before {
+  content: '\2014 \00A0';
+}
 /* KU custom elements */
 .gridnyhed {
   display: -webkit-flex;
