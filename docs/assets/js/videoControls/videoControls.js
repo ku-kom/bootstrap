@@ -91,14 +91,14 @@ var setVolume = function (val) {
 var toggleMute = function () {
   if (video.muted) {
     // Change the cutton to be a mute button
-    changeButtonType(muteBtn, 'volume-off');
-    muteBtn.title = 'Unmuted';
+    changeButtonType(muteBtn, 'volume-up');
+    muteBtn.title = 'Unmute';
     // Unmute the media player
     video.muted = false;
   } else {
     // Change the button to be an unmute button
-    changeButtonType(muteBtn, 'volume-up');
-    muteBtn.title = 'Muted';
+    changeButtonType(muteBtn, 'volume-off');
+    muteBtn.title = 'Mute';
     // Mute the media player
     video.muted = true;
   }
