@@ -9079,7 +9079,7 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  min-height: 80px;
+  min-height: 100px;
   zoom: 1;
           flex-direction: column;
   background-color: #f5f5f5;
