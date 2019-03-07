@@ -352,18 +352,18 @@ blockquote {
   }
   float: right;
   position: relative;
-  padding: (@line-height-computed / 2) 0 (@line-height-computed / 2) @line-height-computed;
-  margin: 10px 0 10px 10px;
+  padding: 0 0 (@line-height-computed / 2) @line-height-computed;
+  margin: 0 0 10px 10px;
   font-size: @blockquote-font-size;
   .icon-quote;
 
   &:before {
-    position: absolute;
     top: 10px;
     left: 0;
     font-size: 45px;
     color: @blockquote-icon-color;
     .icon;
+    line-height: 0.5;
   }
 
   ol,
