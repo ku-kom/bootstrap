@@ -9414,7 +9414,7 @@ nav {
   float: right;
 }
 .calendarbox .media-body + .media-right {
-  fisplay: none;
+  display: none;
 }
 .double-column [class*=column] .media-list .media .media-body > .media-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
