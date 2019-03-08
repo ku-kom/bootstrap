@@ -59,7 +59,6 @@
           },
           complete: function () {
             $container.rotator();
-            $wrapper.css('visibility', 'visible');
           }
         });
       }

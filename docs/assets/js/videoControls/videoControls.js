@@ -210,4 +210,5 @@ var upperCaseFirst = function (str) {
 document.addEventListener("DOMContentLoaded", function () {
   'use strict';
   initialisevideo();
+  toggleMute();
 }, false);

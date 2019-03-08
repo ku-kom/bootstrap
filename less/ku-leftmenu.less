@@ -414,19 +414,9 @@
   }
 }
 
-#leftmenu_2 {
-  // Extra menus
-  border-top: 1px solid @gray;
-  margin-top: @margin20;
-  padding-left: 0;
-
-  li {
-    &:first-child {
-      padding-top: 20px;
-    }
-  }
-
+#leftmenu {
   & + ul {
+    // Extra local left menus
     border-top: 1px solid @gray;
     margin-top: @margin20;
     padding-left: 0;
@@ -436,6 +426,17 @@
         padding-top: 20px;
       }
     }
+    // & + ul {
+    //   border-top: 1px solid @gray;
+    //   margin-top: @margin20;
+    //   padding-left: 0;
+    //
+    //   li {
+    //     &:first-child {
+    //       padding-top: 20px;
+    //     }
+    //   }
+    // }
   }
 }
 // Left menu slide in/out for mobiles
