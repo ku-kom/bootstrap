@@ -15,7 +15,7 @@ Needs html like this:
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  visibility: hidden;
+  /* visibility: hidden; */
   height: 185px!important;
 }
 

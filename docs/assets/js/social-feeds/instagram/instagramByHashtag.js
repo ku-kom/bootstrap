@@ -17,7 +17,7 @@
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       var $images = 12;
-      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number);
+      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt('"'+ $number +'"', $number);
       $container.empty();
       if (hashtag) {
         var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
@@ -30,6 +30,7 @@
           }),
           success: function (data) {
             //console.log(data);
+            $loading.hide();
             var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
             $.each(entry, function (i, v) {
               var img = entry[i].node.thumbnail_src;
@@ -51,9 +52,8 @@
             console.log(xhr.responseText);
           },
           complete: function () {
-            $loading.hide();
             $container.rotator();
-            $wrapper.css('visibility', 'visible');
+            //$wrapper.css('visibility', 'visible');
           }
         });
       }

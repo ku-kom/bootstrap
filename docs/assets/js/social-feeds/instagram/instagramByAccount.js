@@ -26,7 +26,7 @@
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       var $images = 12;
-      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number);
+      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt('"'+ $number +'"', $number);
       $container.empty();
       if (access_token) {
         var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;
@@ -36,6 +36,7 @@
           dataType: "jsonp",
           success: function (data) {
             //console.log(data);
+            $loading.hide();
             for (var i = 0; i < $images; i++) {
               var img = data.data[i].images.standard_resolution.url;
               var link = data.data[i].link;
@@ -56,7 +57,6 @@
             console.log(xhr.responseText);
           },
           complete: function () {
-            $loading.hide();
             $container.rotator();
             $wrapper.css('visibility', 'visible');
           }
