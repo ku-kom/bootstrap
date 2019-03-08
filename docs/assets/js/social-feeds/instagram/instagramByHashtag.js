@@ -16,8 +16,9 @@
     function getInstagramByHash(hashtag) {
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
+      $number = $number.toString();
       var $images = 12;
-      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt('"'+ $number +'"', $number);
+      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number, 10);
       $container.empty();
       if (hashtag) {
         var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
