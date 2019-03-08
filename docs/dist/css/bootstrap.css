@@ -8715,8 +8715,8 @@ nav {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-#mobileleftmenu .mm-listview > .local1_mmenu > .mm-btn_next::after,
-#mobileleftmenu .mm-listview > .local2_mmenu > .mm-btn_next::after {
+#mobileleftmenu .mm-listview > .local2_mmenu > .mm-btn_next::after,
+#mobileleftmenu .mm-listview > .local1_mmenu > .mm-btn_next::after {
   color: #fff;
 }
 #mobileleftmenu .search-placeholder {
@@ -8745,6 +8745,10 @@ nav {
 }
 #mobileleftmenu .navbar_mmenu.mm-listitem_opened > a:not(.mm-btn_next) {
   font-weight: 700;
+}
+#mobileleftmenu .local2_mmenu.mm-listitem > p {
+  padding-right: 10px;
+  padding-left: 20px;
 }
 #mobileleftmenu ul.nyheder li > a {
   padding: 10px 12px;
@@ -11085,6 +11089,9 @@ p[align="right"] {
 }
 p[align="right"]:before {
   content: '\2014 \00A0';
+}
+.panel-accordion > .panel-heading .panel-title a > strong {
+  font-weight: inherit!important;
 }
 /* KU custom elements */
 .gridnyhed {
