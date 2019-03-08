@@ -230,12 +230,13 @@
 }
 // Float images right on single column spans:
 
-.right-side, #gridsidebar .single-column .column1,
+#gridsidebar .single-column .column1,
 .one-one-two-column .column1,
 .one-one-two-column .column2,
 .one-three-column .column1,
 .one-two-column .column1,
 .quad-column [class*=column],
+.right-side,
 .three-one-column .column2,
 .triple-column [class*=column],
 .two-one-column .column2,
@@ -243,8 +244,17 @@
 .two-one-one-column .column3 {
   .img-right();
 }
-// Float images left on multiple column spans
 
+// Special hooks for calendar lists in right column non-grid
+.calendarbox {
+  .media-body {
+    & + .media-right {
+      fisplay: none;
+    }
+  }
+}
+
+// Float images left on multiple column spans
 .double-column [class*=column],
 .gridcontent:not(#gridsidebar) .single-column .column1,
 .one-one-two-column .column3,
@@ -256,7 +266,6 @@
   .img-left();
 }
 //GridStandard double columns override
-
 .GridStandard .double-column [class*=column] {
   .img-right();
 
