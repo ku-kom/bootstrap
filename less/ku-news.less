@@ -244,17 +244,26 @@
 .two-one-one-column .column3 {
   .img-right();
 }
+// Special hooks for calendar lists
 
-// Special hooks for calendar lists in right column non-grid
 .calendarbox {
   .media-body {
     & + .media-right {
       display: none;
     }
   }
-}
 
+  .media-event {
+    // No image
+    > .media-body {
+      &:first-child {
+        padding-left: 0!important;
+      }
+    }
+  }
+}
 // Float images left on multiple column spans
+
 .double-column [class*=column],
 .gridcontent:not(#gridsidebar) .single-column .column1,
 .one-one-two-column .column3,
@@ -266,6 +275,7 @@
   .img-left();
 }
 //GridStandard double columns override
+
 .GridStandard .double-column [class*=column] {
   .img-right();
 

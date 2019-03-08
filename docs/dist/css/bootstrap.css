@@ -9412,6 +9412,9 @@ nav {
 .calendarbox .media-body + .media-right {
   display: none;
 }
+.calendarbox .media-event > .media-body:first-child {
+  padding-left: 0!important;
+}
 .double-column [class*=column] .media-list .media .media-body > .media-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
 .one-one-two-column .column3 .media-list .media .media-body > .media-right,
