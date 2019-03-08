@@ -9359,6 +9359,7 @@ nav {
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
 }
+.right-side .media-list .media .media-left,
 #gridsidebar .single-column .column1 .media-list .media .media-left,
 .one-one-two-column .column1 .media-list .media .media-left,
 .one-one-two-column .column2 .media-list .media .media-left,
@@ -9372,6 +9373,7 @@ nav {
 .two-one-one-column .column3 .media-list .media .media-left {
   display: none;
 }
+.right-side .media-list .media .media-body,
 #gridsidebar .single-column .column1 .media-list .media .media-body,
 .one-one-two-column .column1 .media-list .media .media-body,
 .one-one-two-column .column2 .media-list .media .media-body,
@@ -9385,6 +9387,7 @@ nav {
 .two-one-one-column .column3 .media-list .media .media-body {
   padding-left: 0!important;
 }
+.right-side .media-list .media .media-body > .media-right,
 #gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
 .one-one-two-column .column1 .media-list .media .media-body > .media-right,
 .one-one-two-column .column2 .media-list .media .media-body > .media-right,
@@ -9396,6 +9399,7 @@ nav {
 .two-one-column .column2 .media-list .media .media-body > .media-right,
 .two-one-one-column .column2 .media-list .media .media-body > .media-right,
 .two-one-one-column .column3 .media-list .media .media-body > .media-right,
+.right-side .media-list .media .media-body + .media-right,
 #gridsidebar .single-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column2 .media-list .media .media-body + .media-right,
