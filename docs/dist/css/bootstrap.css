@@ -8519,12 +8519,12 @@ nav {
 .ku-leftmenu ul > li ul li ul li ul li > a:hover::before {
   width: 3px;
 }
-#leftmenu + #leftmenu_2 + ul {
+#leftmenu ~ ul {
   padding-left: 0;
   margin-top: 20px;
   border-top: 1px solid #ccc;
 }
-#leftmenu + #leftmenu_2 + ul li:first-child {
+#leftmenu ~ ul li:first-child {
   padding-top: 20px;
 }
 @media (max-width: 767px) {

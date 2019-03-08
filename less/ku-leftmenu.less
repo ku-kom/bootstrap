@@ -415,17 +415,15 @@
 }
 
 #leftmenu {
-  + #leftmenu_2 {
-    & + ul {
-      // Extra local left menus
-      border-top: 1px solid @gray;
-      margin-top: @margin20;
-      padding-left: 0;
+  & ~ ul {
+    // Extra local left menus
+    border-top: 1px solid @gray;
+    margin-top: @margin20;
+    padding-left: 0;
 
-      li {
-        &:first-child {
-          padding-top: 20px;
-        }
+    li {
+      &:first-child {
+        padding-top: 20px;
       }
     }
   }
