@@ -1009,6 +1009,8 @@
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
   }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: 992px) {
   .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
   .triple-column [class*=column] .gridbox.with-img.size1 .box2 img,
   .two-one-column .column2 .gridbox.with-img.size1 .box2 img {
