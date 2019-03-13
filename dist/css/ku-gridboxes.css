@@ -1018,7 +1018,7 @@
     height: auto;
   }
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: 992px) {
+@media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
   .triple-column [class*=column] .gridbox.with-img.size1 .box2 img,
   .two-one-column .column2 .gridbox.with-img.size1 .box2 img {
