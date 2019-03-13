@@ -9793,6 +9793,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: none;
     max-width: 100%;
     height: auto;
     min-height: 100%;
@@ -9811,6 +9812,7 @@ nav {
       position: absolute;
       top: 50%;
       left: 50%;
+      max-width: none;
       max-width: 100%;
       height: auto;
       min-height: 100%;
