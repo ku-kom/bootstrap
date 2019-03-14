@@ -18,7 +18,7 @@
   .media {
     margin-top: 0;
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 
     &:first-child {
       padding-top: 3px;
@@ -47,17 +47,19 @@
       }
     }
 
-    .media-body {
-      p {
-        margin-top: 0;
-        margin-bottom: 7px;
-      }
-    }
-
     .media-object {
       .img-thumbnail;
       width: 55px;
       box-sizing: content-box;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 7px;
+    }
+
+    .eventteaser {
+      margin: 0;
     }
   }
 
@@ -112,6 +114,7 @@
 
     .news-teaser {
       margin-top: 3px;
+      margin-bottom: 0;
     }
   }
 }
@@ -147,6 +150,16 @@
         }
       }
     }
+  }
+}
+
+.media-event {
+  .media-heading {
+    margin-bottom: 0!important;
+  }
+
+  .eventteaser {
+    margin-top: 5px!important;
   }
 }
 

@@ -30,7 +30,7 @@
             hashtag: $hash
           }),
           success: function (data) {
-            //console.log(data);
+            console.log(data);
             $loading.hide();
             var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
             $.each(entry, function (i, v) {

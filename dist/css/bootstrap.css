@@ -9199,7 +9199,7 @@ nav {
 }
 .media-list .media {
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   margin-top: 0;
 }
 .media-list .media:first-child {
@@ -9226,10 +9226,6 @@ nav {
   font-size: inherit;
   color: inherit;
 }
-.media-list .media .media-body p {
-  margin-top: 0;
-  margin-bottom: 7px;
-}
 .media-list .media .media-object {
   display: block;
   width: 55px;
@@ -9242,6 +9238,13 @@ nav {
   border: 1px solid #ddd;
   border-radius: 2px;
   transition: all .2s ease-in-out;
+}
+.media-list .media p {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.media-list .media .eventteaser {
+  margin: 0;
 }
 .media-list.smal .media > .media-left + .media-body:first-child,
 .media-list.smal .media .media-right + .media-body:first-child {
@@ -9270,6 +9273,7 @@ nav {
 }
 .nyhedsliste-rightbox .media .news-teaser {
   margin-top: 3px;
+  margin-bottom: 0;
 }
 #calendarlist {
   padding-top: 15px;
@@ -9286,6 +9290,12 @@ nav {
 }
 .right-side .media-list .media-event .media-body > .media-right .media-object {
   margin-bottom: 5px;
+}
+.media-event .media-heading {
+  margin-bottom: 0!important;
+}
+.media-event .eventteaser {
+  margin-top: 5px!important;
 }
 #minicalendar .panel-body {
   padding: 6px 0 0;
