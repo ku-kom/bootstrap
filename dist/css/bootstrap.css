@@ -9285,6 +9285,9 @@ nav {
 #calendarlist .eventdate {
   margin-bottom: 5px;
 }
+#calendarlist .readmore {
+  margin-bottom: 0;
+}
 .right-side .media-list .media-event .media-body > .media-right {
   float: right;
 }
