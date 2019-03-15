@@ -167,37 +167,16 @@ var resetPlayer = function () {
   changeButtonType(playPauseBtn, 'play');
 };
 
-// Toggle full screen
-var fullScreenEnabled = !!(document.fullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled || document.webkitSupportsFullscreen || document.webkitFullscreenEnabled || document.createElement('video').webkitRequestFullScreen);
-
-if (!fullScreenEnabled) {
-  fullScreen.disabled = true;
-}
-
-// checks if the browser is already in fullscreen mode
-var isFullScreen = function () {
-  return !!(document.fullScreen || document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement || document.fullscreenElement);
-};
-
-// sets the value of a data-fullscreen attribute on the videoContainer (this makes use of data-states).
-var setFullscreenData = function (state) {
-  video.setAttribute('data-fullscreen', !!state);
-};
-
 // Fullscreen for various browsers
 var handleFullscreen = function () {
-  if (isFullScreen()) {
-    if (document.exitFullscreen) document.exitFullscreen();
-    else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
-    else if (document.webkitCancelFullScreen) document.webkitCancelFullScreen();
-    else if (document.msExitFullscreen) document.msExitFullscreen();
-    setFullscreenData(false);
-  } else {
-    if (video.requestFullscreen) video.requestFullscreen();
-    else if (video.mozRequestFullScreen) video.mozRequestFullScreen();
-    else if (video.webkitRequestFullScreen) video.webkitRequestFullScreen();
-    else if (video.msRequestFullscreen) video.msRequestFullscreen();
-    setFullscreenData(true);
+  if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  } else if (video.webkitEnterFullScreen) {
+    video.webkitEnterFullScreen();
+  } else if (video.webkitRequestFullScreen) {
+    video.webkitRequestFullScreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen()
   }
 };
 
@@ -207,6 +186,7 @@ var upperCaseFirst = function (str) {
 };
 
 // Wait for the DOM to be loaded before initialising the media player
-window.onload = (function(){
+document.addEventListener("DOMContentLoaded", function () {
+  'use strict';
   initialisevideo();
-});
+}, false);

@@ -7021,6 +7021,22 @@ button.list-group-item-danger.active:focus {
     font-size: inherit;
   }
 }
+input[type=range]::-ms-track {
+  width: 200px;
+  height: 10px;
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+}
+input[type=range]::-ms-fill-upper {
+  background: gray;
+  border-radius: 6px;
+}
+input[type=range]::-ms-fill-lower {
+  background: gray;
+  border-radius: 6px;
+}
 .well {
   min-height: 20px;
   padding: 15px;

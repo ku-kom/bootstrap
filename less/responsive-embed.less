@@ -66,3 +66,23 @@
     margin-right: 3px;
   }
 }
+// Make input range visible in IE - why, oh why...
+
+input[type=range]::-ms-track {
+  width: 200px;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: gray;
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: gray;
+  border-radius: 6px;
+}
