@@ -186,6 +186,7 @@ var upperCaseFirst = function (str) {
 };
 
 // Wait for the DOM to be loaded before initialising the media player
-$(function(){
+document.addEventListener("DOMContentLoaded", function () {
+  'use strict';
   initialisevideo();
-});
+}, false);
