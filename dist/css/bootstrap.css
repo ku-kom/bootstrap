@@ -9281,9 +9281,6 @@ nav {
 .nyhedsliste.smal .media .nyhedsliste_indhold {
   clear: both;
 }
-.nyhedsliste.smal .media .news-teaser {
-  margin-bottom: 0;
-}
 .nyhedsliste-rightbox .media .news-date2 {
   font-size: 12px;
   font-weight: 600;
@@ -9291,7 +9288,7 @@ nav {
   color: #757575;
 }
 .nyhedsliste-rightbox .media .news-teaser {
-  margin-top: -10px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 #calendarlist {
