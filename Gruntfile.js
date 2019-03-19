@@ -280,6 +280,7 @@ module.exports = function (grunt) {
       minifyCustom: {
         expand: true,
         src: [
+          'docs/assets/css/print/print.css',
           'dist/css/ku-gridboxes.css',
           'docs/assets/css/social-feeds/instagram.css',
           'docs/assets/css/social-feeds/twitter.css',
@@ -290,6 +291,10 @@ module.exports = function (grunt) {
         dest: 'dist/css/',
         ext: '.min.css',
         flatten: true
+      },
+      print: {
+        src: 'docs/assets/css/print/print.css',
+        dest: 'dist/css/print.min.css'
       },
       minifyFAK: {
         expand: true,
@@ -495,7 +500,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:minifyFAK', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:minifyFAK', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:print']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
