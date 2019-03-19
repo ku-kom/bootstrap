@@ -1,0 +1,4 @@
+/* If h1 is not the first element of the page after breadcrumbs, give it more top margin */
+.main-content>.breadcrumbs+*~h1:first-of-type {
+  margin-top: 20px;
+}
