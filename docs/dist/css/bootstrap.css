@@ -1722,6 +1722,9 @@ h6 {
   font-size: 12px;
   font-weight: 600;
 }
+.gcitem > * ~ h1:first-of-type {
+  margin-top: 20px;
+}
 p {
   margin: 8px 0 15px 0;
 }
@@ -9200,6 +9203,11 @@ nav {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+@media all and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .advanced-list li {
+    min-height: auto;
   }
 }
 .media-list .media-left,

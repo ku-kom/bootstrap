@@ -113,6 +113,17 @@ h6 {
   font-size: @font-size-h6;
   font-weight: 600;
 }
+
+.gcitem {
+  // If h1 is not the first element of the grid page, give it more top-margin
+  & > * {
+    & ~ h1 {
+      &:first-of-type {
+        margin-top: 20px;
+      }
+    }
+  }
+}
 // Body text
 // -------------------------
 
