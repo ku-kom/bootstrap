@@ -848,6 +848,7 @@
   .single-column .column1 .size1 {
             flex-direction: row;
     background: #fff;
+    border-bottom: 1px dotted #ccc;
 
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
@@ -870,9 +871,9 @@
     margin: 0;
   }
   .single-column .column1 .size1.with-img .box1 .header {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: normal;
-    line-height: 1.11111em;
+    line-height: 1.21111em;
   }
   .single-column .column1 .size1.with-img .box1 .text {
     display: block;
