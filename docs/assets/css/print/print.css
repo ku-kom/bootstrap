@@ -1,7 +1,8 @@
 @page {
-    size: A4 landscape;
-    margin: 15mm 10mm;
+  size: A4 landscape;
+  margin: 15mm 10mm;
 }
+
 *, *:before, *:after {
   color: #000 !important;
   text-shadow: none !important;
@@ -16,7 +17,7 @@ html, body {
 }
 
 header, nav, footer {
-  display: none!important;
+  display: none !important;
 }
 
 main {
@@ -27,10 +28,12 @@ main {
 .main-content {
   width: 100%;
 }
+
 .right-side {
   width: 50%;
-  float: left!important;
+  float: left !important;
 }
+
 .navbar, #mobileleftmenu, .ku-leftmenu, #globalfooter {
   display: none;
 }
@@ -39,7 +42,7 @@ main {
   display: block;
 }
 
-.panel-accordion > .panel-heading:before {
+.panel-accordion>.panel-heading:before {
   display: none;
 }
 
@@ -48,11 +51,11 @@ a, a:visited {
 }
 
 a[href]:after {
-  content: " (" attr(href) ")";
+  content: " ("attr(href) ")";
 }
 
 abbr[title]:after {
-  content: " (" attr(title) ")";
+  content: " ("attr(title) ")";
 }
 
 a[href^="#"]:after, a[href^="javascript:"]:after {
