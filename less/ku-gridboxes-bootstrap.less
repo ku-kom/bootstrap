@@ -514,7 +514,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -583,7 +582,6 @@
 @media all and (max-width: @screen-xs-max) {
   // All flexboxes now require dynamic height as they are stacked in mobile
   .gridbox {
-
     .text {
       display: none;
     }
@@ -591,6 +589,7 @@
     .box1 {
       flex: 0 1 auto;
     }
+
     &:not(.with-img) {
       height: auto!important;
     }
@@ -1054,7 +1053,6 @@
       }
     }
   }
-
   // Single columns
   .one-two-column .column1,
   .triple-column [class*=column],
@@ -1070,7 +1068,6 @@
     }
   }
 }
-
 @media all and (min-width: @screen-md) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Single columns
   .one-two-column .column1,
@@ -1086,7 +1083,6 @@
     }
   }
 }
-
 @supports (-ms-ime-align: auto) {
   /* IE Edge */
   .gridbox.with-img {
@@ -1111,6 +1107,22 @@
     }
   }
 }
+@media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gridbox.with-img {
+    .box2 img {
+      height: 100%;
+    }
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .gridbox.with-img {
+    .box2 img {
+      height: 100%;
+    }
+  }
+}
+
 .boxlink {
   color: inherit!important;
   display: block;
