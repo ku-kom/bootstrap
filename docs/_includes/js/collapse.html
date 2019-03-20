@@ -143,6 +143,100 @@
 </div>
 {% endhighlight %}
 
+<h2 id="collapse-only-one-accordion">Open only one accordion at the time</h2>
+  <p>In order to make only one accordion open at a time, use the <code>data-parent=""</code> attributes on each accordion in the group:</p>
+
+  <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingOne2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+            Collapsible Group Item #1
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingTwo2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            Collapsible Group Item #2
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingThree2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+            Collapsible Group Item #3
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingOne2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+            Collapsible Group Item #1
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            Collapsible Group Item #2
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-accordion">
+      <div class="panel-heading" role="tab" id="headingThree2">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+            Collapsible Group Item #3
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree2" data-parent="#accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+        <div class="panel-body">
+          <p>Content text.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endhighlight %}
+
   <p>It's also possible to swap out <code>.panel-body</code>s with <code>.list-group</code>s.</p>
 
   <div class="panel-group" role="tablist">

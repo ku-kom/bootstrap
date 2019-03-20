@@ -1,5 +1,4 @@
 /* Media Player controls using HTML5's Media API
- *
  * Modified for Bootstrap by Nanna Ellegaard 2019
  */
 
@@ -16,7 +15,7 @@ var video,
   upperCaseFirst;
 
 var initialisevideo = function () {
-  // Get a handle to the player
+  // Get player id
   video = document.getElementById('video');
 
   // Get handles to each of the buttons and required elements
@@ -39,7 +38,7 @@ var initialisevideo = function () {
   }, false);
 
   video.addEventListener('pause', function () {
-    // Change the button to be a play button
+    // If paused, change the button to be a play button
     changeButtonType(playPauseBtn, 'play');
   }, false);
 
@@ -71,19 +70,12 @@ var stopPlayer = function () {
   video.currentTime = 0;
 };
 
-// Changes the volume on the media player using +/- buttons
-// var changeVolume = function (direction) {
-//   if (direction === '+') video.volume += video.volume == 1 ? 0 : 0.1;
-//   else video.volume -= (video.volume == 0 ? 0 : 0.1);
-//   video.volume = parseFloat(video.volume).toFixed(1);
-// };
-
 // Changes the volume on the media player using a slider
-var setVolume = function (val) {
+var setVolume = function (v) {
   video.muted = false;
-  var vol = val / 100;
+  var vol = v / 100;
   video.volume = vol;
-  volumeBtn.title = 'Volume: ' + val + '%'
+  volumeBtn.title = 'Volume: ' + v + '%'
   volumeBtn.setAttribute("aria-valuenow", vol);
 };
 
@@ -114,7 +106,7 @@ var replayMedia = function () {
 var updateProgressBar = function () {
   // Work out how much of the media has played via the duration and currentTime parameters
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
-  // Update the progress bar's values
+  // Update the progress bar with current values
   progressBar.value = percentage;
   progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
@@ -130,7 +122,12 @@ var changeButtonType = function (btn, value) {
   btn.setAttribute("aria-label", upperCaseFirst(value));
   // All available glyphicons
   var span = btn.querySelector('.glyphicon');
-  span.classList.remove("glyphicon-volume-off", "glyphicon-volume-up", "glyphicon-play", "glyphicon-pause");
+  // remove glyphicons before adding new
+  span.classList.forEach(function (className) {
+    if (className.startsWith('glyphicon-')) {
+      span.classList.remove(className);
+    }
+  });
   span.classList.add("glyphicon-" + value);
 };
 
@@ -153,8 +150,12 @@ var loadVideo = function () {
 // Checks if the browser can play this particular type of file or not
 var canPlayVideo = function (ext) {
   var ableToPlay = video.canPlayType('video/' + ext);
-  if (ableToPlay == '') return false;
-  else return true;
+  if (ableToPlay == '') {
+    //Eempty string: The specified media type definitely cannot be played.
+    return false;
+  } else {
+    return true;
+  }
 };
 
 // Resets the media player
@@ -180,12 +181,12 @@ var handleFullscreen = function () {
   }
 };
 
-// Make attributes values first letter uppercase
+// Make attributes values first letter uppercase because it looks nice
 var upperCaseFirst = function (str) {
   return str.charAt(0).toUpperCase() + str.substring(1);
 };
 
-// Wait for the DOM to be loaded before initialising the media player
+// Initialize the player when the DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
   'use strict';
   initialisevideo();
