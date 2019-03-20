@@ -514,6 +514,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -1114,11 +1115,12 @@
     }
   }
 }
-
-@supports (-ms-ime-align: auto) {
-  .gridbox.with-img {
-    .box2 img {
-      height: 100%;
+@media all and (min-width: @screen-sm) {
+  @supports (-ms-ime-align: auto) {
+    .gridbox.with-img {
+      .box2 img {
+        height: 100%;
+      }
     }
   }
 }

@@ -1055,9 +1055,11 @@
     height: 100%;
   }
 }
-@supports (-ms-ime-align: auto) {
-  .gridbox.with-img .box2 img {
-    height: 100%;
+@media all and (min-width: 768px) {
+  @supports (-ms-ime-align: auto) {
+    .gridbox.with-img .box2 img {
+      height: 100%;
+    }
   }
 }
 .boxlink {
