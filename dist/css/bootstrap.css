@@ -7862,6 +7862,11 @@ nav {
 #gridsidebar .row .gccolumn .gcitem {
   margin-top: 0;
 }
+@media (min-width: 768px) {
+  #gridsidebar .row:first-child {
+    margin-top: 23px;
+  }
+}
 #gridsidebar .row:last-child [class*="col-"] {
   margin-bottom: 0;
 }

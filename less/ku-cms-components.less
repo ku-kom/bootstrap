@@ -99,6 +99,11 @@ nav {
         margin-top: 0;
       }
     }
+    @media (min-width: @screen-sm) {
+      &:first-child {
+        margin-top: @grid-gutter-height;
+      }
+    }
 
     &:last-child {
       [class*="col-"] {
