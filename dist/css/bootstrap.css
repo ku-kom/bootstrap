@@ -9340,7 +9340,7 @@ nav {
   line-height: 15px;
   color: #757575;
 }
-nav[aria-label="Pager"] + .pagination {
+nav[aria-label="Pager"] + .nyhedsliste {
   border-top: 1px solid #ccc;
 }
 .readAll {
