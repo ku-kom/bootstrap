@@ -1275,7 +1275,7 @@ template {
           flex-wrap: wrap;
 }
 .social-icons li + li {
-  margin-left: 6px;
+  margin-left: 8px;
 }
 .social-icons .icon {
   display: -webkit-flex;
