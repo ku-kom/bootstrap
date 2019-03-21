@@ -7859,6 +7859,12 @@ nav {
 #gridsidebar .row [class*="col-"]:last-child {
   margin-bottom: 0;
 }
+#gridsidebar .row .gccolumn .gcitem {
+  margin-top: 0;
+}
+#gridsidebar .row:last-child [class*="col-"] {
+  margin-bottom: 0;
+}
 .gcitem {
   position: relative;
   margin-bottom: 23px;

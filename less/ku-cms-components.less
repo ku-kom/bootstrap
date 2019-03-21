@@ -93,6 +93,18 @@ nav {
       }
     }
     margin-bottom: @grid-gutter-height;
+
+    .gccolumn {
+      .gcitem {
+        margin-top: 0;
+      }
+    }
+
+    &:last-child {
+      [class*="col-"] {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
