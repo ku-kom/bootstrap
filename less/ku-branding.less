@@ -102,34 +102,37 @@
     }
   }
 }
-
 // New search area
+
 .search-area {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 @media (max-width: @screen-xs-max) {
-  .ku-nav, .search-area {
+  .ku-nav,
+  .search-area {
     display: none;
   }
 }
 
 .global-search {
-
   .btn .caret {
     margin-left: 5px; //KU
     color: #bbb;
   }
 
-  .input-group-btn { //KU
+  .input-group-btn {
+    //KU
+
     .btn {
       &:hover {
         background-color: @white-color;
         text-decoration: @link-hover-decoration;
       }
-      &:focus, &:active {
+
+      &:active,
+      &:focus {
         background-color: @white-color;
       }
     }
