@@ -103,12 +103,21 @@
   }
 }
 
+// New search area
 .search-area {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: @screen-xs-max) {
+  .ku-nav, .search-area {
+    display: none;
+  }
 }
 
 .global-search {
+
   .btn .caret {
     margin-left: 5px; //KU
     color: #bbb;

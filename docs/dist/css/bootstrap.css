@@ -4955,11 +4955,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
   }
 }
-@media (max-width: 767px) {
-  .ku-nav {
-    display: none;
-  }
-}
 .nav-tabs {
   border-bottom: 1px solid #ccc;
 }
@@ -8239,6 +8234,15 @@ nav {
   -webkit-align-items: center;
   -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .ku-nav,
+  .search-area {
+    display: none;
+  }
 }
 .global-search .btn .caret {
   margin-left: 5px;
@@ -8355,7 +8359,6 @@ nav {
   padding: 3px 5px 3px 15px;
   font-size: 1em;
   color: #252525;
-  word-break: break-all;
   vertical-align: top;
 }
 .ku-leftmenu ul li a:active,
