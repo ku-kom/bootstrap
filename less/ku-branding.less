@@ -37,6 +37,7 @@
     bottom: 15px;
     letter-spacing: 0.936px;
     padding-right: 10px;
+
     a {
       text-decoration: none;
     }
@@ -67,8 +68,14 @@
     }
     &:extend(.clearfix all);
     position: relative;
-    border-bottom: 1px solid @ku-red;
+  }
 
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid @ku-red;
 
     .theme-samf & {
       border-bottom: 1px solid @samf;
@@ -92,6 +99,30 @@
 
     .theme-teo & {
       border-bottom: 1px solid @teol;
+    }
+  }
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+}
+
+.global-search {
+  .btn .caret {
+    margin-left: 5px; //KU
+    color: #bbb;
+  }
+
+  .input-group-btn { //KU
+    .btn {
+      &:hover {
+        background-color: @white-color;
+        text-decoration: @link-hover-decoration;
+      }
+      &:focus, &:active {
+        background-color: @white-color;
+      }
     }
   }
 }

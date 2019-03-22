@@ -1,15 +1,30 @@
 <div class="container ku-branding">
-  <div class="ku-branding-line">
-    <div class="ku-branding-logo">
-      <a title="Forsiden af ku.dk" href="/">
-        <img class="logo-img" src="https://bootstrap.secure.ku.dk/img/faelles.svg" alt="Københavns Universitet">
-      </a>
+  <div class="row row-equal-height">
+    <div class="col-sm-8 ku-branding-line">
+      <div class="ku-branding-logo">
+        <a title="Forsiden af ku.dk" href="/">
+          <img class="logo-img" src="https://bootstrap.secure.ku.dk/img/faelles.svg" alt="Københavns Universitet">
+        </a>
+      </div>
+      <div class="ku-branding-text">
+        <a href="/" title="{{ page.title }}">
+          <div class="ku-branding-text-major">{{ page.title }}</div>
+          <div class="ku-branding-text-sub">{{ page.title }}</div>
+        </a>
+      </div>
     </div>
-    <div class="ku-branding-text">
-      <a href="/" title="{{ page.title }}">
-        <div class="ku-branding-text-major">{{ page.title }}</div>
-        <div class="ku-branding-text-sub"></div>
-      </a>
+    <div class="col-sm-4 search-area">
+      <form class="navbar-form navbar-right search_form search_reset global-search" role="search">
+        <div class="input-group">
+          <input id="globalSearch" class="form-control global-search-query" type="search" placeholder="Søg..." aria-label="Inputfelt til søgeord">
+          <div class="input-group-btn btn-global-search">
+            <button type="button" class="btn btn-default dropdown-toggle global-search-options-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hele KU <span class="sr-only">Vis søgemuligheder</span></button>
+            <ul class="dropdown-menu dropdown-menu-right global-search-options-filter">
+            </ul>
+            <button class="btn btn-default global-search-submit" aria-label="Søg" name="sa" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
