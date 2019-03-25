@@ -9754,7 +9754,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .gallery-nav,
 .slide-gallery,
 .slideshow {
+  position: relative;
+  height: 289px;
   visibility: hidden;
+}
+.gallery-nav:not(.slick-initialized) .slide-link,
+.slide-gallery:not(.slick-initialized) .slide-link,
+.slideshow:not(.slick-initialized) .slide-link {
+  position: absolute;
 }
 .gallery-nav.slick-initialized,
 .slide-gallery.slick-initialized,
