@@ -5826,7 +5826,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
   border-top: 0;
 }
 .global-search .global-search-options-filter li {
-  padding: 3px 20px;
+  padding: 3px 10px;
 }
 .global-search .global-search-options-filter li.selected,
 .global-search .global-search-options-filter li:active,
@@ -6986,7 +6986,7 @@ button.list-group-item-danger.active:focus {
 }
 .media-controls button {
   margin-right: 5px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .media-controls input[type=range] {
   display: inline-block;
@@ -7002,7 +7002,7 @@ button.list-group-item-danger.active:focus {
   }
 }
 input[type=range]::-ms-track {
-  width: 200px;
+  width: 15%;
   height: 10px;
   color: transparent;
   background: transparent;
@@ -7016,6 +7016,18 @@ input[type=range]::-ms-fill-upper {
 input[type=range]::-ms-fill-lower {
   background: gray;
   border-radius: 6px;
+}
+_::-webkit-full-page-media,
+_:future,
+:root input[type=range] {
+  width: 100%;
+  height: 1px;
+  margin-top: -10px;
+  cursor: pointer;
+  background: gray;
+  background-color: gray;
+  border-top: .5px solid gray;
+  border-radius: 1.3px;
 }
 .well {
   min-height: 20px;

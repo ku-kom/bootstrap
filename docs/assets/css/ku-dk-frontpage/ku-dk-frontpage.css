@@ -5,10 +5,10 @@
 }
 .ku-branding-text {
   background-image: url("https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg");
-  background-position: left bottom 31%;
+  background-position: left bottom 39%;
   background-repeat: no-repeat;
   height: 100%;
-  width: 40%;
+  width: 46%;
   top: 0;
 }
 
@@ -19,6 +19,7 @@ html:lang(en) .ku-branding-text {
 @media all and (min-width: 481px) {
   .ku-branding-text {
     background-image: url("https://bootstrap.secure.ku.dk/img/ku_header.svg");
+    background-position: left bottom 31%;
   }
 
   html:lang(en) .ku-branding-text {

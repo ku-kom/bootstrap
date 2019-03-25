@@ -47,7 +47,7 @@
 }
 
 .media-controls button {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 5px;
 }
 
@@ -69,7 +69,7 @@
 // Make input range visible in IE - why, oh why...
 
 input[type=range]::-ms-track {
-  width: 200px;
+  width: 15%;
   height: 10px;
   background: transparent;
   border-color: transparent;
@@ -85,4 +85,16 @@ input[type=range]::-ms-fill-upper {
 input[type=range]::-ms-fill-lower {
   background: gray;
   border-radius: 6px;
+}
+
+// Safari Only
+_::-webkit-full-page-media, _:future, :root input[type=range] {
+ width: 100%;
+ cursor: pointer;
+ background: gray;
+ height: 1px;
+ margin-top: -10px;
+ border-radius: 1.3px;
+ border-top: 0.5px solid gray;
+ background-color: gray;
 }
