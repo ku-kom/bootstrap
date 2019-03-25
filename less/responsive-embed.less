@@ -77,24 +77,28 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: @gray-ddd;
+}
+
 input[type=range]::-ms-fill-upper {
-  background: gray;
+  background: @gray-ddd;
   border-radius: 6px;
 }
 
 input[type=range]::-ms-fill-lower {
-  background: gray;
+  background: @gray-ddd;
   border-radius: 6px;
 }
 
-// Safari Only
-_::-webkit-full-page-media, _:future, :root input[type=range] {
- width: 100%;
- cursor: pointer;
- background: gray;
- height: 1px;
- margin-top: -10px;
- border-radius: 1.3px;
- border-top: 0.5px solid gray;
- background-color: gray;
+input[type=range]:focus::-ms-fill-lower {
+  background: @gray-888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: @gray-ddd;
 }
