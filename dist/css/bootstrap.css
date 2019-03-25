@@ -5815,9 +5815,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.global-search .global-search-query {
-  width: 170px!important;
-}
 .global-search .global-search-submit .btn {
   background-image: none;
   border-top-right-radius: 2px !important;
@@ -8177,7 +8174,12 @@ nav {
   font-size: 14px;
   line-height: 1.2;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) and (max-width: 991px) {
+  .ku-branding .ku-branding-text .ku-branding-text-major {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     font-size: 18px;
   }
@@ -8185,7 +8187,12 @@ nav {
 .ku-branding .ku-branding-text .ku-branding-text-sub {
   font-size: 12px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) and (max-width: 991px) {
+  .ku-branding .ku-branding-text .ku-branding-text-sub {
+    font-size: 13px;
+  }
+}
+@media (min-width: 992px) {
   .ku-branding .ku-branding-text .ku-branding-text-sub {
     font-size: 14px;
   }
@@ -8238,6 +8245,13 @@ nav {
   -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.search-area .global-search {
+  width: 100%;
+  padding-left: 0;
+}
+.search-area .btn-global-search {
+  width: 1%!important;
+}
 @media (max-width: 767px) {
   .ku-nav,
   .search-area {
@@ -8252,8 +8266,8 @@ nav {
   text-decoration: underline;
   background-color: #fff;
 }
-.global-search .input-group-btn .btn:focus,
-.global-search .input-group-btn .btn:active {
+.global-search .input-group-btn .btn:active,
+.global-search .input-group-btn .btn:focus {
   background-color: #fff;
 }
 .ku-leftmenu {
@@ -9453,18 +9467,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column3 .media-list .media .media-body {
   padding-left: 0!important;
 }
-#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column2 .media-list .media .media-body > .media-right,
-.one-three-column .column1 .media-list .media .media-body > .media-right,
-.one-two-column .column1 .media-list .media .media-body > .media-right,
-.quad-column [class*=column] .media-list .media .media-body > .media-right,
-.right-side .media-list .media .media-body > .media-right,
-.three-one-column .column2 .media-list .media .media-body > .media-right,
-.triple-column [class*=column] .media-list .media .media-body > .media-right,
-.two-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column3 .media-list .media .media-body > .media-right,
 #gridsidebar .single-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column2 .media-list .media .media-body + .media-right,
@@ -9476,7 +9478,19 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .triple-column [class*=column] .media-list .media .media-body + .media-right,
 .two-one-column .column2 .media-list .media .media-body + .media-right,
 .two-one-one-column .column2 .media-list .media .media-body + .media-right,
-.two-one-one-column .column3 .media-list .media .media-body + .media-right {
+.two-one-one-column .column3 .media-list .media .media-body + .media-right,
+#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column2 .media-list .media .media-body > .media-right,
+.one-three-column .column1 .media-list .media .media-body > .media-right,
+.one-two-column .column1 .media-list .media .media-body > .media-right,
+.quad-column [class*=column] .media-list .media .media-body > .media-right,
+.right-side .media-list .media .media-body > .media-right,
+.three-one-column .column2 .media-list .media .media-body > .media-right,
+.triple-column [class*=column] .media-list .media .media-body > .media-right,
+.two-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column3 .media-list .media .media-body > .media-right {
   float: right;
 }
 .calendarbox .media-body + .media-right {
@@ -9485,14 +9499,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .calendarbox .media-event > .media-body:first-child {
   padding-left: 0!important;
 }
-.double-column [class*=column] .media-list .media .media-body > .media-right,
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column3 .media-list .media .media-body > .media-right,
-.one-three-column .column2 .media-list .media .media-body > .media-right,
-.one-two-column .column2 .media-list .media .media-body > .media-right,
-.three-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-one-column .column1 .media-list .media .media-body > .media-right,
 .double-column [class*=column] .media-list .media .media-body + .media-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column3 .media-list .media .media-body + .media-right,
@@ -9500,17 +9506,25 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .one-two-column .column2 .media-list .media .media-body + .media-right,
 .three-one-column .column1 .media-list .media .media-body + .media-right,
 .two-one-column .column1 .media-list .media .media-body + .media-right,
-.two-one-one-column .column1 .media-list .media .media-body + .media-right {
+.two-one-one-column .column1 .media-list .media .media-body + .media-right,
+.double-column [class*=column] .media-list .media .media-body > .media-right,
+.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column3 .media-list .media .media-body > .media-right,
+.one-three-column .column2 .media-list .media .media-body > .media-right,
+.one-two-column .column2 .media-list .media .media-body > .media-right,
+.three-one-column .column1 .media-list .media .media-body > .media-right,
+.two-one-column .column1 .media-list .media .media-body > .media-right,
+.two-one-one-column .column1 .media-list .media .media-body > .media-right {
   display: none;
 }
-.double-column [class*=column] .media-list .media .news-teaser,
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .news-teaser,
-.one-one-two-column .column3 .media-list .media .news-teaser,
-.one-three-column .column2 .media-list .media .news-teaser,
-.one-two-column .column2 .media-list .media .news-teaser,
-.three-one-column .column1 .media-list .media .news-teaser,
-.two-one-column .column1 .media-list .media .news-teaser,
-.two-one-one-column .column1 .media-list .media .news-teaser {
+.double-column [class*=column] .media-list .media + .media-left .news-teaser,
+.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media + .media-left .news-teaser,
+.one-one-two-column .column3 .media-list .media + .media-left .news-teaser,
+.one-three-column .column2 .media-list .media + .media-left .news-teaser,
+.one-two-column .column2 .media-list .media + .media-left .news-teaser,
+.three-one-column .column1 .media-list .media + .media-left .news-teaser,
+.two-one-column .column1 .media-list .media + .media-left .news-teaser,
+.two-one-one-column .column1 .media-list .media + .media-left .news-teaser {
   margin-left: 74px;
 }
 .double-column [class*=column] .media-list.smal .media-body:first-child,
@@ -9529,8 +9543,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .GridStandard .double-column [class*=column] .media-list .media .media-body {
   padding-left: 0!important;
 }
-.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right,
-.GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right {
+.GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right,
+.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right {
   float: right;
 }
 .GridStandard .double-column [class*=column] .media-right {
@@ -11162,6 +11176,9 @@ p[align="right"]:before {
 }
 #navbar_menu + .search_form {
   margin-top: 6px;
+}
+#navbar_menu + .search_form .global-search-query {
+  width: 170px!important;
 }
 /* KU custom elements */
 .gridnyhed {

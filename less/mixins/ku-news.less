@@ -1,37 +1,40 @@
 // News and events
-
 // Float image right
+
 .img-right() {
   .media-list {
     .media {
       .media-left {
         display: none;
       }
+
       .media-body {
         padding-left: 0!important;
-        > .media-right,
-        + .media-right {
+
+        + .media-right,
+        > .media-right {
           float: right;
         }
       }
     }
   }
 }
-
-
 // Float image left
+
 .img-left() {
   .media-list {
     .media {
       .media-body {
-        > .media-right,
-        + .media-right {
+        + .media-right,
+        > .media-right {
           display: none;
         }
       }
 
-      .news-teaser {
-        margin-left: @ku-thumbnails-size;
+      &+ .media-left {
+        .news-teaser {
+          margin-left: @ku-thumbnails-size;
+        }
       }
     }
 

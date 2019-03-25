@@ -45,14 +45,21 @@
     .ku-branding-text-major {
       font-size: 14px;
       line-height: 1.2;
-      @media (min-width: @screen-sm) {
+      @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+        font-size: 16px;
+      }
+      @media (min-width: @screen-md) {
         font-size: @ku-branding-text-font-size;
       }
     }
 
     .ku-branding-text-sub {
       font-size: @font-size-base;
-      @media (min-width: @screen-sm) {
+      @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+        font-size: 13px;
+      }
+
+      @media (min-width: @screen-md) {
         font-size: @font-size-large;
       }
     }
@@ -108,8 +115,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  .global-search {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .btn-global-search {
+    width: 1%!important;
+  }
 }
 @media (max-width: @screen-xs-max) {
+  // Hide menus when in mobile mode
   .ku-nav,
   .search-area {
     display: none;
@@ -124,7 +141,6 @@
 
   .input-group-btn {
     //KU
-
     .btn {
       &:hover {
         background-color: @white-color;

@@ -38,6 +38,7 @@ ul {
   &.stripped {
     list-style-type: none;
     padding-left: 0;
+
     li {
       background-repeat: no-repeat;
     }
@@ -117,9 +118,7 @@ ul {
 .visible-mobile {
   display: none;
 }
-
 // Old image and camption style
-
 .img-with-caption {
   float: right;
   margin: 5px 0 10px 20px;
@@ -140,24 +139,32 @@ div[class^="img-with-caption"] {
     border-bottom: 1px solid @figure-caption-border-color;
   }
 }
-
 // Old Blockquotes html
+
 p[align="right"] {
   font-size: 80%;
   line-height: 1.5;
   color: #757575;
   text-align: left;
+
   &:before {
     content: '\2014 \00A0';
   }
 }
-
 // Remove strong font-weight in accordion headers
-.panel-accordion>.panel-heading .panel-title a>strong {
+
+.panel-accordion > .panel-heading .panel-title a > strong {
   font-weight: inherit!important;
 }
-
 // Delete when search is moved down
-#navbar_menu + .search_form {
-  margin-top: 6px;
+
+#navbar_menu {
+  + .search_form {
+    margin-top: 6px;
+
+    .global-search-query {
+      // Global search input:
+      width: 170px!important;
+    }
+  }
 }
