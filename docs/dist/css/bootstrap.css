@@ -7002,7 +7002,7 @@ button.list-group-item-danger.active:focus {
   }
 }
 input[type=range]::-ms-track {
-  width: 15%;
+  width: 200px;
   height: 10px;
   color: transparent;
   background: transparent;
@@ -7023,12 +7023,6 @@ input[type=range]::-ms-fill-upper {
 input[type=range]::-ms-fill-lower {
   background: #ddd;
   border-radius: 6px;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #888;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #ddd;
 }
 .well {
   min-height: 20px;
