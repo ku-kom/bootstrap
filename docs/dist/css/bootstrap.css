@@ -11018,7 +11018,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .social-embed:before {
   position: relative;
-  margin: 0 5px 0 0;
+  margin: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   font-size: 36px;
