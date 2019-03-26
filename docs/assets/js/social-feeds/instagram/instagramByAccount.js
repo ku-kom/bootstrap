@@ -24,10 +24,6 @@
     var $cachedWidth = $('body').prop('clientWidth');
 
     function getInstagramByAccount(access_token) {
-      if ($hidemobile == true && window.matchMedia('(max-width: 480px)').matches) {
-        //stop the execution of function if set to be hidden on mobile
-        return;
-      }
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       $number = $number.toString();
@@ -106,12 +102,18 @@
       });
     };
 
+    var hideOnMobile  = function() {
+      // Returns true if it should be hidden om mobile
+      return $hidemobile == true && window.matchMedia('(max-width: 480px)').matches
+    }
 
-    if ($token) {
-      // Init script
-      getInstagramByAccount($token);
-    } else {
-      console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
+    if (hideOnMobile() === false) {
+      if ($token) {
+        // Init script
+        getInstagramByAccount($token);
+      } else {
+        console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
+      }
     }
 
     $wrapper.click(function (e) {
@@ -138,7 +140,9 @@
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          getInstagramByAccount($token);
+          if (hideOnMobile() === false) {
+            getInstagramByAccount($token);
+          }
         }, 200);
         $cachedWidth = $newWidth;
       }
