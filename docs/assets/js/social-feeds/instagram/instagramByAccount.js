@@ -102,7 +102,7 @@
       });
     };
 
-    var hideOnMobile  = function() {
+    var hideOnMobile = function () {
       // Returns true if it should be hidden om mobile
       return $hidemobile == true && window.matchMedia('(max-width: 480px)').matches
     }
@@ -140,9 +140,7 @@
         $loading.show();
         clearTimeout(it);
         it = setTimeout(function () {
-          if (hideOnMobile() === false) {
-            getInstagramByAccount($token);
-          }
+          getInstagramByAccount($token);
         }, 200);
         $cachedWidth = $newWidth;
       }

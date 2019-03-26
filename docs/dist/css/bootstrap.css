@@ -8259,6 +8259,10 @@ nav {
 .search-area .btn-global-search {
   width: 1%!important;
 }
+.search-area .btn-global-search button {
+  background-image: linear-gradient(to bottom, #eaeaea 0%, #f2f2f2 100%);
+  background-repeat: repeat-x;
+}
 @media (max-width: 767px) {
   .ku-nav,
   .search-area {
