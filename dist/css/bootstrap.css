@@ -8255,11 +8255,16 @@ nav {
 .search-area .global-search {
   width: 100%;
   padding-left: 0;
+  margin-bottom: 14px;
+}
+.search-area .global-search-options-toggle {
+  margin-left: -2px;
 }
 .search-area .btn-global-search {
   width: 1%!important;
 }
-.search-area .btn-global-search button {
+.search-area .btn-global-search button,
+.search-area .btn-global-search button:focus {
   background-image: linear-gradient(to bottom, #eaeaea 0%, #f2f2f2 100%);
   background-repeat: repeat-x;
 }

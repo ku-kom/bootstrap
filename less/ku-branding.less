@@ -58,7 +58,6 @@
       @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
         font-size: 13px;
       }
-
       @media (min-width: @screen-md) {
         font-size: @font-size-large;
       }
@@ -119,11 +118,18 @@
   .global-search {
     width: 100%;
     padding-left: 0;
+    margin-bottom: 14px;
+  }
+
+  .global-search-options-toggle {
+    margin-left: -2px;
   }
 
   .btn-global-search {
     width: 1%!important;
-    button {
+
+    button,
+    button:focus {
       #gradient.vertical(#eaeaea; #f2f2f2; 0%; 100%);
     }
   }
