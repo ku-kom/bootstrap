@@ -18,11 +18,16 @@
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
+    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") === null) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $cachedWidth = $('body').prop('clientWidth');
 
     function getInstagramByAccount(access_token) {
+      if ($hidemobile == true && window.matchMedia('(max-width: 480px)').matches) {
+        //stop the execution of function if set to be hidden on mobile
+        return;
+      }
       // Fetch Instagram images by hashtag
       var $number = $wrapper.attr("data-images");
       $number = $number.toString();
@@ -100,6 +105,7 @@
         rotate(elem);
       });
     };
+
 
     if ($token) {
       // Init script

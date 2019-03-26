@@ -9755,8 +9755,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .slide-gallery,
 .slideshow {
   position: relative;
-  height: 289px;
   visibility: hidden;
+}
+.gallery-nav:not(.slick-initialized),
+.slide-gallery:not(.slick-initialized),
+.slideshow:not(.slick-initialized) {
+  height: 289px;
 }
 .gallery-nav:not(.slick-initialized) .slide-link,
 .slide-gallery:not(.slick-initialized) .slide-link,
@@ -11031,9 +11035,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .social-embed h2 {
   display: inline-block;
   padding: 0;
-  margin: 0;
-  font-size: 1.4em;
-  font-weight: 400;
+  margin: 28px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: .6px;
 }
 .social-embed.twitter {
   border-bottom: 1px solid #1da1f2;
