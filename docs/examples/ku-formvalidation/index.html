@@ -15,62 +15,49 @@ slug: examples
         <div class="row">
           <div class="col-sm-12">
             <h1>Form fields validation</h1>
-            <form id="validate" class="form-horizontal">
+            <form id="validate">
               <div class="remember_mandatory">Felter markeret med * skal udfyldes.</div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="name">Name</label>
-                  <div class="col-sm-9">
-                      <input id="name" class="form-control" type="text" placeholder="Name - no description" name="name" />
-                </div>
+                    <label class="control-label" for="name">Name</label>
+                    <input id="name" class="form-control" type="text" placeholder="Name - no description" name="name" />
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="email">E-mail <span class="mandatory">*</span></label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="email">E-mail <span class="mandatory">*</span></label>
                   <div class="input-group">
                     <input id="email" class="form-control" type="email" placeholder="E-mail" name="email" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="E-mail">?</span>
                 </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="password">Password <span class="mandatory">*</span></label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="password">Password <span class="mandatory">*</span></label>
                   <div class="input-group">
                     <input id="password" class="form-control" type="password" placeholder="Password" name="password" /><span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Password - min. 8 anslag">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="confirm-password">Confirm password <span class="mandatory">*</span></label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="confirm-password">Confirm password <span class="mandatory">*</span></label>
                   <div class="input-group">
                     <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" name="confirm-password" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Gentag password">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="username">Username <span class="mandatory">*</span></label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="username">Username <span class="mandatory">*</span></label>
                   <div class="input-group">
                     <input id="username" class="form-control" type="text" placeholder="Username" name="username" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg username">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group has-error">
-                <label class="col-sm-3 control-label" for="error">With error</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="error">With error</label>
                   <div class="input-group">
                     <input id="error" class="form-control" type="text" placeholder="Error" name="error" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Input med fejlbesked">?</span>
                   </div>
                   <span class="help-block">Error text that may extend beyond one line.</span>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="error">Check</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="error">Check</label>
                   <div class="checkbox">
                     <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vælg flere muligheder">?</span>
                   <label class="checkbox">
@@ -83,11 +70,9 @@ slug: examples
                       <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
                 </label>
                 </div>
-              </div>
             </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="error">Radio</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="error">Radio</label>
                     <div class="radio">
                       <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vælg en mulighed">?</span>
                       <label class="radio">
@@ -100,11 +85,9 @@ slug: examples
                         <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
                       </label>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="error">Select</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="error">Select</label>
                   <div class="input-group">
                     <select class="form-control">
                       <option>1</option>
@@ -115,11 +98,9 @@ slug: examples
                     </select>
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg i dropdown">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="error">Select multiple</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="error">Select multiple</label>
                   <div class="input-group">
                     <select multiple class="form-control">
                       <option>1</option>
@@ -130,49 +111,38 @@ slug: examples
                     </select>
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg i dropdown">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="upload">File upload</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="upload">File upload</label>
                   <div class="input-fileupload">
                     <span class="sr-only sr-only-focusable">Gennemse</span> <input id="upload" type="file">
                     <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vedhæft fil">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="birthdate">Birthdate</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="birthdate">Birthdate</label>
                   <div class="input-group">
                     <input id="birthdate" class="form-control" type="text" data-provide="datepicker" name="birthdate" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg dato">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="zip">ZIP Code</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="zip">ZIP Code</label>
                   <div class="input-group">
                     <input id="zip" class="form-control" type="text" placeholder="12345" name="zip" />
                     <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Angiv postnummer">?</span>
                   </div>
-                </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3 control-label" for="message">Message</label>
-                <div class="col-sm-9">
+                  <label class="control-label" for="message">Message</label>
                   <div class="input-group">
                     <textarea class="form-control" rows="8" placeholder="Message" name="message" id="message"></textarea><span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Besked">?</span>
                 </div>
-                </div>
               </div>
               <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-9">
                   <button type="submit" class="btn btn-default">Submit</button>
                   <button type="reset" class="btn btn-default">Ryd</button>
                 </div>
-              </div>
             </form>
           </div>
         </div>
