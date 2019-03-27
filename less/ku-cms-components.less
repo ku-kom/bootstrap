@@ -53,14 +53,29 @@ nav {
   }
 }
 
+#content {
+  &> .container {
+    @media (max-width: @screen-xs-max) {
+      padding-left: (@mobile-grid-gutter-width);
+      padding-right: (@mobile-grid-gutter-width);
+    }
+
+    & > .row {
+      margin-left: -@mobile-grid-gutter-width;
+      margin-right: -@mobile-grid-gutter-width;
+
+      & > [class*="col-"] {
+        padding-left: (@mobile-grid-gutter-width);
+        padding-right: (@mobile-grid-gutter-width);
+      }
+    }
+  }
+}
+
 .main-area {
   flex-grow: 1;
   margin-bottom: 30px;
-  @media (max-width: @screen-xs-max) {
-    padding-left: (6px);
-    padding-right: (6px);
-  }
-
+  
   &:focus {
     outline: 0;
     user-focus: none;
