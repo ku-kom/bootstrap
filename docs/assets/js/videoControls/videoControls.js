@@ -165,7 +165,8 @@ var resetPlayer = function () {
   // Move the media back to the start
   video.currentTime = 0;
   // Ensure that the play pause button is set as 'play'
-  changeButtonType(playPauseBtn, 'play');
+  //changeButtonType(playPauseBtn, 'play');
+  togglePlayPause();
 };
 
 // Fullscreen for various browsers

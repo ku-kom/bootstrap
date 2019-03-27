@@ -137,7 +137,7 @@ Needs html like this:
 }
 
 @media screen and (max-width: 480px) {
-  [data-hidemobile="true"] {
+  div[id*="ig"][data-hidemobile="true"] {
       display: none;
   }
 
