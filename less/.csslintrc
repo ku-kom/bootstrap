@@ -24,5 +24,7 @@
   "bulletproof-font-face": null,
   "order-alphabetical": null,
   "font-sizes": null,
-  "font-faces": null
+  "font-faces": null,
+  "duplicate-properties": null,
+  "zero-units": null
 }

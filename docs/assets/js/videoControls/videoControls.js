@@ -164,8 +164,7 @@ var resetPlayer = function () {
   progressBar.value = 0;
   // Move the media back to the start
   video.currentTime = 0;
-  // Ensure that the play pause button is set as 'play'
-  //changeButtonType(playPauseBtn, 'play');
+  // Check if button is play or pause
   togglePlayPause();
 };
 
