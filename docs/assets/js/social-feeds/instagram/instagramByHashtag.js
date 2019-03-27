@@ -13,7 +13,7 @@
     var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
-    $number = $number.toString();
+    //$number = $number.toString();
     var $images = 12;
     // We always display 2 images on mobile
     var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
