@@ -147,12 +147,6 @@ Needs html like this:
     display: none;
   }
 
-  #imageBox .batch a {
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
-  }
-
   #imageBox .batch img {
     position: relative;
     height: 100%;
