@@ -112,7 +112,7 @@
         // Init script
         getInstagramByAccount($token);
       } else {
-        console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container');
+        console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
       }
     }
 
