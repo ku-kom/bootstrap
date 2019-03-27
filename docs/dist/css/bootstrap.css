@@ -7811,11 +7811,11 @@ nav {
     padding-right: 6px;
     padding-left: 6px;
   }
-  #content > .row {
+  #content > .container > .row {
     margin-right: -6px;
     margin-left: -6px;
   }
-  #content > .row > [class*="col-"] {
+  #content > .container > .row > [class*="col-"] {
     padding-right: 6px;
     padding-left: 6px;
   }
