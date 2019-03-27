@@ -18,17 +18,17 @@
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
-    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || false) ? false : true;
+    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || true) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
+    var $number = $wrapper.attr("data-images");
+    //$number = $number.toString();
+    var $images = 12;
+    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number, 10);
     var $cachedWidth = $('body').prop('clientWidth');
 
     function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
-      var $number = $wrapper.attr("data-images");
-      $number = $number.toString();
-      var $images = 12;
-      var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number, 10);
       $container.empty();
       if (access_token) {
         var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;

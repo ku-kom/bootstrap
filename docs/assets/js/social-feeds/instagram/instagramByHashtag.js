@@ -9,6 +9,7 @@
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#ig_hashtag');
     var $container = $wrapper.find("#imageBox");
+    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || true) ? true : false;
     var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $loading = $wrapper.find(".ku-loading");
@@ -96,11 +97,18 @@
       });
     };
 
+    var hideOnMobile = function () {
+      // Returns true if it should be hidden om mobile
+      return $hidemobile == true && window.matchMedia('(max-width: 480px)').matches
+    }
+
     // Init script
-    if ($hash) {
-      getInstagramByHash($hash);
-    } else {
-      console.log('Add Instagram hashtag to search for and number of images to display using data-hashtag="" and data-images="" on the container');
+    if (hideOnMobile() === false) {
+      if ($hash) {
+        getInstagramByHash($hash);
+      } else {
+        console.log('Add Instagram hashtag to search for and number of images to display using data-hashtag="" and data-images="" on the container');
+      }
     }
 
     //On resize, wait and reload function
