@@ -1,7 +1,7 @@
 /* NEL, KU KOM Script to fetch images from Instagram by access token.
  * Login to Instagram to register an application and generate an access token using this url - replace with your values:
  * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
- * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" class="gridbox with-img size2">
+ * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" data-hidemobile="false" class="gridbox with-img size2">
    <div class="box1">
      <a href="https://www.instagram.com/university_of_copenhagen/">
        <div class="header">@university_of_copenhagen på Instagram</div>
@@ -22,9 +22,10 @@
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
-    //$number = $number.toString();
+    $number = $number.toString();
     var $images = 12;
-    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number, 10);
+    // We always display 2 images on mobile
+    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $cachedWidth = $('body').prop('clientWidth');
 
     function getInstagramByAccount(access_token) {

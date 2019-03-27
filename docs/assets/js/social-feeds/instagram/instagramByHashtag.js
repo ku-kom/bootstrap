@@ -1,6 +1,6 @@
 /* NEL, KU KOM
  * Script to fetch images from Instagram by hashtag. Based on scrapung - may stop working at any time.
- * Needs html like this: <div id="instagram_hash" data-hashtag="blivstuderendepåKinastudier" data-images="6" class="instagram-box"></div>
+ * Needs html like this: <div id="instagram_hash" data-hashtag="blivstuderendepåKinastudier" data-images="6" data-hidemobile="false" class="instagram-box"></div>
  * data-hashtag represents the hashtag to search for.
  * data-images pepresents the number of images to display at a time. */
 (function ($) {
@@ -13,9 +13,10 @@
     var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
-    //$number = $number.toString();
+    $number = $number.toString();
     var $images = 12;
-    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 1 : parseInt($number, 10);
+    // We always display 2 images on mobile
+    var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $loading = $wrapper.find(".ku-loading");
 
     function getInstagramByHash(hashtag) {
