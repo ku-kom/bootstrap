@@ -18,7 +18,7 @@
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
-    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || true) ? true : false;
+    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || false) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");

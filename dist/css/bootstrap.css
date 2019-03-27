@@ -8092,6 +8092,7 @@ nav {
   display: inline-block;
   width: 3rem;
   height: 3rem;
+  margin: 0 auto;
   vertical-align: text-bottom;
   border-top: 3px solid #901a1e;
   border-right: 3px solid #ccc;
@@ -9886,6 +9887,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: inline-block;
   width: 3rem;
   height: 3rem;
+  margin: 0 auto;
   vertical-align: text-bottom;
   border-top: 3px solid #901a1e;
   border-right: 3px solid #ccc;
