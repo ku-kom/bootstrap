@@ -53,21 +53,20 @@ nav {
   }
 }
 @media (max-width: @screen-xs-max) {
-  // Smaller margins on mobile
   #content {
-    & > .container {
+    .container {
       padding-left: (@mobile-grid-gutter-width);
       padding-right: (@mobile-grid-gutter-width);
+    }
 
-      & > .row {
-        margin-left: -@mobile-grid-gutter-width;
-        margin-right: -@mobile-grid-gutter-width;
+    .row {
+      margin-left: -@mobile-grid-gutter-width;
+      margin-right: -@mobile-grid-gutter-width;
+    }
 
-        & > [class*="col-"] {
-          padding-left: (@mobile-grid-gutter-width);
-          padding-right: (@mobile-grid-gutter-width);
-        }
-      }
+    [class*="col-"] {
+      padding-left: (@mobile-grid-gutter-width);
+      padding-right: (@mobile-grid-gutter-width);
     }
   }
 }
