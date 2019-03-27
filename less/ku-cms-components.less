@@ -52,10 +52,9 @@ nav {
     }
   }
 }
-
-#content {
-  & > .container {
-    @media (max-width: @screen-xs-max) {
+@media (max-width: @screen-xs-max) {
+  #content {
+    & > .container {
       padding-left: (@mobile-grid-gutter-width);
       padding-right: (@mobile-grid-gutter-width);
     }
@@ -75,6 +74,7 @@ nav {
 .main-area {
   flex-grow: 1;
   margin-bottom: 30px;
+
   &:focus {
     outline: 0;
     user-focus: none;
