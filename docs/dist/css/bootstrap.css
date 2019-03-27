@@ -7806,26 +7806,18 @@ nav {
     margin-bottom: 0;
   }
 }
-@media (max-width: 767px) {
-  #content > .container {
-    padding-right: 6px;
-    padding-left: 6px;
-  }
-}
-#content > .container > .row {
-  margin-right: -6px;
-  margin-left: -6px;
-}
-#content > .container > .row > [class*="col-"] {
-  padding-right: 6px;
-  padding-left: 6px;
-}
 .main-area {
   margin-bottom: 30px;
 
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
           flex-grow: 1;
+}
+@media (max-width: 767px) {
+  .main-area {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
 }
 .main-area:focus {
   outline: 0;
