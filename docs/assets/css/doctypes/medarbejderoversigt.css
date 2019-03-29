@@ -8,13 +8,17 @@
 
 #medarbejdertable tr th {
   white-space: nowrap;
-}
-
-#medarbejdertable tr th {
   border-bottom: 0;
 }
 
-
+#medarbejdertable tr th.pct_20:first-child {
+  /* bredt format */
+  width: 30%;
+}
+#medarbejdertable tr th.pct_30:first-child {
+  /* Smalt format */
+  width: 37%;
+}
 
 #medarbejdertable tr th:last-child input {
   display: none;
