@@ -5,6 +5,7 @@
   margin: 10px 0;
 }
 .gdpr-notice input[type="checkbox"] {
-  margin: 3px 4px 0 3px;
+  position: relative;
+  margin-right: 5px;
   bottom: -2px;
 }
