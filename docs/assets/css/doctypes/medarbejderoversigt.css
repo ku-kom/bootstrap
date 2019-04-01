@@ -15,6 +15,7 @@
   /* bredt format */
   width: 30%;
 }
+
 #medarbejdertable tr th.pct_30:first-child {
   /* Smalt format */
   width: 37%;
@@ -37,10 +38,16 @@
 
 #medarbejdertable tr th:nth-last-child(2) {
   /* Target last but one - the phone cells */
-  width: 25%!important;
+  width: 25% !important;
 }
 
 #medarbejdertable tr th:last-child {
   /* Target last - the e-mail cells */
-  width: 20%!important;
+  width: 20% !important;
+}
+
+#forskerprofil_kontaktoplysninger>img {
+  flloat: right;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
