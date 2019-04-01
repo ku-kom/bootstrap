@@ -3698,9 +3698,11 @@ textarea.form-tooltip {
   padding: 6px 10px;
   margin-bottom: 0;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .7px;
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
