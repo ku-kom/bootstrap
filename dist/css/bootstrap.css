@@ -440,15 +440,15 @@ template {
   font-family: "ku-symbols";
 
   font-display: swap;
-  src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot");
-  src: url("https://bootstrap.secure.ku.dk/fonts/KU.eot?#iefix") format('embedded-opentype'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff2") format('woff2'), url("https://bootstrap.secure.ku.dk/fonts/KU.woff") format('woff'), url("https://bootstrap.secure.ku.dk/fonts/KU.ttf") format('truetype'), url("https://bootstrap.secure.ku.dk/fonts/KU.svg#ku_symbols") format('svg');
+  src: url("https://cms.ku.dk/styling/fonts/KU.eot");
+  src: url("https://cms.ku.dk/styling/fonts/KU.eot?#iefix") format('embedded-opentype'), url("https://cms.ku.dk/styling/fonts/KU.woff2") format('woff2'), url("https://cms.ku.dk/styling/fonts/KU.woff") format('woff'), url("https://cms.ku.dk/styling/fonts/KU.ttf") format('truetype'), url("https://cms.ku.dk/styling/fonts/KU.svg#ku_symbols") format('svg');
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
 
   font-display: swap;
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+  src: url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.eot");
+  src: url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.woff") format('woff'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
 }
 .glyphicon {
   position: relative;
