@@ -8271,6 +8271,9 @@ nav {
   background-image: linear-gradient(to bottom, #eaeaea 0%, #f2f2f2 100%);
   background-repeat: repeat-x;
 }
+.search-area .btn-global-search button .dropdown-toggle::after {
+  color: #6b6b6b;
+}
 @media (max-width: 767px) {
   .ku-nav,
   .search-area {

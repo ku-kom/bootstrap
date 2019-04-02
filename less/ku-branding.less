@@ -132,6 +132,13 @@
     button:focus {
       #gradient.vertical(#eaeaea; #f2f2f2; 0%; 100%);
     }
+    button {
+      .dropdown-toggle {
+        &::after {
+          color: #6B6B6B;
+        }
+      }
+    }
   }
 }
 @media (max-width: @screen-xs-max) {

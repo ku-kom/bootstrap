@@ -15,8 +15,8 @@
   clear: both;
 }
 
-#twitter-feed .description ~ img {
-  margin-top: 3px;
+#twitter-feed .description + img {
+  margin-top: 5px;
 }
 
 .imgInfo, .twitterInfo {
