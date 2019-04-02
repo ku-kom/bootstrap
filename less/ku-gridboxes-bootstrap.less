@@ -1054,6 +1054,15 @@
       }
     }
   }
+  .GridForside .double-column {
+    .gridbox.with-img {
+      &.size3 {
+        .box2 img {
+          height: 150%;
+        }
+      }
+    }
+  }
   // Single columns
   .one-two-column .column1,
   .triple-column [class*=column],
@@ -1114,6 +1123,7 @@
       height: 100%;
     }
   }
+
 }
 @media all and (min-width: @screen-xs) {
   @supports (-ms-ime-align: auto) {

@@ -1011,6 +1011,9 @@
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
   }
+  .GridForside .double-column .gridbox.with-img.size3 .box2 img {
+    height: 150%;
+  }
   .one-two-column .column1 .gridbox.with-img.size1 .box2 img,
   .triple-column [class*=column] .gridbox.with-img.size1 .box2 img,
   .two-one-column .column2 .gridbox.with-img.size1 .box2 img {
