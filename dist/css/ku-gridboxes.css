@@ -1052,6 +1052,9 @@
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
   }
+  .GridForside .double-column .gridbox.with-img.size3 .box2 img {
+    height: 150%;
+  }
 }
 @media all and (min-width: 480px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .gridbox.with-img .box2 img {
