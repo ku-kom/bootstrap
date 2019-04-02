@@ -8260,6 +8260,10 @@ nav {
 .search-area .global-search-options-toggle {
   margin-left: -2px !important;
 }
+.search-area .global-search-submit {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
 .search-area .btn-global-search {
   width: 1%!important;
 }
