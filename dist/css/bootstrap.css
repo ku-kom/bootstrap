@@ -8261,7 +8261,7 @@ nav {
   margin-bottom: 14px;
 }
 .search-area .global-search-options-toggle {
-  margin-left: -2px;
+  margin-left: -2px !important;
 }
 .search-area .btn-global-search {
   width: 1%!important;
