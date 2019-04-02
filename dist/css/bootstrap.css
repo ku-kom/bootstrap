@@ -5795,6 +5795,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
     font-size: 12px;
   }
 }
+.global-search .btn-global-search .btn.global-search-submit {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
 .global-search .btn-global-search .dropdown-toggle {
   position: relative;
   width: 90px;
@@ -8259,10 +8263,6 @@ nav {
 }
 .search-area .global-search-options-toggle {
   margin-left: -2px !important;
-}
-.search-area .global-search-submit {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
 .search-area .btn-global-search {
   width: 1%!important;
