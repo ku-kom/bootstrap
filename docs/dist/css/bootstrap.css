@@ -3754,9 +3754,7 @@ fieldset[disabled] a .btn {
   content: "\e079";
 }
 .btn-default {
-  font-weight: 600;
   color: #252525;
-  text-transform: uppercase;
   background-color: #f4f4f4;
   border-color: #b6b6b6;
 }

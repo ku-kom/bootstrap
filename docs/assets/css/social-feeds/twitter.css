@@ -1,7 +1,5 @@
 /* Displays tweets in a unordered list. */
 #twitter-feed {
-  height: 720px;
-  /* overflow: auto; */
   padding-right: 10px;
   margin-top: 10px;
 }
@@ -40,7 +38,7 @@
 }
 
 .twitterName {
-  color: #8899a6;
+  color: #657786;
 }
 
 .tweet-time {
