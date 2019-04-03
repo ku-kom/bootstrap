@@ -8103,6 +8103,65 @@ nav {
   -webkit-animation: ku-loading .75s infinite linear;
           animation: ku-loading .75s infinite linear;
 }
+.ku-dots-loading {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin-left: 10px;
+  color: #444;
+  background-color: #444;
+  border-radius: 50%;
+  -webkit-animation: ku-dots 1s infinite linear alternate;
+          animation: ku-dots 1s infinite linear alternate;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.ku-dots-loading::after,
+.ku-dots-loading::before {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  content: '';
+  border-radius: 50%;
+}
+.ku-dots-loading::before {
+  left: -10px;
+  color: #444;
+  background-color: #444;
+  -webkit-animation: ku-dots 1s infinite alternate;
+          animation: ku-dots 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.ku-dots-loading::after {
+  left: 10px;
+  color: #444;
+  background-color: #444;
+  -webkit-animation: ku-dots 1s infinite alternate;
+          animation: ku-dots 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes ku-dots {
+  0% {
+    background-color: #444;
+  }
+  100%,
+  50% {
+    background-color: #ccc;
+  }
+}
+@keyframes ku-dots {
+  0% {
+    background-color: #444;
+  }
+  100%,
+  50% {
+    background-color: #ccc;
+  }
+}
 .jump-to {
   position: relative;
   display: block;

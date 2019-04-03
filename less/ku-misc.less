@@ -158,6 +158,55 @@
   height: 3rem;
   animation: ku-loading 0.75s infinite linear;
 }
+
+.ku-dots-loading {
+  position: relative;
+  margin-left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: @gray-444;
+  color: @gray-444;
+  animation: ku-dots 1s infinite linear alternate;
+  animation-delay: 0.5s;
+
+  &::after,
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  &::before {
+    left: -10px;
+    background-color: @gray-444;
+    color: @gray-444;
+    animation: ku-dots 1s infinite alternate;
+    animation-delay: 0s;
+  }
+
+  &::after {
+    left: 10px;
+    background-color: @gray-444;
+    color: @gray-444;
+    animation: ku-dots 1s infinite alternate;
+    animation-delay: 1s;
+  }
+}
+@keyframes ku-dots {
+  0% {
+    background-color: @gray-444;
+  }
+
+  100%,
+  50% {
+    background-color: @gray;
+  }
+}
 // Jump to ID
 
 .jump-to {
