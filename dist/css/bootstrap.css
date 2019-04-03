@@ -8111,10 +8111,10 @@ nav {
   color: #444;
   background-color: #444;
   border-radius: 50%;
-  -webkit-animation: ku-dots 1s infinite linear alternate;
-          animation: ku-dots 1s infinite linear alternate;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation: ku-dots .6s infinite linear alternate;
+          animation: ku-dots .6s infinite linear alternate;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 .ku-dots-loading::after,
 .ku-dots-loading::before {
@@ -8130,8 +8130,8 @@ nav {
   left: -10px;
   color: #444;
   background-color: #444;
-  -webkit-animation: ku-dots 1s infinite alternate;
-          animation: ku-dots 1s infinite alternate;
+  -webkit-animation: ku-dots .6s infinite alternate;
+          animation: ku-dots .6s infinite alternate;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
@@ -8139,10 +8139,10 @@ nav {
   left: 10px;
   color: #444;
   background-color: #444;
-  -webkit-animation: ku-dots 1s infinite alternate;
-          animation: ku-dots 1s infinite alternate;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: ku-dots .6s infinite alternate;
+          animation: ku-dots .6s infinite alternate;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 @-webkit-keyframes ku-dots {
   0% {
