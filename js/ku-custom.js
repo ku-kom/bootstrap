@@ -87,7 +87,7 @@ function shareURL(dest) {
       });
     }
   }
-  makeGlobalMenuClickable();
+  //makeGlobalMenuClickable();
 
   // Show/hide scroller if it exists
   function scrollFunction() {
