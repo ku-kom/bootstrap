@@ -80,14 +80,14 @@ function shareURL(dest) {
 
   // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled' for desktop only:
   function makeGlobalMenuClickable() {
-    if (window.matchMedia('(min-width: 768px)').matches) {
+    //if (window.matchMedia('(min-width: 768px)').matches) {
       var $menu = $('#navbar_menu li.dropdown');
       $menu.each(function () {
         $(this).children('.dropdown-toggle').addClass('disabled');
       });
-    }
+    //}
   }
-  //makeGlobalMenuClickable();
+  makeGlobalMenuClickable();
 
   // Show/hide scroller if it exists
   function scrollFunction() {
