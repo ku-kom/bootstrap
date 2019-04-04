@@ -18,8 +18,8 @@
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
-    // $hidemobile must be false or null and in mobile view to be true
-    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || true && (window.matchMedia('(max-width: 767px)').matches) === true) ? true : false;
+    // $isMobile must be true or null and in mobile view to be true
+    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || true && (window.matchMedia('(max-width: 768px)').matches) === true) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
