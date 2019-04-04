@@ -9,7 +9,8 @@
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#ig_hashtag');
     var $container = $wrapper.find("#imageBox");
-    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || false) ? true : false;
+    // $isMobile must be true or null and in mobile view to be true
+    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || true && (window.matchMedia('(max-width: 768px)').matches) === true) ? true : false;
     var $hash = (typeof $wrapper.attr("data-hashtag") === 'undefined') ? null : $wrapper.attr("data-hashtag").toLowerCase().trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
@@ -21,7 +22,9 @@
 
     function getInstagramByHash(hashtag) {
       // Fetch Instagram images by hashtag
-
+      if ($isMobile === true) {
+        return //Don't run on mobile
+      }
       $container.empty();
       if (hashtag) {
         // This php script is scraping content from the Instagram tags page and serving it as json:
