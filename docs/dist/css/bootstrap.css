@@ -9597,14 +9597,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column1 .media-list .media .media-body > .media-right {
   display: none;
 }
-.double-column [class*=column] .media-list .media + .media-left .news-teaser,
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media + .media-left .news-teaser,
-.one-one-two-column .column3 .media-list .media + .media-left .news-teaser,
-.one-three-column .column2 .media-list .media + .media-left .news-teaser,
-.one-two-column .column2 .media-list .media + .media-left .news-teaser,
-.three-one-column .column1 .media-list .media + .media-left .news-teaser,
-.two-one-column .column1 .media-list .media + .media-left .news-teaser,
-.two-one-one-column .column1 .media-list .media + .media-left .news-teaser {
+.double-column [class*=column] .media-list .media > .media-left .news-teaser,
+.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media > .media-left .news-teaser,
+.one-one-two-column .column3 .media-list .media > .media-left .news-teaser,
+.one-three-column .column2 .media-list .media > .media-left .news-teaser,
+.one-two-column .column2 .media-list .media > .media-left .news-teaser,
+.three-one-column .column1 .media-list .media > .media-left .news-teaser,
+.two-one-column .column1 .media-list .media > .media-left .news-teaser,
+.two-one-one-column .column1 .media-list .media > .media-left .news-teaser {
   margin-left: 74px;
 }
 .double-column [class*=column] .media-list.with-img .media-body:first-child,
