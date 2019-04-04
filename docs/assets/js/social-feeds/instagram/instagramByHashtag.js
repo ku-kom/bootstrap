@@ -103,18 +103,11 @@
       });
     };
 
-    var hideOnMobile = function () {
-      // Returns true if it should be hidden om mobile
-      return $hidemobile == true && window.matchMedia('(max-width: 480px)').matches
-    }
-
     // Init script
-    if (hideOnMobile() === false) {
-      if ($hash) {
-        getInstagramByHash($hash);
-      } else {
-        console.log('Add Instagram hashtag to search for and number of images to display using data-hashtag="" and data-images="" on the container');
-      }
+    if ($hash) {
+      getInstagramByHash($hash);
+    } else {
+      //console.log('Add Instagram hashtag to search for and number of images to display using data-hashtag="" and data-images="" on the container');
     }
 
     //On resize, wait and reload function
