@@ -18,7 +18,8 @@
     var $loading = $wrapper.find(".ku-loading");
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
-    var $hidemobile = (typeof $wrapper.attr("data-hidemobile") == null || false) ? true : false;
+    // $hidemobile must be false or null and in mobile view to be true
+    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || true && (window.matchMedia('(max-width: 767px)').matches) === true) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
@@ -28,8 +29,13 @@
     var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $cachedWidth = $('body').prop('clientWidth');
 
+
+
     function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
+      if ($isMobile === true) {
+        return //Don't run on mobile
+      }
       $container.empty();
       if (access_token) {
         var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;
@@ -103,19 +109,14 @@
       });
     };
 
-    var hideOnMobile = function () {
-      // Returns true if it should be hidden om mobile
-      return $hidemobile == true && window.matchMedia('(max-width: 480px)').matches
+
+    if ($token) {
+      // Init script
+      getInstagramByAccount($token);
+    } else {
+      //console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
     }
 
-    if (hideOnMobile() === false) {
-      if ($token) {
-        // Init script
-        getInstagramByAccount($token);
-      } else {
-        console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
-      }
-    }
 
     $wrapper.click(function (e) {
       // Action when gridbox arrow is clicked

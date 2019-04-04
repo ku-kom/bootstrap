@@ -143,13 +143,15 @@ Needs html like this:
 }
 
 @media screen and (max-width: 480px) {
-  div[id*="ig"][data-hidemobile="true"] {
-    display: none;
-  }
-
   #imageBox .batch img {
     position: relative;
     height: 100%;
     border: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div[id*="ig"][data-hidemobile="true"] {
+    display: none;
   }
 }
