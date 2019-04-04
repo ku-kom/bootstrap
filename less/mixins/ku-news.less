@@ -31,14 +31,21 @@
         }
       }
 
-      &> .media-left {
-        &+ .news-teaser {
-          margin-left: @ku-thumbnails-size;
-        }
-      }
+      // &> .media-left {
+      //   &~ .news-teaser {
+      //     margin-left: @ku-thumbnails-size;
+      //   }
+      // }
     }
 
     &.with-img {
+      .media {
+        &> .media-left {
+          &~ .news-teaser {
+            margin-left: @ku-thumbnails-size;
+          }
+        }
+      }
       .media-body {
         &:first-child {
           padding-left: @ku-thumbnails-size;
