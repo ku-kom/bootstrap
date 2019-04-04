@@ -9394,23 +9394,23 @@ nav {
 .media-list .media .eventteaser {
   margin: 0;
 }
-.media-list.smal .media > .media-left + .media-body:first-child,
-.media-list.smal .media .media-right + .media-body:first-child {
+.media-list.with-img .media > .media-left + .media-body:first-child,
+.media-list.with-img .media .media-right + .media-body:first-child {
   padding-left: 74px;
 }
 @media (min-width: 768px) {
-  .nyhedsliste.smal .media .media-heading {
+  .nyhedsliste.with-img .media .media-heading {
     display: inline-block;
     max-width: 68%;
   }
 }
-.nyhedsliste.smal .media .nyhedsliste_dato {
+.nyhedsliste.with-img .media .nyhedsliste_dato {
   float: right;
   margin-left: 7px;
   font-weight: 600;
   color: #757575;
 }
-.nyhedsliste.smal .media .nyhedsliste_indhold {
+.nyhedsliste.with-img .media .nyhedsliste_indhold {
   clear: both;
 }
 .nyhedsliste-rightbox .media .news-date2 {
@@ -9427,7 +9427,7 @@ nav {
   padding-top: 15px;
   border-top: 1px solid #ccc;
 }
-#calendarlist.smal .media-body:first-child {
+#calendarlist.with-img .media-body:first-child {
   padding-left: 74px;
 }
 #calendarlist .eventdate {
