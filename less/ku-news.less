@@ -63,7 +63,7 @@
     }
   }
 
-  &.with-img {
+  &.smal {
     .media {
       // If no media-object, indent content
       & > .media-left,
@@ -78,7 +78,7 @@
 // Nyhedsliste - midterkolonne:
 
 .nyhedsliste {
-  &.with-img {
+  &.smal {
     .media {
       .media-heading {
         @media (min-width: @screen-sm) {
@@ -124,7 +124,7 @@
   padding-top: 15px;
   border-top: 1px solid @gray;
 
-  &.with-img {
+  &.smal {
     .media-body:first-child {
       padding-left: @ku-thumbnails-size;
     }
@@ -280,14 +280,14 @@ nav[aria-label="Pager"] {
     }
   }
 
-  // .media-event {
-  //   // No image
-  //   > .media-body {
-  //     &:first-child {
-  //       padding-left: 0!important;
-  //     }
-  //   }
-  // }
+  .media-event {
+    // No image
+    > .media-body {
+      &:first-child {
+        padding-left: 0!important;
+      }
+    }
+  }
 }
 // Float images left on multiple column spans
 
@@ -310,7 +310,7 @@ nav[aria-label="Pager"] {
     display: block!important;
   }
 
-  // .news-teaser {
-  //   margin-left: 0!important;
-  // }
+  .news-teaser {
+    margin-left: 0!important;
+  }
 }
