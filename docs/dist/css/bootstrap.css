@@ -9380,7 +9380,6 @@ nav {
   width: 55px;
   max-width: 100%;
   height: auto;
-  box-sizing: content-box;
   padding: 2px;
   line-height: 1.5;
   background-color: #fff;
@@ -9390,7 +9389,7 @@ nav {
 }
 .item-list .item-left a,
 .item-list .item-right a {
-  display: block;
+  display: inline-block;
 }
 .item-list.with-img .item-left,
 .item-list.with-img .item-right {
@@ -9666,6 +9665,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column3 .item-list.with-img .item-right {
   display: block;
   float: right;
+  text-align: right;
 }
 .calendarbox .media-body + .media-right {
   display: none;
@@ -9760,6 +9760,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .GridStandard .double-column [class*=column] .item-list.with-img .item-right {
   display: block;
   float: right;
+  text-align: right;
 }
 .GridStandard .double-column [class*=column] .media-right {
   display: block!important;
