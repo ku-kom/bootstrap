@@ -6121,7 +6121,6 @@ a.badge:focus {
   margin-left: 3px;
 }
 .thumbnail {
-  display: block;
   padding: 2px;
   margin-bottom: 18px;
   line-height: 1.5;
@@ -9370,8 +9369,10 @@ nav {
 .item-list .item-left,
 .item-list .item-right {
   display: none;
+}
+.item-list .item-left img,
+.item-list .item-right img {
   display: block;
-  width: 55px;
   max-width: 100%;
   height: auto;
   box-sizing: content-box;
