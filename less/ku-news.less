@@ -4,8 +4,6 @@
 
 .item-list {
   .item {
-    display: flex;
-    align-items: flex-start;
     padding: 15px 0;
 
     &+ .item {
@@ -33,10 +31,11 @@
     font-weight: 600;
     line-height: 15px;
     color: @gray-light;
+    margin-bottom: 7px;
   }
 
   .item-trunc {
-    &> div {
+    & > div {
       display: inline;
     }
   }
@@ -44,6 +43,7 @@
   .item-left,
   .item-right {
     display: none;
+
     img {
       .img-thumbnail;
       width: 55px;
@@ -55,6 +55,7 @@
   }
 
   &.with-img {
+
     .item-left,
     .item-right {
       width: @ku-thumbnails-size;

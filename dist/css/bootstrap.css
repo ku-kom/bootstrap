@@ -9334,14 +9334,7 @@ nav {
   }
 }
 .item-list .item {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
   padding: 15px 0;
-
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-          align-items: flex-start;
 }
 .item-list .item + .item {
   border-top: 1px solid #ccc;
@@ -9362,6 +9355,7 @@ nav {
   color: inherit;
 }
 .item-list .item-date {
+  margin-bottom: 7px;
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
@@ -9710,6 +9704,22 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-column .column1 .media-list.smal .media-body:first-child,
 .two-one-one-column .column1 .media-list.smal .media-body:first-child {
   padding-left: 74px;
+}
+.double-column [class*=column] .item-list.with-img .item,
+.gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .item,
+.one-one-two-column .column3 .item-list.with-img .item,
+.one-three-column .column2 .item-list.with-img .item,
+.one-two-column .column2 .item-list.with-img .item,
+.three-one-column .column1 .item-list.with-img .item,
+.two-one-column .column1 .item-list.with-img .item,
+.two-one-one-column .column1 .item-list.with-img .item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+          align-items: flex-start;
 }
 .double-column [class*=column] .item-list.with-img .item-left,
 .gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .item-left,
