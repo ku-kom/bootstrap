@@ -9766,6 +9766,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   float: right;
   text-align: right;
 }
+.GridStandard .double-column [class*=column] .item-list.with-img .item {
+  display: block;
+
+  -webkit-align-items: unset;
+  -ms-flex-align: unset;
+          align-items: unset;
+}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;
