@@ -21,8 +21,11 @@
 
 // Items:
   .item-list {
+    .item-left {
+      display: none;
+    }
     &.with-img {
-      .item-left {
+      .item-right {
         display: block;
       }
     }
@@ -63,6 +66,9 @@
         display: block;
         height: 55px;
         width: @ku-thumbnails-size;
+      }
+      .item-right {
+        display: none;
       }
       .item-body {
         flex: 1;

@@ -9368,11 +9368,12 @@ nav {
 }
 .item-list .item-left,
 .item-list .item-right {
-  display: none;
+  width: 74px;
 }
 .item-list .item-left img,
 .item-list .item-right img {
   display: block;
+  width: 55px;
   max-width: 100%;
   height: auto;
   box-sizing: content-box;
@@ -9625,18 +9626,32 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column3 .media-list .media .media-body + .media-right {
   float: right;
 }
-#gridsidebar .single-column .column1 .item-list.with-img .item-left,
-.one-one-two-column .column1 .item-list.with-img .item-left,
-.one-one-two-column .column2 .item-list.with-img .item-left,
-.one-three-column .column1 .item-list.with-img .item-left,
-.one-two-column .column1 .item-list.with-img .item-left,
-.quad-column [class*=column] .item-list.with-img .item-left,
-.right-side .item-list.with-img .item-left,
-.three-one-column .column2 .item-list.with-img .item-left,
-.triple-column [class*=column] .item-list.with-img .item-left,
-.two-one-column .column2 .item-list.with-img .item-left,
-.two-one-one-column .column2 .item-list.with-img .item-left,
-.two-one-one-column .column3 .item-list.with-img .item-left {
+#gridsidebar .single-column .column1 .item-list .item-left,
+.one-one-two-column .column1 .item-list .item-left,
+.one-one-two-column .column2 .item-list .item-left,
+.one-three-column .column1 .item-list .item-left,
+.one-two-column .column1 .item-list .item-left,
+.quad-column [class*=column] .item-list .item-left,
+.right-side .item-list .item-left,
+.three-one-column .column2 .item-list .item-left,
+.triple-column [class*=column] .item-list .item-left,
+.two-one-column .column2 .item-list .item-left,
+.two-one-one-column .column2 .item-list .item-left,
+.two-one-one-column .column3 .item-list .item-left {
+  display: none;
+}
+#gridsidebar .single-column .column1 .item-list.with-img .item-right,
+.one-one-two-column .column1 .item-list.with-img .item-right,
+.one-one-two-column .column2 .item-list.with-img .item-right,
+.one-three-column .column1 .item-list.with-img .item-right,
+.one-two-column .column1 .item-list.with-img .item-right,
+.quad-column [class*=column] .item-list.with-img .item-right,
+.right-side .item-list.with-img .item-right,
+.three-one-column .column2 .item-list.with-img .item-right,
+.triple-column [class*=column] .item-list.with-img .item-right,
+.two-one-column .column2 .item-list.with-img .item-right,
+.two-one-one-column .column2 .item-list.with-img .item-right,
+.two-one-one-column .column3 .item-list.with-img .item-right {
   display: block;
 }
 .calendarbox .media-body + .media-right {
@@ -9695,6 +9710,16 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   width: 74px;
   height: 55px;
 }
+.double-column [class*=column] .item-list.with-img .item-right,
+.gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .item-right,
+.one-one-two-column .column3 .item-list.with-img .item-right,
+.one-three-column .column2 .item-list.with-img .item-right,
+.one-two-column .column2 .item-list.with-img .item-right,
+.three-one-column .column1 .item-list.with-img .item-right,
+.two-one-column .column1 .item-list.with-img .item-right,
+.two-one-one-column .column1 .item-list.with-img .item-right {
+  display: none;
+}
 .double-column [class*=column] .item-list.with-img .item-body,
 .gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .item-body,
 .one-one-two-column .column3 .item-list.with-img .item-body,
@@ -9717,7 +9742,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right {
   float: right;
 }
-.GridStandard .double-column [class*=column] .item-list.with-img .item-left {
+.GridStandard .double-column [class*=column] .item-list .item-left {
+  display: none;
+}
+.GridStandard .double-column [class*=column] .item-list.with-img .item-right {
   display: block;
 }
 .GridStandard .double-column [class*=column] .media-right {
