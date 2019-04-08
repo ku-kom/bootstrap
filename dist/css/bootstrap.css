@@ -9367,6 +9367,13 @@ nav {
   line-height: 15px;
   color: #757575;
 }
+.item-list .item-trunc > div {
+  display: inline;
+}
+.item-list .item-left,
+.item-list .item-right {
+  display: none;
+}
 .item-list .item-left img,
 .item-list .item-right img {
   display: block;
@@ -9714,7 +9721,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column1 .item-list.with-img .item-left {
   display: block;
   width: 74px;
-  height: 55px;
 }
 .double-column [class*=column] .item-list.with-img .item-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .item-right,

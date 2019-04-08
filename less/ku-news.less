@@ -35,8 +35,15 @@
     color: @gray-light;
   }
 
+  .item-trunc {
+    &> div {
+      display: inline;
+    }
+  }
+
   .item-left,
   .item-right {
+    display: none;
     img {
       .img-thumbnail;
       width: 55px;
