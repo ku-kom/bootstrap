@@ -1,5 +1,46 @@
 // KU Nyheder & arrangementer
 // Global menu news
+// KU custom lists
+
+.item-list {
+  .item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 0;
+
+    &+ .item {
+      border-top: 1px solid @gray;
+
+      &:last-child {
+        border-bottom: 1px solid @gray;
+      }
+    }
+  }
+
+  .item-heading {
+    .nyhedsoverskrift();
+    a {
+      font-size: inherit;
+      color: inherit;
+      display: block;
+    }
+  }
+
+  .item-date {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: @gray-light;
+  }
+
+  .item-left,
+  .item-right {
+    display: none;
+    .img-thumbnail;
+    width: 55px;
+    box-sizing: content-box;
+  }
+}
 
 .media-list {
   .media-left,
@@ -133,6 +174,7 @@
   .eventdate {
     margin-bottom: 5px;
   }
+
   .readmore {
     margin-bottom: 0;
   }
@@ -192,7 +234,8 @@
 nav[aria-label="Pager"] {
   + .nyhedsliste {
     border-top: 1px solid @gray;
-    &> .media {
+
+    & > .media {
       &:first-child {
         padding-top: 15px;
       }

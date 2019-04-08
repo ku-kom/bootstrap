@@ -15,6 +15,10 @@
   z-index: 1030 !important;
 }
 
+.table {
+  table-layout: unset;
+}
+
 /*
   * Sticky left menu - only for Docs section
   */
