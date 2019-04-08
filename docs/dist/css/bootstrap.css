@@ -9333,6 +9333,10 @@ nav {
     min-height: 100px;
   }
 }
+.item-list {
+  padding-left: 0;
+  list-style: none;
+}
 .item-list .item {
   padding: 15px 0;
 }
@@ -9631,32 +9635,18 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column3 .media-list .media .media-body + .media-right {
   float: right;
 }
-#gridsidebar .single-column .column1 .item-list .item-left,
-.one-one-two-column .column1 .item-list .item-left,
-.one-one-two-column .column2 .item-list .item-left,
-.one-three-column .column1 .item-list .item-left,
-.one-two-column .column1 .item-list .item-left,
-.quad-column [class*=column] .item-list .item-left,
-.right-side .item-list .item-left,
-.three-one-column .column2 .item-list .item-left,
-.triple-column [class*=column] .item-list .item-left,
-.two-one-column .column2 .item-list .item-left,
-.two-one-one-column .column2 .item-list .item-left,
-.two-one-one-column .column3 .item-list .item-left {
-  display: none;
-}
-#gridsidebar .single-column .column1 .item-list.with-img .item-right,
-.one-one-two-column .column1 .item-list.with-img .item-right,
-.one-one-two-column .column2 .item-list.with-img .item-right,
-.one-three-column .column1 .item-list.with-img .item-right,
-.one-two-column .column1 .item-list.with-img .item-right,
-.quad-column [class*=column] .item-list.with-img .item-right,
-.right-side .item-list.with-img .item-right,
-.three-one-column .column2 .item-list.with-img .item-right,
-.triple-column [class*=column] .item-list.with-img .item-right,
-.two-one-column .column2 .item-list.with-img .item-right,
-.two-one-one-column .column2 .item-list.with-img .item-right,
-.two-one-one-column .column3 .item-list.with-img .item-right {
+#gridsidebar .single-column .column1 .item-list.with-img .item-left,
+.one-one-two-column .column1 .item-list.with-img .item-left,
+.one-one-two-column .column2 .item-list.with-img .item-left,
+.one-three-column .column1 .item-list.with-img .item-left,
+.one-two-column .column1 .item-list.with-img .item-left,
+.quad-column [class*=column] .item-list.with-img .item-left,
+.right-side .item-list.with-img .item-left,
+.three-one-column .column2 .item-list.with-img .item-left,
+.triple-column [class*=column] .item-list.with-img .item-left,
+.two-one-column .column2 .item-list.with-img .item-left,
+.two-one-one-column .column2 .item-list.with-img .item-left,
+.two-one-one-column .column3 .item-list.with-img .item-left {
   display: block;
   float: right;
   text-align: right;
@@ -9764,10 +9754,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right {
   float: right;
 }
-.GridStandard .double-column [class*=column] .item-list .item-left {
-  display: none;
-}
-.GridStandard .double-column [class*=column] .item-list.with-img .item-right {
+.GridStandard .double-column [class*=column] .item-list.with-img .item-left {
   display: block;
   float: right;
   text-align: right;
