@@ -4,6 +4,7 @@
 
 .item-list {
   padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
 
   .item {
@@ -336,6 +337,7 @@ nav[aria-label="Pager"] {
 .two-one-one-column .column2,
 .two-one-one-column .column3 {
   .img-right();
+  .list-img-right();
 }
 // Special hooks for calendar lists
 
@@ -366,8 +368,9 @@ nav[aria-label="Pager"] {
 .two-one-column .column1,
 .two-one-one-column .column1 {
   .img-left();
+  .list-img-left();
 }
-//GridStandard double columns override
+//GridStandard double columns override - float img right
 
 .GridStandard .double-column [class*=column] {
   .img-right();
@@ -379,4 +382,6 @@ nav[aria-label="Pager"] {
   .news-teaser {
     margin-left: 0!important;
   }
+
+  .list-img-right();
 }

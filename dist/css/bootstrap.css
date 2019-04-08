@@ -9335,6 +9335,7 @@ nav {
 }
 .item-list {
   padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 .item-list .item {
@@ -9609,18 +9610,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column3 .media-list .media .media-body {
   padding-left: 0!important;
 }
-#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column2 .media-list .media .media-body > .media-right,
-.one-three-column .column1 .media-list .media .media-body > .media-right,
-.one-two-column .column1 .media-list .media .media-body > .media-right,
-.quad-column [class*=column] .media-list .media .media-body > .media-right,
-.right-side .media-list .media .media-body > .media-right,
-.three-one-column .column2 .media-list .media .media-body > .media-right,
-.triple-column [class*=column] .media-list .media .media-body > .media-right,
-.two-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column2 .media-list .media .media-body > .media-right,
-.two-one-one-column .column3 .media-list .media .media-body > .media-right,
 #gridsidebar .single-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column2 .media-list .media .media-body + .media-right,
@@ -9632,7 +9621,19 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .triple-column [class*=column] .media-list .media .media-body + .media-right,
 .two-one-column .column2 .media-list .media .media-body + .media-right,
 .two-one-one-column .column2 .media-list .media .media-body + .media-right,
-.two-one-one-column .column3 .media-list .media .media-body + .media-right {
+.two-one-one-column .column3 .media-list .media .media-body + .media-right,
+#gridsidebar .single-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column2 .media-list .media .media-body > .media-right,
+.one-three-column .column1 .media-list .media .media-body > .media-right,
+.one-two-column .column1 .media-list .media .media-body > .media-right,
+.quad-column [class*=column] .media-list .media .media-body > .media-right,
+.right-side .media-list .media .media-body > .media-right,
+.three-one-column .column2 .media-list .media .media-body > .media-right,
+.triple-column [class*=column] .media-list .media .media-body > .media-right,
+.two-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column2 .media-list .media .media-body > .media-right,
+.two-one-one-column .column3 .media-list .media .media-body > .media-right {
   float: right;
 }
 #gridsidebar .single-column .column1 .item-list.with-img .item-left,
@@ -9657,14 +9658,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .calendarbox .media-event > .media-body:first-child {
   padding-left: 0!important;
 }
-.double-column [class*=column] .media-list .media .media-body > .media-right,
-.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
-.one-one-two-column .column3 .media-list .media .media-body > .media-right,
-.one-three-column .column2 .media-list .media .media-body > .media-right,
-.one-two-column .column2 .media-list .media .media-body > .media-right,
-.three-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-column .column1 .media-list .media .media-body > .media-right,
-.two-one-one-column .column1 .media-list .media .media-body > .media-right,
 .double-column [class*=column] .media-list .media .media-body + .media-right,
 .gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body + .media-right,
 .one-one-two-column .column3 .media-list .media .media-body + .media-right,
@@ -9672,7 +9665,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .one-two-column .column2 .media-list .media .media-body + .media-right,
 .three-one-column .column1 .media-list .media .media-body + .media-right,
 .two-one-column .column1 .media-list .media .media-body + .media-right,
-.two-one-one-column .column1 .media-list .media .media-body + .media-right {
+.two-one-one-column .column1 .media-list .media .media-body + .media-right,
+.double-column [class*=column] .media-list .media .media-body > .media-right,
+.gridcontent:not(#gridsidebar) .single-column .column1 .media-list .media .media-body > .media-right,
+.one-one-two-column .column3 .media-list .media .media-body > .media-right,
+.one-three-column .column2 .media-list .media .media-body > .media-right,
+.one-two-column .column2 .media-list .media .media-body > .media-right,
+.three-one-column .column1 .media-list .media .media-body > .media-right,
+.two-one-column .column1 .media-list .media .media-body > .media-right,
+.two-one-one-column .column1 .media-list .media .media-body > .media-right {
   display: none;
 }
 .double-column [class*=column] .media-list .media + .media-left .news-teaser,
@@ -9750,20 +9751,20 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .GridStandard .double-column [class*=column] .media-list .media .media-body {
   padding-left: 0!important;
 }
-.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right,
-.GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right {
+.GridStandard .double-column [class*=column] .media-list .media .media-body + .media-right,
+.GridStandard .double-column [class*=column] .media-list .media .media-body > .media-right {
   float: right;
-}
-.GridStandard .double-column [class*=column] .item-list.with-img .item-left {
-  display: block;
-  float: right;
-  text-align: right;
 }
 .GridStandard .double-column [class*=column] .media-right {
   display: block!important;
 }
 .GridStandard .double-column [class*=column] .news-teaser {
   margin-left: 0!important;
+}
+.GridStandard .double-column [class*=column] .item-list.with-img .item-left {
+  display: block;
+  float: right;
+  text-align: right;
 }
 .entries {
   display: -webkit-flex;
