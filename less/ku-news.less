@@ -19,6 +19,8 @@
 
   .item-heading {
     .nyhedsoverskrift();
+    margin-top: 0;
+
     a {
       font-size: inherit;
       color: inherit;
@@ -35,11 +37,21 @@
 
   .item-left,
   .item-right {
-    width: @ku-thumbnails-size;
     img {
       .img-thumbnail;
       width: 55px;
       box-sizing: content-box;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &.with-img {
+    .item-left,
+    .item-right {
+      width: @ku-thumbnails-size;
     }
   }
 }

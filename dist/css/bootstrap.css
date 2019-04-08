@@ -9350,6 +9350,7 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 .item-list .item-heading {
+  margin-top: 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -9366,10 +9367,6 @@ nav {
   line-height: 15px;
   color: #757575;
 }
-.item-list .item-left,
-.item-list .item-right {
-  width: 74px;
-}
 .item-list .item-left img,
 .item-list .item-right img {
   display: block;
@@ -9383,6 +9380,14 @@ nav {
   border: 1px solid #ddd;
   border-radius: 2px;
   transition: all .2s ease-in-out;
+}
+.item-list .item-left a,
+.item-list .item-right a {
+  display: block;
+}
+.item-list.with-img .item-left,
+.item-list.with-img .item-right {
+  width: 74px;
 }
 .media-list .media-left,
 .media-list .media-right {
@@ -9653,6 +9658,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .two-one-one-column .column2 .item-list.with-img .item-right,
 .two-one-one-column .column3 .item-list.with-img .item-right {
   display: block;
+  float: right;
 }
 .calendarbox .media-body + .media-right {
   display: none;
@@ -9747,6 +9753,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .GridStandard .double-column [class*=column] .item-list.with-img .item-right {
   display: block;
+  float: right;
 }
 .GridStandard .double-column [class*=column] .media-right {
   display: block!important;
