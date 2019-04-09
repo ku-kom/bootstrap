@@ -44,8 +44,10 @@
 
   .item-body {
     & > .item-heading {
-      // No date, no top-margin
-      margin-top: 0;
+      &:first-child {
+        // No date, no top-margin
+        margin-top: 0;
+      }
     }
   }
 

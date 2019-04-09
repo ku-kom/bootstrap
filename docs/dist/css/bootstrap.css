@@ -9370,7 +9370,7 @@ nav {
   line-height: 15px;
   color: #757575;
 }
-.item-list .item-body > .item-heading {
+.item-list .item-body > .item-heading:first-child {
   margin-top: 0;
 }
 .item-list .item-trunc > div {
