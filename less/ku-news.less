@@ -21,7 +21,7 @@
 
   .item-heading {
     .nyhedsoverskrift();
-    margin-top: 0;
+    margin: 7px 0;
 
     a {
       font-size: inherit;
@@ -62,6 +62,10 @@
     .item-left,
     .item-right {
       width: @ku-thumbnails-size;
+    }
+    & > .item-body {
+      // If no image exists (no .item-left) but it's set to be displayed, move content in, so that there's a space instead of an image.
+      padding-left: @ku-thumbnails-size;
     }
   }
 }

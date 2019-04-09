@@ -6121,6 +6121,7 @@ a.badge:focus {
   margin-left: 3px;
 }
 .thumbnail {
+  display: block;
   padding: 2px;
   margin-bottom: 18px;
   line-height: 1.5;
@@ -9348,7 +9349,7 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 .item-list .item-heading {
-  margin-top: 0;
+  margin: 7px 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -9393,6 +9394,9 @@ nav {
 .item-list.with-img .item-left,
 .item-list.with-img .item-right {
   width: 74px;
+}
+.item-list.with-img > .item-body {
+  padding-left: 74px;
 }
 .media-list .media-left,
 .media-list .media-right {
