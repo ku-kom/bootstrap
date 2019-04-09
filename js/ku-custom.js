@@ -90,8 +90,10 @@ function shareURL(dest) {
   // Show/hide scroller if it exists
   function scrollFunction() {
     var $scroll = $('#scrolltop');
+    // multiple checks for browser compatibility:
+    var $scollPosition = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
     if ($scroll) {
-      if (document.documentElement.scrollTop > 60) {
+      if ($scollPosition > 60) {
         $scroll.addClass('in');
       } else {
         $scroll.removeClass('in');
