@@ -1,8 +1,15 @@
 // News and events
 // Float image right
 //New - for items lists
+
 .list-img-right() {
   .item-list {
+    .item-body {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+
     &.with-img {
       .item-left {
         display: block;
@@ -37,6 +44,7 @@
   }
 }
 //--------------//
+
 .img-right() {
   .media-list {
     .media {
@@ -47,8 +55,8 @@
       .media-body {
         padding-left: 0!important;
 
-        + .media-right,
-        > .media-right {
+        > .media-right,
+        + .media-right {
           float: right;
         }
       }
@@ -61,8 +69,8 @@
   .media-list {
     .media {
       .media-body {
-        + .media-right,
-        > .media-right {
+        > .media-right,
+        + .media-right {
           display: none;
         }
       }
