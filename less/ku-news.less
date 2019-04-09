@@ -42,6 +42,13 @@
     margin-bottom: 7px;
   }
 
+  .item-body {
+    & > .item-heading {
+      // No date, no top-margin
+      margin-top: 0;
+    }
+  }
+
   .item-trunc {
     & > div {
       display: inline;
