@@ -10,12 +10,12 @@
   .item {
     padding: 15px 0;
 
+    &:first-child {
+      padding-top: 3px;
+    }
+
     &+ .item {
       border-top: 1px solid @gray;
-
-      &:first-child {
-        padding-top: 3px;
-      }
 
       &:last-child {
         border-bottom: 1px solid @gray;

@@ -9342,11 +9342,11 @@ nav {
 .item-list .item {
   padding: 15px 0;
 }
+.item-list .item:first-child {
+  padding-top: 3px;
+}
 .item-list .item + .item {
   border-top: 1px solid #ccc;
-}
-.item-list .item + .item:first-child {
-  padding-top: 3px;
 }
 .item-list .item + .item:last-child {
   border-bottom: 1px solid #ccc;
