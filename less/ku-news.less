@@ -63,9 +63,12 @@
     .item-right {
       width: @ku-thumbnails-size;
     }
-    & > .item-body {
-      // If no image exists (no .item-left) but it's set to be displayed, move content in, so that there's a space instead of an image.
-      padding-left: @ku-thumbnails-size;
+
+    .item {
+      & > .item-body {
+        // If no image exists (no .item-left) but it's set to be displayed, move content in, so that there's a space instead of an image.
+        padding-left: @ku-thumbnails-size;
+      }
     }
   }
 }
@@ -387,6 +390,7 @@ nav[aria-label="Pager"] {
     margin-left: 0!important;
   }
   .list-img-right();
+
   .item-list {
     &.with-img {
       .item {

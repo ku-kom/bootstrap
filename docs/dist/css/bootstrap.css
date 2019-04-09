@@ -9395,7 +9395,7 @@ nav {
 .item-list.with-img .item-right {
   width: 74px;
 }
-.item-list.with-img > .item-body {
+.item-list.with-img .item > .item-body {
   padding-left: 74px;
 }
 .media-list .media-left,
