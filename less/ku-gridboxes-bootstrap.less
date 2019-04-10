@@ -268,35 +268,12 @@
         // Img inside the box adjusted by height and centered
         flex: none;
         display: block;
-        // position: absolute;
-        // top: 51%;
-        // left: 50%;
-        // max-height: 100%;
-        // max-width: none;
-        // transform: translateY(-51%) translateX(-50%) translate3d(0,0,0);
         -ms-interpolation-mode: bicubic;
         object-fit: cover;
         backface-visibility: hidden;
         .image-fadeIn();
       }
     }
-    // Position image left
-    // &.img-left {
-    //   img {
-    //     position: absolute;
-    //     left: 0!important;
-    //     transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
-    //   }
-    // }
-    // Position image right
-    // &.img-right {
-    //   img {
-    //     position: absolute;
-    //     left: auto!important;
-    //     right: 0;
-    //     transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
-    //   }
-    // }
   }
 
   &:not(.with-img) {
@@ -314,19 +291,19 @@
     }
   }
   // Videos
-  &.with-iframe {
-    background: @ku-gray;
-    color: initial!important;
-
-    &::before {
-      display: none;
-    }
-
-    .header {
-      border-right: 5px solid transparent;
-      color: @gray-dark;
-    }
-  }
+  // &.with-iframe {
+  //   background: @ku-gray;
+  //   color: initial!important;
+  //
+  //   &::before {
+  //     display: none;
+  //   }
+  //
+  //   .header {
+  //     border-right: 5px solid transparent;
+  //     color: @gray-dark;
+  //   }
+  // }
   // Boxes with the title at the top
   &.text-top {
     .box1 {
@@ -514,7 +491,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -541,9 +517,9 @@
       &.with-img {
         height: 220px;
         // Video has natural height
-        &.with-iframe {
-          height: inherit;
-        }
+        // &.with-iframe {
+        //   height: inherit;
+        // }
       }
     }
 
@@ -551,9 +527,9 @@
       &.with-img {
         height: 170px;
         // Video has natural height
-        &.with-iframe {
-          height: inherit;
-        }
+        // &.with-iframe {
+        //   height: inherit;
+        // }
       }
     }
 
@@ -1033,14 +1009,28 @@
 // Special styles for Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
-  .gridbox.with-img {
-    .box2 img {
-      .img-fix-for-ie();
-    }
-
-    &.size2 {
+  .gridbox {
+    &.with-img {
       .box2 img {
-        .img-fix-for-ie-size2();
+        .img-fix-for-ie();
+      }
+
+      &.size2 {
+        .box2 img {
+          .img-fix-for-ie-size2();
+        }
+      }
+      // Position image left
+      &.img-left {
+        img {
+          .img-position-left();
+        }
+      }
+      // Position image right
+      &.img-right {
+        img {
+          .img-position-right()
+        }
       }
     }
   }
@@ -1054,6 +1044,7 @@
       }
     }
   }
+
   .GridForside .double-column {
     .gridbox.with-img {
       &.size3 {
@@ -1095,14 +1086,28 @@
 }
 @supports (-ms-ime-align: auto) {
   /* IE Edge */
-  .gridbox.with-img {
-    .box2 img {
-      .img-fix-for-ie();
-    }
-
-    &.size2 {
+  .gridbox {
+    &.with-img {
       .box2 img {
-        .img-fix-for-ie-size2();
+        .img-fix-for-ie();
+      }
+
+      &.size2 {
+        .box2 img {
+          .img-fix-for-ie-size2();
+        }
+      }
+      // Position image left
+      &.img-left {
+        img {
+          .img-position-left();
+        }
+      }
+      // Position image right
+      &.img-right {
+        img {
+          .img-position-right()
+        }
       }
     }
   }
@@ -1116,6 +1121,7 @@
       }
     }
   }
+
   .GridForside .double-column {
     .gridbox.with-img {
       &.size3 {
@@ -1132,7 +1138,6 @@
       height: 100%;
     }
   }
-
 }
 @media all and (min-width: @screen-xs) {
   @supports (-ms-ime-align: auto) {

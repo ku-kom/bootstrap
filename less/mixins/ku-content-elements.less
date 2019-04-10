@@ -38,6 +38,21 @@
   -ms-interpolation-mode: bicubic;
 }
 
+.img-position-left() {
+  // Position image left
+  position: absolute;
+  left: 0!important;
+  transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
+}
+
+.img-position-right() {
+  // Position image right
+  position: absolute;
+  left: auto!important;
+  right: 0;
+  transform: translateY(-50%) translateX(0) translate3d(0,0,0)!important;
+}
+
 .img-fix-for-ie-size2() {
   height: 100%;
   max-width: none;

@@ -241,17 +241,6 @@
 .gridbox:not(.with-img) .box2 {
   display: none;
 }
-.gridbox.with-iframe {
-  color: initial!important;
-  background: #eee;
-}
-.gridbox.with-iframe::before {
-  display: none;
-}
-.gridbox.with-iframe .header {
-  color: #252525;
-  border-right: 5px solid transparent;
-}
 .gridbox.text-top .box1 {
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -484,14 +473,8 @@
   .gridbox.size2.with-img {
     height: 220px;
   }
-  .gridbox.size2.with-img.with-iframe {
-    height: inherit;
-  }
   .gridbox.size3.with-img {
     height: 170px;
-  }
-  .gridbox.size3.with-img.with-iframe {
-    height: inherit;
   }
   .gridbox.outlined.with-img {
     border: 0!important;
@@ -1008,6 +991,19 @@
     max-width: none;
     height: 100%;
   }
+  .gridbox.with-img.img-left img {
+    position: absolute;
+    left: 0!important;
+    -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+            transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+  }
+  .gridbox.with-img.img-right img {
+    position: absolute;
+    right: 0;
+    left: auto!important;
+    -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+            transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+  }
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
   }
@@ -1048,6 +1044,19 @@
   .gridbox.with-img.size2 .box2 img {
     max-width: none;
     height: 100%;
+  }
+  .gridbox.with-img.img-left img {
+    position: absolute;
+    left: 0!important;
+    -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+            transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+  }
+  .gridbox.with-img.img-right img {
+    position: absolute;
+    right: 0;
+    left: auto!important;
+    -webkit-transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
+            transform: translateY(-50%) translateX(0) translate3d(0, 0, 0) !important;
   }
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
