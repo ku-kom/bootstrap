@@ -86,6 +86,13 @@
       }
     }
   }
+  .right-side {
+    .item {
+      .item-body {
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 .media-list {
@@ -346,7 +353,7 @@ nav[aria-label="Pager"] {
 }
 // Float images right on single column spans:
 
-.right-side .single-column .column1,
+#gridsidebar .single-column .column1,
 .one-one-two-column .column1,
 .one-one-two-column .column2,
 .one-three-column .column1,
@@ -382,7 +389,7 @@ nav[aria-label="Pager"] {
 // Float images left on multiple column spans
 
 .double-column [class*=column],
-.gridcontent:not(.right-side) .single-column .column1,
+.gridcontent:not(#gridsidebar) .single-column .column1,
 .one-one-two-column .column3,
 .one-three-column .column2,
 .one-two-column .column2,
