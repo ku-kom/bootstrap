@@ -9404,8 +9404,8 @@ nav {
 .item-list.with-img .item > .item-body:first-child {
   padding-left: 74px;
 }
-.item-list .right-side .item .item-body {
-  padding-left: 0;
+.right-side .item-list .item > .item-body:first-child {
+  padding-left: 0!important;
 }
 .media-list .media-left,
 .media-list .media-right {

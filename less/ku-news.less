@@ -86,10 +86,13 @@
       }
     }
   }
-  .right-side {
+
+  .right-side & {
     .item {
-      .item-body {
-        padding-left: 0;
+      & > .item-body {
+        &:first-child {
+          padding-left: 0!important;
+        }
       }
     }
   }
