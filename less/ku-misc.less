@@ -167,7 +167,7 @@
   border-radius: 50%;
   background-color: @gray-444;
   color: @gray-444;
-  animation: ku-dots .6s infinite linear alternate;
+  animation: ku-dots 0.6s infinite linear alternate;
   animation-delay: 0.3s;
 
   &::after,
@@ -185,7 +185,7 @@
     left: -10px;
     background-color: @gray-444;
     color: @gray-444;
-    animation: ku-dots .6s infinite alternate;
+    animation: ku-dots 0.6s infinite alternate;
     animation-delay: 0s;
   }
 
@@ -193,8 +193,8 @@
     left: 10px;
     background-color: @gray-444;
     color: @gray-444;
-    animation: ku-dots .6s infinite alternate;
-    animation-delay: .6s;
+    animation: ku-dots 0.6s infinite alternate;
+    animation-delay: 0.6s;
   }
 }
 @keyframes ku-dots {
@@ -234,8 +234,26 @@
   }
 }
 
-.embed-responsive {
-  &+ .embed-responsive {
-    margin-top: @grid-gutter-height;
+@keyframes ku-ken-burns {
+  0% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
+  }
+}
+
+.ku-ken-burns-container {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    &.with-animation {
+      backface-visibility: hidden;
+      will-change: transform, opacity;
+      transform-style: preserve-3d;
+      animation: 20s ease-out forwards ku-ken-burns;
+    }
   }
 }

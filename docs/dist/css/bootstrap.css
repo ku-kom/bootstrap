@@ -6974,6 +6974,9 @@ button.list-group-item-danger.active:focus {
   height: 100%;
   border: 0;
 }
+.embed-responsive + .embed-responsive {
+  margin-top: 23px;
+}
 .embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
@@ -8196,8 +8199,39 @@ nav {
 .jump-to:hover {
   color: inherit;
 }
-.embed-responsive + .embed-responsive {
-  margin-top: 23px;
+@-webkit-keyframes ku-ken-burns {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
+            transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
+            transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
+  }
+}
+@keyframes ku-ken-burns {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
+            transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
+            transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
+  }
+}
+.ku-ken-burns-container {
+  position: relative;
+  overflow: hidden;
+}
+.ku-ken-burns-container img.with-animation {
+  -webkit-animation: 20s ease-out forwards ku-ken-burns;
+          animation: 20s ease-out forwards ku-ken-burns;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: transform, opacity;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .ku-branding {
   position: relative;

@@ -9,3 +9,7 @@
   margin-right: 5px;
   bottom: -2px;
 }
+
+.gdpr-notice + p:first-child {
+  display: inline;
+}
