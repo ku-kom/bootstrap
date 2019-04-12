@@ -9581,17 +9581,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-bottom: 0;
 }
 .search-news {
-  padding: 5px 15px !important;
+  padding: 5px 15px;
 }
 .search-news form {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-}
-@media only screen and (min-width: 991px) {
-  .search-news form {
-    height: 30px;
-  }
 }
 @media only screen and (min-width: 991px) {
   .search-news .search-news-query {
