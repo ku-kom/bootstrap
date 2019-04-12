@@ -1007,6 +1007,9 @@
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
   }
+  .GridForside .double-column .gridbox.with-img.size1 .box2 img {
+    height: 138%;
+  }
   .GridForside .double-column .gridbox.with-img.size3 .box2 img {
     height: 150%;
   }
@@ -1060,6 +1063,9 @@
   }
   .double-column .gridbox.with-img.size2 .box2 img {
     height: 110%;
+  }
+  .GridForside .double-column .gridbox.with-img.size1 .box2 img {
+    height: 138%;
   }
   .GridForside .double-column .gridbox.with-img.size3 .box2 img {
     height: 150%;
