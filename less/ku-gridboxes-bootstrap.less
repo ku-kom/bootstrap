@@ -491,6 +491,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -1047,11 +1048,6 @@
 
   .GridForside .double-column {
     .gridbox.with-img {
-      &.size1 {
-        .box2 img {
-          height: 138%;
-        }
-      }
       &.size3 {
         .box2 img {
           height: 150%;
@@ -1084,6 +1080,28 @@
         .box2 img {
           height: 100%;
           max-width: none;
+        }
+      }
+    }
+  }
+
+  .GridForside {
+    .single-column {
+      .gridbox.with-img {
+        &.size1 {
+          .box2 img {
+            height: 130%;
+          }
+        }
+      }
+    }
+
+    .double-column {
+      .gridbox.with-img {
+        &.size1 {
+          .box2 img {
+            height: 138%;
+          }
         }
       }
     }
@@ -1129,14 +1147,34 @@
 
   .GridForside .double-column {
     .gridbox.with-img {
-      &.size1 {
-        .box2 img {
-          height: 138%;
-        }
-      }
       &.size3 {
         .box2 img {
           height: 150%;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: @screen-md) {
+  @supports (-ms-ime-align: auto) {
+    .GridForside {
+      .single-column {
+        .gridbox.with-img {
+          &.size1 {
+            .box2 img {
+              height: 130%;
+            }
+          }
+        }
+      }
+
+      .double-column {
+        .gridbox.with-img {
+          &.size1 {
+            .box2 img {
+              height: 138%;
+            }
+          }
         }
       }
     }
