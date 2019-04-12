@@ -1085,11 +1085,21 @@
   .gridbox.with-img .box2 img {
     height: 100%;
   }
+  .gridbox.with-img.size1 .box2 img {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+  }
 }
 @media all and (min-width: 480px) {
   @supports (-ms-ime-align: auto) {
     .gridbox.with-img .box2 img {
       height: 100%;
+    }
+    .gridbox.with-img.size1 .box2 img {
+      width: auto;
+      min-width: 100%;
+      height: auto;
     }
   }
 }
