@@ -2,7 +2,7 @@
   <h1 id="css-effects" class="page-header">KU css effects</h1>
   <p>Ken Burns effect for images</p>
   <div class="ku-ken-burns-container">
-    <img class="with-animation" src="../images/placeholder_550x300.jpg" alt="Img">
+    <img class="with-animation" src="{% if site.github %}images{% else %}../images{% endif %}/placeholder_550x300.jpg" alt="Img">
   </div>
   {% highlight html %}
   <div class="ku-ken-burns-container">
