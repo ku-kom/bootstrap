@@ -8345,9 +8345,9 @@ nav {
   display: -ms-flexbox;
   display:         flex;
 
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
           justify-content: flex-end;
@@ -8355,6 +8355,7 @@ nav {
 .search-area .global-search {
   width: 100%;
   padding-left: 0;
+  margin-bottom: 16px;
 }
 .search-area .global-search-options-toggle {
   margin-left: -2px !important;
