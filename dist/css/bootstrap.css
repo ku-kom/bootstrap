@@ -6148,7 +6148,6 @@ a.thumbnail:focus {
 figure {
   display: table;
   max-width: 100%;
-  clear: both;
   table-layout: fixed;
 }
 .figure.image,
