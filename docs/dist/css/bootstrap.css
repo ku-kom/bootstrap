@@ -5759,7 +5759,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .navbar-inverse .topbar-logo {
   position: absolute;
   top: 13px;
-  left: 15px;
+  left: 11px;
   display: block;
   width: 70%;
   height: 13px;
@@ -5774,6 +5774,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .topbar-logo {
     top: 8px;
+    left: 15px;
     width: 36%;
   }
 }
@@ -8257,7 +8258,7 @@ nav {
 @media (max-width: 768px) {
   .ku-branding .ku-branding-logo {
     bottom: -20px;
-    left: 13px;
+    left: 5px;
     width: 50px;
   }
 }
