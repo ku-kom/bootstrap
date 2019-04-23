@@ -47,6 +47,12 @@ html:lang(en) .ku-branding-text {
   }
 }
 
+.col-sm-7.ku-branding-line .ku-branding-text {
+  width: 68%;
+  left: 100px;
+  background-position: left bottom 40%
+}
+
 .breadcrumbs, .local-footer {
   display: none;
 }
