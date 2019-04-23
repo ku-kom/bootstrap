@@ -6155,6 +6155,10 @@ figure.image {
   min-width: 1px;
   margin: 5px 0 15px;
 }
+.figure.image-default,
+figure.image-default {
+  clear: both;
+}
 .figure.align-left,
 figure.align-left,
 .figure.pull-left,

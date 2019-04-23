@@ -41,12 +41,16 @@ figure {
   display: table;
   table-layout: fixed;
   max-width: 100%;
-  // clear: both;
 
   &.image {
     // Makes figcaption fit image width
     min-width: 1px;
     margin: 5px 0 15px;
+  }
+
+  &.image-default {
+    // No floating on "På linje med tekst"
+    clear: both;
   }
 
   &.align-left,
