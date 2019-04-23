@@ -7,7 +7,6 @@
   //   padding-left: @grid-gutter-by-half;
   //   padding-right: @grid-gutter-by-half;
   // }
-
   .ku-branding-logo {
     .logo-img {
       .img-responsive;
@@ -31,10 +30,11 @@
     max-height: @ku-branding-box-height;
     position: absolute;
     left: 80px;
+    bottom: 13px;
     @media (min-width: @screen-sm) {
       left: 100px;
+      bottom: 17px;
     }
-    bottom: 13px;
     letter-spacing: 0.936px;
     padding-right: 10px;
 
@@ -45,9 +45,6 @@
     .ku-branding-text-major {
       font-size: 15px;
       line-height: 1.2;
-      // @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
-      //   font-size: 15px;
-      // }
       @media (min-width: @screen-md) {
         font-size: @ku-branding-text-font-size;
       }
@@ -119,8 +116,8 @@
     width: 100%;
     padding-left: 0;
     margin-bottom: 22px;
-    @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-      margin-bottom: 18px;
+    @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+      margin-bottom: 17px;
     }
   }
 
@@ -135,6 +132,7 @@
     button:focus {
       #gradient.vertical(#eaeaea; #f2f2f2; 0%; 100%);
     }
+
     button {
       .dropdown-toggle {
         &::after {
@@ -151,14 +149,15 @@
     display: none;
   }
 }
-
 // Can we delete this?
+
 .global-search {
   .btn .caret {
     margin-left: 5px; //KU
     color: #bbb;
   }
-// Can we delete this?
+  // Can we delete this?
+
   .input-group-btn {
     //KU
     .btn {

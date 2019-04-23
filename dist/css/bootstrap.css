@@ -8272,6 +8272,7 @@ nav {
 }
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text {
+    bottom: 17px;
     left: 100px;
   }
 }
@@ -8355,7 +8356,7 @@ nav {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .search-area .global-search {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 }
 .search-area .global-search-options-toggle {
