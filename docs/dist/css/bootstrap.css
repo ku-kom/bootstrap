@@ -8354,11 +8354,6 @@ nav {
   padding-left: 0;
   margin-bottom: 22px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .search-area .global-search {
-    margin-bottom: 17px;
-  }
-}
 .search-area .global-search-options-toggle {
   margin-left: -2px !important;
 }
