@@ -8264,7 +8264,7 @@ nav {
 }
 .ku-branding .ku-branding-text {
   position: absolute;
-  bottom: 17px;
+  bottom: 13px;
   left: 80px;
   max-height: 83px;
   padding-right: 10px;
@@ -8279,13 +8279,8 @@ nav {
   text-decoration: none;
 }
 .ku-branding .ku-branding-text .ku-branding-text-major {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.2;
-}
-@media (min-width: 480px) and (max-width: 991px) {
-  .ku-branding .ku-branding-text .ku-branding-text-major {
-    font-size: 15px;
-  }
 }
 @media (min-width: 992px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
