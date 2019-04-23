@@ -8263,7 +8263,7 @@ nav {
 }
 .ku-branding .ku-branding-text {
   position: absolute;
-  bottom: 15px;
+  bottom: 17px;
   left: 80px;
   max-height: 83px;
   padding-right: 10px;
@@ -8271,7 +8271,7 @@ nav {
 }
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text {
-    left: 90px;
+    left: 100px;
   }
 }
 .ku-branding .ku-branding-text a {
@@ -8355,7 +8355,7 @@ nav {
 .search-area .global-search {
   width: 100%;
   padding-left: 0;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 .search-area .global-search-options-toggle {
   margin-left: -2px !important;
