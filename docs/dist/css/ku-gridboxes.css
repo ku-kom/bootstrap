@@ -238,6 +238,25 @@
 .gridbox:not(.with-img) .box2 {
   display: none;
 }
+.gridbox.with-quote {
+  pointer-events: none;
+}
+.gridbox.with-quote img {
+  float: left;
+}
+.gridbox.with-quote .text {
+  display: block;
+  padding: 10px;
+  margin-top: 5px;
+}
+.gridbox.with-quote .quote-bold {
+  display: block;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.gridbox.with-quote::before {
+  display: none;
+}
 .gridbox.text-top .box1 {
   -webkit-order: 1;
   -ms-flex-order: 1;
