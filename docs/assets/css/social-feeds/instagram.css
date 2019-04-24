@@ -12,8 +12,8 @@ Needs html like this:
 </div>
 */
 [id*="ig"].gridbox {
-  -ms-flex-direction: column;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   /* visibility: hidden; */
   height: 185px !important;
@@ -29,8 +29,8 @@ Needs html like this:
   bottom: 0;
   left: 0;
   width: 100%;
-  -ms-flex: none;
   -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   z-index: 100;
 }
@@ -67,25 +67,25 @@ Needs html like this:
 }
 
 #imageBox .batch a {
-  -ms-flex: 1;
   -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   position: relative;
 }
 
 #imageBox .batch img {
   margin: 0 auto;
-  -ms-flex: none;
   -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   object-fit: cover;
   border: 1px solid #fff;
@@ -130,11 +130,11 @@ Needs html like this:
 }
 
 #imageBox .batch .inner {
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
   width: 100%;

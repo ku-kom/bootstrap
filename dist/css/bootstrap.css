@@ -5813,6 +5813,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
   position: absolute;
   top: 50%;
   right: 8px;
+  display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-size: 8px;
   color: #b6b6b6;
