@@ -78,6 +78,7 @@ div.portal_navigator {
 
 ol.portal_list {
   float: left;
+  margin-bottom: 15px;
 }
 
 ol.portal_list>li {

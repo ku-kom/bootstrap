@@ -50,3 +50,8 @@ div.tabbed-search-box ul.box-tabs {
 .pureportal .tabbed-search-box .gradient-search-box input.portal_searchfield, .search_box input.portal_searchfield {
   width: 100%!important;
 }
+
+.portal_link span {
+  font-size: 13px;
+  color: #165aad;
+}
