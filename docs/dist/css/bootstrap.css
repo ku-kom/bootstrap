@@ -5816,7 +5816,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-size: 8px;
-  color: #b6b6b6;
+  color: #666;
   content: "\e252";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
