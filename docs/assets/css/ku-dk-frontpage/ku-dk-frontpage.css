@@ -8,7 +8,7 @@
   background-position: left bottom 36%;
   background-repeat: no-repeat;
   height: 100%;
-  max-height: none;
+  max-height: none!important;
   width: 50%;
   top: 0;
 }
