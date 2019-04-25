@@ -28,6 +28,10 @@ h6 {
     line-height: 1;
     color: @headings-small-color;
   }
+  & > br {
+    // Make up for editor's habits of adding <br> inside headers...
+    display: none;
+  }
 }
 
 h1,

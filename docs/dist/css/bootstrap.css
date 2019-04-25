@@ -1623,6 +1623,20 @@ h6 small {
   line-height: 1;
   color: #757575;
 }
+.h1 > br,
+.h2 > br,
+.h3 > br,
+.h4 > br,
+.h5 > br,
+.h6 > br,
+h1 > br,
+h2 > br,
+h3 > br,
+h4 > br,
+h5 > br,
+h6 > br {
+  display: none;
+}
 h1:empty,
 h2:empty,
 h3:empty,
