@@ -8341,6 +8341,11 @@ nav {
 .theme-teo .ku-branding::after {
   border-bottom: 1px solid #66609e;
 }
+@media all and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ku-branding .ku-branding-logo {
+    bottom: -12px;
+  }
+}
 .search-area {
   display: -webkit-flex;
   display: -ms-flexbox;

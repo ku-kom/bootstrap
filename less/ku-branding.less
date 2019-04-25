@@ -102,6 +102,12 @@
     }
   }
 }
+@media all and (max-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // Special styles for Internet Explorer 11
+  .ku-branding .ku-branding-logo {
+    bottom: -12px;
+  }
+}
 // New search area
 
 .search-area {
@@ -116,7 +122,6 @@
   }
 
   .global-search-options-toggle {
-
     margin-left: -2px!important;
   }
 
@@ -152,7 +157,6 @@
     color: #bbb;
   }
   // Can we delete this?
-
   .input-group-btn {
     //KU
     .btn {
