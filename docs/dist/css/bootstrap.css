@@ -5213,18 +5213,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse,
 .container > .navbar-header,
-.container-fluid > .navbar-header {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse,
   .container > .navbar-header,
-  .container-fluid > .navbar-header {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5325,8 +5325,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5652,27 +5652,23 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a:hover {
   text-decoration: underline;
 }
-.navbar-inverse .navbar-nav > li > a.dansk,
-.navbar-inverse .navbar-nav > li > a.english {
-  display: inline-block;
-  background-repeat: no-repeat;
-}
+.navbar-inverse .navbar-nav > li > a.dansk::after,
 .navbar-inverse .navbar-nav > li > a.english::after {
   position: absolute;
-  top: 10px;
-  right: 5px;
+  top: 9px;
+  right: -16px;
   display: inline-block;
   width: 19px;
   height: 13px;
   content: "";
-  background-image: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.navbar-inverse .navbar-nav > li > a.dansk {
-  width: 71px;
-  background-image: url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
-  background-position: right 9px;
+.navbar-inverse .navbar-nav > li > a.english::after {
+  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+}
+.navbar-inverse .navbar-nav > li > a.dansk::after {
+  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
