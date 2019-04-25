@@ -5657,10 +5657,17 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   display: inline-block;
   background-repeat: no-repeat;
 }
-.navbar-inverse .navbar-nav > li > a.english {
-  width: 75px;
-  background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
-  background-position: right 8px;
+.navbar-inverse .navbar-nav > li > a.english::after {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: inline-block;
+  width: 19px;
+  height: 13px;
+  content: "";
+  background-image: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar-inverse .navbar-nav > li > a.dansk {
   width: 71px;

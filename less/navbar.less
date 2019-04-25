@@ -684,9 +684,18 @@
       }
 
       &.english {
-        width: 75px;
-        background-image: url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
-        background-position: right 8px;
+        &::after {
+          content: "";
+            width: 19px;
+            height: 13px;
+            background-image: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 10px;
+            right: 5px;
+            position: absolute;
+            display: inline-block;
+        }
       }
 
       &.dansk {
