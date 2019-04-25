@@ -73,15 +73,15 @@
   background: #fff;
 }
 .gridbox.subcolor_6 .header {
-  color: #606060;
+  color: #252525;
   background: rgba(255, 255, 255, .9);
 }
 .gridbox.subcolor_6.text-top .header {
-  color: #606060;
+  color: #252525;
   background: #fff;
 }
 .gridbox.subcolor_6.outlined {
-  color: #606060;
+  color: #252525;
   border: 1px solid #252525;
 }
 .gridbox.subcolor_6.outlined:hover {
@@ -91,14 +91,14 @@
   border: 1px solid #252525;
 }
 .gridbox.subcolor_6.full {
-  color: #606060;
+  color: #252525;
   background: #fff;
 }
 .gridbox.subcolor_6.full .header {
-  color: #606060;
+  color: #252525;
 }
 .gridbox.subcolor_6.full::before {
-  color: #606060;
+  color: #252525;
 }
 .gridbox.subcolor_6.full:hover {
   background: #ebebeb;
@@ -110,10 +110,10 @@
   border: 1px solid #252525;
 }
 .gridbox.subcolor_6::before {
-  color: #606060;
+  color: #252525;
 }
 .gridbox.subcolor_6 .text {
-  color: #606060;
+  color: #252525;
 }
 .gridbox.subcolor_7 {
   color: #fff;
