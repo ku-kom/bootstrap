@@ -5736,9 +5736,6 @@ fieldset[disabled] .navbar-default .btn-link:hover {
     content: " ";
     background: #fff;
   }
-  .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
-  }
 }
 .navbar-inverse .navbar-link {
   color: #fff;
