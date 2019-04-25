@@ -28,10 +28,6 @@ h6 {
     line-height: 1;
     color: @headings-small-color;
   }
-  & > br {
-    // Make up for editor's habits of adding <br> inside headers...
-    display: none;
-  }
 }
 
 h1,
@@ -43,8 +39,14 @@ h6 {
   &:empty {
     display: none;
   }
-  &> strong {
+
+  & > strong {
     font-weight: inherit;
+  }
+
+  & > br {
+    // Make up for editor's habits of adding <br> inside headers...
+    display: none;
   }
 }
 
@@ -132,7 +134,7 @@ h6 {
 // -------------------------
 
 p {
-  margin: 8px 0 15px 0;
+  margin: 8px 0 15px;
 
   &:empty {
     //Hide empty p-tags comming from the editor
@@ -385,6 +387,7 @@ blockquote {
     margin-top: 5px;
     margin-bottom: 3px;
   }
+
   ol,
   ul {
     &:last-child {
@@ -411,12 +414,12 @@ blockquote {
   }
 }
 
-.right-side, .column1 {
+.column1,
+.right-side {
   blockquote {
     width: 100%!important;
   }
 }
-
 // Opposite alignment of blockquote
 //
 // .blockquote-reverse {

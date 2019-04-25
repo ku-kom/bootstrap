@@ -1623,20 +1623,6 @@ h6 small {
   line-height: 1;
   color: #757575;
 }
-.h1 > br,
-.h2 > br,
-.h3 > br,
-.h4 > br,
-.h5 > br,
-.h6 > br,
-h1 > br,
-h2 > br,
-h3 > br,
-h4 > br,
-h5 > br,
-h6 > br {
-  display: none;
-}
 h1:empty,
 h2:empty,
 h3:empty,
@@ -1652,6 +1638,14 @@ h4 > strong,
 h5 > strong,
 h6 > strong {
   font-weight: inherit;
+}
+h1 > br,
+h2 > br,
+h3 > br,
+h4 > br,
+h5 > br,
+h6 > br {
+  display: none;
 }
 .h1,
 .h2,
@@ -1740,7 +1734,7 @@ h6 {
   margin-top: 20px;
 }
 p {
-  margin: 8px 0 15px 0;
+  margin: 8px 0 15px;
 }
 p:empty {
   display: none;
@@ -1985,8 +1979,8 @@ blockquote.full-width {
   padding: 0;
   margin: 5px 0;
 }
-.right-side blockquote,
-.column1 blockquote {
+.column1 blockquote,
+.right-side blockquote {
   width: 100%!important;
 }
 address {
