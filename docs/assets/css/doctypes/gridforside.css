@@ -1,5 +1,7 @@
 @media screen and (min-width: 480px) and (max-width: 757px) {
-
+.gridcontent {
+  padding-top: 23px;
+}
   /* Double columns (.col-sm-6) must span 100% in tablet view (but not the full-width template - hence this hack.) */
   .GridForside .double-column [class^="col-"][class$="-6"] {
     width: 100%;
