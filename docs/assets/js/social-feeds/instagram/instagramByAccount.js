@@ -50,7 +50,7 @@
               var img = data.data[i].images.standard_resolution.url;
               var link = data.data[i].link;
               var desc = data.data[i].caption.text;
-              $container.append('<a href="' + link + '" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
+              $container.append('<a href="' + link + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
             $('a', $container).each(function (k, e) {

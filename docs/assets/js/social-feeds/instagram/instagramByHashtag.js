@@ -43,7 +43,7 @@
             $.each(entry, function (i, v) {
               var img = entry[i].node.thumbnail_src;
               var shortcode = entry[i].node.shortcode;
-              $container.append('<a href="https://www.instagram.com/p/' + shortcode + ' " target="_blank"><img src="' + img + '" alt="' + hashtag + '"></a>');
+              $container.append('<a href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener"><img src="' + img + '" alt="' + hashtag + '"></a>');
               return i < $images - 1;
             });
             var batch;
