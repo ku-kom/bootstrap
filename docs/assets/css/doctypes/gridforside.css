@@ -6,10 +6,6 @@
   }
 }
 
-.breadcrumb {
-  display: none;
-}
-
 .main-content .figure:first-child,
 .main-content figure:first-child {
   /* Remove top margin for first image */

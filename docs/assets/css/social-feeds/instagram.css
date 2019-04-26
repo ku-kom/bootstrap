@@ -12,10 +12,9 @@ Needs html like this:
 </div>
 */
 [id*="ig"].gridbox {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  /* visibility: hidden; */
+  -webkit-flex-direction: column!important;
+  -ms-flex-direction: column!important;
+  flex-direction: column!important;
   height: 185px !important;
 }
 
@@ -150,7 +149,7 @@ Needs html like this:
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   div[id*="ig"][data-hidemobile="true"] {
     display: none;
   }
