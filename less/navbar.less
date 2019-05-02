@@ -175,8 +175,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-collapse,
-  > .navbar-header {
+  > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -307,8 +307,8 @@
       border: 0;
       box-shadow: none;
 
-      .dropdown-header,
-      > li > a {
+      > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
 
@@ -915,14 +915,6 @@
       }
     }
   }
-
-  // .global-search-submit {
-  //   .btn {
-  //     background-image: none; // remove gradient from default button
-  //     border-top-right-radius: @border-radius-base!important;
-  //     border-bottom-right-radius: @border-radius-base!important;
-  //   }
-  // }
 
   .global-search-options-filter {
     margin-top: 0;
