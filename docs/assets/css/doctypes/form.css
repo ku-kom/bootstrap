@@ -1,6 +1,10 @@
 /* Multiple select styles */
 @import url("../multiple-select.min.css");
 
+.error {
+  color: #7b161a;
+}
+
 .gdpr-notice {
   margin: 10px 0;
 }
