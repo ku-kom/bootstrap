@@ -175,8 +175,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-header,
-  > .navbar-collapse {
+  > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -307,8 +307,8 @@
       border: 0;
       box-shadow: none;
 
-      > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
@@ -861,16 +861,30 @@
     }
   }
 }
+// Global search area:
+
+.search-area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 
 .global-search {
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 22px;
+
   .btn-global-search {
+    width: 1%!important;
+
     .btn {
       font-weight: 400;
       text-transform: capitalize;
       color: @gray-444;
-      background-color: @white-color;
+      #gradient.vertical(#eaeaea; #f2f2f2; 0%; 100%);
 
       &.global-search-options-toggle {
+        margin-left: -2px!important;
         @media (min-width: @screen-md) {
           font-size: 12px;
         }
@@ -902,13 +916,13 @@
     }
   }
 
-  .global-search-submit {
-    .btn {
-      background-image: none; // remove gradient from default button
-      border-top-right-radius: @border-radius-base!important;
-      border-bottom-right-radius: @border-radius-base!important;
-    }
-  }
+  // .global-search-submit {
+  //   .btn {
+  //     background-image: none; // remove gradient from default button
+  //     border-top-right-radius: @border-radius-base!important;
+  //     border-bottom-right-radius: @border-radius-base!important;
+  //   }
+  // }
 
   .global-search-options-filter {
     margin-top: 0;

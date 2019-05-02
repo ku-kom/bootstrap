@@ -108,67 +108,11 @@
     bottom: -12px;
   }
 }
-// New search area
 
-.search-area {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-
-  .global-search {
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 22px;
-  }
-
-  .global-search-options-toggle {
-    margin-left: -2px!important;
-  }
-
-  .btn-global-search {
-    width: 1%!important;
-
-    button,
-    button:focus {
-      #gradient.vertical(#eaeaea; #f2f2f2; 0%; 100%);
-    }
-
-    button {
-      .dropdown-toggle {
-        &::after {
-          color: #6B6B6B;
-        }
-      }
-    }
-  }
-}
 @media (max-width: @screen-xs-max) {
   // Hide menus when in mobile mode
   .ku-nav,
   .search-area {
     display: none;
-  }
-}
-// Can we delete this?
-
-.global-search {
-  .btn .caret {
-    margin-left: 5px;
-    color: #bbb;
-  }
-  // Can we delete this?
-  .input-group-btn {
-    //KU
-    .btn {
-      &:hover {
-        background-color: @white-color;
-        text-decoration: @link-hover-decoration;
-      }
-
-      &:active,
-      &:focus {
-        background-color: @white-color;
-      }
-    }
   }
 }
