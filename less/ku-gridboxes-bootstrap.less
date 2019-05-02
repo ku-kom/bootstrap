@@ -1019,6 +1019,31 @@
     }
   }
 }
+@media all and (min-width: @screen-md) {
+  @supports (-ms-ime-align: auto) {
+    .GridForside {
+      .single-column {
+        .gridbox.with-img {
+          &.size1 {
+            .box2 img {
+              height: 130%;
+            }
+          }
+        }
+      }
+
+      .double-column {
+        .gridbox.with-img {
+          &.size1 {
+            .box2 img {
+              height: 138%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // Special styles for Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
@@ -1082,6 +1107,13 @@
   }
 }
 @media all and (min-width: @screen-md) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gridbox {
+    &.with-img {
+      .box2 img {
+        height: 100%;
+      }
+    }
+  }
   // Single columns
   .one-two-column .column1,
   .triple-column [class*=column],
@@ -1166,45 +1198,8 @@
     }
   }
 }
-@media all and (min-width: @screen-md) {
-  @supports (-ms-ime-align: auto) {
-    .GridForside {
-      .single-column {
-        .gridbox.with-img {
-          &.size1 {
-            .box2 img {
-              height: 130%;
-            }
-          }
-        }
-      }
 
-      .double-column {
-        .gridbox.with-img {
-          &.size1 {
-            .box2 img {
-              height: 138%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .gridbox.with-img {
-    .box2 img {
-      height: 100%;
-    }
 
-    &.size1 {
-      .box2 img {
-        width: auto;
-        min-width: 100%;
-      }
-    }
-  }
-}
 @media all and (min-width: @screen-xs) {
   @supports (-ms-ime-align: auto) {
     .gridbox.with-img {
@@ -1221,7 +1216,17 @@
     }
   }
 }
+@media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gridbox.with-img {
 
+    &.size1 {
+      .box2 img {
+        width: auto;
+        min-width: 100%;
+      }
+    }
+  }
+}
 .boxlink {
   color: inherit!important;
   display: block;
