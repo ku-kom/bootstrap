@@ -3,3 +3,7 @@
 .obvius-common #content-wrapper {
   width: 783px!important;
 }
+
+.employee-list-heading {
+  margin-top: 0;
+}
