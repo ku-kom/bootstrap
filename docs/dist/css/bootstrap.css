@@ -1912,7 +1912,10 @@ dd {
     margin-left: 180px;
   }
 }
-abbr[title],
+abbr[title] {
+  text-decoration: none;
+  border-bottom: 0;
+}
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #757575;
