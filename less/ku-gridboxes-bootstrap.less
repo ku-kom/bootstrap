@@ -503,7 +503,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -716,6 +715,18 @@
           &.outlined {
             .header {
               color: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    .double-column {
+      .gridbox {
+        &.size1 {
+          .box2 {
+            img {
+              width: 100%;
             }
           }
         }
@@ -1198,8 +1209,6 @@
     }
   }
 }
-
-
 @media all and (min-width: @screen-xs) {
   @supports (-ms-ime-align: auto) {
     .gridbox.with-img {
@@ -1218,7 +1227,6 @@
 }
 @media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .gridbox.with-img {
-
     &.size1 {
       .box2 img {
         width: auto;
@@ -1227,6 +1235,7 @@
     }
   }
 }
+
 .boxlink {
   color: inherit!important;
   display: block;
