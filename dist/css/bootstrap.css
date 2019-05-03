@@ -6775,7 +6775,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading > .panel-title {
   min-height: 16px;
-  padding: 8px 0;
+  padding: 0 0 8px 0;
   font-weight: 600;
   line-height: 1.25;
   color: #252525;
@@ -8303,7 +8303,7 @@ nav {
 }
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text {
-    bottom: 17px;
+    bottom: 18px;
     left: 100px;
   }
 }
