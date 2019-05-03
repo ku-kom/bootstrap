@@ -734,6 +734,22 @@
     }
   }
 }
+@media all and (min-width: @screen-xs) and (max-width: @screen-sm-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // IE11 only
+   .FullWidthFrontpage {
+     .double-column {
+       .gridbox {
+         &.size1 {
+           .box2 {
+             img {
+               height: auto;
+             }
+           }
+         }
+       }
+     }
+   }
+}
 @media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet
   .gridbox {

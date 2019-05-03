@@ -640,6 +640,11 @@
     width: 100%;
   }
 }
+@media all and (min-width: 480px) and (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .FullWidthFrontpage .double-column .gridbox.size1 .box2 img {
+    height: auto;
+  }
+}
 @media all and (min-width: 768px) and (max-width: 991px) {
   .gridbox.size1.with-img .text {
     display: none;
