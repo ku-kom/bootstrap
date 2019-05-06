@@ -6282,6 +6282,7 @@ figcaption {
 .alert-success hr {
   border-top-color: #adbf8b;
 }
+.alert-success a,
 .alert-success .alert-link {
   color: #2a2f1e;
 }
@@ -6293,6 +6294,7 @@ figcaption {
 .alert-info hr {
   border-top-color: #abcfd3;
 }
+.alert-info a,
 .alert-info .alert-link {
   color: #2b4446;
 }
@@ -6304,6 +6306,7 @@ figcaption {
 .alert-warning hr {
   border-top-color: #d4b191;
 }
+.alert-warning a,
 .alert-warning .alert-link {
   color: #453212;
 }
@@ -6315,6 +6318,7 @@ figcaption {
 .alert-danger hr {
   border-top-color: #bd9294;
 }
+.alert-danger a,
 .alert-danger .alert-link {
   color: #500e11;
 }
