@@ -241,13 +241,16 @@
 .gridbox.with-quote {
   pointer-events: none;
 }
+.gridbox.with-quote .quote {
+  padding: 0 10px;
+}
 .gridbox.with-quote img {
+  position: relative;
+  left: -10px;
   float: left;
 }
 .gridbox.with-quote .text {
-  display: block;
-  padding: 10px;
-  margin-top: 5px;
+  display: inline;
 }
 .gridbox.with-quote .quote-bold {
   display: block;

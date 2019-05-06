@@ -6256,6 +6256,9 @@ figcaption {
 .alert .alert-link {
   font-weight: bold;
 }
+.alert a {
+  text-decoration: overline;
+}
 .alert > p,
 .alert > ul {
   margin-bottom: 0;

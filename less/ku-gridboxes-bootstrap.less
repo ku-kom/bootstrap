@@ -295,15 +295,17 @@
   &.with-quote {
     // With quote:
     pointer-events: none;
-
+    .quote {
+      padding: 0 10px;
+    }
     img {
       float: left;
+      left: -7px;
+    position: relative;
     }
 
     .text {
-      display: block;
-      margin-top: 5px;
-      padding: 10px;
+      display: inline;
     }
 
     .quote-bold {
