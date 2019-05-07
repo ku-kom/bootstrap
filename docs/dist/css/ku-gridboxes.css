@@ -366,7 +366,7 @@
   display: none;
 }
 .gridbox.size1:hover {
-  background: #d1d1d1;
+  background: #e1e1e1;
 }
 .gridbox.size2:not(.with-img) .box1 {
   -webkit-flex: 0 1 100%;
