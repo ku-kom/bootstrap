@@ -270,8 +270,8 @@ module.exports = function (grunt) {
         //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
         compatibility: 'ie8',
         keepSpecialComments: '*',
-        sourceMap: true,
-        sourceMapInlineSources: true,
+        sourceMap: false,
+        sourceMapInlineSources: false,
         advanced: false
       },
       minifyCore: {
@@ -307,8 +307,6 @@ module.exports = function (grunt) {
         options: {
           // TODO: disable `zeroUnits` optimization once clean-css 3.2 is released
           //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
-          sourceMap: false,
-          sourceMapInlineSources: false
         },
         expand: true,
         cwd: 'dist/css/doctypes/',
@@ -316,10 +314,6 @@ module.exports = function (grunt) {
         dest: 'dist/css/doctypes/'
       },
       docs: {
-        options: {
-          sourceMap: false,
-          sourceMapInlineSources: false
-        },
         src: [
           'docs/assets/css/src/ie10-viewport-bug-workaround.css',
           'docs/assets/css/src/pygments-manni.css',
