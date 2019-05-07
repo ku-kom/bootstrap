@@ -10385,15 +10385,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-slide.slick-current .caption.subcolor_5 {
   color: #252525;
-  background: #eee;
+  background: #dedede;
 }
 @media (min-width: 768px) {
   .slick-slide.slick-current .caption.subcolor_5 {
-    background: rgba(238, 238, 238, .9);
+    background: rgba(222, 222, 222, .9);
   }
 }
 .slick-slide.slick-current .caption.subcolor_5.full-bg {
-  background: #eee;
+  background: #dedede;
 }
 .slick-slide.slick-current .caption.subcolor_6 {
   color: #252525;
