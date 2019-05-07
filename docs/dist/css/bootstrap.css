@@ -1695,7 +1695,7 @@ h6 small {
 }
 .h1,
 h1 {
-  margin-top: 5px;
+  margin-top: 0;
   font-size: 24px;
   font-weight: 400;
 }
@@ -5877,7 +5877,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
   .breadcrumbs {
     display: block;
     margin-top: 29px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 .breadcrumb {

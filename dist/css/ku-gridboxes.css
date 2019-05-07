@@ -34,40 +34,40 @@
   background: #dedede;
 }
 .gridbox.subcolor_5.text-down .header {
-  color: #444;
+  color: #252525;
   background: rgba(222, 222, 222, .9);
 }
 .gridbox.subcolor_5 .header {
-  color: #444;
+  color: #252525;
   background: #dedede;
 }
 .gridbox.subcolor_5.outlined {
-  color: #444;
+  color: #252525;
   border: 1px solid #252525;
 }
 .gridbox.subcolor_5.outlined::before {
-  color: #444;
+  color: #252525;
 }
 .gridbox.subcolor_5.outlined.with-img:hover {
   background: #d1d1d1;
 }
 .gridbox.subcolor_5.full {
-  color: #444;
+  color: #252525;
 }
 .gridbox.subcolor_5.full:hover {
   background: #d1d1d1;
 }
 .gridbox.subcolor_5.full .header {
-  color: #444;
+  color: #252525;
 }
 .gridbox.subcolor_5.text-down:hover {
   background: #d1d1d1;
 }
 .gridbox.subcolor_5::before {
-  color: #444;
+  color: #252525;
 }
 .gridbox.subcolor_5 .text {
-  color: #444;
+  color: #252525;
 }
 .gridbox.subcolor_6 {
   background: #fff;
@@ -85,7 +85,7 @@
   border: 1px solid #252525;
 }
 .gridbox.subcolor_6.outlined:hover {
-  background: #f2f2f2;
+  background: #f7f7f7;
 }
 .gridbox.subcolor_6.outlined.with-img:hover {
   border: 1px solid #252525;
@@ -101,10 +101,10 @@
   color: #252525;
 }
 .gridbox.subcolor_6.full:hover {
-  background: #f2f2f2;
+  background: #f7f7f7;
 }
 .gridbox.subcolor_6.text-down:hover {
-  background: #f2f2f2;
+  background: #f7f7f7;
 }
 .gridbox.subcolor_6.text-down:not(.with-img) {
   border: 1px solid #252525;
@@ -128,7 +128,7 @@
   background: #625757;
 }
 .gridbox.subcolor_7.outlined {
-  color: #444;
+  color: #252525;
   border: 1px solid #625757;
 }
 .gridbox.subcolor_7.outlined:hover {
@@ -449,11 +449,11 @@
 }
 .gridbox.size2.with-img.outlined.subcolor_5 .header,
 .gridbox.size3.with-img.outlined.subcolor_5 .header {
-  color: #444;
+  color: #252525;
 }
 .gridbox.size2.with-img.outlined.subcolor_6 .header,
 .gridbox.size3.with-img.outlined.subcolor_6 .header {
-  color: #444;
+  color: #252525;
 }
 .gridbox.size2.with-img.outlined.subcolor_7 .header,
 .gridbox.size3.with-img.outlined.subcolor_7 .header {
@@ -692,7 +692,7 @@
   .one-one-two-column .column2 .gridbox.with-img.outlined.subcolor_6::before,
   .two-one-one-column .column2 .gridbox.with-img.outlined.subcolor_6::before,
   .two-one-one-column .column3 .gridbox.with-img.outlined.subcolor_6::before {
-    color: #444;
+    color: #252525;
   }
   .one-one-two-column .column3 .gridbox.size1 .box2,
   .one-three-column .column2 .gridbox.size1 .box2,
