@@ -52,6 +52,28 @@ nav {
     }
   }
 }
+@media (min-width: @screen-sm) {
+  //Gridforside - rightbox i grid højre side:
+  .GridForside {
+    .gridcontent {
+      & > .row {
+        &:first-child {
+          .gccolumn {
+            &:last-child {
+              .rightbox {
+                &:first-child {
+                  .panel-title {
+                    padding-top: @grid-gutter-height;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: @screen-xs-max) {
   // Smaller margins on mobile
   #content {
