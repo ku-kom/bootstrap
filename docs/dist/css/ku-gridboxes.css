@@ -135,7 +135,7 @@
   border: 1px solid #544b4b;
 }
 .gridbox.subcolor_7.outlined.with-img:hover {
-  background: #d1d1d1;
+  background: #eee;
   border: 1px solid #544b4b;
 }
 .gridbox.subcolor_7.outlined::before {
@@ -298,7 +298,7 @@
   background: #fff !important;
 }
 .gridbox.outlined:hover {
-  background: #d1d1d1 !important;
+  background: #eee !important;
 }
 .gridbox.outlined .header {
   word-wrap: break-word;
