@@ -1944,6 +1944,7 @@ blockquote:before {
   position: relative;
   top: 10px;
   left: 0;
+  margin: 0 10px 10px 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   font-size: 45px;
