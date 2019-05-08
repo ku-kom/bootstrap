@@ -1922,6 +1922,22 @@ function shareURL(dest) {
     });
   }
 
+  function trackNews() {
+    // Add tracking params to global menu news list
+    var $li = $('ul.nyheder li:not(.no-track)');
+    if ($li) {
+      $li.each(function (i, v) {
+        // Get current urls from news
+        var url = $(this).find('a').attr("href");
+        // Create new url with params
+        var urlWithParams = url + "?utm_source=Nyheder&utm_medium=Link&utm_campaign=kudk-globalmenu";
+        // Set new herf value
+        $(this).find('a').attr("href", urlWithParams);
+      });
+    }
+  }
+  trackNews();
+
   // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled':
   function makeGlobalMenuClickable() {
     var $menu = $('#navbar_menu li.dropdown');
@@ -1944,17 +1960,14 @@ function shareURL(dest) {
       }
     }
   }
-
-  // Init scroller
   scrollFunction();
 
-  // Run on scroll
+  // Init scroller on scroll
   window.onscroll = function () {
     scrollFunction()
   };
 
   // Smooth scrolling to top on click event
-
   $('#scrolltop').click(function () {
     var $root = $('html, body');
     $root.animate({
