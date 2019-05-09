@@ -20,6 +20,9 @@
   border: 1px solid transparent;
   white-space: nowrap;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  @media (max-width: @screen-xs-max) {
+    font-size: 14px;
+  }
   .user-select(none);
 
   &,
