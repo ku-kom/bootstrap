@@ -201,6 +201,9 @@
 .gridbox.no-arrow::before {
   display: none;
 }
+.gridbox.no-arrow .text {
+  padding-right: 10px;
+}
 .gridbox.with-img .box2 {
   position: relative;
   display: -webkit-flex;
