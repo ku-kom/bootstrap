@@ -249,6 +249,7 @@
     &::before {
       display: none;
     }
+
     .text {
       padding-right: 10px;
     }
@@ -293,13 +294,15 @@
   &.with-quote {
     // With quote:
     pointer-events: none;
+
     .quote {
       padding: 0 10px;
     }
+
     img {
       float: left;
       left: -7px;
-    position: relative;
+      position: relative;
     }
 
     .text {
@@ -503,6 +506,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -736,19 +740,19 @@
 }
 @media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // IE11 only
-   .FullWidthFrontpage {
-     .double-column {
-       .gridbox {
-         &.size1 {
-           .box2 {
-             img {
-               height: auto;
-             }
-           }
-         }
-       }
-     }
-   }
+  .FullWidthFrontpage {
+    .double-column {
+      .gridbox {
+        &.size1 {
+          .box2 {
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
   // Tablet
