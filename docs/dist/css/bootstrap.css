@@ -1263,6 +1263,9 @@ template {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.social-heading {
+  margin-top: 0;
+}
 .social-icons {
   display: -webkit-flex;
   display: -ms-flexbox;
