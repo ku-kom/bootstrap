@@ -401,6 +401,7 @@
 }
 .gridbox.size5 .box1 .header {
   padding-top: 6px;
+  padding-bottom: 4px;
 }
 .gridbox.size5 .box1 .text {
   display: none;
