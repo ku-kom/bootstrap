@@ -6260,7 +6260,7 @@ figcaption {
   font-weight: bold;
 }
 .alert a {
-  text-decoration: overline;
+  text-decoration: underline;
 }
 .alert > p,
 .alert > ul {
