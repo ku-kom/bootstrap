@@ -52,6 +52,9 @@ div.tabbed-search-box ul.box-tabs {
 }
 
 .portal_link span {
-  font-size: 13px;
+  font-size: 13px!important;
+  color: #165aad!important;
+}
+.portal_link:hover {
   color: #165aad!important;
 }

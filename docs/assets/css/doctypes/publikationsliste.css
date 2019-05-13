@@ -105,9 +105,9 @@ ol.portal_list li.portal_list_item_group {
   color: #252525;
 }
 
-span.downloads_count {
-  width: 77px;
-  border-bottom: 1px solid #b0adad;
+.downloads_count {
+  width: 33%;
+  border-bottom: 1px solid #666;
 }
 
 li.portal_list_item_most_downloaded div.portal_content_properties {
