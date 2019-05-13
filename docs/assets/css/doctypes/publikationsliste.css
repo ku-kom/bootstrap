@@ -106,8 +106,9 @@ ol.portal_list li.portal_list_item_group {
 }
 
 .downloads_count {
-  width: 33%;
-  border-bottom: 1px solid #666;
+  width: 33%!important;
+  color: #666!important;
+  border-bottom: 1px solid #666!important;
 }
 
 li.portal_list_item_most_downloaded div.portal_content_properties {
