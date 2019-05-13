@@ -51,10 +51,10 @@ div.tabbed-search-box ul.box-tabs {
   width: 100%!important;
 }
 
-.portal_link span {
+.search_tips .portal_link span {
   font-size: 13px!important;
   color: #165aad!important;
 }
-.portal_link:hover {
+.search_tips .portal_link:hover {
   color: #165aad!important;
 }
