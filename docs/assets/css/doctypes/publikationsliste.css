@@ -186,7 +186,6 @@ div.rendering p.type, ol.portal_list>li {
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
   padding: 10px 10px;
-  border: none;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -194,9 +193,7 @@ div.rendering p.type, ol.portal_list>li {
 .view_container ul.tabs li.selected a {
   color: #fff;
   background-color: #757575;
-  border-top: 1px solid #757575;
-  border-right: 1px solid #757575;
-  border-left: 1px solid #757575;
+  border: 1px solid #757575;
   font-weight: inherit;
 }
 
