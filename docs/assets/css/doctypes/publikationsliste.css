@@ -171,12 +171,20 @@ div.rendering p.type, ol.portal_list>li {
   float: left;
   clear: both;
   margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.view_container ul.tabs li {
+    margin-left: 2px;
 }
 
 .view_container ul.tabs li a {
   color: #252525;
   background: none;
   background-color: #f3f3f3;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
   padding: 10px 10px;
   border: none;
   border-top-left-radius: 2px;
@@ -185,7 +193,10 @@ div.rendering p.type, ol.portal_list>li {
 
 .view_container ul.tabs li.selected a {
   color: #fff;
-  background-color: #999;
+  background-color: #757575;
+  border-top: 1px solid #757575;
+  border-right: 1px solid #757575;
+  border-left: 1px solid #757575;
   font-weight: inherit;
 }
 
