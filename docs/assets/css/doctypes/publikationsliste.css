@@ -182,9 +182,8 @@ div.rendering p.type, ol.portal_list>li {
   color: #252525;
   background: none;
   background-color: #f3f3f3;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-bottom: 0;
   padding: 10px 10px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -194,6 +193,7 @@ div.rendering p.type, ol.portal_list>li {
   color: #fff;
   background-color: #757575;
   border: 1px solid #757575;
+  border-bottom: 0;
   font-weight: inherit;
 }
 
