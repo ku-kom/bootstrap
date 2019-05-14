@@ -3070,6 +3070,7 @@ table th[class*="col-"] {
 }
 .table-responsive {
   min-height: .01%;
+  padding-right: 1px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
