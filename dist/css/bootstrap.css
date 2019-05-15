@@ -3119,11 +3119,6 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .table-responsive {
-    overflow-x: hidden;
-  }
-}
 fieldset {
   min-width: 0;
   padding: 0;
