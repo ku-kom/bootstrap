@@ -318,6 +318,12 @@
   padding: 0 25px 5px 10px;
   color: inherit;
 }
+.gridbox .text p {
+  margin: 3px 0;
+}
+.gridbox .text p:first-child {
+  margin-top: 0;
+}
 .gridbox.size1 {
   background: #eee;
 }
