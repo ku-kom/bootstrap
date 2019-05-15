@@ -2945,7 +2945,7 @@ th {
   border: 0;
 }
 .table-cellspacing {
-  border-spacing: 5px;
+  border-spacing: 4px;
   border-collapse: separate;
 }
 .table-cellspacing > tr > th,
