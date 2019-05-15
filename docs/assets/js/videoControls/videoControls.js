@@ -1,5 +1,19 @@
 /* Media Player controls using HTML5's Media API
  * Modified for Bootstrap by Nanna Ellegaard 2019
+ <div class="control-layer">
+    <div class="media-controls">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" id="progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="sr-only">0%</span></div>
+      </div>
+      <button type="button" id="play-pause-button" class="play" title="Start" aria-label="Start" onclick="togglePlayPause();"><span class="glyphicon glyphicon-play" aria-hidden="true"></button>
+      <button type="button" id="stop-button" class="stop" title="Stop" aria-label="Stop" onclick="stopPlayer();"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
+      <button type="button" id="replay-button" class="replay" title="Replay" aria-label="Replay" onclick="replayMedia();"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
+      <input id="vol-control" type="range" min="0" max="100" step="1" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0.5" oninput="setVolume(this.value)" onchange="setVolume(this.value)" title="Volume: 50%" class="volume" aria-label="Volume">
+      <button type="button" id="mute-button" class="mute" title="Unmute" aria-label="Slå lyd til/fra" onclick="toggleMute();"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span></button>
+      <button type="button" id="fullscreen-button" class="fullscreen" title="Fuld skærm" aria-label="Fuld skærm" onclick="handleFullscreen();"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></button>
+    </div>
+  </div>
+</div>
  */
 
 var video,
