@@ -11259,6 +11259,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     bottom: 0;
     left: 0;
     z-index: 1020!important;
+    height: auto;
     padding: 20px;
     color: #fff;
     background: rgba(163, 163, 163, .9);
