@@ -7918,7 +7918,7 @@ nav {
 }
 @media (min-width: 768px) {
   #gridsidebar .row:first-child {
-    margin-top: 23px;
+    margin-top: 75px;
   }
 }
 #gridsidebar .row:last-child [class*="col-"] {
@@ -7948,7 +7948,7 @@ nav {
 }
 @media (max-width: 767px) {
   .right-side {
-    margin-top: 23px;
+    margin-top: 75px;
   }
 }
 @media (min-width: 768px) {
@@ -7956,7 +7956,7 @@ nav {
   .right-side .flexiblebox-as-rightbox:first-child,
   .right-side .gcitem:first-child,
   .right-side .panel:first-child {
-    margin-top: 23px;
+    margin-top: 75px;
   }
 }
 .rightbox .rightbox-normal:first-child {
