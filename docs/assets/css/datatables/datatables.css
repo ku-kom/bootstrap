@@ -31,6 +31,7 @@
   .dataTables_wrapper tfoot th input {
     font-weight: normal;
     width: 100% !important;
+    padding: 5px 8px;
   }
 }
 
@@ -93,7 +94,7 @@
 }
 
 .dataTables_wrapper .dataTables_info {
-  padding-top: 8px;
+  padding: 5px 0;
   white-space: nowrap;
 }
 

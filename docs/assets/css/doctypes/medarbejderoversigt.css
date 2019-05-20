@@ -3,7 +3,7 @@
 @import url("../datatables.min.css");
 
 #medarbejdertable_wrapper {
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 #medarbejdertable tr th {
