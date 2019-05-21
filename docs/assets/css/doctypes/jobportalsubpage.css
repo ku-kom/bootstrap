@@ -15,13 +15,48 @@
 .pxs_search_field {
   margin: 0 10px 23px 0;
 }
-.dataTables_wrapper {
-  margin-top: 10px;
+
+a.pxs_application_link, .pxs_search_button {
+  color: #252525;
+  background-color: #f4f4f4;
+  border: 1px solid #b6b6b6;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+a.pxs_application_link:hover, .pxs_search_button:hover {
+  color: #252525;
+  background-color: #c9c9c9;
+  border-color: #767676;
+}
+
 table.vacancies {
   width: 100%;
   max-width: 100%;
   margin-bottom: 18px;
+}
+
+.vacancy-header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #949494;
+  padding: 9px 0 6px;
 }
 
 table.vacancies>tbody>tr>td,
@@ -33,6 +68,7 @@ table.vacancies>thead>tr>th {
   padding: 8px;
   line-height: 1.5;
   vertical-align: top;
+  text-align: left;
   border-top: 1px solid #ddd;
 }
 
