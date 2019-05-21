@@ -1,12 +1,11 @@
 #pxs_search {
   width: 100%;
   max-width: 75%;
-  height: 32px;
+  height: 33px;
   padding: 6px 10px;
   line-height: 1.5;
   color: #252525;
   background-color: #fff;
-  background-image: none;
   border: 1px solid #bbb;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -15,9 +14,10 @@
 
 .pxs_search_field {
   margin: 0 10px 23px 0;
-  max-width: 35%;
 }
-
+.dataTables_wrapper {
+  margin-top: 10px;
+}
 table.vacancies {
   width: 100%;
   max-width: 100%;
