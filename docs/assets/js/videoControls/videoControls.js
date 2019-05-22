@@ -23,8 +23,8 @@ var video,
   muteBtn,
   volumeBtn,
   progressBar,
-  subtitles,
-  subtitlesMenu,
+  // subtitles,
+  // subtitlesMenu,
   fullScreen,
   updateProgressBar,
   changeButtonType,
@@ -40,7 +40,7 @@ var initialisevideo = function () {
   playPauseBtn = document.getElementById('play-pause-button');
   muteBtn = document.getElementById('mute-button');
   volumeBtn = document.getElementById('vol-control');
-  subtitles = document.getElementById('subtitle-button');
+  //subtitles = document.getElementById('subtitle-button');
   progressBar = document.getElementById('progress-bar');
   fullScreen = document.getElementById('fullscreen-button');
   videoContainer = document.getElementById('videocontainer');
@@ -67,66 +67,66 @@ var initialisevideo = function () {
   }, false);
 
   // Initially turn off subtitles
-  for (var i = 0; i < video.textTracks.length; i++) {
-    video.textTracks[i].mode = 'hidden';
-  }
+  // for (var i = 0; i < video.textTracks.length; i++) {
+  //   video.textTracks[i].mode = 'hidden';
+  // }
 
   // If there are no subtitles, disable the button
-  if (video.textTracks.length === 0) {
-    subtitles.disabled = true;
-  }
+  // if (video.textTracks.length === 0) {
+  //   subtitles.disabled = true;
+  // }
 
   // Creates and returns a menu item for the subtitles language menu
-  var subtitleMenuButtons = [];
-  var createMenuItem = function (id, lang, label) {
-    var listItem = document.createElement('li');
-    var button = listItem.appendChild(document.createElement('button'));
-    button.setAttribute('id', id);
-    button.className = 'subtitles-button';
-    if (lang.length > 0) button.setAttribute('lang', lang);
-    button.value = label;
-    button.setAttribute('data-state', 'inactive');
-    button.appendChild(document.createTextNode(label));
-    button.addEventListener('click', function (e) {
-      // Set all buttons to inactive
-      subtitleMenuButtons.map(function (v, i, a) {
-        subtitleMenuButtons[i].setAttribute('data-state', 'inactive');
-      });
-      // Find the language to activate
-      var lang = this.getAttribute('lang');
-      for (var i = 0; i < video.textTracks.length; i++) {
-        // For the 'subtitles-off' button, the first condition will never match so all will subtitles be turned off
-        if (video.textTracks[i].language == lang) {
-          video.textTracks[i].mode = 'showing';
-          this.setAttribute('data-state', 'active');
-        } else {
-          video.textTracks[i].mode = 'hidden';
-        }
-      }
-      subtitlesMenu.style.display = 'none';
-    });
-    subtitleMenuButtons.push(button);
-    return listItem;
-  }
+  // var subtitleMenuButtons = [];
+  // var createMenuItem = function (id, lang, label) {
+  //   var listItem = document.createElement('li');
+  //   var button = listItem.appendChild(document.createElement('button'));
+  //   button.setAttribute('id', id);
+  //   button.className = 'subtitles-button';
+  //   if (lang.length > 0) button.setAttribute('lang', lang);
+  //   button.value = label;
+  //   button.setAttribute('data-state', 'inactive');
+  //   button.appendChild(document.createTextNode(label));
+  //   button.addEventListener('click', function (e) {
+  //     // Set all buttons to inactive
+  //     subtitleMenuButtons.map(function (v, i, a) {
+  //       subtitleMenuButtons[i].setAttribute('data-state', 'inactive');
+  //     });
+  //     // Find the language to activate
+  //     var lang = this.getAttribute('lang');
+  //     for (var i = 0; i < video.textTracks.length; i++) {
+  //       // For the 'subtitles-off' button, the first condition will never match so all will subtitles be turned off
+  //       if (video.textTracks[i].language == lang) {
+  //         video.textTracks[i].mode = 'showing';
+  //         this.setAttribute('data-state', 'active');
+  //       } else {
+  //         video.textTracks[i].mode = 'hidden';
+  //       }
+  //     }
+  //     subtitlesMenu.style.display = 'none';
+  //   });
+  //   subtitleMenuButtons.push(button);
+  //   return listItem;
+  // }
   // Go through each one and build a small clickable list, and when each item is clicked on, set its mode to be "showing" and the others to be "hidden"
 
-  if (video.textTracks) {
-    var df = document.createDocumentFragment();
-    subtitlesMenu = df.appendChild(document.createElement('ul'));
-    subtitlesMenu.className = 'subtitles-menu';
-    subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
-    for (var x = 0; x < video.textTracks.length; x++) {
-      subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[x].language, video.textTracks[x].language, video.textTracks[x].label));
-    }
-    videoContainer.appendChild(subtitlesMenu);
-  }
+  // if (video.textTracks) {
+  //   var df = document.createDocumentFragment();
+  //   subtitlesMenu = df.appendChild(document.createElement('ul'));
+  //   subtitlesMenu.className = 'subtitles-menu';
+  //   subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
+  //   for (var x = 0; x < video.textTracks.length; x++) {
+  //     subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[x].language, video.textTracks[x].language, video.textTracks[x].label));
+  //   }
+  //   videoContainer.appendChild(subtitlesMenu);
+  // }
 
   // Display subtitles menu if any
-  subtitles.addEventListener('click', function (e) {
-    if (subtitlesMenu) {
-      subtitlesMenu.style.display = (subtitlesMenu.style.display == 'block' ? 'none' : 'block');
-    }
-  });
+  // subtitles.addEventListener('click', function (e) {
+  //   if (subtitlesMenu) {
+  //     subtitlesMenu.style.display = (subtitlesMenu.style.display == 'block' ? 'none' : 'block');
+  //   }
+  // });
 };
 
 var togglePlayPause = function () {
