@@ -23,7 +23,6 @@ var video,
   volumeBtn,
   progressBar,
   subtitles,
-  subtitlesMenu,
   fullScreen,
   updateProgressBar,
   changeButtonType,
@@ -46,11 +45,6 @@ var initialisevideo = function () {
   // Hide the browser's default controls
   video.controls = false;
 
-  // Initially turn off subtitles
-  for (var i = 0; i < video.textTracks.length; i++) {
-    video.textTracks[i].mode = 'hidden';
-  }
-
   // Add a listener for the timeupdate event so we can update the progress bar
   video.addEventListener('timeupdate', updateProgressBar, false);
 
@@ -69,6 +63,56 @@ var initialisevideo = function () {
     this.pause();
   }, false);
 
+  // Initially turn off subtitles
+  for (var i = 0; i < video.textTracks.length; i++) {
+    video.textTracks[i].mode = 'hidden';
+  }
+
+  // Creates and returns a menu item for the subtitles language menu
+  var subtitleMenuButtons = [];
+  var createMenuItem = function (id, lang, label) {
+    var listItem = document.createElement('li');
+    var button = listItem.appendChild(document.createElement('button'));
+    button.setAttribute('id', id);
+    button.className = 'subtitles-button';
+    if (lang.length > 0) button.setAttribute('lang', lang);
+    button.value = label;
+    button.setAttribute('data-state', 'inactive');
+    button.appendChild(document.createTextNode(label));
+    button.addEventListener('click', function (e) {
+      // Set all buttons to inactive
+      subtitleMenuButtons.map(function (v, i, a) {
+        subtitleMenuButtons[i].setAttribute('data-state', 'inactive');
+      });
+      // Find the language to activate
+      var lang = this.getAttribute('lang');
+      for (var i = 0; i < video.textTracks.length; i++) {
+        // For the 'subtitles-off' button, the first condition will never match so all will subtitles be turned off
+        if (video.textTracks[i].language == lang) {
+          video.textTracks[i].mode = 'showing';
+          this.setAttribute('data-state', 'active');
+        } else {
+          video.textTracks[i].mode = 'hidden';
+        }
+      }
+      subtitlesMenu.style.display = 'none';
+    });
+    subtitleMenuButtons.push(button);
+    return listItem;
+  }
+  // Go through each one and build a small clickable list, and when each item is clicked on, set its mode to be "showing" and the others to be "hidden"
+
+  if (video.textTracks) {
+    var df = document.createDocumentFragment();
+    var subtitlesMenu = df.appendChild(document.createElement('ul'));
+    subtitlesMenu.className = 'subtitles-menu';
+    subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
+    for (var x = 0; x < video.textTracks.length; x++) {
+      subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[x].language, video.textTracks[x].language, video.textTracks[x].label));
+    }
+    video.appendChild(subtitlesMenu);
+  }
+
   // Display subtitles menu if any
   subtitles.addEventListener('click', function (e) {
     if (subtitlesMenu) {
@@ -77,55 +121,7 @@ var initialisevideo = function () {
   });
 };
 
-// Creates and returns a menu item for the subtitles language menu
-var subtitleMenuButtons = [];
-var createMenuItem = function (id, lang, label) {
-  var listItem = document.createElement('li');
-  var button = listItem.appendChild(document.createElement('button'));
-  button.setAttribute('id', id);
-  button.className = 'subtitles-button';
-  if (lang.length > 0) button.setAttribute('lang', lang);
-  button.value = label;
-  button.setAttribute('data-state', 'inactive');
-  button.appendChild(document.createTextNode(label));
-  button.addEventListener('click', function (e) {
-    // Set all buttons to inactive
-    subtitleMenuButtons.map(function (v, i, a) {
-      subtitleMenuButtons[i].setAttribute('data-state', 'inactive');
-    });
-    // Find the language to activate
-    var lang = this.getAttribute('lang');
-    for (var i = 0; i < video.textTracks.length; i++) {
-      // For the 'subtitles-off' button, the first condition will never match so all will subtitles be turned off
-      if (video.textTracks[i].language == lang) {
-        video.textTracks[i].mode = 'showing';
-        this.setAttribute('data-state', 'active');
-      } else {
-        video.textTracks[i].mode = 'hidden';
-      }
-    }
-    subtitlesMenu.style.display = 'none';
-  });
-  subtitleMenuButtons.push(button);
-  return listItem;
-}
-// Go through each one and build a small clickable list, and when each item is clicked on, set its mode to be "showing" and the others to be "hidden"
 
-if (video.textTracks) {
-  var df = document.createDocumentFragment();
-  var subtitlesMenu = df.appendChild(document.createElement('ul'));
-  subtitlesMenu.className = 'subtitles-menu';
-  subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
-  for (var i = 0; i < video.textTracks.length; i++) {
-    subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[i].language, video.textTracks[i].language, video.textTracks[i].label));
-  }
-  video.appendChild(subtitlesMenu);
-}
-subtitles.addEventListener('click', function (e) {
-  if (subtitlesMenu) {
-    subtitlesMenu.style.display = (subtitlesMenu.style.display == 'block' ? 'none' : 'block');
-  }
-});
 
 var togglePlayPause = function () {
   // If the video is currently paused or has ended
@@ -269,5 +265,9 @@ var upperCaseFirst = function (str) {
 // Initialize the player when the DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
   'use strict';
-  initialisevideo();
+  // Does the browser actually support the video element?
+  var supportsVideo = !!document.createElement('video').canPlayType;
+  if (supportsVideo) {
+    initialisevideo();
+  }
 }, false);
