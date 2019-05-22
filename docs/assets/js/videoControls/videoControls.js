@@ -18,11 +18,13 @@
  */
 
 var video,
+  videoContainer,
   playPauseBtn,
   muteBtn,
   volumeBtn,
   progressBar,
   subtitles,
+  subtitlesMenu,
   fullScreen,
   updateProgressBar,
   changeButtonType,
@@ -34,13 +36,14 @@ var initialisevideo = function () {
   // Get player id
   video = document.getElementById('video');
 
-  // Get handles to each of the buttons and required elements
+  // Get handles to each of the buttons and other elements
   playPauseBtn = document.getElementById('play-pause-button');
   muteBtn = document.getElementById('mute-button');
   volumeBtn = document.getElementById('vol-control');
   subtitles = document.getElementById('subtitle-button');
   progressBar = document.getElementById('progress-bar');
   fullScreen = document.getElementById('fullscreen-button');
+  videoContainer = document.getElementById('videocontainer');
 
   // Hide the browser's default controls
   video.controls = false;
@@ -104,13 +107,13 @@ var initialisevideo = function () {
 
   if (video.textTracks) {
     var df = document.createDocumentFragment();
-    var subtitlesMenu = df.appendChild(document.createElement('ul'));
+    subtitlesMenu = df.appendChild(document.createElement('ul'));
     subtitlesMenu.className = 'subtitles-menu';
     subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
     for (var x = 0; x < video.textTracks.length; x++) {
       subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[x].language, video.textTracks[x].language, video.textTracks[x].label));
     }
-    video.appendChild(subtitlesMenu);
+    videoContainer.appendChild(subtitlesMenu);
   }
 
   // Display subtitles menu if any
@@ -120,8 +123,6 @@ var initialisevideo = function () {
     }
   });
 };
-
-
 
 var togglePlayPause = function () {
   // If the video is currently paused or has ended
