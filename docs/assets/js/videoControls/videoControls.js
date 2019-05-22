@@ -71,6 +71,11 @@ var initialisevideo = function () {
     video.textTracks[i].mode = 'hidden';
   }
 
+  // If there are no subtitles, disable the button
+  if (video.textTracks.length === 0) {
+    subtitles.disabled = true;
+  }
+
   // Creates and returns a menu item for the subtitles language menu
   var subtitleMenuButtons = [];
   var createMenuItem = function (id, lang, label) {

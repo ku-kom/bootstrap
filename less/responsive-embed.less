@@ -22,11 +22,11 @@
     width: 100%;
     border: 0;
   }
+
   &+ .embed-responsive {
     margin-top: @grid-gutter-height;
   }
 }
-
 // Modifier class for 16:9 aspect ratio
 
 .embed-responsive-16by9 {
@@ -72,34 +72,33 @@
 }
 
 .subtitles-menu {
-    display:none;
-    position:absolute;
-    bottom:14.8%;
-    right:20px;
-    background:#666;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    width:100px;
-    padding:10px;
-}
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: @gray-666;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  padding: 10px;
 
-.subtitles-menu li {
-    padding:0;
-    text-align:center;
-}
+  li {
+    padding: 0;
+    text-align: center;
 
-.subtitles-menu li button {
-    border:none;
-    background:#000;
-    color:#fff;
-    cursor:pointer;
-    width:90%;
-    padding:2px 5px;
-    border-radius:2px;
+    button {
+      border: none;
+      background: @gray-base;
+      color: @white-color;
+      cursor: pointer;
+      width: 90%;
+      padding: 2px 5px;
+    }
+  }
 }
+.subtitles-menu li
 // Make input range visible in IE - why, oh why...
-
 input[type=range]::-ms-track {
   width: 200px;
   height: 10px;

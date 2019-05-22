@@ -7057,8 +7057,8 @@ button.list-group-item-danger.active:focus {
 }
 .subtitles-menu {
   position: absolute;
-  right: 20px;
-  bottom: 14.8%;
+  right: 0;
+  bottom: 0;
   display: none;
   width: 100px;
   padding: 0;
@@ -7078,9 +7078,8 @@ button.list-group-item-danger.active:focus {
   cursor: pointer;
   background: #000;
   border: none;
-  border-radius: 2px;
 }
-input[type=range]::-ms-track {
+.subtitles-menu li input[type=range]::-ms-track {
   width: 200px;
   height: 10px;
   color: transparent;
