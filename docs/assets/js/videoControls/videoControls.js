@@ -205,8 +205,7 @@ var changeButtonType = function (btn, value) {
   // All available glyphicons
   var span = btn.querySelector('.glyphicon');
   // remove glyphicons before adding new
-  //span.classList.forEach(function (className) {
-    Array.prototype.slice.call(span.classList).forEach( function(className) {
+  Array.prototype.slice.call(span.classList).forEach(function (className) {
     if (className.startsWith('glyphicon-')) {
       span.classList.remove(className);
     }
@@ -272,6 +271,13 @@ var upperCaseFirst = function (str) {
 // Initialize the player when the DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
   'use strict';
+  // Polyfill for IE11:
+  if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function (searchString, position) {
+      position = position || 0;
+      return this.substr(position, searchString.length) === searchString;
+    };
+  }
   // Does the browser actually support the video element?
   var supportsVideo = !!document.createElement('video').canPlayType;
   if (supportsVideo) {
