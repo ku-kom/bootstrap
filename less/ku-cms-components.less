@@ -183,19 +183,26 @@ nav {
 
 .right-side {
   .pull-right;
-  @media (max-width: @screen-xs-max) {
-    margin-top: @ku-rightcolumn-top;
-  }
+  // @media (max-width: @screen-xs-max) {
+  //   margin-top: @ku-rightcolumn-top;
+  // }
   @media (min-width: @screen-sm) {
-    .flexiblebox,
-    .flexiblebox-as-rightbox,
-    .gcitem,
-    .panel {
+    .rightbox {
       &:first-child {
         margin-top: @ku-rightcolumn-top;
       }
     }
-  }
+
+    // .flexiblebox,
+    // .flexiblebox-as-rightbox,
+    // .gcitem,
+    // .panel {
+    //   &:first-child {
+    //     margin-top: @ku-rightcolumn-top;
+    //   }
+    // }
+
+}
 }
 
 .rightbox {
