@@ -55,7 +55,7 @@ html:lang(en) .ku-branding-text {
   display: none;
 }
 
-.media-list .eventteaser, .item .item-teaser {
+.item .item-teaser {
   /* Hide teaser text on front page */
   display: none;
 }
@@ -64,21 +64,25 @@ html:lang(en) .ku-branding-text {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  background: #eee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #fff;
+}
+@media all and (min-width: 768px) {
+  .jumpboard {
+    height: 289px;
+  }
 }
 
 .jumpboard .jumpcolumn {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  border-right: 1px solid #fff;
   padding-left: 23px;
   padding-right: 23px;
   position: relative;
@@ -91,8 +95,10 @@ html:lang(en) .ku-branding-text {
 .jumpboard .jumpcolumn .jumpheading {
   position: relative;
   margin: 0 0 11px;
-  font-size: 2em;
-  color: #921819;
+  font-size: 22px;
+  color: #901a1e;
+  border-bottom: 1px solid #777;
+    padding-bottom: 10px;
 }
 
 .jumpboard .jumpcolumn .jumpheading a {
@@ -101,9 +107,9 @@ html:lang(en) .ku-branding-text {
 
 .jumpboard .jumpcolumn .jumpheading:after {
   z-index: 2;
-  position: relative;
-  top: -2px;
-  margin-left: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-family: 'ku-symbols';
   font-size: .6em;
   font-style: normal;
@@ -134,48 +140,7 @@ html:lang(en) .ku-branding-text {
   display: block;
 }
 
-.jumpboard .jumpcolumn .jumplinks li .padlock:after {
-  z-index: 2;
-  position: relative;
-  top: -1px;
-  margin-left: 4px;
-  font-family: 'ku-symbols';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  color: #606060;
-  content: '\64';
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .jumpboard {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .jumpcolumn:nth-child(4), .jumpcolumn:nth-child(5) {
-    padding-top: 23px;
-  }
-
-  .jumpboard:after {
-    position: absolute;
-    top: 47%;
-    left: 23px;
-    height: 1px;
-    width: calc(100% - 52px);
-    background-color: #fff;
-    -webkit-transform: translateY(-47%);
-    transform: translateY(-47%);
-  }
-
-  .jumpboard .jumpcolumn {
-    border-right: 0;
-  }
-}
 
 @media screen and (max-width: 767px) {
 
@@ -188,26 +153,20 @@ html:lang(en) .ku-branding-text {
   } */
   .jumpboard {
     padding: 0;
-    background: #f8f8f5;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 
-  .jumpboard>.jumpcolumn {
-    max-height: none;
-    padding: 0;
-  }
-
   .jumpboard .jumpcolumn:first-child .jumpheading {
-    border-top: 1px solid #ccc;
+    border-top: 0 !important;
   }
 
   .jumpboard .jumpcolumn .jumpheading {
-    border-bottom: 1px solid #ccc;
-    background: #eee;
+    border-bottom: 1px solid #777;
+    background: #fff;
     font-size: 1.5em !important;
-    font-weight: bold;
+    font-weight: 600;
     margin: 0;
     padding: 7px 35px 10px 20px;
   }
