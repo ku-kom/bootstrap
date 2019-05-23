@@ -7079,7 +7079,7 @@ button.list-group-item-danger.active:focus {
   background: #000;
   border: none;
 }
-.subtitles-menu li input[type=range]::-ms-track {
+input[type=range]::-ms-track {
   width: 200px;
   height: 10px;
   color: transparent;
