@@ -107,8 +107,7 @@ html:lang(en) .ku-branding-text {
   }
 
   .jumpboard .jumpcolumn {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 23px 32px 23px 32px;
   }
 
   .jumpboard .jumpcolumn li a:after {
