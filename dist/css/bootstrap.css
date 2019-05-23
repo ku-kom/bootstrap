@@ -7974,6 +7974,12 @@ nav {
   .right-side .rightbox:first-child {
     margin-top: 75px;
   }
+  .right-side .flexiblebox:first-child,
+  .right-side .flexiblebox-as-rightbox:first-child,
+  .right-side .gcitem:first-child,
+  .right-side .panel:first-child {
+    margin-top: 75px;
+  }
 }
 .rightbox .rightbox-normal:first-child {
   margin-top: 0;
