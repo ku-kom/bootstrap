@@ -205,7 +205,8 @@ var changeButtonType = function (btn, value) {
   // All available glyphicons
   var span = btn.querySelector('.glyphicon');
   // remove glyphicons before adding new
-  span.classList.forEach(function (className) {
+  //span.classList.forEach(function (className) {
+    Array.prototype.slice.call(span.classList).forEach( function(className) {
     if (className.startsWith('glyphicon-')) {
       span.classList.remove(className);
     }
