@@ -56,7 +56,6 @@ html:lang(en) .ku-branding-text {
 }
 
 .item .item-teaser {
-  /* Hide teaser text on front page */
   display: none;
 }
 
