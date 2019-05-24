@@ -70,10 +70,7 @@ html:lang(en) .ku-branding-text {
   font-size: 22px;
   font-weight: 400;
   padding: 10px 0;
-}
-
-.jumpboard .jumpcolumn li+li {
-  border-top: 1px solid #777;
+  border-bottom: 1px solid #999;
 }
 
 .jumpboard .jumpcolumn li a {
@@ -88,7 +85,7 @@ html:lang(en) .ku-branding-text {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 10px;
+  right: 5px;
   font-family: 'ku-symbols';
   font-size: 16px;
   font-style: normal;
