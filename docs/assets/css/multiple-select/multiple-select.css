@@ -28,6 +28,8 @@
   color: #252525;
   text-decoration: none;
   background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset;
 }
 
 @media (max-width: 767px) {
