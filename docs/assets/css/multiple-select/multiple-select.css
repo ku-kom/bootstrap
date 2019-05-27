@@ -20,8 +20,8 @@
   padding: 0;
   overflow: hidden;
   cursor: pointer;
-  border: none;
-  box-shadow: none;
+  /* border: none;
+  box-shadow: none; */
   text-align: left;
   white-space: nowrap;
   line-height: 30px;
@@ -32,10 +32,8 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset;
 }
 
-@media (max-width: 767px) {
-  .ms-choice {
-    height: 34px;
-  }
+.ms-choice {
+  height: 33px;
 }
 
 .ms-choice.disabled {
@@ -60,8 +58,6 @@
 
 .ms-choice>span.placeholder {
   color: #555;
-  font-family: 'Open Sans', arial;
-  font-size: 12px;
 }
 
 .ms-choice>div {
