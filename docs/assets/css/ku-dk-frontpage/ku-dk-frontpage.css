@@ -68,7 +68,7 @@ html:lang(en) .ku-branding-text {
 .jumpboard .jumpcolumn li {
   position: relative;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 10px 0;
   border-bottom: 1px solid #999;
 }
@@ -109,6 +109,7 @@ html:lang(en) .ku-branding-text {
 
   .jumpboard .jumpcolumn li {
     font-size: 22px;
+    font-weight: 400;
   }
 
   .jumpboard .jumpcolumn li a:after {
