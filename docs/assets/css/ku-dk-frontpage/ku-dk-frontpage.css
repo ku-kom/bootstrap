@@ -62,12 +62,12 @@ html:lang(en) .ku-branding-text {
 .jumpboard .jumpcolumn {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 8px;
 }
 
 .jumpboard .jumpcolumn li {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   padding: 10px 0;
   border-bottom: 1px solid #999;
@@ -104,6 +104,11 @@ html:lang(en) .ku-branding-text {
 
   .jumpboard .jumpcolumn {
     padding: 0 30px 13px 30px;
+    margin: 0;
+  }
+
+  .jumpboard .jumpcolumn li {
+    font-size: 22px;
   }
 
   .jumpboard .jumpcolumn li a:after {
