@@ -26,6 +26,7 @@ div.portal_content_properties span.file_attachment {
   line-height: 14px;
   font-size: 13px !important;
 }
+
 div.tabbed-search-box ul.box-tabs {
   display: flex;
 }
@@ -43,18 +44,32 @@ div.tabbed-search-box ul.box-tabs {
 }
 
 .pureportal .tabbed-search-box .gradient-search-box {
-  max-width: none!important;
+  max-width: none !important;
   border-color: #ccc;
 }
 
 .pureportal .tabbed-search-box .gradient-search-box input.portal_searchfield, .search_box input.portal_searchfield {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .search_tips .portal_link span {
-  font-size: 13px!important;
-  color: #165aad!important;
+  font-size: 13px !important;
+  color: #165aad !important;
 }
+
 .search_tips .portal_link:hover {
-  color: #165aad!important;
+  color: #165aad !important;
+}
+
+table.properties {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+table.properties th, table.properties td {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
 }
