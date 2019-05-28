@@ -331,7 +331,6 @@
     display: none;
   }
 
-  &.slick-current {
     .caption {
       // Textbar bottom as default
       display: block;
@@ -407,7 +406,7 @@
     &:hover .caption {
       text-decoration: none;
     }
-  }
+
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
     .caption {
       // Special caption iPad
@@ -417,7 +416,7 @@
     }
   }
   @media (min-width: @screen-md) {
-    &.slick-current {
+
       .caption {
         font-size: 16px;
         padding: 12px 15px 10px 20px;
@@ -477,6 +476,6 @@
           padding: 30px 45px;
         }
       }
-    }
+
   }
 }

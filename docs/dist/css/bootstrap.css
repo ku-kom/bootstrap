@@ -10427,7 +10427,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .slick-slide .caption {
   display: none;
 }
-.slick-slide.slick-current .caption {
+.slick-slide .caption {
   position: relative;
   bottom: 0;
   display: block;
@@ -10439,53 +10439,53 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   letter-spacing: .7px;
   background: #f5f5f5;
 }
-.slick-slide.slick-current .caption h2 {
+.slick-slide .caption h2 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 1.2;
   color: inherit;
 }
-.slick-slide.slick-current .caption p {
+.slick-slide .caption p {
   margin: 0 0 6px;
 }
-.slick-slide.slick-current .caption.subcolor_5 {
+.slick-slide .caption.subcolor_5 {
   color: #252525;
   background: #dedede;
 }
 @media (min-width: 768px) {
-  .slick-slide.slick-current .caption.subcolor_5 {
+  .slick-slide .caption.subcolor_5 {
     background: rgba(222, 222, 222, .9);
   }
 }
-.slick-slide.slick-current .caption.subcolor_5.full-bg {
+.slick-slide .caption.subcolor_5.full-bg {
   background: #dedede;
 }
-.slick-slide.slick-current .caption.subcolor_6 {
+.slick-slide .caption.subcolor_6 {
   color: #252525;
   background: #f5f5f5;
 }
 @media (min-width: 768px) {
-  .slick-slide.slick-current .caption.subcolor_6 {
+  .slick-slide .caption.subcolor_6 {
     background: rgba(255, 255, 255, .9);
   }
 }
-.slick-slide.slick-current .caption.subcolor_6.full-bg {
+.slick-slide .caption.subcolor_6.full-bg {
   background: #f5f5f5;
 }
-.slick-slide.slick-current .caption.subcolor_7 {
+.slick-slide .caption.subcolor_7 {
   color: #fff;
   background: #625757;
 }
 @media (min-width: 768px) {
-  .slick-slide.slick-current .caption.subcolor_7 {
+  .slick-slide .caption.subcolor_7 {
     background: rgba(98, 87, 87, .83);
   }
 }
-.slick-slide.slick-current .caption.subcolor_7.full-bg {
+.slick-slide .caption.subcolor_7.full-bg {
   background: #625757;
 }
-.slick-slide.slick-current .caption.full-bg {
+.slick-slide .caption.full-bg {
   top: 0;
   right: 0;
   bottom: 0;
@@ -10494,7 +10494,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   height: 100%;
   padding: 15px;
 }
-.slick-slide.slick-current:hover .caption {
+.slick-slide:hover .caption {
   text-decoration: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10505,7 +10505,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
 }
 @media (min-width: 992px) {
-  .slick-slide.slick-current .caption {
+  .slick-slide .caption {
     position: absolute;
     left: 0;
     z-index: 2;
@@ -10515,11 +10515,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     background: rgba(255, 255, 255, .9);
     border: 0;
   }
-  .slick-slide.slick-current .caption h2 {
+  .slick-slide .caption h2 {
     margin-bottom: 10px;
     font-size: 26px;
   }
-  .slick-slide.slick-current .caption.textblock-left {
+  .slick-slide .caption.textblock-left {
     right: auto;
     left: 0;
     width: 45%;
@@ -10527,7 +10527,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     padding: 15px;
     padding: 16px 20px 20px 30px;
   }
-  .slick-slide.slick-current .caption.textblock-right {
+  .slick-slide .caption.textblock-right {
     right: 0;
     left: auto;
     width: 45%;
@@ -10535,7 +10535,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     padding: 15px;
     padding: 16px 30px 20px 20px;
   }
-  .slick-slide.slick-current .caption.textlabel-left {
+  .slick-slide .caption.textlabel-left {
     top: 50%;
     bottom: auto;
     width: 45%;
@@ -10546,7 +10546,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .slick-slide.slick-current .caption.textlabel-right {
+  .slick-slide .caption.textlabel-right {
     top: 50%;
     right: 0;
     bottom: auto;
@@ -10559,7 +10559,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .slick-slide.slick-current .caption.full-bg {
+  .slick-slide .caption.full-bg {
     padding: 30px 45px;
   }
 }
