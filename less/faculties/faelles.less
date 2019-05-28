@@ -2,15 +2,17 @@
 @import "../variables.less";
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
+
 h2 {
   &.deloverskrift {
     border-bottom: 1px solid @ku-red;
   }
 }
-
 // Special colors for studier.ku.dk
+
 .soeg-optagelse {
   background: #bf1e6f !important;
+
   &:hover {
     background: #ae1b65 !important;
   }
@@ -307,60 +309,63 @@ h2 {
 // Slick slider colors
 
 .slideshow {
-  
-    .faculty_color {
+  .faculty_color {
+    background: @ku-red;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@ku-red, 93%);
+    }
+
+    &.full-bg {
       background: @ku-red;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@ku-red, 93%);
-      }
-      &.full-bg {
-        background: @ku-red;
-      }
+    }
+  }
+
+  .subcolor_1 {
+    background: @blue;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@blue, 93%);
     }
 
-    .subcolor_1 {
+    &.full-bg {
       background: @blue;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@blue, 93%);
-      }
-      &.full-bg {
-        background: @blue;
-      }
+    }
+  }
+
+  .subcolor_2 {
+    background: @green;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@green, 93%);
     }
 
-    .subcolor_2 {
+    &.full-bg {
       background: @green;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@green, 93%);
-      }
-      &.full-bg {
-        background: @green;
-      }
+    }
+  }
+
+  .subcolor_3 {
+    background: @ku-darkgray;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@ku-darkgray, 93%);
     }
 
-    .subcolor_3 {
+    &.full-bg {
       background: @ku-darkgray;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@ku-darkgray, 93%);
-      }
-      &.full-bg {
-        background: @ku-darkgray;
-      }
+    }
+  }
+
+  .subcolor_4 {
+    background: @ku-darkblue;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@ku-darkblue, 93%);
     }
 
-    .subcolor_4 {
+    &.full-bg {
       background: @ku-darkblue;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@ku-darkblue, 93%);
-      }
-      &.full-bg {
-        background: @ku-darkblue;
-      }
     }
-
+  }
 }

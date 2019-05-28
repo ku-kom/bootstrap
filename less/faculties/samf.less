@@ -2,11 +2,13 @@
 @import "../variables.less";
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
+
 h2 {
   &.deloverskrift {
     border-bottom: 1px solid @samf;
   }
 }
+
 .gridbox {
   &.faculty_color {
     background: @samf;
@@ -295,64 +297,65 @@ h2 {
     }
   }
 }
-
 // Slick slider colors
-
 .slideshow {
+  .faculty_color {
+    background: @samf;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@samf, 93%);
+    }
 
-    .faculty_color {
+    &.full-bg {
       background: @samf;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@samf, 93%);
-      }
-      &.full-bg {
-        background: @samf;
-      }
+    }
+  }
+
+  .subcolor_1 {
+    background: @samf-sub_1;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@samf-sub_1, 93%);
     }
 
-    .subcolor_1 {
+    &.full-bg {
       background: @samf-sub_1;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@samf-sub_1, 93%);
-      }
-      &.full-bg {
-        background: @samf-sub_1;
-      }
+    }
+  }
+
+  .subcolor_2 {
+    background: @samf-sub_2;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@samf-sub_2, 93%);
     }
 
-    .subcolor_2 {
+    &.full-bg {
       background: @samf-sub_2;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@samf-sub_2, 93%);
-      }
-      &.full-bg {
-        background: @samf-sub_2;
-      }
+    }
+  }
+
+  .subcolor_3 {
+    background: @samf-sub_3;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@samf-sub_3, 93%);
     }
 
-    .subcolor_3 {
+    &.full-bg {
       background: @samf-sub_3;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@samf-sub_3, 93%);
-      }
-      &.full-bg {
-        background: @samf-sub_3;
-      }
+    }
+  }
+
+  .subcolor_4 {
+    background: @samf-sub_4;
+    color: @white-color;
+    @media (min-width: @screen-sm) {
+      background: fade(@samf-sub_4, 93%);
     }
 
-    .subcolor_4 {
+    &.full-bg {
       background: @samf-sub_4;
-      color: @white-color;
-      @media (min-width: @screen-sm) {
-        background: fade(@samf-sub_4, 93%);
-      }
-      &.full-bg {
-        background: @samf-sub_4;
-      }
     }
-
+  }
 }
