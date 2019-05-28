@@ -10296,9 +10296,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -webkit-filter: brightness(90%) blur(0);
 }
-.slide-link:hover .caption {
-  color: #252525;
-}
 .slick-arrow.slick-hidden {
   display: none;
 }
