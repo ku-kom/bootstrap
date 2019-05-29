@@ -51,8 +51,11 @@
 }
 
 .media-controls button {
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 14px;
+}
+
+.media-controls button + button {
+  margin-left: 4px;
 }
 
 .media-controls {
@@ -67,36 +70,36 @@
 @media all and (min-width: @screen-sm) {
   .media-controls button {
     font-size: inherit;
-    margin-right: 3px;
   }
 }
 
-.subtitles-menu {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: @gray-666;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  padding: 10px;
-
-  li {
-    padding: 0;
-    text-align: center;
-
-    button {
-      border: none;
-      background: @gray-base;
-      color: @white-color;
-      cursor: pointer;
-      width: 90%;
-      padding: 2px 5px;
-    }
-  }
-}
+// Enable for subtitles menu
+// .subtitles-menu {
+//   display: none;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   background: @gray-666;
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   width: 100px;
+//   padding: 10px;
+//
+//   li {
+//     padding: 0;
+//     text-align: center;
+//
+//     button {
+//       border: none;
+//       background: @gray-base;
+//       color: @white-color;
+//       cursor: pointer;
+//       width: 90%;
+//       padding: 2px 5px;
+//     }
+//   }
+// }
 
 // Make input range visible in IE - why, oh why...
 input[type=range]::-ms-track {

@@ -7042,8 +7042,10 @@ button.list-group-item-danger.active:focus {
   margin-top: 5px;
 }
 .media-controls button {
-  margin-right: 5px;
-  font-size: 16px;
+  font-size: 14px;
+}
+.media-controls button + button {
+  margin-left: 4px;
 }
 .media-controls input[type=range] {
   display: inline-block;
@@ -7054,33 +7056,8 @@ button.list-group-item-danger.active:focus {
 }
 @media all and (min-width: 768px) {
   .media-controls button {
-    margin-right: 3px;
     font-size: inherit;
   }
-}
-.subtitles-menu {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: none;
-  width: 100px;
-  padding: 0;
-  padding: 10px;
-  margin: 0;
-  list-style-type: none;
-  background: #666;
-}
-.subtitles-menu li {
-  padding: 0;
-  text-align: center;
-}
-.subtitles-menu li button {
-  width: 90%;
-  padding: 2px 5px;
-  color: #fff;
-  cursor: pointer;
-  background: #000;
-  border: none;
 }
 input[type=range]::-ms-track {
   width: 200px;
