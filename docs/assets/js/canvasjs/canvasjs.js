@@ -67,13 +67,12 @@ var defaultOptions = {
 		padding: 0,
 		text: null,
 		verticalAlign: "top",//top, center, bottom
-		horizontalAlign: "center",//left, center, right
+		horizontalAlign: "Left",//left, center, right
 		fontSize: 16,//in pixels
 		fontFamily: "Open Sans, arial",
 		fontWeight: "normal", //normal, bold, bolder, lighter,
 		fontColor: "#252525",
 		fontStyle: "normal", // normal, italic, oblique
-
 		borderThickness: 0,
 		borderColor: "black",
 		cornerRadius: 0,
@@ -81,10 +80,7 @@ var defaultOptions = {
 		margin: 5,
 		wrap: true,
 		maxWidth: null,
-
 		dockInsidePlotArea: false,
-
-
 		publicProperties: {
 			"options": "readWrite",
 			"bounds": "readOnly",
@@ -97,13 +93,12 @@ var defaultOptions = {
 		padding: 0,
 		text: null,
 		verticalAlign: "top",//top, center, bottom
-		horizontalAlign: "center",//left, center, right
+		horizontalAlign: "left",//left, center, right
 		fontSize: 13,//in pixels
 		fontFamily: "Open Sans, arial",
 		fontWeight: "normal", //normal, bold, bolder, lighter,
 		fontColor: "#252525",
 		fontStyle: "normal", // normal, italic, oblique
-
 		borderThickness: 0,
 		borderColor: "black",
 		cornerRadius: 0,
@@ -111,10 +106,7 @@ var defaultOptions = {
 		margin: 2,
 		wrap: true,
 		maxWidth: null,
-
 		dockInsidePlotArea: false,
-
-
 		publicProperties: {
 			"options": "readWrite",
 			"bounds": "readOnly",
@@ -142,40 +134,31 @@ var defaultOptions = {
 		name: null,
 		verticalAlign: "center",
 		horizontalAlign: "right",
-
 		fontSize: 14,//in pixels
 		fontFamily: "Open Sans, arial",
 		fontWeight: "normal", //normal, bold, bolder, lighter,
 		fontColor: "#252525",
 		fontStyle: "normal", // normal, italic, oblique
-
 		cursor: null,
 		itemmouseover: null,
 		itemmouseout: null,
 		itemmousemove: null,
 		itemclick: null,
-
 		dockInsidePlotArea: false,
 		reversed: false,
-
 		backgroundColor: isCanvasSupported ? "transparent" : null,
 		borderColor: isCanvasSupported ? "transparent" : null,
 		borderThickness: 0,
 		cornerRadius: 0,
-
 		maxWidth: null,
 		maxHeight: null,
 		markerMargin: null,
-
 		itemMaxWidth: null,
 		itemWidth: null,
 		itemWrap: true,
 		itemTextFormatter: null,
-
-
 		publicProperties: {
 			"options": "readWrite",
-
 			"bounds": "readOnly",
 			"chart": "readOnly"
 		}
@@ -187,24 +170,18 @@ var defaultOptions = {
 		animationEnabled: true,
 		content: null,
 		contentFormatter: null,
-
 		reversed: false,
-
 		backgroundColor: isCanvasSupported ? "rgba(255,255,255,.9)" : "rgb(255,255,255)",
-
 		borderColor: null,
 		borderThickness: 2, //in pixels
 		cornerRadius: 5, // in pixels
-
 		fontSize: 13, // in pixels
 		fontColor: "#252525",
 		fontFamily: "Open Sans, Arial, Georgia, serif;",
 		fontWeight: "normal", //normal, bold, bolder, lighter,
-		fontStyle: "italic",  // normal, italic, oblique
-
+		fontStyle: "normal",  // normal, italic, oblique
 		publicProperties: {
 			"options": "readWrite",
-
 			"chart": "readOnly"
 		}
 	},
@@ -221,8 +198,8 @@ var defaultOptions = {
 		logarithmBase: 10,
 
 		title: null, // string
-		titleFontColor: "black",
-		titleFontSize: 20,
+		titleFontColor: "#252525",
+		titleFontSize: 16,
 		titleFontFamily: "Open Sans, arial",
 		titleFontWeight: "normal",
 		titleFontStyle: "normal",
@@ -248,28 +225,20 @@ var defaultOptions = {
 		labelBorderThickness: 0,
 		labelCornerRadius: 0,
 		labelPlacement: "outside",
-
 		prefix: "",
 		suffix: "",
-
 		includeZero: true, //Applies only for axisY. Ignored in axisX.
-
 		tickLength: 5,
 		tickColor: "#b1b1b1",
 		tickThickness: 1,
-
 		lineColor: "#b1b1b1",
 		lineThickness: 1,
 		lineDashType: "solid",
-
 		gridColor: "#b1b1b1",
 		gridThickness: 0,
 		gridDashType: "solid",
-
 		interlacedColor: isCanvasSupported ? "transparent" : null,
-
 		valueFormatString: null,
-
 		margin: 2,
 
 		publicProperties: {
@@ -287,7 +256,6 @@ var defaultOptions = {
 		value: null,
 		startValue: null,
 		endValue: null,
-
 		color: "orange",
 		opacity: null,
 		thickness: 2,
@@ -307,9 +275,7 @@ var defaultOptions = {
 		labelFontWeight: "normal",
 		labelFontStyle: "normal",
 		labelFormatter: null,
-
 		showOnTop: false,
-
 		publicProperties: {
 			"options": "readWrite",
 
@@ -364,14 +330,11 @@ var defaultOptions = {
 
 	Crosshair: {
 		enabled: false,
-
 		snapToDataPoint: false,
-
 		color: "grey",
 		opacity: null,
 		thickness: 2,
 		lineDashType: "solid",
-
 		label: "",
 		labelWrap: true,
 		labelMaxWidth: null,
@@ -402,9 +365,7 @@ var defaultOptions = {
 		label: "",
 		bevelEnabled: false,
 		highlightEnabled: true,
-
 		cursor: "default",
-
 		indexLabel: "",
 		indexLabelPlacement: "auto",  //inside, outside, auto
 		indexLabelOrientation: "horizontal",
@@ -420,42 +381,32 @@ var defaultOptions = {
 		indexLabelMaxWidth: null,
 		indexLabelWrap: true,
 		indexLabelFormatter: null,
-
 		lineThickness: 2,
 		lineDashType: "solid",
 		connectNullData: false,
 		nullDataLineDashType: "dash",
-
 		color: null,
 		lineColor: null,
 		risingColor: "white",
 		fallingColor: "red",
 		fillOpacity: null,
-
 		startAngle: 0,
-
 		radius: null,
 		innerRadius: null,
-
 		neckHeight: null,
 		neckWidth: null,
 		reversed: false,
 		valueRepresents: null,
-
 		linkedDataSeriesIndex: null,
-
 		whiskerThickness: 2,
 		whiskerDashType: "solid",
 		whiskerColor: null,
 		whiskerLength: null,
-
 		stemThickness: 2,
 		stemColor: null,
 		stemDashType: "solid",
-
 		upperBoxColor: "white",
 		lowerBoxColor: "white",
-
 		type: "column", //line, column, bar, area, scatter stackedColumn, stackedBar, stackedArea, stackedColumn100, stackedBar100, stackedArea100, pie, doughnut
 		xValueType: "number", //number, dateTime
 		axisXType: "primary",
@@ -486,9 +437,7 @@ var defaultOptions = {
 		mousemove: null,
 		click: null,
 		toolTipContent: null,
-
 		visible: true,
-
 		publicProperties: {
 			"options": "readWrite",
 			"axisX": "readWrite",
@@ -657,7 +606,6 @@ var light1 = {
 		fontSize: fontSize1,
 		fontColor: fontColor1,
 		fontWeight: "600",
-
 		verticalAlign: "top",
 		margin: 5
 	},
@@ -666,7 +614,6 @@ var light1 = {
 		fontSize: fontSize3,
 		fontColor: fontColor1,
 		fontWeight: "normal",
-
 		verticalAlign: "top",
 		margin: 5
 	}],
@@ -675,7 +622,6 @@ var light1 = {
 		fontSize: fontSize3,
 		fontColor: fontColor1,
 		fontWeight: "normal",
-
 		verticalAlign: "top",
 		margin: 5
 	}],
@@ -685,7 +631,6 @@ var light1 = {
 		indexLabelFontSize: fontSize3,
 		indexLabelFontColor: fontColor1,
 		indexLabelFontWeight: "normal",
-
 		indexLabelLineThickness: 1
 	}],
 
@@ -694,7 +639,6 @@ var light1 = {
 		titleFontSize: fontSize2,
 		titleFontColor: fontColor1,
 		titleFontWeight: "normal",
-
 		labelFontFamily: fontStack1,
 		labelFontSize: fontSize3,
 		labelFontColor: fontColor2,
