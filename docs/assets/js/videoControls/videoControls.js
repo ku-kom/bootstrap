@@ -45,6 +45,11 @@ var initialisevideo = function () {
   fullScreen = document.getElementById('fullscreen-button');
   videoContainer = document.getElementById('videocontainer');
 
+  // Check if video is on the page:
+  if(!video) {
+    return;
+  }
+
   // Hide the browser's default controls
   video.controls = false;
 

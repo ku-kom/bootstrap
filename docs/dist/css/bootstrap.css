@@ -7045,7 +7045,7 @@ button.list-group-item-danger.active:focus {
   font-size: 14px;
 }
 .media-controls button + button {
-  margin-left: 4px;
+  margin-left: 5px;
 }
 .media-controls input[type=range] {
   display: inline-block;
