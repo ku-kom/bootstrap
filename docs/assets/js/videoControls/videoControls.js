@@ -45,8 +45,8 @@ var initialisevideo = function () {
   fullScreen = document.getElementById('fullscreen-button');
   videoContainer = document.getElementById('videocontainer');
 
-  // Check if video is on the page:
-  if(!video) {
+  // If no video element exists, break out of the function
+  if (!video) {
     return;
   }
 
