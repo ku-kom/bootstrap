@@ -7892,7 +7892,7 @@ nav {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .GridForside .gridcontent > .row:first-child .gccolumn:last-child .rightbox:first-child .panel-title {
     padding-top: 23px;
   }
@@ -7945,7 +7945,7 @@ nav {
 #gridsidebar .row .gccolumn .gcitem {
   margin-top: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #gridsidebar .row:first-child {
     margin-top: 75px;
   }
