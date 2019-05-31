@@ -7975,6 +7975,11 @@ nav {
 .right-side {
   float: right;
 }
+@media (max-width: 991px) {
+  .right-side {
+    margin-top: 23px;
+  }
+}
 @media (min-width: 992px) {
   .right-side .rightbox:first-child {
     margin-top: 75px;

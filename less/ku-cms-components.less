@@ -122,10 +122,6 @@ nav {
 
 #gridsidebar {
   .row {
-    @media (max-width: @screen-sm-max) {
-      margin-top: @grid-gutter-height;
-    }
-
     [class*="col-"] {
       margin-bottom: @grid-gutter-height;
 
@@ -187,9 +183,9 @@ nav {
 
 .right-side {
   .pull-right;
-  // @media (max-width: @screen-xs-max) {
-  //   margin-top: @ku-rightcolumn-top;
-  // }
+  @media (max-width: @screen-sm-max) {
+    margin-top: @grid-gutter-height;
+  }
   @media (min-width: @screen-md) {
     .rightbox {
       &:first-child {
