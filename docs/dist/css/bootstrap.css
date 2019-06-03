@@ -11486,6 +11486,16 @@ ul.stripped li {
 .visible-mobile {
   display: none;
 }
+@media (max-width: 767px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .visible-mobile {
+    display: block;
+  }
+}
 .img-with-caption {
   float: right;
   margin: 5px 0 10px 20px;

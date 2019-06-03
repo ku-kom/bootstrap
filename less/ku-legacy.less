@@ -111,12 +111,25 @@ ul {
   margin-bottom: 10px;
 }
 
+// Global footer
 .visible-desktop {
   display: block;
 }
 
 .visible-mobile {
   display: none;
+}
+
+@media (max-width: @screen-xs-max) {
+  .visible-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .visible-mobile {
+    display: block;
+  }
 }
 // Old image and camption style
 .img-with-caption {
