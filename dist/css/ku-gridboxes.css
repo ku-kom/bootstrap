@@ -350,7 +350,7 @@
 }
 .gridbox.size1.with-img .box1 .header {
   padding: 0;
-  margin: 10px 0 5px;
+  margin: 5px 0 5px;
   font-size: 1.3em;
   line-height: 1.3em;
   color: #4a4949;
@@ -1017,7 +1017,7 @@
 @media all and (min-width: 992px) {
   @supports (-ms-ime-align: auto) {
     .GridForside .single-column .gridbox.with-img.size1 .box2 img {
-      height: 130%;
+      height: 100%;
     }
     .GridForside .double-column .gridbox.with-img.size1 .box2 img {
       height: 138%;
