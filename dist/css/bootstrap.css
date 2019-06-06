@@ -11773,12 +11773,16 @@ body.mce-content-body .accordion-hidden {
   display: block;
   margin: 5px 0;
 }
-body.mce-content-body .accordion-hidden::after {
+body.mce-content-body .accordion-hidden::before {
   color: #757575;
   content: 'Klik her for at tilf\00f8je nyt accordion';
 }
-html:lang(en) body.mce-content-body .accordion-hidden::after {
+html:lang(en) body.mce-content-body .accordion-hidden::before {
   content: 'Click here to add a new accordion';
+}
+body.mce-content-body .accordion-hidden::after {
+  font-family: "Glyphicons Halflings";
+  content: "\e236";
 }
 body.mce-content-body .accordion-hidden + .accordion-hidden {
   display: none;

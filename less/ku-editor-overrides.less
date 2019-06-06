@@ -115,13 +115,17 @@ body {
       display: block;
       margin: 5px 0;
 
-      &::after {
+      &::before {
         content: 'Klik her for at tilf\00f8je nyt accordion';
         color: @gray-light;
 
         html:lang(en) & {
           content: 'Click here to add a new accordion';
         }
+      }
+      &::after {
+        font-family: "Glyphicons Halflings";
+        content: "\e236";
       }
       // - but hide sibsequent cursor blocks
       + .accordion-hidden {
