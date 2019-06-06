@@ -11712,12 +11712,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tbody > tr > td,
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > tfoot > tr > td,
-.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th,
-.mce-content-body table > tfoot > tr > th {
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -11763,21 +11763,24 @@ body.editor-accordions {
 .accordion-hidden {
   display: none;
 }
+.accordion-hidden + .panel-group {
+  margin-top: 4px;
+}
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-body#content.mce-content-body .accordion-hidden {
+body.mce-content-body .accordion-hidden {
   display: block;
-  margin: 0;
+  margin: 5px 0;
 }
-body#content.mce-content-body .accordion-hidden::after {
+body.mce-content-body .accordion-hidden::after {
   color: #757575;
   content: 'Klik her for at tilf\00f8je nyt accordion';
 }
-html:lang(en) body#content.mce-content-body .accordion-hidden::after {
+html:lang(en) body.mce-content-body .accordion-hidden::after {
   content: 'Click here to add a new accordion';
 }
-body#content.mce-content-body .accordion-hidden + .accordion-hidden {
+body.mce-content-body .accordion-hidden + .accordion-hidden {
   display: none;
 }
 .login-container {

@@ -21,12 +21,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -96,6 +96,9 @@ body {
 
 .accordion-hidden {
   display: none;
+  &+ .panel-group {
+    margin-top: 4px;
+  }
 }
 
 .mce-container-body {
@@ -106,26 +109,25 @@ body {
 }
 
 body {
-  &#content {
-    &.mce-content-body {
-      // Put cursor below accordions
-      .accordion-hidden {
-        display: block;
-        margin: 0;
-          &::after {
-            content: 'Klik her for at tilf\00f8je nyt accordion';
-            color: @gray-light;
-            html:lang(en) & {
-              content: 'Click here to add a new accordion';
-            }
-          }
-        // - but hide sibsequent cursor blocks
-        + .accordion-hidden {
-          display: none;
+  &.mce-content-body {
+    // Put cursor below accordions
+    .accordion-hidden {
+      display: block;
+      margin: 5px 0;
+
+      &::after {
+        content: 'Klik her for at tilf\00f8je nyt accordion';
+        color: @gray-light;
+
+        html:lang(en) & {
+          content: 'Click here to add a new accordion';
         }
       }
+      // - but hide sibsequent cursor blocks
+      + .accordion-hidden {
+        display: none;
+      }
     }
-
     // .panel-accordion {
     //   // Remove unwanted spacing in Accordion Editor dialog
     //   ~ .accordion-hidden {
