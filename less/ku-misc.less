@@ -159,59 +159,58 @@
   animation: ku-loading 0.75s infinite linear;
 }
 
-.ku-dots-loading {
-  position: relative;
-  margin-left: 10px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: @gray-444;
-  color: @gray-444;
-  animation: ku-dots 0.6s infinite linear alternate;
-  animation-delay: 0.3s;
-
-  &::after,
-  &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-  }
-
-  &::before {
-    left: -10px;
-    background-color: @gray-444;
-    color: @gray-444;
-    animation: ku-dots 0.6s infinite alternate;
-    animation-delay: 0s;
-  }
-
-  &::after {
-    left: 10px;
-    background-color: @gray-444;
-    color: @gray-444;
-    animation: ku-dots 0.6s infinite alternate;
-    animation-delay: 0.6s;
-  }
-}
-@keyframes ku-dots {
-  0% {
-    background-color: @gray-444;
-  }
-
-  100%,
-  50% {
-    background-color: @gray;
-  }
-}
+// .ku-dots-loading {
+//   position: relative;
+//   margin-left: 10px;
+//   width: 5px;
+//   height: 5px;
+//   border-radius: 50%;
+//   background-color: @gray-444;
+//   color: @gray-444;
+//   animation: ku-dots 0.6s infinite linear alternate;
+//   animation-delay: 0.3s;
+//
+//   &::after,
+//   &::before {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     top: 0;
+//     width: 5px;
+//     height: 5px;
+//     border-radius: 50%;
+//   }
+//
+//   &::before {
+//     left: -10px;
+//     background-color: @gray-444;
+//     color: @gray-444;
+//     animation: ku-dots 0.6s infinite alternate;
+//     animation-delay: 0s;
+//   }
+//
+//   &::after {
+//     left: 10px;
+//     background-color: @gray-444;
+//     color: @gray-444;
+//     animation: ku-dots 0.6s infinite alternate;
+//     animation-delay: 0.6s;
+//   }
+// }
+// @keyframes ku-dots {
+//   0% {
+//     background-color: @gray-444;
+//   }
+//
+//   100%,
+//   50% {
+//     background-color: @gray;
+//   }
+// }
 // Jump to ID
 
 .jump-to {
-  float: right;
-  font-size: 0;
+  visibility: hidden;
   display: block;
   position: relative;
   color: @gray-666;
@@ -220,11 +219,15 @@
   &::before {
     .glyphicon;
     transform: rotate(90deg);
+    position: absolute;
+    top: -3px;
+    right: 0;
     font-size: 12px;
     color: inherit;
     padding: 6px;
     border: 1px solid @gray-666;
     border-radius: 50%;
+    visibility: visible;
   }
 
   &:active,
@@ -233,7 +236,6 @@
     color: inherit;
   }
 }
-
 @keyframes ku-ken-burns {
   0% {
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);

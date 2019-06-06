@@ -52,9 +52,9 @@
   // This should have been removed in v3 with the dropping of `.nav-list`, but
   // we missed it. We don't currently support this anywhere, but in the interest
   // of maintaining backward compatibility in case you use it, it's deprecated.
-  .nav-divider {
-    .nav-divider();
-  }
+  // .nav-divider {
+  //   .nav-divider();
+  // }
   // Prevent IE8 from misplacing imgs
   //
   // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
@@ -96,7 +96,7 @@
 // -------------------------
 // Give the tabs something to sit on
 
-.nav-tabs {
+.nav-tabs, .nav-pills {
   border-bottom: 1px solid @nav-tabs-border-color;
   > li {
     float: left;
@@ -139,47 +139,54 @@
   }
 }
 
-// Pills
+// Pills - KU specific: We make them identical to nav-tabs
 // -------------------------
 
-.nav-pills {
-  margin-left: -1px; // Taking care of li's in multiple lines
-  > li {
-    float: left;
-    margin-left: 2px;
-    margin-bottom: 2px;
-    // Links rendered as pills
-    > a {
-      color: @text-color;
-      background-color: @nav-pills-bg-color;
-      border-radius: @nav-pills-border-radius;
-      border: 1px solid @gray;
-
-      &:hover {
-        background-color: @ku-nav-tabs-and-pills-hover-bg-color
-      }
-    }
-    // Active state
-    &.active > a {
-      &,
-      &:focus,
-      &:hover {
-        color: @nav-pills-active-link-hover-color;
-        background-color: @nav-pills-active-link-hover-bg;
-        cursor: default;
-      }
-    }
-  }
-}
+// .nav-pills {
+//   border-bottom: 1px solid @nav-pills-border-color;
+//   margin-left: -1px; // Taking care of li's in multiple lines
+//   > li {
+//     float: left;
+//     margin-left: 2px;
+//     margin-bottom: 2px;
+//     // Links rendered as pills
+//     > a {
+//       color: @text-color;
+//       background-color: @nav-pills-bg-color;
+//       border-radius: @nav-pills-border-radius;
+//       border: 1px solid @gray;
+//
+//       &:hover {
+//         background-color: @ku-nav-tabs-and-pills-hover-bg-color
+//       }
+//     }
+//     // Active state
+//     &.active > a {
+//       &,
+//       &:focus,
+//       &:hover {
+//         color: @nav-pills-active-link-hover-color;
+//         background-color: @nav-pills-active-link-hover-bg;
+//         cursor: default;
+//       }
+//     }
+//   }
+// }
 // Stacked pills
 
 .nav-stacked {
+  border-bottom: 0;
   > li {
     float: none;
     margin-left: 0; // no need for this gap between nav items
+    margin-bottom: 0;
 
     + li {
       margin-top: 2px;
+    }
+
+    a {
+      border-bottom: 1px solid @gray;
     }
     // Active state
     &.active > a {
@@ -231,7 +238,6 @@
 // Mixin for adding on top the shared `.nav-justified` styles for our tabs
 
 .nav-tabs-justified {
-  border-bottom: 0;
 
   > li > a {
     // Override margin from .nav-tabs
