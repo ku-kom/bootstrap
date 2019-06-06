@@ -10299,20 +10299,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
-.slick-arrow:hover {
-  color: transparent;
-  background: transparent;
-  outline: none;
-}
+.slick-arrow:focus:before,
 .slick-arrow:hover:before {
-  opacity: 1;
-}
-.slick-arrow:focus {
-  color: transparent;
-  background: transparent;
-  outline: none;
-}
-.slick-arrow:focus:before {
   opacity: 1;
 }
 .slick-arrow:before {
@@ -10328,6 +10316,25 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   .slick-arrow {
     visibility: visible;
   }
+}
+.slick-pause {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+  z-index: 2;
+  padding: 0;
+  font-size: 38px;
+  line-height: 0;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: .55;
+}
+.slick-pause:focus,
+.slick-pause:hover {
+  opacity: 1;
 }
 .slick-slider:hover .slick-prev {
   left: -3px;

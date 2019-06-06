@@ -65,7 +65,7 @@ category: slider
             <p>Image format is 1100px x 600px.</p>
             <strong>HTML</strong>
             <pre class="prettyprint lang-html">
-  &lt;div class=&quot;slideshow&quot;&gt;
+&lt;div class=&quot;slideshow&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;slide-link&quot;&gt;
         &lt;img src=&quot;https://placehold.it/1100x600?text=Slide+1&quot; alt=&quot;&quot;&gt;
         &lt;div class=&quot;caption&quot;&gt;
@@ -87,8 +87,11 @@ category: slider
             <pre class="prettyprint lang-js">
 &lt;script src=&quot;https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
-$(document).ready(function() {
+$(function() {
     var $slideshow = $('.slideshow');
+    $slideshow.on('init', function(event, slick) {
+      $slideshow.append('&lt;button class=&quot;slick-pause&quot; type=&quot;button&quot; aria-label=&quot;Play/Pause&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pause&quot;&gt;&lt;/span&gt;&lt;/button&gt;');
+    });
     $slideshow.slick({
       autoplay: true,
       autoplaySpeed: 5000,
@@ -96,6 +99,16 @@ $(document).ready(function() {
       dots: true,
       fade: true,
       arrows: true
+    });
+    $('.slick-pause').on('click', function(){
+      var $pause = $(this).find('.glyphicon');
+      if ($pause.hasClass('glyphicon-pause')){
+          $slideshow.slick('slickPause');
+          $pause.toggleClass('glyphicon-pause glyphicon-play');
+      } else {
+          $slideshow.slick('slickPlay');
+          $pause.toggleClass('glyphicon-play glyphicon-pause');
+      }
     });
   });
 &lt;/script&gt;</pre>
@@ -124,21 +137,31 @@ $(document).ready(function() {
 <script src="../../assets/js/slider/slick.min.js"></script>
 <!-- https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js -->
 <script>
-  $(document).ready(function() {
+  $(function() {
     $('head').append('<link rel="stylesheet" type="text/css" href="../../dist/css/faculties/faelles.css">');
-    var $slideshow = $('.slideshow'); //.not('.slick-initialized');
-    // $slideshow.on('init', function(event, slick) {
-    //   $slideshow.parent('.slide-wrapper').css('visibility', 'visible');
-    // });
+    var $slideshow = $('.slideshow');
+    $slideshow.on('init', function(event, slick) {
+      $slideshow.append('<button class="slick-pause" type="button" aria-label="Play/Pause"><span class="glyphicon glyphicon-pause"></span></button>');
+    });
 
     $slideshow.slick({
-      autoplay: false,
-      autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       speed: 1000,
       dots: true,
       fade: true,
-      arrows: true,
+      arrows: true
     });
 
+    $('.slick-pause').on('click', function(){
+      var $pause = $(this).find('.glyphicon');
+      if ($pause.hasClass('glyphicon-pause')){
+          $slideshow.slick('slickPause');
+          $pause.toggleClass('glyphicon-pause glyphicon-play');
+      } else {
+          $slideshow.slick('slickPlay');
+          $pause.toggleClass('glyphicon-play glyphicon-pause');
+      }
+    });
   });
 </script>
