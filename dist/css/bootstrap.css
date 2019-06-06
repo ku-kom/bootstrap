@@ -11787,7 +11787,7 @@ body#content.mce-content-body .accordion-hidden {
 }
 body#content.mce-content-body .accordion-hidden::after {
   color: #757575;
-  content: 'Klik her for at tilf�je nyt accordion';
+  content: 'Klik her for at tilf\00f8je nyt accordion';
 }
 html:lang(en) body#content.mce-content-body .accordion-hidden::after {
   content: 'Click here to add a new accordion';
