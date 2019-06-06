@@ -11785,6 +11785,13 @@ body#content.mce-content-body .accordion-hidden {
   display: block;
   margin: 0;
 }
+body#content.mce-content-body .accordion-hidden::after {
+  color: #757575;
+  content: 'Klik her for at tilf�je nyt accordion';
+}
+html:lang(en) body#content.mce-content-body .accordion-hidden::after {
+  content: 'Click here to add a new accordion';
+}
 body#content.mce-content-body .accordion-hidden + .accordion-hidden {
   display: none;
 }

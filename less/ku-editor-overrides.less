@@ -112,6 +112,13 @@ body {
       .accordion-hidden {
         display: block;
         margin: 0;
+          &::after {
+            content: 'Klik her for at tilføje nyt accordion';
+            color: @gray-light;
+            html:lang(en) & {
+              content: 'Click here to add a new accordion';
+            }
+          }
         // - but hide sibsequent cursor blocks
         + .accordion-hidden {
           display: none;
