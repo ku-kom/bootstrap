@@ -11775,13 +11775,15 @@ body.mce-content-body .accordion-hidden {
 }
 body.mce-content-body .accordion-hidden::before {
   color: #757575;
-  content: 'Klik her for at tilf\00f8je nyt accordion';
+  vertical-align: middle;
+  content: 'Placer cursoren her, og klik på ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
 }
 html:lang(en) body.mce-content-body .accordion-hidden::before {
-  content: 'Click here to add a new accordion';
+  content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
 }
 body.mce-content-body .accordion-hidden::after {
   font-family: "Glyphicons Halflings";
+  vertical-align: middle;
   content: "\e236";
 }
 body.mce-content-body .accordion-hidden + .accordion-hidden {
