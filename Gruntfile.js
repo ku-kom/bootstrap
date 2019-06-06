@@ -142,6 +142,10 @@ module.exports = function (grunt) {
         src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
       },
+      slider: {
+        src: 'docs/assets/js/slider/slick.js',
+        dest: 'docs/assets/js/slider/slick.min.js'
+      },
       custom: {
         files: [
           {
@@ -502,7 +506,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['jshint:core', 'jshint:grunt', 'jscs:core', 'jscs:grunt']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom']);
+  grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
