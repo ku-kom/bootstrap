@@ -9,6 +9,7 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
   /* IE 11 */
   #navbar {
     display: flex !important;
@@ -24,6 +25,7 @@
 }
 
 @supports (-ms-ime-align:auto) {
+
   /* IE Edge */
   .nyheder.dropdown-menu {
     width: 252px;
@@ -106,9 +108,9 @@ ol.portal_list li.portal_list_item_group {
 }
 
 .downloads_count {
-  width: 33%!important;
-  color: #666!important;
-  border-bottom: 1px solid #666!important;
+  width: 33% !important;
+  color: #666 !important;
+  border-bottom: 1px solid #666 !important;
 }
 
 li.portal_list_item_most_downloaded div.portal_content_properties {
@@ -175,7 +177,7 @@ div.rendering p.type, ol.portal_list>li {
 }
 
 .view_container ul.tabs li {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 
 .view_container ul.tabs li a {
@@ -254,9 +256,11 @@ table.properties>tbody>tr:hover {
   font-weight: 600 !important;
   color: #252525 !important;
 }
+
 .striped-list h2.title a {
   color: inherit !important;
 }
+
 .view_title .title {
   font-size: 18px !important;
   color: #252525 !important;
@@ -298,7 +302,7 @@ table.properties>tbody>tr:hover {
 }
 
 .search_tips {
-  margin-bottom: 10px!important;
+  margin-bottom: 10px !important;
 }
 
 .ku-leftmenu .nav ul ul a {
@@ -318,7 +322,8 @@ div.portal_navigator_ordering .portal_navigator_popup_content a {
 }
 
 .relations a.link {
-  word-break: break-all;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 @media all and (max-width: 480px) {
