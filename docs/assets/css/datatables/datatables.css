@@ -14,11 +14,8 @@
   display: table-header-group;
 }
 
-/* .dataTables_wrapper tbody+tfoot {
-  display: none;
-} */
-
-.dataTables_wrapper thead+tfoot {
+.dataTables_wrapper tbody+tfoot {
+  /* Hide bottom tfoot */
   display: none;
 }
 
