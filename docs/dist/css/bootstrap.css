@@ -7913,6 +7913,7 @@ nav {
   .right-side .rightbox:first-child {
     margin-top: 75px;
   }
+  .right-side > .rightbox-normal:first-child,
   .right-side > .flexiblebox:first-child,
   .right-side > .flexiblebox-as-rightbox:first-child,
   .right-side > .gcitem:first-child,
@@ -11776,7 +11777,7 @@ body.mce-content-body .accordion-hidden {
 body.mce-content-body .accordion-hidden::before {
   color: #757575;
   vertical-align: middle;
-  content: 'Placer cursoren her, og klik på ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
+  content: 'Klik her, og derefter p\00e5 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
 }
 html:lang(en) body.mce-content-body .accordion-hidden::before {
   content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
