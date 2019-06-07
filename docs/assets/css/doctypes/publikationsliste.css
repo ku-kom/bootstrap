@@ -317,6 +317,10 @@ div.portal_navigator_ordering .portal_navigator_popup_content a {
   display: none !important;
 }
 
+.relations a.link {
+  word-break: break-all;
+}
+
 @media all and (max-width: 480px) {
   .pureportal .portal_columns_body .portal_columns_column {
     width: 100% !important;
