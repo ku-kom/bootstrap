@@ -143,6 +143,8 @@
 </div>
 {% endhighlight %}
 
+Jump to open accordion:
+<a href="#" id="togglebutton">Click</a>
 <h2 id="collapse-only-one-accordion">Open only one accordion at the time</h2>
   <p>In order to make only one accordion open at a time, use the <code>data-parent=""</code> attributes on each accordion in the group:</p>
 
@@ -372,6 +374,17 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 </div>
 <script>
   $(document).ready(function() {
+    // Link to open accordion
+    $('#togglebutton').click(function(e){
+      e.preventDefault();
+      // Accordion content id:
+      $('#collapseTwo').collapse('toggle');
+      $('html, body').animate({
+         // Accordion heading ID:
+          scrollTop: $("#headingTwo").offset().top - 50
+      }, 800);
+    });
+
     // Open / close all accordions
     var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
     var $activeAccordion = true;
