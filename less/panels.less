@@ -246,6 +246,11 @@
   &+ .panel-group {
     margin-top: @line-height-computed;
   }
+  &+ p:empty {
+    &+ .panel-group {
+      margin-top: 4px;
+    }
+  }
 
   .panel {
     margin-bottom: 0;
