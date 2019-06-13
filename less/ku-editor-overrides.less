@@ -21,12 +21,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -116,20 +116,22 @@ body {
       display: block;
       margin: 5px 0;
 
-      &::before {
-        content: 'Klik her, og derefter p\00e5 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
-        color: @gray-light;
-        vertical-align: middle;
+      &:not(:focus) {
+        &::before {
+          content: 'Klik her, og derefter p\00e5 \00a0 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
+          color: @gray-light;
+          vertical-align: middle;
 
-        html:lang(en) & {
-          content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
+          html:lang(en) & {
+            content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
+          }
         }
-      }
 
-      &::after {
-        font-family: "Glyphicons Halflings";
-        content: "\e236";
-        vertical-align: middle;
+        &::after {
+          font-family: "Glyphicons Halflings";
+          content: "\e236";
+          vertical-align: middle;
+        }
       }
       // - but hide sibsequent cursor blocks
       + .accordion-hidden {

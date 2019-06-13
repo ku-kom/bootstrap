@@ -11716,12 +11716,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tbody > tr > td,
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > tfoot > tr > td,
-.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th,
-.mce-content-body table > tfoot > tr > th {
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -11777,15 +11777,15 @@ body.mce-content-body .accordion-hidden {
   display: block;
   margin: 5px 0;
 }
-body.mce-content-body .accordion-hidden::before {
+body.mce-content-body .accordion-hidden:not(:focus)::before {
   color: #757575;
   vertical-align: middle;
-  content: 'Klik her, og derefter p\00e5 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
+  content: 'Klik her, og derefter p\00e5 \00a0 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
 }
-html:lang(en) body.mce-content-body .accordion-hidden::before {
+html:lang(en) body.mce-content-body .accordion-hidden:not(:focus)::before {
   content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
 }
-body.mce-content-body .accordion-hidden::after {
+body.mce-content-body .accordion-hidden:not(:focus)::after {
   font-family: "Glyphicons Halflings";
   vertical-align: middle;
   content: "\e236";
