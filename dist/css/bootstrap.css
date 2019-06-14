@@ -10052,10 +10052,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   height: 100%;
   overflow: hidden;
 }
-.slick-slide:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
 .slick-slide img {
   display: block;
 
@@ -10100,6 +10096,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+.slick-active:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 @media all and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */

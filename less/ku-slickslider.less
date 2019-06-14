@@ -94,10 +94,6 @@
     position: relative;
   }
 
-  &:focus {
-    .tab-focus();
-  }
-
   img {
     @media (min-width: @screen-sm) {
       //min-height: 100%;
@@ -112,7 +108,7 @@
   &.slick-loading img {
     display: none;
   }
-  //display: none;
+
   &.dragging img {
     pointer-events: none;
   }
@@ -133,6 +129,12 @@
     display: block;
     height: auto;
     border: 1px solid transparent;
+  }
+}
+
+.slick-active {
+  &:focus {
+    .tab-focus();
   }
 }
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
