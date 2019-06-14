@@ -10183,7 +10183,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
-.slick-arrow:focus {
+.slick-arrow:focus-visible {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -10220,17 +10220,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline: none;
   opacity: .45;
 }
-.slick-pause:focus {
+.slick-pause:focus-visible {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .slick-pause:focus,
 .slick-pause:hover {
   opacity: 1;
-}
-.slick-slider:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 .slick-slider:hover .slick-prev {
   left: -3px;

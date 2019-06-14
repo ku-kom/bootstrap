@@ -195,7 +195,7 @@
   outline: none;
   background: transparent;
 
-  &:focus {
+  &:focus-visible {
     .tab-focus();
   }
   &:focus,
@@ -236,7 +236,7 @@
   opacity: 0.45;
   border: none;
   background: transparent;
-  &:focus {
+  &:focus-visible {
     .tab-focus();
   }
   &:focus,
@@ -246,9 +246,6 @@
 }
 
 .slick-slider {
-  &:focus {
-    .tab-focus();
-  }
   &:hover {
     .slick-prev {
       left: -3px;
