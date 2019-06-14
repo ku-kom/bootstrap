@@ -94,6 +94,10 @@
     position: relative;
   }
 
+  &:focus {
+    .tab-focus();
+  }
+
   img {
     @media (min-width: @screen-sm) {
       //min-height: 100%;
@@ -169,9 +173,6 @@
     img {
       .image-fadeOut();
     }
-    // .caption {
-    //   color: @text-color;
-    // }
   }
 }
 
