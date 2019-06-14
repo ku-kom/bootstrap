@@ -374,11 +374,6 @@
 .panel-accordion {
   border: 1px solid @panel-accordion-border;
 
-  &:focus {
-    color: @link-hover-color;
-    .tab-focus();
-  }
-
   & > .panel-heading {
     background-color: @panel-accordion-heading-bg;
     padding: 0 30px 0 0;
@@ -396,6 +391,9 @@
         display: block;
         padding: 8px 0 10px 10px;
         outline: none;
+        &:focus {
+          .tab-focus();
+        }
 
         &:before {
           .glyphicon;
