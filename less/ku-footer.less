@@ -47,7 +47,6 @@
   overflow: hidden;
 
   .footercontent {
-    //margin: 0 auto;
     padding: @grid-gutter-width 0 20px;
     position: relative;
 
@@ -188,7 +187,7 @@
   }
 }
 @media (max-width: @screen-xs-max) {
-  html:not(.non-responsive) {
+  //html:not(.non-responsive) {
     #globalfooter {
       background: @gray-light;
 
@@ -198,6 +197,7 @@
       }
 
       .padlock {
+        display: inline-block;
         &:after {
           display: none;
         }
@@ -337,5 +337,5 @@
         }
       }
     }
-  }
+  //}
 }

@@ -406,13 +406,7 @@
   height: 55px;
 }
 .gridbox.size5 .box1 .header {
-  padding-top: 6px;
-  padding-bottom: 4px;
-}
-@media all and (max-width: 480px) {
-  .gridbox.size5 .box1 .header {
-    padding: 8px 18px 8px 10px;
-  }
+  padding: 8px 18px 8px 10px;
 }
 .gridbox.size5 .box1 .text {
   display: none;

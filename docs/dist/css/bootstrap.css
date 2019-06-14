@@ -9034,50 +9034,53 @@ iframe {
   margin-top: 20px;
 }
 @media (max-width: 767px) {
-  html:not(.non-responsive) #globalfooter {
+  #globalfooter {
     background: #757575;
   }
-  html:not(.non-responsive) #globalfooter .container {
+  #globalfooter .container {
     padding-right: 0;
     padding-left: 0;
   }
-  html:not(.non-responsive) #globalfooter .padlock:after {
+  #globalfooter .padlock {
+    display: inline-block;
+  }
+  #globalfooter .padlock:after {
     display: none;
   }
-  html:not(.non-responsive) #globalfooter .footercontent {
+  #globalfooter .footercontent {
     display: block;
     width: 100%;
     padding: 0;
     margin: 0 auto;
   }
-  html:not(.non-responsive) #globalfooter .footercontent:after {
+  #globalfooter .footercontent:after {
     display: none;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn {
+  #globalfooter .footercontent .footercolumn {
     float: none;
     width: 100%;
     padding: 0;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn:first-child:before {
+  #globalfooter .footercontent .footercolumn:first-child:before {
     display: none;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading {
+  #globalfooter .footercontent .footercolumn .footer-heading {
     position: relative;
     padding: 12px 25px 12px 20px;
     margin-top: 0 !important;
     cursor: pointer;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open'] {
+  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open'] {
     padding-bottom: 8px;
     padding-left: 0;
     margin-bottom: 0;
     cursor: default;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:after,
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:before {
+  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:after,
+  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:before {
     display: none;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading[data-heading='toggle'] + ul.footerlinks {
+  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='toggle'] + ul.footerlinks {
     display: none;
     margin: 0;
     background-color: #fff;
@@ -9088,7 +9091,7 @@ iframe {
             backface-visibility: hidden;
     -webkit-perspective: 1000;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading:before {
+  #globalfooter .footercontent .footercolumn .footer-heading:before {
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -9099,7 +9102,7 @@ iframe {
     content: '';
     background: #fff;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading:after {
+  #globalfooter .footercontent .footercolumn .footer-heading:after {
     position: relative;
     position: absolute;
     top: 55%;
@@ -9126,43 +9129,43 @@ iframe {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn .footer-heading.open:after {
+  #globalfooter .footercontent .footercolumn .footer-heading.open:after {
     transition: -webkit-transform .4s ease-in-out;
     transition:         transform .4s ease-in-out;
     -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
             transform: rotate(90deg) translate3d(0, 0, 0);
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li {
+  #globalfooter .footercontent .footercolumn ul.footerlinks li {
     position: relative;
     padding: 0;
     font-size: 15px;
     font-weight: 400;
     color: #4a4949;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a {
+  #globalfooter .footercontent .footercolumn ul.footerlinks li a {
     display: block;
     padding: 10px 20px;
     color: #606060;
     border-bottom: 1px solid #ccc;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a:active,
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a:focus {
+  #globalfooter .footercontent .footercolumn ul.footerlinks li a:active,
+  #globalfooter .footercontent .footercolumn ul.footerlinks li a:focus {
     background-color: #cdcdcd;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li a:hover {
+  #globalfooter .footercontent .footercolumn ul.footerlinks li a:hover {
     color: initial;
   }
-  html:not(.non-responsive) #globalfooter .footercontent .footercolumn ul.footerlinks li:last-child a {
+  #globalfooter .footercontent .footercolumn ul.footerlinks li:last-child a {
     border-bottom: 0;
   }
-  html:not(.non-responsive) #globalfooter .social-items {
+  #globalfooter .social-items {
     width: 100%;
     padding: 0 20px 20px;
   }
-  html:not(.non-responsive) #globalfooter .social-items .social-item {
+  #globalfooter .social-items .social-item {
     margin: 7px 16px 0 0;
   }
-  html:not(.non-responsive) #globalfooter .social-items .social-item .social-icon {
+  #globalfooter .social-items .social-item .social-icon {
     width: 35px;
     height: 35px;
     font-size: 32px;
@@ -11716,12 +11719,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tfoot > tr > th,
-.mce-content-body table > thead > tr > th,
-.mce-content-body table > tbody > tr > th,
-.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > td,
 .mce-content-body table > thead > tr > td,
-.mce-content-body table > tbody > tr > td {
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tfoot > tr > th {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -11777,15 +11780,15 @@ body.mce-content-body .accordion-hidden {
   display: block;
   margin: 5px 0;
 }
-body.mce-content-body .accordion-hidden:not(:focus)::before {
+body.mce-content-body .accordion-hidden::before {
   color: #757575;
   vertical-align: middle;
   content: 'Klik her, og derefter p\00e5 \00a0 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
 }
-html:lang(en) body.mce-content-body .accordion-hidden:not(:focus)::before {
+html:lang(en) body.mce-content-body .accordion-hidden::before {
   content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
 }
-body.mce-content-body .accordion-hidden:not(:focus)::after {
+body.mce-content-body .accordion-hidden::after {
   font-family: "Glyphicons Halflings";
   vertical-align: middle;
   content: "\e236";
