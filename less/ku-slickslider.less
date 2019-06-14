@@ -43,9 +43,9 @@
   padding: 0;
   height: 100%; // KU
 
-  &:focus {
-    outline: none;
-  }
+  // &:focus {
+  //   outline: none;
+  // }
 
   &.dragging {
     cursor: pointer;
@@ -132,11 +132,11 @@
   }
 }
 
-.slick-active {
-  &:focus {
-    .tab-focus();
-  }
-}
+// .slick-active {
+//   &:focus-visible {
+//     .tab-focus();
+//   }
+// }
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
   .slick-slide img {
@@ -197,7 +197,7 @@
   cursor: pointer;
   color: transparent;
   border: none;
-  outline: none;
+  //outline: none;
   background: transparent;
 
   &:focus,
@@ -233,11 +233,10 @@
   padding: 0;
   cursor: pointer;
   color: @white-color;
-  outline: none;
+  //outline: none;
   background: transparent;
   opacity: 0.45;
   border: none;
-  outline: none;
   background: transparent;
 
   &:focus,
