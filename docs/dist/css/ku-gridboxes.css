@@ -507,9 +507,6 @@
   .gridbox.outlined.with-img {
     border: 0!important;
   }
-  .gridbox.outlined.with-img::before {
-    color: #fff;
-  }
   .gridbox.outlined.with-img.subcolor_5::before {
     color: #252525;
   }
