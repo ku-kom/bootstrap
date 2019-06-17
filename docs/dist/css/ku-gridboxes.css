@@ -834,6 +834,16 @@
   .gridbox:not(.with-img).subcolor_6 {
     color: #252525;
   }
+  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_5::before,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_5::before,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_5::before,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_5::before,
   .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_6::before,
   .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_6::before,
   .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_6::before,
