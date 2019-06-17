@@ -429,7 +429,8 @@ module.exports = function (grunt) {
         ignore: [
           'Attribute "autocomplete" not allowed on element "button" at this point.',
           'Attribute "autocomplete" is only allowed when the input type is "color", "date", "datetime", "datetime-local", "email", "hidden", "month", "number", "password", "range", "search", "tel", "text", "time", "url", or "week".',
-          'Element "img" is missing required attribute "src".'
+          'Element "img" is missing required attribute "src".',
+          'Possible misuse of “aria-label”. (If you disagree with this warning, file an issue report or send e-mail to www-validator@w3.org.)'
         ]
       },
       src: '_gh_pages/**/*.html'
