@@ -1509,7 +1509,7 @@ a:hover {
 a:focus {
   color: #165aad;
   text-decoration: none;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 a:visited {
@@ -3165,7 +3165,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 output {
@@ -3743,7 +3743,7 @@ textarea.form-tooltip {
 .btn:focus,
 .btn.active:focus,
 .btn:active:focus {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 .btn.focus,
@@ -6919,7 +6919,7 @@ button.list-group-item-danger.active:focus {
   outline: none;
 }
 .panel-accordion > .panel-heading .panel-title a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
@@ -10184,7 +10184,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
           transform: translate(0, -50%);
 }
 .slick-arrow:focus-visible {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 .slick-arrow:focus:before,
@@ -10221,7 +10221,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   opacity: .45;
 }
 .slick-pause:focus-visible {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid #106bfe;
   outline-offset: -2px;
 }
 .slick-pause:focus,
