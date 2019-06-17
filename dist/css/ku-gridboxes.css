@@ -33,13 +33,13 @@
 .gridbox.subcolor_5 {
   background: #dedede;
 }
-.gridbox.subcolor_5.text-down .header {
+.gridbox.subcolor_5 .header {
   color: #252525;
   background: rgba(222, 222, 222, .9);
 }
-.gridbox.subcolor_5 .header {
+.gridbox.subcolor_5.text-top .header {
   color: #252525;
-  background: #dedede;
+  background: rgba(222, 222, 222, .9);
 }
 .gridbox.subcolor_5.outlined {
   color: #252525;
@@ -506,9 +506,6 @@
   }
   .gridbox.outlined.with-img {
     border: 0!important;
-  }
-  .gridbox.outlined.with-img.subcolor_5::before {
-    color: #252525;
   }
   .gridbox.outlined.with-img.subcolor_6::before {
     color: #252525;

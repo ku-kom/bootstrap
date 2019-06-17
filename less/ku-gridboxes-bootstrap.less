@@ -30,16 +30,16 @@
   &.subcolor_5 {
     background: @ku-gray;
 
-    &.text-down {
+    .header {
+      background: fade(@ku-gray, 90%);
+      color: @ku-gridbox-text;
+    }
+
+    &.text-top {
       .header {
         background: fade(@ku-gray, 90%);
         color: @ku-gridbox-text;
       }
-    }
-
-    .header {
-      background: @ku-gray;
-      color: @ku-gridbox-text;
     }
 
     &.outlined {
