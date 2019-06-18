@@ -60,6 +60,11 @@
   white-space: nowrap;
 }
 
+.dataTable.nowrap th:focus, .dataTable.nowrap td:focus {
+  outline: 2px solid #106bfe;
+  outline-offset: -2px;
+}
+
 .dataTables_wrapper .dataTables_length label {
   font-weight: normal;
   text-align: left;
