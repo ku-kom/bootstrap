@@ -8216,18 +8216,15 @@ iframe {
   width: 61px;
   height: 83px;
 }
-.ku-branding .ku-branding-logo .logo-img {
-  display: block;
-  width: 100% \9;
-  max-width: 100%;
-  height: auto;
-}
 @media (max-width: 768px) {
   .ku-branding .ku-branding-logo {
     bottom: -20px;
     left: 5px;
     width: 50px;
   }
+}
+.ku-branding .ku-branding-logo > a {
+  display: block;
 }
 .ku-branding .ku-branding-text {
   position: absolute;
