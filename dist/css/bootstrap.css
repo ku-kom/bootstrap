@@ -6918,7 +6918,10 @@ button.list-group-item-danger.active:focus {
   padding: 8px 0 10px 10px;
   outline: none;
 }
-.panel-accordion > .panel-heading .panel-title a:focus {
+.panel-accordion > .panel-heading .panel-title a:focus:not(:focus-visible) {
+  outline: none;
+}
+.panel-accordion > .panel-heading .panel-title a:focus-visible {
   outline: 2px solid #106bfe;
   outline-offset: -2px;
 }

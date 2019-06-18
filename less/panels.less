@@ -391,7 +391,13 @@
         display: block;
         padding: 8px 0 10px 10px;
         outline: none;
-        &:focus {
+        &:focus:not(:focus-visible) {
+          // Hide default focus outline
+          outline: none;
+        }
+
+        &:focus-visible {
+          // Use keyboard focus
           .tab-focus();
         }
 
