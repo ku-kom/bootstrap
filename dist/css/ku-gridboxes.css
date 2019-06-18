@@ -1141,6 +1141,7 @@
   }
 }
 .boxlink {
+  position: relative;
   display: block;
   color: inherit!important;
 }
@@ -1153,6 +1154,6 @@
   -webkit-filter: brightness(90%) blur(0);
 }
 .boxlink:focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #000;
   outline-offset: -2px;
 }

@@ -43,7 +43,7 @@
 }
 
 .dataTable th:focus, .dataTable td:focus {
-  outline: 2px solid #106bfe;
+  outline: 1px dotted #000;
   outline-offset: -2px;
 }
 
