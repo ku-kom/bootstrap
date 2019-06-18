@@ -1510,7 +1510,6 @@ a:focus {
   color: #165aad;
   text-decoration: none;
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 a:visited {
   color: #3d239c;
@@ -3166,7 +3165,6 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 output {
   display: block;
@@ -3744,7 +3742,6 @@ textarea.form-tooltip {
 .btn.active:focus,
 .btn:active:focus {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 .btn.focus,
 .btn:focus,
@@ -6920,7 +6917,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading .panel-title a:focus {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
@@ -10183,7 +10179,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-arrow:focus-visible {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 .slick-arrow:focus:before,
 .slick-arrow:hover:before {
@@ -10220,7 +10215,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-pause:focus-visible {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 .slick-pause:focus,
 .slick-pause:hover {
