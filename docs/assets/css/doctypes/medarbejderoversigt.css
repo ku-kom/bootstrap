@@ -46,6 +46,10 @@
   width: 20% !important;
 }
 
+#medarbejdertable tr th input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
 #forskerprofil_kontaktoplysninger>img {
   float: right;
   margin-bottom: 10px;
