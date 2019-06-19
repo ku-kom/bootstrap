@@ -44,7 +44,6 @@
 
 .dataTable th:focus, .dataTable td:focus {
   outline: 1px dotted #000;
-  outline-offset: -2px;
 }
 
 .dataTable>tbody>tr:hover {
