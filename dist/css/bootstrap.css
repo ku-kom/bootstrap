@@ -8225,6 +8225,11 @@ iframe {
 .ku-branding .ku-branding-logo > a {
   display: block;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ku-branding .ku-branding-logo > a {
+    display: inline;
+  }
+}
 .ku-branding .ku-branding-text {
   position: absolute;
   bottom: 13px;
