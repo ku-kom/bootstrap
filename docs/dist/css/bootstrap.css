@@ -8212,6 +8212,9 @@ iframe {
   width: 61px;
   height: 83px;
 }
+.ku-branding .ku-branding-logo .img-responsive {
+  width: 100% \9;
+}
 @media (max-width: 768px) {
   .ku-branding .ku-branding-logo {
     bottom: -20px;

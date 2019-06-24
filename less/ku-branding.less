@@ -16,6 +16,10 @@
     position: relative;
     left: 3px;
     bottom: -6px;
+    .img-responsive {
+      // fix for IE 8-10 since svgs are disproportionately sized
+      width: 100% \9;
+    }
     @media (max-width: @screen-sm) {
       width: 50px;
       bottom: -20px;
