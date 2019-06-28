@@ -9089,16 +9089,13 @@ iframe {
   #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:before {
     display: none;
   }
+  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open'] {
+    margin-bottom: 5px;
+  }
   #globalfooter .footercontent .footercolumn .footer-heading[data-heading='toggle'] + ul.footerlinks {
     display: none;
     margin: 0;
     background-color: #fff;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-perspective: 1000;
   }
   #globalfooter .footercontent .footercolumn .footer-heading:before {
     position: absolute;
@@ -9115,7 +9112,7 @@ iframe {
     position: relative;
     position: absolute;
     top: 1px;
-    top: 55%;
+    top: 50%;
     right: 15px;
     left: auto;
     z-index: 2;

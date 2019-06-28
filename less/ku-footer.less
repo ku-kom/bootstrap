@@ -237,14 +237,18 @@
             }
           }
 
+          &[data-heading='open'] {
+            margin-bottom: 5px;
+          }
+
           &[data-heading='toggle'] {
             + ul.footerlinks {
               display: none;
               margin: 0;
               background-color: @white-color;
-              backface-visibility: hidden;
-              -webkit-perspective: 1000;
-              transform: translate3d(0, 0, 0);
+              // backface-visibility: hidden;
+              // -webkit-perspective: 1000;
+              // transform: translate3d(0, 0, 0);
             }
           }
 
@@ -269,7 +273,7 @@
             color: @white-color;
             font-size: 14px;
             position: absolute;
-            top: 55%;
+            top: 50%;
             right: 15px;
             left: auto;
             // transform: rotate(0deg) translate3d(0, 0, 0) translateY(-50%);
