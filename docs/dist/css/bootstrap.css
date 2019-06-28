@@ -10376,7 +10376,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     position: absolute;
     left: 0;
     z-index: 2;
-    padding: 12px 15px 10px 20px;
+    padding: 12px 20px 10px 20px;
     overflow: hidden;
     font-size: 16px;
     background: rgba(255, 255, 255, .9);
@@ -10400,7 +10400,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 45%;
     height: 100%;
     padding: 15px;
-    padding: 16px 30px 20px 20px;
+    padding: 16px 20px 20px 20px;
   }
   .slick-slide .caption.textlabel-left {
     top: 50%;
