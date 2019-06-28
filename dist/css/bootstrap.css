@@ -9114,35 +9114,27 @@ iframe {
   #globalfooter .footercontent .footercolumn .footer-heading:after {
     position: relative;
     position: absolute;
+    top: 1px;
     top: 55%;
     right: 15px;
     left: auto;
     z-index: 2;
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "ku-symbols" !important;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-variant: normal;
     line-height: 1;
     line-height: 0!important;
     color: #fff;
     text-transform: none;
-    content: "\61";
-    transition: -webkit-transform .4s ease-in-out;
-    transition:         transform .4s ease-in-out;
-    -webkit-transform: rotate(0deg) translate3d(0, 0, 0) translateY(-50%);
-            transform: rotate(0deg) translate3d(0, 0, 0) translateY(-50%);
+    content: "\002b";
 
-    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   #globalfooter .footercontent .footercolumn .footer-heading.open:after {
-    transition: -webkit-transform .4s ease-in-out;
-    transition:         transform .4s ease-in-out;
-    -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
-            transform: rotate(90deg) translate3d(0, 0, 0);
+    content: "\2212";
   }
   #globalfooter .footercontent .footercolumn ul.footerlinks li {
     position: relative;

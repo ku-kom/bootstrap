@@ -261,9 +261,9 @@
           }
 
           &:after {
-            .icon;
+            .glyphicon;
+            content: "\002b";
             line-height: 0!important;
-            content: @icon-arrow;
             text-transform: none;
             z-index: 2;
             color: @white-color;
@@ -272,14 +272,15 @@
             top: 55%;
             right: 15px;
             left: auto;
-            transform: rotate(0deg) translate3d(0, 0, 0) translateY(-50%);
-            transition: transform 0.4s ease-in-out;
+            // transform: rotate(0deg) translate3d(0, 0, 0) translateY(-50%);
+            // transition: transform 0.4s ease-in-out;
           }
 
           &.open {
             &:after {
-              transform: rotate(90deg) translate3d(0, 0, 0);
-              transition: transform 0.4s ease-in-out;
+              content: "\2212";
+              // transform: rotate(90deg) translate3d(0, 0, 0);
+              // transition: transform 0.4s ease-in-out;
             }
           }
         }
