@@ -1257,7 +1257,16 @@
     }
   }
 }
-@media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gridbox.with-img {
+    &.size1 {
+      .box2 img {
+        height: auto;
+      }
+    }
+  }
+}
+@media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .gridbox.with-img {
     &.size1 {
       .box2 img {

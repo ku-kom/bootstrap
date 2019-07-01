@@ -1134,7 +1134,12 @@
     }
   }
 }
-@media all and (min-width: 480px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gridbox.with-img.size1 .box2 img {
+    height: auto;
+  }
+}
+@media all and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .gridbox.with-img.size1 .box2 img {
     width: auto;
     min-width: 100%;
