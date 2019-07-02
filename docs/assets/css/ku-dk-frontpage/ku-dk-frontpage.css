@@ -3,6 +3,10 @@
   display: none !important;
 }
 
+video {
+  width: 100%;
+}
+
 .ku-branding-text {
   background-image: url("https://bootstrap.secure.ku.dk/img/ku_header_2_lin_dk.svg");
   background-position: left bottom 36%;
