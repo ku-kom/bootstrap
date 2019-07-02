@@ -7002,6 +7002,18 @@ button.list-group-item-danger.active:focus {
 .video-container video::-webkit-media-controls {
   display: none !important;
 }
+.control-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 15px;
+}
+.toplogo:hover .control-layer {
+  display: block;
+  background: rgba(0, 0, 0, .5);
+}
 .media-controls {
   /* For Safari 5.1 */
   z-index: 2147483647;

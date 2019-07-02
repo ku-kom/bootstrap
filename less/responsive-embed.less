@@ -43,6 +43,23 @@
     display: none !important;
   }
 }
+.control-layer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.toplogo {
+  &:hover {
+    .control-layer {
+      display: block;
+      background: rgba(@gray-base, .5);
+    }
+  }
+}
 
 .media-controls {
   margin-top: 5px;
