@@ -7063,10 +7063,12 @@ input[type=range]::-ms-fill-lower {
 .well {
   min-height: 20px;
   padding: 15px;
-  margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 2px;
+}
+.well + .well {
+  margin-bottom: 20px;
 }
 .well blockquote {
   border-color: #ddd;
@@ -11656,10 +11658,12 @@ p[align="right"]:before {
 .textbox-grey {
   min-height: 20px;
   padding: 15px;
-  margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 2px;
+}
+.textbox-grey + .textbox-grey {
+  margin-bottom: 20px;
 }
 .textbox-grey blockquote {
   border-color: #ddd;
