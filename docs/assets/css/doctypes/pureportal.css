@@ -8,3 +8,7 @@ h2.title a, h2.title a:visited {
 h2.title {
   font-weight: 600;
 }
+
+.tabs + p:first-child {
+  clear: both;
+}
