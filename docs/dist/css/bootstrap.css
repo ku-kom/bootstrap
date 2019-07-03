@@ -11553,6 +11553,9 @@ p[align="right"]:before {
   border: 0;
   opacity: .85;
 }
+.find-box form .input-group input[type="text"]:placeholder-shown {
+  text-overflow: ellipsis;
+}
 .find-box form .input-group .input-group-btn .btn {
   font-weight: 700;
   color: #901a1e;
