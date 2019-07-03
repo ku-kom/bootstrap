@@ -223,16 +223,15 @@
   font-size: 24px;
   line-height: 0;
   position: absolute;
-  bottom: 13px;
+  bottom: 8px;
   right: 1%;
-  padding: 0;
+  padding: 1px;
   cursor: pointer;
   color: @white-color;
   outline: none;
-  background: transparent;
+  background: rgba(170,170,170,.7);
   opacity: 0.45;
   border: none;
-  background: transparent;
 
   &:focus-visible {
     .tab-focus();
@@ -241,6 +240,10 @@
   &:focus,
   &:hover {
     opacity: 1;
+  }
+  .glyphicon {
+    top: -1px;
+    right: -1px;
   }
 }
 
