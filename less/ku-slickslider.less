@@ -42,11 +42,9 @@
   margin: 0;
   padding: 0;
   height: 100%; // KU
-
   // &:focus {
   //   outline: none;
   // }
-
   &.dragging {
     cursor: pointer;
     cursor: hand;
@@ -131,7 +129,6 @@
     border: 1px solid transparent;
   }
 }
-
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
   .slick-slide img {
@@ -198,9 +195,9 @@
   &:focus-visible {
     .tab-focus();
   }
+
   &:focus,
   &:hover {
-
     &:before {
       opacity: 1;
     }
@@ -236,9 +233,11 @@
   opacity: 0.45;
   border: none;
   background: transparent;
+
   &:focus-visible {
     .tab-focus();
   }
+
   &:focus,
   &:hover {
     opacity: 1;
@@ -415,6 +414,11 @@
     }
   }
 
+  [class="caption"] {
+    // Make room for pause button
+    padding-right: 39px!important;
+  }
+
   &:hover .caption {
     text-decoration: none;
   }
@@ -429,7 +433,6 @@
   @media (min-width: @screen-md) {
     .caption {
       font-size: 16px;
-      padding: 12px 20px 10px 20px;
       overflow: hidden;
       position: absolute;
       left: 0;
@@ -454,10 +457,9 @@
       &.textblock-right {
         right: 0;
         left: auto;
-        padding: 15px;
+        padding: 16px 39px 20px 20px;
         width: 45%;
         height: 100%;
-        padding: 16px 20px 20px 20px;
       }
 
       &.textlabel-left {
