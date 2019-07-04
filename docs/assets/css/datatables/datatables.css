@@ -29,6 +29,10 @@
     width: 100% !important;
     padding: 5px 6px;
   }
+
+  .dataTables_wrapper tfoot th input:placeholder-shown {
+    text-overflow: ellipsis;
+  }
 }
 
 .dataTable {
