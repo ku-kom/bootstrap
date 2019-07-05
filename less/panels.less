@@ -379,6 +379,9 @@
     padding: 0 30px 0 0;
     position: relative;
     border: 0;
+    &:focus-within {
+      .tab-focus();
+    }
 
     .panel-title {
       font-size: 16px;
@@ -390,18 +393,6 @@
       a {
         display: block;
         padding: 8px 0 10px 10px;
-        outline: none;
-        &:focus {
-          .tab-focus();
-        }
-        // &:focus:not(:focus-visible) {
-        //   outline: none;
-        // }
-
-        // &:focus-visible {
-        //   // Use keyboard focus
-        //   .tab-focus();
-        // }
 
         &:before {
           .glyphicon;
