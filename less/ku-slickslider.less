@@ -335,7 +335,9 @@
 
   .slick-active {
     background: rgba(@gray-base, 0.5);
-    outline: none;
+    &:focus-within {
+      .tab-focus();
+    }
   }
 }
 // Captions - KU specific

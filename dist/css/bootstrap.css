@@ -6917,6 +6917,9 @@ button.list-group-item-danger.active:focus {
   display: block;
   padding: 8px 0 10px 10px;
 }
+.panel-accordion > .panel-heading .panel-title a:focus {
+  outline: none;
+}
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
   position: absolute;
@@ -10306,7 +10309,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-dots .slick-active {
   background: rgba(0, 0, 0, .5);
-  outline: none;
+}
+.slick-dots .slick-active:focus-within {
+  outline: 1px dotted #000;
 }
 .slick-slide .caption {
   display: none;
