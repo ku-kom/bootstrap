@@ -31,9 +31,9 @@ a.pxs_application_link, .pxs_search_button {
   cursor: pointer;
   background-image: none;
   white-space: nowrap;
-  padding: 6px 10px !important;
+  padding: 6px 10px;
   font-size: 13px;
-  line-height: 1.5 !important;
+  line-height: 1.5;
   border-radius: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
