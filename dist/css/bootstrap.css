@@ -7070,7 +7070,7 @@ input[type=range]::-ms-fill-lower {
   border-radius: 2px;
 }
 .well + .well {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .well blockquote {
   border-color: #ddd;
@@ -11675,7 +11675,7 @@ p[align="right"]:before {
   border-radius: 2px;
 }
 .textbox-grey + .textbox-grey {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .textbox-grey blockquote {
   border-color: #ddd;
