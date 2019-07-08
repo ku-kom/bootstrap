@@ -190,9 +190,16 @@ var replayMedia = function() {
 };
 
 // Jumps backwards or forwards any number of seconds
-var jumpSecs = function(value) {
+var jumpSecs = function(dir, sec) {
   // run as jumpSecs('+', 10)
-  var seekToTime = video.currentTime + value;
+  var seekToTime;
+  if (dir == '-') {
+    // Backwards
+    seekToTime = video.currentTime - sec;
+  } else {
+    // Else forwards
+    seekToTime = video.currentTime + sec;
+  }
   if (seekToTime < 0 || seekToTime > video.duration) {
     return;
   }
