@@ -32,7 +32,7 @@ var video,
   resetPlayer,
   upperCaseFirst;
 
-var initialisevideo = function () {
+var initialisevideo = function() {
   // Get player id
   video = document.getElementById('video');
 
@@ -57,17 +57,17 @@ var initialisevideo = function () {
   video.addEventListener('timeupdate', updateProgressBar, false);
 
   // Add a listener for the play and pause events so the buttons state can be updated
-  video.addEventListener('play', function () {
+  video.addEventListener('play', function() {
     // Change the button to be a pause button
     changeButtonType(playPauseBtn, 'pause');
   }, false);
 
-  video.addEventListener('pause', function () {
+  video.addEventListener('pause', function() {
     // If paused, change the button to be a play button
     changeButtonType(playPauseBtn, 'play');
   }, false);
 
-  video.addEventListener('ended', function () {
+  video.addEventListener('ended', function() {
     this.pause();
   }, false);
 
@@ -134,7 +134,7 @@ var initialisevideo = function () {
   // });
 };
 
-var togglePlayPause = function () {
+var togglePlayPause = function() {
   // If the video is currently paused or has ended
   if (video.paused || video.ended) {
     // Change the button to be a pause button
@@ -152,13 +152,13 @@ var togglePlayPause = function () {
 };
 
 // Stop the current media from playing, and return it to the start position
-var stopPlayer = function () {
+var stopPlayer = function() {
   video.pause();
   video.currentTime = 0;
 };
 
 // Changes the volume on the media player using a slider
-var setVolume = function (v) {
+var setVolume = function(v) {
   video.muted = false;
   var vol = v / 100;
   video.volume = vol;
@@ -167,7 +167,7 @@ var setVolume = function (v) {
 };
 
 // Toggles the media player's mute and unmute status
-var toggleMute = function () {
+var toggleMute = function() {
   if (video.muted) {
     // Change the cutton to be a mute button
     changeButtonType(muteBtn, 'volume-up');
@@ -184,13 +184,23 @@ var toggleMute = function () {
 };
 
 // Replays the media currently loaded in the player
-var replayMedia = function () {
+var replayMedia = function() {
   resetPlayer();
   video.play();
 };
 
+// Jumps backwards or forwards any number of seconds
+var jumpSecs = function(dir, secs) {
+  // run as jumpSecs('+', 10)
+  if (dir == '+') {
+    video.currentTime(video.currentTime() + secs);
+  } else {
+    video.currentTime(video.currentTime() - secs);
+  }
+};
+
 // Update the progress bar
-var updateProgressBar = function () {
+var updateProgressBar = function() {
   // Work out how much of the media has played via the duration and currentTime parameters
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
@@ -203,14 +213,14 @@ var updateProgressBar = function () {
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
-var changeButtonType = function (btn, value) {
+var changeButtonType = function(btn, value) {
   btn.title = upperCaseFirst(value);
   btn.className = value;
   btn.setAttribute("aria-label", upperCaseFirst(value));
   // All available glyphicons
   var span = btn.querySelector('.glyphicon');
   // remove glyphicons before adding new
-  Array.prototype.slice.call(span.classList).forEach(function (className) {
+  Array.prototype.slice.call(span.classList).forEach(function(className) {
     if (className.startsWith('glyphicon-')) {
       span.classList.remove(className);
     }
@@ -219,7 +229,7 @@ var changeButtonType = function (btn, value) {
 };
 
 // Loads a video item into the media player
-var loadVideo = function () {
+var loadVideo = function() {
   for (var i = 0; i < arguments.length; i++) {
     var file = arguments[i].split('.');
     var ext = file[file.length - 1];
@@ -235,7 +245,7 @@ var loadVideo = function () {
 };
 
 // Checks if the browser can play this particular type of file or not
-var canPlayVideo = function (ext) {
+var canPlayVideo = function(ext) {
   var ableToPlay = video.canPlayType('video/' + ext);
   if (ableToPlay == '') {
     //Eempty string: The specified media type definitely cannot be played.
@@ -246,7 +256,7 @@ var canPlayVideo = function (ext) {
 };
 
 // Resets the media player
-var resetPlayer = function () {
+var resetPlayer = function() {
   // Reset the progress bar to 0
   progressBar.value = 0;
   // Move the media back to the start
@@ -256,7 +266,7 @@ var resetPlayer = function () {
 };
 
 // Fullscreen for various browsers
-var handleFullscreen = function () {
+var handleFullscreen = function() {
   if (video.mozRequestFullScreen) {
     video.mozRequestFullScreen();
   } else if (video.webkitEnterFullScreen) {
@@ -269,16 +279,16 @@ var handleFullscreen = function () {
 };
 
 // Make attributes values first letter uppercase because it looks nice
-var upperCaseFirst = function (str) {
+var upperCaseFirst = function(str) {
   return str.charAt(0).toUpperCase() + str.substring(1);
 };
 
 // Initialize the player when the DOM is ready
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   'use strict';
   // Polyfill for IE11:
   if (!String.prototype.startsWith) {
-    String.prototype.startsWith = function (searchString, position) {
+    String.prototype.startsWith = function(searchString, position) {
       position = position || 0;
       return this.substr(position, searchString.length) === searchString;
     };
