@@ -227,7 +227,7 @@ var updateProgressBar = function() {
   progressBar.title = percentage + '% af ' + getDuration();
   var track = progressBar.querySelector('.progress-track');
   track.innerHTML = percentage + '% af ' + getDuration();
-  if (percentage > 40) {
+  if (percentage > 45) {
     track.style.color = "#fff";
   }
   var sronly = progressBar.querySelector('.sr-only');
