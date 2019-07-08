@@ -190,13 +190,13 @@ var replayMedia = function() {
 };
 
 // Jumps backwards or forwards any number of seconds
-var jumpSecs = function(dir, secs) {
+var jumpSecs = function(value) {
   // run as jumpSecs('+', 10)
-  if (dir == '+') {
-    video.currentTime(video.currentTime() + secs);
-  } else {
-    video.currentTime(video.currentTime() - secs);
+  var seekToTime = video.currentTime + value;
+  if (seekToTime < 0 || seekToTime > video.duration) {
+    return;
   }
+  video.currentTime = seekToTime;
 };
 
 // Update the progress bar
