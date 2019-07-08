@@ -190,12 +190,12 @@ var replayMedia = function() {
   video.play();
 };
 
-// Parse and return total video duration
+// Parse and format total video duration
 var getDuration = function(duration) {
   if (video.duration) {
     var minutes = parseInt(video.duration / 60, 10);
     var seconds = Math.round(video.duration % 60);
-    return minutes + " : " + seconds;
+    return minutes + ':' + seconds + ' min.';
   }
 }
 
@@ -222,11 +222,11 @@ var updateProgressBar = function() {
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
   progressBar.value = percentage;
-  progressBar.style.width = percentage + '%';
+  progressBar.style.width = percentage + '%' + getDuration();
   progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '%';
   var sronly = progressBar.querySelector('.sr-only');
-  sronly.innerHTML = percentage + "% / " + getDuration();
+  sronly.innerHTML = percentage + '% / ' + getDuration();
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
