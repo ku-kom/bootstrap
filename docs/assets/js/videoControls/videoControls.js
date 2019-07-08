@@ -191,7 +191,7 @@ var replayMedia = function() {
 };
 
 // Parse and return total video duration
-var duration = function(duration) {
+var getDuration = function(duration) {
   if (video.duration) {
     var minutes = parseInt(video.duration / 60, 10);
     var seconds = Math.round(video.duration % 60);
@@ -226,7 +226,7 @@ var updateProgressBar = function() {
   progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '%';
   var sronly = progressBar.querySelector('.sr-only');
-  sronly.innerHTML = percentage + "% afspillet";
+  sronly.innerHTML = percentage + "% / " + getDuration;
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
