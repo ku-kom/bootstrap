@@ -225,7 +225,8 @@ var updateProgressBar = function() {
   progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '% af ' + getDuration();
-  progressBar.innerHTML = percentage + '% af ' + getDuration();
+  var track = progressBar.querySelector('progress-track');
+  track.innerHTML = percentage + '% af ' + getDuration();
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
     sronly.innerHTML = percentage + '% af ' + getDuration();
