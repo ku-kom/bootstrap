@@ -226,7 +226,7 @@ var updateProgressBar = function() {
   progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '%';
   var sronly = progressBar.querySelector('.sr-only');
-  sronly.innerHTML = percentage + "% / " + getDuration;
+  sronly.innerHTML = percentage + "% / " + getDuration();
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
