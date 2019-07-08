@@ -7,6 +7,7 @@
       </div>
       <button type="button" id="play-pause-button" class="play" title="Start" aria-label="Start" onclick="togglePlayPause();"><span class="glyphicon glyphicon-play" aria-hidden="true"></button>
       <button type="button" id="stop-button" class="stop" title="Stop" aria-label="Stop" onclick="stopPlayer();"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
+      <button type="button" id="" class="play" title="Start" aria-label="Tilbage" onclick="jumpSecs('-', 10);"><span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span></button>
       <button type="button" id="replay-button" class="replay" title="Replay" aria-label="Replay" onclick="replayMedia();"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
       <input id="vol-control" type="range" min="0" max="100" step="1" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0.5" oninput="setVolume(this.value)" onchange="setVolume(this.value)" title="Volume: 50%" class="volume" aria-label="Volume">
       <button type="button" id="mute-button" class="mute" title="Unmute" aria-label="Slå lyd til/fra" onclick="toggleMute();"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span></button>
@@ -188,6 +189,15 @@ var replayMedia = function() {
   resetPlayer();
   video.play();
 };
+
+// Parse and return total video duration
+var duration = function(duration) {
+  if (video.duration) {
+    var minutes = parseInt(video.duration / 60, 10);
+    var seconds = Math.round(video.duration % 60);
+    return minutes + " : " + seconds;
+  }
+}
 
 // Jumps backwards or forwards any number of seconds
 var jumpSecs = function(dir, sec) {
