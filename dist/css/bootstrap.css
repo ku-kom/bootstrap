@@ -6378,6 +6378,15 @@ figcaption {
 .progress-striped .progress-bar-danger {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
+.progress {
+  position: relative;
+}
+.progress-track {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color: #252525;
+}
 .media {
   margin-top: 15px;
 }
