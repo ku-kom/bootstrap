@@ -6,7 +6,7 @@ slug: examples
 ---
 <main tabindex="0" id="content">
   {% include ku-branding.html %}
-   <div class="container main-area" id="main-area">
+  <div class="container main-area" id="main-area">
     <div class="row">
       <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
         {% include ku-leftmenu.html %}
@@ -18,170 +18,151 @@ slug: examples
             <form id="validate">
               <div class="remember_mandatory">Felter markeret med * skal udfyldes.</div>
               <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-                    <input id="name" class="form-control" type="text" placeholder="Name - no description" name="name" />
+                <label class="control-label" for="name">Name</label>
+                <input id="name" class="form-control" type="text" placeholder="Name - no description" name="name" />
               </div>
               <div class="form-group">
-                  <label class="control-label" for="email">E-mail <span class="mandatory">*</span></label>
-                  <div class="input-group">
-                    <input id="email" class="form-control" type="email" placeholder="E-mail" name="email" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="E-mail">?</span>
-                </div>
+                <label class="control-label" for="email">E-mail <span class="mandatory">*</span></label>
+                <span id="email-help" class="help-block">Enter e-mail address</span>
+                <input id="email" class="form-control" type="email" placeholder="E-mail" name="email" aria-describedby="email-help" />
               </div>
               <div class="form-group">
-                  <label class="control-label" for="password">Password <span class="mandatory">*</span></label>
-                  <div class="input-group">
-                    <input id="password" class="form-control" type="password" placeholder="Password" name="password" /><span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Password - min. 8 anslag">?</span>
-                  </div>
+                <label class="control-label" for="password">Password <span class="mandatory">*</span></label>
+                <span id="password-help" class="help-block">Enter password</span>
+                <input id="password" class="form-control" type="password" placeholder="Password" name="password" aria-describedby="password-help" />
               </div>
               <div class="form-group">
-                  <label class="control-label" for="confirm-password">Confirm password <span class="mandatory">*</span></label>
-                  <div class="input-group">
-                    <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" name="confirm-password" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Gentag password">?</span>
-                  </div>
+                <label class="control-label" for="confirm-password">Confirm password <span class="mandatory">*</span></label>
+                <span id="confirm-password-help" class="help-block">Enter password again</span>
+                <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" name="confirm-password" aria-describedby="confirm-password-help" />
               </div>
               <div class="form-group">
-                  <label class="control-label" for="username">Username <span class="mandatory">*</span></label>
-                  <div class="input-group">
-                    <input id="username" class="form-control" type="text" placeholder="Username" name="username" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg username">?</span>
-                  </div>
+                <label class="control-label" for="username">Username <span class="mandatory">*</span></label>
+                <span id="username-help" class="help-block">Enter user name</span>
+                <input id="username" class="form-control" type="text" placeholder="Username" name="username" aria-describedby="username-help" />
               </div>
               <div class="form-group has-error">
-                  <label class="control-label" for="error">With error</label>
-                  <div class="input-group">
-                    <input id="error" class="form-control" type="text" placeholder="Error" name="error" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Input med fejlbesked">?</span>
-                  </div>
-                  <span class="help-block">Error text that may extend beyond one line.</span>
+                <label class="control-label" for="error">With error</label>
+                <span id="error-help" class="help-block">Input med fejlbesked</span>
+                <input id="error" class="form-control" type="text" placeholder="Error" name="error" aria-describedby="error-help" />
               </div>
               <div class="form-group">
-                  <label class="control-label" for="error">Check</label>
-                  <div class="checkbox">
-                    <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vælg flere muligheder">?</span>
+                <label class="control-label" for="error">Check</label>
+                <span id="inlineCheckbox1-help" class="help-block">Check </span>
+                <div class="checkbox">
                   <label class="checkbox">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                    <input type="checkbox" id="inlineCheckbox1" value="option1" aria-describedby="inlineCheckbox1-help"> 1
                   </label>
-                      <label class="checkbox">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                  <label class="checkbox">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2" aria-describedby="inlineCheckbox1-help"> 2
                   </label>
-                    <label class="checkbox">
-                      <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                </label>
-                </div>
-            </div>
-              <div class="form-group">
-                  <label class="control-label" for="error">Radio</label>
-                    <div class="radio">
-                      <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vælg en mulighed">?</span>
-                      <label class="radio">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                      </label>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="error">Select</label>
-                  <div class="input-group">
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2 - længere indhold</option>
-                      <option>3 - længere indhold længere indhold</option>
-                      <option>4 - længere indhold længere indhold længere indhold længere indhold</option>
-                      <option>5</option>
-                    </select>
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg i dropdown">?</span>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="error">Select multiple</label>
-                  <div class="input-group">
-                    <select multiple class="form-control">
-                      <option>1</option>
-                      <option>2 - længere indhold</option>
-                      <option>3 - længere indhold længere indhold</option>
-                      <option>4 - længere indhold længere indhold længere indhold længere indhold</option>
-                      <option>5</option>
-                    </select>
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg i dropdown">?</span>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="upload">File upload</label>
-                  <div class="input-fileupload">
-                    <span class="sr-only sr-only-focusable">Gennemse</span> <input id="upload" type="file">
-                    <span class="form-tooltip" data-toggle="tooltip" data-placement="top" title="Vedhæft fil">?</span>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="birthdate">Birthdate</label>
-                  <div class="input-group">
-                    <input id="birthdate" class="form-control" type="text" data-provide="datepicker" name="birthdate" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Vælg dato">?</span>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="zip">ZIP Code</label>
-                  <div class="input-group">
-                    <input id="zip" class="form-control" type="text" placeholder="12345" name="zip" />
-                    <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Angiv postnummer">?</span>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label" for="message">Message</label>
-                  <div class="input-group">
-                    <textarea class="form-control" rows="8" placeholder="Message" name="message" id="message"></textarea><span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Besked">?</span>
+                  <label class="checkbox">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3" aria-describedby="inlineCheckbox1-help"> 3
+                  </label>
                 </div>
               </div>
               <div class="form-group">
-                  <button type="submit" class="btn btn-default">Submit</button>
-                  <button type="reset" class="btn btn-default">Ryd</button>
+                <label class="control-label" for="error">Radio</label>
+                <span id="inlineRadio1-help" class="help-block">Radio </span>
+                <div class="radio">
+                  <label class="radio">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" aria-describedby="inlineRadio1-help"> 1
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" aria-describedby="inlineRadio1-help"> 2
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" aria-describedby="inlineRadio1-help"> 3
+                  </label>
                 </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="error">Select</label>
+                <span id="selects-help" class="help-block">Select options </span>
+                <select class="form-control" id="selects" aria-describedby="selects-help">
+                  <option>1</option>
+                  <option>2 - længere indhold</option>
+                  <option>3 - længere indhold længere indhold</option>
+                  <option>4 - længere indhold længere indhold længere indhold længere indhold</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="error">Select multiple</label>
+                <span id="selectsMultiple-help" class="help-block">Select multiple options </span>
+                <select multiple class="form-control" id="selectsMultiple" aria-describedby="selectsMultiple-help">
+                  <option>1</option>
+                  <option>2 - længere indhold</option>
+                  <option>3 - længere indhold længere indhold</option>
+                  <option>4 - længere indhold længere indhold længere indhold længere indhold</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="upload">File upload</label>
+                <span id="upload-help" class="help-block">Select and upload file... </span>
+                <div class="input-fileupload">
+                  <span class="sr-only sr-only-focusable">Gennemse</span> <input id="upload" type="file" aria-describedby="upload-help">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="birthdate">Birthdate</label>
+                <span id="birthdate-help" class="help-block">Enter birthdate</span>
+                <input id="birthdate" class="form-control" type="text" data-provide="datepicker" name="birthdate" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="zip">ZIP Code</label>
+                <span id="zip-help" class="help-block">Enter zip code </span>
+                <input id="zip" class="form-control" type="text" placeholder="12345" name="zip" aria-describedby="zip-help" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="message">Message</label>
+                <span id="message-help" class="help-block">Enter message </span>
+                <textarea class="form-control" rows="8" placeholder="Message" name="message" id="message" aria-describedby="message-help"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-default">Ryd</button>
+              </div>
             </form>
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-8 col-md-3 right-side">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="panel panel-default">
-                <div class="datepicker"></div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="datepicker"></div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Right side</h2>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Right side</h2>
-                </div>
-                <div class="panel-body">
-                  <p>This is a right side panel element. It can contain almost anything.</p>
-                </div>
+              <div class="panel-body">
+                <p>This is a right side panel element. It can contain almost anything.</p>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Right side</h2>
-                </div>
-                <div class="panel-body">
-                  <p>This is a right side panel element. It can contain almost anything.</p>
-                </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Right side</h2>
               </div>
-              <div class="panel panel-default with-img">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Right side box with img</h2>
-                </div>
-                <div class="panel-body">
-                  <img src="https://placehold.it/768x200?text=Img+768x289" alt="">
-                </div>
+              <div class="panel-body">
+                <p>This is a right side panel element. It can contain almost anything.</p>
+              </div>
+            </div>
+            <div class="panel panel-default with-img">
+              <div class="panel-heading">
+                <h2 class="panel-title">Right side box with img</h2>
+              </div>
+              <div class="panel-body">
+                <img src="https://placehold.it/768x200?text=Img+768x289" alt="">
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
   {% include local-footer.html %}
 </main>
 <!-- Datepicker: https://bootstrap-datepicker.readthedocs.io/en/stable/index.html -->
@@ -189,8 +170,6 @@ slug: examples
   $(function() {
     // Multiple select
     multipleSelectBox();
-    // Form tooltips
-    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
     $.fn.datepicker.dates['da'] = {
       days: ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
       daysShort: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
@@ -209,7 +188,7 @@ slug: examples
             case 4: // the fourth is an active date
               return {
                 tooltip: 'Example tooltip',
-                classes: 'active'
+                  classes: 'active'
               };
             case 12: // the twelweth is an active date
               return {
@@ -218,24 +197,25 @@ slug: examples
           }
       }
     });
+
     function multipleSelectBox() {
-    // Multiple select language switcher
-    var multipleSelectLang = function() {
+      // Multiple select language switcher
+      var multipleSelectLang = function() {
         var da = {
-            placeholder: 'V&aelig;lg flere...',
-            selectAllText: 'V&aelig;lg alle',
-            allSelected: 'Alle valgt',
-            countSelected: '# af % valgt',
-            width: '100%'
+          placeholder: 'V&aelig;lg flere...',
+          selectAllText: 'V&aelig;lg alle',
+          allSelected: 'Alle valgt',
+          countSelected: '# af % valgt',
+          width: '100%'
         };
         var en = {
-            placeholder: 'Select multiple...',
-            width: '100%'
+          placeholder: 'Select multiple...',
+          width: '100%'
         };
         return ($('html').attr('lang') == 'da') ? da : en;
-    };
-     // Run Multiple select
-     $('select[multiple]').multipleSelect(multipleSelectLang());
+      };
+      // Run Multiple select
+      $('select[multiple]').multipleSelect(multipleSelectLang());
     }
     $('.datepicker table tbody tr td').wrapInner("<span/>");
   });
