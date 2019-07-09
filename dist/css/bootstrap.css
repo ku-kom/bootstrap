@@ -10620,7 +10620,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #999;
 }
 .datepicker .day.occup_monthday span {
-  background: #88a6a6;
+  background: #577d7f;
 }
 .datepicker .day.occup_monthday span a {
   display: block;
@@ -10631,7 +10631,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   text-decoration: none;
 }
 .datepicker .day.occup_monthday:hover span {
-  background: #7f9a9a;
+  background: #4d6e70;
 }
 .datepicker .old:hover span {
   cursor: default;
@@ -11055,13 +11055,13 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 .datepicker .active span,
 .datepicker .active.highlighted span {
   color: #fff;
-  background-color: #88a6a6;
+  background-color: #577d7f;
 }
 .datepicker .active span:hover,
 .datepicker .active.highlighted span:hover {
   color: #fff;
   cursor: pointer;
-  background-color: #7f9a9a;
+  background-color: #4d6e70;
 }
 .datepicker .active span a,
 .datepicker .active.highlighted span a {
@@ -11094,7 +11094,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 .datepicker span.active.disabled:hover,
 .datepicker span.active:hover {
   color: #fff;
-  background-color: #88a6a6;
+  background-color: #577d7f;
 }
 .datepicker span.new,
 .datepicker span.old {
