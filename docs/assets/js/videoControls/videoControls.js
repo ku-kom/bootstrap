@@ -227,8 +227,10 @@ var updateProgressBar = function() {
   progressBar.title = percentage + '% af ' + getDuration();
   var track = progressBar.querySelector('.progress-track');
   track.innerHTML = percentage + '% af ' + getDuration();
-  if (percentage > 45) {
+  if (percentage > 50) {
     track.style.color = "#fff";
+  } else {
+    track.style.color = "#252525";
   }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
