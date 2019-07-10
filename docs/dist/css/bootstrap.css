@@ -5658,6 +5658,9 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a:hover {
   text-decoration: underline;
 }
+.navbar-inverse .navbar-nav > li > a:focus {
+  outline: 1px dotted #106bfe;
+}
 .navbar-inverse .navbar-nav > li > a.dansk::after,
 .navbar-inverse .navbar-nav > li > a.english::after {
   position: absolute;
@@ -8977,8 +8980,11 @@ iframe {
 #globalfooter .footercontent > .footercolumn .footer-heading a:visited {
   color: #fff;
 }
+#globalfooter .footercontent > .footercolumn .footer-heading a:focus {
+  color: #e2e2e2;
+  outline: 1px dotted #106bfe;
+}
 #globalfooter .footercontent > .footercolumn .footer-heading a:active,
-#globalfooter .footercontent > .footercolumn .footer-heading a:focus,
 #globalfooter .footercontent > .footercolumn .footer-heading a:hover {
   color: #e2e2e2;
 }
