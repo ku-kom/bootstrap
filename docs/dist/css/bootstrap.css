@@ -8039,6 +8039,8 @@ nav {
     display: block;
     width: 0;
     height: 0;
+    color: #fff;
+    background-color: #252525;
   }
   .jump li a:active,
   .jumpbox li a:active,
@@ -8049,16 +8051,8 @@ nav {
     z-index: 10;
     width: auto;
     height: auto;
-    color: #165aad;
-  }
-  .jump li a.btn-gray,
-  .jumpbox li a.btn-gray {
     color: #fff;
-    background-color: #252525;
-  }
-  .jump li a.btn-gray:focus,
-  .jumpbox li a.btn-gray:focus {
-    color: #fff !important;
+    outline: 1px solid #106bfe;
   }
 }
 @media (max-width: 768px) {

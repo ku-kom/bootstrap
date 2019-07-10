@@ -56,6 +56,8 @@
       display: block;
 
       a {
+        background-color: @gray-dark;
+        color: @white-color;
         display: block;
         position: absolute;
         top: -1000px;
@@ -65,21 +67,13 @@
 
         &:active,
         &:focus {
-          color: @link-hover-color;
+          color: @white-color;
           top: 0;
           left: 0;
           z-index: 10;
           height: auto;
           width: auto;
-        }
-
-        &.btn-gray {
-          background-color: @gray-dark;
-          color: @white-color;
-
-          &:focus {
-            color: @white-color!important;
-          }
+          .tab-focus-v2();
         }
       }
     }
