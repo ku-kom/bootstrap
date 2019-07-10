@@ -9060,9 +9060,12 @@ iframe {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.social-items .social-item .social-icon:active,
+.social-items .social-item .social-icon:active {
+  background-color: #757575;
+}
 .social-items .social-item .social-icon:focus {
   background-color: #757575;
+  outline: 1px solid #106bfe;
 }
 .social-items .footer-heading {
   margin-top: 20px;

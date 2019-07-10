@@ -175,9 +175,13 @@
         .icon;
       }
 
-      &:active,
+      &:active {
+        background-color: @ku-footer-icon-bg;
+      }
+
       &:focus {
         background-color: @ku-footer-icon-bg;
+        .tab-focus-v2();
       }
     }
   }
