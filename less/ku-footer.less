@@ -93,14 +93,10 @@
           color: @white-color;
         }
 
-        a {
-          &:focus {
-            outline: 1px dotted @outline-color2;
-            color: #e2e2e2;
-          }
-          &:active, &:hover {
-            color: #e2e2e2;
-          }
+        a:active,
+        a:focus,
+        a:hover {
+          color: #e2e2e2;
         }
 
         &:not(:first-child) {
@@ -133,6 +129,11 @@
 
         &:hover {
           text-decoration: none;
+          color: #e2e2e2;
+        }
+
+        &:focus {
+          outline: 1px dotted @outline-color2;
           color: #e2e2e2;
         }
       }

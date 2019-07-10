@@ -175,8 +175,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-header,
-  > .navbar-collapse {
+  > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -307,8 +307,8 @@
       border: 0;
       box-shadow: none;
 
-      > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
@@ -644,6 +644,12 @@
 // Inverse navbar
 
 .navbar-inverse {
+  // KU specific:
+  a {
+    &:focus {
+      outline: 1px dotted @outline-color2;
+    }
+  }
   background-color: @navbar-inverse-bg;
   height: @navbar-height;
   @media (min-width: @screen-sm) {
@@ -675,9 +681,6 @@
         //color: @navbar-inverse-link-hover-color;
         text-decoration: @link-hover-decoration;
         //background-color: @navbar-inverse-link-hover-bg;
-      }
-      &:focus {
-        outline: 1px dotted @outline-color2;
       }
       // KU language switcher icons
       &.dansk,

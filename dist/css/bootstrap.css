@@ -5219,18 +5219,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
 .container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
+.container-fluid > .navbar-collapse,
+.container > .navbar-header,
+.container-fluid > .navbar-header {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
   .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
+  .container-fluid > .navbar-collapse,
+  .container > .navbar-header,
+  .container-fluid > .navbar-header {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5331,8 +5331,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5635,6 +5635,9 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   background-color: #757575;
   border-color: #ccc;
 }
+.navbar-inverse a:focus {
+  outline: 1px dotted #106bfe;
+}
 @media (min-width: 768px) {
   .navbar-inverse {
     height: 28px;
@@ -5657,9 +5660,6 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
   text-decoration: underline;
-}
-.navbar-inverse .navbar-nav > li > a:focus {
-  outline: 1px dotted #106bfe;
 }
 .navbar-inverse .navbar-nav > li > a.dansk::after,
 .navbar-inverse .navbar-nav > li > a.english::after {
@@ -8980,11 +8980,8 @@ iframe {
 #globalfooter .footercontent > .footercolumn .footer-heading a:visited {
   color: #fff;
 }
-#globalfooter .footercontent > .footercolumn .footer-heading a:focus {
-  color: #e2e2e2;
-  outline: 1px dotted #106bfe;
-}
 #globalfooter .footercontent > .footercolumn .footer-heading a:active,
+#globalfooter .footercontent > .footercolumn .footer-heading a:focus,
 #globalfooter .footercontent > .footercolumn .footer-heading a:hover {
   color: #e2e2e2;
 }
@@ -9014,6 +9011,10 @@ iframe {
 #globalfooter ul.footerlinks li a:hover {
   color: #e2e2e2;
   text-decoration: none;
+}
+#globalfooter ul.footerlinks li a:focus {
+  color: #e2e2e2;
+  outline: 1px dotted #106bfe;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
   margin-left: 4px;
