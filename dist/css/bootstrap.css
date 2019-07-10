@@ -5636,7 +5636,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   border-color: #ccc;
 }
 .navbar-inverse a:focus {
-  outline: 1px dotted #106bfe;
+  outline: 1px solid #106bfe;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -9014,7 +9014,7 @@ iframe {
 }
 #globalfooter ul.footerlinks li a:focus {
   color: #e2e2e2;
-  outline: 1px dotted #106bfe;
+  outline: 1px solid #106bfe;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
   margin-left: 4px;
