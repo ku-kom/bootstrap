@@ -9976,6 +9976,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   .theme-teo .entries .entry + .entry:after {
     background-color: #66609e;
   }
+  .entries .entry.with-form {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
 /* Slider */
 .gallery-nav,
