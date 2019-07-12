@@ -7966,15 +7966,6 @@ nav {
     margin-bottom: 23px;
   }
 }
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
-@media (max-width: 991px) {
-  .mobile-margin-top-10 {
-    margin-top: 10px;
-  }
-}
 .rightBoxPicture .panel-head {
   display: none;
 }
@@ -8058,6 +8049,15 @@ nav {
 @media (max-width: 768px) {
   .jumpbox {
     display: none;
+  }
+}
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 991px) {
+  .mobile-margin-top-10 {
+    margin-top: 10px;
   }
 }
 .relative {
@@ -11744,6 +11744,15 @@ form.gdpr-accept .gdpr-label input[type=checkbox] {
 }
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
+}
+.image-presentation .slick-slide {
+  display: block;
+  float: none;
+  clear: both;
+}
+.image-presentation .slick-slide img {
+  max-width: 100%;
+  height: auto;
 }
 .mce-content-body#content {
   display: block;
