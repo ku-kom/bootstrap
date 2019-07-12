@@ -9978,7 +9978,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .entries .entry.with-form {
     padding-top: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
   }
 }
 /* Slider */
