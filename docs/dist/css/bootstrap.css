@@ -10429,7 +10429,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 45%;
     height: 100%;
     padding: 15px;
-    padding: 16px 20px 20px 30px;
+    padding: 16px 20px 20px 20px;
   }
   .slick-slide .caption.textblock-right {
     right: 0;
@@ -10443,7 +10443,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     bottom: auto;
     width: 45%;
     min-height: 70%;
-    padding: 16px 20px 20px 30px;
+    padding: 16px 20px 20px 20px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     -webkit-transform: translateY(-50%);
