@@ -8008,8 +8008,7 @@ nav {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
   }
-  .jump,
-  .jumpbox {
+  .jump {
     position: absolute;
     top: 0;
     left: 0;
@@ -8017,13 +8016,11 @@ nav {
     height: 0;
     margin: 0;
   }
-  .jump li,
-  .jumpbox li {
+  .jump li {
     display: block;
     list-style: none;
   }
-  .jump li a,
-  .jumpbox li a {
+  .jump li a {
     position: absolute;
     top: -1000px;
     left: 0;
@@ -8034,9 +8031,7 @@ nav {
     background-color: #252525;
   }
   .jump li a:active,
-  .jumpbox li a:active,
-  .jump li a:focus,
-  .jumpbox li a:focus {
+  .jump li a:focus {
     top: 0;
     left: 0;
     z-index: 10;
@@ -8184,40 +8179,6 @@ nav {
 .jump-to:focus,
 .jump-to:hover {
   color: inherit;
-}
-@-webkit-keyframes ku-ken-burns {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
-            transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
-  }
-  100% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
-            transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
-  }
-}
-@keyframes ku-ken-burns {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
-            transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
-  }
-  100% {
-    -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
-            transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
-  }
-}
-.ku-ken-burns-container {
-  position: relative;
-  overflow: hidden;
-}
-.ku-ken-burns-container img.with-animation {
-  -webkit-animation: 20s ease-out forwards ku-ken-burns;
-          animation: 20s ease-out forwards ku-ken-burns;
-
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  will-change: transform, opacity;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 iframe {
   border: 0;
