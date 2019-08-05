@@ -11719,6 +11719,17 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
+.custom-search {
+  width: 400px;
+  padding: 15px 26px;
+  margin: 0 auto;
+}
+.custom-search .media {
+  border-bottom: 1px solid #ccc;
+}
+.custom-search .input-group .input-group-addon {
+  cursor: pointer;
+}
 .mce-content-body#content {
   display: block;
   width: 100%;
