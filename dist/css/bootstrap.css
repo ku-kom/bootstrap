@@ -1320,7 +1320,7 @@ template {
   content: "\75";
 }
 .icon-futurity:hover {
-  background-color: #ffa64d;
+  background-color: #b85c00;
 }
 .icon-instagram:before {
   content: "\69";
@@ -1332,7 +1332,7 @@ template {
   content: "\74";
 }
 .icon-twitter:hover {
-  background-color: #1da1f2;
+  background-color: #0b7bc1;
 }
 .icon-rss:before {
   content: "\72";
@@ -4263,25 +4263,25 @@ fieldset[disabled] .btn-social.linkedin.focus {
 }
 .btn-social.twitter {
   color: #fff;
-  background-color: #1da1f2;
+  background-color: #0b7bc1;
   border-color: #0075a2;
 }
 .btn-social.twitter:focus,
 .btn-social.twitter.focus {
   color: #fff;
-  background-color: #0c85d0;
+  background-color: #085c91;
   border-color: #001922;
 }
 .btn-social.twitter:hover {
   color: #fff;
-  background-color: #0c85d0;
+  background-color: #085c91;
   border-color: #004965;
 }
 .btn-social.twitter:active,
 .btn-social.twitter.active,
 .btn-social.twitter .open > .dropdown-toggle {
   color: #fff;
-  background-color: #0c85d0;
+  background-color: #085c91;
   border-color: #004965;
 }
 .btn-social.twitter:active:hover,
@@ -4294,7 +4294,7 @@ fieldset[disabled] .btn-social.linkedin.focus {
 .btn-social.twitter.active.focus,
 .btn-social.twitter .open > .dropdown-toggle.focus {
   color: #fff;
-  background-color: #0a70ae;
+  background-color: #06476f;
   border-color: #001922;
 }
 .btn-social.twitter:active,
@@ -4311,11 +4311,11 @@ fieldset[disabled] .btn-social.twitter:focus,
 .btn-social.twitter.disabled.focus,
 .btn-social.twitter[disabled].focus,
 fieldset[disabled] .btn-social.twitter.focus {
-  background-color: #1da1f2;
+  background-color: #0b7bc1;
   border-color: #0075a2;
 }
 .btn-social.twitter .badge {
-  color: #1da1f2;
+  color: #0b7bc1;
   background-color: #fff;
 }
 .btn-social.twitter::after {
@@ -11250,15 +11250,15 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   letter-spacing: .6px;
 }
 .social-embed.twitter {
-  border-bottom: 1px solid #1da1f2;
+  border-bottom: 1px solid #0b7bc1;
 }
 .social-embed.twitter:before {
   top: 5px;
-  color: #1da1f2;
+  color: #0b7bc1;
   content: "\74";
 }
 .social-embed.twitter h2 {
-  color: #1da1f2;
+  color: #0b7bc1;
 }
 .social-embed.facebook {
   border-bottom: 1px solid #4267b2;
@@ -11271,14 +11271,14 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   color: #4267b2;
 }
 .social-embed.futurity {
-  border-bottom: 1px solid #ffa64d;
+  border-bottom: 1px solid #b85c00;
 }
 .social-embed.futurity:before {
-  color: #ffa64d;
+  color: #b85c00;
   content: "\75";
 }
 .social-embed.futurity h2 {
-  color: #ffa64d;
+  color: #b85c00;
 }
 .social-embed.conversation {
   border-bottom: 1px solid #d8352a;
