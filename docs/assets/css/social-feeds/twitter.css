@@ -18,6 +18,7 @@
 #twitter-feed .description {
   float: none;
   clear: both;
+  margin: 4px 0;
 }
 
 #twitter-feed .description + img {
