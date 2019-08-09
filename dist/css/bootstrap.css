@@ -9428,10 +9428,14 @@ iframe {
   }
 }
 .nyhedsliste.smal .media .nyhedsliste_dato {
-  float: right;
-  margin-left: 7px;
   font-weight: 600;
   color: #757575;
+}
+@media (min-width: 768px) {
+  .nyhedsliste.smal .media .nyhedsliste_dato {
+    float: right;
+    margin-left: 7px;
+  }
 }
 .nyhedsliste.smal .media .nyhedsliste_indhold {
   clear: both;
@@ -11720,7 +11724,8 @@ form.gdpr-accept .btn + .btn {
   height: auto;
 }
 .custom-search {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 15px 26px;
   margin: 0 auto;
 }

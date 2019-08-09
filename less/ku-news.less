@@ -186,10 +186,12 @@
       }
 
       .nyhedsliste_dato {
-        margin-left: 7px;
         color: @gray-light;
         font-weight: 600;
-        .pull-right();
+        @media (min-width: @screen-sm) {
+          margin-left: 7px;
+          .pull-right();
+        }
       }
 
       .nyhedsliste_indhold {
