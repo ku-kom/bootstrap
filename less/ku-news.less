@@ -192,12 +192,23 @@
           margin-left: 7px;
           .pull-right();
         }
+
+        & > span {
+          &:first-child {
+            .pull-left();
+          }
+        }
       }
 
       .nyhedsliste_indhold {
         clear: both;
       }
     }
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .result_relavans {
+    .pull-right();
   }
 }
 // Nyhedsliste - højrekolonne
