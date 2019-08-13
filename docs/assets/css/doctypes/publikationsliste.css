@@ -113,7 +113,7 @@ ol.portal_list li.portal_list_item_group {
 }
 
 .downloads_count .label {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .portal_list_item>.downloads_count {
