@@ -140,6 +140,7 @@ ol.portal_list li h2.title a, ol.portal_list li a {
   font-weight: 600;
   line-height: 18px;
   letter-spacing: .6px;
+  word-break: break-word;
 }
 
 ol.portal_list li a>span>strong {
