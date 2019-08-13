@@ -111,8 +111,23 @@ ol.portal_list li.portal_list_item_group {
   color: #666 !important;
   border-bottom: 1px solid #666 !important;
 }
-.portal_list_item > .downloads_count {
+
+.downloads_count .label {
+  padding-right: 0;
+}
+
+.portal_list_item>.downloads_count {
   width: 33% !important;
+}
+
+#purecontent .view_container .downloads_count {
+  width: 53% !important;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#purecontent .view_container .person_publication_rendering>div:nth-child(1) {
+  float: right;
 }
 
 li.portal_list_item_most_downloaded div.portal_content_properties {
