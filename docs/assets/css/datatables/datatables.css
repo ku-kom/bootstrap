@@ -43,6 +43,7 @@
   max-width: none !important;
   word-wrap: break-word;
   table-layout: auto !important;
+  border-bottom: 1px solid #ddd;
   /*border-collapse: separate !important;*/
 }
 
