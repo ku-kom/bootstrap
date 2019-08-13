@@ -36,7 +36,8 @@ head:first-child+body .nav {
   background-position: unset;
 }
 body.pureportal #content .person_view .view_container p {
-    margin: 8px 0 15px;
+    margin: 8px 0 15px!important;
+    padding: 0;
 }
 
 .nav li {
