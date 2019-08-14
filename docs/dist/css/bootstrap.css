@@ -11185,18 +11185,20 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     left: 0;
     z-index: 1020!important;
     height: auto;
-    padding: 20px;
+    padding: 40px;
+    font-weight: 600;
     color: #fff;
-    background: rgba(163, 163, 163, .9);
+    background: #505050;
   }
   .privacy-policy .h2 {
     margin-top: 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   .privacy-policy p {
     margin: 0 0 2px;
   }
   .privacy-policy .btn {
+    padding: 6px 25px!important;
     font-size: 1.2em;
     font-weight: bold;
     color: #901a1e;
@@ -11206,7 +11208,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   .privacy-policy .laes_mere_cookies {
     display: block;
-    color: #901a1e;
+    color: #fff;
+    text-decoration: underline;
   }
   .privacy-policy .laes_mere_cookies:before {
     display: inline-block;

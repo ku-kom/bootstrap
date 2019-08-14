@@ -7,12 +7,13 @@
     left: 0;
     z-index: 1020!important;
     height: auto;
-    padding: @padding20;
+    padding: 40px;
     color: @white-color;
-    background: fade(lighten(@gray-light, 18%), 90%);
+    font-weight: 600;
+    background: @ku-cookiebox-bg;
 
     .h2 {
-      font-weight: 600;
+      font-weight: 700;
       margin-top: 0;
     }
 
@@ -23,13 +24,15 @@
     .btn {
       #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
       color: @ku-red;
+      padding: 6px 25px!important;
       font-size: 1.2em;
       font-weight: bold;
       text-transform: uppercase;
     }
 
     .laes_mere_cookies {
-      color: @ku-red;
+      color: @white-color;
+      text-decoration: underline;
       display: block;
 
       &:before {
