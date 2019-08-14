@@ -11207,15 +11207,17 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     background-repeat: repeat-x;
   }
   .privacy-policy .laes_mere_cookies {
-    display: block;
+    display: inline-block;
     margin-top: 16px;
     color: #fff;
     text-decoration: underline;
   }
   .privacy-policy .laes_mere_cookies:before {
+    position: relative;
+    top: 1px;
     display: inline-block;
     margin-right: 5px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: inherit;
     content: "\00bb";
   }
