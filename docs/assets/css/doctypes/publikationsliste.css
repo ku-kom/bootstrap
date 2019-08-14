@@ -35,9 +35,10 @@
 head:first-child+body .nav {
   background-position: unset;
 }
+
 body.pureportal #content .person_view .view_container p {
-    margin: 8px 0 10px!important;
-    padding: 0;
+  margin: 8px 0 10px !important;
+  padding: 0;
 }
 
 .nav li {
@@ -235,6 +236,11 @@ div.rendering p.type, ol.portal_list>li {
   width: 100%;
 }
 
+.portal_navigator_top>.portal_navigator_row {
+  float: right;
+  width: 100%;
+}
+
 .export_cv {
   float: left;
   clear: both;
@@ -343,7 +349,6 @@ div.portal_navigator_ordering .portal_navigator_popup_content a {
 /* #purecontent .person_relations_list .for_publications .portal_navigator_top {
   display: none !important;
 } */
-
 div.portal_navigator_top {
   overflow: unset;
 }
@@ -355,6 +360,7 @@ div.portal_navigator_top div.portal_navigator_ordering {
 .portal_navigator_window_and_pagesize {
   clear: both;
 }
+
 .relations a.link {
   overflow-wrap: break-word;
   word-wrap: break-word;
