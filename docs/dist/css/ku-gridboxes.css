@@ -198,6 +198,11 @@
   text-transform: none;
   content: "\61";
 }
+@media all and (max-width: 767px) {
+  .gridbox::before {
+    color: #fff;
+  }
+}
 .gridbox.no-arrow::before {
   display: none;
 }
