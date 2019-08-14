@@ -116,20 +116,19 @@
       //console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
     }
 
-    $wrapper.click(function (e) {
-      // Action when gridbox arrow is clicked
-      // clickable range - never changes
-      var max = $(this).offset().top + $(this).outerHeight();
-      var min = max - 30; // 30 is the height of the ::before arrow
-
-      var checkRange = function (y) {
-        return (y >= min && y <= max);
-      };
-      if (checkRange(e.pageY)) {
-        // do click action
-        location.href = "https://www.instagram.com/" + $accountName;
-      }
-    });
+    // Action when gridbox arrow is clicked
+    // clickable range - never changes
+    // $wrapper.click(function (e) {
+    //   var max = $(this).offset().top + $(this).outerHeight();
+    //   var min = max - 30; // 30 is the height of the ::before arrow
+    //
+    //   var checkRange = function (y) {
+    //     return (y >= min && y <= max);
+    //   };
+    //   if (checkRange(e.pageY)) {
+    //     location.href = "https://www.instagram.com/" + $accountName;
+    //   }
+    // });
 
     //On resize, wait and reload function
     var it;

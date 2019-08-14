@@ -11198,8 +11198,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     margin: 0 0 2px;
   }
   .privacy-policy .btn {
-    padding: 6px 25px!important;
-    font-size: 1.2em;
+    padding: 6px 23px!important;
+    font-size: 1.3em;
     font-weight: bold;
     color: #901a1e;
     text-transform: uppercase;
@@ -11208,6 +11208,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   .privacy-policy .laes_mere_cookies {
     display: block;
+    margin-top: 16px;
     color: #fff;
     text-decoration: underline;
   }

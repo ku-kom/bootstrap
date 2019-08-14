@@ -19,8 +19,9 @@ Needs html like this:
 }
 
 [id*="ig"].gridbox::before {
-  z-index: 101;
-  cursor: pointer;
+  /* z-index: 101;
+  cursor: pointer; */
+  display: none;
 }
 
 [id*="ig"].gridbox.with-img .box1 {
