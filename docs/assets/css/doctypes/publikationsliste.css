@@ -355,10 +355,12 @@ div.portal_navigator_top {
   float: left;
 } */
 
-.portal_navigator_window_and_pagesize {
+/* .portal_navigator_window_and_pagesize {
   clear: both;
+} */
+.portal_navigator_rss {
+    margin-left: 4px;
 }
-
 .relations a.link {
   overflow-wrap: break-word;
   word-wrap: break-word;
