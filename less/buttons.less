@@ -3,6 +3,13 @@
 // --------------------------------------------------
 // Base styles
 // --------------------------------------------------
+// KU:
+
+.btn:not(.btn-lg):not(.btn-sm):not(.btn-xs) {
+  // KU
+  height: @input-height-base;
+  // KU end
+}
 
 .btn {
   display: inline-block;
@@ -195,11 +202,13 @@
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
+  height: @input-height-large;
 }
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  height: @input-height-small;
 }
 
 .btn-xs {

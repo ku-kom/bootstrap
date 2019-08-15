@@ -3696,9 +3696,11 @@ textarea.form-tooltip {
 .remember_mandatory {
   margin-bottom: 15px;
 }
+.btn:not(.btn-lg):not(.btn-sm):not(.btn-xs) {
+  height: 33px;
+}
 .btn {
   display: inline-block;
-  height: 33px;
   padding: 6px 10px;
   margin-bottom: 0;
   font-size: 13px;
@@ -4348,7 +4350,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  height: 33px;
+  height: 45px;
   padding: 10px 16px;
   font-size: 15px;
   line-height: 1.5;
@@ -4356,7 +4358,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-sm,
 .btn-group-sm > .btn {
-  height: 33px;
+  height: 26px;
   padding: 5px 10px;
   font-size: 11px;
   line-height: 1.3333333;
@@ -4364,7 +4366,6 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  height: 33px;
   padding: 1px 5px;
   font-size: 11px;
   line-height: 1.3333333;
