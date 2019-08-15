@@ -3696,9 +3696,6 @@ textarea.form-tooltip {
 .remember_mandatory {
   margin-bottom: 15px;
 }
-.btn:not(.btn-lg):not(.btn-sm):not(.btn-xs) {
-  height: 33px;
-}
 .btn {
   display: inline-block;
   padding: 6px 10px;
