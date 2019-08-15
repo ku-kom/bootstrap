@@ -3698,6 +3698,7 @@ textarea.form-tooltip {
 }
 .btn {
   display: inline-block;
+  height: 33px;
   padding: 6px 10px;
   margin-bottom: 0;
   font-size: 13px;
@@ -4347,6 +4348,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-lg,
 .btn-group-lg > .btn {
+  height: 33px;
   padding: 10px 16px;
   font-size: 15px;
   line-height: 1.5;
@@ -4354,6 +4356,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-sm,
 .btn-group-sm > .btn {
+  height: 33px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.3333333;
@@ -4361,6 +4364,7 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-xs,
 .btn-group-xs > .btn {
+  height: 33px;
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.3333333;
