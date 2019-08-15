@@ -1473,7 +1473,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   letter-spacing: .3px;
           flex-direction: column;
@@ -1535,7 +1535,7 @@ img {
   max-width: 100%;
   height: auto;
   padding: 2px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -1548,7 +1548,7 @@ hr {
   float: left;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   border: 0;
   border-top: 1px solid #ccc;
 }
@@ -1655,7 +1655,7 @@ h6 > br {
 h1,
 h2,
 h3 {
-  margin-top: 19px;
+  margin-top: 18px;
   margin-bottom: 10px;
 }
 .h1 .small,
@@ -1678,8 +1678,8 @@ h3 small {
 h4,
 h5,
 h6 {
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .h4 .small,
 .h5 .small,
@@ -1852,15 +1852,15 @@ a.bg-danger:focus {
   background-color: #d2a4a5;
 }
 .page-header {
-  padding-bottom: 8.5px;
-  margin: 38px 0 19px;
+  padding-bottom: 8px;
+  margin: 36px 0 18px;
   border-bottom: 1px solid #eee;
 }
 ol,
 ul {
   padding-left: 20px;
   margin-top: 0;
-  margin-bottom: 9.5px;
+  margin-bottom: 9px;
 }
 ol ol,
 ul ol,
@@ -1886,12 +1886,12 @@ ul ul {
 }
 dl {
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 dd,
 dt {
   margin-top: 4px;
-  line-height: 1.5;
+  line-height: 1.42857143;
 }
 dt {
   font-weight: 600;
@@ -1930,7 +1930,7 @@ blockquote {
   position: relative;
   float: right;
   width: 100%;
-  padding: 0 0 9.5px 19px;
+  padding: 0 0 9px 18px;
   margin: 0 0 7px 10px;
   font-size: 16.25px;
 }
@@ -1973,7 +1973,7 @@ blockquote ul:last-child {
 blockquote footer {
   display: block;
   font-size: 80%;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #757575;
 }
 blockquote footer:before {
@@ -1990,9 +1990,9 @@ blockquote.full-width {
   width: 100%!important;
 }
 address {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.42857143;
 }
 h2.deloverskrift {
   padding: 10px 5px 8px 0;
@@ -2031,10 +2031,10 @@ kbd kbd {
 }
 pre {
   display: block;
-  padding: 9px !important;
-  margin: 0 0 9.5px;
+  padding: 8.5px !important;
+  margin: 0 0 9px;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   word-break: break-all;
   word-wrap: break-word;
@@ -2852,7 +2852,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td {
   padding: 8px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -3076,7 +3076,7 @@ table th[class*="col-"] {
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 14.25px;
+    margin-bottom: 13.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
@@ -3117,7 +3117,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-size: 19.5px;
   line-height: inherit;
   color: #252525;
@@ -3159,15 +3159,15 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 33px;
+  height: 32px;
   padding: 6px 10px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   background-color: #fff;
   background-image: none;
@@ -3220,7 +3220,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 33px;
+    line-height: 32px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -3258,7 +3258,7 @@ input[type="search"] {
 }
 .radio label,
 .checkbox label {
-  min-height: 19px;
+  min-height: 18px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -3312,7 +3312,7 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  min-height: 32px;
+  min-height: 31px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
@@ -3354,7 +3354,7 @@ select[multiple].input-sm {
 }
 .form-group-sm .form-control-static {
   height: 27px;
-  min-height: 31px;
+  min-height: 30px;
   padding: 6px 10px;
   font-size: 12px;
   line-height: 1.3333333;
@@ -3391,7 +3391,7 @@ select[multiple].input-lg {
 }
 .form-group-lg .form-control-static {
   height: 45px;
-  min-height: 34px;
+  min-height: 33px;
   padding: 11px 16px;
   font-size: 15px;
   line-height: 1.5;
@@ -3400,7 +3400,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 41.25px;
+  padding-right: 40px;
 }
 .form-control-feedback {
   position: absolute;
@@ -3408,9 +3408,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 33px;
-  height: 33px;
-  line-height: 33px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   text-align: center;
   pointer-events: none;
 }
@@ -3513,7 +3513,7 @@ select[multiple].input-lg {
   color: #7b161a;
 }
 .has-feedback label ~ .form-control-feedback {
-  top: 24px;
+  top: 23px;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
@@ -3583,7 +3583,7 @@ select[multiple].input-lg {
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 26px;
+  min-height: 25px;
 }
 .form-horizontal .form-group {
   margin-right: -13px;
@@ -3635,11 +3635,11 @@ body.Form .has-error .input-group-addon {
   display: block;
   width: 100%;
   width: auto;
-  height: 33px;
+  height: 32px;
   padding: 6px 10px;
   padding: 6px 8px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   text-align: center;
   cursor: pointer;
@@ -4475,7 +4475,7 @@ tbody.collapse.in {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 8px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4485,7 +4485,7 @@ tbody.collapse.in {
   clear: both;
   font-size: 1.085em;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   white-space: nowrap;
 }
@@ -4534,7 +4534,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #757575;
   white-space: nowrap;
 }
@@ -4967,7 +4967,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a,
 .nav-pills > li > a {
   margin-right: 2px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #252525;
   background-color: #f3f3f3;
   border-top: 1px solid #ccc;
@@ -5257,9 +5257,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 40px;
-  padding: 10.5px 13px;
+  padding: 11px 13px;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 18px;
 }
 .navbar-brand:focus,
 .navbar-brand:hover {
@@ -5302,12 +5302,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 5.25px -13px;
+  margin: 5.5px -13px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 19px;
+  line-height: 18px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -5324,7 +5324,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 19px;
+    line-height: 18px;
   }
   .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar-nav .open .dropdown-menu > li > a:hover {
@@ -5340,8 +5340,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 10.5px;
-    padding-bottom: 10.5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 #topbar_menu {
@@ -5387,7 +5387,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto;
     padding: 2px;
     margin: 0 8px 5px 2px;
-    line-height: 1.5;
+    line-height: 1.42857143;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 2px;
@@ -5402,9 +5402,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-form {
   padding: 10px 13px;
-  margin-top: 3.5px;
+  margin-top: 4px;
   margin-right: -13px;
-  margin-bottom: 3.5px;
+  margin-bottom: 4px;
   margin-left: -13px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -5492,8 +5492,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 3.5px;
-  margin-bottom: 3.5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .navbar-btn.btn-sm {
   margin-top: 6.5px;
@@ -5504,8 +5504,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 9px;
 }
 .navbar-text {
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -5884,7 +5884,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 10px 0 19px;
+  margin: 10px 0 18px;
   border-radius: 2px;
 }
 .pagination > li {
@@ -5896,7 +5896,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
   float: left;
   padding: 6px 10px;
   margin-left: -1px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   color: #666;
   text-decoration: none;
   background-color: #fff;
@@ -5979,7 +5979,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .pager {
   padding-left: 0;
-  margin: 19px 0;
+  margin: 18px 0;
   text-align: center;
   list-style: none;
 }
@@ -6132,8 +6132,8 @@ a.badge:focus {
 .thumbnail {
   display: block;
   padding: 2px;
-  margin-bottom: 19px;
-  line-height: 1.5;
+  margin-bottom: 18px;
+  line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -6222,7 +6222,7 @@ figcaption {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   border: 1px solid transparent;
   border-radius: 2px;
 }
@@ -6322,8 +6322,8 @@ figcaption {
   }
 }
 .progress {
-  height: 19px;
-  margin-bottom: 19px;
+  height: 18px;
+  margin-bottom: 18px;
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 2px;
@@ -6334,7 +6334,7 @@ figcaption {
   width: 0;
   height: 100%;
   font-size: 12px;
-  line-height: 19px;
+  line-height: 18px;
   color: #fff;
   text-align: center;
   background-color: #6a979b;
@@ -6701,7 +6701,7 @@ button.list-group-item-danger.active:focus {
   border-top-width: 0;
 }
 .panel-group + .panel-group {
-  margin-top: 19px;
+  margin-top: 18px;
 }
 .panel-group + p:empty + .panel-group {
   margin-top: 4px;
@@ -7169,7 +7169,7 @@ button.close {
 }
 .modal-title {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.42857143;
 }
 .modal-body {
   position: relative;
@@ -7222,7 +7222,7 @@ button.close {
   font-size: 13px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.42857143;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -7311,7 +7311,7 @@ button.close {
   font-size: 13px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.42857143;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -9321,7 +9321,7 @@ iframe {
   max-width: 100%;
   height: auto;
   padding: 2px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -9388,7 +9388,7 @@ iframe {
   height: auto;
   box-sizing: content-box;
   padding: 2px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -11107,7 +11107,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   padding: 4px 5px;
   margin-right: -5px;
   margin-left: -5px;
-  line-height: 1.5;
+  line-height: 1.42857143;
   text-shadow: 0 1px 0 #fff;
   border-width: 1px 0;
 }
