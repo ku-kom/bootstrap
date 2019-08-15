@@ -3702,7 +3702,7 @@ textarea.form-tooltip {
   margin-bottom: 0;
   font-size: 13px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.42857143;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .7px;
@@ -4898,8 +4898,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
   z-index: 2;
-  margin-left: -1px;
-  border-radius: 0;
+  margin-left: -2px;
 }
 .nav {
   padding-left: 0;
@@ -5812,10 +5811,6 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .global-search .btn-global-search .btn.global-search-options-toggle {
   margin-left: -2px !important;
-}
-.global-search .btn-global-search .btn.global-search-submit {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
 .global-search .btn-global-search .dropdown-toggle {
   position: relative;
