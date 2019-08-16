@@ -4347,7 +4347,6 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  height: 45px;
   padding: 10px 16px;
   font-size: 15px;
   line-height: 1.5;
@@ -4355,7 +4354,6 @@ fieldset[disabled] .btn-link:hover {
 }
 .btn-sm,
 .btn-group-sm > .btn {
-  height: 26px;
   padding: 5px 10px;
   font-size: 11px;
   line-height: 1.3333333;
