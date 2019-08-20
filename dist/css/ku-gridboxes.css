@@ -821,7 +821,7 @@
   .three-one-column .column1 .gridbox.outlined .header,
   .two-one-column .column1 .gridbox.outlined .header,
   .two-one-one-column .column1 .gridbox.outlined .header {
-    color: inherit;
+    color: inherit!important;
     background: transparent;
   }
   .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
