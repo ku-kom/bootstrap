@@ -9905,6 +9905,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .theme-teo .entries .entry > a:before {
   color: #66609e;
 }
+.entries .entry.with-form {
+  padding: 6px 25px 7px;
+}
 @media only screen and (min-width: 992px) {
   .entries .entry + .entry:after {
     position: absolute;
@@ -9932,10 +9935,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .theme-teo .entries .entry + .entry:after {
     background-color: #66609e;
-  }
-  .entries .entry.with-form {
-    padding-top: 6px;
-    padding-bottom: 7px;
   }
 }
 /* Slider */
