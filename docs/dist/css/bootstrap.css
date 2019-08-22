@@ -9861,6 +9861,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .entries .entry > a:hover {
   text-decoration: underline;
 }
+.entries .entry > a:hover::before {
+  text-decoration: none;
+}
 .entries .entry > a:visited {
   color: #666;
 }
@@ -9868,7 +9871,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   position: relative;
   top: 50%;
   left: 0;
-  display: inline;
+  display: inline-block;
   margin-right: 5px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
