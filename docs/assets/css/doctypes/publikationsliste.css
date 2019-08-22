@@ -193,7 +193,7 @@ div.rendering p.type, ol.portal_list>li {
 .view_container ul.tabs {
   height: auto;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   clear: both;
   margin: 20px 0;
   border-bottom: 1px solid #ccc;
