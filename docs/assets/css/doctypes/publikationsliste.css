@@ -214,7 +214,7 @@ div.rendering p.type, ol.portal_list>li {
   clear: both;
 }
 
-.view_container ul.tabs li {
+.view_container ul.tabs > li {
   margin-left: 2px;
 }
 
@@ -236,7 +236,10 @@ div.rendering p.type, ol.portal_list>li {
   border-bottom: 0;
   font-weight: inherit;
 }
-
+.portal-dropdown .dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
 .quick_nav {
   margin: 0 0 15px 0 !important;
 }
