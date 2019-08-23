@@ -1,4 +1,10 @@
 /* Publikationslister - CURIS/Pure  */
+@media all and (max-width: 767px) {
+  #purecontent {
+    margin-top: 23px;
+  }
+}
+
 .nav {
   background: none;
   border: 0;
