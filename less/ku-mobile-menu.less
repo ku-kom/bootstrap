@@ -13,7 +13,6 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   //background-color: @white-color;
   color: @text-color;
@@ -24,7 +23,7 @@
       color: @text-color;
     }
     // Contains class that starts with...
-    &[class*="local"] {
+    &.local1_mmenu {
       // Faculty colors for sublevel 1
       background: @ku-red;
       color: @white-color;
@@ -98,15 +97,17 @@
       &::after {
         border: none;
       }
+
+      &:first-of-type {
+        border-top: 0;
+      }
     }
   }
-
-  .local1_mmenu {
-    &:first-of-type {
-      border-top: 0;
-    }
-  }
-
+  // .local1_mmenu {
+  //   &:first-of-type {
+  //     border-top: 0;
+  //   }
+  // }
   .mm-navbar {
     &:first-of-type {
       padding: 0;
@@ -207,7 +208,7 @@
   }
 
   .mm-listview {
-    > .local2_mmenu,
+    //> .local2_mmenu,
     > .local1_mmenu {
       > .mm-btn_next {
         &::after {
@@ -256,15 +257,14 @@
     }
   }
   // Local custom left menu items
-  .local2_mmenu {
-    &.mm-listitem {
-      > p {
-        padding-left: 20px;
-        padding-right: 10px;
-      }
-    }
-  }
-
+  // .local2_mmenu {
+  //   &.mm-listitem {
+  //     > p {
+  //       padding-left: 20px;
+  //       padding-right: 10px;
+  //     }
+  //   }
+  // }
   ul.nyheder {
     li {
       & > a {
