@@ -18,6 +18,7 @@
 
 a.pxs_application_link, .pxs_search_button {
   color: #252525;
+  text-decoration: none;
   background-color: #f4f4f4;
   border: 1px solid #b6b6b6;
   display: inline-block;
