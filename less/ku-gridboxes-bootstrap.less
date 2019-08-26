@@ -390,8 +390,10 @@
   .text {
     padding: 0 25px 5px @padding10;
     color: inherit;
+
     p {
       margin: 3px 0;
+
       &:first-child {
         margin-top: 0;
       }
@@ -426,7 +428,7 @@
           line-height: 1.3em;
           text-transform: none;
           padding: 0;
-          margin: 5px 0 5px;
+          margin: 5px 0;
         }
 
         .text {
@@ -502,7 +504,7 @@
         // padding-top: 6px;
         // padding-bottom: 4px;
         //@media all and (max-width: @screen-xs) {
-          padding: 8px 18px 8px 10px;
+        padding: 8px 18px 8px 10px;
         //}
       }
 
@@ -519,7 +521,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -565,17 +566,14 @@
     &.outlined {
       &.with-img {
         border: 0!important;
-
         // &::before {
         //   color: @white-color;
         // }
-
         // &.subcolor_5 {
         //   &::before {
         //     color: @gray-dark;
         //   }
         // }
-
         &.subcolor_6 {
           &::before {
             color: @gray-dark;
@@ -840,6 +838,16 @@
       .text {
         display: block;
       }
+      @media (min-width: @screen-md) {
+        &.with-img {
+          .box1 {
+            .header {
+              border-right: 0;
+              white-space: normal;
+            }
+          }
+        }
+      }
 
       &.outlined {
         .header {
@@ -891,7 +899,8 @@
       &.size2,
       &.size3 {
         &.outlined.with-img {
-          &.subcolor_5, &.subcolor_6 {
+          &.subcolor_5,
+          &.subcolor_6 {
             &::before {
               color: @gray-dark;
             }

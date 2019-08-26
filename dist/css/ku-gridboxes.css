@@ -355,7 +355,7 @@
 }
 .gridbox.size1.with-img .box1 .header {
   padding: 0;
-  margin: 5px 0 5px;
+  margin: 5px 0;
   font-size: 1.3em;
   line-height: 1.3em;
   color: #4a4949;
@@ -1007,6 +1007,18 @@
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
     bottom: 9px;
+  }
+}
+@media all and (min-width: 992px) and (min-width: 992px) {
+  .one-one-two-column .column3 .gridbox.with-img .box1 .header,
+  .one-three-column .column2 .gridbox.with-img .box1 .header,
+  .one-two-column .column2 .gridbox.with-img .box1 .header,
+  .single-column .column1 .gridbox.with-img .box1 .header,
+  .three-one-column .column1 .gridbox.with-img .box1 .header,
+  .two-one-column .column1 .gridbox.with-img .box1 .header,
+  .two-one-one-column .column1 .gridbox.with-img .box1 .header {
+    white-space: normal;
+    border-right: 0;
   }
 }
 @media all and (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {
