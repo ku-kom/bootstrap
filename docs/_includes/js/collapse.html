@@ -403,19 +403,19 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
     });
 
     // Open / close all accordions
-    var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
+    var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
     var $activeAccordion = true;
     $('.toggleAccordions').click(function () {
       if ($activeAccordion) {
         $activeAccordion = false;
         $('.panel-collapse').collapse('show');
-        $('.panel-title').attr('data-toggle', '');
+        $('.panel-title').data('toggle', '');
         var $close = $(this).data($lang + '-close');
         $(this).text($close);
       } else {
         $activeAccordion = true;
         $('.panel-collapse').collapse('hide');
-        $('.panel-title').attr('data-toggle', 'collapse');
+        $('.panel-title').data('toggle', 'collapse');
         var $open = $(this).data($lang + '-open');
         $(this).text($open);
       }

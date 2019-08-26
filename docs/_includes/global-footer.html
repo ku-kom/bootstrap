@@ -133,10 +133,10 @@
         var $this = $(this);
         $this.parent().removeClass('active');
         // if the current path is like this link, make it active
-        var $templateLink = $this.attr('href').replace('..', '/examples').indexOf(current) !== -1;
+        var $templateLink = $this.prop('href').replace('..', '/examples').indexOf(current) !== -1;
         // Get hash value
         var $hash = location.href.substr(location.href.indexOf('#') + 1);
-        if ($templateLink === true || $this.attr('href') == '#' + $hash) {
+        if ($templateLink === true || $this.prop('href') == '#' + $hash) {
           $this.parent().addClass('active');
         }
       })

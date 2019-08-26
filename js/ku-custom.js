@@ -41,7 +41,7 @@ function shareURL(dest) {
 
 (function ($) {
   // Language of the current page - fallback to English
-  var $lang = $('html').attr('lang') ? $('html').attr('lang') : 'en';
+  var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
 
   var $editMode;
   if ($('html').hasClass('ku-bs')) {
@@ -84,11 +84,11 @@ function shareURL(dest) {
     if ($li) {
       $li.each(function (i, v) {
         // Get current urls from news
-        var url = $(this).find('a').attr("href");
+        var url = $(this).find('a').prop("href");
         // Create new url with params
         var urlWithParams = url + "?utm_source=Nyheder&utm_medium=Link&utm_campaign=kudk-globalmenu";
         // Set new herf value
-        $(this).find('a').attr("href", urlWithParams);
+        $(this).find('a').prop("href", urlWithParams);
       });
     }
   }
