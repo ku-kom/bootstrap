@@ -8823,7 +8823,7 @@ iframe {
   display: none;
 }
 .mm-panels > .mm-panel > .mm-navbar + .mm-listview {
-  margin-top: -19px;
+  margin-top: -19px !important;
 }
 .local-footer {
   font-size: .85em;
