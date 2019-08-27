@@ -279,10 +279,13 @@
   }
 }
 
-#mmenu {
-  & > .mm-listview {
-    &:first-child {
-      margin-top: -19px;
+.mm-panels {
+  // Styling for mobile menu title bar
+  &> .mm-panel {
+    &>.mm-navbar {
+      &+.mm-listview {
+        margin-top: -19px;
+      }
     }
   }
 }

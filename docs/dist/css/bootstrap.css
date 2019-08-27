@@ -8822,7 +8822,7 @@ iframe {
 #mobileleftmenu ul.nyheder .mm-btn_next {
   display: none;
 }
-#mmenu > .mm-listview:first-child {
+.mm-panels > .mm-panel > .mm-navbar + .mm-listview {
   margin-top: -19px;
 }
 .local-footer {
