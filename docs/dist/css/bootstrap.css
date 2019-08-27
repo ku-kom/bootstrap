@@ -8822,6 +8822,9 @@ iframe {
 #mobileleftmenu ul.nyheder .mm-btn_next {
   display: none;
 }
+#mmenu > .mm-listview:first-child {
+  margin-top: -19px;
+}
 .local-footer {
   font-size: .85em;
   line-height: 1.43em;
