@@ -7836,11 +7836,6 @@ nav {
     margin-bottom: 0;
   }
 }
-@media (min-width: 992px) {
-  .GridForside .gridcontent > .row:first-child .gccolumn:last-child .rightbox:first-child .panel-title {
-    padding-top: 23px;
-  }
-}
 @media (max-width: 767px) {
   #content .container {
     padding-right: 6px;

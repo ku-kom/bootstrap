@@ -1,7 +1,8 @@
-@media screen and (min-width: 480px) and (max-width: 757px) {
-.gridcontent {
-  padding-top: 23px;
-}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .gridcontent {
+    padding-top: 23px;
+  }
+
   /* Double columns (.col-sm-6) must span 100% in tablet view (but not the full-width template - hence this hack.) */
   .GridForside .double-column [class^="col-"][class$="-6"] {
     width: 100%;
@@ -24,12 +25,18 @@ h1 {
 }
 
 @media screen and (min-width: 992px) {
+
   /* Flexible box tweaks*/
   .GridForside .double-column .gridbox.size1 .box2 {
     flex: 0 0 50%;
   }
 
-  .GridForside .double-column .gridbox.size1 .text,  .two-one-column .column1 .gridbox.size1 .text, .one-two-column .column2 .gridbox.size1 .text  {
+  .GridForside .double-column .gridbox.size1 .text, .two-one-column .column1 .gridbox.size1 .text, .one-two-column .column2 .gridbox.size1 .text {
     display: block;
+  }
+
+  .GridForside .gridcontent>.row:first-child .gccolumn:last-child .rightbox:first-child .panel-title {
+    /* Gridforside - rightbox i grid højre side: */
+    padding-top: 23px;
   }
 }
