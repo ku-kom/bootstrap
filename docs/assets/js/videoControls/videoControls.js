@@ -301,6 +301,8 @@ var handleFullscreen = function() {
       document.documentElement.mozRequestFullScreen();
     } else if (document.documentElement.webkitRequestFullscreen) {
       document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
     }
   } else {
     if (document.cancelFullScreen) {
@@ -309,6 +311,8 @@ var handleFullscreen = function() {
       document.mozCancelFullScreen();
     } else if (document.webkitCancelFullScreen) {
       document.webkitCancelFullScreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
     }
   }
 };
