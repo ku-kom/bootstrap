@@ -28,6 +28,10 @@ main {
   overflow-y: visible;
 }
 
+.local-footer {
+  page-break-inside: avoid;
+}
+
 .main-content {
   width: 100%;
 }
