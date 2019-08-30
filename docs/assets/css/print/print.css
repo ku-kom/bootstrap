@@ -2,7 +2,6 @@
   size: A4 landscape;
   margin: 15mm 10mm;
 } */
-
 *, *:before, *:after {
   color: #000 !important;
   text-shadow: none !important;
@@ -38,7 +37,11 @@ main {
   float: left !important;
 }
 
-.navbar, #mobileleftmenu, .ku-leftmenu, #globalfooter {
+.panel-default>.panel-body {
+  border-top: 1px solid #ccc;
+}
+
+.navbar, .search-area, #mobileleftmenu, .ku-leftmenu, #globalfooter {
   display: none;
 }
 
@@ -114,6 +117,17 @@ h2, h3 {
   page-break-after: avoid;
 }
 
+/* Advanced lists */
+.advanced-list li div[class*="list"] {
+  height: auto;
+  flex: none;
+}
+
+.advanced-list li .list-img {
+  display: none;
+}
+
+/* Grid: */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
   float: left;
 }
