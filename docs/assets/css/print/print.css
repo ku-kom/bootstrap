@@ -6,7 +6,6 @@
   color: #000 !important;
   text-shadow: none !important;
   background: #fff !important;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
@@ -133,6 +132,7 @@ h2, h3 {
 /* Advanced lists */
 .advanced-list li div[class*="list"] {
   height: auto;
+  -webkit-box-flex: 0;
   flex: none;
 }
 
