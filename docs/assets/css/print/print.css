@@ -32,6 +32,11 @@ main {
   width: 100%;
 }
 
+.ku-branding::after {
+  z-index: 1000;
+  position: relative;
+}
+
 .right-side {
   width: 50%;
   float: left !important;
@@ -128,11 +133,11 @@ h2, h3 {
 }
 
 /* Fleksible boxes */
-
 .gridbox {
   border: 1px solid #000;
   page-break-inside: avoid;
 }
+
 .gridbox::before {
   display: none;
 }
