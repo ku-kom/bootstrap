@@ -127,6 +127,19 @@ h2, h3 {
   display: none;
 }
 
+/* Fleksible boxes */
+
+.gridbox {
+  border: 1px solid #000;
+}
+.gridbox::before {
+  display: none;
+}
+
+.gridbox .box1 .text {
+  display: block;
+}
+
 /* Grid: */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
   float: left;
