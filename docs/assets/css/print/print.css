@@ -28,7 +28,7 @@ main {
   overflow-y: visible;
 }
 
-.local-footer {
+.local-footer, .footer-address, .footer-data {
   page-break-inside: avoid;
 }
 
