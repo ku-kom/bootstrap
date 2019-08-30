@@ -1,7 +1,7 @@
-@page {
+/* @page {
   size: A4 landscape;
   margin: 15mm 10mm;
-}
+} */
 
 *, *:before, *:after {
   color: #000 !important;
@@ -14,6 +14,10 @@
 html, body {
   display: block;
   overflow: visible;
+}
+
+body {
+  margin: 15mm 10mm;
 }
 
 header, nav, footer {
@@ -50,15 +54,15 @@ a, a:visited {
   text-decoration: underline;
 }
 
-a[href]:after {
+.main-area a[href]:after {
   content: " ("attr(href) ")";
 }
 
-abbr[title]:after {
+.main-area abbr[title]:after {
   content: " ("attr(title) ")";
 }
 
-a[href^="#"]:after, a[href^="javascript:"]:after {
+.main-area a[href^="#"]:after, a[href^="javascript:"]:after {
   content: "";
 }
 
