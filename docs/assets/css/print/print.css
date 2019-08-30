@@ -37,6 +37,10 @@ main {
   position: relative;
 }
 
+.GridForside .main-content {
+  margin-top: 23px;
+}
+
 .right-side {
   width: 50%;
   float: left !important;
