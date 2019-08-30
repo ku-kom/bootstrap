@@ -70,11 +70,11 @@ a, a:visited {
 }
 
 .main-area a[href]:after {
-  content: " ("attr(href) ")";
+  content: " (Link: "attr(href) ")";
 }
 
 .main-area abbr[title]:after {
-  content: " ("attr(title) ")";
+  content: " (Title: "attr(title) ")";
 }
 
 .main-area a[href^="#"]:after, a[href^="javascript:"]:after {
@@ -127,6 +127,11 @@ p, h2, h3 {
 
 h2, h3 {
   page-break-after: avoid;
+}
+
+/*News lists */
+.item-teaser a[href]:after {
+  content: " ";
 }
 
 /* Advanced lists */
