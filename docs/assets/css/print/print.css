@@ -38,7 +38,8 @@ main {
 }
 
 .panel-default>.panel-body {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #bbb;
+  page-break-inside: avoid;
 }
 
 .navbar, .search-area, #mobileleftmenu, .ku-leftmenu, #globalfooter {
@@ -131,6 +132,7 @@ h2, h3 {
 
 .gridbox {
   border: 1px solid #000;
+  page-break-inside: avoid;
 }
 .gridbox::before {
   display: none;
