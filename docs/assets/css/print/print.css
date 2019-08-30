@@ -130,6 +130,9 @@ h2, h3 {
 }
 
 /* Advanced lists */
+.advanced-list li {
+  border: 1px solid #000;
+}
 .advanced-list li div[class*="list"] {
   height: auto;
   -webkit-box-flex: 0;
