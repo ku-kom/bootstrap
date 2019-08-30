@@ -39,7 +39,6 @@ main {
 
 .panel-default>.panel-body {
   border-top: 1px solid #bbb;
-  page-break-inside: avoid;
 }
 
 .navbar, .search-area, #mobileleftmenu, .ku-leftmenu, #globalfooter {
