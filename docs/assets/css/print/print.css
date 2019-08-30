@@ -130,7 +130,8 @@ h2, h3 {
 }
 
 /*News lists */
-.item-teaser a[href]:after {
+
+.item-teaser a[href]:after, .item-left >a[href]:after, .item-right >a[href]:after {
   content: " ";
 }
 
