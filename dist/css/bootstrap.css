@@ -11718,7 +11718,7 @@ form.gdpr-accept .btn + .btn {
 }
 .custom-search {
   width: 100%;
-  min-width: 270px;
+  min-width: 300px;
   max-width: 400px;
   padding: 15px 26px;
   margin: 0 auto;
