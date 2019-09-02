@@ -288,7 +288,7 @@
 // Newsletter and GDPR
 
 form.gdpr-accept {
-  margin: 10px 0 15px 0;
+  margin: 10px 0 15px;
 
   label[for="email"] {
     margin-bottom: 5px;
@@ -331,6 +331,10 @@ form.gdpr-accept {
   width: 100%;
   min-width: 270px;
   max-width: 400px;
+  @media (min-width: @screen-sm) {
+    min-width: 330px;
+    max-width: fit-content;
+  }
   padding: 15px 26px;
   margin: 0 auto;
 

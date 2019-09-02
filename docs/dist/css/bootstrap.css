@@ -11690,7 +11690,7 @@ p[align="right"]:before {
   margin: 0;
 }
 form.gdpr-accept {
-  margin: 10px 0 15px 0;
+  margin: 10px 0 15px;
 }
 form.gdpr-accept label[for="email"] {
   margin-bottom: 5px;
@@ -11722,6 +11722,14 @@ form.gdpr-accept .btn + .btn {
   max-width: 400px;
   padding: 15px 26px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .custom-search {
+    min-width: 330px;
+    max-width: -webkit-fit-content;
+    max-width:    -moz-fit-content;
+    max-width:         fit-content;
+  }
 }
 .custom-search .media {
   border-bottom: 1px solid #ccc;
