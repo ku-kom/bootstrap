@@ -2,6 +2,7 @@
   size: A4;
   margin: 10mm auto;
 }
+
 *, *:before, *:after {
   color: #000 !important;
   text-shadow: none !important;
@@ -11,7 +12,7 @@
 
 html, body {
   display: block;
-  overflow: visible!important;
+  overflow: visible !important;
 }
 
 body {
@@ -28,7 +29,7 @@ header, nav, footer {
   display: block;
   flex: none;
   min-height: auto;
-  overflow: visible!important;
+  overflow: visible !important;
 }
 
 main {
@@ -39,10 +40,12 @@ main {
 .local-footer, .footer-address, .footer-data {
   page-break-inside: avoid;
 }
+
 .local-footer .footer-data {
-    text-align: right;
+  text-align: right;
 }
-.local-footer  {
+
+.local-footer {
   border-bottom: 1px solid #727272;
 }
 
@@ -54,6 +57,7 @@ main {
 .main-content {
   margin-top: 23px;
 }
+
 /*
 .main-content {
   width: 100%;
@@ -62,6 +66,13 @@ main {
   width: 50%;
   float: left !important;
 } */
+.main-area {
+  width: 100%;
+}
+
+.right-side {
+  float: left;
+}
 
 .panel-default>.panel-body {
   border-top: 1px solid #bbb;
@@ -74,6 +85,7 @@ main {
 .panel-accordion {
   page-break-inside: avoid;
 }
+
 .panel-accordion .collapse {
   display: block;
 }
@@ -150,7 +162,8 @@ h2, h3 {
 .item {
   page-break-inside: avoid;
 }
-.item-teaser a[href]:after, .item-left >a[href]:after, .item-right >a[href]:after {
+
+.item-teaser a[href]:after, .item-left>a[href]:after, .item-right>a[href]:after {
   content: " ";
 }
 
@@ -159,6 +172,7 @@ h2, h3 {
   border: 1px solid #000;
   page-break-inside: avoid;
 }
+
 .advanced-list li div[class*="list"] {
   height: auto;
   flex: none;
