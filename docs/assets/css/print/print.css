@@ -1,6 +1,6 @@
 @page {
   size: A4;
-  margin: 0;
+  margin: 10mm auto;
 }
 *, *:before, *:after {
   color: #000 !important;
@@ -17,7 +17,7 @@ html, body {
 body {
   width: 210mm;
   height: 297mm;
-  margin: 5mm auto;
+  margin: 10mm auto;
 }
 
 header, nav, footer {
@@ -42,7 +42,9 @@ main {
 .local-footer .footer-data {
     text-align: right;
 }
-
+.local-footer  {
+  border-bottom: 1px solid #727272;
+}
 .main-content {
   width: 100%;
 }
@@ -142,7 +144,9 @@ h2, h3 {
 }
 
 /*News lists */
-
+.item {
+  page-break-inside: avoid;
+}
 .item-teaser a[href]:after, .item-left >a[href]:after, .item-right >a[href]:after {
   content: " ";
 }
@@ -150,10 +154,10 @@ h2, h3 {
 /* Advanced lists */
 .advanced-list li {
   border: 1px solid #000;
+  page-break-inside: avoid;
 }
 .advanced-list li div[class*="list"] {
   height: auto;
-  -webkit-box-flex: 0;
   flex: none;
 }
 
