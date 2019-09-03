@@ -39,6 +39,9 @@ main {
 .local-footer, .footer-address, .footer-data {
   page-break-inside: avoid;
 }
+.local-footer .footer-data {
+    text-align: right;
+}
 
 .main-content {
   width: 100%;
