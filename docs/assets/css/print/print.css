@@ -24,9 +24,11 @@ header, nav, footer {
   display: none !important;
 }
 
-#pagewrapper {
+#pagewrapper, #content {
   display: block;
   flex: none;
+  min-height: auto;
+  overflow: visible!important;
 }
 
 main {
