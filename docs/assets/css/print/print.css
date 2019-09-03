@@ -54,7 +54,7 @@ main {
   position: relative;
 }
 
-.GridForside .main-content {
+.main-content {
   margin-top: 23px;
 }
 
@@ -71,6 +71,9 @@ main {
   display: none;
 }
 
+.panel-accordion {
+  page-break-inside: avoid;
+}
 .panel-accordion .collapse {
   display: block;
 }
@@ -162,6 +165,11 @@ h2, h3 {
 }
 
 .advanced-list li .list-img {
+  display: none;
+}
+
+/* Slick slider */
+.slick-slider button {
   display: none;
 }
 
