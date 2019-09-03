@@ -11,7 +11,7 @@
 
 html, body {
   display: block;
-  overflow: visible;
+  overflow: visible!important;
 }
 
 body {
@@ -26,6 +26,7 @@ header, nav, footer {
 
 #pagewrapper {
   display: block;
+  flex: none;
 }
 
 main {
