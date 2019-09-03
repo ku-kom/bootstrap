@@ -60,11 +60,12 @@ main, .main-area, .ku-branding {
 
 .main-content {
   margin-top: 23px;
-  width: 75%;
+  width: 75%!important;
 }
 
 .right-side {
   float: left;
+  width: 25%!important;
 }
 
 .panel-default>.panel-body {
