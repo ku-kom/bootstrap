@@ -54,7 +54,7 @@ main {
   position: relative;
 }
 
-.main-area {
+main, .main-area, .ku-branding {
   width: 100%;
 }
 
