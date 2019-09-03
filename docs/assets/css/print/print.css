@@ -58,10 +58,10 @@ main {
   margin-top: 23px;
 }
 
-.right-side {
+/* .right-side {
   width: 50%;
   float: left !important;
-}
+} */
 
 .panel-default>.panel-body {
   border-top: 1px solid #bbb;
