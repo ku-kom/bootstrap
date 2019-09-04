@@ -19,6 +19,7 @@ body {
   width: 210mm;
   height: 297mm;
   margin: 10mm auto;
+  font-size: 13px!important;
 }
 
 header, nav, footer {
@@ -195,6 +196,47 @@ h2, h3 {
 .gridbox .box1 .text {
   display: block;
 }
+
+/* Visibility */
+.visible-xs {
+  display: none !important;
+}
+
+table.hidden-xs {
+  display: table;
+}
+
+tr.hidden-xs {
+  display: table-row !important;
+}
+
+th.hidden-xs, td.hidden-xs {
+  display: table-cell !important;
+}
+
+.hidden-xs.hidden-print {
+  display: none !important;
+}
+
+.hidden-sm {
+  display: none !important;
+}
+
+.visible-sm {
+  display: block !important;
+}
+
+table.visible-sm {
+  display: table;
+}
+
+tr.visible-sm {
+  display: table-row !important;
+}
+
+th.visible-sm, td.visible-sm {
+  display: table-cell !important;
+} 
 
 /* Grid: */
 /* .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
@@ -404,43 +446,4 @@ h2, h3 {
 .col-sm-offset-0 {
   margin-left: 0%;
 }
-
-.visible-xs {
-  display: none !important;
-}
-
-table.hidden-xs {
-  display: table;
-}
-
-tr.hidden-xs {
-  display: table-row !important;
-}
-
-th.hidden-xs, td.hidden-xs {
-  display: table-cell !important;
-}
-
-.hidden-xs.hidden-print {
-  display: none !important;
-}
-
-.hidden-sm {
-  display: none !important;
-}
-
-.visible-sm {
-  display: block !important;
-}
-
-table.visible-sm {
-  display: table;
-}
-
-tr.visible-sm {
-  display: table-row !important;
-}
-
-th.visible-sm, td.visible-sm {
-  display: table-cell !important;
-} */
+*/
