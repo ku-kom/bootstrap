@@ -7,3 +7,8 @@ has no breadbrumbs (which creates the margin-top to h1):*/
 .breadcrumbs~h1 {
   margin-top: 0;
 }
+
+/* Special case for search page */
+.main-content>#loading_ajax+h1 {
+    margin-top: 29px;
+}
