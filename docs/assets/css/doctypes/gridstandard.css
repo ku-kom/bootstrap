@@ -1,4 +1,9 @@
-/* Special h1 style for search results */
-.main-content>#loading_ajax+h1 {
-  margin-top: 29px;
+/* Special h1 style if Grid standard is a frontpage and therefore
+has no breadbrumbs (which creates the margin-top to h1):*/
+.main-content>h1:first-child {
+  margin-top: 29px
+}
+
+.breadcrumbs~h1 {
+  margin-top: 0;
 }
