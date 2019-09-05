@@ -1,0 +1,4 @@
+/* Special h1 style for search results */
+.main-content>#loading_ajax+h1 {
+  margin-top: 29px;
+}
