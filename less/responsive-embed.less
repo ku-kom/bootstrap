@@ -43,6 +43,7 @@
     display: none !important;
   }
 }
+
 .control-layer {
   display: none;
   position: absolute;
@@ -57,6 +58,12 @@
     .control-layer {
       display: block;
       background: rgba(@gray-base, .5);
+    }
+  }
+
+  a {
+    &:focus {
+      .tab-focus-v2();
     }
   }
 }
@@ -89,7 +96,6 @@
     font-size: inherit;
   }
 }
-
 // Enable for subtitles menu
 // .subtitles-menu {
 //   display: none;
@@ -117,8 +123,8 @@
 //     }
 //   }
 // }
-
 // Make input range visible in IE - why, oh why...
+
 input[type=range]::-ms-track {
   width: 200px;
   height: 10px;

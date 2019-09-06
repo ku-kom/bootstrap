@@ -12,9 +12,9 @@ Needs html like this:
 </div>
 */
 [id*="ig"].gridbox {
-  -webkit-flex-direction: column!important;
-  -ms-flex-direction: column!important;
-  flex-direction: column!important;
+  -webkit-flex-direction: column !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
   height: 185px !important;
 }
 
@@ -80,6 +80,10 @@ Needs html like this:
   -ms-flex-align: stretch;
   align-items: stretch;
   position: relative;
+}
+
+#imageBox .batch a:hover {
+  outline: 1px solid #106bfe;
 }
 
 #imageBox .batch img {
