@@ -10146,6 +10146,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slide-link:focus {
   outline: 1px solid #106bfe;
+  outline-offset: -1px;
 }
 .slick-arrow.slick-hidden {
   display: none;
