@@ -7023,6 +7023,9 @@ button.list-group-item-danger.active:focus {
 .media-controls button {
   font-size: 14px;
 }
+.media-controls button:focus {
+  outline: 1px solid #106bfe;
+}
 .media-controls button + button {
   margin-left: 5px;
 }

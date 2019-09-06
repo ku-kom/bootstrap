@@ -84,6 +84,7 @@ Needs html like this:
 
 #imageBox .batch a:focus {
   outline: 1px solid #106bfe;
+  outline-offset: -2px;
 }
 
 #imageBox .batch img {
