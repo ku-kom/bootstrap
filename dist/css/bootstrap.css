@@ -10144,6 +10144,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -webkit-filter: brightness(90%) blur(0);
 }
+.slide-link:focus {
+  outline: 1px solid #106bfe;
+}
 .slick-arrow.slick-hidden {
   display: none;
 }
@@ -10391,7 +10394,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 45%;
     height: 100%;
     padding: 15px;
-    padding: 16px 20px 20px 20px;
+    padding: 16px 20px 20px;
   }
   .slick-slide .caption.textblock-right {
     right: 0;
@@ -10405,7 +10408,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     bottom: auto;
     width: 45%;
     min-height: 70%;
-    padding: 16px 20px 20px 20px;
+    padding: 16px 20px 20px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     -webkit-transform: translateY(-50%);
