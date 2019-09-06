@@ -82,7 +82,7 @@ Needs html like this:
   position: relative;
 }
 
-#imageBox .batch a:hover {
+#imageBox .batch a:focus {
   outline: 1px solid #106bfe;
 }
 
