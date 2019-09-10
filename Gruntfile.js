@@ -186,6 +186,21 @@ module.exports = function (grunt) {
         src: 'less/ku-gridboxes-bootstrap.less',
         dest: 'dist/css/ku-gridboxes.css'
       },
+      compileCustomElements: {
+        options: {
+          strictMath: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'docs/assets/css/content-elements/',
+            src: ['**/*.less'],
+            dest: 'dist/css/content-elements/',
+            ext: '.css',
+            flatten: true
+        }
+      ]
+      },
       compileFacultyStyles: {
         options: {
             strictMath: true
@@ -221,8 +236,8 @@ module.exports = function (grunt) {
           'docs/assets/css/multiple-select/multiple-select.css',
           'docs/assets/css/social-feeds/instagram.css',
           'docs/assets/css/social-feeds/twitter.css',
-          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
-          'dist/css/faculties/*.css'
+          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css'
+          //'dist/css/faculties/*.css'
         ]
       },
       docs: {
@@ -235,11 +250,17 @@ module.exports = function (grunt) {
         dest: 'dist/css/doctypes/',
         flatten: true
       },
-      minifyFAK: {
+      fakulteter: {
         expand: true,
         cwd: 'dist/css/faculties/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/faculties/'
+      },
+      content: {
+        expand: true,
+        cwd: 'dist/css/content-elements/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/content-elements/'
       },
       examples: {
         expand: true,
@@ -307,6 +328,12 @@ module.exports = function (grunt) {
         cwd: 'dist/css/faculties/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/faculties/'
+      },
+      content: {
+        expand: true,
+        cwd: 'dist/css/content-elements/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/content-elements/'
       },
       minifyDoctypes: {
         options: {
@@ -510,8 +537,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:minifyFAK', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:print']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:print']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
