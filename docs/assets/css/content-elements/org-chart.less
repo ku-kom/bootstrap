@@ -100,12 +100,12 @@ ol {
         &:hover {
           background-color: #c8e4f8;
 
-          ol {
+          &~ol {
             &::after,
             &::before {
               background-color: #c8e4f8;
             }
-            li {
+            &>li {
               &::after,
               &::before {
                 background-color: #c8e4f8;
