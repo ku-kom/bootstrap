@@ -99,9 +99,21 @@ ol {
 
         &:hover {
           background-color: #c8e4f8;
-          &::after,
-          &::before {
-            background-color: #c8e4f8;
+
+          ol {
+            &::after,
+            &::before {
+              background-color: #c8e4f8;
+            }
+            li {
+              &::after,
+              &::before {
+                background-color: #c8e4f8;
+              }
+              &> div {
+                background-color: #c8e4f8;
+              }
+            }
           }
         }
       }
