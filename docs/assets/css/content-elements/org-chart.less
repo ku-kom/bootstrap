@@ -96,14 +96,13 @@ ol {
         border-radius: @border-radius-base;
         min-height: 2em;
         padding: 0.5em;
-      }
 
-      &:hover, li:hover + ol li {
-        background: #c8e4f8;
-
-        &::after,
-        &::before {
+        &:hover {
           background-color: #c8e4f8;
+          &::after,
+          &::before {
+            background-color: #c8e4f8;
+          }
         }
       }
     }
