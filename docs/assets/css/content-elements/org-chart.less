@@ -95,30 +95,6 @@ ol {
         border-radius: @border-radius-base;
         min-height: 2em;
         padding: 0.5em;
-
-        &:hover {
-          background-color: #c8e4f8;
-          transition: all .1s ease-in;
-
-          &~ol {
-            &::after,
-            &::before {
-              background-color: #c8e4f8;
-              transition: all .1s ease-in;
-            }
-            &>li {
-              &::after,
-              &::before {
-                background-color: #c8e4f8;
-                transition: all .1s ease-in;
-              }
-              &> div {
-                background-color: #c8e4f8;
-                transition: all .1s ease-in;
-              }
-            }
-          }
-        }
       }
     }
     // First level chart:
