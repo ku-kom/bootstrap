@@ -91,14 +91,14 @@ ol {
 
     li {
       & > div {
-        /* background-color: @gray; */
-        border: 1px solid @gray;
+        border: 2px solid @gray;
         border-radius: @border-radius-base;
         min-height: 2em;
         padding: 0.5em;
 
         &:hover {
           background-color: #c8e4f8;
+          transition: all .2s ease-in;
 
           &~ol {
             &::after,
