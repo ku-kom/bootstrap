@@ -9909,6 +9909,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .entries .entry.with-form {
   padding: 6px 25px 7px;
+
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 @media only screen and (min-width: 992px) {
   .entries .entry + .entry:after {
