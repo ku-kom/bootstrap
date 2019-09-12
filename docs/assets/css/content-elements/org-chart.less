@@ -119,8 +119,8 @@ ol {
 
         &:first-of-type:after {
           bottom: 0;
-          height: 2em;
-          right: -1em;
+          height: calc(2em + @ku-org-chart-line);
+          right: calc(-1em - @ku-org-chart-line);
           width: @ku-org-chart-line;
         }
 
@@ -128,9 +128,9 @@ ol {
           margin-top: 1em;
 
           &::after {
-            height: calc(100% + 1em);
-            right: -1em;
-            top: -1em;
+            height: calc(100% + 1em + 6px);
+            right: calc(-1em - @ku-org-chart-line);
+            top: calc(-1em - 4px);
             width: @ku-org-chart-line;
           }
         }
