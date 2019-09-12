@@ -9818,9 +9818,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-repeat: repeat-x;
   border-bottom: 1px solid #fff;
 
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media only screen and (min-width: 992px) {
   .entries .entry {
@@ -9909,10 +9909,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .entries .entry.with-form {
   padding: 6px 25px 7px;
-
-  -webkit-flex: 1 0 0;
-      -ms-flex: 1 0 0;
-          flex: 1 0 0;
 }
 @media only screen and (min-width: 992px) {
   .entries .entry + .entry:after {
