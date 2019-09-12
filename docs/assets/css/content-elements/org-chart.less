@@ -25,7 +25,7 @@ ol {
 
       &::after,
       &::before {
-        background-color: @gray-light;
+        background-color: @gray;
         content: '';
         position: absolute;
       }
@@ -91,10 +91,18 @@ ol {
 
     li {
       & > div {
-        border: 1px solid @gray-light;
-        border-radius: @border-radius-base;
+        border: 2px solid @gray;
+        border-radius: 3px;
         min-height: 2em;
         padding: 0.5em;
+
+        &:hover {
+          background-color: @semi-white;
+        }
+
+        a {
+          diplay: block;
+        }
       }
     }
     // First level chart:
