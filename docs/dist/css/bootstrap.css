@@ -9908,7 +9908,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #66609e;
 }
 .entries .entry.with-form {
-  max-width: 30%;
+  max-width: 33%;
   padding: 6px 25px 7px;
 
   -webkit-flex-basis: content;
