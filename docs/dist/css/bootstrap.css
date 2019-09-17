@@ -1985,9 +1985,10 @@ blockquote.full-width {
   padding: 0;
   margin: 5px 0;
 }
-.column1 blockquote,
 .right-side blockquote {
   width: 100%!important;
+  padding-left: 0;
+  margin-left: 0;
 }
 address {
   margin-bottom: 19px;
