@@ -7,6 +7,10 @@
 .search-area {
   display: none !important;
 }
+.main-area {
+  padding-bottom: 13px;
+  border-bottom: 1px solid #666;
+}
 #globalfooter,
 #topbar_menu {
   display: none;
