@@ -18,5 +18,5 @@
   left: 13px;
 }
 .ku-branding::after {
-  border-bottom: #666;
+  border-bottom: #666 !important;
 }
