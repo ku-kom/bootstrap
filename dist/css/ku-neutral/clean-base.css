@@ -1,19 +1,17 @@
+#globalfooter,
+#topbar_menu,
+.search-area,
 .ku-branding-logo,
 .ku-branding-logo img,
 .ku-nav,
 .ku-navbar-header,
 .ku-topbar,
-.local-footer,
-.search-area {
+.local-footer {
   display: none !important;
 }
 .main-area {
   padding-bottom: 13px;
   border-bottom: 1px solid #666;
-}
-#globalfooter,
-#topbar_menu {
-  display: none;
 }
 .ku-branding-line {
   height: 83px;
