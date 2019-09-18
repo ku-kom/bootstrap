@@ -1,0 +1,22 @@
+.ku-branding-logo,
+.ku-branding-logo img,
+.ku-nav,
+.ku-navbar-header,
+.ku-topbar,
+.local-footer,
+.search-area {
+  display: none !important;
+}
+#globalfooter,
+#topbar_menu {
+  display: none;
+}
+.ku-branding-line {
+  height: 83px;
+}
+.ku-branding .ku-branding-text {
+  left: 13px;
+}
+.ku-branding::after {
+  border-bottom: #666;
+}

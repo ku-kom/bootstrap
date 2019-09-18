@@ -214,7 +214,22 @@ module.exports = function (grunt) {
             flatten: true
         }
       ]
+    },
+    compileNeutralStyles: {
+      options: {
+        strictMath: true
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'docs/assets/css/ku-neutral/',
+          src: ['**/*.less'],
+          dest: 'dist/css/ku-neutral/',
+          ext: '.css',
+          flatten: true
       }
+    ]
+    }
     },
 
     autoprefixer: {
@@ -260,6 +275,12 @@ module.exports = function (grunt) {
         cwd: 'dist/css/content-elements/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/content-elements/'
+      },
+      neutral: {
+        expand: true,
+        cwd: 'dist/css/ku-neutral/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/ku-neutral/'
       },
       examples: {
         expand: true,
@@ -536,8 +557,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:print']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:print']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

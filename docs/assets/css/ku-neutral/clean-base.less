@@ -1,0 +1,30 @@
+@import "../../../../less/variables.less"; // Styles to remove global elemts from KU templates in order to make a neutral look.
+
+.ku-branding-logo,
+.ku-branding-logo img,
+.ku-nav,
+.ku-navbar-header,
+.ku-topbar,
+.local-footer,
+.search-area {
+  display: none !important;
+}
+
+#globalfooter,
+#topbar_menu {
+  display: none;
+}
+
+.ku-branding-line {
+  height: 83px;
+}
+
+.ku-branding .ku-branding-text {
+  left: 13px;
+}
+
+.ku-branding {
+  &::after {
+    border-bottom: @gray-666;
+  }
+}
