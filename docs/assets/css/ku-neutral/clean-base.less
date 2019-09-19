@@ -2,13 +2,13 @@
 
 #globalfooter,
 #topbar_menu,
-.search-area,
 .ku-branding-logo,
 .ku-branding-logo img,
 .ku-nav,
 .ku-navbar-header,
 .ku-topbar,
-.local-footer {
+.local-footer,
+.search-area {
   display: none !important;
 }
 
@@ -19,6 +19,14 @@
 
 .ku-branding-line {
   height: 83px;
+  width: 100%;
+  @media all and (min-width: 768px) {
+    margin-left: 25%;
+  }
+}
+
+.search-area {
+  width: 0;
 }
 
 .ku-branding .ku-branding-text {
