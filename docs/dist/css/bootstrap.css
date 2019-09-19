@@ -8830,6 +8830,11 @@ iframe {
 .mm-panels > .mm-panel > .mm-navbar + .mm-listview {
   margin-top: -19px !important;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body.modal-open .mm-slideout {
+    z-index: auto;
+  }
+}
 .local-footer {
   font-size: .85em;
   line-height: 1.43em;

@@ -13,6 +13,7 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
+
 #mobileleftmenu {
   //background-color: @white-color;
   color: @text-color;
@@ -281,11 +282,17 @@
 
 .mm-panels {
   // Styling for mobile menu title bar
-  &> .mm-panel {
-    &>.mm-navbar {
+  & > .mm-panel {
+    & > .mm-navbar {
       &+.mm-listview {
         margin-top: -19px!important;
       }
     }
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body.modal-open .mm-slideout {
+    // Bootstrap modals collide with mobile menu in IE11:
+    z-index: auto;
   }
 }
