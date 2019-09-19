@@ -72,6 +72,7 @@ module.exports = function (grunt) {
           'docs/assets/js/src/*.js',
           'docs/assets/js/video-controls/*.js',
           'docs/assets/js/social-feeds/*.js',
+          'docs/assets/js/cookie/*.js',
           '!docs/assets/js/*.min.js'
         ]
       }
@@ -156,6 +157,7 @@ module.exports = function (grunt) {
               'docs/assets/js/social-feeds/instagram/instagramByAccount.js',
               'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
               'docs/assets/js/videoControls/videoControls.js',
+              'docs/assets/js/cookie/cookie.js',
               'docs/assets/js/canvasjs/canvasjs.js'
             ],
             dest: 'dist/js/',
