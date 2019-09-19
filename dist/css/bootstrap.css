@@ -7090,7 +7090,7 @@ input[type=range]::-ms-fill-lower {
 }
 .close {
   float: right;
-  font-size: 22.1px;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1;
   color: #000;
