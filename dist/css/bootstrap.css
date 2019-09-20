@@ -7230,6 +7230,7 @@ button.close {
     display: -ms-flexbox;
     display:         flex;
     min-height: calc(100% - 1rem);
+    margin: 0 auto;
 
     -webkit-align-items: center;
     -ms-flex-align: center;
