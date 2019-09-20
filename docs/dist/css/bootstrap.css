@@ -7986,8 +7986,10 @@ nav {
   margin-top: 0;
 }
 .extra_html_end {
-  margin-bottom: 23px;
+  padding-top: 10px;
+  padding-bottom: 23px;
   background-color: #fff;
+  border-top: 1px solid #ccc;
 }
 .divider {
   margin: 10px 0;
