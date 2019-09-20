@@ -193,11 +193,11 @@ nav {
       }
     }
 
-    & > .rightbox-normal,
     & > .flexiblebox,
     & > .flexiblebox-as-rightbox,
     & > .gcitem,
-    & > .panel {
+    & > .panel,
+    & > .rightbox-normal {
       &:first-child {
         margin-top: @ku-rightcolumn-top;
       }
@@ -243,4 +243,8 @@ nav {
 
 .gcitem > figure:first-child {
   margin-top: 0;
+}
+
+.extra_html_end {
+  background-color: @white-color;
 }

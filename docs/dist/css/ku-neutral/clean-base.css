@@ -11,7 +11,7 @@
 }
 .main-area {
   padding-bottom: 13px;
-  border-bottom: 1px solid #666;
+  margin-bottom: 0;
 }
 .ku-branding-line {
   height: 83px;

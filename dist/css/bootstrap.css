@@ -7954,11 +7954,11 @@ nav {
   .right-side .rightbox:first-child {
     margin-top: 75px;
   }
-  .right-side > .rightbox-normal:first-child,
   .right-side > .flexiblebox:first-child,
   .right-side > .flexiblebox-as-rightbox:first-child,
   .right-side > .gcitem:first-child,
-  .right-side > .panel:first-child {
+  .right-side > .panel:first-child,
+  .right-side > .rightbox-normal:first-child {
     margin-top: 75px;
   }
 }
@@ -7984,6 +7984,9 @@ nav {
 }
 .gcitem > figure:first-child {
   margin-top: 0;
+}
+.extra_html_end {
+  background-color: #fff;
 }
 .divider {
   margin: 10px 0;
