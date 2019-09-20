@@ -210,6 +210,33 @@ $('#myModal').on('shown.bs.modal', function () {
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <h2 id="modals-center-vertically">Vertically centered</h2>
+  <p>Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.</p>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-vertically-centered">Vertically centered</button>
+  <div class="modal fade bs-example-vertically-centered" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabelCenter">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="mySmallModalLabelCenter">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="...">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  ...
+  </div>
+</div>
+{% endhighlight %}
   <h2 id="modals-remove-animation">Remove animation</h2>
   <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
 {% highlight html %}

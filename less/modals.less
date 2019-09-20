@@ -148,3 +148,21 @@
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
 }
+
+@media (min-width: @screen-sm) {
+  // KU specific:
+  .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+
+    &::before {
+      display: block;
+      height: calc(100vh - 1rem);
+      content: "";
+    }
+    .modal-content {
+      width: 100%;
+    }
+  }
+}
