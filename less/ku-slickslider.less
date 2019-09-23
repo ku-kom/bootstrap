@@ -1,4 +1,5 @@
 /* Slider */
+
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -225,7 +226,7 @@
 
 .slick-pause {
   z-index: 2;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 0;
   position: absolute;
   bottom: 8px;
@@ -245,10 +246,6 @@
   .glyphicon {
     top: -1px;
     right: -1px;
-
-    &.glyphicon-play {
-      font-size: 22px;
-    }
   }
 }
 
@@ -360,6 +357,7 @@
     padding: 10px;
     @media (max-width: @screen-sm) {
       padding-right: 10%;
+      min-height: 66px;
     }
     font-size: 14px;
     color: @text-color;
@@ -422,11 +420,6 @@
       height: 100%;
       width: 100%;
     }
-  }
-
-  [class="caption"] {
-    // Make room for pause button
-    padding-right: 39px!important;
   }
 
   &:hover .caption {
