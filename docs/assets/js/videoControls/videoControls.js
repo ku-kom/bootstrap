@@ -37,6 +37,11 @@ var initialisevideo = function() {
   // Get player id
   video = document.getElementById('video');
 
+  // If no video element exists, break out of the script right away
+  if (!video) {
+    return;
+  }
+
   // Get handles to each of the buttons and other elements
   playPauseBtn = document.getElementById('play-pause-button');
   muteBtn = document.getElementById('mute-button');
@@ -46,27 +51,28 @@ var initialisevideo = function() {
   fullScreen = document.getElementById('fullscreen-button');
   videoContainer = document.getElementById('videocontainer');
 
-  // If no video element exists, break out of the function
-  if (!video) {
-    return;
-  }
-
   // Hide the browser's default controls
   video.controls = false;
 
   // Add a listener for the timeupdate event so we can update the progress bar
-  video.addEventListener('timeupdate', updateProgressBar, false);
+  if (progressBar) {
+    video.addEventListener('timeupdate', updateProgressBar, false);
+  }
 
   // Add a listener for the play and pause events so the buttons state can be updated
-  video.addEventListener('play', function() {
-    // Change the button to be a pause button
-    changeButtonType(playPauseBtn, 'pause');
-  }, false);
+  if (playPauseBtn) {
+    video.addEventListener('play', function() {
+      // Change the button to be a pause button
+      changeButtonType(playPauseBtn, 'pause');
+    }, false);
+  }
 
-  video.addEventListener('pause', function() {
-    // If paused, change the button to be a play button
-    changeButtonType(playPauseBtn, 'play');
-  }, false);
+  if (playPauseBtn) {
+    video.addEventListener('pause', function() {
+      // If paused, change the button to be a play button
+      changeButtonType(playPauseBtn, 'play');
+    }, false);
+  }
 
   video.addEventListener('ended', function() {
     this.pause();
