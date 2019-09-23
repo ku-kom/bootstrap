@@ -10237,21 +10237,17 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   bottom: 8px;
   z-index: 2;
   padding: 4px;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 0;
   color: #fff;
   cursor: pointer;
-  background: rgba(170, 170, 170, .7);
-  border: none;
+  background: #aaa;
+  border: 1px solid #757575;
+  border-radius: 50%;
   outline: none;
-  opacity: .45;
 }
 .slick-pause:focus {
   outline: 1px dotted #000;
-}
-.slick-pause:focus,
-.slick-pause:hover {
-  opacity: 1;
 }
 .slick-pause .glyphicon {
   top: -1px;
@@ -10404,9 +10400,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   width: 100%;
   height: 100%;
   padding: 15px;
-}
-.slick-slide [class="caption"] {
-  padding-right: 39px!important;
 }
 .slick-slide:hover .caption {
   text-decoration: none;
