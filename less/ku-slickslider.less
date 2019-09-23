@@ -1,5 +1,4 @@
 /* Slider */
-
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -226,7 +225,7 @@
 
 .slick-pause {
   z-index: 2;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 0;
   position: absolute;
   bottom: 8px;
@@ -235,9 +234,9 @@
   cursor: pointer;
   color: @white-color;
   outline: none;
-  background: #aaa;
-  border: 1px solid @gray-light;
-  border-radius: 50%;
+  background: rgba(170,170,170,.8);
+  opacity: 0.45;
+  border: none;
 
   &:focus {
     .tab-focus();
@@ -246,6 +245,10 @@
   .glyphicon {
     top: -1px;
     right: -1px;
+
+    &.glyphicon-play {
+      font-size: 22px;
+    }
   }
 }
 
@@ -346,7 +349,6 @@
 // Captions - KU specific
 
 .slick-slide {
-
   .caption {
     // Textbar bottom as default
     display: block;
@@ -362,7 +364,6 @@
     font-size: 14px;
     color: @text-color;
     background: @gray-f5;
-
 
     h2 {
       margin-top: 0;
@@ -421,6 +422,11 @@
       height: 100%;
       width: 100%;
     }
+  }
+
+  [class="caption"] {
+    // Make room for pause button
+    padding-right: 39px!important;
   }
 
   &:hover .caption {
