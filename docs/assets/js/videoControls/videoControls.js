@@ -297,6 +297,8 @@ var handleFullscreen = function() {
     video.requestFullscreen();
   } else if (video.mozRequestFullScreen) {
     video.mozRequestFullScreen();
+  } else if (video.webkitEnterFullscreen) {
+    video.webkitEnterFullscreen(); // Old IPad, iPhone?
   } else if (video.webkitRequestFullScreen) {
     video.webkitRequestFullScreen();
   } else if (video.msRequestFullscreen) {
