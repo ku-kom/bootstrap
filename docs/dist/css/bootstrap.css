@@ -9829,7 +9829,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .theme-teo .entries {
   border-top: 1px solid #66609e;
 }
-@media only screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
   .entries {
             flex-direction: row;
 
@@ -9858,7 +9858,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-@media only screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
   .entries .entry {
     width: auto;
     padding: 10px 15px;
@@ -9882,7 +9882,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-align: center;
           align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
   .entries .entry > a {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -9944,14 +9944,18 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #66609e;
 }
 .entries .entry.with-form {
-  max-width: 33%;
   padding: 6px 25px 7px;
 
   -webkit-flex-basis: content;
   -ms-flex-preferred-size: content;
           flex-basis: content;
 }
-@media only screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
+  .entries .entry.with-form {
+    max-width: 33%;
+  }
+}
+@media all and (min-width: 992px) {
   .entries .entry + .entry:after {
     position: absolute;
     top: 6px;

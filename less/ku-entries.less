@@ -33,7 +33,7 @@
   .theme-teo & {
     border-top: 1px solid @teol;
   }
-  @media only screen and (min-width: @screen-md) {
+  @media all and (min-width: @screen-md) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
     padding: 10px 15px;
     width: 100%;
     #gradient.vertical(@ku-entry-start; @ku-entry-end; 0%; 100%);
-    @media only screen and (min-width: @screen-md) {
+    @media all and (min-width: @screen-md) {
       width: auto;
       margin-top: 0;
       padding: 10px 15px;
@@ -58,7 +58,7 @@
 
     & > a {
       display: block;
-      @media only screen and (min-width: @screen-md) {
+      @media all and (min-width: @screen-md) {
         display: inline-flex;
       }
       font-size: 15px;
@@ -75,6 +75,7 @@
 
       &:hover {
         text-decoration: underline;
+
         &::before {
           text-decoration: none;
         }
@@ -126,9 +127,11 @@
     &.with-form {
       padding: 6px 25px 7px;
       flex-basis: content;
-      max-width: 33%;
+      @media all and (min-width: @screen-md) {
+        max-width: 33%;
+      }
     }
-    @media only screen and (min-width: @screen-md) {
+    @media all and (min-width: @screen-md) {
       &+.entry {
         &:after {
           content: '';
