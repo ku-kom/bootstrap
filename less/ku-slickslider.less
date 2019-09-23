@@ -226,12 +226,12 @@
 
 .slick-pause {
   z-index: 2;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 0;
   position: absolute;
   bottom: 8px;
   right: 1%;
-  padding: 1px;
+  padding: 4px;
   cursor: pointer;
   color: @white-color;
   outline: none;
@@ -239,7 +239,7 @@
   opacity: 0.45;
   border: none;
 
-  &:focus-visible {
+  &:focus {
     .tab-focus();
   }
 
@@ -351,9 +351,6 @@
 // Captions - KU specific
 
 .slick-slide {
-  .caption {
-    display: none;
-  }
 
   .caption {
     // Textbar bottom as default
@@ -364,9 +361,13 @@
     letter-spacing: 0.7px;
     line-height: @line-height-small;
     padding: 10px;
+    @media (max-width: @screen-sm) {
+      padding-right: 10%;
+    }
     font-size: 14px;
     color: @text-color;
     background: @gray-f5;
+
 
     h2 {
       margin-top: 0;
