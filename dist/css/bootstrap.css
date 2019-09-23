@@ -10243,6 +10243,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   cursor: pointer;
   background: rgba(170, 170, 170, .8);
   border: 1px solid #757575;
+  border-radius: 50%;
   outline: none;
 }
 .slick-pause:focus {
