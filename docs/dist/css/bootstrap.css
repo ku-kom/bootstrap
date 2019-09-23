@@ -10236,15 +10236,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   right: 1%;
   bottom: 8px;
   z-index: 2;
-  padding: 4px;
+  padding: 6px;
   font-size: 26px;
   line-height: 0;
   color: #fff;
   cursor: pointer;
   background: rgba(170, 170, 170, .8);
-  border: none;
+  border: 1px solid #757575;
   outline: none;
-  opacity: .45;
 }
 .slick-pause:focus {
   outline: 1px dotted #000;
