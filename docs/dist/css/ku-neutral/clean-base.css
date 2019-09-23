@@ -2,12 +2,16 @@
 #topbar_menu,
 .ku-branding-logo,
 .ku-branding-logo img,
-.ku-nav,
 .ku-navbar-header,
 .ku-topbar,
 .local-footer,
 .search-area {
   display: none !important;
+}
+@media all and (max-width: 767px) {
+  .ku-nav {
+    display: none!important;
+  }
 }
 .main-area {
   padding-bottom: 13px;
