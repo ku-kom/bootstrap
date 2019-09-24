@@ -9,7 +9,7 @@
   display: none !important;
 }
 .topbar-logo {
-  background-image: none;
+  background-image: none!important;
 }
 @media all and (min-width: 768px) {
   .ku-topbar {
