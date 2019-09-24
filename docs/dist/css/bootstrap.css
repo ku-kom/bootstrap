@@ -6340,7 +6340,7 @@ figcaption {
   text-align: center;
   background-color: #6a979b;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-  transition: width .5s ease;
+  transition: width .3s ease;
 }
 .progress-bar-success {
   background-color: #617e25;
