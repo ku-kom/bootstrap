@@ -200,7 +200,7 @@
 }
 @media all and (max-width: 767px) {
   .gridbox::before {
-    color: #fff;
+    color: inherit;
   }
 }
 .gridbox.no-arrow::before {
