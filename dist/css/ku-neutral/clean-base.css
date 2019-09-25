@@ -8,6 +8,9 @@
 .search-area {
   display: none !important;
 }
+#mmenu-placeholder ~ li {
+  display: none;
+}
 .topbar-logo {
   background-image: none!important;
 }
