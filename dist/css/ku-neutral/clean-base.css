@@ -8,7 +8,12 @@
 .search-area {
   display: none !important;
 }
-#mmenu-placeholder ~ li {
+#mobileleftmenu .mm-panels {
+  top: 0;
+}
+#mmenu-placeholder ~ li,
+.mm-navbars_top,
+.search-placeholder {
   display: none;
 }
 .topbar-logo {
