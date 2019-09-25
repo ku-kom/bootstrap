@@ -36,7 +36,7 @@
   display: none;
 }
 #content {
-  margin-top: 68px;
+  margin-top: 42px;
 }
 .breadcrumbs,
 .local-footer {
@@ -74,7 +74,7 @@
   margin-right: -50vw;
 }
 .campaign-block .block-content {
-  font-size: 18px;
+  font-size: 14px;
   padding: 30px 0;
   width: 100%;
 }
@@ -97,20 +97,24 @@
 .block-bg-fixed .block-content {
   padding: 30px;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
 }
 @media all and (max-width: 767px) {
   .campaign-block .block-content {
-    padding: 30px;
+    padding: 10px 20px;
   }
 }
 @media all and (min-width: 768px) {
+  #content {
+    margin-top: 68px;
+  }
   .campaign-block {
     /* Take desktop scrollbar into account: */
     width: calc(100vw - 9px);
   }
   .campaign-block .block-content {
     max-width: 746px;
+    font-size: 18px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
   }
 }
 @media all and (min-width: 992px) {
