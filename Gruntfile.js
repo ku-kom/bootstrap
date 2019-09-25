@@ -183,16 +183,10 @@ module.exports = function (grunt) {
         dest: 'dist/css/<%= pkg.name %>.css'
       },
       compileCustom: {
-        options: {
-          strictMath: true
-        },
         src: 'less/ku-gridboxes-bootstrap.less',
         dest: 'dist/css/ku-gridboxes.css'
       },
       compileCustomElements: {
-        options: {
-          strictMath: true
-        },
         files: [
           {
             expand: true,
@@ -201,13 +195,10 @@ module.exports = function (grunt) {
             dest: 'dist/css/content-elements/',
             ext: '.css',
             flatten: true
-        }
-      ]
+          }
+        ]
       },
       compileFacultyStyles: {
-        options: {
-            strictMath: true
-        },
         files: [
           {
             expand: true,
@@ -216,13 +207,22 @@ module.exports = function (grunt) {
             dest: 'dist/css/faculties/',
             ext: '.css',
             flatten: true
+          }
+        ]
+    },
+    compileCParallax: {
+      files: [
+        {
+          expand: true,
+          cwd: 'docs/assets/css/parallax/',
+          src: ['**/*.less'],
+          dest: 'dist/css/parallax/',
+          ext: '.css',
+          flatten: true
         }
       ]
     },
     compileNeutralStyles: {
-      options: {
-        strictMath: true
-      },
       files: [
         {
           expand: true,
@@ -231,8 +231,8 @@ module.exports = function (grunt) {
           dest: 'dist/css/ku-neutral/',
           ext: '.css',
           flatten: true
-      }
-    ]
+        }
+      ]
     }
     },
 
@@ -279,6 +279,12 @@ module.exports = function (grunt) {
         cwd: 'dist/css/content-elements/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/content-elements/'
+      },
+      parallax: {
+        expand: true,
+        cwd: 'dist/css/parallax/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/parallax/'
       },
       neutral: {
         expand: true,
@@ -357,7 +363,15 @@ module.exports = function (grunt) {
         expand: true,
         cwd: 'dist/css/content-elements/',
         src: ['*.css', '!*.min.css'],
-        dest: 'dist/css/content-elements/'
+        dest: 'dist/css/content-elements/',
+        ext: '.min.css'
+      },
+      parallax: {
+        expand: true,
+        cwd: 'dist/css/parallax/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/parallax/',
+        ext: '.min.css'
       },
       minifyDoctypes: {
         options: {
@@ -561,8 +575,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:print']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles', 'less:compileCParallax']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

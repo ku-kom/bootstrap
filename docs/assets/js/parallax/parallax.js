@@ -1,3 +1,12 @@
+// This file containd scroll progress functionality as well as parallax effects.
+
+//<div class="campaign-block block-bg-fixed" style="background-image: url("background-image.jpg")">
+//  <div class="block-content">
+//    content
+//  </div>
+//</div>
+
+
 $(function () {
   'use strict';
 
@@ -17,7 +26,7 @@ $(function () {
   var $progressBar = $('.progress-fixed-top');
   var $progress = $('#scrollProgress');
   var $nav = $('.ku-nav');
-  
+
   // Parallax variables:
   var $parallaxBlock = $('.block-bg-fixed');
   var scrolled = $(window).scrollTop();

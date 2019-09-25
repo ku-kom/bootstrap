@@ -1,0 +1,135 @@
+@import "../../../../less/variables.less"; // Scroll progress bar
+
+.progress {
+  margin: 0;
+  height: 6px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1040;
+}
+
+.progress-fixed-top .progress-bar {
+  background-color: @ku-red;
+}
+
+.ku-topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+
+  &.ku-topbar-fixed-top {
+    transform: translatey(6px);
+  }
+}
+
+.ku-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  transform: translatey(28px);
+  transition: all 0.3s ease;
+
+  &.ku-nav-top {
+    transform: translatey(33px);
+  }
+}
+
+.ku-branding {
+  &::after {
+    display: none;
+  }
+}
+
+#content {
+  margin-top: 68px;
+}
+
+.breadcrumbs,
+.local-footer {
+  display: none;
+}
+
+.main-area {
+  margin-bottom: 0;
+}
+
+.main-content {
+  padding-bottom: 0;
+}
+
+.campaign-block {
+  color: @white-color;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  .block-content {
+    font-size: 18px;
+    padding: 30px 0;
+    width: 100%;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.block-bg-fixed {
+  color: @text-color;
+  /* Height set for IE11 in order to get align-items:*/
+  height: 500px;
+  min-height: 100vh;
+  background-attachment: fixed;
+  transform: translateZ(0);
+
+  &:nth-child(1) {
+    /*Move down the very first parallax image in order to avoid flickering on load */
+    background-position: center 22px;
+  }
+
+  .block-content {
+    padding: 30px;
+    background: rgba(300, 300, 300, 0.9);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .1), 0 16px 48px rgba(0, 0, 0, .1), 0 24px 60px rgba(0, 0, 0, .1);
+  }
+}
+@media all and (max-width: @screen-xs-max) {
+  .campaign-block .block-content {
+    padding: 30px;
+  }
+}
+@media all and (min-width: @screen-sm) {
+  .campaign-block {
+    /* Take desktop scrollbar into account: */
+    width: calc(100vw - 9px);
+
+    .block-content {
+      max-width: 746px;
+    }
+  }
+}
+@media all and (min-width: @screen-md) {
+  .campaign-block .block-content {
+    max-width: 966px;
+  }
+}
+@media all and (min-width: @screen-lg) {
+  .campaign-block .block-content {
+    max-width: 1018px;
+  }
+}
