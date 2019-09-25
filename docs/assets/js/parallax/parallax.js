@@ -37,8 +37,8 @@ $(function () {
       // Hide these as we set src in html and height in css:
       // var imageSrc = $(this).data('image-src')
       // $(this).css('background-image', 'url(' + imageSrc + ')')
-      // var imageHeight = $(this).data('height');
-      // $(this).css('height', imageHeight);
+      var imageHeight = $(this).data('height');
+      $(this).css('height', imageHeight);
       // Adjust the background position.
       var initY = $(this).offset().top;
       var height = $(this).height();
