@@ -161,6 +161,7 @@ module.exports = function (grunt) {
               'docs/assets/js/videoControls/videoControls.js',
               'docs/assets/js/cookie/cookie.js',
               'docs/assets/js/scroll-progress/scroll-progress.js',
+              'docs/assets/js/parallax/parallax.js',
               'docs/assets/js/canvasjs/canvasjs.js'
             ],
             dest: 'dist/js/',
