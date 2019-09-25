@@ -72,6 +72,7 @@ module.exports = function (grunt) {
           'docs/assets/js/src/*.js',
           'docs/assets/js/video-controls/*.js',
           'docs/assets/js/social-feeds/*.js',
+          'docs/assets/js/scroll-progress/*.js',
           'docs/assets/js/parallax/*.js',
           'docs/assets/js/cookie/*.js',
           '!docs/assets/js/*.min.js'
@@ -159,7 +160,7 @@ module.exports = function (grunt) {
               'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
               'docs/assets/js/videoControls/videoControls.js',
               'docs/assets/js/cookie/cookie.js',
-              'docs/assets/js/parallax/parallax.js',
+              'docs/assets/js/scroll-progress/scroll-progress.js',
               'docs/assets/js/canvasjs/canvasjs.js'
             ],
             dest: 'dist/js/',
@@ -214,9 +215,9 @@ module.exports = function (grunt) {
       files: [
         {
           expand: true,
-          cwd: 'docs/assets/css/parallax/',
+          cwd: 'docs/assets/css/scroll-progress/',
           src: ['**/*.less'],
-          dest: 'dist/css/parallax/',
+          dest: 'dist/css/scroll-progress/',
           ext: '.css',
           flatten: true
         }
