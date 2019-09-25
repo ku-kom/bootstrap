@@ -94,8 +94,10 @@
   /* Height set for IE11 in order to get align-items:*/
   height: 500px;
   min-height: 100vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-position: center center;
   transform: translateZ(0);
+  will-change: transform;
   @media (min-width: @screen-sm) {
     &:nth-child(1) {
       /*Move down the very first parallax image in order to avoid flickering on load */
@@ -125,6 +127,13 @@
     .block-content {
       max-width: 746px;
       font-size: 18px;
+    }
+  }
+
+  .block-bg-fixed {
+    background-attachment: fixed;
+
+    .block-content {
       box-shadow: 0 1px 8px rgba(0, 0, 0, .1), 0 16px 48px rgba(0, 0, 0, .1), 0 24px 60px rgba(0, 0, 0, .1);
     }
   }

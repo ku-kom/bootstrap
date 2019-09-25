@@ -86,9 +86,11 @@
   /* Height set for IE11 in order to get align-items:*/
   height: 500px;
   min-height: 100vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-position: center center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  will-change: transform;
 }
 @media (min-width: 768px) {
   .block-bg-fixed:nth-child(1) {
@@ -116,6 +118,11 @@
   .campaign-block .block-content {
     max-width: 746px;
     font-size: 18px;
+  }
+  .block-bg-fixed {
+    background-attachment: fixed;
+  }
+  .block-bg-fixed .block-content {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
   }
 }
