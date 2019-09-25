@@ -96,10 +96,11 @@
   min-height: 100vh;
   background-attachment: fixed;
   transform: translateZ(0);
-
-  &:nth-child(1) {
-    /*Move down the very first parallax image in order to avoid flickering on load */
-    background-position: center 22px;
+  @media (min-width: @screen-sm) {
+    &:nth-child(1) {
+      /*Move down the very first parallax image in order to avoid flickering on load */
+      background-position: center 22px;
+    }
   }
 
   .block-content {

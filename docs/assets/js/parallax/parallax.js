@@ -31,19 +31,22 @@ $(function () {
   var $parallaxBlock = $('.block-bg-fixed');
   var scrolled = $(window).scrollTop();
 
-  $parallaxBlock.each(function (index) {
-    // Hide these as we set src in html and height in css:
-    // var imageSrc = $(this).data('image-src')
-    // $(this).css('background-image', 'url(' + imageSrc + ')')
-    // var imageHeight = $(this).data('height');
-    // $(this).css('height', imageHeight);
-    // Adjust the background position.
-    var initY = $(this).offset().top;
-    var height = $(this).height();
-    var diff = scrolled - initY;
-    var ratio = Math.round((diff / height) * 100);
-    $(this).css('background-position', 'center ' + parseInt(-(ratio * 1.5), 10) + 'px');
-  })
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    $parallaxBlock.each(function (index) {
+
+      // Hide these as we set src in html and height in css:
+      // var imageSrc = $(this).data('image-src')
+      // $(this).css('background-image', 'url(' + imageSrc + ')')
+      // var imageHeight = $(this).data('height');
+      // $(this).css('height', imageHeight);
+      // Adjust the background position.
+      var initY = $(this).offset().top;
+      var height = $(this).height();
+      var diff = scrolled - initY;
+      var ratio = Math.round((diff / height) * 100);
+      $(this).css('background-position', 'center ' + parseInt(-(ratio * 1.5), 10) + 'px');
+    });
+  }
 
   function animateProcessbar() {
     // Update progress bar
@@ -88,20 +91,22 @@ $(function () {
 
   $(window).scroll(function () {
     // Start parallax effect
-    var scrolled = $(window).scrollTop()
-    $parallaxBlock.each(function (index, element) {
-      var initY = $(this).offset().top;
-      var height = $(this).height();
-      var endY = initY + $(this).height();
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      var scrolled = $(window).scrollTop()
+      $parallaxBlock.each(function (index, element) {
+        var initY = $(this).offset().top;
+        var height = $(this).height();
+        var endY = initY + $(this).height();
 
-      // Check if the element is in the viewport.
-      var visible = isInViewport(this);
-      if (visible) {
-        var diff = scrolled - initY;
-        var ratio = Math.round((diff / height) * 100);
-        $(this).css('background-position', 'center ' + parseInt(-(ratio * 1.5), 10) + 'px');
-      }
-    })
+        // Check if the element is in the viewport.
+        var visible = isInViewport(this);
+        if (visible) {
+          var diff = scrolled - initY;
+          var ratio = Math.round((diff / height) * 100);
+          $(this).css('background-position', 'center ' + parseInt(-(ratio * 1.5), 10) + 'px');
+        }
+      });
+    }
 
     animateMenu();
     animateProcessbar();
