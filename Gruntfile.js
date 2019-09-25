@@ -215,9 +215,9 @@ module.exports = function (grunt) {
       files: [
         {
           expand: true,
-          cwd: 'docs/assets/css/scroll-progress/',
+          cwd: 'docs/assets/css/parallax/',
           src: ['**/*.less'],
-          dest: 'dist/css/scroll-progress/',
+          dest: 'dist/css/parallax/',
           ext: '.css',
           flatten: true
         }
