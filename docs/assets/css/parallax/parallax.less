@@ -2,6 +2,11 @@
 // Paralax effect: https://github.com/nk-o/jarallax
 // Page is 100% wide
 
+body {
+  transform: translateZ(0px);
+  transform-style: preserve-3d;
+}
+
 .progress {
   margin: 0;
   height: 6px;
@@ -111,6 +116,8 @@
     will-change: transform;
     backface-visibility: hidden;
     perspective: 1000;
+    transform-origin: right bottom;
+    transform-style: preserve-3d;
   }
 
   .block-content {

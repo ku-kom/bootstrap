@@ -1,3 +1,9 @@
+body {
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 .progress {
   margin: 0;
   height: 6px;
@@ -102,6 +108,10 @@
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .jarallax .block-content {
   padding: 15px;
