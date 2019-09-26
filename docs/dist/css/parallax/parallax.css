@@ -89,7 +89,11 @@
   color: #252525;
   min-height: 100vh;
 }
-.jarallax > .jarallax-img {
+.jarallax .block-content {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.jarallax-img {
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -106,10 +110,6 @@
   transform-origin: right bottom;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-}
-.jarallax .block-content {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.9);
 }
 @media all and (min-width: 768px) {
   #content {
