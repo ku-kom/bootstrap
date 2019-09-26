@@ -62,14 +62,3 @@ $(function () {
     animateProcessbar();
   })
 })
-
-
-// Fixes jumpy scroll in IE11
-if (navigator.userAgent.match(/Trident\/7\./)) {
-  document.body.addEventListener('mousewheel', function () {
-    event.preventDefault();
-    var wd = event.wheelDelta;
-    var po = window.pageYOffset;
-    window.scrollTo(0, po - wd);
-  });
-}
