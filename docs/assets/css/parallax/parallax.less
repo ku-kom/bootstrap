@@ -1,6 +1,8 @@
 @import "../../../../less/variables.less";
 // Scroll progress bar
-// Paralax: https://github.com/nk-o/jarallax
+// Paralax effect: https://github.com/nk-o/jarallax
+// Page is 100% wide
+
 .progress {
   margin: 0;
   height: 6px;
@@ -68,9 +70,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   z-index: 0;
   width: 100vw;
   position: relative;
@@ -81,7 +80,8 @@
 
   .block-content {
     font-size: 14px;
-    padding: 30px 0;
+    padding: 10px 20px;
+    margin: 10px 0;
     width: 100%;
 
     h3 {
@@ -94,16 +94,19 @@
   color: @text-color;
   min-height: 100vh;
 
-  .block-content {
-    padding: 30px;
-    background: rgba(300, 300, 300, 0.9);
+  & > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
-}
-@media all and (max-width: @screen-xs-max) {
-  .campaign-block {
-    .block-content {
-      padding: 10px 20px;
-    }
+
+  .block-content {
+    padding: 15px;
+    background: rgba(@white-color, .9);
   }
 }
 @media all and (min-width: @screen-sm) {
@@ -118,12 +121,13 @@
     .block-content {
       max-width: 746px;
       font-size: 18px;
+      padding: 30px;
     }
   }
-
++
   .jarallax {
     .block-content {
-      box-shadow: 0 1px 8px rgba(0, 0, 0, .1), 0 16px 48px rgba(0, 0, 0, .1), 0 24px 60px rgba(0, 0, 0, .1);
+      box-shadow: 0 1px 8px rgba(@gray-base, .1), 0 16px 48px rgba(@gray-base, .1), 0 24px 60px rgba(@gray-base, .1);
     }
   }
 }

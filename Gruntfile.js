@@ -73,7 +73,6 @@ module.exports = function (grunt) {
           'docs/assets/js/video-controls/*.js',
           'docs/assets/js/social-feeds/*.js',
           'docs/assets/js/scroll-progress/*.js',
-          'docs/assets/js/parallax/*.js',
           'docs/assets/js/cookie/*.js',
           '!docs/assets/js/*.min.js'
         ]
