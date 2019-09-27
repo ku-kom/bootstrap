@@ -103,10 +103,6 @@
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-transform-origin: right bottom;
-  transform-origin: right bottom;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
