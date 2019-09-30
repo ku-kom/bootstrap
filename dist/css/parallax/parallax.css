@@ -75,14 +75,15 @@
   padding: 10px 20px;
   margin: 10px 0;
   width: 100%;
+  z-index: 0;
 }
 .campaign-block .block-content h3 {
   margin-top: 0;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 only in order to understand vertical alignment */
-  .campaign-block {
-    height: 500px;
+  .block-bg {
+    height: 600px;
   }
 }
 .block-bg {
@@ -99,6 +100,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100%;
   height: 100%;
   will-change: transform;
   -webkit-transform-style: preserve-3d;
