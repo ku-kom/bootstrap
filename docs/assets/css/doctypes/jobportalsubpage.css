@@ -16,6 +16,10 @@
   margin: 0 10px 23px 0;
 }
 
+.pxs_search {
+  display: block;
+}
+
 a.pxs_application_link, .pxs_search_button {
   color: #252525;
   text-decoration: none;
