@@ -1928,11 +1928,11 @@ function shareURL(dest) {
     if ($li) {
       $li.each(function (i, v) {
         // Get current urls from news
-        var url = $(this).find('a').prop("href");
+        var url = $(this).find('a').prop('href');
         // Create new url with params
-        var urlWithParams = url + "?utm_source=Nyheder&utm_medium=Link&utm_campaign=kudk-globalmenu";
+        var urlWithParams = url + '?utm_source=Nyheder&utm_medium=Link&utm_campaign=kudk-globalmenu';
         // Set new herf value
-        $(this).find('a').prop("href", urlWithParams);
+        $(this).find('a').prop('href', urlWithParams);
       });
     }
   }

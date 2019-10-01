@@ -65,7 +65,10 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'package.js', 'grunt/*.js']
       },
       core: {
-        src: 'js/*min.js'
+        src: [
+          'js/ku-custom.js',
+          'js/ku-global-footer.js'
+        ]
       },
       assets: {
         src: [
