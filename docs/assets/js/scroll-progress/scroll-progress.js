@@ -1,11 +1,5 @@
-// This file containd scroll progress functionality as well as parallax effects.
-
-//<div class="campaign-block block-bg-fixed" style="background-image: url("background-image.jpg")">
-//  <div class="block-content">
-//    content
-//  </div>
-//</div>
-
+// This file contains scroll progress functionality.
+// Note: Include parallax.min.css along with this script.
 
 $(function () {
   'use strict';
