@@ -15,6 +15,6 @@
   bottom: -2px;
 }
 
-.gdpr-notice + p:first-child {
+.gdpr-notice + p:first-of-type {
   display: inline;
 }
