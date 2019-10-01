@@ -195,17 +195,16 @@
   cursor: pointer;
   color: transparent;
   border: none;
-  outline: none;
+  // outline: none;
   background: transparent;
-
-  &:focus-visible {
-    .tab-focus();
-  }
 
   &:focus,
   &:hover {
     &:before {
       opacity: 1;
+    }
+    &:focus {
+      .tab-focus-v2();
     }
   }
 
