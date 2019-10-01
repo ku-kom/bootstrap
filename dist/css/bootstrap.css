@@ -10210,16 +10210,17 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   visibility: hidden;
   background: transparent;
   border: none;
+  outline: none;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+.slick-arrow:focus-visible,
+.slick-arrow:-moz-focusring {
+  outline: 1px solid #106bfe;
 }
 .slick-arrow:focus:before,
 .slick-arrow:hover:before {
   opacity: 1;
-}
-.slick-arrow:focus:focus,
-.slick-arrow:hover:focus {
-  outline: 1px solid #106bfe;
 }
 .slick-arrow:before {
   font-family: "ku-symbols";
