@@ -1,26 +1,33 @@
 body {
-  /* General font */
-  font-family: arial, sans-serif;
+  /* General font settings */
 }
 /* Logo */
 .ku-branding-logo {
   /* Add link to logo - max width: 250px, height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
   background-repeat: no-repeat;
-  width: 262px;
+  width: 262px!important;
+}
+/* Don't change anything here*/
+.ku-branding-line {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 @media all and (min-width: 768px) {
   .ku-branding-text {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    position: relative;
-    left: unset;
-    bottom: unset;
-    top: 10px;
+    position: relative!important;
+    left: unset!important;
+    bottom: unset!important;
+    top: 10px!important;
   }
 }
-/* Don't change anything here*/
 .ku-branding-line {
   height: 83px;
   width: 100%;
@@ -67,8 +74,9 @@ body {
 /* Mobile menu styling */
 #mobileleftmenu .mm-navbar__title {
   background-color: #ff9900;
-  border-bottom: solid 1px #606060;
+  border-bottom: solid 1px #dedede;
 }
 #mobileleftmenu li.local1_mmenu {
   background: #ff9900;
+  border-top: 1px solid #dedede;
 }
