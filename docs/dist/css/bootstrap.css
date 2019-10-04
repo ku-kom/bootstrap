@@ -7985,12 +7985,6 @@ nav {
 .gcitem > figure:first-child {
   margin-top: 0;
 }
-.extra_html_end {
-  padding-top: 10px;
-  padding-bottom: 23px;
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
 .divider {
   margin: 10px 0;
 }
