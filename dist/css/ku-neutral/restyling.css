@@ -62,6 +62,17 @@ body {
   background: #ff9900;
   border-top: 1px solid #dedede;
 }
+/* Footer */
+.extra_html_end {
+  position: relative;
+  background: #757575;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .extra_html_end {
+    background: linear-gradient(to bottom, #757575 0%, #868686 25%, #8e8d8d 50%, #888888 80%, #808080 100%);
+  }
+}
 /* Don't change anything below here! */
 .ku-branding-logo {
   background-repeat: no-repeat;
