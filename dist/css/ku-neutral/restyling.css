@@ -3,9 +3,26 @@
 body {
   /* General font settings */
 }
+/* Navnetræk: fx. font sizes in various view ports: */
+.ku-branding .ku-branding-text .ku-branding-text-major {
+  /* Mobile */
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .ku-branding .ku-branding-text .ku-branding-text-major {
+    /* iPad */
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .ku-branding .ku-branding-text .ku-branding-text-major {
+    /* Desktop */
+    font-size: 32px;
+  }
+}
 /* Logo */
 .ku-branding-logo {
-  /* Add link to logo - max width: 250px, height: 80px */
+  /* Add link to logo - max width: 250px, max height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
 }
 /* Left menu desktop styling - change colors here: */
@@ -55,16 +72,12 @@ body {
 .ku-branding-logo {
   background-repeat: no-repeat;
   bottom: unset!important;
+  left: unset!important;
   width: 100%!important;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .ku-branding-logo {
     width: 262px!important;
-  }
-}
-@media (min-width: 768px) {
-  .ku-branding-logo {
-    width: 316px!important;
   }
 }
 .ku-branding-text {
