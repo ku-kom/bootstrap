@@ -37,10 +37,6 @@ body {
 .ku-leftmenu ul li a:hover {
   color: #ff9900;
 }
-.ku-leftmenu ul > li {
-  /*  Top level menu dots - change colors here: */
-  /* Top level menu dots with sublevels - change colors here: */
-}
 .ku-leftmenu ul > li > a::before {
   color: #ff9900;
 }
@@ -53,9 +49,6 @@ body {
 .ku-leftmenu ul > li[class^=active] > a::before {
   background-color: #ff9900;
   color: #fff;
-}
-.ku-leftmenu ul > li ul li {
-  /* 2. level and below menu dots - change colors here: */
 }
 .ku-leftmenu ul > li ul li a::before {
   background-color: #ff9900;
