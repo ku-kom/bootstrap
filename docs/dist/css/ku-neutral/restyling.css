@@ -55,15 +55,16 @@ body {
 .ku-branding-logo {
   background-repeat: no-repeat;
   bottom: unset!important;
+  width: 100%!important;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .ku-branding-logo {
-    width: 316px!important;
+    width: 262px!important;
   }
 }
 @media (min-width: 768px) {
   .ku-branding-logo {
-    width: 262px!important;
+    width: 316px!important;
   }
 }
 .ku-branding-text {
@@ -76,13 +77,6 @@ body {
   top: 10px!important;
   max-height: none;
 }
-@media (min-width: 768px) {
-  .ku-branding-line {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
 .ku-branding-line {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -92,9 +86,13 @@ body {
   flex-direction: column;
   height: auto!important;
   width: 100%;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .ku-branding-line {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin-left: 0;
   }
 }

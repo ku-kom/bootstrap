@@ -101,11 +101,12 @@ body {
 .ku-branding-logo {
   background-repeat: no-repeat;
   bottom: unset!important;
+  width: 100%!important;
   @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
-    width: 316px!important;
+    width: 262px!important;
   }
   @media (min-width: @screen-sm) {
-    width: 262px!important;
+    width: 316px!important;
   }
 }
 
@@ -118,18 +119,14 @@ body {
   max-height: none;
 }
 
-@media (min-width: @screen-sm) {
-  .ku-branding-line {
-    flex-direction: row;
-  }
-}
-
 .ku-branding-line {
   display: flex;
   flex-direction: column;
   height: auto!important;
   width: 100%;
+  margin-bottom: 10px;
   @media (min-width: @screen-sm) {
+    flex-direction: row;
     margin-left: 0;
   }
 }
