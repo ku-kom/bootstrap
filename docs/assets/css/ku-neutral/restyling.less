@@ -1,53 +1,20 @@
-@import "../../../../less/variables.less"; // Selected classes to enable overwriting and restyling of global elements
+@import "../../../../less/variables.less";
+/* Selected classes to enable overwriting and restyling of global elements. */
+/* When adding new colors, please consider the EU law of accessibility. Particularly in terms of color contrast. */
 @left-menu-desktop: #ff9900;
 
 body {
   /* General font settings */
 }
+
 /* Logo */
 
 .ku-branding-logo {
   /* Add link to logo - max width: 250px, height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
-  /* Don't change anything here: */
-  background-repeat: no-repeat;
-  @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
-    width: 316px!important;
-  }
-  @media (min-width: @screen-sm) {
-    width: 262px!important;
-  }
 }
 
-/* Don't change anything here: */
-.ku-branding-line {
-  display: flex;
-  flex-direction: column;
-}
 
-.ku-branding-text {
-  flex: 1 1 auto;
-  position: relative!important;
-  left: unset!important;
-  bottom: unset!important;
-  top: 10px!important;
-}
-
-@media (min-width: @screen-sm) {
-  .ku-branding-line {
-    flex-direction: row;
-  }
-}
-
-/* Don't change anything here: */
-
-.ku-branding-line {
-  height: 83px;
-  width: 100%;
-  @media (min-width: @screen-sm) {
-    margin-left: 0;
-  }
-}
 /* Left menu desktop styling - change colors here: */
 
 .ku-leftmenu {
@@ -126,5 +93,43 @@ body {
       background: @left-menu-desktop;
       border-top: 1px solid @ku-gray;
     }
+  }
+}
+
+/* Don't change anything below here: */
+
+.ku-branding-logo {
+  background-repeat: no-repeat;
+  bottom: unset!important;
+  @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+    width: 316px!important;
+  }
+  @media (min-width: @screen-sm) {
+    width: 262px!important;
+  }
+}
+
+.ku-branding-text {
+  flex: 1 1 auto;
+  position: relative!important;
+  left: unset!important;
+  bottom: unset!important;
+  top: 10px!important;
+  max-height: none;
+}
+
+@media (min-width: @screen-sm) {
+  .ku-branding-line {
+    flex-direction: row;
+  }
+}
+
+.ku-branding-line {
+  display: flex;
+  flex-direction: column;
+  height: auto!important;
+  width: 100%;
+  @media (min-width: @screen-sm) {
+    margin-left: 0;
   }
 }
