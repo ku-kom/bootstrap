@@ -1,0 +1,86 @@
+@import "../../../../less/variables.less"; // Selected classes to enable overwriting and restyling of global elements
+@left-menu-desktop: #ff9900;
+
+body {
+  /* General font */
+  font-family: arial, sans-serif;
+}
+/* Left menu desktop styling */
+
+.ku-leftmenu {
+  ul {
+    li {
+      &.active {
+        a {
+          &.active {
+            color: @left-menu-desktop;
+          }
+        }
+
+        & > a {
+          color: @left-menu-desktop;
+        }
+      }
+
+      a {
+        &:focus,
+        &:hover {
+          color: @left-menu-desktop;
+        }
+      }
+    }
+
+    & > li {
+      /*  Top level menu dots */
+      & > a {
+        &::before {
+          color: @left-menu-desktop;
+        }
+
+        &::after {
+          border: 1px solid @gray-d7;
+        }
+
+        &:hover {
+          &::after {
+            background-color: @left-menu-desktop;
+          }
+        }
+      }
+      /* Top level menu dots with sublevels */
+      &[class^=active] {
+        & > a {
+          &::before {
+            background-color: @left-menu-desktop;
+            color: @white-color;
+          }
+        }
+      }
+
+      ul {
+        li {
+          /* 2. level and below menu dots */
+          a {
+            &::before {
+              background-color: @left-menu-desktop;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Mobile menu styling */
+
+#mobileleftmenu {
+  .mm-navbar__title {
+    background-color: @left-menu-desktop;
+    border-bottom: solid 1px @ku-light-grey;
+  }
+
+  li {
+    &.local1_mmenu {
+      background: @left-menu-desktop;
+    }
+  }
+}

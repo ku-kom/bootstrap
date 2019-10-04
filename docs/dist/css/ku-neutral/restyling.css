@@ -1,0 +1,46 @@
+body {
+  /* General font */
+  font-family: arial, sans-serif;
+}
+/* Left menu desktop styling */
+.ku-leftmenu ul li.active a.active {
+  color: #ff9900;
+}
+.ku-leftmenu ul li.active > a {
+  color: #ff9900;
+}
+.ku-leftmenu ul li a:focus,
+.ku-leftmenu ul li a:hover {
+  color: #ff9900;
+}
+.ku-leftmenu ul > li {
+  /*  Top level menu dots */
+  /* Top level menu dots with sublevels */
+}
+.ku-leftmenu ul > li > a::before {
+  color: #ff9900;
+}
+.ku-leftmenu ul > li > a::after {
+  border: 1px solid #d7d7d7;
+}
+.ku-leftmenu ul > li > a:hover::after {
+  background-color: #ff9900;
+}
+.ku-leftmenu ul > li[class^=active] > a::before {
+  background-color: #ff9900;
+  color: #fff;
+}
+.ku-leftmenu ul > li ul li {
+  /* 2. level and below menu dots */
+}
+.ku-leftmenu ul > li ul li a::before {
+  background-color: #ff9900;
+}
+/* Mobile menu styling */
+#mobileleftmenu .mm-navbar__title {
+  background-color: #ff9900;
+  border-bottom: solid 1px #606060;
+}
+#mobileleftmenu li.local1_mmenu {
+  background: #ff9900;
+}
