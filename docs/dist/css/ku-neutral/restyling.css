@@ -2,6 +2,34 @@ body {
   /* General font */
   font-family: arial, sans-serif;
 }
+/* Logo */
+.ku-branding-logo {
+  /* Add link to logo - max width: 250px, height: 80px */
+  background-image: url("https://dummyimage.com/200x80/ccc/000.png");
+  background-repeat: no-repeat;
+  width: 262px;
+}
+@media all and (min-width: 768px) {
+  .ku-branding-text {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: relative;
+    left: unset;
+    bottom: unset;
+    top: 10px;
+  }
+}
+/* Don't change anything here*/
+.ku-branding-line {
+  height: 83px;
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .ku-branding-line {
+    margin-left: 0;
+  }
+}
 /* Left menu desktop styling */
 .ku-leftmenu ul li.active a.active {
   color: #ff9900;

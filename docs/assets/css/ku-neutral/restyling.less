@@ -5,8 +5,32 @@ body {
   /* General font */
   font-family: arial, sans-serif;
 }
-/* Left menu desktop styling */
+/* Logo */
+.ku-branding-logo {
+  /* Add link to logo - max width: 250px, height: 80px */
+  background-image: url("https://dummyimage.com/200x80/ccc/000.png");
+  background-repeat: no-repeat;
+  width: 262px;
+}
+@media all and (min-width: @screen-sm) {
+  .ku-branding-text {
+    flex: 1 1 auto;
+    position: relative;
+    left: unset;
+    bottom: unset;
+    top: 10px;
+  }
+}
+/* Don't change anything here*/
 
+.ku-branding-line {
+  height: 83px;
+  width: 100%;
+  @media all and (min-width: @screen-sm) {
+    margin-left: 0;
+  }
+}
+/* Left menu desktop styling */
 .ku-leftmenu {
   ul {
     li {
@@ -71,7 +95,6 @@ body {
   }
 }
 /* Mobile menu styling */
-
 #mobileleftmenu {
   .mm-navbar__title {
     background-color: @left-menu-desktop;
