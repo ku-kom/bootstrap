@@ -12,10 +12,10 @@ body {
 @media (min-width: 768px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     /* iPad */
-    font-size: 20px;
+    font-size: 18px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     /* Desktop */
     font-size: 20px;
