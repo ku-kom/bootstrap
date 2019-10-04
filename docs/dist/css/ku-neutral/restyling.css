@@ -5,39 +5,55 @@ body {
 .ku-branding-logo {
   /* Add link to logo - max width: 250px, height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
+  /* Don't change anything here: */
   background-repeat: no-repeat;
-  width: 262px!important;
 }
-/* Don't change anything here*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .ku-branding-logo {
+    width: 316px!important;
+  }
+}
+@media (min-width: 768px) {
+  .ku-branding-logo {
+    width: 262px!important;
+  }
+}
+/* Don't change anything here: */
 .ku-branding-line {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-@media all and (min-width: 768px) {
-  .ku-branding-text {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    position: relative!important;
-    left: unset!important;
-    bottom: unset!important;
-    top: 10px!important;
+.ku-branding-text {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: relative!important;
+  left: unset!important;
+  bottom: unset!important;
+  top: 10px!important;
+}
+@media (min-width: 768px) {
+  .ku-branding-line {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
+/* Don't change anything here: */
 .ku-branding-line {
   height: 83px;
   width: 100%;
 }
-@media all and (min-width: 768px) {
+@media (min-width: 768px) {
   .ku-branding-line {
     margin-left: 0;
   }
 }
-/* Left menu desktop styling */
+/* Left menu desktop styling - change colors here: */
 .ku-leftmenu ul li.active a.active {
   color: #ff9900;
 }
@@ -49,8 +65,8 @@ body {
   color: #ff9900;
 }
 .ku-leftmenu ul > li {
-  /*  Top level menu dots */
-  /* Top level menu dots with sublevels */
+  /*  Top level menu dots - change colors here: */
+  /* Top level menu dots with sublevels - change colors here: */
 }
 .ku-leftmenu ul > li > a::before {
   color: #ff9900;
@@ -66,12 +82,12 @@ body {
   color: #fff;
 }
 .ku-leftmenu ul > li ul li {
-  /* 2. level and below menu dots */
+  /* 2. level and below menu dots - change colors here: */
 }
 .ku-leftmenu ul > li ul li a::before {
   background-color: #ff9900;
 }
-/* Mobile menu styling */
+/* Mobile menu styling - change colors here: */
 #mobileleftmenu .mm-navbar__title {
   background-color: #ff9900;
   border-bottom: solid 1px #dedede;
