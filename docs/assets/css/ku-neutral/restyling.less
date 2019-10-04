@@ -1,13 +1,13 @@
-@import "../../../../less/variables.less"; /* Selected classes to enable overwriting and restyling of global elements. */
+/* Selected classes to enable overwriting and restyling of global elements. */
+/* Important! Delete everything in this stylesheet that you don't need! Only keep the classes that you whish to restyle. */
 /* When adding new colors, please consider the EU law of accessibility. Particularly in terms of color contrast. */
+@import "../../../../less/variables.less";
 @left-menu-desktop: #ff9900;
 
 body {
   /* General font settings */
 }
-
-/* Navnetræk: fx. font sizes in various view ports: */
-
+/* Navnetr&aelig;k: fx. font sizes in various view ports: */
 .ku-branding {
   .ku-branding-text {
     .ku-branding-text-major {
@@ -24,16 +24,12 @@ body {
     }
   }
 }
-
-
 /* Logo */
-
 .ku-branding-logo {
   /* Add link to logo - max width: 250px, max height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
 }
 /* Left menu desktop styling - change colors here: */
-
 .ku-leftmenu {
   ul {
     li {
@@ -98,7 +94,6 @@ body {
   }
 }
 /* Mobile menu styling - change colors here: */
-
 #mobileleftmenu {
   .mm-navbar__title {
     background-color: @left-menu-desktop;
@@ -112,14 +107,17 @@ body {
     }
   }
 }
-/* Don't change anything below here: */
-
+/* Don't change anything below here! */
 .ku-branding-logo {
   background-repeat: no-repeat;
   bottom: unset!important;
   left: unset!important;
   width: 100%!important;
-  @media (min-width: @screen-xs) {
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    margin-top: 10px;
+    width: 403px!important;
+  }
+  @media (min-width: @screen-md) {
     width: 262px!important;
   }
 }

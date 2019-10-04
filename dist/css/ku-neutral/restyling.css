@@ -1,9 +1,10 @@
 /* Selected classes to enable overwriting and restyling of global elements. */
+/* Important! Delete everything in this stylesheet that you don't need! Only keep the classes that you whish to restyle. */
 /* When adding new colors, please consider the EU law of accessibility. Particularly in terms of color contrast. */
 body {
   /* General font settings */
 }
-/* Navnetræk: fx. font sizes in various view ports: */
+/* Navnetr&aelig;k: fx. font sizes in various view ports: */
 .ku-branding .ku-branding-text .ku-branding-text-major {
   /* Mobile */
   font-size: 15px;
@@ -68,14 +69,20 @@ body {
   background: #ff9900;
   border-top: 1px solid #dedede;
 }
-/* Don't change anything below here: */
+/* Don't change anything below here! */
 .ku-branding-logo {
   background-repeat: no-repeat;
   bottom: unset!important;
   left: unset!important;
   width: 100%!important;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .ku-branding-logo {
+    margin-top: 10px;
+    width: 403px!important;
+  }
+}
+@media (min-width: 992px) {
   .ku-branding-logo {
     width: 262px!important;
   }
