@@ -7017,6 +7017,7 @@ button.list-group-item-danger.active:focus {
   outline: 1px solid #106bfe;
 }
 .toplogo #video {
+  display: block;
   max-width: 1018px;
 }
 .media-controls {
