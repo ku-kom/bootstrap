@@ -3,6 +3,11 @@
   display: none !important;
 }
 
+/* Hide navnetraek as we use graphics on the front page */
+.ku-branding-text-major, .ku-branding-text-sub {
+  display: none;
+}
+
 video {
   width: 100%;
 }
