@@ -8,6 +8,7 @@ body {
   /* General font settings */
 }
 /* Navnetraek: for example font sizes in various view ports: */
+
 .ku-branding {
   .ku-branding-text {
     .ku-branding-text-major {
@@ -25,11 +26,13 @@ body {
   }
 }
 /* Logo */
+
 .ku-branding-logo {
-  /* Add link to logo - max width: 250px, max height: 80px */
+  /* Add link to logo - max width: 235px, max height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
 }
 /* Left menu desktop styling - change colors here: */
+
 .ku-leftmenu {
   ul {
     li {
@@ -92,6 +95,7 @@ body {
   }
 }
 /* Mobile menu styling - change colors here: */
+
 #mobileleftmenu {
   .mm-navbar__title {
     background-color: @left-menu-desktop;
@@ -105,8 +109,8 @@ body {
     }
   }
 }
-
 /* Footer */
+
 .extra_html_end {
   position: relative;
   background: @gray-light;
@@ -115,19 +119,24 @@ body {
   }
   color: @white-color;
 }
-
 /* Don't change anything below here! */
+
 .ku-branding-logo {
+  background-position: center center;
   background-repeat: no-repeat;
   bottom: unset!important;
   left: unset!important;
   width: 100%!important;
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-    margin-top: 10px;
-    width: 403px!important;
+  max-width: (@default-col-width + @grid-gutter-width) !important;
+  @media (min-width: @screen-sm) and (max-width: @screen-md-max) {
+    width: @default-col-width !important;
   }
-  @media (min-width: @screen-md) {
-    width: 262px!important;
+
+  > a {
+    max-width: @default-col-width;
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
   }
 }
 
@@ -136,18 +145,23 @@ body {
   position: relative!important;
   left: unset!important;
   bottom: unset!important;
-  top: 10px!important;
   max-height: none;
 }
 
 .ku-branding-line {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: auto!important;
   width: 100%;
   margin-bottom: 10px;
   @media (min-width: @screen-sm) {
     flex-direction: row;
     margin-left: 0;
+  }
+}
+@media (min-width: @screen-sm) {
+  .ku-branding-logo {
+    background-position: left center;
   }
 }

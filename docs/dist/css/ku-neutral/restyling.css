@@ -23,7 +23,7 @@ body {
 }
 /* Logo */
 .ku-branding-logo {
-  /* Add link to logo - max width: 250px, max height: 80px */
+  /* Add link to logo - max width: 235px, max height: 80px */
   background-image: url("https://dummyimage.com/200x80/ccc/000.png");
 }
 /* Left menu desktop styling - change colors here: */
@@ -75,21 +75,23 @@ body {
 }
 /* Don't change anything below here! */
 .ku-branding-logo {
+  background-position: center center;
   background-repeat: no-repeat;
   bottom: unset!important;
   left: unset!important;
   width: 100%!important;
+  max-width: 261px !important;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .ku-branding-logo {
-    margin-top: 10px;
-    width: 403px!important;
+    width: 235px !important;
   }
 }
-@media (min-width: 992px) {
-  .ku-branding-logo {
-    width: 262px!important;
-  }
+.ku-branding-logo > a {
+  max-width: 235px;
+  width: 100%;
+  height: 100%;
+  max-height: 80px;
 }
 .ku-branding-text {
   -webkit-flex: 1 1 auto;
@@ -98,7 +100,6 @@ body {
   position: relative!important;
   left: unset!important;
   bottom: unset!important;
-  top: 10px!important;
   max-height: none;
 }
 .ku-branding-line {
@@ -108,6 +109,9 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: auto!important;
   width: 100%;
   margin-bottom: 10px;
@@ -118,5 +122,10 @@ body {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ku-branding-logo {
+    background-position: left center;
   }
 }
