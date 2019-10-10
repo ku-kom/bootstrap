@@ -1887,12 +1887,9 @@ function shareURL(dest) {
   // Language of the current page - fallback to English
   var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
 
-  var $editMode;
-  if ($('html').hasClass('ku-bs')) {
-    // False if in Obvius editor mode (Bootstrap templates has class .ku-bs but not in backend).
-    // Use this variable to determine if certain stuff should run or load.
-    $editMode = false;
-  }
+  // False if in Obvius editor mode (Bootstrap templates has class .ku-bs but not in backend).
+  // Use this variable to determine if certain stuff should run or load.
+  var $editMode = ($('html').hasClass('ku-bs') === false) ? false : true;
 
   // Toggle icon in accordions
   $('.panel-accordion').each(function () {
