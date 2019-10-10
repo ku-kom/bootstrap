@@ -366,6 +366,15 @@ nav[aria-label="Pager"] {
   .nyhedsliste_dato {
     color: @text-color!important;
   }
+
+  .media {
+    // If no image, move text in anyway:
+    & > .media-body {
+      &:first-child {
+        padding-left: @ku-thumbnails-size;
+      }
+    }
+  }
 }
 // Float images right on single column spans:
 

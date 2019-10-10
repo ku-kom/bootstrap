@@ -9566,6 +9566,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .custom-search-results .nyhedsliste_dato {
   color: #252525 !important;
 }
+.custom-search-results .media > .media-body:first-child {
+  padding-left: 74px;
+}
 #gridsidebar .single-column .column1 .media-list .media .media-left,
 .one-one-two-column .column1 .media-list .media .media-left,
 .one-one-two-column .column2 .media-list .media .media-left,
