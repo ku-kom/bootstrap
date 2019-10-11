@@ -11584,7 +11584,6 @@ p[align="right"]:before {
   border-radius: 2px;
 }
 .find-box form .input-group input[type="text"] {
-  border: 0;
   opacity: .85;
 }
 .find-box form .input-group input[type="text"]:placeholder-shown {
