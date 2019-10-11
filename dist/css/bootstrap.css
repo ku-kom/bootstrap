@@ -11596,11 +11596,8 @@ p[align="right"]:before {
   border-left: 1px solid #666;
 }
 .find-researcher {
-  background-image: linear-gradient(to right, #bebec0 0%, #b0b2b6 100%);
+  background-image: linear-gradient(to right, #bbb 0%, #999 100%);
   background-repeat: repeat-x;
-}
-.find-researcher .search-text {
-  color: #565656;
 }
 .find-kunet {
   background-image: linear-gradient(to right, #a80505 0%, #7e0202 100%);
