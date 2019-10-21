@@ -10325,7 +10325,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline-offset: 2px;
 }
 .slick-dots .slick-active button {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .6);
 }
 .slick-slide .caption {
   position: relative;
