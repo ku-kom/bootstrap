@@ -10212,9 +10212,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
-.slick-arrow:focus-visible,
+.slick-arrow:focus,
 .slick-arrow:-moz-focusring {
-  outline: 1px solid #106bfe;
+  outline: 1px dotted #000;
 }
 .slick-arrow:focus:before,
 .slick-arrow:hover:before {
