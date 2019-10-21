@@ -10329,7 +10329,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   opacity: 1;
 }
 .slick-dots li button:focus {
-  outline: none;
+  outline: 1px dotted #000;
 }
 .slick-dots li button:focus:before {
   opacity: 1;
