@@ -198,18 +198,21 @@
   // outline: none;
   background: transparent;
 
-  &:focus, &:-moz-focusring {
-    .tab-focus();
-  }
-
   &:focus,
   &:hover {
-    &:before {
+    &::before {
       opacity: 1;
     }
   }
 
-  &:before {
+  &:focus {
+    .tab-focus();
+    // &::before {
+    //   .tab-focus();
+    // }
+  }
+
+  &::before {
     font-size: 32px;
     opacity: 0.55;
     color: @white-color;
