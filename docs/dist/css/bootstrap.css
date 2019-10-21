@@ -10320,12 +10320,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   border-radius: 50%;
   outline: none;
 }
-.slick-dots li button:hover {
-  outline: none;
-}
-.slick-dots li button:hover:before {
-  opacity: 1;
-}
 .slick-dots li button:focus {
   outline: 1px dotted #000;
   outline-offset: 2px;
