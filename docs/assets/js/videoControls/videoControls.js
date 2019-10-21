@@ -18,7 +18,8 @@
 </div>
  */
 
-var video,
+var lang,
+  video,
   videoContainer,
   playPauseBtn,
   muteBtn,
@@ -34,6 +35,8 @@ var video,
   upperCaseFirst;
 
 var initialisevideo = function() {
+  // Page Language
+  var lang = document.documentElement.lang ? document.documentElement.lang : 'en';
   // Get player id
   video = document.getElementById('video');
 
@@ -196,6 +199,12 @@ var replayMedia = function() {
   video.play();
 };
 
+// Function to handle languages:
+var of = function() {
+  var of = (lang === 'da') ? 'af ' :'of ';
+  return of;
+}
+
 // Parse and format total video duration
 var getDuration = function(duration) {
   if (video.duration) {
@@ -230,9 +239,9 @@ var updateProgressBar = function() {
   progressBar.value = percentage;
   progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
-  progressBar.title = percentage + '% af ' + getDuration();
+  progressBar.title = percentage + '% ' + of() + getDuration();
   var track = progressBar.querySelector('.progress-track');
-  track.innerHTML = percentage + '% af ' + getDuration();
+  track.innerHTML = percentage + '% ' + of() + getDuration();
   if (percentage > 50) {
     track.style.color = "#fff";
   } else {
@@ -240,7 +249,7 @@ var updateProgressBar = function() {
   }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
-    sronly.innerHTML = percentage + '% af ' + getDuration();
+    sronly.innerHTML = percentage + '% ' + of() + getDuration();
   }
 };
 
