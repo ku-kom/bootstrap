@@ -182,6 +182,9 @@
 // Arrows
 
 .slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   font-size: 0;
   line-height: 0;
@@ -255,7 +258,7 @@
 .slick-slider {
   &:hover {
     .slick-prev {
-      left: -3px;
+      left: 0;
       .icon-arrow-back;
 
       &:before {
@@ -264,7 +267,7 @@
     }
 
     .slick-next {
-      right: -3px;
+      right: 0;
 
       &:before {
         content: @icon-arrow;
