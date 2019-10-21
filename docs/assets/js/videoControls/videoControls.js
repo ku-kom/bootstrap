@@ -36,7 +36,7 @@ var lang,
 
 var initialisevideo = function() {
   // Page Language
-  var lang = document.documentElement.lang ? document.documentElement.lang : 'en';
+  lang = document.documentElement.lang ? document.documentElement.lang : 'en';
   // Get player id
   video = document.getElementById('video');
 
