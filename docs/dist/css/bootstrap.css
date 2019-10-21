@@ -10310,7 +10310,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: block;
   width: 6px;
   height: 6px;
-  padding: 5px;
+  padding: 3px;
   font-size: 0;
   line-height: 0;
   color: transparent;
@@ -10328,15 +10328,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-dots li button:focus {
   outline: 1px dotted #000;
-}
-.slick-dots li button:focus:before {
-  opacity: 1;
+  outline-offset: 2px;
 }
 .slick-dots .slick-active button {
   background: rgba(0, 0, 0, .5);
-}
-.slick-dots .slick-active button:focus-within {
-  outline: 1px dotted #000;
 }
 .slick-slide .caption {
   position: relative;

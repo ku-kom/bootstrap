@@ -299,7 +299,6 @@
   li {
     position: relative;
     display: inline-block;
-
     margin: 0 3px;
     padding: 0;
     cursor: pointer;
@@ -310,7 +309,7 @@
       display: block;
       width: 6px;
       height: 6px;
-      padding: 5px;
+      padding: 3px;
       cursor: pointer;
       color: transparent;
       border: 0;
@@ -328,10 +327,7 @@
 
       &:focus {
         .tab-focus();
-
-        &:before {
-          opacity: 1;
-        }
+        outline-offset: 2px;
       }
     }
   }
@@ -339,10 +335,6 @@
   .slick-active {
     button {
       background: rgba(@gray-base, 0.5);
-
-      &:focus-within {
-        .tab-focus();
-      }
     }
   }
 }
