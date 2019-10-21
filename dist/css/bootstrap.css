@@ -10227,6 +10227,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .slick-arrow:focus {
   outline: 1px dotted #000;
+  outline-offset: -1px;
 }
 .slick-arrow::before {
   font-family: "ku-symbols";
@@ -10301,25 +10302,22 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .slick-dots li {
   position: relative;
   display: inline-block;
-  width: 6px;
-  height: 6px;
   padding: 0;
   margin: 0 3px;
   cursor: pointer;
-  background: rgba(0, 0, 0, .3);
-  border-radius: 50%;
 }
 .slick-dots li button {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 6px;
+  height: 6px;
   padding: 5px;
   font-size: 0;
   line-height: 0;
   color: transparent;
   cursor: pointer;
-  background: transparent;
+  background: rgba(0, 0, 0, .3);
   border: 0;
+  border-radius: 50%;
   outline: none;
 }
 .slick-dots li button:hover {
@@ -10334,10 +10332,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .slick-dots li button:focus:before {
   opacity: 1;
 }
-.slick-dots .slick-active {
+.slick-dots .slick-active button {
   background: rgba(0, 0, 0, .5);
 }
-.slick-dots .slick-active:focus-within {
+.slick-dots .slick-active button:focus-within {
   outline: 1px dotted #000;
 }
 .slick-slide .caption {
