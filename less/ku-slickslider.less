@@ -1,4 +1,5 @@
 /* Slider */
+
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -237,10 +238,6 @@
       content: @icon-arrow;
     }
   }
-  @media (min-width: @screen-sm) {
-    // Only display arrows in desktop
-    visibility: visible;
-  }
 }
 // Pause button
 
@@ -287,8 +284,11 @@
     //     content: @icon-arrow;
     //   }
     // }
-    .slick-arrow {
-
+    @media (min-width: @screen-sm) {
+      // Only display arrows in desktop
+      .slick-arrow {
+        visibility: visible;
+      }
     }
 
     .slick-prev.slick-disabled {
