@@ -220,6 +220,23 @@
     -moz-osx-font-smoothing: grayscale;
     font-family: @custom-icon-font-family-name;
   }
+
+  &.slick-prev {
+    left: 0;
+    .icon-arrow-back;
+
+    &:before {
+      display: inline-block;
+    }
+  }
+
+  &.slick-next {
+    right: 0;
+
+    &:before {
+      content: @icon-arrow;
+    }
+  }
   @media (min-width: @screen-sm) {
     // Only display arrows in desktop
     visibility: visible;
@@ -253,25 +270,26 @@
 }
 
 .slick-slider {
-  .slick-arrow:focus & {
   &:hover {
-    .slick-prev {
-      left: 0;
-      .icon-arrow-back;
+    // .slick-prev {
+    //   left: 0;
+    //   .icon-arrow-back;
+    //
+    //   &:before {
+    //     display: inline-block;
+    //   }
+    // }
+    //
+    // .slick-next {
+    //   right: 0;
+    //
+    //   &:before {
+    //     content: @icon-arrow;
+    //   }
+    // }
+    .slick-arrow {
 
-      &:before {
-        display: inline-block;
-      }
     }
-
-    .slick-next {
-      right: 0;
-
-      &:before {
-        content: @icon-arrow;
-      }
-    }
-  }
 
     .slick-prev.slick-disabled {
       &:before {
