@@ -11749,8 +11749,10 @@ form.gdpr-accept .gdpr-label input[type=checkbox] {
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
 }
-.image-presentation {
-  height: 289px;
+@media (min-width: 992px) {
+  .image-presentation {
+    height: 289px;
+  }
 }
 .image-presentation .slick-slide {
   display: block;
