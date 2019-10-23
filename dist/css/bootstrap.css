@@ -11798,15 +11798,21 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
+.mce-content-body p:empty {
+  display: none;
+}
+.mce-content-body p:empty + p {
+  margin-top: 0;
+}
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tbody > tr > td,
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > tfoot > tr > td,
-.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th,
-.mce-content-body table > tfoot > tr > th {
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,

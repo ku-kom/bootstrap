@@ -17,16 +17,24 @@
       .img-responsive;
     }
   }
+
+  p:empty {
+    display: none;
+  }
+
+  p:empty+p {
+    margin-top: 0;
+  }
   // Tables are always outlined in editor
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
