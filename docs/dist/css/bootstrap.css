@@ -3772,7 +3772,8 @@ fieldset[disabled] a .btn {
   background-color: #dbdbdb;
   border-color: #767676;
 }
-.btn-default:hover {
+.btn-default:hover,
+.btn-default:visited {
   color: #252525;
   background-color: #dbdbdb;
   border-color: #979797;
@@ -3829,7 +3830,8 @@ fieldset[disabled] .btn-default.focus {
   background-color: #e2e2e2;
   border-color: #767676;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:visited {
   color: #252525;
   background-color: #e2e2e2;
   border-color: #979797;
@@ -3886,7 +3888,8 @@ fieldset[disabled] .btn-primary.focus {
   background-color: #435719;
   border-color: #060802;
 }
-.btn-success:hover {
+.btn-success:hover,
+.btn-success:visited {
   color: #fff;
   background-color: #435719;
   border-color: #2d3b11;
@@ -3943,7 +3946,8 @@ fieldset[disabled] .btn-success.focus {
   background-color: #425f61;
   border-color: #192424;
 }
-.btn-info:hover {
+.btn-info:hover,
+.btn-info:visited {
   color: #fff;
   background-color: #425f61;
   border-color: #344a4c;
@@ -4000,7 +4004,8 @@ fieldset[disabled] .btn-info.focus {
   background-color: #894201;
   border-color: #241100;
 }
-.btn-warning:hover {
+.btn-warning:hover,
+.btn-warning:visited {
   color: #fff;
   background-color: #894201;
   border-color: #653101;
@@ -4057,7 +4062,8 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #500e11;
   border-color: #000;
 }
-.btn-danger:hover {
+.btn-danger:hover,
+.btn-danger:visited {
   color: #fff;
   background-color: #500e11;
   border-color: #31090a;
@@ -4136,7 +4142,8 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #34518d;
   border-color: #141c35;
 }
-.btn-social.facebook:hover {
+.btn-social.facebook:hover,
+.btn-social.facebook:visited {
   color: #fff;
   background-color: #34518d;
   border-color: #253665;
@@ -4199,7 +4206,8 @@ fieldset[disabled] .btn-social.facebook.focus {
   background-color: #00527e;
   border-color: #000;
 }
-.btn-social.linkedin:hover {
+.btn-social.linkedin:hover,
+.btn-social.linkedin:visited {
   color: #fff;
   background-color: #00527e;
   border-color: #031c28;
@@ -4262,7 +4270,8 @@ fieldset[disabled] .btn-social.linkedin.focus {
   background-color: #085c91;
   border-color: #001922;
 }
-.btn-social.twitter:hover {
+.btn-social.twitter:hover,
+.btn-social.twitter:visited {
   color: #fff;
   background-color: #085c91;
   border-color: #004965;
@@ -10660,7 +10669,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-color: #c2d9db;
   border-color: #578f94;
 }
-.datepicker .highlighted span:hover {
+.datepicker .highlighted span:hover,
+.datepicker .highlighted span:visited {
   color: #000;
   background-color: #c2d9db;
   border-color: #7badb2;
@@ -10725,7 +10735,8 @@ fieldset[disabled] .datepicker .highlighted span.focus {
   background-color: #ffc966;
   border-color: #b37400;
 }
-.datepicker .today span:hover {
+.datepicker .today span:hover,
+.datepicker .today span:visited {
   color: #000;
   background-color: #ffc966;
   border-color: #f59e00;
@@ -10791,7 +10802,8 @@ fieldset[disabled] .datepicker .today span.focus {
   background-color: #d5d5d5;
   border-color: #7b7b7b;
 }
-.datepicker .range span:hover {
+.datepicker .range span:hover,
+.datepicker .range span:visited {
   color: #000;
   background-color: #d5d5d5;
   border-color: #9c9c9c;
@@ -10856,7 +10868,8 @@ fieldset[disabled] .datepicker .range span.focus {
   background-color: #cbd7d8;
   border-color: #66878a;
 }
-.datepicker .range.highlighted:hover {
+.datepicker .range.highlighted:hover,
+.datepicker .range.highlighted:visited {
   color: #000;
   background-color: #cbd7d8;
   border-color: #8aa6a9;
@@ -10921,7 +10934,8 @@ fieldset[disabled] .datepicker .range.highlighted.focus {
   background-color: #f4b747;
   border-color: #805608;
 }
-.datepicker .range.today span:hover {
+.datepicker .range.today span:hover,
+.datepicker .range.today span:visited {
   color: #000;
   background-color: #f4b747;
   border-color: #be7f0c;
@@ -10987,7 +11001,9 @@ fieldset[disabled] .datepicker .range.today span.focus {
   border-color: #8c8c8c;
 }
 .datepicker .selected span:hover,
-.datepicker .selected.highlighted span:hover {
+.datepicker .selected.highlighted span:hover,
+.datepicker .selected span:visited,
+.datepicker .selected.highlighted span:visited {
   color: #fff;
   background-color: #5b5b5b;
   border-color: #adadad;
@@ -11163,7 +11179,8 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   background-color: #ffc966;
   border-color: #b37400;
 }
-.datepicker-days .table-striped .day.today:hover {
+.datepicker-days .table-striped .day.today:hover,
+.datepicker-days .table-striped .day.today:visited {
   color: #000;
   background-color: #ffc966;
   border-color: #f59e00;
