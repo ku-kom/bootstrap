@@ -80,8 +80,10 @@ a {
     .tab-focus();
   }
 
-  &:visited {
-    color: @link-visited-color;
+  &:not(.btn) {
+    &:visited {
+      color: @link-visited-color;
+    }
   }
 }
 

@@ -1511,7 +1511,7 @@ a:focus {
   text-decoration: none;
   outline: 1px dotted #000;
 }
-a:visited {
+a:not(.btn):visited {
   color: #3d239c;
 }
 figure {
