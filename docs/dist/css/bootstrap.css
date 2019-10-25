@@ -3777,7 +3777,7 @@ fieldset[disabled] a .btn {
   background-color: #dbdbdb;
   border-color: #979797;
 }
-a .btn-default:visited {
+a.btn-default:visited {
   color: #252525;
 }
 .btn-default:active,
@@ -3837,7 +3837,7 @@ fieldset[disabled] .btn-default.focus {
   background-color: #e2e2e2;
   border-color: #979797;
 }
-a .btn-primary:visited {
+a.btn-primary:visited {
   color: #252525;
 }
 .btn-primary:active,
@@ -3897,7 +3897,7 @@ fieldset[disabled] .btn-primary.focus {
   background-color: #435719;
   border-color: #2d3b11;
 }
-a .btn-success:visited {
+a.btn-success:visited {
   color: #fff;
 }
 .btn-success:active,
@@ -3957,7 +3957,7 @@ fieldset[disabled] .btn-success.focus {
   background-color: #425f61;
   border-color: #344a4c;
 }
-a .btn-info:visited {
+a.btn-info:visited {
   color: #fff;
 }
 .btn-info:active,
@@ -4017,7 +4017,7 @@ fieldset[disabled] .btn-info.focus {
   background-color: #894201;
   border-color: #653101;
 }
-a .btn-warning:visited {
+a.btn-warning:visited {
   color: #fff;
 }
 .btn-warning:active,
@@ -4077,7 +4077,7 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #500e11;
   border-color: #31090a;
 }
-a .btn-danger:visited {
+a.btn-danger:visited {
   color: #fff;
 }
 .btn-danger:active,
@@ -4159,7 +4159,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #34518d;
   border-color: #253665;
 }
-a .btn-social.facebook:visited {
+a.btn-social.facebook:visited {
   color: #fff;
 }
 .btn-social.facebook:active,
@@ -4225,7 +4225,7 @@ fieldset[disabled] .btn-social.facebook.focus {
   background-color: #00527e;
   border-color: #031c28;
 }
-a .btn-social.linkedin:visited {
+a.btn-social.linkedin:visited {
   color: #fff;
 }
 .btn-social.linkedin:active,
@@ -4291,7 +4291,7 @@ fieldset[disabled] .btn-social.linkedin.focus {
   background-color: #085c91;
   border-color: #004965;
 }
-a .btn-social.twitter:visited {
+a.btn-social.twitter:visited {
   color: #fff;
 }
 .btn-social.twitter:active,
@@ -10692,7 +10692,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-color: #c2d9db;
   border-color: #7badb2;
 }
-a .datepicker .highlighted span:visited {
+a.datepicker .highlighted span:visited {
   color: #000;
 }
 .datepicker .highlighted span:active,
@@ -10760,7 +10760,7 @@ fieldset[disabled] .datepicker .highlighted span.focus {
   background-color: #ffc966;
   border-color: #f59e00;
 }
-a .datepicker .today span:visited {
+a.datepicker .today span:visited {
   color: #000;
 }
 .datepicker .today span:active,
@@ -10829,7 +10829,7 @@ fieldset[disabled] .datepicker .today span.focus {
   background-color: #d5d5d5;
   border-color: #9c9c9c;
 }
-a .datepicker .range span:visited {
+a.datepicker .range span:visited {
   color: #000;
 }
 .datepicker .range span:active,
@@ -10897,7 +10897,7 @@ fieldset[disabled] .datepicker .range span.focus {
   background-color: #cbd7d8;
   border-color: #8aa6a9;
 }
-a .datepicker .range.highlighted:visited {
+a.datepicker .range.highlighted:visited {
   color: #000;
 }
 .datepicker .range.highlighted:active,
@@ -10965,7 +10965,7 @@ fieldset[disabled] .datepicker .range.highlighted.focus {
   background-color: #f4b747;
   border-color: #be7f0c;
 }
-a .datepicker .range.today span:visited {
+a.datepicker .range.today span:visited {
   color: #000;
 }
 .datepicker .range.today span:active,
@@ -11034,8 +11034,8 @@ fieldset[disabled] .datepicker .range.today span.focus {
   background-color: #5b5b5b;
   border-color: #adadad;
 }
-a .datepicker .selected span:visited,
-a .datepicker .selected.highlighted span:visited {
+a.datepicker .selected span:visited,
+a.datepicker .selected.highlighted span:visited {
   color: #fff;
 }
 .datepicker .selected span:active,
@@ -11214,7 +11214,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   background-color: #ffc966;
   border-color: #f59e00;
 }
-a .datepicker-days .table-striped .day.today:visited {
+a.datepicker-days .table-striped .day.today:visited {
   color: #000;
 }
 .datepicker-days .table-striped .day.today:active,
