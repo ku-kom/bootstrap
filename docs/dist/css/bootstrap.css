@@ -3777,6 +3777,9 @@ fieldset[disabled] a .btn {
   background-color: #dbdbdb;
   border-color: #979797;
 }
+.btn-default:visited {
+  color: #252525;
+}
 .btn-default:active,
 .btn-default.active,
 .btn-default .open > .dropdown-toggle {
@@ -3833,6 +3836,9 @@ fieldset[disabled] .btn-default.focus {
   color: #252525;
   background-color: #e2e2e2;
   border-color: #979797;
+}
+.btn-primary:visited {
+  color: #252525;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3891,6 +3897,9 @@ fieldset[disabled] .btn-primary.focus {
   background-color: #435719;
   border-color: #2d3b11;
 }
+.btn-success:visited {
+  color: #fff;
+}
 .btn-success:active,
 .btn-success.active,
 .btn-success .open > .dropdown-toggle {
@@ -3947,6 +3956,9 @@ fieldset[disabled] .btn-success.focus {
   color: #fff;
   background-color: #425f61;
   border-color: #344a4c;
+}
+.btn-info:visited {
+  color: #fff;
 }
 .btn-info:active,
 .btn-info.active,
@@ -4005,6 +4017,9 @@ fieldset[disabled] .btn-info.focus {
   background-color: #894201;
   border-color: #653101;
 }
+.btn-warning:visited {
+  color: #fff;
+}
 .btn-warning:active,
 .btn-warning.active,
 .btn-warning .open > .dropdown-toggle {
@@ -4061,6 +4076,9 @@ fieldset[disabled] .btn-warning.focus {
   color: #fff;
   background-color: #500e11;
   border-color: #31090a;
+}
+.btn-danger:visited {
+  color: #fff;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -4141,6 +4159,9 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #34518d;
   border-color: #253665;
 }
+.btn-social.facebook:visited {
+  color: #fff;
+}
 .btn-social.facebook:active,
 .btn-social.facebook.active,
 .btn-social.facebook .open > .dropdown-toggle {
@@ -4204,6 +4225,9 @@ fieldset[disabled] .btn-social.facebook.focus {
   background-color: #00527e;
   border-color: #031c28;
 }
+.btn-social.linkedin:visited {
+  color: #fff;
+}
 .btn-social.linkedin:active,
 .btn-social.linkedin.active,
 .btn-social.linkedin .open > .dropdown-toggle {
@@ -4266,6 +4290,9 @@ fieldset[disabled] .btn-social.linkedin.focus {
   color: #fff;
   background-color: #085c91;
   border-color: #004965;
+}
+.btn-social.twitter:visited {
+  color: #fff;
 }
 .btn-social.twitter:active,
 .btn-social.twitter.active,
@@ -10665,6 +10692,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-color: #c2d9db;
   border-color: #7badb2;
 }
+.datepicker .highlighted span:visited {
+  color: #000;
+}
 .datepicker .highlighted span:active,
 .datepicker .highlighted span.active,
 .datepicker .highlighted span .open > .dropdown-toggle {
@@ -10729,6 +10759,9 @@ fieldset[disabled] .datepicker .highlighted span.focus {
   color: #000;
   background-color: #ffc966;
   border-color: #f59e00;
+}
+.datepicker .today span:visited {
+  color: #000;
 }
 .datepicker .today span:active,
 .datepicker .today span.active,
@@ -10796,6 +10829,9 @@ fieldset[disabled] .datepicker .today span.focus {
   background-color: #d5d5d5;
   border-color: #9c9c9c;
 }
+.datepicker .range span:visited {
+  color: #000;
+}
 .datepicker .range span:active,
 .datepicker .range span.active,
 .datepicker .range span .open > .dropdown-toggle {
@@ -10860,6 +10896,9 @@ fieldset[disabled] .datepicker .range span.focus {
   color: #000;
   background-color: #cbd7d8;
   border-color: #8aa6a9;
+}
+.datepicker .range.highlighted:visited {
+  color: #000;
 }
 .datepicker .range.highlighted:active,
 .datepicker .range.highlighted.active,
@@ -10926,6 +10965,9 @@ fieldset[disabled] .datepicker .range.highlighted.focus {
   background-color: #f4b747;
   border-color: #be7f0c;
 }
+.datepicker .range.today span:visited {
+  color: #000;
+}
 .datepicker .range.today span:active,
 .datepicker .range.today span.active,
 .datepicker .range.today span .open > .dropdown-toggle {
@@ -10991,6 +11033,10 @@ fieldset[disabled] .datepicker .range.today span.focus {
   color: #fff;
   background-color: #5b5b5b;
   border-color: #adadad;
+}
+.datepicker .selected span:visited,
+.datepicker .selected.highlighted span:visited {
+  color: #fff;
 }
 .datepicker .selected span:active,
 .datepicker .selected.highlighted span:active,
@@ -11167,6 +11213,9 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
   color: #000;
   background-color: #ffc966;
   border-color: #f59e00;
+}
+.datepicker-days .table-striped .day.today:visited {
+  color: #000;
 }
 .datepicker-days .table-striped .day.today:active,
 .datepicker-days .table-striped .day.today.active,
