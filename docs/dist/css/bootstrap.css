@@ -1483,6 +1483,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
+  direction: ltr;
 }
 @media (max-width: 767px) {
   body {
@@ -6047,14 +6048,14 @@ html:lang(en) .navbar-inverse .topbar-logo {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-size: 85%;
   font-weight: bold;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 2px;
 }
 a.label:hover,
 a.label:focus {
