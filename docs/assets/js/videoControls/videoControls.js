@@ -257,14 +257,14 @@ var updateProgressBar = function () {
   // Update the slider value
   progressBar.value = value;
   // Work out how much of the media has played via the duration and currentTime parameters
-  //var percentage = Math.floor((100 / video.duration) * video.currentTime);
+  var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
   // progressBar.value = percentage;
   // progressBar.style.width = percentage + '%';
   // progressBar.setAttribute("aria-valuenow", percentage);
   // progressBar.title = percentage + '% / ' + getDuration();
-  // var track = document.querySelector('.progress-track');
-  // track.innerHTML = percentage + '% / ' + getDuration();
+  var track = document.querySelector('.progress-track');
+  track.innerHTML = percentage + '% / ' + getDuration();
   // if (percentage > 50) {
   //   track.style.color = "#fff";
   // } else {
@@ -272,7 +272,7 @@ var updateProgressBar = function () {
   // }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
-    //sronly.innerHTML = percentage + '% / ' + getDuration();
+    sronly.innerHTML = percentage + '% / ' + getDuration();
   }
 };
 

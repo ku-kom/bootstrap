@@ -80,14 +80,14 @@
   z-index: 2147483647;
 }
 
-// .progress {
-//   height: 4px;
-//   margin-bottom: 5px;
-// }
-//
-// .progress:hover {
-//   height: 5px;
-// }
+.progress {
+  height: 4px;
+  margin-bottom: 5px;
+}
+
+.progress:hover {
+  height: 5px;
+}
 
 .progress-track {
   display: inline-block;
@@ -108,15 +108,15 @@
   }
 }
 
-.media-controls button + button {
-  margin-left: 5px;
-}
+// .media-controls button + button {
+//   margin-left: 5px;
+// }
 
 .media-controls {
   // Audio slider
   input[type=range] {
     display: inline-block;
-    width: auto;
+    //width: auto;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
   }
@@ -162,6 +162,30 @@ input[type=range]::-ms-track {
   border-color: transparent;
   border-width: 6px 0;
   color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
 }
 
 input[type=range]::-ms-thumb {
