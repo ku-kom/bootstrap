@@ -49,7 +49,7 @@
             for (var i = 0; i < $images; i++) {
               var img = data.data[i].images.standard_resolution.url;
               var link = data.data[i].link;
-              var desc = data.data[i].caption.text;
+              //var desc = data.data[i].caption.text;
               $container.append('<a tabindex="-1" href="' + link + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
