@@ -7049,6 +7049,7 @@ button.list-group-item-danger.active:focus {
 }
 .progress {
   height: 5px;
+  margin-bottom: 10px;
 }
 .progress-track {
   display: inline-block;
@@ -7058,7 +7059,7 @@ button.list-group-item-danger.active:focus {
 .media-controls button {
   font-size: 14px;
   color: #fff;
-  color: transparent;
+  background: transparent;
   border: 0;
   outline: 0;
 }

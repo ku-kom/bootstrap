@@ -199,12 +199,6 @@ var replayMedia = function() {
   video.play();
 };
 
-// Function to handle languages:
-var of = function() {
-  var of = (lang === 'da') ? 'af ' :'of ';
-  return of;
-}
-
 // Parse and format total video duration
 var getDuration = function(duration) {
   if (video.duration) {
@@ -239,9 +233,9 @@ var updateProgressBar = function() {
   progressBar.value = percentage;
   progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
-  progressBar.title = percentage + '% ' + of() + getDuration();
+  progressBar.title = percentage + '% / ' + getDuration();
   var track = document.querySelector('.progress-track');
-  track.innerHTML = percentage + '% ' + of() + getDuration();
+  track.innerHTML = percentage + '% / ' + getDuration();
   // if (percentage > 50) {
   //   track.style.color = "#fff";
   // } else {
@@ -249,7 +243,7 @@ var updateProgressBar = function() {
   // }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
-    sronly.innerHTML = percentage + '% ' + of() + getDuration();
+    sronly.innerHTML = percentage + '% / ' + getDuration();
   }
 };
 
