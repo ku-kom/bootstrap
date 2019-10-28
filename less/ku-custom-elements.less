@@ -235,7 +235,6 @@
   margin: 0;
   padding: 0;
 }
-
 // Faktaboks
 
 .factbox {
@@ -301,12 +300,9 @@ form.gdpr-accept {
     }
   }
 }
+// Element for static images with text overlay just like slick slider - just not sliding:
 
 .image-presentation {
-  @media (min-width: @screen-md) {
-    height: @gridbox1;
-  }
-  // Element for static images with text overlay just like slick slider - just not sliding:
   .slick-slide {
     display: block;
     float: none;
@@ -315,6 +311,16 @@ form.gdpr-accept {
     img {
       max-width: 100%;
       height: auto;
+    }
+  }
+  @media (min-width: @screen-md) {
+    height: @gridbox1;
+
+    .slick-slide {
+      img {
+        max-width: none;
+        height: 100%;
+      }
     }
   }
 }

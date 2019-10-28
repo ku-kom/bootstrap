@@ -11789,11 +11789,6 @@ form.gdpr-accept .gdpr-label input[type=checkbox] {
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
 }
-@media (min-width: 992px) {
-  .image-presentation {
-    height: 289px;
-  }
-}
 .image-presentation .slick-slide {
   display: block;
   float: none;
@@ -11802,6 +11797,15 @@ form.gdpr-accept .btn + .btn {
 .image-presentation .slick-slide img {
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 992px) {
+  .image-presentation {
+    height: 289px;
+  }
+  .image-presentation .slick-slide img {
+    max-width: none;
+    height: 100%;
+  }
 }
 .custom-search {
   width: 100%;
