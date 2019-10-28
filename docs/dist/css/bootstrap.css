@@ -7111,6 +7111,10 @@ input[type=range]::-ms-fill-lower {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, .15);
 }
+.well h2:first-of-type,
+.well h3:first-of-type {
+  margin-top: 0;
+}
 .well-lg {
   padding: 24px;
 }
@@ -11733,20 +11737,6 @@ p[align="right"]:before {
   padding: 0;
   margin: 0;
   font-size: 40px;
-}
-.textbox-grey {
-  min-height: 20px;
-  padding: 15px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 2px;
-}
-.textbox-grey + .textbox-grey {
-  margin-top: 20px;
-}
-.textbox-grey blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, .15);
 }
 .factbox {
   float: right;
