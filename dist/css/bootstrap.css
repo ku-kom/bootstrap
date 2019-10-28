@@ -7029,7 +7029,7 @@ button.list-group-item-danger.active:focus {
   left: 0;
   display: none;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
 }
 .toplogo:hover .control-layer {
   display: block;
@@ -7048,8 +7048,8 @@ button.list-group-item-danger.active:focus {
   margin-top: 5px;
 }
 .progress {
-  height: 5px;
-  margin-bottom: 10px;
+  height: 4px;
+  margin-bottom: 5px;
 }
 .progress-track {
   display: inline-block;
@@ -7078,7 +7078,7 @@ button.list-group-item-danger.active:focus {
 }
 @media all and (min-width: 768px) {
   .media-controls button {
-    font-size: inherit;
+    font-size: 16px;
   }
 }
 input[type=range]::-ms-track {
