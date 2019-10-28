@@ -7047,10 +7047,6 @@ button.list-group-item-danger.active:focus {
   z-index: 2147483647;
   margin-top: 5px;
 }
-.progress {
-  height: 4px;
-  margin-bottom: 5px;
-}
 .progress-track {
   display: inline-block;
   color: #fff;

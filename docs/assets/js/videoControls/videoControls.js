@@ -66,6 +66,7 @@ var initialisevideo = function () {
     // Pause the video when the slider handle is being dragged
     progressBar.addEventListener("mousedown", function () {
       video.pause();
+      console.log("Mousedown");
     });
   }
 
@@ -73,12 +74,14 @@ var initialisevideo = function () {
     // Play the video when the slider handle is dropped
     progressBar.addEventListener("mouseup", function () {
       video.play();
+      console.log("Mouseup");
     });
   }
 
   if (progressBar) {
     // Event listener for the seek bar
     progressBar.addEventListener("change", function () {
+      console.log("Click seek");
       // Calculate the new time
       var time = video.duration * (progressBar.value / 100);
 
@@ -229,7 +232,7 @@ var getDuration = function (duration) {
   if (video.duration) {
     var minutes = parseInt(video.duration / 60, 10);
     var seconds = Math.round(video.duration % 60);
-    return minutes + ':' + seconds + ' min.';
+    return minutes + ':' + seconds;
   }
 }
 
@@ -252,6 +255,7 @@ var jumpSecs = function (dir, sec) {
 
 // Update the progress bar
 var updateProgressBar = function () {
+  console.log('Progress');
   // Work out how much of the media has played via the duration and currentTime parameters
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
