@@ -240,13 +240,13 @@ var updateProgressBar = function() {
   progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
   progressBar.title = percentage + '% ' + of() + getDuration();
-  var track = progressBar.querySelector('.progress-track');
+  var track = document.querySelector('.progress-track');
   track.innerHTML = percentage + '% ' + of() + getDuration();
-  if (percentage > 50) {
-    track.style.color = "#fff";
-  } else {
-    track.style.color = "#252525";
-  }
+  // if (percentage > 50) {
+  //   track.style.color = "#fff";
+  // } else {
+  //   track.style.color = "#252525";
+  // }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
     sronly.innerHTML = percentage + '% ' + of() + getDuration();

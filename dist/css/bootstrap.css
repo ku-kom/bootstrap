@@ -6397,12 +6397,6 @@ figcaption {
 .progress {
   position: relative;
 }
-.progress-track {
-  position: absolute;
-  display: block;
-  width: 100%;
-  color: #252525;
-}
 .media {
   margin-top: 15px;
 }
@@ -7039,7 +7033,7 @@ button.list-group-item-danger.active:focus {
 }
 .toplogo:hover .control-layer {
   display: block;
-  background: rgba(0, 0, 0, .5);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
 }
 .toplogo a:focus {
   outline: 1px solid #106bfe;
@@ -7053,8 +7047,20 @@ button.list-group-item-danger.active:focus {
   z-index: 2147483647;
   margin-top: 5px;
 }
+.progress {
+  height: 5px;
+}
+.progress-track {
+  display: inline-block;
+  color: #fff;
+  opacity: .8;
+}
 .media-controls button {
   font-size: 14px;
+  color: #fff;
+  color: transparent;
+  border: 0;
+  outline: 0;
 }
 .media-controls button:focus {
   outline: 1px solid #106bfe;
