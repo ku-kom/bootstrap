@@ -233,6 +233,15 @@ var getDuration = function (duration) {
   }
 }
 
+// Parse and format current time
+var getCurrentTime = function (current) {
+  if (video.currentTime) {
+    var minutes = parseInt(video.currentTime / 60, 10);
+    var seconds = Math.round(video.currentTime % 60);
+    return minutes + ':' + seconds;
+  }
+}
+
 // Jumps backwards or forwards any number of seconds
 var jumpSecs = function (dir, sec) {
   // run as jumpSecs('+', 10)
@@ -253,9 +262,9 @@ var jumpSecs = function (dir, sec) {
 // Update the progress bar
 var updateProgressBar = function () {
   var val = progressBar.value;
-  var buf = ((100 - val) / 4) + parseInt(val, 10);
-  progressBar.style.background = '-webkit-linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
-  progressBar.style.background = 'linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
+  var buffer = ((100 - val) / 4) + parseInt(val, 10);
+  progressBar.style.background = '-webkit-linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
+  progressBar.style.background = 'linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
 
   var value = (100 / video.duration) * video.currentTime;
 
@@ -269,10 +278,10 @@ var updateProgressBar = function () {
   progressBar.setAttribute("aria-valuenow", percentage);
   // progressBar.title = percentage + '% / ' + getDuration();
   var track = document.querySelector('.progress-track');
-  track.innerHTML = video.currentTime + ' / ' + getDuration();
+  track.innerHTML = getCurrentTime() + ' / ' + getDuration();
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
-    sronly.innerHTML = percentage + '% / ' + getDuration();
+    sronly.innerHTML = getCurrentTime() + ' / ' + getDuration();
   }
 };
 
