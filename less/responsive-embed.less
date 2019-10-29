@@ -155,16 +155,6 @@
   margin-bottom: 5px;
 }
 
-.progress:hover .progress-bar {
-  height: 8px;
-}
-
-.progress.hover .progress-bar::-webkit-slider-thumb,
-.progress:hover .progress-bar::-webkit-slider-thumb {
-  width: 16px;
-  height: 16px;
-}
-
 .progress-bar {
   -webkit-appearance: none;
   background: linear-gradient(to right, #cc181e 0%, #cc181e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
@@ -184,6 +174,16 @@
   height: 0;
   transitionx: 0.1s ease-in;
   width: 0;
+}
+
+.progress:hover .progress-bar {
+  height: 8px;
+}
+
+.progress.hover .progress-bar::-webkit-slider-thumb,
+.progress:hover .progress-bar::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
 }
 // Make input range visible in IE - why, oh why...
 // input[type=range]::-ms-track {
