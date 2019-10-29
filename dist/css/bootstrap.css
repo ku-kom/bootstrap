@@ -7078,6 +7078,10 @@ button.list-group-item-danger.active:focus {
 .media-controls .mute {
   padding: 0 4px;
 }
+.media-controls .volume {
+  display: inline-block;
+  width: 150px;
+}
 .media-controls .progress {
   height: 3px;
   padding: 4px 0 12px;

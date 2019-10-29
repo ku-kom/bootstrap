@@ -74,9 +74,7 @@ var initialisevideo = function () {
     progressBar.addEventListener("mouseup", function () {
       video.play();
     });
-  }
 
-  if (progressBar) {
     // Event listener for the seek bar
     progressBar.addEventListener("change", function () {
       // Calculate the new time
@@ -85,10 +83,8 @@ var initialisevideo = function () {
       // Update the video time
       video.currentTime = time;
     });
-  }
 
-  // Add a listener for the play and pause events so the buttons state can be updated
-  if (playPauseBtn) {
+    // Add a listener for the play and pause events so the buttons state can be updated
     video.addEventListener('play', function () {
       // Change the button to be a pause button
       changeButtonType(playPauseBtn, 'pause');
@@ -265,16 +261,16 @@ var updateProgressBar = function () {
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
 
   var style =
-  'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
-  'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
-  'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
+    'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+    'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+    'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
 
   progressBar.setAttribute('style', style);
 
   var value = (100 / video.duration) * video.currentTime;
 
   // Update the slider value
-  progressBar.value = value;
+  progressBar.setAttribute('value', value);
   // Work out how much of the media has played via the duration and currentTime parameters
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
