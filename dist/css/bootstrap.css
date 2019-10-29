@@ -7110,7 +7110,6 @@ button.list-group-item-danger.active:focus {
   width: 13px;
   height: 13px;
   background: #aeaeae;
-  border-radius: 8px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
@@ -7118,7 +7117,6 @@ button.list-group-item-danger.active:focus {
 .media-controls .progress:hover .progress-bar {
   height: 8px;
 }
-.media-controls .progress.hover .progress-bar::-webkit-slider-thumb,
 .media-controls .progress:hover .progress-bar::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
