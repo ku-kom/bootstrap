@@ -88,7 +88,9 @@
     font-size: 14px;
     color: @white-color;
     background: transparent;
-    padding: 0;
+    padding: 0 3px;
+    height: 26px;
+    width: 27px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -119,7 +121,7 @@
 
   .progress-bar {
     -webkit-appearance: none;
-    background: linear-gradient(to right, #cc181e 0%, #cc181e 50%, #777 50%, #777 62.5%, @gray-444 62.5%, @gray-444 100%);
+    background: linear-gradient(to right, @ku-red 0%, @ku-red 50%, #777 50%, #777 62.5%, @gray-444 62.5%, @gray-444 100%);
     cursor: pointer;
     height: 3px;
     margin: 0;
@@ -139,6 +141,16 @@
     width: 0;
   }
 
+  .progress-bar::-ms-thumb {
+    background: #aeaeae;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 5px #eaeaea;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    transition: 0.1s ease-in;
+  }
+
   .progress:hover .progress-bar {
     height: 8px;
   }
@@ -149,7 +161,7 @@
     height: 16px;
   }
 }
-// Make input range visible in IE - why, oh why...
+// Make input range visible in IE
 // input[type=range]::-ms-track {
 //   width: 200px;
 //   height: 10px;

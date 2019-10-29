@@ -190,7 +190,7 @@
   line-height: 0;
   position: absolute;
   top: 50%;
-  visibility: hidden;
+  // visibility: hidden;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -208,14 +208,14 @@
   }
 
   &:focus {
-    visibility: visible;
+    //visibility: visible;
     .tab-focus-v2();
     outline-offset: -1px;
   }
 
   &::before {
     font-size: 32px;
-    opacity: 0.55;
+    opacity: 0.35;
     color: @white-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -461,7 +461,7 @@
         padding: 15px;
         width: 45%;
         height: 100%;
-        padding: 16px 20px 20px;
+        padding: 16px 20px 20px 30px;
       }
 
       &.textblock-right {
@@ -478,7 +478,7 @@
         transform: translateY(-50%);
         width: 45%;
         min-height: 70%;
-        padding: 16px 20px 20px;
+        padding: 16px 20px 20px 30px;
         .border-right-radius(2px);
       }
 

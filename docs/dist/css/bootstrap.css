@@ -7052,7 +7052,9 @@ button.list-group-item-danger.active:focus {
   z-index: 2147483647;
 }
 .media-controls button {
-  padding: 0;
+  width: 27px;
+  height: 26px;
+  padding: 0 3px;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
@@ -7088,7 +7090,7 @@ button.list-group-item-danger.active:focus {
   margin: 0;
   vertical-align: middle;
   cursor: pointer;
-  background: linear-gradient(to right, #cc181e 0%, #cc181e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
+  background: linear-gradient(to right, #901a1e 0%, #901a1e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
   transition: .1s ease-in;
 
   -webkit-tap-highlight-color: transparent;
@@ -7099,6 +7101,15 @@ button.list-group-item-danger.active:focus {
   -webkit-appearance: none;
   background: #aeaeae;
   border-radius: 8px;
+  box-shadow: inset 0 0 0 5px #eaeaea;
+  transition: .1s ease-in;
+}
+.media-controls .progress-bar::-ms-thumb {
+  width: 13px;
+  height: 13px;
+  background: #aeaeae;
+  border-radius: 8px;
+  border-radius: 50%;
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
@@ -10253,7 +10264,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   line-height: 0;
   color: transparent;
   cursor: pointer;
-  visibility: hidden;
   background: transparent;
   border: none;
   -webkit-transform: translate(0, -50%);
@@ -10271,7 +10281,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   opacity: 1;
 }
 .slick-arrow:focus {
-  visibility: visible;
   outline: 1px solid #106bfe;
   outline-offset: -1px;
 }
@@ -10279,7 +10288,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-family: "ku-symbols";
   font-size: 32px;
   color: #fff;
-  opacity: .55;
+  opacity: .35;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10476,7 +10485,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 45%;
     height: 100%;
     padding: 15px;
-    padding: 16px 20px 20px;
+    padding: 16px 20px 20px 30px;
   }
   .slick-slide .caption.textblock-right {
     right: 0;
@@ -10490,7 +10499,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     bottom: auto;
     width: 45%;
     min-height: 70%;
-    padding: 16px 20px 20px;
+    padding: 16px 20px 20px 30px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     -webkit-transform: translateY(-50%);
