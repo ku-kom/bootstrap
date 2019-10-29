@@ -7044,7 +7044,9 @@ button.list-group-item-danger.active:focus {
 }
 .progress-track {
   display: inline-block;
+  height: 26px;
   color: #fff;
+  vertical-align: middle;
   opacity: .8;
 }
 .media-controls {

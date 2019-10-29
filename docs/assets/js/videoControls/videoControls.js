@@ -263,8 +263,13 @@ var jumpSecs = function (dir, sec) {
 var updateProgressBar = function () {
   var val = progressBar.value;
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
-  progressBar.style.background = '-webkit-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
-  progressBar.style.background = 'linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
+
+  var style =
+  'background: -webkit-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)' +
+  'background: -ms-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)' +
+  'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
+
+  progressBar.setAttribute('style', style);
 
   var value = (100 / video.duration) * video.currentTime;
 
