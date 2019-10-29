@@ -74,35 +74,33 @@
   max-width: (@container-large-desktop - (@grid-gutter-width *2)); // 1018px;
 }
 
-.media-controls {
-  /* For Safari 5.1 */
-  z-index: 2147483647;
-}
-
 .progress-track {
   display: inline-block;
   color: @white-color;
   opacity: 0.8;
 }
 
-.media-controls button {
-  font-size: 14px;
-  color: @white-color;
-  background: transparent;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-
-  &:focus {
-    .tab-focus-v2();
-  }
-  @media all and (min-width: @screen-sm) {
-    font-size: 18px;
-  }
-}
-
 .media-controls {
+  /* For Safari 5.1 */
+  z-index: 2147483647;
+
+  button {
+    font-size: 14px;
+    color: @white-color;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    @media all and (min-width: @screen-sm) {
+      font-size: 18px;
+    }
+
+    &:focus {
+      .tab-focus-v2();
+    }
+  }
+
   .fullscreen {
     float: right;
   }

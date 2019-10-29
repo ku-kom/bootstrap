@@ -7042,14 +7042,14 @@ button.list-group-item-danger.active:focus {
   display: block;
   max-width: 1018px;
 }
-.media-controls {
-  /* For Safari 5.1 */
-  z-index: 2147483647;
-}
 .progress-track {
   display: inline-block;
   color: #fff;
   opacity: .8;
+}
+.media-controls {
+  /* For Safari 5.1 */
+  z-index: 2147483647;
 }
 .media-controls button {
   padding: 0;
@@ -7060,13 +7060,13 @@ button.list-group-item-danger.active:focus {
   border: 0;
   outline: 0;
 }
-.media-controls button:focus {
-  outline: 1px solid #106bfe;
-}
 @media all and (min-width: 768px) {
   .media-controls button {
     font-size: 18px;
   }
+}
+.media-controls button:focus {
+  outline: 1px solid #106bfe;
 }
 .media-controls .fullscreen {
   float: right;
