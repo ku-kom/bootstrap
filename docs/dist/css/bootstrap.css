@@ -7106,6 +7106,11 @@ button.list-group-item-danger.active:focus {
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
+.media-controls .progress-bar::-ms-track {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
 .media-controls .progress-bar::-ms-fill-lower,
 .media-controls .progress-bar::-ms-fill-upper,
 .media-controls .progress-bar::-ms-track {
@@ -7115,6 +7120,7 @@ button.list-group-item-danger.active:focus {
 .media-controls .progress-bar::-ms-ticks-after,
 .media-controls .progress-bar::-ms-ticks-before {
   color: transparent;
+  background: transparent;
 }
 .media-controls .progress-bar::-ms-thumb {
   width: 13px;
