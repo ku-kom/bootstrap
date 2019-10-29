@@ -265,9 +265,9 @@ var updateProgressBar = function () {
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
 
   var style =
-  'background: -webkit-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)' +
-  'background: -ms-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)' +
-  'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%)';
+  'background: -webkit-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+  'background: -ms-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+  'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
 
   progressBar.setAttribute('style', style);
 
@@ -278,10 +278,7 @@ var updateProgressBar = function () {
   // Work out how much of the media has played via the duration and currentTime parameters
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
-  // progressBar.value = percentage;
-  // progressBar.style.width = percentage + '%';
   progressBar.setAttribute("aria-valuenow", percentage);
-  // progressBar.title = percentage + '% / ' + getDuration();
   var track = document.querySelector('.progress-track');
   track.innerHTML = getCurrentTime() + ' / ' + getDuration();
   var sronly = progressBar.querySelector('.sr-only');
