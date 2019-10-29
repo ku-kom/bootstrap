@@ -7080,97 +7080,70 @@ button.list-group-item-danger.active:focus {
     font-size: 16px;
   }
 }
-input[type=range] {
-  width: 100%;
-  height: 20px;
+input[type="range"] {
+  position: relative;
+  width: 200px;
+  height: 40px;
   -webkit-appearance: none;
-  margin: 10px 0;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 5px;
+  margin: auto;
+  overflow: hidden;
   cursor: pointer;
-  background: #39808e;
-  border: 0 solid #000;
-  border-radius: 1px;
-  box-shadow: 0 0 0 #000;
-
-  animate: .2s;
+  border-radius: 0;
+  /* iOS */
 }
-input[type=range]::-webkit-slider-thumb {
-  width: 13px;
-  height: 13px;
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  /* 1 */
+  height: 40px;
   -webkit-appearance: none;
-  margin-top: -4.5px;
-  cursor: pointer;
-  background: #39808e;
-  border: 1px solid #2497e3;
-  border-radius: 50px;
-  box-shadow: 0 0 0 #000;
+  background: #fff;
+  border: 2px solid #999;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
+  /* 1 */
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #39808e;
+input[type="range"]::-moz-range-track {
+  height: 40px;
+  background: #ddd;
 }
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background: #39808e;
-  border: 0 solid #000;
-  border-radius: 1px;
-  box-shadow: 0 0 0 #000;
-
-  animate: .2s;
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
 }
-input[type=range]::-moz-range-thumb {
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
-  background: #39808e;
-  border: 1px solid #2497e3;
-  border-radius: 50px;
-  box-shadow: 0 0 0 #000;
+input[type="range"]::-ms-fill-lower {
+  background: dodgerblue;
 }
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 5px;
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #999;
+}
+input[type="range"]::-ms-ticks-after {
+  display: none;
+}
+input[type="range"]::-ms-ticks-before {
+  display: none;
+}
+input[type="range"]::-ms-track {
+  height: 40px;
   color: transparent;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-
-  animate: .2s;
+  background: #ddd;
+  border: none;
 }
-input[type=range]::-ms-fill-lower {
-  background: #39808e;
-  border: 0 solid #000;
-  border-radius: 2px;
-  box-shadow: 0 0 0 #000;
-}
-input[type=range]::-ms-fill-upper {
-  background: #39808e;
-  border: 0 solid #000;
-  border-radius: 2px;
-  box-shadow: 0 0 0 #000;
-}
-input[type=range]::-ms-thumb {
-  width: 13px;
-  height: 13px;
-  margin-top: 1px;
-  cursor: pointer;
-  background: #39808e;
-  border: 1px solid #2497e3;
-  border-radius: 50px;
-  box-shadow: 0 0 0 #000;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #39808e;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #39808e;
+input[type="range"]::-ms-tooltip {
+  display: none;
 }
 .well {
   min-height: 20px;
