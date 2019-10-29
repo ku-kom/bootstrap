@@ -7080,52 +7080,42 @@ button.list-group-item-danger.active:focus {
     font-size: 16px;
   }
 }
-input[type=range]::-ms-track {
-  width: 200px;
-  height: 10px;
-  color: transparent;
-  background: transparent;
-  border-color: transparent;
-  border-width: 6px 0;
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='range'] {
+    width: 80px;
+    -webkit-appearance: none;
+    overflow: hidden;
+    background-color: #9a905d;
+  }
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    margin-top: -1px;
+    color: #13bba4;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #43e5f7;
+  }
 }
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  width: 16px;
-  height: 36px;
-  -webkit-appearance: none;
-  margin-top: -14px;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 3px;
-  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
-  /* Add cool effects to your sliders! */
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7;
 }
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  width: 16px;
-  height: 36px;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
 }
-input[type=range]::-ms-thumb {
-  width: 16px;
-  height: 16px;
-  background: #ddd;
-  border: none;
-  border-radius: 50%;
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7;
 }
-input[type=range]::-ms-fill-upper {
-  background: #ddd;
-  border-radius: 6px;
-}
-input[type=range]::-ms-fill-lower {
-  background: #ddd;
-  border-radius: 6px;
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
 }
 .well {
   min-height: 20px;
