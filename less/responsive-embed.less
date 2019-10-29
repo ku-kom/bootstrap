@@ -130,6 +130,7 @@
     transition: 0.1s ease-in;
     width: 100%;
     vertical-align: middle;
+    box-shadow: none;
     -webkit-tap-highlight-color: transparent;
 
     &::-webkit-slider-thumb {
@@ -142,8 +143,12 @@
       width: 0;
     }
 
-    &::-ms-track {
-      background: linear-gradient(to right, @ku-red 0%, @ku-red 50%, #777 50%, #777 62.5%, @gray-444 62.5%, @gray-444 100%);
+    &::-ms-track, &::-ms-fill-upper, &::-ms-fill-lower {
+      background: transparent;
+    }
+
+    &::-ms-ticks {
+      display: none;
     }
 
     &::-ms-thumb {

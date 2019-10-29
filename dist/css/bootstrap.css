@@ -7093,6 +7093,7 @@ button.list-group-item-danger.active:focus {
   vertical-align: middle;
   cursor: pointer;
   background: linear-gradient(to right, #901a1e 0%, #901a1e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
+  box-shadow: none;
   transition: .1s ease-in;
 
   -webkit-tap-highlight-color: transparent;
@@ -7106,8 +7107,13 @@ button.list-group-item-danger.active:focus {
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
-.media-controls .progress-bar::-ms-track {
-  background: linear-gradient(to right, #901a1e 0%, #901a1e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
+.media-controls .progress-bar::-ms-track,
+.media-controls .progress-bar::-ms-fill-upper,
+.media-controls .progress-bar::-ms-fill-lower {
+  background: transparent;
+}
+.media-controls .progress-bar::-ms-ticks {
+  display: none;
 }
 .media-controls .progress-bar::-ms-thumb {
   width: 13px;
