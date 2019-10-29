@@ -259,28 +259,21 @@ var jumpSecs = function (dir, sec) {
 var updateProgressBar = function () {
   var val = progressBar.value;
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
+  // Currently played
+  var percentage = Math.floor((100 / video.duration) * video.currentTime);
 
   var style =
     'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
-
+    // Update progress bar styling
   progressBar.setAttribute('style', style);
 
-  var value = (100 / video.duration) * video.currentTime;
-
-  // Update the slider value
-  progressBar.setAttribute('value', value);
-  // Work out how much of the media has played via the duration and currentTime parameters
-  var percentage = Math.floor((100 / video.duration) * video.currentTime);
   // Update the progress bar with current values
+  progressBar.setAttribute('value', percentage);
   progressBar.setAttribute("aria-valuenow", percentage);
   var track = document.querySelector('.progress-track');
   track.innerHTML = getCurrentTime() + ' / ' + getDuration();
-  var sronly = progressBar.querySelector('.sr-only');
-  if (sronly) {
-    sronly.innerHTML = getCurrentTime() + ' / ' + getDuration();
-  }
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
