@@ -7067,12 +7067,17 @@ button.list-group-item-danger.active:focus {
     font-size: 18px;
   }
 }
+.fullscreen {
+  float: right;
+}
 .progress {
   height: 3px;
-  padding: 12px 0;
   margin-bottom: 0;
   background: transparent;
   box-shadow: none;
+}
+.progress:hover {
+  padding: 12px 0;
 }
 .progress-bar {
   width: 100%;

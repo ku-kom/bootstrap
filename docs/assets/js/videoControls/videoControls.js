@@ -269,7 +269,7 @@ var updateProgressBar = function () {
   progressBar.setAttribute("aria-valuenow", percentage);
   // progressBar.title = percentage + '% / ' + getDuration();
   var track = document.querySelector('.progress-track');
-  track.innerHTML = percentage + '% / ' + getDuration();
+  track.innerHTML = video.currentTime + ' / ' + getDuration();
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
     sronly.innerHTML = percentage + '% / ' + getDuration();
