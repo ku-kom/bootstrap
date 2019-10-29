@@ -7119,7 +7119,7 @@ button.list-group-item-danger.active:focus {
 .media-controls .progress-bar::-ms-ticks,
 .media-controls .progress-bar::-ms-ticks-after,
 .media-controls .progress-bar::-ms-ticks-before {
-  display: none;
+  color: transparent;
 }
 .media-controls .progress-bar::-ms-thumb {
   width: 13px;
