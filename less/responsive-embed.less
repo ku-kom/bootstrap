@@ -142,6 +142,10 @@
       width: 0;
     }
 
+    &::-ms-track {
+      background: linear-gradient(to right, @ku-red 0%, @ku-red 50%, #777 50%, #777 62.5%, @gray-444 62.5%, @gray-444 100%);
+    }
+
     &::-ms-thumb {
       background: #aeaeae;
       box-shadow: inset 0 0 0 5px #eaeaea;
@@ -149,6 +153,11 @@
       width: 13px;
       border-radius: 50%;
       transition: 0.1s ease-in;
+    }
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .progress-bar {
+      padding: 2px;
     }
   }
 

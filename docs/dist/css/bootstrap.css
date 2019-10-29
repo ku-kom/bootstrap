@@ -7106,6 +7106,9 @@ button.list-group-item-danger.active:focus {
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
+.media-controls .progress-bar::-ms-track {
+  background: linear-gradient(to right, #901a1e 0%, #901a1e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
+}
 .media-controls .progress-bar::-ms-thumb {
   width: 13px;
   height: 13px;
@@ -7113,6 +7116,11 @@ button.list-group-item-danger.active:focus {
   border-radius: 50%;
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .media-controls .progress-bar {
+    padding: 2px;
+  }
 }
 .media-controls .progress:hover .progress-bar {
   height: 8px;
