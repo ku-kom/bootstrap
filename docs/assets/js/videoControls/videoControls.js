@@ -24,6 +24,7 @@ var lang,
   playPauseBtn,
   muteBtn,
   volumeBtn,
+  setVolume,
   progressBar,
   // subtitles,
   // subtitlesMenu,
@@ -60,16 +61,12 @@ var initialisevideo = function () {
   // Add a listener for the timeupdate event so we can update the progress bar
   if (progressBar) {
     video.addEventListener('timeupdate', updateProgressBar, false);
-  }
 
-  if (progressBar) {
     // Pause the video when the slider handle is being dragged
     progressBar.addEventListener("mousedown", function () {
       video.pause();
     });
-  }
 
-  if (progressBar) {
     // Play the video when the slider handle is dropped
     progressBar.addEventListener("mouseup", function () {
       video.play();
@@ -90,6 +87,12 @@ var initialisevideo = function () {
       changeButtonType(playPauseBtn, 'pause');
     }, false);
   }
+
+if (volumeBtn) {
+  volumeBtn.addEventListener("change", function () {
+    setVolume();
+  });
+}
 
   if (playPauseBtn) {
     video.addEventListener('pause', function () {
@@ -191,9 +194,9 @@ var stopPlayer = function () {
 // Changes the volume on the media player using a slider
 var setVolume = function (v) {
   video.muted = false;
-  var vol = Math.floor(v / 100);
-  console.log(vol);
+  var vol = volumeBtn.value / 10;
   video.volume = vol;
+  console.log(vol);
   volumeBtn.title = 'Volume: ' + vol;
   volumeBtn.setAttribute("aria-valuenow", vol);
 };
@@ -267,7 +270,7 @@ var updateProgressBar = function () {
     'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
-    // Update progress bar styling
+  // Update progress bar styling
   progressBar.setAttribute('style', style);
 
   // Update the progress bar with current values
