@@ -255,8 +255,9 @@ var updateProgressBar = function () {
   progressBar.classList.add('loaded');
   var val = progressBar.value;
   var buf = ((100 - val) / 4) + parseInt(val, 10);
-  progressBar.style.background = 'background',
-      'linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
+  progressBar.style.background = '-webkit-linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
+  progressBar.style.background = 'linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
+
   var value = (100 / video.duration) * video.currentTime;
 
   // Update the slider value
