@@ -252,7 +252,6 @@ var jumpSecs = function (dir, sec) {
 
 // Update the progress bar
 var updateProgressBar = function () {
-  progressBar.classList.add('loaded');
   var val = progressBar.value;
   var buf = ((100 - val) / 4) + parseInt(val, 10);
   progressBar.style.background = '-webkit-linear-gradient(to right, #cc181e 0%, #cc181e ' + val + '%, #777 ' + val + '%, #777 ' + buf + '%, #444 ' + buf + '%, #444 100%)';
@@ -267,15 +266,10 @@ var updateProgressBar = function () {
   // Update the progress bar with current values
   // progressBar.value = percentage;
   // progressBar.style.width = percentage + '%';
-  // progressBar.setAttribute("aria-valuenow", percentage);
+  progressBar.setAttribute("aria-valuenow", percentage);
   // progressBar.title = percentage + '% / ' + getDuration();
   var track = document.querySelector('.progress-track');
   track.innerHTML = percentage + '% / ' + getDuration();
-  // if (percentage > 50) {
-  //   track.style.color = "#fff";
-  // } else {
-  //   track.style.color = "#252525";
-  // }
   var sronly = progressBar.querySelector('.sr-only');
   if (sronly) {
     sronly.innerHTML = percentage + '% / ' + getDuration();
