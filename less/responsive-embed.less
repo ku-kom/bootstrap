@@ -153,7 +153,35 @@
 // .progress:hover {
 //   height: 5px;
 // }
-
+.progress:hover .progress-bar,
+.progress.hover .progress-bar { height: 8px; }
+.progress:hover .progress-bar::-webkit-slider-thumb,
+.progress.hover .progress-bar::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+}
+.progress-bar {
+  -webkit-appearance: none;
+  background: linear-gradient(to right,
+    #cc181e 0%, #cc181e 50%,
+    #777 50%, #777 62.5%,
+    #444 62.5%, #444 100%);
+  cursor: pointer;
+  height: 3px;
+  margin: 0;
+  transitionx: 0.1s ease-in;
+  vertical-align: bottom;
+  width: 100%;
+}
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #aeaeae;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 5px #eaeaea;
+  height: 0;
+  transitionx: 0.1s ease-in;
+  width: 0;
+}
 // Make input range visible in IE - why, oh why...
 
 // input[type=range]::-ms-track {
