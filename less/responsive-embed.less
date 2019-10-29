@@ -113,6 +113,11 @@
     padding: 0 4px;
   }
 
+  .volume {
+    width: 150px;
+    display: inline-block;
+  }
+
   .progress {
     height: 3px;
     padding: 4px 0 12px;
@@ -143,11 +148,15 @@
       width: 0;
     }
 
-    &::-ms-track, &::-ms-fill-upper, &::-ms-fill-lower {
+    &::-ms-fill-lower,
+    &::-ms-fill-upper,
+    &::-ms-track {
       background: transparent;
     }
 
-    &::-ms-ticks {
+    &::-ms-ticks,
+    &::-ms-ticks-after,
+    &::-ms-ticks-before {
       display: none;
     }
 
