@@ -265,7 +265,8 @@ var updateProgressBar = function () {
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
 
   var style =
-  'background: -webkit-linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+  'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
+  'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
   'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
 
   progressBar.setAttribute('style', style);
