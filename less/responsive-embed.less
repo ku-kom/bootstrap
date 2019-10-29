@@ -80,15 +80,6 @@
   z-index: 2147483647;
 }
 
-.progress {
-  height: 4px;
-  margin-bottom: 5px;
-}
-
-.progress:hover {
-  height: 5px;
-}
-
 .progress-track {
   display: inline-block;
   color: @white-color;
@@ -112,18 +103,18 @@
 //   margin-left: 5px;
 // }
 
-.media-controls {
-  // Audio slider
-  input[type=range] {
-    display: inline-block;
-    //width: auto;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent;
-  }
-}
+// .media-controls {
+//   // Audio slider
+//   input[type=range] {
+//     display: inline-block;
+//     //width: auto;
+//     vertical-align: middle;
+//     -webkit-tap-highlight-color: transparent;
+//   }
+// }
 @media all and (min-width: @screen-sm) {
   .media-controls button {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 // Enable for subtitles menu
@@ -154,13 +145,22 @@
 //   }
 // }
 
-input[type="range"] {
+// .progress {
+//   height: 4px;
+//   margin-bottom: 5px;
+// }
+//
+// .progress:hover {
+//   height: 5px;
+// }
+
+input[type="range"].progress-bar {
     margin: auto;
     -webkit-appearance: none;
     position: relative;
     overflow: hidden;
     height: 40px;
-    width: 200px;
+    width: 100%;
     cursor: pointer;
     border-radius: 0; /* iOS */
 }
@@ -175,7 +175,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px; /* 1 */
-    height: 40px;
+    height: 20px;
+    border-radius: 50%;
     background: #fff;
     box-shadow: -100vw 0 0 100vw dodgerblue;
     border: 2px solid #999; /* 1 */
@@ -223,7 +224,7 @@ input[type="range"]::-ms-track {
     border: none;
 }
 
-input[type="range"]::-ms-tooltip { 
+input[type="range"]::-ms-tooltip {
     display: none;
 }
 

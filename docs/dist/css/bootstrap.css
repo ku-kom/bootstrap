@@ -7047,13 +7047,6 @@ button.list-group-item-danger.active:focus {
   z-index: 2147483647;
   margin-top: 5px;
 }
-.progress {
-  height: 4px;
-  margin-bottom: 5px;
-}
-.progress:hover {
-  height: 5px;
-}
 .progress-track {
   display: inline-block;
   color: #fff;
@@ -7069,20 +7062,14 @@ button.list-group-item-danger.active:focus {
 .media-controls button:focus {
   outline: 1px solid #106bfe;
 }
-.media-controls input[type=range] {
-  display: inline-block;
-  vertical-align: middle;
-
-  -webkit-tap-highlight-color: transparent;
-}
 @media all and (min-width: 768px) {
   .media-controls button {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
-input[type="range"] {
+input[type="range"].progress-bar {
   position: relative;
-  width: 200px;
+  width: 100%;
   height: 40px;
   -webkit-appearance: none;
   margin: auto;
@@ -7100,10 +7087,11 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   /* 1 */
-  height: 40px;
+  height: 20px;
   -webkit-appearance: none;
   background: #fff;
   border: 2px solid #999;
+  border-radius: 50%;
   box-shadow: -100vw 0 0 100vw dodgerblue;
   /* 1 */
 }
