@@ -252,6 +252,15 @@ var jumpSecs = function (dir, sec) {
 
 // Update the progress bar
 var updateProgressBar = function () {
+
+  var v = progressBar.value;
+
+progressBar.style.background = "-moz-linear-gradient(left,  #ed1e24 0%, #ed1e24 " + v + "%, #191919 " + v + "%, #191919 100%)";
+progressBar.style.background = "-webkit-gradient(linear, left top, right top, color-stop(0%,#ed1e24), color-stop(" + v + "%,#ed1e24), color-stop(" + v + "%,#191919), color-stop(100%,#191919))";
+progressBar.style.background = "-webkit-linear-gradient(left,  #ed1e24 0%,#ed1e24 " + v + "%,#191919 " + v + "%,#191919 100%)";
+progressBar.style.background = "-o-linear-gradient(left,  #ed1e24 0%,#ed1e24 " + v + "%,#191919 " + v + "%,#191919 100%)";
+progressBar.style.background = "-ms-linear-gradient(left,  #ed1e24 0%,#ed1e24 " + v + "%,#191919 " + v + "%,#191919 100%)";
+progressBar.style.backgr
   var value = (100 / video.duration) * video.currentTime;
 
   // Update the slider value
