@@ -7126,7 +7126,7 @@ button.list-group-item-danger.active:focus {
   width: 13px;
   height: 13px;
   background: #aeaeae;
-  border-radius: 50%;
+  border-radius: 13px;
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
