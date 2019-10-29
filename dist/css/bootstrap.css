@@ -7067,12 +7067,18 @@ button.list-group-item-danger.active:focus {
     font-size: 18px;
   }
 }
-.progress:hover .progress-bar,
-.progress.hover .progress-bar {
+.loaded.progress-bar::-webkit-slider-thumb {
+  transition: .1s ease-in;
+}
+.progress {
+  height: 3px;
+  margin-bottom: 5px;
+}
+.progress:hover .progress-bar {
   height: 8px;
 }
-.progress:hover .progress-bar::-webkit-slider-thumb,
-.progress.hover .progress-bar::-webkit-slider-thumb {
+.progress.hover .progress-bar::-webkit-slider-thumb,
+.progress:hover .progress-bar::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
 }
@@ -7084,8 +7090,7 @@ button.list-group-item-danger.active:focus {
   vertical-align: bottom;
   cursor: pointer;
   background: linear-gradient(to right, #cc181e 0%, #cc181e 50%, #777 50%, #777 62.5%, #444 62.5%, #444 100%);
-
-  transitionx: .1s ease-in;
+  transition: .1s ease-in;
 }
 .progress-bar::-webkit-slider-thumb {
   width: 0;

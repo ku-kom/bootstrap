@@ -252,6 +252,7 @@ var jumpSecs = function (dir, sec) {
 
 // Update the progress bar
 var updateProgressBar = function () {
+  progressBar.classList.add('loaded');
   var val = progressBar.value;
   var buf = ((100 - val) / 4) + parseInt(val, 10);
   progressBar.style.background = 'background',
