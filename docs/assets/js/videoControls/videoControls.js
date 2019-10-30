@@ -137,11 +137,10 @@ var stopPlayer = function () {
 // Changes the volume on the media player using a slider
 var setVolume = function (v) {
   video.muted = false;
+  volumeBtn.value = this.value;
   var vol = volumeBtn.value;
-  volumeBtn.setAttribute("value", vol);
-  volumeBtn.title = 'Volume: ' + vol + '%';
   volumeBtn.setAttribute("aria-valuenow", vol);
-  var val = (this.value - this.getAttribute('min')) / (this.getAttribute('max') - this.getAttribute('min'));
+  var val = (volumeBtn.value - this.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
   console.log(val);
   var style =
     'background: -moz-linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +

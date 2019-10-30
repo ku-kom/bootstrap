@@ -7146,8 +7146,8 @@ button.list-group-item-danger.active:focus {
   height: 16px;
 }
 .volume {
-  display: inline-block;
-  width: 150px;
+  display: inline-block !important;
+  width: 150px!important;
   height: 6px;
   -webkit-appearance: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(.15, #fff), color-stop(.15, #c5c5c5));
