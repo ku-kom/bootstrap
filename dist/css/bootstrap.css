@@ -7161,12 +7161,12 @@ button.list-group-item-danger.active:focus {
   outline: none;
 }
 .volume::-webkit-slider-thumb {
-  width: 10px;
-  height: 10px;
+  width: 0;
+  height: 0;
   -webkit-appearance: none;
-  background-color: #e9e9e9;
-  border: 1px solid #cecece;
-  border-radius: 50%;
+  background: #aeaeae;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
 .volume::-ms-track {
