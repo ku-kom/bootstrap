@@ -7163,6 +7163,7 @@ button.list-group-item-danger.active:focus {
   height: 3px;
   background: linear-gradient(to right, #fff 50%, #757575 50%);
   border-radius: 3px;
+  transition: .1s ease-in;
 }
 .volume:hover {
   height: 8px;
