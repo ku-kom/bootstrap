@@ -7147,12 +7147,12 @@ button.list-group-item-danger.active:focus {
 }
 .volume {
   position: relative;
-  top: -4px;
+  top: -6px;
   display: inline-block !important;
   width: 100px!important;
   height: 3px;
   -webkit-appearance: none;
-  background: -webkit-gradient(left, #fff 50%, #c5c5c5 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #c5c5c5));
   border-radius: 3px;
 
   -webkit-tap-highlight-color: transparent;

@@ -141,7 +141,7 @@ var setVolume = function (v) {
   var vol = volumeBtn.value;
   volumeBtn.setAttribute("aria-valuenow", vol);
   var val = (vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
-  var val2 = Math.floor(val / 100);
+  var val2 = Math.floor(vol / 100);
   var style =
     'background: -webkit-linear-gradient(left, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
     'background: linear-gradient(to right,  #fff 0%, #fff ' + val2 + '%, #c5c5c5 ' + val2 +'% ,#c5c5c5 100%)';
@@ -216,7 +216,6 @@ var updateProgressBar = function () {
   // Currently played
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
   var style =
-    'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: linear-gradient(to right, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);';
   // Update progress bar styling
