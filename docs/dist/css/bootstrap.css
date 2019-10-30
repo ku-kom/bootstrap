@@ -7160,8 +7160,7 @@ button.list-group-item-danger.active:focus {
 .volume:focus {
   outline: none;
 }
-.volume::-webkit-slider-thumb,
-.volume::-moz-range-thumb {
+.volume::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
   -webkit-appearance: none;
