@@ -143,7 +143,7 @@ var setVolume = function (v) {
   var vol = volumeBtn.value;
 
   var percent = parseInt((vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min')) * 100, 10);
-  var style = 'background: linear-gradient(to right, #fff ' + percent + '%, #777)';
+  var style = 'background: linear-gradient(to right, #fff ' + percent + '%, #777 0%)';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
   volumeBtn.setAttribute("aria-valuenow", percent);
