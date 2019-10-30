@@ -25,6 +25,7 @@ var lang,
   muteBtn,
   volumeBtn,
   setVolume,
+  hasAudio,
   progressBar,
   // subtitles,
   // subtitlesMenu,
@@ -58,6 +59,12 @@ var initialisevideo = function () {
   // Hide the browser's default controls
   video.controls = false;
 
+  // Hide volume and mute buttons if video has no audio textTracks
+  if (!hasAudio(video)) {
+    muteBtn.classList.add('hidden');
+    volumeBtn.classList.add('hidden');
+  }
+
   // Add a listener for the timeupdate event so we can update the progress bar
   if (progressBar) {
     video.addEventListener('timeupdate', updateProgressBar, false);
@@ -88,11 +95,11 @@ var initialisevideo = function () {
     }, false);
   }
 
-if (volumeBtn) {
-  volumeBtn.addEventListener("change", function () {
-    setVolume();
-  });
-}
+  if (volumeBtn) {
+    volumeBtn.addEventListener("change", function () {
+      setVolume();
+    });
+  }
 
   if (playPauseBtn) {
     video.addEventListener('pause', function () {
@@ -194,7 +201,7 @@ var stopPlayer = function () {
 // Changes the volume on the media player using a slider
 var setVolume = function (v) {
   video.muted = false;
-  var vol = volumeBtn.value / 100;
+  var vol = volumeBtn.value / 10;
   volumeBtn.setAttribute("value", vol);
   volumeBtn.title = 'Volume: ' + vol + '%';
   volumeBtn.setAttribute("aria-valuenow", vol);
@@ -345,6 +352,13 @@ var handleFullscreen = function () {
   } else if (video.msRequestFullscreen) {
     video.msRequestFullscreen();
   }
+};
+
+// Try to detect if video has audio tracks - might not work cross browser
+var hasAudio = function (video) {
+  return video.mozHasAudio ||
+    Boolean(video.webkitAudioDecodedByteCount) ||
+    Boolean(video.audioTracks && video.audioTracks.length);
 };
 
 // Make attributes values first letter uppercase because it looks nice
