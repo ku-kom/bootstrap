@@ -145,8 +145,8 @@ var setVolume = function (v) {
     'background: -moz-linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
     'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
     'background: linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
-  // Update progress bar styling
-  //volumeBtn.setAttribute('style', style);
+  // Update volume bar styling
+  volumeBtn.setAttribute('style', style);
 };
 
 // Toggles the media player's mute and unmute status
