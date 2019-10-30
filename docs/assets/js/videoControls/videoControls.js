@@ -58,10 +58,7 @@ var initialisevideo = function () {
   // Hide the browser's default controls
   video.controls = false;
 
-  // Detect if video is muted
-  toggleMute();
-
-  // Hide volume and mute buttons if video has no audio textTracks
+  // Hide volume and mute buttons if video has no audio tracks
   if (hasAudio(video) === false) {
     // muteBtn.classList.add('hidden');
     // volumeBtn.classList.add('hidden');
@@ -147,7 +144,7 @@ var setVolume = function (v) {
   var val = (vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
   var val2 = parseInt(vol * 100, 10);
   var style =
-    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
+    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #777));';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
 };

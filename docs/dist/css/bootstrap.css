@@ -7084,10 +7084,47 @@ button.list-group-item-danger.active:focus {
 .media-controls .progress:focus {
   outline: none;
 }
+.media-controls input[type=range] {
+  -webkit-appearance: none;
+
+  -webkit-tap-highlight-color: transparent;
+}
+.media-controls input[type=range]:focus {
+  outline: none;
+}
+.media-controls input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.media-controls input[type=range]::-ms-tooltip {
+  display: none;
+}
+.media-controls input[type=range]::-ms-track {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+.media-controls input[type=range]::-ms-fill-lower,
+.media-controls input[type=range]::-ms-fill-upper,
+.media-controls input[type=range]::-ms-track {
+  background: transparent;
+}
+.media-controls input[type=range]::-ms-ticks,
+.media-controls input[type=range]::-ms-ticks-after,
+.media-controls input[type=range]::-ms-ticks-before {
+  color: transparent;
+  background: transparent;
+}
+.media-controls input[type=range]::-ms-thumb {
+  width: 13px;
+  height: 13px;
+  background: #aeaeae;
+  border-radius: 13px;
+  box-shadow: inset 0 0 0 5px #eaeaea;
+  transition: .1s ease-in;
+}
 .media-controls .progress-bar {
   width: 100%;
   height: 3px;
-  -webkit-appearance: none;
   margin: 0;
   vertical-align: middle;
   cursor: pointer;
@@ -7097,39 +7134,11 @@ button.list-group-item-danger.active:focus {
 
   -webkit-tap-highlight-color: transparent;
 }
-.media-controls .progress-bar:focus {
-  outline: none;
-}
 .media-controls .progress-bar::-webkit-slider-thumb {
   width: 0;
   height: 0;
-  -webkit-appearance: none;
   background: #aeaeae;
   border-radius: 8px;
-  box-shadow: inset 0 0 0 5px #eaeaea;
-  transition: .1s ease-in;
-}
-.media-controls .progress-bar::-ms-track {
-  color: transparent;
-  background: transparent;
-  border-color: transparent;
-}
-.media-controls .progress-bar::-ms-fill-lower,
-.media-controls .progress-bar::-ms-fill-upper,
-.media-controls .progress-bar::-ms-track {
-  background: transparent;
-}
-.media-controls .progress-bar::-ms-ticks,
-.media-controls .progress-bar::-ms-ticks-after,
-.media-controls .progress-bar::-ms-ticks-before {
-  color: transparent;
-  background: transparent;
-}
-.media-controls .progress-bar::-ms-thumb {
-  width: 13px;
-  height: 13px;
-  background: #aeaeae;
-  border-radius: 13px;
   box-shadow: inset 0 0 0 5px #eaeaea;
   transition: .1s ease-in;
 }
@@ -7151,19 +7160,20 @@ button.list-group-item-danger.active:focus {
   display: inline-block !important;
   width: 100px!important;
   height: 3px;
-  -webkit-appearance: none;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #c5c5c5));
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #757575));
   border-radius: 3px;
-
-  -webkit-tap-highlight-color: transparent;
-}
-.volume:focus {
-  outline: none;
 }
 .volume::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
-  -webkit-appearance: none;
+  background-color: #e9e9e9;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  transition: .1s ease-in;
+}
+.volume::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
   background-color: #e9e9e9;
   border: 1px solid #cecece;
   border-radius: 50%;
