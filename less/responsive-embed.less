@@ -111,17 +111,13 @@
     padding: 0 4px;
   }
 
-  .volume {
-    width: 150px;
-    display: inline-block;
-  }
-
   .progress {
     height: 3px;
     padding: 4px 0 12px;
     margin-bottom: 0;
     background: transparent;
     box-shadow: none;
+
     &:focus {
       outline: none;
     }
@@ -138,6 +134,7 @@
     vertical-align: middle;
     box-shadow: none;
     -webkit-tap-highlight-color: transparent;
+
     &:focus {
       outline: none;
     }
@@ -197,6 +194,51 @@
     }
   }
 }
+
+.volume {
+  width: 150px;
+  display: inline-block;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 6px;
+  height: 6px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.15, @white-color), color-stop(0.15, #C5C5C5));
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #E9E9E9;
+    border: 1px solid #CECECE;
+    height: 12px;
+    width: 12px;
+  }
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower,
+  &::-ms-fill-upper,
+  &::-ms-track {
+    background: transparent;
+  }
+
+  &::-ms-ticks,
+  &::-ms-ticks-after,
+  &::-ms-ticks-before {
+    color: transparent;
+    background: transparent;
+  }
+
+  &::-ms-thumb {
+    background: #aeaeae;
+    box-shadow: inset 0 0 0 5px #eaeaea;
+    height: 13px;
+    width: 13px;
+    border-radius: 13px;
+    transition: 0.1s ease-in;
+  }
+}
 // Make input range visible in IE
 // input[type=range]::-ms-track {
 //   width: 200px;
@@ -224,31 +266,3 @@
 //   background: @gray-ddd;
 //   border-radius: 6px;
 // }
-// Enable for subtitles menu
-// .subtitles-menu {
-//   display: none;
-//   position: absolute;
-//   bottom: 0;
-//   right: 0;
-//   background: @gray-666;
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-//   width: 100px;
-//   padding: 10px;
-//
-//   li {
-//     padding: 0;
-//     text-align: center;
-//
-//     button {
-//       border: none;
-//       background: @gray-base;
-//       color: @white-color;
-//       cursor: pointer;
-//       width: 90%;
-//       padding: 2px 5px;
-//     }
-//   }
-// }
-//

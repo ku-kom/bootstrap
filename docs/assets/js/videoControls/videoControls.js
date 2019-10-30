@@ -27,8 +27,6 @@ var lang,
   setVolume,
   hasAudio,
   progressBar,
-  // subtitles,
-  // subtitlesMenu,
   fullScreen,
   updateProgressBar,
   changeButtonType,
@@ -61,8 +59,8 @@ var initialisevideo = function () {
 
   // Hide volume and mute buttons if video has no audio textTracks
   if (hasAudio(video) === false) {
-    muteBtn.classList.add('hidden');
-    volumeBtn.classList.add('hidden');
+    // muteBtn.classList.add('hidden');
+    // volumeBtn.classList.add('hidden');
   }
 
   // Add a listener for the timeupdate event so we can update the progress bar
@@ -111,68 +109,6 @@ var initialisevideo = function () {
   video.addEventListener('ended', function () {
     this.pause();
   }, false);
-
-  // Initially turn off subtitles
-  // for (var i = 0; i < video.textTracks.length; i++) {
-  //   video.textTracks[i].mode = 'hidden';
-  // }
-
-  // If there are no subtitles, disable the button
-  // if (video.textTracks.length === 0) {
-  //   subtitles.disabled = true;
-  // }
-
-  // Creates and returns a menu item for the subtitles language menu
-  // var subtitleMenuButtons = [];
-  // var createMenuItem = function (id, lang, label) {
-  //   var listItem = document.createElement('li');
-  //   var button = listItem.appendChild(document.createElement('button'));
-  //   button.setAttribute('id', id);
-  //   button.className = 'subtitles-button';
-  //   if (lang.length > 0) button.setAttribute('lang', lang);
-  //   button.value = label;
-  //   button.setAttribute('data-state', 'inactive');
-  //   button.appendChild(document.createTextNode(label));
-  //   button.addEventListener('click', function (e) {
-  //     // Set all buttons to inactive
-  //     subtitleMenuButtons.map(function (v, i, a) {
-  //       subtitleMenuButtons[i].setAttribute('data-state', 'inactive');
-  //     });
-  //     // Find the language to activate
-  //     var lang = this.getAttribute('lang');
-  //     for (var i = 0; i < video.textTracks.length; i++) {
-  //       // For the 'subtitles-off' button, the first condition will never match so all will subtitles be turned off
-  //       if (video.textTracks[i].language == lang) {
-  //         video.textTracks[i].mode = 'showing';
-  //         this.setAttribute('data-state', 'active');
-  //       } else {
-  //         video.textTracks[i].mode = 'hidden';
-  //       }
-  //     }
-  //     subtitlesMenu.style.display = 'none';
-  //   });
-  //   subtitleMenuButtons.push(button);
-  //   return listItem;
-  // }
-  // Go through each one and build a small clickable list, and when each item is clicked on, set its mode to be "showing" and the others to be "hidden"
-
-  // if (video.textTracks) {
-  //   var df = document.createDocumentFragment();
-  //   subtitlesMenu = df.appendChild(document.createElement('ul'));
-  //   subtitlesMenu.className = 'subtitles-menu';
-  //   subtitlesMenu.appendChild(createMenuItem('subtitles-off', '', 'Off'));
-  //   for (var x = 0; x < video.textTracks.length; x++) {
-  //     subtitlesMenu.appendChild(createMenuItem('subtitles-' + video.textTracks[x].language, video.textTracks[x].language, video.textTracks[x].label));
-  //   }
-  //   videoContainer.appendChild(subtitlesMenu);
-  // }
-
-  // Display subtitles menu if any
-  // subtitles.addEventListener('click', function (e) {
-  //   if (subtitlesMenu) {
-  //     subtitlesMenu.style.display = (subtitlesMenu.style.display == 'block' ? 'none' : 'block');
-  //   }
-  // });
 };
 
 var togglePlayPause = function () {
@@ -201,10 +137,18 @@ var stopPlayer = function () {
 // Changes the volume on the media player using a slider
 var setVolume = function (v) {
   video.muted = false;
-  var vol = volumeBtn.value / 10;
+  var vol = volumeBtn.value;
   volumeBtn.setAttribute("value", vol);
   volumeBtn.title = 'Volume: ' + vol + '%';
   volumeBtn.setAttribute("aria-valuenow", vol);
+  var val = (this.value - this.getAttribute('min')) / (this.getAttribute('max') - this.getAttribute('min'));
+  console.log(val);
+  var style =
+    'background: -moz-linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
+    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
+    'background: linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
+  // Update progress bar styling
+  //volumeBtn.setAttribute('style', style);
 };
 
 // Toggles the media player's mute and unmute status
