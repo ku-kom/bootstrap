@@ -253,10 +253,12 @@
     color: transparent;
   }
 
-  &::-ms-fill-lower,
+  &::-ms-fill-lower {
+    background: @white-color;
+  }
   &::-ms-fill-upper,
   &::-ms-track {
-    background: transparent;
+    background: @gray-light;
   }
 
   &::-ms-ticks,

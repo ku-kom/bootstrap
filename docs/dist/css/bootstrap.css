@@ -7188,10 +7188,12 @@ button.list-group-item-danger.active:focus {
   border-color: transparent;
   border-width: 6px 0;
 }
-.volume::-ms-fill-lower,
+.volume::-ms-fill-lower {
+  background: #fff;
+}
 .volume::-ms-fill-upper,
 .volume::-ms-track {
-  background: transparent;
+  background: #757575;
 }
 .volume::-ms-ticks,
 .volume::-ms-ticks-after,
