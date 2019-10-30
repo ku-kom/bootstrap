@@ -138,18 +138,15 @@ var stopPlayer = function () {
 // Changes the volume on the media player using a slider
 var setVolume = function (v) {
   video.muted = false;
+  toggleMute();
   video.volume = volumeBtn.value;
   var vol = volumeBtn.value;
-  volumeBtn.setAttribute("aria-valuenow", vol);
 
-  var start = parseInt((vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min')) * 100, 10);
-  var val = parseInt(vol * 100, 10);
-  var rest = 100 - val;
-  var style =
-    //'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #777));'+
-    'background: linear-gradient(to right, #fff ' + start + '%, #777 ' + rest + '%)';
+  var percent = parseInt((vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min')) * 100, 10);
+  var style = 'background: linear-gradient(to right, #fff ' + percent + '%, #777)';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
+  volumeBtn.setAttribute("aria-valuenow", percent);
 };
 
 // Toggles the media player's mute and unmute status
