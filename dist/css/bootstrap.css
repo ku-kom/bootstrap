@@ -10362,7 +10362,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   opacity: 1;
 }
 .slick-arrow:focus {
-  outline: 1px solid #106bfe;
+  outline: 1px dotted #000;
   outline-offset: -1px;
 }
 .slick-arrow::before {
@@ -10408,7 +10408,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline: none;
 }
 .slick-pause:focus {
-  outline: 1px solid #106bfe;
+  outline: 1px dotted #000;
 }
 .slick-pause .glyphicon {
   top: -1px;
