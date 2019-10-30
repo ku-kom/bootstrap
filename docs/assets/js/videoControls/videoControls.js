@@ -140,7 +140,7 @@ var setVolume = function (v) {
   volumeBtn.value = this.value;
   var vol = volumeBtn.value;
   volumeBtn.setAttribute("aria-valuenow", vol);
-  var val = (volumeBtn.value - this.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
+  var val = (volumeBtn.value - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
   console.log(val);
   var style =
     'background: -moz-linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
