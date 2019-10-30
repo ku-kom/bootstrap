@@ -7165,9 +7165,6 @@ button.list-group-item-danger.active:focus {
   border-radius: 3px;
   transition: .1s ease-in;
 }
-.volume:hover {
-  height: 8px;
-}
 .volume::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
@@ -7175,6 +7172,13 @@ button.list-group-item-danger.active:focus {
   border: 1px solid #cecece;
   border-radius: 50%;
   transition: .1s ease-in;
+}
+.volume:hover {
+  height: 8px;
+}
+.volume:hover::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
 }
 .volume::-moz-range-thumb {
   width: 10px;

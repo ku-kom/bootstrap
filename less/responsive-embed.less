@@ -217,10 +217,6 @@
   background: linear-gradient(to right, @white-color 50%, @gray-light 50%);
   transition: 0.1s ease-in;
 
-  &:hover {
-    height: 8px;
-  }
-
   &::-webkit-slider-thumb {
     background-color: #E9E9E9;
     border: 1px solid #CECECE;
@@ -228,6 +224,15 @@
     width: 10px;
     border-radius: 50%;
     transition: 0.1s ease-in;
+  }
+
+  &:hover {
+    height: 8px;
+
+    &::-webkit-slider-thumb {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &::-moz-range-thumb {
@@ -238,7 +243,6 @@
     border-radius: 50%;
     transition: 0.1s ease-in;
   }
-
   // &::-ms-track {
   //   width: 100px;
   //   border-width: 6px 0;
@@ -256,7 +260,6 @@
   // &::-ms-track {
   //   background: @gray-light;
   // }
-
   &::-ms-ticks,
   &::-ms-ticks-after,
   &::-ms-ticks-before {
