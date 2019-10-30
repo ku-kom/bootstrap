@@ -7164,6 +7164,9 @@ button.list-group-item-danger.active:focus {
   background: linear-gradient(to right, #fff 50%, #757575 50%);
   border-radius: 3px;
 }
+.volume:hover {
+  height: 8px;
+}
 .volume::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
@@ -7179,21 +7182,6 @@ button.list-group-item-danger.active:focus {
   border: 1px solid #cecece;
   border-radius: 50%;
   transition: .1s ease-in;
-}
-.volume::-ms-track {
-  width: 100px;
-  height: 3px;
-  color: transparent;
-  background: transparent;
-  border-color: transparent;
-  border-width: 6px 0;
-}
-.volume::-ms-fill-lower {
-  background: #fff;
-}
-.volume::-ms-fill-upper,
-.volume::-ms-track {
-  background: #757575;
 }
 .volume::-ms-ticks,
 .volume::-ms-ticks-after,
