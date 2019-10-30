@@ -144,9 +144,11 @@ var setVolume = function (v) {
   var val = (vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
   var val2 = parseInt(vol * 100, 10);
   console.log(val2);
-  console.log((val2 - 100));
+  var rest = parseInt(val2 - 100, 10)
+  console.log(rest);
   var style =
-    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #777));';
+    //'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #777));'+
+    'background: linear-gradient(to right, #fff ' + val + '%, #777 ' + rest + '%)';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
 };

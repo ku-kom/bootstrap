@@ -7161,7 +7161,7 @@ button.list-group-item-danger.active:focus {
   display: inline-block !important;
   width: 100px!important;
   height: 3px;
-  background: linear-gradient(to right, #fff 0%, #757575 50%);
+  background: linear-gradient(to right, #fff 50%, #757575 50%);
   border-radius: 3px;
 }
 .volume::-webkit-slider-thumb {
