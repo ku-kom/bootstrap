@@ -61,9 +61,8 @@ var initialisevideo = function () {
 
   // Hide volume and mute buttons if video has no audio textTracks
   if (hasAudio(video) === false) {
-    console.log("No audio");
-    // muteBtn.classList.add('hidden');
-    // volumeBtn.classList.add('hidden');
+    muteBtn.classList.add('hidden');
+    volumeBtn.classList.add('hidden');
   }
 
   // Add a listener for the timeupdate event so we can update the progress bar
