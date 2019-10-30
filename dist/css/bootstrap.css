@@ -6693,7 +6693,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-footer {
   padding: 6px 10px;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
@@ -6750,7 +6750,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-group .panel-heading {
   border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #949494;
+  border-bottom: 1px solid #d5d5d5;
 }
 .panel-group .panel-heading:hover {
   background-color: #ededed;
@@ -6912,12 +6912,12 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #c7a2a4;
 }
 .panel-accordion {
-  border: 1px solid #ddd;
+  border: 1px solid #949494;
 }
 .panel-accordion > .panel-heading {
   position: relative;
   padding: 0 30px 0 0;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   border: 0;
 }
 .panel-accordion > .panel-heading:focus-within {
