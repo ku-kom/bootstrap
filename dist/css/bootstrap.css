@@ -7152,7 +7152,7 @@ button.list-group-item-danger.active:focus {
   width: 100px!important;
   height: 3px;
   -webkit-appearance: none;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, #fff), color-stop(.5, #c5c5c5));
+  background: -webkit-gradient(left, #fff 50%, #c5c5c5 50%);
   border-radius: 3px;
 
   -webkit-tap-highlight-color: transparent;
@@ -7186,8 +7186,8 @@ button.list-group-item-danger.active:focus {
   background: transparent;
 }
 .volume::-ms-thumb {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   background: #aeaeae;
   border-radius: 13px;
   box-shadow: inset 0 0 0 5px #eaeaea;

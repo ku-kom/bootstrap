@@ -141,10 +141,10 @@ var setVolume = function (v) {
   var vol = volumeBtn.value;
   volumeBtn.setAttribute("aria-valuenow", vol);
   var val = (vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
+  var val2 = Math.floor(val / 100);
   var style =
-    'background: -moz-linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
-    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
-    'background: linear-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
+    'background: -webkit-linear-gradient(left, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));' +
+    'background: linear-gradient(to right,  #fff 0%, #fff ' + val2 + '%, #c5c5c5 ' + val2 +'% ,#c5c5c5 100%)';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
 };
