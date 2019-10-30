@@ -60,9 +60,12 @@ var initialisevideo = function () {
   video.controls = false;
 
   // Hide volume and mute buttons if video has no audio textTracks
-  if (!hasAudio(video)) {
-    muteBtn.classList.add('hidden');
-    volumeBtn.classList.add('hidden');
+  if (hasAudio(video)) {
+    console.log("Has audio");
+    // muteBtn.classList.add('hidden');
+    // volumeBtn.classList.add('hidden');
+  } else {
+    console.log("No audio");
   }
 
   // Add a listener for the timeupdate event so we can update the progress bar
@@ -241,10 +244,12 @@ var getDuration = function (duration) {
 
 // Parse and format current time
 var getCurrentTime = function (current) {
-  if (video.currentTime) {
+  if (typeof video.currentTime !== "undefined") {
     var minutes = parseInt(video.currentTime / 60, 10);
     var seconds = Math.round(video.currentTime % 60);
     return minutes + ':' + seconds;
+  } else {
+    return '0:00';
   }
 }
 
@@ -271,7 +276,6 @@ var updateProgressBar = function () {
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
   // Currently played
   var percentage = Math.floor((100 / video.duration) * video.currentTime);
-
   var style =
     'background: -moz-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
     'background: -webkit-linear-gradient(left, #901a1e 0%, #901a1e ' + val + '%, #777 ' + val + '%, #777 ' + buffer + '%, #444 ' + buffer + '%, #444 100%);' +
