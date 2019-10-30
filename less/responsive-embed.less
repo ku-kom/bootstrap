@@ -166,6 +166,17 @@
       border-radius: 13px;
       transition: 0.1s ease-in;
     }
+
+
+    // input[type=range]::-ms-fill-upper {
+    //   background: @gray-ddd;
+    //   border-radius: 6px;
+    // }
+    //
+    // input[type=range]::-ms-fill-lower {
+    //   background: @gray-ddd;
+    //   border-radius: 6px;
+    // }
   }
 
   .progress-bar {
@@ -189,7 +200,7 @@
     }
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .progress-bar {
+    .progress-bar, .volume {
       padding: 2px;
     }
   }
@@ -234,6 +245,9 @@
   }
 
   &::-ms-track {
+    width: 100px;
+    border-width: 6px 0;
+    height: 3px;
     background: transparent;
     border-color: transparent;
     color: transparent;
@@ -261,30 +275,3 @@
     transition: 0.1s ease-in;
   }
 }
-// Make input range visible in IE
-// input[type=range]::-ms-track {
-//   width: 200px;
-//   height: 10px;
-//   background: transparent;
-//   border-color: transparent;
-//   border-width: 6px 0;
-//   color: transparent;
-// }
-//
-// input[type=range]::-ms-thumb {
-//   border: none;
-//   height: 16px;
-//   width: 16px;
-//   border-radius: 50%;
-//   background: @gray-ddd;
-// }
-//
-// input[type=range]::-ms-fill-upper {
-//   background: @gray-ddd;
-//   border-radius: 6px;
-// }
-//
-// input[type=range]::-ms-fill-lower {
-//   background: @gray-ddd;
-//   border-radius: 6px;
-// }

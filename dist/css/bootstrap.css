@@ -7143,7 +7143,8 @@ button.list-group-item-danger.active:focus {
   transition: .1s ease-in;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .media-controls .progress-bar {
+  .media-controls .progress-bar,
+  .media-controls .volume {
     padding: 2px;
   }
 }
@@ -7180,9 +7181,12 @@ button.list-group-item-danger.active:focus {
   transition: .1s ease-in;
 }
 .volume::-ms-track {
+  width: 100px;
+  height: 3px;
   color: transparent;
   background: transparent;
   border-color: transparent;
+  border-width: 6px 0;
 }
 .volume::-ms-fill-lower,
 .volume::-ms-fill-upper,
