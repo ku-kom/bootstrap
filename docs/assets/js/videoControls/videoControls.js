@@ -59,6 +59,7 @@ var initialisevideo = function () {
 
   // Hide volume and mute buttons if video has no audio textTracks
   if (hasAudio(video) === false) {
+    console.log("hasAudio is false");
     // muteBtn.classList.add('hidden');
     // volumeBtn.classList.add('hidden');
   }
@@ -143,7 +144,7 @@ var setVolume = function (v) {
   var val = (vol - volumeBtn.getAttribute('min')) / (volumeBtn.getAttribute('max') - volumeBtn.getAttribute('min'));
   var val2 = parseInt(vol * 100, 10);
   var style =
-    'background: -webkit-gradient(linear, left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
+    'background: -webkit-gradient(left top, right top, color-stop(' + val + ', #fff), color-stop(' + val + ', #C5C5C5));';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
 };
