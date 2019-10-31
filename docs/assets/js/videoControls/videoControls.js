@@ -58,12 +58,6 @@ var initialisevideo = function () {
   // Hide the browser's default controls
   video.controls = false;
 
-  // Hide volume and mute buttons if video has no audio tracks
-  if (hasAudio(video) === false) {
-    // muteBtn.classList.add('hidden');
-    // volumeBtn.classList.add('hidden');
-  }
-
   // Add a listener for the timeupdate event so we can update the progress bar
   if (progressBar) {
     video.addEventListener('timeupdate', updateProgressBar, false);
@@ -186,6 +180,9 @@ var getCurrentTime = function (current) {
   if (typeof video.currentTime !== "undefined") {
     var minutes = parseInt(video.currentTime / 60, 10);
     var seconds = Math.round(video.currentTime % 60);
+    if (seconds < 10) {
+      seconds = '0' + seconds;
+    }
     return minutes + ':' + seconds;
   } else {
     return '0:00';
@@ -295,13 +292,6 @@ var handleFullscreen = function () {
   } else if (video.msRequestFullscreen) {
     video.msRequestFullscreen();
   }
-};
-
-// Try to detect if video has audio tracks - might not work cross browser
-var hasAudio = function (video) {
-  return video.mozHasAudio ||
-    Boolean(video.webkitAudioDecodedByteCount) ||
-    Boolean(video.audioTracks && video.audioTracks.length);
 };
 
 // Make attributes values first letter uppercase because it looks nice
