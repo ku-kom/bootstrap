@@ -190,6 +190,10 @@ module.exports = function (grunt) {
         src: 'less/ku-gridboxes-bootstrap.less',
         dest: 'dist/css/ku-gridboxes.css'
       },
+      videoplayer: {
+        src: 'less/ku-videoplayer.less',
+        dest: 'dist/css/ku-videoplayer.min.css'
+      },
       compileCustomElements: {
         files: [
           {
@@ -264,6 +268,9 @@ module.exports = function (grunt) {
       },
       docs: {
         src: ['docs/assets/css/src/docs.css']
+      },
+      videoplayer: {
+        src: ['dist/css/ku-videoplayer.min.css']
       },
       doctypes: {
         expand: true,
@@ -356,6 +363,10 @@ module.exports = function (grunt) {
       print: {
         src: 'docs/assets/css/print/print.css',
         dest: 'dist/css/print.min.css'
+      },
+      videoplayer: {
+        src: 'dist/css/ku-videoplayer.min.css',
+        dest: 'dist/css/ku-videoplayer.min.css'
       },
       minifyFAK: {
         expand: true,
@@ -579,8 +590,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles', 'less:compileCParallax']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles', 'less:compileCParallax', 'less:videoplayer']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:videoplayer', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print', 'cssmin:videoplayer']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
