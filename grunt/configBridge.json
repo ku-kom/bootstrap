@@ -12,8 +12,9 @@
   "config": {
     "autoprefixerBrowsers": [
       "last 2 versions",
-      "Android >= 5",
-      "iOS >= 8"
+      "Android >= 7",
+      "iOS >= 8",
+      "Firefox ESR"
     ],
     "jqueryCheck": [
       "if (typeof jQuery === 'undefined') {",
