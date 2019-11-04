@@ -273,7 +273,7 @@
   bottom: 9px;
   left: 11px;
   height: 20px;
-  width: auto;
+  width: 125px;
   display: block;
   position: absolute;
   padding-top: 6px;
@@ -286,9 +286,9 @@
   background-color: #fff;
   box-sizing: content-box;
   font-family: 'Glyphicons Halflings';
-  line-height: 9px;
+  line-height: 12px;
   content: "\e252";
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
@@ -301,10 +301,11 @@
   bottom: 9px;
   left: 33px;
   height: 20px;
-  width: auto;
+  width: 125px;
   display: block;
   position: absolute;
   padding-top: 6px;
+  padding-left: 6px;
   padding-right: 6px;
   color: #252525;
   border-top: 1px solid #ccc;
@@ -312,12 +313,13 @@
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   box-sizing: content-box;
-  line-height: 8px;
+  line-height: 12px;
   content: "Vis detaljer";
   letter-spacing: .7px;
-  font-size: 8px;
+  font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
@@ -389,10 +391,10 @@ html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:aft
   background-color: #d33333;
 }
 
-.dataTable>tbody>tr.child {
+.dataTable>tbody>tr.child td.child {
   padding: 0.5em 1em;
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: #eaeaea;
+  border: 1px solid #ddd;
 }
 
 .dataTable>tbody>tr.parent {
