@@ -392,12 +392,13 @@ html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:aft
 .dataTable>tbody>tr.child {
   padding: 0.5em 1em;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eaeaea;
 }
 
 .dataTable>tbody>tr.parent {
   /* KU: Open table row */
   border: 1px solid #ddd;
+  background-color: #eaeaea;
 }
 
 .dataTable>tbody>tr.child:hover {
