@@ -404,7 +404,7 @@ html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:aft
     background-color: #eaeaea;
   }
 
-  .dataTable .parent+.parent {
+  .dataTable .parent~.parent {
     border-top: 4px solid #fff;
   }
 }
