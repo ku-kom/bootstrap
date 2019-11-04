@@ -397,10 +397,16 @@ html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:aft
   border: 1px solid #ddd;
 }
 
-.dataTable>tbody>tr.parent {
-  /* KU: Open table row */
-  border: 1px solid #ddd;
-  background-color: #eaeaea;
+@media screen and (max-width: 767px) {
+  .dataTable>tbody>tr.parent {
+    /* KU: Open table row */
+    border: 1px solid #ddd;
+    background-color: #eaeaea;
+  }
+
+  .dataTable .parent+.parent {
+    border-top: 4px solid #fff;
+  }
 }
 
 .dataTable>tbody>tr.child:hover {
