@@ -7886,7 +7886,7 @@ nav {
 .gcitem.picture .title {
   display: none;
 }
-.gcitem *:last-child {
+.gcitem:last-child {
   margin-bottom: 0;
 }
 .gccolumn .gcitem:last-child {
