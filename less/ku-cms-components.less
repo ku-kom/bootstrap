@@ -52,7 +52,6 @@ nav {
     }
   }
 }
-
 @media (max-width: @screen-xs-max) {
   // Smaller margins on mobile
   #content {
@@ -138,10 +137,9 @@ nav {
     display: none;
   }
 
-  * {
-    &:last-child {
-      margin-bottom: 0;
-    }
+  // Remove bottom margin from any last element in a grid column
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
