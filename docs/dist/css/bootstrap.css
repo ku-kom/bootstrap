@@ -11731,6 +11731,18 @@ form.gdpr-accept .btn + .btn {
     height: 100%;
   }
 }
+@media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .image-presentation .slick-slide img {
+    height: auto;
+  }
+}
+@media all and (min-width: 992px) {
+  @supports (-ms-ime-align: auto) {
+    .image-presentation .slick-slide img {
+      height: auto;
+    }
+  }
+}
 .custom-search {
   width: 100%;
   min-width: 300px;
