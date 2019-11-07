@@ -324,6 +324,28 @@ form.gdpr-accept {
     }
   }
 }
+@media all and (min-width: @screen-md) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // IE 11
+  .image-presentation {
+    .slick-slide {
+      img {
+        height: auto;
+      }
+    }
+  }
+}
+@media all and (min-width: @screen-md) {
+  // IE Edge
+  @supports (-ms-ime-align: auto) {
+    .image-presentation {
+      .slick-slide {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
 
 .custom-search {
   // Custom search dropdown
