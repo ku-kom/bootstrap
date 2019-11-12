@@ -155,7 +155,7 @@
 
 .ku-loading {
   margin: 0 auto;
-  display: inline-block;
+  display: flex;
   vertical-align: text-bottom;
   border-bottom: 3px solid @gray;
   border-left: 3px solid @gray;
@@ -166,54 +166,7 @@
   height: 3rem;
   animation: ku-loading 0.75s infinite linear;
 }
-// .ku-dots-loading {
-//   position: relative;
-//   margin-left: 10px;
-//   width: 5px;
-//   height: 5px;
-//   border-radius: 50%;
-//   background-color: @gray-444;
-//   color: @gray-444;
-//   animation: ku-dots 0.6s infinite linear alternate;
-//   animation-delay: 0.3s;
-//
-//   &::after,
-//   &::before {
-//     content: '';
-//     display: inline-block;
-//     position: absolute;
-//     top: 0;
-//     width: 5px;
-//     height: 5px;
-//     border-radius: 50%;
-//   }
-//
-//   &::before {
-//     left: -10px;
-//     background-color: @gray-444;
-//     color: @gray-444;
-//     animation: ku-dots 0.6s infinite alternate;
-//     animation-delay: 0s;
-//   }
-//
-//   &::after {
-//     left: 10px;
-//     background-color: @gray-444;
-//     color: @gray-444;
-//     animation: ku-dots 0.6s infinite alternate;
-//     animation-delay: 0.6s;
-//   }
-// }
-// @keyframes ku-dots {
-//   0% {
-//     background-color: @gray-444;
-//   }
-//
-//   100%,
-//   50% {
-//     background-color: @gray;
-//   }
-// }
+
 // Jump to ID
 
 .jump-to {
@@ -243,29 +196,6 @@
     color: inherit;
   }
 }
-// @keyframes ku-ken-burns {
-//   0% {
-//     transform: scale3d(1, 1, 1) translate3d(0, 0, 0) translateZ(0);
-//   }
-//
-//   100% {
-//     transform: scale3d(1.5, 1.5, 1.5) translate3d(-12.5%, -12.5%, 0) translateZ(0);
-//   }
-// }
-//
-// .ku-ken-burns-container {
-//   position: relative;
-//   overflow: hidden;
-//
-//   img {
-//     &.with-animation {
-//       backface-visibility: hidden;
-//       will-change: transform, opacity;
-//       transform-style: preserve-3d;
-//       animation: 20s ease-out forwards ku-ken-burns;
-//     }
-//   }
-// }
 
 iframe {
   border: 0;

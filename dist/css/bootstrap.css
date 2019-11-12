@@ -8099,7 +8099,9 @@ nav {
   }
 }
 .ku-loading {
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   width: 3rem;
   height: 3rem;
   margin: 0 auto;
@@ -10059,7 +10061,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   visibility: hidden;
 }
 .slick-loading .slick-slide .slick-list {
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   width: 3rem;
   height: 3rem;
   margin: 0 auto;
