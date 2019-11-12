@@ -6916,7 +6916,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading {
   position: relative;
-  padding: 0 30px 0 0;
+  padding: 0;
   background-color: #f8f8f8;
   border: 0;
 }
@@ -6934,10 +6934,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion > .panel-heading .panel-title a {
   display: block;
-  padding: 8px 0 10px 10px;
-}
-.panel-accordion > .panel-heading .panel-title a:focus {
-  outline: none;
+  padding: 8px 30px 10px 10px;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
