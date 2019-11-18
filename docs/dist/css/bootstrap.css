@@ -10191,7 +10191,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-family: "ku-symbols";
   font-size: 32px;
   color: #fff;
-  opacity: .35;
+  opacity: .6;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
