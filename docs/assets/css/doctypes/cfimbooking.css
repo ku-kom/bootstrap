@@ -56,17 +56,6 @@ a.button:hover,
   float: right;
 }
 
-#cbook_container {
-  clear: both;
-  width: auto;
-  border: solid 1px #ccc;
-  padding: 1em;
-}
-
-#cbook_container h1 {
-  margin: 1em 0 0.5em !important;
-}
-
 /* Calendar view */
 #cbook_tablenav {
   background-color: #f3f3f3;
@@ -243,7 +232,6 @@ a.button:hover,
 
 #loginForm,
 #registerForm {
-  border-top: solid 1px #ccc;
   padding: 1em 0;
 }
 
