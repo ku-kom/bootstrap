@@ -10595,6 +10595,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .datepicker .day.occup_monthday span a {
   display: block;
   color: #fff;
+  text-decoration: none;
 }
 .datepicker .day.occup_monthday span a:hover {
   font-weight: 600;
