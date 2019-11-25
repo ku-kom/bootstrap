@@ -47,6 +47,10 @@ body.pureportal #content .person_view .view_container p {
   padding: 0;
 }
 
+body.pureportal a, body.PureIntegration a {
+  text-decoration: underline;
+}
+
 .nav li {
   padding-bottom: unset;
   text-align: unset;
@@ -152,6 +156,7 @@ ol.portal_list li h2.title a, ol.portal_list li a {
   line-height: 18px;
   letter-spacing: .6px;
   word-break: break-word;
+  text-decoration: none!important;
 }
 
 ol.portal_list li a>span>strong {
@@ -381,6 +386,7 @@ div.portal_navigator_top {
 .relations a.link {
   overflow-wrap: break-word;
   word-wrap: break-word;
+  text-decoration: underline;
 }
 
 @media all and (max-width: 480px) {
