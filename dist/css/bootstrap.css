@@ -9373,6 +9373,7 @@ iframe {
   display: block;
   font-size: inherit;
   color: inherit;
+  text-decoration: none;
 }
 .media-list .media .media-object {
   display: block;
@@ -11647,6 +11648,7 @@ p[align="right"]:before {
 .linkslist input[type="checkbox"]:checked ~ ul.menu-list li a {
   display: block;
   color: inherit;
+  text-decoration: none;
 }
 #warning-banner {
   position: relative;

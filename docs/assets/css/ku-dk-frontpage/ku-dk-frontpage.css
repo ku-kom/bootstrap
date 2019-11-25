@@ -94,6 +94,7 @@ html:lang(en) .ku-branding-text {
   display: block;
   position: relative;
   color: #901a1e !important;
+  text-decoration: none;
 }
 
 .jumpboard .jumpcolumn li a:after {
