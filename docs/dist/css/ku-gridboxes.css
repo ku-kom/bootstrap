@@ -1169,6 +1169,7 @@
   position: relative;
   display: block;
   color: inherit!important;
+  text-decoration: none;
 }
 .boxlink:hover {
   text-decoration: none;
