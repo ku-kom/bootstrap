@@ -6974,7 +6974,7 @@ button.list-group-item-danger.active:focus {
   border-top: 0;
 }
 .panel-accordion > .panel-heading + .panel-collapse .panel-body {
-  padding-top: 0;
+  padding-top: 5px;
   padding-bottom: 15px;
   border-top: 0;
 }
