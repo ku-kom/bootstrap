@@ -6929,9 +6929,6 @@ button.list-group-item-danger.active:focus {
   background-color: #f8f8f8;
   border: 0;
 }
-.panel-accordion > .panel-heading:focus-within {
-  outline: 1px solid #106bfe;
-}
 .panel-accordion > .panel-heading .panel-title {
   font-size: 16px;
   line-height: 20px;
@@ -6945,6 +6942,9 @@ button.list-group-item-danger.active:focus {
   display: block;
   padding: 8px 30px 10px 10px;
   text-decoration: none;
+}
+.panel-accordion > .panel-heading .panel-title a:focus {
+  outline: 1px solid #106bfe;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
