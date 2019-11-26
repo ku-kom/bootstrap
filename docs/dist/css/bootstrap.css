@@ -5150,6 +5150,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .ku-nav .navbar-nav > li > .dropdown-menu {
   border-top: none;
 }
+.ku-nav .navbar-nav > li > .dropdown-menu a {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .ku-nav ul.nav li.dropdown:after {
     position: absolute;
@@ -5387,6 +5390,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
   line-height: 28px;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .dropdown-menu.nyheder {
@@ -11442,12 +11446,6 @@ p[align="right"]:before {
 }
 .panel-accordion > .panel-heading .panel-title a > strong {
   font-weight: inherit!important;
-}
-#navbar_menu + .search_form {
-  margin-top: 6px;
-}
-#navbar_menu + .search_form .global-search-query {
-  width: 170px!important;
 }
 /* KU custom elements */
 .gridnyhed {

@@ -33,6 +33,10 @@
     > li {
       > .dropdown-menu {
         border-top: none;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -352,6 +356,7 @@
       > a {
         padding: 0 7px;
         line-height: @ku-topbar-height;
+        text-decoration: none;
       }
     }
   }
@@ -893,10 +898,6 @@
       &.global-search-options-toggle {
         margin-left: -2px!important;
       }
-
-      // &.global-search-submit {
-      //   .border-right-radius(@border-radius-base)
-      // }
     }
 
     .dropdown-toggle {
