@@ -5392,6 +5392,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 28px;
   text-decoration: none;
 }
+#topbar_menu.navbar-nav > li > a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .dropdown-menu.nyheder {
     top: 100%;
