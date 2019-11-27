@@ -253,7 +253,6 @@
   }
 
   .panel {
-    margin-bottom: 0;
 
     &:first-child {
       border-top-left-radius: @panel-border-radius;
@@ -378,6 +377,9 @@
     padding: 0;
     position: relative;
     border: 0;
+    &:focus-within {
+      .tab-focus-v2();
+    }
 
     .panel-title {
       font-size: 16px;
@@ -390,9 +392,6 @@
         display: block;
         padding: 8px 30px 10px 10px;
         text-decoration: none;
-        &:focus {
-          .tab-focus-v2();
-        }
 
         &:before {
           .glyphicon;

@@ -1997,7 +1997,7 @@ address {
   line-height: 1.5;
 }
 h2.deloverskrift {
-  padding: 10px 5px 8px 0;
+  padding: 0 5px 8px 0;
   margin: 0;
   font-size: 22px;
   line-height: 1.2;
@@ -6738,9 +6738,6 @@ button.list-group-item-danger.active:focus {
 .panel-group + p:empty + .panel-group {
   margin-top: 4px;
 }
-.panel-group .panel {
-  margin-bottom: 0;
-}
 .panel-group .panel:first-child {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -6929,6 +6926,9 @@ button.list-group-item-danger.active:focus {
   background-color: #f8f8f8;
   border: 0;
 }
+.panel-accordion > .panel-heading:focus-within {
+  outline: 1px solid #106bfe;
+}
 .panel-accordion > .panel-heading .panel-title {
   font-size: 16px;
   line-height: 20px;
@@ -6942,9 +6942,6 @@ button.list-group-item-danger.active:focus {
   display: block;
   padding: 8px 30px 10px 10px;
   text-decoration: none;
-}
-.panel-accordion > .panel-heading .panel-title a:focus {
-  outline: 1px solid #106bfe;
 }
 .panel-accordion > .panel-heading .panel-title a:before {
   position: relative;
@@ -11266,11 +11263,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin: 0;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   line-height: 1;
+  line-height: 0;
   text-transform: none;
 
   speak: none;
@@ -11280,7 +11278,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .social-embed h2 {
   display: inline-block;
   padding: 0;
-  margin: 31px 0 0 0;
+  margin: 0;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.25;
