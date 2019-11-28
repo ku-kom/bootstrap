@@ -24,15 +24,17 @@
     }
   }
 
+  &:focus-within {
+    .control-layer {
+      display: block;
+    }
+  }
+
   a {
     display: block;
 
     &:focus {
       .tab-focus-v2();
-
-      &+ .control-layer {
-        display: block;
-      }
     }
   }
 
