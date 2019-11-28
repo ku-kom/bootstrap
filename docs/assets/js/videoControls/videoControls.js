@@ -33,7 +33,6 @@ var lang,
   changeButtonType,
   canPlayVideo,
   resetPlayer,
-  link, focusNextElement,
   upperCaseFirst;
 
 var initialisevideo = function () {
@@ -55,7 +54,6 @@ var initialisevideo = function () {
   progressBar = document.getElementById('progress-bar');
   fullScreen = document.getElementById('fullscreen-button');
   videoContainer = document.getElementById('videocontainer');
-  link = document.querySelector('.toplogo > a');
 
   // Hide the browser's default controls
   video.controls = false;
@@ -106,28 +104,7 @@ var initialisevideo = function () {
   video.addEventListener('ended', function () {
     this.pause();
   }, false);
-
-  link.addEventListener('focusin', function (e) {
-    //focusNextElement();
-  }, false);
 };
-
-var focusNextElement = function () {
-  // Add tabindex to controls and keep correct order
-  var focussableElements = '.media-controls button';
-  if (document.activeElement && document.activeElement.form) {
-    var focussable = Array.prototype.filter.call(document.activeElement.form.querySelectorAll(focussableElements),
-      function (element) {
-        //check for visibility while always include the current activeElement
-        return element.offsetWidth > 0 || element.offsetHeight > 0 || element === document.activeElement
-      });
-    var index = focussable.indexOf(document.activeElement);
-    if (index > -1) {
-      var nextElement = focussable[index + 1] || focussable[0];
-      nextElement.focus();
-    }
-  }
-}
 
 var togglePlayPause = function () {
   // If the video is currently paused or has ended
