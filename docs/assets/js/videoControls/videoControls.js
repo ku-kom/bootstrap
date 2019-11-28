@@ -315,4 +315,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (supportsVideo) {
     initialisevideo();
   }
+  var link = document.querySelector('.toplogo>a');
+  link.onblur = function() {
+    playPauseBtn.focus();
+  };
 }, false);
