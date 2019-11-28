@@ -109,7 +109,7 @@ var initialisevideo = function () {
 
   link.addEventListener('focusin', function (e) {
     console.log('Link focus!');
-    focusNextElement();
+    //focusNextElement();
   }, false);
 };
 
