@@ -16,6 +16,8 @@
 }
 
 .toplogo {
+  position: relative;
+
   &:hover {
     .control-layer {
       display: block;
@@ -24,9 +26,11 @@
 
   a {
     display: block;
+    position: relative;
 
     &:focus {
       .tab-focus-v2();
+
       &+ .control-layer {
         display: block;
       }
