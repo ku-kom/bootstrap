@@ -10140,6 +10140,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display:         flex!important;
   height: 100%;
   color: #252525;
+  text-decoration: none;
           flex-direction: column;
 
   -webkit-flex-direction: column;
