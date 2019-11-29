@@ -1513,7 +1513,7 @@ a:focus {
   outline: 1px dotted #000;
 }
 a:visited {
-  color: #2c7b96;
+  color: #3d239c;
 }
 figure {
   margin: 0;
@@ -5662,7 +5662,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   border-color: #ccc;
 }
 .navbar-inverse a:focus {
-  outline: 1px solid #106bfe;
+  outline: 1px solid #3479b2;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -8011,7 +8011,7 @@ nav {
     width: auto;
     height: auto;
     color: #fff;
-    outline: 1px solid #106bfe;
+    outline: 1px solid #3479b2;
   }
 }
 @media (max-width: 768px) {
@@ -8949,7 +8949,7 @@ iframe {
 }
 #globalfooter ul.footerlinks li a:focus {
   color: #e2e2e2;
-  outline: 1px solid #106bfe;
+  outline: 1px solid #3479b2;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
   margin-left: 4px;
@@ -9006,7 +9006,7 @@ iframe {
 }
 .social-items .social-item .social-icon:focus {
   background-color: #757575;
-  outline: 1px solid #106bfe;
+  outline: 1px solid #3479b2;
 }
 .social-items .footer-heading {
   margin-top: 20px;
@@ -10158,7 +10158,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-filter: brightness(90%) blur(0);
 }
 .slide-link:focus {
-  outline: 1px solid #106bfe;
+  outline: 1px solid #3479b2;
   outline-offset: -1px;
 }
 .slick-arrow.slick-hidden {
@@ -10290,7 +10290,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline: none;
 }
 .slick-dots li button:focus {
-  outline: 1px solid #106bfe;
+  outline: 1px solid #3479b2;
   outline-offset: 2px;
 }
 .slick-dots .slick-active button {
