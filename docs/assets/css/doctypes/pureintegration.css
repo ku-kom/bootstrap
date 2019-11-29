@@ -41,6 +41,7 @@ div.tabbed-search-box ul.box-tabs {
 
 .pureportal .tabbed-search-box ul.box-tabs li a {
   font-size: 13px;
+  text-decoration: none;
 }
 
 .pureportal .tabbed-search-box .gradient-search-box {

@@ -9294,6 +9294,9 @@ iframe {
   color: inherit;
   text-decoration: none;
 }
+.item-list .item-heading a:hover {
+  text-decoration: underline;
+}
 .item-list .item-date {
   margin-bottom: 7px;
   font-size: 12px;
