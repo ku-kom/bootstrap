@@ -4999,6 +4999,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.5;
   color: #252525;
+  text-decoration: none;
   background-color: #f3f3f3;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
