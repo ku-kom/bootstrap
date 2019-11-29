@@ -1174,6 +1174,9 @@
 .boxlink:hover {
   text-decoration: none;
 }
+.boxlink:hover .gridbox {
+  text-decoration: none;
+}
 .boxlink:hover .gridbox img {
           filter: brightness(90%) blur(0);
 
