@@ -127,6 +127,7 @@ var togglePlayPause = function () {
 var stopPlayer = function () {
   video.pause();
   video.currentTime = 0;
+  progressBar.value = 0;
 };
 
 // Changes the volume on the media player using a slider

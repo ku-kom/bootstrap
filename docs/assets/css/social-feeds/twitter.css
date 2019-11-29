@@ -4,6 +4,10 @@
   margin-top: 10px;
 }
 
+#twitter-feed ul {
+  margin-bottom: 0;
+}
+
 #twitter-feed li+li {
   margin-top: 6px;
   padding-top: 10px;
@@ -21,12 +25,12 @@
   margin: 4px 0;
 }
 
-#twitter-feed .description + img {
+#twitter-feed .description+img {
   margin-top: 5px;
 }
 
 #twitter-feed a:focus {
- outline: 1px solid #106bfe;
+  outline: 1px solid #106bfe;
 }
 
 .imgInfo, .twitterInfo {
@@ -35,6 +39,7 @@
 
 .imgInfo {
   width: 55px;
+  margin-bottom: 3px;
 }
 
 .imgInfo img {
