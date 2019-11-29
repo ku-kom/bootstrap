@@ -1500,20 +1500,20 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #165aad;
+  color: #3479b2;
   text-decoration: underline;
 }
 a:hover {
-  color: #165aad;
+  color: #3479b2;
   text-decoration: underline;
 }
 a:focus {
-  color: #165aad;
+  color: #3479b2;
   text-decoration: none;
   outline: 1px dotted #000;
 }
 a:visited {
-  color: #3d239c;
+  color: #2c7b96;
 }
 figure {
   margin: 0;
@@ -4345,7 +4345,7 @@ fieldset[disabled] .btn-social.twitter.focus {
 }
 .btn-link {
   font-weight: normal;
-  color: #165aad;
+  color: #3479b2;
   border-radius: 0;
 }
 .btn-link,
@@ -4364,7 +4364,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:focus,
 .btn-link:hover {
-  color: #165aad;
+  color: #3479b2;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4962,7 +4962,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:focus,
 .nav .open > a:hover {
   background-color: #eee;
-  border-color: #165aad;
+  border-color: #3479b2;
 }
 .nav > li > a > img {
   max-width: none;
@@ -6185,7 +6185,7 @@ a.badge:focus {
 a .thumbnail:hover,
 a.thumbnail.active,
 a.thumbnail:focus {
-  border-color: #165aad;
+  border-color: #3479b2;
 }
 .thumbnail .caption {
   padding: 9px;
