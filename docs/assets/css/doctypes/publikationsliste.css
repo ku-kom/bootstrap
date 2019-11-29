@@ -150,13 +150,12 @@ li.portal_list_item_most_downloaded div.portal_content_properties {
 }
 
 ol.portal_list li h2.title a, ol.portal_list li a {
-  font-size: 14px;
-  color: #252525;
+  /* font-size: 14px;
+  color: #252525; */
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: .6px;
+  /* letter-spacing: .6px; */
   word-break: break-word;
-  text-decoration: none!important;
 }
 
 ol.portal_list li a>span>strong {
@@ -226,6 +225,7 @@ div.rendering p.type, ol.portal_list>li {
 .view_container ul.tabs li a {
   color: #252525;
   background: none;
+  text-decoration: none;
   background-color: #f3f3f3;
   border: 1px solid #ccc;
   border-bottom: 0;
@@ -294,9 +294,9 @@ table.properties>tbody>tr:hover {
   color: #252525 !important;
 }
 
-#purecontent .person_text h2.title a {
+/* #purecontent .person_text h2.title a {
   color: inherit !important;
-}
+} */
 
 .rendering h2 {
   margin: 0;
@@ -373,12 +373,6 @@ div.portal_navigator_top {
   overflow: visible;
 }
 
-/* div.portal_navigator_top div.portal_navigator_ordering {
-  float: left;
-} */
-/* .portal_navigator_window_and_pagesize {
-  clear: both;
-} */
 .portal_navigator_rss {
   margin-left: 4px;
 }
@@ -386,7 +380,7 @@ div.portal_navigator_top {
 .relations a.link {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 
 @media all and (max-width: 480px) {
