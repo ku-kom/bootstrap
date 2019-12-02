@@ -1,9 +1,9 @@
 /*jslint latedef:false*/
 /* <div id="twitter-feed" data-account="koebenhavns_uni" data-tweets="1">
-* <div class="ku-loading" role="status">
-* <span class="sr-only">Loading...</span>
-*  </div>
-* <ul class="list-unstyled"></ul></div>
+ * <div class="ku-loading" role="status">
+ * <span class="sr-only">Loading...</span>
+ *  </div>
+ * <ul class="list-unstyled"></ul></div>
  */
 (function ($) {
   'use strict';
@@ -90,7 +90,6 @@
 
     function timeSince(timeStamp) {
       // relative time
-      //var months = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
       var lang = window.navigator.userLanguage || window.navigator.language;
       var now = new Date(),
         secondsPast = (now.getTime() - timeStamp.getTime()) / 1000;
@@ -107,7 +106,7 @@
         var day = timeStamp.getDate();
         var month = timeStamp.toLocaleString(lang, { month: 'long' });
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
-        return day + " " + month + year;
+        return day + '. ' + month + ' ' + year;
       }
     }
 
