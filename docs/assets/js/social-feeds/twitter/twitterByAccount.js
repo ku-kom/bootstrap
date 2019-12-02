@@ -1,9 +1,9 @@
 /*jslint latedef:false*/
 /* <div id="twitter-feed" data-account="koebenhavns_uni" data-tweets="1">
- * <div class="ku-loading" role="status">
- * <span class="sr-only">Loading...</span>
- *  </div>
- * <ul class="list-unstyled"></ul></div>
+* <div class="ku-loading" role="status">
+* <span class="sr-only">Loading...</span>
+*  </div>
+* <ul class="list-unstyled"></ul></div>
  */
 (function ($) {
   'use strict';
@@ -90,7 +90,7 @@
 
     function timeSince(timeStamp) {
       // relative time
-      //var months = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
+      var months = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
       var now = new Date(),
         secondsPast = (now.getTime() - timeStamp.getTime()) / 1000;
       if (secondsPast < 60) {
@@ -104,15 +104,9 @@
       }
       if (secondsPast > 86400) {
         var day = timeStamp.getDate();
-        var month = timeStamp.toLocaleString('default', { month: 'long' });
+        var month = months[timeStamp.getMonth()];
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
-        var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-        // true on IE11
-        // false on Edge and other IEs/browsers.
-        if (isIE11 === false) {
-          // Only print date in browsers newer than IE11 as IE11 doesn't understand toLocaleString('default'):
-          return day + " " + month + year;
-        }
+        return day + " " + month + year;
       }
     }
 
