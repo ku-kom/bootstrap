@@ -160,6 +160,7 @@ module.exports = function (grunt) {
               'docs/assets/js/datetimepicker/bootstrap-datetimepicker.js',
               'docs/assets/js/social-feeds/instagram/instagramByAccount.js',
               'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
+              'docs/assets/js/social-feeds/twitter/twitterByAccount.js',
               'docs/assets/js/videoControls/videoControls.js',
               'docs/assets/js/cookie/cookie.js',
               'docs/assets/js/scroll-progress/scroll-progress.js',
