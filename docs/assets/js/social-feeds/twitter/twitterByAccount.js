@@ -90,7 +90,8 @@
 
     function timeSince(timeStamp) {
       // relative time
-      var months = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
+      //var months = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
+      var lang = window.navigator.userLanguage || window.navigator.language;
       var now = new Date(),
         secondsPast = (now.getTime() - timeStamp.getTime()) / 1000;
       if (secondsPast < 60) {
@@ -104,7 +105,7 @@
       }
       if (secondsPast > 86400) {
         var day = timeStamp.getDate();
-        var month = months[timeStamp.getMonth()];
+        var month = timeStamp.toLocaleString(lang, { month: 'long' });
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
         return day + " " + month + year;
       }
