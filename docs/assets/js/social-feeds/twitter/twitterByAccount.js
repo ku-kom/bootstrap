@@ -107,7 +107,9 @@
         var month = timeStamp.toLocaleString('default', { month: 'long' });
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
         var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-        if (!isIE11) {
+        // true on IE11
+        // false on Edge and other IEs/browsers.
+        if (isIE11 === false) {
           // Only print date in browsers newer than IE11 as IE11 doesn't understand toLocaleString('default'):
           return day + " " + month + year;
         }
