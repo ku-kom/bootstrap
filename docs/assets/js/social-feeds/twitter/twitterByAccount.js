@@ -1,9 +1,9 @@
 /*jslint latedef:false*/
 /* <div id="twitter-feed" data-account="koebenhavns_uni" data-tweets="1">
-* <div class="ku-loading" role="status">
-* <span class="sr-only">Loading...</span>
-*  </div>
-* <ul class="list-unstyled"></ul></div>
+ * <div class="ku-loading" role="status">
+ * <span class="sr-only">Loading...</span>
+ *  </div>
+ * <ul class="list-unstyled"></ul></div>
  */
 (function ($) {
   'use strict';
@@ -106,7 +106,11 @@
         var day = timeStamp.getDate();
         var month = timeStamp.toLocaleString('default', { month: 'long' });
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
-        return day + " " + month + year;
+        var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+        if (!isIE11) {
+          // Only print date in browsers newer than IE11 as IE11 doesn't understand toLocaleString('default'):
+          return day + " " + month + year;
+        }
       }
     }
 
