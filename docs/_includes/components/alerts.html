@@ -12,24 +12,24 @@
   </div>
 
   <div class="bs-example" data-example-id="simple-alerts">
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success" role="alert" aria-atomic="true">
       <strong>Well done!</strong> You successfully read this important alert message.
     </div>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-info" role="alert" aria-atomic="true">
       <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="alert alert-warning" role="alert" aria-atomic="true">
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert" aria-atomic="true">
       <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </div>
   </div>
 {% highlight html %}
-<div class="alert alert-success" role="alert">...</div>
-<div class="alert alert-info" role="alert">...</div>
-<div class="alert alert-warning" role="alert">...</div>
-<div class="alert alert-danger" role="alert">...</div>
+<div class="alert alert-success" role="alert" aria-atomic="true">...</div>
+<div class="alert alert-info" role="alert" aria-atomic="true">...</div>
+<div class="alert alert-warning" role="alert" aria-atomic="true">...</div>
+<div class="alert alert-danger" role="alert" aria-atomic="true">...</div>
 {% endhighlight %}
 
   <h2 id="alerts-dismissible">Dismissible alerts</h2>
@@ -39,13 +39,13 @@
     <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
   </div>
   <div class="bs-example" data-example-id="dismissible-alert-css">
-    <div class="alert alert-warning alert-dismissible" role="alert">
+    <div class="alert alert-warning alert-dismissible" role="alert" aria-atomic="true">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
   </div>
 {% highlight html %}
-<div class="alert alert-warning alert-dismissible" role="alert">
+<div class="alert alert-warning alert-dismissible" role="alert" aria-atomic="true">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
 </div>
@@ -59,30 +59,30 @@
   <h2 id="alerts-links">Links in alerts</h2>
   <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
   <div class="bs-example" data-example-id="alerts-with-links">
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success" role="alert" aria-atomic="true">
       <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
     </div>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-info" role="alert" aria-atomic="true">
       <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="alert alert-warning" role="alert" aria-atomic="true">
       <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
     </div>
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert" aria-atomic="true">
       <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
     </div>
   </div>
 {% highlight html %}
-<div class="alert alert-success" role="alert">
+<div class="alert alert-success" role="alert" aria-atomic="true">
   <a href="#" class="alert-link">...</a>
 </div>
-<div class="alert alert-info" role="alert">
+<div class="alert alert-info" role="alert" aria-atomic="true">
   <a href="#" class="alert-link">...</a>
 </div>
-<div class="alert alert-warning" role="alert">
+<div class="alert alert-warning" role="alert" aria-atomic="true">
   <a href="#" class="alert-link">...</a>
 </div>
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger" role="alert" aria-atomic="true">
   <a href="#" class="alert-link">...</a>
 </div>
 {% endhighlight %}
