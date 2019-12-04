@@ -11631,6 +11631,8 @@ p[align="right"]:before {
   padding-left: 0;
   margin-top: 0;
   list-style: none;
+  transition: -webkit-transform .2s ease-out;
+  transition:         transform .2s ease-out;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
@@ -11652,6 +11654,9 @@ p[align="right"]:before {
   display: block;
   color: inherit;
   text-decoration: none;
+}
+.linkslist input[type="checkbox"]:checked ~ ul.menu-list li a:hover {
+  text-decoration: underline;
 }
 #warning-banner {
   position: relative;
