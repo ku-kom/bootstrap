@@ -18,3 +18,8 @@
 .gdpr-notice p:first-of-type {
   display: inline;
 }
+
+.gdpr-label {
+  font-weight: 400;
+  line-height: 1.5;
+}
