@@ -1,1 +1,5 @@
 @import url("form.css");
+
+#fieldcontainer-submitbuttons .btn+.btn {
+  margin-left: 10px;
+}
