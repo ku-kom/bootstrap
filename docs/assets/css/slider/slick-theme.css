@@ -1,17 +1,17 @@
 /* Slick theme for slides count and galleries - not necessary for standard slideshows */
 /* Current and total slides */
-.slide-wrapper .slider-count {
+.slick-gallery .slider-count {
   text-align: center;
   margin-top: 8px;
 }
 
-@media (min-width: 768px) {
-  .slide-gallery.slick-slider {
+@media all and (min-width: 768px) {
+  .slick-gallery.slick-slider {
     height: auto:
   }
 }
 
-.slide-gallery .caption {
+.slick-gallery .caption {
   position: relative!important;
   background: #f5f5f5;
 }
