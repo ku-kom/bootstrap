@@ -6,17 +6,18 @@
 }
 
 @media (min-width: 768px) {
-.slide-gallery .slick-slider {
-  height: auto:
+  .slide-gallery.slick-slider {
+    height: auto:
+  }
 }
-}
+
 .slide-gallery .caption {
-  position: relative;
+  position: relative!important;
   background: #f5f5f5;
 }
+
 /* Slider gallery start */
 .gallery-nav {
-  /*margin-top: 1px;*/
   margin-top: 10px;
   height: auto;
 }
@@ -70,8 +71,6 @@
   filter: brightness(90%) blur(0);
   -webkit-filter: brightness(90%) blur(0);
 }
-
-
 
 @media (min-width: 768px) and (max-width: 991px) {
 
