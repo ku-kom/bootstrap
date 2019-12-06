@@ -7,13 +7,16 @@
 
 @media all and (min-width: 768px) {
   .slick-gallery.slick-slider {
-    height: auto:
+    height: auto;
   }
 }
-
 .slick-gallery .caption {
   position: relative!important;
   background: #f5f5f5;
+}
+
+.slick-gallery img {
+  max-height: 367px
 }
 
 /* Slider gallery start */
