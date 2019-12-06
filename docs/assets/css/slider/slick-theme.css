@@ -44,6 +44,10 @@
   border: 1px solid #fff;
 }
 
+.gallery-nav .slick-current {
+  border: 1px solid #3479b2;
+}
+
 .gallery-nav .slick-slide:hover img {
   filter: brightness(90%) blur(0);
   -webkit-filter: brightness(90%) blur(0);
