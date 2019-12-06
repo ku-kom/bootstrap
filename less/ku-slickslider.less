@@ -269,22 +269,6 @@
 
 .slick-slider {
   &:hover {
-    // .slick-prev {
-    //   left: 0;
-    //   .icon-arrow-back;
-    //
-    //   &:before {
-    //     display: inline-block;
-    //   }
-    // }
-    //
-    // .slick-next {
-    //   right: 0;
-    //
-    //   &:before {
-    //     content: @icon-arrow;
-    //   }
-    // }
     @media (min-width: @screen-sm) {
       // Only display arrows in desktop
       .slick-arrow {
@@ -360,6 +344,7 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    height: auto;
     letter-spacing: 0.7px;
     line-height: @line-height-small;
     padding: 10px;
@@ -377,6 +362,10 @@
       color: inherit;
       font-size: 20px;
       line-height: 1.2;
+    }
+
+    h3 {
+      margin-top: 0;
     }
 
     p {

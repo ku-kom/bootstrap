@@ -10304,6 +10304,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   bottom: 0;
   display: block;
   width: 100%;
+  height: auto;
   padding: 10px;
   font-size: 14px;
   line-height: 1.3333333;
@@ -10323,6 +10324,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-size: 20px;
   line-height: 1.2;
   color: inherit;
+}
+.slick-slide .caption h3 {
+  margin-top: 0;
 }
 .slick-slide .caption p {
   margin: 0 0 6px;
