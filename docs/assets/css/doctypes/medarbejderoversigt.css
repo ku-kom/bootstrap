@@ -36,6 +36,7 @@
 .emp-title-heading>a>h2 {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 0;
 }
 
 
@@ -76,7 +77,7 @@
   width: 25% !important;
 }
 
-#medarbejdertable tr th:last-child {
+#medarbejdertable tr th:not(.emplistimage):last-child {
   /* Target last - the e-mail cells */
   width: 20% !important;
 }
