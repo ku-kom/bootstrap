@@ -11,43 +11,17 @@
   border-bottom: 0;
 }
 
-#medarbejdertable tr th.pct_20:first-child {
-  /* bredt format */
-  width: 30%;
-}
-
-#medarbejdertable tr th.pct_30:first-child {
-  /* Smalt format */
-  width: 37%;
-}
-
-#medarbejdertable tr th:last-child input {
-  display: none;
-}
-
-#medarbejdertable tr th:nth-last-of-type(-n+2) {
-  /* Target last to columns */
-  padding-right: 8px;
-  cursor: default;
-}
-
-#medarbejdertable tr th:nth-last-of-type(-n+2):after {
-  /* Target last to columns */
-  display: none;
-}
-
-#medarbejdertable tr th:nth-last-child(2) {
-  /* Target last but one - the phone cells */
-  width: 25% !important;
-}
-
-#medarbejdertable tr th:last-child {
-  /* Target last - the e-mail cells */
-  width: 20% !important;
-}
-
 #medarbejdertable tr th input:placeholder-shown {
   text-overflow: ellipsis;
+}
+
+.emplistname {
+  width: 25%;
+}
+
+.emplistimage {
+  /* img: 100px + 2*8px padding: */
+  width: 116px!important;
 }
 
 #forskerprofil_kontaktoplysninger>img {
