@@ -19,9 +19,13 @@
   width: 25%;
 }
 
+.emplistimage {
+  width: 120px;
+}
 
 .emplistimage img {
   width: 100px !important;
+  float: right;
 }
 
 .emp-title-heading>a {
@@ -34,13 +38,14 @@
   font-weight: 600;
 }
 
-/* Delete below after deployment dec. 12 2019*/
+
 #forskerprofil_kontaktoplysninger>img {
   float: right;
   margin-bottom: 10px;
   margin-left: 15px;
 }
 
+/* Delete below after deployment dec. 12 2019*/
 #medarbejdertable tr th.pct_20:first-child {
   /* bredt format */
   width: 30%;
