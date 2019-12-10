@@ -6,6 +6,10 @@
   border-radius: 2px;
 }
 
+.logindata {
+  margin-top: 0;
+}
+
 .TableList .HeadRow {
   color: #4a4949;
   font-weight: 700;

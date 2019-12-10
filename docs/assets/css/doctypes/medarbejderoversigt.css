@@ -21,13 +21,17 @@
 
 /* img: 100px + 2*8px padding: */
 .emplistimage {
-  width: 116px!important;
+  width: 116px !important;
 }
 
-.emp-title-heading > a{
+.emp-title-heading>a {
   color: #252525;
-  font-size: 14.4px;
   text-decoration: none;
+}
+
+.emp-title-heading>a>h2 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* Delete below after deployment dec. 12 2019*/
