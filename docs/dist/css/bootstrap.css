@@ -7930,8 +7930,8 @@ nav {
 .rightbox .rightbox-normal:last-child {
   margin-bottom: 0;
 }
-.rightbox .panel:last-child,
-.rightbox .flexiblebox-as-rightbox:last-child {
+.rightbox .flexiblebox-as-rightbox:last-child,
+.rightbox .panel:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
