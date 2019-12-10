@@ -15,15 +15,21 @@
   text-overflow: ellipsis;
 }
 
-/* .emplistname {
+.emplistname {
   width: 25%;
-} */
+}
 
 /* img: 100px + 2*8px padding: */
-/* .emplistimage {
+.emplistimage {
   width: 116px!important;
 }
-*/
+
+.emp-title-heading > a{
+  color: #252525;
+  font-size: 14.4px;
+  text-decoration: none;
+}
+
 /* Delete below after deployment dec. 12 2019*/
 #forskerprofil_kontaktoplysninger>img {
   float: right;
