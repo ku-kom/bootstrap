@@ -19,9 +19,9 @@
   width: 25%;
 }
 
-/* img: 100px + 2*8px padding: */
-.emplistimage {
-  width: 116px !important;
+
+.emplistimage img {
+  width: 100px !important;
 }
 
 .emp-title-heading>a {
