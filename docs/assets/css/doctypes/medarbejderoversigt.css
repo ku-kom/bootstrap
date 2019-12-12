@@ -25,14 +25,14 @@
   width: 120px;
 }
 
-th.emplistimage {
+th.emplistimage, th.emplistemail {
   padding-right: 8px;
   cursor: default;
   pointer-events: none;
 }
 
-th.emplistimage:after {
-  display: none;
+th.emplistimage:after, th.emplistemail:after {
+  display: none!important;
 }
 
 .emplistimage img {
