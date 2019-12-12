@@ -15,12 +15,9 @@
   text-overflow: ellipsis;
 }
 
-.emplistname {
-  width: 25%;
-}
 @media screen and (min-width: 768px) {
   .emplistname {
-    width: auto;
+    width: 25%;
   }
 }
 
@@ -43,7 +40,6 @@
   font-weight: 600;
   margin-top: 0;
 }
-
 
 #forskerprofil_kontaktoplysninger>img {
   float: right;
