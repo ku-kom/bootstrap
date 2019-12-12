@@ -10376,6 +10376,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background: #625757;
 }
 .slick-slide .caption.full-bg {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
