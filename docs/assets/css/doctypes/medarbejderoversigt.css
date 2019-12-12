@@ -25,6 +25,11 @@
   width: 120px;
 }
 
+th.emplistimage {
+  cursor: default;
+  pointer-events: none;
+}
+
 .emplistimage img {
   width: 100px !important;
   float: right;
