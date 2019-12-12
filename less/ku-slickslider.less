@@ -163,7 +163,6 @@
   .states(none);
   position: relative;
   color: @text-color;
-  text-decoration: none;
 
   &:hover {
     img {
@@ -409,6 +408,9 @@
     }
 
     &.full-bg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 0;
       bottom: 0;
