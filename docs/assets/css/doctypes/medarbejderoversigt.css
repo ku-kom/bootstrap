@@ -18,6 +18,11 @@
 .emplistname {
   width: 25%;
 }
+@media screen and (min-width: 768px) {
+  .emplistname {
+    width: auto;
+  }
+}
 
 .emplistimage {
   width: 120px;
