@@ -9535,7 +9535,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   letter-spacing: .3px;
 }
 .custom-search-results .nyhedsliste_dato {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   color: #252525 !important;
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .custom-search-results .media > .media-body:first-child {
   padding-left: 74px;
