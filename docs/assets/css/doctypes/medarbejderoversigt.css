@@ -26,8 +26,13 @@
 }
 
 th.emplistimage {
+  padding-right: 8px;
   cursor: default;
   pointer-events: none;
+}
+
+th.emplistimage:after {
+  display: none;
 }
 
 .emplistimage img {
