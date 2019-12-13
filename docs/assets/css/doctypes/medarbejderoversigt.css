@@ -26,8 +26,8 @@
 }
 
 th.emplistimage, th.emplistemail {
-  padding-right: 8px;
-  cursor: default;
+  padding-right: 8px!important;
+  cursor: default!important;
   pointer-events: none;
 }
 
