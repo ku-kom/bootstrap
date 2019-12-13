@@ -25,7 +25,11 @@
   width: 120px;
 }
 
-th.emplistimage, th.emplistemail {
+th.emplistimage {
+  display: none;
+}
+
+th.emplistemail {
   padding-right: 8px!important;
   cursor: default!important;
   pointer-events: none;
