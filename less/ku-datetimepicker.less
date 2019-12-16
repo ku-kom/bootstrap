@@ -210,14 +210,13 @@
   }
 
   .day {
-    &.occup_monthday {½
+    &.occup_monthday {
       span {
         background: @ku-occupied-color;
 
         a {
           color: @white-color;
           display: block;
-          text-decoration: none;
 
           &:hover {
             text-decoration: none;
@@ -229,6 +228,7 @@
       &:hover {
         span {
           background: @ku-occupied-color-hover;
+          color: @white-color;
         }
       }
     }
@@ -372,6 +372,7 @@
 
     a {
       color: @text-color;
+      text-decoration: none;
     }
 
     &.disabled,

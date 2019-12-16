@@ -10618,19 +10618,19 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .datepicker .old span {
   color: #999;
 }
-.datepicker .day.occup_monthday ½ span {
+.datepicker .day.occup_monthday span {
   background: #577d7f;
 }
-.datepicker .day.occup_monthday ½ span a {
+.datepicker .day.occup_monthday span a {
   display: block;
   color: #fff;
-  text-decoration: none;
 }
-.datepicker .day.occup_monthday ½ span a:hover {
+.datepicker .day.occup_monthday span a:hover {
   font-weight: 600;
   text-decoration: none;
 }
 .datepicker .day.occup_monthday:hover span {
+  color: #fff;
   background: #4d6e70;
 }
 .datepicker .old:hover span {
@@ -11101,6 +11101,7 @@ fieldset[disabled] .datepicker .selected.highlighted span.focus {
 }
 .datepicker span a {
   color: #252525;
+  text-decoration: none;
 }
 .datepicker span.disabled,
 .datepicker span.disabled:hover {
