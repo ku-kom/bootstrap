@@ -19,6 +19,10 @@
   .emplistname {
     width: 25%;
   }
+
+  .emplistworkarea + .emplistphone {
+    width: 20%;
+  }
 }
 
 .emplistimage {
@@ -30,13 +34,13 @@ th.emplistimage {
 }
 
 th.emplistemail {
-  padding-right: 8px!important;
-  cursor: default!important;
+  padding-right: 8px !important;
+  cursor: default !important;
   pointer-events: none;
 }
 
 th.emplistimage:after, th.emplistemail:after {
-  display: none!important;
+  display: none !important;
 }
 
 .emplistimage img {
