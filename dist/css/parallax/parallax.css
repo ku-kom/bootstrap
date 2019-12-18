@@ -32,6 +32,9 @@
   -webkit-transform: translatey(33px);
   transform: translatey(33px);
 }
+.ku-branding {
+  display: none;
+}
 .ku-branding::after {
   display: none;
 }
@@ -96,12 +99,6 @@
 .block-bg .block-content {
   padding: 15px;
   background: rgba(255, 255, 255, 0.9);
-}
-.video-bg video {
-  min-width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: -9999;
 }
 .jarallax-img {
   position: absolute;
