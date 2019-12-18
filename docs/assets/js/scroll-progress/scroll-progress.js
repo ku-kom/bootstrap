@@ -47,6 +47,19 @@ $(function () {
     }
   }
 
+  $('.slick-pause').on('click', function () {
+    var $video = $("[data-jarallax-video] video");
+    var $pause = $(this).find('.glyphicon');
+    if ($video.paused) {
+      $video.play();
+      $pause.toggleClass('glyphicon-play glyphicon-pause');
+    } else {
+      $video.pause();
+      $pause.toggleClass('glyphicon-pause glyphicon-play');
+    }
+  });
+
+
   animateMenu();
   animateProcessbar();
 
@@ -67,7 +80,6 @@ if (navigator.userAgent.match(/Trident\/7\./)) {
   });
   document.body.addEventListener('keydown', function (e) {
     var currentScrollPosition = window.pageYOffset;
-
     switch (e.which) {
       case 33: // page up
         e.preventDefault(); // prevent the default action (scroll / move caret)
