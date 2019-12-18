@@ -99,11 +99,21 @@
 .block-bg {
   color: @text-color;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 0;
 
   .block-content {
     padding: 15px;
     background: rgba(@white-color, .9);
   }
+}
+
+.video-bg video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -9999;
 }
 
 .jarallax-img {
@@ -119,7 +129,6 @@
   //backface-visibility: hidden;
   transform-style: preserve-3d;
 }
-
 @media all and (min-width: @screen-sm) {
   #content {
     margin-top: 68px;
