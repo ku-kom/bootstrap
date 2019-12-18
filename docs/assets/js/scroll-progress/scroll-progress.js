@@ -48,7 +48,8 @@ $(function () {
   }
 
   $('.slick-pause').on('click', function () {
-    var $video = $("[data-jarallax-video] video");
+    // Toggle play/pause button in video backgrounds
+    var $video = $("[data-jarallax-video] video").get(0);
     var $pause = $(this).find('.glyphicon');
     if ($video.paused) {
       $video.play();
