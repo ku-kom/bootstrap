@@ -59,7 +59,6 @@ $(function () {
     }
   });
 
-
   animateMenu();
   animateProcessbar();
 
