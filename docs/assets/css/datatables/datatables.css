@@ -599,9 +599,14 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {
   cursor: pointer;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, .dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {
+  position: relative;
+  padding-left: 10px;
   cursor: pointer;
+  padding-bottom: 45px;
+}
+
+.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
   bottom: 9px;
   left: 11px;
   height: 20px;
@@ -623,8 +628,13 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before 
   font-size: 12px;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:after,
-table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:after {
+.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+  content: "\e253";
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.dataTable.dtr-inline.collapsed>tbody>tr>td:not(.child):first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr>th:not(.child):first-child:after {
   bottom: 9px;
   left: 38px;
   height: 20px;
@@ -646,25 +656,18 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:after {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
-  cursor: pointer
-}
-
-table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
-table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
-  content: "Skjul detaljer";
   cursor: pointer;
-  content: "\e253";
-  padding-top: 5px;
-  padding-bottom: 1px;
 }
 
-html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:after,
-html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:after {
+.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
+  content: "Skjul detaljer";
+}
+
+html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr>td:not(.child):first-child:after, html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr>th:not(.child):first-child:after {
   content: "Show details";
 }
 
-html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
-html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:after, html:lang(en) .dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:after {
   content: "Hide details";
 }
 
