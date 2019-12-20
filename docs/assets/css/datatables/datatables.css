@@ -416,6 +416,7 @@ table.dataTable td {
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
+  cursor: pointer;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {

@@ -24,7 +24,7 @@
     width: 20%;
   }
   .emplisttitle + .emplistphone + .emplistemail {
-    width: 20%;
+    width: 12%;
   }
 }
 
