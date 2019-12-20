@@ -623,12 +623,49 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before 
   font-size: 12px;
 }
 
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:after,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:after {
+  bottom: 9px;
+  left: 38px;
+  height: 20px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #252525;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: content-box;
+  line-height: 12px;
+  content: "Vis detaljer";
+  letter-spacing: .7px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer
+}
+
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+  content: "Skjul detaljer";
   cursor: pointer;
   content: "\e253";
   padding-top: 5px;
   padding-bottom: 1px;
+}
+
+html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:after,
+html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:after {
+  content: "Show details";
+}
+
+html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
+html:lang(en) table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+  content: "Hide details";
 }
 
 table.dataTable.dtr-inline.collapsed.compact>tbody>tr>td:first-child,
