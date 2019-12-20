@@ -38,7 +38,7 @@
       }
       $container.empty();
       if (access_token) {
-        var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token;
+        var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + encodeURIComponent(access_token);
         $.ajax({
           url: $url,
           type: 'GET',
