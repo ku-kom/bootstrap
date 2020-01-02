@@ -30,6 +30,30 @@
 
   -webkit-filter: brightness(90%) blur(0);
 }
+.gridbox.faculty_color {
+  color: #fff;
+  background: #901a1e;
+}
+.gridbox.faculty_color .header {
+  color: #fff;
+  background: rgba(144, 26, 30, .83);
+}
+.gridbox.faculty_color.text-top .header {
+  background: #901a1e;
+}
+.gridbox.faculty_color.outlined {
+  color: #901a1e;
+  border: 1px solid #901a1e;
+}
+.gridbox.faculty_color.outlined:hover {
+  border: 1px solid #7a1619;
+}
+.gridbox.faculty_color.full:hover {
+  background: #7a1619;
+}
+.gridbox.faculty_color.text-down:hover {
+  background: #7a1619;
+}
 .gridbox.subcolor_5 {
   background: #dedede;
 }
