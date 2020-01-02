@@ -1984,7 +1984,7 @@ blockquote.full-width {
   float: none;
   width: 100%;
   padding: 0;
-  margin: 5px 0;
+  margin: 5px 0 15px 0;
 }
 .right-side blockquote {
   width: 100%!important;
