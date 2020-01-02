@@ -838,6 +838,15 @@
   .two-one-one-column .column1 .gridbox .text {
     display: block;
   }
+  .one-one-two-column .column3 .gridbox.outlined.faculty_color::before,
+  .one-three-column .column2 .gridbox.outlined.faculty_color::before,
+  .one-two-column .column2 .gridbox.outlined.faculty_color::before,
+  .single-column .column1 .gridbox.outlined.faculty_color::before,
+  .three-one-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-column .column1 .gridbox.outlined.faculty_color::before,
+  .two-one-one-column .column1 .gridbox.outlined.faculty_color::before {
+    color: #901a1e;
+  }
   .one-one-two-column .column3 .gridbox.outlined .header,
   .one-three-column .column2 .gridbox.outlined .header,
   .one-two-column .column2 .gridbox.outlined .header,

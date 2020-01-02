@@ -26,7 +26,7 @@
       .image-fadeOut();
     }
   }
-  
+
   &.faculty_color {
     background: @ku-red;
     color: @white-color;
@@ -584,34 +584,19 @@
     &.size2 {
       &.with-img {
         height: 220px;
-        // Video has natural height
-        // &.with-iframe {
-        //   height: inherit;
-        // }
       }
     }
 
     &.size3 {
       &.with-img {
         height: 170px;
-        // Video has natural height
-        // &.with-iframe {
-        //   height: inherit;
-        // }
       }
     }
 
     &.outlined {
       &.with-img {
         border: 0!important;
-        // &::before {
-        //   color: @white-color;
-        // }
-        // &.subcolor_5 {
-        //   &::before {
-        //     color: @gray-dark;
-        //   }
-        // }
+
         &.subcolor_6 {
           &::before {
             color: @gray-dark;
@@ -888,6 +873,12 @@
       }
 
       &.outlined {
+        &.faculty_color {
+          &::before {
+            color: @ku-red;
+          }
+        }
+
         .header {
           background: transparent;
           color: inherit!important;
@@ -1341,6 +1332,7 @@
 
     .gridbox {
       text-decoration: none;
+
       img {
         .image-fadeOut();
       }
