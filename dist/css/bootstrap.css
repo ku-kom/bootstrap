@@ -5821,6 +5821,13 @@ html:lang(en) .navbar-inverse .topbar-logo {
     height: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  @supports (-ms-ime-align: auto) {
+    html:lang(en) .topbar-logo {
+      background-size: 400px 28px;
+    }
+  }
+}
 @media all and (min-width: 992px) {
   @supports (-ms-ime-align: auto) {
     html:lang(en) .topbar-logo {

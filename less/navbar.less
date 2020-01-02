@@ -175,8 +175,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-collapse,
-  > .navbar-header {
+  > .navbar-header,
+  > .navbar-collapse {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -307,8 +307,8 @@
       border: 0;
       box-shadow: none;
 
-      .dropdown-header,
-      > li > a {
+      > li > a,
+      .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
 
@@ -872,6 +872,15 @@
       left: 24px;
       height: 100%;
       width: 28%;
+    }
+  }
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+  @supports (-ms-ime-align: auto) {
+    html:lang(en) {
+      .topbar-logo {
+        background-size: 400px 28px;
+      }
     }
   }
 }
