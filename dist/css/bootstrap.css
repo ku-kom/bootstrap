@@ -10021,6 +10021,18 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .slick-slide .caption p {
   margin: 0 0 6px;
 }
+.slick-slide .caption.faculty_color {
+  color: #fff;
+  background: #901a1e;
+}
+@media (min-width: 768px) {
+  .slick-slide .caption.faculty_color {
+    background: rgba(144, 26, 30, .93);
+  }
+}
+.slick-slide .caption.faculty_color.full-bg {
+  background: #901a1e;
+}
 .slick-slide .caption.subcolor_5 {
   color: #252525;
   background: #dedede;
