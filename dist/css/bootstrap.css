@@ -2002,7 +2002,7 @@ h2.deloverskrift {
   font-size: 22px;
   line-height: 1.2;
   letter-spacing: .7px;
-  border-bottom: 1px solid #bebebe;
+  border-bottom: 1px solid #959595;
 }
 code,
 kbd,
@@ -6791,7 +6791,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-body {
   padding: 1px 0 0;
-  border-top: 1px solid #901a1e;
+  border-top: 1px solid #959595;
 }
 .panel-primary {
   border-color: #39808e;
@@ -9498,7 +9498,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   padding-top: 1px;
   overflow: hidden;
           flex-direction: column;
-  border-top: 1px solid #901a1e;
+  border-top: 1px solid #959595;
   border-bottom: 1px solid #e8e8e8;
 
   -webkit-flex-direction: column;
@@ -9639,7 +9639,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 1px;
     height: 70%;
     content: '';
-    background-color: #901a1e;
+    background-color: #959595;
   }
 }
 /* Slider */

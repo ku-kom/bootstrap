@@ -2,7 +2,7 @@
 @import url("publikationsliste.css");
 
 .heading-blocks h3, .search_box_elsewhere h3, #custom_press_box h3 {
-  border-bottom: 1px solid #901a1e;
+  border-bottom: 1px solid #959595;
   background-image: none !important;
   border-top: 0;
   font-size: 16.08px;
