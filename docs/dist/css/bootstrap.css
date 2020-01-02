@@ -5815,9 +5815,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
-    top: 8px;
+    top: 0;
     left: 24px;
-    width: 27%;
+    width: 28%;
+    height: 100%;
   }
 }
 .search-area {
