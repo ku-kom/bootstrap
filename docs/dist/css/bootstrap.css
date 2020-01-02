@@ -10258,24 +10258,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   letter-spacing: .25px;
   border-bottom: 1px solid #901a1e;
 }
-.theme-samf .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #e13718;
-}
-.theme-hum .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #365aa5;
-}
-.theme-science .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #46743c;
-}
-.theme-sund .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #2a216a;
-}
-.theme-jur .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #999632;
-}
-.theme-teo .datepicker table thead tr:nth-child(2) {
-  border-bottom: 1px solid #66609e;
-}
 .datepicker table thead tr:nth-child(3) {
   background-color: #e1e1e1;
 }
