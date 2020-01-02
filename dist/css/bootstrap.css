@@ -5824,8 +5824,8 @@ html:lang(en) .navbar-inverse .topbar-logo {
 @media (min-width: 768px) and (max-width: 991px) {
   @supports (-ms-ime-align: auto) {
     html:lang(en) .topbar-logo {
-      width: 36%;
-      background-size: 400px 28px;
+      width: 41%;
+      background-size: 300px 28px;
     }
   }
 }
@@ -7453,6 +7453,8 @@ img.img-default:before,
 img.img-default:after,
 .panel-body:before,
 .panel-body:after,
+.panel-group:before,
+.panel-group:after,
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
@@ -7485,6 +7487,7 @@ main:after,
 .pager:after,
 img.img-default:after,
 .panel-body:after,
+.panel-group:after,
 .modal-header:after,
 .modal-footer:after,
 main:after,
