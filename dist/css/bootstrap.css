@@ -8246,24 +8246,6 @@ iframe {
   content: "";
   border-bottom: 1px solid #901a1e;
 }
-.theme-samf .ku-branding::after {
-  border-bottom: 1px solid #e13718;
-}
-.theme-hum .ku-branding::after {
-  border-bottom: 1px solid #365aa5;
-}
-.theme-science .ku-branding::after {
-  border-bottom: 1px solid #46743c;
-}
-.theme-sund .ku-branding::after {
-  border-bottom: 1px solid #2a216a;
-}
-.theme-jur .ku-branding::after {
-  border-bottom: 1px solid #999632;
-}
-.theme-teo .ku-branding::after {
-  border-bottom: 1px solid #66609e;
-}
 @media all and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .ku-branding .ku-branding-logo {
     bottom: -12px;
