@@ -5824,7 +5824,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 @media all and (min-width: 992px) {
   @supports (-ms-ime-align: auto) {
     html:lang(en) .topbar-logo {
-      width: 32%;
+      background-size: 300px 28px;
     }
   }
 }
