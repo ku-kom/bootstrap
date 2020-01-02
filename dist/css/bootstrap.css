@@ -5821,6 +5821,13 @@ html:lang(en) .navbar-inverse .topbar-logo {
     height: 100%;
   }
 }
+@media all and (min-width: 992px) {
+  @supports (-ms-ime-align: auto) {
+    html:lang(en) .topbar-logo {
+      width: 32%;
+    }
+  }
+}
 .search-area {
   display: -webkit-flex;
   display: -ms-flexbox;

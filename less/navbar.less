@@ -353,6 +353,7 @@
         padding: 0 7px;
         line-height: @ku-topbar-height;
         text-decoration: none;
+
         &:hover {
           text-decoration: underline;
         }
@@ -871,6 +872,15 @@
       left: 24px;
       height: 100%;
       width: 28%;
+    }
+  }
+}
+@media all and (min-width: @screen-md) {
+  @supports (-ms-ime-align: auto) {
+    html:lang(en) {
+      .topbar-logo {
+        width: 32%;
+      }
     }
   }
 }
