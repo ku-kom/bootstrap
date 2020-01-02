@@ -177,30 +177,6 @@ div.rendering p.type, ol.portal_list>li {
   margin-bottom: 2px;
 }
 
-.theme-samf .downloadstatistics-box h3, .theme-samf #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #e13718;
-}
-
-.theme-hum .downloadstatistics-box h3, .theme-hum #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #365aa5;
-}
-
-.theme-science .downloadstatistics-box h3, .theme-science #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #46743c;
-}
-
-.theme-sund .downloadstatistics-box h3, .theme-sund #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #2a216a;
-}
-
-.theme-jur .downloadstatistics-box h3, .theme-jur #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #999632;
-}
-
-.theme-teo .downloadstatistics-box h3, .theme-teo #latest_publication_box_custom h3 {
-  border-bottom: 1px solid #66609e;
-}
-
 .view_container ul.tabs {
   height: auto;
   width: 100%;
