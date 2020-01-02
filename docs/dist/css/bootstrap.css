@@ -10268,7 +10268,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   line-height: 1.34;
   color: #252525;
   letter-spacing: .25px;
-  border-bottom: 1px solid #901a1e;
+  border-bottom: 1px solid #959595;
 }
 .datepicker table thead tr:nth-child(3) {
   background-color: #e1e1e1;
