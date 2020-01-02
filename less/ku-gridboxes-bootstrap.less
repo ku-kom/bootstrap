@@ -558,7 +558,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
@@ -884,6 +883,28 @@
           color: inherit!important;
           border-right: 0;
           white-space: normal;
+        }
+      }
+    }
+  }
+  @media (min-width: @screen-md) {
+    // Outline style for single column spans
+    .double-column [class*=column],
+    .one-two-column .column1,
+    .quad-column [class*=column],
+    .triple-column [class*=column],
+    .two-one-column .column2 {
+      .gridbox {
+        &.size2,
+        &.size3 {
+          &.outlined.with-img {
+            &.faculty_color {
+              .header {
+                background: fade(@ku-red, 83%);
+                color: @white-color;
+              }
+            }
+          }
         }
       }
     }
