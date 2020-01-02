@@ -5239,18 +5239,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
 .container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
+.container-fluid > .navbar-collapse,
+.container > .navbar-header,
+.container-fluid > .navbar-header {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
   .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
+  .container-fluid > .navbar-collapse,
+  .container > .navbar-header,
+  .container-fluid > .navbar-header {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5351,8 +5351,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5821,17 +5821,10 @@ html:lang(en) .navbar-inverse .topbar-logo {
     height: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   @supports (-ms-ime-align: auto) {
     html:lang(en) .topbar-logo {
       width: 41%;
-      background-size: 300px 28px;
-    }
-  }
-}
-@media all and (min-width: 992px) {
-  @supports (-ms-ime-align: auto) {
-    html:lang(en) .topbar-logo {
       background-size: 300px 28px;
     }
   }
