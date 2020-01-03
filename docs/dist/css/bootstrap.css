@@ -9624,8 +9624,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #901a1e;
   text-decoration: none;
   text-transform: none;
-  -webkit-transform: translateZ(-50%);
-          transform: translateZ(-50%);
 
   speak: none;
   -webkit-font-smoothing: antialiased;
@@ -9842,6 +9840,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display:         flex!important;
   height: 100%;
   color: #252525;
+  text-decoration: none;
           flex-direction: column;
 
   -webkit-flex-direction: column;
@@ -9849,12 +9848,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
           justify-content: center;
-}
-.slide-link:focus,
-.slide-link:active,
-.slide-link:visited,
-.slide-link:hover {
-  text-decoration: none;
 }
 .slide-link:hover img {
           filter: brightness(90%) blur(0);
