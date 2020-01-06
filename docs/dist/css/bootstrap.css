@@ -6274,7 +6274,7 @@ figcaption {
   border: 1px solid transparent;
   border-radius: 2px;
 }
-.alert h4 {
+.alert h4:first-child {
   margin-top: 0;
   color: inherit;
 }
