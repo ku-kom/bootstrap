@@ -536,6 +536,9 @@
   .gridbox.outlined.with-img {
     border: 0!important;
   }
+  .gridbox.outlined.with-img.faculty_color {
+    color: #fff;
+  }
   .gridbox.outlined.with-img.subcolor_6::before {
     color: #252525;
   }
