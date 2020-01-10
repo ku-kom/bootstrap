@@ -5703,7 +5703,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   background: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
 }
 .navbar-inverse .navbar-nav > li > a.dansk::after {
-  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-dk.png");
+  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,

@@ -1858,7 +1858,7 @@ function shareURL(dest) {
   var urlMap = {
     facebook: 'https://www.facebook.com/sharer/sharer.php?u=',
     linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url=',
-    twitter: 'https://twitter.com/home?status='
+    twitter: 'https://twitter.com/intent/tweet?&url='
   };
   // Get current url
   var url = window.location.href;
