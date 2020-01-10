@@ -109,6 +109,12 @@
     height: 600px;
   }
 }
+@supports (-ms-ime-align: auto) {
+  body {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
 .block-bg {
   color: #252525;
   min-height: 100vh;

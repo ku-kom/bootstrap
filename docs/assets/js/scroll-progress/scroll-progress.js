@@ -72,7 +72,7 @@ $(function () {
 
 // Fixes jumpy scroll in IE11 by disabling smooth scroll
 if (navigator.userAgent.match(/Trident\/7\./)) {
-  document.body.addEventListener('mousewheel', function () {
+  document.body.addEventListener('mousewheel', function (event) {
     event.preventDefault();
     var wd = event.wheelDelta;
     var po = window.pageYOffset;

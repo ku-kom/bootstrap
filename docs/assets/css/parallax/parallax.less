@@ -123,6 +123,13 @@
     height: 600px;
   }
 }
+@supports (-ms-ime-align: auto) {
+  // Edge - prevent flickering
+
+  body {
+    transform: translateZ(0);
+  }
+}
 
 .block-bg {
   color: @text-color;
