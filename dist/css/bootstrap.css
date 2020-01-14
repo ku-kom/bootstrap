@@ -3763,6 +3763,9 @@ fieldset[disabled] a .btn {
   font-family: 'Glyphicons Halflings';
   content: "\e079";
 }
+.btn .icon {
+  margin-left: 5px;
+}
 .btn-default {
   color: #252525;
   background-color: #f4f4f4;
