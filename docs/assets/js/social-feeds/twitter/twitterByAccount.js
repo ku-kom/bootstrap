@@ -38,7 +38,7 @@
             var d = new Date(time);
             var status = e.full_text;
             status = renderLinks(status);
-            var aria = (status) ? status.substring(0, 80) + '...' : '';
+            var aria = (e.full_text) ? e.full_text.substring(0, 80) + '...' : '';
             console.log(aria);
 
             var tweetid = e.id_str;
