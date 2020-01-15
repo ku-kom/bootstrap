@@ -51,7 +51,7 @@
               var link = data.data[i].link;
               var caption = data.data[i].caption.text;
               if (caption) {
-                caption = caption.substring(0, 80); // Only display max 80 chars.
+                caption = caption.substring(0, 80) + '...'; // Only display max 80 chars.
               } else {
                 caption = '';
               }
