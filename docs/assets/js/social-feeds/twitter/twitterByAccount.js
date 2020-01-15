@@ -38,7 +38,7 @@
             var d = new Date(time);
             var status = e.full_text;
             status = renderLinks(status);
-            var aria = (e.full_text) ? e.full_text.substring(0, 80) + '...' : '';
+            var aria = (e.full_text) ? htmlEntities(e.full_text.substring(0, 80) + '...') : '';
 
             var tweetid = e.id_str;
             var photoUrl = '';
@@ -109,6 +109,11 @@
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
         return day + '. ' + month + ' ' + year;
       }
+    }
+
+    function htmlEntities(str) {
+      // Encode html for safety
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
   });
