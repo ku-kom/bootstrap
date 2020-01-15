@@ -39,7 +39,6 @@
             var status = e.full_text;
             status = renderLinks(status);
             var aria = (e.full_text) ? e.full_text.substring(0, 80) + '...' : '';
-            console.log(aria);
 
             var tweetid = e.id_str;
             var photoUrl = '';
@@ -54,7 +53,7 @@
             }
 
             if (showTweetActions == true) {
-              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '" title="Svar">Svar</a></div><div class="intent tw-rt"><a target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '" title="Retweet">Retweet</a></div><div class="intent tw-fav"><a target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '" title="Like">Like</a></div></div>';
+              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '" title="Svar">Svar</a></div><div class="intent tw-rt"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '" title="Retweet">Retweet</a></div><div class="intent tw-fav"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '" title="Like">Like</a></div></div>';
             }
 
             wrapper.find('ul').append('<li><div class="imgInfo"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '" ><img src="' + profileimage +
