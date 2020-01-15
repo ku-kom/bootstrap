@@ -29,7 +29,10 @@
     var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $cachedWidth = $('body').prop('clientWidth');
 
-
+    function htmlEntities(str) {
+      // Encode html for safety
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
 
     function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
@@ -51,7 +54,7 @@
               var link = data.data[i].link;
               var caption = data.data[i].caption.text;
               if (caption) {
-                caption = caption.substring(0, 80) + '...'; // Only display max 80 chars.
+                caption = htmlEntities(caption.substring(0, 80) + '...'); // Only display max 80 chars.
               } else {
                 caption = '';
               }
@@ -121,20 +124,6 @@
       //console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
     }
 
-    // Action when gridbox arrow is clicked
-    // clickable range - never changes
-    // $wrapper.click(function (e) {
-    //   var max = $(this).offset().top + $(this).outerHeight();
-    //   var min = max - 30; // 30 is the height of the ::before arrow
-    //
-    //   var checkRange = function (y) {
-    //     return (y >= min && y <= max);
-    //   };
-    //   if (checkRange(e.pageY)) {
-    //     location.href = "https://www.instagram.com/" + $accountName;
-    //   }
-    // });
-
     //On resize, wait and reload function
     var it;
 
@@ -149,6 +138,7 @@
         $cachedWidth = $newWidth;
       }
     };
+
   });
 
 })(jQuery);
