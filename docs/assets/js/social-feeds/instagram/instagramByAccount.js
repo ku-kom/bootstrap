@@ -44,12 +44,18 @@
           type: 'GET',
           dataType: "jsonp",
           success: function (data) {
-            console.log(data);
+            //console.log(data);
             $loading.hide();
             for (var i = 0; i < $images; i++) {
               var img = data.data[i].images.standard_resolution.url;
               var link = data.data[i].link;
-              $container.append('<a tabindex="-1" href="' + link + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
+              var caption = data.data[i].caption.text;
+              if (caption) {
+                caption = caption.substring(0, 80); // Only display max 80 chars.
+              } else {
+                caption = '';
+              }
+              $container.append('<a tabindex="-1" href="' + link + '" aria-label="' + caption + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
             $('a', $container).each(function (k, e) {
