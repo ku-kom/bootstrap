@@ -27,7 +27,6 @@
         data: {
           user: twitterAccount
         },
-        contentType: "application/json;charset=utf-8",
         success: function (feeds) {
           //console.log(feeds);
           wrapper.find(loading).addClass('hidden');
