@@ -43,7 +43,7 @@
   left: 13px;
 }
 .ku-branding::after {
-  border-bottom: #666 !important;
+  border-bottom: 1px solid #666 !important;
 }
 .was {
   background-color: #fff;
