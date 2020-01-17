@@ -6422,6 +6422,9 @@ figcaption {
 .media:first-child {
   margin-top: 0;
 }
+.media:last-child {
+  margin-bottom: 13px;
+}
 .media,
 .media-body {
   overflow: hidden;
@@ -6436,17 +6439,17 @@ figcaption {
 .media-object.img-thumbnail {
   max-width: none;
 }
-.media-right,
-.media > .pull-right {
+.media > .pull-right,
+.media-right {
   padding-left: 10px;
 }
-.media-left,
-.media > .pull-left {
+.media > .pull-left,
+.media-left {
   padding-right: 10px;
 }
+.media-body,
 .media-left,
-.media-right,
-.media-body {
+.media-right {
   display: table-cell;
   vertical-align: top;
 }
