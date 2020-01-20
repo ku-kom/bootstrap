@@ -1581,7 +1581,7 @@ hr {
     height: auto!important;
   }
 }
-.stretched-link ::after {
+.stretched-link::after {
   position: absolute;
   top: 0;
   right: 0;
