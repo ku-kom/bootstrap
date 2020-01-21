@@ -48,7 +48,13 @@
             $.each(entry, function (i, v) {
               var img = entry[i].node.thumbnail_src;
               var shortcode = entry[i].node.shortcode;
-              $container.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener"><img src="' + img + '" alt="' + hashtag + '"></a>');
+              var caption = entry[i].node.edge_media_to_caption.edges[0].node.text;
+              if (caption) {
+                caption = htmlEntities(caption.substring(0, 80) + '...'); // Only display max 80 chars.
+              } else {
+                caption = '';
+              }
+              $container.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + hashtag + '"></a>');
               return i < $images - 1;
             });
             var batch;
