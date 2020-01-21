@@ -20,6 +20,11 @@
     var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $loading = $wrapper.find(".ku-loading");
 
+    function htmlEntities(str) {
+      // Encode html for safety
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
     function getInstagramByHash(hashtag) {
       // Fetch Instagram images by hashtag
       if ($isMobile === true) {
@@ -37,7 +42,7 @@
             hashtag: $hash
           }),
           success: function (data) {
-            //console.log(data);
+            console.log(data);
             $loading.hide();
             var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
             $.each(entry, function (i, v) {
