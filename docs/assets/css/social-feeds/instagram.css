@@ -147,6 +147,10 @@ Needs html like this:
   overflow: hidden;
 }
 
+.instagram-link {
+  color: inherit;
+}
+
 @media screen and (max-width: 480px) {
   #imageBox .batch img {
     position: relative;

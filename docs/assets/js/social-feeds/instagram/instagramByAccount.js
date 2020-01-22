@@ -19,7 +19,7 @@
     var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
     // $isMobile must be true or null and in mobile view to be true
-    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || true && (window.matchMedia('(max-width: 767px)').matches) === true) ? true : false;
+    var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || "true" && (window.matchMedia('(max-width: 767px)').matches) === true) ? true : false;
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
@@ -37,6 +37,7 @@
     function getInstagramByAccount(access_token) {
       // Fetch Instagram images by hashtag
       if ($isMobile === true) {
+        $wrapper.empty();
         return //Don't run on mobile
       }
       $container.empty();
