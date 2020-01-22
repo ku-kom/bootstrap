@@ -38,7 +38,7 @@
             var d = new Date(time);
             var status = e.full_text;
             status = renderLinks(status);
-            var aria = (e.full_text) ? htmlEntities(e.full_text.substring(0, 80) + '...') : '';
+            var aria = (e.full_text) ? htmlEntities(e.full_text.substring(0, 50) + '...') : '';
 
             var tweetid = e.id_str;
             var photoUrl = '';

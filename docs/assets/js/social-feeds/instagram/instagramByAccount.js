@@ -52,12 +52,7 @@
             for (var i = 0; i < $images; i++) {
               var img = data.data[i].images.standard_resolution.url;
               var link = data.data[i].link;
-              var caption = data.data[i].caption.text;
-              if (caption) {
-                caption = htmlEntities(caption.substring(0, 80) + '...'); // Only display max 80 chars.
-              } else {
-                caption = '';
-              }
+              var caption = (data.data[i].caption.text) ? htmlEntities(data.data[i].caption.text.substring(0, 50) + '...') : '';
               $container.append('<a tabindex="-1" href="' + link + '" aria-label="' + caption + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
             }
             var batch;
