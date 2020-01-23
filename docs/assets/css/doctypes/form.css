@@ -28,3 +28,7 @@
 .gdpr-label input[type=checkbox] {
   margin-left: 0;
 }
+
+.form-group legend {
+  margin-bottom: 5px;
+}
