@@ -58,6 +58,9 @@ var initialisevideo = function () {
   // Hide the browser's default controls
   video.controls = false;
 
+  // Always mute videos by default:
+  video.muted = true;
+
   // Add a listener for the timeupdate event so we can update the progress bar
   if (progressBar) {
     video.addEventListener('timeupdate', updateProgressBar, false);
