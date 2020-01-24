@@ -25,11 +25,6 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.gridbox:hover img {
-          filter: brightness(90%) blur(0);
-
-  -webkit-filter: brightness(90%) blur(0);
-}
 .gridbox.faculty_color {
   color: #fff;
   background: #901a1e;
@@ -257,6 +252,11 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-filter: brightness(100%) blur(0);
+}
+.gridbox:hover img {
+          filter: brightness(90%) blur(0);
+
+  -webkit-filter: brightness(90%) blur(0);
 }
 .gridbox:not(.with-img) .box1 {
   -webkit-flex: 1 1 auto;
