@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 300;
 
+  font-display: swap;
   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OXOhs.ttf) format('truetype');
 }
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 400;
 
+  font-display: swap;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50e.ttf) format('truetype');
 }
 @font-face {
@@ -17,6 +19,7 @@
   font-style: normal;
   font-weight: 600;
 
+  font-display: swap;
   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOXOhs.ttf) format('truetype');
 }
 @font-face {
@@ -24,6 +27,7 @@
   font-style: normal;
   font-weight: 700;
 
+  font-display: swap;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXOhs.ttf) format('truetype');
 }
 /*!
