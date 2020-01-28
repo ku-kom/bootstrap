@@ -9,7 +9,7 @@
   margin-bottom: 5px;
 }
 
-#geonatloginform .form-group:last-child {
+#geonatloginform > .form-group:last-child {
   margin-bottom: 10px;
 }
 
