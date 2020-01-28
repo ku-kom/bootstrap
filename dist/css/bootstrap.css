@@ -8640,9 +8640,6 @@ iframe {
 #globalfooter .footercontent > .footercolumn {
   z-index: 2;
 }
-#globalfooter .footercontent > .footercolumn + .footercolumn {
-  padding-left: 0;
-}
 @media (min-width: 768px) {
   #globalfooter .footercontent > .footercolumn:nth-child(3) {
     padding-right: 26px;

@@ -1,14 +1,1 @@
-.login-links {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-}
 
-#geonatloginform .ckeckbox {
-  margin-top: 7px;
-  margin-bottom: 5px;
-}
-
-#geonatloginform form-group:last-child {
-  margin-bottom: 10px;
-}
