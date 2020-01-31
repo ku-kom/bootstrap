@@ -1,11 +1,13 @@
-@media and (min-width: 768px) {
+@media all and (min-width: 768px) {
   #col-left, #col-mid {
-    width: 50%;
+    width: calc(50% - 13px);
     float: left;
     position: relative;
     min-height: 1px;
-    padding-left: 13px;
-    padding-right: 13px;
+  }
+
+  #col-left+#col-mid {
+    margin-left: 23px;
   }
 }
 
@@ -71,14 +73,16 @@
   font-weight: 600;
 }
 
-.right-side .panel {
+.panel {
   margin-bottom: 23px;
 }
 
-.right-side .panel {
-  margin-bottom: 23px;
-}
-
-.right-side .panel:last-of-type {
+.panel:last-of-type {
   margin-bottom: 0;
+}
+
+.nyhedsboks .item-list .item-left {
+  display: block;
+  float: right;
+  text-align: right;
 }
