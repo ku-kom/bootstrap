@@ -9588,12 +9588,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  height: 100%;
           flex-direction: column;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.tiles-x .tilebox .tile-link:hover .tile-content {
+.tiles-x .tilebox .tile-link:hover * {
+  color: #252525;
   text-decoration: none;
 }
 .tiles-x .tile-body {
@@ -9675,6 +9677,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .double-column [class*=column] .tiles-x .tilebox {
     width: 100%;
+  }
+  .double-column [class*=column] .tiles-x .tile-img {
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
   .double-column [class*=column] .tiles-x .tile-body {
     display: block;

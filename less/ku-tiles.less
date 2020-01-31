@@ -81,9 +81,11 @@
     .tile-link {
       display: flex;
       flex-direction: column;
+      height: 100%;
 
       &:hover {
-        .tile-content {
+        * {
+          color: @text-color;
           text-decoration: none;
         }
       }
@@ -171,6 +173,11 @@
       .tilebox {
         width: 100%;
       }
+
+      .tile-img {
+        flex: 0 0 50%;
+      }
+
       .tile-body {
         display: block;
       }
