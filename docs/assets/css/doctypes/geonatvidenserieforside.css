@@ -66,12 +66,16 @@
 }
 
 .eventheader {
-  color: #252525!important;
+  color: #252525;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: .6px;
   font-weight: 600;
   margin-top: 2px;
+}
+
+.eventheader a {
+  color: #252525;
 }
 
 .panel {
