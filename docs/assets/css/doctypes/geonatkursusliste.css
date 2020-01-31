@@ -1,7 +1,14 @@
 @import url("geonatvidenserieforside.css");
-.CourseEntry + .CourseEntry {
-  border-top: 1px solid #ccc;
+
+.Subject {
+  padding-bottom: 10px;
 }
+
+.CourseEntry {
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
 .LabelListe {
   display: inline;
   list-style-type: none;
@@ -18,4 +25,8 @@
 
 .LabelListe li span span {
   display: none;
+}
+
+.Labels {
+  display: inline;
 }
