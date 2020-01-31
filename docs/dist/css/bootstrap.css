@@ -9518,16 +9518,17 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-align: unset;
           align-items: unset;
 }
-.tiles .tilebox {
-  opacity: 0;
-}
 .tiles.is-showing .tilebox {
   opacity: 1;
   /* reveal when ready */
 }
+.tiles .tiles-x .tilebox {
+  margin-bottom: 23px;
+  opacity: 0;
+}
 .tile-link {
-  color: #252525;
-  text-decoration: none;
+  color: #252525 !important;
+  text-decoration: none!important;
 }
 .tile-link:after {
   position: absolute;
@@ -9565,10 +9566,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  float: left;
   width: 100%;
   height: 289px;
-  margin-bottom: 23px;
           flex-direction: column;
   background-color: #fff;
   box-shadow: 0 0 0 1px #eee;

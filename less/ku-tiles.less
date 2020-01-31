@@ -2,19 +2,23 @@
 
 .tiles {
   // Wrap un class .tiles when used with Isotope plugin
-  .tilebox {
-    opacity: 0;
-  }
 
   &.is-showing .tilebox {
     opacity: 1;
     /* reveal when ready */
   }
+
+  .tiles-x {
+    .tilebox {
+      opacity: 0;
+      margin-bottom: 23px;
+    }
+  }
 }
 
 .tile-link {
-  color: @text-color;
-  text-decoration: none;
+  color: @text-color!important;
+  text-decoration: none!important;
 
   &:after {
     color: initial;
@@ -60,13 +64,12 @@
   .tilebox {
     display: flex;
     flex-direction: column;
-    float: left;
+    // float: left;
     height: 289px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 0 1px #eee;
     transition: box-shadow 0.2s ease-out;
-    margin-bottom: 23px;
 
     &:hover {
       box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
