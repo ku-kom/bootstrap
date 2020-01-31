@@ -1,21 +1,34 @@
+@media and (min-width: 768px) {
+  #col-left, #col-mid {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+
 .login-links {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
 }
+
 .geonat-serie-search-form {
   margin-top: 10px;
 }
 
-.geonat-serie-search-form label + select {
+.geonat-serie-search-form label+select {
   margin-top: 10px;
 }
+
 #geonatloginform .checkbox {
   margin-top: 7px;
   margin-bottom: 5px;
 }
 
-#geonatloginform > .form-group:last-of-type {
+#geonatloginform>.form-group:last-of-type {
   margin-bottom: 10px;
 }
 
@@ -44,4 +57,28 @@
   float: right;
   position: relative;
   top: 5px;
+}
+
+.geonat-serie-subscribe {
+  margin-top: 10px;
+}
+
+.eventheader {
+  color: #252525;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: .6px;
+  font-weight: 600;
+}
+
+.right-side .panel {
+  margin-bottom: 23px;
+}
+
+.right-side .panel {
+  margin-bottom: 23px;
+}
+
+.right-side .panel:last-of-type {
+  margin-bottom: 0;
 }
