@@ -1,2 +1,7 @@
 @import url("geonatvidenserieforside.css");
+
 /* @import url("geonatkursusliste.css"); */
+.Body .Picture {
+  float: right;
+  margin: 3px 0 2em 2em;
+}
