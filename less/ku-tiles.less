@@ -1,0 +1,191 @@
+// Tiles news boxes
+//.tiles {
+.tile-link {
+  text-decoration: none;
+
+  &:after {
+    color: initial;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(@gray-base, 0);
+  }
+}
+
+.tilebox {
+  h3 {
+    line-height: 1.3;
+    margin-top: 0;
+    color: @text-color;
+  }
+}
+
+.tile-content {
+  position: relative;
+}
+
+.tiles-x {
+  .tilebox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 289px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #eee;
+    transition: box-shadow 0.2s ease-out;
+    margin-bottom: 23px;
+
+    &:hover {
+      box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
+
+      .tile-img {
+        img {
+          transform: scale3d(1.02, 1.02, 1.02);
+        }
+      }
+    }
+  }
+
+  .tile-body {
+    display: none;
+  }
+
+  .tile-img {
+    overflow: hidden;
+    flex: 0 0 auto;
+
+    img {
+      transition: transform 0.2s ease-out;
+      transition: transform 0.2s, -webkit-transform 0.2s ease-out;
+    }
+  }
+
+  .tile-content {
+    padding: 10px;
+    position: relative;
+    flex: 1;
+  }
+}
+
+.tiles-y {
+  .tile-link {
+    display: block;
+    width: 100%;
+    position: relative;
+    color: initial;
+    text-decoration: none;
+
+    &:hover {
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .tilebox {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid @gray;
+  }
+
+  .tile-img {
+    flex: none;
+    float: right;
+    margin-bottom: 10px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+//}
+
+.is-showing .tilebox {
+  opacity: 1;
+  /* reveal when ready */
+}
+@media all and (min-width: @screen-xs) {
+  .tiles-x {
+    .tilebox {
+      width: 235px;
+    }
+  }
+
+  .tiles-y {
+    .tilebox {
+      flex-direction: row-reverse;
+    }
+
+    .tile-img {
+      margin-left: 10px;
+      flex: 0 0 165px;
+      margin-bottom: 0;
+
+      img {
+        width: 165px;
+      }
+    }
+  }
+
+  .double-column [class*=column] {
+    .tiles-x {
+      .tilebox {
+        width: 100%;
+      }
+    }
+  }
+}
+//style for single and double column spans
+
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .tiles-y {
+    .tilebox {
+      flex-direction: column;
+      padding: 0 0 10px;
+      margin-bottom: 23px;
+    }
+
+    .tile-content {
+      flex: 1 1 auto;
+      padding-top: 10px;
+    }
+
+    .tile-img {
+      flex: 0 0 auto;
+      margin-left: 0;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.GridForside .two-one-column {
+  .column1 {
+    .tiles-y {
+      .tilebox {
+        display: block;
+
+        .tile-img {
+          float: right;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}
