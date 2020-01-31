@@ -3,7 +3,13 @@
   display: flex;
   justify-content: space-between;
 }
+.geonat-serie-search-form {
+  margin-top: 10px;
+}
 
+.geonat-serie-search-form label + select {
+  margin-top: 4px;
+}
 #geonatloginform .checkbox {
   margin-top: 7px;
   margin-bottom: 5px;
