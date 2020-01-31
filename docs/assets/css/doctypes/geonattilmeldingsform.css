@@ -1,0 +1,32 @@
+@import url("geonatvidenserieforside.css");
+.error, .gdpr-error-msg {
+  color: #7b161a;
+  margin: 5px 0;
+}
+
+.gdpr-notice {
+  margin: 10px 0;
+}
+
+.gdpr-notice input[type="checkbox"] {
+  position: relative;
+  margin-right: 5px;
+  bottom: -2px;
+}
+
+.gdpr-notice p:first-of-type {
+  display: inline;
+}
+
+.gdpr-label {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.gdpr-label input[type=checkbox] {
+  margin-left: 0;
+}
+
+.form-group legend {
+  margin-bottom: 5px;
+}
