@@ -1,6 +1,23 @@
 @import url("geonatvidenserieforside.css");
 
-/* @import url("geonatkursusliste.css"); */
+.LabelListe {
+  display: inline;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.LabelListe li {
+  display: inline;
+}
+
+.LabelListe li span {
+  display: inline-block;
+}
+
+.LabelListe li span span {
+  display: none;
+}
+
 .Body .Picture {
   float: right;
   margin: 3px 0 2em 2em;
