@@ -9544,7 +9544,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-color: rgba(0, 0, 0, 0);
 }
 .tilebox .header-small {
-  margin: 5px 0;
+  margin: 0 0 5px 0;
   font-weight: 700;
   color: #666;
   text-transform: uppercase;
