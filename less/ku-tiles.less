@@ -1,4 +1,5 @@
-// Tiles news boxes
+@import "variables.less";
+@import "mixins.less"; // Tiles news boxes
 
 .tiles {
   // Wrap un class .tiles when used with Isotope plugin
@@ -69,60 +70,7 @@
 }
 
 .tiles-x {
-  .tilebox {
-    display: flex;
-    flex-direction: column;
-    // float: left;
-    height: 289px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px #eee;
-    transition: box-shadow 0.2s ease-out;
-
-    &:hover {
-      box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
-
-      .tile-img {
-        img {
-          backface-visibility: hidden;
-          transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
-        }
-      }
-    }
-
-    .tile-link {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-
-      &:hover {
-        * {
-          color: @text-color;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  .tile-body {
-    display: none;
-  }
-
-  .tile-img {
-    overflow: hidden;
-    flex: 0 0 auto;
-
-    img {
-      transition: transform 0.2s ease-out;
-    }
-  }
-
-  .tile-content {
-    padding: 10px;
-    position: relative;
-    flex: 1;
-  }
+  .tiles-x-layout();
 }
 
 .tiles-y {

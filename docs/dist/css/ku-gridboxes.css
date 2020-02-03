@@ -11,6 +11,15 @@
 * Tablet style: Grid front page with left menu - all boxes img left text right:
 *    .img-text-aligned();
 */
+/*
+* KU tiles mixin
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
 .gridbox {
   position: relative;
   display: -webkit-flex;
@@ -586,10 +595,6 @@
         -ms-flex: 0 1 185px;
             flex: 0 1 185px;
   }
-  .gridbox.size1 .box2 iframe {
-    position: absolute;
-    top: -20% !important;
-  }
   .gridbox.size2.with-img,
   .gridbox.size3.with-img {
             flex-direction: row;
@@ -739,16 +744,6 @@
     -webkit-flex: 0 1 185px;
         -ms-flex: 0 1 185px;
             flex: 0 1 185px;
-  }
-  .one-one-two-column .column3 .gridbox.size1 .box2 iframe,
-  .one-three-column .column2 .gridbox.size1 .box2 iframe,
-  .one-two-column .column2 .gridbox.size1 .box2 iframe,
-  .single-column .column1 .gridbox.size1 .box2 iframe,
-  .three-one-column .column1 .gridbox.size1 .box2 iframe,
-  .two-one-column .column1 .gridbox.size1 .box2 iframe,
-  .two-one-one-column .column1 .gridbox.size1 .box2 iframe {
-    position: absolute;
-    top: -20% !important;
   }
   .one-one-two-column .column3 .gridbox.size2.with-img,
   .one-three-column .column2 .gridbox.size2.with-img,

@@ -48,6 +48,15 @@
 * Tablet style: Grid front page with left menu - all boxes img left text right:
 *    .img-text-aligned();
 */
+/*
+* KU tiles mixin
+*/
+/*
+* Mobile style: All column types must behave like single column boxes regardless of template:
+*   .gcrow .gccolumn .gridbox {
+*    .all-single-column();
+*  }
+*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
