@@ -51,12 +51,6 @@
 /*
 * KU tiles mixin
 */
-/*
-* Mobile style: All column types must behave like single column boxes regardless of template:
-*   .gcrow .gccolumn .gridbox {
-*    .all-single-column();
-*  }
-*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -9609,10 +9603,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-}
-.tiles-x .tilebox .tile-link:hover * {
-  color: #252525;
-  text-decoration: none;
 }
 .tiles-x .tile-body {
   display: none;

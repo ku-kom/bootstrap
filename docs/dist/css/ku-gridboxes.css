@@ -14,12 +14,6 @@
 /*
 * KU tiles mixin
 */
-/*
-* Mobile style: All column types must behave like single column boxes regardless of template:
-*   .gcrow .gccolumn .gridbox {
-*    .all-single-column();
-*  }
-*/
 .gridbox {
   position: relative;
   display: -webkit-flex;
