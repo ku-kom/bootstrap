@@ -49,5 +49,8 @@
     padding: 10px;
     position: relative;
     flex: 1;
+    overflow: hidden;
+    // This prevents text from overflowing the bottom of the tile in an ugly way:
+    border-bottom: solid 15px rgba(@gray-base, 0);
   }
 }
