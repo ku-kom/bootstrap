@@ -9522,6 +9522,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-bottom: 23px;
   opacity: 0;
 }
+@media (max-width: 480px) {
+  .tiles.tiles-x .tilebox:last-child {
+    margin-bottom: 0;
+  }
+}
 .tiles.is-showing .tilebox {
   opacity: 1;
 }
