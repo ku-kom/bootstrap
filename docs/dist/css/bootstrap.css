@@ -9520,9 +9520,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles.is-showing .tilebox {
   opacity: 1;
-  /* reveal when ready */
 }
-.tiles .tiles-x .tilebox {
+.tiles.tiles-x .tilebox {
   margin-bottom: 23px;
   opacity: 0;
 }
@@ -9544,7 +9543,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   background-color: rgba(0, 0, 0, 0);
 }
 .tilebox .header-small {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   font-weight: 700;
   color: #666;
   text-transform: uppercase;

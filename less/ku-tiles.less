@@ -2,13 +2,14 @@
 
 .tiles {
   // Wrap un class .tiles when used with Isotope plugin
-
-  &.is-showing .tilebox {
-    opacity: 1;
-    /* reveal when ready */
+  &.is-showing {
+    .tilebox {
+      // reveal when ready
+      opacity: 1;
+    }
   }
 
-  .tiles-x {
+  &.tiles-x {
     .tilebox {
       opacity: 0;
       margin-bottom: 23px;
@@ -41,7 +42,7 @@
     color: #666;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
 
     .date {
       float: right;
