@@ -9579,8 +9579,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
 }
 .tiles-x .tilebox:hover .tile-img img {
-  -webkit-transform: scale3d(1.02, 1.02, 1.02);
-          transform: scale3d(1.02, 1.02, 1.02);
+  -webkit-transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
+          transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .tiles-x .tilebox .tile-link {
   display: -webkit-flex;
@@ -9609,8 +9612,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-x .tile-img img {
   transition: -webkit-transform .2s ease-out;
   transition:         transform .2s ease-out;
-  transition: -webkit-transform .2s, -webkit-transform .2s ease-out;
-  transition:         transform .2s, -webkit-transform .2s ease-out;
 }
 .tiles-x .tile-content {
   position: relative;

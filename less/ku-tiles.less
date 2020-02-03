@@ -77,7 +77,8 @@
 
       .tile-img {
         img {
-          transform: scale3d(1.02, 1.02, 1.02);
+          backface-visibility: hidden;
+          transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
         }
       }
     }
@@ -106,7 +107,6 @@
 
     img {
       transition: transform 0.2s ease-out;
-      transition: transform 0.2s, -webkit-transform 0.2s ease-out;
     }
   }
 
