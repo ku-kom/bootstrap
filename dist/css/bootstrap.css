@@ -1507,15 +1507,15 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #3479b2;
+  color: #2c6694;
   text-decoration: underline;
 }
 a:hover {
-  color: #3479b2;
+  color: #2c6694;
   text-decoration: underline;
 }
 a:focus {
-  color: #3479b2;
+  color: #2c6694;
   text-decoration: none;
   outline: 1px dotted #000;
 }
@@ -4366,7 +4366,7 @@ fieldset[disabled] .btn-social.twitter.focus {
 }
 .btn-link {
   font-weight: normal;
-  color: #3479b2;
+  color: #2c6694;
   border-radius: 0;
 }
 .btn-link,
@@ -4385,7 +4385,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:focus,
 .btn-link:hover {
-  color: #3479b2;
+  color: #2c6694;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4984,7 +4984,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:focus,
 .nav .open > a:hover {
   background-color: #eee;
-  border-color: #3479b2;
+  border-color: #2c6694;
 }
 .nav > li > a > img {
   max-width: none;
@@ -5683,7 +5683,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   border-color: #ccc;
 }
 .navbar-inverse a:focus {
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -6216,7 +6216,7 @@ a.badge:focus {
 a .thumbnail:hover,
 a.thumbnail.active,
 a.thumbnail:focus {
-  border-color: #3479b2;
+  border-color: #2c6694;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6938,7 +6938,7 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-accordion > .panel-heading:focus-within {
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
 }
 .panel-accordion > .panel-heading .panel-title {
   font-size: 16px;
@@ -8026,7 +8026,7 @@ nav {
     width: auto;
     height: auto;
     color: #fff;
-    outline: 1px solid #3479b2;
+    outline: 1px solid #2c6694;
   }
 }
 @media (max-width: 768px) {
@@ -8715,7 +8715,7 @@ iframe {
 }
 #globalfooter ul.footerlinks li a:focus {
   color: #e2e2e2;
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
   margin-left: 4px;
@@ -8772,7 +8772,7 @@ iframe {
 }
 .social-items .social-item .social-icon:focus {
   background-color: #757575;
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
 }
 .social-items .footer-heading {
   margin-top: 20px;
@@ -10095,7 +10095,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-filter: brightness(90%) blur(0);
 }
 .slide-link:focus {
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
   outline-offset: -1px;
 }
 .slick-arrow.slick-hidden {
@@ -10227,7 +10227,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline: none;
 }
 .slick-dots li button:focus {
-  outline: 1px solid #3479b2;
+  outline: 1px solid #2c6694;
   outline-offset: 2px;
 }
 .slick-dots .slick-active button {
