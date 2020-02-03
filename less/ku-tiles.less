@@ -2,17 +2,17 @@
 
 .tiles {
   // Wrap un class .tiles when used with Isotope plugin
-  &.is-showing {
-    .tilebox {
-      // reveal when ready
-      opacity: 1;
-    }
-  }
-
   &.tiles-x {
     .tilebox {
       opacity: 0;
       margin-bottom: 23px;
+    }
+  }
+
+  &.is-showing {
+    .tilebox {
+      // reveal when ready
+      opacity: 1;
     }
   }
 }

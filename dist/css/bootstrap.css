@@ -9518,12 +9518,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-align: unset;
           align-items: unset;
 }
-.tiles.is-showing .tilebox {
-  opacity: 1;
-}
 .tiles.tiles-x .tilebox {
   margin-bottom: 23px;
   opacity: 0;
+}
+.tiles.is-showing .tilebox {
+  opacity: 1;
 }
 .tile-link {
   color: #252525 !important;
