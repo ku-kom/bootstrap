@@ -99,7 +99,7 @@
 .campaign-block .block-content blockquote footer {
   color: inherit;
 }
-.campaign-block .text-down {
+.campaign-block.text-down {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
