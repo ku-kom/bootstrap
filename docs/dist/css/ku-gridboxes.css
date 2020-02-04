@@ -440,6 +440,9 @@
 .gridbox.size5 .box1 .header {
   padding: 8px 18px 8px 10px;
 }
+.gridbox.size5 .box1 .text {
+  display: block;
+}
 @media all and (min-width: 768px) {
   .gridbox.size5 .box1 .text {
     display: none!important;
