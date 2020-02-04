@@ -538,15 +538,12 @@
 
     .box1 {
       .header {
-        // padding-top: 6px;
-        // padding-bottom: 4px;
-        //@media all and (max-width: @screen-xs) {
         padding: 8px 18px 8px 10px;
-        //}
       }
-
-      .text {
-        display: none;
+      @media all and (min-width: @screen-sm) {
+        .text {
+          display: none!important;
+        }
       }
     }
 
@@ -558,6 +555,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
@@ -658,11 +656,6 @@
 
     &.size3 {
       height: @gridbox3;
-    }
-    &.size5 {
-      .text {
-        display: none;
-      }
     }
   }
 }

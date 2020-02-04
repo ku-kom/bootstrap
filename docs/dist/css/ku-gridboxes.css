@@ -440,8 +440,10 @@
 .gridbox.size5 .box1 .header {
   padding: 8px 18px 8px 10px;
 }
-.gridbox.size5 .box1 .text {
-  display: none;
+@media all and (min-width: 768px) {
+  .gridbox.size5 .box1 .text {
+    display: none!important;
+  }
 }
 .gridbox.size5 .box2 {
   display: none;
@@ -581,9 +583,6 @@
   }
   .gridbox.size3 {
     height: 133px;
-  }
-  .gridbox.size5 .text {
-    display: none;
   }
 }
 @media all and (min-width: 480px) and (max-width: 991px) {
