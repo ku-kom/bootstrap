@@ -582,6 +582,9 @@
   .gridbox.size3 {
     height: 133px;
   }
+  .gridbox.size5 .text {
+    display: none;
+  }
 }
 @media all and (min-width: 480px) and (max-width: 991px) {
   .gridbox.size1 .box2 {
