@@ -1,3 +1,4 @@
+@import url("geonatvidenbladsliste.css");
 @media all and (min-width: 768px) {
   #col-left, #col-mid {
     width: calc(50% - 13px);
