@@ -9639,10 +9639,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   width: 100%;
   color: initial;
   text-decoration: none;
-          flex-direction: column;
+          flex-direction: row-reverse;
 
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
 }
 .tiles-y .tile-link:hover h3 {
   text-decoration: underline;
