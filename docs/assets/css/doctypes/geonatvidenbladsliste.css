@@ -1,22 +1,2 @@
-.TableList .HeadRow {
-  color: #4a4949;
-  font-weight: 700;
-}
-
-.TableList>tbody>tr>td, .TableList>tbody>tr>th {
-  padding: 8px;
-  line-height: 1.5;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
-}
-
-.HeadCol2>a {
-  display: inline-block;
-  float: left;
-}
-
-.HeadCol2>a>img {
-  float: right;
-  position: relative;
-  top: 5px;
-}
+/* Datatables */
+@import url("../datatables.min.css");
