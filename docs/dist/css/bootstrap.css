@@ -9651,12 +9651,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  padding: 10px 0;
+  padding-bottom: 10px;
           flex-direction: column;
   border-bottom: 1px solid #ccc;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
+}
+.tiles-y .tilebox + .tiles-y .tilebox {
+  padding-top: 10px;
 }
 .tiles-y .tile-img {
   float: right;

@@ -90,10 +90,13 @@
   }
 
   .tilebox {
-    padding: 10px 0;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid @gray;
+    & + & {
+      padding-top: 10px;
+    }
   }
 
   .tile-img {
