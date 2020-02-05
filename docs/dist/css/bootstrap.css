@@ -11376,6 +11376,7 @@ ul.stripped li {
 }
 .img-with-caption-left {
   float: left;
+  max-width: 100%;
   margin: 5px 20px 10px 0;
 }
 div[class^="img-with-caption"] p {

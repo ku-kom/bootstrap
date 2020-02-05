@@ -16,6 +16,10 @@
   margin-bottom: 10px;
 }
 
+.Videnblad .Header .Subject {
+  display: block;
+}
+
 .VidenBlad-Authors-Elem {
   clear: both;
 }
