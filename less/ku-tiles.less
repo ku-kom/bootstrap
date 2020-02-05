@@ -2,7 +2,7 @@
 @import "mixins.less"; // Tiles news boxes
 
 .tiles {
-  // Wrap un class .tiles when used with Isotope plugin
+  // Wrap in class .tiles when used with Isotope plugin
   &.tiles-x {
     .tilebox {
       opacity: 0;
@@ -47,7 +47,7 @@
 .tilebox {
   .header-small {
     font-weight: 700;
-    color: #666;
+    color: @gray-666;
     text-transform: uppercase;
     letter-spacing: 0.4px;
     margin: 0 0 5px;
@@ -108,7 +108,7 @@
 @media all and (min-width: @screen-xs) {
   .tiles-x {
     .tilebox {
-      width: 235px;
+      width: @default-col-width;
     }
   }
 

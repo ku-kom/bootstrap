@@ -9581,7 +9581,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   overflow: hidden;
           flex-direction: column;
   background-color: #fff;
-  box-shadow: 0 0 0 1px #eee;
+  box-shadow: 0 0 0 1px #ddd;
   transition: box-shadow .2s ease-out;
 
   -webkit-flex-direction: column;
