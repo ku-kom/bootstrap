@@ -1,4 +1,5 @@
 @import url("geonatvidenbladsliste.css");
+
 @media all and (min-width: 768px) {
   #col-left, #col-mid {
     width: calc(50% - 13px);
@@ -24,6 +25,11 @@
 
 .geonat-serie-search-form label+select {
   margin-top: 10px;
+}
+
+#geonatloginform {
+  padding: 10px 0 0;
+  border-top: 1px solid #959595;
 }
 
 #geonatloginform .checkbox {
