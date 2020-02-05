@@ -2,9 +2,12 @@
 @import url("../datatables.min.css");
 
 table.dataTable>thead>tr>td {
-  border-top: 1px solid #d7d7d7;
-  border-bottom: 2px solid #d7d7d7;
   padding-top: 8px;
   padding-bottom: 8px;
   color: #4a4949;
+  font-weight: 700;
+}
+
+table.list tr th {
+  border-bottom: 0;
 }
