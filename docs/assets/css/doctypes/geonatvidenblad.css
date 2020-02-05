@@ -21,10 +21,12 @@
 
 .VidenBlad-Authors-Elem+.VidenBlad-Authors-Elem {
   margin-top: 23px;
+  float: right;
 }
 
 .VidenBlad-Authors-ElemImg {
   float: left;
+  margin-right: 8px;
 }
 
 .VidenBlad-Authors-ElemName {
