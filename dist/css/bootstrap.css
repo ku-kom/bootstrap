@@ -9633,10 +9633,16 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-y .tile-link {
   position: relative;
-  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   width: 100%;
   color: initial;
   text-decoration: none;
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .tiles-y .tile-link:hover h3 {
   text-decoration: underline;
@@ -9696,7 +9702,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     display: block;
   }
 }
-.double-column [class*=column] .tiles-y .tilebox,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tilebox,
 .one-two-column .column1 .tiles-y .tilebox,
 .quad-column [class*=column] .tiles-y .tilebox,
 .triple-column [class*=column] .tiles-y .tilebox,
@@ -9708,7 +9714,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.double-column [class*=column] .tiles-y .tile-content,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-content,
 .one-two-column .column1 .tiles-y .tile-content,
 .quad-column [class*=column] .tiles-y .tile-content,
 .triple-column [class*=column] .tiles-y .tile-content,
@@ -9719,7 +9725,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-.double-column [class*=column] .tiles-y .tile-img,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img,
 .one-two-column .column1 .tiles-y .tile-img,
 .quad-column [class*=column] .tiles-y .tile-img,
 .triple-column [class*=column] .tiles-y .tile-img,
@@ -9730,7 +9736,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-.double-column [class*=column] .tiles-y .tile-img img,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img img,
 .one-two-column .column1 .tiles-y .tile-img img,
 .quad-column [class*=column] .tiles-y .tile-img img,
 .triple-column [class*=column] .tiles-y .tile-img img,

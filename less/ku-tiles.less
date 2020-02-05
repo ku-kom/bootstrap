@@ -75,7 +75,8 @@
 
 .tiles-y {
   .tile-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
     color: initial;
@@ -146,7 +147,7 @@
 }
 //style for single and double column spans
 
-.double-column [class*=column],
+body:not(.FullWidthFrontpage) .double-column [class*=column],
 .one-two-column .column1,
 .quad-column [class*=column],
 .triple-column [class*=column],
