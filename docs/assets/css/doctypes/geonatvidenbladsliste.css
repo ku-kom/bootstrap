@@ -13,7 +13,7 @@ table.list tr th {
 }
 
 @media screen and (max-width: 767px) {
-  table.dataTable>thead>tr>td:last-of-type {
-    width: 25%;
+  table.dataTable>thead>tr>td:nth-last-child(2), table.dataTable>thead>tr>td:nth-last-child(1) {
+    width: 22%;
   }
 }
