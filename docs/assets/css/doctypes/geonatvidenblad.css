@@ -1,3 +1,5 @@
+@import url("geonatvidenbladsliste.css");
+
 #geonatloginform, .Geonat-Login .LoginLinks {
   min-height: 20px;
   padding: 15px;
@@ -5,7 +7,6 @@
   border: 1px solid #e3e3e3;
   border-radius: 2px;
 }
-
 
 .logindata {
   margin-top: 0;
