@@ -5511,3 +5511,7 @@ audio, video {
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
+
+#html_dialog_alt_attribute_warning {
+  max-width: 500px;
+}
