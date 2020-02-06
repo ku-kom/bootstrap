@@ -75,3 +75,11 @@
   float: right;
   text-align: right;
 }
+
+table.dataTable>thead>tr>td:nth-last-child(2) {
+  width: 18%;
+}
+
+table.dataTable>thead>tr>td:nth-last-child(1) {
+  width: 19%;
+}
