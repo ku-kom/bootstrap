@@ -1,8 +1,6 @@
 //
 // Alerts
 // --------------------------------------------------
-
-
 // Base styles
 // -------------------------
 
@@ -11,7 +9,6 @@
   margin-bottom: @line-height-computed;
   border: 1px solid transparent;
   border-radius: @alert-border-radius;
-
   // Headings for larger alerts
   h4 {
     &:first-child {
@@ -20,34 +17,37 @@
       color: inherit;
     }
   }
-
   // Provide class for links that match alerts
   .alert-link {
     font-weight: @alert-link-font-weight;
   }
-
   // Improve alignment and spacing of inner content
-  > p,
-  > ul {
+  > ul,
+  > p {
     margin-bottom: 0;
   }
 
-  > p + p {
-    margin-top: 5px;
-    &:last-child {
-      margin-bottom: 0;
+  > p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    & + p {
+      margin-top: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
 // Dismissible alerts
 //
 // Expand the right padding and account for the close button's positioning.
+.alert-dismissable,// The misspelled .alert-dismissable was deprecated in 3.2.0.
 
-.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
 .alert-dismissible {
   padding-right: (@alert-padding + 20);
-
   // Adjust close link position
   .close {
     position: relative;
@@ -56,7 +56,6 @@
     color: inherit;
   }
 }
-
 // Alternate styles
 //
 // Generate contextual modifier classes for colorizing the alert.

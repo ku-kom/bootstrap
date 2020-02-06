@@ -6302,9 +6302,12 @@ figcaption {
 .alert .alert-link {
   font-weight: bold;
 }
-.alert > p,
-.alert > ul {
+.alert > ul,
+.alert > p {
   margin-bottom: 0;
+}
+.alert > p:first-child {
+  margin-top: 0;
 }
 .alert > p + p {
   margin-top: 5px;
