@@ -1,5 +1,6 @@
 /* Datatables */
 @import url("../datatables.min.css");
+@import url("geonatvidenserieforside.css");
 
 table.dataTable>thead>tr>td {
   padding-top: 8px;
