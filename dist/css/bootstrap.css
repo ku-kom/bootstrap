@@ -6290,7 +6290,7 @@ figcaption {
   border-bottom: 1px solid #dfdfdf;
 }
 .alert {
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 19px;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -6317,7 +6317,7 @@ figcaption {
 }
 .alert-dismissable,
 .alert-dismissible {
-  padding-right: 35px;
+  padding-right: 30px;
 }
 .alert-dismissable .close,
 .alert-dismissible .close {
