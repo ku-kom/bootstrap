@@ -17,6 +17,14 @@
     }
   }
 
+  @media all and (min-width: @screen-xs) {
+    .tiles-x {
+      .tilebox {
+        width: @default-col-width;
+      }
+    }
+  }
+
   &.is-showing {
     .tilebox {
       // reveal when ready
@@ -110,11 +118,6 @@
   }
 }
 @media all and (min-width: @screen-xs) {
-  .tiles-x {
-    .tilebox {
-      width: @default-col-width;
-    }
-  }
 
   .tiles-y {
     .tilebox {

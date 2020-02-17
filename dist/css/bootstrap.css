@@ -9544,6 +9544,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     margin-bottom: 0;
   }
 }
+@media all and (min-width: 480px) {
+  .tiles .tiles-x .tilebox {
+    width: 235px;
+  }
+}
 .tiles.is-showing .tilebox {
   opacity: 1;
 }
@@ -9684,9 +9689,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   object-fit: cover;
 }
 @media all and (min-width: 480px) {
-  .tiles-x .tilebox {
-    width: 235px;
-  }
   .tiles-y .tilebox {
             flex-direction: row-reverse;
 
