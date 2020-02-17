@@ -9545,7 +9545,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
 }
 @media all and (min-width: 480px) {
-  .tiles .tiles-x .tilebox {
+  .tiles.tiles-x .tilebox {
     width: 235px;
   }
 }
