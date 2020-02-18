@@ -93,3 +93,7 @@ table.dataTable>thead>tr>td:nth-last-child(2) {
 table.dataTable>thead>tr>td:nth-last-child(1) {
   width: 19%;
 }
+
+.geonat-vbllist-box-article {
+  margin-top: 5px;
+}

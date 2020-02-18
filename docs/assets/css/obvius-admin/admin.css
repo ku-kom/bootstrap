@@ -4080,6 +4080,7 @@ table.gcdrop {
   border-collapse: collapse;
   background: #fff;
   border-spacing: 0;
+  border: 1px dashed #808080;
 }
 
 table.gcedit thead th {
