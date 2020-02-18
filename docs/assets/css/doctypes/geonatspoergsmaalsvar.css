@@ -1,1 +1,26 @@
 @import url("geonatvidenserieforside.css");
+.QandA-Authors-Elem {
+  clear: both;
+}
+
+.QandA-Authors-Elem:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.QandA-Authors-Elem+.QandA-Authors-Elem {
+  margin-top: 23px;
+  float: left;
+}
+
+.QandA-Authors-ElemImg {
+  float: left;
+  margin-right: 8px;
+}
+
+.QandA-Authors-ElemImg img {
+  max-width: 72px;
+}
+
+.QandA-Authors-ElemName {
+  display: inline;
+}
