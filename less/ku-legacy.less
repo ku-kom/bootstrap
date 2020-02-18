@@ -29,10 +29,7 @@
   }
 }
 // Banner doctype
-
-
 // Old advanced lists
-
 ul {
   &.stripped {
     list-style-type: none;
@@ -40,6 +37,10 @@ ul {
 
     li {
       background-repeat: no-repeat;
+    }
+
+    h2 {
+      font-size: 1em;
     }
   }
 }
@@ -70,7 +71,7 @@ ul {
     border-style: solid;
     border-width: 1px 1px 0 0;
     margin: 0;
-    padding: 10px 6px 10px 6px;
+    padding: 10px 6px;
     vertical-align: top;
 
     &.udd_table_td_bgcolor {
@@ -110,8 +111,8 @@ ul {
 .fritekst_top_img {
   margin-bottom: 10px;
 }
-
 // Global footer
+
 .visible-desktop {
   display: block;
 }
@@ -119,19 +120,18 @@ ul {
 .visible-mobile {
   display: none;
 }
-
 @media (max-width: @screen-xs-max) {
   .visible-desktop {
     display: none;
   }
 }
-
 @media (max-width: @screen-xs-max) {
   .visible-mobile {
     display: block;
   }
 }
 // Old image and camption style
+
 .img-with-caption {
   float: right;
   margin: 5px 0 10px 20px;
