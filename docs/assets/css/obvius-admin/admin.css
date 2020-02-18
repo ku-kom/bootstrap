@@ -5505,14 +5505,22 @@ audio, video {
 }
 
 .accessibility-warning {
-  max-width: 50%;
+  width: 100%;
+  max-width: 496px;
+}
+
+.editengine2-field .accessibility-warning {
+  width: 100%;
+  max-width: 827px;
+}
+
+.alt-attribute-warning {
+  max-width: 548px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
-}
-
-#html_dialog_alt_attribute_warning {
-  max-width: 500px;
 }
