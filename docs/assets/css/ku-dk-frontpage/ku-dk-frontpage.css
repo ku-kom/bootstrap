@@ -137,7 +137,7 @@ html:lang(en) .ku-branding-text {
 
 /* Kalenderliste læs mere */
 .readAll {
-  margin-top: 5px;
+  margin-top: 13px;
 }
 
 .readAll a {
@@ -186,8 +186,19 @@ html:lang(en) .ku-branding-text {
   background: rgba(244, 244, 244, .7);
 }
 
+.caption {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+}
+
 .caption h1 {
-    margin-top: 0;
+  margin-top: 0;
+}
+
+@media all and (max-width: 767px) {
+ .caption h1 {
+   font-size: 21px;
+ }
 }
 
 @media (min-width: 768px) {
