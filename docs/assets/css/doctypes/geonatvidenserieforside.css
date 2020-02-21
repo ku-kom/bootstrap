@@ -72,12 +72,16 @@
   color: #252525;
 }
 
-.panel {
+/* .panel {
   margin-bottom: 23px;
-}
+} */
 
 .panel:last-of-type {
   margin-bottom: 0;
+}
+
+.panel-body > form {
+  margin-top: 10px;
 }
 
 .nyhedsboks .item-list .item-left {
