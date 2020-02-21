@@ -134,3 +134,54 @@ html:lang(en) .ku-branding-text {
     right: 10px;
   }
 }
+
+/* Kalenderliste læs mere */
+.readAll {
+  margin-top: 5px;
+}
+
+.readAll a {
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #252525;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.readAll a:after {
+  font-family: ku-symbols !important;
+  content: "\61";
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-size: 12px;
+  margin-left: 10px;
+  top: -1px;
+}
+
+.readAll a:hover {
+  background: rgba(244, 244, 244, .7);
+}
