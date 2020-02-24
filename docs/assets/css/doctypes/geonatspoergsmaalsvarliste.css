@@ -1,0 +1,17 @@
+@import url("../datatables.min.css");
+table.dataTable>thead>tr>td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #4a4949;
+  font-weight: 700;
+}
+
+table.list tr th {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  table.dataTable>thead>tr>td:nth-last-child(2), table.dataTable>thead>tr>td:nth-last-child(1) {
+    width: 22%;
+  }
+}
