@@ -135,6 +135,10 @@ html:lang(en) .ku-branding-text {
   }
 }
 
+.main-area {
+  margin-bottom: 0;
+}
+
 /* Kalenderliste læs mere */
 .readAll {
   margin-top: 13px;
