@@ -1,5 +1,4 @@
 /* @import url("geonatvidenbladsliste.css"); */
-
 @media all and (min-width: 768px) {
   #col-left, #col-mid {
     width: calc(50% - 13px);
@@ -10,6 +9,12 @@
 
   #col-left+#col-mid {
     margin-left: 23px;
+  }
+}
+
+@media (min-width: 992px) {
+  .right-side .Geonat-Vignet + .Geonat-Login {
+    margin-top: 75px;
   }
 }
 
@@ -75,12 +80,11 @@
 /* .panel {
   margin-bottom: 23px;
 } */
-
 .panel:last-of-type {
   margin-bottom: 0;
 }
 
-.panel-body > form {
+.panel-body>form {
   margin-top: 10px;
 }
 
