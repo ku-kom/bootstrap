@@ -21,18 +21,6 @@
   margin: 0!important;
 }
 
-/* @media (min-width: 992px) {
-  .right-side .Geonat-Vignet + .Geonat-Login {
-    margin-top: 75px;
-  }
-} */
-
-.login-links {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .Geonat-Login p.error {
   background-color: #e3c6c7;
   border-color: #c7a2a4;
@@ -71,6 +59,10 @@
 
 .geonat-serie-subscribe {
   margin-top: 10px;
+}
+
+.item-teaser > p {
+  margin: 0;
 }
 
 .eventheader {
