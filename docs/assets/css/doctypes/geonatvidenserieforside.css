@@ -30,12 +30,12 @@
   border-radius: 2px;
 }
 
-.geonat-serie-search-form {
+.geonat-serie-search-form label+select {
   margin-top: 10px;
 }
 
-.geonat-serie-search-form label+select {
-  margin-top: 10px;
+.geonat-serie-search-form .form-group:last-of-type {
+  margin-bottom: 0;
 }
 
 .geonat-serie-subscribe {
