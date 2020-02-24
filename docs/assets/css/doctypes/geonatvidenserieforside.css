@@ -39,24 +39,6 @@
   margin-top: 10px;
 }
 
-#geonatloginform {
-  padding: 10px 0 0;
-  border-top: 1px solid #959595;
-}
-
-#geonatloginform .checkbox {
-  margin-top: 7px;
-  margin-bottom: 5px;
-}
-
-#geonatloginform>.form-group:last-of-type {
-  margin-bottom: 10px;
-}
-
-.logindata {
-  margin-top: 0;
-}
-
 .geonat-serie-subscribe {
   margin-top: 10px;
 }
@@ -76,6 +58,10 @@
 
 .eventheader a {
   color: #252525;
+}
+
+.panel {
+  margin-bottom: 23px;
 }
 
 .panel:last-of-type {
@@ -102,4 +88,8 @@ table.dataTable>thead>tr>td:nth-last-child(1) {
 
 .geonat-vbllist-box-article, .geonat-vbllist-box-default {
   margin-top: 5px;
+}
+
+.img-with-caption-left {
+  width: auto!important;
 }
