@@ -4320,6 +4320,11 @@ div.gridcontent-dialog h1 {
   padding: 1em 1.5em;
 }
 
+.obvius-editengine #gridcontent-dialog-edit-picture .dialogcontent>div+div {
+  clear: both;
+  margin-top: 10px;
+}
+
 .obvius-editengine form div.obvius-editengine-confirmation div.gridcontent-dialog#gridcontent-dialog-edit-flexiblebox div.buttonrow {
   /* Added to make this row sticky: */
   position: -webkit-sticky;
