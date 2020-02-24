@@ -12,11 +12,20 @@
   }
 }
 
-@media (min-width: 992px) {
+.Geonat-Vignet > p {
+  margin: 0;
+}
+
+.Geonat-Vignet img {
+  float: none!important;
+  margin: 0!important;
+}
+
+/* @media (min-width: 992px) {
   .right-side .Geonat-Vignet + .Geonat-Login {
     margin-top: 75px;
   }
-}
+} */
 
 .login-links {
   font-size: 12px;
