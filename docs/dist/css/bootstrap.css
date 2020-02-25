@@ -11777,8 +11777,11 @@ form.gdpr-accept .btn + .btn {
 .quote-box blockquote footer {
   margin-top: 5px;
   font-size: 95%;
-  line-height: 1.2;
+  line-height: 1.3333;
   color: #666;
+}
+.quote-box blockquote cite {
+  display: block;
 }
 .quote-box:before {
   position: relative;
