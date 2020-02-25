@@ -127,7 +127,7 @@ h2 code, h3 code, h4 code {
   overflow: visible;
 }
 
-[data-example-id="img-with-captions"], [data-example-id="img-with-captions-aligned"] {
+[data-example-id="img-with-captions"], [data-example-id="img-with-captions-aligned"], [data-example-id="ku-quoteboxes"] {
   overflow: hidden;
 }
 
