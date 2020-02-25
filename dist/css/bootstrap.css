@@ -11422,13 +11422,6 @@ p[align="right"] {
 p[align="right"]:before {
   content: '\2014 \00A0';
 }
-.newslettertable p,
-.newslettertable ul,
-.newslettertable ol,
-.newslettertable li,
-.newslettertable td {
-  font-size: 13px!important;
-}
 .panel-accordion > .panel-heading .panel-title a > strong {
   font-weight: inherit!important;
 }
