@@ -21,6 +21,6 @@ body.Newsletter .right-side .panel-body {
   margin-bottom: 10px!important;
 }
 
-.newslettertable p, .newslettertable ul, .newslettertable ol, .newslettertable li, ..newslettertable td {
+.newslettertable p, .newslettertable ul, .newslettertable ol, .newslettertable li, .newslettertable td {
   font-size: 13px !important;
 }
