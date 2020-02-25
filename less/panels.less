@@ -56,11 +56,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small,
+  > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 
@@ -84,8 +84,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .panel-collapse > .list-group,
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -248,9 +248,12 @@
 
 .panel-group {
   &:extend(.clearfix all);
+  margin-bottom: 5px;
+
   &+ .panel-group {
     margin-top: @line-height-computed;
   }
+
   &+ p:empty {
     &+ .panel-group {
       margin-top: 4px;
@@ -258,7 +261,6 @@
   }
 
   .panel {
-
     &:first-child {
       border-top-left-radius: @panel-border-radius;
       border-top-right-radius: @panel-border-radius;
@@ -358,6 +360,7 @@
     padding: 0;
     position: relative;
     border: 0;
+
     &:focus-within {
       .tab-focus-v2();
     }
