@@ -6724,11 +6724,11 @@ button.list-group-item-danger.active:focus {
     font-size: 16px;
   }
 }
-.panel-title > .small,
+.panel-title > .small > a,
 .panel-title > a,
 .panel-title > small,
 .panel-title > small > a,
-.panel-title > .small > a {
+.panel-title > .small {
   color: inherit;
 }
 .panel-title > br {
@@ -6740,20 +6740,20 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.panel > .panel-collapse > .list-group,
-.panel > .list-group {
+.panel > .list-group,
+.panel > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
-.panel > .panel-collapse > .list-group .list-group-item,
-.panel > .list-group .list-group-item {
+.panel > .list-group .list-group-item,
+.panel > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
 }
-.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
-.panel > .list-group:first-child .list-group-item:first-child {
+.panel > .list-group:first-child .list-group-item:first-child,
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
 }
-.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
-.panel > .list-group:last-child .list-group-item:last-child {
+.panel > .list-group:last-child .list-group-item:last-child,
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
 }
 .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
@@ -11421,6 +11421,13 @@ p[align="right"] {
 }
 p[align="right"]:before {
   content: '\2014 \00A0';
+}
+.newslettertable p,
+.newslettertable ul,
+.newslettertable ol,
+.newslettertable li,
+.newslettertable td {
+  font-size: 13px!important;
 }
 .panel-accordion > .panel-heading .panel-title a > strong {
   font-weight: inherit!important;
