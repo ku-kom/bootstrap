@@ -11779,8 +11779,8 @@ form.gdpr-accept .btn + .btn {
   color: #666;
 }
 .quote-box:before {
-  position: absolute;
   position: relative;
+  position: absolute;
   right: 13px;
   bottom: -30px;
   /* use !important to prevent issues with browser extensions that change fonts */
