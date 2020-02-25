@@ -25,13 +25,11 @@ body.Newsletter .right-side .panel-body {
   border-bottom: 0 !important;
   font-family: inherit !important;
   font-size: 22.1px !important;
-  font-weight: 400 !important;
-  margin-top: 19px !important;
-  margin-bottom: 10px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
 }
 
 .Newsletter h3 {
-  font-size: initial !important;
   font-weight: 600 !important;
   color: initial !important;
   font-family: inherit !important;

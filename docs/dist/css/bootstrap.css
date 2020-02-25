@@ -9724,7 +9724,12 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tilebox,
 .one-two-column .column1 .tiles-y .tilebox,
 .quad-column [class*=column] .tiles-y .tilebox,
 .triple-column [class*=column] .tiles-y .tilebox,
-.two-one-column .column2 .tiles-y .tilebox {
+.two-one-column .column2 .tiles-y .tilebox,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-link,
+.one-two-column .column1 .tiles-y .tile-link,
+.quad-column [class*=column] .tiles-y .tile-link,
+.triple-column [class*=column] .tiles-y .tile-link,
+.two-one-column .column2 .tiles-y .tile-link {
   padding: 0 0 10px;
   margin-bottom: 23px;
           flex-direction: column;
