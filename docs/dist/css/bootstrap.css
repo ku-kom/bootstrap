@@ -11752,6 +11752,54 @@ form.gdpr-accept .btn + .btn {
 .custom-search .input-group .input-group-addon {
   cursor: pointer;
 }
+.quote-box {
+  position: relative;
+  height: 133px;
+  padding: 13px;
+  line-height: 1.33333;
+  background-color: #e7e7e7;
+  border-radius: 2px;
+}
+.quote-box blockquote {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+.quote-box blockquote:before {
+  display: none;
+}
+.quote-box blockquote p {
+  margin-top: 0;
+}
+.quote-box blockquote footer {
+  margin-top: 5px;
+  font-size: 95%;
+  line-height: 1.2;
+  color: #666;
+}
+.quote-box:before {
+  position: absolute;
+  position: relative;
+  right: 13px;
+  bottom: -30px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  color: rgba(0, 0, 0, .09);
+  text-transform: none;
+  content: "\71";
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .mce-content-body#content {
   display: block;
   width: 100%;
