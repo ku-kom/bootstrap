@@ -377,7 +377,8 @@ form.gdpr-accept {
 }
 
 .quote-box {
-  background-color: #e7e7e7;
+  background-color: @white-color;
+  border: 1px solid @gray;
   line-height: 1.33333;
   padding: 13px;
   border-radius: 2px;
@@ -408,13 +409,13 @@ form.gdpr-accept {
   }
 
   &:before {
-    font-size: 100px;
-    color: rgba(@gray-base, .09);
+    font-size: 80px;
+    color: rgba(@gray-base, .06);
     .icon;
     content: @icon-quote;
     transform: rotateY(180deg);
     position: absolute;
-    right: 13px;
-    bottom: -30px;
+    right: 16px;
+    bottom: -20px;
   }
 }

@@ -11757,7 +11757,8 @@ form.gdpr-accept .btn + .btn {
   min-height: 133px;
   padding: 13px;
   line-height: 1.33333;
-  background-color: #e7e7e7;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 2px;
 }
 .quote-box blockquote {
@@ -11782,16 +11783,16 @@ form.gdpr-accept .btn + .btn {
 .quote-box:before {
   position: relative;
   position: absolute;
-  right: 13px;
-  bottom: -30px;
+  right: 16px;
+  bottom: -20px;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
-  font-size: 100px;
+  font-size: 80px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   line-height: 1;
-  color: rgba(0, 0, 0, .09);
+  color: rgba(0, 0, 0, .06);
   text-transform: none;
   content: "\71";
   -webkit-transform: rotateY(180deg);
