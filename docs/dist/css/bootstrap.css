@@ -11754,7 +11754,7 @@ form.gdpr-accept .btn + .btn {
 }
 .quote-box {
   position: relative;
-  height: 133px;
+  min-height: 133px;
   padding: 13px;
   line-height: 1.33333;
   background-color: #e7e7e7;
