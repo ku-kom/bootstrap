@@ -116,6 +116,10 @@ html:lang(en) .ku-branding-text {
 }
 
 @media all and (min-width: 768px) {
+  .image-presentation {
+    height: 600px;
+  }
+
   .jumpboard {
     height: 289px;
   }
@@ -202,12 +206,6 @@ html:lang(en) .ku-branding-text {
 @media all and (max-width: 767px) {
   .caption h1 {
     font-size: 21px;
-  }
-}
-
-@media (min-width: 768px) {
-  .image-presentation {
-    height: 600px;
   }
 }
 
