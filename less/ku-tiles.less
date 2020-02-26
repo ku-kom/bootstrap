@@ -8,7 +8,7 @@
       opacity: 0;
       margin-bottom: 23px;
     }
-    @media (max-width: @screen-xs) {
+    @media (max-width: @screen-xs-max) {
       .tilebox {
         &:last-child {
           margin-bottom: 0;
@@ -16,7 +16,7 @@
       }
     }
   }
-  @media all and (min-width: @screen-xs) {
+  @media all and (min-width: @screen-sm) {
     &.tiles-x {
       .tilebox {
         width: @default-col-width;
@@ -102,7 +102,7 @@
     margin-bottom: 10px;
   }
 }
-@media all and (min-width: @screen-xs) {
+@media all and (min-width: @screen-sm) {
   .tiles-y {
     .tilebox {
       flex-direction: row-reverse;

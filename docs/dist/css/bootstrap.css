@@ -9541,12 +9541,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-bottom: 23px;
   opacity: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .tiles.tiles-x .tilebox:last-child {
     margin-bottom: 0;
   }
 }
-@media all and (min-width: 480px) {
+@media all and (min-width: 768px) {
   .tiles.tiles-x .tilebox {
     width: 235px;
   }
@@ -9671,7 +9671,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: none;
           flex: none;
 }
-@media all and (min-width: 480px) {
+@media all and (min-width: 768px) {
   .tiles-y .tilebox {
             flex-direction: row-reverse;
 
