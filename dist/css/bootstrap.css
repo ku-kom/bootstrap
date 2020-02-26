@@ -9595,6 +9595,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
           transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
 
+  object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -9671,9 +9672,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: none;
           flex: none;
 }
-.tiles-y .tile-img img {
-  object-fit: cover;
-}
 @media all and (min-width: 480px) {
   .tiles-y .tilebox {
             flex-direction: row-reverse;
@@ -9691,6 +9689,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .tiles-y .tile-img img {
     width: 165px;
+
+    object-fit: cover;
   }
   .double-column [class*=column] .tiles-x .tilebox {
     width: 100%;
@@ -9748,6 +9748,9 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   width: 100%;
 
   object-fit: cover;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
 }
 .GridForside .two-one-column .column1 .tiles-y .tilebox {
   display: block;
@@ -9771,6 +9774,10 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
       -ms-flex-direction: row-reverse;
 }
 .single-column .tiles-x:not(.tiles) .tile-img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
   -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
