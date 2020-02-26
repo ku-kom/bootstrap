@@ -1,6 +1,7 @@
 /*
 * KU tiles mixin
 */
+
 .tiles-x-layout() {
   // Tiles format
   .tilebox {
@@ -12,19 +13,19 @@
     box-shadow: 0 0 0 1px @gray-ddd;
     transition: box-shadow 0.2s ease-out;
 
-    .tile-link {
-      flex-direction: column;
+    &:hover {
+      box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
 
-      &:hover {
-        box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
-
-        .tile-img {
-          img {
-            backface-visibility: hidden;
-            transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
-          }
+      .tile-img {
+        img {
+          backface-visibility: hidden;
+          transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
         }
       }
+    }
+
+    .tile-link {
+      flex-direction: column;
     }
 
     .header-small {
