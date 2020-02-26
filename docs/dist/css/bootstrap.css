@@ -9699,6 +9699,25 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
   }
+  .single-column .tiles-x:not(.tiles) .tile-link,
+  .single-column .tiles-x:not(.tiles) .tilebox {
+            flex-direction: row-reverse;
+
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+  }
+  .single-column .tiles-x:not(.tiles) .tile-img {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .single-column .tiles-x:not(.tiles) .tile-body {
+    display: block;
+  }
 }
 .one-two-column .column1 .tiles-y .tile-link,
 .quad-column [class*=column] .tiles-y .tile-link,
@@ -9764,25 +9783,6 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
 }
 .FullWidthFrontpage .triple-column .tiles-x .tile-body,
 .double-column .tiles-x .tile-body {
-  display: block;
-}
-.single-column .tiles-x:not(.tiles) .tile-link,
-.single-column .tiles-x:not(.tiles) .tilebox {
-          flex-direction: row-reverse;
-
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-}
-.single-column .tiles-x:not(.tiles) .tile-img {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-  -webkit-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-}
-.single-column .tiles-x:not(.tiles) .tile-body {
   display: block;
 }
 .entries {
