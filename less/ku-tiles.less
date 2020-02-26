@@ -65,7 +65,7 @@
   display: flex;
   position: relative;
   color: initial!important;
-  text-decoration: none;
+  text-decoration: none!important;
   width: 100%;
   height: 100%;
 
@@ -182,6 +182,19 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
           margin-bottom: 7px;
         }
       }
+    }
+  }
+}
+
+.FullWidthFrontpage .triple-column,
+.double-column {
+  .tiles-x {
+    .tilebox {
+      height: 367px;
+    }
+
+    .tile-body {
+      display: block;
     }
   }
 }
