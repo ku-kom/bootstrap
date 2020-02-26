@@ -9555,22 +9555,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-plugin.is-showing .tilebox {
   opacity: 1;
 }
-.tilebox .header-small {
-  margin: 0 0 5px;
-  font-weight: 700;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: .4px;
-}
-.tilebox .header-small .date {
-  float: right;
-  padding-left: 5px;
-}
-.tilebox h3 {
-  margin-top: 0;
-  line-height: 1.3;
-  color: #252525;
-}
 .tile-content {
   position: relative;
 }
@@ -9588,21 +9572,37 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.tiles-x .tilebox:hover {
+.tiles-x .tilebox .tile-link {
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+}
+.tiles-x .tilebox .tile-link:hover {
   box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
 }
-.tiles-x .tilebox:hover .tile-img img {
+.tiles-x .tilebox .tile-link:hover .tile-img img {
   -webkit-transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
           transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
 
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.tiles-x .tilebox .tile-link {
-          flex-direction: column;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+.tiles-x .tilebox .header-small {
+  margin: 0 0 5px;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.tiles-x .tilebox .header-small .date {
+  float: right;
+  padding-left: 5px;
+}
+.tiles-x .tilebox h3 {
+  margin-top: 0;
+  line-height: 1.3;
+  color: #252525;
 }
 .tiles-x .tile-body {
   display: none;

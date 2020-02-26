@@ -1,7 +1,9 @@
 /*
 * KU tiles mixin
 */
+
 .tiles-x-layout() {
+  // Tiles format
   .tilebox {
     display: flex;
     flex-direction: column;
@@ -11,19 +13,38 @@
     box-shadow: 0 0 0 1px @gray-ddd;
     transition: box-shadow 0.2s ease-out;
 
-    &:hover {
-      box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
+    .tile-link {
+      flex-direction: column;
 
-      .tile-img {
-        img {
-          backface-visibility: hidden;
-          transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
+      &:hover {
+        box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
+
+        .tile-img {
+          img {
+            backface-visibility: hidden;
+            transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
+          }
         }
       }
     }
 
-    .tile-link {
-      flex-direction: column;
+    .header-small {
+      font-weight: 700;
+      color: @gray-666;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin: 0 0 5px;
+
+      .date {
+        float: right;
+        padding-left: 5px;
+      }
+    }
+
+    h3 {
+      line-height: 1.3;
+      margin-top: 0;
+      color: @text-color;
     }
   }
 
@@ -47,5 +68,51 @@
     overflow: hidden;
     // This prevents text from overflowing the bottom of the tile in an ugly way:
     border-bottom: solid 15px rgba(@gray-base, 0);
+  }
+}
+
+.tiles-y-layout() {
+  // List format
+  .tile-link {
+    flex-direction: row-reverse;
+
+    &:hover {
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .tilebox {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid @gray;
+
+    & + .tilebox {
+      padding-top: 10px;
+    }
+  }
+
+  .tile-img {
+    flex: none;
+    margin-bottom: 10px;
+  }
+}
+
+.tiles-y-desktop-layout() {
+  .tilebox {
+    flex-direction: row-reverse;
+  }
+
+  .tile-img {
+    margin-left: 10px;
+    flex: 0 0 165px;
+    margin-bottom: 0;
+
+    img {
+      width: 165px;
+      object-fit: cover;
+    }
   }
 }
