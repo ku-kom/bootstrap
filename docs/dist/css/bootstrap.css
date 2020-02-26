@@ -9711,9 +9711,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     display: -ms-flexbox;
     display:         flex;
 
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -webkit-flex: 0 0 calc(50% - 26px);
+        -ms-flex: 0 0 calc(50% - 26px);
+            flex: 0 0 calc(50% - 26px);
   }
   .single-column .tiles-x:not(.tiles-plugin) .tile-body {
     display: block;
