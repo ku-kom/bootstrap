@@ -38,6 +38,12 @@ body.Newsletter .right-side .panel-body {
   padding: initial !important;
 }
 
+p, ul, ol, li, td {
+  font-size: 1em !important;
+  color: #252525 !important;
+  font-family: inherit !important;
+}
+
 .newslettertable p, .newslettertable ul, .newslettertable ol, .newslettertable li, .newslettertable td {
   font-size: 13px !important;
 }

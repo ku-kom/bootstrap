@@ -36,20 +36,20 @@
 .tile-link {
   color: @text-color!important;
   text-decoration: none!important;
-
-  &:after {
-    color: initial;
-    text-decoration: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: auto;
-    content: "";
-    background-color: rgba(@gray-base, 0);
-  }
+  &:extend(.stretched-link);
+  // &:after {
+  //   color: initial;
+  //   text-decoration: none;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   pointer-events: auto;
+  //   content: "";
+  //   background-color: rgba(@gray-base, 0);
+  // }
 }
 
 .tilebox {
@@ -118,7 +118,6 @@
   }
 }
 @media all and (min-width: @screen-xs) {
-
   .tiles-y {
     .tilebox {
       flex-direction: row-reverse;
