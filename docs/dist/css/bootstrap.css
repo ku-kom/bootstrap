@@ -9638,6 +9638,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: initial!important;
   text-decoration: none;
 }
+.tile-link:hover {
+  text-decoration: none;
+}
 .tiles-y .tile-link {
           flex-direction: row-reverse;
 
