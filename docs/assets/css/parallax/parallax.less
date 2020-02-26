@@ -85,6 +85,12 @@
   // top + bottom shadow
   box-shadow: 0 -24px 30px 0 rgba(@gray-base,.3), 0 24px 30px 0 rgba(@gray-base,.3);
 
+  h1 {
+    font-size: 46px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
   .block-content {
     font-size: 14px;
     padding: 10px 20px;
@@ -130,7 +136,6 @@
 }
 @supports (-ms-ime-align: auto) {
   // Edge - prevent flickering
-
   body {
     transform: translateZ(0);
   }
@@ -161,7 +166,7 @@
   // Try to minimize flickering:
   will-change: transform;
   //backface-visibility: hidden;
-  transform-origin: 100% 100% 0px;
+  transform-origin: 100% 100% 0;
   transform-style: preserve-3d;
 }
 @media all and (min-width: @screen-sm) {
