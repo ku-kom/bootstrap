@@ -1,8 +1,8 @@
 @import "variables.less";
 @import "mixins.less"; // Tiles news boxes
 
-.tiles {
-  // Wrap in class .tiles when used with Isotope plugin
+.tiles-plugin {
+  // Wrap in class .tiles-plugin when used with Isotope plugin
   &.tiles-x {
     .tilebox {
       opacity: 0;
@@ -16,14 +16,7 @@
       }
     }
   }
-  // @media all and (min-width: @screen-sm) {
-  //   &.tiles-x {
-  //     .tilebox {
-  //       height: @gridbox1;
-  //       width: @default-col-width;
-  //     }
-  //   }
-  // }
+
   @media all and (min-width: @screen-sm) {
     &.tiles-x {
       .tilebox {
