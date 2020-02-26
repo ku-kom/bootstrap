@@ -9554,10 +9554,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles.is-showing .tilebox {
   opacity: 1;
 }
-.tile-link {
-  color: #252525 !important;
-  text-decoration: none!important;
-}
 .tilebox .header-small {
   margin: 0 0 5px;
   font-weight: 700;
@@ -9603,10 +9599,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
           backface-visibility: hidden;
 }
 .tiles-x .tilebox .tile-link {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  height: 100%;
           flex-direction: column;
 
   -webkit-flex-direction: column;
@@ -9636,14 +9628,17 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex: 1;
           flex: 1;
 }
-.tiles-y .tile-link {
+.tile-link {
   position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
   width: 100%;
+  height: 100%;
   color: initial;
   text-decoration: none;
+}
+.tiles-y .tile-link {
           flex-direction: row-reverse;
 
   -webkit-flex-direction: row-reverse;
@@ -9707,16 +9702,16 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     display: block;
   }
 }
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tilebox,
+.one-two-column .column1 .tiles-y .tile-link,
+.quad-column [class*=column] .tiles-y .tile-link,
+.triple-column [class*=column] .tiles-y .tile-link,
+.two-one-column .column2 .tiles-y .tile-link,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-link,
 .one-two-column .column1 .tiles-y .tilebox,
 .quad-column [class*=column] .tiles-y .tilebox,
 .triple-column [class*=column] .tiles-y .tilebox,
 .two-one-column .column2 .tiles-y .tilebox,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-link,
-.one-two-column .column1 .tiles-y .tile-link,
-.quad-column [class*=column] .tiles-y .tile-link,
-.triple-column [class*=column] .tiles-y .tile-link,
-.two-one-column .column2 .tiles-y .tile-link {
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tilebox {
   padding: 0 0 10px;
   margin-bottom: 23px;
           flex-direction: column;
@@ -9724,33 +9719,33 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-link
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-content,
 .one-two-column .column1 .tiles-y .tile-content,
 .quad-column [class*=column] .tiles-y .tile-content,
 .triple-column [class*=column] .tiles-y .tile-content,
-.two-one-column .column2 .tiles-y .tile-content {
+.two-one-column .column2 .tiles-y .tile-content,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-content {
   padding-top: 10px;
 
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img,
 .one-two-column .column1 .tiles-y .tile-img,
 .quad-column [class*=column] .tiles-y .tile-img,
 .triple-column [class*=column] .tiles-y .tile-img,
-.two-one-column .column2 .tiles-y .tile-img {
+.two-one-column .column2 .tiles-y .tile-img,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img {
   margin-left: 0;
 
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img img,
 .one-two-column .column1 .tiles-y .tile-img img,
 .quad-column [class*=column] .tiles-y .tile-img img,
 .triple-column [class*=column] .tiles-y .tile-img img,
-.two-one-column .column2 .tiles-y .tile-img img {
+.two-one-column .column2 .tiles-y .tile-img img,
+body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img img {
   width: 100%;
 
   object-fit: cover;
