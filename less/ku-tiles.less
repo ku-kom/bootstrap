@@ -175,7 +175,7 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
         display: block;
 
         .tile-img {
-          // float: right;
+          float: right;
           margin-bottom: 7px;
         }
       }
@@ -195,22 +195,23 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
     }
   }
 }
+@media and (min-width: @screen-xs) {
+  .single-column {
+    .tiles-x {
+      &:not(.tiles) {
+        .tile-link,
+        .tilebox {
+          flex-direction: row-reverse;
+        }
 
-.single-column {
-  .tiles-x {
-    &:not(.tiles) {
-      .tile-link,
-      .tilebox {
-        flex-direction: row-reverse;
-      }
+        .tile-img {
+          flex: 0 0 50%;
+          display: flex;
+        }
 
-      .tile-img {
-        flex: 0 0 50%;
-        display: flex;
-      }
-
-      .tile-body {
-        display: block;
+        .tile-body {
+          display: block;
+        }
       }
     }
   }

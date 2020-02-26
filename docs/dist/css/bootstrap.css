@@ -9595,7 +9595,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
           transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
 
-  object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -9756,6 +9755,7 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   display: block;
 }
 .GridForside .two-one-column .column1 .tiles-y .tilebox .tile-img {
+  float: right;
   margin-bottom: 7px;
 }
 .FullWidthFrontpage .triple-column .tiles-x .tilebox,
