@@ -9665,7 +9665,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   padding-top: 10px;
 }
 .tiles-y .tile-img {
-  float: right;
   margin-bottom: 10px;
 
   -webkit-flex: none;
@@ -9700,9 +9699,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-  }
-  .double-column [class*=column] .tiles-x .tile-body {
-    display: block;
   }
 }
 .one-two-column .column1 .tiles-y .tile-link,
@@ -9757,7 +9753,6 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   display: block;
 }
 .GridForside .two-one-column .column1 .tiles-y .tilebox .tile-img {
-  float: right;
   margin-bottom: 7px;
 }
 .FullWidthFrontpage .triple-column .tiles-x .tilebox,
@@ -9766,6 +9761,21 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
 }
 .FullWidthFrontpage .triple-column .tiles-x .tile-body,
 .double-column .tiles-x .tile-body {
+  display: block;
+}
+.single-column .tiles-x:not(.tiles) .tile-link,
+.single-column .tiles-x:not(.tiles) .tilebox {
+          flex-direction: row-reverse;
+
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+}
+.single-column .tiles-x:not(.tiles) .tile-img {
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.single-column .tiles-x:not(.tiles) .tile-body {
   display: block;
 }
 .entries {
