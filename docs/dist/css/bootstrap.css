@@ -9570,7 +9570,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex-direction: column;
 }
 .tiles-x .tilebox:hover {
-  box-shadow: 0 8px 10px 0 rgba(38, 38, 38, .2), 0 6px 13px 0 rgba(38, 38, 38, .19);
+  box-shadow: 0 8px 10px 0 rgba(60, 60, 60, .1), 0 2px 6px 0 rgba(64, 64, 64, .19);
 }
 .tiles-x .tilebox:hover .tile-img img {
   -webkit-transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
