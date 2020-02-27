@@ -378,8 +378,10 @@ form.gdpr-accept {
 
 .quote-box {
   background-color: @white-color;
-  border: 1px solid @gray;
+  border: 1px solid #8d8d8d;
   line-height: 1.33333;
+  font-size: 14px;
+  font-weight: 600;
   padding: 13px;
   border-radius: 2px;
   min-height: @gridbox3;
@@ -405,6 +407,7 @@ form.gdpr-accept {
       font-size: 95%;
       color: @gray-666;
       line-height: 1.3333;
+      font-weight: 400;
     }
     cite {
       display: block;
@@ -412,13 +415,13 @@ form.gdpr-accept {
   }
 
   &:before {
-    font-size: 80px;
+    font-size: 90px;
     color: rgba(@gray-base, .06);
     .icon;
     content: @icon-quote;
     transform: rotateY(180deg);
     position: absolute;
     right: 16px;
-    bottom: -20px;
+    bottom: -25px;
   }
 }
