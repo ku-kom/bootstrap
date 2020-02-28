@@ -9624,7 +9624,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   position: relative;
   padding: 10px;
   overflow: hidden;
-  border-bottom: solid 15px rgba(0, 0, 0, 0);
+  border-bottom: solid 24px rgba(0, 0, 0, 0);
 
   -webkit-flex: 1;
       -ms-flex: 1;
