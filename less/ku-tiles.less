@@ -61,7 +61,6 @@
     color: @text-color;
   }
 }
-
 @media all and (min-width: @screen-sm) {
   .tiles-y {
     .tiles-y-desktop-layout();
@@ -81,10 +80,18 @@
 
   .single-column {
     .tiles-x {
+      height: @gridbox1;
+
       &:not(.tiles-plugin) {
         .tile-link,
         .tilebox {
           flex-direction: row-reverse;
+        }
+
+        .tile-header {
+          h3 {
+            font-size: 26px;
+          }
         }
 
         .tile-img {
@@ -146,14 +153,24 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
     }
   }
 }
+@media all and (min-width: @screen-sm) {
+  .FullWidthFrontpage .triple-column,
+  .double-column {
+    .tiles-x {
+      .tilebox {
+        height: 367px;
+      }
 
-.FullWidthFrontpage .triple-column,
-.double-column {
-  .tiles-x {
-    .tilebox {
-      height: 367px;
+      .tile-body {
+        display: block;
+      }
     }
+  }
+}
 
+@media (max-width: @screen-xs-max) {
+
+  .double-column {
     .tile-body {
       display: block;
     }
