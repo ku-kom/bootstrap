@@ -9786,6 +9786,7 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   }
 }
 @media (max-width: 767px) {
+  .FullWidthFrontpage .triple-column .tile-body,
   .double-column .tile-body {
     display: block;
   }
