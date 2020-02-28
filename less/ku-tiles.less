@@ -33,8 +33,11 @@
   }
 }
 
-.tiles-x {
-  .tiles-x-layout();
+.tile-img {
+  img {
+    object-fit: cover;
+    float: none;
+  }
 }
 
 .tile-link {
@@ -50,6 +53,10 @@
   }
 }
 
+.tiles-x {
+  .tiles-x-layout();
+}
+
 .tiles-y {
   .tiles-y-layout();
 }
@@ -61,6 +68,8 @@
     color: @text-color;
   }
 }
+
+
 @media all and (min-width: @screen-sm) {
   .tiles-y {
     .tiles-y-desktop-layout();
@@ -132,8 +141,6 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
 
       img {
         width: 100%;
-        object-fit: cover;
-        flex: none;
       }
     }
   }
@@ -167,9 +174,7 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
     }
   }
 }
-
 @media (max-width: @screen-xs-max) {
-
   .double-column {
     .tile-body {
       display: block;
