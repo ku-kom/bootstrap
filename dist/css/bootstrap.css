@@ -11783,14 +11783,18 @@ form.gdpr-accept .btn + .btn {
 }
 .quote-box {
   position: relative;
-  min-height: 133px;
-  padding: 13px;
+  padding: 10px 13px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.33333;
   background-color: #fff;
   border: 1px solid #8d8d8d;
   border-radius: 2px;
+}
+@media (min-width: 768px) {
+  .quote-box {
+    height: 133px;
+  }
 }
 .quote-box blockquote {
   float: none;

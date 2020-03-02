@@ -382,9 +382,11 @@ form.gdpr-accept {
   line-height: 1.33333;
   font-size: 14px;
   font-weight: 600;
-  padding: 13px;
+  padding: 10px 13px;
   border-radius: 2px;
-  min-height: @gridbox3;
+  @media (min-width: @screen-sm) {
+    height: @gridbox3;
+  }
   position: relative;
 
   blockquote {
@@ -409,6 +411,7 @@ form.gdpr-accept {
       line-height: 1.3333;
       font-weight: 400;
     }
+
     cite {
       display: block;
     }
