@@ -9668,7 +9668,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-size: 17.42px;
   font-weight: 600;
   line-height: 1.3;
-  color: #252525;
 }
 @media all and (min-width: 768px) {
   .tiles-y .tilebox {
@@ -9780,7 +9779,7 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   float: right;
   margin-bottom: 7px;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .FullWidthFrontpage .triple-column .tiles-x .tilebox,
   .double-column .tiles-x .tilebox {
     height: 367px;
