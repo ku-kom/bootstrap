@@ -208,3 +208,146 @@ html:lang(en) .ku-branding-text {
   border: 1px solid #ccc;
   padding: 23px 22px !important;
 }
+
+.slick-slide:nth-child(odd) .slide-content {
+  background-color: #f2f2f2;
+}
+
+.slick-slide:nth-child(even) .slide-content {
+  background-color: #d9d9d9;
+}
+
+.slider-intro {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 10;
+  font-weight: 600;
+}
+
+.slick-slider {
+  height: 289px;
+}
+
+.slide-content {
+  color: initial;
+  height: 289px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.slide-link:hover .visual-text {
+  color: #252525;
+}
+
+.visual, .visual-text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.visual-text {
+  padding: 5px 15px 30px 15px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.visual {
+  height: 200px;
+  padding-top: 25px;
+}
+
+.visual img {
+  height: 100%;
+  object-fit: unset;
+}
+
+.visual-text .number {
+  display: block;
+  line-height: normal;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.visual-text .number2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media all and (max-width: 767px) {
+
+  .slick-dots {
+    bottom: 10px;
+  }
+
+  /* .slick-list{padding:0 20% 0 0;} */
+}
+
+@media all and (min-width: 768px) {
+  .slick-slider {
+    height: 215px;
+  }
+
+  .slide-content {
+    color: initial;
+    height: 289px;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .visual, .visual-text {
+    padding: 15px;
+  }
+
+  .visual {
+    padding-right: 0;
+    text-align: center;
+    width: 44%;
+    height: 100%;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+
+  .visual img {
+    height: 70%;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #slides .visual img {
+    position: relative;
+    min-height: unset;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+    transform: none;
+    max-width: 85% !important;
+  }
+
+  .visual-text {
+    text-align: left;
+    width: 55%;
+  }
+}
