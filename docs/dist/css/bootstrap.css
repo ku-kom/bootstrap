@@ -9715,6 +9715,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
         -ms-flex-direction: row-reverse;
   }
   .single-column .tiles-x:not(.tiles-plugin) .tile-header {
+    margin-top: 20px;
     font-size: 26px;
     font-weight: 600;
   }
