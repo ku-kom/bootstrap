@@ -9624,11 +9624,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   position: relative;
   padding: 10px;
   overflow: hidden;
-  border-bottom: solid 24px rgba(0, 0, 0, 0);
 
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+@media all and (min-width: 768px) {
+  .tiles-x .tile-content {
+    border-bottom: solid 20px rgba(0, 0, 0, 0);
+  }
 }
 .tiles-y .tile-link {
           flex-direction: row-reverse;

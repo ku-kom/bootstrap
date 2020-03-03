@@ -1,6 +1,7 @@
 /*
 * KU tiles mixin
 */
+
 .tiles-x-layout() {
   // Tiles format
   .tilebox {
@@ -59,8 +60,10 @@
     position: relative;
     flex: 1;
     overflow: hidden;
-    // This prevents text from overflowing the bottom of the tile in an ugly way:
-    border-bottom: solid 24px rgba(@gray-base, 0);
+    @media all and (min-width: @screen-sm) {
+      // This prevents text from overflowing the bottom of the tile in an ugly way:
+      border-bottom: solid 20px rgba(@gray-base, 0);
+    }
   }
 }
 
