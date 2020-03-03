@@ -9701,6 +9701,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .single-column .tiles-x:not(.tiles-plugin) .tile-link,
   .single-column .tiles-x:not(.tiles-plugin) .tilebox {
+    height: 100%;
             flex-direction: row-reverse;
 
     -webkit-flex-direction: row-reverse;
@@ -9781,11 +9782,6 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   .double-column .tiles-x,
   .single-column .tiles-x {
     height: 367px;
-  }
-  .FullWidthFrontpage .triple-column .tiles-x .tilebox,
-  .double-column .tiles-x .tilebox,
-  .single-column .tiles-x .tilebox {
-    height: 100%;
   }
   .FullWidthFrontpage .triple-column .tiles-x .tile-body,
   .double-column .tiles-x .tile-body,
