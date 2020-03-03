@@ -9777,9 +9777,9 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
   margin-bottom: 7px;
 }
 @media all and (min-width: 992px) {
-  .FullWidthFrontpage .triple-column .tiles-x .tilebox,
-  .double-column .tiles-x .tilebox,
-  .single-column .tiles-x .tilebox {
+  .FullWidthFrontpage .triple-column .tiles-x,
+  .double-column .tiles-x,
+  .single-column .tiles-x {
     height: 367px;
   }
   .FullWidthFrontpage .triple-column .tiles-x .tile-body,
