@@ -9687,7 +9687,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     object-fit: cover;
   }
   .double-column [class*=column] .tiles-x .tilebox {
-    width: 100%;
+    height: 100%;
   }
   .double-column [class*=column] .tiles-x .tile-img {
     -webkit-flex: 0 0 50%;
