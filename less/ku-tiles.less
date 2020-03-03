@@ -72,7 +72,7 @@
     .tiles-y-desktop-layout();
   }
 
-  .double-column [class*=column] {
+  .double-column {
     .tiles-x {
       .tilebox {
         height: 100%;
@@ -116,16 +116,16 @@
 //style for single and double column spans
 
 .one-two-column .column1,
-.quad-column [class*=column],
-.triple-column [class*=column],
+.quad-column,
+.triple-column,
 .two-one-column .column2,
-body:not(.FullWidthFrontpage) .double-column [class*=column] {
+body:not(.FullWidthFrontpage) .double-column {
   .tiles-y {
     .tile-link,
     .tilebox {
       flex-direction: column;
       padding: 0 0 10px;
-      margin-bottom: 23px;
+      // margin-bottom: 23px;
     }
 
     .tile-content {

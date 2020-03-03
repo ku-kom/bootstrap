@@ -9657,6 +9657,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-y .tilebox + .tilebox {
   padding-top: 10px;
 }
+.tiles-y .tilebox .date {
+  float: right;
+}
 .tiles-y .tile-img {
   margin-bottom: 10px;
 
@@ -9690,10 +9693,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
     object-fit: cover;
   }
-  .double-column [class*=column] .tiles-x .tilebox {
+  .double-column .tiles-x .tilebox {
     height: 100%;
   }
-  .double-column [class*=column] .tiles-x .tile-img {
+  .double-column .tiles-x .tile-img {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -9729,27 +9732,26 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
 }
 .one-two-column .column1 .tiles-y .tile-link,
-.quad-column [class*=column] .tiles-y .tile-link,
-.triple-column [class*=column] .tiles-y .tile-link,
+.quad-column .tiles-y .tile-link,
+.triple-column .tiles-y .tile-link,
 .two-one-column .column2 .tiles-y .tile-link,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-link,
+body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-link,
 .one-two-column .column1 .tiles-y .tilebox,
-.quad-column [class*=column] .tiles-y .tilebox,
-.triple-column [class*=column] .tiles-y .tilebox,
+.quad-column .tiles-y .tilebox,
+.triple-column .tiles-y .tilebox,
 .two-one-column .column2 .tiles-y .tilebox,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tilebox {
+body:not(.FullWidthFrontpage) .double-column .tiles-y .tilebox {
   padding: 0 0 10px;
-  margin-bottom: 23px;
           flex-direction: column;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
 .one-two-column .column1 .tiles-y .tile-content,
-.quad-column [class*=column] .tiles-y .tile-content,
-.triple-column [class*=column] .tiles-y .tile-content,
+.quad-column .tiles-y .tile-content,
+.triple-column .tiles-y .tile-content,
 .two-one-column .column2 .tiles-y .tile-content,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-content {
+body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-content {
   padding-top: 10px;
 
   -webkit-flex: 1 1 auto;
@@ -9757,10 +9759,10 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-cont
           flex: 1 1 auto;
 }
 .one-two-column .column1 .tiles-y .tile-img,
-.quad-column [class*=column] .tiles-y .tile-img,
-.triple-column [class*=column] .tiles-y .tile-img,
+.quad-column .tiles-y .tile-img,
+.triple-column .tiles-y .tile-img,
 .two-one-column .column2 .tiles-y .tile-img,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img {
+body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img {
   margin-left: 0;
 
   -webkit-flex: 0 0 auto;
@@ -9768,10 +9770,10 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img 
           flex: 0 0 auto;
 }
 .one-two-column .column1 .tiles-y .tile-img img,
-.quad-column [class*=column] .tiles-y .tile-img img,
-.triple-column [class*=column] .tiles-y .tile-img img,
+.quad-column .tiles-y .tile-img img,
+.triple-column .tiles-y .tile-img img,
 .two-one-column .column2 .tiles-y .tile-img img,
-body:not(.FullWidthFrontpage) .double-column [class*=column] .tiles-y .tile-img img {
+body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   width: 100%;
 }
 .GridForside .two-one-column .column1 .tiles-y .tilebox {
