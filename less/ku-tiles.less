@@ -101,7 +101,7 @@
         }
 
         .tile-img {
-          flex: 0 0 calc(50% - @grid-gutter-width);
+          flex: 0 0 calc(50% - @grid-gutter-by-half);
           display: flex;
         }
 
@@ -163,6 +163,10 @@ body:not(.FullWidthFrontpage) .double-column [class*=column] {
   .single-column {
     .tiles-x {
       height: 367px;
+
+      .tilebox {
+        height: 100%;
+      }
 
       .tile-body {
         display: block;
