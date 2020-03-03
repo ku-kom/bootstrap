@@ -9565,6 +9565,23 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tile-link:hover {
   text-decoration: none;
 }
+.tile-header {
+  margin-top: 0;
+  font-size: 17.42px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.header-small {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.header-small .date {
+  float: right;
+  padding-left: 5px;
+}
 .tiles-x .tilebox {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9597,14 +9614,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-x .tilebox .header-small {
   margin: 0 0 5px;
-  font-weight: 700;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: .4px;
-}
-.tiles-x .tilebox .header-small .date {
-  float: right;
-  padding-left: 5px;
 }
 .tiles-x .tile-body {
   display: none;
@@ -9666,12 +9675,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-}
-.tile-header {
-  margin-top: 0;
-  font-size: 17.42px;
-  font-weight: 600;
-  line-height: 1.3;
 }
 @media all and (min-width: 768px) {
   .tiles-y .tilebox {
