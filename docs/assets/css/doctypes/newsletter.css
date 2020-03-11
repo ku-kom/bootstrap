@@ -54,3 +54,7 @@ p, ul, ol, li, td {
   height: 650px;
   overflow: auto;
 }
+
+#globalfooter ul.footerlinks li .icon-padlock:before {
+  color: #fff;
+}
