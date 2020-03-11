@@ -52,6 +52,10 @@ p, ul, ol, li, td {
   color: #fff;
 }
 
+#mmenu .local1_mmenu {
+  color: #fff!important;
+}
+
 .newsletter-frame {
   border: 0;
   width: 100%;
