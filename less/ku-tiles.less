@@ -175,11 +175,18 @@ body:not(.FullWidthFrontpage) .double-column {
 }
 @media all and (min-width: @screen-md) {
   .FullWidthFrontpage .triple-column,
-  .double-column,
-  .single-column {
+  .double-column {
     .tiles-x:not(.tiles-plugin) {
       height: 367px;
 
+      .tile-body {
+        display: block;
+      }
+    }
+  }
+
+  .single-column {
+    .tiles-x:not(.tiles-plugin) {
       .tile-body {
         display: block;
       }
