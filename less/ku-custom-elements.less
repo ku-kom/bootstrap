@@ -229,20 +229,23 @@
   max-width: 1018px;
   margin: 0 auto;
   padding: 10px 0;
+  @media (max-width: @screen-sm-max) {
+    padding: 10px;
+  }
   // background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
   // background-size: 100px;
-
   h1 {
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     font-size: 40px;
     margin-top: 0;
     font-weight: 400;
   }
+
   h2 {
     font-size: 26px;
     font-weight: 400;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
   }
 
   p {
