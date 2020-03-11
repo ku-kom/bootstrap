@@ -11674,23 +11674,28 @@ p[align="right"]:before {
   background-color: #ffe100;
 }
 #warning-banner-inner {
-  max-width: 874px;
-  padding: 15px 15px 15px 115px;
+  max-width: 1018px;
+  padding: 10px 0;
   margin: 0 auto;
-  background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
-  background-size: 100px;
+  text-align: left;
+}
+#warning-banner-inner h1 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: 400;
 }
 #warning-banner-inner h2 {
-  margin-top: 0;
+  margin: 0 0 10px 0;
   font-size: 26px;
+  font-weight: 400;
 }
 #warning-banner-inner p {
   font-size: 16px;
 }
 #warning-banner-header {
-  padding: 0;
-  margin: 0;
-  font-size: 40px;
+  display: none;
 }
 .factbox {
   float: right;
