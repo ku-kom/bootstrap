@@ -48,6 +48,10 @@ p, ul, ol, li, td {
   font-size: 13px !important;
 }
 
+#globalfooter ul.footerlinks li .icon-padlock:before {
+  color: #fff;
+}
+
 .newsletter-frame {
   border: 0;
   width: 100%;
@@ -55,6 +59,6 @@ p, ul, ol, li, td {
   overflow: auto;
 }
 
-#globalfooter ul.footerlinks li .icon-padlock:before {
-  color: #fff;
+.unsubscribe-link {
+  display: none;
 }
