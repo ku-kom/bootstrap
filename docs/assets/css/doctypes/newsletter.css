@@ -29,7 +29,7 @@ body.Newsletter .right-side .panel-body {
   margin: 0 !important;
 }
 
-.Newsletter h3 {
+.Newsletter h3:not(.footer-heading) {
   font-weight: 600 !important;
   color: initial !important;
   font-family: inherit !important;
@@ -46,4 +46,15 @@ p, ul, ol, li, td {
 
 .newslettertable p, .newslettertable ul, .newslettertable ol, .newslettertable li, .newslettertable td {
   font-size: 13px !important;
+}
+
+.newsletter-frame {
+  border: 0;
+  width: 100%;
+  height: 650px;
+  overflow: auto;
+}
+
+#globalfooter ul.footerlinks li .icon-padlock:before {
+  color: #fff;
 }
