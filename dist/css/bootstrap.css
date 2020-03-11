@@ -9657,7 +9657,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
           flex-direction: column;
   border-bottom: 1px solid #ccc;
 
@@ -9665,7 +9665,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       -ms-flex-direction: column;
 }
 .tiles-y .tilebox + .tilebox {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .tiles-y .tile-img {
   margin-bottom: 10px;
