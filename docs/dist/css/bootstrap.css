@@ -11691,6 +11691,9 @@ p[align="right"]:before {
   font-size: 40px;
   font-weight: 400;
 }
+#warning-banner-inner h3 {
+  margin-top: 0;
+}
 #warning-banner-inner h2 {
   margin: 0 0 10px;
   font-size: 26px;
