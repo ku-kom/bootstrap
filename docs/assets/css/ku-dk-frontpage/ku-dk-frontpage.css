@@ -61,6 +61,7 @@ html:lang(en) .ku-branding-text {
 }
 
 @media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
   /* IE11 only */
   .ku-branding-text {
     background-position: left bottom -10px;
@@ -289,12 +290,15 @@ html:lang(en) .ku-branding-text {
 }
 
 @media all and (max-width: 767px) {
-
   .slick-dots {
     bottom: 10px;
   }
 
   /* .slick-list{padding:0 20% 0 0;} */
+}
+
+#podcast {
+  height: 289px;
 }
 
 @media all and (min-width: 768px) {
@@ -349,5 +353,44 @@ html:lang(en) .ku-branding-text {
   .visual-text {
     text-align: left;
     width: 55%;
+  }
+
+  #podcast .slick-list {
+    margin-right: -26px;
+  }
+
+  #podcast .slick-slide {
+    width: 235px !important;
+    margin-right: 26px;
+  }
+}
+
+#podcast .gridbox.size1.with-img .box1 {
+  padding: 10px;
+}
+
+#podcast .gridbox.size1.with-img .box1 .header {
+  color: #4a4949;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1.3em;
+  padding: 0;
+}
+
+#podcast .gridbox.size1.with-img .box1 .header-small {
+  margin: 5px 0;
+}
+
+@media (min-width: 992px) {
+  #podcast .single-column .column1 .size1 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #eee;
+    border-bottom: 0;
+  }
+
+  #podcast .single-column .column1 .size1.with-img:hover .header>span {
+    background: none;
   }
 }
