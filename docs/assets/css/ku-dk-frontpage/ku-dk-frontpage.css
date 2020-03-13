@@ -381,7 +381,7 @@ html:lang(en) .ku-branding-text {
   margin: 5px 0;
 }
 
-@media (min-width: 992px) {
+@media all and (min-width: 768px) {
   #podcast .single-column .column1 .size1 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
