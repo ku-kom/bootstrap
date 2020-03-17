@@ -9612,6 +9612,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-x .tilebox .header-small {
   margin: 0 0 5px;
 }
+.tiles-x .tilebox:not(.tiles-plugin) {
+  height: 100%;
+}
 .tiles-x .tile-body {
   display: none;
 }
