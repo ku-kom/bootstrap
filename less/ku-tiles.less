@@ -16,19 +16,20 @@
       }
     }
   }
-  @media all and (min-width: @screen-sm) {
-    &.tiles-x {
-      .tilebox {
-        height: @gridbox1;
-        width: @default-col-width;
-      }
-    }
-  }
 
   &.is-showing {
     .tilebox {
       // reveal when ready
       opacity: 1;
+    }
+  }
+}
+
+@media all and (min-width: @screen-sm) {
+  .tiles-x {
+    .tilebox {
+      height: @gridbox1;
+      width: @default-col-width;
     }
   }
 }
