@@ -8738,7 +8738,7 @@ iframe {
 }
 .social-items .social-item {
   display: inline-block;
-  margin: 7px 4px 0 0;
+  margin: 13px 4px 0 0;
   background-color: #757575;
   border-radius: 50%;
 }
@@ -8904,7 +8904,7 @@ iframe {
     padding: 0 20px 20px;
   }
   #globalfooter .social-items .social-item {
-    margin: 13px 16px 0 0;
+    margin: 7px 16px 0 0;
   }
   #globalfooter .social-items .social-item .social-icon {
     width: 35px;
