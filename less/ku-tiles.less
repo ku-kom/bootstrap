@@ -76,6 +76,10 @@
 
 .tiles-x {
   .tiles-x-layout();
+
+  &:not(.tiles-plugin) {
+    height: 100%;
+  }
 }
 
 .tiles-y {
@@ -88,10 +92,6 @@
 
   .double-column {
     .tiles-x {
-      .tilebox {
-        height: 100%;
-      }
-
       .tile-img {
         flex: 0 0 50%;
       }
