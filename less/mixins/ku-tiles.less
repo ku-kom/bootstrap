@@ -1,7 +1,6 @@
 /*
 * KU tiles mixin
 */
-
 .tiles-x-layout() {
   // Tiles format
   .tilebox {
@@ -30,6 +29,10 @@
 
     .header-small {
       margin: 0 0 5px;
+    }
+
+    &:not(.tiles-plugin) {
+      height: 100%;
     }
   }
 
