@@ -8699,7 +8699,6 @@ iframe {
 }
 #globalfooter .footercontent > .footercolumn .footer-heading[data-heading='open'] {
   margin-top: 20px;
-  margin-bottom: 3px;
 }
 #globalfooter ul.footerlinks {
   display: block;
@@ -8739,7 +8738,7 @@ iframe {
 }
 .social-items .social-item {
   display: inline-block;
-  margin: .5em .3em 0 0;
+  margin: 7px 4px 0 0;
   background-color: #757575;
   border-radius: 50%;
 }
