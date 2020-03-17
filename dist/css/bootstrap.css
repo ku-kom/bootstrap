@@ -9534,14 +9534,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     margin-bottom: 0;
   }
 }
-.tiles-plugin.is-showing .tilebox {
-  opacity: 1;
-}
 @media all and (min-width: 768px) {
-  .tiles-x .tilebox {
+  .tiles-plugin.tiles-x .tilebox {
     width: 235px;
     height: 289px;
   }
+}
+.tiles-plugin.is-showing .tilebox {
+  opacity: 1;
 }
 .tile-img img {
   float: none;
