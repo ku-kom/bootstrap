@@ -8832,9 +8832,6 @@ iframe {
   #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open']:before {
     display: none;
   }
-  #globalfooter .footercontent .footercolumn .footer-heading[data-heading='open'] {
-    margin-bottom: 5px;
-  }
   #globalfooter .footercontent .footercolumn .footer-heading[data-heading='toggle'] + ul.footerlinks {
     display: none;
     margin: 0;
@@ -8904,7 +8901,7 @@ iframe {
     padding: 0 20px 20px;
   }
   #globalfooter .social-items .social-item {
-    margin: 7px 16px 0 0;
+    margin: 13px 16px 0 0;
   }
   #globalfooter .social-items .social-item .social-icon {
     width: 35px;
