@@ -9612,9 +9612,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-x .tilebox .header-small {
   margin: 0 0 5px;
 }
-.tiles-x .tilebox:not(.tiles-plugin) {
-  height: 100%;
-}
 .tiles-x .tile-body {
   display: none;
 }
@@ -9642,6 +9639,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   .tiles-x .tile-content {
     border-bottom: solid 20px rgba(0, 0, 0, 0);
   }
+}
+.tiles-x:not(.tiles-plugin) {
+  height: 100%;
 }
 .tiles-y .tile-link {
           flex-direction: row-reverse;
@@ -9692,9 +9692,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     width: 165px;
 
     object-fit: cover;
-  }
-  .double-column .tiles-x .tilebox {
-    height: 100%;
   }
   .double-column .tiles-x .tile-img {
     -webkit-flex: 0 0 50%;
