@@ -78,7 +78,9 @@
   .tiles-x-layout();
 
   &:not(.tiles-plugin) {
-    height: 100%;
+    .tilebox {
+      height: 100%;
+    }
   }
 }
 
@@ -107,7 +109,6 @@
         .tile-link,
         .tilebox {
           flex-direction: row-reverse;
-          height: 100%;
         }
 
         .tile-header {
