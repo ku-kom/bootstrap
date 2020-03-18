@@ -9684,14 +9684,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     margin-bottom: 0;
     margin-left: 10px;
 
-    -webkit-flex: 0 0 165px;
-        -ms-flex: 0 0 165px;
-            flex: 0 0 165px;
+    -webkit-flex: 0 0 185px;
+        -ms-flex: 0 0 185px;
+            flex: 0 0 185px;
   }
   .tiles-y .tile-img img {
+    float: right;
     width: 165px;
-
-    object-fit: cover;
   }
   .double-column .tiles-x .tile-img {
     -webkit-flex: 0 0 50%;
@@ -9771,6 +9770,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img {
 .triple-column .tiles-y .tile-img img,
 .two-one-column .column2 .tiles-y .tile-img img,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
+  float: none;
   width: 100%;
 }
 .GridForside .two-one-column .column1 .tiles-y .tilebox {
