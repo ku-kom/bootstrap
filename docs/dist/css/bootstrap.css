@@ -9609,9 +9609,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.tiles-x .tilebox .header-small {
-  margin: 0 0 5px;
-}
 .tiles-x .tile-body {
   display: none;
 }
