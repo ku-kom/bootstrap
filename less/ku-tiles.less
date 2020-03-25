@@ -100,34 +100,18 @@
     }
   }
 }
+
+// Full width single column
 @media all and (min-width: @screen-md) {
   .single-column {
     .tiles-x {
-      height: @gridbox1;
+      height: auto;
 
       &:not(.tiles-plugin) {
-        .tile-link,
-        .tilebox {
-          flex-direction: row-reverse;
-        }
-
         .tile-header {
           font-size: 26px;
           font-weight: 600;
-          margin-top: 20px;
-        }
-
-        .date {
-          margin-right: 0;
-        }
-
-        .tile-img {
-          flex: 0 0 calc(50% - @grid-gutter-by-half);
-          display: flex;
-        }
-
-        .tile-content {
-          padding-right: @grid-gutter-width;
+          margin-top: 0;
         }
 
         .tile-body {
