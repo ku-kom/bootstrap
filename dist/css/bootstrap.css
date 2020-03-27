@@ -9706,6 +9706,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .single-column .tiles-x:not(.tiles-plugin) .tile-body {
     display: block;
+    font-size: 16px;
   }
 }
 .one-two-column .column1 .tiles-y .tile-link,
@@ -9768,9 +9769,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tile-body {
-    display: block;
-  }
-  .single-column .tiles-x:not(.tiles-plugin) .tile-body {
     display: block;
   }
 }
