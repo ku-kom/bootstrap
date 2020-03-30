@@ -1,0 +1,82 @@
+---
+layout: examples
+title: KU standard news article template
+slug: examples
+---
+<main tabindex="0" id="content">
+  {% include ku-branding.html %}
+  <div class="container main-area" id="main-area">
+    <div class="row">
+      <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
+        {% include ku-leftmenu.html %}
+      </div>
+      <div class="col-xs-6 col-sm-8 col-md-6 main-content">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li>
+              <a aria-label="Brødkrumme: Nyheder" href="/">
+                Nyheder
+              </a>
+            </li>
+            <li><a href="/alle_nyheder/" title="Alle nyheder">Alle nyheder</a></li>
+            <li class="active">Sundhedsforskere finde...</li>
+          </ul>
+        </div>
+
+        <div class="nyhedsdato">
+          25. marts 2020
+        </div>
+
+        <h1 class="title">Sundhedsforskere finder løsning på livsfarlig bivirkning</h1>
+
+        <div class="manchet">
+          <span>Paracetamol</span>
+          <p>Gennem forsøg med rotter har forskere fra Københavns Universitet formentlig fundet årsagen bag et stort fald i blodtryk hos patienter, der modtager intravenøs smertestillende medicin.
+          </p>
+        </div>
+
+        <p>De fleste kender det smertestillende medikament paracetamol fra hovedpinepiller, der indtages oralt. Altså gennem munden.</p>
+        <p>På hospitaler bliver stoffet imidlertid også givet intravenøst. På den måde kan læger og sygeplejersker hjælpe kritisk tilredte patienter, som ikke har mulighed for at sluge en eller flere piller.</p>
+        <p>Endvidere virker stoffet langt hurtigere intravenøst, og metoden giver sundhedspersonalet mulighed for at kontrollere doser og timingen af deres virkning meget præcist.</p>
+        <blockquote>
+          <p>Vi mener nu, at vi kender mekanismen bag denne farlige bivirkning.</p>
+          <footer>Thomas Qvistgaard Jepps, adjunkt</footer>
+        </blockquote>
+        <p>Ikke desto mindre har den intravenøse paracetamol en alvorlig bivirkning: Nemlig et forbigående stort fald i blodtrykket.</p>
+        <p>”Tidligere undersøgelser antyder, at det er et ganske betydeligt dyk. Vi taler for eksempel om fald i området op til 20-25 mm Hg fra et systolisk tryk på 120. Og vi mener nu, at vi kender mekanismen bag denne farlige bivirkning, ” siger
+          adjunkt
+          Thomas Andrew Qvistgaard Jepps fra <span><a href="https://bmi.ku.dk/" title="Link til hjemmesiden for Biomedicinsk Institut">Biomedicinsk Institut</a></span>.</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-3  right-side">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Right side</h2>
+          </div>
+          <div class="panel-body">
+            <p>This is a right side panel element. It can contain almost anything.</p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Right side</h2>
+          </div>
+          <div class="panel-body">
+            <p>This is a right side panel element. It can contain almost anything.</p>
+          </div>
+        </div>
+        <div class="panel panel-default with-img">
+          <div class="panel-heading">
+            <h2 class="panel-title">Right side box with img</h2>
+          </div>
+          <div class="panel-body">
+            <img src="https://placehold.it/768x200?text=Img+768x289" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-related-news">
+        <p>Related news</p>
+      </div>
+    </div>
+  </div>
+  {% include local-footer.html %}
+</main>
