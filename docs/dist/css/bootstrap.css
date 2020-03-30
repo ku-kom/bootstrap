@@ -11693,6 +11693,11 @@ p[align="right"]:before {
 .factbox h3 {
   margin: 0 0 10px;
 }
+.factbox .fact-title {
+  margin-bottom: 10px;
+  font-size: 17.42px;
+  font-weight: 600;
+}
 .factbox-left {
   float: left;
   margin-right: 20px;
