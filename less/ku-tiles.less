@@ -1,6 +1,8 @@
 @import "variables.less";
 @import "mixins.less"; // Tiles news boxes
 
+@special-tiles-hight: 367px;
+
 .tiles-plugin {
   // Wrap in class .tiles-plugin when used with Isotope plugin
   &.tiles-x {
@@ -173,21 +175,13 @@ body:not(.FullWidthFrontpage) .double-column {
   .FullWidthFrontpage .triple-column,
   .double-column {
     .tiles-x:not(.tiles-plugin) {
-      height: 367px;
+      height: @special-tiles-hight;
 
       .tile-body {
         display: block;
       }
     }
   }
-
-  // .single-column {
-  //   .tiles-x:not(.tiles-plugin) {
-  //     .tile-body {
-  //       display: block;
-  //     }
-  //   }
-  // }
 }
 @media (max-width: @screen-sm-max) {
   .FullWidthFrontpage .triple-column,
@@ -196,5 +190,12 @@ body:not(.FullWidthFrontpage) .double-column {
     .tile-body {
       display: block;
     }
+  }
+}
+  // Special styling for IE11:
+@media all and (max-width: @screen-sm-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // Mobile view - both list types
+  .tilebox {
+    height: @special-tiles-hight;
   }
 }
