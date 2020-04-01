@@ -9782,8 +9782,15 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .tiles-y .tilebox {
+  .tilebox {
     height: 367px;
+  }
+  .tiles-y .tile-link,
+  .tiles-y .tilebox {
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
   }
   .tiles-y .tile-img {
     -webkit-flex: 0 0 auto;
