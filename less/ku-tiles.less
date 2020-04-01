@@ -1,6 +1,5 @@
 @import "variables.less";
 @import "mixins.less"; // Tiles news boxes
-
 @special-tiles-hight: 367px;
 
 .tiles-plugin {
@@ -104,7 +103,6 @@
     }
   }
 }
-
 // Full width single column
 @media all and (min-width: @screen-md) {
   .single-column {
@@ -192,10 +190,20 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-  // Special styling for IE11:
-@media all and (max-width: @screen-sm-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  // Mobile view - both list types
-  .tilebox {
-    height: @special-tiles-hight;
+// Special styling for IE11:
+@media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // Mobile view - list type
+  .tiles-y {
+    .tilebox {
+      height: @special-tiles-hight;
+    }
+
+    .tile-img {
+      flex: 0 0 auto;
+    }
+
+    .tile-content {
+      flex: 1;
+    }
   }
 }

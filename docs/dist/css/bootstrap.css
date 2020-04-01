@@ -9781,9 +9781,19 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     display: block;
   }
 }
-@media all and (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .tilebox {
+@media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tiles-y .tilebox {
     height: 367px;
+  }
+  .tiles-y .tile-img {
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .tiles-y .tile-content {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 .entries {
