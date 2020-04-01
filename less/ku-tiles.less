@@ -193,9 +193,14 @@ body:not(.FullWidthFrontpage) .double-column {
 // Special styling for IE11:
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Mobile view - list type
+  .tilebox {
+    height: @special-tiles-hight;
+  }
+
   .tiles-y {
+    .tile-link,
     .tilebox {
-      height: @special-tiles-hight;
+      flex-direction: column;
     }
 
     .tile-img {
