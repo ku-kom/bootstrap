@@ -212,3 +212,11 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
+// Special styling for IE11:
+@media all and (min-width: @screen-xs) and (min-width: @screen-xs-max)  and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tiles-x {
+    .tile-img {
+      flex: 0 0 70%;
+    }
+  }
+}
