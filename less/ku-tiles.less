@@ -213,10 +213,34 @@ body:not(.FullWidthFrontpage) .double-column {
   }
 }
 // Special styling for IE11:
-@media all and (min-width: @screen-xs) and (max-width: @screen-xs-max)  and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
     .tile-img {
       flex: 0 0 70%;
+    }
+  }
+}
+// IE Edge
+@media all and (min-width: @screen-xs-max) {
+  @supports (-ms-ime-align: auto) {
+    // Mobile view - list type
+    .tilebox {
+      height: @special-tiles-hight;
+    }
+
+    .tiles-y {
+      .tile-link,
+      .tilebox {
+        flex-direction: column;
+      }
+
+      .tile-img {
+        flex: 0 0 auto;
+      }
+
+      .tile-content {
+        flex: 1;
+      }
     }
   }
 }

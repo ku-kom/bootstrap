@@ -9810,6 +9810,30 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
             flex: 0 0 70%;
   }
 }
+@media all and (min-width: 767px) {
+  @supports (-ms-ime-align: auto) {
+    .tilebox {
+      height: 367px;
+    }
+    .tiles-y .tile-link,
+    .tiles-y .tilebox {
+              flex-direction: column;
+
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+    }
+    .tiles-y .tile-img {
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+    }
+    .tiles-y .tile-content {
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+  }
+}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;
