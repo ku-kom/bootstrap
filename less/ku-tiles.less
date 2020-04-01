@@ -220,13 +220,10 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-// IE Edge
+// Special styling for IE Edge
 @media all and (max-width: @screen-xs-max) {
   @supports (-ms-ime-align: auto) {
     // Mobile view - list type
-    .tilebox {
-      height: @special-tiles-hight;
-    }
 
     .tiles-y {
       .tile-link,
