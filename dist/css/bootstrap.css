@@ -9781,6 +9781,11 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     display: block;
   }
 }
+@media all and (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tilebox {
+    height: 367px;
+  }
+}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;
