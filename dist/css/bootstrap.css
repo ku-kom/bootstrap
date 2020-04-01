@@ -9810,7 +9810,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
             flex: 0 0 70%;
   }
 }
-@media all and (min-width: 767px) {
+@media all and (max-width: 767px) {
   @supports (-ms-ime-align: auto) {
     .tilebox {
       height: 367px;
