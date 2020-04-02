@@ -77,6 +77,7 @@ function shareURL(dest) {
 
   // Link to open accordion
   var $accordion = window.location.hash.indexOf('collapse-') >= 0;
+  console.log($accordion);
   if ($accordion) {
     var $acc = window.location.hash;
     $($acc).collapse('toggle');
