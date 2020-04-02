@@ -128,16 +128,18 @@ function shareURL(dest) {
     }, 500);
     return false;
   });
+
   $(window).on('load', function () {
+    // Open accordions based on the hash in the url
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
     if ($accordion) {
       var $acc = window.location.hash;
       $($acc).collapse('toggle');
-      console.log($acc);
 
       $('html, body').animate({
         scrollTop: $($acc).offset().top - 50
       }, 800);
     }
   });
+
 })(jQuery);
