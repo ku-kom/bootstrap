@@ -75,18 +75,6 @@ function shareURL(dest) {
     });
   }
 
-  // Link to open accordion
-  var $accordion = window.location.hash.indexOf('collapse-') >= 0;
-  if ($accordion) {
-    var $acc = window.location.hash;
-    $($acc).collapse('toggle');
-      console.log($acc);
-
-    $('html, body').animate({
-      scrollTop: $($acc).offset().top - 50
-    }, 800);
-  }
-
   function trackNews() {
     // Add tracking params to global menu news list
     var $li = $('ul.nyheder li:not(.no-track)');
@@ -140,5 +128,16 @@ function shareURL(dest) {
     }, 500);
     return false;
   });
+  $(window).on('load', function () {
+    var $accordion = window.location.hash.indexOf('collapse-') >= 0;
+    if ($accordion) {
+      var $acc = window.location.hash;
+      $($acc).collapse('toggle');
+      console.log($acc);
 
+      $('html, body').animate({
+        scrollTop: $($acc).offset().top - 50
+      }, 800);
+    }
+  });
 })(jQuery);
