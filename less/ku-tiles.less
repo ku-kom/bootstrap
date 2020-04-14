@@ -215,19 +215,19 @@ body:not(.FullWidthFrontpage) .double-column {
       flex: 0 0 70%;
     }
 
-    // .tile-content {
-    //   flex: 1;
-    // }
+    .tile-content {
+      flex: 1;
+    }
   }
 }
 // Special styling for IE11:
-// @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-//   .tiles-x {
-//     .tile-img {
-//       flex: 0 0 70%;
-//     }
-//   }
-// }
+@media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tiles-x {
+    .tile-img {
+      flex: 0 0 70%;
+    }
+  }
+}
 // Special styling for IE Edge
 @media all and (max-width: @screen-xs-max) {
   @supports (-ms-ime-align: auto) {
@@ -239,12 +239,12 @@ body:not(.FullWidthFrontpage) .double-column {
       }
 
       .tile-img {
-        flex: 0 0 70%;
+        flex: 0 0 auto;
       }
 
-      // .tile-content {
-      //   flex: 1;
-      // }
+      .tile-content {
+        flex: 1;
+      }
     }
   }
 }
