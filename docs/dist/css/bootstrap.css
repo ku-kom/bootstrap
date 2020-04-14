@@ -9695,7 +9695,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
   .tiles-y .tile-img {
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 5px;
 
     -webkit-flex: 0 0 185px;
         -ms-flex: 0 0 185px;
