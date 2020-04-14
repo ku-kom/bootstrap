@@ -9818,6 +9818,18 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
             flex: 1 1 0;
   }
 }
+@media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tiles-x .tile-img {
+    -webkit-flex: 1 0 20%;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
+  }
+  .tiles-x .tile-content {
+    -webkit-flex: 1 0 0;
+        -ms-flex: 1 0 0;
+            flex: 1 0 0;
+  }
+}
 @media all and (max-width: 767px) {
   @supports (-ms-ime-align: auto) {
     .tiles-y .tile-link,
