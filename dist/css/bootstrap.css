@@ -9590,6 +9590,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #757575;
   text-align: right;
 }
+.tiles-x {
+  padding-top: 15px;
+}
 .tiles-x .tilebox {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9669,15 +9672,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  padding-bottom: 15px;
+  padding: 15px 0;
           flex-direction: column;
   border-bottom: 1px solid #ccc;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-}
-.tiles-y .tilebox + .tilebox {
-  padding-top: 15px;
 }
 .tiles-y .tile-img {
   margin-bottom: 10px;
