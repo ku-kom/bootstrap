@@ -9846,7 +9846,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
           -ms-flex-direction: column;
     }
     .tiles-y .tile-img {
-      overflow: auto;
+      overflow: hidden;
 
       -webkit-flex: 0 0 60%;
           -ms-flex: 0 0 60%;
