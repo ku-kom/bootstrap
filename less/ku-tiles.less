@@ -203,7 +203,7 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Mobile view - list type
   .tilebox {
-    height: @special-tiles-hight;
+    height: @gridbox1;
   }
 
   .tiles-y {
@@ -213,7 +213,7 @@ body:not(.FullWidthFrontpage) .double-column {
     }
 
     .tile-img {
-      flex: 0 0 auto;
+      flex: 0 0 60%;
       overflow: hidden;
     }
 
@@ -241,11 +241,12 @@ body:not(.FullWidthFrontpage) .double-column {
       }
 
       .tile-img {
-        flex: 0 0 auto;
+        flex: 0 0 60%;
+        overflow: auto;
       }
 
       .tile-content {
-        flex: 1;
+        flex: 1 1 auto;
       }
     }
   }

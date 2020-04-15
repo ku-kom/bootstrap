@@ -9807,7 +9807,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tilebox {
-    height: 367px;
+    height: 289px;
   }
   .tiles-y .tile-link,
   .tiles-y .tilebox {
@@ -9819,9 +9819,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .tiles-y .tile-img {
     overflow: hidden;
 
-    -webkit-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
   }
   .tiles-y .tile-content {
     -webkit-flex: 1 1 auto;
@@ -9846,14 +9846,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
           -ms-flex-direction: column;
     }
     .tiles-y .tile-img {
-      -webkit-flex: 0 0 auto;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto;
+      overflow: auto;
+
+      -webkit-flex: 0 0 60%;
+          -ms-flex: 0 0 60%;
+              flex: 0 0 60%;
     }
     .tiles-y .tile-content {
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
     }
   }
 }
