@@ -42,8 +42,7 @@
   height: 100%;
   color: @text-color;
 
-  &:hover,
-  &:visited {
+  &:hover {
     text-decoration: none;
     color: inherit;
   }
@@ -199,8 +198,8 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-@media all and (max-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  // Special styling for IE11:
+// Special styling for IE11:
+@media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Mobile view - list type
   .tilebox {
     height: @special-tiles-hight;
@@ -217,26 +216,7 @@ body:not(.FullWidthFrontpage) .double-column {
     }
 
     .tile-content {
-      flex: 1 1 auto;
-    }
-  }
-}
-@media all and (min-width: (@screen-xs + 1)) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  // Special styling for IE11:
-  // Mobile view - list type
-  .tiles-y {
-    .tilebox {
-      height: @special-tiles-hight;
-    }
-
-    .tile-link,
-    .tilebox {
-      flex-direction: column;
-    }
-
-    .tile-img {
-      flex: 0 0 60%;
-      overflow: hidden;
+      flex: 1;
     }
   }
 }
@@ -244,11 +224,7 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
     .tile-img {
-      flex: 1 0 20%;
-    }
-
-    .tile-content {
-      flex: 1 0 0;
+      flex: 0 0 70%;
     }
   }
 }
@@ -263,11 +239,11 @@ body:not(.FullWidthFrontpage) .double-column {
       }
 
       .tile-img {
-        flex: 1;
+        flex: 0 0 auto;
       }
 
       .tile-content {
-        flex: 1 1 0;
+        flex: 1;
       }
     }
   }
