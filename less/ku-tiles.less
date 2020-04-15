@@ -42,7 +42,8 @@
   height: 100%;
   color: @text-color;
 
-  &:hover, &:visited {
+  &:hover,
+  &:visited {
     text-decoration: none;
     color: inherit;
   }
@@ -198,7 +199,6 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-
 @media all and (max-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Special styling for IE11:
   // Mobile view - list type
@@ -225,8 +225,18 @@ body:not(.FullWidthFrontpage) .double-column {
   // Special styling for IE11:
   // Mobile view - list type
   .tiles-y {
+    .tilebox {
+      height: @special-tiles-hight;
+    }
+
+    .tile-link,
+    .tilebox {
+      flex-direction: column;
+    }
+
     .tile-img {
       flex: 0 0 60%;
+      overflow: hidden;
     }
   }
 }
@@ -234,10 +244,11 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
     .tile-img {
-      flex: 1 0 20%;
+      flex: 0 0 60%;
     }
+
     .tile-content {
-      flex: 1 0 0%;
+      flex: 1 1 auto;
     }
   }
 }
@@ -252,11 +263,11 @@ body:not(.FullWidthFrontpage) .double-column {
       }
 
       .tile-img {
-        flex: 1
+        flex: 1;
       }
 
       .tile-content {
-        flex: 1 1 0px;
+        flex: 1 1 0;
       }
     }
   }
