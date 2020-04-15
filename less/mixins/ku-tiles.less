@@ -57,6 +57,9 @@
   // List format
   .tile-link {
     flex-direction: row-reverse;
+    @media all and (max-width: @screen-xs-max) {
+      flex-direction: column;
+    }
 
     &:hover {
       .tile-header {

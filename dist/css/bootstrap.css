@@ -9555,7 +9555,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #252525;
   text-decoration: none!important;
 }
-.tile-link:hover {
+.tile-link:hover,
+.tile-link:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -9664,6 +9665,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
+}
+@media all and (max-width: 767px) {
+  .tiles-y .tile-link {
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+  }
 }
 .tiles-y .tile-link:hover .tile-header {
   text-decoration: underline;
