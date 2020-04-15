@@ -6,7 +6,6 @@
   // Wrap in class .tiles-plugin when used with Isotope plugin
   &.tiles-x {
     .tilebox {
-      opacity: 0;
       margin-bottom: 23px;
     }
     @media (max-width: @screen-xs-max) {
@@ -23,13 +22,6 @@
         height: @gridbox1;
         width: @default-col-width;
       }
-    }
-  }
-
-  &.is-showing {
-    .tilebox {
-      // reveal when ready
-      opacity: 1;
     }
   }
 }
@@ -50,7 +42,8 @@
   height: 100%;
   color: @text-color;
 
-  &:hover {
+  &:hover,
+  &:visited {
     text-decoration: none;
     color: inherit;
   }
@@ -63,22 +56,38 @@
   margin-top: 0;
 }
 
-.header-small {
-  font-weight: 700;
-  color: @gray-light;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  margin-bottom: 5px;
+.tile-cat {
+  display: flex;
+  justify-content: space-between;
+
+  .header-small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    color: @gray-light;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 5px;
+  }
 
   .date {
-    float: right;
+    font-weight: 700;
+    color: @gray-light;
+    text-align: right;
     padding-left: 5px;
-    margin-right: 5px;
   }
 }
 
 .tiles-x {
   .tiles-x-layout();
+  padding-top: 15px;
+
+  .tile-cat {
+    .date {
+      flex-basis: 52%;
+    }
+  }
 
   &:not(.tiles-plugin) {
     .tilebox {
@@ -194,7 +203,7 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   // Mobile view - list type
   .tilebox {
-    height: @special-tiles-hight;
+    height: @gridbox1;
   }
 
   .tiles-y {
@@ -204,11 +213,12 @@ body:not(.FullWidthFrontpage) .double-column {
     }
 
     .tile-img {
-      flex: 0 0 auto;
+      flex: 0 0 60%;
+      overflow: hidden;
     }
 
     .tile-content {
-      flex: 1;
+      flex: 1 1 auto;
     }
   }
 }
@@ -224,7 +234,6 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (max-width: @screen-xs-max) {
   @supports (-ms-ime-align: auto) {
     // Mobile view - list type
-
     .tiles-y {
       .tile-link,
       .tilebox {
@@ -232,11 +241,12 @@ body:not(.FullWidthFrontpage) .double-column {
       }
 
       .tile-img {
-        flex: 0 0 auto;
+        flex: 0 0 60%;
+        overflow: hidden;
       }
 
       .tile-content {
-        flex: 1;
+        flex: 1 1 auto;
       }
     }
   }
