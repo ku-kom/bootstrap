@@ -198,8 +198,9 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-// Special styling for IE11:
-@media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (max-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // Special styling for IE11:
   // Mobile view - list type
   .tilebox {
     height: @special-tiles-hight;
@@ -217,6 +218,15 @@ body:not(.FullWidthFrontpage) .double-column {
 
     .tile-content {
       flex: 1 1 auto;
+    }
+  }
+}
+@media all and (min-width: (@screen-xs + 1)) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // Special styling for IE11:
+  // Mobile view - list type
+  .tiles-y {
+    .tile-img {
+      flex: 0 0 60%;
     }
   }
 }
