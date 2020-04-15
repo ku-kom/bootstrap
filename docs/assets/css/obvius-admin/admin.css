@@ -5525,6 +5525,31 @@ audio, video {
   margin-bottom: 0;
 }
 
+/* News list design */
+.imgradio-field label {
+  text-align: center;
+}
+
+.hidden-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.hidden-radio + img {
+    cursor: pointer;
+}
+
+.hidden-radio:checked + img {
+  outline: 2px solid #f00;
+}
+
+.imgradio {
+  width: 300px;
+}
+
+
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
