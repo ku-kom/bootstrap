@@ -9652,11 +9652,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     border-bottom: solid 20px rgba(0, 0, 0, 0);
   }
 }
-.tiles-x .tile-cat .date {
-  -webkit-flex-basis: 52%;
-  -ms-flex-preferred-size: 52%;
-          flex-basis: 52%;
-}
 .tiles-x:not(.tiles-plugin) .tilebox {
   height: 100%;
 }
