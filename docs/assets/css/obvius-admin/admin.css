@@ -5555,6 +5555,9 @@ audio, video {
   width: 235px;
 }
 
+#gridcontent-dialog-edit-newsbox h2 {
+  margin: 0;
+}
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
