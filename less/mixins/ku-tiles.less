@@ -1,6 +1,7 @@
 /*
 * KU tiles mixin
 */
+
 .tiles-x-layout() {
   // Tiles format
   .tilebox {
@@ -35,6 +36,7 @@
   .tile-img {
     overflow: hidden;
     flex: 0 0 auto;
+    display: flex;
 
     img {
       transition: transform 0.2s ease-out;
@@ -44,7 +46,7 @@
   .tile-content {
     padding: 10px;
     position: relative;
-    flex: 1;
+    flex: 1 0 auto;
     overflow: hidden;
     @media all and (min-width: @screen-sm) {
       // This prevents text from overflowing the bottom of the tile in an ugly way:
@@ -79,7 +81,6 @@
     // flex: none;
     margin-bottom: 10px;
   }
-
   @media all and (max-width: @screen-xs-max) {
     .tile-body {
       display: none;
