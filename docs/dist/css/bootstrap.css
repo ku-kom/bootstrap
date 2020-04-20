@@ -9647,9 +9647,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display:         flex;
   overflow: hidden;
 
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 .tiles-x .tile-img img {
   transition: -webkit-transform .2s ease-out;
@@ -9663,14 +9663,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-}
-@media all and (min-width: 768px) {
-  .tiles-x .tile-content {
-    border-bottom: solid 20px rgba(0, 0, 0, 0);
-  }
-}
-.tiles-x:not(.tiles-plugin) .tilebox {
-  height: 100%;
 }
 .tiles-y .tile-link {
           flex-direction: row-reverse;

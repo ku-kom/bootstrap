@@ -35,7 +35,7 @@
 
   .tile-img {
     overflow: hidden;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     display: flex;
 
     img {
@@ -48,10 +48,10 @@
     position: relative;
     flex: 1 0 auto;
     overflow: hidden;
-    @media all and (min-width: @screen-sm) {
+    //@media all and (min-width: @screen-sm) {
       // This prevents text from overflowing the bottom of the tile in an ugly way:
-      border-bottom: solid 20px rgba(@gray-base, 0);
-    }
+      //border-bottom: solid 20px rgba(@gray-base, 0);
+    //}
   }
 }
 
