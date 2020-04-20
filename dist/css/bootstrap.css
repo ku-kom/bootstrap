@@ -9828,9 +9828,18 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 @media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x .tile-img {
-    -webkit-flex: 0 0 70%;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
+    position: relative;
+  }
+  .tiles-x .tile-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-interpolation-mode: bicubic;
+    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+            transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
 }
 @media all and (max-width: 767px) {
