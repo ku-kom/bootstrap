@@ -9826,6 +9826,11 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
             flex: 1 1 auto;
   }
 }
+@media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tiles-x .tilebox {
+    height: 367px;
+  }
+}
 @media all and (max-width: 767px) {
   @supports (-ms-ime-align: auto) {
     .tiles-y .tile-link,
