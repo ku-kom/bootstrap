@@ -5549,6 +5549,9 @@ audio, video {
   width: 300px;
 }
 
+#gridcontent-dialog-edit-newsbox .preview-output {
+  width: 235px;
+}
 
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
