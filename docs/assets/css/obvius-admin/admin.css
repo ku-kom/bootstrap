@@ -113,6 +113,7 @@ Hide/show
 }
 
 .obvius-common {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   margin: 0 10px 0 260px;
   min-height: 440px;
   /* Chosen somewhat arbitrarily; short pages should look nice */
@@ -5537,11 +5538,11 @@ audio, video {
   height: 0;
 }
 
-.hidden-radio + img {
-    cursor: pointer;
+.hidden-radio+img {
+  cursor: pointer;
 }
 
-.hidden-radio:checked + img {
+.hidden-radio:checked+img {
   outline: 2px solid #f00;
 }
 
@@ -5549,7 +5550,8 @@ audio, video {
   width: 300px;
 }
 
-#gridcontent-dialog-edit-newsbox .preview-output {
+#gridcontent-dialog-edit-newsbox .tilebox {
+  height: 289px;
   width: 235px;
 }
 
