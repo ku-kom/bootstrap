@@ -9539,10 +9539,22 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     height: 289px;
   }
 }
+@media all and (min-width: 768px) {
+  .newsbox .tiles-x .tilebox {
+    width: 235px;
+    height: 289px;
+  }
+}
 .tile-img img {
+  display: block;
   float: none;
+  max-width: 100%;
+  height: auto;
 
   object-fit: cover;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
 }
 .tile-link {
   position: relative;
@@ -9630,11 +9642,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: none;
 }
 .tiles-x .tile-img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   overflow: hidden;
 
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 .tiles-x .tile-img img {
   transition: -webkit-transform .2s ease-out;
@@ -9645,17 +9660,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   padding: 10px;
   overflow: hidden;
 
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-@media all and (min-width: 768px) {
-  .tiles-x .tile-content {
-    border-bottom: solid 20px rgba(0, 0, 0, 0);
-  }
-}
-.tiles-x:not(.tiles-plugin) .tilebox {
-  height: 100%;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 .tiles-y .tile-link {
           flex-direction: row-reverse;
@@ -9803,15 +9810,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .tilebox {
+  .tiles-x .tilebox {
     height: 289px;
-  }
-  .tiles-y .tile-link,
-  .tiles-y .tilebox {
-            flex-direction: column;
-
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
   }
   .tiles-y .tile-img {
     overflow: hidden;
@@ -9827,10 +9827,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .tiles-x .tile-img {
-    -webkit-flex: 0 0 70%;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
+  .tiles-x .tilebox {
+    height: 367px;
   }
 }
 @media all and (max-width: 767px) {

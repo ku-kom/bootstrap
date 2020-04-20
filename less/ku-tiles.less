@@ -25,11 +25,24 @@
     }
   }
 }
+@media all and (min-width: @screen-sm) {
+  .newsbox {
+    // Inserted as standalone grid element
+    .tiles-x {
+      .tilebox {
+        height: @gridbox1;
+        width: @default-col-width;
+      }
+    }
+  }
+}
 
 .tile-img {
   img {
     object-fit: cover;
     float: none;
+    flex: none;
+    .img-responsive;
   }
 }
 
@@ -84,12 +97,6 @@
 .tiles-x {
   .tiles-x-layout();
   padding-top: 15px;
-
-  &:not(.tiles-plugin) {
-    .tilebox {
-      height: 100%;
-    }
-  }
 }
 
 .tiles-y {
@@ -197,16 +204,14 @@ body:not(.FullWidthFrontpage) .double-column {
 }
 // Special styling for IE11:
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  // Mobile view - list type
-  .tilebox {
-    height: @gridbox1;
+  .tiles-x {
+    .tilebox {
+      height: @gridbox1;
+    }
   }
 
   .tiles-y {
-    .tile-link,
-    .tilebox {
-      flex-direction: column;
-    }
+    // Mobile view - list type
 
     .tile-img {
       flex: 0 0 60%;
@@ -221,8 +226,8 @@ body:not(.FullWidthFrontpage) .double-column {
 // Special styling for IE11:
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
-    .tile-img {
-      flex: 0 0 70%;
+    .tilebox {
+      height: @special-tiles-hight;
     }
   }
 }
