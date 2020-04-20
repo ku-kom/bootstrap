@@ -204,16 +204,14 @@ body:not(.FullWidthFrontpage) .double-column {
 }
 // Special styling for IE11:
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  // Mobile view - list type
-  .tilebox {
-    height: @gridbox1;
+  .tiles-x {
+    .tilebox {
+      height: @gridbox1;
+    }
   }
 
   .tiles-y {
-    .tile-link,
-    .tilebox {
-      flex-direction: column;
-    }
+    // Mobile view - list type
 
     .tile-img {
       flex: 0 0 60%;

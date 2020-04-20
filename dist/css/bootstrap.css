@@ -9810,15 +9810,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .tilebox {
+  .tiles-x .tilebox {
     height: 289px;
-  }
-  .tiles-y .tile-link,
-  .tiles-y .tilebox {
-            flex-direction: column;
-
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
   }
   .tiles-y .tile-img {
     overflow: hidden;
