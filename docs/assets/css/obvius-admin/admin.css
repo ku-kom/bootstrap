@@ -113,6 +113,7 @@ Hide/show
 }
 
 .obvius-common {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   margin: 0 10px 0 260px;
   min-height: 440px;
   /* Chosen somewhat arbitrarily; short pages should look nice */
@@ -5537,11 +5538,11 @@ audio, video {
   height: 0;
 }
 
-.hidden-radio + img {
-    cursor: pointer;
+.hidden-radio+img {
+  cursor: pointer;
 }
 
-.hidden-radio:checked + img {
+.hidden-radio:checked+img {
   outline: 2px solid #f00;
 }
 
@@ -5549,7 +5550,14 @@ audio, video {
   width: 300px;
 }
 
+#gridcontent-dialog-edit-newsbox .tilebox {
+  height: 289px;
+  width: 235px;
+}
 
+#gridcontent-dialog-edit-newsbox h2 {
+  margin: 0;
+}
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;

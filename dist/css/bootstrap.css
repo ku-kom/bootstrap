@@ -9525,6 +9525,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-align: unset;
           align-items: unset;
 }
+.tiles-plugin {
+  padding-top: 15px;
+}
 .tiles-plugin.tiles-x .tilebox {
   margin-bottom: 23px;
 }
@@ -9604,9 +9607,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #757575;
   text-align: right;
   white-space: nowrap;
-}
-.tiles-x {
-  padding-top: 15px;
 }
 .tiles-x .tilebox {
   display: -webkit-flex;
