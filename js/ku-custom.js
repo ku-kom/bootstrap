@@ -140,19 +140,6 @@ function shareURL(dest) {
         scrollTop: $($acc).offset().top - 50
       }, 800);
     }
-
-    // Function to scroll to open accordion in page.
-    // Use as <a href="#collapse-xxx" onclick="linkToOpenAccordion(this);return false;">
-    function linkToOpenAccordion(a) {
-      var $acc = a.getAttribute('href');
-      if ($acc) {
-        $($acc).collapse('show');
-
-        $('html, body').animate({
-          scrollTop: $($acc).offset().top - 50
-        }, 800);
-      }
-    }
   });
 
 })(jQuery);
