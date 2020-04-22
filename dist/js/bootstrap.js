@@ -1973,19 +1973,6 @@ function shareURL(dest) {
     return false;
   });
 
-  // Function to scroll to open accordion in page.
-  // Use as <a href="#collapse-xxx" onclick="linkToOpenAccordion(this);return false;">
-  function linkToOpenAccordion(a) {
-    var $acc = a.getAttribute('href');
-    if ($acc) {
-      $($acc).collapse('show');
-
-      $('html, body').animate({
-        scrollTop: $($acc).offset().top - 50
-      }, 800);
-    }
-  }
-
   $(window).on('load', function () {
     // Open accordions based on the hash in the url
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
@@ -1996,6 +1983,19 @@ function shareURL(dest) {
       $('html, body').animate({
         scrollTop: $($acc).offset().top - 50
       }, 800);
+    }
+
+    // Function to scroll to open accordion in page.
+    // Use as <a href="#collapse-xxx" onclick="linkToOpenAccordion(this);return false;">
+    function linkToOpenAccordion(a) {
+      var $acc = a.getAttribute('href');
+      if ($acc) {
+        $($acc).collapse('show');
+
+        $('html, body').animate({
+          scrollTop: $($acc).offset().top - 50
+        }, 800);
+      }
     }
   });
 
