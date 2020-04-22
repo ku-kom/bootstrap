@@ -898,6 +898,11 @@ p.obvius-warning {
   width: 40em;
 }
 
+#picture_size_errors .allow-break {
+  padding: 10px;
+  word-break: break-word;
+}
+
 /* The Newsbox document type is for admin only, so it gets to use the
    'obvius-' prefix on its classes: */
 form.obvius-manual-placement div table {
@@ -5558,6 +5563,7 @@ audio, video {
 #gridcontent-dialog-edit-newsbox h2 {
   margin: 0;
 }
+
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
