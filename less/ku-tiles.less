@@ -192,7 +192,17 @@ body:not(.FullWidthFrontpage) .double-column {
   }
 }
 
-
+@media all and (min-width: @screen-sm) {
+  .newsbox {
+    // Inserted as standalone grid element
+    .tiles-x {
+      .tilebox {
+        height: @gridbox1;
+        // width: @default-col-width;
+      }
+    }
+  }
+}
 
 
 // Special styling for IE11:
