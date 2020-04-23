@@ -5560,7 +5560,7 @@ audio, video {
   width: 235px;
 }
 
-.tiles-x .tilebox {
+.gcboxitem .tiles-x:not(.tiles-plugin) .tilebox {
   border: 1px solid #ddd;
 }
 
