@@ -5560,6 +5560,10 @@ audio, video {
   width: 235px;
 }
 
+.tiles-x .tilebox {
+  border: 1px solid #ddd;
+}
+
 #gridcontent-dialog-edit-newsbox h2 {
   margin: 0;
 }
