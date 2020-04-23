@@ -9542,12 +9542,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     height: 289px;
   }
 }
-@media all and (min-width: 768px) {
-  .newsbox .tiles-x .tilebox {
-    width: 235px;
-    height: 289px;
-  }
-}
 .tile-img img {
   display: block;
   float: none;
