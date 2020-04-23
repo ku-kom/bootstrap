@@ -9807,6 +9807,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .newsbox .tiles-x .tilebox {
     height: 289px;
   }
+  .double-column .newsbox .tiles-x .tilebox {
+    height: 367px;
+  }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x .tilebox {
