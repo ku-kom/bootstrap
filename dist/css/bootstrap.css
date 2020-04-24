@@ -9865,6 +9865,11 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     }
   }
 }
+@supports (-ms-ime-align: auto) {
+  .tile-x .tile-img img {
+    width: 100%;
+  }
+}
 .entries {
   display: -webkit-flex;
   display: -ms-flexbox;
