@@ -5579,7 +5579,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   width: 23em;
   z-index: 100;
 }
-/*
+
 .drawer {
   position: relative;
   overflow-x: hidden;
@@ -5660,8 +5660,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 #updatealerts .drawer-content {
   min-height: 13em;
 }
-
-*/
 
 #alert-edit-form {
   text-align: left;
