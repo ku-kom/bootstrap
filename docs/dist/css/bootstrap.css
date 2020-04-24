@@ -9831,9 +9831,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
   }
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin),
-  .double-column .tiles-x:not(.tiles-plugin),
-  .single-column .tiles-x:not(.tiles-plugin) {
+  .FullWidthFrontpage .triple-column .tiles-y:not(.tiles-plugin),
+  .double-column .tiles-y:not(.tiles-plugin),
+  .single-column .tiles-y:not(.tiles-plugin) {
     height: 367px;
   }
 }
