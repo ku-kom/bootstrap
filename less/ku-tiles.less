@@ -34,6 +34,7 @@
     float: none;
     flex: none;
     .img-responsive;
+    width: 100%; // This is for Edge
   }
 }
 
@@ -269,15 +270,6 @@ body:not(.FullWidthFrontpage) .double-column {
 
       .tile-content {
         flex: 1 1 auto;
-      }
-    }
-  }
-}
-@supports (-ms-ime-align: auto) {
-  .tile-x {
-    .tile-img {
-      img {
-        width: 100%;
       }
     }
   }

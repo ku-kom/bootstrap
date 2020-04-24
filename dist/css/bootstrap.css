@@ -9545,6 +9545,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tile-img img {
   display: block;
   float: none;
+  width: 100%;
   max-width: 100%;
   height: auto;
 
@@ -9863,11 +9864,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
     }
-  }
-}
-@supports (-ms-ime-align: auto) {
-  .tile-x .tile-img img {
-    width: 100%;
   }
 }
 .entries {
