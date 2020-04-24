@@ -134,7 +134,7 @@ function shareURL(dest) {
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
     if ($accordion) {
       var $acc = window.location.hash;
-      $($acc).collapse('toggle');
+      $($acc).collapse('show');
 
       $('html, body').animate({
         scrollTop: $($acc).offset().top - 50

@@ -4,7 +4,8 @@
 
 .tiles-plugin {
   // Wrap in class .tiles-plugin when used with Isotope plugin
-    padding-top: 15px;
+  padding-top: 15px;
+
   &.tiles-x {
     .tilebox {
       margin-bottom: 23px;
@@ -19,17 +20,6 @@
   }
   @media all and (min-width: @screen-sm) {
     &.tiles-x {
-      .tilebox {
-        height: @gridbox1;
-        width: @default-col-width;
-      }
-    }
-  }
-}
-@media all and (min-width: @screen-sm) {
-  .newsbox {
-    // Inserted as standalone grid element
-    .tiles-x {
       .tilebox {
         height: @gridbox1;
         width: @default-col-width;
@@ -202,6 +192,25 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
+@media all and (min-width: @screen-sm) {
+  .newsbox {
+    // Inserted as standalone grid element
+    .tiles-x {
+      .tilebox {
+        height: @gridbox1;
+        // width: @default-col-width;
+      }
+    }
+
+    .double-column & {
+      .tiles-x {
+        .tilebox {
+          height: @special-tiles-hight;
+        }
+      }
+    }
+  }
+}
 // Special styling for IE11:
 @media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
@@ -212,7 +221,6 @@ body:not(.FullWidthFrontpage) .double-column {
 
   .tiles-y {
     // Mobile view - list type
-
     .tile-img {
       flex: 0 0 60%;
       overflow: hidden;

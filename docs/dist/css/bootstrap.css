@@ -9542,12 +9542,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     height: 289px;
   }
 }
-@media all and (min-width: 768px) {
-  .newsbox .tiles-x .tilebox {
-    width: 235px;
-    height: 289px;
-  }
-}
 .tile-img img {
   display: block;
   float: none;
@@ -9807,6 +9801,14 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .double-column .tile-body,
   .single-column .tiles-x:not(.tiles-plugin) .tile-body {
     display: block;
+  }
+}
+@media all and (min-width: 768px) {
+  .newsbox .tiles-x .tilebox {
+    height: 289px;
+  }
+  .double-column .newsbox .tiles-x .tilebox {
+    height: 367px;
   }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
