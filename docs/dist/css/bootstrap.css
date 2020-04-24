@@ -9822,14 +9822,14 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .tiles-y .tile-img {
     overflow: hidden;
 
-    -webkit-flex: 0 0 60%;
-        -ms-flex: 0 0 60%;
-            flex: 0 0 60%;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
   .tiles-y .tile-content {
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
 }
 @media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
