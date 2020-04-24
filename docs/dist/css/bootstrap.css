@@ -9545,7 +9545,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tile-img img {
   display: block;
   float: none;
-  width: 100%;
   max-width: 100%;
   height: auto;
 
@@ -9648,6 +9647,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
           flex: 0 1 auto;
 }
 .tiles-x .tile-img img {
+  width: 100%;
   transition: -webkit-transform .2s ease-out;
   transition:         transform .2s ease-out;
 }
