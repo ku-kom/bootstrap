@@ -9816,6 +9816,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .tiles-x .tilebox {
     height: 289px;
   }
+  .tiles-y .tilebox {
+    height: 289px;
+  }
   .tiles-y .tile-img {
     overflow: hidden;
 
