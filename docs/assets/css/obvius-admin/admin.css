@@ -5573,7 +5573,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
 
-#right_drawers {
+/* #right_drawers {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5591,8 +5591,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   position: relative;
   width: 23em;
   left: 0;
-  /*float: right;*/
-  /*position: relative;*/
   overflow: hidden;
 }
 
@@ -5618,8 +5616,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   width: auto;
   padding: 1em;
   line-height: 1;
-  /*left: -4.7em;*/
-  /*top: 1.6em;*/
   top: 0;
   left: 0;
   text-align: center;
@@ -5688,4 +5684,4 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #alert-edit-form .hint td.desc {
   width: 80%;
-}
+} */
