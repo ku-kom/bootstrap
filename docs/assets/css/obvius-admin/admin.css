@@ -5554,7 +5554,13 @@ audio, video {
 .imgradio {
   width: 300px;
 }
-
+#gridcontent-dialog-edit-newsbox {
+  width: 750px;
+}
+#gridcontent-dialog-edit-newsbox .dialogcontent{
+  display: flex;
+  flex-direction: row;
+}
 #gridcontent-dialog-edit-newsbox .tilebox {
   height: 289px;
   width: 235px;
