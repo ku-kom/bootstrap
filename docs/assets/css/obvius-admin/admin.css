@@ -5579,6 +5579,10 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   z-index: 100;
 }
 
+#updateAlerts {
+  height: 169px;
+}
+
 .drawer {
   position: relative;
   overflow-x: hidden;
@@ -5586,6 +5590,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 .drawer-wrapper {
+  height: 100%;
   transition: left 0.5s;
   position: relative;
   width: 23em;
@@ -5600,6 +5605,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 .drawer-content {
   margin-left: 3em;
   width: 20em;
+  height: 100%;
   overflow-x: hidden;
   min-height: 6em;
   background-color: #F2F2F2;
@@ -5637,6 +5643,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   margin: 0 0 1em;
   padding: 0.5em 1em;
   font-weight: normal;
+  font-size: 13px;
 }
 
 .drawer p {
