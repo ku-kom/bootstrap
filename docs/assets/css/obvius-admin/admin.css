@@ -5573,13 +5573,13 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
 
-/* #right_drawers {
+ #right_drawers {
   position: absolute;
   right: 0;
   width: 23em;
   z-index: 100;
 }
-
+/*
 .drawer {
   position: relative;
   overflow-x: hidden;
@@ -5661,6 +5661,8 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   min-height: 13em;
 }
 
+*/
+
 #alert-edit-form {
   text-align: left;
 }
@@ -5684,4 +5686,4 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #alert-edit-form .hint td.desc {
   width: 80%;
-} */
+}
