@@ -4590,7 +4590,7 @@ div.calendarpicker {
 }
 
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -4616,7 +4616,6 @@ div.calendarpicker {
 #webstedinfo .toggle {
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  /* IE 9 */
   -webkit-transform: rotate(-90deg);
   font-size: 16px;
   position: absolute;
@@ -4665,7 +4664,7 @@ div.calendarpicker {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 
 table.subsites2 {
   border: 0;
