@@ -9579,6 +9579,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .tile-cat .header-small {
   margin-bottom: 5px;
@@ -9627,11 +9631,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-}
-.tiles-x .tile-cat {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .tiles-x .tile-body {
   display: none;
