@@ -9681,13 +9681,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  width: 100%;
   padding: 15px 0;
           flex-direction: column;
   border-bottom: 1px solid #ccc;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
+}
+.tiles-y .tilebox.no-img .tile-content {
+  width: 100%;
 }
 .tiles-y .tile-img {
   margin-bottom: 10px;
