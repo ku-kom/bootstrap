@@ -5421,7 +5421,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li {
     display: block;
     width: 100%;
-    min-width: 250px;
+    min-width: 480px;
     padding: 5px;
     overflow: auto;
     white-space: normal;
@@ -5439,15 +5439,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li img {
     display: block;
     float: left;
-    max-width: 100%;
-    height: auto;
-    padding: 2px;
     margin: 0 8px 5px 2px;
-    line-height: 1.5;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    transition: all .2s ease-in-out;
   }
   .dropdown-menu.nyheder > li + li {
     border-top: 1px dotted #ccc;
