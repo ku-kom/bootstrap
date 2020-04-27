@@ -5421,7 +5421,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li {
     display: block;
     width: 100%;
-    min-width: 365px;
+    min-width: 350px;
     padding: 5px 10px 5px 7px;
     overflow: hidden;
     white-space: normal;
@@ -5444,7 +5444,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li + li {
     border-top: 1px dotted #ccc;
   }
-  .dropdown-menu.nyheder > li .no-track {
+  .dropdown-menu.nyheder > li.no-track {
     padding-left: 20px;
   }
   .dropdown-menu.nyheder > li:last-child {
