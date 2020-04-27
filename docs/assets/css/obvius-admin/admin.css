@@ -4665,7 +4665,6 @@ div.calendarpicker {
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
 } */
-
 table.subsites2 {
   border: 0;
   width: 100%;
@@ -5517,6 +5516,15 @@ audio, video {
   margin-bottom: 0;
 }
 
+.maxlength-warning-message {
+  display: inline-block;
+  background-color: #ffdec0;
+  border-color: #dbbea3;
+  color: #6d501d;
+  padding: 10px;
+  border-radius: 2px;
+}
+
 /* News list design */
 .imgradio-field label {
   text-align: center;
@@ -5572,7 +5580,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
 
- #right_drawers {
+#right_drawers {
   position: absolute;
   right: 0;
   width: 23em;
