@@ -2,11 +2,3 @@
   padding-right: 1px;
   padding-left: 5px;
 }
-
-.tile-cat {
-  justify-content: flex-start;
-}
-
-.tile-cat .date {
-  padding-left: 0!important;
-}
