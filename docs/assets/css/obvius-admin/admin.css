@@ -5519,8 +5519,8 @@ audio, video {
 .maxlength-warning-message {
   display: inline-block;
   background-color: #ffdec0;
-  border-color: #dbbea3;
-  color: #6d501d;
+  border: 1px solid #dbbea3;
+  color: #6d501d!important;
   padding: 10px;
   border-radius: 2px;
 }
