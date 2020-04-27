@@ -5259,18 +5259,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse,
 .container > .navbar-header,
-.container-fluid > .navbar-header {
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
   margin-right: -13px;
   margin-left: -13px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse,
   .container > .navbar-header,
-  .container-fluid > .navbar-header {
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5371,8 +5371,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5421,7 +5421,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li {
     display: block;
     width: 100%;
-    min-width: 385px;
+    min-width: 365px;
     padding: 5px 10px 5px 7px;
     overflow: hidden;
     white-space: normal;
@@ -5443,6 +5443,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .dropdown-menu.nyheder > li + li {
     border-top: 1px dotted #ccc;
+  }
+  .dropdown-menu.nyheder > li .no-track {
+    padding-left: 20px;
   }
   .dropdown-menu.nyheder > li:last-child {
     border-top: 0;
