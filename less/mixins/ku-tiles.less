@@ -1,7 +1,6 @@
 /*
 * KU tiles mixin
 */
-
 .tiles-x-layout() {
   // Tiles format
   .tilebox {
@@ -50,8 +49,8 @@
     flex: 1 0 auto;
     overflow: hidden;
     //@media all and (min-width: @screen-sm) {
-      // This prevents text from overflowing the bottom of the tile in an ugly way:
-      //border-bottom: solid 20px rgba(@gray-base, 0);
+    // This prevents text from overflowing the bottom of the tile in an ugly way:
+    //border-bottom: solid 20px rgba(@gray-base, 0);
     //}
   }
 }
@@ -77,11 +76,19 @@
     flex-direction: column;
     border-bottom: 1px solid @gray;
 
-    // &.no-img {
-      .tile-content {
-        width: 100%;
+    .tile-content {
+      width: 100%;
+    }
+  }
+
+  .tile-header {
+    &:empty {
+      display: none;
+
+      & + .date {
+        padding-left: 0;
       }
-    // }
+    }
   }
 
   .tile-img {

@@ -9685,6 +9685,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-y .tilebox .tile-content {
   width: 100%;
 }
+.tiles-y .tile-header:empty {
+  display: none;
+}
+.tiles-y .tile-header:empty + .date {
+  padding-left: 0;
+}
 .tiles-y .tile-img {
   margin-bottom: 10px;
 }
