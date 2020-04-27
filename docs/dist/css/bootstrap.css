@@ -9682,7 +9682,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.tiles-y .tilebox.no-img .tile-content {
+.tiles-y .tilebox .tile-content {
   width: 100%;
 }
 .tiles-y .tile-img {
