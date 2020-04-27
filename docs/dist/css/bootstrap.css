@@ -5421,9 +5421,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .dropdown-menu.nyheder > li {
     display: block;
     width: 100%;
-    min-width: 480px;
+    min-width: 450px;
     padding: 5px;
-    overflow: auto;
+    overflow: hidden;
     white-space: normal;
   }
   .dropdown-menu.nyheder > li > a {
