@@ -9685,10 +9685,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-y .tilebox .tile-content {
   width: 100%;
 }
-.tiles-y .tile-header:empty {
+.tiles-y .header-small:empty {
   display: none;
 }
-.tiles-y .tile-header:empty + .date {
+.tiles-y .header-small:empty + .date {
   padding-left: 0;
 }
 .tiles-y .tile-img {
