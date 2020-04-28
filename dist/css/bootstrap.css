@@ -9792,12 +9792,12 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   margin-bottom: 7px;
 }
 @media all and (min-width: 992px) {
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin),
-  .double-column .tiles-x:not(.tiles-plugin) {
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox {
     height: 367px;
   }
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tile-body,
-  .double-column .tiles-x:not(.tiles-plugin) .tile-body {
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
   }
 }
@@ -9815,6 +9815,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .single-column .newsbox .tiles-x .tilebox {
     height: auto;
   }
+  .newsbox .FullWidthFrontpage .triple-column .tiles-x .tilebox,
   .double-column .newsbox .tiles-x .tilebox {
     height: 367px;
   }
