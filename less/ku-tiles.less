@@ -64,6 +64,15 @@
   display: flex;
   justify-content: space-between;
 
+  .date {
+    font-weight: 700;
+    color: @gray-light;
+    text-align: right;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+
   .header-small {
     white-space: nowrap;
     overflow: hidden;
@@ -73,15 +82,14 @@
     text-transform: uppercase;
     letter-spacing: 0.4px;
     margin-bottom: 5px;
-  }
+    // If no category, align date to the left
+    &:empty {
+      display: none;
 
-  .date {
-    font-weight: 700;
-    color: @gray-light;
-    text-align: right;
-    padding-left: 5px;
-    margin-bottom: 5px;
-    white-space: nowrap;
+      & + .date {
+        padding-left: 0;
+      }
+    }
   }
 }
 
@@ -233,6 +241,7 @@ body:not(.FullWidthFrontpage) .double-column {
     // Mobile view - list type
     .tilebox {
       height: @gridbox1;
+
       &.no-img {
         height: auto;
       }

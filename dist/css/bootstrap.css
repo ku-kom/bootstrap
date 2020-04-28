@@ -9579,6 +9579,14 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.tile-cat .date {
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #757575;
+  text-align: right;
+  white-space: nowrap;
+}
 .tile-cat .header-small {
   margin-bottom: 5px;
   overflow: hidden;
@@ -9589,13 +9597,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   letter-spacing: .4px;
   white-space: nowrap;
 }
-.tile-cat .date {
-  padding-left: 5px;
-  margin-bottom: 5px;
-  font-weight: 700;
-  color: #757575;
-  text-align: right;
-  white-space: nowrap;
+.tile-cat .header-small:empty {
+  display: none;
+}
+.tile-cat .header-small:empty + .date {
+  padding-left: 0;
 }
 .tiles-x .tilebox {
   display: -webkit-flex;
@@ -9684,12 +9690,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-y .tilebox .tile-content {
   width: 100%;
-}
-.tiles-y .header-small:empty {
-  display: none;
-}
-.tiles-y .header-small:empty + .date {
-  padding-left: 0;
 }
 .tiles-y .tile-img {
   margin-bottom: 10px;
