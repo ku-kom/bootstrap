@@ -5589,7 +5589,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 #updateAlerts {
-  height: 169px;
+  min-height: 161px;
 }
 
 .drawer {
