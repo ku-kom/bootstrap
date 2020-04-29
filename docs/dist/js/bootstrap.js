@@ -1907,7 +1907,7 @@ function shareURL(dest) {
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
   // Truncate multiple lines of text in News in global menu
-  var $chars = 70;//85; // number of characters
+  var $chars = 85; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
   if ($news) {
     $news.each(function (i, v) {
