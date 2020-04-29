@@ -5422,7 +5422,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
     width: 100%;
     min-width: 350px;
-    padding: 5px 10px 5px 7px;
+    padding: 5px 10px 5px 20px;
     overflow: hidden;
     white-space: normal;
   }
