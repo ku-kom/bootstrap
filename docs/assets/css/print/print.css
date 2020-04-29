@@ -1,6 +1,6 @@
 @page {
-  size: A4;
-  margin: 10mm auto;
+  size: auto;
+  margin: 5mm;
 }
 
 *, *:before, *:after {
@@ -16,9 +16,9 @@ html, body {
 }
 
 body {
-  width: 210mm;
+  /* width: 210mm;
   height: 297mm;
-  margin: 10mm auto;
+  margin: 10mm auto;*/
   font-size: 13px !important;
 }
 
@@ -97,10 +97,10 @@ a, a:visited {
   text-decoration: underline;
 }
 
-.main-area a[href]:after {
+/* .main-area a[href]:after {
   content: " (Link: "attr(href) ")";
   word-break: break-word;
-}
+} */
 
 .main-area abbr[title]:after {
   content: " (Title: "attr(title) ")";
