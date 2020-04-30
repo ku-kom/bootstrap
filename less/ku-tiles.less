@@ -64,6 +64,15 @@
   display: flex;
   justify-content: space-between;
 
+  .date {
+    font-weight: 700;
+    color: @gray-light;
+    text-align: right;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+
   .header-small {
     white-space: nowrap;
     overflow: hidden;
@@ -73,15 +82,14 @@
     text-transform: uppercase;
     letter-spacing: 0.4px;
     margin-bottom: 5px;
-  }
+    // If no category, align date to the left
+    &:empty {
+      display: none;
 
-  .date {
-    font-weight: 700;
-    color: @gray-light;
-    text-align: right;
-    padding-left: 5px;
-    margin-bottom: 5px;
-    white-space: nowrap;
+      & + .date {
+        padding-left: 0;
+      }
+    }
   }
 }
 
@@ -130,7 +138,7 @@
 
 .one-two-column .column1,
 .quad-column,
-.triple-column,
+.triple-column, #gridsidebar,
 .two-one-column .column2,
 body:not(.FullWidthFrontpage) .double-column {
   .tiles-y {
@@ -175,10 +183,12 @@ body:not(.FullWidthFrontpage) .double-column {
   .FullWidthFrontpage .triple-column,
   .double-column {
     .tiles-x:not(.tiles-plugin) {
-      height: @special-tiles-hight;
+      .tilebox {
+        height: @special-tiles-hight;
 
-      .tile-body {
-        display: block;
+        .tile-body {
+          display: block;
+        }
       }
     }
   }
@@ -186,9 +196,11 @@ body:not(.FullWidthFrontpage) .double-column {
 @media (max-width: @screen-sm-max) {
   .FullWidthFrontpage .triple-column,
   .double-column,
-  .single-column .tiles-x:not(.tiles-plugin) {
-    .tile-body {
-      display: block;
+  .single-column {
+    .tiles-x:not(.tiles-plugin) {
+      .tile-body {
+        display: block;
+      }
     }
   }
 }
@@ -198,10 +210,18 @@ body:not(.FullWidthFrontpage) .double-column {
     .tiles-x {
       .tilebox {
         height: @gridbox1;
-        // width: @default-col-width;
       }
     }
 
+    .single-column & {
+      .tiles-x {
+        .tilebox {
+          height: auto;
+        }
+      }
+    }
+
+    .FullWidthFrontpage .triple-column,
     .double-column & {
       .tiles-x {
         .tilebox {
@@ -221,13 +241,29 @@ body:not(.FullWidthFrontpage) .double-column {
 
   .tiles-y {
     // Mobile view - list type
+    .tilebox {
+      height: @gridbox1;
+
+      &.no-img {
+        height: auto;
+      }
+    }
+
     .tile-img {
-      flex: 0 0 60%;
+      flex: 0 1 auto;
       overflow: hidden;
     }
 
     .tile-content {
-      flex: 1 1 auto;
+      flex: 1 0 auto;
+    }
+  }
+
+  .FullWidthFrontpage .triple-column,
+  .double-column,
+  .single-column {
+    .tiles-y:not(.tiles-plugin) {
+      height: @special-tiles-hight;
     }
   }
 }
