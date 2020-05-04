@@ -32,7 +32,7 @@
 .form-group legend {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   border-bottom: 0;
   font-weight: 600;
   font-size: inherit;

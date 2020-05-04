@@ -36,6 +36,10 @@
     overflow: hidden;
     flex: 0 1 auto;
     display: flex;
+    @media all and (max-width: @screen-xs-max) {
+      // For iPhone
+      height: 50%;
+    }
 
     img {
       width: 100%; // This is for Edge

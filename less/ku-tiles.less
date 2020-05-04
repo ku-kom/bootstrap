@@ -136,9 +136,10 @@
 }
 //style for single and double column spans
 
+#gridsidebar,
 .one-two-column .column1,
 .quad-column,
-.triple-column, #gridsidebar,
+.triple-column,
 .two-one-column .column2,
 body:not(.FullWidthFrontpage) .double-column {
   .tiles-y {
@@ -296,3 +297,11 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
+// @media only screen and (min-device-pixel-ratio: 2) and (max-width: @screen-xs-max), only screen and (min-resolution: 192dpi) and (max-width: @screen-xs-max), only screen and (min-resolution: 2dppx) and (max-width: @screen-xs-max) {
+  /* Retina resolution-specific CSS & images */
+//   .tiles-x {
+//     .tile-img {
+//       max-height: 250px;
+//     }
+//   }
+// }
