@@ -9648,7 +9648,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 @media all and (max-width: 767px) {
   .tiles-x .tile-img {
-    height: 50%;
+    max-height: 250px;
   }
 }
 .tiles-x .tile-img img {
