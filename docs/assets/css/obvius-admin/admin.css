@@ -5534,13 +5534,13 @@ audio, video {
 .hidden-radio {
   position: absolute;
   opacity: 0;
-  width: 0;
-  height: 0;
+  width: 300px;
+  height: 240px;
+  cursor: pointer;
 }
 
 .hidden-radio+img {
   cursor: pointer;
-  pointer-events: none;
 }
 
 .hidden-radio:checked+img {
