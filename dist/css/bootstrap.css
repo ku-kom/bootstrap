@@ -9596,6 +9596,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   text-transform: uppercase;
   letter-spacing: .4px;
   white-space: nowrap;
+
+  -webkit-flex-basis: 60%;
+  -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
 }
 .tile-cat .header-small:empty {
   display: none;
