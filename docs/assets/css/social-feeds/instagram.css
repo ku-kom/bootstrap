@@ -11,20 +11,20 @@ Needs html like this:
   </div>
 </div>
 */
-[id*="ig"].gridbox {
+[id^="ig"].gridbox {
   -ms-flex-direction: column !important;
   -webkit-flex-direction: column !important;
   flex-direction: column !important;
   height: 185px !important;
 }
 
-[id*="ig"].gridbox::before {
+[id^="ig"].gridbox::before {
   /* z-index: 101;
   cursor: pointer; */
   display: none;
 }
 
-[id*="ig"].gridbox.with-img .box1 {
+[id^="ig"].gridbox.with-img .box1 {
   position: absolute !important;
   bottom: 0;
   left: 0;
@@ -35,17 +35,17 @@ Needs html like this:
   z-index: 100;
 }
 
-[id*="ig"].gridbox .header, [id*="ig"].gridbox:hover .header {
+[id^="ig"].gridbox .header, [id^="ig"].gridbox:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9) !important;
 }
 
-[id*="ig"]:hover a {
+[id^="ig"]:hover a {
   color: inherit;
   display: block;
 }
 
-[id*="ig"]:hover img {
+[id^="ig"]:hover img {
   -webkit-filter: none;
   filter: none;
 }
