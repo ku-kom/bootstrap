@@ -63,6 +63,7 @@
 .tile-cat {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .date {
     font-weight: 700;
@@ -77,7 +78,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex-basis: 60%;
+    flex-basis: 72%;
     font-weight: 700;
     color: @gray-light;
     text-transform: uppercase;
@@ -298,11 +299,3 @@ body:not(.FullWidthFrontpage) .double-column {
     }
   }
 }
-// @media only screen and (min-device-pixel-ratio: 2) and (max-width: @screen-xs-max), only screen and (min-resolution: 192dpi) and (max-width: @screen-xs-max), only screen and (min-resolution: 2dppx) and (max-width: @screen-xs-max) {
-  /* Retina resolution-specific CSS & images */
-//   .tiles-x {
-//     .tile-img {
-//       max-height: 250px;
-//     }
-//   }
-// }
