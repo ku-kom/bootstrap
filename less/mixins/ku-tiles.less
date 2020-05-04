@@ -34,7 +34,7 @@
 
   .tile-img {
     overflow: hidden;
-    flex: 0 1 auto;
+    flex: 1 1 auto; // 0 1 auto;
     display: flex;
     @media all and (max-width: @screen-xs-max) {
       // For iPhone
@@ -50,7 +50,7 @@
   .tile-content {
     padding: 10px;
     position: relative;
-    flex: 1 0 auto;
+    flex: 1 1 50%; // 0 1 auto?
     overflow: hidden;
     //@media all and (min-width: @screen-sm) {
     // This prevents text from overflowing the bottom of the tile in an ugly way:
