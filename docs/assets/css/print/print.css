@@ -170,14 +170,14 @@ ol.org-chart li>div {
   page-break-inside: avoid;
   float: left;
   border: 1px solid #ddd;
-  height: 289px!important;
-  width: 235px!important;
+  height: 367px!important;
+  width: 40%!important;
+  margin-right: 15px;
 }
 
-.tilebox + .tilebox {
-  margin-left: 20px;
+.tiles-plugin .tilebox:last-child {
+  clear: both;
 }
-
 .item {
   page-break-inside: avoid;
 }
