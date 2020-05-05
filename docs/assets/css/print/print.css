@@ -169,7 +169,9 @@ ol.org-chart li>div {
 .tilebox {
   page-break-inside: avoid;
   float: left;
-  border: 1px solid #666;
+  border: 1px solid #ddd;
+  height: 289px!important;
+  width: 235px!important;
 }
 
 .tilebox + .tilebox {
