@@ -213,14 +213,6 @@ body:not(.FullWidthFrontpage) .double-column {
         }
       }
     }
-    // .FullWidthFrontpage .triple-column,
-    // .double-column & {
-    //   .tiles-x {
-    //     .tilebox {
-    //       height: @special-tiles-hight;
-    //     }
-    //   }
-    // }
   }
 }
 // Special styling for IE11:
@@ -262,8 +254,10 @@ body:not(.FullWidthFrontpage) .double-column {
 // Special styling for IE11:
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x {
-    .tilebox {
-      height: @special-tiles-hight;
+    &:not(.tiles-plugin) {
+      .tilebox {
+        height: @special-tiles-hight;
+      }
     }
   }
 }
@@ -271,12 +265,14 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .single-column {
     .tiles-x {
-      .tile-img {
-        flex: 0 0 auto;
-      }
+      &:not(.tiles-plugin) {
+        .tile-img {
+          flex: 0 0 auto;
+        }
 
-      .tile-content {
-        flex: 1 1 auto;
+        .tile-content {
+          flex: 1 1 auto;
+        }
       }
     }
   }
