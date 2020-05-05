@@ -121,7 +121,6 @@ pre, blockquote {
 
 .table td, .table th {
   background-color: #fff !important;
-  display: block;
 }
 
 .table-bordered th, .table-bordered td {
