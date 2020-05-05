@@ -1,6 +1,6 @@
 @page {
   size: auto;
-  margin: 15mm 5mm 15mm 5mm;
+  margin: 20mm 5mm 20mm 5mm;
 }
 
 *, *:before, *:after {
@@ -119,7 +119,8 @@ pre, blockquote {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #eee!important;
+  background-color: #eee !important;
+  -webkit-print-color-adjust: exact;
 }
 
 .table-bordered th, .table-bordered td {
@@ -167,7 +168,7 @@ ol.org-chart li>div {
 
 /*News lists */
 .tiles-plugin {
-  height: auto!important;
+  height: auto !important;
 }
 
 .tilebox {
@@ -263,6 +264,11 @@ tr.visible-sm {
 
 th.visible-sm, td.visible-sm {
   display: table-cell !important;
+}
+
+/* cms warning banner */
+#warning-banner {
+  display: none;
 }
 
 /* Grid: */
