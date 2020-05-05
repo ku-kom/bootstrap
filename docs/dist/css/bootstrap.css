@@ -9881,14 +9881,14 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
             flex: 1 1 auto;
   }
   .FullWidthFrontpage .double-column .tiles-x .tile-img {
-    -webkit-flex: 1 1 60%;
-        -ms-flex: 1 1 60%;
-            flex: 1 1 60%;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
   }
   .FullWidthFrontpage .double-column .tiles-x .tile-content {
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
 }
 @media all and (max-width: 767px) {
