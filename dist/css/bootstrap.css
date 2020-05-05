@@ -9555,6 +9555,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display:         flex;
   width: 100%;
   height: 100%;
+  min-height: 1px;
   color: initial!important;
   color: #252525;
   text-decoration: none!important;
@@ -9743,9 +9744,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
 }
 @media all and (min-width: 992px) {
-  .single-column .tiles-x {
-    height: auto;
-  }
   .single-column .tiles-x:not(.tiles-plugin) .tile-header {
     margin-top: 0;
     font-size: 26px;
@@ -9874,6 +9872,18 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media all and (min-width: 480px) and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tiles-x .tilebox {
     height: 367px;
+  }
+}
+@media all and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .single-column .tiles-x .tile-img {
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  .single-column .tiles-x .tile-content {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 @media all and (max-width: 767px) {
