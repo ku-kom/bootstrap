@@ -156,6 +156,15 @@ p, h2, h3 {
 h2, h3 {
   page-break-after: avoid;
 }
+h2, h3 {
+    page-break-inside: avoid;
+}
+h2:after, h3::after {
+    content: "";
+    display: block;
+    height: 50px;
+    margin-bottom: -50px;
+}
 
 /* Org chart */
 ol.org-chart li::after, ol.org-chart li::before, ol.org-chart li>div::after, ol.org-chart li>div::before, ol.org-chart ol::after, ol.org-chart ol::before {
