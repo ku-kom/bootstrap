@@ -47,7 +47,7 @@ main {
 }
 
 .local-footer {
-  border-bottom: 1px solid #727272;
+  border-bottom: 1px solid #ddd;
 }
 
 .ku-branding::after {
