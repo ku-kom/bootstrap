@@ -9612,7 +9612,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: -ms-flexbox;
   display:         flex;
   width: 100%;
-  min-height: 1px;
   overflow: hidden;
           flex-direction: column;
   background-color: #fff;
