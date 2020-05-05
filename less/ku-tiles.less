@@ -106,14 +106,6 @@
   .tiles-y {
     .tiles-y-desktop-layout();
   }
-
-  .double-column {
-    .tiles-x {
-      .tile-img {
-        flex: 0 0 50%;
-      }
-    }
-  }
 }
 // Full width single column
 @media all and (min-width: @screen-md) {
@@ -280,16 +272,26 @@ body:not(.FullWidthFrontpage) .double-column {
 @media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .single-column {
     .tiles-x {
-      // .tilebox {
-      //   height: 690px;
-      // }
-
       .tile-img {
-        flex: 1 0 auto;
+        flex: 0 0 auto;
       }
 
       .tile-content {
         flex: 1 1 auto;
+      }
+    }
+  }
+
+  .FullWidthFrontpage {
+    .double-column {
+      .tiles-x {
+        .tile-img {
+          flex: 1 1 60%;
+        }
+
+        .tile-content {
+          flex: 1 1 auto;
+        }
       }
     }
   }
