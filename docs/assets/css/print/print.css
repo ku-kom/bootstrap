@@ -101,7 +101,6 @@ a, a:visited {
   content: " (Link: "attr(href) ")";
   word-break: break-word;
 } */
-
 .main-area abbr[title]:after {
   content: " (Title: "attr(title) ")";
 }
@@ -167,6 +166,16 @@ ol.org-chart li>div {
 }
 
 /*News lists */
+.tilebox {
+  page-break-inside: avoid;
+  float: left;
+  border: 1px solid #666;
+}
+
+.tilebox + .tilebox {
+  margin-left: 20px;
+}
+
 .item {
   page-break-inside: avoid;
 }
