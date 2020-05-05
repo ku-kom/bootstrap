@@ -156,14 +156,12 @@ p, h2, h3 {
 h2, h3 {
   page-break-after: avoid;
 }
-h2, h3 {
-    page-break-inside: avoid;
-}
+
 h2:after, h3::after {
-    content: "";
-    display: block;
-    height: 50px;
-    margin-bottom: -50px;
+  content: "";
+  display: block;
+  height: 50px;
+  margin-bottom: -50px;
 }
 
 /* Org chart */
