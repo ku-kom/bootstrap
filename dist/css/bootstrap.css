@@ -9640,9 +9640,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: none;
 }
 .tiles-x .header-small {
-  -webkit-flex-basis: 60%;
-  -ms-flex-preferred-size: 60%;
-          flex-basis: 60%;
+  -webkit-flex-basis: 63%;
+  -ms-flex-preferred-size: 63%;
+          flex-basis: 63%;
 }
 .tiles-x .tile-img {
   display: -webkit-flex;
