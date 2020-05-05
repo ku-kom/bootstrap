@@ -166,16 +166,20 @@ ol.org-chart li>div {
 }
 
 /*News lists */
+.tiles-plugin {
+  height: auto!important;
+}
+
 .tilebox {
   page-break-inside: avoid;
   float: left;
   border: 1px solid #ddd;
-  height: 289px!important;
-  width: 235px!important;
-}
-
-.tilebox + .tilebox {
-  margin-left: 20px;
+  height: 367px !important;
+  width: 300px !important;
+  margin-right: 15px;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
 }
 
 .item {
