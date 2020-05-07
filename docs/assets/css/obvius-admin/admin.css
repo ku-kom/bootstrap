@@ -3988,15 +3988,15 @@ div.multipathlist {
 }
 
 .content-length-warning, .alt-attribute-warning {
-  position: relative;
-  margin: 0.5em;
-  padding: 0.5em;
-  background-color: #ffdec0;
-  border: 1px solid transparent;
-  border-color: #dbbea3;
-  color: #6d501d;
+  position: relative!important;
+  margin: 0.5em!important;
+  padding: 0.5em!important;
+  background-color: #ffdec0!important;
+  border: 1px solid transparent!important;
+  border-color: #dbbea3!important;
+  color: #6d501d!important;
   overflow: visible;
-  white-space: normal;
+  white-space: normal!important;
 }
 
 /*============================================================================*/
