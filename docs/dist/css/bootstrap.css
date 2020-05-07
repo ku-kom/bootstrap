@@ -9813,18 +9813,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .double-column .tiles-x:not(.tiles-plugin) .tilebox {
     height: 367px;
   }
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-img,
-  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-img {
-    -webkit-flex: 1 1 55%;
-        -ms-flex: 1 1 55%;
-            flex: 1 1 55%;
-  }
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-content,
-  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-content {
-    -webkit-flex: 1 1 45%;
-        -ms-flex: 1 1 45%;
-            flex: 1 1 45%;
-  }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
@@ -11999,6 +11987,10 @@ form.gdpr-accept .btn + .btn {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#symplifysignupform .gdpr-accept {
+  position: relative;
+  margin-left: 0;
 }
 .mce-content-body#content {
   display: block;
