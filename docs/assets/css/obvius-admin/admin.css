@@ -3987,6 +3987,18 @@ div.multipathlist {
   padding: 0.5em 2em 1em 250px;
 }
 
+.content-length-warning, .alt-attribute-warning {
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #ffdec0;
+  border: 1px solid transparent;
+  border-color: #dbbea3;
+  color: #6d501d;
+  overflow: visible;
+  white-space: normal;
+}
+
 /*============================================================================*/
 /* CONFIG EDIT INTERFACE                                                      */
 /*============================================================================*/
@@ -5704,7 +5716,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5778,5 +5790,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 /* end */
