@@ -9813,6 +9813,18 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .double-column .tiles-x:not(.tiles-plugin) .tilebox {
     height: 367px;
   }
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-img,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-img {
+    -webkit-flex: 1 1 60%;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
+  }
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-content,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-content {
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
