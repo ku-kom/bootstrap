@@ -11991,6 +11991,14 @@ form.gdpr-accept .btn + .btn {
   position: relative;
   margin-left: 0;
 }
+#symplifysignupform .form-group legend {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 0;
+  font-size: inherit;
+  font-weight: 600;
+  border-bottom: 0;
+}
 .mce-content-body#content {
   display: block;
   width: 100%;
