@@ -1,7 +1,7 @@
 // This file contains scroll progress functionality.
 // Note: Include parallax.min.css along with this script.
 
-$(function () {
+$(function() {
   'use strict';
 
   // Insert progress bar
@@ -47,24 +47,29 @@ $(function () {
     }
   }
 
-  $('.slick-pause').on('click', function () {
-    // Toggle play/pause button in video backgrounds
-    var $video = $('[data-jarallax-video] video').get(0);
-    var $pause = $(this).find('.glyphicon');
-    if ($video.paused) {
-      $video.play();
-      $pause.toggleClass('glyphicon-play glyphicon-pause');
-    } else {
-      $video.pause();
-      $pause.toggleClass('glyphicon-pause glyphicon-play');
-    }
+  // Toggle play/pause button in video backgrounds
+  var $video = $('[data-jarallax-video] video').get(0);
+  var $pause = $(this).find('.glyphicon');
+
+  var $allVideos = $('video');
+
+  $(document).on('.slick-pause', 'click', function() {
+    $allVideos.each(function() {
+      if ($(this).paused) {
+        $(this).play();
+        $pause.toggleClass('glyphicon-play glyphicon-pause');
+      } else {
+        $(this).pause();
+        $pause.toggleClass('glyphicon-pause glyphicon-play');
+      }
+    })
   });
 
   animateMenu();
   animateProcessbar();
 
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     animateMenu();
     animateProcessbar();
   })
@@ -72,13 +77,13 @@ $(function () {
 
 // Fixes jumpy scroll in IE11 by disabling smooth scroll
 if (navigator.userAgent.match(/Trident\/7\./)) {
-  document.body.addEventListener('mousewheel', function (event) {
+  document.body.addEventListener('mousewheel', function(event) {
     event.preventDefault();
     var wd = event.wheelDelta;
     var po = window.pageYOffset;
     window.scrollTo(0, po - wd);
   });
-  document.body.addEventListener('keydown', function (e) {
+  document.body.addEventListener('keydown', function(e) {
     var currentScrollPosition = window.pageYOffset;
     switch (e.which) {
       case 33: // page up
