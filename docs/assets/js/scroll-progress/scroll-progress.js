@@ -48,21 +48,16 @@ $(function() {
   }
 
   // Toggle play/pause button in video backgrounds
-  var $video = $('[data-jarallax-video] video').get(0);
-  var $pause = $(this).find('.glyphicon');
-
-  var $allVideos = $('video');
 
   $(document).on('.slick-pause', 'click', function() {
-    $allVideos.each(function() {
-      if ($(this).paused) {
-        $(this).play();
-        $pause.toggleClass('glyphicon-play glyphicon-pause');
-      } else {
-        $(this).pause();
-        $pause.toggleClass('glyphicon-pause glyphicon-play');
-      }
-    })
+    var $pause = $(this).find('.glyphicon');
+    if ($(this).paused) {
+      $(this).closest('[data-jarallax-video] video').play();
+      $pause.toggleClass('glyphicon-play glyphicon-pause');
+    } else {
+      $(this).closest('[data-jarallax-video] video').pause();
+      $pause.toggleClass('glyphicon-pause glyphicon-play');
+    }
   });
 
   animateMenu();
