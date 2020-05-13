@@ -47,19 +47,6 @@ $(function() {
     }
   }
 
-  // Toggle play/pause button in video backgrounds
-
-  $(document).on('.slick-pause', 'click', function() {
-    var $pause = $(this).find('.glyphicon');
-    if ($(this).paused) {
-      $(this).closest('[data-jarallax-video] video').play();
-      $pause.toggleClass('glyphicon-play glyphicon-pause');
-    } else {
-      $(this).closest('[data-jarallax-video] video').pause();
-      $pause.toggleClass('glyphicon-pause glyphicon-play');
-    }
-  });
-
   animateMenu();
   animateProcessbar();
 
