@@ -5705,20 +5705,21 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a.dansk::after,
 .navbar-inverse .navbar-nav > li > a.english::after {
   position: absolute;
-  top: 9px;
-  right: -16px;
+  top: 7px;
+  right: -18px;
   display: inline-block;
-  width: 19px;
+  width: 19.5px;
   height: 13px;
   content: "";
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 .navbar-inverse .navbar-nav > li > a.english::after {
-  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+  background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-uk.svg");
 }
 .navbar-inverse .navbar-nav > li > a.dansk::after {
-  background: transparent url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
+  background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-dk.svg");
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,

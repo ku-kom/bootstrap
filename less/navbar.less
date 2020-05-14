@@ -697,26 +697,27 @@
       &.english {
         &::after {
           content: "";
-          width: 19px;
-          height: 13px;
           background-size: cover;
+          background-position: center center;
           background-repeat: no-repeat;
-          top: 9px;
-          right: -16px;
+          top: 7px;
+          right: -18px;
           position: absolute;
           display: inline-block;
+          height: 13px;
+          width: 19.5px;
         }
       }
 
       &.english {
         &::after {
-          background: transparent url("https://bootstrap.secure.ku.dk/img/flag-uk.gif");
+          background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-uk.svg");
         }
       }
 
       &.dansk {
         &::after {
-          background: transparent url("https://bootstrap.secure.ku.dk/img/flag-dk.gif");
+          background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-dk.svg");
         }
       }
     }
