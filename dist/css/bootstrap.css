@@ -5716,10 +5716,10 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   background-size: cover;
 }
 .navbar-inverse .navbar-nav > li > a.english::after {
-  background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-uk.svg");
+  background-image: url("https://cms.ku.dk/grafik/obvius/flag-uk.svg");
 }
 .navbar-inverse .navbar-nav > li > a.dansk::after {
-  background-image: transparent url("https://cms.ku.dk/grafik/obvius/flag-dk.svg");
+  background-image: url("https://cms.ku.dk/grafik/obvius/flag-dk.svg");
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
