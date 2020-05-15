@@ -130,6 +130,10 @@
   padding: 15px;
   background: rgba(255, 255, 255, 0.7);
 }
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
 .jarallax-img {
   position: absolute;
   object-fit: cover;
@@ -202,4 +206,9 @@
 }
 .parallax-sound {
   margin-left: 26px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .jarallax-keep-img > .jarallax-img {
+    z-index: 0;
+  }
 }
