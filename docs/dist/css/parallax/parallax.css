@@ -201,11 +201,16 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-  font-size: 60px;
   color: #fff;
+  line-height: 1;
+}
+.parallax-pause {
+  font-size: 54px;
 }
 .parallax-sound {
+  font-size: 60px;
   margin-left: 26px;
+  vertical-align: top;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .jarallax-keep-img > .jarallax-img {
