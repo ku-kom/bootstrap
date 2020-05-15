@@ -11818,9 +11818,6 @@ p[align="right"]:before {
 #warning-banner-inner p {
   font-size: 16px;
 }
-#warning-banner-header {
-  display: none;
-}
 .factbox {
   float: right;
   width: 45%;

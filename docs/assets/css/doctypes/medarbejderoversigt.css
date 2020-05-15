@@ -70,3 +70,8 @@ th.emplistimage:after, th.emplistemail:after {
   margin-bottom: 10px;
   margin-left: 15px;
 }
+
+.portal_list h2.title {
+    line-height: 14px;
+    font-size: 13px!important;
+}
