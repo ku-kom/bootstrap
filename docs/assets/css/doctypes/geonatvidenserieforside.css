@@ -20,14 +20,6 @@
   margin: 0 !important;
 }
 
-.Geonat-Login p.error {
-  background-color: #e3c6c7;
-  color: #7b161a;
-  border: 1px solid #c7a2a4;
-  padding: 10px;
-  border-radius: 2px;
-}
-
 .geonat-serie-search-form label+select {
   margin-top: 10px;
 }
