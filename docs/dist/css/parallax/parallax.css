@@ -184,16 +184,22 @@
 #warning-banner {
   display: none;
 }
-.slick-pause {
-  left: 1%;
-  right: auto;
-  bottom: auto;
-  top: 10px;
-}
-.slick-sound {
+.parallax-buttons {
+  position: absolute;
   left: 50%;
-  bottom: 1%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   margin: 0 auto;
+}
+.parallax-pause,
+.parallax-sound {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 60px;
+  color: #fff;
+}
+.parallax-sound {
+  margin-left: 26px;
 }
