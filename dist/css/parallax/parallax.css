@@ -100,6 +100,10 @@
 .campaign-block .block-content blockquote footer {
   color: inherit;
 }
+.campaign-block .block-content.no-bg {
+  background: none;
+  box-shadow: none;
+}
 .campaign-block.text-down {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -107,10 +111,6 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-}
-.campaign-block.no-bg {
-  background: none;
-  box-shadow: none;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 only in order to understand vertical alignment */
