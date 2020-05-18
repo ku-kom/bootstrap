@@ -108,7 +108,7 @@
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.campaign-block .no-bg {
+.campaign-block.no-bg {
   background: none;
   box-shadow: none;
 }
@@ -126,7 +126,7 @@
 }
 .block-bg {
   color: #252525;
-  min-height: 100vh;
+  min-height: 45vh;
 }
 .block-bg .block-content {
   padding: 15px;
@@ -154,6 +154,9 @@
     font-size: 46px;
     font-weight: 600;
     text-transform: uppercase;
+  }
+  .block-bg {
+    min-height: 100vh;
   }
   .block-bg .block-content {
     padding: 30px;

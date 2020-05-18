@@ -119,7 +119,7 @@
     align-items: flex-end;
   }
 
-  .no-bg {
+  &.no-bg {
     background: none;
     box-shadow: none;
   }
@@ -139,7 +139,7 @@
 
 .block-bg {
   color: @text-color;
-  min-height: 100vh;
+  min-height: 45vh;
   // background-attachment: fixed;
   // background-size: cover;
   // background-position: 50% 0;
@@ -154,15 +154,15 @@
   z-index: 0;
 }
 // .jarallax-img {
-    // position: absolute;
-    // object-fit: cover;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
-    // font-family: 'object-fit: cover;';
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
-    // z-index: -1;
+// position: absolute;
+// object-fit: cover;
+/* support for plugin https://github.com/bfred-it/object-fit-images */
+// font-family: 'object-fit: cover;';
+// top: 0;
+// left: 0;
+// width: 100%;
+// height: 100%;
+// z-index: -1;
 // }
 @media all and (min-width: @screen-sm) {
   #content {
@@ -187,6 +187,8 @@
   }
 
   .block-bg {
+    min-height: 100vh;
+
     .block-content {
       padding: 30px;
       box-shadow: 0 1px 8px rgba(@gray-base, .1), 0 16px 48px rgba(@gray-base, .1), 0 24px 60px rgba(@gray-base, .1);
