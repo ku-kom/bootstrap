@@ -4543,7 +4543,7 @@ table.gcedit .one-three-column td:last-child {
   margin-left: 1em;
 }
 
-.control-help.error {
+  .control-help.error {
   background-color: #901a1e;
   color: #fff;
   padding: 5px 10px;
