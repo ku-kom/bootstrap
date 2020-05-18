@@ -7,7 +7,8 @@
   z-index: 1040;
 }
 .progress-fixed-top .progress-bar {
-  background-color: #901a1e;
+  --scroll: 0;
+  background: linear-gradient(to right, #901a1e var(--scroll), transparent 0);
 }
 .ku-topbar {
   position: fixed;

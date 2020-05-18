@@ -1,61 +1,61 @@
 // This file contains scroll progress functionality.
 // Note: Include parallax.min.css along with this script.
 
-$(function() {
-  'use strict';
+//$(function() {
+//  'use strict';
 
   // Insert progress bar
-  var $topbar = $('.ku-topbar');
-  var progressHtml = [
-    '<div class="progress progress-fixed-top">',
-      '<div id="scrollProgress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">',
-        '<span class="sr-only">0%</span>',
-      '</div>',
-    '</div>'
-  ].join('');
-  var $newProgressbar = $(progressHtml);
-  $newProgressbar.insertBefore($topbar);
+  // var $topbar = $('.ku-topbar');
+  // var progressHtml = [
+  //   '<div class="progress progress-fixed-top">',
+  //     '<div id="scrollProgress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">',
+  //       '<span class="sr-only">0%</span>',
+  //     '</div>',
+  //   '</div>'
+  // ].join('');
+  // var $newProgressbar = $(progressHtml);
+  // $newProgressbar.insertBefore($topbar);
 
   // Progress bar and menu variables
-  var $progressBar = $('.progress-fixed-top');
-  var $progress = $('#scrollProgress');
-  var $nav = $('.ku-nav');
+  // var $progressBar = $('.progress-fixed-top');
+  // var $progress = $('#scrollProgress');
+  // var $nav = $('.ku-nav');
 
-  function animateProcessbar() {
-    // Update progress bar
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var $scroll = Math.floor((winScroll / height) * 100);
-    if ($progress) {
-      $progress.prop('aria-valuenow', $scroll).css('width', $scroll + '%');
-      var $sr = $progress.find('.sr-only');
-      $sr.html($scroll + '%');
-    }
-  }
+  // Update progress bar
+  // function animateProcessbar() {
+  //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  //   var $scroll = Math.floor((winScroll / height) * 100);
+  //   if ($progress) {
+  //     $progress.prop('aria-valuenow', $scroll).css('width', $scroll + '%');
+  //     var $sr = $progress.find('.sr-only');
+  //     $sr.html($scroll + '%');
+  //   }
+  // }
 
-  function animateMenu() {
-    // Move global menus down in order to make room for scroll progress bar
-    var $pos = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
-    if ($pos > 38) {
-      $topbar.addClass('ku-topbar-fixed-top');
-      $nav.addClass('ku-nav-top');
-      $progressBar.show();
-    } else {
-      $topbar.removeClass('ku-topbar-fixed-top');
-      $nav.removeClass('ku-nav-top');
-      $progressBar.hide();
-    }
-  }
+  // function animateMenu() {
+  //   // Move global menus down in order to make room for scroll progress bar
+  //   var $pos = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
+  //   if ($pos > 38) {
+  //     $topbar.addClass('ku-topbar-fixed-top');
+  //     $nav.addClass('ku-nav-top');
+  //     $progressBar.show();
+  //   } else {
+  //     $topbar.removeClass('ku-topbar-fixed-top');
+  //     $nav.removeClass('ku-nav-top');
+  //     $progressBar.hide();
+  //   }
+  // }
 
-  animateMenu();
-  animateProcessbar();
+  //animateMenu();
+  //animateProcessbar();
 
 
-  $(window).scroll(function() {
-    animateMenu();
-    animateProcessbar();
-  })
-})
+  // $(window).scroll(function() {
+  //   animateMenu();
+  //   animateProcessbar();
+  // })
+//})
 
 // Fixes jumpy scroll in IE11 by disabling smooth scroll
 if (navigator.userAgent.match(/Trident\/7\./)) {
