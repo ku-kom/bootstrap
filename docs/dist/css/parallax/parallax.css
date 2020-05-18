@@ -108,6 +108,10 @@
   -ms-flex-align: end;
   align-items: flex-end;
 }
+.campaign-block .no-bg {
+  background: none;
+  box-shadow: none;
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 only in order to understand vertical alignment */
   .block-bg {
@@ -132,20 +136,7 @@
   position: relative;
   z-index: 0;
 }
-.jarallax-img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform-origin: 100% 100% 0;
-  transform-origin: 100% 100% 0;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
+/* support for plugin https://github.com/bfred-it/object-fit-images */
 @media all and (min-width: 768px) {
   #content {
     margin-top: 68px;
@@ -167,10 +158,6 @@
   .block-bg .block-content {
     padding: 30px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
-  }
-  .campaign-block .no-bg {
-    background: none;
-    box-shadow: none;
   }
 }
 @media all and (min-width: 992px) {
@@ -209,9 +196,4 @@
   font-size: 60px;
   margin-left: 26px;
   vertical-align: top;
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .jarallax-keep-img > .jarallax-img {
-    z-index: 0;
-  }
 }
