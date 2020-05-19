@@ -79,7 +79,7 @@
   box-shadow: 0 -24px 30px 0 rgba(0, 0, 0, 0.3), 0 24px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .campaign-block .block-content {
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 20px;
   margin: 10px 0;
   width: 100%;
@@ -137,6 +137,33 @@
   z-index: 0;
 }
 /* support for plugin https://github.com/bfred-it/object-fit-images */
+#warning-banner {
+  display: none;
+}
+.parallax-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.parallax-pause,
+.parallax-sound {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  line-height: 1;
+}
+.parallax-pause {
+  font-size: 40px;
+}
+.parallax-sound {
+  font-size: 46px;
+  margin-left: 26px;
+  vertical-align: top;
+}
 @media all and (min-width: 768px) {
   #content {
     margin-top: 68px;
@@ -162,6 +189,12 @@
     padding: 30px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
   }
+  .parallax-pause {
+    font-size: 54px;
+  }
+  .parallax-sound {
+    font-size: 60px;
+  }
 }
 @media all and (min-width: 992px) {
   .campaign-block .block-content {
@@ -172,31 +205,4 @@
   .campaign-block .block-content {
     max-width: 1018px;
   }
-}
-#warning-banner {
-  display: none;
-}
-.parallax-buttons {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin: 0 auto;
-}
-.parallax-pause,
-.parallax-sound {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  color: #fff;
-  line-height: 1;
-}
-.parallax-pause {
-  font-size: 54px;
-}
-.parallax-sound {
-  font-size: 60px;
-  margin-left: 26px;
-  vertical-align: top;
 }

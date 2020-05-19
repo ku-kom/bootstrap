@@ -87,7 +87,7 @@
   box-shadow: 0 -24px 30px 0 rgba(@gray-base,.3), 0 24px 30px 0 rgba(@gray-base,.3);
 
   .block-content {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 20px;
     margin: 10px 0;
     width: 100%;
@@ -164,6 +164,37 @@
 // height: 100%;
 // z-index: -1;
 // }
+
+#warning-banner {
+  display: none;
+}
+
+.parallax-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+.parallax-pause,
+.parallax-sound {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: @white-color;
+  line-height: 1;
+}
+
+.parallax-pause {
+  font-size: 40px;
+}
+
+.parallax-sound {
+  font-size: 46px;
+  margin-left: @grid-gutter-width;
+  vertical-align: top;
+}
 @media all and (min-width: @screen-sm) {
   #content {
     margin-top: 68px;
@@ -194,6 +225,14 @@
       box-shadow: 0 1px 8px rgba(@gray-base, .1), 0 16px 48px rgba(@gray-base, .1), 0 24px 60px rgba(@gray-base, .1);
     }
   }
+
+  .parallax-pause {
+    font-size: 54px;
+  }
+
+  .parallax-sound {
+    font-size: 60px;
+  }
 }
 @media all and (min-width: @screen-md) {
   .campaign-block .block-content {
@@ -204,35 +243,4 @@
   .campaign-block .block-content {
     max-width: 1018px;
   }
-}
-
-#warning-banner {
-  display: none;
-}
-
-.parallax-buttons {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  margin: 0 auto;
-}
-
-.parallax-pause,
-.parallax-sound {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  color: @white-color;
-  line-height: 1;
-}
-
-.parallax-pause {
-  font-size: 54px;
-}
-
-.parallax-sound {
-  font-size: 60px;
-  margin-left: @grid-gutter-width;
-  vertical-align: top;
 }
