@@ -9569,7 +9569,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-top: 0;
   font-size: 17.42px;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 .tile-cat {
   display: -webkit-flex;
@@ -9831,6 +9831,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
   .single-column .newsbox .tiles-x .tilebox {
     height: auto;
+  }
+  .topnews > .deloverskrift {
+    margin-top: 70px;
   }
 }
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
