@@ -81,6 +81,12 @@
   box-shadow: 0 -24px 30px 0 rgba(0, 0, 0, 0.3), 0 24px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .campaign-block .block-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   font-size: 16px;
   padding: 10px 20px;
   margin: 10px 0;
@@ -200,6 +206,9 @@
     max-width: 746px;
     font-size: 20px;
     padding: 30px 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .campaign-block h1 {
     font-size: 56px;
