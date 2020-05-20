@@ -84,7 +84,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  box-shadow: 0 -24px 30px 0 rgba(0, 0, 0, 0.3), 0 24px 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -13px 30px 0 rgba(0, 0, 0, 0.3), 0 13px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .campaign-block.jarallax {
   box-shadow: none;
@@ -98,6 +98,8 @@
 }
 .campaign-block .block-content h1 {
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
 }
 .campaign-block .block-content h1,
 .campaign-block .block-content h2,
@@ -219,8 +221,6 @@
   }
   .campaign-block h1 {
     font-size: 56px;
-    font-weight: 700;
-    line-height: 1.1;
   }
   .campaign-block h2 {
     font-size: 40px;
