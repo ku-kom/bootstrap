@@ -3988,15 +3988,15 @@ div.multipathlist {
 }
 
 .content-length-warning, .alt-attribute-warning {
-  position: relative!important;
-  margin: 0.5em!important;
-  padding: 0.5em!important;
-  background-color: #ffdec0!important;
-  border: 1px solid transparent!important;
-  border-color: #dbbea3!important;
-  color: #6d501d!important;
+  position: relative !important;
+  margin: 0.5em !important;
+  padding: 0.5em !important;
+  background-color: #ffdec0 !important;
+  border: 1px solid transparent !important;
+  border-color: #dbbea3 !important;
+  color: #6d501d !important;
   overflow: visible;
-  white-space: normal!important;
+  white-space: normal !important;
 }
 
 /*============================================================================*/
@@ -4543,7 +4543,7 @@ table.gcedit .one-three-column td:last-child {
   margin-left: 1em;
 }
 
-  .control-help.error {
+.control-help.error {
   background-color: #901a1e;
   color: #fff;
   padding: 5px 10px;
@@ -5714,9 +5714,19 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   width: 75%;
 }
 
+#datatable_wrapper,
+#datatable_wrapper * {
+  clear: none;
+}
+
+.datatable-button {
+  display: inline;
+  margin: 0 1em;
+}
+
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5790,5 +5800,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
+
 /* end */

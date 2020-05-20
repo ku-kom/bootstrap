@@ -84,7 +84,9 @@
   margin-left: -50vw;
   margin-right: -50vw;
   // top + bottom shadow
-  box-shadow: 0 -24px 30px 0 rgba(@gray-base,.3), 0 24px 30px 0 rgba(@gray-base,.3);
+  &.jarallax {
+    box-shadow: 0 -24px 30px 0 rgba(@gray-base,.3), 0 24px 30px 0 rgba(@gray-base,.3);
+  }
 
   .block-content {
     font-size: 16px;
@@ -124,6 +126,11 @@
     }
   }
 
+  &.top-right {
+    align-items: flex-end;
+    justify-content: start;
+  }
+
   &.text-down {
     // Place textbox at the bottom
     flex-direction: row;
@@ -146,9 +153,7 @@
 .block-bg {
   color: @text-color;
   min-height: 45vh;
-  // background-attachment: fixed;
-  // background-size: cover;
-  // background-position: 50% 0;
+
   .block-content {
     padding: 15px;
     background: rgba(@white-color, .8);
