@@ -189,7 +189,14 @@
   .campaign-block h1 {
     font-size: 46px;
     font-weight: 600;
+    line-height: 1.2;
     text-transform: uppercase;
+  }
+  .campaign-block h2 {
+    font-size: 30px;
+  }
+  .campaign-block h3 {
+    font-size: 24px;
   }
   .block-bg {
     min-height: 100vh;
