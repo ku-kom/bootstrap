@@ -85,6 +85,11 @@
   width: 100%;
   z-index: 0;
 }
+.campaign-block .block-content h1 {
+  text-transform: uppercase;
+}
+.campaign-block .block-content h1,
+.campaign-block .block-content h2,
 .campaign-block .block-content h3 {
   margin-top: 0;
 }
@@ -188,18 +193,14 @@
   }
   .campaign-block h1 {
     font-size: 56px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
-    text-transform: uppercase;
-    margin-top: 0;
   }
   .campaign-block h2 {
     font-size: 40px;
-    margin-top: 0;
   }
   .campaign-block h3 {
     font-size: 30px;
-    margin-top: 0;
   }
   .campaign-block .manchet {
     font-size: 30px;
