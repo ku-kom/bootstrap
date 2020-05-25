@@ -41,8 +41,8 @@
 }
 .parallax-logo {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 36px;
+  right: 10px;
   height: 82px;
   width: 61px;
   z-index: 100;
@@ -203,11 +203,14 @@
   margin-left: 26px;
   vertical-align: top;
 }
+@media all and (max-width: 767px) {
+  .gridcontent > .row:nth-child(1) .gcitem:nth-child(1) .block-bg:nth-child(1) {
+    min-height: 94vh;
+  }
+}
 @media all and (min-width: 768px) {
   .parallax-logo {
-    position: fixed;
-    top: 10px;
-    bottom: auto;
+    top: 15px;
   }
   #content {
     margin-top: 68px;

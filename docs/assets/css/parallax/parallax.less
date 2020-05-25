@@ -50,8 +50,8 @@
 
 .parallax-logo {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 36px;
+  right: 10px;
   height: 82px;
   width: 61px;
   z-index: 100;
@@ -226,11 +226,15 @@
   margin-left: @grid-gutter-width;
   vertical-align: top;
 }
+@media all and (max-width: @screen-xs-max) {
+  // Make first parallax item full height in mobile view
+  .gridcontent > .row:nth-child(1) .gcitem:nth-child(1) .block-bg:nth-child(1) {
+    min-height: 94vh;
+  }
+}
 @media all and (min-width: @screen-sm) {
   .parallax-logo {
-    position: fixed;
-    top: 10px;
-    bottom: auto;
+    top: 15px;
   }
 
   #content {
