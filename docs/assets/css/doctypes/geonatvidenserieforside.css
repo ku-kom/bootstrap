@@ -83,6 +83,23 @@ table.dataTable>thead>tr>td:nth-last-child(1) {
   width: auto !important;
 }
 
+#geonatloginform,
+.Geonat-Login .LoginLinks {
+  background: #f3f3f3;
+  padding: 5px;
+  overflow: hidden;
+  margin: 0;
+}
+
+#geonatloginform .form-group {
+  margin-bottom: 8px;
+}
+
+#geonatloginform .checkbox {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media print {
   .Geonat-Login {
     display: none;

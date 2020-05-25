@@ -101,6 +101,10 @@
   font-weight: 700;
   line-height: 1.1;
 }
+.campaign-block .block-content h2 {
+  font-weight: 600;
+  font-size: 26px;
+}
 .campaign-block .block-content h1,
 .campaign-block .block-content h2,
 .campaign-block .block-content h3 {
