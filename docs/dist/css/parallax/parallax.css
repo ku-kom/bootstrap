@@ -47,7 +47,7 @@
   width: 61px;
   z-index: 10;
 }
-.parallax-logo ~ .mm-menu_opened .parallax-logo {
+.mm-menu_opened ~ .parallax-logo {
   z-index: 0;
 }
 #content {
