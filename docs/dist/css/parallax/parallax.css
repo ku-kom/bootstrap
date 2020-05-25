@@ -40,7 +40,7 @@
   display: none;
 }
 .parallax-logo {
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   left: 10px;
   height: 82px;
@@ -201,6 +201,7 @@
 }
 @media all and (min-width: 768px) {
   .parallax-logo {
+    position: fixed;
     top: 10px;
     bottom: auto;
   }
