@@ -50,11 +50,15 @@
 
 .parallax-logo {
   position: absolute;
-  top: 36px;
+  top: 45px;
   right: 10px;
   height: 82px;
   width: 61px;
-  z-index: 100;
+  z-index: 10;
+
+  .mm-menu_opened & {
+    z-index: 0;
+  }
 }
 
 #content {
