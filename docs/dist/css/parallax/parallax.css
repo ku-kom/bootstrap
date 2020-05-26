@@ -118,11 +118,11 @@
   margin-top: 0;
 }
 .campaign-block blockquote {
-  font-size: 1.4em;
-  line-height: 1.2;
+  font-size: 1.3em;
+  line-height: 1.35;
 }
 .campaign-block blockquote:before {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 .campaign-block blockquote footer {
   color: inherit;
@@ -183,7 +183,7 @@
 .parallax-buttons {
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 0 auto;
@@ -197,12 +197,13 @@
   line-height: 1;
 }
 .parallax-pause {
-  font-size: 40px;
+  font-size: 32px;
 }
 .parallax-sound {
   font-size: 46px;
   margin-left: 26px;
   vertical-align: top;
+  margin-left: 10px;
 }
 @media all and (max-width: 767px) {
   .gridcontent > .row:nth-child(1) .gcitem:nth-child(1) .block-bg:nth-child(1) {
@@ -249,11 +250,15 @@
     padding: 30px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 16px 48px rgba(0, 0, 0, 0.1), 0 24px 60px rgba(0, 0, 0, 0.1);
   }
+  .parallax-buttons {
+    bottom: 20px;
+  }
   .parallax-pause {
     font-size: 54px;
   }
   .parallax-sound {
     font-size: 60px;
+    margin-left: 26px;
   }
 }
 @media all and (min-width: 992px) {
