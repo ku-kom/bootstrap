@@ -12003,6 +12003,9 @@ form.gdpr-accept .btn + .btn {
   font-weight: 600;
   border-bottom: 0;
 }
+#symplifysignupform .gdpr-accept-text {
+  display: inline;
+}
 .error {
   padding: 10px;
   margin-bottom: 19px;

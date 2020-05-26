@@ -37,3 +37,7 @@
   font-weight: 600;
   font-size: inherit;
 }
+
+.gdpr-accept-text {
+  display: inline;
+}
