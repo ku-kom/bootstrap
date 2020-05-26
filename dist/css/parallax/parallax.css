@@ -205,11 +205,6 @@
   vertical-align: top;
   margin-left: 10px;
 }
-@media all and (max-width: 767px) {
-  .gridcontent > .row:nth-child(1) .gcitem:nth-child(1) .block-bg:nth-child(1) {
-    min-height: 92vh;
-  }
-}
 @media all and (min-width: 768px) {
   .parallax-logo {
     top: 15px;
