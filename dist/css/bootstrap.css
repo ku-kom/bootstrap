@@ -11333,6 +11333,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-weight: 700;
   background-color: #ccc;
 }
+.ccc-popup {
+  z-index: 2;
+}
 @media (min-width: 767px) {
   .privacy-policy {
     position: fixed;

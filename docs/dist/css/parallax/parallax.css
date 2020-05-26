@@ -118,13 +118,11 @@
   margin-top: 0;
 }
 .campaign-block blockquote {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 1.4;
   line-height: 1.2;
 }
 .campaign-block blockquote:before {
-  font-size: 80px;
-  color: inherit;
+  font-size: 3em;
 }
 .campaign-block blockquote footer {
   color: inherit;
