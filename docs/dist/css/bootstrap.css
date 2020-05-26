@@ -12003,7 +12003,7 @@ form.gdpr-accept .btn + .btn {
   font-weight: 600;
   border-bottom: 0;
 }
-#symplifysignupform .gdpr-accept-text {
+#symplifysignupform .gdpr-label > p {
   display: inline;
 }
 .error {

@@ -29,6 +29,10 @@
   margin-left: 0;
 }
 
+.gdpr-label>p {
+  display: inline;
+}
+
 .form-group legend {
   display: inline-block;
   max-width: 100%;
