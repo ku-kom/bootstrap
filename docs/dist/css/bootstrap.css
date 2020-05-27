@@ -7847,16 +7847,16 @@ nav {
 }
 @media (max-width: 767px) {
   #content .container {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: 13px;
+    padding-left: 13px;
   }
   #content .row {
-    margin-right: -6px;
-    margin-left: -6px;
+    margin-right: -13px;
+    margin-left: -13px;
   }
   #content [class*="col-"] {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: 13px;
+    padding-left: 13px;
   }
 }
 .main-area {
