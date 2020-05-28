@@ -8212,7 +8212,7 @@ iframe {
   bottom: 13px;
   left: 80px;
   max-height: 63px;
-  padding-right: 10px;
+  margin-right: 10px;
   letter-spacing: .936px;
 }
 @media (min-width: 768px) {

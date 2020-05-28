@@ -23,6 +23,7 @@ video {
 }
 
 html:lang(en) .ku-branding-text {
+  background-size: contain;
   background-image: url("https://bootstrap.secure.ku.dk/img/ku_header_2_lin_en.svg");
 }
 
@@ -109,30 +110,6 @@ html:lang(en) .ku-branding-text {
   content: '\61';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
-
-@media all and (min-width: 768px) {
-  .image-presentation {
-    height: 600px;
-  }
-
-  .jumpboard {
-    height: 289px;
-  }
-
-  .jumpboard .jumpcolumn {
-    padding: 0;
-    margin: 0;
-  }
-
-  .jumpboard .jumpcolumn li {
-    font-size: 22px;
-    font-weight: 400;
-  }
-
-  .jumpboard .jumpcolumn li a:after {
-    right: 10px;
-  }
 }
 
 .main-area {
@@ -322,6 +299,24 @@ html:lang(en) .ku-branding-text {
 }
 
 @media all and (min-width: 768px) {
+  .jumpboard {
+    height: 289px;
+  }
+
+  .jumpboard .jumpcolumn {
+    padding: 0;
+    margin: 0;
+  }
+
+  .jumpboard .jumpcolumn li {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .jumpboard .jumpcolumn li a:after {
+    right: 10px;
+  }
+
   .slick-slider {
     height: 215px;
   }
@@ -390,5 +385,11 @@ html:lang(en) .ku-branding-text {
   .single-column .column1 #podcast .slick-slide {
     width: 235px !important;
     margin-right: 26px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .image-presentation {
+    height: 600px;
   }
 }
