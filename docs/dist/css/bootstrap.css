@@ -9520,6 +9520,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-align: unset;
           align-items: unset;
 }
+.calendarTime {
+  margin-top: 10px;
+  color: #757575;
+}
 .tiles-plugin {
   padding-top: 15px;
 }
