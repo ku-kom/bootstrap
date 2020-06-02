@@ -277,6 +277,7 @@ table.properties>tbody>tr:hover {
   color: inherit !important;
 } */
 .rendering h2 {
+  font-size: 13px !important;
   margin: 0;
 }
 
