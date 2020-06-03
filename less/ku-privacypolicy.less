@@ -102,10 +102,22 @@
 }
 
 .cookiefilter {
-  background-color: @gray-f5;
+  position: relative;
+  background-color: @well-bg;
+  border: 1px solid @well-border;
   padding: 15px;
   margin-bottom: @grid-gutter-by-half;
   border-radius: @border-radius-base;
+  .icon-exclamation;
+
+  &::before {
+    .icon;
+    position: absolute;
+    font-size: 175px;
+    opacity: 0.075;
+    top: 0;
+    right: 0;
+  }
 }
 // KU privacy policy box
 @media (min-width: @screen-xs-max) {

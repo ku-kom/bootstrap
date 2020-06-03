@@ -11446,10 +11446,34 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   table-layout: fixed;
 }
 .cookiefilter {
+  position: relative;
   padding: 15px;
   margin-bottom: 13px;
   background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
   border-radius: 2px;
+}
+.cookiefilter:before {
+  content: "\65";
+}
+.cookiefilter::before {
+  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 175px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  opacity: .075;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 767px) {
   .privacy-policy {
