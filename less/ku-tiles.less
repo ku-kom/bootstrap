@@ -178,15 +178,19 @@ body:not(.FullWidthFrontpage) .double-column {
     .tiles-x:not(.tiles-plugin) {
       .tilebox {
         height: @special-tiles-hight;
-        // .tile-img {
-        //   flex: 1 1 55%;
-        // }
-        //
-        // .tile-content {
-        //   flex: 1 1 45%;
-        // }
+
         .tile-body {
           display: block;
+        }
+      }
+    }
+  }
+
+  .FullWidthFrontpage {
+    .double-column {
+      .tiles-x:not(.tiles-plugin) {
+        .tile-img {
+          flex: 1 1 50%;
         }
       }
     }

@@ -1,4 +1,5 @@
 // KU cookie accept box1
+
 .ccc {
   position: fixed;
   bottom: 0;
@@ -8,18 +9,103 @@
   color: @white-color;
   font-weight: 600;
   background: @ku-cookiebox-bg;
+
+  a {
+    color: @white-color;
+  }
+}
+
+.ccc-btn {
+  #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
+  color: @ku-red;
+  padding: 6px 23px!important;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .ccc-popup {
+  overflow: auto;
+}
 
+.ccc-popup-close {
+  color: @white-color;
+  border: none;
+  background: transparent;
+  font-size: 3.5rem;
+  padding: 0.5rem;
+}
+
+.ccc-popup-close::after {
+  content: '×';
+  display: block;
+}
+
+.ccc-popup-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ccc-list-toggle {
+  width: 100%;
+}
+
+.ccc-list-toggle::after {
+  content: '❯';
+  float: right;
+  display: block;
+  transition: transform 0.3s;
+  transform: rotate(90deg);
+}
+
+.ccc-list-open::after {
+  transform: rotate(270deg);
+}
+
+.ccc-list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  position: relative;
+}
+
+.ccc-list-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.ccc-list-checkbox {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.ccc-list-label {
+  display: none;
+}
+
+.ccc-list-btn {
+  flex: 1 0 auto;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.ccc-table-wrapper {
+  overflow: scroll;
+}
+
+.ccc-table {
+  table-layout: fixed;
 }
 
 .cookiefilter {
   background-color: @gray-f5;
   padding: 15px;
   margin-bottom: @grid-gutter-by-half;
+  border-radius: @border-radius-base;
 }
-
 // KU privacy policy box
 @media (min-width: @screen-xs-max) {
   .privacy-policy {
