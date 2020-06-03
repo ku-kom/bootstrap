@@ -1,8 +1,24 @@
 // KU cookie accept box1
-.ccc-popup {
-  z-index: 2;
+.ccc {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1020!important;
+  color: @white-color;
+  font-weight: 600;
+  background: @ku-cookiebox-bg;
 }
 
+.ccc-popup {
+
+}
+
+.cookiefilter {
+  background-color: @gray-f5;
+  padding: 15px;
+  margin-bottom: @grid-gutter-by-half;
+}
 
 // KU privacy policy box
 @media (min-width: @screen-xs-max) {

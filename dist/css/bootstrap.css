@@ -11337,8 +11337,20 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-weight: 700;
   background-color: #ccc;
 }
-.ccc-popup {
-  z-index: 2;
+.ccc {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1020!important;
+  font-weight: 600;
+  color: #fff;
+  background: #505050;
+}
+.cookiefilter {
+  padding: 15px;
+  margin-bottom: 13px;
+  background-color: #f5f5f5;
 }
 @media (min-width: 767px) {
   .privacy-policy {
