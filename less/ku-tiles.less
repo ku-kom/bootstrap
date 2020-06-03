@@ -190,7 +190,11 @@ body:not(.FullWidthFrontpage) .double-column {
     .double-column {
       .tiles-x:not(.tiles-plugin) {
         .tile-img {
-          flex: 1 1 50%;
+          flex: 0 0 60%;
+        }
+
+        .tile-content {
+          flex: 1 0 auto;
         }
       }
     }
@@ -288,20 +292,6 @@ body:not(.FullWidthFrontpage) .double-column {
 
         .tile-content {
           flex: 1 1 auto;
-        }
-      }
-    }
-  }
-
-  .FullWidthFrontpage {
-    .double-column {
-      .tiles-x {
-        .tile-img {
-          flex: 0 0 60%;
-        }
-
-        .tile-content {
-          flex: 1 0 auto;
         }
       }
     }
