@@ -11191,6 +11191,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-popup-close {
   padding: .5rem;
   font-size: 3.5rem;
+  line-height: 1;
   color: #fff;
   cursor: pointer;
   background: transparent;
