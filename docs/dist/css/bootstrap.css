@@ -11189,13 +11189,19 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   overflow: auto;
 }
 .ccc-popup-close {
-  padding: .5rem;
-  font-size: 3.5rem;
+  padding: 0;
+  font-size: 55px;
   line-height: 1;
   color: #fff;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background: transparent;
   border: none;
+  border: 1px solid transparent;
+}
+.ccc-popup-close:focus {
+  outline: 1px dotted #000;
 }
 .ccc-popup-close::after {
   display: block;
@@ -11216,16 +11222,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin-top: 13px;
   font-size: 22.1px;
   font-weight: 600;
-}
-.ccc-list-toggle {
-  width: 100%;
-}
-.ccc-list-toggle::after {
-  display: block;
-  float: right;
-  content: '❯';
-  transition: transform .3s;
-  transform: rotate(90deg);
 }
 .ccc-list-open::after {
   transform: rotate(270deg);

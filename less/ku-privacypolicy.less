@@ -32,10 +32,16 @@
   color: @white-color;
   border: none;
   background: transparent;
-  font-size: 3.5rem;
-  padding: 0.5rem;
+  border: 1px solid transparent;
+  font-size: 55px;
+  padding: 0;
   line-height: 1;
   cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ccc-popup-close:focus {
+  .tab-focus();
 }
 
 .ccc-popup-close::after {
@@ -54,18 +60,6 @@
   font-size: @font-size-h2;
   font-weight: 600;
   margin-top: @grid-gutter-by-half;
-}
-
-.ccc-list-toggle {
-  width: 100%;
-}
-
-.ccc-list-toggle::after {
-  content: '❯';
-  float: right;
-  display: block;
-  transition: transform 0.3s;
-  transform: rotate(90deg);
 }
 
 .ccc-list-open::after {
