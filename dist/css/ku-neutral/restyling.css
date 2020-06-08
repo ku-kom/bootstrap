@@ -94,7 +94,6 @@ body {
   max-height: 80px;
 }
 .ku-branding-text {
-  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   position: relative!important;
@@ -103,13 +102,10 @@ body {
   max-height: none;
 }
 .ku-branding-line {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   height: auto!important;
@@ -118,7 +114,6 @@ body {
 }
 @media (min-width: 768px) {
   .ku-branding-line {
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-left: 0;

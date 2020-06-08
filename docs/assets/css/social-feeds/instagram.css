@@ -13,7 +13,6 @@ Needs html like this:
 */
 [id^="ig"].gridbox {
   -ms-flex-direction: column !important;
-  -webkit-flex-direction: column !important;
   flex-direction: column !important;
   height: 185px !important;
 }
@@ -30,7 +29,6 @@ Needs html like this:
   left: 0;
   width: 100%;
   -ms-flex: none;
-  -webkit-flex: none;
   flex: none;
   z-index: 100;
 }
@@ -68,16 +66,12 @@ Needs html like this:
 
 #imageBox .batch a {
   -ms-flex: 1;
-  -webkit-flex: 1;
   flex: 1;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
   align-items: stretch;
   position: relative;
 }
@@ -90,7 +84,6 @@ Needs html like this:
 #imageBox .batch img {
   margin: 0 auto;
   -ms-flex: none;
-  -webkit-flex: none;
   flex: none;
   object-fit: cover;
   border: 1px solid #fff;
@@ -110,9 +103,7 @@ Needs html like this:
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
     transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-interpolation-mode: bicubic;
   }
@@ -126,9 +117,7 @@ Needs html like this:
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
     transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -ms-interpolation-mode: bicubic;
   }
@@ -136,10 +125,8 @@ Needs html like this:
 
 #imageBox .batch .inner {
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   height: 100%;
   width: 100%;

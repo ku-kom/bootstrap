@@ -21,7 +21,6 @@ body {
   display: block !important;
   /* override flex */
   -ms-flex-direction: unset !important;
-  -webkit-flex-direction: unset !important;
   flex-direction: unset !important;
 }
 
@@ -1712,7 +1711,6 @@ h1.obvius-logo img {
 
 .obvius-common .flexiblebox-as-rightbox .gridbox {
   -ms-flex-direction: column !important;
-  -webkit-flex-direction: column !important;
   flex-direction: column !important;
 }
 
@@ -5046,7 +5044,6 @@ div.subsiteedit div.radiochoice label {
   content: "Slideshow...";
   top: 50%;
   left: 50%;
-  -webkit-transform: translatex(-50%) translatey(-50%);
   transform: translatex(-50%) translatey(-50%);
   position: absolute;
 }
@@ -5376,7 +5373,6 @@ div.subsiteedit div.radiochoice label {
 
 #content .single-column .column1 .gridnyhed {
   -ms-flex-direction: row;
-  -webkit-flex-direction: row;
   flex-direction: row;
 }
 
@@ -5400,7 +5396,6 @@ div.subsiteedit div.radiochoice label {
 /*Bootstrap overide*/
 #obvius_gridcontent_gridcontent .social-icons .icon {
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   width: 31px;
   height: 31px;
@@ -5568,10 +5563,8 @@ audio, video {
 }
 
 #gridcontent-dialog-edit-newsbox .dialogcontent {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
@@ -5637,7 +5630,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 .drawer .toggle {
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateX(-50%) translateY(50%);
   transform: translateX(-50%) translateY(-50%) rotate(-90deg) translateX(-50%) translateY(50%);
   position: absolute;
   width: auto;
@@ -5750,7 +5742,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 #webstedinfo .toggle {
-  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 16px;
   position: absolute;

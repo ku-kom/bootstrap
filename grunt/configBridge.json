@@ -11,10 +11,9 @@
   },
   "config": {
     "autoprefixerBrowsers": [
-      "last 2 versions",
-      "Android >= 7",
-      "iOS >= 8",
-      "Firefox ESR"
+      "last 2 version",
+      "Android >= 8",
+      "iOS >= 9"
     ],
     "jqueryCheck": [
       "if (typeof jQuery === 'undefined') {",

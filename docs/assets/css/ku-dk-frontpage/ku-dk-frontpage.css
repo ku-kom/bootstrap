@@ -98,7 +98,6 @@ html:lang(en) .ku-branding-text {
   z-index: 2;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 5px;
   font-family: 'ku-symbols';
@@ -210,10 +209,8 @@ html:lang(en) .ku-branding-text {
 .slide-content {
   color: initial;
   height: 289px;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -223,13 +220,10 @@ html:lang(en) .ku-branding-text {
 }
 
 .visual, .visual-text {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
@@ -238,7 +232,6 @@ html:lang(en) .ku-branding-text {
 
 .visual-text {
   padding: 5px 15px 30px 15px;
-  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
@@ -324,13 +317,10 @@ html:lang(en) .ku-branding-text {
   .slide-content {
     color: initial;
     height: 289px;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
@@ -344,7 +334,6 @@ html:lang(en) .ku-branding-text {
     text-align: center;
     width: 44%;
     height: 100%;
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -360,7 +349,6 @@ html:lang(en) .ku-branding-text {
     min-height: unset;
     top: auto;
     left: auto;
-    -webkit-transform: none;
     transform: none;
     max-width: 85% !important;
   }
@@ -371,7 +359,6 @@ html:lang(en) .ku-branding-text {
   }
 
   .single-column .column1 #podcast .size1 {
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     background: #eee;
