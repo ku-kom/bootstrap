@@ -11205,7 +11205,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-popup-close::after {
   display: block;
-  content: '×';
+  content: '\00d7';
 }
 .ccc-popup-header {
   display: -ms-flexbox;
