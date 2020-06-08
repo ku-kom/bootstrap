@@ -11201,7 +11201,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   border: 1px solid transparent;
 }
 .ccc-popup-close:focus {
-  outline: 1px dotted #000;
+  outline: 1px solid #2c6694;
 }
 .ccc-popup-close::after {
   display: block;
