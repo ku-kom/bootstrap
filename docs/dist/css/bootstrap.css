@@ -11171,7 +11171,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   z-index: 1020!important;
   font-weight: 600;
   color: #fff;
-  background: #505050;
+  background: rgba(80, 80, 80, .9);
 }
 .ccc a {
   color: #fff;
@@ -11192,6 +11192,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: .5rem;
   font-size: 3.5rem;
   color: #fff;
+  cursor: pointer;
   background: transparent;
   border: none;
 }
@@ -11209,6 +11210,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   justify-content: space-between;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+.ccc-title {
+  margin-top: 13px;
+  font-size: 22.1px;
+  font-weight: 600;
 }
 .ccc-list-toggle {
   width: 100%;
@@ -11248,9 +11254,13 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-list-btn {
   text-align: left;
   text-transform: capitalize;
+  border: 0;
 
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
+}
+.ccc-list-btn:focus {
+  outline: 1px dotted #000;
 }
 .ccc-table-wrapper {
   overflow: scroll;

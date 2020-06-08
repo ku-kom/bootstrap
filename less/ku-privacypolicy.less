@@ -8,7 +8,7 @@
   z-index: 1020!important;
   color: @white-color;
   font-weight: 600;
-  background: @ku-cookiebox-bg;
+  background: rgba(@ku-cookiebox-bg, .9);
 
   a {
     color: @white-color;
@@ -34,6 +34,7 @@
   background: transparent;
   font-size: 3.5rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .ccc-popup-close::after {
@@ -46,6 +47,12 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.ccc-title {
+  font-size: @font-size-h2;
+  font-weight: 600;
+  margin-top: @grid-gutter-by-half;
 }
 
 .ccc-list-toggle {
@@ -90,6 +97,11 @@
   flex: 1 0 auto;
   text-align: left;
   text-transform: capitalize;
+  border: 0;
+}
+
+.ccc-list-btn:focus {
+  .tab-focus();
 }
 
 .ccc-table-wrapper {
