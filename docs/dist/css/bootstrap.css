@@ -35,22 +35,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*
-* KU gridboxes mixin - for Bootstrap templates only
-*/
-/*
-* Mobile style: All column types must behave like single column boxes regardless of template:
-*   .gcrow .gccolumn .gridbox {
-*    .all-single-column();
-*  }
-*/
-/*
-* Tablet style: Grid front page with left menu - all boxes img left text right:
-*    .img-text-aligned();
-*/
-/*
-* KU tiles mixin
-*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
