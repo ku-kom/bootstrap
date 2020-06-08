@@ -97,17 +97,18 @@
 
 .tiles-x {
   .tiles-x-layout();
-
-  &:not(.tiles-plugin) {
-     &:after {
-      content: '';
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(@white-color,0)),color-stop(70%, rgba(@white-color,1)),to(rgba(@white-color,1)));
-      display: block;
-      height: 48px;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      bottom: 0;
+  @media all and (min-width: @screen-sm) {
+    &:not(.tiles-plugin) {
+      &:after {
+        content: '';
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(@white-color,0)),color-stop(70%, rgba(@white-color,1)),to(rgba(@white-color,1)));
+        display: block;
+        height: 48px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
     }
   }
 }
