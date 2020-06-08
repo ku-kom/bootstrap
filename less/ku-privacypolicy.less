@@ -5,7 +5,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1020!important;
+  z-index: 1020;
   color: @white-color;
   font-weight: 600;
   background: rgba(@ku-cookiebox-bg, .9);
@@ -18,7 +18,7 @@
 .ccc-btn {
   #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
   color: @ku-red;
-  padding: 6px 23px!important;
+  padding: 6px 23px;
   font-size: 1.3em;
   font-weight: bold;
   text-transform: uppercase;
@@ -32,7 +32,6 @@
   color: @white-color;
   border: none;
   background: transparent;
-  border: 1px solid transparent;
   font-size: 55px;
   padding: 0;
   line-height: 1;
@@ -40,13 +39,15 @@
   touch-action: manipulation;
 }
 
-.ccc-popup-close:focus {
-  .tab-focus-v2();
-}
-
 .ccc-popup-close::after {
   content: '\00d7';
   display: block;
+  right: -4px;
+  position: relative;
+}
+
+.ccc-popup-close:focus {
+  .tab-focus-v2();
 }
 
 .ccc-popup-header {
@@ -154,7 +155,7 @@
     .btn {
       #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
       color: @ku-red;
-      padding: 6px 23px!important;
+      padding: 6px 23px;
       font-size: 1.3em;
       font-weight: bold;
       text-transform: uppercase;
