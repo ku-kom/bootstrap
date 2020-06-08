@@ -5785,7 +5785,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   border-bottom: none;
   border-left: none;
   border-right: none;
-  color: #DDDDDD;
+  color: #ddd;
 }
 
 #webstedinfo div.no-website-spacer {
