@@ -2828,6 +2828,7 @@ table.list tr td {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
+  font-size: 92%;
   color: #757575;
   text-align: left;
   caption-side: bottom;
