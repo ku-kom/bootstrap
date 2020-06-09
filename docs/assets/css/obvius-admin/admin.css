@@ -5569,6 +5569,10 @@ audio, video {
   flex-direction: row;
 }
 
+#gridcontent-dialog-edit-newsbox .dialogcontent .tiles-x:after {
+  display: none;
+}
+
 #gridcontent-dialog-edit-newsbox .tilebox {
   height: 289px;
   width: 235px;
@@ -5718,7 +5722,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-/* #webstedinfo {
+#webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5790,6 +5794,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-} */
+}
 
 /* end */
