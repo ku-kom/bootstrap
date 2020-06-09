@@ -58,7 +58,7 @@
   font-size: 17.42px;
   font-weight: 600;
   line-height: 1.25;
-  margin-top: 0;
+  margin: 0;
 }
 
 .tile-cat {
@@ -97,20 +97,6 @@
 
 .tiles-x {
   .tiles-x-layout();
-  @media all and (min-width: @screen-sm) {
-    &:not(.tiles-plugin) {
-      &:after {
-        content: '';
-        background: linear-gradient(to top, rgba(@white-color,1) 27.9%, rgba(@white-color,0));
-        display: block;
-        height: 48px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-      }
-    }
-  }
 }
 
 .tiles-y {
@@ -119,6 +105,21 @@
 @media all and (min-width: @screen-sm) {
   .tiles-y {
     .tiles-y-desktop-layout();
+  }
+
+  .tiles-x {
+    .tile-body {
+      &:after {
+        content: '';
+        background: linear-gradient(to top, rgba(@white-color,1) 25%, rgba(@white-color,0));
+        display: block;
+        height: 43px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
+    }
   }
 }
 // Full width single column
@@ -129,7 +130,6 @@
         .tile-header {
           font-size: 26px;
           font-weight: 600;
-          margin-top: 0;
         }
 
         .tile-body {

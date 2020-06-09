@@ -9447,7 +9447,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   text-decoration: none;
 }
 .tile-header {
-  margin-top: 0;
+  margin: 0;
   font-size: 17.42px;
   font-weight: 600;
   line-height: 1.25;
@@ -9538,23 +9538,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-x .tile-content {
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
   padding: 10px;
   overflow: hidden;
+      flex-direction: column;
 
   -ms-flex: 1 1 50%;
       flex: 1 1 50%;
-}
-@media all and (min-width: 768px) {
-  .tiles-x:not(.tiles-plugin):after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 48px;
-    content: '';
-    background: linear-gradient(to top, #fff 27.9%, rgba(255, 255, 255, 0));
-  }
+  -ms-flex-direction: column;
 }
 .tiles-y .tile-link {
       flex-direction: row-reverse;
@@ -9612,10 +9604,19 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     float: right;
     width: 165px;
   }
+  .tiles-x .tile-body:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 43px;
+    content: '';
+    background: linear-gradient(to top, #fff 25%, rgba(255, 255, 255, 0));
+  }
 }
 @media all and (min-width: 992px) {
   .single-column .tiles-x:not(.tiles-plugin) .tile-header {
-    margin-top: 0;
     font-size: 26px;
     font-weight: 600;
   }
