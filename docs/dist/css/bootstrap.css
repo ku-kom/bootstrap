@@ -9604,16 +9604,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     float: right;
     width: 165px;
   }
-  .tiles-x .tile-body:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 43px;
-    content: '';
-    background: linear-gradient(to top, #fff 25%, rgba(255, 255, 255, 0));
-  }
 }
 @media all and (min-width: 992px) {
   .single-column .tiles-x:not(.tiles-plugin) .tile-header {
@@ -9688,6 +9678,17 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
+  }
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 43px;
+    content: '';
+    background: linear-gradient(to top, #fff 25%, rgba(255, 255, 255, 0));
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
     -ms-flex: 0 0 65%;

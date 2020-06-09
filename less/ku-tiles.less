@@ -106,21 +106,6 @@
   .tiles-y {
     .tiles-y-desktop-layout();
   }
-
-  .tiles-x {
-    .tile-body {
-      &:after {
-        content: '';
-        background: linear-gradient(to top, rgba(@white-color,1) 25%, rgba(@white-color,0));
-        display: block;
-        height: 43px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-      }
-    }
-  }
 }
 // Full width single column
 @media all and (min-width: @screen-md) {
@@ -195,6 +180,17 @@ body:not(.FullWidthFrontpage) .double-column {
 
         .tile-body {
           display: block;
+
+          &:after {
+            content: '';
+            background: linear-gradient(to top, rgba(@white-color,1) 25%, rgba(@white-color,0));
+            display: block;
+            height: 43px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+          }
         }
       }
     }
