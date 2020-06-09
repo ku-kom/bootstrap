@@ -2839,12 +2839,12 @@ th {
   max-width: 100%;
   margin-bottom: 15px;
 }
-.table > tfoot > tr > th,
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
+.table > tbody > tr > td,
 .table > thead > tr > td,
-.table > tbody > tr > td {
+.table > tfoot > tr > td,
+.table > tbody > tr > th,
+.table > thead > tr > th,
+.table > tfoot > tr > th {
   padding: 8px;
   line-height: 1.5;
   vertical-align: top;
@@ -2854,12 +2854,12 @@ th {
   vertical-align: bottom;
   border-bottom: 1px solid #ddd;
 }
-.table > caption + thead > tr:first-child > th,
-.table > thead:first-child > tr:first-child > th,
-.table > colgroup + thead > tr:first-child > th,
-.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td,
-.table > colgroup + thead > tr:first-child > td {
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > th {
   border-top: 0;
 }
 .table > tbody + tbody {
@@ -2897,27 +2897,30 @@ th {
 .pct_45 {
   width: 45%;
 }
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > td,
+.table-condensed > tbody > tr > td,
 .table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td {
+.table-condensed > tfoot > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > thead > tr > th,
+.table-condensed > tfoot > tr > th {
   padding: 5px;
+}
+.table-condensed p {
+  margin: 3px 0;
 }
 .table-bordered {
   border: 1px solid #ddd;
 }
-.table-bordered > tfoot > tr > th,
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > td,
+.table-bordered > tbody > tr > td,
 .table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td {
+.table-bordered > tfoot > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > thead > tr > th,
+.table-bordered > tfoot > tr > th {
   border: 1px solid #ddd;
 }
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
   border-bottom-width: 2px;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
@@ -2926,20 +2929,20 @@ th {
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5;
 }
-.table-noborder > tfoot > tr > th,
-.table-noborder > thead > tr > th,
-.table-noborder > tbody > tr > th,
-.table-noborder > tfoot > tr > td,
+.table-noborder > tbody > tr > td,
 .table-noborder > thead > tr > td,
-.table-noborder > tbody > tr > td {
+.table-noborder > tfoot > tr > td,
+.table-noborder > tbody > tr > th,
+.table-noborder > thead > tr > th,
+.table-noborder > tfoot > tr > th {
   border: 0;
 }
 .table-cellspacing {
   border-spacing: 3px;
   border-collapse: separate;
 }
-.table-cellspacing > tr > th,
-.table-cellspacing > tr > td {
+.table-cellspacing > tr > td,
+.table-cellspacing > tr > th {
   border: 0;
 }
 .table-with-img-col > tbody > tr > td:first-child {
@@ -3078,26 +3081,26 @@ table th[class*="col-"] {
   .table-responsive > .table-bordered {
     border: 0;
   }
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child {
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child {
     border-left: 0;
   }
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child {
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child {
     border-right: 0;
   }
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > th {
     border-bottom: 0;
   }
 }
