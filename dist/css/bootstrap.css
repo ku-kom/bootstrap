@@ -9678,6 +9678,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
+
+    -ms-flex: 1;
+        flex: 1;
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after {
@@ -9686,9 +9689,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     left: 0;
     display: block;
     width: 100%;
-    height: 43px;
+    height: 42px;
     content: '';
-    background: linear-gradient(to top, #fff 25%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to top, #fff 60%, rgba(255, 255, 255, 0));
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
     -ms-flex: 0 0 65%;
