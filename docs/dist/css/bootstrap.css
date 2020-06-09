@@ -8918,7 +8918,7 @@ iframe {
 }
 .item-list {
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 7px;
   list-style: none;
 }
 .item-list .item {
