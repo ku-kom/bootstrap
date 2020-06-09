@@ -2830,6 +2830,8 @@ caption {
   padding-bottom: 8px;
   color: #757575;
   text-align: left;
+  caption-side: bottom;
+  border-bottom: 1px solid #ccc;
 }
 th {
   text-align: left;
