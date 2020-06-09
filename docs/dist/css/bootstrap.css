@@ -9143,7 +9143,38 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   padding-top: 15px;
 }
 .readAll {
+  display: inline-block;
+  padding: 6px 9px;
   margin-bottom: 0;
+  border: 1px solid #252525;
+  border-radius: 2px;
+}
+.readAll:hover {
+  background-color: #f5f5f5;
+}
+.readAll a {
+  font-weight: 600;
+  color: #252525 !important;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.readAll a::after {
+  position: relative;
+  top: -1px;
+  margin-left: 6px;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  font-size: 86%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  content: "\61";
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .search-news {
   padding: 5px 15px;
@@ -9675,10 +9706,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .double-column .tiles-x:not(.tiles-plugin) .tilebox {
     height: 367px;
   }
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header,
-  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header {
-    margin: 0;
-  }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
@@ -9693,9 +9720,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     left: 0;
     display: block;
     width: 100%;
-    height: 42px;
+    height: 35px;
     content: '';
-    background: linear-gradient(to top, #fff 60%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to top, #fff 43%, rgba(255, 255, 255, 0));
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
     -ms-flex: 0 0 65%;

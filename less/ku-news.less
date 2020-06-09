@@ -32,6 +32,7 @@
       color: inherit;
       display: block;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
@@ -319,6 +320,29 @@ nav[aria-label="Pager"] {
 
 .readAll {
   margin-bottom: 0;
+  border: 1px solid @text-color;
+  padding: 6px 9px;
+  border-radius: @border-radius-base;
+  display: inline-block;
+
+  &:hover {
+    background-color: @gray-f5;
+  }
+
+  a {
+    color: @text-color !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &::after {
+      .icon;
+      content: @icon-arrow;
+      margin-left: 6px;
+      top: -1px;
+      font-size: 86%;
+    }
+  }
 }
 // Search news forms
 
@@ -351,7 +375,7 @@ nav[aria-label="Pager"] {
 
   span {
     color: @gray-light;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
     font-weight: 700;
     font-size: 1em;
     padding-right: 5px;
@@ -451,8 +475,8 @@ nav[aria-label="Pager"] {
     }
   }
 }
-
 // Events as grid elements
+
 .calendarTime {
   .text-muted;
   margin-top: 10px;
