@@ -2906,7 +2906,7 @@ th {
   padding: 5px;
 }
 .table-condensed p {
-  margin: 3px 0;
+  margin: 2px 0;
 }
 .table-bordered {
   border: 1px solid #ddd;
@@ -11337,6 +11337,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.cookiefilter-header {
+  font-size: 18px;
+  font-weight: 600;
 }
 @media (min-width: 767px) {
   .privacy-policy {
