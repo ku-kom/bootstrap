@@ -58,7 +58,7 @@
   font-size: 17.42px;
   font-weight: 600;
   line-height: 1.25;
-  margin: 0;
+  margin-top: 0;
 }
 
 .tile-cat {
@@ -177,6 +177,10 @@ body:not(.FullWidthFrontpage) .double-column {
     .tiles-x:not(.tiles-plugin) {
       .tilebox {
         height: @special-tiles-hight;
+
+        .tile-header {
+          margin: 0;
+        }
 
         .tile-body {
           display: block;
