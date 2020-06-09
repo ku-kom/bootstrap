@@ -265,7 +265,8 @@ module.exports = function (grunt) {
           'docs/assets/css/social-feeds/instagram.css',
           'docs/assets/css/social-feeds/twitter.css',
           'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
-          'docs/assets/css/obvius-admin/admin.css'
+          'docs/assets/css/obvius-admin/admin.css',
+          'docs/assets/css/tinymce/tiny-overrides.css'
           //'dist/css/faculties/*.css'
         ]
       },
