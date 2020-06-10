@@ -368,7 +368,7 @@ div.portal_navigator_top {
 }
 
 .search_button:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px solid #2c6694!important;
 }
 
 span.portal_navigator_links em.portal_navigator_divider {
