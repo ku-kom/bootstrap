@@ -367,6 +367,15 @@ div.portal_navigator_top {
   text-decoration: underline !important;
 }
 
+.search_button:focus {
+  outline: 1px solid #2c6694;
+}
+
+span.portal_navigator_links em.portal_navigator_divider {
+  padding: 0px;
+  color: #757575 !important;
+}
+
 @media all and (max-width: 480px) {
   .pureportal .portal_columns_body .portal_columns_column {
     width: 100% !important;
