@@ -5,9 +5,27 @@
  *  </div>
  * <ul class="list-unstyled"></ul></div>
  */
-(function ($) {
+(function($) {
   'use strict';
-  $(document).ready(function () {
+
+  $(document).ready(function() {
+    var lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
+    var translations;
+    if (lang == 'da') {
+      translations = {
+        "reply": "Svar",
+        "Retweet": "Retweet",
+        "like": "Like",
+        "date": "Dato/tid"
+      };
+    } else { //English
+      translations = {
+        "reply": "Reply",
+        "Retweet": "Retweet",
+        "like": "Like",
+        "date": "Date/time"
+      }
+    }
     // Run
     gettwitterjson();
 
@@ -27,10 +45,10 @@
         data: {
           user: twitterAccount
         },
-        success: function (feeds) {
+        success: function(feeds) {
           //console.log(feeds);
           wrapper.find(loading).addClass('hidden');
-          $(feeds).each(function (i, e) {
+          $(feeds).each(function(i, e) {
             var tweetscreenname = e.user.name;
             var tweetusername = e.user.screen_name;
             var profileimage = e.user.profile_image_url_https;
@@ -46,25 +64,25 @@
             var showTweetActions = true;
 
             if (typeof e.extended_entities != 'undefined') {
-              $.each(e.extended_entities.media, function (j, v) {
+              $.each(e.extended_entities.media, function(j, v) {
                 var photo = v.media_url_https;
-                photoUrl = '<img src="' + photo + '" alt="Billede af ' + tweetscreenname + '" class="img-responsive">';
+                photoUrl = '<img src="' + photo + '" alt="' + tweetscreenname + '" class="img-responsive">';
               })
             }
 
             if (showTweetActions == true) {
-              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '" title="Svar">Svar</a></div><div class="intent tw-rt"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '" title="Retweet">Retweet</a></div><div class="intent tw-fav"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '" title="Like">Like</a></div></div>';
+              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '" title="' + translations.reply + '">' + translations.reply + '</a></div><div class="intent tw-rt"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '" title="' + translations.retweet + '">' + translations.retweet + '</a></div><div class="intent tw-fav"><a aria-label="' + aria + '" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '" title="' + translations.like + '">' + translations.like + '</a></div></div>';
             }
 
             wrapper.find('ul').append('<li><div class="imgInfo"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '" ><img src="' + profileimage +
               '" class="profileImg" alt="@' + tweetusername + '" title="@' + tweetusername + '" /></a></div><div class="twitterInfo"><div class="fullName">' + tweetscreenname + '</div><div class="twitterName">@' +
               tweetusername + '</div></div><div class="description">' + status + '</div>' + photoUrl + '<div class="tweet-time"><a aria-label="Tweet id: ' + tweetid + '" target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '/status/' + tweetid +
-              '" title="Se tweet fra @' + tweetusername + '">' + timeSince(d) + '</a></div>' + twitterActions + '</li>');
+              '" title="' + translations.date + '">' + timeSince(d) + '</a></div>' + twitterActions + '</li>');
 
             return i < displaylimit - 1;
           });
         },
-        error: function (xhr, status, error) {
+        error: function(xhr, status, error) {
           console.log(xhr.responseText);
         }
       });
@@ -72,17 +90,17 @@
 
     function renderLinks(data) {
       //Add href to all links within tweets
-      data = data.replace(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g, function (url) {
+      data = data.replace(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g, function(url) {
         return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
       });
 
       //Add link to @usernames used within tweets
-      data = data.replace(/\B@([_a-z0-9]+)/ig, function (reply) {
+      data = data.replace(/\B@([_a-z0-9]+)/ig, function(reply) {
         return '<a target="_blank" rel="noopener" href="https://twitter.com/' + reply.substring(1) + '">' + reply.charAt(0) + reply.substring(1) + '</a>';
       });
 
       //Add link to hashtags
-      data = data.replace(/(?:^|\s)#(\w+)/ig, function (hashtag) {
+      data = data.replace(/(?:^|\s)#(\w+)/ig, function(hashtag) {
         return '<a target="_blank" rel="noopener" href="https://twitter.com/hashtag/' + hashtag.trim().toLowerCase().replace(/#/g, '') + '">' + hashtag + '</a>';
       });
 
@@ -105,7 +123,9 @@
       }
       if (secondsPast > 86400) {
         var day = timeStamp.getDate();
-        var month = timeStamp.toLocaleString(lang, { month: 'long' });
+        var month = timeStamp.toLocaleString(lang, {
+          month: 'long'
+        });
         var year = timeStamp.getFullYear() == now.getFullYear() ? "" : " " + timeStamp.getFullYear();
         return day + '. ' + month + ' ' + year;
       }
