@@ -14,14 +14,14 @@
     if (lang == 'da') {
       translations = {
         "reply": "Svar",
-        "Retweet": "Retweet",
+        "retweet": "Retweet",
         "like": "Like",
         "date": "Dato/tid"
       };
     } else { //English
       translations = {
         "reply": "Reply",
-        "Retweet": "Retweet",
+        "retweet": "Retweet",
         "like": "Like",
         "date": "Date/time"
       }
