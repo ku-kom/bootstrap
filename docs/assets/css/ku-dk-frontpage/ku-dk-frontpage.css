@@ -115,57 +115,6 @@ html:lang(en) .ku-branding-text {
   margin-bottom: 0;
 }
 
-/* Kalenderliste læs mere */
-.readAll {
-  margin-top: 13px;
-}
-
-.readAll a {
-  color: #252525;
-  background-color: transparent;
-  border: 1px solid #252525;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 600;
-  letter-spacing: .7px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  padding: 6px 10px;
-  font-size: 13px;
-  line-height: 1.5;
-  border-radius: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.readAll a:after {
-  font-family: ku-symbols !important;
-  content: "\61";
-  speak: none;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  font-size: 12px;
-  margin-left: 10px;
-  top: -1px;
-}
-
-.readAll a:hover {
-  background: rgba(244, 244, 244, .7);
-}
-
 .caption {
   background-color: #f5f5f5;
   padding: 10px 15px;
@@ -378,5 +327,60 @@ html:lang(en) .ku-branding-text {
 @media all and (min-width: 992px) {
   .image-presentation {
     height: 600px;
+  }
+}
+
+/* Jumpboard */
+.entries .entry {
+  background-image: linear-gradient(to bottom, #f3f3f1 0, #edece9 100%);
+}
+
+.entries .entry::before {
+  background-image: linear-gradient(to bottom, #ecece9 0, #e0e0de 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity .5s;
+}
+
+.entries .entry:hover::before {
+  opacity: 1;
+}
+
+.entries .entry>a {
+  color: #444;
+  font-size: 16px;
+}
+
+.entries .entry>a:before {
+  float: right;
+}
+
+@media (min-width: 992px) {
+  .entries .entry>a:before {
+    display: none
+  }
+
+  .entries .entry {
+    padding: 0
+  }
+
+  .entries .entry>a {
+    padding: 25px 15px;
+    display: block;
+  }
+
+  .entries .entry>a:hover {
+    text-decoration: none;
+  }
+
+  .entries .entry+.entry:after {
+    top: 0;
+    height: 100%;
   }
 }
