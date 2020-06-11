@@ -353,12 +353,17 @@ html:lang(en) .ku-branding-text {
 }
 
 .entries .entry>a {
-  color: #444;
+  position: relative;
+  color: #444 !important;
   font-size: 16px;
 }
 
 .entries .entry>a:before {
-  float: right;
+  position: absolute;
+  font-size: 15px;
+  transform: translatey(-50%);
+  left: auto;
+  right: 0;
 }
 
 @media (min-width: 992px) {
@@ -367,7 +372,11 @@ html:lang(en) .ku-branding-text {
   }
 
   .entries .entry {
-    padding: 0
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .entries .entry>a {
