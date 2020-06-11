@@ -3195,7 +3195,6 @@ output {
   border: 0;
 }
 select.form-control {
-  width: auto;
   max-width: 100%;
 }
 .form-control[disabled],
@@ -3670,7 +3669,6 @@ body.Form .has-error .input-group-addon {
   border: 0;
 }
 select.form-tooltip {
-  width: auto;
   max-width: 100%;
 }
 .form-tooltip[disabled],
