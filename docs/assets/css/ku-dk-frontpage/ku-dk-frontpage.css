@@ -362,7 +362,7 @@ html:lang(en) .ku-branding-text {
 
   .entries .entry>a {
     text-transform: capitalize;
-    letter-spacing: normal;
+    letter-spacing: 0.3px;
   }
 }
 
