@@ -333,8 +333,6 @@ html:lang(en) .ku-branding-text {
 /* Jumpboard */
 .entries {
   border-top: 1px solid #cfcfcf;
-  border-bottom: 1px solid #cfcfcf;
-  padding-bottom: 1px;
 }
 
 .entries .entry {
@@ -368,6 +366,11 @@ html:lang(en) .ku-branding-text {
 }
 
 @media (min-width: 992px) {
+  .entries {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 1px;
+  }
+
   .entries .entry {
     background-image: linear-gradient(to bottom, #f3f3f1 0, #edece9 100%);
     border-bottom: 0;
