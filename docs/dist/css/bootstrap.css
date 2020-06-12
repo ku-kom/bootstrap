@@ -9645,6 +9645,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     font-size: 26px;
     font-weight: 600;
   }
+  .single-column .tiles-x:not(.tiles-plugin) .tile-cat {
+    display: none;
+  }
   .single-column .tiles-x:not(.tiles-plugin) .tile-body {
     display: block;
     font-size: 16px;

@@ -333,9 +333,12 @@ html:lang(en) .ku-branding-text {
 /* Jumpboard */
 .entries {
   border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 1px;
 }
+
 .entries .entry {
-  padding: 10px 6px;
+  padding: 10px 6px 15px 6px;
   background-image: none;
   border-bottom: 1px solid #999;
 }
@@ -413,7 +416,6 @@ html:lang(en) .ku-branding-text {
   .entries .entry+.entry:after {
     top: 0;
     height: 100%;
-        background-color: #cfcfcf;
+    background-color: #cfcfcf;
   }
-
 }
