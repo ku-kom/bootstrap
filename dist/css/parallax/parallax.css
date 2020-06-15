@@ -10,29 +10,6 @@
   --scroll: 0;
   background: linear-gradient(to right, #901a1e var(--scroll), transparent 0);
 }
-.ku-topbar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
-.ku-topbar.ku-topbar-fixed-top {
-  transform: translatey(6px);
-}
-.ku-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  transform: translatey(28px);
-  transition: all 0.3s ease;
-}
-.ku-nav.ku-nav-top {
-  transform: translatey(33px);
-}
-#content {
-  margin-top: 42px;
-}
 .breadcrumbs,
 .local-footer {
   display: none;
@@ -177,9 +154,6 @@
   margin-left: 10px;
 }
 @media all and (min-width: 768px) {
-  #content {
-    margin-top: 68px;
-  }
   .campaign-block {
     /* Take desktop scrollbar into account: */
     width: calc(100vw - 9px);
