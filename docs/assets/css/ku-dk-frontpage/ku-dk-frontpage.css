@@ -389,6 +389,7 @@ html:lang(en) .ku-branding-text {
 
   } */
   .entries .entry:hover {
+    background-color: #e5e5e5;
     transition: background-color .5s;
   }
 
