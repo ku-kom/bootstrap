@@ -57,16 +57,6 @@
 // })
 //})
 
-$(document).ready(function() {
-  // Scroll down past logo area
-  var div = $('#main-area').offset();
-  if (div) {
-    $('html, body').animate({
-      scrollTop: div.top
-    }, 'slow');
-  }
-});
-
 // Fixes jumpy scroll in IE11 by disabling smooth scroll
 if (navigator.userAgent.match(/Trident\/7\./)) {
   document.body.addEventListener('mousewheel', function(event) {
