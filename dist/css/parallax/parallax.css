@@ -30,12 +30,6 @@
 .ku-nav.ku-nav-top {
   transform: translatey(33px);
 }
-.ku-branding {
-  display: none;
-}
-.ku-branding::after {
-  display: none;
-}
 #content {
   margin-top: 42px;
 }
