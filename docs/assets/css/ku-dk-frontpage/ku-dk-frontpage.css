@@ -375,22 +375,11 @@ html:lang(en) .ku-branding-text {
   .entries .entry {
     background-color: #edece9;
     border-bottom: 0;
+    transition: background-color .5s;
   }
 
-  /* .entries .entry::before {
-    background-image: linear-gradient(to bottom, #ecece9 0, #e0e0de 100%);
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-
-  } */
   .entries .entry:hover {
     background-color: #e5e5e5;
-    transition: background-color .5s;
   }
 
   .entries .entry>a:before {
@@ -426,7 +415,7 @@ html:lang(en) .ku-branding-text {
     color: inherit;
     position: relative;
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 10px;
     top: -1px;
   }
 
