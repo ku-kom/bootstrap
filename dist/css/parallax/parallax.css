@@ -10,6 +10,9 @@
   --scroll: 0;
   background: linear-gradient(to right, #901a1e var(--scroll), transparent 0);
 }
+.ku-branding::after {
+  display: none;
+}
 .breadcrumbs,
 .local-footer {
   display: none;
