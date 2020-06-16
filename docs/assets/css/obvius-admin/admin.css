@@ -5593,6 +5593,12 @@ audio, video {
 
 #obarea4 > #obarea2 + #obarea3 .obvius-common .admincontentwrapper #content.subpage.wide {
   width: 100%;
+  max-width: 1040px;
+}
+
+#obarea4 > #obarea2 + #obarea3 #subsite-navigation {
+  width: 100%;
+  max-width: 1040px;
 }
 
 /* Oevrige oplysninger */
