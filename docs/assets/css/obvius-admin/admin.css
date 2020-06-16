@@ -5609,8 +5609,9 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
 
-#datatable_wrapper select {
+#datatable_wrapper select.form-control {
   width: auto;
+  display: inline-block;
 }
 
 #right_drawers {
@@ -5744,7 +5745,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-/* #webstedinfo {
+#webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5816,6 +5817,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-} */
+}
 
 /* end */
