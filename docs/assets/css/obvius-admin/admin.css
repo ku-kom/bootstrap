@@ -5600,9 +5600,17 @@ audio, video {
   width: auto;
 }
 
+.admin-unused-files th:nth-last-child(2) {
+
+}
+
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
+}
+
+#datatable_wrapper select {
+  width: auto;
 }
 
 #right_drawers {

@@ -9149,6 +9149,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .readAll {
   display: inline-block;
   padding: 6px 9px;
+  margin-top: 14px;
   margin-bottom: 0;
   border: 1px solid #252525;
   border-radius: 2px;
