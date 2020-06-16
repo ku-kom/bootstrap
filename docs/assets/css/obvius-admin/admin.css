@@ -5587,11 +5587,11 @@ audio, video {
 }
 
 /* Target Bootstrap */
-#obarea4 > #obarea2 .obvius-common #content-wrapper {
+#obarea4 > #obarea2 + #obarea3 .obvius-common #content-wrapper {
   width: auto;
 }
 
-#obarea4 > #obarea2 .obvius-common .admincontentwrapper #content.subpage.wide {
+#obarea4 > #obarea2 + #obarea3 .obvius-common .admincontentwrapper #content.subpage.wide {
   width: 100%;
 }
 
