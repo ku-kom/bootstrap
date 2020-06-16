@@ -5586,6 +5586,15 @@ audio, video {
   margin: 0;
 }
 
+/* Target Bootstrap */
+#obarea4 > #obarea2 .obvius-common #content-wrapper {
+  width: auto;
+}
+
+#obarea4 > #obarea2 .obvius-common .admincontentwrapper #content.subpage.wide {
+  width: 100%;
+}
+
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   height: 400px !important;
@@ -5722,7 +5731,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5794,6 +5803,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 
 /* end */
