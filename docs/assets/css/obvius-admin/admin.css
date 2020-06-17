@@ -2206,6 +2206,22 @@ div.admincontentwrapper div#content {
   right: 20px;
 }
 
+/* Firefox select arrow */
+@media screen and (min--moz-device-pixel-ratio:0) {
+  select.form-control:not([multiple]) {
+    padding-right: 25px;
+    background-image: url("data:image/svg+xml,\
+            <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='10px' height='10px' viewBox='0 0 1000 1000' fill='rgb(51,51,51)'>\
+                <path d='M900 400 l -800 0 l 400 400 z'/>\
+            </svg>") !important;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px) 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
 #confirm {
   float: left;
 }
@@ -5588,22 +5604,20 @@ audio, video {
 }
 
 /* Target Bootstrap */
-#obarea4 > #obarea2 + #obarea3 .obvius-common #content-wrapper {
+#obarea4>#obarea2+#obarea3 .obvius-common #content-wrapper {
   width: auto;
 }
 
-#obarea4 > #obarea2 + #obarea3 .obvius-common .admincontentwrapper #content.subpage.wide {
+#obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper #content.subpage.wide {
   width: 100%;
   max-width: 1040px;
 }
 
-#obarea4 > #obarea2 + #obarea3 #subsite-navigation {
+#obarea4>#obarea2+#obarea3 #subsite-navigation {
   width: auto;
 }
 
-.admin-unused-files th:nth-last-child(2) {
-
-}
+.admin-unused-files th:nth-last-child(2) {}
 
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
@@ -5744,9 +5758,19 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   margin: 0 1em;
 }
 
+.dataTables_filter form-group {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dataTables_filter form-group>label {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5818,6 +5842,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
-
+} */
 /* end */
