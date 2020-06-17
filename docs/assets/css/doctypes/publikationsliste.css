@@ -48,6 +48,7 @@ body.pureportal #content .person_view .view_container p {
 }
 
 body.pureportal a, body.PureIntegration a {
+  color: #2c6694!important;
   text-decoration: underline;
 }
 
@@ -150,8 +151,7 @@ li.portal_list_item_most_downloaded div.portal_content_properties {
 }
 
 ol.portal_list li h2.title a, ol.portal_list li a {
-  /* font-size: 14px;
-  color: #252525; */
+  color: #2c6694!important;
   font-weight: 600;
   line-height: 18px;
   /* letter-spacing: .6px; */
