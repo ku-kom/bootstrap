@@ -40,8 +40,13 @@ div.tabbed-search-box ul.box-tabs {
 }
 
 .pureportal .tabbed-search-box ul.box-tabs li a {
+  color: #252525!important;
   font-size: 13px;
   text-decoration: none;
+}
+
+div.tabbed-search-box ul.box-tabs li.selected a {
+  color: #fff!important;
 }
 
 .pureportal .tabbed-search-box .gradient-search-box {
@@ -55,12 +60,12 @@ div.tabbed-search-box ul.box-tabs {
 
 .search_tips .portal_link span {
   font-size: 13px !important;
-  color: #165aad !important;
+  color: #2c6694 !important;
   text-decoration: underline!important;
 }
 
 .search_tips .portal_link:hover {
-  color: #165aad !important;
+  color: #2c6694 !important;
 }
 
 table.properties {
