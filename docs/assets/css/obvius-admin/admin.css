@@ -1663,6 +1663,7 @@ h1.obvius-logo img {
 
 .obvius-common .admincontentwrapper #content.subpage {
   width: 100%;
+  max-width: 496px;
 }
 
 .obvius-common .admincontentwrapper #content.subpage h3:first-of-type {
