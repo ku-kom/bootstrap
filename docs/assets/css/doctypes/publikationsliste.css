@@ -48,8 +48,11 @@ body.pureportal #content .person_view .view_container p {
 }
 
 body.pureportal a, body.PureIntegration a {
-  color: #2c6694!important;
   text-decoration: underline;
+}
+
+.link.person {
+  color: #2c6694!important
 }
 
 .nav li {
