@@ -51,10 +51,6 @@ body.pureportal a, body.PureIntegration a {
   text-decoration: underline;
 }
 
-.link.person {
-  color: #2c6694!important
-}
-
 .nav li {
   padding-bottom: unset;
   text-align: unset;
@@ -82,6 +78,14 @@ body.pureportal a, body.PureIntegration a {
 
 .dropdown ul li.dropdown-mwnu {
   border: 0;
+}
+
+#purecontent a {
+  color: #2c6694;
+}
+
+#purecontent a:visited {
+  color: #3d239c;
 }
 
 #content {
@@ -154,7 +158,7 @@ li.portal_list_item_most_downloaded div.portal_content_properties {
 }
 
 ol.portal_list li h2.title a, ol.portal_list li a {
-  color: #2c6694!important;
+  color: #2c6694 !important;
   font-weight: 600;
   line-height: 18px;
   /* letter-spacing: .6px; */
@@ -203,7 +207,7 @@ div.rendering p.type, ol.portal_list>li {
 }
 
 .view_container ul.tabs li a {
-  color: #252525;
+  color: #252525!important;
   background: none;
   text-decoration: none;
   background-color: #f3f3f3;
@@ -215,7 +219,7 @@ div.rendering p.type, ol.portal_list>li {
 }
 
 .view_container ul.tabs li.selected a {
-  color: #fff;
+  color: #fff!important;
   background-color: #757575;
   border: 1px solid #757575;
   border-bottom: 0;
@@ -371,7 +375,7 @@ div.portal_navigator_top {
 }
 
 .search_button:focus {
-  outline: 1px solid #2c6694!important;
+  outline: 1px solid #2c6694 !important;
 }
 
 span.portal_navigator_links em.portal_navigator_divider {
