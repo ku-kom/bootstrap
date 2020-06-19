@@ -8005,7 +8005,7 @@ nav {
   position: fixed;
   right: 2%;
   bottom: 3%;
-  z-index: 1030;
+  z-index: 1020;
   display: -ms-flexbox;
   display: flex;
   width: 40px;
@@ -11221,7 +11221,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1020;
+  z-index: 1051;
   padding: 0;
   color: #fff;
   background-color: rgba(80, 80, 80, .96);
