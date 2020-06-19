@@ -11222,96 +11222,113 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   bottom: 0;
   left: 0;
   z-index: 1020;
-  font-weight: 600;
   color: #fff;
   background: rgba(80, 80, 80, .9);
 }
 .ccc a {
   color: #fff;
 }
-.ccc-btn {
-  padding: 6px 23px;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #901a1e;
-  text-transform: uppercase;
-  background-image: linear-gradient(to bottom, #eee 0%, #cfcfcf 100%);
-  background-repeat: repeat-x;
-}
 .ccc-popup {
+  padding-bottom: 23px;
   overflow: auto;
-}
-.ccc-popup-close {
-  padding: 0;
-  font-size: 55px;
-  line-height: 1;
-  color: #fff;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-}
-.ccc-popup-close::after {
-  position: relative;
-  right: -4px;
-  display: block;
-  content: '\00d7';
-}
-.ccc-popup-close:focus {
-  outline: 1px solid #2c6694;
-}
-.ccc-popup-header {
-  display: -ms-flexbox;
-  display: flex;
-
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: start;
-  align-items: flex-start;
 }
 .ccc-title {
   margin-top: 13px;
-  font-size: 22.1px;
-  font-weight: 600;
+  font-size: 26px;
 }
-.ccc-list-open::after {
-  transform: rotate(270deg);
+.ccc-intro {
+  font-size: 16px;
 }
 .ccc-list {
   position: relative;
   padding: 0;
-  margin: 1rem 0;
   list-style: none;
+}
+.ccc-list > li {
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 2px;
+}
+.ccc-list > li + li {
+  margin-top: 23px;
+}
+.ccc-select-title {
+  margin-top: 0;
+  font-size: 22px;
+}
+.ccc-select {
+  position: relative;
+  font-size: 14px;
 }
 .ccc-list-actions {
   display: -ms-flexbox;
   display: flex;
+      flex-direction: row;
 
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-direction: row;
 }
-.ccc-list-checkbox {
-  display: inline-block;
-  margin: 1rem 1rem 1rem 0;
-}
-.ccc-list-label {
-  display: none;
-}
-.ccc-list-btn {
-  text-align: left;
-  text-transform: capitalize;
+.ccc-arrow {
+  float: right;
+  font-size: 26px;
+  color: #ccc;
+  cursor: pointer;
+  background: transparent;
   border: 0;
-
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
 }
-.ccc-list-btn:focus {
-  outline: 1px dotted #000;
+.ccc-arrow:not(.collapsed) .glyphicon:before {
+  content: "\e260";
+}
+.customcheck {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-top: 4px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.customcheck input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+.customcheck input:checked ~ .checkmark {
+  background-color: #005cc8;
+  border-radius: 5px;
+}
+.customcheck input:checked ~ .checkmark::after {
+  display: block;
+}
+.customcheck:hover input ~ .checkmark {
+  background-color: #888;
+}
+.customcheck .checkmark::after {
+  top: 5px;
+  left: 9px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.checkmark::after {
+  position: absolute;
+  display: none;
+  content: "";
 }
 .ccc-table-wrapper {
   overflow: scroll;
@@ -11321,6 +11338,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   color: initial;
   table-layout: fixed;
   background-color: #fff;
+}
+.ccc-buttons button + button {
+  margin-left: 26px;
 }
 .cookiefilter {
   position: relative;

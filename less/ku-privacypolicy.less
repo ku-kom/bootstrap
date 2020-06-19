@@ -7,7 +7,6 @@
   left: 0;
   z-index: 1020;
   color: @white-color;
-  font-weight: 600;
   background: rgba(@ku-cookiebox-bg, .9);
 
   a {
@@ -15,89 +14,131 @@
   }
 }
 
-.ccc-btn {
-  #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
-  color: @ku-red;
-  padding: 6px 23px;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .ccc-popup {
   overflow: auto;
+  padding-bottom: @grid-gutter-height;
 }
 
-.ccc-popup-close {
-  color: @white-color;
-  border: none;
-  background: transparent;
-  font-size: 55px;
-  padding: 0;
-  line-height: 1;
-  cursor: pointer;
-  touch-action: manipulation;
-}
-
-.ccc-popup-close::after {
-  content: '\00d7';
-  display: block;
-  right: -4px;
-  position: relative;
-}
-
-.ccc-popup-close:focus {
-  .tab-focus-v2();
-}
-
-.ccc-popup-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+.ccc-popup-header {}
 
 .ccc-title {
-  font-size: @font-size-h2;
-  font-weight: 600;
+  font-size: 26px;
   margin-top: @grid-gutter-by-half;
 }
 
-.ccc-list-open::after {
-  transform: rotate(270deg);
+.ccc-intro {
+  font-size: 16px;
 }
 
 .ccc-list {
   list-style: none;
-  margin: 1rem 0;
   padding: 0;
+  position: relative;
+}
+
+.ccc-list > li {
+  border: 1px solid @gray-888;
+  padding: 10px;
+  border-radius: @border-radius-base;
+}
+
+.ccc-list > li + li {
+  margin-top: @grid-gutter-height;
+}
+
+.ccc-select-title {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.ccc-select {
+  font-size: 14px;
   position: relative;
 }
 
 .ccc-list-actions {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  flex-direction: row;
 }
 
-.ccc-list-checkbox {
-  display: inline-block;
-  margin: 1rem 1rem 1rem 0;
-}
-
-.ccc-list-label {
-  display: none;
-}
-
-.ccc-list-btn {
-  flex: 1 0 auto;
-  text-align: left;
-  text-transform: capitalize;
+.ccc-arrow {
+  color: @gray;
+  font-size: 26px;
+  background: transparent;
   border: 0;
+  cursor: pointer;
+  float: right;
+
+  &:not(.collapsed) {
+    .glyphicon {
+      &:before {
+        content: "\e260";
+      }
+    }
+  }
 }
 
-.ccc-list-btn:focus {
-  .tab-focus();
+.customcheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 4px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .checkmark {
+      background-color: #005cc8;
+      border-radius: 5px;
+    }
+
+    &:checked ~ .checkmark {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    input ~ .checkmark {
+      background-color: @gray-888;
+    }
+  }
+
+  .checkmark {
+    &::after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid @white-color;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: @gray-lighter;
+  border-radius: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 }
 
 .ccc-table-wrapper {
@@ -109,6 +150,10 @@
   table-layout: fixed;
   color: initial;
   background-color: @white-color;
+}
+
+.ccc-buttons button + button {
+  margin-left: 26px;
 }
 
 .cookiefilter {

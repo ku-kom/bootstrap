@@ -4968,15 +4968,7 @@ div.subsiteedit div.radiochoice label {
 
 #protectedlog pre {
   white-space: pre-wrap;
-  /* css-3 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
   word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
   line-height: 1em;
 }
 
@@ -5112,9 +5104,6 @@ div.subsiteedit div.radiochoice label {
   border-left: 1px solid #fff;
 }
 
-/* .calendarpicker .obviuscal_nav {
-  background: transparent url(menuarrow.gif) no-repeat 100% 100%;
-} */
 .calendarpicker thead .title {
   /* This holds the current "month, year"*/
   font-weight: bold;
@@ -5605,7 +5594,7 @@ audio, video {
   width: auto;
 }
 
-.admin-unused-files #select_all::after {display: none;}
+.admin-unused-files .dataTable thead th:nth-last-of-type(1):after {display: none;}
 .admin-unused-files th:nth-last-child(2) {}
 
 /* Oevrige oplysninger */
@@ -5759,7 +5748,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5831,5 +5820,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 /* end */
