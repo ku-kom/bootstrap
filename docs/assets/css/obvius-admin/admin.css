@@ -5594,8 +5594,7 @@ audio, video {
   width: auto;
 }
 
-.admin-unused-files .dataTable thead th:nth-last-of-type(1):after {display: none;}
-.admin-unused-files th:nth-last-child(2) {}
+.admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
 
 /* Oevrige oplysninger */
 textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
