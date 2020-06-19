@@ -95,10 +95,6 @@
   flex-direction: row;
 }
 
-.btn-lg {
-  font-weight: 700;
-}
-
 .customcheck {
   display: block;
   position: relative;
@@ -174,8 +170,12 @@
   background-color: @white-color;
 }
 
+.btn-lg {
+  font-weight: 700;
+}
+
 .ccc-buttons button + button {
-  margin-left: 26px;
+  margin-left: floor((@grid-gutter-width * 2));
 }
 
 .cookiefilter {

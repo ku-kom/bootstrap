@@ -11312,10 +11312,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 
   -ms-flex-direction: row;
 }
-.btn-lg,
-.btn-group-lg > .btn {
-  font-weight: 700;
-}
 .customcheck {
   position: relative;
   display: block;
@@ -11377,8 +11373,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   table-layout: fixed;
   background-color: #fff;
 }
+.btn-lg,
+.btn-group-lg > .btn {
+  font-weight: 700;
+}
 .ccc-buttons button + button {
-  margin-left: 26px;
+  margin-left: 52px;
 }
 .cookiefilter {
   position: relative;
