@@ -11224,7 +11224,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   z-index: 1020;
   padding: 0;
   color: #fff;
-  background-color: #505050;
+  background-color: rgba(80, 80, 80, .96);
 }
 .ccc a {
   color: #fff;
