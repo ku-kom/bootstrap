@@ -11239,7 +11239,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     padding-left: 52px;
   }
 }
-.ccc-title {
+#ccc-title {
   margin-top: 13px;
   font-size: 26px;
 }
