@@ -11231,12 +11231,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-popup {
   padding-bottom: 23px;
+  overflow: auto;
 }
 @media all and (min-width: 768px) {
   .ccc-popup {
-    padding-top: 13px;
-    padding-right: 52px;
-    padding-left: 52px;
+    padding: 13px 52px 52px 52px;
   }
 }
 #ccc-title {

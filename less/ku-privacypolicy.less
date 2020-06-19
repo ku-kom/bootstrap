@@ -16,12 +16,10 @@
 }
 
 .ccc-popup {
-  // overflow: auto;
+  overflow: auto;
   padding-bottom: @grid-gutter-height;
   @media all and (min-width: @screen-sm-min) {
-    padding-top: @grid-gutter-by-half;
-    padding-left: floor((@grid-gutter-width * 2));
-    padding-right: floor((@grid-gutter-width * 2));
+    padding: @grid-gutter-by-half floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2));
   }
 }
 
