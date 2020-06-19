@@ -11224,7 +11224,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   z-index: 1020;
   padding: 0;
   color: #fff;
-  background: rgba(80, 80, 80, .9);
+  background-color: #505050;
 }
 .ccc a {
   color: #fff;
@@ -11378,7 +11378,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-weight: 700;
 }
 .ccc-buttons button + button {
-  margin-left: 52px;
+  margin-left: 26px;
+}
+@media all and (min-width: 768px) {
+  .ccc-buttons button + button {
+    margin-left: 52px;
+  }
 }
 .cookiefilter {
   position: relative;

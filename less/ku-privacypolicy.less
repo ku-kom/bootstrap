@@ -8,7 +8,7 @@
   padding: 0;
   z-index: 1020;
   color: @white-color;
-  background: rgba(@ku-cookiebox-bg, .9);
+  background-color: @ku-cookiebox-bg;
 
   a {
     color: @white-color;
@@ -175,7 +175,10 @@
 }
 
 .ccc-buttons button + button {
-  margin-left: floor((@grid-gutter-width * 2));
+  margin-left: @grid-gutter-width;
+  @media all and (min-width: @screen-sm-min) {
+    margin-left: floor((@grid-gutter-width * 2));
+  }
 }
 
 .cookiefilter {
