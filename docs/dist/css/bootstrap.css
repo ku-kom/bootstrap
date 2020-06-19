@@ -11242,6 +11242,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-list {
   position: relative;
   padding: 0;
+  margin-bottom: 23px;
   list-style: none;
 }
 .ccc-list > li {
@@ -11254,11 +11255,40 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-select-title {
   margin-top: 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 .ccc-select {
   position: relative;
+  padding-bottom: 20px;
   font-size: 14px;
+  cursor: pointer;
+}
+.ccc-select:before {
+  content: "\e259";
+}
+.ccc-select:before {
+  position: relative;
+  position: absolute;
+  top: 1px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ccc-select:active,
+.ccc-select:focus {
+  outline: 1px solid #2c6694;
+}
+.ccc-select.open:before {
+  content: "\e260";
 }
 .ccc-list-actions {
   display: -ms-flexbox;
@@ -11281,7 +11311,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .customcheck {
   position: relative;
   display: block;
-  padding-left: 35px!important;
+  padding-left: 30px!important;
   margin: 4px 4px 12px 0;
   font-size: 22px;
   cursor: pointer;
@@ -11302,9 +11332,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .customcheck input:checked ~ .checkmark::after {
   display: block;
 }
-.customcheck:hover input ~ .checkmark {
-  background-color: #888;
-}
 .customcheck .checkmark::after {
   top: 5px;
   left: 9px;
@@ -11318,10 +11345,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  background-color: #eee;
-  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 2px;
 }
 .checkmark::after {
   position: absolute;
@@ -11329,11 +11356,13 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   content: "";
 }
 .ccc-table-wrapper {
-  overflow: scroll;
+  display: none;
+  height: 150px;
+  overflow-y: scroll;
   background-color: #fff;
 }
 .ccc-table {
-  color: initial;
+  color: #252525;
   table-layout: fixed;
   background-color: #fff;
 }
