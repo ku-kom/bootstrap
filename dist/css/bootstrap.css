@@ -11222,6 +11222,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   bottom: 0;
   left: 0;
   z-index: 1020;
+  padding: 0;
   color: #fff;
   background: rgba(80, 80, 80, .9);
 }
@@ -11230,7 +11231,13 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-popup {
   padding-bottom: 23px;
-  overflow: auto;
+}
+@media all and (min-width: 768px) {
+  .ccc-popup {
+    padding-top: 13px;
+    padding-right: 52px;
+    padding-left: 52px;
+  }
 }
 .ccc-title {
   margin-top: 13px;
@@ -11238,6 +11245,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-intro {
   font-size: 16px;
+}
+@media all and (min-width: 768px) {
+  .ccc-intro {
+    letter-spacing: .7px;
+  }
 }
 .ccc-list {
   position: relative;
@@ -11259,8 +11271,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-select {
   position: relative;
-  padding-bottom: 20px;
+  padding-right: 26px;
+  padding-bottom: 23px;
   font-size: 14px;
+  letter-spacing: .7px;
   cursor: pointer;
 }
 .ccc-select:before {
@@ -11279,6 +11293,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  color: #f1f1f1;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11297,16 +11312,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 
   -ms-flex-direction: row;
 }
-.ccc-arrow {
-  float: right;
-  font-size: 26px;
-  color: #ccc;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-}
-.ccc-arrow:not(.collapsed) .glyphicon:before {
-  content: "\e260";
+.btn-lg,
+.btn-group-lg > .btn {
+  font-weight: 700;
 }
 .customcheck {
   position: relative;
@@ -11315,6 +11323,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin: 4px 4px 12px 0;
   font-size: 22px;
   cursor: pointer;
+  cursor: default!important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -11327,14 +11336,15 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .customcheck input:checked ~ .checkmark {
   background-color: #005cc8;
+  border: 1px solid #999;
   border-radius: 2px;
 }
 .customcheck input:checked ~ .checkmark::after {
   display: block;
 }
 .customcheck .checkmark::after {
-  top: 5px;
-  left: 9px;
+  top: 4px;
+  left: 7px;
   width: 5px;
   height: 10px;
   border: solid #fff;
@@ -11348,6 +11358,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   width: 20px;
   height: 20px;
   background-color: #ddd;
+  border: 1px solid #666;
   border-radius: 2px;
 }
 .checkmark::after {

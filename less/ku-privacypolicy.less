@@ -5,6 +5,7 @@
   bottom: 0;
   right: 0;
   left: 0;
+  padding: 0;
   z-index: 1020;
   color: @white-color;
   background: rgba(@ku-cookiebox-bg, .9);
@@ -15,8 +16,13 @@
 }
 
 .ccc-popup {
-  overflow: auto;
+  // overflow: auto;
   padding-bottom: @grid-gutter-height;
+  @media all and (min-width: @screen-sm-min) {
+    padding-top: @grid-gutter-by-half;
+    padding-left: floor((@grid-gutter-width * 2));
+    padding-right: floor((@grid-gutter-width * 2));
+  }
 }
 
 .ccc-title {
@@ -26,6 +32,9 @@
 
 .ccc-intro {
   font-size: 16px;
+  @media all and (min-width: @screen-sm-min) {
+    letter-spacing: 0.7px;
+  }
 }
 
 .ccc-list {
@@ -52,8 +61,10 @@
 
 .ccc-select {
   font-size: 14px;
+  letter-spacing: 0.7px;
   position: relative;
-  padding-bottom: 20px;
+  padding-right: @grid-gutter-width;
+  padding-bottom: @grid-gutter-height;
   cursor: pointer;
   .glyphicon-menu-down;
 
@@ -64,6 +75,7 @@
     right: 0;
     bottom: 0;
     font-size: 26px;
+    color: @semi-white;
   }
 
   &:active,
@@ -83,21 +95,8 @@
   flex-direction: row;
 }
 
-.ccc-arrow {
-  color: @gray;
-  font-size: 26px;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  float: right;
-
-  &:not(.collapsed) {
-    .glyphicon {
-      &:before {
-        content: "\e260";
-      }
-    }
-  }
+.btn-lg {
+  font-weight: 700;
 }
 
 .customcheck {
@@ -108,6 +107,7 @@
   cursor: pointer;
   font-size: 22px;
   user-select: none;
+  cursor: default!important;
 
   input {
     position: absolute;
@@ -117,6 +117,7 @@
     &:checked ~ .checkmark {
       background-color: #005cc8;
       border-radius: @border-radius-base;
+      border: 1px solid @gray-999;
     }
 
     &:checked ~ .checkmark {
@@ -132,8 +133,8 @@
   // }
   .checkmark {
     &::after {
-      left: 9px;
-      top: 5px;
+      left: 7px;
+      top: 4px;
       width: 5px;
       height: 10px;
       border: solid @white-color;
@@ -150,6 +151,7 @@
   height: 20px;
   width: 20px;
   background-color: @gray-ddd;
+  border: 1px solid @gray-666;
   border-radius: @border-radius-base;
 
   &::after {
