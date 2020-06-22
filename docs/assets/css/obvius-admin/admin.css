@@ -5597,11 +5597,11 @@ audio, video {
 .admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
 
 .subsite-settings {
-  width: 100%!important;
+  width: unset!important;
 }
 
 #obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
-  width: 100%;
+  width: auto;
   max-width: none;
 }
 
