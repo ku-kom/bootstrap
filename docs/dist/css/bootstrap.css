@@ -11242,11 +11242,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin-top: 13px;
   font-size: 26px;
 }
-.ccc-intro {
+#ccc-desc {
   font-size: 16px;
 }
 @media all and (min-width: 768px) {
-  .ccc-intro {
+  #ccc-desc {
     letter-spacing: .7px;
   }
 }
