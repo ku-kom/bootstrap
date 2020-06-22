@@ -5596,7 +5596,7 @@ audio, video {
 
 .admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
 
-.subsite-settings {
+.obvius-common .admincontentwrapper.subsite-settings {
   width: auto;
 }
 
