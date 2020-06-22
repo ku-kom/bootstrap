@@ -5596,8 +5596,13 @@ audio, video {
 
 .admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
 
-.obvius-common .admincontentwrapper.subsite-settings {
-  width: auto;
+.subsite-settings {
+  width: 100%!important;
+}
+
+#obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
+  width: 100%;
+  max-width: none;
 }
 
 /* Oevrige oplysninger */
