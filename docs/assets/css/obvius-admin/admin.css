@@ -5596,13 +5596,12 @@ audio, video {
 
 .admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
 
-.subsite-settings {
-  width: unset!important;
+.obvius-common .admincontentwrapper.subsite-settings {
+  width: 100%!important;
 }
 
 #obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
   width: auto;
-  max-width: none;
 }
 
 /* Oevrige oplysninger */
