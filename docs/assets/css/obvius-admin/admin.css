@@ -4604,10 +4604,6 @@ div.calendarpicker {
   border-color: #aaa;
 }
 
-.subsite-settings .subpage.wide > p:first-child {
-  max-width: 769px;
-}
-
 /* New subsite editing interface */
 /* #webstedinfo {
   position: absolute;
