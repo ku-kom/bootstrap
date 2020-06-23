@@ -4604,7 +4604,7 @@ div.calendarpicker {
   border-color: #aaa;
 }
 
-#subsite-navigation .subpage.wide ~p:first-child {
+.subsite-settings .subpage.wide > p:first-child {
   max-width: 769px;
 }
 
