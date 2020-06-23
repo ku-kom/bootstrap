@@ -5747,6 +5747,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 .dataTables_filter.form-group {
   display: -ms-flexbox;
   display: flex;
+  float: left;
 }
 
 .dataTables_filter.form-group>label {
