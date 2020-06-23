@@ -2,9 +2,8 @@ body {
   background-color: #fff;
 }
 .ku-branding::after {
-  width: calc(100vw - 9px);
   border-bottom: 1px solid #901a1e;
-  width: 100vw;
+  width: calc(100vw - 9px);
   position: relative;
   left: 50%;
   right: 50%;
@@ -35,7 +34,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 0;
-  width: 100vw;
+  width: calc(100vw - 9px);
   position: relative;
   left: 50%;
   right: 50%;
@@ -157,7 +156,6 @@ body {
 @media all and (min-width: 768px) {
   .campaign-block {
     /* Take desktop scrollbar into account: */
-    width: calc(100vw - 9px);
     -ms-flex-pack: center;
     justify-content: center;
   }
