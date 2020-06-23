@@ -4604,6 +4604,10 @@ div.calendarpicker {
   border-color: #aaa;
 }
 
+#subsite-navigation ~p:first-child {
+  max-width: 769px;
+}
+
 /* New subsite editing interface */
 /* #webstedinfo {
   position: absolute;
@@ -5753,6 +5757,11 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 .dataTables_filter.form-group>label {
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+.subsite-settings #datatable_length {
+  float: left;
+  margin-right: 15px;
 }
 
 /* Remove shortly */
