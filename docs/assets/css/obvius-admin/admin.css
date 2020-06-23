@@ -5602,6 +5602,7 @@ audio, video {
 
 #obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
   width: auto;
+  max-width: 100%;
 }
 
 /* Oevrige oplysninger */
@@ -5755,7 +5756,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5827,5 +5828,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 /* end */
