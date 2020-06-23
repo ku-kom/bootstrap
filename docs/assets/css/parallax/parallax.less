@@ -15,7 +15,6 @@
   --scroll: 0;
   background: linear-gradient(to right, rgb(@ku-red) var(--scroll), transparent 0);
 }
-
 // .ku-topbar {
 //   position: fixed;
 //   left: 0;
@@ -42,12 +41,16 @@
 
 .ku-branding {
   // display: none;
-
   &::after {
-    display: none;
+    width: calc(100vw - 9px);
+    border-bottom: 1px solid @ku-red;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
   }
 }
-
 // #content {
 //   margin-top: 42px;
 // }
@@ -217,13 +220,10 @@
   vertical-align: top;
   margin-left: 10px;
 }
-
 @media all and (min-width: @screen-sm) {
-
   // #content {
   //   margin-top: 68px;
   // }
-
   .campaign-block {
     /* Take desktop scrollbar into account: */
     width: calc(100vw - 9px);
