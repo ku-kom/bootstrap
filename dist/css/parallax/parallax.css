@@ -1,23 +1,15 @@
-.progress {
-  margin: 0;
-  height: 6px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1040;
-}
-.progress-fixed-top .progress-bar {
-  --scroll: 0;
-  background: linear-gradient(to right, #901a1e var(--scroll), transparent 0);
+body {
+  background-color: #fff;
 }
 .ku-branding::after {
   width: calc(100vw - 9px);
   border-bottom: 1px solid #901a1e;
+  width: 100vw;
+  position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  position: relative;
 }
 .breadcrumbs,
 .local-footer {
