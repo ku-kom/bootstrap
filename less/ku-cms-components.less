@@ -35,6 +35,10 @@ nav {
 }
 
 .main-content {
+  @media (max-width: @screen-xs-max) {
+    width: 100%; // Overriding Bootstrap's grid system
+  }
+
   .row {
     margin-bottom: @grid-gutter-height;
 
@@ -132,8 +136,7 @@ nav {
   position: relative;
   &:extend(.clearfix all);
   margin-bottom: @grid-gutter-height;
-
- // Todo: delete this:
+  // Todo: delete this:
   &.picture .title {
     display: none;
   }
