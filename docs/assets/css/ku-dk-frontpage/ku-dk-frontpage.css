@@ -94,6 +94,10 @@ html:lang(en) .ku-branding-text {
   text-decoration: none;
 }
 
+.jumpboard .jumpcolumn li a {
+  text-decoration: underline;
+}
+
 .jumpboard .jumpcolumn li a:after {
   z-index: 2;
   position: absolute;
@@ -359,7 +363,7 @@ html:lang(en) .ku-branding-text {
   }
 }
 
-@media all and (min-width: 992) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .jumpboard .jumpcolumn li a::after {
     top: 5px;
   }
