@@ -281,7 +281,8 @@ html:lang(en) .ku-branding-text {
   .jumpboard .jumpcolumn li a:after {
     position: relative;
     font-size: 16px;
-    /* top: -2px; See below for IE11 */
+    /* See below for IE11 */
+    top: -2px;
     margin-left: 15px;
   }
 
@@ -352,15 +353,15 @@ html:lang(en) .ku-branding-text {
     width: 235px !important;
     margin-right: 26px;
   }
+
+  .image-presentation {
+    height: 600px;
+  }
 }
+
 @media all and (min-width: 992) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .jumpboard .jumpcolumn li a::after {
     top: 5px;
-  }
-}
-@media all and (min-width: 992px) {
-  .image-presentation {
-    height: 600px;
   }
 }
 
