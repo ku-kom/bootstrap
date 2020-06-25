@@ -85,26 +85,14 @@ $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+    <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
   </div>
 
 </div>
 {% endhighlight %}
-
-  <h3>Fade effect</h3>
-  <p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.in</code> to make the initial content visible.</p>
-{% highlight html %}
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
-</div>
-{% endhighlight %}
-
   <h3 id="tabs-methods">Methods</h3>
   <h4><code>$().tab</code></h4>
   <p>
