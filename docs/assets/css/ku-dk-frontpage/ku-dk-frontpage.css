@@ -94,7 +94,7 @@ html:lang(en) .ku-branding-text {
   text-decoration: none;
 }
 
-.jumpboard .jumpcolumn li a {
+.jumpboard .jumpcolumn li a:hover {
   text-decoration: underline;
 }
 
