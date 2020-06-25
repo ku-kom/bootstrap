@@ -285,9 +285,9 @@ html:lang(en) .ku-branding-text {
   .jumpboard .jumpcolumn li a:after {
     position: relative;
     font-size: 16px;
-    /* See below for IE11 */
-    top: -2px;
+    top: 5px;
     margin-left: 15px;
+    display: inline-block;
   }
 
   .jumpboard .jumpcolumn li a {
@@ -360,12 +360,6 @@ html:lang(en) .ku-branding-text {
 
   .image-presentation {
     height: 600px;
-  }
-}
-
-@media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .jumpboard .jumpcolumn li a::after {
-    top: 5px;
   }
 }
 
