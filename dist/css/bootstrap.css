@@ -1629,14 +1629,6 @@ h5 > strong,
 h6 > strong {
   font-weight: inherit;
 }
-h1 > br,
-h2 > br,
-h3 > br,
-h4 > br,
-h5 > br,
-h6 > br {
-  display: none;
-}
 .h1,
 .h2,
 .h3,
@@ -1687,7 +1679,7 @@ h6 small {
 h1 {
   margin-top: 0;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   .h1,
@@ -1697,12 +1689,12 @@ h1 {
 }
 .h2,
 h2 {
-  font-size: 22.1px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
 }
 .h3,
 h3 {
-  font-size: 17.42px;
+  font-size: 17px;
   font-weight: 600;
 }
 .h4,
@@ -1712,7 +1704,7 @@ h4 {
 }
 .h5,
 h5 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 .h6,
@@ -1986,7 +1978,7 @@ address {
 h2.deloverskrift {
   padding: 0 5px 8px 0;
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: .7px;
   border-bottom: 1px solid #959595;
@@ -6675,11 +6667,6 @@ button.list-group-item-danger.active:focus {
   color: inherit;
   letter-spacing: .25px;
 }
-@media (min-width: 992px) {
-  .panel-title {
-    font-size: 16px;
-  }
-}
 .panel-title > .small > a,
 .panel-title > a,
 .panel-title > small,
@@ -6908,11 +6895,6 @@ button.list-group-item-danger.active:focus {
   font-size: 16px;
   line-height: 20px;
 }
-@media (min-width: 992px) {
-  .panel-accordion > .panel-heading .panel-title {
-    font-size: 14.4px;
-  }
-}
 .panel-accordion > .panel-heading .panel-title a {
   display: block;
   padding: 8px 30px 10px 10px;
@@ -6962,6 +6944,9 @@ button.list-group-item-danger.active:focus {
 }
 .panel-accordion .panel-body {
   padding: 10px;
+}
+.panel-accordion .panel-body h3 {
+  font-size: 15px;
 }
 .panel-accordion .panel-collapse {
   border-top: 1px solid #f1f1f1;
@@ -8209,7 +8194,7 @@ iframe {
 .ku-leftmenu .ku-navbar-header {
   position: relative;
   padding-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -11907,7 +11892,7 @@ p[align="right"]:before {
 }
 .factbox .fact-title {
   margin-bottom: 10px;
-  font-size: 17.42px;
+  font-size: 17px;
   font-weight: 600;
 }
 .factbox-left {

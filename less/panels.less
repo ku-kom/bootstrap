@@ -49,9 +49,6 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  @media (min-width: @screen-md) {
-    font-size: 16px;
-  }
   font-weight: 600;
   letter-spacing: 0.25px;
   color: inherit;
@@ -367,9 +364,6 @@
 
     .panel-title {
       font-size: 16px;
-      @media (min-width: @screen-md) {
-        font-size: 14.4px;
-      }
       line-height: 20px;
 
       a {
@@ -430,6 +424,10 @@
 
   .panel-body {
     padding: 10px;
+
+    h3 {
+      font-size: 15px;
+    }
   }
 
   .panel-collapse {
