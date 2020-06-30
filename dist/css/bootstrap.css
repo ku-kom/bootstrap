@@ -1678,6 +1678,7 @@ h2 {
 h3 {
   font-size: 17px;
   font-weight: 600;
+  line-height: 1.5;
 }
 @media (max-width: 767px) {
   .h3,
