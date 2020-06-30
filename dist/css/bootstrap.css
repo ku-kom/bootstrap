@@ -1692,25 +1692,55 @@ h2 {
   font-size: 20px;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .h2,
+  h2 {
+    font-size: 22px;
+  }
+}
 .h3,
 h3 {
   font-size: 17px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .h3,
+  h3 {
+    font-size: 18px;
+  }
 }
 .h4,
 h4 {
   font-size: 15px;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .h4,
+  h4 {
+    font-size: 16px;
+  }
+}
 .h5,
 h5 {
   font-size: 13px;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .h5,
+  h5 {
+    font-size: 14px;
+  }
+}
 .h6,
 h6 {
   font-size: 13px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .h6,
+  h6 {
+    font-size: 14px;
+  }
 }
 .gcitem > * ~ h1:first-of-type {
   margin-top: 20px;
@@ -1963,7 +1993,7 @@ blockquote.full-width {
   float: none;
   width: 100%;
   padding: 0;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px;
 }
 .right-side blockquote {
   width: 100%!important;
@@ -8488,7 +8518,7 @@ iframe {
   font-weight: 700;
 }
 #mobileleftmenu ul.nyheder li > a {
-  padding: 10px 12px;
+  padding: 10px 12px 10px 20px;
 }
 #mobileleftmenu ul.nyheder img {
   display: none;

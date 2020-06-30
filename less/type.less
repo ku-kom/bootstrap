@@ -88,30 +88,45 @@ h1 {
 .h2,
 h2 {
   font-size: @font-size-h2;
+  @media (max-width: @screen-xs-max) {
+    font-size: floor((@font-size-h2 * 1.1));
+  }
   font-weight: 600;
 }
 
 .h3,
 h3 {
   font-size: @font-size-h3;
+  @media (max-width: @screen-xs-max) {
+    font-size: floor((@font-size-h3 * 1.1));
+  }
   font-weight: 600;
 }
 
 .h4,
 h4 {
   font-size: @font-size-h4;
+  @media (max-width: @screen-xs-max) {
+    font-size: floor((@font-size-h4 * 1.1));
+  }
   font-weight: 600;
 }
 
 .h5,
 h5 {
   font-size: @font-size-h5;
+  @media (max-width: @screen-xs-max) {
+    font-size: floor((@font-size-h5 * 1.1));
+  }
   font-weight: 700;
 }
 
 .h6,
 h6 {
   font-size: @font-size-h6;
+  @media (max-width: @screen-xs-max) {
+    font-size: floor((@font-size-h6 * 1.1));
+  }
   font-weight: 600;
 }
 
@@ -343,11 +358,11 @@ dd {
 // Misc
 // -------------------------
 // Abbreviations and acronyms
+
 abbr[title] {
   text-decoration: none;
   border-bottom: 0;
 }
-
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 
 abbr[data-original-title] {
@@ -410,7 +425,7 @@ blockquote {
   &.full-width {
     width: 100%;
     padding: 0;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 15px;
     float: none;
   }
 }
