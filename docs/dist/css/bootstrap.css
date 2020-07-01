@@ -7938,43 +7938,38 @@ nav {
 
     -ms-flex-direction: row;
   }
-  .jump {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    margin: 0;
-  }
-  .jump li {
-    display: block;
-    list-style: none;
-  }
-  .jump li a {
-    position: absolute;
-    top: -1000px;
-    left: 0;
-    display: block;
-    width: 0;
-    height: 0;
-    color: #fff;
-    background-color: #252525;
-  }
-  .jump li a:active,
-  .jump li a:focus {
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: auto;
-    height: auto;
-    color: #fff;
-    outline: 1px solid #2c6694;
-  }
 }
-@media (max-width: 768px) {
-  .jumpbox {
-    display: none;
-  }
+.jump {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.jump li {
+  display: block;
+  list-style: none;
+}
+.jump li a {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #252525;
+}
+.jump li a:active,
+.jump li a:focus {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: auto;
+  height: auto;
+  color: #fff;
+  outline: 1px solid #2c6694;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;

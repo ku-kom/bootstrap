@@ -41,48 +41,48 @@
     display: flex;
     flex-direction: row;
   }
-  // Accessibility navigation box for tabbing
-  .jump {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 0;
-    margin: 0;
+}
+// Accessibility navigation box for tabbing
+.jump {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  margin: 0;
 
-    li {
-      list-style: none;
+  li {
+    list-style: none;
+    display: block;
+
+    a {
+      background-color: @gray-dark;
+      color: @white-color;
       display: block;
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      width: 0;
+      height: 0;
 
-      a {
-        background-color: @gray-dark;
+      &:active,
+      &:focus {
         color: @white-color;
-        display: block;
-        position: absolute;
-        top: -1000px;
+        top: 0;
         left: 0;
-        width: 0;
-        height: 0;
-
-        &:active,
-        &:focus {
-          color: @white-color;
-          top: 0;
-          left: 0;
-          z-index: 10;
-          height: auto;
-          width: auto;
-          .tab-focus-v2();
-        }
+        z-index: 10;
+        height: auto;
+        width: auto;
+        .tab-focus-v2();
       }
     }
   }
 }
-@media (max-width: @screen-sm) {
-  .jumpbox {
-    display: none;
-  }
-}
+// @media (max-width: @screen-sm) {
+//   .jumpbox {
+//     display: none;
+//   }
+// }
 //KU remove gutter from columns
 
 .no-gutter {
