@@ -5594,10 +5594,12 @@ audio, video {
   width: auto;
 }
 
-.admin-unused-files.dataTable thead >tr>th:first-child:after {display: none;}
+.admin-unused-files.dataTable thead>tr>th:first-child:after {
+  display: none;
+}
 
 .obvius-common .admincontentwrapper.subsite-settings {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 #obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
@@ -5755,6 +5757,37 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   align-self: flex-end;
 }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  position: relative;
+  float: left;
+  padding: 6px 10px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  z-index: 3;
+  color: #fff;
+  background-color: #757575;
+  border-color: #757575;
+  cursor: default;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  text-align: right;
+  padding-top: .25em;
+}
+
+.dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate, .dataTables_wrapper .dataTables_processing {
+  color: #333;
+}
+
 .subsite-settings #datatable_length {
   float: left;
   margin-right: 15px;
@@ -5762,7 +5795,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface */
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5834,5 +5867,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 /* end */
