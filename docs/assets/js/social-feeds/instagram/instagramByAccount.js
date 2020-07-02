@@ -48,7 +48,7 @@
           type: 'GET',
           dataType: "jsonp",
           success: function (data) {
-            //console.log(data);
+            console.log(data);
             $loading.hide();
             for (var i = 0; i < $images; i++) {
               var img = data.data[i].images.standard_resolution.url;
