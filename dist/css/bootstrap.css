@@ -7864,7 +7864,7 @@ nav {
 }
 @media (min-width: 992px) {
   .right-side {
-    margin-top: 75px;
+    margin-top: 62px;
   }
 }
 .rightbox .rightbox-normal:first-child {
@@ -8181,7 +8181,7 @@ iframe {
 .ku-leftmenu .ku-navbar-header {
   position: relative;
   padding-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-weight: bold;
   line-height: 1.2;
 }
