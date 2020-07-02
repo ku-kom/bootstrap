@@ -11218,6 +11218,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -webkit-overflow-scrolling: touch;
   color: #fff;
   background-color: rgba(80, 80, 80, .96);
+  transform: translateZ(0);
 }
 .ccc a {
   color: #fff;
