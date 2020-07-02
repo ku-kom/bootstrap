@@ -45,9 +45,8 @@
         $.ajax({
           url: $url,
           type: 'GET',
-
           success: function(data) {
-            console.log(data);
+            //console.log(data);
             $loading.hide();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             if (entry) {
