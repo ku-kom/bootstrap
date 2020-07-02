@@ -9,6 +9,9 @@
   z-index: (@zindex-modal + 1);
   color: @white-color;
   background-color: rgba(@ku-cookiebox-bg, .96);
+  overflow-y: scroll;
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
 
   a {
     color: @white-color;
@@ -16,7 +19,7 @@
 }
 
 .ccc-popup {
-  overflow: auto;
+  height: 100%;
   padding-bottom: @grid-gutter-height;
   @media all and (min-width: @screen-sm-min) {
     padding: @grid-gutter-by-half floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2));
@@ -171,11 +174,19 @@
 .btn-lg {
   font-weight: 700;
 }
+@media (max-width: @screen-xs-max) {
+  .ccc-buttons button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 
-.ccc-buttons button + button {
-  margin-left: @grid-gutter-width;
-  @media all and (min-width: @screen-sm-min) {
-    margin-left: floor((@grid-gutter-width * 2));
+.ccc-buttons button {
+  &:first-child {
+    margin-left: @grid-gutter-by-half;
+    @media all and (min-width: @screen-sm-min) {
+      margin-left: floor((@grid-gutter-width * 2));
+    }
   }
 }
 
