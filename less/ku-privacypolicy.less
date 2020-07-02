@@ -28,6 +28,7 @@
 
 #ccc-title {
   font-size: 26px;
+  line-height: 1.3;
   margin-top: @grid-gutter-by-half;
 }
 
@@ -162,6 +163,7 @@
   display: none;
   height: 150px;
   overflow-y: scroll;
+  overflow-x: auto;
   background-color: @white-color;
 }
 
@@ -183,7 +185,7 @@
 
 .ccc-buttons button {
   &:first-child {
-    margin-left: @grid-gutter-by-half;
+    margin-right: @grid-gutter-by-half;
     @media all and (min-width: @screen-sm-min) {
       margin-left: floor((@grid-gutter-width * 2));
     }
