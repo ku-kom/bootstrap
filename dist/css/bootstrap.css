@@ -11292,7 +11292,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -moz-osx-font-smoothing: grayscale;
 }
 .ccc-select:active,
-.ccc-select:focus {
+.ccc-select:focus-within {
   outline: 1px solid #2c6694;
 }
 .ccc-select.open:before {
