@@ -35,8 +35,7 @@ h1 {
     display: block;
   }
 
-  .GridForside .gridcontent>.row:first-child .gccolumn:last-child .rightbox:first-child .panel-title {
-    /* Gridforside - rightbox i grid højre side: */
+  /* .GridForside .gridcontent>.row:first-child .gccolumn:last-child .rightbox:first-child .panel-title {
     padding-top: 23px;
-  }
+  } */
 }
