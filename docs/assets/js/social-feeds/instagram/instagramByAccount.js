@@ -10,13 +10,12 @@
      <div id="imageBox"></div>
  </div>
  The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
-(function ($) {
+(function($) {
   'use strict';
-  $(document).ready(function () {
+  $(document).ready(function() {
     var $wrapper = $("#ig");
     var $container = $wrapper.find("#imageBox");
     var $loading = $wrapper.find(".ku-loading");
-    var $token = $wrapper.attr("data-token");
     var $user = $wrapper.attr("data-account");
     // $isMobile must be true or null and in mobile view to be true
     var $isMobile = (typeof $wrapper.attr("data-hidemobile") == null || "true" && (window.matchMedia('(max-width: 767px)').matches) === true) ? true : false;
@@ -31,33 +30,38 @@
 
     function htmlEntities(str) {
       // Encode html for safety
-      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    function getInstagramByAccount(access_token) {
-      // Fetch Instagram images by hashtag
+    function getInstagramByAccount(account) {
+      // Fetch Instagram images by account
       if ($isMobile === true) {
         $wrapper.empty();
         return //Don't run on mobile
       }
       $container.empty();
-      if (access_token) {
-        var $url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + encodeURIComponent(access_token);
+      if (account) {
+        var $url = "https://www.instagram.com/" + encodeURIComponent($accountName) + "?__a=1";
         $.ajax({
           url: $url,
           type: 'GET',
-          dataType: "jsonp",
-          success: function (data) {
+
+          success: function(data) {
             console.log(data);
             $loading.hide();
-            for (var i = 0; i < $images; i++) {
-              var img = data.data[i].images.standard_resolution.url;
-              var link = data.data[i].link;
-              var caption = (data.data[i].caption.text) ? htmlEntities(data.data[i].caption.text.substring(0, 50) + '...') : '';
-              $container.append('<a tabindex="-1" href="' + link + '" aria-label="' + caption + '" rel="noopener" target="_blank"><img src="' + img + '" alt="' + $user + '"></a>');
+            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+            if (entry) {
+              $.each(entry, function(i, v) {
+                var img = entry[i].node.thumbnail_src;
+                var shortcode = entry[i].node.shortcode;
+                var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? 'No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
+                var caption = (cap) ? htmlEntities(cap.substring(0, 50) + '...') : '';
+                $container.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>');
+                return i < $images - 1;
+              });
             }
             var batch;
-            $('a', $container).each(function (k, e) {
+            $('a', $container).each(function(k, e) {
               if (k % $numbers == 0) {
                 batch = $('<div/>').addClass($batchClass).appendTo($container);
               }
@@ -66,35 +70,35 @@
             var wrap = "<div class='inner'></div>";
             $('.' + $batchClass).wrapInner(wrap);
           },
-          error: function (xhr, status, error) {
+          error: function(xhr, status, error) {
             console.log(xhr.responseText);
           },
-          complete: function () {
+          complete: function() {
             $container.rotator();
           }
         });
       }
     }
 
-    $.fn.rotator = function (options) {
+    $.fn.rotator = function(options) {
       options = $.extend({
         blocks: $wrapper.find('.' + $batchClass),
         speed: 6000,
         fadeSpeed: 800
       }, options);
-      var setZIndex = function (element) {
+      var setZIndex = function(element) {
         var index = $(options.blocks, element).length;
-        $(options.blocks, element).each(function () {
+        $(options.blocks, element).each(function() {
           index--;
           $(this).css('zIndex', index);
         });
       };
-      var rotate = function (element) {
+      var rotate = function(element) {
         var blocks = $(options.blocks, element),
           len = blocks.length,
           index = -1;
         blocks.fadeIn(options.fadeSpeed);
-        var timer = setInterval(function () {
+        var timer = setInterval(function() {
           index++;
           var block = blocks.eq(index);
           if (index == len) {
@@ -106,35 +110,34 @@
           }
         }, options.speed);
       };
-      return this.each(function () {
+      return this.each(function() {
         var elem = $(this);
         setZIndex(elem);
         rotate(elem);
       });
     };
 
-    if ($token) {
-      // Init script
-      getInstagramByAccount($token);
+    // Init script
+    if ($user) {
+      getInstagramByAccount($user);
     } else {
-      //console.log('Add Instagram access token and number of images to display using data-token="" and data-images="" on the container.');
+      console.log('Add Instagram account to search for and number of images to display using data-account="" and data-images="" on the container');
     }
 
     //On resize, wait and reload function
     var it;
 
-    window.onresize = function () {
+    window.onresize = function() {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
-        it = setTimeout(function () {
-          getInstagramByAccount($token);
+        it = setTimeout(function() {
+          getInstagramByAccount($user);
         }, 200);
         $cachedWidth = $newWidth;
       }
     };
-
   });
 
 })(jQuery);
