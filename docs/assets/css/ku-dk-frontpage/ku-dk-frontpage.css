@@ -122,6 +122,7 @@ html:lang(en) .ku-branding-text {
 .caption {
   background-color: #f5f5f5;
   padding: 10px 15px;
+  font-size: 15px;
 }
 
 .caption h1 {

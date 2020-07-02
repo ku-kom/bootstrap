@@ -1985,7 +1985,7 @@ address {
 }
 h2.deloverskrift {
   padding: 0 5px 8px 0;
-  margin: 0;
+  margin: 20px 0 0 0;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: .7px;
@@ -9219,6 +9219,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: inline;
   letter-spacing: .3px;
 }
+.nyhedsdato {
+  margin-bottom: 5px;
+}
 .custom-search-results .nyhedsliste_dato {
   display: -ms-flexbox;
   display: flex;
@@ -11268,6 +11271,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-select {
   position: relative;
+  width: 100%;
   padding-right: 26px;
   padding-bottom: 23px;
   font-size: 14px;
