@@ -7833,11 +7833,6 @@ nav {
 #gridsidebar .row .gccolumn .gcitem {
   margin-top: 0;
 }
-@media (min-width: 992px) {
-  #gridsidebar .row:first-child {
-    margin-top: 75px;
-  }
-}
 #gridsidebar .row:last-child [class*="col-"] {
   margin-bottom: 0;
 }
@@ -7865,11 +7860,7 @@ nav {
 }
 .right-side {
   float: right;
-}
-@media (max-width: 991px) {
-  .right-side {
-    margin-top: 23px;
-  }
+  margin-top: 23px;
 }
 @media (min-width: 992px) {
   .right-side {

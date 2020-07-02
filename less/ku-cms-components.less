@@ -118,12 +118,11 @@ nav {
         margin-top: 0;
       }
     }
-    @media (min-width: @screen-md) {
-      &:first-child {
-        margin-top: @ku-rightcolumn-top;
-      }
-    }
-
+    // @media (min-width: @screen-md) {
+    //   &:first-child {
+    //     margin-top: @ku-rightcolumn-top;
+    //   }
+    // }
     &:last-child {
       [class*="col-"] {
         margin-bottom: 0;
@@ -169,9 +168,7 @@ nav {
 
 .right-side {
   .pull-right;
-  @media (max-width: @screen-sm-max) {
-    margin-top: @grid-gutter-height;
-  }
+  margin-top: @grid-gutter-height;
   @media (min-width: @screen-md) {
     margin-top: @ku-rightcolumn-top;
   }
