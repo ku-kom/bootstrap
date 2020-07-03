@@ -1,6 +1,4 @@
-/* NEL, KU KOM Script to fetch images from Instagram by access token.
- * Login to Instagram to register an application and generate an access token using this url - replace with your values:
- * https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+/* NEL, KU KOM Script to fetch images from Instagram by account nane.
  * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" data-hidemobile="false" class="gridbox with-img size2">
    <div class="box1">
      <a href="https://www.instagram.com/university_of_copenhagen/">
@@ -9,7 +7,7 @@
    </div>
      <div id="imageBox"></div>
  </div>
- The property data-account represents the account name to search for. data-images pepresents the number of images to display at a time. */
+ The property data-account="" represents the account name to search for. data-images="" pepresents the number of images to display at a time. */
 (function($) {
   'use strict';
   $(document).ready(function() {
@@ -22,9 +20,8 @@
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     var $batchClass = "batch";
     var $number = $wrapper.attr("data-images");
-    //$number = $number.toString();
     var $images = 12;
-    // We always display 2 images on mobile
+    // Always display 2 images on mobile
     var $numbers = (window.matchMedia('(max-width: 480px)').matches) ? 2 : parseInt($number, 10);
     var $cachedWidth = $('body').prop('clientWidth');
 
@@ -43,9 +40,9 @@
       if (account) {
         var $url = "https://www.instagram.com/" + encodeURIComponent($accountName) + "?__a=1";
         $.ajax({
-          url: $url,
-          type: 'GET',
-          success: function(data) {
+            url: $url,
+            type: 'GET'
+          }).done(function(data) {
             //console.log(data);
             $loading.hide();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
@@ -68,14 +65,11 @@
             });
             var wrap = "<div class='inner'></div>";
             $('.' + $batchClass).wrapInner(wrap);
-          },
-          error: function(xhr, status, error) {
-            console.log(xhr.responseText);
-          },
-          complete: function() {
             $container.rotator();
-          }
-        });
+          })
+          .fail(function(xhr, textStatus, errorThrown) {
+            console.log(xhr.responseText);
+          });
       }
     }
 
