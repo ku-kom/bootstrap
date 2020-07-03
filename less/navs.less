@@ -91,45 +91,53 @@
     }
   }
 }
-
 // Tabs
 // -------------------------
 // Give the tabs something to sit on
 
-.nav-tabs, .nav-pills {
-  border-bottom: 1px solid @nav-tabs-border-color;
+.nav-pills,
+.nav-tabs {
+  // KU specific
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   > li {
-    float: left;
+    flex: 1;
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
-
     // Actual tabs (as links)
     > a {
-      color: @text-color;
-      background-color: @nav-tabs-bg-color;
-      margin-right: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: @gray-light;
+      color: @white-color;
       line-height: @line-height-base;
-      border-top: 1px solid @gray;
-      border-right: 1px solid @gray;
-      border-left: 1px solid @gray;
       border-radius: @nav-tabs-border-radius;
       text-decoration: none;
-      &:hover {
-        background-color: @ku-nav-tabs-and-pills-hover-bg-color
-        //border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+
+      &:focus {
+        .tab-focus-v2();
+        outline-offset: -2px;
       }
     }
-
     // Active state, and its :hover to override normal :hover
     &.active > a {
-      &,
-      &:hover,
-      &:focus {
+      & {
+        border-top: 1px solid @nav-tabs-active-link-hover-border-color;
+        border-right: 1px solid @nav-tabs-active-link-hover-border-color;
+        border-left: 1px solid @nav-tabs-active-link-hover-border-color;
         background-color: @nav-tabs-active-link-hover-bg;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
         color: @nav-tabs-active-link-hover-color;
         border-bottom-color: transparent;
         cursor: default;
+      }
+    }
+
+    & + li {
+      > a {
+        margin-left: 1px;
       }
     }
   }
@@ -139,10 +147,8 @@
     .nav-tabs-justified();
   }
 }
-
 // Pills - KU specific: We make them identical to nav-tabs
 // -------------------------
-
 // .nav-pills {
 //   border-bottom: 1px solid @nav-pills-border-color;
 //   margin-left: -1px; // Taking care of li's in multiple lines
@@ -176,7 +182,9 @@
 // Stacked pills
 
 .nav-stacked {
+  display: block;
   border-bottom: 0;
+
   > li {
     float: none;
     margin-left: 0; // no need for this gap between nav items
@@ -191,10 +199,9 @@
     }
     // Active state
     &.active > a {
-        border-color: @nav-pills-active-link-hover-bg;
-        cursor: default;
-      }
-
+      border-color: @nav-pills-active-link-hover-bg;
+      cursor: default;
+    }
   }
 }
 // Nav variations
@@ -239,7 +246,6 @@
 // Mixin for adding on top the shared `.nav-justified` styles for our tabs
 
 .nav-tabs-justified {
-
   > li > a {
     // Override margin from .nav-tabs
     margin-right: 0;
@@ -267,6 +273,10 @@
 // Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
+  border: 1px solid @gray;
+  border-radius: 0 0 2px 2px;
+  padding: 10px;
+
   > .tab-pane {
     display: none;
   }
