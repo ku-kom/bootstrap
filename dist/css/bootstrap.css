@@ -6784,7 +6784,7 @@ button.list-group-item-danger.active:focus {
   min-height: 16px;
   padding: 0 0 5px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.3333;
   color: #252525;
   letter-spacing: .6px;
 }
