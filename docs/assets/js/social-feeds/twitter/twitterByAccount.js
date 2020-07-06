@@ -89,11 +89,10 @@
 
     function renderLinks(data) {
       //Add href to all links within tweets
-      var re = /(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}([^\s]+)/gm;
-      var lastWord = data.split(" ").splice(-1) // Get last word to check for trucation
+      var re = /(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g;
       data = data.replace(re, function(url) {
         console.log(url);
-        if (!lastWord.includes("…")) {
+        if (!url.includes("…")) {
           return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
         }
       });
