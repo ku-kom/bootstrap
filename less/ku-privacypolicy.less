@@ -15,10 +15,16 @@
   backface-visibility: hidden; // Prevent jumping on Android
   will-change: transform; // Prevent jumping on Android
   -webkit-overflow-scrolling: touch;
+  transition: all 0.4s ease;
 
   a {
     color: @white-color;
   }
+}
+
+.ccc-ani-enter,
+.ccc-ani-leave-to {
+  transform: translate3d(0, 100%, 0);
 }
 
 .ccc-popup {
@@ -169,12 +175,18 @@
   overflow-y: scroll;
   overflow-x: auto;
   background-color: @white-color;
+  transition: height 0.4s ease;
 }
 
 .ccc-table {
   table-layout: fixed;
   color: @text-color;
   background-color: @white-color;
+}
+
+.ccc-table-ani-enter,
+.ccc-table-ani-leave-to {
+  height: 0;
 }
 
 .btn-lg {

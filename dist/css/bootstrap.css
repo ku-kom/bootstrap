@@ -11221,6 +11221,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -webkit-overflow-scrolling: touch;
   color: #fff;
   background-color: rgba(80, 80, 80, .96);
+  transition: all .4s ease;
   transform: translate3d(0, 0, 0);
 
   backface-visibility: hidden;
@@ -11228,6 +11229,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc a {
   color: #fff;
+}
+.ccc-ani-enter,
+.ccc-ani-leave-to {
+  transform: translate3d(0, 100%, 0);
 }
 .ccc-popup {
   height: 100%;
@@ -11369,11 +11374,16 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   overflow-x: auto;
   overflow-y: scroll;
   background-color: #fff;
+  transition: height .4s ease;
 }
 .ccc-table {
   color: #252525;
   table-layout: fixed;
   background-color: #fff;
+}
+.ccc-table-ani-enter,
+.ccc-table-ani-leave-to {
+  height: 0;
 }
 .btn-lg,
 .btn-group-lg > .btn {
