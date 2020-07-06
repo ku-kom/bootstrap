@@ -11240,7 +11240,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 @media all and (min-width: 768px) {
   .ccc-popup {
-    padding: 13px 52px 52px 52px;
+    padding: 23px 100px 52px 100px;
   }
 }
 #ccc-title {
@@ -11249,7 +11249,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   line-height: 1.3;
 }
 #ccc-desc {
-  font-size: 16px;
+  font-size: 18px;
 }
 @media all and (min-width: 768px) {
   #ccc-desc {
@@ -11278,8 +11278,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   position: relative;
   width: 100%;
   padding-right: 26px;
-  padding-bottom: 23px;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: .7px;
   cursor: pointer;
 }
@@ -11388,11 +11387,18 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .btn-lg,
 .btn-group-lg > .btn {
   font-weight: 700;
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .ccc-buttons button {
     padding: 10px;
     font-size: 14px;
+  }
+}
+@media all and (min-width: 768px) {
+  .ccc-buttons button {
+    padding: 10px 25px;
+    font-size: 18px;
   }
 }
 .ccc-buttons button:first-child {

@@ -94,6 +94,8 @@
         console.log(url);
         if (!url.includes("…")) {
           return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
+        } else {
+          return url;
         }
       });
 

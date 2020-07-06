@@ -31,7 +31,7 @@
   height: 100%;
   padding-bottom: @grid-gutter-height;
   @media all and (min-width: @screen-sm-min) {
-    padding: @grid-gutter-by-half floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2));
+    padding: @grid-gutter-height 100px floor((@grid-gutter-width * 2)) 100px;
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 #ccc-desc {
-  font-size: 16px;
+  font-size: 18px;
   @media all and (min-width: @screen-sm-min) {
     letter-spacing: 0.7px;
   }
@@ -71,12 +71,11 @@
 }
 
 .ccc-select {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.7px;
   position: relative;
   width: 100%;
   padding-right: @grid-gutter-width;
-  padding-bottom: @grid-gutter-height;
   cursor: pointer;
   .glyphicon-menu-down;
 
@@ -191,6 +190,7 @@
 
 .btn-lg {
   font-weight: 700;
+  text-transform: capitalize;
 }
 @media (max-width: @screen-xs-max) {
   .ccc-buttons button {
@@ -200,6 +200,11 @@
 }
 
 .ccc-buttons button {
+  @media all and (min-width: @screen-sm-min) {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+
   &:first-child {
     margin-right: @grid-gutter-width;
     @media all and (min-width: @screen-sm-min) {
