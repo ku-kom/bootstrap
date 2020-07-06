@@ -46,7 +46,7 @@
             user: twitterAccount
           }
         }).done(function(feeds) {
-          console.log(feeds);
+          //console.log(feeds);
           wrapper.find(loading).addClass('hidden');
           $(feeds).each(function(i, e) {
             var tweetscreenname = e.user.name;
@@ -88,8 +88,9 @@
     }
 
     function renderLinks(data) {
-      //Add href to all links within tweets
-      data = data.replace(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g, function(url) {
+      //Add href to all links within tweets except if the word is truncated
+      var urlRegex = /(?!.*?\.\.\.)(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g;
+      data = data.replace(urlRegex, function(url) {
         return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
       });
 
