@@ -89,11 +89,9 @@
 
     function renderLinks(data) {
       //Add href to all links within tweets
-      if (!data.includes("...")) {
-        data = data.replace(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?[^\.\.\.]/g, function(url) {
-          return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
-        });
-      }
+      data = data.replace(/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?[^\.\.\.]/g, function(url) {
+        return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
+      });
 
       //Add link to @usernames used within tweets
       data = data.replace(/\B@([_a-z0-9]+)/ig, function(reply) {
