@@ -38,15 +38,15 @@
       var url = "https://cms.secure.ku.dk/instacms/twitter/twitterByAccount.php";
       $.support.cors = true;
       $.ajax({
-        url: url,
-        type: 'GET',
-        dataType: "json",
-        crossDomain: true,
-        data: {
-          user: twitterAccount
-        },
-        success: function(feeds) {
-          //console.log(feeds);
+          url: url,
+          type: 'GET',
+          dataType: "json",
+          crossDomain: true,
+          data: {
+            user: twitterAccount
+          }
+        }).done(function(feeds) {
+          console.log(feeds);
           wrapper.find(loading).addClass('hidden');
           $(feeds).each(function(i, e) {
             var tweetscreenname = e.user.name;
@@ -81,11 +81,10 @@
 
             return i < displaylimit - 1;
           });
-        },
-        error: function(xhr, status, error) {
+        })
+        .fail(function(xhr, textStatus, errorThrown) {
           console.log(xhr.responseText);
-        }
-      });
+        });
     }
 
     function renderLinks(data) {
