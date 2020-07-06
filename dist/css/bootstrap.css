@@ -11386,7 +11386,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
 }
 .ccc-buttons button:first-child {
-  margin-left: 13px;
+  margin-right: 52px;
 }
 @media all and (min-width: 768px) {
   .ccc-buttons button:first-child {
