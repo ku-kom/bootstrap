@@ -46,7 +46,7 @@
             user: twitterAccount
           }
         }).done(function(feeds) {
-          //console.log(feeds);
+          console.log(feeds);
           wrapper.find(loading).addClass('hidden');
           $(feeds).each(function(i, e) {
             var tweetscreenname = e.user.name;
@@ -90,8 +90,10 @@
     function renderLinks(data) {
       //Add href to all links within tweets
       var re = /(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}([^\s]+)/gm;
+      var lastWord = data.split(" ").splice(-1) // Get last word to check for trucation
+      console.log(lastWord);
       data = data.replace(re, function(url) {
-        if (!url.includes("...")) {
+        if (!lastWord.includes("...")) {
           return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
         }
       });
