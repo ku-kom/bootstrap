@@ -19,6 +19,9 @@
 
   a {
     color: @white-color;
+    &:focus {
+      .tab-focus-v2();
+    }
   }
 }
 
@@ -203,6 +206,9 @@
     text-transform: capitalize;
     font-size: 14px;
     padding: 10px;
+    &:focus {
+      .tab-focus-v2();
+    }
 
     &:first-child {
       margin-right: @grid-gutter-by-half;

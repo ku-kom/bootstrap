@@ -5007,6 +5007,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li > a,
 .nav-tabs > li > a {
   overflow: hidden;
+  font-weight: 600;
   line-height: 1.5;
   color: #fff;
   text-decoration: none;
@@ -11230,6 +11231,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc a {
   color: #fff;
 }
+.ccc a:focus {
+  outline: 1px solid #2c6694;
+}
 .ccc-ani-enter,
 .ccc-ani-leave-to {
   transform: translate3d(0, 100%, 0);
@@ -11401,6 +11405,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
+}
+.ccc-buttons button:focus {
+  outline: 1px solid #2c6694;
 }
 .ccc-buttons button:first-child {
   margin-right: 13px;
