@@ -270,7 +270,7 @@ html:lang(en) .ku-branding-text {
     position: absolute;
     top: 15px;
     right: 0;
-    background-color: #901a1e;
+    background-color: #666;
   }
 
   .jumpboard .jumpcolumn li:first-child::after {
@@ -279,7 +279,7 @@ html:lang(en) .ku-branding-text {
     height: 47%;
     position: absolute;
     top: 15px;
-    background-color: #901a1e;
+    background-color: #666;
     left: 0;
   }
 
