@@ -59,12 +59,12 @@
 
 .ccc-list > li {
   border: 1px solid @gray-888;
-  padding: 0 @grid-gutter-by-half;
+  padding: 0 @grid-gutter-by-half @grid-gutter-by-half @grid-gutter-by-half;
   border-radius: @border-radius-base;
-}
 
-.ccc-list > li + li {
-  margin-top: @grid-gutter-height;
+  & + li {
+    margin-top: @grid-gutter-height;
+  }
 }
 
 .ccc-select-title {

@@ -11265,7 +11265,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   list-style: none;
 }
 .ccc-list > li {
-  padding: 0 13px;
+  padding: 0 13px 13px 13px;
   border: 1px solid #888;
   border-radius: 2px;
 }
