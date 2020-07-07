@@ -1,4 +1,4 @@
-<section class="ccc" aria-hidden="false" role="dialog" aria-labelledby="ccc-title" aria-describedby="ccc-desc">
+<section class="ccc" aria-hidden="false" role="dialog" aria-labelledby="ccc-title" aria-describedby="ccc-desc" tabindex="1">
   <div class="container ccc-popup" role="document">
     <header class="ccc-popup-header">
       <h2 id="ccc-title">Samtykke til brug af cookies</h2>
@@ -11,12 +11,12 @@
       <li>
         <div class="checkbox ccc-list-actions">
           <label class="customcheck" for="check-0" aria-label="Acceptér eller afslå cookies">
-            <input checked="checked" type="checkbox" id="check-0">
+            <input type="checkbox" id="check-0" autofocus>
             <span class="sr-only">Acceptér eller afslå cookies</span>
             <span class="checkmark"></span>
           </label>
           <div class="ccc-select" data-select="statistics">
-            <h3 class="ccc-select-title">Statistik (<span class="stat-count">3</span>)</h3>
+            <button class="ccc-select-title">Statistik (<span class="stat-count">3</span>)</button>
             <p>Universitetet bruger forskellige produkter til at registrere brugernes adfærd på hjemmesiden med det formål løbende at forbedre vores service.</p>
           </div>
         </div>
@@ -58,7 +58,7 @@
             <span class="checkmark"></span>
           </label>
           <div class="ccc-select" data-select="marketing">
-            <h3 class="ccc-select-title">Markedsføring (<span class="market-count">31</span>)</h3>
+            <button class="ccc-select-title">Markedsføring (<span class="market-count">31</span>)</button>
             <p>Universitetet bruger forskellige produkter til at markedsføre uddannelser, kurser, konferencer og udstillinger i søgemaskiner samt på hjemmeider og sociale medier med det formål at kunne give dig det mest relevante tilbud.</p>
           </div>
         </div>
@@ -113,7 +113,7 @@
         Acceptér alle
       </button>
       <button class="btn btn-default btn-lg">
-        Afvis alle
+        Afslå alle
       </button>
     </div>
   </div>
