@@ -42,8 +42,9 @@
 }
 
 #ccc-desc {
-  font-size: 18px;
+  font-size: 16px;
   @media all and (min-width: @screen-sm-min) {
+    font-size: 18px;
     letter-spacing: 0.7px;
   }
 }
@@ -66,8 +67,11 @@
 }
 
 .ccc-select-title {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 0;
+  @media all and (min-width: @screen-sm-min) {
+    font-size: 20px;
+  }
 }
 
 .ccc-select {
@@ -187,11 +191,6 @@
 .ccc-table-ani-leave-to {
   height: 0;
 }
-
-.btn-lg {
-  font-weight: 700;
-  text-transform: capitalize;
-}
 @media (max-width: @screen-xs-max) {
   .ccc-buttons button {
     font-size: 14px;
@@ -200,6 +199,8 @@
 }
 
 .ccc-buttons button {
+  font-weight: 700;
+  text-transform: capitalize;
   @media all and (min-width: @screen-sm-min) {
     font-size: 18px;
     padding: 10px 25px;
