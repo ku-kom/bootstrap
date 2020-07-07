@@ -46,6 +46,7 @@
   @media all and (min-width: @screen-sm-min) {
     font-size: 18px;
     letter-spacing: 0.7px;
+    margin-bottom: 30px;
   }
 }
 
@@ -58,7 +59,7 @@
 
 .ccc-list > li {
   border: 1px solid @gray-888;
-  padding: 10px;
+  padding: 0 @grid-gutter-by-half;
   border-radius: @border-radius-base;
 }
 
@@ -114,7 +115,7 @@
   display: block;
   position: relative;
   padding-left: 30px!important;
-  margin: 4px 4px 12px 0;
+  margin: 6px 4px 12px 0;
   cursor: pointer;
   font-size: 22px;
   user-select: none;
@@ -198,18 +199,25 @@
   }
 }
 
-.ccc-buttons button {
-  font-weight: 700;
-  text-transform: capitalize;
+.ccc-buttons {
   @media all and (min-width: @screen-sm-min) {
-    font-size: 18px;
-    padding: 10px 25px;
+    margin-top: 45px;
   }
 
-  &:first-child {
-    margin-right: @grid-gutter-width;
+  button {
+    font-weight: 700;
+    text-transform: capitalize;
     @media all and (min-width: @screen-sm-min) {
-      margin-left: 45px;
+      font-size: 18px;
+      padding: 10px 25px;
+
+      &:first-child {
+        margin-right: floor((@grid-gutter-width * 2));
+      }
+    }
+
+    &:first-child {
+      margin-right: @grid-gutter-width;
     }
   }
 }

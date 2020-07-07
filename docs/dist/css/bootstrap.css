@@ -11253,6 +11253,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 @media all and (min-width: 768px) {
   #ccc-desc {
+    margin-bottom: 30px;
     font-size: 18px;
     letter-spacing: .7px;
   }
@@ -11264,7 +11265,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   list-style: none;
 }
 .ccc-list > li {
-  padding: 10px;
+  padding: 0 13px;
   border: 1px solid #888;
   border-radius: 2px;
 }
@@ -11327,7 +11328,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   position: relative;
   display: block;
   padding-left: 30px!important;
-  margin: 4px 4px 12px 0;
+  margin: 6px 4px 12px 0;
   font-size: 22px;
   cursor: pointer;
   cursor: default!important;
@@ -11396,6 +11397,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     font-size: 14px;
   }
 }
+@media all and (min-width: 768px) {
+  .ccc-buttons {
+    margin-top: 45px;
+  }
+}
 .ccc-buttons button {
   font-weight: 700;
   text-transform: capitalize;
@@ -11405,14 +11411,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     padding: 10px 25px;
     font-size: 18px;
   }
+  .ccc-buttons button:first-child {
+    margin-right: 52px;
+  }
 }
 .ccc-buttons button:first-child {
   margin-right: 26px;
-}
-@media all and (min-width: 768px) {
-  .ccc-buttons button:first-child {
-    margin-left: 45px;
-  }
 }
 .cookiefilter {
   position: relative;
