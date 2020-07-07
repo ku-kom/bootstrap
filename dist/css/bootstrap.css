@@ -11391,22 +11391,21 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-table-ani-leave-to {
   height: 0;
 }
-@media (max-width: 767px) {
-  .ccc-buttons button {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-@media all and (min-width: 768px) {
+@media (min-width: 768px) {
   .ccc-buttons {
     margin-top: 45px;
   }
 }
 .ccc-buttons button {
+  padding: 10px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: capitalize;
 }
-@media all and (min-width: 768px) {
+.ccc-buttons button:first-child {
+  margin-right: 26px;
+}
+@media (min-width: 768px) {
   .ccc-buttons button {
     padding: 10px 25px;
     font-size: 18px;
@@ -11414,9 +11413,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   .ccc-buttons button:first-child {
     margin-right: 52px;
   }
-}
-.ccc-buttons button:first-child {
-  margin-right: 26px;
 }
 .cookiefilter {
   position: relative;

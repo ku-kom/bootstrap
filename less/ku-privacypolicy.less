@@ -192,32 +192,28 @@
 .ccc-table-ani-leave-to {
   height: 0;
 }
-@media (max-width: @screen-xs-max) {
-  .ccc-buttons button {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
 
 .ccc-buttons {
-  @media all and (min-width: @screen-sm-min) {
+  @media (min-width: @screen-sm-min) {
     margin-top: 45px;
   }
 
   button {
     font-weight: 700;
     text-transform: capitalize;
-    @media all and (min-width: @screen-sm-min) {
+    font-size: 14px;
+    padding: 10px;
+
+    &:first-child {
+      margin-right: @grid-gutter-width;
+    }
+    @media (min-width: @screen-sm-min) {
       font-size: 18px;
       padding: 10px 25px;
 
       &:first-child {
         margin-right: floor((@grid-gutter-width * 2));
       }
-    }
-
-    &:first-child {
-      margin-right: @grid-gutter-width;
     }
   }
 }
