@@ -11403,7 +11403,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   text-transform: capitalize;
 }
 .ccc-buttons button:first-child {
-  margin-right: 26px;
+  margin-right: 13px;
 }
 @media (min-width: 768px) {
   .ccc-buttons button {
