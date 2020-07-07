@@ -11277,12 +11277,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin-top: 23px;
 }
 .ccc-select-title {
-  padding: 0;
+  display: block;
   margin-top: 0;
   font-size: 18px;
-  color: #fff;
-  background: transparent;
-  border: 0;
 }
 @media all and (min-width: 768px) {
   .ccc-select-title {
@@ -11294,8 +11291,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   width: 100%;
   padding-right: 26px;
   font-size: 16px;
+  color: #fff;
+  text-align: left;
   letter-spacing: .7px;
   cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 .ccc-select:before {
   content: "\e259";
@@ -11324,6 +11325,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-select.open:before {
   content: "\e260";
+}
+.ccc-select-description {
+  display: block;
 }
 .ccc-list-actions {
   display: -ms-flexbox;

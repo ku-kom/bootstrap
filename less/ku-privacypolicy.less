@@ -72,12 +72,9 @@
 }
 
 .ccc-select-title {
-  background: transparent;
-  border: 0;
-  color: @white-color;
-  padding: 0;
   font-size: 18px;
   margin-top: 0;
+  display: block;
   @media all and (min-width: @screen-sm-min) {
     font-size: 20px;
   }
@@ -89,6 +86,10 @@
   position: relative;
   width: 100%;
   padding-right: @grid-gutter-width;
+  color: @white-color;
+  background: transparent;
+  border: 0;
+  text-align: left;
   cursor: pointer;
   .glyphicon-menu-down;
 
@@ -112,6 +113,10 @@
       content: "\e260";
     }
   }
+}
+
+.ccc-select-description {
+  display: block;
 }
 
 .ccc-list-actions {
