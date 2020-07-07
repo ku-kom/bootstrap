@@ -129,7 +129,6 @@
   position: relative;
   padding-left: 30px!important;
   margin: 6px 4px 12px 0;
-  cursor: pointer;
   font-size: 22px;
   user-select: none;
   cursor: default!important;
@@ -137,17 +136,17 @@
   input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
+    margin: 0;
 
-    &:checked ~ .checkmark {
-      background-color: #005cc8;
-      border-radius: @border-radius-base;
-      border: 1px solid @gray-999;
-    }
+    &:checked {
+      & ~ .checkmark {
+        background-color: #005cc8;
+        border-radius: @border-radius-base;
+        border: 1px solid @gray-999;
 
-    &:checked ~ .checkmark {
-      &::after {
-        display: block;
+        &::after {
+          display: block;
+        }
       }
     }
   }
