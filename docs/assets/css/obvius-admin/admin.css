@@ -1669,7 +1669,6 @@ h1.obvius-logo img {
 
 .obvius-common .admincontentwrapper #content.subpage {
   width: 100%;
-  max-width: 496px;
 }
 
 .obvius-common .admincontentwrapper #content.subpage h3:first-of-type {
@@ -5586,7 +5585,7 @@ audio, video {
   width: auto;
 }
 
-#obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper #content.subpage.wide {
+#obarea4>#obarea2+#obarea3 .obvius-common .admincontentwrapper.subsite-settings #content.subpage.wide {
   width: 100%;
   max-width: 1040px;
 }
