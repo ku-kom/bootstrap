@@ -104,7 +104,7 @@
       });
 
       //Add link to hashtags
-      data = data.replace(/(?:^|\s)#(\w+)/ig, function(hashtag) {
+      data = data.replace(/(^#?[^\s!@#$%^&*()=+./,\[{\]};:'"?><]+$)/ig, function(hashtag) {
         return '<a target="_blank" rel="noopener" href="https://twitter.com/hashtag/' + hashtag.trim().toLowerCase().replace(/#/g, '') + '">' + hashtag + '</a>';
       });
 
