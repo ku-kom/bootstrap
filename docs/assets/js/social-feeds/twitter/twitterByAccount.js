@@ -89,7 +89,7 @@
 
     function renderLinks(data) {
       //Add href to all links within tweets
-      var re = /(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/g;
+      var re = /(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-z]{2,3}(\/\S*)?/g;
       data = data.replace(re, function(url) {
         if (!url.includes("…")) { // If an url is truncated, don't make it a clickable link
           return '<a target="_blank" rel="noopener" href="' + url + '">' + url + '</a>';
