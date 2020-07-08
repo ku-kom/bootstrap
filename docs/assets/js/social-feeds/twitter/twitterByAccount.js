@@ -105,7 +105,7 @@
 
       //Add link to hashtags
       data = data.replace(/(?:^|\s)#([_a-z0-9æÆøØåÅ]+)/ig, function(hashtag) {
-        return '<a target="_blank" rel="noopener" href="https://twitter.com/hashtag/' + hashtag.trim().toLowerCase().replace(/#/g, '') + '">' + hashtag.trim().toLowerCase() + '</a>';
+        return '&nbsp<a target="_blank" rel="noopener" href="https://twitter.com/hashtag/' + hashtag.trim().toLowerCase().replace(/#/g, '') + '">' + hashtag.trim().toLowerCase() + '</a>';
       });
 
       return data;
