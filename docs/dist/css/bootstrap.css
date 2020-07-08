@@ -11411,7 +11411,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: 10px;
   font-size: 14px;
   font-weight: 700;
-  text-transform: unset;
+  text-transform: none;
 }
 .ccc-buttons button:focus {
   outline: 1px solid #2c6694;
