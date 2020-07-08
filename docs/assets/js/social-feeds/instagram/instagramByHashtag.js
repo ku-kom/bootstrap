@@ -1,11 +1,11 @@
 /* NEL, KU KOM
- * Script to fetch images from Instagram by hashtag. Based on scrapung - may stop working at any time.
+ * Script to fetch images from Instagram by hashtag. Based on scraping - may stop working at any time.
  * Needs html like this: <div id="instagram_hash" data-hashtag="blivstuderendepåKinastudier" data-images="6" data-hidemobile="false" class="instagram-box"></div>
  * data-hashtag represents the hashtag to search for.
  * data-images pepresents the number of images to display at a time. */
-(function ($) {
+(function($) {
   'use strict';
-  $(document).ready(function () {
+  $(document).ready(function() {
     var $cachedWidth = $('body').prop('clientWidth');
     var $wrapper = $('#ig_hashtag');
     var $container = $wrapper.find("#imageBox");
@@ -36,17 +36,17 @@
         // This php script is scraping content from the Instagram tags page and serving it as json:
         var $url = "https://cms.secure.ku.dk/instacms/instagramByUserOrTag/instagramScrapeToJson.php";
         $.ajax({
-          url: $url,
-          type: 'post',
-          dataType: "json",
-          data: ({
-            hashtag: $hash
-          }),
-          success: function (data) {
+            url: $url,
+            type: 'post',
+            dataType: "json",
+            data: ({
+              hashtag: $hash
+            })
+          }).done(function(data) {
             //console.log(data);
             $loading.hide();
             var entry = data.entry_data.TagPage[0].graphql.hashtag.edge_hashtag_to_media.edges;
-            $.each(entry, function (i, v) {
+            $.each(entry, function(i, v) {
               var img = entry[i].node.thumbnail_src;
               var shortcode = entry[i].node.shortcode;
               var cap = entry[i].node.edge_media_to_caption.edges[0].node.text;
@@ -55,7 +55,7 @@
               return i < $images - 1;
             });
             var batch;
-            $('a', $container).each(function (k, e) {
+            $('a', $container).each(function(k, e) {
               if (k % $numbers == 0) {
                 batch = $('<div/>').addClass($batchClass).appendTo($container);
               }
@@ -63,36 +63,33 @@
             });
             var wrap = "<div class='inner'></div>";
             $('.' + $batchClass).wrapInner(wrap);
-          },
-          error: function (xhr, status, error) {
-            console.log(xhr.responseText);
-          },
-          complete: function () {
             $container.rotator();
-          }
-        });
+          })
+          .fail(function(xhr, textStatus, errorThrown) {
+            console.log(xhr.responseText);
+          });
       }
     }
 
-    $.fn.rotator = function (options) {
+    $.fn.rotator = function(options) {
       options = $.extend({
         blocks: $wrapper.find('.' + $batchClass),
         speed: 6000,
         fadeSpeed: 800
       }, options);
-      var setZIndex = function (element) {
+      var setZIndex = function(element) {
         var index = $(options.blocks, element).length;
-        $(options.blocks, element).each(function () {
+        $(options.blocks, element).each(function() {
           index--;
           $(this).css('zIndex', index);
         });
       };
-      var rotate = function (element) {
+      var rotate = function(element) {
         var blocks = $(options.blocks, element),
           len = blocks.length,
           index = -1;
         blocks.fadeIn(options.fadeSpeed);
-        var timer = setInterval(function () {
+        var timer = setInterval(function() {
           index++;
           var block = blocks.eq(index);
           if (index == len) {
@@ -104,7 +101,7 @@
           }
         }, options.speed);
       };
-      return this.each(function () {
+      return this.each(function() {
         var elem = $(this);
         setZIndex(elem);
         rotate(elem);
@@ -121,12 +118,12 @@
     //On resize, wait and reload function
     var it;
 
-    window.onresize = function () {
+    window.onresize = function() {
       var $newWidth = $('body').prop('clientWidth');
       if ($newWidth !== $cachedWidth) {
         $loading.show();
         clearTimeout(it);
-        it = setTimeout(function () {
+        it = setTimeout(function() {
           getInstagramByHash($hash);
         }, 200);
         $cachedWidth = $newWidth;
