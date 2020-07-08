@@ -5794,7 +5794,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 /* Remove shortly */
-/* New subsite editing interface */
+/* New subsite editing interface - comment for cmstest01*/
 #webstedinfo {
   position: absolute;
   right: 0;

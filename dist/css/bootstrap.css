@@ -11289,7 +11289,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select {
   position: relative;
   width: 100%;
-  padding-right: 26px;
+  padding: 0 26px 0 0;
   font-size: 16px;
   color: #fff;
   text-align: left;
@@ -11319,8 +11319,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.ccc-select:active,
-.ccc-select:focus-within {
+.ccc-select:focus {
   outline: 1px solid #2c6694;
 }
 .ccc-select.open:before {
@@ -11411,7 +11410,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: 10px;
   font-size: 14px;
   font-weight: 700;
-  text-transform: unset;
+  text-transform: none;
 }
 .ccc-buttons button:focus {
   outline: 1px solid #2c6694;

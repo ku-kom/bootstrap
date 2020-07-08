@@ -85,7 +85,7 @@
   letter-spacing: 0.7px;
   position: relative;
   width: 100%;
-  padding-right: @grid-gutter-width;
+  padding: 0 @grid-gutter-width 0 0;
   color: @white-color;
   background: transparent;
   border: 0;
@@ -103,8 +103,7 @@
     color: @semi-white;
   }
 
-  &:active,
-  &:focus-within {
+  &:focus {
     .tab-focus-v2();
   }
 
@@ -212,7 +211,7 @@
 
   button {
     font-weight: 700;
-    text-transform: unset;
+    text-transform: none;
     font-size: 14px;
     padding: 10px;
 
