@@ -1782,11 +1782,6 @@ h1.obvius-logo img {
   max-width: none;
 }
 
-.obvius-common #content-wrapper p {
-  font-size: 12px;
-  line-height: 18px;
-}
-
 .obvius-common #content {
   min-height: 510px;
 }
