@@ -120,6 +120,12 @@ Hide/show
   overflow: hidden;
 }
 
+@media all and (min-width: 768px) {
+  .obvius-common #sidebar > div:first-child {
+    margin-top: 65px;
+  }
+}
+
 .obvius-link-decor:not(.obvius-editengine) a:link, .obvius-link-decor:not(.obvius-editengine) a:visited {
   color: #e06651;
   text-decoration: none;
@@ -5868,4 +5874,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
 }
+
 /* end */
