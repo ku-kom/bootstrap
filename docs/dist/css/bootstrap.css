@@ -4987,15 +4987,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
   }
 }
-.nav-pills,
-.nav-tabs {
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 768px) {
+  .nav-pills,
+  .nav-tabs {
+    display: -ms-flexbox;
+    display: flex;
 
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .nav-pills > li,
 .nav-tabs > li {
@@ -5026,10 +5028,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #252525;
   cursor: default;
   background-color: #fff;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom-color: transparent;
-  border-left: 1px solid #ccc;
+  border: 1px solid #ccc;
+}
+@media (min-width: 768px) {
+  .nav-pills > li.active > a,
+  .nav-tabs > li.active > a {
+    border-bottom-color: transparent;
+  }
 }
 .nav-pills > li + li > a,
 .nav-tabs > li + li > a {
