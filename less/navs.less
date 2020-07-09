@@ -106,9 +106,11 @@
 
   > li {
     flex: 1;
-    // Make the list-items overlay the bottom border
-    margin-bottom: -1px;
-    // Actual tabs (as links)
+    @media (min-width: @screen-sm-min) {
+      // Make the list-items overlay the bottom border
+      margin-bottom: -1px;
+    }
+    // Actual tabs(as links)
     > a {
       white-space: nowrap;
       overflow: hidden;
@@ -140,10 +142,11 @@
         }
       }
     }
-
-    & + li {
-      > a {
-        margin-left: 1px;
+    @media (min-width: @screen-sm-min) {
+      & + li {
+        > a {
+          margin-left: 1px;
+        }
       }
     }
   }
