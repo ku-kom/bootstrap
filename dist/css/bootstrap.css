@@ -5016,6 +5016,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: #757575;
+  border-bottom: 1px solid #ccc;
   border-radius: 2px 2px 0 0;
 }
 .nav-pills > li > a:focus,
@@ -5029,6 +5030,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   cursor: default;
   background-color: #fff;
   border: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 @media (min-width: 768px) {
   .nav-pills > li.active > a,
