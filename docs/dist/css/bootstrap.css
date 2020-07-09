@@ -5001,10 +5001,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li,
 .nav-tabs > li {
-  margin-bottom: -1px;
-
   -ms-flex: 1;
       flex: 1;
+}
+@media (min-width: 768px) {
+  .nav-pills > li,
+  .nav-tabs > li {
+    margin-bottom: -1px;
+  }
 }
 .nav-pills > li > a,
 .nav-tabs > li > a {
@@ -5039,9 +5043,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: transparent;
   }
 }
-.nav-pills > li + li > a,
-.nav-tabs > li + li > a {
-  margin-left: 1px;
+@media (min-width: 768px) {
+  .nav-pills > li + li > a,
+  .nav-tabs > li + li > a {
+    margin-left: 1px;
+  }
 }
 .nav-pills.nav-justified,
 .nav-tabs.nav-justified {
