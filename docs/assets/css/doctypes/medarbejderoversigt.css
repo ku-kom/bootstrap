@@ -6,13 +6,12 @@
   margin-top: 10px;
 }
 
-.medarbejdertable tr th, #medarbejdertable tr th {
+.medarbejdertable tr th {
   white-space: nowrap;
   border-bottom: 0;
 }
 
-.medarbejdertable tr th input:placeholder-shown,
-#medarbejdertable tr th input:placeholder-shown {
+.medarbejdertable tr th input:placeholder-shown {
   text-overflow: ellipsis;
 }
 
