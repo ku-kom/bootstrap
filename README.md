@@ -1,4 +1,4 @@
-# [Bootstrap](https://github.com/nanna-dk/ku.dk-bootstrap)
+# [Bootstrap](https://github.com/ku-kom/bootstrap)
 
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
 ![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
@@ -29,7 +29,7 @@ To get started, check out <http://getbootstrap.com>!
 Several quick start options are available:
 
 * [Download the latest release](https://ku-kom.github.io/bootstrap/archive/gh_pages.zip).
-* Clone the repo: `git clone https://github.com/nanna-dk/ku.dk-bootstrap.git`.
+* Clone the repo: `git clone https://github.com/ku-kom/bootstrap.git`.
 * Install with [Bower](http://bower.io): `bower install bootstrap`.
 * Install with [npm](https://www.npmjs.com): `npm install bootstrap@3`.
 * Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
