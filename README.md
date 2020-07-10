@@ -15,7 +15,6 @@ To get started, check out <http://getbootstrap.com>!
 ## Table of contents
 
 * [Quick start](#quick-start)
-* [Bugs and feature requests](#bugs-and-feature-requests)
 * [Documentation](#documentation)
 * [Creators](#creators)
 * [Copyright and license](#copyright-and-license)
@@ -23,12 +22,8 @@ To get started, check out <http://getbootstrap.com>!
 
 ## Quick start
 
-Several quick start options are available:
-
 * [Download the latest release](https://ku-kom.github.io/bootstrap/archive/gh_pages.zip).
 * Clone the repo: `git clone https://github.com/ku-kom/bootstrap.git`.
-
-Read the [Getting started page](https://ku-kom.github.io/bootstrap/ku.dk-bootstrap/getting-started/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
@@ -36,34 +31,27 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.min.css
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
-    ├── glyphicons-halflings-regular.ttf
-    ├── glyphicons-halflings-regular.woff
-    └── glyphicons-halflings-regular.woff2
-    ├── KU.eot
-    ├── KU.svg
-    ├── KU.ttf
-    ├── KU.woff
-    └── KU.woff2
+  ├── dist/
+      ├── css/
+          ├── bootstrap.css
+          ├── bootstrap.min.css
+      ├── js/
+          ├── bootstrap.js
+          └── bootstrap.min.js
+      └── fonts/
+          ├── glyphicons-halflings-regular.eot
+          ├── glyphicons-halflings-regular.svg
+          ├── glyphicons-halflings-regular.ttf
+          ├── glyphicons-halflings-regular.woff
+          └── glyphicons-halflings-regular.woff2
+          ├── KU.eot
+          ├── KU.svg
+          ├── KU.ttf
+          ├── KU.woff
+          └── KU.woff2
 ```
 
 We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
-
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
-
-Note that **feature requests must target [Bootstrap v4](https://github.com/twbs/bootstrap/tree/v4-dev),** because Bootstrap v3 is now in maintenance mode and is closed off to new features. This is so that we can focus our efforts on Bootstrap v4.
-
 
 ## Documentation
 
