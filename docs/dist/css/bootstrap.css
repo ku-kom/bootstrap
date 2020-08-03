@@ -12287,3 +12287,26 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   margin-top: 23px;
   border-top: 1px solid #ccc;
 }
+.global-search-results .tile-content {
+  display: -ms-flexbox;
+  display: flex;
+      flex-direction: column;
+
+  -ms-flex-direction: column;
+}
+.global-search-results .tile-cat {
+  color: #00802b;
+
+  -ms-flex-order: 2;
+  order: 2;
+}
+.global-search-results .tile-header {
+  color: #165aad;
+
+  -ms-flex-order: 1;
+  order: 1;
+}
+.global-search-results .tile-body {
+  -ms-flex-order: 3;
+  order: 3;
+}

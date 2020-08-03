@@ -5795,7 +5795,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 .configtable td textarea:read-only {
   cursor: not-allowed;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 /* Remove shortly */
