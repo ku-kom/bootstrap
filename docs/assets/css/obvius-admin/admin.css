@@ -5793,7 +5793,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   margin-right: 15px;
 }
 
-#globalobviusconfigedit table td textarea:read-only {
+.configtable td textarea:read-only {
   cursor: not-allowed;
   background-color: #EFEFEF;
 }
