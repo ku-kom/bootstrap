@@ -12300,11 +12300,9 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
 }
 .global-search-results .tile-header {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 15px;
   color: #165aad;
-  text-overflow: initial;
   letter-spacing: initial;
-  white-space: initial;
 
   -ms-flex-order: 1;
   order: 1;
@@ -12315,6 +12313,7 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   color: #00802b;
   text-overflow: initial;
   text-transform: lowercase;
+  white-space: initial;
 
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
