@@ -12295,16 +12295,27 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   -ms-flex-direction: column;
 }
 .global-search-results .tile-cat {
-  color: #00802b;
-
   -ms-flex-order: 2;
   order: 2;
 }
 .global-search-results .tile-header {
+  margin-bottom: 5px;
   color: #165aad;
+  text-overflow: initial;
+  letter-spacing: initial;
+  white-space: initial;
 
   -ms-flex-order: 1;
   order: 1;
+}
+.global-search-results .header-small {
+  font-weight: 600;
+  line-height: 1.33333;
+  color: #00802b;
+  text-transform: lowercase;
+
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 .global-search-results .tile-body {
   -ms-flex-order: 3;
