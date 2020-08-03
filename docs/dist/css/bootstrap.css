@@ -12300,6 +12300,7 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
 }
 .global-search-results .tile-header {
   margin-bottom: 5px;
+  font-size: 16px;
   color: #165aad;
   text-overflow: initial;
   letter-spacing: initial;
@@ -12312,12 +12313,16 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   font-weight: 600;
   line-height: 1.33333;
   color: #00802b;
+  text-overflow: initial;
   text-transform: lowercase;
 
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
 }
 .global-search-results .tile-body {
+  display: block!important;
+  color: #252525;
+
   -ms-flex-order: 3;
   order: 3;
 }
