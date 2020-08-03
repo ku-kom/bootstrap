@@ -121,7 +121,7 @@ Hide/show
 }
 
 @media all and (min-width: 768px) {
-  .obvius-common #sidebar > div:first-child {
+  .obvius-common #sidebar>div:first-child {
     margin-top: 65px;
   }
 }
@@ -5793,6 +5793,11 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   margin-right: 15px;
 }
 
+#globalobviusconfigedit table td textarea:read-only {
+  cursor: not-allowed;
+  background-color: #EFEFEF;
+}
+
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
 /* #webstedinfo {
@@ -5868,5 +5873,4 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
 } */
-
 /* end */
