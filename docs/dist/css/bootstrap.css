@@ -12294,7 +12294,7 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   border-bottom: 0;
 }
 .global-search-results .tilebox:first-child {
-  padding-top: 0;
+  border-top: 1px solid #ccc;
 }
 .global-search-results .tile-content {
   display: -ms-flexbox;
@@ -12316,9 +12316,12 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   -ms-flex-order: 1;
   order: 1;
 }
+.global-search-results .tile-header > strong {
+  font-weight: bold;
+}
 .global-search-results .header-small {
   font-weight: 400;
-  line-height: 1.33333;
+  line-height: 1.3333333;
   color: #00802b;
   text-overflow: initial;
   text-transform: lowercase;
