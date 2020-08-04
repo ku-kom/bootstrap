@@ -11398,7 +11398,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-table-wrapper {
   display: none;
-  height: 150px;
+  height: 218px;
   overflow-x: auto;
   overflow-y: scroll;
   background-color: #fff;
@@ -12286,4 +12286,57 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   padding-top: 14px;
   margin-top: 23px;
   border-top: 1px solid #ccc;
+}
+.global-search-results {
+  margin-bottom: 10px;
+}
+.global-search-results .tilebox {
+  border-bottom: 0;
+}
+.global-search-results .tilebox:first-child {
+  border-top: 1px solid #ccc;
+}
+.global-search-results .tile-content {
+  display: -ms-flexbox;
+  display: flex;
+      flex-direction: column;
+
+  -ms-flex-direction: column;
+}
+.global-search-results .tile-cat {
+  -ms-flex-order: 2;
+  order: 2;
+}
+.global-search-results .tile-header {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #165aad;
+  letter-spacing: initial;
+
+  -ms-flex-order: 1;
+  order: 1;
+}
+.global-search-results .tile-header > strong {
+  font-weight: bold;
+}
+.global-search-results .header-small {
+  font-weight: 400;
+  line-height: 1.3333333;
+  color: #00802b;
+  text-overflow: initial;
+  text-transform: lowercase;
+  white-space: initial;
+
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+.global-search-results .tile-body {
+  display: block!important;
+  color: #252525;
+
+  -ms-flex-order: 3;
+  order: 3;
+}
+.global-search-result-page .alert {
+  margin-top: 13px;
 }
