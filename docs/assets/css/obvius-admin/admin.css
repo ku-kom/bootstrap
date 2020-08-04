@@ -5800,7 +5800,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5872,5 +5872,5 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 /* end */
