@@ -12291,7 +12291,7 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   margin-bottom: 10px;
 }
 .global-search-results .tilebox {
-  padding-bottom: 0;
+  padding-bottom: 5px;
   border-bottom: 0;
 }
 .global-search-results .tilebox:first-child {
