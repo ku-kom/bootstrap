@@ -2198,6 +2198,7 @@ div.admincontentwrapper div#content {
   left: 480px;
   display: block;
   padding-bottom: 25px;
+  z-index: 8;
 }
 
 .ui-dialog-titlebar-close .ui-button-text {
@@ -5625,7 +5626,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 }
 
 #updateAlerts {
-  min-height: 161px;
+  height: 161px;
 }
 
 .drawer {
