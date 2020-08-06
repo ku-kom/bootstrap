@@ -20,11 +20,8 @@
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
       //console.log($(el).next('ul').find('li > a').prop('aria-expanded'));
-      var val;
-      $(el).next('ul').find('li > a').prop('aria-expanded', function(i, val) {
-        return val == 'false' ? true : false;
-      });
-      console.log(val);
+      var aria = $(el).next('ul').find('li > a').prop('aria-expanded') ? 'true' : 'false';
+      $(el).next('ul').find('li > a').prop('aria-expanded', aria);
     } else {
       $(el).next('ul').show();
     }
