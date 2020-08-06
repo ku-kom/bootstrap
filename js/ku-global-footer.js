@@ -21,7 +21,7 @@
       $(el).toggleClass('open');
 
       $(el).next('ul').find('li').each(function(idx, li) {
-        console.log($(this).find('a').prop('aria-expanded'));
+        console.log($(this).find('a').attr('aria-expanded'));
       });
     } else {
       $(el).next('ul').show();
