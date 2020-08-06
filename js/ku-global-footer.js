@@ -19,7 +19,7 @@
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      console.log($(el).next('ul'));
+      console.log($(el).next('ul').find('li > a'));
       $(el).next('ul > li > a').prop('aria-expanded', function(i, val) {
         console.log($(el).next('ul').find('li > a').prop('aria-expanded'));
         return val == 'false' ? true : false;
