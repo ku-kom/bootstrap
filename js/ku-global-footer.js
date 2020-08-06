@@ -20,10 +20,10 @@
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
 
-      $(el).next('ul').find('li').each(function(idx, li) {
-        var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
-        $(this).find('a').attr('aria-expanded', expanded)
-      });
+      // $(el).next('ul').find('li').each(function(e, i) {
+      //   var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
+      //   $(this).find('a').attr('aria-expanded', expanded)
+      // });
 
     } else {
       $(el).next('ul').show();
