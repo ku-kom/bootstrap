@@ -22,7 +22,7 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 
-+function ($) {
++function($) {
   'use strict';
 
   // Check if the page is responsive
@@ -31,22 +31,28 @@ if (typeof jQuery === 'undefined') {
   var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
-  var collapseFooter = function (el, ev) {
+  var collapseFooter = function(el, ev) {
     // Collapse footer at lowest breakpoint
     if ($isResponsive === false && window.matchMedia('(max-width: 767px)').matches) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
+
+      // $(el).next('ul').find('li').each(function(e, i) {
+      //   var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
+      //   $(this).find('a').attr('aria-expanded', expanded)
+      // });
+
     } else {
       $(el).next('ul').show();
     }
   };
 
-  $footerHeader.click(function (e) {
+  $footerHeader.click(function(e) {
     collapseFooter(this, e);
   });
 
-  $(window).resize(function () {
+  $(window).resize(function() {
     var $newWidth = $('body').prop('clientWidth');
     if ($isResponsive === false && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
