@@ -39,7 +39,7 @@ if (typeof jQuery === 'undefined') {
       $(el).toggleClass('open');
       //console.log($(el).next('ul').find('li > a').prop('aria-expanded'));
       var aria = $(el).next('ul').find('li > a').prop('aria-expanded') ? 'true' : 'false';
-      $(el).next('ul').find('li > a').prop('aria-expanded', aria);
+      console.log(aria);
     } else {
       $(el).next('ul').show();
     }
