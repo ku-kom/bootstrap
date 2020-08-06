@@ -37,9 +37,9 @@ if (typeof jQuery === 'undefined') {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      console.log('Trigger');
-      $(el).next('ul > li a').prop('aria-expanded', function(i, val) {
-        console.log($(el).next('ul > li a').prop('aria-expanded'));
+      console.log($(el).next('ul > li > a').prop('aria-expanded'));
+      $(el).next('ul > li > a').prop('aria-expanded', function(i, val) {
+        console.log($(el).next('ul > li > a').prop('aria-expanded'));
         return val == 'false' ? true : false;
       });
     } else {
