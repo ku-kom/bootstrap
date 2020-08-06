@@ -39,8 +39,10 @@ if (typeof jQuery === 'undefined') {
       $(el).toggleClass('open');
 
       $(el).next('ul').find('li').each(function(idx, li) {
-        console.log($(this).find('a').attr('aria-expanded'));
+        var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
+        $(this).find('a').attr('aria-expanded', expanded)
       });
+
     } else {
       $(el).next('ul').show();
     }
