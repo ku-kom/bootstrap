@@ -36,11 +36,9 @@ if (typeof jQuery === 'undefined') {
     if ($isResponsive === false && window.matchMedia('(max-width: 767px)').matches) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
-      $(el).next('ul').find('a').attr('aria-expanded', 'true');
       $(el).toggleClass('open');
     } else {
       $(el).next('ul').show();
-      $(el).next('ul').find('a').attr('aria-expanded', 'false');
     }
   };
 
