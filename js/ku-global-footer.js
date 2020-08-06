@@ -22,6 +22,7 @@
       $(el).toggleClass('open');
     } else {
       $(el).next('ul').show();
+      $(el).next('ul').find('a').attr('aria-expanded', 'false');
     }
   };
 
