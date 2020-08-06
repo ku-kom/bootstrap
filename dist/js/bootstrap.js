@@ -37,9 +37,12 @@ if (typeof jQuery === 'undefined') {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      //console.log($(el).next('ul').find('li > a').prop('aria-expanded'));
-      var aria = $(el).next('ul').find('li > a').prop('aria-expanded') ? 'true' : 'false';
-      console.log(aria);
+
+      $(el).next('ul').find('li').each(function() {
+        $(this).find('a').prop('aria-expanded', function(i, val) {
+          return val == 'false' ? true : false;
+        });
+      });
     } else {
       $(el).next('ul').show();
     }
