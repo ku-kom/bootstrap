@@ -20,7 +20,9 @@
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
 
-      $(el).next('ul').find('li').each(function() {
+      $(el).next('ul').find('li').each(function(idx, li) {
+        console.log($(li));
+        console.log($(this).find('a'));
         $(this).find('a').prop('aria-expanded', function(i, val) {
           return val == 'false' ? true : false;
         });
