@@ -38,11 +38,11 @@ if (typeof jQuery === 'undefined') {
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
       $(el).next('ul > li a').prop('aria-expanded', function(i, val) {
+        console.log($(el).next('ul > li a').prop('aria-expanded'));
         return val == 'false' ? true : false;
       });
     } else {
       $(el).next('ul').show();
-      console.log('show');
     }
   };
 
