@@ -6717,7 +6717,8 @@ button.list-group-item-danger.active:focus {
 .panel-body {
   padding: 10px;
 }
-.panel-body > ul:first-child {
+.panel-body > ul:first-child,
+.panel-body form:first-child {
   margin-top: 10px;
 }
 .panel-body ul:not([class]) li {
