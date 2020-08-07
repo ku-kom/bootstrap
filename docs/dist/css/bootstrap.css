@@ -12021,9 +12021,6 @@ p[align="right"]:before {
   width: 100%!important;
   margin: 0;
 }
-form.gdpr-accept {
-  margin: 10px 0 15px;
-}
 form.gdpr-accept label[for="email"] {
   margin-bottom: 5px;
 }
