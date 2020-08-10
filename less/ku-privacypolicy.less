@@ -203,8 +203,17 @@
 }
 
 .ccc-table {
-  & > tr {
-    & > td {
+  & > tbody {
+    & > tr {
+      & > td {
+        word-break: break-all;
+      }
+    }
+  }
+
+  & td {
+    &:nth-child(2) {
+      width: 50%;
       word-break: break-all;
     }
   }
