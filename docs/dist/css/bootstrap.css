@@ -11448,6 +11448,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   table-layout: fixed;
   background-color: #fff;
 }
+.ccc-table > tr > td {
+  word-break: break-all;
+}
 .ccc-table-ani-enter,
 .ccc-table-ani-leave-to {
   height: 0;
