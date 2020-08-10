@@ -11434,10 +11434,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   content: "";
 }
 .ccc-table-wrapper {
+  position: relative;
   display: none;
   height: 218px;
   overflow-x: auto;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   transition: height .4s ease;
 }
