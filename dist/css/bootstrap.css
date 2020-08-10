@@ -11451,10 +11451,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-table > tbody > tr > td {
   word-break: break-all;
 }
-.ccc-table td:nth-child(2) {
-  width: 50%;
-  word-break: break-all;
-}
 .ccc-table-ani-enter,
 .ccc-table-ani-leave-to {
   height: 0;
