@@ -12377,13 +12377,11 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
   -ms-flex-order: 3;
   order: 3;
 }
+@media (min-width: 768px) {
+  .global-search-result-page .global-search-result-page .search-submit {
+    line-height: 1.47;
+  }
+}
 .global-search-result-page .alert {
   margin-top: 13px;
-}
-@media (min-width: 768px) {
-  @-moz-document url-prefix() {
-    .global-search-result-page .search-submit {
-      line-height: 1.47;
-    }
-  }
 }
