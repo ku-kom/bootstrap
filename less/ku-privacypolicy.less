@@ -10,6 +10,7 @@
   background-color: rgba(@ku-cookiebox-bg, .96);
   overflow-y: scroll;
   max-height: 100%;
+  width: 100%;
   z-index: (@zindex-modal + 1);
   transform: translate3d(0, 0, 0); // Prevent jumping on Android
   backface-visibility: hidden; // Prevent jumping on Android
@@ -34,20 +35,20 @@
 .ccc-popup {
   height: 100%;
   padding-bottom: @grid-gutter-height;
-  @media all and (min-width: @screen-sm-min) {
+  @media all and (min-width: @screen-sm-max) {
     padding: @grid-gutter-height 100px floor((@grid-gutter-width * 2)) 100px;
   }
 }
 
 #ccc-title {
   font-size: 26px;
-  line-height: 1.3;
+  line-height: @line-height-small;
   margin-top: @grid-gutter-by-half;
 }
 
 #ccc-desc {
   font-size: 16px;
-  @media all and (min-width: @screen-sm-min) {
+  @media all and (min-width: @screen-sm-max) {
     font-size: 18px;
     letter-spacing: 0.7px;
     margin-bottom: 30px;
@@ -75,7 +76,7 @@
   font-size: 18px;
   margin-top: 0;
   display: block;
-  @media all and (min-width: @screen-sm-min) {
+  @media all and (min-width: @screen-sm-max) {
     font-size: 20px;
   }
 }
@@ -187,10 +188,12 @@
 .ccc-table-wrapper {
   display: none;
   height: 218px;
+  position: relative;
   overflow-y: scroll;
   overflow-x: auto;
   background-color: @white-color;
   transition: height 0.4s ease;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ccc-table {
@@ -199,13 +202,23 @@
   background-color: @white-color;
 }
 
+.ccc-table {
+  & > tbody {
+    & > tr {
+      & > td {
+        word-break: break-all;
+      }
+    }
+  }
+}
+
 .ccc-table-ani-enter,
 .ccc-table-ani-leave-to {
   height: 0;
 }
 
 .ccc-buttons {
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @screen-sm-max) {
     margin-top: 45px;
   }
 
@@ -222,7 +235,7 @@
     &:first-child {
       margin-right: 20px;
     }
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: @screen-sm-max) {
       font-size: 18px;
       padding: 10px 25px;
 
