@@ -12380,3 +12380,10 @@ body.mce-content-body .accordion-hidden + .accordion-hidden {
 .global-search-result-page .alert {
   margin-top: 13px;
 }
+@media (min-width: 768px) {
+  @-moz-document url-prefix() {
+    .global-search-result-page .search-submit {
+      line-height: 1.47;
+    }
+  }
+}
