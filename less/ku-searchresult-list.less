@@ -51,16 +51,16 @@
 }
 
 .global-search-result-page {
-  .alert {
-    margin-top: @grid-gutter-by-half;
-  }
-}
-@media (min-width: @screen-sm) {
-@-moz-document url-prefix() {
+  @media (min-width: @screen-sm) {
     .global-search-result-page {
       .search-submit {
+        // Hack to align input groups in FF and Edge
         line-height: 1.47;
       }
     }
+  }
+
+  .alert {
+    margin-top: @grid-gutter-by-half;
   }
 }
