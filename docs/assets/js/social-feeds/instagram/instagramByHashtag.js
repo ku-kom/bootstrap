@@ -49,7 +49,7 @@
             $.each(entry, function(i, v) {
               var img = entry[i].node.thumbnail_src;
               var shortcode = entry[i].node.shortcode;
-              var cap = entry[i].node.edge_media_to_caption.edges[0].node.text;
+              var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
               var caption = (cap) ? htmlEntities(cap.substring(0, 50) + '...') : '';
               $container.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + hashtag + '"></a>');
               return i < $images - 1;
