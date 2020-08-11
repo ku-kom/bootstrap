@@ -55,3 +55,12 @@
     margin-top: @grid-gutter-by-half;
   }
 }
+@media (min-width: @screen-sm) {
+@-moz-document url-prefix() {
+    .global-search-result-page {
+      .search-submit {
+        line-height: 1.47;
+      }
+    }
+  }
+}
