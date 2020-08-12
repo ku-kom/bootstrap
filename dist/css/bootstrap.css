@@ -8589,9 +8589,6 @@ iframe {
   overflow: hidden;
   color: #fff;
   background: #757575;
-
-  -ms-flex: none;
-      flex: none;
 }
 @media (min-width: 768px) {
   #globalfooter {
@@ -11717,22 +11714,6 @@ ul.stripped h2 {
 }
 .fritekst_top_img {
   margin-bottom: 10px;
-}
-.visible-desktop {
-  display: block;
-}
-.visible-mobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .visible-desktop {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .visible-mobile {
-    display: block;
-  }
 }
 .img-with-caption {
   float: right;
