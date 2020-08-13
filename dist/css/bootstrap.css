@@ -11433,7 +11433,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   position: relative;
   display: none;
   height: 218px;
-  overflow-x: auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background-color: #fff;
@@ -11459,7 +11458,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-buttons button {
   padding: 10px;
   font-size: 14px;
-  font-weight: 700;
   text-transform: none;
 }
 .ccc-buttons button:focus {
