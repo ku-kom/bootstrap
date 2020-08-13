@@ -1,4 +1,5 @@
 /* Slider */
+
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -26,7 +27,7 @@
   display: block;
   box-sizing: border-box;
   user-select: none;
-  touch-action: pan-y;
+  touch-action: pan-y pinch-zoom;
   -webkit-tap-highlight-color: transparent;
   visibility: hidden;
   clear: both;
@@ -45,9 +46,9 @@
   // &:focus {
   //   outline: none;
   // }
+
   &.dragging {
-    cursor: pointer;
-    cursor: hand;
+    cursor: grabbing;
   }
 }
 
@@ -63,13 +64,13 @@
   display: block;
   height: 100%; // KU
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     content: "";
     display: table;
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 
@@ -223,7 +224,7 @@
     left: 0;
     .icon-arrow-back;
 
-    &:before {
+    &::before {
       display: inline-block;
     }
   }
@@ -231,7 +232,7 @@
   &.slick-next {
     right: 0;
 
-    &:before {
+    &::before {
       content: @icon-arrow;
     }
   }
@@ -273,13 +274,13 @@
     }
 
     .slick-prev.slick-disabled {
-      &:before {
+      &::before {
         opacity: 0.25;
       }
     }
 
     .slick-next.slick-disabled {
-      &:before {
+      &::before {
         opacity: 0.25;
       }
     }
@@ -353,7 +354,8 @@
     color: @text-color;
     background: @gray-f5;
 
-    h1, h3 {
+    h1,
+    h3 {
       margin-top: 0;
     }
 
