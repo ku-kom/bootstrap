@@ -7021,6 +7021,9 @@ button.list-group-item-danger.active:focus {
 .panel-accordion .panel-body h3 {
   font-size: 15px;
 }
+.panel-accordion .panel-body h4 {
+  font-size: 14px;
+}
 .panel-accordion .panel-collapse {
   border-top: 1px solid #f1f1f1;
 }
