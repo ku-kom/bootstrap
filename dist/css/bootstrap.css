@@ -11257,9 +11257,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-weight: 700;
   background-color: #ccc;
 }
-.ccc.popup-open {
-  overflow: initial;
-}
 .ccc {
   position: fixed;
   right: 0;
@@ -11269,7 +11266,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   width: 100%;
   max-height: 100%;
   padding: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   color: #fff;
   background-color: rgba(80, 80, 80, .96);
