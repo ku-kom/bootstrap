@@ -5434,13 +5434,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 #topbar_menu {
   height: 100%;
-  margin-right: 0;
+  margin-right: 17px;
   font-size: 13px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #topbar_menu {
-    font-size: 12px;
-  }
 }
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
@@ -11512,56 +11507,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .cookiefilter-header {
   font-size: 18px;
   font-weight: 600;
-}
-@media (min-width: 767px) {
-  .privacy-policy {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1020!important;
-    height: auto;
-    padding: 40px;
-    font-weight: 600;
-    color: #fff;
-    background: #505050;
-  }
-  .privacy-policy .h2 {
-    margin-top: 0;
-    font-weight: 700;
-  }
-  .privacy-policy p {
-    margin: 0 0 2px;
-  }
-  .privacy-policy .btn {
-    padding: 6px 23px;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #901a1e;
-    text-transform: uppercase;
-    background-image: linear-gradient(to bottom, #eee 0%, #cfcfcf 100%);
-    background-repeat: repeat-x;
-  }
-  .privacy-policy .laes_mere_cookies {
-    display: inline-block;
-    margin-top: 16px;
-    color: #fff;
-    text-decoration: underline;
-  }
-  .privacy-policy .laes_mere_cookies:before {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 1.4em;
-    color: inherit;
-    content: "\00bb";
-  }
-}
-@media (max-width: 767px) {
-  .privacy-policy {
-    display: none;
-  }
 }
 .social-embed {
   padding-bottom: 5px;
