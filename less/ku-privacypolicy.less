@@ -2,6 +2,7 @@
 // .ccc.popup-open {
 //   overflow: hidden;
 // }
+
 .ccc {
   position: fixed;
   bottom: 0;
@@ -270,6 +271,24 @@
 .cookiefilter-header {
   font-size: 18px;
   font-weight: 600;
+}
+// Special styling for placeholder in right columns:
+
+.right-side {
+  .cookiefilter {
+    padding: 9px;
+  }
+
+  .cookiefilter-header {
+    font-size: 14px;
+    line-height: 18px;
+
+    &+ p {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
 }
 // KU privacy policy box
 // @media (min-width: @screen-xs-max) {

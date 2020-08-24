@@ -485,6 +485,8 @@
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
 
+// KU specific feature width:
+@ku-screen-mega:             3000px;
 
 //== Grid system
 //
@@ -527,6 +529,9 @@
 //(1070px + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
+
+// KU specific:
+@container-mega:                (1900px + @grid-gutter-width);
 
 
 //== Navbar
