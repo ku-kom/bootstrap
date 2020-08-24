@@ -2069,6 +2069,11 @@ pre code {
     width: 1070px;
   }
 }
+@media (min-width: 3000px) {
+  .container {
+    width: 1926px;
+  }
+}
 .container-fluid {
   padding-right: 26px;
   padding-left: 26px;
@@ -11507,6 +11512,16 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .cookiefilter-header {
   font-size: 18px;
   font-weight: 600;
+}
+.right-side .cookiefilter {
+  padding: 9px;
+}
+.right-side .cookiefilter-header {
+  font-size: 14px;
+  line-height: 18px;
+}
+.right-side .cookiefilter-header + p:first-child {
+  display: none;
 }
 .social-embed {
   padding-bottom: 5px;
