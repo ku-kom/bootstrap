@@ -276,7 +276,18 @@
 
 .right-side {
   .cookiefilter {
-    padding: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+    &::before {
+      font-size: 80px;
+      top: 0;
+    }
   }
 
   p {

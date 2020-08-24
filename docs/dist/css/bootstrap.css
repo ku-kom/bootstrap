@@ -11514,7 +11514,17 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-weight: 600;
 }
 .right-side .cookiefilter {
-  padding: 9px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.right-side .cookiefilter::before {
+  top: 0;
+  font-size: 80px;
 }
 .right-side p {
   margin: 6px 0 9px;
