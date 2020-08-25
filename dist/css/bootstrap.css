@@ -12211,9 +12211,6 @@ form.gdpr-accept .btn + .btn {
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-.mce-content-body .accordion-hidden {
-  none: display;
-}
 .mce-content-body .panel-accordion + .accordion-hidden {
   display: block;
   margin: 5px 0;
