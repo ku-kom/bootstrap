@@ -2069,11 +2069,6 @@ pre code {
     width: 1070px;
   }
 }
-@media (min-width: 3000px) {
-  .container {
-    width: 1926px;
-  }
-}
 .container-fluid {
   padding-right: 26px;
   padding-left: 26px;
@@ -12085,7 +12080,7 @@ form.gdpr-accept .btn + .btn {
 .quote-box blockquote cite {
   display: block;
 }
-.quote-box:before {
+.quote-box::before {
   position: relative;
   position: absolute;
   right: 16px;
@@ -12160,12 +12155,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tfoot > tr > th,
-.mce-content-body table > thead > tr > th,
-.mce-content-body table > tbody > tr > th,
-.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > td,
 .mce-content-body table > thead > tr > td,
-.mce-content-body table > tbody > tr > td {
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tfoot > tr > th {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -12203,7 +12198,7 @@ form.gdpr-accept .btn + .btn {
   padding-left: 0;
   font-weight: 600;
 }
-body.editor-accordions {
+.editor-accordions {
   padding: 0 15px;
   background-color: #fbfbf7;
 }
@@ -12216,24 +12211,24 @@ body.editor-accordions {
 .mce-container-body [aria-label~="accordion"] {
   display: inline-block;
 }
-body.mce-content-body .accordion-hidden {
+.mce-content-body .accordion-hidden {
   display: block;
   margin: 5px 0;
 }
-body.mce-content-body .accordion-hidden::before {
+.mce-content-body .accordion-hidden::before {
   color: #757575;
   vertical-align: middle;
   content: 'Klik her, og derefter p\00e5 \00a0 ikonet i v\00e6rkt\00f8jslinjen for at tilf\00f8je et nyt accordion:';
 }
-html:lang(en) body.mce-content-body .accordion-hidden::before {
+html:lang(en) .mce-content-body .accordion-hidden::before {
   content: 'Place cursor here and click the icon in the toolbar to add a new accordion:';
 }
-body.mce-content-body .accordion-hidden::after {
+.mce-content-body .accordion-hidden::after {
   font-family: "Glyphicons Halflings";
   vertical-align: middle;
   content: "\e236";
 }
-body.mce-content-body .accordion-hidden + .accordion-hidden {
+.mce-content-body .accordion-hidden + .accordion-hidden {
   display: none;
 }
 .login-container {
