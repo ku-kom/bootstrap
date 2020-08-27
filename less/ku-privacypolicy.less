@@ -44,13 +44,16 @@
 }
 
 #ccc-title {
-  font-size: 26px;
+  font-size: 24px;
+  @media all and (min-width: @screen-sm-max) {
+    font-size: 26px;
+  }
   line-height: @line-height-small;
   margin-top: @grid-gutter-by-half;
 }
 
 #ccc-desc {
-  font-size: 16px;
+  font-size: 15px;
   @media all and (min-width: @screen-sm-max) {
     font-size: 18px;
     letter-spacing: 0.7px;
@@ -67,7 +70,10 @@
 
 .ccc-list > li {
   border: 1px solid @gray-888;
-  padding: 0 @grid-gutter-by-half @grid-gutter-by-half;
+  padding: 0 @grid-gutter-by-half 5px;
+  @media all and (min-width: @screen-sm-max) {
+    padding: 0 @grid-gutter-by-half @grid-gutter-by-half;
+  }
   border-radius: @border-radius-base;
 
   & + li {
@@ -76,7 +82,7 @@
 }
 
 .ccc-select-title {
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 0;
   display: block;
   @media all and (min-width: @screen-sm-max) {
@@ -85,7 +91,10 @@
 }
 
 .ccc-select {
-  font-size: 16px;
+  font-size: 15px;
+  @media all and (min-width: @screen-sm-max) {
+    font-size: 16px;
+  }
   letter-spacing: 0.7px;
   position: relative;
   width: 100%;
@@ -221,11 +230,19 @@
 }
 
 .ccc-buttons {
+  @media (max-width: @screen-xs-max) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   @media (min-width: @screen-sm-max) {
     margin-top: 45px;
   }
 
   button {
+    @media (max-width: @screen-xs-max) {
+      flex: 1;
+    }
     text-transform: none;
     font-size: 14px;
     padding: 10px;
@@ -243,9 +260,15 @@
 
       &:first-child {
         margin-right: floor((@grid-gutter-width * 2));
-        background-color: transparent;
-        border-color: @gray-888;
-        color: @white-color;
+      }
+    }
+
+    &:first-child {
+      background-color: transparent;
+      border-color: @gray-888;
+      color: @white-color;
+      @media (max-width: @screen-xs-max) {
+        margin-right: 30px;
       }
     }
   }

@@ -11292,11 +11292,16 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 #ccc-title {
   margin-top: 13px;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.3333333;
 }
+@media all and (min-width: 991px) {
+  #ccc-title {
+    font-size: 26px;
+  }
+}
 #ccc-desc {
-  font-size: 16px;
+  font-size: 15px;
 }
 @media all and (min-width: 991px) {
   #ccc-desc {
@@ -11312,9 +11317,14 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   list-style: none;
 }
 .ccc-list > li {
-  padding: 0 13px 13px;
+  padding: 0 13px 5px;
   border: 1px solid #888;
   border-radius: 2px;
+}
+@media all and (min-width: 991px) {
+  .ccc-list > li {
+    padding: 0 13px 13px;
+  }
 }
 .ccc-list > li + li {
   margin-top: 23px;
@@ -11322,7 +11332,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select-title {
   display: block;
   margin-top: 0;
-  font-size: 18px;
+  font-size: 17px;
 }
 @media all and (min-width: 991px) {
   .ccc-select-title {
@@ -11333,13 +11343,18 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   position: relative;
   width: 100%;
   padding: 0 26px 0 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   text-align: left;
   letter-spacing: .7px;
   cursor: pointer;
   background: transparent;
   border: 0;
+}
+@media all and (min-width: 991px) {
+  .ccc-select {
+    font-size: 16px;
+  }
 }
 .ccc-select:before {
   content: "\e259";
@@ -11448,6 +11463,17 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-table-ani-leave-to {
   height: 0;
 }
+@media (max-width: 767px) {
+  .ccc-buttons {
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 991px) {
   .ccc-buttons {
     margin-top: 45px;
@@ -11457,6 +11483,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: 10px;
   font-size: 14px;
   text-transform: none;
+}
+@media (max-width: 767px) {
+  .ccc-buttons button {
+    -ms-flex: 1;
+        flex: 1;
+  }
 }
 .ccc-buttons button:focus {
   outline: 1px solid #2c6694;
@@ -11471,9 +11503,16 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   .ccc-buttons button:first-child {
     margin-right: 52px;
-    color: #fff;
-    background-color: transparent;
-    border-color: #888;
+  }
+}
+.ccc-buttons button:first-child {
+  color: #fff;
+  background-color: transparent;
+  border-color: #888;
+}
+@media (max-width: 767px) {
+  .ccc-buttons button:first-child {
+    margin-right: 30px;
   }
 }
 .cookiefilter {
