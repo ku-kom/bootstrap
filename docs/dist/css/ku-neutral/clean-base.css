@@ -42,6 +42,9 @@
 .ku-branding .ku-branding-text {
   left: 13px;
 }
+.ku-branding .ku-branding-text > a {
+  height: 100%;
+}
 .ku-branding::after {
   border-bottom: 1px solid #666 !important;
 }
