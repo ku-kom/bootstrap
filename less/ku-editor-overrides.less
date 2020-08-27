@@ -44,9 +44,9 @@
   .slide-wrapper,
   .slideshow {
     visibility: visible;
-    height: 289px;
+    height: @gridbox1;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid @gray;
     position: relative;
   }
 
@@ -55,7 +55,6 @@
     content: "Slideshow...";
     top: 50%;
     left: 50%;
-    -webkit-transform: translatex(-50%) translatey(-50%);
     transform: translatex(-50%) translatey(-50%);
     position: absolute;
     z-index: 10;
@@ -95,11 +94,9 @@
 }
 // Editor accordions popup dialog
 
-body {
-  &.editor-accordions {
-    background-color: #fbfbf7;
-    padding: 0 15px;
-  }
+.editor-accordions {
+  background-color: #fbfbf7;
+  padding: 0 15px;
 }
 
 .accordion-hidden {
@@ -117,10 +114,10 @@ body {
   }
 }
 
-body {
-  &.mce-content-body {
-    // Put cursor below accordions
-    .accordion-hidden {
+.mce-content-body {
+  .panel-accordion {
+    & + .accordion-hidden {
+      // Display an option to insert more adjecent accordions:
       display: block;
       margin: 5px 0;
 
@@ -138,10 +135,6 @@ body {
         font-family: "Glyphicons Halflings";
         content: "\e236";
         vertical-align: middle;
-      }
-      // - but hide sibsequent cursor blocks
-      + .accordion-hidden {
-        display: none;
       }
     }
   }
