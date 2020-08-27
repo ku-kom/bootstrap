@@ -11471,6 +11471,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   .ccc-buttons button:first-child {
     margin-right: 52px;
+    color: #fff;
+    background-color: transparent;
+    border-color: #888;
   }
 }
 .cookiefilter {
