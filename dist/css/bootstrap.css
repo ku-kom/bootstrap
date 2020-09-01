@@ -7559,9 +7559,6 @@ main:after,
 .affix {
   position: fixed;
 }
-@-ms-viewport {
-  width: device-width;
-}
 .visible-lg-block,
 .visible-lg-inline,
 .visible-lg-inline-block,
@@ -8032,9 +8029,6 @@ nav {
 }
 .ie9 img[src$=".svg"] {
   width: 100%;
-}
-@-ms-viewport {
-  width: device-width;
 }
 .scrolltop {
   position: fixed;
