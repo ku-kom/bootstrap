@@ -64,7 +64,6 @@
 .nyhedsboks .item-list .item-left {
   display: block;
   float: right;
-  text-align: right;
 }
 
 table.dataTable>thead>tr>td:nth-last-child(2) {
