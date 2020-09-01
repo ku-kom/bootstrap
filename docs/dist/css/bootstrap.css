@@ -9690,7 +9690,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 @media all and (min-width: 992px) {
   .single-column .tiles-x:not(.tiles-plugin) .tile-header {
     font-size: 26px;
-    font-weight: 600;
   }
   .single-column .tiles-x:not(.tiles-plugin) .tile-cat {
     display: none;
@@ -11505,11 +11504,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     margin-right: 52px;
   }
 }
-.ccc-buttons button:first-child {
-  color: #fff;
-  background-color: transparent;
-  border-color: #888;
-}
 @media (max-width: 767px) {
   .ccc-buttons button:first-child {
     margin-right: 30px;
@@ -12142,6 +12136,10 @@ form.gdpr-accept .btn + .btn {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.radiolabel,
+.gdpr-label {
+  font-weight: 400;
 }
 #symplifysignupform .gdpr-accept {
   position: relative;
