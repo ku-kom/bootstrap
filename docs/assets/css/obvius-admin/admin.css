@@ -305,7 +305,7 @@ div.obvius-links a:hover, div.obvius-links a:active {
 
 div.obvius-path {
   clear: both;
-  background-color: white;
+  background-color: #fff;
   font-size: x-small;
   padding: 0.5em;
   border-top: 1px solid #aaa;
@@ -394,12 +394,12 @@ div.obvius-editing ul a {
 }
 
 .obvius-editing ul li:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .obvius-editing ul li.obvius-current, div.obvius-newsboxes ul li.obvius-current {
-  background-color: white;
-  border-left: 1px solid white;
+  background-color: #fff;
+  border-left: 1px solid #fff;
   padding-left: 0;
   padding-right: 5px;
   /* Compensate for the lower left-padding, so total width is unchanged */
@@ -448,7 +448,7 @@ div.obvius-subdocs .sub-icon-wrapper {
 
 div.obvius-subdocs ul li a+a.obvius-current {
   /* See below for MSIE */
-  color: white;
+  color: #fff;
   /* invert */
   background-color: #d67d71;
   padding-left: 0.2em;
@@ -572,7 +572,7 @@ table.obvius-diff th h3 {
 }
 
 table.obvius-diff td {
-  border: 2px solid white;
+  border: 2px solid #fff;
   background: #f2f2f2;
   vertical-align: top;
   padding-left: 0.5em;
@@ -597,7 +597,7 @@ span.obvius-diff-added {
 /* Green  */
 div.obvius-diff-legend {
   width: 5em;
-  background: white;
+  background: #fff;
   border: 1px solid #aaa;
   margin-top: 2em;
   margin-left: auto;
@@ -663,7 +663,7 @@ table.obvius-editengine-list th a img {
 table.obvius-editengine-list td {
   vertical-align: top;
   padding: 0.5em;
-  border-right: 1px solid white;
+  border-right: 1px solid #fff;
   /* MSIE interprets 'transparent' as black - so hardcode white */
 }
 
@@ -983,7 +983,7 @@ form.obvius-manual-placement div div {
 
 /* Navigator style: */
 body.obvius-navigator {
-  background-color: white;
+  background-color: #fff;
 }
 
 form.obvius-navigator {
@@ -1022,7 +1022,7 @@ form.obvius-navigator #obvius-toolbar-new {
   position: absolute;
   top: 1.85em;
   left: -1.8em;
-  background: white;
+  background: #fff;
   border-bottom: 1px solid #666;
   border-right: 1px solid #666;
   font-size: small;
@@ -1045,7 +1045,7 @@ form.obvius-navigator #obvius-toolbar-new ul li a:hover {
 }
 
 form.obvius-navigator div.obvius-current-document {
-  background-color: white;
+  background-color: #fff;
   margin-left: 25em;
   /* obvius-tree width, old: 15em */
   padding-left: 0.25em;
@@ -1072,7 +1072,7 @@ form.obvius-navigator div.obvius-current-document table tr th {
 }
 
 form.obvius-navigator div.obvius-subdocs {
-  background-color: white;
+  background-color: #fff;
   margin-top: 0;
   margin-left: 25em;
   /* width of obvius-tree, old: 15em */
@@ -1140,7 +1140,7 @@ form.obvius-navigator div.obvius-tree ul li {
 }
 
 form.obvius-navigator div.obvius-tree ul li.obvius-current a {
-  color: white;
+  color: #fff;
   /* Invert */
   background-color: #d67d71;
   padding-left: 0.2em;
@@ -1162,7 +1162,7 @@ form.obvius-navigator div.obvius-tree ul li img {
 }
 
 form.obvius-navigator div.obvius-quickcreate {
-  background-color: white;
+  background-color: #fff;
   padding-top: 0.5em;
   padding-left: 0.75em;
   padding-right: 2em;
@@ -1206,7 +1206,7 @@ table.obvius-app-seqlist tr td ul li {
 }
 
 table.obvius-app-seqlist tr td ul li.current {
-  color: white;
+  color: #fff;
   background: #d67d71;
 }
 
@@ -1234,7 +1234,7 @@ div.obvius-app-versionlist form p {
 
 .obvius-editengine table.mceEditor {
   color: #222;
-  background-color: white;
+  background-color: #fff;
 }
 
 /* Hacks for Microsoft Internet Explorer: */
@@ -1251,7 +1251,7 @@ div.obvius-subdocs ul li a.obvius-current {
 }
 
 div.obvius-subdocs ul li a.obvius-current:link, div.obvius-subdocs ul li a.obvius-current:visited {
-  color: white;
+  color: #fff;
   /* invert */
 }
 
@@ -1291,7 +1291,7 @@ div.obvius-common p.obvius-notice {
 
 /* General class for boxes above and below the common area */
 .obvius-middle-box {
-  background-color: white;
+  background-color: #fff;
   margin-left: 200px;
   margin-right: 122px;
   /* +7 */
@@ -1327,7 +1327,7 @@ div.obvius-common p.obvius-notice {
 
 .obvius-ac-editheader {
   background-color: #050;
-  color: white;
+  color: #fff;
   padding-left: 1em;
 }
 
@@ -1455,7 +1455,7 @@ div.docparamedit div.addcustomnew {
 
 .tags_widget .tag_div_container .tag_container {
   margin: 1em;
-  background-color: white;
+  background-color: #fff;
   width: 250px;
   height: 400px;
   border: 2px groove;
@@ -1466,7 +1466,7 @@ div.docparamedit div.addcustomnew {
   padding: 0.2em 0.1em;
   width: 250px;
   height: 70px;
-  background-color: white;
+  background-color: #fff;
   border: 2px groove;
   border-top: none;
   margin: 0em 1em 1em
@@ -2079,7 +2079,7 @@ div.admincontentwrapper div#content {
 .ac_results {
   padding: 0px;
   border: 1px solid black;
-  background-color: white;
+  background-color: #fff;
   overflow: hidden;
   z-index: 99999;
 }
@@ -2122,7 +2122,7 @@ div.admincontentwrapper div#content {
 
 .ac_over {
   background-color: #0A246A;
-  color: white;
+  color: #fff;
 }
 
 /*
@@ -5806,7 +5806,7 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -5878,6 +5878,6 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 
 /* end */
