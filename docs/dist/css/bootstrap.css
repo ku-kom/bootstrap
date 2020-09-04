@@ -6842,8 +6842,7 @@ button.list-group-item-danger.active:focus {
   padding: 1px 0 0;
   border-top: 1px solid #959595;
 }
-:not(.right-side) .single-column .panel-default > .panel-heading > .panel-title,
-:not(#gridsidebar) .single-column .panel-default > .panel-heading > .panel-title {
+.main-content .single-column .panel-default > .panel-heading > .panel-title {
   padding: 0 5px 8px 0;
   margin: 20px 0 0;
   font-size: 20px;
@@ -6851,8 +6850,7 @@ button.list-group-item-danger.active:focus {
   letter-spacing: .7px;
   border-bottom: 1px solid #959595;
 }
-:not(.right-side) .single-column .panel-default > .panel-body,
-:not(#gridsidebar) .single-column .panel-default > .panel-body {
+.main-content .single-column .panel-default > .panel-body {
   border-top: 0;
 }
 .panel-primary {
