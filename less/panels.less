@@ -54,11 +54,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small,
+  > .small > a,
    > a,
    > small,
    > small > a,
-  > .small > a {
+  > .small {
     color: inherit;
   }
 
@@ -82,8 +82,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .panel-collapse > .list-group,
-  > .list-group {
+  > .list-group,
+  > .panel-collapse > .list-group {
     margin-bottom: 0;
 
     .list-group-item {
@@ -330,13 +330,18 @@
   }
 }
 // Different boxtop for full-width panels
-:not(.right-side) {
+
+div:not(.right-side) {
   .single-column {
     .panel-default {
       & > .panel-heading {
         & > .panel-title {
           .deloverskrift;
         }
+      }
+
+      & > .panel-body {
+        border-top: 0;
       }
     }
   }
