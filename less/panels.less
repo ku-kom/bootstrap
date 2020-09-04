@@ -19,7 +19,8 @@
   padding: @panel-body-padding;
   &:extend(.clearfix all);
 
-  & > ul, form {
+  & > ul,
+  form {
     &:first-child {
       margin-top: 10px;
     }
@@ -329,6 +330,17 @@
   }
 }
 
+// Different boxtop for full-width panels
+:not(.right-side) {
+  .single-column {
+    .panel-default {
+      & > .panel-title {
+        .deloverskrift;
+      }
+    }
+  }
+}
+
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
 }
@@ -430,7 +442,7 @@
     }
 
     h4 {
-      font-size: 14px; 
+      font-size: 14px;
     }
   }
 
