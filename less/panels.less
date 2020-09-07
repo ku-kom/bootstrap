@@ -19,7 +19,8 @@
   padding: @panel-body-padding;
   &:extend(.clearfix all);
 
-  & > ul, form {
+  & > ul,
+  form {
     &:first-child {
       margin-top: 10px;
     }
@@ -328,6 +329,23 @@
     border-top: 1px solid @ku-grey-border;
   }
 }
+// Different boxtop for full-width panels
+
+.main-content {
+  .single-column {
+    .panel-default {
+      & > .panel-heading {
+        & > .panel-title {
+          .deloverskrift;
+        }
+      }
+
+      & > .panel-body {
+        border-top: 0;
+      }
+    }
+  }
+}
 
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
@@ -430,7 +448,7 @@
     }
 
     h4 {
-      font-size: 14px; 
+      font-size: 14px;
     }
   }
 

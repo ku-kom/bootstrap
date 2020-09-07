@@ -1983,9 +1983,9 @@ address {
   font-style: normal;
   line-height: 1.5;
 }
-h2.deloverskrift {
+.deloverskrift {
   padding: 0 5px 8px 0;
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: .7px;
@@ -6188,9 +6188,6 @@ a.label:focus {
   background-color: #757575;
   border-radius: 10px;
 }
-.badge:empty {
-  display: none;
-}
 .btn .badge {
   position: relative;
   top: -1px;
@@ -6841,6 +6838,17 @@ button.list-group-item-danger.active:focus {
 .panel-default > .panel-body {
   padding: 1px 0 0;
   border-top: 1px solid #959595;
+}
+.main-content .single-column .panel-default > .panel-heading > .panel-title {
+  padding: 0 5px 8px 0;
+  margin: 20px 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: .7px;
+  border-bottom: 1px solid #959595;
+}
+.main-content .single-column .panel-default > .panel-body {
+  border-top: 0;
 }
 .panel-primary {
   border-color: #39808e;
