@@ -6188,9 +6188,6 @@ a.label:focus {
   background-color: #757575;
   border-radius: 10px;
 }
-.badge:empty {
-  display: none;
-}
 .btn .badge {
   position: relative;
   top: -1px;
