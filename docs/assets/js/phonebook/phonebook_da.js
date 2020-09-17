@@ -24,7 +24,7 @@
     totalPages = 0;
 
   // Submit form and handle messages
-  $('#go-find').on("click", function(e) {
+  $('#go-find').on('click', function(e) {
     e.preventDefault();
     $feedback.html('');
     $output.html('');
@@ -38,7 +38,7 @@
   });
 
   // Reset search field and messages
-  $($reset).on("click", function(e) {
+  $($reset).on('click', function(e) {
     $input.focus();
     $reset.addClass('inactive');
     $feedback.html('');
@@ -52,7 +52,7 @@
   });
 
   // Handle submit of search form
-  $form.on("submit", function(e) {
+  $form.on('submit', function(e) {
     e.preventDefault();
     $loading.show();
     $.ajax({
@@ -86,7 +86,7 @@
 
 
     function generate_table() {
-      var li;
+      var $li;
       $feedback.html('');
       $output.html('');
       $loading.hide();
@@ -105,7 +105,7 @@
         var address = (isEmpty(result[i].ANSAT_ADRESSE)) ? '' : '<dt>Adresse</dt><dd>' + result[i].ANSAT_ADRESSE + '</dd>';
         var location = (isEmpty(result[i].LOKATION)) ? '' : '<dt>Lokation</dt><dd>' + result[i].LOKATION + '</dd>';
 
-        li = $('<li class="contact-list"/>');
+        $li = $('<li class="contact-list"/>');
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
           '<div class="contact-right">' + img + '</div>' +
@@ -116,8 +116,8 @@
           '</div>' +
           '</dl>';
 
-        li.append(html);
-        $output.append(li);
+        $li.append(html);
+        $output.append($li);
 
         var current = (recordsIndex === 0) ? (recordsIndex + 1) : recordsIndex;
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
@@ -144,14 +144,14 @@
           generate_table();
           $(document).on('click', '.page-item', function(e) {
             // Stop animation is user is scrooling
-            $("html, body").stop();
+            $('html, body').stop();
             // Scroll to top when clicking pager
             $('html, body').animate({
               scrollTop: $($form).offset().top
             }, 500);
-            $(window).bind("mousewheel", function() {
+            $(window).bind('mousewheel', function() {
               // Stop animation if user is scrooling
-              $("html, body").stop();
+              $('html, body').stop();
             });
           });
         }
@@ -182,7 +182,7 @@
       // Check if value is a phone number
       var re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
       if (re.test(no) === true) {
-        no = no.replace(/-/g, "");
+        no = no.replace(/-/g, '');
         return '<a href="tel:' + no + '">' + no + '</a>';
       } else {
         return no;

@@ -35,7 +35,7 @@ var lang,
   resetPlayer,
   upperCaseFirst;
 
-var initialisevideo = function () {
+var initialisevideo = function() {
   // Page Language
   lang = document.documentElement.lang ? document.documentElement.lang : 'en';
   // Get player id
@@ -66,17 +66,17 @@ var initialisevideo = function () {
     video.addEventListener('timeupdate', updateProgressBar, false);
 
     // Pause the video when the slider handle is being dragged
-    progressBar.addEventListener("mousedown", function () {
+    progressBar.addEventListener('mousedown', function() {
       video.pause();
     });
 
     // Play the video when the slider handle is dropped
-    progressBar.addEventListener("mouseup", function () {
+    progressBar.addEventListener('mouseup', function() {
       video.play();
     });
 
     // Event listener for the seek bar
-    progressBar.addEventListener("change", function () {
+    progressBar.addEventListener('change', function() {
       // Calculate the new time
       var time = video.duration * (progressBar.value / 100);
 
@@ -85,31 +85,31 @@ var initialisevideo = function () {
     });
 
     // Add a listener for the play and pause events so the buttons state can be updated
-    video.addEventListener('play', function () {
+    video.addEventListener('play', function() {
       // Change the button to be a pause button
       changeButtonType(playPauseBtn, 'pause');
     }, false);
   }
 
   if (volumeBtn) {
-    volumeBtn.addEventListener("change", function () {
+    volumeBtn.addEventListener('change', function() {
       setVolume();
     });
   }
 
   if (playPauseBtn) {
-    video.addEventListener('pause', function () {
+    video.addEventListener('pause', function() {
       // If paused, change the button to be a play button
       changeButtonType(playPauseBtn, 'play');
     }, false);
   }
 
-  video.addEventListener('ended', function () {
+  video.addEventListener('ended', function() {
     this.pause();
   }, false);
 };
 
-var togglePlayPause = function () {
+var togglePlayPause = function() {
   // If the video is currently paused or has ended
   if (video.paused || video.ended) {
     // Change the button to be a pause button
@@ -127,14 +127,14 @@ var togglePlayPause = function () {
 };
 
 // Stop the current media from playing, and return it to the start position
-var stopPlayer = function () {
+var stopPlayer = function() {
   video.pause();
   video.currentTime = 0;
   progressBar.value = 0;
 };
 
 // Changes the volume on the media player using a slider
-var setVolume = function (v) {
+var setVolume = function(v) {
   video.muted = false;
   toggleMute();
   video.volume = volumeBtn.value;
@@ -144,11 +144,11 @@ var setVolume = function (v) {
   var style = 'background: linear-gradient(to right, #fff ' + percent + '%, #777 0%)';
   // Update volume bar styling
   volumeBtn.setAttribute('style', style);
-  volumeBtn.setAttribute("aria-valuenow", percent);
+  volumeBtn.setAttribute('aria-valuenow', percent);
 };
 
 // Toggles the media player's mute and unmute status
-var toggleMute = function () {
+var toggleMute = function() {
   if (video.muted) {
     // Change the cutton to be a mute button
     changeButtonType(muteBtn, 'volume-up');
@@ -165,13 +165,13 @@ var toggleMute = function () {
 };
 
 // Replays the media currently loaded in the player
-var replayMedia = function () {
+var replayMedia = function() {
   resetPlayer();
   video.play();
 };
 
 // Parse and format total video duration
-var getDuration = function (duration) {
+var getDuration = function(duration) {
   if (video.duration) {
     var minutes = parseInt(video.duration / 60, 10);
     var seconds = Math.round(video.duration % 60);
@@ -180,8 +180,8 @@ var getDuration = function (duration) {
 }
 
 // Parse and format current time
-var getCurrentTime = function (current) {
-  if (typeof video.currentTime !== "undefined") {
+var getCurrentTime = function(current) {
+  if (typeof video.currentTime !== 'undefined') {
     var minutes = parseInt(video.currentTime / 60, 10);
     var seconds = Math.round(video.currentTime % 60);
     if (seconds < 10) {
@@ -194,7 +194,7 @@ var getCurrentTime = function (current) {
 }
 
 // Jumps backwards or forwards any number of seconds
-var jumpSecs = function (dir, sec) {
+var jumpSecs = function(dir, sec) {
   // run as jumpSecs('+', 10)
   var seekToTime;
   if (dir == '-') {
@@ -211,7 +211,7 @@ var jumpSecs = function (dir, sec) {
 };
 
 // Update the progress bar
-var updateProgressBar = function () {
+var updateProgressBar = function() {
   var val = progressBar.value;
   var buffer = ((100 - val) / 4) + parseInt(val, 10);
   // Currently played
@@ -225,29 +225,29 @@ var updateProgressBar = function () {
 
   // Update the progress bar with current values
   progressBar.setAttribute('value', percentage);
-  progressBar.setAttribute("aria-valuenow", percentage);
+  progressBar.setAttribute('aria-valuenow', percentage);
   var track = document.querySelector('.progress-track');
   track.innerHTML = getCurrentTime() + ' / ' + getDuration();
 };
 
 // Updates a button's title, innerHTML and CSS class to a certain value
-var changeButtonType = function (btn, value) {
+var changeButtonType = function(btn, value) {
   btn.title = upperCaseFirst(value);
   btn.className = value;
-  btn.setAttribute("aria-label", upperCaseFirst(value));
+  btn.setAttribute('aria-label', upperCaseFirst(value));
   // All available glyphicons
   var span = btn.querySelector('.glyphicon');
   // remove glyphicons before adding new
-  Array.prototype.slice.call(span.classList).forEach(function (className) {
+  Array.prototype.slice.call(span.classList).forEach(function(className) {
     if (className.startsWith('glyphicon-')) {
       span.classList.remove(className);
     }
   });
-  span.classList.add("glyphicon-" + value);
+  span.classList.add('glyphicon-' + value);
 };
 
 // Loads a video item into the media player
-var loadVideo = function () {
+var loadVideo = function() {
   for (var i = 0; i < arguments.length; i++) {
     var file = arguments[i].split('.');
     var ext = file[file.length - 1];
@@ -263,7 +263,7 @@ var loadVideo = function () {
 };
 
 // Checks if the browser can play this particular type of file or not
-var canPlayVideo = function (ext) {
+var canPlayVideo = function(ext) {
   var ableToPlay = video.canPlayType('video/' + ext);
   if (ableToPlay == '') {
     //Eempty string: The specified media type definitely cannot be played.
@@ -274,7 +274,7 @@ var canPlayVideo = function (ext) {
 };
 
 // Resets the media player
-var resetPlayer = function () {
+var resetPlayer = function() {
   // Reset the progress bar to 0
   progressBar.value = 0;
   // Move the media back to the start
@@ -284,7 +284,7 @@ var resetPlayer = function () {
 };
 
 // Fullscreen for various browsers
-var handleFullscreen = function () {
+var handleFullscreen = function() {
   if (video.requestFullscreen) {
     video.requestFullscreen();
   } else if (video.mozRequestFullScreen) {
@@ -299,16 +299,18 @@ var handleFullscreen = function () {
 };
 
 // Make attributes values first letter uppercase because it looks nice
-var upperCaseFirst = function (str) {
+var upperCaseFirst = function(str) {
   return str.charAt(0).toUpperCase() + str.substring(1);
 };
 
 // Initialize the player when the DOM is ready
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function() {
   'use strict';
+
+
   // Polyfill for IE11:
   if (!String.prototype.startsWith) {
-    String.prototype.startsWith = function (searchString, position) {
+    String.prototype.startsWith = function(searchString, position) {
       position = position || 0;
       return this.substr(position, searchString.length) === searchString;
     };
