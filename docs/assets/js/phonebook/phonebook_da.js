@@ -56,12 +56,14 @@
     e.preventDefault();
     $loading.show();
     $.ajax({
-        url: '/system/telefonbog-service.mason',
+        //url: '/system/telefonbog-service.mason',
+        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog.soeg',
         data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()),
         method: 'post',
         jsonp: false, // Set to false for security reasons
         dataType: 'json'
-      }).done(function(data) {
+      })
+      .done(function(data) {
         console.log(data);
         employees = (data.root || {}).employees || [];
         // Check result and if paging plugin is loaded
@@ -72,12 +74,13 @@
           $pager.twbsPagination('destroy');
           apply_pagination();
         } else {
+          $loading.hide();
           $feedback.append('<div class="alert alert-warning" role="alert" aria-atomic="true">Ingen resultater fundet.<div>');
         }
       })
       .fail(function(xhr, textStatus, errorThrown) {
-        // console.log(xhr);
-        console.log(xhr.responseText);
+        console.log(xhr);
+        $loading.hide();
         $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Der skete en fejl - prøv igen senere.<div>');
       });
 
@@ -105,7 +108,7 @@
         li = $('<li class="contact-list"/>');
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
-          '<div class="contact-right">'+ img +'</div>' +
+          '<div class="contact-right">' + img + '</div>' +
           name + title + funktion + unit +
           '</div>' +
           '<div class="ku-kontakt">' +
