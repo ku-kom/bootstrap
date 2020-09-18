@@ -38,7 +38,9 @@ body {
   position: relative;
 }
 
-#obvius_gridcontent_gridcontent .glyphicon.glyphicon-phone, .device-icon.icon-tablet, .device-icon.icon-desktop {
+#obvius_gridcontent_gridcontent .glyphicon.glyphicon-phone,
+.device-icon.icon-tablet,
+.device-icon.icon-desktop {
   height: 22px;
   padding: 3px 6px 0px 6px;
   display: inline-block;
@@ -47,7 +49,9 @@ body {
   vertical-align: middle;
 }
 
-#obvius_gridcontent_gridcontent .glyphicon.glyphicon-phone::before, .device-icon.icon-tablet::before, .device-icon.icon-desktop::before {
+#obvius_gridcontent_gridcontent .glyphicon.glyphicon-phone::before,
+.device-icon.icon-tablet::before,
+.device-icon.icon-desktop::before {
   font-size: 14px;
 }
 
@@ -73,7 +77,8 @@ body {
 Hide/show
   border: 1px solid #bbb;
 } */
-.visibilityButtons .glyphicon-phone, .column-visibility-buttons .glyphicon-phone {
+.visibilityButtons .glyphicon-phone,
+.column-visibility-buttons .glyphicon-phone {
   top: 0;
 }
 
@@ -81,7 +86,8 @@ Hide/show
   display: none
 }
 
-.obadm, .obvius-common {
+.obadm,
+.obvius-common {
   text-align: left;
 }
 
@@ -106,7 +112,8 @@ Hide/show
   margin-left: 252px;
 }
 
-#obarea4>#resizer+#obarea2, #obarea4>#resizer~#obarea3 {
+#obarea4>#resizer+#obarea2,
+#obarea4>#resizer~#obarea3 {
   margin-top: -37px;
 }
 
@@ -126,7 +133,8 @@ Hide/show
   }
 }
 
-.obvius-link-decor:not(.obvius-editengine) a:link, .obvius-link-decor:not(.obvius-editengine) a:visited {
+.obvius-link-decor:not(.obvius-editengine) a:link,
+.obvius-link-decor:not(.obvius-editengine) a:visited {
   color: #e06651;
   text-decoration: none;
 }
@@ -139,7 +147,16 @@ Hide/show
   color: #a54b3d;
 }
 
-.obvius-path a:active, .obadm div.obvius-path a:hover, .obvius-navigation a:active, .obadm div.obvius-subdocs a:hover, .obvius-newsboxes a:active, .obadm div.obvius-newsboxes a:hover, .obvius-tree a:active, .obadm div.obvius-tree a:hover, .obvius-command a:active, .obvius-command a:hover {
+.obvius-path a:active,
+.obadm div.obvius-path a:hover,
+.obvius-navigation a:active,
+.obadm div.obvius-subdocs a:hover,
+.obvius-newsboxes a:active,
+.obadm div.obvius-newsboxes a:hover,
+.obvius-tree a:active,
+.obadm div.obvius-tree a:hover,
+.obvius-command a:active,
+.obvius-command a:hover {
   text-decoration: underline;
 }
 
@@ -160,7 +177,8 @@ Hide/show
   font-size: small;
 }
 
-.obvius-notificationarea a:link, .obvius-notificationarea a:visited {
+.obvius-notificationarea a:link,
+.obvius-notificationarea a:visited {
   color: #705900;
   text-decoration: none;
 }
@@ -199,7 +217,8 @@ Hide/show
   font-size: small;
 }
 
-.obvius-handlingarea, .obvius-mainarea {
+.obvius-handlingarea,
+.obvius-mainarea {
   background-color: #eee;
   font-size: small;
 }
@@ -234,26 +253,47 @@ h1.obvius-logo img {
    was moved inside to validate.  Maybe they shouldn't have been,
    maybe a block-element should have been added inside the form,
    instead? */
-form.obvius-handling, form.obvius-navigation, form.obvius-editing, form.obvius-newsboxes {
+form.obvius-handling,
+form.obvius-navigation,
+form.obvius-editing,
+form.obvius-newsboxes {
   margin: 0;
 }
 
-.obvius-handling button, .obvius-buttons button, .obvius-handling input, .obvius-buttons input, .obvius-command input, .obvius-newsboxes input {
+.obvius-handling button,
+.obvius-buttons button,
+.obvius-handling input,
+.obvius-buttons input,
+.obvius-command input,
+.obvius-newsboxes input {
   color: #222;
   padding: 2px 4px;
   margin-bottom: 2px;
 }
 
-.obvius-handling button, .obvius-buttons button, .obvius-handling input, .obvius-buttons input, .obvius-newsboxes input, form.obvius-navigator input {
+.obvius-handling button,
+.obvius-buttons button,
+.obvius-handling input,
+.obvius-buttons input,
+.obvius-newsboxes input,
+form.obvius-navigator input {
   border-width: 1px;
   font-size: small;
 }
 
-.obvius-handling button, .obvius-buttons button, .obvius-handling input, .obvius-buttons input {
+.obvius-handling button,
+.obvius-buttons button,
+.obvius-handling input,
+.obvius-buttons input {
   background-color: #ccc;
 }
 
-.obvius-handling button.obvius-disabled, .obvius-buttons button.obvius-disabled, .obvius-editengine button.obvius-disabled, .obvius-handling input.obvius-disabled, .obvius-buttons input.obvius-disabled, .obvius-newsboxes input.obvius-disabled {
+.obvius-handling button.obvius-disabled,
+.obvius-buttons button.obvius-disabled,
+.obvius-editengine button.obvius-disabled,
+.obvius-handling input.obvius-disabled,
+.obvius-buttons input.obvius-disabled,
+.obvius-newsboxes input.obvius-disabled {
   color: #999;
   background-color: #ddd;
   border-top: 1px solid #f2f2f2;
@@ -266,12 +306,26 @@ form.obvius-handling, form.obvius-navigation, form.obvius-editing, form.obvius-n
   text-decoration: underline;
 }
 
-.obvius-command button.obvius-command-do, .obvius-edit button.obvius-command-do, .obvius-editengine button.obvius-command-do, form.obvius-navigator button.obvius-command-do, .obvius-command input.obvius-command-do, .obvius-edit input.obvius-command-do, .obvius-editengine input.obvius-command-do, form.obvius-navigator input.obvius-command-do {
+.obvius-command button.obvius-command-do,
+.obvius-edit button.obvius-command-do,
+.obvius-editengine button.obvius-command-do,
+form.obvius-navigator button.obvius-command-do,
+.obvius-command input.obvius-command-do,
+.obvius-edit input.obvius-command-do,
+.obvius-editengine input.obvius-command-do,
+form.obvius-navigator input.obvius-command-do {
   background-color: #90ce9f;
   /* Green */
 }
 
-.obvius-command button.obvius-command-cancel, .obvius-edit button.obvius-command-cancel, .obvius-editengine button.obvius-command-cancel, form.obvius-navigator button.obvius-command-cancel, .obvius-command input.obvius-command-cancel, .obvius-edit input.obvius-command-cancel, .obvius-editengine input.obvius-command-cancel, form.obvius-navigator input.obvius-command-cancel {
+.obvius-command button.obvius-command-cancel,
+.obvius-edit button.obvius-command-cancel,
+.obvius-editengine button.obvius-command-cancel,
+form.obvius-navigator button.obvius-command-cancel,
+.obvius-command input.obvius-command-cancel,
+.obvius-edit input.obvius-command-cancel,
+.obvius-editengine input.obvius-command-cancel,
+form.obvius-navigator input.obvius-command-cancel {
   background-color: #d67d71;
   /* Red */
 }
@@ -299,7 +353,8 @@ div.obvius-links a {
   text-decoration: none;
 }
 
-div.obvius-links a:hover, div.obvius-links a:active {
+div.obvius-links a:hover,
+div.obvius-links a:active {
   text-decoration: underline;
 }
 
@@ -316,7 +371,10 @@ div.obvius-path a {
   unicode-bidi: bidi-override;
 }
 
-div.obvius-buttons, div.obvius-subdocs, div.obvius-versions, div.obvius-information {
+div.obvius-buttons,
+div.obvius-subdocs,
+div.obvius-versions,
+div.obvius-information {
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.75em;
@@ -333,11 +391,13 @@ div.obvius-buttons form p {
   margin: 0;
 }
 
-div.obvius-buttons form p button, div.obvius-buttons form p input {
+div.obvius-buttons form p button,
+div.obvius-buttons form p input {
   width: 100%;
 }
 
-div.obvius-editing, div.obvius-newsboxes {
+div.obvius-editing,
+div.obvius-newsboxes {
   background-color: #eee;
 }
 
@@ -346,19 +406,22 @@ div.obvius-editing, div.obvius-newsboxes {
   border-left: 1px solid #aaa;
 }
 
-div.obvius-editing ul, div.obvius-newsboxes ul {
+div.obvius-editing ul,
+div.obvius-newsboxes ul {
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.obvius-editing ul li:first-child, div.obvius-newsboxes ul li:first-child {
+.obvius-editing ul li:first-child,
+div.obvius-newsboxes ul li:first-child {
   /* See below for MSIE */
   border-top: 1px solid #aaa;
 }
 
-.obvius-editing ul li, div.obvius-newsboxes ul li {
+.obvius-editing ul li,
+div.obvius-newsboxes ul li {
   background-color: #f8f8f8;
   padding-top: 5px;
   padding-left: 5px;
@@ -397,7 +460,8 @@ div.obvius-editing ul a {
   background-color: #fff;
 }
 
-.obvius-editing ul li.obvius-current, div.obvius-newsboxes ul li.obvius-current {
+.obvius-editing ul li.obvius-current,
+div.obvius-newsboxes ul li.obvius-current {
   background-color: #fff;
   border-left: 1px solid #fff;
   padding-left: 0;
@@ -405,7 +469,8 @@ div.obvius-editing ul a {
   /* Compensate for the lower left-padding, so total width is unchanged */
 }
 
-.obvius-editing ul li.obvius-current a, div.obvius-newsboxes ul li.obvius-current a {
+.obvius-editing ul li.obvius-current a,
+div.obvius-newsboxes ul li.obvius-current a {
   color: #592821;
 }
 
@@ -420,7 +485,8 @@ div.obvius-newsboxes ul li input {
   margin-bottom: 0;
 }
 
-div.obvius-subdocs img, div.obvius-tree img {
+div.obvius-subdocs img,
+div.obvius-tree img {
   border: 0;
 }
 
@@ -478,7 +544,9 @@ div.obvius-subdocs ul li ul li.leftmenu-first-hidden {
   background-color: #f4f4f4;
 }
 
-div.obvius-subdocs h3, div.obvius-versions h3, div.obvius-information h3 {
+div.obvius-subdocs h3,
+div.obvius-versions h3,
+div.obvius-information h3 {
   margin: 0;
   margin-bottom: 0.5em;
   font-size: small;
@@ -506,7 +574,8 @@ div.obvius-information div.obvius-version-info {
   padding-bottom: 1em;
 }
 
-div.obvius-versions form, div.obvius-versions form p {
+div.obvius-versions form,
+div.obvius-versions form p {
   display: inline;
   margin: 0;
   padding: 0;
@@ -518,7 +587,8 @@ div.obvius-versions table {
   border-collapse: collapse;
 }
 
-div.obvius-versions td, div.obvius-versions th {
+div.obvius-versions td,
+div.obvius-versions th {
   margin: 0;
   border: 0;
 }
@@ -550,15 +620,21 @@ span.obvius-diff-links {
   color: #aaa;
 }
 
-div.obvius-inactive, span.obvius-inactive, p.obvius-inactive {
+div.obvius-inactive,
+span.obvius-inactive,
+p.obvius-inactive {
   color: #aaa;
 }
 
-div.obvius-inactive a:link, div.obvius-inactive a:visited, p.obvius-inactive a:visited {
+div.obvius-inactive a:link,
+div.obvius-inactive a:visited,
+p.obvius-inactive a:visited {
   color: #aaa;
 }
 
-div.obvius-inactive ul li a:link, div.obvius-inactive ul li a:visited, p.obvius-inactive ul li a:visited {
+div.obvius-inactive ul li a:link,
+div.obvius-inactive ul li a:visited,
+p.obvius-inactive ul li a:visited {
   color: #aaa;
 }
 
@@ -611,13 +687,16 @@ div.obvius-diff-legend {
   margin-bottom: 25px;
 }
 
-.obvius-editengine h2, .obvius-command h2 {
+.obvius-editengine h2,
+.obvius-command h2 {
   margin-top: 0;
   margin-left: 0.25em;
   margin-bottom: 0.25em;
 }
 
-.obvius-editengine input, .obvius-command input, .obvius-command textarea {
+.obvius-editengine input,
+.obvius-command input,
+.obvius-command textarea {
   border-width: 1px;
 }
 
@@ -667,7 +746,8 @@ table.obvius-editengine-list td {
   /* MSIE interprets 'transparent' as black - so hardcode white */
 }
 
-table.obvius-editengine-list td.obvius-editengine-datetime, table.obvius-editengine-list td.obvius-editengine-line {
+table.obvius-editengine-list td.obvius-editengine-datetime,
+table.obvius-editengine-list td.obvius-editengine-line {
   white-space: nowrap;
 }
 
@@ -675,7 +755,8 @@ table.obvius-editengine-list td.obvius-editengine-integer {
   text-align: right;
 }
 
-.obvius-editengine-a, div.obvius-editengine-b {
+.obvius-editengine-a,
+div.obvius-editengine-b {
   background: #f2f2f2;
   padding-left: 0.5em;
   padding-top: 0.5em;
@@ -700,7 +781,8 @@ table.obvius-editengine-list td.obvius-editengine-integer {
   line-height: 1.2;
 }
 
-.obvius-editengine form button, div.obvius-editengine form input {
+.obvius-editengine form button,
+div.obvius-editengine form input {
   border-width: 1px;
   font-size: small;
 }
@@ -746,7 +828,9 @@ table.obvius-editengine-list td.obvius-editengine-integer {
   font-size: medium;
 }
 
-.obvius-command form div, form.obvius-navigator div.obvius-quickcreate div, .obvius-command form div div {
+.obvius-command form div,
+form.obvius-navigator div.obvius-quickcreate div,
+.obvius-command form div div {
   background-color: #f7f7ef;
   padding-top: 0.5em;
   padding-left: 0.5em;
@@ -768,7 +852,9 @@ div.obvius-common form div.obvius-editengine-confirmation .hidden {
   margin-top: 0.5em;
 }
 
-.obvius-editengine div.obvius-editengine-anonymous-functions a, .obvius-editengine div.obvius-editengine-anonymous-functions a:hover, .obvius-editengine div.obvius-editengine-anonymous-functions a:visited {
+.obvius-editengine div.obvius-editengine-anonymous-functions a,
+.obvius-editengine div.obvius-editengine-anonymous-functions a:hover,
+.obvius-editengine div.obvius-editengine-anonymous-functions a:visited {
   color: #222;
   background-color: #ddd;
   border-top: 1px solid #f4f4f4;
@@ -789,7 +875,8 @@ div.obvius-common form div.obvius-editengine-confirmation .hidden {
   border-bottom: 1px solid #f4f4f4;
 }
 
-.obvius-command form div, form.obvius-navigator div.obvius-quickcreate div {
+.obvius-command form div,
+form.obvius-navigator div.obvius-quickcreate div {
   padding-right: 0.25em;
   padding-bottom: 0.5em;
   margin-top: 0;
@@ -934,7 +1021,8 @@ form[class].obvius-manual-placement div table td+td {
   text-align: left;
 }
 
-form.obvius-manual-placement div table td img, table.obvius-app-seqlist tr td ul li.current img {
+form.obvius-manual-placement div table td img,
+table.obvius-app-seqlist tr td ul li.current img {
   background-color: #ddd;
   border-width: 1px;
   border-style: outset;
@@ -1063,7 +1151,8 @@ form.obvius-navigator div.obvius-current-document input {
   margin-right: 0.2em;
 }
 
-form.obvius-navigator div.obvius-current-document table tr, form.obvius-navigator div.obvius-subdocs table tr {
+form.obvius-navigator div.obvius-current-document table tr,
+form.obvius-navigator div.obvius-subdocs table tr {
   vertical-align: top;
 }
 
@@ -1250,7 +1339,8 @@ div.obvius-subdocs ul li a.obvius-current {
   padding-right: 0.1em;
 }
 
-div.obvius-subdocs ul li a.obvius-current:link, div.obvius-subdocs ul li a.obvius-current:visited {
+div.obvius-subdocs ul li a.obvius-current:link,
+div.obvius-subdocs ul li a.obvius-current:visited {
   color: #fff;
   /* invert */
 }
@@ -1403,7 +1493,8 @@ div.docparamedit table th.threading.canOpen {
   cursor: pointer;
 }
 
-div.docparamedit table th, div.docparamedit table td {
+div.docparamedit table th,
+div.docparamedit table td {
   border: 1px solid black;
   padding: 0.5em;
   text-align: left;
@@ -1593,13 +1684,15 @@ div.obvius-newsboxes {
   font-size: small;
 }
 
-.obvius-handlingarea, div.obvius-mainarea {
+.obvius-handlingarea,
+div.obvius-mainarea {
   background-color: #ffffff;
   font-size: small;
   overflow: hidden;
 }
 
-.obvius-editengine h2, .obvius-command h2 {
+.obvius-editengine h2,
+.obvius-command h2 {
   clear: right;
 }
 
@@ -1893,11 +1986,13 @@ div.admincontentwrapper div#content {
 
 /* editor styles added Sept 8th 2009 */
 /* Editor styles */
-.obadm textarea#html_content, div#html_content_resizer {
+.obadm textarea#html_content,
+div#html_content_resizer {
   border-color: #aaa !important;
 }
 
-.obadm div#html_content_resizer, .tinymce_resizer {
+.obadm div#html_content_resizer,
+.tinymce_resizer {
   background: url(/grafik/handle.png) no-repeat right bottom transparent !important;
   border-top: solid 1px #ccc !important;
   height: 13px !important;
@@ -1945,7 +2040,9 @@ div.admincontentwrapper div#content {
   color: #000;
 }
 
-#newsletter .button, #newsletter .pribtn, #newsletter .secbtn {
+#newsletter .button,
+#newsletter .pribtn,
+#newsletter .secbtn {
   background-color: #eee;
   border: outset 2px #eee;
   padding: 0.2em 0.6em;
@@ -1955,7 +2052,9 @@ div.admincontentwrapper div#content {
   display: inline-block;
 }
 
-#newsletter .button:hover, #newsletter .pribtn:hover, #newsletter .secbtn:hover {
+#newsletter .button:hover,
+#newsletter .pribtn:hover,
+#newsletter .secbtn:hover {
   border: inset 2px #eee;
 }
 
@@ -1974,7 +2073,8 @@ div.admincontentwrapper div#content {
   text-align: left;
 }
 
-#newsletter .nltable tr td, #newsletter .nltable tr th {
+#newsletter .nltable tr td,
+#newsletter .nltable tr th {
   padding: 0.2em;
 }
 
@@ -1999,7 +2099,8 @@ div.admincontentwrapper div#content {
   color: #666;
 }
 
-#newsletter .pribtn:hover, #newsletter .secbtn:hover {
+#newsletter .pribtn:hover,
+#newsletter .secbtn:hover {
   color: #000;
 }
 
@@ -2317,7 +2418,10 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
   font-size: 1.1em;
 } */
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
   font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
   font-size: 1em;
 }
@@ -2347,7 +2451,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default, .ui-widget-content .ui-state-default {
+.ui-state-default,
+.ui-widget-content .ui-state-default {
   border: 1px solid #cccccc;
   background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
   font-weight: bold;
@@ -2355,13 +2460,18 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   outline: none;
 }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
   color: #1c94c4;
   text-decoration: none;
   outline: none;
 }
 
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus {
   border: 1px solid #fbcb09;
   background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
   font-weight: bold;
@@ -2369,13 +2479,15 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   outline: none;
 }
 
-.ui-state-hover a, .ui-state-hover a:hover {
+.ui-state-hover a,
+.ui-state-hover a:hover {
   color: #c77405;
   text-decoration: none;
   outline: none;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active {
+.ui-state-active,
+.ui-widget-content .ui-state-active {
   border: 1px solid #fbd850;
   background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
   font-weight: bold;
@@ -2383,7 +2495,9 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   outline: none;
 }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
   color: #eb8f00;
   outline: none;
   text-decoration: none;
@@ -2391,41 +2505,49 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
 
 /* Interaction Cues
 ----------------------------------*/
-.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
   border: 1px solid #fed22f;
   background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
   color: #363636;
 }
 
-.ui-state-highlight a, .ui-widget-content .ui-state-highlight a {
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a {
   color: #363636;
 }
 
-.ui-state-error, .ui-widget-content .ui-state-error {
+.ui-state-error,
+.ui-widget-content .ui-state-error {
   border: 1px solid #cd0a0a;
   background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
   color: #ffffff;
 }
 
-.ui-state-error a, .ui-widget-content .ui-state-error a {
+.ui-state-error a,
+.ui-widget-content .ui-state-error a {
   color: #ffffff;
 }
 
-.ui-state-error-text, .ui-widget-content .ui-state-error-text {
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text {
   color: #ffffff;
 }
 
-.ui-state-disabled, .ui-widget-content .ui-state-disabled {
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled {
   opacity: .35;
   filter: Alpha(Opacity=35);
   background-image: none;
 }
 
-.ui-priority-primary, .ui-widget-content .ui-priority-primary {
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary {
   font-weight: bold;
 }
 
-.ui-priority-secondary, .ui-widget-content .ui-priority-secondary {
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary {
   opacity: .7;
   filter: Alpha(Opacity=70);
   font-weight: normal;
@@ -2452,7 +2574,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   background-image: url(/grafik/jquery-ui-icons.png);
 }
 
-.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
   background-image: url(/grafik/jquery-ui-icons.png);
 }
 
@@ -2464,7 +2587,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   background-image: url(/grafik/jquery-ui-icons.png);
 }
 
-.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
   background-image: url(/grafik/jquery-ui-icons.png);
 }
 
@@ -3290,14 +3414,16 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   padding: .2em 0;
 }
 
-.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
   position: absolute;
   top: 2px;
   width: 1.8em;
   height: 1.8em;
 }
 
-.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
   top: 1px;
 }
 
@@ -3317,7 +3443,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   right: 1px;
 }
 
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
   display: block;
   position: absolute;
   left: 50%;
@@ -3342,7 +3469,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   width: 100%;
 }
 
-.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
   width: 49%;
 }
 
@@ -3369,7 +3497,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   padding: 1px;
 }
 
-.ui-datepicker td span, .ui-datepicker td a {
+.ui-datepicker td span,
+.ui-datepicker td a {
   display: block;
   padding: .2em;
   text-align: right;
@@ -3532,7 +3661,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   display: none;
 }
 
-.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
   padding: 0;
 }
 
@@ -3598,7 +3728,8 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   display: block;
 }
 
-.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
   display: none;
 }
 
@@ -3767,11 +3898,14 @@ div.obvius-subdocs ul li.unpublished a.obvius-current {
   border-bottom-width: 0;
 }
 
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-state-processing a {
   cursor: text;
 }
 
-.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
   cursor: pointer;
 }
 
@@ -3853,7 +3987,8 @@ div.multipathlist {
   font-weight: bold;
 }
 
-.mplcontainer ul.multipathlist li div.actions a:hover, .mplcontainer ul.multipathlist li div.actions a:active {
+.mplcontainer ul.multipathlist li div.actions a:hover,
+.mplcontainer ul.multipathlist li div.actions a:active {
   background-color: #ddd;
   color: #000;
 }
@@ -3868,7 +4003,8 @@ div.multipathlist {
   display: block;
 }
 
-.mplcontainer .multipathlist li.multipathaddmore .btn:hover, .mplcontainer .multipathlist li.multipathaddmore .btn:active {
+.mplcontainer .multipathlist li.multipathaddmore .btn:hover,
+.mplcontainer .multipathlist li.multipathaddmore .btn:active {
   background: #ddd;
   color: #000;
 }
@@ -3987,7 +4123,8 @@ div.multipathlist {
   padding: 0.5em 2em 1em 250px;
 }
 
-.content-length-warning, .alt-attribute-warning {
+.content-length-warning,
+.alt-attribute-warning {
   position: relative !important;
   margin: 0.5em !important;
   padding: 0.5em !important;
@@ -4007,7 +4144,8 @@ div.multipathlist {
   border: 1px solid #aaaaaa;
 }
 
-#globalobviusconfigedit table td, #globalobviusconfigedit table th {
+#globalobviusconfigedit table td,
+#globalobviusconfigedit table th {
   border: 1px solid #aaaaaa;
   padding: 0.5em;
   text-align: left;
@@ -4026,7 +4164,8 @@ div.multipathlist {
 /*============================================================================*/
 /* GRIDCONTENT ADMIN STYLES                                                   */
 /*============================================================================*/
-figure, .figure {
+figure,
+.figure {
   display: inline-block;
   clear: both;
   margin: 0;
@@ -4044,12 +4183,14 @@ figure, .figure {
   width: 50%;
 }
 
-#obvius_gridcontent_gridcontent .icon, #obvius_gridcontent_gridcontent_right .icon {
+#obvius_gridcontent_gridcontent .icon,
+#obvius_gridcontent_gridcontent_right .icon {
   box-sizing: border-box;
   font-family: inherit;
 }
 
-#obvius_gridcontent_gridcontent .icon.close, #obvius_gridcontent_gridcontent_right .icon.close {
+#obvius_gridcontent_gridcontent .icon.close,
+#obvius_gridcontent_gridcontent_right .icon.close {
   filter: alpha(opacity=100);
   opacity: 1;
 }
@@ -4063,7 +4204,8 @@ figure, .figure {
   width: 261px !important;
 }
 
-#obvius_gridcontent_gridcontent_right .rowcontent.hide, #obvius_gridcontent_gridcontent_right .rowheading.hide {
+#obvius_gridcontent_gridcontent_right .rowcontent.hide,
+#obvius_gridcontent_gridcontent_right .rowheading.hide {
   display: table-row;
 }
 
@@ -4224,7 +4366,8 @@ table.gcedit td.gccolumn ul li:hover div.toolbar {
   right: 0;
 }
 
-table.gcedit td.gccolumn ul li div.toolbar .edit, table.gcedit td.gccolumn ul li div.toolbar .delete {
+table.gcedit td.gccolumn ul li div.toolbar .edit,
+table.gcedit td.gccolumn ul li div.toolbar .delete {
   position: absolute;
   z-index: 100;
   top: 0.5em;
@@ -4387,7 +4530,16 @@ div.gridcontent-dialog-addrow tr:hover div {
   background: #ddd;
 }
 
-div.gridcontent-dialog-addrow .single-column, div.gridcontent-dialog-addrow .one-two-column, div.gridcontent-dialog-addrow .two-one-column, div.gridcontent-dialog-addrow .double-column, div.gridcontent-dialog-addrow .quad-column, div.gridcontent-dialog-addrow .two-one-one-column, div.gridcontent-dialog-addrow .one-one-two-column, div.gridcontent-dialog-addrow .three-one-column, div.gridcontent-dialog-addrow .one-three-column, div.gridcontent-dialog-addrow .triple-column {
+div.gridcontent-dialog-addrow .single-column,
+div.gridcontent-dialog-addrow .one-two-column,
+div.gridcontent-dialog-addrow .two-one-column,
+div.gridcontent-dialog-addrow .double-column,
+div.gridcontent-dialog-addrow .quad-column,
+div.gridcontent-dialog-addrow .two-one-one-column,
+div.gridcontent-dialog-addrow .one-one-two-column,
+div.gridcontent-dialog-addrow .three-one-column,
+div.gridcontent-dialog-addrow .one-three-column,
+div.gridcontent-dialog-addrow .triple-column {
   cursor: pointer;
 }
 
@@ -4453,11 +4605,13 @@ table.gcedit.basecolumns4 .rowcontent td {
   width: 25%;
 }
 
-table.gcedit.basecolumns4 .single-column td, table.gcedit .single-column td {
+table.gcedit.basecolumns4 .single-column td,
+table.gcedit .single-column td {
   width: 100%;
 }
 
-table.gcedit.basecolumns4 .double-column td, table.gcedit .double-column td {
+table.gcedit.basecolumns4 .double-column td,
+table.gcedit .double-column td {
   width: 50%;
 }
 
@@ -4584,7 +4738,8 @@ div.calendarpicker {
   width: 505px;
 }
 
-#subsite-navigation a, #subsite-navigation span {
+#subsite-navigation a,
+#subsite-navigation span {
   padding: 10px 30px;
   border: 1px solid #901a1e;
   font-size: 1.1em;
@@ -4782,19 +4937,22 @@ div.subsiteedit div.radiochoice label {
 }
 
 /* Tester lige lidt form-formatering */
-.footer-search-view form, #footer-search form {
+.footer-search-view form,
+#footer-search form {
   margin: 0;
   padding: 0;
 }
 
-.footer-search-view fieldset, #footer-search fieldset {
+.footer-search-view fieldset,
+#footer-search fieldset {
   margin: 1em 0;
   border: none;
   border: 1px solid #ccc;
   background-color: #F5F5F5;
 }
 
-.footer-search-view legend, #footer-search legend {
+.footer-search-view legend,
+#footer-search legend {
   margin: 1em 0;
   padding: 0 .5em;
   color: #036;
@@ -4803,14 +4961,24 @@ div.subsiteedit div.radiochoice label {
   font-weight: bold;
 }
 
-.footer-search-view label, #footer-search label {
+.footer-search-view label,
+#footer-search label {
   width: 100px;
   padding: 0 1em;
   text-align: right;
   display: inline-block;
 }
 
-.footer-search-view fieldset input, .footer-search-view fieldset textarea, .footer-search-view fieldset select, .footer-search-view fieldset input[type="radio"], .footer-search-view fieldset input[type="checkbox"], #footer-search fieldset input, #footer-search fieldset textarea, #footer-search fieldset select, #footer-search fieldset input[type="radio"], #footer-search fieldset input[type="checkbox"] {
+.footer-search-view fieldset input,
+.footer-search-view fieldset textarea,
+.footer-search-view fieldset select,
+.footer-search-view fieldset input[type="radio"],
+.footer-search-view fieldset input[type="checkbox"],
+#footer-search fieldset input,
+#footer-search fieldset textarea,
+#footer-search fieldset select,
+#footer-search fieldset input[type="radio"],
+#footer-search fieldset input[type="checkbox"] {
   width: 150px;
   border-top: 1px solid #555;
   border-left: 1px solid #555;
@@ -4821,20 +4989,28 @@ div.subsiteedit div.radiochoice label {
   margin-bottom: 5px;
 }
 
-.footer-search-view fieldset input[type="radio"], .footer-search-view fieldset input[type="checkbox"], #footer-search fieldset input[type="radio"], #footer-search fieldset input[type="checkbox"] {
+.footer-search-view fieldset input[type="radio"],
+.footer-search-view fieldset input[type="checkbox"],
+#footer-search fieldset input[type="radio"],
+#footer-search fieldset input[type="checkbox"] {
   width: 20px;
 }
 
-.footer-search-view fieldset input[type="submit"], #footer-search fieldset input[type="submit"] {
+.footer-search-view fieldset input[type="submit"],
+#footer-search fieldset input[type="submit"] {
   width: auto;
   margin-top: 20px;
 }
 
-.footer-search-view fieldset select, #footer-search fieldset select {
+.footer-search-view fieldset select,
+#footer-search fieldset select {
   padding: 1px;
 }
 
-.footer-search-view input:focus, .footer-search-view textarea:focus, #footer-search input:focus, #footer-search textarea:focus {
+.footer-search-view input:focus,
+.footer-search-view textarea:focus,
+#footer-search input:focus,
+#footer-search textarea:focus {
   background: #efefef;
   color: #000;
 }
@@ -4869,7 +5045,8 @@ div.subsiteedit div.radiochoice label {
   display: block;
 }
 
-.chooser .chooser-list, .chooser .chooser-list select {
+.chooser .chooser-list,
+.chooser .chooser-list select {
   width: 200px;
   height: 180px;
 }
@@ -4879,7 +5056,8 @@ div.subsiteedit div.radiochoice label {
 }
 
 /* Dragsort */
-.handle, .handle[style="cursor: pointer;"] {
+.handle,
+.handle[style="cursor: pointer;"] {
   cursor: grab !important;
   cursor: -moz-grab !important;
 }
@@ -4974,22 +5152,26 @@ div.subsiteedit div.radiochoice label {
 }
 
 /* Admin leftmenu color notifications */
-.lastedited1, .views3 {
+.lastedited1,
+.views3 {
   background-color: #d0fdd0;
   margin-bottom: 8px;
 }
 
-.lastedited2, .views2 {
+.lastedited2,
+.views2 {
   background-color: #fff9b7;
   margin-bottom: 8px;
 }
 
-.lastedited3, .views1 {
+.lastedited3,
+.views1 {
   background-color: #fca7a7;
   margin-bottom: 8px;
 }
 
-#lastedited.lastedited3 a, .views1 a {
+#lastedited.lastedited3 a,
+.views1 a {
   color: #222222;
 }
 
@@ -4999,7 +5181,8 @@ div.subsiteedit div.radiochoice label {
   padding-bottom: 1.2em;
 }
 
-#obvius_gridcontent_gridcontent .hidden-lg, #obvius_gridcontent_gridcontent .hidden-md {
+#obvius_gridcontent_gridcontent .hidden-lg,
+#obvius_gridcontent_gridcontent .hidden-md {
   display: block !important;
 }
 
@@ -5011,7 +5194,8 @@ div.subsiteedit div.radiochoice label {
 .admincontentwrapper .gridcontent img, table#obvius_gridcontent_gridcontent .gcitem img {
   width: 100%;
 } */
-.admincontentwrapper .gridcontent .gridbox .box2>img, table#obvius_gridcontent_gridcontent .gcitem .gridbox .box2>img {
+.admincontentwrapper .gridcontent .gridbox .box2>img,
+table#obvius_gridcontent_gridcontent .gcitem .gridbox .box2>img {
   width: auto;
 }
 
@@ -5019,7 +5203,8 @@ div.subsiteedit div.radiochoice label {
   max-width: none !important;
 }
 
-.obvius-common input.form-control, .obvius-common textarea.form-control {
+.obvius-common input.form-control,
+.obvius-common textarea.form-control {
   box-sizing: border-box;
 }
 
@@ -5038,7 +5223,8 @@ div.subsiteedit div.radiochoice label {
   border: 1px solid #ccc;
 }
 
-.obvius-common .slideshow::before, .obvius-common .slide-wrapper::before {
+.obvius-common .slideshow::before,
+.obvius-common .slide-wrapper::before {
   content: "Slideshow...";
   top: 50%;
   left: 50%;
@@ -5293,7 +5479,8 @@ div.subsiteedit div.radiochoice label {
   padding: 1px;
 }
 
-.calendarpicker .combo .label, .calendarpicker .combo .label-IEfix {
+.calendarpicker .combo .label,
+.calendarpicker .combo .label-IEfix {
   text-align: center;
   padding: 1px;
   color: #252525;
@@ -5324,7 +5511,9 @@ div.subsiteedit div.radiochoice label {
   background-color: #eee;
 }
 
-.calendarpicker td.time .hour, .calendarpicker td.time .minute, .calendarpicker td.time .ampm {
+.calendarpicker td.time .hour,
+.calendarpicker td.time .minute,
+.calendarpicker td.time .ampm {
   padding: 0px 3px 0px 4px;
   border: 1px solid #889;
   font-weight: bold;
@@ -5405,7 +5594,8 @@ div.subsiteedit div.radiochoice label {
   display: none
 }
 
-.mce-content-body .panel-accordion+.panel-accordion, .mce-content-body .panel-accordion~.panel-accordion {
+.mce-content-body .panel-accordion+.panel-accordion,
+.mce-content-body .panel-accordion~.panel-accordion {
   margin-top: 4px;
 }
 
@@ -5431,7 +5621,8 @@ div.subsiteedit div.radiochoice label {
   color: #901a1e;
 }
 
-#obvius_gridcontent_gridcontent .rowcontent.hide, #obvius_gridcontent_gridcontent .rowheading.hide {
+#obvius_gridcontent_gridcontent .rowcontent.hide,
+#obvius_gridcontent_gridcontent .rowheading.hide {
   display: table-row;
 }
 
@@ -5445,7 +5636,8 @@ div.subsiteedit div.radiochoice label {
   display: none;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
   max-width: 100%;
 }
@@ -5454,7 +5646,12 @@ audio, video {
   max-width: 757px !important;
 }
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
   padding: 8px !important;
 }
 
@@ -5462,7 +5659,8 @@ audio, video {
   width: auto !important;
 }
 
-#sidebar .media-list .media .media-left, #sidebar .calendarbox .media-list .media .media-body+.media-right {
+#sidebar .media-list .media .media-left,
+#sidebar .calendarbox .media-list .media .media-body+.media-right {
   display: none;
 }
 
@@ -5609,7 +5807,8 @@ audio, video {
 }
 
 /* Oevrige oplysninger */
-textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
+textarea[id*="extra_html_head"],
+textarea[id*="extra_html_body"] {
   height: 400px !important;
 }
 
@@ -5771,7 +5970,8 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   cursor: pointer;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   z-index: 3;
   color: #fff;
   background-color: #757575;
@@ -5785,7 +5985,11 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   padding-top: .25em;
 }
 
-.dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate, .dataTables_wrapper .dataTables_processing {
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_processing {
   color: #252525;
 }
 
@@ -5846,7 +6050,8 @@ textarea[id*="extra_html_head"], textarea[id*="extra_html_body"] {
   cursor: pointer;
 }
 
-#webstedinfo .toggle:hover, #webstedinfo .toggle:active {
+#webstedinfo .toggle:hover,
+#webstedinfo .toggle:active {
   background: #aaa;
   color: #fff;
   text-decoration: none;

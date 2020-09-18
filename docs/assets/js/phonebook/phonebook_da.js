@@ -48,7 +48,7 @@
 
   // if input has text, enable reset button
   $input.keyup(function() {
-    $reset.removeClass('inactive');
+    $(this).val() == '' ? $reset.addClass('inactive') : $reset.removeClass('inactive');
   });
 
   // Handle submit of search form
