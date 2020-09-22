@@ -58,7 +58,7 @@
     $.ajax({
         //url: '/system/telefonbog-service.mason',
         url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog.soeg',
-        data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()),
+        data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()) + '&env=om', //the parameter env="" is used to define the correct domain in the backend CORS policy.
         method: 'post',
         jsonp: false, // Set to false for security reasons
         dataType: 'json'
@@ -81,7 +81,7 @@
       .fail(function(xhr, textStatus, errorThrown) {
         console.log(xhr);
         $loading.hide();
-        $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Der skete en fejl - prøv igen senere.<div>');
+        $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Der skete en fejl i kommunikationen med webservicen - prøv igen senere.<div>');
       });
 
 
