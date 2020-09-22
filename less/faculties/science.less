@@ -2,21 +2,21 @@
 @import "../variables.less";
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
-
+@science-gridbox: #383838;
 .gridbox {
   &.subcolor_1 {
     background: @science-sub_1;
-    color: @white-color;
+    color: @science-gridbox;
 
     .header {
       background: fade(@science-sub_1, 83%);
-      color: @white-color;
+      color: @science-gridbox;
     }
 
     &.text-top {
       .header {
         background: @science-sub_1;
-        color: @white-color;
+        color: @science-gridbox;
       }
     }
 
@@ -44,17 +44,17 @@
 
   &.subcolor_2 {
     background: @science-sub_2;
-    color: @white-color;
+    color: @science-gridbox;
 
     .header {
       background: fade(@science-sub_2, 83%);
-      color: @white-color;
+      color: @science-gridbox;
     }
 
     &.text-top {
       .header {
         background: @science-sub_2;
-        color: @white-color;
+        color: @science-gridbox;
       }
     }
 
@@ -82,17 +82,17 @@
 
   &.subcolor_3 {
     background: @science-sub_3;
-    color: @white-color;
+    color: @science-gridbox;
 
     .header {
       background: fade(@science-sub_3, 83%);
-      color: @white-color;
+      color: @science-gridbox;
     }
 
     &.text-top {
       .header {
         background: @science-sub_3;
-        color: @white-color;
+        color: @science-gridbox;
       }
     }
 
@@ -120,16 +120,16 @@
 
   &.subcolor_4 {
     background: @science-sub_4;
-    color: @white-color;
+    color: @science-gridbox;
 
     .header {
       background: fade(@science-sub_4, 83%);
-      color: @white-color;
+      color: @science-gridbox;
     }
 
     &.text-top {
       .header {
-        color: @white-color;
+        color: @science-gridbox;
         background: @science-sub_4;
       }
     }
@@ -206,34 +206,34 @@
           border: 0;
 
           &::before {
-            color: @white-color;
+            color: @science-gridbox;
           }
 
           &.subcolor_1 {
             .header {
               background: fade(@science-sub_1, 83%);
-              color: @white-color;
+              color: @science-gridbox;
             }
           }
 
           &.subcolor_2 {
             .header {
               background: fade(@science-sub_2, 83%);
-              color: @white-color;
+              color: @science-gridbox;
             }
           }
 
           &.subcolor_3 {
             .header {
               background: fade(@science-sub_3, 83%);
-              color: @white-color;
+              color: @science-gridbox;
             }
           }
 
           &.subcolor_4 {
             .header {
               background: fade(@science-sub_4, 83%);
-              color: @white-color;
+              color: @science-gridbox;
             }
           }
         }
@@ -246,7 +246,7 @@
 .slick-slide {
   .subcolor_1 {
     background: @science-sub_1;
-    color: @white-color;
+    color: @science-gridbox;
     @media (min-width: @screen-sm) {
       background: fade(@science-sub_1, 93%);
     }
@@ -258,7 +258,7 @@
 
   .subcolor_2 {
     background: @science-sub_2;
-    color: @white-color;
+    color: @science-gridbox;
     @media (min-width: @screen-sm) {
       background: fade(@science-sub_2, 93%);
     }
@@ -270,7 +270,7 @@
 
   .subcolor_3 {
     background: @science-sub_3;
-    color: @white-color;
+    color: @science-gridbox;
     @media (min-width: @screen-sm) {
       background: fade(@science-sub_3, 93%);
     }
@@ -282,9 +282,9 @@
 
   .subcolor_4 {
     background: @science-sub_4;
-    color: @white-color;
+    color: @science-gridbox;
     @media (min-width: @screen-sm) {
-      background: fade(@hum-sub_4, 93%);
+      background: fade(@science-sub_4, 93%);
     }
 
     &.full-bg {

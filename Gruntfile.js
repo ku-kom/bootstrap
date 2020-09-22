@@ -77,6 +77,8 @@ module.exports = function (grunt) {
           'docs/assets/js/social-feeds/*.js',
           'docs/assets/js/scroll-progress/*.js',
           'docs/assets/js/cookie/*.js',
+          'docs/assets/js/videoControls/*.js',
+          'docs/assets/js/phonebook/*.js',
           '!docs/assets/js/*.min.js'
         ]
       }
@@ -166,7 +168,8 @@ module.exports = function (grunt) {
               'docs/assets/js/scroll-progress/scroll-progress.js',
               'docs/assets/js/parallax/jarallax.js',
               'docs/assets/js/parallax/jarallax-video.js',
-              'docs/assets/js/canvasjs/canvasjs.js'
+              'docs/assets/js/canvasjs/canvasjs.js',
+              'docs/assets/js/phonebook/*.js'
             ],
             dest: 'dist/js/',
             ext: '.min.js',
