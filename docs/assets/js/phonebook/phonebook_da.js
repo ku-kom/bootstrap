@@ -81,7 +81,7 @@
       .fail(function(xhr, textStatus, errorThrown) {
         console.log(xhr);
         $loading.hide();
-        $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Der skete en fejl i kommunikationen med webservicen - prøv igen senere.<div>');
+        $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Fejl i kommunikationen med webservicen - prøv igen senere.<div>');
       });
 
 
