@@ -57,7 +57,7 @@
     $loading.show();
     $.ajax({
         //url: '/system/telefonbog-service.mason',
-        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog.soeg',
+        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog_v2.soeg',
         data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()) + '&env=about', //the parameter env="" is used to define the correct domain in the backend CORS policy.
         method: 'post',
         jsonp: false, // Set to false for security reasons
@@ -123,6 +123,7 @@
         var tel = (isEmpty(result[i].ANSAT_ARB_TLF)) ? '' : '<dt>Phone</dt><dd>' + isPhone(result[i].ANSAT_ARB_TLF) + '</dd>';
         var address = (isEmpty(result[i].ANSAT_ADRESSE)) ? '' : '<dt>Address</dt><dd>' + result[i].ANSAT_ADRESSE + '</dd>';
         var location = (isEmpty(result[i].LOKATION)) ? '' : '<dt>Location</dt><dd>' + result[i].LOKATION + '</dd>';
+        var remarks = (isEmpty(result[i].BEMAERK)) ? '' : '<dt>Remarks</dt><dd>' + result[i].BEMAERK + '</dd>';
 
         $li = $('<li class="contact-list"/>');
         var html = '<dl class="dl-horizontal">' +
@@ -131,7 +132,7 @@
           name + title + funktion + unit +
           '</div>' +
           '<div class="ku-kontakt">' +
-          email + mobil + tel + secr + website + address + location +
+          email + mobil + tel + secr + website + address + location + remarks +
           '</div>' +
           '</dl>';
 
