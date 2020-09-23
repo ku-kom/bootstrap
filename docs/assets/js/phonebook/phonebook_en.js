@@ -92,33 +92,37 @@
       $loading.hide();
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
-        var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Navn</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
+        var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Name</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
         var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '">';
 
         var title;
-        if (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK) && isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) {
-          title = '';
-        } else if (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK) && isEmpty(result[i].ANSAT_UOFF_STIL_TEKST) === false) {
-          title = '<dt>Title</dt><dd>' + result[i].ANSAT_UOFF_STIL_TEKST + '</dd>';
+        var title_da = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) ? '' : result[i].ANSAT_UOFF_STIL_TEKST;
+        var title_en = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK)) ? title_da : result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK;
+
+        if (title_en) {
+          title = '<dt>Title</dt><dd>' + title_en + '</dd>';
         }
 
         var funktion;
-        if (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK) && isEmpty(result[i].ANSAT_FUNKTION)) {
-          funktion = '';
-        } else if (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK) && isEmpty(result[i].ANSAT_FUNKTION) === false) {
-          funktion = '<dt>Function</dt><dd>' + result[i].ANSAT_FUNKTION + '</dd>';
+        var func_da = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : result[i].ANSAT_FUNKTION;
+        var func_en = (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK)) ? func_da : result[i].ANSAT_FUNKTION_ENGELSK;
+
+        if (func_en) {
+          funktion = '<dt>Function</dt><dd>' + func_en + '</dd>';
         }
 
         var unit;
-        if (isEmpty(result[i].STED_NAVN_SAMLET_ENG) && isEmpty(result[i].STED_NAVN_SAMLET)) {
-          unit = '';
-        } else if (isEmpty(result[i].STED_NAVN_SAMLET_ENG) && isEmpty(result[i].STED_NAVN_SAMLET) === false) {
-          unit = '<dt>Unit/&shy;dept.</dt><dd>' + result[i].STED_NAVN_SAMLET + '</dd>';
+        var unit_da = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : result[i].STED_NAVN_SAMLET;
+        var unit_en = (isEmpty(result[i].STED_NAVN_SAMLET_ENG)) ? unit_da : result[i].STED_NAVN_SAMLET_ENG;
+
+        if (unit_en) {
+          unit = '<dt>Unit/&shy;dept.</dt><dd>' + unit_en + '</dd>';
         }
 
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Secretary</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
-        var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>E-mail</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
+        var pure = (isEmpty(result[i].ANSAT_PURE_UK)) ? '' : '<dt>Profile</dt><dd><a aria-label="Research by ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_UK + '">Research profile and publications</a></dd>';
+        var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>Email</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
         var mobil = (isEmpty(result[i].ANSAT_MOBIL)) ? '' : '<dt>Mobile</dt><dd>' + isPhone(result[i].ANSAT_MOBIL) + '</dd>';
         var tel = (isEmpty(result[i].ANSAT_ARB_TLF)) ? '' : '<dt>Phone</dt><dd>' + isPhone(result[i].ANSAT_ARB_TLF) + '</dd>';
         var address = (isEmpty(result[i].ANSAT_ADRESSE)) ? '' : '<dt>Address</dt><dd>' + result[i].ANSAT_ADRESSE + '</dd>';
@@ -129,7 +133,7 @@
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
           '<div class="contact-right">' + img + '</div>' +
-          name + title + funktion + unit +
+          name + title + funktion + pure + unit +
           '</div>' +
           '<div class="ku-kontakt">' +
           email + mobil + tel + secr + website + address + location + remarks +
@@ -149,14 +153,11 @@
 
     apply_pagination = function() {
       // Pager plugin settings
+      var visible_pages = (window.matchMedia('(max-width: 768px)').matches) === true ? 3 : 5;
       $pager.twbsPagination({
         totalPages: totalPages,
-        visiblePages: 5,
+        visiblePages: visible_pages,
         hideOnlyOnePage: true,
-        first: 'Første',
-        prev: 'forrige',
-        next: 'Næste',
-        last: 'Sidste',
         onPageClick: function(event, page) {
           recordsIndex = Math.max(page - 1, 0) * perPage;
           endRec = (recordsIndex) + perPage;
@@ -201,9 +202,18 @@
     isPhone = function(no) {
       // Check if value is a phone number
       var re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+      // Check if number starts with '+'
+      var plus = /^\+/;
+
       if (re.test(no) === true) {
         no = no.replace(/-/g, '');
-        return '<a href="tel:' + no + '">' + no + '</a>';
+
+        if (!no.match(plus)) {
+          no = '+45' + no;
+        }
+        // Split number
+        var formatted = [no.slice(0, 3), " ", no.slice(3, 5), " ", no.slice(5, 7), " ", no.slice(7, 9), " ", no.slice(9)].join('');
+        return '<a href="tel:' + no + '">' + formatted + '</a>';
       } else {
         return no;
       }

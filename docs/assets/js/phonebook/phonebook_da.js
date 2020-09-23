@@ -98,6 +98,7 @@
         var unit = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : '<dt>Enhed/&shy;afdeling</dt><dd>' + result[i].STED_NAVN_SAMLET + '</dd>';
         var funktion = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : '<dt>Funktion</dt><dd>' + result[i].ANSAT_FUNKTION + '</dd>';
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Sekret&aelig;r</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
+        var pure = (isEmpty(result[i].ANSAT_PURE_DK)) ? '' : '<dt>Profil</dt><dd><a aria-label="Forskning af ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_DK + '">Forskning og publikationer</a></dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
         var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>E-mail</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
         var mobil = (isEmpty(result[i].ANSAT_MOBIL)) ? '' : '<dt>Mobil</dt><dd>' + isPhone(result[i].ANSAT_MOBIL) + '</dd>';
@@ -110,7 +111,7 @@
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
           '<div class="contact-right">' + img + '</div>' +
-          name + title + funktion + unit +
+          name + title + funktion + pure + unit +
           '</div>' +
           '<div class="ku-kontakt">' +
           email + mobil + tel + secr + website + address + location + remarks +
@@ -130,9 +131,10 @@
 
     apply_pagination = function() {
       // Pager plugin settings
+      var visible_pages = (window.matchMedia('(max-width: 768px)').matches) === true ? 3 : 5;
       $pager.twbsPagination({
         totalPages: totalPages,
-        visiblePages: 5,
+        visiblePages: visible_pages,
         hideOnlyOnePage: true,
         first: 'Første',
         prev: 'forrige',
@@ -182,9 +184,18 @@
     isPhone = function(no) {
       // Check if value is a phone number
       var re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+      // Check if number starts with '+'
+      var plus = /^\+/;
+
       if (re.test(no) === true) {
         no = no.replace(/-/g, '');
-        return '<a href="tel:' + no + '">' + no + '</a>';
+
+        if (!no.match(plus)) {
+          no = '+45' + no;
+        }
+        // Split number
+        var formatted = [no.slice(0, 3), " ", no.slice(3, 5), " ", no.slice(5, 7), " ", no.slice(7, 9), " ", no.slice(9)].join('');
+        return '<a href="tel:' + no + '">' + formatted + '</a>';
       } else {
         return no;
       }
