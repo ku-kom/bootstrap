@@ -194,17 +194,19 @@
     isPhone = function(no) {
       // Check if value is a phone number
       var re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-      // Check if number starts with '+'
-      var plus = /^\+/;
+      // Check if number starts with '+' or 00
+      var prefix = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
       if (re.test(no) === true) {
-        no = no.replace(/-/g, '');
+        // Remove everything that is not a digit or plus
+        no = no.replace(/[^0-9+]+/g, '');
 
-        if (!no.match(plus)) {
+        if (!no.match(prefix)) {
+          // Prefix with +45 if the number doesn't start with +45 or 0045
           no = '+45' + no;
         }
-        // Split number
-        var formatted = [no.slice(0, 3), " ", no.slice(3, 5), " ", no.slice(5, 7), " ", no.slice(7, 9), " ", no.slice(9)].join('');
+        // Split number into groups of two digits
+        var formatted = [no.slice(0, 3), ' ', no.slice(3, 5), ' ', no.slice(5, 7), ' ', no.slice(7, 9), ' ', no.slice(9)].join('');
         return '<a href="tel:' + no + '">' + formatted + '</a>';
       } else {
         return no;
