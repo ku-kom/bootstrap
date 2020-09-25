@@ -57,14 +57,14 @@
     $loading.show();
     $.ajax({
         //url: '/system/telefonbog-service.mason',
-        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog.soeg',
+        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog_v2.soeg',
         data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()) + '&env=about', //the parameter env="" is used to define the correct domain in the backend CORS policy.
         method: 'post',
         jsonp: false, // Set to false for security reasons
         dataType: 'json'
       })
       .done(function(data) {
-        console.log(data);
+        //console.log(data);
         employees = (data.root || {}).employees || [];
         // Check result and if paging plugin is loaded
         if (employees.length > 0 && $.fn.twbsPagination) {
@@ -92,46 +92,43 @@
       $loading.hide();
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
-        var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Navn</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
+        var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Name</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
         var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '">';
 
+        // If values are empty, use Danish ones, or else empty
         var title;
-        if (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK) && isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) {
-          title = '';
-        } else if (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK) && isEmpty(result[i].ANSAT_UOFF_STIL_TEKST) === false) {
-          title = '<dt>Title</dt><dd>' + result[i].ANSAT_UOFF_STIL_TEKST + '</dd>';
-        }
+        var title_da = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) ? '' : result[i].ANSAT_UOFF_STIL_TEKST;
+        var title_en = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK)) ? title_da : result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK;
+        title = (isEmpty(title_en)) ? '' : '<dt>Title</dt><dd>' + title_en + '</dd>';
 
         var funktion;
-        if (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK) && isEmpty(result[i].ANSAT_FUNKTION)) {
-          funktion = '';
-        } else if (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK) && isEmpty(result[i].ANSAT_FUNKTION) === false) {
-          funktion = '<dt>Function</dt><dd>' + result[i].ANSAT_FUNKTION + '</dd>';
-        }
+        var func_da = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : result[i].ANSAT_FUNKTION;
+        var func_en = (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK)) ? func_da : result[i].ANSAT_FUNKTION_ENGELSK;
+        funktion = (isEmpty(func_en)) ? '' : '<dt>Function</dt><dd>' + func_en + '</dd>';
 
         var unit;
-        if (isEmpty(result[i].STED_NAVN_SAMLET_ENG) && isEmpty(result[i].STED_NAVN_SAMLET)) {
-          unit = '';
-        } else if (isEmpty(result[i].STED_NAVN_SAMLET_ENG) && isEmpty(result[i].STED_NAVN_SAMLET) === false) {
-          unit = '<dt>Unit/&shy;dept.</dt><dd>' + result[i].STED_NAVN_SAMLET + '</dd>';
-        }
+        var unit_da = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : result[i].STED_NAVN_SAMLET;
+        var unit_en = (isEmpty(result[i].STED_NAVN_SAMLET_ENG)) ? unit_da : result[i].STED_NAVN_SAMLET_ENG;
+        unit = (isEmpty(unit_en)) ? '' : '<dt>Unit/&shy;dept.</dt><dd>' + unit_en + '</dd>';
 
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Secretary</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
-        var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>E-mail</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
+        var pure = (isEmpty(result[i].ANSAT_PURE_UK)) ? '' : '<dt>Profile</dt><dd><a aria-label="Research by ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_UK + '">Research profile and publications</a></dd>';
+        var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>Email</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
         var mobil = (isEmpty(result[i].ANSAT_MOBIL)) ? '' : '<dt>Mobile</dt><dd>' + isPhone(result[i].ANSAT_MOBIL) + '</dd>';
         var tel = (isEmpty(result[i].ANSAT_ARB_TLF)) ? '' : '<dt>Phone</dt><dd>' + isPhone(result[i].ANSAT_ARB_TLF) + '</dd>';
         var address = (isEmpty(result[i].ANSAT_ADRESSE)) ? '' : '<dt>Address</dt><dd>' + result[i].ANSAT_ADRESSE + '</dd>';
         var location = (isEmpty(result[i].LOKATION)) ? '' : '<dt>Location</dt><dd>' + result[i].LOKATION + '</dd>';
+        var remarks = (isEmpty(result[i].BEMAERK)) ? '' : '<dt>Remarks</dt><dd>' + result[i].BEMAERK + '</dd>';
 
         $li = $('<li class="contact-list"/>');
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
           '<div class="contact-right">' + img + '</div>' +
-          name + title + funktion + unit +
+          name + title + funktion + pure + unit +
           '</div>' +
           '<div class="ku-kontakt">' +
-          email + mobil + tel + secr + website + address + location +
+          email + mobil + tel + secr + website + address + location + remarks +
           '</div>' +
           '</dl>';
 
@@ -148,14 +145,11 @@
 
     apply_pagination = function() {
       // Pager plugin settings
+      var visible_pages = (window.matchMedia('(max-width: 768px)').matches) === true ? 3 : 5;
       $pager.twbsPagination({
         totalPages: totalPages,
-        visiblePages: 5,
+        visiblePages: visible_pages,
         hideOnlyOnePage: true,
-        first: 'Første',
-        prev: 'forrige',
-        next: 'Næste',
-        last: 'Sidste',
         onPageClick: function(event, page) {
           recordsIndex = Math.max(page - 1, 0) * perPage;
           endRec = (recordsIndex) + perPage;
@@ -200,9 +194,20 @@
     isPhone = function(no) {
       // Check if value is a phone number
       var re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+      // Check if number starts with '+' or 00
+      var prefix = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
       if (re.test(no) === true) {
-        no = no.replace(/-/g, '');
-        return '<a href="tel:' + no + '">' + no + '</a>';
+        // Remove everything that is not a digit or plus
+        no = no.replace(/[^0-9+]+/g, '');
+
+        if (!no.match(prefix)) {
+          // Prefix with +45 if the number doesn't start with +45 or 0045
+          no = '+45' + no;
+        }
+        // Split number into groups of two digits
+        var formatted = [no.slice(0, 3), ' ', no.slice(3, 5), ' ', no.slice(5, 7), ' ', no.slice(7, 9), ' ', no.slice(9)].join('');
+        return '<a href="tel:' + no + '">' + formatted + '</a>';
       } else {
         return no;
       }
@@ -210,7 +215,7 @@
 
     isEmpty = function(value) {
       // Returns true if value is empty
-      return (value == null || value.length === 0);
+      return (value == null || value == 'undefined' || value.length === 0);
     }
   });
 })(jQuery);

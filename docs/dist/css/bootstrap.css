@@ -1667,7 +1667,6 @@ h1 {
 h2 {
   font-size: 21px;
   font-weight: 600;
-  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .h2,
@@ -1679,7 +1678,6 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .h3,
