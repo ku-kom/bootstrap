@@ -64,7 +64,7 @@
         dataType: 'json'
       })
       .done(function(data) {
-        console.log(data);
+        //console.log(data);
         employees = (data.root || {}).employees || [];
         // Check result and if paging plugin is loaded
         if (employees.length > 0 && $.fn.twbsPagination) {
@@ -95,29 +95,21 @@
         var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Name</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
         var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '">';
 
+        // If values are empty, use Danish ones, or else empty
         var title;
         var title_da = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) ? '' : result[i].ANSAT_UOFF_STIL_TEKST;
         var title_en = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK)) ? title_da : result[i].ANSAT_UOFF_STIL_TEKST_ENGELSK;
-
-        if (title_en) {
-          title = '<dt>Title</dt><dd>' + title_en + '</dd>';
-        }
+        title = (isEmpty(title_en)) ? '' : '<dt>Title</dt><dd>' + title_en + '</dd>';
 
         var funktion;
         var func_da = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : result[i].ANSAT_FUNKTION;
         var func_en = (isEmpty(result[i].ANSAT_FUNKTION_ENGELSK)) ? func_da : result[i].ANSAT_FUNKTION_ENGELSK;
-
-        if (func_en) {
-          funktion = '<dt>Function</dt><dd>' + func_en + '</dd>';
-        }
+        funktion = (isEmpty(func_en)) ? '' : '<dt>Function</dt><dd>' + func_en + '</dd>';
 
         var unit;
         var unit_da = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : result[i].STED_NAVN_SAMLET;
         var unit_en = (isEmpty(result[i].STED_NAVN_SAMLET_ENG)) ? unit_da : result[i].STED_NAVN_SAMLET_ENG;
-
-        if (unit_en) {
-          unit = '<dt>Unit/&shy;dept.</dt><dd>' + unit_en + '</dd>';
-        }
+        unit = (isEmpty(unit_en)) ? '' : '<dt>Unit/&shy;dept.</dt><dd>' + unit_en + '</dd>';
 
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Secretary</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
@@ -221,7 +213,7 @@
 
     isEmpty = function(value) {
       // Returns true if value is empty
-      return (value == null || value.length === 0);
+      return (value == null || value == 'undefined' || value.length === 0);
     }
   });
 })(jQuery);
