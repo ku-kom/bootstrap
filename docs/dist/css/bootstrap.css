@@ -9669,6 +9669,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     display: none;
   }
 }
+.tile-body strong {
+  font-weight: 400!important;
+}
 @media all and (min-width: 768px) {
   .tiles-y .tilebox {
         flex-direction: row-reverse;
