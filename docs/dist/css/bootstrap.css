@@ -9670,7 +9670,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   }
 }
 .tile-body strong {
-  font-weight: 400!important;
+  font-weight: 400;
 }
 @media all and (min-width: 768px) {
   .tiles-y .tilebox {
