@@ -13,7 +13,6 @@
   }
 }
 /* KU theme colors for jQuery MMenu */
-
 #mobileleftmenu {
   //background-color: @white-color;
   color: @text-color;
@@ -34,6 +33,16 @@
         // selected view
         font-weight: 700;
         background: darken(@ku-red, 6%);
+      }
+
+      &:not(.mm-listitem_opened) {
+        & > .mm-listitem__text {
+          &:focus {
+            // First level hover state
+            font-weight: 700;
+            background: darken(@ku-red, 6%);
+          }
+        }
       }
 
       > .mm-panel {
@@ -64,7 +73,7 @@
     background-color: @ku-red;
     color: @white-color;
     font-weight: 600;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
     font-size: @font-size-h3;
     border-bottom: solid 1px lighten(@ku-red, 7%);
   }

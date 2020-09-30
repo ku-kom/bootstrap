@@ -8441,6 +8441,10 @@ iframe {
   font-weight: 700;
   background: #761519;
 }
+#mobileleftmenu li.local1_mmenu:not(.mm-listitem_opened) > .mm-listitem__text:focus {
+  font-weight: 700;
+  background: #761519;
+}
 #mobileleftmenu li.local1_mmenu > .mm-panel {
   color: #252525;
   background-color: #dbdbdb;
