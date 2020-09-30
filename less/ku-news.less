@@ -488,10 +488,17 @@ nav[aria-label="Pager"] {
 }
 
 .legacy-tile-link {
-  color: initial;
+  color: inherit!important;
+  display: block;
+  position: relative;
   text-decoration: none;
 
   &:hover {
+    color: inherit;
     text-decoration: underline;
+  }
+
+  &:visited {
+    color: inherit;
   }
 }

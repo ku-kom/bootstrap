@@ -9412,7 +9412,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .one-two-column .column2 .item-list.with-img .item,
 .three-one-column .column1 .item-list.with-img .item,
 .two-one-column .column1 .item-list.with-img .item,
-.two-one-one-column .column1 .item-list.with-img .item {
+.two-one-one-column .column1 .item-list.with-img .item,
+.double-column [class*=column] .item-list.with-img .legacy-tile-link,
+.gridcontent:not(#gridsidebar) .single-column .column1 .item-list.with-img .legacy-tile-link,
+.one-one-two-column .column3 .item-list.with-img .legacy-tile-link,
+.one-three-column .column2 .item-list.with-img .legacy-tile-link,
+.one-two-column .column2 .item-list.with-img .legacy-tile-link,
+.three-one-column .column1 .item-list.with-img .legacy-tile-link,
+.two-one-column .column1 .item-list.with-img .legacy-tile-link,
+.two-one-one-column .column1 .item-list.with-img .legacy-tile-link {
   display: -ms-flexbox;
   display: flex;
 
@@ -9486,11 +9494,17 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: #757575;
 }
 .legacy-tile-link {
-  color: initial;
+  position: relative;
+  display: block;
+  color: inherit!important;
   text-decoration: none;
 }
 .legacy-tile-link:hover {
+  color: inherit;
   text-decoration: underline;
+}
+.legacy-tile-link:visited {
+  color: inherit;
 }
 .tiles-plugin {
   padding-top: 15px;
