@@ -9503,7 +9503,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: inherit;
   text-decoration: none;
 }
-.legacy-tile-link:hover .item-heading {
+.legacy-tile-link:hover .item-heading,
+.legacy-tile-link:hover .media-heading {
   text-decoration: underline;
 }
 .legacy-tile-link:visited {
