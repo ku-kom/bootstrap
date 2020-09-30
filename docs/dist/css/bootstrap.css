@@ -9485,6 +9485,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-top: 10px;
   color: #757575;
 }
+.legacy-tile-link {
+  color: initial;
+  text-decoration: none;
+}
+.legacy-tile-link:hover {
+  text-decoration: underline;
+}
 .tiles-plugin {
   padding-top: 15px;
 }
