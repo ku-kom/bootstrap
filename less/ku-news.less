@@ -481,7 +481,29 @@ nav[aria-label="Pager"] {
   }
 }
 // Events as grid elements
+
 .calendarTime {
   .text-muted;
   margin-top: 10px;
+}
+
+// Styling for older news and events lists
+.legacy-tile-link {
+  color: inherit!important;
+  display: block;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+
+    .item-heading, .media-heading {
+      text-decoration: underline;
+    }
+  }
+
+  &:visited {
+    color: inherit;
+  }
 }
