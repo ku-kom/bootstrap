@@ -9501,6 +9501,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .legacy-tile-link:hover {
   color: inherit;
+}
+.legacy-tile-link:hover .item-heading {
   text-decoration: underline;
 }
 .legacy-tile-link:visited {
