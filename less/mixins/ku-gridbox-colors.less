@@ -1,0 +1,40 @@
+// Gridbox color variants
+// Use with values in this order: Text color, background color, hover color, border color, opacity
+//
+
+.gridbox-color(@color; @background; @hover; @border; @transparency) {
+  background: @background;
+  color: @color;
+
+  .header {
+    background: fade(@background, @transparency);
+    color: @color;
+  }
+
+  &.text-top {
+    .header {
+      background: @background;
+    }
+  }
+
+  &.outlined {
+    border: 1px solid @border;
+    color: @color;
+
+    &:hover {
+      border: 1px solid @hover;
+    }
+  }
+
+  &.full {
+    &:hover {
+      background: @hover;
+    }
+  }
+
+  &.text-down {
+    &:hover {
+      background: @hover;
+    }
+  }
+}
