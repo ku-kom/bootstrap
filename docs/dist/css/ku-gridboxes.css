@@ -22,7 +22,7 @@
   background: #901a1e;
 }
 .gridbox.red1.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #901a1e;
 }
 .gridbox.red1.outlined:hover {
@@ -46,7 +46,7 @@
   background: #c73028;
 }
 .gridbox.red2.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #c73028;
 }
 .gridbox.red2.outlined:hover {
@@ -70,7 +70,7 @@
   background: #e94c25;
 }
 .gridbox.red3.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #e94c25;
 }
 .gridbox.red3.outlined:hover {
@@ -94,7 +94,7 @@
   background: #122947;
 }
 .gridbox.blue1.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #122947;
 }
 .gridbox.blue1.outlined:hover {
@@ -118,7 +118,7 @@
   background: #425570;
 }
 .gridbox.blue2.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #425570;
 }
 .gridbox.blue2.outlined:hover {
@@ -166,7 +166,7 @@
   background: #0a5963;
 }
 .gridbox.teal1.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #0a5963;
 }
 .gridbox.teal1.outlined:hover {
@@ -190,7 +190,7 @@
   background: #197f8e;
 }
 .gridbox.teal2.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #197f8e;
 }
 .gridbox.teal2.outlined:hover {
@@ -238,7 +238,7 @@
   background: #39641c;
 }
 .gridbox.green1.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #39641c;
 }
 .gridbox.green1.outlined:hover {
@@ -262,7 +262,7 @@
   background: #6a9526;
 }
 .gridbox.green2.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #6a9526;
 }
 .gridbox.green2.outlined:hover {
@@ -310,7 +310,7 @@
   background: #3d3d3d;
 }
 .gridbox.grey1.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #3d3d3d;
 }
 .gridbox.grey1.outlined:hover {
@@ -334,7 +334,7 @@
   background: #666;
 }
 .gridbox.grey2.outlined {
-  color: #fcfcfc;
+  color: #262626;
   border: 1px solid #666;
 }
 .gridbox.grey2.outlined:hover {
