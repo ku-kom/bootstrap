@@ -9365,6 +9365,20 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   float: right;
   text-align: right;
 }
+#gridsidebar .single-column .column1 .item-list.with-img .item-left img,
+.one-one-two-column .column1 .item-list.with-img .item-left img,
+.one-one-two-column .column2 .item-list.with-img .item-left img,
+.one-three-column .column1 .item-list.with-img .item-left img,
+.one-two-column .column1 .item-list.with-img .item-left img,
+.quad-column [class*=column] .item-list.with-img .item-left img,
+.right-side .item-list.with-img .item-left img,
+.three-one-column .column2 .item-list.with-img .item-left img,
+.triple-column [class*=column] .item-list.with-img .item-left img,
+.two-one-column .column2 .item-list.with-img .item-left img,
+.two-one-one-column .column2 .item-list.with-img .item-left img,
+.two-one-one-column .column3 .item-list.with-img .item-left img {
+  float: right;
+}
 .calendarbox .media-body + .media-right {
   display: none;
 }
