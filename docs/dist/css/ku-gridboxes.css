@@ -11,18 +11,18 @@
   -ms-flex-direction: column;
 }
 .gridbox.red1 {
-  color: #fff;
+  color: #fcfcfc;
   background: #901a1e;
 }
 .gridbox.red1 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(144, 26, 30, .83);
 }
 .gridbox.red1.text-top .header {
   background: #901a1e;
 }
 .gridbox.red1.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #901a1e;
 }
 .gridbox.red1.outlined:hover {
@@ -35,18 +35,18 @@
   background: #7a1619;
 }
 .gridbox.red2 {
-  color: #fff;
+  color: #fcfcfc;
   background: #c73028;
 }
 .gridbox.red2 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(199, 48, 40, .83);
 }
 .gridbox.red2.text-top .header {
   background: #c73028;
 }
 .gridbox.red2.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #c73028;
 }
 .gridbox.red2.outlined:hover {
@@ -59,18 +59,18 @@
   background: #b22b24;
 }
 .gridbox.red3 {
-  color: #fff;
+  color: #fcfcfc;
   background: #e94c25;
 }
 .gridbox.red3 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(233, 76, 37, .83);
 }
 .gridbox.red3.text-top .header {
   background: #e94c25;
 }
 .gridbox.red3.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #e94c25;
 }
 .gridbox.red3.outlined:hover {
@@ -83,18 +83,18 @@
   background: #de3e16;
 }
 .gridbox.blue1 {
-  color: #fff;
+  color: #fcfcfc;
   background: #122947;
 }
 .gridbox.blue1 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(18, 41, 71, .83);
 }
 .gridbox.blue1.text-top .header {
   background: #122947;
 }
 .gridbox.blue1.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #122947;
 }
 .gridbox.blue1.outlined:hover {
@@ -107,18 +107,18 @@
   background: #0d1d33;
 }
 .gridbox.blue2 {
-  color: #fff;
+  color: #fcfcfc;
   background: #425570;
 }
 .gridbox.blue2 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(66, 85, 112, .83);
 }
 .gridbox.blue2.text-top .header {
   background: #425570;
 }
 .gridbox.blue2.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #425570;
 }
 .gridbox.blue2.outlined:hover {
@@ -131,18 +131,18 @@
   background: #394960;
 }
 .gridbox.blue3 {
-  color: #252525;
+  color: #262626;
   background: #bac7d9;
 }
 .gridbox.blue3 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(186, 199, 217, .83);
 }
 .gridbox.blue3.text-top .header {
   background: #bac7d9;
 }
 .gridbox.blue3.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #bac7d9;
 }
 .gridbox.blue3.outlined:hover {
@@ -155,18 +155,18 @@
   background: #aabad0;
 }
 .gridbox.teal1 {
-  color: #fff;
+  color: #fcfcfc;
   background: #0a5963;
 }
 .gridbox.teal1 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(10, 89, 99, .83);
 }
 .gridbox.teal1.text-top .header {
   background: #0a5963;
 }
 .gridbox.teal1.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #0a5963;
 }
 .gridbox.teal1.outlined:hover {
@@ -179,18 +179,18 @@
   background: #08444c;
 }
 .gridbox.teal2 {
-  color: #fff;
+  color: #fcfcfc;
   background: #197f8e;
 }
 .gridbox.teal2 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(25, 127, 142, .83);
 }
 .gridbox.teal2.text-top .header {
   background: #197f8e;
 }
 .gridbox.teal2.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #197f8e;
 }
 .gridbox.teal2.outlined:hover {
@@ -203,18 +203,18 @@
   background: #156c78;
 }
 .gridbox.teal3 {
-  color: #252525;
+  color: #262626;
   background: #b7d7de;
 }
 .gridbox.teal3 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(183, 215, 222, .83);
 }
 .gridbox.teal3.text-top .header {
   background: #b7d7de;
 }
 .gridbox.teal3.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #b7d7de;
 }
 .gridbox.teal3.outlined:hover {
@@ -227,18 +227,18 @@
   background: #a6cdd6;
 }
 .gridbox.green1 {
-  color: #fff;
+  color: #fcfcfc;
   background: #39641c;
 }
 .gridbox.green1 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(57, 100, 28, .83);
 }
 .gridbox.green1.text-top .header {
   background: #39641c;
 }
 .gridbox.green1.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #39641c;
 }
 .gridbox.green1.outlined:hover {
@@ -251,18 +251,18 @@
   background: #2e5016;
 }
 .gridbox.green2 {
-  color: #fff;
+  color: #fcfcfc;
   background: #6a9526;
 }
 .gridbox.green2 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(106, 149, 38, .83);
 }
 .gridbox.green2.text-top .header {
   background: #6a9526;
 }
 .gridbox.green2.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #6a9526;
 }
 .gridbox.green2.outlined:hover {
@@ -275,18 +275,18 @@
   background: #5c8121;
 }
 .gridbox.green3 {
-  color: #252525;
+  color: #262626;
   background: #becaa8;
 }
 .gridbox.green3 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(190, 202, 168, .83);
 }
 .gridbox.green3.text-top .header {
   background: #becaa8;
 }
 .gridbox.green3.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #becaa8;
 }
 .gridbox.green3.outlined:hover {
@@ -299,18 +299,18 @@
   background: #b2c098;
 }
 .gridbox.grey1 {
-  color: #fff;
+  color: #fcfcfc;
   background: #3d3d3d;
 }
 .gridbox.grey1 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(61, 61, 61, .83);
 }
 .gridbox.grey1.text-top .header {
   background: #3d3d3d;
 }
 .gridbox.grey1.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #3d3d3d;
 }
 .gridbox.grey1.outlined:hover {
@@ -323,18 +323,18 @@
   background: #303030;
 }
 .gridbox.grey2 {
-  color: #fff;
+  color: #fcfcfc;
   background: #666;
 }
 .gridbox.grey2 .header {
-  color: #fff;
+  color: #fcfcfc;
   background: rgba(102, 102, 102, .83);
 }
 .gridbox.grey2.text-top .header {
   background: #666;
 }
 .gridbox.grey2.outlined {
-  color: #fff;
+  color: #fcfcfc;
   border: 1px solid #666;
 }
 .gridbox.grey2.outlined:hover {
@@ -347,18 +347,18 @@
   background: #595959;
 }
 .gridbox.grey3 {
-  color: #252525;
+  color: #262626;
   background: #e1dfdf;
 }
 .gridbox.grey3 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(225, 223, 223, .83);
 }
 .gridbox.grey3.text-top .header {
   background: #e1dfdf;
 }
 .gridbox.grey3.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #e1dfdf;
 }
 .gridbox.grey3.outlined:hover {
@@ -371,18 +371,18 @@
   background: #d5d2d2;
 }
 .gridbox.light1 {
-  color: #252525;
+  color: #262626;
   background: #fff;
 }
 .gridbox.light1 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(255, 255, 255, .9);
 }
 .gridbox.light1.text-top .header {
   background: #fff;
 }
 .gridbox.light1.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #fff;
 }
 .gridbox.light1.outlined:hover {
@@ -395,18 +395,18 @@
   background: #f7f7f7;
 }
 .gridbox.light2 {
-  color: #252525;
+  color: #262626;
   background: #fefaf2;
 }
 .gridbox.light2 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(254, 250, 242, .9);
 }
 .gridbox.light2.text-top .header {
   background: #fefaf2;
 }
 .gridbox.light2.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #fefaf2;
 }
 .gridbox.light2.outlined:hover {
@@ -419,18 +419,18 @@
   background: #fcf1da;
 }
 .gridbox.light3 {
-  color: #252525;
+  color: #262626;
   background: #ffbd38;
 }
 .gridbox.light3 .header {
-  color: #252525;
+  color: #262626;
   background: rgba(255, 189, 56, .83);
 }
 .gridbox.light3.text-top .header {
   background: #ffbd38;
 }
 .gridbox.light3.outlined {
-  color: #252525;
+  color: #262626;
   border: 1px solid #ffbd38;
 }
 .gridbox.light3.outlined:hover {
