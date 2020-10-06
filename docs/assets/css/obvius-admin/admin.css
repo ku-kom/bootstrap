@@ -5932,7 +5932,7 @@ textarea[id*="extra_html_body"] {
   background-color: #efefef;
 }
 
-#sidebar .item-list.with-img .item-right {
+#sidebar .item-list.with-img .item-left {
   display: block;
   float: right;
   text-align: right;
