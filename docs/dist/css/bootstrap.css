@@ -8403,8 +8403,8 @@ iframe {
     top: 5px;
     right: 0;
     z-index: 1040;
-    padding: 6px 10px;
-    margin-right: 4px;
+    padding: 6px 8px;
+    margin-right: 10px;
     background-color: #757575;
   }
   .leftmenu-toggle:hover {
