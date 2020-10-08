@@ -8981,7 +8981,7 @@ iframe {
 .item-list .item + .item {
   border-top: 1px solid #ccc;
 }
-.item-list .item + .item:last-child {
+.item-list .item:last-child {
   border-bottom: 1px solid #ccc;
 }
 .item-list .item-heading {
@@ -11603,7 +11603,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   top: 0;
   font-size: 80px;
 }
-.right-side p {
+.right-side .cookiefilter p {
   margin: 6px 0 9px;
 }
 .right-side .cookiefilter-header {
