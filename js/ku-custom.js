@@ -20,7 +20,7 @@ function shareURL(dest) {
   var url = window.location.href;
   var param = dest.toLowerCase().trim();
 
-  var media = $.map(urlMap, function (i, e) {
+  var media = $.map(urlMap, function(i, e) {
     // return keys
     return e;
   });
@@ -39,7 +39,7 @@ function shareURL(dest) {
   }
 }
 
-(function ($) {
+(function($) {
   // Language of the current page - fallback to English
   var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
 
@@ -48,7 +48,7 @@ function shareURL(dest) {
   var $editMode = ($('html').hasClass('ku-bs') === false) ? false : true;
 
   // Toggle icon in accordions
-  $('.panel-accordion').each(function () {
+  $('.panel-accordion').each(function() {
     if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
       $(this).find('.panel-heading').addClass('open');
     }
@@ -66,7 +66,7 @@ function shareURL(dest) {
   var $chars = 85; // number of characters
   var $news = $('ul.dropdown-menu.nyheder li a');
   if ($news) {
-    $news.each(function (i, v) {
+    $news.each(function(i, v) {
       var $txt = $(this).text();
       if ($txt.length > $chars) {
         $(this).html($(this).html().substring(0, $chars) + '...');
@@ -79,7 +79,7 @@ function shareURL(dest) {
     // Add tracking params to global menu news list
     var $li = $('ul.nyheder li:not(.no-track)');
     if ($li) {
-      $li.each(function (i, v) {
+      $li.each(function(i, v) {
         // Get current urls from news
         var url = $(this).find('a').prop('href');
         // Create new url with params
@@ -94,7 +94,7 @@ function shareURL(dest) {
   // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled':
   function makeGlobalMenuClickable() {
     var $menu = $('#navbar_menu li.dropdown');
-    $menu.each(function () {
+    $menu.each(function() {
       $(this).children('.dropdown-toggle').addClass('disabled');
     });
   }
@@ -116,12 +116,12 @@ function shareURL(dest) {
   scrollFunction();
 
   // Init scroller on scroll
-  window.onscroll = function () {
+  window.onscroll = function() {
     scrollFunction()
   };
 
   // Smooth scrolling to top on click event
-  $('#scrolltop').click(function () {
+  $('#scrolltop').click(function() {
     var $root = $('html, body');
     $root.animate({
       scrollTop: 0
@@ -129,7 +129,7 @@ function shareURL(dest) {
     return false;
   });
 
-  $(window).on('load', function () {
+  $(window).on('load', function() {
     // Open accordions based on the hash in the url
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
     if ($accordion) {
@@ -141,5 +141,26 @@ function shareURL(dest) {
       }, 800);
     }
   });
+
+  function debounce(func, wait, immediate) {
+    // Use to delay function init.
+    // Returns a function, that, as long as it continues to be invoked, will not
+    // be triggered. The function will be called after it stops being called for
+    // N milliseconds. If `immediate` is passed, trigger the function on the
+    // leading edge, instead of the trailing. Usage, e.g. $(window).on('resize', debounce(myFunction, 250));
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
 
 })(jQuery);
