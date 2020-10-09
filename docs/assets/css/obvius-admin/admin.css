@@ -5956,9 +5956,10 @@ textarea[id*="extra_html_body"] {
 #sidebar .tiles-y .tile-img {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin: 0 0 5px 0;
 }
 
-#sidebar .tiles-y .tile-img {
+#sidebar .tiles-y .tile-img img {
   width: 100%;
   float: none;
 }
