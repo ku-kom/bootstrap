@@ -11575,6 +11575,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .cookiefilter-header {
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.3333333;
 }
 .right-side .cookiefilter {
   position: absolute;
