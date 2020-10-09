@@ -9570,8 +9570,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .tile-cat .date {
   padding-left: 5px;
