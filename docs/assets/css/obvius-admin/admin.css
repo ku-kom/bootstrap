@@ -5942,6 +5942,27 @@ textarea[id*="extra_html_body"] {
   float: right;
 }
 
+#sidebar .tiles-y .tilebox {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#sidebar .tiles-y .tile-link {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 0 10px;
+}
+
+#sidebar .tiles-y .tile-img {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+#sidebar .tiles-y .tile-img {
+  width: 100%;
+  float: none;
+}
+
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
 #webstedinfo {
