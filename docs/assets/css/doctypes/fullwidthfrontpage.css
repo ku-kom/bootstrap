@@ -10,7 +10,7 @@
   }
 }
 
-.gridcontent>.row>.container {
+.gridcontent>.container .row> {
   padding-left: 13px;
   padding-right: 13px;
 }
