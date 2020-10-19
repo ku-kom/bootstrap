@@ -11,6 +11,8 @@
 }
 
 .gridcontent>.gcrow >.container {
+  width: 100%;
+  max-width: 1070px;
   padding-left: 13px;
   padding-right: 13px;
 }
