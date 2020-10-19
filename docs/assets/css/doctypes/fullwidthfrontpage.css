@@ -10,7 +10,7 @@
   }
 }
 
-.gridcontent>.container .row> {
+.gridcontent>.gcrow >.container {
   padding-left: 13px;
   padding-right: 13px;
 }
