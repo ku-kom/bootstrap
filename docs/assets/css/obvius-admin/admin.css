@@ -82,6 +82,13 @@ Hide/show
   top: 0;
 }
 
+table.gcedit tbody th input.class {
+  position: absolute;
+  right: 2.5em;
+  margin: 0.5em;
+  background-position: -142px 2px;
+}
+
 #obvius_gridcontent_gridcontent_right .single-column .column-visibility-buttons {
   display: none
 }
@@ -5966,7 +5973,7 @@ textarea[id*="extra_html_body"] {
 
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
-#webstedinfo {
+/* #webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -6039,6 +6046,6 @@ textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-}
+} */
 
 /* end */
