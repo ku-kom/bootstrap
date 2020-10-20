@@ -5393,7 +5393,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 19px;
+  line-height: 1.47em;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -5437,7 +5437,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 #topbar_menu.navbar-nav > li > a {
   padding: 0 7px;
-  line-height: 28px;
+  line-height: 2.15em;
   text-decoration: none;
 }
 #topbar_menu.navbar-nav > li > a:hover {
@@ -11602,9 +11602,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .right-side .cookiefilter-header + p:first-of-type {
   display: none;
-}
-.open-cookie-dialog {
-  color: #252525;
 }
 .social-embed {
   padding-bottom: 5px;
