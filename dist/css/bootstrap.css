@@ -7503,7 +7503,9 @@ main:after,
 .spacer:before,
 .spacer:after,
 .ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.cookiefilter:before,
+.cookiefilter:after {
   display: table;
   content: " ";
 }
@@ -7529,7 +7531,8 @@ main:after,
 .gcitem:after,
 .divider:after,
 .spacer:after,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.cookiefilter:after {
   clear: both;
 }
 .center-block {
@@ -11575,6 +11578,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .cookiefilter-header {
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.3333333;
 }
 .right-side .cookiefilter {
   position: absolute;
@@ -11598,6 +11602,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .right-side .cookiefilter-header + p:first-of-type {
   display: none;
+}
+.open-cookie-dialog {
+  color: #252525;
 }
 .social-embed {
   padding-bottom: 5px;
