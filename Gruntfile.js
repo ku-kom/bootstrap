@@ -79,6 +79,7 @@ module.exports = function (grunt) {
           'docs/assets/js/cookie/*.js',
           'docs/assets/js/videoControls/*.js',
           'docs/assets/js/phonebook/*.js',
+          'docs/assets/js/slider/slickslider-config.js',
           '!docs/assets/js/*.min.js'
         ]
       }
