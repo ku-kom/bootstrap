@@ -18,7 +18,8 @@
       '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
       '</svg>' +
       '</button>';
-
+      
+    // Settings for different kind of sliders
     var sliderSettings = {
       instagram: {
         slidesToShow: 3,
@@ -27,7 +28,6 @@
         speed: 1000,
         arrows: true,
         dots: false,
-
         responsive: [
           {
             breakpoint: 767,
@@ -54,7 +54,6 @@
         speed: 1000,
         arrows: true,
         dots: true,
-
         responsive: [
           {
             breakpoint: 767,
@@ -65,8 +64,8 @@
               dots: true,
               arrows: true
             }
-        }
-      ]
+          }
+        ]
       }
     };
 
@@ -83,10 +82,8 @@
 
     function initInstaSlideshow() {
       addplayPause($instaslider);
-      // Loop Instagram
-      if ($instaslider.is('.instaslider')) {
-        $instaslider.not('.slick-initialized').slick(sliderSettings.instagram);
-      }
+      // Create Instagram slider
+      $instaslider.not('.slick-initialized').slick(sliderSettings.instagram);
     }
 
     function destroySlideshow() {
@@ -130,6 +127,7 @@
     }
 
     function initSlideshows() {
+      // TODO: Loop slider with one common slidername
       // Add buttons
       addplayPause($newsslider);
       // Loop news

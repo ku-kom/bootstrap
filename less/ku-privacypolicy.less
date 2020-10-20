@@ -279,6 +279,7 @@
   padding: 15px;
   margin-bottom: @grid-gutter-by-half;
   border-radius: @border-radius-base;
+  &:extend(.clearfix all);
   .icon-exclamation;
 
   &::before {
@@ -328,6 +329,10 @@
       }
     }
   }
+}
+
+.open-cookie-dialog {
+  color: @text-color;
 }
 // KU privacy policy box
 // @media (min-width: @screen-xs-max) {
