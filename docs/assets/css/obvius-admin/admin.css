@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext");
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext");
 
 /*============================================================================*/
 /* ADMIN STYLES */
@@ -94,7 +94,7 @@ table.gcedit tbody th input.class {
 }
 
 #row-classes {
-  height: 100px;
+  height: 75px;
 }
 
 #obvius_gridcontent_gridcontent_right .single-column .column-visibility-buttons {
@@ -5979,9 +5979,18 @@ textarea[id*="extra_html_body"] {
   float: none;
 }
 
+.gridcontent .full-page-width {
+  width: auto;
+}
+.gridcontent .full-page-width > .container{
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
-/* #webstedinfo {
+#webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -6054,6 +6063,6 @@ textarea[id*="extra_html_body"] {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-} */
+}
 
 /* end */

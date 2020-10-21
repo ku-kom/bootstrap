@@ -1461,6 +1461,7 @@ body {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  margin-bottom: 0;
   overflow: hidden;
   position: relative;
 }
@@ -9767,8 +9768,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     flex: 0 0 65%;
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-content {
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
 }
 @media (max-width: 991px) {
@@ -9779,6 +9780,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (min-width: 768px) {
+  .newsbox {
+    padding-bottom: 8px;
+  }
   .newsbox .tiles-x .tilebox {
     height: 289px;
   }
