@@ -6,8 +6,8 @@ body {
 
 .form-signin {
   max-width: 330px;
-  padding: 15px;
   margin: 0 auto;
+  padding: 15px;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -17,9 +17,9 @@ body {
   font-weight: normal;
 }
 .form-signin .form-control {
+  box-sizing: border-box;
   position: relative;
   height: auto;
-  box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
 }
