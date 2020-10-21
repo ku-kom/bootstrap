@@ -89,6 +89,14 @@ table.gcedit tbody th input.class {
   background-position: -142px 2px;
 }
 
+#gridcontent-dialog-class {
+  width: 30em;
+}
+
+#row-classes {
+  height: 100px;
+}
+
 #obvius_gridcontent_gridcontent_right .single-column .column-visibility-buttons {
   display: none
 }
