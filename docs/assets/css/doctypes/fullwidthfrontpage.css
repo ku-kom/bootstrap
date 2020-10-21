@@ -10,9 +10,27 @@
   }
 }
 
-.gridcontent>.gcrow >.container {
+/* Special styling for full-width rows */
+.gridcontent>.gcrow:not(.full-page-width)>.container {
   width: 100%;
-  max-width: 1070px;
   padding-left: 13px;
   padding-right: 13px;
+}
+
+@media (min-width: 768px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 746px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 966px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 1070px;
+  }
 }
