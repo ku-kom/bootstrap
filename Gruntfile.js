@@ -164,6 +164,7 @@ module.exports = function (grunt) {
               'docs/assets/js/social-feeds/instagram/instagramByAccount.js',
               'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
               'docs/assets/js/social-feeds/twitter/twitterByAccount.js',
+              'docs/assets/js/slider/slickslider-config.js',
               'docs/assets/js/videoControls/videoControls.js',
               'docs/assets/js/cookie/cookie.js',
               'docs/assets/js/scroll-progress/scroll-progress.js',
@@ -319,25 +320,49 @@ module.exports = function (grunt) {
       }
     },
 
-    csslint: {
+    stylelint: {
       options: {
-        csslintrc: 'less/.csslintrc'
+        configFile: 'less/.stylelintrc',
+        formatter: 'string',
+        ignoreDisables: false,
+        failOnError: true,
+        outputFile: '',
+        reportNeedlessDisables: false,
+        syntax: ''
       },
-      dist: [
-        'dist/css/bootstrap.css',
-        'dist/css/ku-gridboxes.css'
-      ],
-      examples: [
-        'docs/examples/**/*.css'
-      ],
+      dist: {
+        src: [
+          'dist/css/bootstrap.css',
+          'dist/css/ku-gridboxes.css'
+        ]
+      },
+      examples: {
+        src: 'docs/examples/**/*.css'
+      },
       docs: {
-        options: {
-          ids: false,
-          'overqualified-elements': false
-        },
         src: 'docs/assets/css/src/docs.css'
       }
     },
+
+    // csslint: {
+    //   options: {
+    //     csslintrc: 'less/.csslintrc'
+    //   },
+    //   dist: [
+    //     'dist/css/bootstrap.css',
+    //     'dist/css/ku-gridboxes.css'
+    //   ],
+    //   examples: [
+    //     'docs/examples/**/*.css'
+    //   ],
+    //   docs: {
+    //     options: {
+    //       ids: false,
+    //       'overqualified-elements': false
+    //     },
+    //     src: 'docs/assets/css/src/docs.css'
+    //   }
+    // },
 
     cssmin: {
       options: {
@@ -582,7 +607,7 @@ module.exports = function (grunt) {
   if (runSubset('core') &&
       // Skip core tests if this is a Savage build
       process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'csslint:dist', 'test-js', 'docs']);
+    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'test-js', 'docs']);
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
@@ -616,7 +641,7 @@ module.exports = function (grunt) {
 
   // Docs task.
   grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
-  grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
+  grunt.registerTask('lint-docs-css', ['stylelint:docs', 'stylelint:examples']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data']);
