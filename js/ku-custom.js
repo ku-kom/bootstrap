@@ -154,7 +154,9 @@ function shareURL(dest) {
 
   checkScrollbar();
 
-  $(window).on('resize', debounce(checkScrollbar, 250));
+  $(window).on('resize orientationchange', debounce(function() {
+    checkScrollbar();
+  }, 250));
 
   // Smooth scrolling to top on click event
   $('#scrolltop').click(function() {
