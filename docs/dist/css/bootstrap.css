@@ -1457,21 +1457,6 @@ body {
 :root {
   --scroll-bar: 10px;
 }
-.row.full-page-width {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: 0;
-  overflow: hidden;
-  position: relative;
-}
-@supports (color: var(--scroll-bar)) {
-  .has-scrollbar .full-page-width {
-    width: calc(100vw - var(--scroll-bar));
-    margin-left: calc(-50vw + 50% + (var(--scroll-bar) / 2));
-    margin-right: calc(-50vw + 50% + (var(--scroll-bar) / 2));
-  }
-}
 button,
 input,
 select,
@@ -7939,6 +7924,21 @@ nav {
 @media (min-width: 768px) and (max-width: 991px) {
   .gccolumn[class^="col-"][class$="-12"] {
     margin-bottom: 23px;
+  }
+}
+.row.full-page-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+@supports (color: var(--scroll-bar)) {
+  .has-scrollbar .full-page-width {
+    width: calc(100vw - var(--scroll-bar));
+    margin-left: calc(-50vw + 50% + (var(--scroll-bar) / 2));
+    margin-right: calc(-50vw + 50% + (var(--scroll-bar) / 2));
   }
 }
 .rightBoxPicture .panel-head {
