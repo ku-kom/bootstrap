@@ -1457,7 +1457,7 @@ body {
 :root {
   --scroll-bar: 10px;
 }
-.full-page-width {
+.row.full-page-width {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
