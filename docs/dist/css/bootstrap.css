@@ -1457,21 +1457,6 @@ body {
 :root {
   --scroll-bar: 10px;
 }
-.full-page-width {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: 0;
-  overflow: hidden;
-  position: relative;
-}
-@supports (color: var(--scroll-bar)) {
-  .has-scrollbar .full-page-width {
-    width: calc(100vw - var(--scroll-bar));
-    margin-left: calc(-50vw + 50% + (var(--scroll-bar) / 2));
-    margin-right: calc(-50vw + 50% + (var(--scroll-bar) / 2));
-  }
-}
 button,
 input,
 select,
@@ -7941,6 +7926,21 @@ nav {
     margin-bottom: 23px;
   }
 }
+.row.full-page-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+@supports (color: var(--scroll-bar)) {
+  .has-scrollbar .full-page-width {
+    width: calc(100vw - var(--scroll-bar));
+    margin-left: calc(-50vw + 50% + (var(--scroll-bar) / 2));
+    margin-right: calc(-50vw + 50% + (var(--scroll-bar) / 2));
+  }
+}
 .rightBoxPicture .panel-head {
   display: none;
 }
@@ -8617,7 +8617,7 @@ iframe {
 }
 #globalfooter .footercontent > .footercolumn .footer-heading {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3em;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
@@ -8646,7 +8646,7 @@ iframe {
 }
 #globalfooter ul.footerlinks li {
   padding: 0;
-  line-height: 20px;
+  line-height: 1.53em;
   font-size: 13px;
   font-weight: normal;
 }
