@@ -1,16 +1,17 @@
 /* Styling for ku.dk front page only. */
-.ku-branding .ku-branding-text .ku-branding-text-major {
-  font-size: 24px;
+@media (max-width: 991px) {
+  .ku-branding .ku-branding-text .ku-branding-text-major {
+    font-size: 18px;
+  }
 }
+
 /* .topbar-logo {
   display: none !important;
 } */
-
 /* Hide navnetraek as we use graphics on the front page */
 /* .ku-branding-text-major, .ku-branding-text-sub {
   display: none;
 } */
-
 video {
   width: 100%;
 }
@@ -29,7 +30,6 @@ html:lang(en) .ku-branding-text {
   background-size: contain;
   background-image: url("https://bootstrap.secure.ku.dk/img/ku_header_2_lin_en.svg");
 } */
-
 /* @media all and (min-width: 481px) {
   .ku-branding-text {
     background-image: url("https://bootstrap.secure.ku.dk/img/ku_header.svg");
@@ -69,7 +69,6 @@ html:lang(en) .ku-branding-text {
     background-position: left bottom -10px;
   }
 } */
-
 .breadcrumbs, .local-footer, .item .item-teaser {
   display: none;
 }
