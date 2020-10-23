@@ -556,12 +556,12 @@
     }
   }
 }
-
 // Use with values in this order: Text color, background color, hover color, border color, outlined text, opacity.
 // Reds family
+
 .box {
   &-red1 {
-    .gridbox-color(@gridbox-text-light; @red1; darken(@red1, 5%); @red1;  @red1; 83%);
+    .gridbox-color(@gridbox-text-light; @red1; darken(@red1, 5%); @red1; @red1; 83%);
   }
 
   &-red2 {
@@ -621,19 +621,26 @@
   }
   // Whites and yellows family
   &-light1 {
-    .gridbox-color(@gridbox-text-dark; @white1; darken(@grey3, 5%); @grey3; @gridbox-text-dark; 90%);
+    .gridbox-color(@gridbox-text-dark; @white1; darken(@grey3, 5%); @grey2; @gridbox-text-dark; 90%);
   }
 
   &-light2 {
-    .gridbox-color(@gridbox-text-dark; @white2; darken(@grey3, 5%); @grey3; @gridbox-text-dark; 90%);
+    .gridbox-color(@gridbox-text-dark; @white2; darken(@grey3, 5%); @grey2; @gridbox-text-dark; 90%);
   }
 
   &-light3 {
     .gridbox-color(@gridbox-text-dark; @white3; darken(@white3, 5%); @white3; @white3; 83%);
   }
 }
+// Exception - white full needs border.
 
+.box-light1 {
+  &.full {
+    border: 1px solid @grey2;
+  }
+}
 // Exception with yellowish outline:
+
 .box-light3 {
   &.outlined {
     border: 1px solid @white4;
@@ -647,7 +654,6 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
-
 .gridbox {
   .all-single-column();
 
