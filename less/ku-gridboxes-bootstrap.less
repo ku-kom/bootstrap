@@ -629,7 +629,19 @@
   }
 
   &-light3 {
-    .gridbox-color(@gridbox-text-light; @white3; darken(@white3, 5%); @white3; @white3; 83%);
+    .gridbox-color(@gridbox-text-dark; @white3; darken(@white3, 5%); @white3; @white3; 83%);
+  }
+}
+
+// Exception with yellowish outline:
+.box-light3 {
+  &.outlined {
+    border: 1px solid @white4;
+    color: @white4;
+
+    &:hover {
+      border: 1px solid darken(@white4, 5%);
+    }
   }
 }
 /*
