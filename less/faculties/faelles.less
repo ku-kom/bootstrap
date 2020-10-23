@@ -2,10 +2,7 @@
 @import "../variables.less";
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
-
-
 // Special colors for studier.ku.dk
-
 .soeg-optagelse {
   background: #bf1e6f !important;
 
@@ -14,8 +11,13 @@
   }
 }
 
-.gridbox {
+#botxo-openImg- {
+  &:focus {
+    .tab-focus();
+  }
+}
 
+.gridbox {
   &.subcolor_1 {
     background: @blue;
     color: @white-color;
@@ -177,7 +179,6 @@
   .two-one-one-column .column1 {
     .gridbox {
       &.outlined {
-
         &.subcolor_1 {
           &::before {
             color: @blue;

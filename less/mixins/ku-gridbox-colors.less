@@ -46,3 +46,16 @@
     }
   }
 }
+
+// Text color, background and opacity.
+.slider-overlay-colors(@color; @background; @transparency) {
+  background: @background;
+  color: @color;
+  @media (min-width: @screen-sm) {
+    background: fade(@background, @transparency);
+  }
+
+  &.full-bg {
+    background: @background;
+  }
+}
