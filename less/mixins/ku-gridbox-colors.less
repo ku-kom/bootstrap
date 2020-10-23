@@ -2,7 +2,7 @@
 // Use with values in this order: Text color, background color, hover color, border color, outlined text, opacity
 //
 
-.gridbox-color(@color;  @background; @hover; @border; @outlinedText; @transparency) {
+.gridbox-color(@color; @background; @hover; @border; @outlinedText; @transparency) {
   background: @background;
   color: @color;
 
@@ -22,14 +22,15 @@
     color: @outlinedText;
 
     .header {
-      color: @color!important;
+      color: @color;
     }
 
     &:hover {
       border: 1px solid @hover;
     }
+
     &::before {
-      color: inherit;
+      color: inherit!important;
     }
   }
 
