@@ -816,11 +816,11 @@
 }
 .box-light3 {
   background: #ffbd38;
-  color: #fcfcfc;
+  color: #262626;
 }
 .box-light3 .header {
   background: rgba(255, 189, 56, .83);
-  color: #fcfcfc;
+  color: #262626;
 }
 .box-light3.text-top .header {
   background: #ffbd38;
@@ -837,6 +837,13 @@
 }
 .box-light3.text-down:hover {
   background: #ffb51f;
+}
+.box-light3.outlined {
+  border: 1px solid #9e6900;
+  color: #9e6900;
+}
+.box-light3.outlined:hover {
+  border: 1px solid #855800;
 }
 /*
 * Mobile: All column types must behave like single column boxes
