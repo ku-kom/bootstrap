@@ -651,6 +651,33 @@
     }
   }
 }
+
+// Outline arrow style for single column spans with dark text
+.double-column [class*=column],
+.one-two-column .column1,
+.quad-column [class*=column],
+.triple-column [class*=column],
+.two-one-column .column2 {
+  .gridbox {
+    &.size2,
+    &.size3 {
+      &.outlined.with-img {
+        &.box-blue3,
+        &.box-teal3,
+        &.box-green3,
+        &.box-grey3,
+        &.box-light1,
+        &.box-light2,
+        &.box-light3,
+         {
+          &::before {
+            color: @gridbox-text-dark;
+          }
+        }
+      }
+    }
+  }
+}
 /*
 * Mobile: All column types must behave like single column boxes
 */
