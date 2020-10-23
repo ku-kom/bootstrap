@@ -141,14 +141,16 @@ function shareURL(dest) {
     scrollFunction()
   };
 
-  var checkScrollbar = function() {
+  function checkScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
     var body = document.querySelector('body');
-    if (window.innerWidth > body.clientWidth) {
-      body.classList.add('has-scrollbar');
-      body.setAttribute('style', '--scroll-bar: ' + (window.innerWidth - body.clientWidth) + 'px');
-    } else {
-      body.classList.remove('has-scrollbar');
+    if (body) {
+      if (window.innerWidth > body.clientWidth) {
+        body.classList.add('has-scrollbar');
+        body.setAttribute('style', '--scroll-bar: ' + (window.innerWidth - body.clientWidth) + 'px');
+      } else {
+        body.classList.remove('has-scrollbar');
+      }
     }
   }
 
