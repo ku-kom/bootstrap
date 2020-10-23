@@ -653,11 +653,16 @@
 }
 
 // Outline arrow style for single column spans with dark text
-.double-column [class*=column],
+
 .one-two-column .column1,
-.quad-column [class*=column],
+.two-one-column .column2,
+.double-column [class*=column],
 .triple-column [class*=column],
-.two-one-column .column2 {
+.quad-column [class*=column],
+.one-one-two-column .column1,
+.one-one-two-column .column2,
+.two-one-one-column .column2,
+.two-one-one-column .column3 {
   .gridbox {
     &.size2,
     &.size3 {

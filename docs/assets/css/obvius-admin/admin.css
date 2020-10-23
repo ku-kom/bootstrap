@@ -5987,6 +5987,9 @@ textarea[id*="extra_html_body"] {
   padding-left: 13px;
   padding-right: 13px;
 }
+input.newsbox {
+  padding-bottom: 1px;
+}
 
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
