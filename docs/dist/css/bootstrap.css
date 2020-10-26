@@ -5911,6 +5911,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 .global-search .global-search-options-filter li {
   padding: 3px 10px;
+  font-size: 13px;
 }
 .global-search .global-search-options-filter li.selected,
 .global-search .global-search-options-filter li:active,
