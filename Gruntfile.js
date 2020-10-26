@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         ]
       }
     },
-    // install "grunt-jscs": "~3.0.1":
+    // install "grunt-jscs": "~3.0.1": TOdo - remove js/.jscsrc
     // jscs: {
     //   options: {
     //     config: 'js/.jscsrc'
