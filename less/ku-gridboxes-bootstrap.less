@@ -622,6 +622,10 @@
   // Whites and yellows family
   &-light1 {
     .gridbox-color(@gridbox-text-dark; @white1; darken(@grey3, 5%); @grey2; @gridbox-text-dark; 90%);
+    // Exception - white full needs border.
+    &.full {
+      border: 1px solid @grey2;
+    }
   }
 
   &-light2 {
@@ -630,37 +634,25 @@
 
   &-light3 {
     .gridbox-color(@gridbox-text-dark; @white3; darken(@white3, 5%); @white3; @white3; 83%);
-  }
-}
-// Exception - white full needs border.
+    // Exception with yellowish outline:
+    &.outlined {
+      border: 1px solid @white4;
+      color: @white4;
 
-.box-light1 {
-  &.full {
-    border: 1px solid @grey2;
-  }
-}
-// Exception with yellowish outline:
-
-.box-light3 {
-  &.outlined {
-    border: 1px solid @white4;
-    color: @white4;
-
-    &:hover {
-      border: 1px solid darken(@white4, 5%);
+      &:hover {
+        border: 1px solid darken(@white4, 5%);
+      }
     }
   }
 }
-
 // Outline arrow style for single column spans with dark text
-
-.one-two-column .column1,
-.two-one-column .column2,
 .double-column [class*=column],
-.triple-column [class*=column],
-.quad-column [class*=column],
 .one-one-two-column .column1,
 .one-one-two-column .column2,
+.one-two-column .column1,
+.quad-column [class*=column],
+.triple-column [class*=column],
+.two-one-column .column2,
 .two-one-one-column .column2,
 .two-one-one-column .column3 {
   .gridbox {
@@ -668,13 +660,12 @@
     &.size3 {
       &.outlined.with-img {
         &.box-blue3,
-        &.box-teal3,
         &.box-green3,
         &.box-grey3,
         &.box-light1,
         &.box-light2,
         &.box-light3,
-         {
+        &.box-teal3 {
           &::before {
             color: @gridbox-text-dark;
           }
@@ -686,6 +677,7 @@
 /*
 * Mobile: All column types must behave like single column boxes
 */
+
 .gridbox {
   .all-single-column();
 
