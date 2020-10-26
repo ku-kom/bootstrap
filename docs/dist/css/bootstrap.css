@@ -10512,16 +10512,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   background: #39641c;
 }
 .slick-slide .caption.box-green2 {
-  background: #6a9526;
+  background: #4b8325;
   color: #fcfcfc;
 }
 @media (min-width: 768px) {
   .slick-slide .caption.box-green2 {
-    background: rgba(106, 149, 38, .83);
+    background: rgba(75, 131, 37, .83);
   }
 }
 .slick-slide .caption.box-green2.full-bg {
-  background: #6a9526;
+  background: #4b8325;
 }
 .slick-slide .caption.box-green3 {
   background: #becaa8;

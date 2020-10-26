@@ -707,34 +707,34 @@
   background: #2e5016;
 }
 .box-green2 {
-  background: #6a9526;
+  background: #4b8325;
   color: #fcfcfc;
 }
 .box-green2 .header {
-  background: rgba(106, 149, 38, .83);
+  background: rgba(75, 131, 37, .83);
   color: #fcfcfc;
 }
 .box-green2.text-top .header {
-  background: #6a9526;
+  background: #4b8325;
 }
 .box-green2.outlined {
-  border: 1px solid #6a9526;
-  color: #6a9526;
+  border: 1px solid #4b8325;
+  color: #4b8325;
 }
 .box-green2.outlined .header {
   color: #fcfcfc;
 }
 .box-green2.outlined:hover {
-  border: 1px solid #5c8121;
+  border: 1px solid #406f1f;
 }
 .box-green2.outlined::before {
   color: inherit;
 }
 .box-green2.full:hover {
-  background: #5c8121;
+  background: #406f1f;
 }
 .box-green2.text-down:hover {
-  background: #5c8121;
+  background: #406f1f;
 }
 .box-green3 {
   background: #becaa8;
