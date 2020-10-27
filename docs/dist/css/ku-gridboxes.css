@@ -1807,3 +1807,6 @@
 .boxlink:focus {
   outline: 1px solid #2c6694;
 }
+.boxlink + .boxlink {
+  margin-top: 23px;
+}
