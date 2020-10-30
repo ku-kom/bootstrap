@@ -8,10 +8,6 @@
   background-color: @panel-bg;
   //border: 1px solid transparent;
   //border-radius: @panel-border-radius;
-  // KU:
-  // & + .panel {
-  //   margin-top: @grid-gutter-height;
-  // }
 }
 // Panel contents
 
@@ -32,6 +28,10 @@
       padding-top: 3px;
       padding-bottom: 3px;
     }
+  }
+
+  .newsDate {
+    margin-top: 5px;
   }
 }
 // Optional heading
@@ -54,11 +54,11 @@
   letter-spacing: 0.25px;
   color: inherit;
 
-  > .small > a,
+  > .small,
    > a,
    > small,
    > small > a,
-  > .small {
+  > .small > a {
     color: inherit;
   }
 
@@ -82,8 +82,8 @@
 // any kind of custom content between the two.
 
 .panel {
-  > .list-group,
-  > .panel-collapse > .list-group {
+  > .panel-collapse > .list-group,
+  > .list-group {
     margin-bottom: 0;
 
     .list-group-item {

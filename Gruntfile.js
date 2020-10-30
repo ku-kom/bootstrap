@@ -84,27 +84,6 @@ module.exports = function (grunt) {
         ]
       }
     },
-    // install "grunt-jscs": "~3.0.1": TOdo - remove js/.jscsrc
-    // jscs: {
-    //   options: {
-    //     config: 'js/.jscsrc'
-    //   },
-    //   grunt: {
-    //     src: '<%= jshint.grunt.src %>'
-    //   },
-    //   core: {
-    //     src: '<%= jshint.core.src %>'
-    //   },
-    //   test: {
-    //     src: '<%= jshint.test.src %>'
-    //   },
-    //   assets: {
-    //     options: {
-    //       requireCamelCaseOrUpperCaseIdentifiers: null
-    //     },
-    //     src: '<%= jshint.assets.src %>'
-    //   }
-    // },
 
     eslint: {
       options: {
@@ -361,26 +340,6 @@ module.exports = function (grunt) {
         src: 'docs/assets/css/src/docs.css'
       }
     },
-
-    // csslint: {
-    //   options: {
-    //     csslintrc: 'less/.csslintrc'
-    //   },
-    //   dist: [
-    //     'dist/css/bootstrap.css',
-    //     'dist/css/ku-gridboxes.css'
-    //   ],
-    //   examples: [
-    //     'docs/examples/**/*.css'
-    //   ],
-    //   docs: {
-    //     options: {
-    //       ids: false,
-    //       'overqualified-elements': false
-    //     },
-    //     src: 'docs/assets/css/src/docs.css'
-    //   }
-    // },
 
     cssmin: {
       options: {
