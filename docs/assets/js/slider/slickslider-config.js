@@ -7,7 +7,7 @@
   $(document).ready(function() {
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
-    var $newsslider = $('.row2');
+    var $newsslider = $('.newsslider > .container > .row');
     var $valueslider = $('.valueslider');
     var $user = $instaslider.attr('data-account');
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
@@ -134,7 +134,7 @@
       // Loop news
       $newsslider.each(function(i, k) {
         var $slider = $(this);
-        if ($slider.is('.newsslider')) {
+        //if ($slider.is('.newsslider')) {
           // Only slideshow on mobile
           if (window.matchMedia('(min-width: 991px)').matches) {
             if ($slider.hasClass('slick-initialized')) {
@@ -145,7 +145,7 @@
               $slider.slick(sliderSettings.news);
             }
           }
-        }
+        //}
       });
       // Loop value slider
       addplayPause($valueslider);

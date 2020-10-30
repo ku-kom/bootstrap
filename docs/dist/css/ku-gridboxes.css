@@ -467,34 +467,34 @@
   background: #b22b24;
 }
 .box-red3 {
-  background: #e94c25;
+  background: #db3b0a;
   color: #fcfcfc;
 }
 .box-red3 .header {
-  background: rgba(233, 76, 37, .83);
+  background: rgba(219, 59, 10, .83);
   color: #fcfcfc;
 }
 .box-red3.text-top .header {
-  background: #e94c25;
+  background: #db3b0a;
 }
 .box-red3.outlined {
-  border: 1px solid #e94c25;
-  color: #e94c25;
+  border: 1px solid #db3b0a;
+  color: #db3b0a;
 }
 .box-red3.outlined .header {
   color: #fcfcfc;
 }
 .box-red3.outlined:hover {
-  border: 1px solid #de3e16;
+  border: 1px solid #c33409;
 }
 .box-red3.outlined::before {
   color: inherit;
 }
 .box-red3.full:hover {
-  background: #de3e16;
+  background: #c33409;
 }
 .box-red3.text-down:hover {
-  background: #de3e16;
+  background: #c33409;
 }
 .box-blue1 {
   background: #122947;

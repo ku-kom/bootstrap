@@ -10419,16 +10419,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   background: #c73028;
 }
 .slick-slide .caption.box-red3 {
-  background: #e94c25;
+  background: #db3b0a;
   color: #fcfcfc;
 }
 @media (min-width: 768px) {
   .slick-slide .caption.box-red3 {
-    background: rgba(233, 76, 37, .83);
+    background: rgba(219, 59, 10, .83);
   }
 }
 .slick-slide .caption.box-red3.full-bg {
-  background: #e94c25;
+  background: #db3b0a;
 }
 .slick-slide .caption.box-blue1 {
   background: #122947;
