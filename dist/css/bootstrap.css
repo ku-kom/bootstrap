@@ -6699,6 +6699,9 @@ button.list-group-item-danger.active:focus {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+.panel-body .newsDate {
+  margin-top: 5px;
+}
 .panel-heading {
   padding: 6px 10px;
   border-bottom: 1px solid transparent;
@@ -6714,11 +6717,11 @@ button.list-group-item-danger.active:focus {
   letter-spacing: .25px;
   color: inherit;
 }
-.panel-title > .small > a,
+.panel-title > .small,
 .panel-title > a,
 .panel-title > small,
 .panel-title > small > a,
-.panel-title > .small {
+.panel-title > .small > a {
   color: inherit;
 }
 .panel-title > br {
@@ -6730,20 +6733,20 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.panel > .list-group,
-.panel > .panel-collapse > .list-group {
+.panel > .panel-collapse > .list-group,
+.panel > .list-group {
   margin-bottom: 0;
 }
-.panel > .list-group .list-group-item,
-.panel > .panel-collapse > .list-group .list-group-item {
+.panel > .panel-collapse > .list-group .list-group-item,
+.panel > .list-group .list-group-item {
   border-width: 1px 0;
 }
-.panel > .list-group:first-child .list-group-item:first-child,
-.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
+.panel > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
 }
-.panel > .list-group:last-child .list-group-item:last-child,
-.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
+.panel > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
 }
 .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
