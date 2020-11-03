@@ -9598,9 +9598,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.tiles-x .header-small {
-  min-height: 1.48em;
-}
 .tiles-x .date {
   -ms-flex-preferred-size: 37%;
   flex-basis: 37%;
