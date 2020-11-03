@@ -80,15 +80,14 @@
     }
 
     function videoButton(el, btn) {
+      // Video buttons
       var v = $(el).get(0);
-      if (v.paused) {
+      if (v.paused || v.ended) {
+        $(btn).removeClass('paused');
         v.play();
-        $(btn).find('.bi-play').addClass("hidden");
-        $(btn).find('.bi-pause').removeClass("hidden");
       } else {
+        $(btn).addClass('paused');
         v.pause();
-        $(btn).find('.bi-pause').addClass("hidden");
-        $(btn).find('.bi-play').removeClass("hidden");
       }
     }
 
@@ -119,18 +118,20 @@
             type: 'GET'
           }).done(function(data) {
             //console.log(data);
-            destroySlideshow();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+            var html = '';
             if (entry) {
               $.each(entry, function(i, v) {
                 var img = entry[i].node.thumbnail_src;
                 var shortcode = entry[i].node.shortcode;
                 var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
                 var caption = (cap) ? htmlEntities(cap.substring(0, 50) + '...') : '';
-                $instaslider.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>');
+                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
                 return i < $images - 1;
               });
-              debounce(initInstaSlideshow, 150);
+              $instaslider.append(html);
+              destroySlideshow();
+              initInstaSlideshow();
             }
           })
           .fail(function(xhr, textStatus, errorThrown) {
@@ -140,7 +141,6 @@
     }
 
     function initSlideshows() {
-      // TODO: Loop slider with one common slidername
       // Add buttons
       addplayPause($newsslider);
       addplayPause($valueslider);
@@ -148,7 +148,6 @@
       // Loop news and events
       $newsslider.each(function(i, k) {
         var $slider = $(this);
-        //if ($slider.is('.newsslider')) {
         // Only slideshow on mobile
         if (window.matchMedia('(min-width: 991px)').matches) {
           if ($slider.hasClass('slick-initialized')) {
@@ -159,8 +158,8 @@
             $slider.slick(sliderSettings.news);
           }
         }
-        //}
       });
+
       $eventslider.each(function(i, k) {
         var $slider = $(this);
         // Only slideshow on mobile
@@ -174,6 +173,7 @@
           }
         }
       });
+      
       // Value slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
     }

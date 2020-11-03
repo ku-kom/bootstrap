@@ -150,7 +150,7 @@ var setVolume = function(v) {
 // Toggles the media player's mute and unmute status
 var toggleMute = function() {
   if (video.muted) {
-    // Change the cutton to be a mute button
+    // Change the button to be a mute button
     changeButtonType(muteBtn, 'volume-up');
     muteBtn.title = 'Unmute';
     // Unmute the media player
