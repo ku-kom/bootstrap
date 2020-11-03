@@ -8,6 +8,7 @@
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.newsslider > .container > .row');
+    var $eventslider = $('.eventsslider');
     var $valueslider = $('.valueslider');
     var $user = $instaslider.attr('data-account');
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
@@ -23,18 +24,16 @@
     var sliderSettings = {
       instagram: {
         slidesToShow: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         speed: 1000,
         arrows: true,
-        dots: false,
         responsive: [
           {
             breakpoint: 767,
             settings: {
               slidesToShow: 1,
-              arrows: false,
-              dots: false
+              arrows: false
             }
           }
         ]
@@ -62,7 +61,7 @@
               slidesToScroll: 1,
               autoplay: true,
               dots: true,
-              arrows: true
+              arrows: false
             }
           }
         ]
@@ -77,6 +76,19 @@
             slick.$slider.append($button);
           }
         });
+      }
+    }
+
+    function videoButton(el, btn) {
+      var v = $(el).get(0);
+      if (v.paused) {
+        v.play();
+        $(btn).find('.bi-play').addClass("hidden");
+        $(btn).find('.bi-pause').removeClass("hidden");
+      } else {
+        v.pause();
+        $(btn).find('.bi-pause').addClass("hidden");
+        $(btn).find('.bi-play').removeClass("hidden");
       }
     }
 
@@ -107,6 +119,7 @@
             type: 'GET'
           }).done(function(data) {
             //console.log(data);
+            destroySlideshow();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             if (entry) {
               $.each(entry, function(i, v) {
@@ -117,8 +130,7 @@
                 $instaslider.append('<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>');
                 return i < $images - 1;
               });
-              destroySlideshow();
-              initInstaSlideshow();
+              debounce(initInstaSlideshow, 150);
             }
           })
           .fail(function(xhr, textStatus, errorThrown) {
@@ -131,30 +143,39 @@
       // TODO: Loop slider with one common slidername
       // Add buttons
       addplayPause($newsslider);
-      // Loop news
+      addplayPause($valueslider);
+      addplayPause($eventslider);
+      // Loop news and events
       $newsslider.each(function(i, k) {
         var $slider = $(this);
         //if ($slider.is('.newsslider')) {
-          // Only slideshow on mobile
-          if (window.matchMedia('(min-width: 991px)').matches) {
-            if ($slider.hasClass('slick-initialized')) {
-              $slider.slick('unslick');
-            }
-          } else {
-            if (!$slider.hasClass('slick-initialized')) {
-              $slider.slick(sliderSettings.news);
-            }
+        // Only slideshow on mobile
+        if (window.matchMedia('(min-width: 991px)').matches) {
+          if ($slider.hasClass('slick-initialized')) {
+            $slider.slick('unslick');
           }
+        } else {
+          if (!$slider.hasClass('slick-initialized')) {
+            $slider.slick(sliderSettings.news);
+          }
+        }
         //}
       });
-      // Loop value slider
-      addplayPause($valueslider);
-      $valueslider.each(function(i, k) {
-        var $vslider = $(this);
-        if ($vslider.is('.valueslider')) {
-          $vslider.not('.slick-initialized').slick(sliderSettings.value);
+      $eventslider.each(function(i, k) {
+        var $slider = $(this);
+        // Only slideshow on mobile
+        if (window.matchMedia('(min-width: 991px)').matches) {
+          if ($slider.hasClass('slick-initialized')) {
+            $slider.slick('unslick');
+          }
+        } else {
+          if (!$slider.hasClass('slick-initialized')) {
+            $slider.slick(sliderSettings.news);
+          }
         }
       });
+      // Value slider
+      $valueslider.not('.slick-initialized').slick(sliderSettings.value);
     }
 
     // Init scripts
@@ -165,13 +186,20 @@
     }
     initSlideshows();
 
+    // Html5 video buttons
+    videoButton('#hero-video', '.btn-video');
+    $('.btn-video').click(function() {
+      videoButton('#hero-video', '.btn-video');
+    });
+
     $(window).on('resize orientationchange', debounce(function() {
       destroySlideshow();
       initSlideshows();
       initInstaSlideshow();
     }, 250));
 
-    $(document).on('click', '.play-pause-button', function() {
+    $(document).on('click', '.slick-slider .play-pause-button', function() {
+      // Slider buttons
       var s = $(this).parent($slideshow);
       $(this).toggleClass('paused');
       if ($(this).hasClass('paused')) {

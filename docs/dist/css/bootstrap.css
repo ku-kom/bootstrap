@@ -7934,7 +7934,6 @@ nav {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  margin-bottom: 0;
   overflow: hidden;
   position: relative;
 }
@@ -9539,6 +9538,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-top: 0;
 }
 .tile-cat {
+  min-height: 24px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -9693,15 +9693,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
     font-size: 16px;
   }
 }
-.right-side .tiles-y .tile-link,
 .one-two-column .column1 .tiles-y .tile-link,
 .quad-column .tiles-y .tile-link,
+.right-side .tiles-y .tile-link,
 .triple-column .tiles-y .tile-link,
 .two-one-column .column2 .tiles-y .tile-link,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-link,
-.right-side .tiles-y .tilebox,
 .one-two-column .column1 .tiles-y .tilebox,
 .quad-column .tiles-y .tilebox,
+.right-side .tiles-y .tilebox,
 .triple-column .tiles-y .tilebox,
 .two-one-column .column2 .tiles-y .tilebox,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tilebox {
@@ -9709,9 +9709,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tilebox {
       flex-direction: column;
   padding: 0 0 10px;
 }
-.right-side .tiles-y .tile-content,
 .one-two-column .column1 .tiles-y .tile-content,
 .quad-column .tiles-y .tile-content,
+.right-side .tiles-y .tile-content,
 .triple-column .tiles-y .tile-content,
 .two-one-column .column2 .tiles-y .tile-content,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-content {
@@ -9719,9 +9719,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-content {
       flex: 1 1 auto;
   padding-top: 10px;
 }
-.right-side .tiles-y .tile-img,
 .one-two-column .column1 .tiles-y .tile-img,
 .quad-column .tiles-y .tile-img,
+.right-side .tiles-y .tile-img,
 .triple-column .tiles-y .tile-img,
 .two-one-column .column2 .tiles-y .tile-img,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img {
@@ -9729,9 +9729,9 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img {
       flex: 0 0 auto;
   margin-left: 0;
 }
-.right-side .tiles-y .tile-img img,
 .one-two-column .column1 .tiles-y .tile-img img,
 .quad-column .tiles-y .tile-img img,
+.right-side .tiles-y .tile-img img,
 .triple-column .tiles-y .tile-img img,
 .two-one-column .column2 .tiles-y .tile-img img,
 body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
