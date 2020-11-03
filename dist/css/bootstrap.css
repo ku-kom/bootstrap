@@ -7837,15 +7837,15 @@ nav {
   }
 }
 @media (max-width: 767px) {
-  #content .container {
+  main .container {
     padding-left: 13px;
     padding-right: 13px;
   }
-  #content .row {
+  main .row {
     margin-left: -13px;
     margin-right: -13px;
   }
-  #content [class*="col-"] {
+  main [class*="col-"] {
     padding-left: 13px;
     padding-right: 13px;
   }
