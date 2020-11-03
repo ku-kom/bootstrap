@@ -9538,7 +9538,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-top: 0;
 }
 .tile-cat {
-  min-height: 24px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -9596,8 +9595,11 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: none;
 }
 .tiles-x .header-small {
-  -ms-flex-preferred-size: 63%;
-  flex-basis: 63%;
+  min-height: 24px;
+}
+.tiles-x .date {
+  -ms-flex-preferred-size: 37%;
+  flex-basis: 37%;
 }
 .tiles-x .tile-img {
   overflow: hidden;
