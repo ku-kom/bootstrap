@@ -79,6 +79,19 @@
       }
     }
 
+    function videoButton(el, btn) {
+      var v = $(el).get(0);
+      if (v.paused) {
+        v.play();
+        $(btn).find('.bi-play').addClass("hidden");
+        $(btn).find('.bi-pause').removeClass("hidden");
+      } else {
+        v.pause();
+        $(btn).find('.bi-pause').addClass("hidden");
+        $(btn).find('.bi-play').removeClass("hidden");
+      }
+    }
+
     function initInstaSlideshow() {
       addplayPause($instaslider);
       // Create Instagram slider
@@ -173,13 +186,20 @@
     }
     initSlideshows();
 
+    // Html5 video buttons
+    videoButton('#hero-video', '.btn-video');
+    $('.btn-video').click(function() {
+      videoButton('#hero-video', '.btn-video');
+    });
+
     $(window).on('resize orientationchange', debounce(function() {
       destroySlideshow();
       initSlideshows();
       initInstaSlideshow();
     }, 250));
 
-    $(document).on('click', '.play-pause-button', function() {
+    $(document).on('click', '.slick-slider .play-pause-button', function() {
+      // Slider buttons
       var s = $(this).parent($slideshow);
       $(this).toggleClass('paused');
       if ($(this).hasClass('paused')) {
