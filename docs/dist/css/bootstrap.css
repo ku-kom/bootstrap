@@ -9595,7 +9595,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   display: none;
 }
 .tiles-x .header-small {
-  min-height: 24px;
+  min-height: 1.48em;
 }
 .tiles-x .date {
   -ms-flex-preferred-size: 37%;
