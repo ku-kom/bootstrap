@@ -19,12 +19,6 @@
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .main-content {
-    padding-top: 23px;
-  }
-}
-
 @media screen and (min-width: 992px) {
   /* Flexible box tweaks*/
   .GridForside .double-column .gridbox.size1 .box2 {
