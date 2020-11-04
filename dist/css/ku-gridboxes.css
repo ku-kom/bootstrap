@@ -468,11 +468,11 @@
 }
 .box-red3 {
   background: #db3b0a;
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-red3 .header {
   background: rgba(219, 59, 10, .83);
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-red3.text-top .header {
   background: #db3b0a;
@@ -482,7 +482,7 @@
   color: #db3b0a;
 }
 .box-red3.outlined .header {
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-red3.outlined:hover {
   border: 1px solid #c33409;
