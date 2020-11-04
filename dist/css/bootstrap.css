@@ -9599,6 +9599,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-x .tile-body {
   display: none;
 }
+.tiles-x .tile-body > p {
+  margin-top: 0;
+}
 .tiles-x .tile-cat {
   -ms-flex-negative: 0;
   flex-shrink: 0;
