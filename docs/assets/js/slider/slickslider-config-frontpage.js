@@ -20,7 +20,7 @@
     }
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
-    var $newsslider = $('.newsslider > .container > .row');
+    var $newsslider = $('.slide-columns > .container > .row');
     var $eventslider = $('.eventsslider');
     var $valueslider = $('.valueslider');
     var $user = $instaslider.attr('data-account');
@@ -73,7 +73,6 @@
               slidesToShow: 1,
               slidesToScroll: 1,
               autoplay: true,
-              dots: true,
               arrows: false
             }
           }
@@ -114,9 +113,9 @@
 
     function destroySlideshow() {
       // Remove slide show
-      if ($slideshow.hasClass('slick-initialized')) {
-        $slideshow.slick('destroy');
-      }
+      $slideshow.each(function(i, k) {
+        $(this).slick('unslick');
+      });
     }
 
     function htmlEntities(str) {
@@ -133,6 +132,7 @@
             type: 'GET'
           }).done(function(data) {
             //console.log(data);
+            destroySlideshow();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             var html = '';
             if (entry) {
@@ -145,7 +145,6 @@
                 return i < $images - 1;
               });
               $instaslider.append(html);
-              destroySlideshow();
               initInstaSlideshow();
             }
           })
