@@ -10431,7 +10431,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 .slick-slide .caption.box-red3 {
   background: #db3b0a;
-  color: #fcfcfc;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .slick-slide .caption.box-red3 {

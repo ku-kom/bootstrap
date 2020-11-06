@@ -5,6 +5,19 @@
 
 
   $(document).ready(function() {
+    var lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
+    var translations;
+    if (lang == 'da') {
+      translations = {
+        "pause": "Sæt på pause",
+        "play": "Afspil"
+      }
+    } else { //English
+      translations = {
+        "pause": "Pause",
+        "play": "Play"
+      }
+    }
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.newsslider > .container > .row');
@@ -84,9 +97,11 @@
       var v = $(el).get(0);
       if (v.paused || v.ended) {
         $(btn).removeClass('paused');
+        $(btn).attr('aria-label', translations.pause);
         v.play();
       } else {
         $(btn).addClass('paused');
+        $(btn).attr('aria-label', translations.play);
         v.pause();
       }
     }
@@ -173,7 +188,7 @@
           }
         }
       });
-      
+
       // Value slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
     }
@@ -203,8 +218,10 @@
       var s = $(this).parent($slideshow);
       $(this).toggleClass('paused');
       if ($(this).hasClass('paused')) {
+        $(this).attr('aria-label', translations.play);
         s.slick('slickPause');
       } else {
+        $(this).attr('aria-label', translations.pause);
         s.slick('slickPlay');
       }
     });
