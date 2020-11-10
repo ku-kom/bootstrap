@@ -386,7 +386,7 @@ blockquote {
   font-size: @blockquote-font-size;
   .icon-quote;
 
-  &:before {
+  &::before {
     top: 10px;
     left: 0;
     font-size: 45px;
@@ -422,7 +422,7 @@ blockquote {
   &.full-width {
     width: 100%;
     padding: 0;
-    margin: 5px 0 15px;
+    margin: @grid-gutter-height 0;
     float: none;
   }
 }
