@@ -1906,7 +1906,7 @@ blockquote {
   width: 100%;
   position: relative;
   margin: 23px 0;
-  font-size: 16.25px;
+  font-size: 1.3em;
 }
 @media (min-width: 768px) {
   blockquote {
@@ -1914,6 +1914,7 @@ blockquote {
     width: 49%;
     margin: 0 0 7px 10px;
     padding: 0 0 9.5px 19px;
+    font-size: 16.25px;
   }
 }
 blockquote:before {
