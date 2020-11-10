@@ -1904,15 +1904,16 @@ abbr[data-original-title] {
 }
 blockquote {
   width: 100%;
-  float: right;
   position: relative;
-  padding: 0 0 9.5px 19px;
-  margin: 0 0 7px 10px;
+  margin: 23px 0;
   font-size: 16.25px;
 }
 @media (min-width: 768px) {
   blockquote {
+    float: right;
     width: 49%;
+    margin: 0 0 7px 10px;
+    padding: 0 0 9.5px 19px;
   }
 }
 blockquote:before {

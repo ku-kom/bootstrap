@@ -376,14 +376,15 @@ abbr[data-original-title] {
 blockquote {
   // KU:
   width: 100%;
-  @media (min-width: @screen-sm-min) {
-    width: 49%;
-  }
-  float: right;
   position: relative;
-  padding: 0 0 (@line-height-computed / 2) @line-height-computed;
-  margin: 0 0 7px 10px;
+  margin: @grid-gutter-height 0;
   font-size: @blockquote-font-size;
+  @media (min-width: @screen-sm-min) {
+    float: right;
+    width: 49%;
+    margin: 0 0 7px 10px;
+    padding: 0 0 (@line-height-computed / 2) @line-height-computed;
+  }
   .icon-quote;
 
   &::before {
