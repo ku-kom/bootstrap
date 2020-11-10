@@ -12357,6 +12357,9 @@ form.gdpr-accept .btn + .btn {
     margin-top: 3px;
   }
 }
+.sitemap li ul {
+  margin-left: 40px;
+}
 .mce-content-body#content {
   display: block;
   text-align: left;
