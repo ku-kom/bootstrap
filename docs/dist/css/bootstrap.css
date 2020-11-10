@@ -12163,7 +12163,8 @@ p[align="right"]:before {
   font-size: 16px;
 }
 .factbox {
-  background-color: #e7e7e7;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
   font-size: 12px;
   line-height: 1.4;
   padding: 15px;
