@@ -2838,6 +2838,7 @@ th {
   border-top: 1px solid #ddd;
 }
 .table > thead > tr > th {
+  font-size: 13px;
   vertical-align: bottom;
   border-bottom: 1px solid #ddd;
 }

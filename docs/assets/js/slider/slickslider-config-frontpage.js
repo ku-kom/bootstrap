@@ -6,7 +6,7 @@
 
   $(document).ready(function() {
     var lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
-    var translations;
+      var translations;
     if (lang == 'da') {
       translations = {
         "pause": "Sæt på pause",
@@ -200,8 +200,6 @@
     }
     initSlideshows();
 
-    // Html5 video buttons
-    videoButton('#hero-video', '.btn-video');
     $('.btn-video').click(function() {
       videoButton('#hero-video', '.btn-video');
     });
