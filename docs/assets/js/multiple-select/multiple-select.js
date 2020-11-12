@@ -3120,6 +3120,7 @@
          this.selectAllName = "data-name=\"selectAll".concat(name, "\"");
          this.selectGroupName = "data-name=\"selectGroup".concat(name, "\"");
          this.selectItemName = "data-name=\"selectItem".concat(name, "\"");
+         this.selectItemName += "aria-label=\""+ this.$label +"\"";
 
          if (!this.options.keepOpen) {
            var clickEvent = getDocumentClickEvent(this.$el.attr('id'));
