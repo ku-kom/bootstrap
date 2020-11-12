@@ -3120,7 +3120,7 @@
          this.selectAllName = "data-name=\"selectAll".concat(name, "\"");
          this.selectGroupName = "data-name=\"selectGroup".concat(name, "\"");
          this.selectItemName = "data-name=\"selectItem".concat(name, "\"");
-         this.selectItemName += "aria-label=\""+ this.$label +"\"";
+         this.ariaLabel = "aria-label=\"".concat(name, "\"");
 
          if (!this.options.keepOpen) {
            var clickEvent = getDocumentClickEvent(this.$el.attr('id'));
@@ -3492,7 +3492,7 @@
            classes += "option-level-".concat(level, " ");
          }
 
-         return ["\n      <li class=\"".concat(multiple, " ").concat(classes, "\" ").concat(title, " ").concat(style, ">\n      <label class=\"").concat(row.disabled ? 'disabled' : '', "\">\n      <input type=\"").concat(type, "\"\n        value=\"").concat(row.value, "\"\n        data-key=\"").concat(row._key, "\"\n        ").concat(this.selectItemName, "\n        ").concat(row.selected ? ' checked="checked"' : '', "\n        ").concat(row.disabled ? ' disabled="disabled"' : '', "\n      >\n      <span>").concat(row.text, "</span>\n      </label>\n      </li>\n    ")];
+         return ["\n      <li class=\"".concat(multiple, " ").concat(classes, "\" ").concat(title, " ").concat(style, ">\n      <label class=\"").concat(row.disabled ? 'disabled' : '', "\">\n      <input type=\"").concat(type, "\"\n        value=\"").concat(row.value, "\"\n   aria-label=\"").concat(row.value, "\"\n       data-key=\"").concat(row._key, "\"\n        ").concat(this.selectItemName, "\n        ").concat(row.selected ? ' checked="checked"' : '', "\n        ").concat(row.disabled ? ' disabled="disabled"' : '', "\n      >\n      <span>").concat(row.text, "</span>\n      </label>\n      </li>\n    ")];
        }
      }, {
        key: "events",
