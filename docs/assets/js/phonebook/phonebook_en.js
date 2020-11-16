@@ -87,6 +87,7 @@
 
 
     function generate_table() {
+      var $pager = $('<ul class="pagination" />');
       var $ul = $('<ul class="media-list" id="emp" />');
       var $li;
       $feedback.html('');
@@ -144,6 +145,8 @@
         $feedback.html('Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix);
       }
       $box.append($ul);
+      $pager.insertBefore($box);
+      $pager.insertAfter($box);
     }
 
     apply_pagination = function() {
