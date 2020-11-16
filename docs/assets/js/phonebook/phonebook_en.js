@@ -2,6 +2,7 @@
 // Nanna Ellegaard, KU KOM.
 (function($) {
   var $form = $('#phoneform'),
+    $box = $('#box'),
     $output = $('#emp'),
     $input = $('#soge'),
     $feedback = $('#feedback'),
@@ -86,9 +87,10 @@
 
 
     function generate_table() {
+      var $ul = $('<ul class="media-list" id="emp" />');
       var $li;
       $feedback.html('');
-      $output.html('');
+      $box.html('');
       $loading.hide();
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
@@ -133,7 +135,7 @@
           '</dl>';
 
         $li.append(html);
-        $output.append($li);
+        $ul.append($li);
 
         var current = (recordsIndex === 0) ? (recordsIndex + 1) : recordsIndex;
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
@@ -141,6 +143,7 @@
 
         $feedback.html('Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix);
       }
+      $box.append($li);
     }
 
     apply_pagination = function() {
