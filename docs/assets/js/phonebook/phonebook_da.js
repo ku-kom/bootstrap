@@ -2,6 +2,7 @@
 // Nanna Ellegaard, KU KOM.
 (function($) {
   var $form = $('#phoneform'),
+    $box = $('#box'),
     $output = $('#emp'),
     $input = $('#soge'),
     $feedback = $('#feedback'),
@@ -27,7 +28,7 @@
   $('#go-find').on('click', function(e) {
     e.preventDefault();
     $feedback.html('');
-    $output.html('');
+    $box.html('');
     if (!$.trim($input.val()).length) {
       $input.focus();
       $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Angiv s&oslash;geord<div>');
@@ -42,7 +43,7 @@
     $input.focus();
     $reset.addClass('inactive');
     $feedback.html('');
-    $output.html('');
+    $box.html('');
     $pager.twbsPagination('destroy');
   });
 
@@ -86,9 +87,10 @@
 
 
     function generate_table() {
+      var $ul = $('<ul class="media-list" id="emp" />');
       var $li;
       $feedback.html('');
-      $output.html('');
+      $box.html('');
       $loading.hide();
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
@@ -119,7 +121,7 @@
           '</dl>';
 
         $li.append(html);
-        $output.append($li);
+        $ul.append($li);
 
         var current = (recordsIndex === 0) ? (recordsIndex + 1) : recordsIndex;
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
@@ -127,6 +129,7 @@
 
         $feedback.html('Viser ' + current + ' til ' + currentMax + ' ud af ' + $totalRecords + ' ' + suffix);
       }
+      $box.append($ul);
     }
 
     apply_pagination = function() {
