@@ -10,7 +10,7 @@
     $reset = $('#reset'),
     lang = $('#lang').val() || 'da',
     $totalRecords = 0,
-    $pager,
+    $pager = $('.pagination'),
     result = [],
     employees = [],
     apply_pagination,
@@ -87,7 +87,7 @@
 
 
     function generate_table() {
-      var $nav = $('<ul class="pagination" />');
+      var $pager = $('<ul class="pagination" />');
       var $ul = $('<ul class="media-list" id="emp" />');
       var $li;
       $feedback.html('');
@@ -145,9 +145,6 @@
         $feedback.html('Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix);
       }
       $box.append($ul);
-      $nav.insertBefore($box);
-      $nav.insertAfter($box);
-      $pager = $('.pagination');
     }
 
     apply_pagination = function() {
