@@ -87,6 +87,7 @@
 
     function generate_table() {
       var $li;
+      var $ul = $.parseHTML('<ul class="media-list" id="emp">');
       $feedback.html('');
       $output.html('');
       $loading.hide();
@@ -119,7 +120,7 @@
           '</dl>';
 
         $li.append(html);
-        $output.append($li);
+        $ul.append($li);
 
         var current = (recordsIndex === 0) ? (recordsIndex + 1) : recordsIndex;
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
@@ -127,6 +128,7 @@
 
         $feedback.html('Viser ' + current + ' til ' + currentMax + ' ud af ' + $totalRecords + ' ' + suffix);
       }
+      $output.append($li);
     }
 
     apply_pagination = function() {
