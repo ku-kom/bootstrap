@@ -87,7 +87,6 @@
 
 
     function generate_table() {
-      var $pager = $('<ul class="pagination" />');
       var $ul = $('<ul class="media-list" id="emp" />');
       var $li;
       $feedback.html('');
