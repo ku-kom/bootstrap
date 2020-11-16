@@ -28,7 +28,7 @@
   $('#go-find').on('click', function(e) {
     e.preventDefault();
     $feedback.html('');
-    $output.html('');
+    $box.html('');
     if (!$.trim($input.val()).length) {
       $input.focus();
       $feedback.append('<div class="alert alert-danger" role="alert" aria-atomic="true">Enter search terms<div>');
@@ -43,7 +43,7 @@
     $input.focus();
     $reset.addClass('inactive');
     $feedback.html('');
-    $output.html('');
+    $box.html('');
     $pager.twbsPagination('destroy');
   });
 
@@ -143,7 +143,7 @@
 
         $feedback.html('Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix);
       }
-      $box.append($li);
+      $box.append($ul);
     }
 
     apply_pagination = function() {
