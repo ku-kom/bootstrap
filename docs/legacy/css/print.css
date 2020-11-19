@@ -1,0 +1,155 @@
+/* Print CSS */
+
+
+/* author: Frank Thomsen @ Magenta ApS 2011 */
+
+
+/* New revised print styles for printed content from www.ku.dk */
+html {
+  position: relative;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  font: 10pt/1.5 Verdana, Arial, Helvetica, sans-serif !important;
+  color: #000 !important;
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#nav, #nav-global, #nav-sub, #search, #skip-to, #style-switcher, #wrapper-crumb-trail, .nav, #globalfooter, #nav-globalmenu, #nav-wrapper, #global-tools, #global-search, #cookie_box {
+  display: none;
+}
+
+#wrapper, #content-wrapper, #content, #footer, #nav-wrapper {
+  border: none !important;
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav-wrapper {
+  border-top: solid 0 #666 !important;
+}
+
+#branding-decoration {
+  background-image: none!important;
+}
+
+#branding-global, #branding-unit, #nav-wrapper {
+  float: left;
+}
+
+#branding-unit {
+  clear: left;
+}
+
+#footer {
+  border-top: solid 1px #ccc !important;
+  padding-top: 1em !important;
+  margin-top: 1em !important;
+}
+
+#content {
+  border-top: 0;
+  padding-top: 3em !important;
+}
+
+/* #content table {
+  page-break-after: auto
+}
+
+#content tr {
+  page-break-inside: avoid;
+  page-break-after: auto
+}
+
+#content td {
+  page-break-inside: avoid;
+  page-break-after: auto
+} */
+
+#content thead {
+  display: table-header-group
+}
+
+#content tfoot {
+  display: table-footer-group
+}
+
+#content ul#nyhedsliste li {
+  overflow: hidden;
+}
+
+div#footer-col-right {
+  padding: 0;
+}
+
+#content div#col-left, #content div#col-right, #content div#col-mid {
+  float: none;
+  width: 100%;
+}
+
+div#sidebar {
+  float: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#content.subpage .ui-accordion-content {
+  display: block!important;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visible-lg {
+  display: initial !important;
+}
+
+.hidden-lg {
+  display: none !important;
+}
+
+.rightbox-normal, .rightBox {
+  display: block;
+  page-break-inside: avoid;
+}
+
+.print-me {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.print-me h1 {
+  font-size: 1.1em !important;
+  padding: 0.5em 0 0 !important;
+  margin: 0 0 1.5em !important;
+  color: #4A4949 !important;
+}
+
+div#perm_cookie_box, div#sidr-main, div#sidr-right, a#responsive-globalmenu-button, div#mobile-header, div.slider-wrapper {
+  display: none;
+}
+
+div#content-wrapper {
+  border: 1px solid #fff !important;
+}
+
+@media only screen and (max-width: 460px) {
+  .visible-xs {
+    display: initial !important;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+}
