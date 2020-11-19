@@ -5990,7 +5990,9 @@ textarea[id*="extra_html_body"] {
 input.newsbox {
   padding-bottom: 1px;
 }
-
+.sub-theme-picker {
+  margin-top: 15px;
+}
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
 #webstedinfo {
