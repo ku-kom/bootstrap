@@ -57,7 +57,7 @@
     "markdown-it": "^12.0.2",
     "shelljs": "^0.8.4",
     "shx": "^0.3.3",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "text-table": "^0.2.0",
     "time-grunt": "^2.0.0"
   },
