@@ -5993,9 +5993,12 @@ input.newsbox {
 .sub-theme-picker {
   margin-top: 15px;
 }
+.gccolumn .gridbox.outlined.with-img, .preview-output .gridbox.outlined.with-img {
+  border: 0;
+}
 /* Remove shortly */
 /* New subsite editing interface - comment for cmstest01*/
-/* #webstedinfo {
+#webstedinfo {
   position: absolute;
   right: 0;
   width: 23em;
@@ -6068,6 +6071,6 @@ input.newsbox {
 
 #webstedinfo div.no-website-spacer {
   height: 2.5em;
-} */
+}
 
 /* end */
