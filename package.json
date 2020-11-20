@@ -52,7 +52,7 @@
     "grunt-exec": "~3.0.0",
     "grunt-html": "^14.2.0",
     "grunt-jekyll": "~1.0.1",
-    "grunt-stylelint": "^0.15.0",
+    "grunt-stylelint": "^0.16.0",
     "load-grunt-tasks": "~5.1.0",
     "markdown-it": "^12.0.2",
     "shelljs": "^0.8.4",
