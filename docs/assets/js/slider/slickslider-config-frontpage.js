@@ -21,7 +21,6 @@
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.slide-columns > .container > .row');
-    var $eventslider = $('.eventsslider');
     var $valueslider = $('.valueslider');
     var $user = $instaslider.attr('data-account');
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
@@ -167,23 +166,8 @@
       // Add buttons
       addplayPause($newsslider);
       addplayPause($valueslider);
-      addplayPause($eventslider);
       // Loop news and events
       $newsslider.each(function(i, k) {
-        var $slider = $(this);
-        // Only slideshow on mobile
-        if (window.matchMedia('(min-width: 991px)').matches) {
-          if ($slider.hasClass('slick-initialized')) {
-            $slider.slick('unslick');
-          }
-        } else {
-          if (!$slider.hasClass('slick-initialized')) {
-            $slider.slick(sliderSettings.news);
-          }
-        }
-      });
-
-      $eventslider.each(function(i, k) {
         var $slider = $(this);
         // Only slideshow on mobile
         if (window.matchMedia('(min-width: 991px)').matches) {
