@@ -1,3 +1,4 @@
+
 /* NEL, KU KOM Script to fetch images from Instagram by account nane.
  * Needs html like this: <div id="ig" data-account="university_of_copenhagen" data-token="xxxx" data-images="3" data-hidemobile="false" class="gridbox with-img size2">
    <div class="box1">
@@ -38,14 +39,24 @@
       }
       $container.empty();
       if (account) {
-        var $url = "https://www.instagram.com/" + encodeURIComponent($accountName) + "?__a=1";
-        $.ajax({
-            url: $url,
-            type: 'GET'
-          }).done(function(data) {
-            //console.log(data);
-            $loading.hide();
-            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+        var $url = "https://www.instagram.com/" + encodeURIComponent($accountName);
+        $.get($url, function(data) {
+            try {
+              data = data.split("window._sharedData = ")[1].split("<\/script>")[0];
+            } catch (e) {
+              console.log('Instagram Feed: It looks like the profile you are trying to fetch is age restricted. See https://github.com/jsanahuja/InstagramFeed/issues/26', 3);
+              return;
+            }
+            data = JSON.parse(data.substr(0, data.length - 1));
+            data = data.entry_data.ProfilePage || data.entry_data.TagPage;
+            if (typeof data === "undefined") {
+              console.log('Instagram Feed: It looks like YOUR network has been temporary banned because of too many requests. See https://github.com/jsanahuja/jquery.instagramFeed/issues/25', 4);
+              return;
+            }
+            data = data[0].graphql.user || data[0].graphql.hashtag;
+            console.log(data);
+
+            var entry = data.edge_owner_to_timeline_media.edges;
             if (entry) {
               $.each(entry, function(i, v) {
                 var img = entry[i].node.thumbnail_src;
