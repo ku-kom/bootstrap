@@ -1,4 +1,4 @@
-/*global debounce*/
+/*global debounce, JSON*/
 /* NEL, KU KOM Script to fetch images from Instagram by account name and apply slick slider.*/
 (function($) {
   'use strict';
@@ -6,7 +6,7 @@
 
   $(document).ready(function() {
     var lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
-      var translations;
+    var translations;
     if (lang == 'da') {
       translations = {
         "pause": "Sæt på pause",
@@ -126,14 +126,23 @@
     function getInstagramByAccount(account) {
       // Fetch Instagram images by account
       if (account) {
-        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '?__a=1';
-        $.ajax({
-            url: $url,
-            type: 'GET'
-          }).done(function(data) {
-            //console.log(data);
+        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName);
+        $.get($url, function(data) {
+            try {
+              data = data.split("window._sharedData = ")[1].split("<\/script>")[0];
+            } catch (e) {
+              console.log('Instagram Feed: It looks like the profile you are trying to fetch is age restricted. See https://github.com/jsanahuja/InstagramFeed/issues/26', 3);
+              return;
+            }
+            data = JSON.parse(data.substr(0, data.length - 1));
+            data = data.entry_data.ProfilePage;
+            if (typeof data === "undefined") {
+              console.log('Instagram Feed: It looks like YOUR network has been temporary banned because of too many requests. See https://github.com/jsanahuja/jquery.instagramFeed/issues/25', 4);
+              return;
+            }
+            data = data[0].graphql.user || data[0].graphql.hashtag;
             destroySlideshow();
-            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+            var entry = data.edge_owner_to_timeline_media.edges;
             var html = '';
             if (entry) {
               $.each(entry, function(i, v) {
