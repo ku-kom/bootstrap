@@ -55,7 +55,7 @@
             }
             data = data[0].graphql.user || data[0].graphql.hashtag;
             //console.log(data);
-
+            $loading.hide(); 
             var entry = data.edge_owner_to_timeline_media.edges;
             if (entry) {
               $.each(entry, function(i, v) {
