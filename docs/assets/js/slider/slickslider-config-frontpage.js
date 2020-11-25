@@ -18,6 +18,18 @@
         "play": "Play"
       }
     }
+
+    var escape_map = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+      '/': '&#x2F;',
+      '`': '&#x60;',
+      '=': '&#x3D;'
+    };
+
     var $slideshow = $('.slick-slider');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.slide-columns > .container > .row');
@@ -117,9 +129,14 @@
       });
     }
 
-    function htmlEntities(str) {
-      // Encode html for safety
-      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    function escape_string(str) {
+      return str.replace(/[&<>"'`=\/]/g, function(chars) {
+        return escape_map[chars];
+      });
+    }
+
+    function maxChars(text, count) {
+      return text.slice(0, count) + (text.length > count ? '...' : '');
     }
 
     function getInstagramByAccount(account) {
@@ -143,17 +160,18 @@
             destroySlideshow();
             var entry = data.edge_owner_to_timeline_media.edges;
             var html = '';
+            var caption;
             if (entry) {
               $.each(entry, function(i, v) {
                 var img = entry[i].node.thumbnail_src;
                 var shortcode = entry[i].node.shortcode;
                 var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
-                var caption = (cap) ? htmlEntities(cap.substring(0, 50) + '...') : '';
-                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
+                caption = escape_string(maxChars(cap, 50));
+                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + '" target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
                 return i < $images - 1;
               });
               $instaslider.append(html);
-              initInstaSlideshow();
+              setTimeout(initInstaSlideshow, 1000);
             }
           })
           .fail(function(xhr, textStatus, errorThrown) {

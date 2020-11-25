@@ -12217,6 +12217,9 @@ form.gdpr-accept .gdpr-label input[type=checkbox] {
 form.gdpr-accept .btn + .btn {
   margin-left: 10px;
 }
+.image-presentation .slide-link {
+  cursor: default;
+}
 .image-presentation .slick-slide {
   display: block;
   float: none;
@@ -12326,8 +12329,8 @@ form.gdpr-accept .btn + .btn {
   right: 16px;
   bottom: -25px;
 }
-.radiolabel,
-.gdpr-label {
+.gdpr-label,
+.radiolabel {
   font-weight: 400;
 }
 #symplifysignupform .gdpr-accept {

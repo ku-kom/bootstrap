@@ -304,7 +304,6 @@
 // Newsletter and GDPR
 
 form.gdpr-accept {
-
   label[for="email"] {
     margin-bottom: 5px;
   }
@@ -329,6 +328,10 @@ form.gdpr-accept {
 // Element for static images with text overlay just like slick slider - just not sliding:
 
 .image-presentation {
+  .slide-link {
+    cursor: default;
+  }
+
   .slick-slide {
     display: block;
     float: none;
@@ -449,7 +452,8 @@ form.gdpr-accept {
   }
 }
 
-.radiolabel, .gdpr-label {
+.gdpr-label,
+.radiolabel {
   font-weight: 400;
 }
 
@@ -490,6 +494,7 @@ form.gdpr-accept {
     @media (min-width: @screen-sm) {
       margin-top: 3px;
     }
+
     ul {
       margin-left: 15px;
     }
