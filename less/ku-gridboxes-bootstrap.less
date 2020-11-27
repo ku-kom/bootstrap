@@ -21,225 +21,225 @@
   display: flex;
   flex-direction: column;
 
-  &.faculty_color {
-    background: @ku-red;
-    color: @white-color;
-
-    .header {
-      background: fade(@ku-red, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @ku-red;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @ku-red;
-      color: @ku-red;
-
-      &:hover {
-        border: 1px solid @ku-red-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @ku-red-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @ku-red-hover;
-      }
-    }
-  }
-
-  &.subcolor_5 {
-    background: @ku-gray;
-
-    .header {
-      background: fade(@ku-gray, 90%);
-      color: @ku-gridbox-text;
-    }
-
-    &.text-top {
-      .header {
-        background: fade(@ku-gray, 90%);
-        color: @ku-gridbox-text;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @gray-dark;
-      color: @ku-gridbox-text;
-
-      &::before {
-        color: @ku-gridbox-text;
-      }
-
-      &.with-img {
-        &:hover {
-          background: @gray-lighter;
-        }
-      }
-    }
-
-    &.full {
-      color: @ku-gridbox-text;
-
-      &:hover {
-        background: @ku-gray-hover;
-      }
-
-      .header {
-        color: @ku-gridbox-text;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @ku-gray-hover;
-      }
-    }
-
-    &::before {
-      color: @ku-gridbox-text;
-    }
-
-    .text {
-      color: @ku-gridbox-text;
-    }
-  }
-
-  &.subcolor_6 {
-    background: @white-color;
-
-    .header {
-      background: fade(@white-color, 90%);
-      color: @gray-dark;
-    }
-
-    &.text-top {
-      .header {
-        background: @white-color;
-        color: @gray-dark;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @gray-dark;
-      color: @gray-dark;
-
-      &:hover {
-        background: @gray-lighter;
-      }
-
-      &.with-img {
-        &:hover {
-          border: 1px solid @gray-dark;
-        }
-      }
-    }
-
-    &.full {
-      background: @white-color;
-      color: @gray-dark;
-
-      .header {
-        color: @gray-dark;
-      }
-
-      &::before {
-        color: @gray-dark;
-      }
-
-      &:hover {
-        background: @white-color-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @white-color-hover;
-      }
-
-      &:not(.with-img) {
-        border: 1px solid @gray-dark;
-      }
-    }
-
-    &::before {
-      color: @gray-dark;
-    }
-
-    .text {
-      color: @gray-dark;
-    }
-  }
-
-  &.subcolor_7 {
-    background: @brown;
-    color: @white-color;
-
-    .header {
-      background: fade(@brown, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @brown;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @brown;
-      color: @ku-gridbox-text;
-
-      &:hover {
-        border: 1px solid @brown-hover;
-      }
-
-      &.with-img {
-        &:hover {
-          background: @gray-lighter;
-          border: 1px solid @brown-hover;
-        }
-      }
-
-      &::before {
-        color: @brown;
-      }
-    }
-
-    &.full {
-      background: @brown;
-      color: @white-color;
-
-      .header {
-        color: @white-color;
-      }
-
-      &:hover {
-        background: @brown-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @brown-hover;
-      }
-    }
-
-    &::before {
-      color: @white-color;
-    }
-  }
+  // &.faculty_color {
+  //   background: @ku-red;
+  //   color: @white-color;
+  //
+  //   .header {
+  //     background: fade(@ku-red, 83%);
+  //     color: @white-color;
+  //   }
+  //
+  //   &.text-top {
+  //     .header {
+  //       background: @ku-red;
+  //     }
+  //   }
+  //
+  //   &.outlined {
+  //     border: 1px solid @ku-red;
+  //     color: @ku-red;
+  //
+  //     &:hover {
+  //       border: 1px solid @ku-red-hover;
+  //     }
+  //   }
+  //
+  //   &.full {
+  //     &:hover {
+  //       background: @ku-red-hover;
+  //     }
+  //   }
+  //
+  //   &.text-down {
+  //     &:hover {
+  //       background: @ku-red-hover;
+  //     }
+  //   }
+  // }
+  //
+  // &.subcolor_5 {
+  //   background: @ku-gray;
+  //
+  //   .header {
+  //     background: fade(@ku-gray, 90%);
+  //     color: @ku-gridbox-text;
+  //   }
+  //
+  //   &.text-top {
+  //     .header {
+  //       background: fade(@ku-gray, 90%);
+  //       color: @ku-gridbox-text;
+  //     }
+  //   }
+  //
+  //   &.outlined {
+  //     border: 1px solid @gray-dark;
+  //     color: @ku-gridbox-text;
+  //
+  //     &::before {
+  //       color: @ku-gridbox-text;
+  //     }
+  //
+  //     &.with-img {
+  //       &:hover {
+  //         background: @gray-lighter;
+  //       }
+  //     }
+  //   }
+  //
+  //   &.full {
+  //     color: @ku-gridbox-text;
+  //
+  //     &:hover {
+  //       background: @ku-gray-hover;
+  //     }
+  //
+  //     .header {
+  //       color: @ku-gridbox-text;
+  //     }
+  //   }
+  //
+  //   &.text-down {
+  //     &:hover {
+  //       background: @ku-gray-hover;
+  //     }
+  //   }
+  //
+  //   &::before {
+  //     color: @ku-gridbox-text;
+  //   }
+  //
+  //   .text {
+  //     color: @ku-gridbox-text;
+  //   }
+  // }
+  //
+  // &.subcolor_6 {
+  //   background: @white-color;
+  //
+  //   .header {
+  //     background: fade(@white-color, 90%);
+  //     color: @gray-dark;
+  //   }
+  //
+  //   &.text-top {
+  //     .header {
+  //       background: @white-color;
+  //       color: @gray-dark;
+  //     }
+  //   }
+  //
+  //   &.outlined {
+  //     border: 1px solid @gray-dark;
+  //     color: @gray-dark;
+  //
+  //     &:hover {
+  //       background: @gray-lighter;
+  //     }
+  //
+  //     &.with-img {
+  //       &:hover {
+  //         border: 1px solid @gray-dark;
+  //       }
+  //     }
+  //   }
+  //
+  //   &.full {
+  //     background: @white-color;
+  //     color: @gray-dark;
+  //
+  //     .header {
+  //       color: @gray-dark;
+  //     }
+  //
+  //     &::before {
+  //       color: @gray-dark;
+  //     }
+  //
+  //     &:hover {
+  //       background: @white-color-hover;
+  //     }
+  //   }
+  //
+  //   &.text-down {
+  //     &:hover {
+  //       background: @white-color-hover;
+  //     }
+  //
+  //     &:not(.with-img) {
+  //       border: 1px solid @gray-dark;
+  //     }
+  //   }
+  //
+  //   &::before {
+  //     color: @gray-dark;
+  //   }
+  //
+  //   .text {
+  //     color: @gray-dark;
+  //   }
+  // }
+  //
+  // &.subcolor_7 {
+  //   background: @brown;
+  //   color: @white-color;
+  //
+  //   .header {
+  //     background: fade(@brown, 83%);
+  //     color: @white-color;
+  //   }
+  //
+  //   &.text-top {
+  //     .header {
+  //       background: @brown;
+  //       color: @white-color;
+  //     }
+  //   }
+  //
+  //   &.outlined {
+  //     border: 1px solid @brown;
+  //     color: @ku-gridbox-text;
+  //
+  //     &:hover {
+  //       border: 1px solid @brown-hover;
+  //     }
+  //
+  //     &.with-img {
+  //       &:hover {
+  //         background: @gray-lighter;
+  //         border: 1px solid @brown-hover;
+  //       }
+  //     }
+  //
+  //     &::before {
+  //       color: @brown;
+  //     }
+  //   }
+  //
+  //   &.full {
+  //     background: @brown;
+  //     color: @white-color;
+  //
+  //     .header {
+  //       color: @white-color;
+  //     }
+  //
+  //     &:hover {
+  //       background: @brown-hover;
+  //     }
+  //   }
+  //
+  //   &.text-down {
+  //     &:hover {
+  //       background: @brown-hover;
+  //     }
+  //   }
+  //
+  //   &::before {
+  //     color: @white-color;
+  //   }
+  // }
 
   .box1 {
     z-index: 4;
@@ -716,15 +716,15 @@
       &.with-img {
         border: 0!important;
 
-        &.faculty_color {
-          color: @white-color;
-        }
-
-        &.subcolor_6 {
-          &::before {
-            color: @gray-dark;
-          }
-        }
+        // &.faculty_color {
+        //   color: @white-color;
+        // }
+        //
+        // &.subcolor_6 {
+        //   &::before {
+        //     color: @gray-dark;
+        //   }
+        // }
       }
     }
   }
@@ -796,11 +796,11 @@
       }
     }
 
-    &.text-down {
-      &.subcolor_6 {
-        border: 1px solid @gray-dark;
-      }
-    }
+    // &.text-down {
+    //   &.subcolor_6 {
+    //     border: 1px solid @gray-dark;
+    //   }
+    // }
 
     &.size1 {
       .box2 {
@@ -961,11 +961,11 @@
             color: @white-color;
           }
 
-          &.subcolor_6 {
-            &::before {
-              color: @ku-gridbox-text;
-            }
-          }
+          // &.subcolor_6 {
+          //   &::before {
+          //     color: @ku-gridbox-text;
+          //   }
+          // }
         }
       }
     }
@@ -996,11 +996,11 @@
       }
 
       &.outlined {
-        &.faculty_color {
-          &::before {
-            color: @ku-red;
-          }
-        }
+        // &.faculty_color {
+        //   &::before {
+        //     color: @ku-red;
+        //   }
+        // }
 
         .header {
           background: transparent;
@@ -1011,28 +1011,28 @@
       }
     }
   }
-  @media (min-width: @screen-md) {
-    // Outline style for single column spans
-    .double-column [class*=column],
-    .one-two-column .column1,
-    .quad-column [class*=column],
-    .triple-column [class*=column],
-    .two-one-column .column2 {
-      .gridbox {
-        &.size2,
-        &.size3 {
-          &.outlined.with-img {
-            &.faculty_color {
-              .header {
-                background: fade(@ku-red, 83%);
-                color: @white-color;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  // @media (min-width: @screen-md) {
+  //   // Outline style for single column spans
+  //   .double-column [class*=column],
+  //   .one-two-column .column1,
+  //   .quad-column [class*=column],
+  //   .triple-column [class*=column],
+  //   .two-one-column .column2 {
+  //     .gridbox {
+  //       &.size2,
+  //       &.size3 {
+  //         &.outlined.with-img {
+  //           &.faculty_color {
+  //             .header {
+  //               background: fade(@ku-red, 83%);
+  //               color: @white-color;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   // Desktop text-down with img style for multiple column spans
   .gridcontent:not(#gridsidebar) .single-column .column1,
   .one-one-two-column .column3,
@@ -1059,11 +1059,11 @@
       }
     }
 
-    &:not(.with-img) {
-      &.subcolor_6 {
-        color: @gray-dark;
-      }
-    }
+    // &:not(.with-img) {
+    //   &.subcolor_6 {
+    //     color: @gray-dark;
+    //   }
+    // }
   }
   // Outline arrow style for single column spans
   .double-column [class*=column],
@@ -1074,14 +1074,14 @@
     .gridbox {
       &.size2,
       &.size3 {
-        &.outlined.with-img {
-          &.subcolor_5,
-          &.subcolor_6 {
-            &::before {
-              color: @gray-dark;
-            }
-          }
-        }
+        // &.outlined.with-img {
+        //   &.subcolor_5,
+        //   &.subcolor_6 {
+        //     &::before {
+        //       color: @gray-dark;
+        //     }
+        //   }
+        // }
 
         &.text-over.with-img {
           // Trying to fix visible background behind image

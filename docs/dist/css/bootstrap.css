@@ -10360,54 +10360,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 .slick-slide .caption p {
   margin: 0 0 6px;
 }
-.slick-slide .caption.faculty_color {
-  background: #901a1e;
-  color: #fff;
-}
-@media (min-width: 768px) {
-  .slick-slide .caption.faculty_color {
-    background: rgba(144, 26, 30, .93);
-  }
-}
-.slick-slide .caption.faculty_color.full-bg {
-  background: #901a1e;
-}
-.slick-slide .caption.subcolor_5 {
-  background: #dedede;
-  color: #252525;
-}
-@media (min-width: 768px) {
-  .slick-slide .caption.subcolor_5 {
-    background: rgba(222, 222, 222, .9);
-  }
-}
-.slick-slide .caption.subcolor_5.full-bg {
-  background: #dedede;
-}
-.slick-slide .caption.subcolor_6 {
-  background: #f5f5f5;
-  color: #252525;
-}
-@media (min-width: 768px) {
-  .slick-slide .caption.subcolor_6 {
-    background: rgba(255, 255, 255, .9);
-  }
-}
-.slick-slide .caption.subcolor_6.full-bg {
-  background: #f5f5f5;
-}
-.slick-slide .caption.subcolor_7 {
-  background: #625757;
-  color: #fff;
-}
-@media (min-width: 768px) {
-  .slick-slide .caption.subcolor_7 {
-    background: rgba(98, 87, 87, .83);
-  }
-}
-.slick-slide .caption.subcolor_7.full-bg {
-  background: #625757;
-}
 .slick-slide .caption.box-red1 {
   background: #901a1e;
   color: #fcfcfc;
@@ -12219,6 +12171,10 @@ form.gdpr-accept .btn + .btn {
 }
 .image-presentation .slide-link {
   cursor: default;
+}
+.image-presentation .slide-link:hover img {
+  -webkit-filter: none;
+          filter: none;
 }
 .image-presentation .slick-slide {
   display: block;

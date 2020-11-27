@@ -9,157 +9,6 @@
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.gridbox.faculty_color {
-  background: #901a1e;
-  color: #fff;
-}
-.gridbox.faculty_color .header {
-  background: rgba(144, 26, 30, .83);
-  color: #fff;
-}
-.gridbox.faculty_color.text-top .header {
-  background: #901a1e;
-}
-.gridbox.faculty_color.outlined {
-  border: 1px solid #901a1e;
-  color: #901a1e;
-}
-.gridbox.faculty_color.outlined:hover {
-  border: 1px solid #7a1619;
-}
-.gridbox.faculty_color.full:hover {
-  background: #7a1619;
-}
-.gridbox.faculty_color.text-down:hover {
-  background: #7a1619;
-}
-.gridbox.subcolor_5 {
-  background: #dedede;
-}
-.gridbox.subcolor_5 .header {
-  background: rgba(222, 222, 222, .9);
-  color: #252525;
-}
-.gridbox.subcolor_5.text-top .header {
-  background: rgba(222, 222, 222, .9);
-  color: #252525;
-}
-.gridbox.subcolor_5.outlined {
-  border: 1px solid #252525;
-  color: #252525;
-}
-.gridbox.subcolor_5.outlined::before {
-  color: #252525;
-}
-.gridbox.subcolor_5.outlined.with-img:hover {
-  background: #eee;
-}
-.gridbox.subcolor_5.full {
-  color: #252525;
-}
-.gridbox.subcolor_5.full:hover {
-  background: #d1d1d1;
-}
-.gridbox.subcolor_5.full .header {
-  color: #252525;
-}
-.gridbox.subcolor_5.text-down:hover {
-  background: #d1d1d1;
-}
-.gridbox.subcolor_5::before {
-  color: #252525;
-}
-.gridbox.subcolor_5 .text {
-  color: #252525;
-}
-.gridbox.subcolor_6 {
-  background: #fff;
-}
-.gridbox.subcolor_6 .header {
-  background: rgba(255, 255, 255, .9);
-  color: #252525;
-}
-.gridbox.subcolor_6.text-top .header {
-  background: #fff;
-  color: #252525;
-}
-.gridbox.subcolor_6.outlined {
-  border: 1px solid #252525;
-  color: #252525;
-}
-.gridbox.subcolor_6.outlined:hover {
-  background: #eee;
-}
-.gridbox.subcolor_6.outlined.with-img:hover {
-  border: 1px solid #252525;
-}
-.gridbox.subcolor_6.full {
-  background: #fff;
-  color: #252525;
-}
-.gridbox.subcolor_6.full .header {
-  color: #252525;
-}
-.gridbox.subcolor_6.full::before {
-  color: #252525;
-}
-.gridbox.subcolor_6.full:hover {
-  background: #f7f7f7;
-}
-.gridbox.subcolor_6.text-down:hover {
-  background: #f7f7f7;
-}
-.gridbox.subcolor_6.text-down:not(.with-img) {
-  border: 1px solid #252525;
-}
-.gridbox.subcolor_6::before {
-  color: #252525;
-}
-.gridbox.subcolor_6 .text {
-  color: #252525;
-}
-.gridbox.subcolor_7 {
-  background: #625757;
-  color: #fff;
-}
-.gridbox.subcolor_7 .header {
-  background: rgba(98, 87, 87, .83);
-  color: #fff;
-}
-.gridbox.subcolor_7.text-top .header {
-  background: #625757;
-  color: #fff;
-}
-.gridbox.subcolor_7.outlined {
-  border: 1px solid #625757;
-  color: #252525;
-}
-.gridbox.subcolor_7.outlined:hover {
-  border: 1px solid #544b4b;
-}
-.gridbox.subcolor_7.outlined.with-img:hover {
-  background: #eee;
-  border: 1px solid #544b4b;
-}
-.gridbox.subcolor_7.outlined::before {
-  color: #625757;
-}
-.gridbox.subcolor_7.full {
-  background: #625757;
-  color: #fff;
-}
-.gridbox.subcolor_7.full .header {
-  color: #fff;
-}
-.gridbox.subcolor_7.full:hover {
-  background: #544b4b;
-}
-.gridbox.subcolor_7.text-down:hover {
-  background: #544b4b;
-}
-.gridbox.subcolor_7::before {
-  color: #fff;
-}
 .gridbox .box1 {
   z-index: 4;
   -ms-flex-order: 1;
@@ -1169,12 +1018,6 @@
   .gridbox.outlined.with-img {
     border: 0!important;
   }
-  .gridbox.outlined.with-img.faculty_color {
-    color: #fff;
-  }
-  .gridbox.outlined.with-img.subcolor_6::before {
-    color: #252525;
-  }
 }
 @media all and (max-width: 767px) {
   .gridbox .text {
@@ -1248,9 +1091,6 @@
   }
   .gridbox.outlined .box1 {
     position: relative!important;
-  }
-  .gridbox.text-down.subcolor_6 {
-    border: 1px solid #252525;
   }
   .gridbox.size1 .box2 img {
     max-height: none;
@@ -1339,12 +1179,6 @@
   .two-one-one-column .column2 .gridbox.with-img.outlined::before,
   .two-one-one-column .column3 .gridbox.with-img.outlined::before {
     color: #fff;
-  }
-  .one-one-two-column .column1 .gridbox.with-img.outlined.subcolor_6::before,
-  .one-one-two-column .column2 .gridbox.with-img.outlined.subcolor_6::before,
-  .two-one-one-column .column2 .gridbox.with-img.outlined.subcolor_6::before,
-  .two-one-one-column .column3 .gridbox.with-img.outlined.subcolor_6::before {
-    color: #252525;
   }
   .one-one-two-column .column3 .gridbox.size1 .box2,
   .one-three-column .column2 .gridbox.size1 .box2,
@@ -1440,15 +1274,6 @@
   .two-one-one-column .column1 .gridbox .text {
     display: block;
   }
-  .one-one-two-column .column3 .gridbox.outlined.faculty_color::before,
-  .one-three-column .column2 .gridbox.outlined.faculty_color::before,
-  .one-two-column .column2 .gridbox.outlined.faculty_color::before,
-  .single-column .column1 .gridbox.outlined.faculty_color::before,
-  .three-one-column .column1 .gridbox.outlined.faculty_color::before,
-  .two-one-column .column1 .gridbox.outlined.faculty_color::before,
-  .two-one-one-column .column1 .gridbox.outlined.faculty_color::before {
-    color: #901a1e;
-  }
   .one-one-two-column .column3 .gridbox.outlined .header,
   .one-three-column .column2 .gridbox.outlined .header,
   .one-two-column .column2 .gridbox.outlined .header,
@@ -1472,31 +1297,6 @@
   }
   .gridbox.with-img .text {
     display: none;
-  }
-  .gridbox:not(.with-img).subcolor_6 {
-    color: #252525;
-  }
-  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
-  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_5::before,
-  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
-  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_5::before,
-  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_5::before,
-  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
-  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_5::before,
-  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
-  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_5::before,
-  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_5::before,
-  .double-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_6::before,
-  .one-two-column .column1 .gridbox.size2.outlined.with-img.subcolor_6::before,
-  .quad-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_6::before,
-  .triple-column [class*=column] .gridbox.size2.outlined.with-img.subcolor_6::before,
-  .two-one-column .column2 .gridbox.size2.outlined.with-img.subcolor_6::before,
-  .double-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_6::before,
-  .one-two-column .column1 .gridbox.size3.outlined.with-img.subcolor_6::before,
-  .quad-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_6::before,
-  .triple-column [class*=column] .gridbox.size3.outlined.with-img.subcolor_6::before,
-  .two-one-column .column2 .gridbox.size3.outlined.with-img.subcolor_6::before {
-    color: #252525;
   }
   .double-column [class*=column] .gridbox.size2.text-over.with-img,
   .one-two-column .column1 .gridbox.size2.text-over.with-img,
@@ -1639,21 +1439,6 @@
   .two-one-one-column .column1 .gridbox.with-img .box1 .header {
     border-right: 0;
     white-space: normal;
-  }
-}
-@media all and (min-width: 992px) and (min-width: 992px) {
-  .double-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
-  .one-two-column .column1 .gridbox.size2.outlined.with-img.faculty_color .header,
-  .quad-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
-  .triple-column [class*=column] .gridbox.size2.outlined.with-img.faculty_color .header,
-  .two-one-column .column2 .gridbox.size2.outlined.with-img.faculty_color .header,
-  .double-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
-  .one-two-column .column1 .gridbox.size3.outlined.with-img.faculty_color .header,
-  .quad-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
-  .triple-column [class*=column] .gridbox.size3.outlined.with-img.faculty_color .header,
-  .two-one-column .column2 .gridbox.size3.outlined.with-img.faculty_color .header {
-    background: rgba(144, 26, 30, .83);
-    color: #fff;
   }
 }
 @media all and (min-width: 992px) and (min-width: 480px) and (max-width: 767px) {

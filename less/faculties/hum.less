@@ -3,293 +3,293 @@
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
 
-.gridbox {
-
-  &.subcolor_1 {
-    background: @hum-sub_1;
-    color: @white-color;
-
-    .header {
-      background: fade(@hum-sub_1, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @hum-sub_1;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @hum-sub_1;
-      color: @hum-sub_1;
-
-      &:hover {
-        border: 1px solid @hum-sub_1-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @hum-sub_1-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @hum-sub_1-hover;
-      }
-    }
-  }
-
-  &.subcolor_2 {
-    background: @hum-sub_2;
-    color: @white-color;
-
-    .header {
-      background: fade(@hum-sub_2, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @hum-sub_2;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @hum-sub_2;
-      color: @hum-sub_2;
-
-      &:hover {
-        border: 1px solid @hum-sub_2-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @hum-sub_2-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @hum-sub_2-hover;
-      }
-    }
-  }
-
-  &.subcolor_3 {
-    background: @hum-sub_3;
-    color: @white-color;
-
-    .header {
-      background: fade(@hum-sub_3, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @hum-sub_3;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @hum-sub_3;
-      color: @ku-gridbox-text;
-
-      &:hover {
-        border: 1px solid @hum-sub_3-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @hum-sub_3-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @hum-sub_3-hover;
-      }
-    }
-  }
-
-  &.subcolor_4 {
-    background: @hum-sub_4;
-    color: @white-color;
-
-    .header {
-      background: fade(@hum-sub_4, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        color: @white-color;
-        background: @hum-sub_4;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @hum-sub_4;
-      color: @hum-sub_4;
-
-      &:hover {
-        border: 1px solid @hum-sub_4-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @hum-sub_4-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @hum-sub_4-hover;
-      }
-    }
-  }
-}
-@media (min-width: @screen-xs) {
-  // Outline arrow style for multiple column spans
-  .one-one-two-column .column2,
-  .one-two-column .column2,
-  .single-column .column1,
-  .two-one-column .column1,
-  .two-one-one-column .column1 {
-    .gridbox {
-      &.outlined {
-
-        &.subcolor_1 {
-          &::before {
-            color: @hum-sub_1;
-          }
-        }
-
-        &.subcolor_2 {
-          &::before {
-            color: @hum-sub_2;
-          }
-        }
-
-        &.subcolor_3 {
-          &::before {
-            color: @hum-sub_3;
-          }
-        }
-
-        &.subcolor_4 {
-          &::before {
-            color: @hum-sub_4;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-md) {
-  // Outline style for multiple column spans
-  .double-column [class*=column],
-  .one-two-column .column1,
-  .quad-column [class*=column],
-  .triple-column [class*=column],
-  .two-one-column .column2 {
-    .gridbox {
-      &.size2,
-      &.size3 {
-        &.outlined.with-img {
-          border: 0;
-
-          &::before {
-            color: @white-color;
-          }
-
-          &.subcolor_1 {
-            .header {
-              background: fade(@hum-sub_1, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_2 {
-            .header {
-              background: fade(@hum-sub_2, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_3 {
-            .header {
-              background: fade(@hum-sub_3, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_4 {
-            .header {
-              background: fade(@hum-sub_4, 83%);
-              color: @white-color;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .gridbox {
+//
+//   &.subcolor_1 {
+//     background: @hum-sub_1;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@hum-sub_1, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @hum-sub_1;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @hum-sub_1;
+//       color: @hum-sub_1;
+//
+//       &:hover {
+//         border: 1px solid @hum-sub_1-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @hum-sub_1-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @hum-sub_1-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_2 {
+//     background: @hum-sub_2;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@hum-sub_2, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @hum-sub_2;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @hum-sub_2;
+//       color: @hum-sub_2;
+//
+//       &:hover {
+//         border: 1px solid @hum-sub_2-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @hum-sub_2-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @hum-sub_2-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_3 {
+//     background: @hum-sub_3;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@hum-sub_3, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @hum-sub_3;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @hum-sub_3;
+//       color: @ku-gridbox-text;
+//
+//       &:hover {
+//         border: 1px solid @hum-sub_3-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @hum-sub_3-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @hum-sub_3-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_4 {
+//     background: @hum-sub_4;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@hum-sub_4, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         color: @white-color;
+//         background: @hum-sub_4;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @hum-sub_4;
+//       color: @hum-sub_4;
+//
+//       &:hover {
+//         border: 1px solid @hum-sub_4-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @hum-sub_4-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @hum-sub_4-hover;
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-xs) {
+//   // Outline arrow style for multiple column spans
+//   .one-one-two-column .column2,
+//   .one-two-column .column2,
+//   .single-column .column1,
+//   .two-one-column .column1,
+//   .two-one-one-column .column1 {
+//     .gridbox {
+//       &.outlined {
+//
+//         &.subcolor_1 {
+//           &::before {
+//             color: @hum-sub_1;
+//           }
+//         }
+//
+//         &.subcolor_2 {
+//           &::before {
+//             color: @hum-sub_2;
+//           }
+//         }
+//
+//         &.subcolor_3 {
+//           &::before {
+//             color: @hum-sub_3;
+//           }
+//         }
+//
+//         &.subcolor_4 {
+//           &::before {
+//             color: @hum-sub_4;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-md) {
+//   // Outline style for multiple column spans
+//   .double-column [class*=column],
+//   .one-two-column .column1,
+//   .quad-column [class*=column],
+//   .triple-column [class*=column],
+//   .two-one-column .column2 {
+//     .gridbox {
+//       &.size2,
+//       &.size3 {
+//         &.outlined.with-img {
+//           border: 0;
+//
+//           &::before {
+//             color: @white-color;
+//           }
+//
+//           &.subcolor_1 {
+//             .header {
+//               background: fade(@hum-sub_1, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_2 {
+//             .header {
+//               background: fade(@hum-sub_2, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_3 {
+//             .header {
+//               background: fade(@hum-sub_3, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_4 {
+//             .header {
+//               background: fade(@hum-sub_4, 83%);
+//               color: @white-color;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 // Slick slider colors
-.slick-slide {
-  .subcolor_1 {
-    background: @hum-sub_1;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@hum-sub_1, 93%);
-    }
-
-    &.full-bg {
-      background: @hum-sub_1;
-    }
-  }
-
-  .subcolor_2 {
-    background: @hum-sub_2;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@hum-sub_2, 93%);
-    }
-
-    &.full-bg {
-      background: @hum-sub_2;
-    }
-  }
-
-  .subcolor_3 {
-    background: @hum-sub_3;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@hum-sub_3, 93%);
-    }
-
-    &.full-bg {
-      background: @hum-sub_3;
-    }
-  }
-
-  .subcolor_4 {
-    background: @hum-sub_4;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@hum-sub_4, 93%);
-    }
-
-    &.full-bg {
-      background: @hum-sub_4;
-    }
-  }
-}
+// .slick-slide {
+//   .subcolor_1 {
+//     background: @hum-sub_1;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@hum-sub_1, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @hum-sub_1;
+//     }
+//   }
+//
+//   .subcolor_2 {
+//     background: @hum-sub_2;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@hum-sub_2, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @hum-sub_2;
+//     }
+//   }
+//
+//   .subcolor_3 {
+//     background: @hum-sub_3;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@hum-sub_3, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @hum-sub_3;
+//     }
+//   }
+//
+//   .subcolor_4 {
+//     background: @hum-sub_4;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@hum-sub_4, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @hum-sub_4;
+//     }
+//   }
+// }
