@@ -2,296 +2,296 @@
 @import "../variables.less";
 @import "../mixins.less"; // FA styles
 // --------------------------------------------------
-@science-gridbox: #383838;
-.gridbox {
-  &.subcolor_1 {
-    background: @science-sub_1;
-    color: @science-gridbox;
-
-    .header {
-      background: fade(@science-sub_1, 83%);
-      color: @science-gridbox;
-    }
-
-    &.text-top {
-      .header {
-        background: @science-sub_1;
-        color: @science-gridbox;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @science-sub_1;
-      color: @science-gridbox;
-
-      &:hover {
-        border: 1px solid @science-sub_1-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @science-sub_1-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @science-sub_1-hover;
-      }
-    }
-  }
-
-  &.subcolor_2 {
-    background: @science-sub_2;
-    color: @science-gridbox;
-
-    .header {
-      background: fade(@science-sub_2, 83%);
-      color: @science-gridbox;
-    }
-
-    &.text-top {
-      .header {
-        background: @science-sub_2;
-        color: @science-gridbox;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @science-sub_2;
-      color: @science-gridbox;
-
-      &:hover {
-        border: 1px solid @science-sub_2-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @science-sub_2-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @science-sub_2-hover;
-      }
-    }
-  }
-
-  &.subcolor_3 {
-    background: @science-sub_3;
-    color: @science-gridbox;
-
-    .header {
-      background: fade(@science-sub_3, 83%);
-      color: @science-gridbox;
-    }
-
-    &.text-top {
-      .header {
-        background: @science-sub_3;
-        color: @science-gridbox;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @science-sub_3;
-      color: @science-gridbox;
-
-      &:hover {
-        border: 1px solid @science-sub_3-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @science-sub_3-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @science-sub_3-hover;
-      }
-    }
-  }
-
-  &.subcolor_4 {
-    background: @science-sub_4;
-    color: @science-gridbox;
-
-    .header {
-      background: fade(@science-sub_4, 83%);
-      color: @science-gridbox;
-    }
-
-    &.text-top {
-      .header {
-        color: @science-gridbox;
-        background: @science-sub_4;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @science-sub_4;
-      color: @science-gridbox;
-
-      &:hover {
-        border: 1px solid @science-sub_4-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @science-sub_4-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @science-sub_4-hover;
-      }
-    }
-  }
-}
-@media (min-width: @screen-xs) {
-  // Outline arrow style for multiple column spans
-  .one-one-two-column .column2,
-  .one-two-column .column2,
-  .single-column .column1,
-  .two-one-column .column1,
-  .two-one-one-column .column1 {
-    .gridbox {
-      &.outlined {
-        &.subcolor_1 {
-          &::before {
-            color: @science-sub_1;
-          }
-        }
-
-        &.subcolor_2 {
-          &::before {
-            color: @science-sub_2;
-          }
-        }
-
-        &.subcolor_3 {
-          &::before {
-            color: @science-sub_3;
-          }
-        }
-
-        &.subcolor_4 {
-          &::before {
-            color: @science-sub_4;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-md) {
-  // Outline style for multiple column spans
-  .double-column [class*=column],
-  .one-two-column .column1,
-  .quad-column [class*=column],
-  .triple-column [class*=column],
-  .two-one-column .column2 {
-    .gridbox {
-      &.size2,
-      &.size3 {
-        &.outlined.with-img {
-          border: 0;
-
-          &::before {
-            color: @science-gridbox;
-          }
-
-          &.subcolor_1 {
-            .header {
-              background: fade(@science-sub_1, 83%);
-              color: @science-gridbox;
-            }
-          }
-
-          &.subcolor_2 {
-            .header {
-              background: fade(@science-sub_2, 83%);
-              color: @science-gridbox;
-            }
-          }
-
-          &.subcolor_3 {
-            .header {
-              background: fade(@science-sub_3, 83%);
-              color: @science-gridbox;
-            }
-          }
-
-          &.subcolor_4 {
-            .header {
-              background: fade(@science-sub_4, 83%);
-              color: @science-gridbox;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-// Slick slider colors
-
-.slick-slide {
-  .subcolor_1 {
-    background: @science-sub_1;
-    color: @science-gridbox;
-    @media (min-width: @screen-sm) {
-      background: fade(@science-sub_1, 93%);
-    }
-
-    &.full-bg {
-      background: @science-sub_1;
-    }
-  }
-
-  .subcolor_2 {
-    background: @science-sub_2;
-    color: @science-gridbox;
-    @media (min-width: @screen-sm) {
-      background: fade(@science-sub_2, 93%);
-    }
-
-    &.full-bg {
-      background: @science-sub_2;
-    }
-  }
-
-  .subcolor_3 {
-    background: @science-sub_3;
-    color: @science-gridbox;
-    @media (min-width: @screen-sm) {
-      background: fade(@science-sub_3, 93%);
-    }
-
-    &.full-bg {
-      background: @science-sub_3;
-    }
-  }
-
-  .subcolor_4 {
-    background: @science-sub_4;
-    color: @science-gridbox;
-    @media (min-width: @screen-sm) {
-      background: fade(@science-sub_4, 93%);
-    }
-
-    &.full-bg {
-      background: @science-sub_4;
-    }
-  }
-}
+// @science-gridbox: #383838;
+// .gridbox {
+//   &.subcolor_1 {
+//     background: @science-sub_1;
+//     color: @science-gridbox;
+//
+//     .header {
+//       background: fade(@science-sub_1, 83%);
+//       color: @science-gridbox;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @science-sub_1;
+//         color: @science-gridbox;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @science-sub_1;
+//       color: @science-gridbox;
+//
+//       &:hover {
+//         border: 1px solid @science-sub_1-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @science-sub_1-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @science-sub_1-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_2 {
+//     background: @science-sub_2;
+//     color: @science-gridbox;
+//
+//     .header {
+//       background: fade(@science-sub_2, 83%);
+//       color: @science-gridbox;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @science-sub_2;
+//         color: @science-gridbox;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @science-sub_2;
+//       color: @science-gridbox;
+//
+//       &:hover {
+//         border: 1px solid @science-sub_2-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @science-sub_2-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @science-sub_2-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_3 {
+//     background: @science-sub_3;
+//     color: @science-gridbox;
+//
+//     .header {
+//       background: fade(@science-sub_3, 83%);
+//       color: @science-gridbox;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @science-sub_3;
+//         color: @science-gridbox;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @science-sub_3;
+//       color: @science-gridbox;
+//
+//       &:hover {
+//         border: 1px solid @science-sub_3-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @science-sub_3-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @science-sub_3-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_4 {
+//     background: @science-sub_4;
+//     color: @science-gridbox;
+//
+//     .header {
+//       background: fade(@science-sub_4, 83%);
+//       color: @science-gridbox;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         color: @science-gridbox;
+//         background: @science-sub_4;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @science-sub_4;
+//       color: @science-gridbox;
+//
+//       &:hover {
+//         border: 1px solid @science-sub_4-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @science-sub_4-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @science-sub_4-hover;
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-xs) {
+//   // Outline arrow style for multiple column spans
+//   .one-one-two-column .column2,
+//   .one-two-column .column2,
+//   .single-column .column1,
+//   .two-one-column .column1,
+//   .two-one-one-column .column1 {
+//     .gridbox {
+//       &.outlined {
+//         &.subcolor_1 {
+//           &::before {
+//             color: @science-sub_1;
+//           }
+//         }
+//
+//         &.subcolor_2 {
+//           &::before {
+//             color: @science-sub_2;
+//           }
+//         }
+//
+//         &.subcolor_3 {
+//           &::before {
+//             color: @science-sub_3;
+//           }
+//         }
+//
+//         &.subcolor_4 {
+//           &::before {
+//             color: @science-sub_4;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-md) {
+//   // Outline style for multiple column spans
+//   .double-column [class*=column],
+//   .one-two-column .column1,
+//   .quad-column [class*=column],
+//   .triple-column [class*=column],
+//   .two-one-column .column2 {
+//     .gridbox {
+//       &.size2,
+//       &.size3 {
+//         &.outlined.with-img {
+//           border: 0;
+//
+//           &::before {
+//             color: @science-gridbox;
+//           }
+//
+//           &.subcolor_1 {
+//             .header {
+//               background: fade(@science-sub_1, 83%);
+//               color: @science-gridbox;
+//             }
+//           }
+//
+//           &.subcolor_2 {
+//             .header {
+//               background: fade(@science-sub_2, 83%);
+//               color: @science-gridbox;
+//             }
+//           }
+//
+//           &.subcolor_3 {
+//             .header {
+//               background: fade(@science-sub_3, 83%);
+//               color: @science-gridbox;
+//             }
+//           }
+//
+//           &.subcolor_4 {
+//             .header {
+//               background: fade(@science-sub_4, 83%);
+//               color: @science-gridbox;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// // Slick slider colors
+//
+// .slick-slide {
+//   .subcolor_1 {
+//     background: @science-sub_1;
+//     color: @science-gridbox;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@science-sub_1, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @science-sub_1;
+//     }
+//   }
+//
+//   .subcolor_2 {
+//     background: @science-sub_2;
+//     color: @science-gridbox;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@science-sub_2, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @science-sub_2;
+//     }
+//   }
+//
+//   .subcolor_3 {
+//     background: @science-sub_3;
+//     color: @science-gridbox;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@science-sub_3, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @science-sub_3;
+//     }
+//   }
+//
+//   .subcolor_4 {
+//     background: @science-sub_4;
+//     color: @science-gridbox;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@science-sub_4, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @science-sub_4;
+//     }
+//   }
+// }
 // Videntjenesten
 
 #geonatloginform,

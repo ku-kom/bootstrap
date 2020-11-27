@@ -18,304 +18,304 @@
   }
 }
 
-.gridbox {
-  &.subcolor_1 {
-    background: @blue;
-    color: @white-color;
-
-    .header {
-      background: fade(@blue, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @blue;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @blue;
-      color: @blue;
-
-      &:hover {
-        border: 1px solid @blue-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @blue-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @blue-hover;
-      }
-    }
-  }
-
-  &.subcolor_2 {
-    background: @green;
-    color: @white-color;
-
-    .header {
-      background: fade(@green, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @green;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @green;
-      color: @green;
-
-      &:hover {
-        border: 1px solid @green-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @green-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @green-hover;
-      }
-    }
-  }
-
-  &.subcolor_3 {
-    background: @ku-darkgray;
-    color: @white-color;
-
-    .header {
-      background: fade(@ku-darkgray, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        background: @ku-darkgray;
-        color: @white-color;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @ku-darkgray;
-      color: @ku-darkgray;
-
-      &:hover {
-        border: 1px solid @ku-darkgray-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @ku-darkgray-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @ku-darkgray-hover;
-      }
-    }
-  }
-
-  &.subcolor_4 {
-    background: @ku-darkblue;
-    color: @white-color;
-
-    .header {
-      background: fade(@ku-darkblue, 83%);
-      color: @white-color;
-    }
-
-    &.text-top {
-      .header {
-        color: @white-color;
-        background: @ku-darkblue;
-      }
-    }
-
-    &.outlined {
-      border: 1px solid @ku-darkblue;
-      color: @ku-darkblue;
-
-      &:hover {
-        border: 1px solid @ku-darkblue-hover;
-      }
-    }
-
-    &.full {
-      &:hover {
-        background: @ku-darkblue-hover;
-      }
-    }
-
-    &.text-down {
-      &:hover {
-        background: @ku-darkblue-hover;
-      }
-    }
-  }
-}
-@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
-  // Outline arrow style for multiple column spans
-  .one-one-two-column .column2,
-  .one-two-column .column2,
-  .single-column .column1,
-  .two-one-column .column1,
-  .two-one-one-column .column1 {
-    .gridbox {
-      &.outlined {
-        &.subcolor_1 {
-          &::before {
-            color: @blue;
-          }
-        }
-
-        &.subcolor_2 {
-          &::before {
-            color: @green;
-          }
-        }
-
-        &.subcolor_3 {
-          &::before {
-            color: @ku-darkgray;
-          }
-        }
-
-        &.subcolor_4 {
-          &::before {
-            color: @ku-darkblue;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: @screen-md) {
-  // Outline style for single column spans
-  .double-column [class*=column],
-  .one-two-column .column1,
-  .quad-column [class*=column],
-  .triple-column [class*=column],
-  .two-one-column .column2 {
-    .gridbox {
-      &.size2,
-      &.size3 {
-        &.outlined.with-img {
-          border: 0;
-
-          &::before {
-            color: @white-color;
-          }
-
-          &.subcolor_1 {
-            .header {
-              background: fade(@blue, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_2 {
-            .header {
-              background: fade(@green, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_3 {
-            .header {
-              background: fade(@ku-darkgray, 83%);
-              color: @white-color;
-            }
-          }
-
-          &.subcolor_4 {
-            .header {
-              background: fade(@ku-darkblue, 83%);
-              color: @white-color;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .gridbox {
+//   &.subcolor_1 {
+//     background: @blue;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@blue, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @blue;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @blue;
+//       color: @blue;
+//
+//       &:hover {
+//         border: 1px solid @blue-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @blue-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @blue-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_2 {
+//     background: @green;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@green, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @green;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @green;
+//       color: @green;
+//
+//       &:hover {
+//         border: 1px solid @green-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @green-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @green-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_3 {
+//     background: @ku-darkgray;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@ku-darkgray, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         background: @ku-darkgray;
+//         color: @white-color;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @ku-darkgray;
+//       color: @ku-darkgray;
+//
+//       &:hover {
+//         border: 1px solid @ku-darkgray-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @ku-darkgray-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @ku-darkgray-hover;
+//       }
+//     }
+//   }
+//
+//   &.subcolor_4 {
+//     background: @ku-darkblue;
+//     color: @white-color;
+//
+//     .header {
+//       background: fade(@ku-darkblue, 83%);
+//       color: @white-color;
+//     }
+//
+//     &.text-top {
+//       .header {
+//         color: @white-color;
+//         background: @ku-darkblue;
+//       }
+//     }
+//
+//     &.outlined {
+//       border: 1px solid @ku-darkblue;
+//       color: @ku-darkblue;
+//
+//       &:hover {
+//         border: 1px solid @ku-darkblue-hover;
+//       }
+//     }
+//
+//     &.full {
+//       &:hover {
+//         background: @ku-darkblue-hover;
+//       }
+//     }
+//
+//     &.text-down {
+//       &:hover {
+//         background: @ku-darkblue-hover;
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+//   // Outline arrow style for multiple column spans
+//   .one-one-two-column .column2,
+//   .one-two-column .column2,
+//   .single-column .column1,
+//   .two-one-column .column1,
+//   .two-one-one-column .column1 {
+//     .gridbox {
+//       &.outlined {
+//         &.subcolor_1 {
+//           &::before {
+//             color: @blue;
+//           }
+//         }
+//
+//         &.subcolor_2 {
+//           &::before {
+//             color: @green;
+//           }
+//         }
+//
+//         &.subcolor_3 {
+//           &::before {
+//             color: @ku-darkgray;
+//           }
+//         }
+//
+//         &.subcolor_4 {
+//           &::before {
+//             color: @ku-darkblue;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: @screen-md) {
+//   // Outline style for single column spans
+//   .double-column [class*=column],
+//   .one-two-column .column1,
+//   .quad-column [class*=column],
+//   .triple-column [class*=column],
+//   .two-one-column .column2 {
+//     .gridbox {
+//       &.size2,
+//       &.size3 {
+//         &.outlined.with-img {
+//           border: 0;
+//
+//           &::before {
+//             color: @white-color;
+//           }
+//
+//           &.subcolor_1 {
+//             .header {
+//               background: fade(@blue, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_2 {
+//             .header {
+//               background: fade(@green, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_3 {
+//             .header {
+//               background: fade(@ku-darkgray, 83%);
+//               color: @white-color;
+//             }
+//           }
+//
+//           &.subcolor_4 {
+//             .header {
+//               background: fade(@ku-darkblue, 83%);
+//               color: @white-color;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 // Slick slider colors
 
-.slick-slide {
-  .faculty_color {
-    background: @ku-red;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@ku-red, 93%);
-    }
-
-    &.full-bg {
-      background: @ku-red;
-    }
-  }
-
-  .subcolor_1 {
-    background: @blue;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@blue, 93%);
-    }
-
-    &.full-bg {
-      background: @blue;
-    }
-  }
-
-  .subcolor_2 {
-    background: @green;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@green, 93%);
-    }
-
-    &.full-bg {
-      background: @green;
-    }
-  }
-
-  .subcolor_3 {
-    background: @ku-darkgray;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@ku-darkgray, 93%);
-    }
-
-    &.full-bg {
-      background: @ku-darkgray;
-    }
-  }
-
-  .subcolor_4 {
-    background: @ku-darkblue;
-    color: @white-color;
-    @media (min-width: @screen-sm) {
-      background: fade(@ku-darkblue, 93%);
-    }
-
-    &.full-bg {
-      background: @ku-darkblue;
-    }
-  }
-}
+// .slick-slide {
+//   .faculty_color {
+//     background: @ku-red;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@ku-red, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @ku-red;
+//     }
+//   }
+//
+//   .subcolor_1 {
+//     background: @blue;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@blue, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @blue;
+//     }
+//   }
+//
+//   .subcolor_2 {
+//     background: @green;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@green, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @green;
+//     }
+//   }
+//
+//   .subcolor_3 {
+//     background: @ku-darkgray;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@ku-darkgray, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @ku-darkgray;
+//     }
+//   }
+//
+//   .subcolor_4 {
+//     background: @ku-darkblue;
+//     color: @white-color;
+//     @media (min-width: @screen-sm) {
+//       background: fade(@ku-darkblue, 93%);
+//     }
+//
+//     &.full-bg {
+//       background: @ku-darkblue;
+//     }
+//   }
+// }
