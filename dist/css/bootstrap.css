@@ -9813,13 +9813,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (min-width: 768px) {
-  .newsbox {
+  .newsbox,
+  .eventbox {
     padding-bottom: 8px;
   }
-  .newsbox .tiles-x .tilebox {
+  .newsbox .tiles-x .tilebox,
+  .eventbox .tiles-x .tilebox {
     height: 289px;
   }
-  .single-column .newsbox .tiles-x .tilebox {
+  .single-column .newsbox .tiles-x .tilebox,
+  .single-column .eventbox .tiles-x .tilebox {
     height: auto;
   }
   .topnews > .deloverskrift {
