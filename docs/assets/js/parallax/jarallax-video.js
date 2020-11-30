@@ -210,8 +210,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 // thanks http://stackoverflow.com/questions/18096715/implement-deferred-object-without-using-jquery
 
 function Deferred() {
-  this.done = [];
-  this.fail = [];
+  this.doneCallbacks = [];
+  this.failCallbacks = [];
 }
 
 Deferred.prototype = {
@@ -229,20 +229,20 @@ Deferred.prototype = {
       args[_key] = arguments[_key];
     }
 
-    this.execute(this.done, args);
+    this.execute(this.doneCallbacks, args);
   },
   reject: function reject() {
     for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
       args[_key2] = arguments[_key2];
     }
 
-    this.execute(this.fail, args);
+    this.execute(this.failCallbacks, args);
   },
   done: function done(callback) {
-    this.done.push(callback);
+    this.doneCallbacks.push(callback);
   },
   fail: function fail(callback) {
-    this.fail.push(callback);
+    this.failCallbacks.push(callback);
   }
 };
 var ID = 0;
@@ -671,14 +671,17 @@ var VideoWorker = /*#__PURE__*/function () {
 
 
         if ('youtube' === self.type) {
-          self.playerOptions = {};
-          self.playerOptions.videoId = self.videoID;
-          self.playerOptions.playerVars = {
-            autohide: 1,
-            rel: 0,
-            autoplay: 0,
-            // autoplay enable on mobile devices
-            playsinline: 1
+          self.playerOptions = {
+            // GDPR Compliance.
+            host: 'https://www.youtube-nocookie.com',
+            videoId: self.videoID,
+            playerVars: {
+              autohide: 1,
+              rel: 0,
+              autoplay: 0,
+              // autoplay enable on mobile devices
+              playsinline: 1
+            }
           }; // hide controls
 
           if (!self.options.showContols) {
@@ -790,6 +793,8 @@ var VideoWorker = /*#__PURE__*/function () {
 
         if ('vimeo' === self.type) {
           self.playerOptions = {
+            // GDPR Compliance.
+            dnt: 1,
             id: self.videoID,
             autopause: 0,
             transparent: 0,
@@ -1127,6 +1132,10 @@ function jarallaxVideo() {
           height: '100%',
           maxWidth: 'none',
           maxHeight: 'none',
+          pointerEvents: 'none',
+          transformStyle: 'preserve-3d',
+          backfaceVisibility: 'hidden',
+          willChange: 'transform,opacity',
           margin: 0,
           zIndex: -1
         });
@@ -1303,9 +1312,12 @@ function jarallaxVideo() {
           }
         });
         video.on('ended', function () {
-          self.videoEnded = true; // show default image if Loop disabled.
+          self.videoEnded = true;
 
-          resetDefaultImage();
+          if (!self.options.videoLoop) {
+            // show default image if Loop disabled.
+            resetDefaultImage();
+          }
         });
         video.on('error', function () {
           self.videoError = true; // show default image if video loading error.
