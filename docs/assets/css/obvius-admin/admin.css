@@ -6006,80 +6006,85 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    border: 0;
  }
 
+ .imgradio-field {
+   min-width: 610px;
+ }
+
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
- #webstedinfo {
-  position: absolute;
-  right: 0;
-  width: 23em;
-  overflow: hidden;
-  z-index: 100;
-}
+ /* #webstedinfo {
+   position: absolute;
+   right: 0;
+   width: 23em;
+   overflow: hidden;
+   z-index: 100;
+ }
 
-#webstedinfo .webstedinfo-wrapper {
-  background-color: #F2F2F2;
-  border: solid 1px #ddd;
-  border-width: 1px 0 1px 1px;
-  transition: margin 0.5s;
-  width: 20em;
-  float: right;
-  position: relative;
-  padding: 1em 0;
-}
+ #webstedinfo .webstedinfo-wrapper {
+   background-color: #F2F2F2;
+   border: solid 1px #ddd;
+   border-width: 1px 0 1px 1px;
+   transition: margin 0.5s;
+   width: 20em;
+   float: right;
+   position: relative;
+   padding: 1em 0;
+ }
 
-#webstedinfo.closed .webstedinfo-wrapper {
-  margin-right: -19em;
-}
+ #webstedinfo.closed .webstedinfo-wrapper {
+   margin-right: -19em;
+ }
 
-#webstedinfo .toggle {
-  transform: rotate(-90deg);
-  font-size: 16px;
-  position: absolute;
-  width: auto;
-  padding: 1em;
-  line-height: 1;
-  left: -4.7em;
-  top: 1.6em;
-  text-align: center;
-  margin: 0;
-  display: inline-block;
-  background: #ccc;
-  border-radius: 0.5em 0.5em 0 0;
-  cursor: pointer;
-}
+ #webstedinfo .toggle {
+   transform: rotate(-90deg);
+   font-size: 16px;
+   position: absolute;
+   width: auto;
+   padding: 1em;
+   line-height: 1;
+   left: -4.7em;
+   top: 1.6em;
+   text-align: center;
+   margin: 0;
+   display: inline-block;
+   background: #ccc;
+   border-radius: 0.5em 0.5em 0 0;
+   cursor: pointer;
+ }
 
-#webstedinfo .toggle:hover,
-#webstedinfo .toggle:active {
-  background: #aaa;
-  color: #fff;
-  text-decoration: none;
-}
+ #webstedinfo .toggle:hover,
+ #webstedinfo .toggle:active {
+   background: #aaa;
+   color: #fff;
+   text-decoration: none;
+ }
 
-#webstedinfo h1 {
-  background-color: #ddd;
-  margin: 0 0 1em;
-  padding: 0.5em 1em;
-  font-weight: normal;
-}
+ #webstedinfo h1 {
+   background-color: #ddd;
+   margin: 0 0 1em;
+   padding: 0.5em 1em;
+   font-weight: normal;
+ }
 
-#webstedinfo p {
-  padding: 0 1em;
-  margin: 0;
-}
+ #webstedinfo p {
+   padding: 0 1em;
+   margin: 0;
+ }
 
-#webstedinfo p.webstedvalue {
-  font-weight: bold;
-  padding-bottom: 1em;
-}
+ #webstedinfo p.webstedvalue {
+   font-weight: bold;
+   padding-bottom: 1em;
+ }
 
-#webstedinfo hr {
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  color: #ddd;
-}
+ #webstedinfo hr {
+   border-bottom: none;
+   border-left: none;
+   border-right: none;
+   color: #ddd;
+ }
 
-#webstedinfo div.no-website-spacer {
-  height: 2.5em;
-}
+ #webstedinfo div.no-website-spacer {
+   height: 2.5em;
+ } */
+
  /* end */
