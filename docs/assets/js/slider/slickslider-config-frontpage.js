@@ -142,32 +142,22 @@
     function getInstagramByAccount(account) {
       // Fetch Instagram images by account
       if (account) {
-        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName);
-        $.get($url, function(data) {
-            try {
-              data = data.split("window._sharedData = ")[1].split("<\/script>")[0];
-            } catch (e) {
-              console.log('Instagram Feed: It looks like the profile you are trying to fetch is age restricted. See https://github.com/jsanahuja/InstagramFeed/issues/26', 3);
-              return;
-            }
-            data = JSON.parse(data.substr(0, data.length - 1));
-            data = data.entry_data.ProfilePage;
-            if (typeof data === "undefined") {
-              console.log('Instagram Feed: It looks like YOUR network has been temporary banned because of too many requests. See https://github.com/jsanahuja/jquery.instagramFeed/issues/25', 4);
-              return;
-            }
-            data = data[0].graphql.user;
+        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
+        $.ajax({
+            url: $url,
+            type: 'GET'
+          }).done(function(data) {
+            //console.log(data);
             destroySlideshow();
-            var entry = data.edge_owner_to_timeline_media.edges;
+            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             var html = '';
-            var caption;
             if (entry) {
               $.each(entry, function(i, v) {
                 var img = entry[i].node.thumbnail_src;
                 var shortcode = entry[i].node.shortcode;
                 var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
-                caption = escape_string(maxChars(cap, 50));
-                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + '" target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
+                var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
+                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
                 return i < $images - 1;
               });
               $instaslider.append(html);
