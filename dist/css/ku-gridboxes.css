@@ -1168,6 +1168,18 @@
   }
 }
 @media all and (min-width: 992px) {
+  .double-column [class*=column] .gridbox.size2.outlined.with-img,
+  .one-two-column .column1 .gridbox.size2.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size2.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size2.outlined.with-img,
+  .two-one-column .column2 .gridbox.size2.outlined.with-img,
+  .double-column [class*=column] .gridbox.size3.outlined.with-img,
+  .one-two-column .column1 .gridbox.size3.outlined.with-img,
+  .quad-column [class*=column] .gridbox.size3.outlined.with-img,
+  .triple-column [class*=column] .gridbox.size3.outlined.with-img,
+  .two-one-column .column2 .gridbox.size3.outlined.with-img {
+    border: 0!important;
+  }
   .one-one-two-column .column1 .gridbox.with-img.outlined,
   .one-one-two-column .column2 .gridbox.with-img.outlined,
   .two-one-one-column .column2 .gridbox.with-img.outlined,
@@ -1178,7 +1190,7 @@
   .one-one-two-column .column2 .gridbox.with-img.outlined::before,
   .two-one-one-column .column2 .gridbox.with-img.outlined::before,
   .two-one-one-column .column3 .gridbox.with-img.outlined::before {
-    color: #fff;
+    color: #fcfcfc;
   }
   .one-one-two-column .column3 .gridbox.size1 .box2,
   .one-three-column .column2 .gridbox.size1 .box2,
