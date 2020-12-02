@@ -6010,6 +6010,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    min-width: 610px;
  }
 
+  .imgradio-field div label {
+    float: left;
+    margin-right: 15px;
+  }
+
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
  /* #webstedinfo {
