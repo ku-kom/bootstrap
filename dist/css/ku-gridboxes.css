@@ -557,11 +557,11 @@
 }
 .box-green2 {
   background: #4b8325;
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-green2 .header {
   background: rgba(75, 131, 37, .83);
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-green2.text-top .header {
   background: #4b8325;
@@ -571,7 +571,7 @@
   color: #4b8325;
 }
 .box-green2.outlined .header {
-  color: #fcfcfc;
+  color: #fff;
 }
 .box-green2.outlined:hover {
   border: 1px solid #406f1f;
