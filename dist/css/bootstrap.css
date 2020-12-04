@@ -1836,7 +1836,7 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 9.5px;
-  padding-left: 20px;
+  padding-left: 17px;
 }
 ol ol,
 ul ol,
@@ -6704,8 +6704,8 @@ button.list-group-item-danger.active:focus {
   margin-top: 10px;
 }
 .panel-body ul:not([class]) li {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .panel-body .newsDate {
   margin-top: 5px;
@@ -8978,7 +8978,6 @@ iframe {
   margin: 7px 0;
 }
 .item-list .item-date {
-  font-size: 12px;
   font-weight: 600;
   line-height: 15px;
   color: #757575;
