@@ -65,6 +65,7 @@
   overflow: hidden;
 }
 .gridbox.with-img .box2 img {
+  width: 100%;
   -ms-flex: none;
       flex: none;
   display: block;
