@@ -166,11 +166,10 @@
             url: $url,
             type: 'GET'
           }).done(function(data) {
-            //console.log(data);
+            console.log(data);
             destroySlideshow();
             $instaslider.empty();
-            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
-            if (typeof entry === "undefined") {
+            if (typeof data.graphql === "undefined") {
               // Insert fallback images if live feed fails
               $instaslider.append($insta_backup);
               $instaslider.addClass('instagram_fallback');
@@ -178,6 +177,7 @@
               initInstaSlideshow();
               return;
             }
+            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             var html = '';
             if (entry) {
               $.each(entry, function(i, v) {
