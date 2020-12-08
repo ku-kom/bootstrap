@@ -168,9 +168,12 @@
           }).done(function(data) {
             //console.log(data);
             destroySlideshow();
+            $instaslider.empty();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             if (typeof entry === "undefined") {
+              // Insert fallback images if live feed fails
               $instaslider.append($insta_backup);
+              $instaslider.addClass('instagram_fallback');
               initInstaSlideshow();
               return;
             }
