@@ -31,6 +31,7 @@
     };
 
     var $slideshow = $('.slick-slider');
+    var $default_slideshow = $('.default_slideshow > .container > .row');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
@@ -83,8 +84,23 @@
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              autoplay: true,
-              arrows: true
+              autoplay: true
+            }
+          }
+        ]
+      },
+      standard: {
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        dots: true,
+        fade: true,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1
             }
           }
         ]
@@ -174,6 +190,7 @@
       // Add buttons
       addplayPause($newsslider);
       addplayPause($valueslider);
+      addplayPause($default_slideshow);
       // Loop news and events
       $newsslider.each(function(i, k) {
         var $slider = $(this);
@@ -191,6 +208,12 @@
 
       // Value slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
+
+      $default_slideshow.each(function(i, k) {
+        // Default slideshows
+        var $slider = $(this);
+        $slider.not('.slick-initialized').slick(sliderSettings.standard);
+      });
     }
 
     // Init scripts

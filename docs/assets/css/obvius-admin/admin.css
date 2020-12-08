@@ -5985,7 +5985,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .gridcontent .full-page-width {
-   width: auto;
+   width: auto!important;
  }
 
  .gridcontent .full-page-width>.container {
