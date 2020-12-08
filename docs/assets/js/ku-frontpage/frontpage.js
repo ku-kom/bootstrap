@@ -44,6 +44,9 @@
       '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
       '</svg>' +
       '</button>';
+    var $insta_backup = '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">' +
+      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">' +
+      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -166,6 +169,11 @@
             //console.log(data);
             destroySlideshow();
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+            if (typeof entry === "undefined") {
+              $instaslider.append($insta_backup);
+              initInstaSlideshow();
+              return;
+            }
             var html = '';
             if (entry) {
               $.each(entry, function(i, v) {
