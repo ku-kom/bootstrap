@@ -174,6 +174,7 @@
               // Insert fallback images if live feed fails
               $instaslider.append($insta_backup);
               $instaslider.addClass('instagram_fallback');
+              console.log('Fallback Instagram');
               initInstaSlideshow();
               return;
             }
