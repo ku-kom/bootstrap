@@ -45,8 +45,8 @@
       '</svg>' +
       '</button>';
     var $insta_backup = '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">' +
-      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">' +
-      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt="">';
+      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt="">' +
+      '<img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt="">';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -166,7 +166,7 @@
             url: $url,
             type: 'GET'
           }).done(function(data) {
-            console.log(data);
+            //console.log(data);
             destroySlideshow();
             $instaslider.empty();
             if (typeof data.graphql === "undefined") {
