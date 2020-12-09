@@ -1,13 +1,15 @@
 /*global debounce, JSON*/
-/* NEL, KU KOM Script to fetch images from Instagram by account name and apply slick slider.*/
+/* NEL, KU KOM, 2020.
+* Scripts for ku.dk frontpage.
+*/
 (function($) {
   'use strict';
 
 
   $(document).ready(function() {
-    var lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
+    var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
     var translations;
-    if (lang == 'da') {
+    if ($lang == 'da') {
       translations = {
         "pause": "Stop afspilning",
         "play": "Afspil"
@@ -169,6 +171,14 @@
       return text.slice(0, count) + (text.length > count ? '...' : '');
     }
 
+    function instagramBackup() {
+      // Fallback images if live feed fails
+      $instaslider.append($insta_backup);
+      $instaslider.addClass('instagram_fallback');
+      console.log('Fallback Instagram');
+      initInstaSlideshow();
+    }
+
     function getInstagramByAccount(account) {
       // Fetch Instagram images by account
       if (account) {
@@ -182,10 +192,7 @@
             $instaslider.empty();
             if (typeof data.graphql === "undefined") {
               // Insert fallback images if live feed fails
-              $instaslider.append($insta_backup);
-              $instaslider.addClass('instagram_fallback');
-              console.log('Fallback Instagram');
-              initInstaSlideshow();
+              instagramBackup();
               return;
             }
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
@@ -204,6 +211,7 @@
             }
           })
           .fail(function(xhr, textStatus, errorThrown) {
+            instagramBackup();
             console.log(xhr.responseText);
           });
       }
@@ -240,11 +248,7 @@
     }
 
     // Init scripts
-    if ($user) {
-      getInstagramByAccount($user);
-    } else {
-      console.log('Add Instagram account to search for and number of images to display using data-account="" on the container');
-    }
+    getInstagramByAccount($user);
     initSlideshows();
 
     // Add button to hero video
