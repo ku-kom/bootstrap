@@ -1,7 +1,7 @@
 /*global debounce, JSON*/
 /* NEL, KU KOM, 2020.
-* Scripts for ku.dk frontpage.
-*/
+ * Scripts for ku.dk frontpage.
+ */
 (function($) {
   'use strict';
 
@@ -175,7 +175,6 @@
       // Fallback images if live feed fails
       $instaslider.append($insta_backup);
       $instaslider.addClass('instagram_fallback');
-      console.log('Fallback Instagram');
       initInstaSlideshow();
     }
 
