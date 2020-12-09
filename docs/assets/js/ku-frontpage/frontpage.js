@@ -9,7 +9,7 @@
     var translations;
     if (lang == 'da') {
       translations = {
-        "pause": "Sæt på pause",
+        "pause": "S&aelig;t p&aring; pause",
         "play": "Afspil"
       }
     } else { //English
@@ -30,6 +30,7 @@
       '=': '&#x3D;'
     };
 
+    var $heroVideo = $('.hero-element');
     var $slideshow = $('.slick-slider');
     var $default_slideshow = $('.default_slideshow > .container > .row');
     var $instaslider = $('.instaslider');
@@ -239,8 +240,13 @@
     }
     initSlideshows();
 
-    $('.btn-video').click(function() {
-      videoButton('#hero-video', '.btn-video');
+    // Add button to hero video
+    $($button).insertAfter($heroVideo);
+
+
+    $(document).on('click', '.hero .play-pause-button', function() {
+      console.log($(this));
+      videoButton('#hero-video', $(this));
     });
 
     $(window).on('resize orientationchange', debounce(function() {
