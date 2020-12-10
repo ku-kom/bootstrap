@@ -148,12 +148,12 @@
       if ($(btn).hasClass('paused')) {
         $(btn).attr('aria-label', translations.play);
         $(btn).attr('aria-pressed', false);
-        $(btn).removeClass('paused');
+        $(btn).addClass('paused');
         $(el).slick('slickPause');
       } else {
         $(btn).attr('aria-label', translations.pause);
         $(btn).attr('aria-pressed', true);
-        $(btn).addClass('paused');
+        $(btn).removeClass('paused');
         $(el).slick('slickPlay');
       }
     }
