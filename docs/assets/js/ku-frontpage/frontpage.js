@@ -145,15 +145,14 @@
 
     function sliderButtons(el, btn) {
       // Slider buttons
+      $(btn).toggleClass('paused');
       if ($(btn).hasClass('paused')) {
         $(btn).attr('aria-label', translations.play);
         $(btn).attr('aria-pressed', false);
-        $(btn).addClass('paused');
         $(el).slick('slickPause');
       } else {
         $(btn).attr('aria-label', translations.pause);
         $(btn).attr('aria-pressed', true);
-        $(btn).removeClass('paused');
         $(el).slick('slickPlay');
       }
     }
