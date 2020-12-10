@@ -120,7 +120,6 @@
             slick.$slider.append($button);
           }
           if (slick.options.autoplay === false) {
-            console.log(slick);
             slick.$slider.find('.play-pause-button').addClass('paused');
           }
         });
