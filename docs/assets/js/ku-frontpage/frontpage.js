@@ -198,7 +198,6 @@
           if (this.status != 200) {
             // Error
             instagramBackup();
-            console.log('Error: ' + this.status);
           } else if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.responseText);
             //console.log(data);
@@ -224,37 +223,6 @@
           }
         };
         xhr.send(null);
-        // $.ajax({
-        //     url: $url,
-        //     type: 'GET'
-        //   }).done(function(data) {
-        //     //console.log(data);
-        //     destroySlideshow();
-        //     if (typeof data.graphql === "undefined") {
-        //       // Insert fallback images if live feed fails
-        //       instagramBackup();
-        //       return;
-        //     }
-        //     var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
-        //     var html = '';
-        //     var i;
-        //     if (entry) {
-        //       for (i = 0; i < entry.length; ++i) {
-        //         var img = entry[i].node.thumbnail_src;
-        //         var shortcode = entry[i].node.shortcode;
-        //         var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
-        //         var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
-        //         html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
-        //       }
-        //       $instaslider.append(html);
-        //       setTimeout(initInstaSlideshow, 2000);
-        //     }
-        //   })
-        //   .fail(function(xhr, textStatus, errorThrown) {
-        //     // Insert fallback images if live feed fails
-        //     instagramBackup();
-        //     console.log(xhr.responseText);
-        //   });
       }
     }
 
