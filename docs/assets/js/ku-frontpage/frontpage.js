@@ -190,13 +190,13 @@
       // Fetch Instagram images by account
       if (account) {
         var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
+        $instaslider.empty();
         $.ajax({
             url: $url,
             type: 'GET'
           }).done(function(data) {
             //console.log(data);
             destroySlideshow();
-            $instaslider.empty();
             if (typeof data.graphql === "undefined") {
               // Insert fallback images if live feed fails
               instagramBackup();
@@ -218,6 +218,7 @@
             }
           })
           .fail(function(xhr, textStatus, errorThrown) {
+            // Insert fallback images if live feed fails
             instagramBackup();
             console.log(xhr.responseText);
           });
