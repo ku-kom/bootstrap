@@ -144,7 +144,7 @@
     }
 
     function sliderButtons(el, btn) {
-      $(btn).toggleClass('paused');
+      // Slider buttons
       if ($(btn).hasClass('paused')) {
         $(btn).attr('aria-label', translations.play);
         $(btn).attr('aria-pressed', false);
