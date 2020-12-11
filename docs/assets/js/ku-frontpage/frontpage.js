@@ -32,6 +32,8 @@
       '=': '&#x3D;'
     };
 
+    var trackHero = $('.hero .video-container').next('a');
+    var tracFeatures = $('.visuelt-element .visual-img').next('a');
     var $heroVideo = $('.hero-element');
     var $slideshow = $('.slick-slider');
     var $default_slideshow = $('.default_slideshow > .container > .row');
@@ -46,9 +48,9 @@
       '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
       '</svg>' +
       '</button>';
-    var $insta_backup = '<a href="https://www.instagram.com/'+ $accountName +'/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/'+ $accountName +'/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/'+ $accountName +'/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
+    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -276,6 +278,10 @@
       initSlideshows();
       initInstaSlideshow();
     }, 250));
+
+    // Add classes for GTM tracking purposes
+    trackHero.addClass('ku-topbanner');
+    tracFeatures.addClass('ku-feature');
 
     // Add heading semantics to heading if no h1 or h1 roles on page
     if (!$('h1').length || !$('[aria-level="1"]').length) {
