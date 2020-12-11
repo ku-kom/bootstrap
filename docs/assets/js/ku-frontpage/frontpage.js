@@ -189,18 +189,15 @@
     function getInstagramByAccount(account) {
       // Fetch Instagram images by account
       if (account) {
-        var url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
-        $instaslider.empty();
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, true);
-        xhr.overrideMimeType("application/json");
-        xhr.onreadystatechange = function() {
-          if (this.status != 200) {
-            // Error
-            instagramBackup();
-          } else if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.responseText);
+        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1?callback=?';
+        $.ajax({
+            url: $url,
+            dataType: "jsonp",
+            type: 'GET'
+          }).done(function(data) {
             //console.log(data);
+            destroySlideshow();
+            $instaslider.empty();
             if (typeof data.graphql === "undefined") {
               // Insert fallback images if live feed fails
               instagramBackup();
@@ -215,14 +212,16 @@
                 var shortcode = entry[i].node.shortcode;
                 var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
                 var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
-                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt=""></a>';
+                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
               }
               $instaslider.append(html);
               setTimeout(initInstaSlideshow, 2000);
             }
-          }
-        };
-        xhr.send(null);
+          })
+          .fail(function(xhr, textStatus, errorThrown) {
+            instagramBackup();
+            console.log(xhr.responseText);
+          });
       }
     }
 
