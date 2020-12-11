@@ -1329,13 +1329,10 @@ div#wrapper {
   max-width: 1018px;
   margin: 0 auto;
   padding: 10px 0;
+  font-size: 15px;
   /* padding: 26px 15px 15px 130px;
   background: transparent url("https://cms.ku.dk/grafik/beredskab.png") no-repeat center left;
   background-size: 100px */
-}
-
-#warning-banner-inner p {
-  font-size: 16px
 }
 
 #warning-banner-header {

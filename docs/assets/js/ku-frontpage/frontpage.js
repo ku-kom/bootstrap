@@ -96,10 +96,11 @@
       },
       standard: {
         autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         autoplaySpeed: 5000,
         speed: 1000,
         dots: true,
-        fade: true,
         arrows: true,
         responsive: [
           {
