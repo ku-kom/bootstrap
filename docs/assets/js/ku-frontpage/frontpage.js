@@ -189,10 +189,9 @@
     function getInstagramByAccount(account) {
       // Fetch Instagram images by account
       if (account) {
-        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1?callback=?';
+        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
         $.ajax({
             url: $url,
-            dataType: "jsonp",
             type: 'GET'
           }).done(function(data) {
             //console.log(data);
