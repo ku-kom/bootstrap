@@ -14,13 +14,14 @@
         "pause": "Stop afspilning",
         "play": "Afspil"
       }
-    } else { //English
+    } else { //English fallback
       translations = {
         "pause": "Pause",
         "play": "Play"
       }
     }
 
+    // Escape characters for safety
     var escape_map = {
       '&': '&amp;',
       '<': '&lt;',
@@ -32,22 +33,27 @@
       '=': '&#x3D;'
     };
 
+    // Tracking elements
     var trackHero = $('.hero .video-container').next('a');
     var tracFeatures = $('.visuelt-element .visual-img').next('a');
+    // Sliders
     var $heroVideo = $('.hero-element');
     var $slideshow = $('.slick-slider');
     var $default_slideshow = $('.default_slideshow > .container > .row');
     var $instaslider = $('.instaslider');
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
+    // Instagram account name
     var $user = $instaslider.attr('data-account');
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
+    // Playser / pause buttons
     var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button">' +
       '<svg aria-hidden="true" class="video-controls" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">' +
       '<path class="bi-play" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>' +
       '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
       '</svg>' +
       '</button>';
+    // Three static images as fallback if Instagram live feed fails
     var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
       '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
       '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
@@ -116,7 +122,7 @@
     };
 
     function addplayPause(el) {
-      // Add pause/play button
+      // Add pause/play button to sliders
       if ($(el).children('.play-pause-button').length === 0) {
         $(el).on('init', function(event, slick) {
           if (slick.slideCount > 1 && slick.options.autoplay === true) {
@@ -200,7 +206,7 @@
             //console.log(data);
             destroySlideshow();
             $instaslider.empty();
-            if ( typeof data.graphql === 'undefined' || typeof data.graphql === null) {
+            if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
               console.log('Url ok, but redirected');
               // Insert fallback images if live feed fails
               instagramBackup();
