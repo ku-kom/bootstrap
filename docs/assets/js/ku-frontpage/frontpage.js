@@ -206,8 +206,8 @@
             //console.log(data);
             destroySlideshow();
             $instaslider.empty();
-            if (typeof data[0].graphql.user === 'undefined' || typeof data[0].graphql.user === null) {
-              console.log('Url ok, but no json found');
+            if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
+              console.log('Url ok, but redirected due to too many network requests');
               // Insert fallback images if live feed fails
               instagramBackup();
               return;
