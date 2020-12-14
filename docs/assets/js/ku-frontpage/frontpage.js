@@ -206,13 +206,12 @@
             //console.log(data);
             destroySlideshow();
             $instaslider.empty();
-            // if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
-            //   console.log('Url ok, but redirected');
-            //   // Insert fallback images if live feed fails
-            //   instagramBackup();
-            //   return;
-            // }
-
+            if (typeof data[0].graphql.user === 'undefined' || typeof data[0].graphql.user === null) {
+              console.log('Url ok, but no json found');
+              // Insert fallback images if live feed fails
+              instagramBackup();
+              return;
+            }
             var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
             var html = '';
             var i;
