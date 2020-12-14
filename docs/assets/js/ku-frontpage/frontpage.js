@@ -193,12 +193,11 @@
       // Fetch Instagram images by account
       if (account) {
         var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
-        console.log($url);
         $.ajax({
             url: $url,
             type: 'GET'
           }).done(function(data) {
-            console.log(data);
+            //console.log(data);
             destroySlideshow();
             $instaslider.empty();
             if ( typeof data.graphql === 'undefined' || typeof data.graphql === null) {
