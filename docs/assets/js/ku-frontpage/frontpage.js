@@ -198,7 +198,7 @@
             url: $url,
             type: 'GET'
           }).done(function(data) {
-            //console.log(data);
+            console.log(data);
             destroySlideshow();
             $instaslider.empty();
             if (typeof data.graphql === "undefined") {
