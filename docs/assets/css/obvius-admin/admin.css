@@ -5994,7 +5994,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    padding-right: 13px;
  }
 
- input.newsbox {
+ input.newsbox, input.eventbox {
    padding-bottom: 1px;
  }
 
