@@ -48,9 +48,9 @@
       '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
       '</svg>' +
       '</button>';
-    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" alt="Instagram" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
+    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
