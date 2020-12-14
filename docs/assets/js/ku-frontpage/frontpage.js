@@ -201,7 +201,7 @@
             console.log(data);
             destroySlideshow();
             $instaslider.empty();
-            if (typeof data.graphql === "undefined") {
+            if ( typeof data.graphql === 'undefined' || typeof data.graphql === null) {
               console.log('Url ok, but redirected');
               // Insert fallback images if live feed fails
               instagramBackup();
