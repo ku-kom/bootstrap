@@ -1949,7 +1949,7 @@ blockquote ul:last-child {
 }
 blockquote footer {
   display: block;
-  font-size: 80%;
+  font-size: 90%;
   line-height: 1.5;
 }
 blockquote footer:before {
