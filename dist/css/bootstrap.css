@@ -1951,7 +1951,6 @@ blockquote footer {
   display: block;
   font-size: 80%;
   line-height: 1.5;
-  color: #757575;
 }
 blockquote footer:before {
   content: '\2014 \00A0';
@@ -12274,7 +12273,6 @@ form.gdpr-accept .btn + .btn {
 .quote-box blockquote footer {
   margin-top: 5px;
   font-size: 95%;
-  color: #666;
   line-height: 1.3333;
   font-weight: 400;
 }
