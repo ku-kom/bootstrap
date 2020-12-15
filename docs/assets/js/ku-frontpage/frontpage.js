@@ -81,7 +81,21 @@
         centerMode: true,
         arrows: false,
         dots: false,
-        autoplay: false
+        autoplay: false,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       },
       value: {
         slidesToShow: 3,
