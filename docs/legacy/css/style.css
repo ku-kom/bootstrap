@@ -6619,7 +6619,7 @@ div#nav-wrapper #global-search select, div#nav-wrapper #global-search .selectric
 
 div#nav-wrapper #global-search input#submit-button, .search-container input.submit-button {
   position: relative;
-  background: url("../../grafik/globalmenu/soeg.png") no-repeat scroll right top #fff;
+  background: url("https://cms.ku.dk/grafik/globalmenu/soeg.png") no-repeat scroll right top #fff;
   border: 0 solid #fff;
   height: 21px;
   width: 18px;
@@ -6708,13 +6708,13 @@ div#global-tools li.global-sprog {
 }
 
 div#global-tools li.global-sprog a.english {
-  background: transparent url(../../grafik/globalmenu/flag-uk.gif) no-repeat right 3px;
+  background: transparent url('https://cms.ku.dk/grafik/globalmenu/flag-dk.gif') no-repeat right 3px;
   display: inline-block;
   width: 63px;
 }
 
 div#global-tools li.global-sprog a.dansk {
-  background: transparent url(../../grafik/globalmenu/flag-dk.gif) no-repeat right 3px;
+  background: transparent url('https://cms.ku.dk/grafik/globalmenu/flag-dk.gif') no-repeat right 3px;
   display: inline-block;
   width: 60px;
 }
