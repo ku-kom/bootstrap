@@ -12132,7 +12132,7 @@ p[align="right"]:before {
   margin: 0 0 10px;
 }
 #warning-banner-inner p:first-child {
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 #warning-banner-inner p:last-child {
   margin-bottom: 5px;
