@@ -12113,7 +12113,7 @@ p[align="right"]:before {
 }
 @media (min-width: 768px) {
   #warning-banner-inner {
-    padding: 10px;
+    padding: 8px;
   }
 }
 #warning-banner-inner h1 {
@@ -12130,6 +12130,12 @@ p[align="right"]:before {
   font-size: 26px;
   font-weight: 400;
   margin: 0 0 10px;
+}
+#warning-banner-inner p:first-child {
+  margin-bottom: 5px;
+}
+#warning-banner-inner p:last-child {
+  margin-bottom: 5px;
 }
 .factbox {
   background-color: #f5f5f5;
