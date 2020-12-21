@@ -12098,7 +12098,8 @@ p[align="right"]:before {
   text-decoration: underline;
 }
 #warning-banner {
-  background-color: #fefaf2;
+  background-color: #db3b0a;
+  color: #fff;
   padding: 0;
   position: relative;
   width: 100%;
@@ -12130,6 +12131,10 @@ p[align="right"]:before {
   font-size: 26px;
   font-weight: 400;
   margin: 0 0 10px;
+}
+#warning-banner-inner a,
+#warning-banner-inner a:visited {
+  color: inherit;
 }
 #warning-banner-inner p:first-child {
   margin-top: 5px;
