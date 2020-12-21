@@ -12142,6 +12142,10 @@ p[align="right"]:before {
 #warning-banner-inner p:last-child {
   margin-bottom: 5px;
 }
+.icon-corona {
+  height: 21px;
+  width: 21px;
+}
 .factbox {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
