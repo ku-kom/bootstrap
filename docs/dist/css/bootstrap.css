@@ -5852,7 +5852,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
     top: 0;
-    left: 24px;
+    left: 26px;
     height: 100%;
     width: 28%;
   }
