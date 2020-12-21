@@ -12145,6 +12145,7 @@ p[align="right"]:before {
 .icon-corona {
   height: 21px;
   width: 21px;
+  vertical-align: bottom;
 }
 .factbox {
   background-color: #f5f5f5;
