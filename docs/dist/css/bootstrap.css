@@ -5852,7 +5852,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 @media (min-width: 992px) {
   .navbar-inverse .topbar-logo {
     top: 0;
-    left: 24px;
+    left: 26px;
     height: 100%;
     width: 28%;
   }
@@ -12098,7 +12098,8 @@ p[align="right"]:before {
   text-decoration: underline;
 }
 #warning-banner {
-  background-color: #fefaf2;
+  background-color: #db3b0a;
+  color: #fff;
   padding: 0;
   position: relative;
   width: 100%;
@@ -12113,7 +12114,7 @@ p[align="right"]:before {
 }
 @media (min-width: 768px) {
   #warning-banner-inner {
-    padding: 8px 8px 8px 0;
+    padding: 5px 8px 5px 0;
   }
 }
 #warning-banner-inner h1 {
@@ -12131,11 +12132,20 @@ p[align="right"]:before {
   font-weight: 400;
   margin: 0 0 10px;
 }
+#warning-banner-inner a,
+#warning-banner-inner a:visited {
+  color: inherit;
+}
 #warning-banner-inner p:first-child {
   margin-top: 5px;
 }
 #warning-banner-inner p:last-child {
   margin-bottom: 5px;
+}
+.icon-corona {
+  height: 21px;
+  width: 21px;
+  vertical-align: bottom;
 }
 .factbox {
   background-color: #f5f5f5;

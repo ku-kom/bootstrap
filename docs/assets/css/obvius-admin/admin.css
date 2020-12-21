@@ -5985,7 +5985,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .gridcontent .full-page-width {
-   width: auto!important;
+   width: auto !important;
  }
 
  .gridcontent .full-page-width>.container {
@@ -6010,14 +6010,14 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    min-width: 610px;
  }
 
-  .imgradio-field div label {
-    float: left;
-    margin-right: 15px;
-  }
+ .imgradio-field div label {
+   float: left;
+   margin-right: 15px;
+ }
 
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
- #webstedinfo {
+ /* #webstedinfo {
    position: absolute;
    right: 0;
    width: 23em;
@@ -6090,6 +6090,5 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
- }
-
+ } */
  /* end */

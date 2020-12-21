@@ -218,7 +218,8 @@
 // Beredskabsbanner
 
 #warning-banner {
-  background-color: @white2;
+  background-color: @red3;
+  color: @white-color;
   padding: 0;
   position: relative;
   width: 100%;
@@ -232,7 +233,7 @@
   font-size: 14px;
   padding: 10px 60px 10px 10px;
   @media (min-width: @screen-sm) {
-    padding: 8px 8px 8px 0;
+    padding: 5px 8px 5px 0;
   }
 
   h1 {
@@ -253,6 +254,11 @@
     margin: 0 0 10px;
   }
 
+  a,
+  a:visited {
+    color: inherit;
+  }
+
   p {
     &:first-child {
       margin-top: 5px;
@@ -262,6 +268,12 @@
       margin-bottom: 5px;
     }
   }
+}
+
+.icon-corona {
+  height: 21px;
+  width: 21px;
+  vertical-align: bottom;
 }
 // Faktaboks
 
