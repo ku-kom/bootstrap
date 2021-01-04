@@ -854,7 +854,7 @@
   }
   // KU top logo positioning
   .topbar-logo {
-    background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_dk.svg");
+    background-image: url("https://cms.ku.dk/grafik/obvius/toplogo_dk.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -866,10 +866,10 @@
     display: block;
 
     html:lang(en) & {
-      background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
+      background-image: url("https://cms.ku.dk/grafik/obvius/toplogo_uk.svg");
     }
     @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-      left: 23px;
+      left: @grid-gutter-width;
       top: 8px;
       width: 37%;
     }

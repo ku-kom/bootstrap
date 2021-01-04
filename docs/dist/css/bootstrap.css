@@ -5834,7 +5834,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   color: #444;
 }
 .navbar-inverse .topbar-logo {
-  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_dk.svg");
+  background-image: url("https://cms.ku.dk/grafik/obvius/toplogo_dk.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -5846,11 +5846,11 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   display: block;
 }
 html:lang(en) .navbar-inverse .topbar-logo {
-  background-image: url("https://bootstrap.secure.ku.dk/img/toplogo_uk.svg");
+  background-image: url("https://cms.ku.dk/grafik/obvius/toplogo_uk.svg");
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .topbar-logo {
-    left: 23px;
+    left: 26px;
     top: 8px;
     width: 37%;
   }
