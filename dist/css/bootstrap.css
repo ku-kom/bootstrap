@@ -5197,7 +5197,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .ku-nav > .container {
-    padding-left: 13px;
+    padding-left: 26px;
   }
 }
 .ku-nav .navbar-nav > li > .dropdown-menu {
@@ -5850,7 +5850,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .topbar-logo {
-    left: 15px;
+    left: 26px;
     top: 8px;
     width: 37%;
   }
@@ -12115,7 +12115,7 @@ p[align="right"]:before {
   padding-bottom: 5px;
   font-size: 14px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #warning-banner-inner > .container {
     padding-left: 13px;
     padding-right: 13px;
