@@ -5457,6 +5457,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: inherit;
   }
   .dropdown-menu.nyheder > li img {
+    max-width: 115px;
     display: block;
     float: left;
     margin: 0 8px 5px 0;
