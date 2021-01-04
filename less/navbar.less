@@ -28,6 +28,11 @@
 
 .ku-nav {
   font-size: 1em;
+  @media (min-width: @screen-sm-min) and (max-width: 1024px) {
+    & > .container {
+      padding-left: @grid-gutter-by-half;
+    }
+  }
 
   .navbar-nav {
     > li {
@@ -175,8 +180,8 @@
 
 .container,
 .container-fluid {
-  > .navbar-header,
-  > .navbar-collapse {
+  > .navbar-collapse,
+  > .navbar-header {
     margin-right: -@navbar-padding-horizontal;
     margin-left: -@navbar-padding-horizontal;
     @media (min-width: @grid-float-breakpoint) {
@@ -307,8 +312,8 @@
       border: 0;
       box-shadow: none;
 
-      > li > a,
-      .dropdown-header {
+      .dropdown-header,
+      > li > a {
         padding: 5px 15px 5px 25px;
       }
 
