@@ -12111,10 +12111,12 @@ p[align="right"]:before {
   width: 100%;
 }
 #warning-banner-inner {
-  padding: 5px 40px 5px auto;
   font-size: 14px;
 }
 @media (max-width: 767px) {
+  #warning-banner-inner {
+    padding: 5px 40px 5px 0;
+  }
   #warning-banner-inner > .container {
     padding-left: 13px;
     padding-right: 13px;
