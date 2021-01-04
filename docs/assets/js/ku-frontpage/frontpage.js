@@ -145,6 +145,11 @@
           if (slick.options.autoplay === false) {
             slick.$slider.find('.play-pause-button').addClass('paused');
           }
+          // Update css variable to be the width of half a slide
+          if (slick.$slider.is($newsslider)) {
+            var slideWidth = $(slick.$slides).width() / 2 + 'px';
+            document.documentElement.style.setProperty('--slide-width', slideWidth);
+          }
         });
       }
     }
