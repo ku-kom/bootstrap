@@ -12111,8 +12111,7 @@ p[align="right"]:before {
   width: 100%;
 }
 #warning-banner-inner {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 40px 5px 0;
   font-size: 14px;
 }
 @media (max-width: 767px) {
