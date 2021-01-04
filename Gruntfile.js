@@ -316,7 +316,14 @@ module.exports = function (grunt) {
         cwd: 'docs/examples/',
         src: ['**/*.css'],
         dest: 'docs/examples/'
-      }
+      },
+      legacy: {
+        src: [
+          'docs/legacy/css/styles.css',
+          'docs/legacy/css/responsive.css',
+          'docs/legacy/css/print.css',
+        ]
+      },
     },
 
     stylelint: {
@@ -603,7 +610,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles', 'less:compileCParallax', 'less:videoplayer']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:videoplayer', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print', 'cssmin:videoplayer']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:videoplayer', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print', 'cssmin:videoplayer', 'autoprefixer:legacy']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

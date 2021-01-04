@@ -1,23 +1,9 @@
-@-webkit-keyframes ku-loading {
-    from {
-        -webkit-transform: rotate(0);
-        transform: rotate(0)
-    }
-
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
-}
-
 @keyframes ku-loading {
     from {
-        -webkit-transform: rotate(0);
         transform: rotate(0)
     }
 
     to {
-        -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
     }
 }
@@ -34,7 +20,6 @@
     border-bottom: 3px solid #ccc;
     border-left: 3px solid #ccc;
     border-radius: 100%;
-    -webkit-animation: ku-loading .6s infinite linear;
     animation: ku-loading .6s infinite linear
 }
 
@@ -90,7 +75,6 @@ div.gridcontent div.gcrow div.gccolumn {
 #content-wrapper {
   max-width: 1070px;
   width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -99,7 +83,6 @@ div.gridcontent div.gcrow div.gccolumn {
   width: 23.784553%;
   margin-left: -100%;
   padding: 33px 2.545% 0 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -180,7 +163,6 @@ div#content.subpage.wide {
   padding-right: 0;
   width: 75.299268%;
   max-width: 757px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -233,7 +215,6 @@ div.frontpage, #content.subpage {
   margin: 0 auto;
   max-width: 1018px;
   width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-bottom: 0;
 }
@@ -437,7 +418,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
 @media only screen and (min-width: 871px) {
   .gridcontent .single-column .nyhed-illustration {
     -ms-flex: 0 0 48.3%;
-    -webkit-box-flex: 0;
     flex: 0 0 48.3%;
   }
 }
@@ -692,7 +672,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
   }
 
   #content .nyhed-illustration {
-    -webkit-box-flex: 0;
     -ms-flex: 0 0 200px;
     flex: 0 0 200px;
   }
@@ -799,7 +778,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
     clear: none;
     width: calc(50% - 1%) !important;
     padding-right: 1%;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
@@ -808,7 +786,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
     width: calc(50% - 1%) !important;
     clear: none;
     padding-left: 1%;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
@@ -1080,7 +1057,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
     width: 100%;
     left: 0;
     padding-left: 85px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -1469,7 +1445,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
     position: absolute;
     right: 10px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 
@@ -1530,7 +1505,6 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
   font-size: 15px;
   background: #f8f8f8;
   color: #333;
-  -webkit-box-shadow: inset 0 0 5px 5px #ebebeb;
   box-shadow: inset 0 0 5px 5px #ebebeb
 }
 
@@ -1560,9 +1534,7 @@ html:lang(en) .FullWidthFrontpage.no-left-menu #branding-unit a {
   margin: 0 0 5px;
   color: #333;
   line-height: 125%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dfdfdf));
   background-image: linear-gradient(#fff, #dfdfdf);
-  -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2)
 }
 
@@ -1606,7 +1578,6 @@ ul.sidr-class-first, .sidr ul ul, .sidr ul ul ul {
 }
 
 .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-valgt>a, .sidr ul li.sidr-class-valgt>span {
-  -webkit-box-shadow: inset 0 0 15px 3px #ebebeb;
   box-shadow: inset 0 0 15px 3px #ebebeb
 }
 
@@ -1637,7 +1608,6 @@ ul.sidr-class-first, .sidr ul ul, .sidr ul ul ul {
 }
 
 .sidr ul li ul li:hover>a, .sidr ul li ul li:hover>span, .sidr ul li ul li.active>a, .sidr ul li ul li.active>span, .sidr ul li ul li.sidr-class-valgt>a, .sidr ul li ul li.sidr-class-valgt>span {
-  -webkit-box-shadow: inset 0 0 15px 3px #ebebeb;
   box-shadow: inset 0 0 15px 3px #ebebeb;
 }
 
@@ -1678,7 +1648,6 @@ ul.sidr-class-first, .sidr ul ul, .sidr ul ul ul {
   width: 100%;
   font-size: 13px;
   padding: 5px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 0 10px;
   border-radius: 2px;
@@ -1747,15 +1716,12 @@ ul.sidr-class-first, .sidr ul ul, .sidr ul ul ul {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   color: #555;
   font-size: 14px;
   height: 34px;
   line-height: 1.42857;
   padding: 6px 12px;
-  -webkit-transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
-  transition: border-color 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
 }
@@ -1829,7 +1795,6 @@ button {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
   display: none;
   float: left;
@@ -1866,7 +1831,6 @@ button {
 /* Efteruddannelse.ku.dk END */
 /* Nye indgange */
 .entries * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1874,27 +1838,20 @@ button {
   border-bottom: 1px solid #e8e8e8;
   padding-top: 1px;
   border-top: 1px solid #901a1e;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background: #f3f3f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f1), to(#edece9));
   background: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f1', endColorstr='#edece9', GradientType=0);
 }
 
 .entry {
-  -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 10px 15px;
@@ -1907,10 +1864,8 @@ button {
 .entry a {
   font-size: 15px;
   padding-left: 18px;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.06em;
@@ -1934,7 +1889,6 @@ button {
   left: 0;
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   text-decoration: underline;
   display: inline-block;
@@ -1993,11 +1947,8 @@ button {
 
 @media only screen and (max-width: 869px) {
   .entries {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     background: 0;
@@ -2009,7 +1960,6 @@ button {
     padding-left: 20px;
     width: 100%;
     background: #f3f3f1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f1), to(#edece9));
     background: linear-gradient(to bottom, #f3f3f1 0%, #edece9 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f1', endColorstr='#edece9', GradientType=0);
   }
@@ -2111,9 +2061,7 @@ button {
     display: none;
     margin: 0;
     background-color: #fff;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000;
   }
@@ -2146,13 +2094,11 @@ button {
     top: 37%;
     right: 15px;
     left: auto;
-    -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
     transform: rotate(0deg) translate3d(0, 0, 0);
     transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
 
   #globalfooter .footercontent .footercolumn .footer-heading.open:after {
-    -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
     transform: rotate(90deg) translate3d(0, 0, 0);
     transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }

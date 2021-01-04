@@ -1327,53 +1327,53 @@ div#wrapper {
 
 #warning-banner-inner {
   text-align: left;
-    max-width: 1018px;
-    margin: 0 auto;
-    padding: 10px 0;
-    font-size: 14px;
-    padding: 10px 60px 10px 10px
+  max-width: 1018px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 14px;
+  padding: 10px 60px 10px 10px
 }
 
 @media (min-width: 768px) {
-    #warning-banner-inner {
-        padding:5px 8px 5px 0
-    }
+  #warning-banner-inner {
+    padding: 5px 8px 5px 0
+  }
 }
 
 #warning-banner-inner h1 {
-    padding: 0;
-    margin: 0 0 10px;
-    font-size: 40px;
-    margin-top: 0;
-    font-weight: 400
+  padding: 0;
+  margin: 0 0 10px;
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 400
 }
 
 #warning-banner-inner h3 {
-    margin-top: 0
+  margin-top: 0
 }
 
 #warning-banner-inner h2 {
-    font-size: 26px;
-    font-weight: 400;
-    margin: 0 0 10px
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 10px
 }
 
-#warning-banner-inner a,#warning-banner-inner a:visited {
-    color: inherit
+#warning-banner-inner a, #warning-banner-inner a:visited {
+  color: inherit
 }
 
 #warning-banner-inner p:first-child {
-    margin-top: 5px
+  margin-top: 5px
 }
 
 #warning-banner-inner p:last-child {
-    margin-bottom: 5px
+  margin-bottom: 5px
 }
 
 .icon-corona {
-    height: 21px;
-    width: 21px;
-    vertical-align: bottom
+  height: 21px;
+  width: 21px;
+  vertical-align: bottom
 }
 
 /* ------------------------------------------------------------- Branding ---*/
