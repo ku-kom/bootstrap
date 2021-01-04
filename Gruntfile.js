@@ -347,7 +347,14 @@ module.exports = function (grunt) {
       },
       docs: {
         src: 'docs/assets/css/src/docs.css'
-      }
+      },
+      legacy: {
+        src: [
+          'docs/legacy/css/styles.css',
+          'docs/legacy/css/responsive.css',
+          'docs/legacy/css/print.css',
+        ]
+      },
     },
 
     cssmin: {
@@ -593,7 +600,7 @@ module.exports = function (grunt) {
   if (runSubset('core') &&
       // Skip core tests if this is a Savage build
       process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'test-js', 'docs']);
+    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'stylelint:legacy', 'test-js', 'docs']);
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
