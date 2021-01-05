@@ -12110,9 +12110,6 @@ p[align="right"]:before {
   position: relative;
   width: 100%;
 }
-#warning-banner-inner {
-  font-size: 14px;
-}
 @media (max-width: 767px) {
   #warning-banner-inner {
     padding: 5px 40px 5px 0;
