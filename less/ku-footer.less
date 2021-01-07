@@ -29,9 +29,9 @@
 #globalfooter {
   position: relative;
   background: @gray-light;
-  @media (min-width: @screen-sm) {
-    background: linear-gradient(to bottom, rgba(@gray-light, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
-  }
+  // @media (min-width: @screen-sm) {
+  //   background: linear-gradient(to bottom, rgba(@gray-light, 1) 0%, rgba(134, 134, 134, 1) 25%, rgba(142, 141, 141, 1) 50%, rgba(136, 136, 136, 1) 80%, rgba(128, 128, 128, 1) 100%);
+  // }
   color: @white-color;
   margin: 0 auto;
   padding: 0;
@@ -92,7 +92,7 @@
         a:active,
         a:focus,
         a:hover {
-          color: #e2e2e2;
+          color: @white-color;
         }
 
         &:not(:first-child) {
@@ -124,13 +124,13 @@
         text-decoration: none;
 
         &:hover {
-          text-decoration: none;
-          color: #e2e2e2;
+          text-decoration: underline;
+          color: @white-color;
         }
 
         &:focus {
           .tab-focus-v2();
-          color: #e2e2e2;
+          color: @white-color;
         }
       }
 

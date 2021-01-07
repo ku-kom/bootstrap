@@ -5193,7 +5193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .ku-nav {
-  font-size: 1em;
+  font-size: 15px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .ku-nav > .container {
@@ -8246,8 +8246,9 @@ iframe {
   line-height: 1.3333333;
 }
 .ku-leftmenu .ku-navbar-header {
-  font-weight: bold;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
   margin-bottom: 14px;
   padding-left: 15px;
   position: relative;
@@ -8281,7 +8282,7 @@ iframe {
 }
 .ku-leftmenu ul li a {
   color: #252525;
-  font-size: 1em;
+  font-size: 14px;
   text-decoration: none;
   padding: 3px 5px 3px 15px;
   position: relative;
@@ -8593,11 +8594,6 @@ iframe {
   height: auto;
   overflow: hidden;
 }
-@media (min-width: 768px) {
-  #globalfooter {
-    background: linear-gradient(to bottom, #757575 0%, #868686 25%, #8e8d8d 50%, #888 80%, #808080 100%);
-  }
-}
 #globalfooter .footercontent {
   padding: 26px 0 20px;
   position: relative;
@@ -8646,7 +8642,7 @@ iframe {
 #globalfooter .footercontent > .footercolumn .footer-heading a:active,
 #globalfooter .footercontent > .footercolumn .footer-heading a:focus,
 #globalfooter .footercontent > .footercolumn .footer-heading a:hover {
-  color: #e2e2e2;
+  color: #fff;
 }
 #globalfooter .footercontent > .footercolumn .footer-heading:not(:first-child) {
   margin-top: 20px;
@@ -8671,12 +8667,12 @@ iframe {
   text-decoration: none;
 }
 #globalfooter ul.footerlinks li a:hover {
-  text-decoration: none;
-  color: #e2e2e2;
+  text-decoration: underline;
+  color: #fff;
 }
 #globalfooter ul.footerlinks li a:focus {
   outline: 1px solid #2c6694;
-  color: #e2e2e2;
+  color: #fff;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
   font-size: 15px;
@@ -8693,7 +8689,7 @@ iframe {
 .social-items .social-item {
   display: inline-block;
   margin: 13px 4px 0 0;
-  background-color: #757575;
+  background-color: #666;
   border-radius: 50%;
 }
 .social-items .social-item .social-icon {
@@ -8724,10 +8720,10 @@ iframe {
   position: relative;
 }
 .social-items .social-item .social-icon:active {
-  background-color: #757575;
+  background-color: #666;
 }
 .social-items .social-item .social-icon:focus {
-  background-color: #757575;
+  background-color: #666;
   outline: 1px solid #2c6694;
 }
 .social-items .footer-heading {
