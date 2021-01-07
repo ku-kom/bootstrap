@@ -5202,6 +5202,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .ku-nav .navbar-nav > li > .dropdown-menu {
   border-top: none;
+  font-size: inherit;
 }
 @media (max-width: 768px) {
   .ku-nav ul.nav li.dropdown:after {
@@ -5952,7 +5953,7 @@ html:lang(en) .navbar-inverse .topbar-logo {
     margin-bottom: 0;
     list-style: none;
     background-color: #fff;
-    font-size: .8em;
+    font-size: .85em;
   }
   .breadcrumb > li {
     display: inline-block;
