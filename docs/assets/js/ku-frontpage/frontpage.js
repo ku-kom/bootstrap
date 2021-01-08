@@ -16,8 +16,8 @@
       }
     } else { //English fallback
       translations = {
-        "pause": "Pause",
-        "play": "Play"
+        "pause": "Pause (use space bar)",
+        "play": "Play (use space bar)"
       }
     }
 
@@ -297,6 +297,16 @@
 
     $(document).on('click', '.slick-slider .play-pause-button', function() {
       sliderButtons('.slick-slider', $(this));
+    });
+
+    $(document).keydown(function(event) {
+      switch (event.keyCode) {
+        // Pause hero video using space bar
+        case 32:
+          event.preventDefault();
+          videoButton('#hero-video', '.hero .play-pause-button');
+          break;
+      }
     });
 
     $(window).on('resize orientationchange', debounce(function() {
