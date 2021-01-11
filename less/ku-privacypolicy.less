@@ -129,6 +129,9 @@
 
 .ccc-select-description {
   display: block;
+  @media all and (min-width: @screen-sm-max) {
+    margin-bottom: @grid-gutter-by-half;
+  }
 }
 
 .ccc-list-actions {
@@ -203,7 +206,7 @@
   position: relative;
   overflow-y: scroll;
   // overflow-x: auto;
-  background-color: @white-color;
+  //background-color: @white-color;
   transition: height 0.4s ease;
   -webkit-overflow-scrolling: touch;
 }

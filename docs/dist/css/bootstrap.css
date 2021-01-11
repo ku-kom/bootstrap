@@ -11557,6 +11557,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select-description {
   display: block;
 }
+@media all and (min-width: 991px) {
+  .ccc-select-description {
+    margin-bottom: 13px;
+  }
+}
 .ccc-list-actions {
   display: -ms-flexbox;
   display: flex;
@@ -11617,7 +11622,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   height: 218px;
   position: relative;
   overflow-y: scroll;
-  background-color: #fff;
   transition: height .4s ease;
   -webkit-overflow-scrolling: touch;
 }
