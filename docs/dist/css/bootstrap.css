@@ -11557,7 +11557,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select-description {
   display: block;
 }
-@media all and (min-width: 991px) {
+@media all and (max-width: 767px) {
   .ccc-select-description {
     margin-bottom: 13px;
   }
