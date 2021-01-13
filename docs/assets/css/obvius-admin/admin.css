@@ -1491,7 +1491,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  div.docparamedit {
-   max-width: 800px;
+   max-width: 880px;
  }
 
  div.docparamedit table {
@@ -1537,9 +1537,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  div.docparamedit textarea {
-   width: 95%;
-   max-width: 550px;
-   height: 6em;
+   width: 97%;
+   max-width: 612px;
+   height: 15em;
+   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+   font-size: 14px;
  }
 
  div.docparamedit input.textinput {
@@ -6091,4 +6093,5 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
  }
+
  /* end */

@@ -8301,7 +8301,7 @@ ul.sf-menu li a:hover {
 .ccc-popup {
   margin: 0 auto;
   height: 100%;
-  padding-bottom: 23px;
+  padding: 13px 23px;
 }
 
 @media all and (min-width: 768px) {
@@ -8424,6 +8424,22 @@ ul.sf-menu li a:hover {
 
 .ccc-select-description {
   display: block;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  letter-spacing: .7px;
+}
+
+@media (max-width: 767px) {
+  .ccc-select-description {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
 }
 
 .ccc-list-actions {
@@ -8438,7 +8454,7 @@ ul.sf-menu li a:hover {
   position: relative;
   display: block;
   padding-left: 30px !important;
-  margin: 6px 4px 12px 0;
+  margin: 4px 4px 12px 0;
   font-size: 22px;
   cursor: default !important;
   -webkit-user-select: none;
@@ -8494,7 +8510,6 @@ ul.sf-menu li a:hover {
   display: none;
   height: 218px;
   overflow-y: scroll;
-  background-color: #fff;
   -webkit-overflow-scrolling: touch;
   transition: height .4s ease;
 }
