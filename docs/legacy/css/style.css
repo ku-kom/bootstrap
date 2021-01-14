@@ -8423,7 +8423,6 @@ ul.sf-menu li a:hover {
 }
 
 .ccc-select-description {
-  display: block;
   font-size: 16px;
   color: #fff;
   text-align: left;
@@ -8433,12 +8432,13 @@ ul.sf-menu li a:hover {
 @media (max-width: 767px) {
   .ccc-select-description {
     margin-bottom: 13px;
+    display: block;
   }
 }
 
-@media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
+@media (min-width: 768px) {
+  .ccc-select-description.visible-xs-block {
+    display: none;
   }
 }
 
