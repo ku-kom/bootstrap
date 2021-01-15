@@ -8252,6 +8252,11 @@ ul.sf-menu li a:hover {
 }
 
 /* Custom cookie popup */
+@media all and (max-width: 767px) {
+    body.popup-open {
+        overflow:hidden
+    }
+}
 .ccc {
   font-size: 13px;
   font-style: normal;
