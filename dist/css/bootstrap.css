@@ -11426,8 +11426,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   background-color: #ccc;
 }
 @media all and (max-width: 767px) {
-  body.popup-open {
+  body.ccc-pop-open {
     overflow: hidden;
+    position: fixed;
   }
 }
 .ccc {
