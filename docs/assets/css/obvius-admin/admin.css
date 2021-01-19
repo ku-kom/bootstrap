@@ -4589,12 +4589,18 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  #gridcontent-dialog-additem {
-   width: 32em;
+   width: 34em;
  }
 
  #gridcontent-dialog-additem .dialogcontent>div {
-   float: left;
-   margin: 1em 0 1em 0.5em;
+   margin: 10px 5px;
+ }
+
+ #gridcontent-dialog-additem .dialogcontent {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
  }
 
  #gridcontent-dialog-edit-picture label {
@@ -6093,4 +6099,5 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
  } */
+
  /* end */
