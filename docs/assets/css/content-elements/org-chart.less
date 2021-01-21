@@ -1,5 +1,4 @@
-@import "../../../../less/variables.less";
-// Organisational chart
+@import "../../../../less/variables.less"; // Organisational chart
 
 ol {
   &.org-chart {
@@ -94,14 +93,19 @@ ol {
         border: 2px solid @gray;
         border-radius: @border-radius-base;
         min-height: 2em;
-        padding: 0.5em;
 
-        &:hover {
-          background-color: @semi-white;
+        div {
+          padding: 0.5em;
         }
 
         a {
-          diplay: block;
+          display: block;
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            background-color: @semi-white;
+          }
         }
       }
     }
@@ -135,7 +139,6 @@ ol {
           }
         }
       }
-
       // Second level chart:
       & > ol {
         &::before {
