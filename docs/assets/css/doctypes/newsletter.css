@@ -1,4 +1,4 @@
-body.Newsletter .right-side .panel-body {
+.Newsletter .right-side .panel-body {
   overflow: initial;
 }
 
@@ -38,7 +38,7 @@ body.Newsletter .right-side .panel-body {
   padding: initial !important;
 }
 
-p, ul, ol, li, td {
+.Newsletter ul, .Newsletter ol, .Newsletter li, .Newsletter td {
   font-size: 1em !important;
   color: #252525 !important;
   font-family: inherit !important;
