@@ -11,6 +11,17 @@ Needs html like this:
   </div>
 </div>
 */
+
+/* Preload fallback images */
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url('https://www.ku.dk/statisk-grafik/insta_fallback1.jpg') url('https://www.ku.dk/statisk-grafik/insta_fallback2.jpg') url('https://www.ku.dk/statisk-grafik/insta_fallback3.jpg');
+}
+
 [id^="ig"].gridbox {
   -ms-flex-direction: column !important;
   flex-direction: column !important;
