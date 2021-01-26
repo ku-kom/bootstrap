@@ -88,7 +88,10 @@
           $.ajax({
               url: $url,
               type: 'GET',
-              crossDomain: true
+              crossDomain: true,
+              xhrFields: {
+                withCredentials: true
+              }
             }).done(function(data) {
               //console.log(data);
               $loading.hide();
