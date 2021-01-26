@@ -87,7 +87,8 @@
           var $url = "https://www.instagram.com/" + encodeURIComponent($accountName) + "?__a=1";
           $.ajax({
               url: $url,
-              type: 'GET'
+              type: 'GET',
+              crossDomain: true
             }).done(function(data) {
               //console.log(data);
               $loading.hide();
