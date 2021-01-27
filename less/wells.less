@@ -25,15 +25,12 @@
       margin-top: 0;
     }
   }
+}
 
-  & + {
-    // KU specific:
-    // Well below embedded video:
-    [itemprop="video"] {
-      .border-top-radius(0);
-    }
-  }
-
+.well + [itemprop="video"] {
+  // KU specific:
+  // Well below embedded video:
+  .border-top-radius(0);
 }
 // Sizes
 
