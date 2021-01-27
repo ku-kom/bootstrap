@@ -7079,7 +7079,7 @@ button.list-group-item-danger.active:focus {
 .well h3:first-of-type {
   margin-top: 0;
 }
-.well + [itemprop="video"] {
+[itemprop="video"] + .well {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
