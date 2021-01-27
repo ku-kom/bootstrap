@@ -536,6 +536,21 @@
     }
   }
 }
+@media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+  // Frontpage only
+  .FullWidthFrontpage {
+    .col-sm-6 {
+      .gridbox {
+        &.outlined {
+          .header {
+            background: 0;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
 @media all and (min-width: @screen-xs) {
   // Set gridbox height for tablet upwards
   .gridbox {
@@ -592,15 +607,6 @@
       &:hover {
         .header {
           background: transparent;
-        }
-      }
-    }
-    // Frontpage only
-    .FullWidthFrontpage & {
-      &.outlined {
-        .header {
-          background: 0;
-          color: inherit;
         }
       }
     }
@@ -676,7 +682,7 @@
     }
   }
 }
-@media all and (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+@media all and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
   // Tablet
   .gridbox {
     &.size1 {
@@ -704,6 +710,17 @@
 
             .text {
               display: none;
+            }
+
+            &.outlined {
+              .header {
+                border-right: 25px solid transparent;
+                white-space: nowrap;
+              }
+
+              .box2 {
+                flex: 1 1 auto;
+              }
             }
           }
         }
@@ -779,7 +796,6 @@
       }
     }
   }
-
   // Desktop text-down with img style for multiple column spans
   .gridcontent:not(#gridsidebar) .single-column .column1,
   .one-one-two-column .column3,
