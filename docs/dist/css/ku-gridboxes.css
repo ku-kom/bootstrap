@@ -1044,6 +1044,12 @@
     max-height: none;
   }
 }
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .FullWidthFrontpage .col-sm-6 .gridbox.outlined .header {
+    background: 0;
+    color: inherit;
+  }
+}
 @media all and (min-width: 480px) {
   .gridbox.size1 {
     height: 289px;
@@ -1109,10 +1115,6 @@
   .gridbox.with-img:hover .header {
     background: transparent;
   }
-  .FullWidthFrontpage .gridbox.outlined .header {
-    background: 0;
-    color: inherit;
-  }
   body:not(.FullWidthFrontpage) .gridbox.text-down:hover .header {
     background: 0;
   }
@@ -1166,6 +1168,20 @@
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img .text,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size3.with-img .text {
     display: none;
+  }
+  .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img.outlined .header,
+  .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img.outlined .header,
+  .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img.outlined .header,
+  .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size3.with-img.outlined .header {
+    border-right: 25px solid transparent;
+    white-space: nowrap;
+  }
+  .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img.outlined .box2,
+  .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size2.with-img.outlined .box2,
+  .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img.outlined .box2,
+  .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size3.with-img.outlined .box2 {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
   }
 }
 @media all and (min-width: 992px) {
