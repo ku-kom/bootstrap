@@ -7075,6 +7075,7 @@ button.list-group-item-danger.active:focus {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, .15);
 }
+.well h1:first-of-type,
 .well h2:first-of-type,
 .well h3:first-of-type {
   margin-top: 0;
