@@ -19,7 +19,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url('https://www.ku.dk/statisk-grafik/insta_fallback1.jpg') url('https://www.ku.dk/statisk-grafik/insta_fallback2.jpg') url('https://www.ku.dk/statisk-grafik/insta_fallback3.jpg');
+  content: url('https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg') url('https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg') url('https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg');
 }
 
 [id^="ig"].gridbox {

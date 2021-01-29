@@ -54,9 +54,9 @@
       '</svg>' +
       '</button>';
     // Three static images as fallback if Instagram live feed fails
-    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback1.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback2.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/insta_fallback3.jpg" alt=""></a>';
+    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
+      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
