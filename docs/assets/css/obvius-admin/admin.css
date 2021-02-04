@@ -6025,11 +6025,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  .obvius-admin-notice {
    position: absolute;
-   top: -12px;
-   left: 0;
+   top: -13px;
+   left: 50%;
+   transform: translateX(-50%);
    background-color: #eee;
    border: 1px solid #bbb;
-   border-radius: 2px;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
    padding: 15px;
    font-size: 16px;
  }
@@ -6110,5 +6112,4 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
  } */
-
  /* end */
