@@ -6023,9 +6023,20 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-right: 15px;
  }
 
+ .obvius-admin-notice {
+   position: absolute;
+   top: -12px;
+   left: 0;
+   background-color: #eee;
+   border: 1px solid #bbb;
+   border-radius: 2px;
+   padding: 15px;
+   font-size: 16px;
+ }
+
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
- #webstedinfo {
+ /* #webstedinfo {
    position: absolute;
    right: 0;
    width: 23em;
@@ -6098,6 +6109,6 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
- }
+ } */
 
  /* end */
