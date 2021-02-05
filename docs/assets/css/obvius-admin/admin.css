@@ -6025,9 +6025,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  .obvius-admin-notice {
    position: absolute;
-   top: -13px;
+   top: -16px;
    left: 50%;
    transform: translateX(-50%);
+   color: #252525;
    background-color: #eee;
    border: 1px solid #bbb;
    border-bottom-left-radius: 2px;
