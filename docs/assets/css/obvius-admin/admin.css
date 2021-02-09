@@ -6024,11 +6024,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .obvius-admin-notice {
-   position: absolute;
-   top: -16px;
+   position: fixed;
+   z-index: 1040;
+   top: -15px;
    left: 50%;
    transform: translateX(-50%);
    color: #252525;
+   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
    background-color: #eee;
    border: 1px solid #bbb;
    border-bottom-left-radius: 2px;
@@ -6039,7 +6041,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
- #webstedinfo {
+ /* #webstedinfo {
    position: absolute;
    right: 0;
    width: 23em;
@@ -6112,5 +6114,5 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  #webstedinfo div.no-website-spacer {
    height: 2.5em;
- }
+ } */
  /* end */
