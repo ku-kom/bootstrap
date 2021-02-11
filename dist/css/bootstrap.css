@@ -9687,6 +9687,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .eventbox .tiles-x .tile-img {
   position: relative;
+  overflow: visible;
+  max-height: 50%;
 }
 .date-ribbon {
   position: absolute;
