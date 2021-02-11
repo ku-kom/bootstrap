@@ -9686,7 +9686,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-weight: 400;
 }
 .eventbox .tiles-x .tile-img {
-  overflow: initial;
   position: relative;
 }
 .date-ribbon {
