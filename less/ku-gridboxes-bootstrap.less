@@ -441,6 +441,9 @@
     &.size2,
     &.size3 {
       &.outlined.with-img {
+        &::before {
+          color: @gridbox-text-light;
+        }
         &.box-blue3,
         &.box-green3,
         &.box-grey3,
@@ -496,12 +499,29 @@
     &.outlined {
       &.with-img {
         border: 0!important;
+        &.size2,
+        &.size3 {
+          &::before {
+            color: @gridbox-text-light;
+          }
+          &.box-blue3,
+          &.box-green3,
+          &.box-grey3,
+          &.box-light1,
+          &.box-light2,
+          &.box-light3,
+          &.box-teal3 {
+            &::before {
+              color: @gridbox-text-dark;
+            }
+          }
+        }
       }
     }
   }
 }
 @media all and (max-width: @screen-xs-max) {
-  // All flexboxes now require dynamic height as they are stacked in mobile
+
   .gridbox {
     .text {
       display: none;
@@ -574,7 +594,7 @@
 
     &.outlined {
       &::before {
-        color: inherit;
+        color: inherit!important;
       }
 
       .box1 {
