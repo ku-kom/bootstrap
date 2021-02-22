@@ -262,7 +262,7 @@
       $newsslider.each(function(i, k) {
         var $slider = $(this);
         // Only slideshow on mobile
-        if (window.matchMedia('(min-width: 991px)').matches) {
+        if (window.matchMedia('(min-width: 992px)').matches) {
           if ($slider.hasClass('slick-initialized')) {
             $slider.slick('unslick');
           }
