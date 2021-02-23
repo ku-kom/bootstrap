@@ -20,6 +20,7 @@
 }
 
 @media screen and (min-width: 992px) {
+
   /* Flexible box tweaks*/
   .GridForside .double-column .gridbox.size1 .box2 {
     flex: 0 0 50%;
@@ -31,5 +32,10 @@
 
   .GridForside .gridcontent>.row:first-child .gccolumn:last-child .rightbox:first-child .panel {
     margin-top: 23px;
+  }
+
+  /* Special factbox styling for this doctype */
+  .GridForside .single-column .column1 .factbox {
+    max-width: 235px;
   }
 }
