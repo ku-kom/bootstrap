@@ -6023,6 +6023,12 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-right: 15px;
  }
 
+ video {
+   display: block;
+   width: 100%;
+   max-width: 1018px;
+ }
+
  .obvius-admin-notice {
    position: fixed;
    z-index: 1040;
