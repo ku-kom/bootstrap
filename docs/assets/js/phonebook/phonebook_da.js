@@ -65,7 +65,7 @@
         dataType: 'json'
       })
       .done(function(data) {
-        //console.log(data);
+        console.log(data);
         employees = (data.root || {}).employees || [];
         // Check result and if paging plugin is loaded
         if (employees.length > 0 && $.fn.twbsPagination) {
