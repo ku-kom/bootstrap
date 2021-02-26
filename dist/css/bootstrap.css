@@ -9669,6 +9669,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-y .tile-content {
   width: 100%;
+  min-width: 0;
 }
 .tiles-y .header-small {
   -ms-flex-preferred-size: 72%;
