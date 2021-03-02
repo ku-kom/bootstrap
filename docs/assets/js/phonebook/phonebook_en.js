@@ -57,7 +57,6 @@
     e.preventDefault();
     $loading.show();
     $.ajax({
-        //url: '/system/telefonbog-service.mason',
         url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog_v2.soeg',
         data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()) + '&env=about', //the parameter env="" is used to define the correct domain in the backend CORS policy.
         method: 'post',
@@ -148,7 +147,7 @@
 
     apply_pagination = function() {
       // Pager plugin settings
-      var visible_pages = (window.matchMedia('(max-width: 768px)').matches) === true ? 3 : 5;
+      var visible_pages = (window.matchMedia('(max-width: 767px)').matches) === true ? 3 : 5;
       $pager.twbsPagination({
         totalPages: totalPages,
         visiblePages: visible_pages,
