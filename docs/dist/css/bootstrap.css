@@ -12460,6 +12460,9 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   content: "\e236";
   vertical-align: middle;
 }
+.mce-content-body .collapse {
+  display: block;
+}
 .login-container {
   max-width: 450px;
   margin: 10px auto 0;
