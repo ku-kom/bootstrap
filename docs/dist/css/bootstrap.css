@@ -11959,6 +11959,7 @@ p[align="right"]:before {
   object-fit: cover;
   -webkit-filter: brightness(100%) blur(0);
           filter: brightness(100%) blur(0);
+  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
 }
 @media (min-width: 992px) {
   .gridnyhed .nyhed-illustration {

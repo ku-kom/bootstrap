@@ -8,6 +8,7 @@
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  transition: background .2s ease-out;
 }
 .gridbox .box1 {
   z-index: 4;
@@ -74,6 +75,7 @@
   backface-visibility: hidden;
   -webkit-filter: brightness(100%) blur(0);
           filter: brightness(100%) blur(0);
+  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
 }
 .gridbox:hover img {
   -webkit-filter: brightness(90%) blur(0);
