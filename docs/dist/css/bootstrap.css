@@ -12387,12 +12387,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tbody > tr > td,
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > tfoot > tr > td,
-.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th,
-.mce-content-body table > tfoot > tr > th {
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -12460,7 +12460,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   content: "\e236";
   vertical-align: middle;
 }
-.mce-content-body .collapse {
+.mce-content-body .collapse:not(.panel-collapse) {
   display: block;
 }
 .login-container {

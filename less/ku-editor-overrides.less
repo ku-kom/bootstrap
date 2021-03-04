@@ -29,12 +29,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -140,6 +140,8 @@
   }
   // Display collapsed (hidden content) in editor
   .collapse {
-    display: block;
+    &:not(.panel-collapse) {
+      display: block;
+    }
   }
 }
