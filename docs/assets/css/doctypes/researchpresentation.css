@@ -1,9 +1,15 @@
 @import url("medarbejderoversigt.css");
+
 /* Obvius backend page width */
 .obvius-common #content-wrapper {
-  width: 783px!important;
+  width: 783px !important;
 }
 
 .employee-list-heading {
   margin-top: 0;
+}
+
+.research-intro {
+  font-size: 15px;
+  margin-bottom: 32px;
 }
