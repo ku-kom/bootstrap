@@ -57,9 +57,10 @@
     .tab-focus-v2();
     outline-offset: -1px;
     .tile-body:after {
-      width: calc(100% - 2px);
-      left: 1px;
-      bottom: 1px;
+      // Make room for focus outline:
+      width: calc(100% - 2px)!important;
+      left: 1px!important;
+      bottom: 1px!important;
     }
   }
 }
