@@ -9549,9 +9549,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   outline-offset: -1px;
 }
 .tile-link:focus .tile-body:after {
-  width: calc(100% - 2px);
-  left: 1px;
-  bottom: 1px;
+  width: calc(100% - 2px) !important;
+  left: 1px!important;
+  bottom: 1px!important;
 }
 .tile-header {
   font-size: 17.42px;
