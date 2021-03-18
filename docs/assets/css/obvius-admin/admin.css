@@ -6029,6 +6029,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    max-width: 1018px;
  }
 
+ .subsites2.results td a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
  .obvius-admin-notice {
    position: fixed;
    z-index: 1040;
