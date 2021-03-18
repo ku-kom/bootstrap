@@ -52,6 +52,16 @@
     text-decoration: none;
     color: inherit;
   }
+
+  &:focus {
+    .tab-focus-v2();
+    outline-offset: -1px;
+    .tile-body:after {
+      width: calc(100% - 2px);
+      left: 1px;
+      bottom: 1px;
+    }
+  }
 }
 
 .tile-header {
@@ -249,7 +259,8 @@ body:not(.FullWidthFrontpage) .double-column {
   }
 }
 @media all and (min-width: @screen-sm) {
-  .newsbox, .eventbox {
+  .eventbox,
+  .newsbox {
     padding-bottom: 8px;
     // Inserted as standalone grid element
     .tiles-x {
