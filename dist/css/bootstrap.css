@@ -9544,6 +9544,15 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   text-decoration: none;
   color: inherit;
 }
+.tile-link:focus {
+  outline: 1px solid #2c6694;
+  outline-offset: -1px;
+}
+.tile-link:focus .tile-body:after {
+  width: calc(100% - 2px);
+  left: 1px;
+  bottom: 1px;
+}
 .tile-header {
   font-size: 17.42px;
   font-weight: 600;
@@ -9820,16 +9829,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
 }
 @media all and (min-width: 768px) {
-  .newsbox,
-  .eventbox {
+  .eventbox,
+  .newsbox {
     padding-bottom: 8px;
   }
-  .newsbox .tiles-x .tilebox,
-  .eventbox .tiles-x .tilebox {
+  .eventbox .tiles-x .tilebox,
+  .newsbox .tiles-x .tilebox {
     height: 289px;
   }
-  .single-column .newsbox .tiles-x .tilebox,
-  .single-column .eventbox .tiles-x .tilebox {
+  .single-column .eventbox .tiles-x .tilebox,
+  .single-column .newsbox .tiles-x .tilebox {
     height: auto;
   }
   .topnews > .deloverskrift {
