@@ -78,7 +78,7 @@
       },
       news: {
         slidesToShow: 1,
-        centerMode: true,
+        // centerMode: true,
         arrows: false,
         dots: false,
         autoplay: false,
