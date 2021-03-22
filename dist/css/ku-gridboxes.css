@@ -682,13 +682,13 @@
   color: #262626;
 }
 .box-light1.outlined:hover {
-  border: 1px solid #d5d2d2;
+  border: 1px solid #f2f2f2;
 }
 .box-light1.full:hover {
-  background: #d5d2d2;
+  background: #f2f2f2;
 }
 .box-light1.text-down:hover {
-  background: #d5d2d2;
+  background: #f2f2f2;
 }
 .box-light1.full {
   border: 1px solid #666;
