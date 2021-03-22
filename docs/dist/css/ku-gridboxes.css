@@ -1091,6 +1091,9 @@
   .gridbox.with-img:hover .header {
     background: transparent;
   }
+  .gridbox.text-down.box-light1 {
+    border: 1px solid #e1dfdf;
+  }
   body:not(.FullWidthFrontpage) .gridbox.text-down:hover .header {
     background: 0;
   }
