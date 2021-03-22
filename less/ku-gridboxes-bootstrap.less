@@ -634,6 +634,13 @@
         }
       }
     }
+
+    &.text-down {
+      // Add outline to white color boxes
+      &.box-light1 {
+        border: 1px solid @grey3;
+      }
+    }
   }
 
   body:not(.FullWidthFrontpage) {
@@ -850,11 +857,6 @@
         display: none;
       }
     }
-    // &:not(.with-img) {
-    //   &.subcolor_6 {
-    //     color: @gray-dark;
-    //   }
-    // }
   }
   // Outline arrow style for single column spans
   .double-column [class*=column],
@@ -865,14 +867,6 @@
     .gridbox {
       &.size2,
       &.size3 {
-        // &.outlined.with-img {
-        //   &.subcolor_5,
-        //   &.subcolor_6 {
-        //     &::before {
-        //       color: @gray-dark;
-        //     }
-        //   }
-        // }
         &.text-over.with-img {
           // Trying to fix visible background behind image
           background: none;
@@ -1278,7 +1272,4 @@
   &:focus {
     .tab-focus-v2();
   }
-  // & + & {
-  //   margin-top: @grid-gutter-height;
-  // }
 }
