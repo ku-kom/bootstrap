@@ -19,12 +19,20 @@
   blockquote {
     font-size: 22px;
     font-weight: 600;
+    margin-right: calc(-25% + -6px);
+    max-width: 60%;
   }
 
   blockquote::before {
     top: auto;
     bottom: -27px;
     font-size: 85px;
+  }
+
+  blockquote.full-width {
+    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px) !important;
+    max-width: 757px;
+    float: none !important;
   }
 
   .widenews-content {
