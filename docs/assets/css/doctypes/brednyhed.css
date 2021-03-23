@@ -7,6 +7,10 @@
     font-size: 24px;
   }
 
+  .widenews-content {
+    font-size: 15px;
+  }
+
   .manchet {
     font-size: 16px;
   }
@@ -35,8 +39,18 @@
     float: none !important;
   }
 
-  .widenews-content {
-    font-size: 15px;
+  .factbox {
+    font-weight: 600;
+    margin-right: calc(-25% + -6px);
+    max-width: 60%;
+    margin-left: 23px;
+  }
+
+  .factbox-left {
+    margin-left: calc(-25% + -6px);
+    max-width: 60%;
+    float: left;
+    margin-right: 23px;
   }
 
   .img-default {
