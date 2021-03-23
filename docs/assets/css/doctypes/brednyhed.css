@@ -21,9 +21,10 @@
 
   blockquote {
     font-size: 22px;
+    line-height: 1.3333;
     font-weight: 600;
     margin-right: calc(-25% + -6px);
-    max-width: 60%;
+    width: 60%;
   }
 
   blockquote::before {
@@ -39,15 +40,15 @@
   }
 
   .factbox {
-    font-weight: 600;
+    font-size: 14px;
     margin-right: calc(-25% + -6px);
-    max-width: 60%;
+    width: 60%;
     margin-left: 23px;
   }
 
   .factbox-left {
     margin-left: calc(-25% + -6px);
-    max-width: 60%;
+    width: 60%;
     float: left;
     margin-right: 23px;
   }
