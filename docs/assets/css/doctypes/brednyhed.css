@@ -13,6 +13,7 @@
 
   .manchet {
     font-size: 17px;
+    margin: 23px 0;
   }
 
   .nyhedsdato {
@@ -21,7 +22,7 @@
 
   blockquote {
     font-size: 22px;
-    line-height: 1.3333;
+    line-height: 1.3333333;
     font-weight: 600;
     margin-right: calc(-25% + -6px);
     width: 60%;
@@ -30,13 +31,19 @@
   blockquote::before {
     top: auto;
     bottom: -27px;
-    font-size: 85px;
+    font-size: 80px;
   }
 
   blockquote.full-width {
     margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px) !important;
     max-width: 757px;
     float: none !important;
+  }
+
+  blockquote footer {
+    font-size: 80%;
+    line-height: 1.3333333;
+    font-weight: 400;
   }
 
   .factbox {
@@ -78,6 +85,7 @@
   }
 
   .figure-caption, figcaption {
+    font-size: 13px;
     max-width: 521px;
     margin-left: calc(16.66666667% + 4px);
   }
