@@ -126,6 +126,7 @@ blockquote.full-width::before {
 
   .img-default>img {
     transition: transform .2s ease;
+    transform-origin: bottom center;
   }
 
   .img-default:hover>img {
