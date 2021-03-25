@@ -78,8 +78,8 @@ blockquote.full-width::before {
 
   blockquote footer {
     font-size: 80%;
-    line-height: 1.3333333;
     font-weight: 400;
+    margin-top: 10px;
   }
 
   .factbox {
