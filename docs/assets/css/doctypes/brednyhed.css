@@ -139,6 +139,7 @@ blockquote.full-width::before {
   }
 
   .widenews-contactbox {
+    font-size: 15px;
     padding: 20px 16.66666667%;
   }
 }
