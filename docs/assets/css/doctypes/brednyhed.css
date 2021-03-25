@@ -28,6 +28,7 @@ blockquote.full-width::before {
 @media (min-width: 992px) {
   .title {
     font-size: 40px;
+    line-height: 1.2;
   }
 
   h2 {
@@ -145,5 +146,9 @@ blockquote.full-width::before {
   .widenews-contactbox {
     font-size: 15px;
     padding: 20px 16.66666667%;
+  }
+
+  .widenews-relatednews {
+    margin-top: 23px;
   }
 }
