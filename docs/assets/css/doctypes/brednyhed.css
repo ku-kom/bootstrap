@@ -68,12 +68,13 @@ blockquote.full-width::before {
   }
 
   blockquote.full-width {
-    margin: 15px calc(-25% - 7px) 23px calc(-25% - 6px);
-    padding: 36px 25% 36px 25%;
+    margin: 15px calc(-25% - 6px) 23px calc(-25% - 6px);
+    padding: 36px 25% 36px calc(25% - 4px);
   }
 
   blockquote.full-width::before {
     top: 10px;
+    left: 2px;
     font-size: 80px;
   }
 
