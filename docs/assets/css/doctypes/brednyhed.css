@@ -3,7 +3,20 @@
   padding: 15px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
-  border-radius: 2px
+  border-radius: 2px;
+}
+
+blockquote:after, blockquote:before {
+  content: " ";
+  display: table
+}
+
+blockquote:after {
+  clear: both;
+}
+
+.widenews-contactbox h2:first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 992px) {
@@ -45,7 +58,6 @@
   blockquote.full-width {
     margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px) !important;
     max-width: 757px;
-    float: none !important;
   }
 
   blockquote footer {
