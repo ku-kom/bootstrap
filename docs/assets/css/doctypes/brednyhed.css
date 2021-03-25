@@ -56,7 +56,7 @@ blockquote.full-width::before {
     font-size: 22px;
     line-height: 1.3333333;
     font-weight: 600;
-    margin-right: calc(-25% + -6px);
+    margin-right: calc(-25% - 6px);
     width: 60%;
   }
 
@@ -67,7 +67,7 @@ blockquote.full-width::before {
   }
 
   blockquote.full-width {
-    margin: 15px calc(-25% + -7px) 23px calc(-25% + -7px);
+    margin: 15px calc(-25% - 7px) 23px calc(-25% - 7px);
     padding: 36px 25% 36px 25%;
   }
 
@@ -77,27 +77,31 @@ blockquote.full-width::before {
   }
 
   blockquote footer {
-    font-size: 80%;
+    font-size: 17px;
     font-weight: 400;
+  }
+
+  blockquote.full-width footer {
+    font-size: 80%;
     margin-top: 10px;
   }
 
   .factbox {
     font-size: 14px;
-    margin-right: calc(-25% + -6px);
+    margin-right: calc(-25% - 6px);
     width: 60%;
     margin-left: 23px;
   }
 
   .factbox-left {
-    margin-left: calc(-25% + -6px);
+    margin-left: calc(-25% - 6px);
     width: 60%;
     float: left;
     margin-right: 23px;
   }
 
   .widenews-content .img-default {
-    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px);
+    margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
     max-width: 757px;
     float: none !important;
     overflow: hidden;
@@ -114,7 +118,7 @@ blockquote.full-width::before {
   }
 
   .well {
-    margin-left: calc(-25% + -6px);
+    margin-left: calc(-25% - 6px);
     max-width: 60%;
     float: left;
     margin-right: 23px;
@@ -127,13 +131,13 @@ blockquote.full-width::before {
   }
 
   img.img-right {
-    margin-right: calc(-25% + -6px);
+    margin-right: calc(-25% - 6px);
     max-width: 60%;
     margin-left: 23px;
   }
 
   img.img-left {
-    margin-left: calc(-25% + -6px);
+    margin-left: calc(-25%- 6px);
     max-width: 60%;
     margin-right: 23px;
   }
