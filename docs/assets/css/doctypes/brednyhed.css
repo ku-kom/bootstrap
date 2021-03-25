@@ -23,8 +23,7 @@
 }
 
 blockquote.full-width {
-  background: #425570;
-  color: #fcfcfc;
+  color: #db3b0a;
   max-width: 757px;
   width: auto;
   padding: 15px;
@@ -75,8 +74,8 @@ blockquote.full-width::before {
 
   blockquote.full-width {
     font-size: 30px;
-    margin: 15px calc(-25% - 6px) 23px calc(-25% - 6px);
-    padding: 36px 25% 36px calc(25% + 6px);
+    margin: 0 calc(-25% - 6px) 0 25%;
+    padding: 36px 15px;
   }
 
   blockquote.full-width::before {
