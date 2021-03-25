@@ -1,3 +1,7 @@
+.widenews-content {
+  font-size: 15px;
+}
+
 .nyhedsdato {
   margin-top: 23px;
 }
@@ -45,10 +49,6 @@ blockquote.full-width::before {
     font-size: 20px;
   }
 
-  .widenews-content {
-    font-size: 15px;
-  }
-
   .manchet {
     font-size: 17px;
     margin: 23px 0;
@@ -74,6 +74,7 @@ blockquote.full-width::before {
   }
 
   blockquote.full-width {
+    font-size: 30px;
     margin: 15px calc(-25% - 6px) 23px calc(-25% - 6px);
     padding: 36px 25% 36px calc(25% + 6px);
   }
