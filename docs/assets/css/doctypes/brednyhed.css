@@ -10,6 +10,13 @@
   margin-top: 0;
 }
 
+blockquote.full-width {
+  margin: 10px calc(-25% + -7px) 23px calc(-25% + -7px);
+  max-width: 757px;
+  width: auto;
+  padding: 15px;
+}
+
 blockquote.full-width::before {
   color: inherit;
 }
@@ -51,10 +58,7 @@ blockquote.full-width::before {
   }
 
   blockquote.full-width {
-    margin: 10px calc(-25% + -7px) 23px calc(-25% + -7px);
-    max-width: 757px;
-    width: auto;
-    padding: 23px;
+    padding: 23px 30px;
   }
 
   blockquote footer {
