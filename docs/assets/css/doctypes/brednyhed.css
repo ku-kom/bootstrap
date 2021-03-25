@@ -113,6 +113,9 @@ blockquote.full-width::before {
     margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
     max-width: 757px;
     float: none !important;
+  }
+
+  .img-default {
     overflow: hidden;
   }
 
@@ -120,7 +123,7 @@ blockquote.full-width::before {
     transition: transform .2s ease-out;
   }
 
-  .img-default>img:hover {
+  .img-default:hover>img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
