@@ -1,3 +1,7 @@
+.nyhedsdato {
+  margin-top: 23px;
+}
+
 .widenews-contactbox {
   min-height: 20px;
   padding: 15px;
@@ -41,6 +45,7 @@ blockquote.full-width::before {
 
   .nyhedsdato {
     font-size: 15px;
+    margin-top: 0;
   }
 
   blockquote {
@@ -59,7 +64,7 @@ blockquote.full-width::before {
 
   blockquote.full-width {
     margin: 10px calc(-25% + -7px) 23px calc(-25% + -7px);
-    padding: 18px 36px 23px 30px;
+    padding: 20px 25% 30px 25%;
   }
 
   blockquote footer {
