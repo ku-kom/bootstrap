@@ -34,6 +34,10 @@ blockquote.full-width::before {
     font-size: 24px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   .widenews-content {
     font-size: 15px;
   }
