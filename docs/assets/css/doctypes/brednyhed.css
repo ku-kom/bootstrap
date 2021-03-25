@@ -6,15 +6,6 @@
   border-radius: 2px;
 }
 
-blockquote:after, blockquote:before {
-  content: " ";
-  display: table
-}
-
-blockquote:after {
-  clear: both;
-}
-
 .widenews-contactbox h2:first-child {
   margin-top: 0;
 }
@@ -56,8 +47,9 @@ blockquote:after {
   }
 
   blockquote.full-width {
-    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px) !important;
+    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px);
     max-width: 757px;
+    width: auto;
   }
 
   blockquote footer {
@@ -81,7 +73,7 @@ blockquote:after {
   }
 
   .widenews-content .img-default {
-    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px) !important;
+    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px);
     max-width: 757px;
     float: none !important;
     overflow: hidden;
