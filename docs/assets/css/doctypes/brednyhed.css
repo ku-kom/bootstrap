@@ -67,7 +67,7 @@ blockquote.full-width::before {
   }
 
   blockquote.full-width {
-    margin: 15px calc(-25% - 7px) 23px calc(-25% - 7px);
+    margin: 15px calc(-25% - 7px) 23px calc(-25% - 6px);
     padding: 36px 25% 36px 25%;
   }
 
