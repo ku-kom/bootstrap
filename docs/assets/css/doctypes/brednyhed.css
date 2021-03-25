@@ -67,7 +67,7 @@ blockquote.full-width::before {
     padding: 36px 25% 36px 25%;
   }
 
-  blockquote.full-width {
+  blockquote.full-width::before {
     top: 10px;
   }
 
@@ -134,6 +134,6 @@ blockquote.full-width::before {
   }
 
   .widenews-contactbox {
-    padding: 20px 20px 20px 16.66666667%;
+    padding: 20px 16.66666667%;
   }
 }
