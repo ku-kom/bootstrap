@@ -10,6 +10,10 @@
   margin-top: 0;
 }
 
+blockquote.full-width::before {
+  color: inherit;
+}
+
 @media (min-width: 992px) {
   .title {
     font-size: 40px;
@@ -47,9 +51,10 @@
   }
 
   blockquote.full-width {
-    margin: 0 calc(-25% + -7px) 0 calc(-25% + -7px);
+    margin: 10px calc(-25% + -7px) 23px calc(-25% + -7px);
     max-width: 757px;
     width: auto;
+    padding: 23px;
   }
 
   blockquote footer {
