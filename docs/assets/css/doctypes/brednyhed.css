@@ -34,6 +34,11 @@ blockquote.full-width::before {
   font-size: 60px;
 }
 
+.factbox {
+  background-color: #b7d7de;
+  border: 0;
+}
+
 @media (min-width: 992px) {
   .title {
     font-size: 40px;
@@ -119,13 +124,11 @@ blockquote.full-width::before {
   }
 
   .img-default>img {
-    transition: transform .2s ease-out;
+    transition: transform .2s ease;
   }
 
   .img-default:hover>img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: scale3d(1.02, 1.02, 1.02) translateZ(0);
+    transform: scale3d(1.02, 1.02, 1.02);
   }
 
   .well {
