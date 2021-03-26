@@ -2,6 +2,7 @@
   "rules": {
     "max-empty-lines": 2,
     # "number-leading-zero": "never",
-    "comment-empty-line-before": null
+    "comment-empty-line-before": null,
+    "function-calc-no-invalid": true
   }
 }
