@@ -133,12 +133,12 @@ blockquote.full-width::before {
     transform: scale3d(1.02, 1.02, 1.02);
   }
 
-  .well {
-    margin-left: calc(-25% - 6px);
+  /* .well {
+    margin: calc(-25% - 6px);
     max-width: 60%;
     float: left;
     margin-right: 23px;
-  }
+  } */
 
   .figure-caption, figcaption {
     font-size: 13px;
@@ -147,15 +147,13 @@ blockquote.full-width::before {
   }
 
   img.img-right {
-    margin-right: calc(-25% - 6px);
+    margin: 13px calc(-25% - 6px) 13px 23px;
     max-width: 60%;
-    margin-left: 23px;
   }
 
   img.img-left {
-    margin-left: calc(-25% - 6px);
+    margin: 13px 23px 13px calc(-25% - 6px);
     max-width: 60%;
-    margin-right: 23px;
   }
 
   .widenews-contactbox {
