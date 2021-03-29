@@ -47,16 +47,7 @@
     var $user = $instaslider.attr('data-account');
     var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     // Playser / pause buttons
-    var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button">' +
-      // '<svg aria-hidden="true" class="video-controls" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">' +
-      // '<path class="bi-play" d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>' +
-      // '<path class="bi-pause" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>' +
-      // '</svg>' +
-      '</button>';
-    // Three static images as fallback if Instagram live feed fails
-    // var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
-    //   '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
-    //   '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a>';
+    var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
