@@ -1,31 +1,3 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhs.ttf) format('truetype');
-}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1423,6 +1395,38 @@ template {
 *:before {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.eot');
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.svg#OpenSans') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.eot');
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.svg#OpenSans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.eot');
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.svg#OpenSans') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.eot');
+  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.svg#OpenSans') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1431,7 +1435,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
@@ -7244,7 +7248,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7332,7 +7336,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
