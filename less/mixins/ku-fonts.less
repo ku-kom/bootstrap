@@ -1,0 +1,18 @@
+// Creates multiple versions of a font
+// Usage:
+// .font-face('Name', 'url + filename', weight in numbers, font style, svg id)
+
+.font-face(@font-family, @filepath, @font-weight, @font-style, @svg-id) {
+    @font-face {
+        font-family: @font-family;
+        src: url('@{filepath}@{web-font-name}@{font-weight}.eot');
+        src: url('@{filepath}@{web-font-name}@{font-weight}.eot?#iefix') format('embedded-opentype'),
+            url('@{filepath}@{web-font-name}@{font-weight}.woff2') format('woff2'),
+            url('@{filepath}@{web-font-name}@{font-weight}.woff') format('woff'),
+            url('@{filepath}@{web-font-name}@{font-weight}.ttf')  format('truetype'),
+            url('@{filepath}@{web-font-name}@{font-weight}.svg#@{svg-id}') format('svg');
+        font-weight:@font-weight;
+        font-style:@font-style;
+        font-display: swap;
+    }
+}

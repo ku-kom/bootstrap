@@ -54,9 +54,9 @@
       // '</svg>' +
       '</button>';
     // Three static images as fallback if Instagram live feed fails
-    var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
-      '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a>';
+    // var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
+    //   '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
+    //   '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -207,51 +207,51 @@
       return text.slice(0, count) + (text.length > count ? '...' : '');
     }
 
-    function instagramBackup() {
-      // Fallback images if live feed fails
-      $instaslider.append($insta_backup);
-      $instaslider.addClass('instagram_fallback');
-      initInstaSlideshow();
-    }
+    // function instagramBackup() {
+    //   // Fallback images if live feed fails
+    //   $instaslider.append($insta_backup);
+    //   $instaslider.addClass('instagram_fallback');
+    //   initInstaSlideshow();
+    // }
 
-    function getInstagramByAccount(account) {
-      // Fetch Instagram images by account
-      if (account) {
-        var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
-        $.ajax({
-            url: $url,
-            type: 'GET'
-          }).done(function(data) {
-            //console.log(data);
-            destroySlideshow();
-            $instaslider.empty();
-            if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
-              console.log('Url ok, but redirected due to too many network requests');
-              // Insert fallback images if live feed fails
-              instagramBackup();
-              return;
-            }
-            var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
-            var html = '';
-            var i;
-            if (entry) {
-              for (i = 0; i < entry.length; ++i) {
-                var img = entry[i].node.thumbnail_src;
-                var shortcode = entry[i].node.shortcode;
-                var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
-                var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
-                html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
-              }
-              $instaslider.append(html);
-              setTimeout(initInstaSlideshow, 2000);
-            }
-          })
-          .fail(function(xhr, textStatus, errorThrown) {
-            instagramBackup();
-            console.log(xhr.responseText);
-          });
-      }
-    }
+    // function getInstagramByAccount(account) {
+    //   // Fetch Instagram images by account
+    //   if (account) {
+    //     var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
+    //     $.ajax({
+    //         url: $url,
+    //         type: 'GET'
+    //       }).done(function(data) {
+    //         //console.log(data);
+    //         destroySlideshow();
+    //         $instaslider.empty();
+    //         if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
+    //           console.log('Url ok, but redirected due to too many network requests');
+    //           // Insert fallback images if live feed fails
+    //           instagramBackup();
+    //           return;
+    //         }
+    //         var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
+    //         var html = '';
+    //         var i;
+    //         if (entry) {
+    //           for (i = 0; i < entry.length; ++i) {
+    //             var img = entry[i].node.thumbnail_src;
+    //             var shortcode = entry[i].node.shortcode;
+    //             var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
+    //             var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
+    //             html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
+    //           }
+    //           $instaslider.append(html);
+    //           setTimeout(initInstaSlideshow, 2000);
+    //         }
+    //       })
+    //       .fail(function(xhr, textStatus, errorThrown) {
+    //         instagramBackup();
+    //         console.log(xhr.responseText);
+    //       });
+    //   }
+    // }
 
     function initSlideshows() {
       // Add buttons
@@ -276,6 +276,9 @@
       // Value slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
 
+      // Instagram:
+      initInstaSlideshow();
+
       $default_slideshow.each(function(i, k) {
         // Default slideshows
         var $slider = $(this);
@@ -284,7 +287,7 @@
     }
 
     // Init scripts
-    getInstagramByAccount($user);
+    // getInstagramByAccount($user);
     initSlideshows();
 
     // Add button to hero video
