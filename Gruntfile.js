@@ -132,9 +132,9 @@ module.exports = function (grunt) {
 
     uglify: {
       options: {
-        compress: {
-          warnings: false
-        },
+        // compress: {
+        //   warnings: false
+        // },
         sourceMap: true,
         mangle: true,
         preserveComments: /^!|@preserve|@license|@cc_on/i
