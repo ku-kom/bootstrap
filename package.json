@@ -45,7 +45,7 @@
     "grunt-contrib-jshint": "~3.0.0",
     "grunt-contrib-less": "~3.0.0",
     "grunt-contrib-pug": "~3.0.0",
-    "grunt-contrib-uglify": "~5.0.0",
+    "grunt-contrib-uglify": "~5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-csscomb": "~4.2.0",
     "grunt-eslint": "^23.0.0",
@@ -88,8 +88,8 @@
     ]
   },
   "dependencies": {
-    "grunt-cli": "^1.4.1",
+    "grunt-cli": "^1.4.2",
     "gulp": "^4.0.2",
-    "npm": "^7.7.5"
+    "npm": "^7.8.0"
   }
 }
