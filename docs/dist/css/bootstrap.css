@@ -5747,10 +5747,10 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   width: 19.5px;
 }
 .navbar-inverse .navbar-nav > li > a.english::after {
-  background-image: url("https://cms.ku.dk/grafik/obvius/flag-uk.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.54 13.09'%3E%3Cdefs%3E%3Cstyle%3E.cl%7Bfill:%23d1121d%7D%3C/style%3E%3C/defs%3E%3Cpath fill='%23fff' d='M0 .09h19.5v13H0z'/%3E%3Cpath class='cl' d='M19.54 5.22h-8.77V0H8.82v5.22H.04v2.62h8.78v5.22h1.95V7.84h8.77'/%3E%3Cpath class='cl' d='M13 8.65h1.45L19.5 12v1m-13-8.68H5.05L0 1V0zm0 4.33H8L1.45 13H0zM13 4.32h-1.45L18.05 0h1.45z' transform='translate(.04 .05)'/%3E%3Cpath d='M0 8.67v2.89l4.31-2.89m15.19 0v2.89l-4.31-2.89zM0 4.34V1.46l4.33 2.88zm19.5 0V1.46l-4.31 2.88zM8.12 13V9l-5.93 4zm3.25 0V9l5.94 4zM8.12 0v4L2.19 0zm3.25 0v4l5.94-4z' transform='translate(.04 .05)' fill='%23242958'/%3E%3C/svg%3E");
 }
 .navbar-inverse .navbar-nav > li > a.dansk::after {
-  background-image: url("https://cms.ku.dk/grafik/obvius/flag-dk.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.51 13'%3E%3Cdefs%3E%3Cstyle%3E.cl%7Bfill:%23a81916%7D%3C/style%3E%3C/defs%3E%3Cpath fill='%23fff' d='M.04.02h19.47V13H.04z'/%3E%3Cpath class='cl' d='M19.51 5.26V0H8.75v5.28h10.76zM19.51 13V7.74H8.75V13zM0 13h6V7.74H0zM6 0H0v5.23h6z' transform='translate(.01)'/%3E%3C/svg%3E");
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
