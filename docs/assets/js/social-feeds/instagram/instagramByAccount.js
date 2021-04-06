@@ -29,9 +29,9 @@
       // Three static images as fallback if Instagram live feed fails
       var $insta_backup = '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 1" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
         '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 2" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
-        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a><a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 4" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-1.jpg" alt=""></a>' +
-        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 5" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-2.jpg" alt=""></a>' +
-        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 6" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a>';
+        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 3" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-3.jpg" alt=""></a><a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 4" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-4.jpg" alt=""></a>' +
+        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 5" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-5.jpg" alt=""></a>' +
+        '<a href="https://www.instagram.com/' + $accountName + '/" aria-label="Instagram 6" target="_blank" rel="noopener"><img src="https://www.ku.dk/statisk-grafik/instagrambilleder/instagram-6.jpg" alt=""></a>';
 
       // Escape characters for safety
       var escape_map = {
