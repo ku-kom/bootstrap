@@ -148,6 +148,9 @@
     function videoButton(el, btn) {
       // Video buttons
       var v = $(el).get(0);
+      if (!v) {
+        return;
+      }
       if (v.paused || v.ended) {
         $(btn).removeClass('paused');
         $(btn).attr('aria-label', translations.pause);
