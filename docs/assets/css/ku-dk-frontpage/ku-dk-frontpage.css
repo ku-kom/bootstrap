@@ -58,7 +58,8 @@ body {
   font-size: 22px;
   position: relative;
   margin-bottom: 0;
-  padding-right: 40px; /* left position + icon width */
+  padding-right: 40px;
+  /* left position + icon width */
   color: var(--color);
 }
 
@@ -447,10 +448,6 @@ video {
   object-fit: contain;
 }
 
-.slide-link:focus {
-  outline-offset: -3px;
-}
-
 .slick-arrow, .slick-arrow::before {
   color: inherit;
 }
@@ -515,6 +512,11 @@ video {
 
 #instaslider .slick-track .slick-active+.slick-active+.slick-active>div {
   margin-right: 8px;
+}
+
+#instaslider .slick-active a {
+  outline: 2px solid #2c6694;
+  outline-offset: -2px;
 }
 
 #instaslider .slick-slide img {
