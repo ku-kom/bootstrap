@@ -514,7 +514,7 @@ video {
   margin-right: 8px;
 }
 
-#instaslider .slick-active a {
+#instaslider .slick-active a:focus {
   outline: 2px solid #2c6694;
   outline-offset: -2px;
 }
