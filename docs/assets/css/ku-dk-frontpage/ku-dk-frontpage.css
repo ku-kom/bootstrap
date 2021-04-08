@@ -228,6 +228,10 @@ video {
   color: inherit;
 }
 
+.ku-values .slide-link:focus {
+  outline: 1px solid #2c6694;
+}
+
 .hero {
   background-color: #757575;
   margin-bottom: 0 !important
@@ -1084,7 +1088,12 @@ video {
 }
 
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
   /* iPad landscape */
+  .jumpboard .jumpcolumn li a {
+    font-size: 26px;
+  }
+
   .til-gavn>.container::before {
     height: 200px;
     width: 200px;
