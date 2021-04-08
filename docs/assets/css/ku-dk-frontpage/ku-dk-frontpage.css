@@ -735,10 +735,6 @@ video {
     opacity: .4;
   }
 
-  .til-gavn.caption-top .visual-caption {
-    top: 112px;
-  }
-
   .divider-bottom>.container::after, .divider-top>.container::before {
     max-width: 914px
   }
@@ -755,6 +751,10 @@ video {
 
   .hero-video-sitewidth .full-page-width>.visual-caption {
     max-width: 1018px;
+  }
+
+  .til-gavn.caption-top .visual-caption {
+    top: 112px;
   }
 }
 
