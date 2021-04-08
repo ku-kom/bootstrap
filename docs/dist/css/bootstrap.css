@@ -10233,8 +10233,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
           filter: brightness(90%) blur(0);
 }
 .slick-active .slide-link:focus {
-  outline: 1px solid #2c6694;
-  outline-offset: -1px;
+  outline: 2px solid #2c6694;
+  outline-offset: -2px;
 }
 .slick-arrow.slick-hidden {
   display: none;
