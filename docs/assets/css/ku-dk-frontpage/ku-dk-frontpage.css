@@ -1083,6 +1083,14 @@ video {
   }
 }
 
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPad landscape */
+  .til-gavn>.container::before {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .tiles-x .tile-img {
     height: 50%;
