@@ -58,7 +58,7 @@ body {
   font-size: 22px;
   position: relative;
   margin-bottom: 0;
-  padding-right: 32px;
+  padding-right: 40px; /* left position + icon width */
   color: var(--color);
 }
 
@@ -865,7 +865,7 @@ video {
     width: 29px;
     height: 29px;
     margin-right: -29px;
-    transform: translate(13px, -14px);
+    transform: translate(11px, -14px);
   }
 
   .search-researcher h2 {
