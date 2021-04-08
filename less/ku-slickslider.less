@@ -166,10 +166,14 @@
       .image-fadeOut();
     }
   }
+}
 
-  &:focus {
-    .tab-focus-v2();
-    outline-offset: -1px;
+.slick-active {
+  .slide-link {
+    &:focus {
+      .tab-focus-v2();
+      outline-offset: -1px;
+    }
   }
 }
 
@@ -368,7 +372,6 @@
     p {
       margin: 0 0 6px;
     }
-
     // &.faculty_color {
     //   background: @ku-red;
     //   color: @white-color;
@@ -416,7 +419,6 @@
     //     background: @brown;
     //   }
     // }
-
     &.box {
       &-red1 {
         .slider-overlay-colors(@gridbox-text-light; @red1; 83%);
