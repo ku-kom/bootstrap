@@ -68,7 +68,7 @@ body {
   content: '\feff';
   white-space: nowrap;
   line-height: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C18.4.5 23.5 5.6 23.5 12S18.4 23.5 12 23.5.5 18.4.5 12 5.6.5 12 .5z" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M8.5 18.5l3.9-6.5-3.9-6.4h3.3l4 6.4-4 6.5H8.5z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C18.4.5 23.5 5.6 23.5 12S18.4 23.5 12 23.5.5 18.4.5 12 5.6.5 12 .5z" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M8.5 18.5l3.9-6.5-3.9-6.4h3.3l4 6.4-4 6.5H8.5z" fill-rule="evenodd" fill="currentColor"/></svg>');
   background-repeat: no-repeat;
   background-size: contain;
   width: 24px;
@@ -79,7 +79,7 @@ body {
 }
 
 .with-arrow:hover::after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 .5C5.6.5.5 5.6.5 12S5.6 23.5 12 23.5 23.5 18.4 23.5 12 18.4.5 12 .5zm-.2 18H8.5l3.9-6.5-3.9-6.4h3.3l4 6.4-4 6.5z" fill-rcurrentColorule="evenodd" clip-rule="evenodd" fill="currentColor"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 .5C5.6.5.5 5.6.5 12S5.6 23.5 12 23.5 23.5 18.4 23.5 12 18.4.5 12 .5zm-.2 18H8.5l3.9-6.5-3.9-6.4h3.3l4 6.4-4 6.5z" fill="currentColor"/></svg>');
 }
 
 h1, h2, h3 {
