@@ -50,9 +50,9 @@
 }
 
 #ccc-desc {
-  font-size: 15px;
+  font-size: 14px;
   @media all and (min-width: @screen-sm-max) {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.7px;
     margin-bottom: 30px;
   }
@@ -70,6 +70,7 @@
   padding: 0 @grid-gutter-by-half 5px;
   @media all and (min-width: @screen-sm-max) {
     padding: 0 @grid-gutter-by-half @grid-gutter-by-half;
+    // padding: 0 @grid-gutter-by-half 0;
   }
   border-radius: @border-radius-base;
 
@@ -82,6 +83,7 @@
   font-size: 17px;
   margin-top: 0;
   display: block;
+  // display: inline-block;
   @media all and (min-width: @screen-sm-max) {
     font-size: 20px;
   }
@@ -96,6 +98,7 @@
   position: relative;
   width: 100%;
   padding: 0 @grid-gutter-width 0 0;
+  // padding: 0;
   color: @white-color;
   background: transparent;
   border: 0;
@@ -105,11 +108,20 @@
 
   &:before {
     .glyphicon;
+    font-size: 26px;
+    // Todo: delete
     position: absolute;
     top: auto;
     right: 0;
     bottom: 0;
-    font-size: 26px;
+    // Todo: delete
+
+    // float: right;
+    // vertical-align: middle;
+    // font-size: 20px;
+    // @media all and (min-width: @screen-sm-max) {
+    //   font-size: 26px;
+    // }
     color: @semi-white;
   }
 
@@ -126,8 +138,12 @@
 
 .ccc-select-description {
   display: block;
+  // float: right;
+  // margin-right: 15px;
   @media all and (max-width: @screen-xs-max) {
     margin-bottom: @grid-gutter-by-half;
+    // font-sise: 12px;
+    // margin: 4px 10px 2px auto;
   }
 }
 

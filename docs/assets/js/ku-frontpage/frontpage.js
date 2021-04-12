@@ -1,4 +1,4 @@
-/*global debounce, JSON*/
+/*global debounce, JSON, GlueFrame*/
 /* NEL, KU KOM, 2020.
  * Scripts for ku.dk frontpage.
  */
@@ -201,51 +201,21 @@
       return text.slice(0, count) + (text.length > count ? '...' : '');
     }
 
-    // function instagramBackup() {
-    //   // Fallback images if live feed fails
-    //   $instaslider.append($insta_backup);
-    //   $instaslider.addClass('instagram_fallback');
-    //   initInstaSlideshow();
-    // }
-
-    // function getInstagramByAccount(account) {
-    //   // Fetch Instagram images by account
-    //   if (account) {
-    //     var $url = 'https://www.instagram.com/' + encodeURIComponent($accountName) + '/?__a=1';
-    //     $.ajax({
-    //         url: $url,
-    //         type: 'GET'
-    //       }).done(function(data) {
-    //         //console.log(data);
-    //         destroySlideshow();
-    //         $instaslider.empty();
-    //         if (typeof data.graphql === 'undefined' || typeof data.graphql === null) {
-    //           console.log('Url ok, but redirected due to too many network requests');
-    //           // Insert fallback images if live feed fails
-    //           instagramBackup();
-    //           return;
-    //         }
-    //         var entry = data.graphql.user.edge_owner_to_timeline_media.edges;
-    //         var html = '';
-    //         var i;
-    //         if (entry) {
-    //           for (i = 0; i < entry.length; ++i) {
-    //             var img = entry[i].node.thumbnail_src;
-    //             var shortcode = entry[i].node.shortcode;
-    //             var cap = (typeof entry[i].node.edge_media_to_caption.edges[0] === 'undefined') ? i + ': No caption' : entry[i].node.edge_media_to_caption.edges[0].node.text;
-    //             var caption = (cap) ? escape_string(cap.substring(0, 50) + '...') : '';
-    //             html += '<a tabindex="-1" href="https://www.instagram.com/p/' + shortcode + ' " target="_blank" rel="noopener" aria-label="' + caption + '"><img src="' + img + '" alt="' + account + '"></a>';
-    //           }
-    //           $instaslider.append(html);
-    //           setTimeout(initInstaSlideshow, 2000);
-    //         }
-    //       })
-    //       .fail(function(xhr, textStatus, errorThrown) {
-    //         instagramBackup();
-    //         console.log(xhr.responseText);
-    //       });
-    //   }
-    // }
+    function pauseVideos(el) {
+      // Pause videos from video23
+      var frames = el;
+      // Check if plugin is included in page:
+      if (typeof(GlueFrame) !== 'undefined') {
+        for (var i = 0; i < frames.length; i++) {
+          var frame = frames[i];
+          var Player = new GlueFrame(frame, "Player");
+          // Stop playing video23 videos
+          if (Player) {
+            Player.set("playing", false);
+          }
+        }
+      }
+    }
 
     function initSlideshows() {
       // Add buttons
@@ -281,12 +251,14 @@
     }
 
     // Init scripts
-    // getInstagramByAccount($user);
     initSlideshows();
 
     // Add button to hero video
     $($button).insertAfter($heroVideo);
 
+    $('.news-modal .modal').on('hide.bs.modal', function(e) {
+      pauseVideos(e.target.querySelectorAll('iframe'));
+    });
 
     $(document).on('click', '.hero .play-pause-button', function() {
       videoButton('#hero-video', $(this));
