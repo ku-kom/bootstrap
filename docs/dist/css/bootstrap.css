@@ -11406,11 +11406,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
 }
 #ccc-desc {
-  font-size: 15px;
+  font-size: 14px;
 }
 @media all and (min-width: 991px) {
   #ccc-desc {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: .7px;
     margin-bottom: 30px;
   }
@@ -11474,11 +11474,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 26px;
   position: absolute;
   top: auto;
   right: 0;
   bottom: 0;
-  font-size: 26px;
   color: #f1f1f1;
 }
 .ccc-select:focus {
