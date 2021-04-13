@@ -80,7 +80,7 @@ blockquote.full-width::before {
 
   blockquote.full-width {
     font-size: 30px;
-    margin: 0 calc(-25% - 6px) 0 25%;
+    margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
     padding: 36px 15px;
   }
 
