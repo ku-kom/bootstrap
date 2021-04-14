@@ -11417,7 +11417,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 @media (max-width: 480px) {
   #ccc-desc {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   #ccc-desc::after {
     content: '';
@@ -11431,6 +11431,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   .ccc-intro-inner {
     overflow-y: scroll;
     max-height: 250px;
+    padding-right: 5px;
   }
 }
 .ccc-list {
