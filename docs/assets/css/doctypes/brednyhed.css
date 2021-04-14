@@ -131,21 +131,10 @@ blockquote.full-width::before {
     overflow: hidden;
   }
 
-  .img-default>img {
-    transition: transform .2s ease;
-    transform-origin: bottom center;
+  .well {
+    margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
   }
 
-  .img-default:hover>img {
-    transform: scale3d(1.02, 1.02, 1.02);
-  }
-
-  /* .well {
-    margin: calc(-25% - 6px);
-    max-width: 60%;
-    float: left;
-    margin-right: 23px;
-  } */
   .figure-caption, figcaption {
     font-size: 13px;
     max-width: 521px;
