@@ -11389,7 +11389,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   height: 100%;
   padding-bottom: 23px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-popup {
     padding: 23px 130px 52px 130px;
   }
@@ -11399,7 +11399,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   line-height: 1.3333333;
   margin-top: 13px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   #ccc-title {
     font-size: 24px;
   }
@@ -11407,7 +11407,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 #ccc-desc {
   font-size: 14px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   #ccc-desc {
     font-size: 16px;
     letter-spacing: .7px;
@@ -11446,7 +11446,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: 0 13px 5px;
   border-radius: 2px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-list > li {
     padding: 0 13px;
   }
@@ -11459,7 +11459,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin-top: 0;
   display: inline-block;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-select-title {
     font-size: 20px;
   }
@@ -11476,7 +11476,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   text-align: left;
   cursor: pointer;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-select {
     font-size: 16px;
   }
@@ -11500,7 +11500,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-size: 20px;
   color: #f1f1f1;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-select:before {
     font-size: 26px;
   }
