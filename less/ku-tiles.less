@@ -220,12 +220,12 @@ body:not(.FullWidthFrontpage) .double-column {
 
           &:after {
             content: '';
+            pointer-events: none;
             background: linear-gradient(to top, rgba(@white-color,1) 43%, rgba(@white-color,0));
             display: block;
             height: 35px;
             position: absolute;
             width: 100%;
-            left: 0;
             bottom: 0;
           }
         }
