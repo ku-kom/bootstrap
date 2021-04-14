@@ -11430,7 +11430,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   .ccc-intro-inner {
     overflow-y: scroll;
-    max-height: 250px;
+    max-height: 260px;
     padding-right: 5px;
   }
 }
