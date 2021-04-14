@@ -11401,7 +11401,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 @media all and (min-width: 991px) {
   #ccc-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 #ccc-desc {
