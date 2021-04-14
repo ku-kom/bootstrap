@@ -9721,12 +9721,12 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after {
     content: '';
+    pointer-events: none;
     background: linear-gradient(to top, #fff 43%, rgba(255, 255, 255, 0));
     display: block;
     height: 35px;
     position: absolute;
     width: 100%;
-    left: 0;
     bottom: 0;
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
@@ -11395,7 +11395,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
 }
 #ccc-title {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.3333333;
   margin-top: 13px;
 }
@@ -11414,6 +11414,25 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 480px) {
+  #ccc-desc {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  #ccc-desc::after {
+    content: '';
+    background: linear-gradient(to top, #505050, rgba(80, 80, 80, 0));
+    height: 35px;
+    position: absolute;
+    width: calc(100% - var(--scroll-bar));
+    bottom: 0;
+    pointer-events: none;
+  }
+  .ccc-intro-inner {
+    overflow-y: scroll;
+    max-height: 250px;
+  }
+}
 .ccc-list {
   list-style: none;
   padding: 0;
@@ -11427,7 +11446,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 @media all and (min-width: 991px) {
   .ccc-list > li {
-    padding: 0 13px 13px;
+    padding: 0 13px;
   }
 }
 .ccc-list > li + li {
@@ -11436,7 +11455,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select-title {
   font-size: 17px;
   margin-top: 0;
-  display: block;
+  display: inline-block;
 }
 @media all and (min-width: 991px) {
   .ccc-select-title {
@@ -11448,7 +11467,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   letter-spacing: .7px;
   position: relative;
   width: 100%;
-  padding: 0 26px 0 0;
+  padding: 0;
   color: #fff;
   background: transparent;
   border: 0;
@@ -11474,11 +11493,15 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
+  float: right;
+  vertical-align: middle;
+  font-size: 20px;
   color: #f1f1f1;
+}
+@media all and (min-width: 991px) {
+  .ccc-select:before {
+    font-size: 26px;
+  }
 }
 .ccc-select:focus {
   outline: 1px solid #2c6694;
@@ -11487,11 +11510,14 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   content: "\e260";
 }
 .ccc-select-description {
-  display: block;
+  float: right;
+  margin-right: 15px;
 }
 @media all and (max-width: 767px) {
   .ccc-select-description {
     margin-bottom: 13px;
+    font-size: 12px;
+    margin: 4px 10px 2px auto;
   }
 }
 .ccc-list-actions {
