@@ -131,7 +131,7 @@ blockquote.full-width::before {
     overflow: hidden;
   }
 
-  .well {
+  .well, [itemprop="video"] {
     margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
   }
 
