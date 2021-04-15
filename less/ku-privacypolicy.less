@@ -108,6 +108,8 @@
 }
 
 .ccc-select-title {
+  flex: 1;
+  align-self: flex-end;
   font-size: 17px;
   margin-top: 0;
   //display: block;
@@ -120,6 +122,7 @@
 .ccc-select {
   display: flex;
   align-items: end;
+  justify-content: space-between;
   font-size: 15px;
   @media (min-width: @screen-sm-max) {
     font-size: 16px;
@@ -137,7 +140,7 @@
   &::after {
     content: "\e259";
     position: relative;
-    top: 1px;
+    top: 3px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
@@ -147,7 +150,6 @@
     -moz-osx-font-smoothing: grayscale;
     font-size: 26px;
     float: right;
-    vertical-align: middle;
     font-size: 20px;
     @media (min-width: @screen-sm-max) {
       font-size: 26px;
@@ -168,12 +170,13 @@
 
 .ccc-select-description {
   //display: block;
+  align-self: flex-end;
   float: right;
   margin: 5px 15px 0 0;
   @media all and (max-width: @screen-xs-max) {
     margin-bottom: @grid-gutter-by-half;
     font-size: 12px;
-    margin: auto 10px auto auto;
+    margin: 0 10px 2px 0;
   }
 }
 

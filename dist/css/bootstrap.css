@@ -11524,6 +11524,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   margin-top: 23px;
 }
 .ccc-select-title {
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   font-size: 17px;
   margin-top: 0;
   display: inline-block;
@@ -11538,6 +11542,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   display: flex;
   -ms-flex-align: end;
   align-items: end;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 15px;
   letter-spacing: .7px;
   position: relative;
@@ -11557,7 +11563,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select::after {
   content: "\e259";
   position: relative;
-  top: 1px;
+  top: 3px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
@@ -11567,7 +11573,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
   float: right;
-  vertical-align: middle;
   font-size: 20px;
   color: #f1f1f1;
 }
@@ -11583,6 +11588,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   content: "\e260";
 }
 .ccc-select-description {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   float: right;
   margin: 5px 15px 0 0;
 }
@@ -11590,7 +11597,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   .ccc-select-description {
     margin-bottom: 13px;
     font-size: 12px;
-    margin: auto 10px auto auto;
+    margin: 0 10px 2px 0;
   }
 }
 .ccc-list-actions {
