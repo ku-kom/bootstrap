@@ -118,6 +118,8 @@
 }
 
 .ccc-select {
+  display: flex;
+  align-items: end;
   font-size: 15px;
   @media (min-width: @screen-sm-max) {
     font-size: 16px;
@@ -133,7 +135,7 @@
   cursor: pointer;
   .glyphicon-menu-down;
 
-  &:before {
+  &::after {
     .glyphicon;
     font-size: 26px;
     float: right;
@@ -150,7 +152,7 @@
   }
 
   &.open {
-    &:before {
+    &::after {
       content: "\e260";
     }
   }
@@ -176,7 +178,7 @@
   display: block;
   position: relative;
   padding-left: 30px!important;
-  margin: 6px 4px 12px 0;
+  margin: 4px 4px 12px 0;
   font-size: 22px;
   user-select: none;
   cursor: default!important;

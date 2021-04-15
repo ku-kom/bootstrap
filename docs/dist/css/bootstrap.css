@@ -11534,6 +11534,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
 }
 .ccc-select {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: end;
   font-size: 15px;
   letter-spacing: .7px;
   position: relative;
@@ -11553,7 +11557,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select:before {
   content: "\e259";
 }
-.ccc-select:before {
+.ccc-select::after {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -11570,14 +11574,14 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   color: #f1f1f1;
 }
 @media (min-width: 991px) {
-  .ccc-select:before {
+  .ccc-select::after {
     font-size: 26px;
   }
 }
 .ccc-select:focus {
   outline: 1px solid #2c6694;
 }
-.ccc-select.open:before {
+.ccc-select.open::after {
   content: "\e260";
 }
 .ccc-select-description {
@@ -11601,7 +11605,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   display: block;
   position: relative;
   padding-left: 30px!important;
-  margin: 6px 4px 12px 0;
+  margin: 4px 4px 12px 0;
   font-size: 22px;
   -webkit-user-select: none;
      -moz-user-select: none;
