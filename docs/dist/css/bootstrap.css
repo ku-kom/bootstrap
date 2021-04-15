@@ -4181,7 +4181,7 @@ fieldset[disabled] .btn-social.linkedin.focus {
 .btn-social.linkedin::after {
   content: "\6c";
   font-size: 24px;
-  top: 1px;
+  top: 2px;
   margin-left: 7px;
 }
 .btn-social.twitter {
@@ -4254,6 +4254,7 @@ fieldset[disabled] .btn-social.twitter.focus {
   color: #fff;
   background-color: #c13584;
   border-color: #b5327c;
+  background: linear-gradient(45deg, #c13584, #e1306c, #fd1d1d);
 }
 .btn-social.instagram:focus,
 .btn-social.instagram.focus {
