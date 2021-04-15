@@ -11567,6 +11567,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  content: "\e259";
   font-size: 26px;
   float: right;
   vertical-align: middle;
@@ -11687,7 +11688,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-buttons button {
   text-transform: none;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
 }
 @media (max-width: 767px) {
