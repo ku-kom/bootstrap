@@ -11398,12 +11398,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-size: 21px;
   line-height: 1.3333333;
   margin-top: 13px;
-  margin-bottom: 15px;
 }
 @media (min-width: 991px) {
   #ccc-title {
     font-size: 24px;
-    margin-bottom: 10px;
   }
 }
 #ccc-desc {
