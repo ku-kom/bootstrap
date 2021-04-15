@@ -4312,7 +4312,7 @@ fieldset[disabled] .btn-social.instagram.focus {
 }
 .btn-social.instagram::after {
   content: "\69";
-  font-size: 24px;
+  font-size: 23px;
   top: 4px;
   margin-left: 5px;
 }
