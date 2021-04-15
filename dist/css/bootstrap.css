@@ -11593,7 +11593,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   float: right;
   margin: 5px 15px 0 0;
 }
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   .ccc-select-description {
     margin-bottom: 13px;
     font-size: 12px;
@@ -11617,6 +11617,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
       -ms-user-select: none;
           user-select: none;
   cursor: default!important;
+}
+@media (min-width: 991px) {
+  .customcheck {
+    margin-top: 4px;
+  }
 }
 .customcheck input {
   position: absolute;

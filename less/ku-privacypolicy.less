@@ -173,7 +173,7 @@
   align-self: flex-end;
   float: right;
   margin: 5px 15px 0 0;
-  @media all and (max-width: @screen-xs-max) {
+  @media (max-width: @screen-xs-max) {
     margin-bottom: @grid-gutter-by-half;
     font-size: 12px;
     margin: 0 10px 2px 0;
@@ -190,6 +190,9 @@
   position: relative;
   padding-left: 30px!important;
   margin: 4px 4px 12px 0;
+  @media (min-width: @screen-sm-max) {
+    margin-top: 4px;
+  }
   font-size: 22px;
   user-select: none;
   cursor: default!important;
