@@ -11397,7 +11397,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 #ccc-title {
   font-size: 21px;
   line-height: 1.3333333;
-  margin-top: 13px;
+  margin: 13px 0;
 }
 @media (min-width: 991px) {
   #ccc-title {
@@ -11433,6 +11433,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     -webkit-overflow-scrolling: touch;
     max-height: 265px;
     padding: 0 10px 35px 0;
+  }
+  .ccc-intro-inner > p:first-child {
+    margin-top: 0;
   }
 }
 .ccc-list {

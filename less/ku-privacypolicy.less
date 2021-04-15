@@ -43,7 +43,7 @@
 #ccc-title {
   font-size: 21px;
   line-height: @line-height-small;
-  margin-top: @grid-gutter-by-half;
+  margin: @grid-gutter-by-half 0;
   @media (min-width: @screen-sm-max) {
     font-size: 24px;
   }
@@ -78,6 +78,12 @@
     -webkit-overflow-scrolling: touch;
     max-height: 265px;
     padding: 0 10px 35px 0;
+
+    &>p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 }
 
