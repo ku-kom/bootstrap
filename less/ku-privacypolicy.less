@@ -68,7 +68,7 @@
     background: linear-gradient(to top, fade(@ku-cookiebox-bg, 96), fade(@ku-cookiebox-bg, 0));
     height: 35px;
     position: absolute;
-    width: calc(100% - var(--scroll-bar));
+    width: calc(100% - var(--scroll-bar, 10px));
     bottom: 0;
     pointer-events: none;
   }
@@ -77,6 +77,7 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     max-height: 265px;
+    padding-right: 5px;
     margin-bottom: 40px;
   }
 }

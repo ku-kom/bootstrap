@@ -11424,7 +11424,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     background: linear-gradient(to top, rgba(80, 80, 80, .96), rgba(80, 80, 80, 0));
     height: 35px;
     position: absolute;
-    width: calc(100% - var(--scroll-bar));
+    width: calc(100% - var(--scroll-bar, 10px));
     bottom: 0;
     pointer-events: none;
   }
@@ -11432,6 +11432,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     max-height: 265px;
+    padding-right: 5px;
     margin-bottom: 40px;
   }
 }
