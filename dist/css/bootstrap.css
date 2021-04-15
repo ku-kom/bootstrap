@@ -4250,6 +4250,72 @@ fieldset[disabled] .btn-social.twitter.focus {
   top: 4px;
   margin-left: 5px;
 }
+.btn-social.instagram {
+  color: #fff;
+  background-color: #c13584;
+  border-color: #b5327c;
+}
+.btn-social.instagram:focus,
+.btn-social.instagram.focus {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #511637;
+}
+.btn-social.instagram:hover {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #85255b;
+}
+a.btn-social.instagram:visited {
+  color: #fff;
+}
+.btn-social.instagram:active,
+.btn-social.instagram.active,
+.btn-social.instagram .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #85255b;
+}
+.btn-social.instagram:active:hover,
+.btn-social.instagram.active:hover,
+.btn-social.instagram .open > .dropdown-toggle:hover,
+.btn-social.instagram:active:focus,
+.btn-social.instagram.active:focus,
+.btn-social.instagram .open > .dropdown-toggle:focus,
+.btn-social.instagram:active.focus,
+.btn-social.instagram.active.focus,
+.btn-social.instagram .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #7d2255;
+  border-color: #511637;
+}
+.btn-social.instagram:active,
+.btn-social.instagram.active,
+.open > .dropdown-toggle.btn-social.instagram {
+  background-image: none;
+}
+.btn-social.instagram.disabled:hover,
+.btn-social.instagram[disabled]:hover,
+fieldset[disabled] .btn-social.instagram:hover,
+.btn-social.instagram.disabled:focus,
+.btn-social.instagram[disabled]:focus,
+fieldset[disabled] .btn-social.instagram:focus,
+.btn-social.instagram.disabled.focus,
+.btn-social.instagram[disabled].focus,
+fieldset[disabled] .btn-social.instagram.focus {
+  background-color: #c13584;
+  border-color: #b5327c;
+}
+.btn-social.instagram .badge {
+  color: #c13584;
+  background-color: #fff;
+}
+.btn-social.instagram::after {
+  content: "\69";
+  font-size: 24px;
+  top: 4px;
+  margin-left: 5px;
+}
 .btn-link {
   color: #2c6694;
   font-weight: normal;
@@ -11516,7 +11582,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-select-description {
   float: right;
-  margin: 2px 15px 0 0;
+  margin: 5px 15px 0 0;
 }
 @media all and (max-width: 767px) {
   .ccc-select-description {
