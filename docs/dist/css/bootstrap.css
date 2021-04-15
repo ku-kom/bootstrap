@@ -11498,7 +11498,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     max-height: 265px;
-    padding: 0 10px 35px 0;
+    padding: 0 10px 40px 0;
   }
   .ccc-intro-inner > p:first-child {
     margin-top: 0;
