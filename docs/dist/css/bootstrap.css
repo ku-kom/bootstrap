@@ -4250,6 +4250,72 @@ fieldset[disabled] .btn-social.twitter.focus {
   top: 4px;
   margin-left: 5px;
 }
+.btn-social.instagram {
+  color: #fff;
+  background-color: #c13584;
+  border-color: #b5327c;
+}
+.btn-social.instagram:focus,
+.btn-social.instagram.focus {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #511637;
+}
+.btn-social.instagram:hover {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #85255b;
+}
+a.btn-social.instagram:visited {
+  color: #fff;
+}
+.btn-social.instagram:active,
+.btn-social.instagram.active,
+.btn-social.instagram .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #992a69;
+  border-color: #85255b;
+}
+.btn-social.instagram:active:hover,
+.btn-social.instagram.active:hover,
+.btn-social.instagram .open > .dropdown-toggle:hover,
+.btn-social.instagram:active:focus,
+.btn-social.instagram.active:focus,
+.btn-social.instagram .open > .dropdown-toggle:focus,
+.btn-social.instagram:active.focus,
+.btn-social.instagram.active.focus,
+.btn-social.instagram .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #7d2255;
+  border-color: #511637;
+}
+.btn-social.instagram:active,
+.btn-social.instagram.active,
+.open > .dropdown-toggle.btn-social.instagram {
+  background-image: none;
+}
+.btn-social.instagram.disabled:hover,
+.btn-social.instagram[disabled]:hover,
+fieldset[disabled] .btn-social.instagram:hover,
+.btn-social.instagram.disabled:focus,
+.btn-social.instagram[disabled]:focus,
+fieldset[disabled] .btn-social.instagram:focus,
+.btn-social.instagram.disabled.focus,
+.btn-social.instagram[disabled].focus,
+fieldset[disabled] .btn-social.instagram.focus {
+  background-color: #c13584;
+  border-color: #b5327c;
+}
+.btn-social.instagram .badge {
+  color: #c13584;
+  background-color: #fff;
+}
+.btn-social.instagram::after {
+  content: "\69";
+  font-size: 24px;
+  top: 4px;
+  margin-left: 5px;
+}
 .btn-link {
   color: #2c6694;
   font-weight: normal;
@@ -11389,29 +11455,53 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   height: 100%;
   padding-bottom: 23px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-popup {
-    padding: 23px 100px 52px 100px;
+    padding: 23px 130px 52px 130px;
   }
 }
 #ccc-title {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.3333333;
-  margin-top: 13px;
+  margin: 13px 0;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   #ccc-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 #ccc-desc {
   font-size: 14px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   #ccc-desc {
     font-size: 16px;
     letter-spacing: .7px;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  #ccc-desc {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  #ccc-desc::after {
+    content: '';
+    background: linear-gradient(to top, rgba(80, 80, 80, .98), rgba(80, 80, 80, 0));
+    height: 35px;
+    position: absolute;
+    width: calc(100% - var(--scroll-bar, 10px));
+    bottom: 0;
+    pointer-events: none;
+  }
+  .ccc-intro-inner {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: 265px;
+    padding: 0 10px 45px 0;
+  }
+  .ccc-intro-inner > p:first-child {
+    margin-top: 0;
   }
 }
 .ccc-list {
@@ -11425,47 +11515,55 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   padding: 0 13px 5px;
   border-radius: 2px;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-list > li {
-    padding: 0 13px 13px;
+    padding: 0 13px;
   }
 }
 .ccc-list > li + li {
   margin-top: 23px;
 }
 .ccc-select-title {
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   font-size: 17px;
   margin-top: 0;
-  display: block;
+  display: inline-block;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-select-title {
     font-size: 20px;
   }
 }
 .ccc-select {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: end;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 15px;
   letter-spacing: .7px;
   position: relative;
   width: 100%;
-  padding: 0 26px 0 0;
+  padding: 0;
   color: #fff;
   background: transparent;
   border: 0;
   text-align: left;
   cursor: pointer;
 }
-@media all and (min-width: 991px) {
+@media (min-width: 991px) {
   .ccc-select {
     font-size: 16px;
   }
 }
-.ccc-select:before {
+.ccc-select::after {
   content: "\e259";
-}
-.ccc-select:before {
   position: relative;
-  top: 1px;
+  top: 3px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
@@ -11474,24 +11572,32 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
+  float: right;
+  font-size: 20px;
   color: #f1f1f1;
+}
+@media (min-width: 991px) {
+  .ccc-select::after {
+    font-size: 26px;
+  }
 }
 .ccc-select:focus {
   outline: 1px solid #2c6694;
 }
-.ccc-select.open:before {
+.ccc-select.open::after {
   content: "\e260";
 }
 .ccc-select-description {
-  display: block;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  float: right;
+  margin: 5px 15px 0 0;
 }
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   .ccc-select-description {
     margin-bottom: 13px;
+    font-size: 12px;
+    margin: 0 10px 2px 0;
   }
 }
 .ccc-list-actions {
@@ -11504,13 +11610,18 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   display: block;
   position: relative;
   padding-left: 30px!important;
-  margin: 6px 4px 12px 0;
+  margin: 1px 4px 12px 0;
   font-size: 22px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: default!important;
+}
+@media (min-width: 991px) {
+  .customcheck {
+    margin-top: 4px;
+  }
 }
 .customcheck input {
   position: absolute;
@@ -11586,7 +11697,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-buttons button {
   text-transform: none;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
 }
 @media (max-width: 767px) {

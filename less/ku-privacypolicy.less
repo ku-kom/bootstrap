@@ -35,26 +35,55 @@
 .ccc-popup {
   height: 100%;
   padding-bottom: @grid-gutter-height;
-  @media all and (min-width: @screen-sm-max) {
-    padding: @grid-gutter-height 100px floor((@grid-gutter-width * 2)) 100px;
+  @media (min-width: @screen-sm-max) {
+    padding: @grid-gutter-height 130px floor((@grid-gutter-width * 2)) 130px;
   }
 }
 
 #ccc-title {
-  font-size: 24px;
-  @media all and (min-width: @screen-sm-max) {
-    font-size: 26px;
-  }
+  font-size: 21px;
   line-height: @line-height-small;
-  margin-top: @grid-gutter-by-half;
+  margin: @grid-gutter-by-half 0;
+  @media (min-width: @screen-sm-max) {
+    font-size: 24px;
+  }
 }
 
 #ccc-desc {
   font-size: 14px;
-  @media all and (min-width: @screen-sm-max) {
+  @media (min-width: @screen-sm-max) {
     font-size: 16px;
     letter-spacing: 0.7px;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: @screen-xs) {
+  #ccc-desc {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  #ccc-desc::after {
+    content: '';
+    background: linear-gradient(to top, fade(@ku-cookiebox-bg, 98), fade(@ku-cookiebox-bg, 0));
+    height: 35px;
+    position: absolute;
+    width: calc(100% - var(--scroll-bar, 10px));
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .ccc-intro-inner {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: 265px;
+    padding: 0 10px 45px 0;
+
+    & > p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -68,9 +97,8 @@
 .ccc-list > li {
   border: 1px solid @gray-888;
   padding: 0 @grid-gutter-by-half 5px;
-  @media all and (min-width: @screen-sm-max) {
-    padding: 0 @grid-gutter-by-half @grid-gutter-by-half;
-    // padding: 0 @grid-gutter-by-half 0;
+  @media (min-width: @screen-sm-max) {
+    padding: 0 @grid-gutter-by-half;
   }
   border-radius: @border-radius-base;
 
@@ -80,48 +108,52 @@
 }
 
 .ccc-select-title {
+  flex: 1;
+  align-self: flex-end;
   font-size: 17px;
   margin-top: 0;
-  display: block;
-  // display: inline-block;
-  @media all and (min-width: @screen-sm-max) {
+  //display: block;
+  display: inline-block;
+  @media (min-width: @screen-sm-max) {
     font-size: 20px;
   }
 }
 
 .ccc-select {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
   font-size: 15px;
-  @media all and (min-width: @screen-sm-max) {
+  @media (min-width: @screen-sm-max) {
     font-size: 16px;
   }
   letter-spacing: 0.7px;
   position: relative;
   width: 100%;
-  padding: 0 @grid-gutter-width 0 0;
-  // padding: 0;
+  padding: 0;
   color: @white-color;
   background: transparent;
   border: 0;
   text-align: left;
   cursor: pointer;
-  .glyphicon-menu-down;
 
-  &:before {
-    .glyphicon;
+  &::after {
+    content: "\e259";
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 26px;
-    // Todo: delete
-    position: absolute;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    // Todo: delete
-
-    // float: right;
-    // vertical-align: middle;
-    // font-size: 20px;
-    // @media all and (min-width: @screen-sm-max) {
-    //   font-size: 26px;
-    // }
+    float: right;
+    font-size: 20px;
+    @media (min-width: @screen-sm-max) {
+      font-size: 26px;
+    }
     color: @semi-white;
   }
 
@@ -130,20 +162,21 @@
   }
 
   &.open {
-    &:before {
+    &::after {
       content: "\e260";
     }
   }
 }
 
 .ccc-select-description {
-  display: block;
-  // float: right;
-  // margin-right: 15px;
-  @media all and (max-width: @screen-xs-max) {
+  //display: block;
+  align-self: flex-end;
+  float: right;
+  margin: 5px 15px 0 0;
+  @media (max-width: @screen-xs-max) {
     margin-bottom: @grid-gutter-by-half;
-    // font-sise: 12px;
-    // margin: 4px 10px 2px auto;
+    font-size: 12px;
+    margin: 0 10px 2px 0;
   }
 }
 
@@ -156,7 +189,10 @@
   display: block;
   position: relative;
   padding-left: 30px!important;
-  margin: 6px 4px 12px 0;
+  margin: 1px 4px 12px 0;
+  @media (min-width: @screen-sm-max) {
+    margin-top: 4px;
+  }
   font-size: 22px;
   user-select: none;
   cursor: default!important;
@@ -218,8 +254,6 @@
   height: 218px;
   position: relative;
   overflow-y: scroll;
-  // overflow-x: auto;
-  //background-color: @white-color;
   transition: height 0.4s ease;
   -webkit-overflow-scrolling: touch;
 }
@@ -260,7 +294,7 @@
       flex: 1;
     }
     text-transform: none;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
 
     &:focus {
@@ -318,10 +352,6 @@
 
 .right-side {
   .cookiefilter {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
     height: 100%;
     width: 100%;
     padding: 10px;
@@ -347,58 +377,3 @@
     }
   }
 }
-// KU privacy policy box
-// @media (min-width: @screen-xs-max) {
-//   .privacy-policy {
-//     position: fixed;
-//     bottom: 0;
-//     right: 0;
-//     left: 0;
-//     z-index: 1020!important;
-//     height: auto;
-//     padding: 40px;
-//     color: @white-color;
-//     font-weight: 600;
-//     background: @ku-cookiebox-bg;
-//
-//     .h2 {
-//       font-weight: 700;
-//       margin-top: 0;
-//     }
-//
-//     p {
-//       margin: 0 0 2px;
-//     }
-//
-//     .btn {
-//       #gradient.vertical(@gray-lighter; darken(@gray-lighter, 12%); 0%; 100%);
-//       color: @ku-red;
-//       padding: 6px 23px;
-//       font-size: 1.3em;
-//       font-weight: bold;
-//       text-transform: uppercase;
-//     }
-//
-//     .laes_mere_cookies {
-//       color: @white-color;
-//       text-decoration: underline;
-//       display: inline-block;
-//       margin-top: 16px;
-//
-//       &:before {
-//         content: "\00bb";
-//         color: inherit;
-//         display: inline-block;
-//         font-size: 1.4em;
-//         margin-right: 5px;
-//         top: 1px;
-//         position: relative;
-//       }
-//     }
-//   }
-// }
-// @media (max-width: @screen-xs-max) {
-//   .privacy-policy {
-//     display: none;
-//   }
-// }
