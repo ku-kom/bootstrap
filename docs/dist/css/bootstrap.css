@@ -11513,7 +11513,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-list > li {
   border: 1px solid #888;
-  padding: 0 13px 5px;
+  padding: 0 13px;
   border-radius: 2px;
 }
 @media (min-width: 991px) {
@@ -11564,7 +11564,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select::after {
   content: "\e259";
   position: relative;
-  top: -1px;
+  top: 2px;
   -ms-flex-item-align: center;
   align-self: center;
   display: -ms-inline-flexbox;
@@ -11607,6 +11607,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+}
+@media (max-width: 767px) {
+  .ccc-list-actions {
+    margin-bottom: 8px;
+  }
 }
 .customcheck {
   display: block;

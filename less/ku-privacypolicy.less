@@ -96,7 +96,7 @@
 
 .ccc-list > li {
   border: 1px solid @gray-888;
-  padding: 0 @grid-gutter-by-half 5px;
+  padding: 0 @grid-gutter-by-half;
   @media (min-width: @screen-sm-max) {
     padding: 0 @grid-gutter-by-half;
   }
@@ -140,7 +140,7 @@
   &::after {
     content: "\e259";
     position: relative;
-    top: -1px;
+    top: 2px;
     align-self: center;
     display: inline-flex;
     font-family: 'Glyphicons Halflings';
@@ -182,6 +182,9 @@
 .ccc-list-actions {
   display: flex;
   flex-direction: row;
+  @media (max-width: @screen-xs-max) {
+    margin-bottom: 8px;
+  }
 }
 
 .customcheck {
