@@ -79,7 +79,7 @@
     max-height: 265px;
     padding: 0 10px 45px 0;
 
-    &>p {
+    & > p {
       &:first-child {
         margin-top: 0;
       }
@@ -136,7 +136,15 @@
   .glyphicon-menu-down;
 
   &::after {
-    .glyphicon;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 26px;
     float: right;
     vertical-align: middle;
@@ -165,7 +173,7 @@
   @media all and (max-width: @screen-xs-max) {
     margin-bottom: @grid-gutter-by-half;
     font-size: 12px;
-    margin: 4px 10px 2px auto;
+    margin: auto 10px auto auto;
   }
 }
 

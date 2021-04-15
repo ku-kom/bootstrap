@@ -11592,7 +11592,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   .ccc-select-description {
     margin-bottom: 13px;
     font-size: 12px;
-    margin: 4px 10px 2px auto;
+    margin: auto 10px auto auto;
   }
 }
 .ccc-list-actions {
