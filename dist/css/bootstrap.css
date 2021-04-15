@@ -11421,7 +11421,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   #ccc-desc::after {
     content: '';
-    background: linear-gradient(to top, rgba(80, 80, 80, .0096), rgba(80, 80, 80, 0));
+    background: linear-gradient(to top, rgba(80, 80, 80, .96), rgba(80, 80, 80, 0));
     height: 35px;
     position: absolute;
     width: calc(100% - var(--scroll-bar));
