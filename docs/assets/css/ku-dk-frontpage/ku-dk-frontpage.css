@@ -521,7 +521,7 @@ video {
 }
 
 .slide-columns .slick-list, .eventsslider .slick-list {
-  padding: 0 var(--slide-width, 100px) 0 0 !important;
+  padding: 0 var(--slide-width) 0 0 !important;
 }
 
 /* Mobil */
