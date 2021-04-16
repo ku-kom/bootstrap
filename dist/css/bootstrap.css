@@ -11488,7 +11488,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   }
   #ccc-desc::after {
     content: '';
-    background: linear-gradient(to top, rgba(80, 80, 80, .98), rgba(80, 80, 80, 0));
+    background: linear-gradient(to top, #575757, rgba(80, 80, 80, 0));
     height: 35px;
     position: absolute;
     width: calc(100% - var(--scroll-bar, 10px));
@@ -11513,7 +11513,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-list > li {
   border: 1px solid #888;
-  padding: 0 13px 5px;
+  padding: 0 13px;
   border-radius: 2px;
 }
 @media (min-width: 991px) {
@@ -11564,16 +11564,17 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 .ccc-select::after {
   content: "\e259";
   position: relative;
-  top: 3px;
-  display: inline-block;
+  top: 2px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: normal;
-  line-height: 1;
+  line-height: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 26px;
-  float: right;
   font-size: 20px;
   color: #f1f1f1;
 }
@@ -11606,6 +11607,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+}
+@media (max-width: 767px) {
+  .ccc-list-actions {
+    margin-bottom: 8px;
+  }
 }
 .customcheck {
   display: block;

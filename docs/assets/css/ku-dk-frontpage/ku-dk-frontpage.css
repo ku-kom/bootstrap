@@ -12,6 +12,8 @@
   --green1: 57, 100, 28;
   --green2: 75, 131, 37;
   --green3: 190, 202, 168;
+  /* Ekstra klimagrøn */
+  --green4: 178, 179, 98;
   --grey1: 61, 61, 61;
   --grey2: 102, 102, 102;
   --grey3: 225, 223, 223;
@@ -24,7 +26,7 @@
   --color: 252, 252, 252;
 }
 
-.box-blue3, .box-teal3, .box-green3, .box-grey3, .box-light1, .box-light2, .box-light3 {
+.box-blue3, .box-teal3, .box-green3, .box-grey3, .box-light1, .box-light2, .box-light3, .box-green4 {
   --color: 38, 38, 38;
 }
 
@@ -111,6 +113,12 @@ h1, h2, h3 {
 .til-gavn-bokse .tile-cat .header-small, .til-gavn .cat {
   color: #c73028;
   font-weight: 600!important;
+}
+
+/* Ekstra klimagrøn */
+.box-green4 {
+  background-color: #b2b362;
+  color: #262626;
 }
 
 .visual-container a, .hero a, .visual-teaser a {
@@ -1454,6 +1462,10 @@ video {
 
   :not(.row).box-green3 {
     background-color: rgba(var(--green3), .83);
+  }
+
+  :not(.row).box-green4 {
+    background-color: rgba(var(--green4), .83);
   }
 
   :not(.row).box-grey1 {

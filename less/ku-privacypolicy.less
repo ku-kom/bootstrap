@@ -65,7 +65,7 @@
 
   #ccc-desc::after {
     content: '';
-    background: linear-gradient(to top, fade(@ku-cookiebox-bg, 98), fade(@ku-cookiebox-bg, 0));
+    background: linear-gradient(to top, rgb(87, 87, 87), fade(@ku-cookiebox-bg, 0));
     height: 35px;
     position: absolute;
     width: calc(100% - var(--scroll-bar, 10px));
@@ -96,7 +96,7 @@
 
 .ccc-list > li {
   border: 1px solid @gray-888;
-  padding: 0 @grid-gutter-by-half 5px;
+  padding: 0 @grid-gutter-by-half;
   @media (min-width: @screen-sm-max) {
     padding: 0 @grid-gutter-by-half;
   }
@@ -140,16 +140,15 @@
   &::after {
     content: "\e259";
     position: relative;
-    top: 3px;
-    display: inline-block;
+    top: 2px;
+    align-self: center;
+    display: inline-flex;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: normal;
-    line-height: 1;
+    line-height: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 26px;
-    float: right;
     font-size: 20px;
     @media (min-width: @screen-sm-max) {
       font-size: 26px;
@@ -183,6 +182,9 @@
 .ccc-list-actions {
   display: flex;
   flex-direction: row;
+  @media (max-width: @screen-xs-max) {
+    margin-bottom: 8px;
+  }
 }
 
 .customcheck {
