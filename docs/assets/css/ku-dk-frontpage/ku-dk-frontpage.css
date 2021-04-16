@@ -126,7 +126,7 @@ h1, h2, h3 {
 }
 
 .box-green4 .tiles-x .tilebox:hover {
-  box-shadow: 0 8px 10px 0 rgb(60 60 60 / 10%), 0 2px 6px 0 rgb(64 64 64 / 19%);
+  box-shadow: 0 8px 10px 0 rgb(60 60 60 / 30%), 0 2px 6px 0 rgb(64 64 64 / 19%);
 }
 
 .visual-container a, .hero a, .visual-teaser a {
