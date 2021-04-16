@@ -3,12 +3,21 @@
 .social-embed {
   background-color: @white-color;
   padding-bottom: 5px;
+
   &:before {
     .icon;
     margin: 0;
     position: relative;
     font-size: 32px;
     line-height: 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   h2 {
@@ -18,7 +27,7 @@
     display: inline-block;
     padding: 0;
     margin: 0;
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
   }
 
   &.twitter {

@@ -11808,6 +11808,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
   font-size: 32px;
   line-height: 0;
 }
+.social-embed a {
+  text-decoration: none;
+}
+.social-embed a:hover {
+  text-decoration: underline;
+}
 .social-embed h2 {
   font-weight: 600;
   font-size: 16px;
