@@ -43,9 +43,6 @@
     var $instaslider = $('.instaslider');
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
-    // Instagram account name
-    var $user = $instaslider.attr('data-account');
-    var $accountName = (typeof $user === 'undefined') ? 'university_of_copenhagen' : $user.trim();
     // Playser / pause buttons
     var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
