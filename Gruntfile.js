@@ -193,7 +193,7 @@ module.exports = function (grunt) {
         dest: 'dist/css/<%= pkg.name %>.css'
       },
       compileCustom: {
-        src: 'less/ku-gridboxes-bootstrap.less',
+        src: 'less/ku-gridboxes.less',
         dest: 'dist/css/ku-gridboxes.css'
       },
       videoplayer: {
