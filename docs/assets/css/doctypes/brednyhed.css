@@ -122,7 +122,7 @@ blockquote.full-width::before {
   }
 
   .widenews-content .img-default {
-    margin: 0 calc(-25% - 7px) 0 calc(-25% - 7px);
+    margin: 10px calc(-25% - 7px) 23px calc(-25% - 7px);
     max-width: 757px;
     float: none !important;
   }
@@ -132,7 +132,7 @@ blockquote.full-width::before {
   }
 
   .well, [itemprop="video"] {
-    margin: 0 calc(-25% - 7px) 20px calc(-25% - 7px);
+    margin: 10px calc(-25% - 7px) 23px calc(-25% - 7px);
   }
 
   .figure-caption, figcaption {
