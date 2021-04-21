@@ -11447,6 +11447,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc a:focus {
   outline: 1px solid #2c6694;
+  outline-offset: 2px;
 }
 .ccc-ani-enter,
 .ccc-ani-leave-to {
@@ -11715,6 +11716,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today.focus {
 }
 .ccc-buttons button:focus {
   outline: 1px solid #2c6694;
+  outline-offset: -4px;
 }
 .ccc-buttons button:first-child {
   margin-right: 20px;
