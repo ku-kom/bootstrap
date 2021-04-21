@@ -659,6 +659,7 @@ video {
 .image-box img {
   -webkit-filter: brightness(100%) blur(0);
   filter: brightness(100%) blur(0);
+  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
 }
 
 .image-box:hover img {
