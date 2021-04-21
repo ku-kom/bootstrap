@@ -135,8 +135,7 @@
           }
           // Update css variable to be the width of half a slide
           if (slick.$slider.is($newsslider)) {
-            var columnMargin = 26;
-            var slideWidth = Math.round(($(slick.$slides).width() / 2) - columnMargin) + 'px';
+            var slideWidth = Math.round($(slick.$slides).width() / 2) + 'px';
             document.body.style.setProperty('--slide-width', slideWidth);
           }
         });

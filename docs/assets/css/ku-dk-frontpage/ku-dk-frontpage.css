@@ -529,7 +529,8 @@ video {
 }
 
 :is(.slide-columns, .eventsslider) .slick-list {
-  padding: 0 var(--slide-width) 0 0 !important;
+  /* Slide width minus column margins */
+  padding: 0 calc(var(--slide-width) - 26px) 0 0!important;
 }
 
 /* Mobil */
