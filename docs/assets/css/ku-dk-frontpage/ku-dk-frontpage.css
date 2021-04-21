@@ -727,7 +727,7 @@ video {
   position: relative;
 }
 
-.divider-top>.container::before {
+.divider-top>.container::before, .divider-bottom>.container::after {
   content: '';
   background-color: #ccc;
   width: 100%;
@@ -741,16 +741,8 @@ video {
 }
 
 .divider-bottom>.container::after {
-  content: '';
-  background-color: #ccc;
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  right: auto;
+  top: auto;
   bottom: 0;
-  height: 1px;
 }
 
 @media (min-width: 768px) {
