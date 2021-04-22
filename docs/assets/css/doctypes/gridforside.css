@@ -26,7 +26,7 @@
     flex: 0 0 50%;
   }
 
-  .GridForside .double-column .gridbox.size1 .text, .two-one-column .column1 .gridbox.size1 .text, .one-two-column .column2 .gridbox.size1 .text {
+  :is(.GridForside .double-column, .two-one-column .column1, .one-two-column .column2) .gridbox.size1 .text {
     display: block;
   }
 
