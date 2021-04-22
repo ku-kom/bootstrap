@@ -80,7 +80,7 @@ module.exports = function (grunt) {
           'docs/assets/js/videoControls/*.js',
           'docs/assets/js/phonebook/*.js',
           'docs/assets/js/ku-frontpge/*.js',
-          'docs/assets/js/slider/slickslider-config.js',
+          // 'docs/assets/js/slider/slickslider-config.js',
           '!docs/assets/js/*.min.js'
         ]
       }
@@ -148,8 +148,17 @@ module.exports = function (grunt) {
         dest: 'docs/assets/js/docs.min.js'
       },
       slider: {
-        src: 'docs/assets/js/slider/slick.js',
-        dest: 'docs/assets/js/slider/slick.min.js'
+        files: [
+          {
+            expand: true,
+            cwd: 'docs/assets/js/slider/',
+            src: ['*.js', '!*.min.js'],
+            //src: 'docs/assets/js/slider/slick.js',
+            dest: 'docs/assets/js/slider/',
+            ext: '.min.js',
+            flatten: true
+          }
+        ]
       },
       custom: {
         files: [
