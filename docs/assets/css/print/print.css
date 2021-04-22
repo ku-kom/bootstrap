@@ -16,9 +16,6 @@ html, body {
 }
 
 body {
-  /* width: 210mm;
-  height: 297mm;
-  margin: 10mm auto;*/
   font-size: 13px !important;
 }
 
@@ -97,10 +94,6 @@ a, a:visited {
   text-decoration: underline;
 }
 
-/* .main-area a[href]:after {
-  content: " (Link: "attr(href) ")";
-  word-break: break-word;
-} */
 .main-area abbr[title]:after {
   content: " (Title: "attr(title) ")";
 }
@@ -165,7 +158,12 @@ h2:after, h3::after {
 }
 
 /* Org chart */
-ol.org-chart li::after, ol.org-chart li::before, ol.org-chart li>div::after, ol.org-chart li>div::before, ol.org-chart ol::after, ol.org-chart ol::before {
+ol.org-chart li::after,
+ol.org-chart li::before,
+ol.org-chart li>div::after,
+ol.org-chart li>div::before,
+ol.org-chart ol::after,
+ol.org-chart ol::before {
   background-color: #666;
 }
 
