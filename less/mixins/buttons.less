@@ -8,53 +8,55 @@
   background-color: @background;
   border-color: @border;
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     color: @color;
     background-color: darken(@background, 10%);
-        border-color: darken(@border, 25%);
+    border-color: darken(@border, 25%);
   }
+
   &:hover {
     color: @color;
     background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    border-color: darken(@border, 12%);
   }
-
   // KU speciifc
-  a& {
-    &:visited  {
+  a & {
+    &:visited {
       color: @color;
     }
   }
   //
-  &:active,
   &.active,
+  &:active,
   .open > .dropdown-toggle {
     color: @color;
     background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    border-color: darken(@border, 12%);
 
-    &:hover,
+    &.focus,
     &:focus,
-    &.focus {
+    &:hover {
       color: @color;
       background-color: darken(@background, 17%);
-          border-color: darken(@border, 25%);
+      border-color: darken(@border, 25%);
     }
   }
-  &:active,
+
   &.active,
+  &:active,
   .open > .dropdown-toggle& {
     background-image: none;
   }
+
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    &:hover,
+    &.focus,
     &:focus,
-    &.focus {
+    &:hover {
       background-color: @background;
-          border-color: @border;
+      border-color: @border;
     }
   }
 
@@ -63,8 +65,28 @@
     background-color: @color;
   }
 }
+// KU specific:
+// Mixin without drowdowns, disables states, etc.
 
+.social-button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:focus {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 25%);
+  }
+
+  &:hover {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 12%);
+  }
+}
 // Button sizes
+
 .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
