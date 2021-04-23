@@ -160,12 +160,23 @@
   }
 
   &.instagram {
-    .button-variant(@white-color; #c13584; darken(#c13584, 3%));
+    .button-variant(@white-color; #c13584; darken(#c13584, 5%));
     background: linear-gradient(45deg , #c13584, #e1306c, #fd1d1d);
 
     &::after {
       content: @icon-instagram;
       font-size: 23px;
+      top: 4px;
+      margin-left: 5px;
+    }
+  }
+
+  &.youtube {
+    .button-variant(@white-color; #f00; darken(#f00, 5%));
+
+    &::after {
+      content: @icon-youtube;
+      font-size: 22px;
       top: 4px;
       margin-left: 5px;
     }
