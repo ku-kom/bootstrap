@@ -4379,8 +4379,8 @@ fieldset[disabled] .btn-social.youtube.focus {
 }
 .btn-social.youtube::after {
   content: "\79";
-  font-size: 22px;
-  top: 4px;
+  font-size: 28px;
+  top: 0;
   margin-left: 5px;
 }
 .btn-link {
