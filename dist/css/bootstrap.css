@@ -1235,7 +1235,7 @@ template {
   content: "\79";
 }
 .icon-youtube:hover {
-  background-color: #d12223;
+  background-color: #f00;
 }
 .icon-tablet:before {
   content: "\77";
@@ -4253,19 +4253,19 @@ fieldset[disabled] .btn-social.twitter.focus {
 .btn-social.instagram {
   color: #fff;
   background-color: #c13584;
-  border-color: #b5327c;
+  border-color: #ad3076;
   background: linear-gradient(45deg, #c13584, #e1306c, #fd1d1d);
 }
 .btn-social.instagram:focus,
 .btn-social.instagram.focus {
   color: #fff;
   background-color: #992a69;
-  border-color: #511637;
+  border-color: #491432;
 }
 .btn-social.instagram:hover {
   color: #fff;
   background-color: #992a69;
-  border-color: #85255b;
+  border-color: #7d2255;
 }
 a.btn-social.instagram:visited {
   color: #fff;
@@ -4275,7 +4275,7 @@ a.btn-social.instagram:visited {
 .btn-social.instagram .open > .dropdown-toggle {
   color: #fff;
   background-color: #992a69;
-  border-color: #85255b;
+  border-color: #7d2255;
 }
 .btn-social.instagram:active:hover,
 .btn-social.instagram.active:hover,
@@ -4288,7 +4288,7 @@ a.btn-social.instagram:visited {
 .btn-social.instagram .open > .dropdown-toggle.focus {
   color: #fff;
   background-color: #7d2255;
-  border-color: #511637;
+  border-color: #491432;
 }
 .btn-social.instagram:active,
 .btn-social.instagram.active,
@@ -4305,7 +4305,7 @@ fieldset[disabled] .btn-social.instagram:focus,
 .btn-social.instagram[disabled].focus,
 fieldset[disabled] .btn-social.instagram.focus {
   background-color: #c13584;
-  border-color: #b5327c;
+  border-color: #ad3076;
 }
 .btn-social.instagram .badge {
   color: #c13584;
@@ -4314,6 +4314,72 @@ fieldset[disabled] .btn-social.instagram.focus {
 .btn-social.instagram::after {
   content: "\69";
   font-size: 23px;
+  top: 4px;
+  margin-left: 5px;
+}
+.btn-social.youtube {
+  color: #fff;
+  background-color: #f00;
+  border-color: #e60000;
+}
+.btn-social.youtube:focus,
+.btn-social.youtube.focus {
+  color: #fff;
+  background-color: #c00;
+  border-color: #600;
+}
+.btn-social.youtube:hover {
+  color: #fff;
+  background-color: #c00;
+  border-color: #a80000;
+}
+a.btn-social.youtube:visited {
+  color: #fff;
+}
+.btn-social.youtube:active,
+.btn-social.youtube.active,
+.btn-social.youtube .open > .dropdown-toggle {
+  color: #fff;
+  background-color: #c00;
+  border-color: #a80000;
+}
+.btn-social.youtube:active:hover,
+.btn-social.youtube.active:hover,
+.btn-social.youtube .open > .dropdown-toggle:hover,
+.btn-social.youtube:active:focus,
+.btn-social.youtube.active:focus,
+.btn-social.youtube .open > .dropdown-toggle:focus,
+.btn-social.youtube:active.focus,
+.btn-social.youtube.active.focus,
+.btn-social.youtube .open > .dropdown-toggle.focus {
+  color: #fff;
+  background-color: #a80000;
+  border-color: #600;
+}
+.btn-social.youtube:active,
+.btn-social.youtube.active,
+.open > .dropdown-toggle.btn-social.youtube {
+  background-image: none;
+}
+.btn-social.youtube.disabled:hover,
+.btn-social.youtube[disabled]:hover,
+fieldset[disabled] .btn-social.youtube:hover,
+.btn-social.youtube.disabled:focus,
+.btn-social.youtube[disabled]:focus,
+fieldset[disabled] .btn-social.youtube:focus,
+.btn-social.youtube.disabled.focus,
+.btn-social.youtube[disabled].focus,
+fieldset[disabled] .btn-social.youtube.focus {
+  background-color: #f00;
+  border-color: #e60000;
+}
+.btn-social.youtube .badge {
+  color: #f00;
+  background-color: #fff;
+}
+.btn-social.youtube::after {
+  content: "\79";
+  font-size: 22px;
   top: 4px;
   margin-left: 5px;
 }
