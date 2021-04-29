@@ -1842,7 +1842,7 @@ blockquote::before {
   top: 10px;
   left: 0;
   font-size: 45px;
-  color: #818181;
+  color: inherit;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
   speak: none;
