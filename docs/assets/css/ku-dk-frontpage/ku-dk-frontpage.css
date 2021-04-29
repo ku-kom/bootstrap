@@ -320,7 +320,7 @@ video {
   text-decoration: none
 }
 
-.ku-quote:focus, .ku-quote:active, .ku-quote:hover {
+.ku-quote:is(:active, :hover, :focus) {
   color: inherit !important;
   text-decoration: underline;
 }
