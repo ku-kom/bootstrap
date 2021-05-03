@@ -22,7 +22,7 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 
-+function($) {
++ function($) {
   'use strict';
 
   // Check if the page is responsive
@@ -37,10 +37,11 @@ if (typeof jQuery === 'undefined') {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      $(el).attr('aria-expanded', true);
+      // Set accessible state:
+      $(el).attr('aria-expanded', $(el).hasClass('open') === true ? 'true' : 'false');
     } else {
+      // Desktop:
       $(el).next('ul').show();
-      $(el).attr('aria-expanded', false);
     }
   };
 
