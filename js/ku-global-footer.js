@@ -19,14 +19,10 @@
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-
-      // $(el).next('ul').find('li').each(function(e, i) {
-      //   var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
-      //   $(this).find('a').attr('aria-expanded', expanded)
-      // });
-
+      $(el).next('ul').ariaExpanded = 'true';
     } else {
       $(el).next('ul').show();
+      $(el).next('ul').ariaExpanded = 'false';
     }
   };
 
