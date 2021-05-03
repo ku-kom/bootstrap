@@ -27,7 +27,7 @@ if (typeof jQuery === 'undefined') {
 
   // Check if the page is responsive
   var $isResponsive = ($('html').hasClass('non-responsive')) ? true : false;
-  var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
+    var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
@@ -37,10 +37,10 @@ if (typeof jQuery === 'undefined') {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      $(el).next('ul').ariaExpanded = 'true';
+      $(el).next('ul').attr('aria-expanded', true);
     } else {
       $(el).next('ul').show();
-      $(el).next('ul').ariaExpanded = 'false';
+      $(el).next('ul').attr('aria-expanded', false);
     }
   };
 
