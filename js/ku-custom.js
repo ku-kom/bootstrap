@@ -52,9 +52,9 @@ function shareURL(dest) {
     var docTitle = document.title || '';
     var source = location.hostname || '';
     var isLinkedin = (param == 'linkedin') ? true : false;
-    var suffix = (isLinkedin === true) ? '&title=' + encodeURIComponent(docTitle) + '&summary=&source=' + encodeURI(source) : '';
+    var suffix = (isLinkedin === true) ? '&title=' + encodeURIComponent(docTitle) + '&summary=&source=' + encodeURIComponent(source) : '';
     // Open in a new window:
-    window.open(encodeURI(urlMap[param]) + encodeURI(url) + suffix);
+    window.open(encodeURIComponent(urlMap[param]) + encodeURIComponent(url) + suffix);
   } else {
     console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
   }
