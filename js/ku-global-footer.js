@@ -9,7 +9,7 @@
 
   // Check if the page is responsive
   var $isResponsive = ($('html').hasClass('non-responsive')) ? true : false;
-    var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
+  var $footerHeader = $('#globalfooter .footer-heading[data-heading="toggle"]');
   var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
@@ -19,10 +19,10 @@
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      $(el).next('ul').attr('aria-expanded', true);
+      $(el).attr('aria-expanded', true);
     } else {
       $(el).next('ul').show();
-      $(el).next('ul').attr('aria-expanded', false);
+      $(el).attr('aria-expanded', false);
     }
   };
 
@@ -34,7 +34,7 @@
     var $newWidth = $('body').prop('clientWidth');
     if ($isResponsive === false && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
-      $footerColumn.removeAttr('style');
+      $footerColumn.removeAttr('style aria-expanded');
       $cachedWidth = $newWidth;
     }
   });
