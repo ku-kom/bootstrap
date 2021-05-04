@@ -1,6 +1,6 @@
 /* ========================================================================
  * Bootstrap: v3.3.7
- * Custom script for University of Copenhagen: ku.dk
+ * Custom script for University of Copenhagen: ku.dk, NEL
  * ======================================================================== */
 
 
