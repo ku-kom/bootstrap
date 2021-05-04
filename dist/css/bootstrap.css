@@ -8648,9 +8648,10 @@ iframe {
   #globalfooter .footercontent .footercolumn .footer-heading.open:after {
     content: "\2212";
   }
-  #globalfooter .footercontent .footercolumn .footer-heading:focus,
-  #globalfooter .footercontent .footercolumn .footer-heading:active {
+  #globalfooter .footercontent .footercolumn .footer-heading:active,
+  #globalfooter .footercontent .footercolumn .footer-heading:focus {
     outline: 1px solid #2c6694;
+    outline-offset: -3px;
   }
   #globalfooter .footercontent .footercolumn ul.footerlinks li {
     color: #4a4949;

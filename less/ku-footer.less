@@ -280,8 +280,10 @@
             }
           }
 
-          &:focus, &:active {
+          &:active,
+          &:focus {
             .tab-focus-v2();
+            outline-offset: -3px;
           }
         }
 
