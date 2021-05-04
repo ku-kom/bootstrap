@@ -15,7 +15,7 @@
 
   // Set accessible attribute:
   if (window.matchMedia('(max-width: 767px)').matches) {
-    $footerHeader.attr('aria-expanded', 'true');
+    $footerHeader.attr('aria-expanded', 'false');
   }
 
   var collapseFooter = function(el, ev) {
