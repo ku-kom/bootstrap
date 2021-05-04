@@ -31,14 +31,19 @@ if (typeof jQuery === 'undefined') {
   var $footerColumn = $('#globalfooter .footer-heading[data-heading="toggle"] + .footerlinks');
   var $cachedWidth = $('body').prop('clientWidth');
 
+  // Set accessible attribute:
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    $footerHeader.attr('aria-expanded', 'true');
+  }
+
   var collapseFooter = function(el, ev) {
     // Collapse footer at lowest breakpoint
     if ($isResponsive === false && window.matchMedia('(max-width: 767px)').matches) {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-      // Set accessible state:
-      $(el).attr('aria-expanded', $(el).hasClass('open') === true ? 'true' : 'false');
+      // Toggle accessible state:
+      $(el).attr('aria-expanded', $(el).hasClass('open') ? 'true' : 'false');
     } else {
       // Desktop:
       $(el).next('ul').show();
