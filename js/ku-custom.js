@@ -54,7 +54,7 @@ function shareURL(dest) {
     var isLinkedin = (param == 'linkedin') ? true : false;
     var suffix = (isLinkedin === true) ? '&title=' + encodeURIComponent(docTitle) + '&summary=&source=' + encodeURIComponent(source) : '';
     // Open in a new window:
-    window.open(encodeURIComponent(urlMap[param]) + encodeURIComponent(url) + suffix);
+    window.open(encodeURI(urlMap[param]) + encodeURI(url) + suffix);
   } else {
     console.log('Please call the function like this: onclick="shareURL(\'facebook)\'"');
   }
