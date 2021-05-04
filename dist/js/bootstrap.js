@@ -18,11 +18,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: v3.3.7
- * Custom script for University of Copenhagen: ku.dk
+ * Custom script for University of Copenhagen: ku.dk, NEL
  * ======================================================================== */
 
 
-+function($) {
++ function($) {
   'use strict';
 
   // Check if the page is responsive
@@ -37,13 +37,10 @@ if (typeof jQuery === 'undefined') {
       ev.preventDefault();
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
-
-      // $(el).next('ul').find('li').each(function(e, i) {
-      //   var expanded = $(this).find('a').attr('aria-expanded') == 'false' ? true : false;
-      //   $(this).find('a').attr('aria-expanded', expanded)
-      // });
-
+      // Set accessible state:
+      $(el).attr('aria-expanded', $(el).hasClass('open') === true ? 'true' : 'false');
     } else {
+      // Desktop:
       $(el).next('ul').show();
     }
   };
@@ -56,7 +53,7 @@ if (typeof jQuery === 'undefined') {
     var $newWidth = $('body').prop('clientWidth');
     if ($isResponsive === false && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
-      $footerColumn.removeAttr('style');
+      $footerColumn.removeAttr('style aria-expanded');
       $cachedWidth = $newWidth;
     }
   });
