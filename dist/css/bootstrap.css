@@ -12499,7 +12499,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .exp-box {
   background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #f1f1f1;
   border-radius: 2px;
   margin-bottom: 16px;
 }
