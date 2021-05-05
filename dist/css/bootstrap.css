@@ -12569,6 +12569,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   position: absolute;
   bottom: 0;
   left: 0;
+  pointer-events: none;
 }
 .login-container {
   max-width: 450px;
