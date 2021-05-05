@@ -6,7 +6,7 @@
   background-color: @gray-f5;
   border: 1px solid @well-border;
   border-radius: @border-radius-base;
-  margin-bottom: 16px;
+  margin-bottom: @exp-box-btn-offset;
 
   .collapse[aria-expanded="false"] {
     display: block;
@@ -22,7 +22,7 @@
 
 .btn-expand {
   .simple-button-variant(@white-color; @exp-btn-color; darken(@exp-btn-color, 5%));
-  bottom: -20px;
+  bottom: -@exp-box-btn-offset;
   position: relative;
 
   &::after {
