@@ -22,12 +22,13 @@
 
 .btn-expand {
   .simple-button-variant(@white-color; @exp-btn-color; darken(@exp-btn-color, 5%));
+  bottom: -20px;
+  position: relative;
 
   &::after {
     .glyphicon;
     content: "\002b";
     font-size: 14px;
-    color: #e6e6e6;
     left: 1px;
   }
 

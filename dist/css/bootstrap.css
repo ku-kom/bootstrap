@@ -12516,6 +12516,8 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   color: #fff;
   background-color: #c73028;
   border-color: #b22b24;
+  bottom: -20px;
+  position: relative;
 }
 .btn-expand:focus {
   color: #fff;
@@ -12539,7 +12541,6 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   -moz-osx-font-smoothing: grayscale;
   content: "\002b";
   font-size: 14px;
-  color: #e6e6e6;
   left: 1px;
 }
 .btn-expand[aria-expanded="true"]::after {
