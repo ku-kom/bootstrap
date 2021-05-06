@@ -145,13 +145,13 @@
 
 <h3 id="jump-to-open">Jump to open accordion</h3>
 
-<a href="#" id="LinkToOpenAccordion">Click to go to open accordion</a>
+<a href="#" class="LinkToOpenAccordion">Click to go to open accordion</a>
 {% highlight html %}
-<a href="#" id="LinkToOpenAccordion">Click to go to open accordion</a>
+<a href="#" class="LinkToOpenAccordion">Click to go to open accordion</a>
 {% endhighlight %}
 {% highlight js %}
 // Link to open accordion
-$('#LinkToOpenAccordion').click(function(e){
+$('.LinkToOpenAccordion').click(function(e){
   e.preventDefault();
   // Accordion content id:
   $('#collapseTwo').collapse('toggle');
@@ -392,7 +392,7 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 <script>
   $(document).ready(function() {
     // Link to open accordion
-    $('#LinkToOpenAccordion').click(function(e){
+    $('.LinkToOpenAccordion').click(function(e){
       e.preventDefault();
       // Accordion content id:
       $('#collapseTwo').collapse('toggle');
