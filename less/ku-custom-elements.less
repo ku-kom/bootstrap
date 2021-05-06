@@ -302,22 +302,21 @@
     margin-right: 20px;
     margin-left: 0;
   }
-  @media (max-width: @screen-sm) {
+  @media (max-width: @screen-xs-max) {
     margin: 10px 0;
     width: 100%;
     font-size: 13px;
     line-height: unset;
     float: none;
   }
-}
 
-.rightbox-normal {
-  .factbox {
+  .rightbox-normal &, .gccolumn & {
     width: 100%!important;
     margin: 0;
     float: none;
   }
 }
+
 // Newsletter and GDPR
 
 form.gdpr-accept {
