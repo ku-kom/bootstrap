@@ -10062,6 +10062,10 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   outline: 2px solid #2c6694;
   outline-offset: -2px;
 }
+[tabindex] .slide-link:focus {
+  outline: 0;
+  user-focus: none;
+}
 .slick-arrow.slick-hidden {
   display: none;
 }

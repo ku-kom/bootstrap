@@ -249,7 +249,7 @@ video {
   color: inherit;
 }
 
-.ku-values .slide-link:focus {
+.ku-values .slick-slide:not([tabindex]) .slide-link:focus {
   outline: 1px solid #2c6694;
 }
 
