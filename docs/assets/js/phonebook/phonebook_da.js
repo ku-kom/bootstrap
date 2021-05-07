@@ -161,6 +161,7 @@
           });
         }
       });
+      $('.page-item > a').attr('rel', 'nofollow');
     }
 
     isEmail = function(mail) {
