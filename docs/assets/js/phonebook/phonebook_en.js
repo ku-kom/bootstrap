@@ -146,6 +146,7 @@
     }
 
     apply_pagination = function() {
+      $pager.show();
       // Pager plugin settings
       var visible_pages = (window.matchMedia('(max-width: 767px)').matches) === true ? 3 : 5;
       $pager.twbsPagination({
