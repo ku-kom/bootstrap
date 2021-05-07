@@ -12417,7 +12417,8 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
-.mce-content-body p:empty {
+.mce-content-body p:empty,
+.mce-content-body p > br {
   display: none;
 }
 .mce-content-body p:empty + p {

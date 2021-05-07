@@ -32,6 +32,7 @@
     function gettwitterjson() {
       var loading = $('.ku-loading');
       var wrapper = $("#twitter-feed");
+      wrapper.find('ul').empty();
       var displaylimit = wrapper.attr("data-tweets");
       var user = wrapper.attr("data-account");
       var twitterAccount = (typeof user === 'undefined') ? 'koebenhavns_uni' : user.trim();
