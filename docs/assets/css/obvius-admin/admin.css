@@ -4316,6 +4316,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    background-position: -94px -126px;
  }
 
+ table.gcedit tbody th input.slide {
+   position: absolute;
+   right: 27px;
+   margin: 0.5em;
+   background-position: -63px -79px;
+ }
+
  table.gcedit tbody td {
    vertical-align: top;
  }
