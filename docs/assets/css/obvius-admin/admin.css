@@ -5023,7 +5023,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .thumbnail {
    float: left;
    width: 120px;
-   height: 145px;
+   min-height: 145px;
    margin: 10px;
    padding: 10px;
    background-color: #ddd;
@@ -5042,6 +5042,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-right: auto;
    margin-top: auto;
    margin-bottom: auto;
+ }
+
+ .thumbnail_image > b {
+   word-break: break-all;
  }
 
  .search_by_user_tekst {
