@@ -5561,7 +5561,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    border: 1px solid #ccc;
  }
 
- .panel h4.panel-title>a, .bootstrap-accordion-title {
+ .panel h4.panel-title>a, #obarea4 .bootstrap-accordion-title {
    color: #252525;
  }
 
