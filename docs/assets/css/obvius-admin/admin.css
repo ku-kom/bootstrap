@@ -5556,6 +5556,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-top: 4px;
  }
 
+ #collapse-vfields_accordion .bootstrap-accordion-content .table {
+   background-color: #fff;
+ }
+
  .panel h4.panel-title {
    margin: 0;
    border: 1px solid #ccc;
