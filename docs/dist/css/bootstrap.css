@@ -12421,6 +12421,9 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
+.mce-content-body#content .editor-collapsible {
+  padding: 15px;
+}
 .mce-content-body#content .exp-box .collapse[aria-expanded=false] {
   height: auto!important;
 }
