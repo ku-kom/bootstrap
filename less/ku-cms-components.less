@@ -8,7 +8,7 @@
   min-height: 100%;
 }
 
-main {
+#content {
   flex: 1 0 auto;
   background-color: @white-color;
   backface-visibility: hidden; //Fix weired flickering
@@ -58,7 +58,7 @@ nav {
 }
 @media (max-width: @screen-xs-max) {
   // Smaller margins on mobile
-  main {
+  #content {
     .container {
       padding-left: (@mobile-grid-gutter-width);
       padding-right: (@mobile-grid-gutter-width);

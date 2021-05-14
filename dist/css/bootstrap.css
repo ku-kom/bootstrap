@@ -7322,8 +7322,8 @@ img.img-default:after,
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
-main:before,
-main:after,
+#content:before,
+#content:after,
 .gcitem:before,
 .gcitem:after,
 .divider:before,
@@ -7355,7 +7355,7 @@ img.img-default:after,
 .panel-group:after,
 .modal-header:after,
 .modal-footer:after,
-main:after,
+#content:after,
 .gcitem:after,
 .divider:after,
 .spacer:after,
@@ -7628,7 +7628,7 @@ main:after,
       flex-flow: column nowrap;
   min-height: 100%;
 }
-main {
+#content {
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
   background-color: #fff;
@@ -7641,18 +7641,18 @@ main {
   justify-content: space-between;
 }
 @media (min-width: 768px) {
-  main {
+  #content {
     width: 746px;
     margin: 0 auto;
   }
 }
 @media (min-width: 992px) {
-  main {
+  #content {
     width: 966px;
   }
 }
 @media (min-width: 1200px) {
-  main {
+  #content {
     width: 1070px;
   }
 }
@@ -7682,15 +7682,15 @@ nav {
   }
 }
 @media (max-width: 767px) {
-  main .container {
+  #content .container {
     padding-left: 13px;
     padding-right: 13px;
   }
-  main .row {
+  #content .row {
     margin-left: -13px;
     margin-right: -13px;
   }
-  main [class*="col-"] {
+  #content [class*="col-"] {
     padding-left: 13px;
     padding-right: 13px;
   }
