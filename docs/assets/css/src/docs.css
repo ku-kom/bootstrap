@@ -211,7 +211,7 @@ h2 code, h3 code, h4 code {
 
 /* Share masthead with page headers */
 
-.bs-docs-masthead, .bs-docs-header {
+.bs-docs-masthead, #content .bs-docs-header {
   position: relative;
   padding: 30px 0;
   text-align: center;
