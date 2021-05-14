@@ -12408,6 +12408,9 @@ form.gdpr-accept .btn + .btn {
 .feed ul li {
   padding: 10px 0;
 }
+.feed ul li:first-child {
+  padding-top: 0;
+}
 .mce-content-body#content {
   display: block;
   -ms-flex: none;
