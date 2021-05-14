@@ -11444,6 +11444,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .ccc-popup {
   height: 100%;
   padding-bottom: 23px;
+  background-color: transparent;
 }
 @media (min-width: 991px) {
   .ccc-popup {
