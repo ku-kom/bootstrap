@@ -5551,6 +5551,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    display: none
  }
 
+ .editor-collapsible {
+   padding: 15px;
+ }
+
  .mce-content-body .panel-accordion+.panel-accordion,
  .mce-content-body .panel-accordion~.panel-accordion {
    margin-top: 4px;
