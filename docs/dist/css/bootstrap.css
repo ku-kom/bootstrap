@@ -12231,8 +12231,8 @@ p[align="right"]:before {
     float: none;
   }
 }
-.rightbox-normal .factbox,
-.gccolumn .factbox {
+.gccolumn .factbox,
+.rightbox-normal .factbox {
   width: 100%!important;
   margin: 0;
   float: none;
@@ -12404,6 +12404,9 @@ form.gdpr-accept .btn + .btn {
 }
 .sitemap li ul {
   margin-left: 15px;
+}
+.feed ul li {
+  padding: 10px 0;
 }
 .mce-content-body#content {
   display: block;

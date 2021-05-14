@@ -228,6 +228,7 @@
 #warning-banner-inner {
   @media (max-width: @screen-xs-max) {
     padding: 5px 40px 5px 0;
+
     & > .container {
       padding-left: @grid-gutter-by-half;
       padding-right: @grid-gutter-by-half;
@@ -310,13 +311,13 @@
     float: none;
   }
 
-  .rightbox-normal &, .gccolumn & {
+  .gccolumn &,
+  .rightbox-normal & {
     width: 100%!important;
     margin: 0;
     float: none;
   }
 }
-
 // Newsletter and GDPR
 
 form.gdpr-accept {
@@ -516,6 +517,15 @@ form.gdpr-accept {
 
     ul {
       margin-left: 15px;
+    }
+  }
+}
+// RSS feeds
+
+.feed {
+  ul {
+    li {
+      padding: 10px 0;
     }
   }
 }
