@@ -12421,9 +12421,6 @@ form.gdpr-accept .btn + .btn {
   max-width: 100%;
   height: auto;
 }
-.mce-content-body#content .editor-collapsible {
-  padding: 15px;
-}
 .mce-content-body#content .exp-box .collapse[aria-expanded=false] {
   height: auto!important;
 }
@@ -12516,6 +12513,9 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .mce-content-body .collapse:not(.panel-collapse) {
   display: block;
+}
+.editor-collapsible {
+  padding: 15px;
 }
 .exp-box {
   background-color: #f5f5f5;
