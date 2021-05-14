@@ -5023,7 +5023,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .thumbnail {
    float: left;
    width: 120px;
-   height: 145px;
+   min-height: 145px;
    margin: 10px;
    padding: 10px;
    background-color: #ddd;
@@ -5042,6 +5042,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-right: auto;
    margin-top: auto;
    margin-bottom: auto;
+ }
+
+ .thumbnail_image > b {
+   word-break: break-all;
  }
 
  .search_by_user_tekst {
@@ -5552,11 +5556,16 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-top: 4px;
  }
 
- .panel h4.panel-title {
-   margin: 0;
+ #collapse-vfields_accordion .bootstrap-accordion-content .table {
+   background-color: #fff;
  }
 
- .panel h4.panel-title>a {
+ .panel h4.panel-title {
+   margin: 0;
+   border: 1px solid #ccc;
+ }
+
+ .panel h4.panel-title>a, #obarea4 .bootstrap-accordion-title {
    color: #252525;
  }
 
