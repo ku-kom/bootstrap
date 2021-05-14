@@ -5546,8 +5546,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    background: #999;
  }
 
- .mce-container-body [aria-label~="accordion"] {
-   /* Hide accordion button in editor */
+ .mce-container-body [aria-label~="accordion"], .mce-container-body [aria-label~="semi-collapsible"], .mce-container-body [aria-label~="fold ud-boks"] {
+   /* Hide accordion, etc. buttons in editor */
    display: none
  }
 
