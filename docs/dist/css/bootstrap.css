@@ -9797,7 +9797,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .entries .entry {
     width: auto;
     margin-top: 0;
-    padding: 10px 15px;
     text-align: center;
   }
 }
