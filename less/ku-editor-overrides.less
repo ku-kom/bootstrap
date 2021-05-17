@@ -18,7 +18,6 @@
       .img-responsive;
     }
     // Semi collapsible box:
-
     .exp-box {
       .collapse {
         &[aria-expanded=false] {
@@ -47,12 +46,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -139,6 +138,11 @@
 }
 
 .mce-content-body {
+  & + .collapsible-hidden {
+    display: block;
+    margin: 5px 0;
+  }
+
   .panel-accordion {
     & + .accordion-hidden {
       // Display an option to insert more adjecent accordions:
@@ -172,6 +176,7 @@
 
 .editor-collapsible {
   padding: 0 15px;
+
   .mce-panel {
     width: 100% !important;
   }
