@@ -8453,7 +8453,7 @@ iframe {
   width: 430px;
   height: 430px;
   opacity: .1;
-  background: url("https://bootstrap.secure.ku.dk/img/footersegl.svg") no-repeat;
+  background: url("../../images/footersegl.svg") no-repeat;
   background-size: cover;
 }
 #globalfooter .footercontent > .footercolumn:last-child {
