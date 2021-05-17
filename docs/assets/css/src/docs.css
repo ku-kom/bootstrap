@@ -297,6 +297,7 @@ h2 code, h3 code, h4 code {
 
 .bs-docs-header .container {
   position: relative;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
