@@ -12537,7 +12537,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   background-color: #f5f5f5;
   border: 1px solid #f1f1f1;
   border-radius: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
 }
 .exp-box .collapse[aria-expanded="false"] {
   display: block;
