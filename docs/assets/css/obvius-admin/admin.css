@@ -5594,7 +5594,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    height: auto;
  }
 
- .accordion-hidden {
+ .accordion-hidden, .collapsible-hidden {
    display: none;
  }
 

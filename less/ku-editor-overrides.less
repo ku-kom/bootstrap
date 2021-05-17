@@ -18,7 +18,6 @@
       .img-responsive;
     }
     // Semi collapsible box:
-
     .exp-box {
       .collapse {
         &[aria-expanded=false] {
@@ -125,6 +124,10 @@
   }
 }
 
+.collapsible-hidden {
+  display: none;
+}
+
 .mce-container-body {
   [aria-label~="accordion"],
   [aria-label~="semi-collapsible"],
@@ -135,6 +138,14 @@
 }
 
 .mce-content-body {
+  // Semi collapsible box
+  .exp-box {
+    & + .collapsible-hidden {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
   .panel-accordion {
     & + .accordion-hidden {
       // Display an option to insert more adjecent accordions:
@@ -168,6 +179,7 @@
 
 .editor-collapsible {
   padding: 0 15px;
+
   .mce-panel {
     width: 100% !important;
   }

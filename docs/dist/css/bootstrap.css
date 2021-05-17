@@ -12495,10 +12495,17 @@ form.gdpr-accept .btn + .btn {
 .accordion-hidden + .panel-group {
   margin-top: 4px;
 }
+.collapsible-hidden {
+  display: none;
+}
 .mce-container-body [aria-label~="accordion"],
 .mce-container-body [aria-label~="semi-collapsible"],
 .mce-container-body [aria-label~="fold ud-boks"] {
   display: inline-block;
+}
+.mce-content-body .exp-box + .collapsible-hidden {
+  display: block;
+  margin: 5px 0;
 }
 .mce-content-body .panel-accordion + .accordion-hidden {
   display: block;
