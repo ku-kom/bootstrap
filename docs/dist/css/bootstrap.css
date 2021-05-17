@@ -12442,12 +12442,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tfoot > tr > th,
-.mce-content-body table > thead > tr > th,
-.mce-content-body table > tbody > tr > th,
-.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > td,
 .mce-content-body table > thead > tr > td,
-.mce-content-body table > tbody > tr > td {
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > thead > tr > th,
+.mce-content-body table > tfoot > tr > th {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,
@@ -12503,7 +12503,7 @@ form.gdpr-accept .btn + .btn {
 .mce-container-body [aria-label~="fold ud-boks"] {
   display: inline-block;
 }
-.mce-content-body + .collapsible-hidden {
+.mce-content-body .exp-box + .collapsible-hidden {
   display: block;
   margin: 5px 0;
 }
