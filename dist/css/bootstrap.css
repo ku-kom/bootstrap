@@ -12588,11 +12588,11 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .exp-box-wrap[aria-expanded="true"] .exp-box-inner {
   padding-bottom: 0;
 }
-.exp-box-inner > *:first-child {
+.bootstrap-collapsible-content > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
-.exp-box-inner > *:last-child {
+.bootstrap-collapsible-content > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
