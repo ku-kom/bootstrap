@@ -1664,6 +1664,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    clear: both;
  }
 
+.obadm .admincontentwrapper #content {
+  display: block;
+  -ms-flex: none;
+  flex: none;
+}
  .obadm .admincontentwrapper #content-wrapper h1.title {
    background: none;
    border: 0;
