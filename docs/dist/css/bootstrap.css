@@ -12588,6 +12588,9 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .exp-box-wrap[aria-expanded="true"] .exp-box-inner {
   padding-bottom: 0;
 }
+.bootstrap-collapsible-title {
+  margin-top: 0;
+}
 .bootstrap-collapsible-content > *:first-child {
   margin-top: 0;
   padding-top: 0;
