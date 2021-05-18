@@ -114,7 +114,7 @@
 
     function timeSince(timeStamp) {
       // relative time
-      var lang = window.navigator.userLanguage || window.navigator.language;
+      var lang = navigator.language || navigator.userLanguage;
       var now = new Date(),
         secondsPast = (now.getTime() - timeStamp.getTime()) / 1000;
       if (secondsPast < 60) {
