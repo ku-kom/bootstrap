@@ -12412,6 +12412,9 @@ form.gdpr-accept .btn + .btn {
 .sitemap li ul {
   margin-left: 15px;
 }
+.feed ul {
+  margin-top: 0;
+}
 .feed ul li {
   padding: 10px 0;
 }
