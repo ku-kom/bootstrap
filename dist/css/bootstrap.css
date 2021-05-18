@@ -311,14 +311,14 @@ template {
 @font-face {
   font-family: "ku-symbols";
   font-display: swap;
-  src: url("https://cms.ku.dk/styling/fonts/KU.eot");
-  src: url("https://cms.ku.dk/styling/fonts/KU.eot?#iefix") format('embedded-opentype'), url("https://cms.ku.dk/styling/fonts/KU.woff2") format('woff2'), url("https://cms.ku.dk/styling/fonts/KU.woff") format('woff'), url("https://cms.ku.dk/styling/fonts/KU.ttf") format('truetype'), url("https://cms.ku.dk/styling/fonts/KU.svg#ku_symbols") format('svg');
+  src: url("../fonts/KU.eot");
+  src: url("../fonts/KU.eot?#iefix") format('embedded-opentype'), url("../fonts/KU.woff2") format('woff2'), url("../fonts/KU.woff") format('woff'), url("../fonts/KU.ttf") format('truetype'), url("../fonts/KU.svg#ku_symbols") format('svg');
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
   font-display: swap;
-  src: url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.eot");
-  src: url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.woff") format('woff'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("https://cms.ku.dk/styling/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
 }
 .glyphicon {
   position: relative;
@@ -1311,32 +1311,32 @@ template {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.eot');
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-300.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-300.eot');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-300.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-300.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-300.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-300.svg#OpenSans') format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.eot');
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-400.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-400.eot');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-400.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-400.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-400.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-400.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-400.svg#OpenSans') format('svg');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.eot');
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-600.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-600.eot');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-600.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-600.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-600.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-600.svg#OpenSans') format('svg');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.eot');
-  src: url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.woff') format('woff'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.ttf') format('truetype'), url('https://cms.ku.dk/styling/fonts/open-sans-v18-latin-ext_latin-700.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-700.eot');
+  src: url('../fonts/open-sans-v18-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-700.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-700.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-700.svg#OpenSans') format('svg');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -8453,7 +8453,7 @@ iframe {
   width: 430px;
   height: 430px;
   opacity: .1;
-  background: url("https://bootstrap.secure.ku.dk/img/footersegl.svg") no-repeat;
+  background: url("../../images/footersegl.svg") no-repeat;
   background-size: cover;
 }
 #globalfooter .footercontent > .footercolumn:last-child {
@@ -9797,7 +9797,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .entries .entry {
     width: auto;
     margin-top: 0;
-    padding: 10px 15px;
     text-align: center;
   }
 }
@@ -10533,7 +10532,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #3d3d3d;
 }
 .swiper-container {
   margin-left: auto;
@@ -10544,6 +10543,14 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+}
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
 }
 .swiper-container-vertical > .swiper-wrapper {
   -ms-flex-direction: column;
@@ -12537,7 +12544,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   background-color: #f5f5f5;
   border: 1px solid #f1f1f1;
   border-radius: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
 }
 .exp-box .collapse[aria-expanded="false"] {
   display: block;
@@ -12589,11 +12596,14 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .exp-box-wrap[aria-expanded="true"] .exp-box-inner {
   padding-bottom: 0;
 }
-.exp-box-inner > *:first-child {
+.bootstrap-collapsible-title {
+  margin-top: 0;
+}
+.bootstrap-collapsible-content > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
-.exp-box-inner > *:last-child {
+.bootstrap-collapsible-content > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }

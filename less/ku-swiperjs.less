@@ -1,6 +1,6 @@
 
 
-@themeColor: #007aff;
+@themeColor: @grey1;
 @colors: white #ffffff, black #000000;
 
 @font-face {
@@ -23,6 +23,16 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+
+  .swiper-notification {
+    // a11y
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+  }
 }
 .swiper-container-vertical > .swiper-wrapper {
   flex-direction: column;
