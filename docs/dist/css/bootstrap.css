@@ -10532,7 +10532,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #3d3d3d;
 }
 .swiper-container {
   margin-left: auto;
@@ -10543,6 +10543,14 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+}
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
 }
 .swiper-container-vertical > .swiper-wrapper {
   -ms-flex-direction: column;
