@@ -12,15 +12,13 @@
       width: 45%;
       float: left;
       margin-right: 20px;
-      margin-left: 0;
 
-      &+.collapsible-hidden {
+      &~.collapsible-hidden {
         // Fix floating issues
-        &:last-child {
-          &+* {
+          &+*:not(.collapsible-hidden) {
             overflow-x: auto;
           }
-        }
+
       }
     }
 
@@ -28,7 +26,6 @@
       width: 45%;
       float: right;
       margin-left: 20px;
-      margin-right: 0;
 
       &+.collapsible-hidden {
         // Fix floating issues

@@ -110,13 +110,13 @@ blockquote.full-width::before {
     margin-top: 10px;
   }
 
-  .factbox {
+  .factbox, .exp-box-right {
     font-size: 14px;
     margin: 13px calc(-25% - 6px) 13px 23px;
     width: 60%;
   }
 
-  .factbox-left {
+  .factbox-left, .exp-box-left {
     margin: 13px 23px 13px calc(-25% - 6px);
     width: 60%;
   }

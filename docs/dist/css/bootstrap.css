@@ -12760,16 +12760,14 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
     width: 45%;
     float: left;
     margin-right: 20px;
-    margin-left: 0;
   }
-  .exp-box-left + .collapsible-hidden:last-child + * {
+  .exp-box-left ~ .collapsible-hidden + *:not(.collapsible-hidden) {
     overflow-x: auto;
   }
   .exp-box-right {
     width: 45%;
     float: right;
     margin-left: 20px;
-    margin-right: 0;
   }
   .exp-box-right + .collapsible-hidden:last-child + * {
     overflow-x: auto;
