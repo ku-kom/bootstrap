@@ -12765,11 +12765,13 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   height: 100px !important;
 }
 .exp-box-left {
+  width: 45%;
   float: left;
   margin-right: 20px;
   margin-left: 0;
 }
 .exp-box-right {
+  width: 45%;
   float: right;
   margin-left: 20px;
   margin-right: 0;
