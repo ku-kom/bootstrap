@@ -7,21 +7,39 @@
   border: 1px solid @exp-box-border;
   border-radius: @border-radius-base;
   margin-bottom: (@exp-box-btn-offset + 7px);
-    @media (min-width: @screen-sm-min) {
-      &-left {
-        width: 45%;
-        float: left;
-        margin-right: 20px;
-        margin-left: 0;
-      }
+  @media (min-width: @screen-sm-min) {
+    &-left {
+      width: 45%;
+      float: left;
+      margin-right: 20px;
+      margin-left: 0;
 
-      &-right {
-        width: 45%;
-        float: right;
-        margin-left: 20px;
-        margin-right: 0;
+      &+.collapsible-hidden {
+        // Fix floating issues
+        &:last-child {
+          &+* {
+            overflow-x: auto;
+          }
+        }
       }
     }
+
+    &-right {
+      width: 45%;
+      float: right;
+      margin-left: 20px;
+      margin-right: 0;
+
+      &+.collapsible-hidden {
+        // Fix floating issues
+        &:last-child {
+          &+* {
+            overflow-x: auto;
+          }
+        }
+      }
+    }
+  }
 
   .collapse[aria-expanded="false"] {
     display: block;
@@ -37,7 +55,6 @@
   .gccolumn &,
   .rightbox-normal & {
     width: 100%!important;
-    margin: 0;
     float: none;
   }
 }

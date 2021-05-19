@@ -12762,11 +12762,17 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
     margin-right: 20px;
     margin-left: 0;
   }
+  .exp-box-left + .collapsible-hidden:last-child + * {
+    overflow-x: auto;
+  }
   .exp-box-right {
     width: 45%;
     float: right;
     margin-left: 20px;
     margin-right: 0;
+  }
+  .exp-box-right + .collapsible-hidden:last-child + * {
+    overflow-x: auto;
   }
 }
 .exp-box .collapse[aria-expanded="false"] {
@@ -12781,7 +12787,6 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .gccolumn .exp-box,
 .rightbox-normal .exp-box {
   width: 100%!important;
-  margin: 0;
   float: none;
 }
 .btn-expand {
