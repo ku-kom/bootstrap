@@ -12764,6 +12764,16 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .exp-box .collapsing[aria-expanded="false"] {
   height: 100px !important;
 }
+.exp-box-left {
+  float: left;
+  margin-right: 20px;
+  margin-left: 0;
+}
+.exp-box-right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
 .btn-expand {
   color: #fff;
   background-color: #c73028;
