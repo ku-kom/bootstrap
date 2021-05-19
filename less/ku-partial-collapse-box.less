@@ -7,6 +7,36 @@
   border: 1px solid @exp-box-border;
   border-radius: @border-radius-base;
   margin-bottom: (@exp-box-btn-offset + 7px);
+  @media (min-width: @screen-sm-min) {
+    &-left {
+      width: 45%;
+      float: left;
+      margin-right: 20px;
+
+      &~.collapsible-hidden {
+        // Fix floating issues
+          &+*:not(.collapsible-hidden) {
+            overflow-x: auto;
+          }
+
+      }
+    }
+
+    &-right {
+      width: 45%;
+      float: right;
+      margin-left: 20px;
+
+      &+.collapsible-hidden {
+        // Fix floating issues
+        &:last-child {
+          &+* {
+            overflow-x: auto;
+          }
+        }
+      }
+    }
+  }
 
   .collapse[aria-expanded="false"] {
     display: block;
@@ -17,6 +47,12 @@
 
   .collapsing[aria-expanded="false"] {
     height: @exp-box-height !important;
+  }
+
+  .gccolumn &,
+  .rightbox-normal & {
+    width: 100%;
+    float: none;
   }
 }
 
