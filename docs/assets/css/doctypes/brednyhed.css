@@ -48,6 +48,14 @@ blockquote.full-width::before {
   border: 0;
 }
 
+.exp-box {
+  font-size: 14px;
+}
+
+.bootstrap-collapsible-title {
+  font-size: 17px;
+}
+
 @media (min-width: 992px) {
   .title {
     font-size: 40px;
