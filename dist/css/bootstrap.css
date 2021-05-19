@@ -8091,7 +8091,7 @@ iframe {
   position: absolute;
   content: "";
   left: 0;
-  top: 2px;
+  top: 4px;
   background-color: #901a1e;
   border-radius: 2px;
 }
@@ -8139,7 +8139,7 @@ iframe {
 .ku-leftmenu ul > li > a::after {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 0;
   width: 10px;
   height: 11px;
@@ -8159,7 +8159,7 @@ iframe {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 1px;
   font-size: 9px;
   width: 9px;
@@ -8217,7 +8217,7 @@ iframe {
 .ku-leftmenu ul > li ul li ul li ul li > a::before {
   height: 3px;
   width: 3px;
-  top: 8px;
+  top: 9px;
 }
 .ku-leftmenu ul > li ul li ul li ul li > a:hover::before {
   width: 3px;
