@@ -12762,7 +12762,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
     margin-right: 20px;
   }
   .exp-box-left ~ .collapsible-hidden + *:not(.collapsible-hidden) {
-    overflow-x: auto;
+    overflow-x: hidden;
   }
   .exp-box-right {
     width: 45%;
@@ -12770,7 +12770,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
     margin-left: 20px;
   }
   .exp-box-right + .collapsible-hidden:last-child + * {
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 }
 .exp-box .collapse[aria-expanded="false"] {
@@ -12784,7 +12784,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .gccolumn .exp-box,
 .rightbox-normal .exp-box {
-  width: 100%;
+  width: 100%!important;
   float: none;
 }
 .btn-expand {
