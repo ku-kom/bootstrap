@@ -16,7 +16,7 @@
       &~.collapsible-hidden {
         // Fix floating issues
           &+*:not(.collapsible-hidden) {
-            overflow-x: auto;
+            overflow-x: hidden;
           }
 
       }
@@ -31,7 +31,7 @@
         // Fix floating issues
         &:last-child {
           &+* {
-            overflow-x: auto;
+            overflow-x: hidden;
           }
         }
       }
@@ -51,7 +51,7 @@
 
   .gccolumn &,
   .rightbox-normal & {
-    width: 100%;
+    width: 100%!important;
     float: none;
   }
 }
