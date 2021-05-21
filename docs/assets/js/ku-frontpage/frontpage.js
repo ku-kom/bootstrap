@@ -266,6 +266,10 @@
     });
 
     $(document).keydown(function(event) {
+      // Except when usen in input,select, etc.
+      if ($(event.target).is('input, select, button')) {
+        return;
+      }
       switch (event.keyCode) {
         // Pause hero video using space bar
         case 32:
