@@ -267,7 +267,7 @@
 
     $(document).keydown(function(event) {
       // Except when usen in input,select, etc.
-      if ($(event.target).is('input, select, button')) {
+      if ($(event.target).is('input, [contentEditable="true"]')) {
         return;
       }
       switch (event.keyCode) {
