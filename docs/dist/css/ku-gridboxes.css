@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   font-size: 13px;
-  line-height: 1.3333333;
+  line-height: 19px;
   border-radius: 2px;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
   color: inherit;
   font-size: 14.4px;
   text-transform: uppercase;
-  padding: 8px 18px 8px 10px;
+  padding: 8px 18px 5px 10px;
   font-weight: 700;
   letter-spacing: .4px;
 }
