@@ -1,4 +1,5 @@
 /* Slider */
+
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -177,11 +178,17 @@
   }
 }
 
-[tabindex] {
+[aria-hidden="true"] {
+  &:focus-within {
+    pointer-events: none;
+    outline: none;
+  }
+
   .slide-link {
-    &:focus {
-      outline: 0;
-      user-focus: none;
+    &:focus,
+    &:focus-visible {
+      pointer-events: none;
+      outline: none!important;
     }
   }
 }
