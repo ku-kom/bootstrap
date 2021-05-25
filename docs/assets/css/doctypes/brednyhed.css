@@ -118,6 +118,10 @@ blockquote.full-width::before {
     margin-top: 10px;
   }
 
+  .exp-box {
+    margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
+  }
+
   .factbox, .exp-box-right {
     font-size: 14px;
     margin: 13px calc(-25% - 6px) 13px 23px;
@@ -127,10 +131,6 @@ blockquote.full-width::before {
   .factbox-left, .exp-box-left {
     margin: 13px 23px 13px calc(-25% - 6px);
     width: 60%;
-  }
-
-  .exp-box {
-    margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
   }
 
   img.img-right {
