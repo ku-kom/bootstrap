@@ -129,6 +129,10 @@ blockquote.full-width::before {
     width: 60%;
   }
 
+  .exp.box {
+    margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
+  }
+
   img.img-right {
     margin: 13px calc(-25% - 6px) 13px 23px;
     max-width: 60%;
