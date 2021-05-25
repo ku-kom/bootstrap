@@ -12790,6 +12790,8 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .rightbox-normal .exp-box {
   width: 100%!important;
   float: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 .btn-expand {
   color: #fff;
