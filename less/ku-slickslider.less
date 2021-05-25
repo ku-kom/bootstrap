@@ -1,5 +1,4 @@
 /* Slider */
-
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -178,17 +177,19 @@
   }
 }
 
-[aria-hidden="true"] {
-  &:focus-within {
-    pointer-events: none;
-    outline: none;
-  }
-
-  .slide-link {
-    &:focus,
-    &:focus-visible {
+.slick-slide {
+  &[aria-hidden="true"] {
+    &:focus-within {
       pointer-events: none;
-      outline: none!important;
+      outline: none;
+    }
+
+    .slide-link {
+      &:focus,
+      &:focus-visible {
+        pointer-events: none;
+        outline: none!important;
+      }
     }
   }
 }
