@@ -129,7 +129,7 @@ blockquote.full-width::before {
     width: 60%;
   }
 
-  .exp.box {
+  .exp-box {
     margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
   }
 
