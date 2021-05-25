@@ -10061,12 +10061,12 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   outline: 2px solid #2c6694;
   outline-offset: -2px;
 }
-[aria-hidden="true"]:focus-within {
+.slick-slide[aria-hidden="true"]:focus-within {
   pointer-events: none;
   outline: none;
 }
-[aria-hidden="true"] .slide-link:focus,
-[aria-hidden="true"] .slide-link:focus-visible {
+.slick-slide[aria-hidden="true"] .slide-link:focus,
+.slick-slide[aria-hidden="true"] .slide-link:focus-visible {
   pointer-events: none;
   outline: none!important;
 }
