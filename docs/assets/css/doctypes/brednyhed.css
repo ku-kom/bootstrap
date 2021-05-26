@@ -143,7 +143,7 @@ blockquote.full-width::before {
     max-width: 60%;
   }
 
-  .widenews-content .img-default, img:not([class]) { /* img:not([class]) is used since the editor inserts img without alignment without a class. Remove when fixed. https://redmine.magenta-aps.dk/issues/43692 */
+  .widenews-content .img-default, .widenews-content :not(.image) img:not([class]) { /* img:not([class]) is used since the editor inserts img without alignment without a class. Remove when fixed. https://redmine.magenta-aps.dk/issues/43692 */
     margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
     max-width: 757px;
     float: none !important;
