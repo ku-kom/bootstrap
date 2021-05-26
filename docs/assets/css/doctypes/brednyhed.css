@@ -149,7 +149,7 @@ blockquote.full-width::before {
     float: none !important;
   }
 
-  .widenews-content p>img:not([class]) {
+  .widenews-content :not(.image) >img:not([class]) {
     /* img:not([class]) is used since the editor inserts img without right/left alignment without a class. Remove when fixed. https://redmine.magenta-aps.dk/issues/43692 */
     margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
     max-width: 757px;
