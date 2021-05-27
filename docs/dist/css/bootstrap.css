@@ -10205,7 +10205,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   height: auto;
   letter-spacing: .7px;
   text-decoration: none;
-  line-height: 1.3333333;
+  line-height: 1.5;
   padding: 10px;
   font-size: 14px;
   color: #252525;
