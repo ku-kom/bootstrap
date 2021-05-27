@@ -70,12 +70,12 @@
             }
 
             if (showTweetActions == true) {
-              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + translations.reply + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '">' + translations.reply + '</a></div><div class="intent tw-rt"><a aria-label="' + translations.retweet + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '">' + translations.retweet + '</a></div><div class="intent tw-fav"><a aria-label="' + translations.like + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '">' + translations.like + '</a></div></div>';
+              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + i + ': ' + translations.reply + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '">' + translations.reply + '</a></div><div class="intent tw-rt"><a aria-label="' + i + ': ' + translations.retweet + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '">' + translations.retweet + '</a></div><div class="intent tw-fav"><a aria-label="' + i + ': ' + translations.like + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '">' + translations.like + '</a></div></div>';
             }
 
             wrapper.find('ul').append('<li><div class="imgInfo"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '" ><img src="' + profileimage +
               '" class="profileImg" alt="@' + tweetusername + '" aria-label="@' + tweetusername + '" /></a></div><div class="twitterInfo"><div class="fullName">' + tweetscreenname + '</div><div class="twitterName">@' +
-              tweetusername + '</div></div><div class="description">' + status + '</div>' + photoUrl + '<div class="tweet-time"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '/status/' + tweetid +
+              tweetusername + '</div></div><div class="description">' + status + '</div>' + photoUrl + '<div class="tweet-time"><a aria-label="' + i + ': ' + timeSince(d) + '" target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '/status/' + tweetid +
               '">' + timeSince(d) + '</a></div>' + twitterActions + '</li>');
 
             return i < displaylimit - 1;
@@ -134,10 +134,10 @@
       }
     }
 
-    function htmlEntities(str) {
-      // Encode html for safety
-      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-    }
+    // Encode html for safety
+    // function htmlEntities(str) {
+    //   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    // }
 
   });
 
