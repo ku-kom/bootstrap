@@ -8138,7 +8138,7 @@ iframe {
 .ku-leftmenu ul > li > a::after {
   content: '';
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 0;
   width: 10px;
   height: 11px;
