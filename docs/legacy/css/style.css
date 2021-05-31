@@ -4398,7 +4398,7 @@ body#content.mce-content-body {
   display: block !important;
 }
 
-#content.mce-container-body [aria-label~="accordion"], #content.mce-container-body [aria-label~="semi-collapsible"], #content.mce-container-body [aria-label~="fold ud-boks"] {
+#content.mce-container-body [aria-label*="accordion"], #content.mce-content-body .mce-last {
   /* Hide accordion, etc. buttons in editor */
   display: none
 }
