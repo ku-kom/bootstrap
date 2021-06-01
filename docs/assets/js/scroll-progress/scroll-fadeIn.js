@@ -1,4 +1,5 @@
 /* Based on https://codepen.io/tutsplus/pen/wvoNoMg - modified by NEL, KU KOM.
+  Not compatible with IE11.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
 */
 (function() {
