@@ -1,4 +1,4 @@
-/*
+/* Based on https://codepen.io/tutsplus/pen/wvoNoMg - modified by NEL, KU KOM.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
 */
 const scrollElements = document.querySelectorAll('.js-scroll');

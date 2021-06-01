@@ -1,5 +1,4 @@
 /* Use with /bootstrap/dist/js/scroll-fadeIn.min.js */
-
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
@@ -25,11 +24,22 @@
   animation: slide-in-right 1s ease-in-out both;
 }
 
+@media (prefers-reduced-motion) {
+  .js-scroll {
+    opacity: 1 !important;
+  }
+
+  .js-scroll.scrolled {
+    animation: none !important;
+  }
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -41,6 +51,7 @@
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -52,6 +63,7 @@
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -62,6 +74,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
