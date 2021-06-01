@@ -174,7 +174,7 @@ module.exports = function (grunt) {
               'docs/assets/js/slider/slickslider-config.js',
               'docs/assets/js/videoControls/videoControls.js',
               'docs/assets/js/cookie/cookie.js',
-              'docs/assets/js/scroll-progress/scroll-progress.js',
+              'docs/assets/js/scroll-progress/*.js',
               'docs/assets/js/parallax/jarallax.js',
               'docs/assets/js/parallax/jarallax-video.js',
               'docs/assets/js/canvasjs/canvasjs.js',
