@@ -279,7 +279,8 @@ module.exports = function (grunt) {
           'docs/assets/css/social-feeds/twitter.css',
           'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
           'docs/assets/css/obvius-admin/admin.css',
-          'docs/assets/css/tinymce/tiny-overrides.css'
+          'docs/assets/css/tinymce/tiny-overrides.css',
+          'docs/assets/css/scroll-effects/scroll-effects.css',
           //'dist/css/faculties/*.css'
         ]
       },
