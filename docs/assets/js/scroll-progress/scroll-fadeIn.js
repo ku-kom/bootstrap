@@ -4,7 +4,6 @@
 const scrollElements = document.querySelectorAll('.js-scroll');
 
 var throttleTimer;
-var timer = 0;
 
 const throttle = (callback, time) => {
   if (throttleTimer) return;
@@ -56,6 +55,12 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('scroll', () => {
+  throttle(() => {
+    handleScrollAnimation();
+  }, 250);
+});
+
+window.addEventListener('orientationchange', () => {
   throttle(() => {
     handleScrollAnimation();
   }, 250);
