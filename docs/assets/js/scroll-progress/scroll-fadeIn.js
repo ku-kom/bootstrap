@@ -57,11 +57,11 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
   throttle(() => {
     handleScrollAnimation();
-  }, 250);
+  }, 200);
 });
 
 window.addEventListener('orientationchange', () => {
   throttle(() => {
     handleScrollAnimation();
-  }, 250);
+  }, 200);
 });
