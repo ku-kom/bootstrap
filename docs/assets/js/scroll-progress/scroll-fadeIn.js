@@ -1,67 +1,72 @@
 /* Based on https://codepen.io/tutsplus/pen/wvoNoMg - modified by NEL, KU KOM.
+  Not compatible with IE11.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
 */
-const scrollElements = document.querySelectorAll('.js-scroll');
+(function() {
+  'use strict';
 
-var throttleTimer;
+  const scrollElements = document.querySelectorAll('.js-scroll');
 
-const throttle = (callback, time) => {
-  if (throttleTimer) return;
+  var throttleTimer;
 
-  throttleTimer = true;
-  setTimeout(() => {
-    callback();
-    throttleTimer = false;
-  }, time);
-}
+  const throttle = (callback, time) => {
+    if (throttleTimer) return;
 
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+    throttleTimer = true;
+    setTimeout(() => {
+      callback();
+      throttleTimer = false;
+    }, time);
+  }
 
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
 
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+  };
 
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
+  const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
 
-const displayScrollElement = (element) => {
-  element.classList.add('scrolled');
-};
+    return (
+      elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
 
-const hideScrollElement = (element) => {
-  element.classList.remove('scrolled');
-};
+  const displayScrollElement = (element) => {
+    element.classList.add('scrolled');
+  };
 
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
-}
+  const hideScrollElement = (element) => {
+    element.classList.remove('scrolled');
+  };
 
-window.addEventListener('load', () => {
-  handleScrollAnimation();
-});
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      } else if (elementOutofView(el)) {
+        hideScrollElement(el)
+      }
+    })
+  }
 
-window.addEventListener('scroll', () => {
-  throttle(() => {
+  window.addEventListener('load', () => {
     handleScrollAnimation();
-  }, 200);
-});
+  });
 
-window.addEventListener('orientationchange', () => {
-  throttle(() => {
-    handleScrollAnimation();
-  }, 200);
-});
+  window.addEventListener('scroll', () => {
+    throttle(() => {
+      handleScrollAnimation();
+    }, 200);
+  });
+
+  window.addEventListener('orientationchange', () => {
+    throttle(() => {
+      handleScrollAnimation();
+    }, 200);
+  });
+}());

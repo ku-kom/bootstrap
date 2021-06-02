@@ -24,7 +24,7 @@
   animation: slide-in-right 1s ease-in-out both;
 }
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion), (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .js-scroll {
     opacity: 1 !important;
   }
