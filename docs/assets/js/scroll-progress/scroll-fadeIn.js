@@ -1,12 +1,23 @@
-/* Based on https://codepen.io/tutsplus/pen/wvoNoMg - modified by NEL, KU KOM.
-  Not compatible with IE11.
+/* Based on https://codepen.io/tutsplus/pen/wvoNoMg - totally modified by NEL, KU KOM.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
+  Not compatible with IE11.
+  Usage:
+  var el = new AnimateOnScroll({
+      element: ".js-scroll, .another-element",
+  });
 */
-(function() {
+function AnimateOnScroll(options) {
   'use strict';
 
-  const scrollElements = document.querySelectorAll('.js-scroll');
+  //let _this = this;
+  let defaultOptions = {
+    element: '.js-scroll',
+  }
 
+  // Use user-defined options, otherwise default options.
+  options = Object.assign({}, defaultOptions, options);
+
+  const scrollElements = document.querySelectorAll(options.element);
   var throttleTimer;
 
   const throttle = (callback, time) => {
@@ -69,4 +80,4 @@
       handleScrollAnimation();
     }, 200);
   });
-}());
+}
