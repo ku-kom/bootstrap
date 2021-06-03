@@ -48,11 +48,11 @@ function AnimateOnScroll(options) {
   };
 
   const displayScrollElement = (element) => {
-    element.classList.add('scrolled');
+    element.classList.add('in-view');
   };
 
   const hideScrollElement = (element) => {
-    element.classList.remove('scrolled');
+    element.classList.remove('in-view');
   };
 
   const handleScrollAnimation = () => {
