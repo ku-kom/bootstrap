@@ -22,6 +22,8 @@ function AnimateOnScroll(options) {
 
   const elementInView = (el, dividend = 1) => {
     const elementTop = el.getBoundingClientRect().top;
+    console.log('top: ' + elementTop);
+    console.log('bottom: ' + el.getBoundingClientRect().bottom);
 
     return (
       elementTop <=
@@ -31,6 +33,8 @@ function AnimateOnScroll(options) {
 
   const elementOutofView = (el) => {
     const elementTop = el.getBoundingClientRect().top;
+    console.log('top: ' + elementTop);
+    console.log('bottom: ' + el.getBoundingClientRect().bottom);
     return (
       elementTop > (window.innerHeight || document.documentElement.clientHeight)
     );
