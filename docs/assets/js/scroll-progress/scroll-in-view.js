@@ -19,17 +19,6 @@ function AnimateOnScroll(options) {
   options = Object.assign({}, defaultOptions, options);
 
   const scrollElements = document.querySelectorAll(options.element);
-  // let throttleTimer;
-  //
-  // const throttle = (callback, time) => {
-  //   if (throttleTimer) return;
-  //
-  //   throttleTimer = true;
-  //   setTimeout(() => {
-  //     callback();
-  //     throttleTimer = false;
-  //   }, time);
-  // }
 
   const elementInView = (el, dividend = 1) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -72,7 +61,7 @@ function AnimateOnScroll(options) {
 
   window.addEventListener('scroll', debounce(() => {
     handleScrollAnimation();
-  }, 200));
+  }, 150));
 
   window.addEventListener('orientationchange', debounce(() => {
     handleScrollAnimation();
