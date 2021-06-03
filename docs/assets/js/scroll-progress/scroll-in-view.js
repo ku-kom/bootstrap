@@ -10,7 +10,6 @@
 function AnimateOnScroll(options) {
   'use strict';
 
-  //let _this = this;
   var defaultOptions = {
     element: '.js-scroll',
   }
@@ -20,20 +19,17 @@ function AnimateOnScroll(options) {
 
   const scrollElements = document.querySelectorAll(options.element);
 
-  const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
+  const isElementXPercentInViewport = function(element, percentVisible) {
+    // Check if an element is partially in view.
+    // percentVisible is how much of the element is visible before we return true.
+    let
+      rect = element.getBoundingClientRect(),
+      windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
-    return (
-      elementTop <=
-      (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-  };
-
-  const elementOutofView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-    return (
-      elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
+    return !(
+      Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / + -rect.height) * 100)) < percentVisible ||
+      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
+    )
   };
 
   const displayScrollElement = (element) => {
@@ -46,9 +42,9 @@ function AnimateOnScroll(options) {
 
   const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
-      if (elementInView(el, 1.25)) {
+      if (isElementXPercentInViewport(el, 4)) { // 4% visible
         displayScrollElement(el);
-      } else if (elementOutofView(el)) {
+      } else {
         hideScrollElement(el)
       }
     })
@@ -63,7 +59,7 @@ function AnimateOnScroll(options) {
     handleScrollAnimation();
   }, 150));
 
-// debounce() is a global helper function
+  // debounce() is a global helper function
   window.addEventListener('orientationchange', debounce(() => {
     handleScrollAnimation();
   }, 200));
