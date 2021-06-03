@@ -18,7 +18,7 @@ function AnimateOnScroll(options) {
   options = Object.assign({}, defaultOptions, options);
 
   const scrollElements = document.querySelectorAll(options.element);
-  var throttleTimer;
+  let throttleTimer;
 
   const throttle = (callback, time) => {
     if (throttleTimer) return;
@@ -48,11 +48,11 @@ function AnimateOnScroll(options) {
   };
 
   const displayScrollElement = (element) => {
-    element.classList.add('scrolled');
+    element.classList.add('in-view');
   };
 
   const hideScrollElement = (element) => {
-    element.classList.remove('scrolled');
+    element.classList.remove('in-view');
   };
 
   const handleScrollAnimation = () => {
