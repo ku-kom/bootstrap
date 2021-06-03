@@ -31,17 +31,18 @@ function AnimateOnScroll(options) {
 
   const elementOutofView = (el) => {
     const elementTop = el.getBoundingClientRect().top;
-
     return (
       elementTop > (window.innerHeight || document.documentElement.clientHeight)
     );
   };
 
   const displayScrollElement = (element) => {
+    console.log('In: ' + element);
     element.classList.add('in-view');
   };
 
   const hideScrollElement = (element) => {
+    console.log('In: ' + element);
     element.classList.remove('in-view');
   };
 
