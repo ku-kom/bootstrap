@@ -1,4 +1,4 @@
-/* Based on https://codepen.io/tutsplus/pen/wvoNoMg - totally modified by NEL, KU KOM.
+/* NEL, KU KOM.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
   Not compatible with IE11.
   Usage:
