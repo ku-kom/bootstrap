@@ -37,12 +37,10 @@ function AnimateOnScroll(options) {
   };
 
   const displayScrollElement = (element) => {
-    console.log('In: ' + element);
     element.classList.add('in-view');
   };
 
   const hideScrollElement = (element) => {
-    console.log('In: ' + element);
     element.classList.remove('in-view');
   };
 
