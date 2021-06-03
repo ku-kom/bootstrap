@@ -70,15 +70,11 @@ function AnimateOnScroll(options) {
     handleScrollAnimation();
   });
 
-  window.addEventListener('scroll', () => {
-    debounce(() => {
-      handleScrollAnimation();
-    }, 200);
-  });
+  window.addEventListener('scroll', debounce(() => {
+    handleScrollAnimation();
+  }, 200));
 
-  window.addEventListener('orientationchange', () => {
-    debounce(() => {
-      handleScrollAnimation();
-    }, 200);
-  });
+  window.addEventListener('orientationchange', debounce(() => {
+    handleScrollAnimation();
+  }, 200));
 }
