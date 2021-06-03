@@ -57,10 +57,10 @@ function AnimateOnScroll(options) {
   // debounce() is a global helper function
   window.addEventListener('scroll', debounce(() => {
     handleScrollAnimation();
-  }, 150));
+  }, 100));
 
   // debounce() is a global helper function
   window.addEventListener('orientationchange', debounce(() => {
     handleScrollAnimation();
-  }, 200));
+  }, 150));
 }
