@@ -9,19 +9,19 @@
 }
 
 .in-view.fade-in {
-  animation: fade-in 1s ease-in-out both;
+  animation: fade-in 700ms ease-in-out both;
 }
 
 .in-view.fade-in-bottom {
-  animation: fade-in-bottom 1s ease-in-out both;
+  animation: fade-in-bottom 700ms ease-in-out both;
 }
 
 .in-view.slide-left {
-  animation: slide-in-left 1s ease-in-out both;
+  animation: slide-in-left 700ms ease-in-out both;
 }
 
 .in-view.slide-right {
-  animation: slide-in-right 1s ease-in-out both;
+  animation: slide-in-right 700ms ease-in-out both;
 }
 
 @media (prefers-reduced-motion), (-ms-high-contrast: none), (-ms-high-contrast: active) {
