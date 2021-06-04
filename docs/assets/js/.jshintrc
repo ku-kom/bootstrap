@@ -3,7 +3,6 @@
   "browser"  : true,
   "eqeqeq"   : false,
   "eqnull"   : true,
-  "esversion": 6,
   "expr"     : true,
   "jquery"   : true,
   "latedef"  : true,
@@ -12,5 +11,10 @@
   "strict"   : false,
   "undef"    : true,
   "unused"   : false,
-  "devel"    : true
+  "devel"    : true,
+  "globals": {
+    "JSON": true,
+    "debounce": true
+  },
+  "esversion": 6
 }

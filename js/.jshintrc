@@ -13,7 +13,8 @@
   "unused"   : false,
   "devel"    : true,
   "globals": {
-    "JSON": true
+    "JSON": true,
+    "debounce": true
   },
   "esversion": 6
 }

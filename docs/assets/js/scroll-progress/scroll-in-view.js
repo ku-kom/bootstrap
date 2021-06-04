@@ -1,7 +1,6 @@
-/*global debounce */
-/* NEL, KU KOM.
+/* NEL, KU KOM. 2021.
   Animate elements on scroll. Add class "js-scroll" to the element as well as either "fade-in", "fade-in-bottom", "slide-left" or "slide-right".
-  Not compatible with IE11.
+
   Usage:
   var el = new AnimateOnScroll({
       element: ".js-scroll, .another-element",
@@ -14,7 +13,7 @@ function AnimateOnScroll(options) {
     element: '.js-scroll',
   }
 
-  // Use user-defined options, otherwise default options.
+  // Extend user-defined options, otherwise default options.
   options = Object.assign({}, defaultOptions, options);
 
   const scrollElements = document.querySelectorAll(options.element);
@@ -42,7 +41,7 @@ function AnimateOnScroll(options) {
 
   const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
-      if (isElementXPercentInViewport(el, 4)) { // 4% visible
+      if (isElementXPercentInViewport(el, 4)) { // Element is 4% visible...
         displayScrollElement(el);
       } else {
         hideScrollElement(el)
