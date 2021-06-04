@@ -13,7 +13,7 @@
  */
 
 function debounce(func, wait, immediate) {
-  // Use to delay function init, e.g. on window resizing.
+  // Use to delay function init, e.g. on window resizing or input autocomplete, etc..
   // Returns a function, that, as long as it continues to be invoked, will not
   // be triggered. The function will be called after it stops being called for
   // N milliseconds. If `immediate` is passed, trigger the function on the
@@ -33,16 +33,16 @@ function debounce(func, wait, immediate) {
   };
 }
 
-function throttle(callback, limit) {
-  // Execute a function only every x ms to prevent clogging up events, e.g. during scroll.
+function throttle(func, wait) {
+  // Execute a function only every x ms to prevent clogging up events, e.g. during scroll, API calls, etc..
   var waiting = false; // Initially, we're not waiting
   return function() { // We return a throttled function
     if (!waiting) { // If we're not waiting
-      callback.apply(this, arguments); // Execute users function
+      func.apply(this, arguments); // Execute users function
       waiting = true; // Prevent future invocations
       setTimeout(function() { // After a period of time
         waiting = false; // And allow future invocations
-      }, limit);
+      }, wait);
     }
   }
 }
