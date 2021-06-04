@@ -1,4 +1,4 @@
-/*global debounce, JSON, GlueFrame*/
+/*global GlueFrame*/
 /* NEL, KU KOM, 2020.
  * Scripts for ku.dk frontpage.
  */

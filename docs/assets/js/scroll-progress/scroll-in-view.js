@@ -53,7 +53,7 @@ function AnimateOnScroll(options) {
   });
 
   // throttle() is a global helper function
-  window.addEventListener('scroll', debounce(() => {
+  window.addEventListener('scroll', throttle(() => {
     handleScrollAnimation();
   }, 100));
 
