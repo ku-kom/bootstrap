@@ -14,7 +14,8 @@
   "devel"    : true,
   "globals": {
     "JSON": true,
-    "debounce": true
+    "debounce": true,
+    "throttle": true
   },
   "esversion": 6
 }
