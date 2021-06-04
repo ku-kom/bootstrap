@@ -8,8 +8,12 @@
  * })(jQuery);
  *
  * ========================================================================*/
+ /* A note about debounce and throttle:
+ A debounce is utilized when you only care about the final state. For example, waiting until a user stops typing to fetch typeahead search results. A throttle is best used when you want to handle all intermediate states but at a controlled rate. For example, track the screen width as a user resizes the window and rearrange page content while it changes instead of waiting until the user has finished.
+ */
+
 function debounce(func, wait, immediate) {
-  // Use to delay function init.
+  // Use to delay function init, e.g. on window resizing or input autocomplete, etc..
   // Returns a function, that, as long as it continues to be invoked, will not
   // be triggered. The function will be called after it stops being called for
   // N milliseconds. If `immediate` is passed, trigger the function on the
@@ -27,6 +31,20 @@ function debounce(func, wait, immediate) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
+}
+
+function throttle(func, wait) {
+  // Execute a function only every x ms to prevent clogging up events, e.g. during scroll, API calls, etc..
+  var waiting = false; // Initially, we're not waiting
+  return function() { // We return a throttled function
+    if (!waiting) { // If we're not waiting
+      func.apply(this, arguments); // Execute users function
+      waiting = true; // Prevent future invocations
+      setTimeout(function() { // After a period of time
+        waiting = false; // And allow future invocations
+      }, wait);
+    }
+  }
 }
 
 function shareURL(dest) {

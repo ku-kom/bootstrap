@@ -13,14 +13,13 @@ function AnimateOnScroll(options) {
     element: '.js-scroll',
   }
 
-  // Extend user-defined options, otherwise default options.
+  // Extend user-defined options, otherwise use default options.
   options = Object.assign({}, defaultOptions, options);
 
   const scrollElements = document.querySelectorAll(options.element);
 
   const isElementXPercentInViewport = function(element, percentVisible) {
-    // Check if an element is partially in view.
-    // percentVisible is how much of the element is visible before we return true.
+    // Returns true if an element is partially in view by a percentage.
     let
       rect = element.getBoundingClientRect(),
       windowHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -53,7 +52,7 @@ function AnimateOnScroll(options) {
     handleScrollAnimation();
   });
 
-  // debounce() is a global helper function
+  // throttle() is a global helper function
   window.addEventListener('scroll', debounce(() => {
     handleScrollAnimation();
   }, 100));
