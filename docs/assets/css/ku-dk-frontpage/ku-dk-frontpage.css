@@ -1634,7 +1634,7 @@ html:lang(en) .til-gavn>.container::before {
 }
 
 /* White icon */
-:is(.box-red1, .box-red2, .box-red3 .box-blue1, .box-blue2, .box-teal1, .box-teal2, .box-green1, .box-green2, .box-grey1, .box-grey2) .with-arrow::after {
+:is(.box-red1, .box-red2, .box-red3, .box-blue1, .box-blue2, .box-teal1, .box-teal2, .box-green1, .box-green2, .box-grey1, .box-grey2) .with-arrow::after {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
