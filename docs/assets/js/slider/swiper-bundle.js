@@ -1,5 +1,5 @@
 /**
- * Swiper 6.6.1
+ * Swiper 6.7.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: May 11, 2021
+ * Released on: May 31, 2021
  */
 
 (function (global, factory) {
@@ -1352,6 +1352,23 @@
 
     return "." + classes.trim().replace(/([\.:\/])/g, '\\$1') // eslint-disable-line
     .replace(/ /g, '.');
+  }
+
+  function createElementIfNotDefined($container, params, createElements, checkProps) {
+    var document = getDocument();
+
+    if (createElements) {
+      Object.keys(checkProps).forEach(function (key) {
+        if (!params[key] && params.auto === true) {
+          var element = document.createElement('div');
+          element.className = checkProps[key];
+          $container.append(element);
+          params[key] = element;
+        }
+      });
+    }
+
+    return params;
   }
 
   var support;
@@ -4646,6 +4663,7 @@
     updateOnWindowResize: true,
     resizeObserver: false,
     nested: false,
+    createElements: false,
     enabled: true,
     // Overrides
     width: null,
@@ -4837,6 +4855,13 @@
           var moduleParamName = Object.keys(module.params)[0];
           var moduleParams = module.params[moduleParamName];
           if (typeof moduleParams !== 'object' || moduleParams === null) return;
+
+          if (['navigation', 'pagination', 'scrollbar'].indexOf(moduleParamName) >= 0 && params[moduleParamName] === true) {
+            params[moduleParamName] = {
+              auto: true
+            };
+          }
+
           if (!(moduleParamName in params && 'enabled' in moduleParams)) return;
 
           if (params[moduleParamName] === true) {
@@ -5176,18 +5201,34 @@
         return false;
       }
 
-      el.swiper = swiper; // Find Wrapper
+      el.swiper = swiper;
 
-      var $wrapperEl;
+      var getWrapper = function getWrapper() {
+        if (el && el.shadowRoot && el.shadowRoot.querySelector) {
+          var res = $(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
 
-      if (el && el.shadowRoot && el.shadowRoot.querySelector) {
-        $wrapperEl = $(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
+          res.children = function (options) {
+            return $el.children(options);
+          };
 
-        $wrapperEl.children = function (options) {
-          return $el.children(options);
-        };
-      } else {
-        $wrapperEl = $el.children("." + swiper.params.wrapperClass);
+          return res;
+        }
+
+        return $el.children("." + swiper.params.wrapperClass);
+      }; // Find Wrapper
+
+
+      var $wrapperEl = getWrapper();
+
+      if ($wrapperEl.length === 0 && swiper.params.createElements) {
+        var document = getDocument();
+        var wrapper = document.createElement('div');
+        $wrapperEl = $(wrapper);
+        wrapper.className = swiper.params.wrapperClass;
+        $el.append(wrapper);
+        $el.children("." + swiper.params.slideClass).each(function (slideEl) {
+          $wrapperEl.append(slideEl);
+        });
       }
 
       extend(swiper, {
@@ -6281,6 +6322,10 @@
     init: function init() {
       var swiper = this;
       var params = swiper.params.navigation;
+      swiper.params.navigation = createElementIfNotDefined(swiper.$el, swiper.params.navigation, swiper.params.createElements, {
+        nextEl: 'swiper-button-next',
+        prevEl: 'swiper-button-prev'
+      });
       if (!(params.nextEl || params.prevEl)) return;
       var $nextEl;
       var $prevEl;
@@ -6627,6 +6672,9 @@
     },
     init: function init() {
       var swiper = this;
+      swiper.params.pagination = createElementIfNotDefined(swiper.$el, swiper.params.pagination, swiper.params.createElements, {
+        el: 'swiper-pagination'
+      });
       var params = swiper.params.pagination;
       if (!params.el) return;
       var $el = $(params.el);
@@ -7054,10 +7102,13 @@
     },
     init: function init() {
       var swiper = this;
-      if (!swiper.params.scrollbar.el) return;
       var scrollbar = swiper.scrollbar,
           $swiperEl = swiper.$el;
+      swiper.params.scrollbar = createElementIfNotDefined($swiperEl, swiper.params.scrollbar, swiper.params.createElements, {
+        el: 'swiper-scrollbar'
+      });
       var params = swiper.params.scrollbar;
+      if (!params.el) return;
       var $el = $(params.el);
 
       if (swiper.params.uniqueNavElements && typeof params.el === 'string' && $el.length > 1 && $swiperEl.find(params.el).length === 1) {
@@ -8039,12 +8090,17 @@
         }
       }
 
+      var passiveListener = swiper.touchEvents.start === 'touchstart' && swiper.support.passiveListener && swiper.params.passiveListeners ? {
+        passive: true,
+        capture: false
+      } : false;
+
       if (inView) {
         swiper.lazy.load();
-        $scrollElement.off('scroll', swiper.lazy.checkInViewOnLoad);
+        $scrollElement.off('scroll', swiper.lazy.checkInViewOnLoad, passiveListener);
       } else if (!swiper.lazy.scrollHandlerAttached) {
         swiper.lazy.scrollHandlerAttached = true;
-        $scrollElement.on('scroll', swiper.lazy.checkInViewOnLoad);
+        $scrollElement.on('scroll', swiper.lazy.checkInViewOnLoad, passiveListener);
       }
     }
   };
@@ -8977,13 +9033,25 @@
     },
     onMouseEnter: function onMouseEnter() {
       var swiper = this;
-      swiper.autoplay.pause();
+
+      if (swiper.params.autoplay.disableOnInteraction) {
+        swiper.autoplay.stop();
+      } else {
+        swiper.autoplay.pause();
+      }
+
       ['transitionend', 'webkitTransitionEnd'].forEach(function (event) {
         swiper.$wrapperEl[0].removeEventListener(event, swiper.autoplay.onTransitionEnd);
       });
     },
     onMouseLeave: function onMouseLeave() {
       var swiper = this;
+
+      if (swiper.params.autoplay.disableOnInteraction) {
+        return;
+      }
+
+      swiper.autoplay.paused = false;
       swiper.autoplay.run();
     },
     attachMouseEvents: function attachMouseEvents() {
@@ -9655,7 +9723,19 @@
 
           var prevThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).prevAll("[data-swiper-slide-index=\"" + swiper.realIndex + "\"]").eq(0).index();
           var nextThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).nextAll("[data-swiper-slide-index=\"" + swiper.realIndex + "\"]").eq(0).index();
-          if (typeof prevThumbsIndex === 'undefined') newThumbsIndex = nextThumbsIndex;else if (typeof nextThumbsIndex === 'undefined') newThumbsIndex = prevThumbsIndex;else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) newThumbsIndex = currentThumbsIndex;else if (nextThumbsIndex - currentThumbsIndex < currentThumbsIndex - prevThumbsIndex) newThumbsIndex = nextThumbsIndex;else newThumbsIndex = prevThumbsIndex;
+
+          if (typeof prevThumbsIndex === 'undefined') {
+            newThumbsIndex = nextThumbsIndex;
+          } else if (typeof nextThumbsIndex === 'undefined') {
+            newThumbsIndex = prevThumbsIndex;
+          } else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) {
+            newThumbsIndex = thumbsSwiper.params.slidesPerGroup > 1 ? nextThumbsIndex : currentThumbsIndex;
+          } else if (nextThumbsIndex - currentThumbsIndex < currentThumbsIndex - prevThumbsIndex) {
+            newThumbsIndex = nextThumbsIndex;
+          } else {
+            newThumbsIndex = prevThumbsIndex;
+          }
+
           direction = swiper.activeIndex > swiper.previousIndex ? 'next' : 'prev';
         } else {
           newThumbsIndex = swiper.realIndex;
@@ -9673,9 +9753,7 @@
             } else {
               newThumbsIndex = newThumbsIndex + Math.floor(slidesPerView / 2) - 1;
             }
-          } else if (newThumbsIndex > currentThumbsIndex) {
-            newThumbsIndex = newThumbsIndex - slidesPerView + 1;
-          }
+          } else if (newThumbsIndex > currentThumbsIndex && thumbsSwiper.params.slidesPerGroup === 1) ;
 
           thumbsSwiper.slideTo(newThumbsIndex, initial ? 0 : undefined);
         }
@@ -9773,4 +9851,3 @@
   return Swiper;
 
 })));
-//# sourceMappingURL=swiper-bundle.js.map
