@@ -8722,7 +8722,7 @@ iframe {
   -ms-flex-order: 2;
   order: 2;
   padding: 15px;
-  line-height: 19px;
+  line-height: 1.5;
 }
 .advanced-list li .list-content .list-header {
   margin-top: 0;
