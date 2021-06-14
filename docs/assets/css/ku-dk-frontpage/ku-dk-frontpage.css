@@ -241,7 +241,7 @@ video {
  padding-bottom: 57px;
 }
 
-.researchrow {
+.researchrow .swiper-container-initialized {
   padding-bottom: 0;
 }
 
