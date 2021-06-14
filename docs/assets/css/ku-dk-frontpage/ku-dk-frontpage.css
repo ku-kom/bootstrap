@@ -1040,8 +1040,10 @@ video {
     padding: 9px 16px;
   }
 
-  .researchrow .slick-slide img {
+  .researchrow .image-box img {
     object-fit: contain;
+    height: 100%;
+    max-width: none;
   }
 
   :is(.video-sitewidth, .hero-video-sitewidth) [itemprop="video"] {
