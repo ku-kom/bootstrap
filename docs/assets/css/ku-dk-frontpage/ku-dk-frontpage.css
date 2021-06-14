@@ -233,7 +233,7 @@ video {
   padding: 23px 0;
 }
 
-.slide-columns {
+.slide-columns, .swiper-container {
   padding-bottom: 80px;
 }
 
