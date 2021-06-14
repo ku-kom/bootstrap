@@ -233,8 +233,12 @@ video {
   padding: 23px 0;
 }
 
-.slide-columns, .swiper-container-initialized {
+.slide-columns {
   padding-bottom: 80px;
+}
+
+.swiper-container-initialized {
+ padding-bottom: 57px;
 }
 
 .researchrow {
