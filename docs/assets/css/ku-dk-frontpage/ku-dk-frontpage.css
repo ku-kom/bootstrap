@@ -1091,6 +1091,10 @@ video {
     margin-right: calc(-50vw + 50%);
     position: relative;
   }
+
+  .researchrow .swiper-slide {
+    margin-bottom: 0;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
