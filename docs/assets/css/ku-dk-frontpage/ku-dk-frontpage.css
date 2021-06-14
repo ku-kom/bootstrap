@@ -233,11 +233,11 @@ video {
   padding: 23px 0;
 }
 
-.slide-columns {
+.slide-columns, .swiper-container-initialized {
   padding-bottom: 80px;
 }
 
-.slide-columns.researchrow {
+.researchrow {
   padding-bottom: 0;
 }
 
