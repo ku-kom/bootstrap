@@ -41,7 +41,7 @@
     var $slideshow = $('.slick-slider');
     var $default_slideshow = $('.default_slideshow > .container > .row');
     var $instaslider = $('.instaslider');
-    //var $newsslider = $('.slide-columns > .container > .row');
+    var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
     // Playser / pause buttons
     var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button"></button>';
@@ -134,10 +134,10 @@
             slick.$slider.find('.play-pause-button').addClass('paused');
           }
           // Update css variable to be the width of half a slide
-          // if (slick.$slider.is($newsslider)) {
-          //   var slideWidth = Math.round($(slick.$slides).width() / 2) + 'px';
-          //   document.body.style.setProperty('--slide-width', slideWidth);
-          // }
+          if (slick.$slider.is($newsslider)) {
+            var slideWidth = Math.round($(slick.$slides).width() / 2) + 'px';
+            document.body.style.setProperty('--slide-width', slideWidth);
+          }
         });
       }
     }
@@ -216,23 +216,23 @@
 
     function initSlideshows() {
       // Add buttons
-      //addplayPause($newsslider);
+      addplayPause($newsslider);
       addplayPause($valueslider);
       addplayPause($default_slideshow);
       // Loop news and events
-      // $newsslider.each(function(i, k) {
-      //   var $slider = $(this);
-      //   // Only slideshow on mobile
-      //   if (window.matchMedia('(min-width: 992px)').matches) {
-      //     if ($slider.hasClass('slick-initialized')) {
-      //       $slider.slick('unslick');
-      //     }
-      //   } else {
-      //     if (!$slider.hasClass('slick-initialized')) {
-      //       $slider.slick(sliderSettings.news);
-      //     }
-      //   }
-      // });
+      $newsslider.each(function(i, k) {
+        var $slider = $(this);
+        // Only slideshow on mobile
+        if (window.matchMedia('(min-width: 992px)').matches) {
+          if ($slider.hasClass('slick-initialized')) {
+            $slider.slick('unslick');
+          }
+        } else {
+          if (!$slider.hasClass('slick-initialized')) {
+            $slider.slick(sliderSettings.news);
+          }
+        }
+      });
 
       // Value slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
