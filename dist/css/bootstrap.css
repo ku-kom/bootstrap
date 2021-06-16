@@ -12298,14 +12298,14 @@ p[align="right"]:before {
   opacity: .85;
 }
 .find-box form .input-group input[type="text"]::-moz-placeholder {
-  color: #444;
+  color: #252525;
   opacity: 1;
 }
 .find-box form .input-group input[type="text"]:-ms-input-placeholder {
-  color: #444;
+  color: #252525;
 }
 .find-box form .input-group input[type="text"]::-webkit-input-placeholder {
-  color: #444;
+  color: #252525;
 }
 .find-box form .input-group input[type="text"]:placeholder-shown {
   text-overflow: ellipsis;
