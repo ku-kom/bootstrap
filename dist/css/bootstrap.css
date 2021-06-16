@@ -12297,6 +12297,16 @@ p[align="right"]:before {
 .find-box form .input-group input[type="text"] {
   opacity: .85;
 }
+.find-box form .input-group input[type="text"]::-moz-placeholder {
+  color: #444;
+  opacity: 1;
+}
+.find-box form .input-group input[type="text"]:-ms-input-placeholder {
+  color: #444;
+}
+.find-box form .input-group input[type="text"]::-webkit-input-placeholder {
+  color: #444;
+}
 .find-box form .input-group input[type="text"]:placeholder-shown {
   text-overflow: ellipsis;
 }
