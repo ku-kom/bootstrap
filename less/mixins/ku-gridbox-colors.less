@@ -2,9 +2,14 @@
 // Use with values in this order: Text color, background color, hover color, border color, outlined text, opacity
 //
 
-.gridbox-color(@color; @background; @hover; @border; @outlinedText; @transparency) {
+.box-color(@color; @background) {
   background: @background;
   color: @color;
+}
+
+.gridbox-color(@color; @background; @hover; @border; @outlinedText; @transparency) {
+  // background: @background;
+  // color: @color;
 
   .header {
     background: fade(@background, @transparency);
