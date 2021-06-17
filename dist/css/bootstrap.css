@@ -12970,71 +12970,125 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   background: #901a1e;
   color: #fcfcfc;
 }
+.box-red1 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-red2 {
   background: #c73028;
   color: #fcfcfc;
+}
+.box-red2 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
 .box-red3 {
   background: #db3b0a;
   color: #fff;
 }
+.box-red3 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-blue1 {
   background: #122947;
   color: #fcfcfc;
+}
+.box-blue1 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
 .box-blue2 {
   background: #425570;
   color: #fcfcfc;
 }
+.box-blue2 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-blue3 {
   background: #bac7d9;
   color: #262626;
+}
+.box-blue3 a:focus {
+  outline: 1px dotted #262626;
 }
 .box-teal1 {
   background: #0a5963;
   color: #fcfcfc;
 }
+.box-teal1 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-teal2 {
   background: #197f8e;
   color: #fcfcfc;
+}
+.box-teal2 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
 .box-teal3 {
   background: #b7d7de;
   color: #262626;
 }
+.box-teal3 a:focus {
+  outline: 1px dotted #262626;
+}
 .box-green1 {
   background: #39641c;
   color: #fcfcfc;
+}
+.box-green1 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
 .box-green2 {
   background: #4b8325;
   color: #fff;
 }
+.box-green2 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-green3 {
   background: #becaa8;
   color: #262626;
+}
+.box-green3 a:focus {
+  outline: 1px dotted #262626;
 }
 .box-grey1 {
   background: #3d3d3d;
   color: #fcfcfc;
 }
+.box-grey1 a:focus {
+  outline: 1px dotted #fcfcfc;
+}
 .box-grey2 {
   background: #666;
   color: #fcfcfc;
+}
+.box-grey2 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
 .box-grey3 {
   background: #e1dfdf;
   color: #262626;
 }
+.box-grey3 a:focus {
+  outline: 1px dotted #262626;
+}
 .box-light1 {
   background: #fff;
   color: #262626;
+}
+.box-light1 a:focus {
+  outline: 1px dotted #262626;
 }
 .box-light2 {
   background: #fefaf2;
   color: #262626;
 }
+.box-light2 a:focus {
+  outline: 1px dotted #262626;
+}
 .box-light3 {
   background: #ffbd38;
   color: #262626;
+}
+.box-light3 a:focus {
+  outline: 1px dotted #fcfcfc;
 }
