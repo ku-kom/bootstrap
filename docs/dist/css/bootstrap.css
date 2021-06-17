@@ -12295,7 +12295,7 @@ p[align="right"]:before {
   border-radius: 2px;
 }
 .find-box form .input-group input[type="text"] {
-  opacity: .85;
+  opacity: .9;
 }
 .find-box form .input-group input[type="text"]::-moz-placeholder {
   color: #252525;
