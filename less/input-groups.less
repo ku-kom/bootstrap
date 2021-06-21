@@ -146,9 +146,6 @@
 // -------------------------
 
 .input-group-btn {
-  // KU specic:
-  border-color: @gray-light;
-  // KU specic end
   position: relative;
   // Jankily prevent input button groups from wrapping with `white-space` and
   // `font-size` in combination with `inline-block` on buttons.
@@ -158,6 +155,9 @@
   // element above the siblings.
   > .btn {
     position: relative;
+    // KU specic:
+    border-color: @gray-light;
+    // KU specic end
 
     + .btn {
       margin-left: -1px;
