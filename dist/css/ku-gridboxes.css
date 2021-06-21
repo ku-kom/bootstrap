@@ -648,7 +648,7 @@
   background: #e1dfdf;
 }
 .box-grey3.outlined {
-  border: 1px solid #e1dfdf;
+  border: 1px solid #757575;
   color: #262626;
 }
 .box-grey3.outlined .header {
@@ -1311,7 +1311,7 @@
   .three-one-column .column1 .gridbox.text-down.box-light1,
   .two-one-column .column1 .gridbox.text-down.box-light1,
   .two-one-one-column .column1 .gridbox.text-down.box-light1 {
-    border: 1px solid #e1dfdf;
+    border: 1px solid #757575;
   }
   .gridcontent:not(#gridsidebar) .single-column .column1 .gridbox.with-img:hover .header,
   .one-one-two-column .column3 .gridbox.with-img:hover .header,
