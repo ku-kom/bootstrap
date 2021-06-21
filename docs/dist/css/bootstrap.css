@@ -4842,7 +4842,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li > a:focus,
 .nav-tabs > li > a:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #fff;
   outline-offset: -2px;
 }
 @media (max-width: 767px) {
@@ -5530,7 +5530,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   border-color: #ccc;
 }
 .navbar-inverse a:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -6789,7 +6789,7 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-accordion > .panel-heading:focus-within {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
 .panel-accordion > .panel-heading .panel-title {
   font-size: 16px;
@@ -7857,7 +7857,7 @@ nav {
   z-index: 10;
   height: auto;
   width: auto;
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -8502,7 +8502,7 @@ iframe {
   color: #fff;
 }
 #globalfooter ul.footerlinks li a:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
   color: #fff;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
@@ -8555,7 +8555,7 @@ iframe {
 }
 .social-items .social-item .social-icon:focus {
   background-color: #666;
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
 .social-items .footer-heading {
   margin-top: 20px;
@@ -8650,7 +8650,7 @@ iframe {
   }
   #globalfooter .footercontent .footercolumn .footer-heading:active,
   #globalfooter .footercontent .footercolumn .footer-heading:focus {
-    outline: 1px solid #2c6694;
+    outline: 1px dotted #fff;
     outline-offset: -3px;
   }
   #globalfooter .footercontent .footercolumn ul.footerlinks li {
@@ -9374,7 +9374,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: inherit;
 }
 .tile-link:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
   outline-offset: -1px;
 }
 .tile-link:focus .tile-body:after {
@@ -10191,7 +10191,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   border-radius: 50%;
 }
 .slick-dots li button:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
   outline-offset: 2px;
 }
 .slick-dots .slick-active button {
@@ -11659,7 +11659,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   color: #fff;
 }
 .ccc a:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
   outline-offset: 2px;
 }
 .ccc-ani-enter,
@@ -11799,7 +11799,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .ccc-select:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
 .ccc-select.open::after {
   content: "\e260";
@@ -11929,7 +11929,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .ccc-buttons button:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
   outline-offset: -4px;
 }
 .ccc-buttons button:first-child {

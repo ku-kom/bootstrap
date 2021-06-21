@@ -1605,5 +1605,5 @@
           filter: brightness(90%) blur(0);
 }
 .boxlink:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
 }
