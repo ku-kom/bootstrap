@@ -5530,7 +5530,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
   border-color: #ccc;
 }
 .navbar-inverse a:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px dotted #fff;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -8502,7 +8502,7 @@ iframe {
   color: #fff;
 }
 #globalfooter ul.footerlinks li a:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px dotted #fff;
   color: #fff;
 }
 #globalfooter ul.footerlinks li .icon-padlock:before {
@@ -8555,7 +8555,7 @@ iframe {
 }
 .social-items .social-item .social-icon:focus {
   background-color: #666;
-  outline: 1px dotted #2c6694;
+  outline: 1px dotted #fff;
 }
 .social-items .footer-heading {
   margin-top: 20px;
