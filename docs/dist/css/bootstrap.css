@@ -3072,7 +3072,7 @@ output {
   color: #252525;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #bbb;
+  border: 1px solid #757575;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -3517,7 +3517,7 @@ body.Form .input-group-addon:last-child {
 body.Form .input-group-addon:not(first-child):not(last-child) {
   font-weight: 400;
   cursor: pointer;
-  border: 1px solid #bbb;
+  border: 1px solid #757575;
   border-left: 0;
 }
 body.Form .has-error .input-group-addon {
@@ -3546,7 +3546,7 @@ body.Form .has-error .input-group-addon {
   padding: 6px 8px;
   font-weight: 400;
   background-color: #eee;
-  border: 1px solid #bbb;
+  border: 1px solid #757575;
   border-radius: 2px;
   cursor: pointer;
   text-align: center;
@@ -4681,7 +4681,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #252525;
   text-align: center;
   background-color: #eee;
-  border: 1px solid #bbb;
+  border: 1px solid #757575;
   border-radius: 2px;
 }
 .input-group-addon.input-sm {
