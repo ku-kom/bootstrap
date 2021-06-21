@@ -4725,6 +4725,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-left: 0;
 }
 .input-group-btn {
+  border-color: #757575;
   position: relative;
   font-size: 0;
   white-space: nowrap;
