@@ -79,8 +79,8 @@ module.exports = function (grunt) {
           'docs/assets/js/cookie/*.js',
           'docs/assets/js/videoControls/*.js',
           'docs/assets/js/phonebook/*.js',
+          'docs/assets/js/paging/*.js',
           'docs/assets/js/ku-frontpge/*.js',
-          // 'docs/assets/js/slider/slickslider-config.js',
           '!docs/assets/js/*.min.js'
         ]
       }
@@ -179,6 +179,7 @@ module.exports = function (grunt) {
               'docs/assets/js/parallax/jarallax-video.js',
               'docs/assets/js/canvasjs/canvasjs.js',
               'docs/assets/js/phonebook/*.js',
+              'docs/assets/js/paging/*.js',
               'docs/assets/js/ku-frontpage/*.js'
             ],
             dest: 'dist/js/',
