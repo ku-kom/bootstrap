@@ -1092,7 +1092,7 @@
     background: transparent;
   }
   .gridbox.text-down.box-light1 {
-    border: 1px solid #e1dfdf;
+    border: 1px solid #757575;
   }
   body:not(.FullWidthFrontpage) .gridbox.text-down:hover .header {
     background: 0;
