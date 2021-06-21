@@ -238,7 +238,7 @@ video {
 }
 
 .swiper-container-initialized {
- padding-bottom: 57px;
+  padding-bottom: 57px;
 }
 
 .researchrow .swiper-container-initialized {
@@ -442,7 +442,11 @@ video {
 }
 
 .play-pause-button:focus {
-  outline: 1px solid #2c6694;
+  outline: 1px dotted #2c6694;
+}
+
+.hero .play-pause-button:focus {
+  outline: 1px dotted #fff;
 }
 
 .video-container .play-pause-button {
@@ -837,6 +841,7 @@ video {
   }
 
   .video-container .play-pause-button {
+    background: rgba(0, 0, 0, .4);
     left: 0;
     bottom: 16px;
   }
