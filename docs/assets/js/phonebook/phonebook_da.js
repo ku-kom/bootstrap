@@ -99,7 +99,7 @@
         var unit = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : '<dt>Enhed/&shy;afdeling</dt><dd>' + result[i].STED_NAVN_SAMLET + '</dd>';
         var funktion = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : '<dt>Funktion</dt><dd>' + result[i].ANSAT_FUNKTION + '</dd>';
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Sekret&aelig;r</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
-        var pure = (isEmpty(result[i].ANSAT_PURE_DK)) ? '' : '<dt>Profil</dt><dd><a aria-label="Forskning af ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_DK + '">Forskning og publikationer</a></dd>';
+        var pure = (isEmpty(result[i].ANSAT_PURE_DK)) ? '' : '<dt>Profil</dt><dd><a aria-label="Forskning og publikationer af ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_DK + '">Forskning og publikationer</a></dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
         var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>E-mail</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
         var mobil = (isEmpty(result[i].ANSAT_MOBIL)) ? '' : '<dt>Mobil</dt><dd>' + isPhone(result[i].ANSAT_MOBIL) + '</dd>';

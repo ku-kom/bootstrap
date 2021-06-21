@@ -114,7 +114,7 @@
 
         var secr = (isEmpty(result[i].ANSAT_TLF_SEKR)) ? '' : '<dt>Secretary</dt><dd>' + isPhone(result[i].ANSAT_TLF_SEKR) + '</dd>';
         var website = (isEmpty(result[i].ANSAT_WWW)) ? '' : '<dt>Website</dt><dd>' + isUrl(result[i].ANSAT_WWW) + '</dd>';
-        var pure = (isEmpty(result[i].ANSAT_PURE_UK)) ? '' : '<dt>Profile</dt><dd><a aria-label="Research by ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_UK + '">Research profile and publications</a></dd>';
+        var pure = (isEmpty(result[i].ANSAT_PURE_UK)) ? '' : '<dt>Profile</dt><dd><a aria-label="Research profile and publications by ' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '" href="' + result[i].ANSAT_PURE_UK + '">Research profile and publications</a></dd>';
         var email = (isEmpty(result[i].ANSAT_ARB_EMAIL)) ? '' : '<dt>Email</dt><dd>' + isEmail(result[i].ANSAT_ARB_EMAIL) + '</dd>';
         var mobil = (isEmpty(result[i].ANSAT_MOBIL)) ? '' : '<dt>Mobile</dt><dd>' + isPhone(result[i].ANSAT_MOBIL) + '</dd>';
         var tel = (isEmpty(result[i].ANSAT_ARB_TLF)) ? '' : '<dt>Phone</dt><dd>' + isPhone(result[i].ANSAT_ARB_TLF) + '</dd>';
