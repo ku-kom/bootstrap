@@ -3674,18 +3674,18 @@ fieldset[disabled] a .btn {
 .btn-default {
   color: #252525;
   background-color: #f4f4f4;
-  border-color: #b6b6b6;
+  border-color: #757575;
 }
 .btn-default.focus,
 .btn-default:focus {
   color: #252525;
   background-color: #dbdbdb;
-  border-color: #767676;
+  border-color: #353535;
 }
 .btn-default:hover {
   color: #252525;
   background-color: #dbdbdb;
-  border-color: #979797;
+  border-color: #565656;
 }
 a .btn-default:visited {
   color: #252525;
@@ -3695,7 +3695,7 @@ a .btn-default:visited {
 .btn-default .open > .dropdown-toggle {
   color: #252525;
   background-color: #dbdbdb;
-  border-color: #979797;
+  border-color: #565656;
 }
 .btn-default.active.focus,
 .btn-default:active.focus,
@@ -3708,7 +3708,7 @@ a .btn-default:visited {
 .btn-default .open > .dropdown-toggle:hover {
   color: #252525;
   background-color: #c9c9c9;
-  border-color: #767676;
+  border-color: #353535;
 }
 .btn-default.active,
 .btn-default:active,
@@ -3725,7 +3725,7 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled]:hover,
 fieldset[disabled] .btn-default:hover {
   background-color: #f4f4f4;
-  border-color: #b6b6b6;
+  border-color: #757575;
 }
 .btn-default .badge {
   color: #f4f4f4;
@@ -3734,18 +3734,18 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary {
   color: #252525;
   background-color: #fbfbfb;
-  border-color: #b6b6b6;
+  border-color: #757575;
 }
 .btn-primary.focus,
 .btn-primary:focus {
   color: #252525;
   background-color: #e2e2e2;
-  border-color: #767676;
+  border-color: #353535;
 }
 .btn-primary:hover {
   color: #252525;
   background-color: #e2e2e2;
-  border-color: #979797;
+  border-color: #565656;
 }
 a .btn-primary:visited {
   color: #252525;
@@ -3755,7 +3755,7 @@ a .btn-primary:visited {
 .btn-primary .open > .dropdown-toggle {
   color: #252525;
   background-color: #e2e2e2;
-  border-color: #979797;
+  border-color: #565656;
 }
 .btn-primary.active.focus,
 .btn-primary:active.focus,
@@ -3768,7 +3768,7 @@ a .btn-primary:visited {
 .btn-primary .open > .dropdown-toggle:hover {
   color: #252525;
   background-color: #d0d0d0;
-  border-color: #767676;
+  border-color: #353535;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -3785,7 +3785,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover {
   background-color: #fbfbfb;
-  border-color: #b6b6b6;
+  border-color: #757575;
 }
 .btn-primary .badge {
   color: #fbfbfb;
@@ -4731,7 +4731,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-btn > .btn {
   position: relative;
-  border-color: #757575;
 }
 .input-group-btn > .btn + .btn {
   margin-left: -1px;
