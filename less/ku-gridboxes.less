@@ -409,7 +409,7 @@
 
   &-grey2 {
     .box-color(@gridbox-text-light; @grey2);
-    .gridbox-color(@gridbox-text-light; @grey2; darken(@grey2, 5%); @grey2; @grey2; 83%);
+    .gridbox-color(@gridbox-text-light; @grey2; darken(@grey2, 5%); @grey2; @gray-light; 83%);
   }
 
   &-grey3 {
@@ -422,7 +422,7 @@
     .gridbox-color(@gridbox-text-dark; @white1; darken(@white1, 5%); @grey2; @gridbox-text-dark; 90%);
     // Exception - white full needs border.
     &.full {
-      border: 1px solid @grey2;
+      border: 1px solid @gray-light;
     }
   }
 

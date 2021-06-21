@@ -622,7 +622,7 @@
 }
 .box-grey2.outlined {
   border: 1px solid #666;
-  color: #666;
+  color: #757575;
 }
 .box-grey2.outlined .header {
   color: #fcfcfc;
@@ -691,7 +691,7 @@
   background: #f2f2f2;
 }
 .box-light1.full {
-  border: 1px solid #666;
+  border: 1px solid #757575;
 }
 .box-light2 {
   background: #fefaf2;
