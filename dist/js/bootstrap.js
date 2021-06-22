@@ -2036,7 +2036,7 @@ function shareURL(dest) {
     $root.animate({
       scrollTop: 0
     }, 500);
-    return false;
+    // return false;
   });
 
   $(window).on('load', function() {
