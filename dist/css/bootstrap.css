@@ -11858,6 +11858,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .customcheck input:checked ~ .checkmark::after {
   display: block;
 }
+.customcheck input:checked ~ .checkmark:focus {
+  outline: 1px solid #fff;
+}
 .customcheck .checkmark::after {
   left: 7px;
   top: 4px;

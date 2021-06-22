@@ -215,14 +215,14 @@
         &::after {
           display: block;
         }
+
+        &:focus {
+          outline: 1px solid @white-color;
+        }
       }
     }
   }
-  // &:hover {
-  //   input ~ .checkmark {
-  //     background-color: @gray-ddd;
-  //   }
-  // }
+
   .checkmark {
     &::after {
       left: 7px;
