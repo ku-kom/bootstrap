@@ -8537,25 +8537,17 @@ iframe {
   justify-content: center;
   text-decoration: none;
 }
-.social-items .social-item .social-icon::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-}
 .social-items .social-item .social-icon:active {
   background-color: #666;
 }
 .social-items .social-item .social-icon:focus {
   background-color: #666;
   outline: 1px dotted #fff;
+}
+.social-items .social-item .social-icon > span {
+  border-radius: inherit;
+  width: 100%;
+  text-align: center;
 }
 .social-items .footer-heading {
   margin-top: 20px;
