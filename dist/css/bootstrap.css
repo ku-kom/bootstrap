@@ -7913,6 +7913,9 @@ nav {
   margin: 0 auto;
   font-size: 18px;
 }
+.scrolltop:focus {
+  outline: 1px dotted #2c6694;
+}
 @keyframes ku-loading {
   from {
     transform: rotate(0deg);
