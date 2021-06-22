@@ -126,7 +126,7 @@
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
         var suffix = ($totalRecords > 1) ? 'resultater.' : 'resultat.';
 
-        $feedback.html('Viser ' + current + ' til ' + currentMax + ' ud af ' + $totalRecords + ' ' + suffix);
+        $feedback.html('<div aria-atomic="true">Viser ' + current + ' til ' + currentMax + ' ud af ' + $totalRecords + ' ' + suffix + '</div>');
       }
       $box.append($ul);
     }

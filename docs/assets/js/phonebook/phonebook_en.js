@@ -140,7 +140,7 @@
         var currentMax = ($totalRecords < perPage || endRec > $totalRecords) ? $totalRecords : endRec;
         var suffix = ($totalRecords > 1) ? 'results.' : 'result.';
 
-        $feedback.html('Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix);
+        $feedback.html('<div aria-atomic="true">Showing ' + current + ' to ' + currentMax + ' out of ' + $totalRecords + ' ' + suffix + '</div>');
       }
       $box.append($ul);
     }
