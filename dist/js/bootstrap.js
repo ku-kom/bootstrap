@@ -1860,9 +1860,9 @@ if (typeof jQuery === 'undefined') {
  * })(jQuery);
  *
  * ========================================================================*/
- /* A note about debounce and throttle:
- A debounce is utilized when you only care about the final state. For example, waiting until a user stops typing to fetch typeahead search results. A throttle is best used when you want to handle all intermediate states but at a controlled rate. For example, track the screen width as a user resizes the window and rearrange page content while it changes instead of waiting until the user has finished.
- */
+/* A note about debounce and throttle:
+A debounce is utilized when you only care about the final state. For example, waiting until a user stops typing to fetch typeahead search results. A throttle is best used when you want to handle all intermediate states but at a controlled rate. For example, track the screen width as a user resizes the window and rearrange page content while it changes instead of waiting until the user has finished.
+*/
 
 function debounce(func, wait, immediate) {
   // Use to delay function init, e.g. on window resizing or input autocomplete, etc..
@@ -2036,7 +2036,19 @@ function shareURL(dest) {
     $root.animate({
       scrollTop: 0
     }, 500);
-    // return false;
+  });
+  // Smooth scrolling enter key
+  $('#scrolltop').on('keydown', function(event) {
+    //console.log(event.keyCode);
+    switch (event.keyCode) {
+      // Click using [Enter]
+      case 13:
+        var $root = $('html, body');
+        $root.animate({
+          scrollTop: 0
+        }, 500);
+        break;
+    }
   });
 
   $(window).on('load', function() {
