@@ -11659,7 +11659,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   color: #fff;
 }
 .ccc a:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px dotted #fff;
   outline-offset: 2px;
 }
 .ccc-ani-enter,
@@ -11799,7 +11799,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .ccc-select:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px dotted #fff;
 }
 .ccc-select.open::after {
   content: "\e260";
