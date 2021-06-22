@@ -2037,9 +2037,9 @@ function shareURL(dest) {
       scrollTop: 0
     }, 500);
   });
+
   // Smooth scrolling enter key
   $('#scrolltop').on('keydown', function(event) {
-    //console.log(event.keyCode);
     switch (event.keyCode) {
       // Click using [Enter]
       case 13:
