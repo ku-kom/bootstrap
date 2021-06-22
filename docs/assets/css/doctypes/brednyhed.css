@@ -159,7 +159,7 @@ blockquote.full-width::before {
     overflow: hidden;
   }
 
-  [itemprop="video"] {
+  [itemprop="video"], .embed-responsive {
     margin: 30px calc(-25% - 7px) 30px calc(-25% - 7px);
   }
 

@@ -11847,8 +11847,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .customcheck input {
   position: absolute;
-  opacity: 0;
-  margin: 0;
+  margin-left: 26px!important;
 }
 .customcheck input:checked ~ .checkmark {
   background-color: #005cc8;
