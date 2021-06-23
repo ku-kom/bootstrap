@@ -44,7 +44,7 @@
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
     // Playser / pause buttons
-    var $button = '<button aria-label="Pause/play" aria-pressed="false" class="play-pause-button" type="button"></button>';
+    var $button = '<button aria-label="'+ translations.pause +'" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
