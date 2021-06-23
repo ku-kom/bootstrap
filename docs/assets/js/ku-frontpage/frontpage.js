@@ -11,8 +11,8 @@
     var translations;
     if ($lang == 'da') {
       translations = {
-        "pause": "Stop afspilning",
-        "play": "Afspil"
+        "pause": "Stop afspilning (brug mellemrumstast)",
+        "play": "Afspil (brug mellemrumstast)"
       }
     } else { //English fallback
       translations = {
