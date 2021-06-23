@@ -178,12 +178,16 @@ function shareURL(dest) {
     checkScrollbar();
   }, 250));
 
-  // Smooth scrolling to top on click event
-  $('#scrolltop').click(function() {
+  function scrollToTop() {
     var $root = $('html, body');
     $root.animate({
       scrollTop: 0
     }, 500);
+  }
+
+  // Smooth scrolling to top on click event
+  $('#scrolltop').click(function() {
+    scrollToTop();
   });
 
   // Smooth scrolling enter key
@@ -191,10 +195,7 @@ function shareURL(dest) {
     switch (event.keyCode) {
       // Click using [Enter]
       case 13:
-        var $root = $('html, body');
-        $root.animate({
-          scrollTop: 0
-        }, 500);
+        scrollToTop();
         break;
     }
   });
