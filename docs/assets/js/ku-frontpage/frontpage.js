@@ -265,7 +265,7 @@
       sliderButtons('.slick-slider', $(this));
     });
 
-    $('#hero-video, .hero .play-pause-button').focusin(function(event) {
+    $('#hero-video').focusin(function(event) {
       // Except elements like input, select, etc.
       // if ($(event.target).is('input, [contentEditable="true"]')) {
       //   return;
