@@ -670,6 +670,13 @@ body.Form {
 }
 
 // KU:
+.form-control {
+  &::-ms-clear {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
 
 .remember_mandatory {
   margin-bottom: 15px;

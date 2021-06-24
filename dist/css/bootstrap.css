@@ -3586,6 +3586,16 @@ fieldset[disabled] .form-tooltip {
 textarea.form-tooltip {
   height: auto;
 }
+.form-tooltip::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+.form-control::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
 .remember_mandatory {
   margin-bottom: 15px;
 }
