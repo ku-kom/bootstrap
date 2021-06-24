@@ -94,7 +94,7 @@
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
         var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Name</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
-        var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '">';
+        var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="">';
 
         // If values are empty, use Danish ones, or else empty
         var title;

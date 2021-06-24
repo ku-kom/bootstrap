@@ -94,7 +94,7 @@
       for (var i = 0; i < result.length; i++) {
         // No labels if values are empty
         var name = (isEmpty(result[i].PERSON_FORNAVN)) ? '' : '<dt>Navn</dt><dd><div class="ku-navn">' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '</div></dd>';
-        var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="' + result[i].PERSON_FORNAVN + ' ' + result[i].PERSON_EFTERNAVN + '">';
+        var img = (isEmpty(result[i].FOTOURL)) ? '' : '<img class="media-object" src="' + result[i].FOTOURL + '" alt="">';
         var title = (isEmpty(result[i].ANSAT_UOFF_STIL_TEKST)) ? '' : '<dt>Titel</dt><dd>' + result[i].ANSAT_UOFF_STIL_TEKST + '</dd>';
         var unit = (isEmpty(result[i].STED_NAVN_SAMLET)) ? '' : '<dt>Enhed/&shy;afdeling</dt><dd>' + result[i].STED_NAVN_SAMLET + '</dd>';
         var funktion = (isEmpty(result[i].ANSAT_FUNKTION)) ? '' : '<dt>Funktion</dt><dd>' + result[i].ANSAT_FUNKTION + '</dd>';
