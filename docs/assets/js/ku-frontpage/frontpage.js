@@ -265,7 +265,7 @@
       sliderButtons('.slick-slider', $(this));
     });
 
-    $('#hero-video').focusin(function(event) {
+    $('#hero-video, .hero .play-pause-button').focusin(function(event) {
       // Except elements like input, select, etc.
       // if ($(event.target).is('input, [contentEditable="true"]')) {
       //   return;
@@ -274,7 +274,7 @@
         // Pause hero video using space bar
         case 32:
           event.preventDefault();
-          videoButton($(this), '.hero .play-pause-button');
+          videoButton('#hero-video', '.hero .play-pause-button');
           break;
       }
     });
