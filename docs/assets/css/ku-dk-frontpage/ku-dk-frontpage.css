@@ -503,6 +503,11 @@ video {
   object-fit: contain;
 }
 
+.video-container>video:focus {
+  outline: 1px dotted #fff;
+  outline-offset: -10px;
+}
+
 .slick-arrow, .slick-arrow::before {
   color: inherit;
 }

@@ -265,16 +265,16 @@
       sliderButtons('.slick-slider', $(this));
     });
 
-    $(document).keydown(function(event) {
-      // Except when usen in input,select, etc.
-      if ($(event.target).is('input, [contentEditable="true"]')) {
-        return;
-      }
+    $('#hero-video').focusin(function(event) {
+      // Except elements like input, select, etc.
+      // if ($(event.target).is('input, [contentEditable="true"]')) {
+      //   return;
+      // }
       switch (event.keyCode) {
         // Pause hero video using space bar
         case 32:
           event.preventDefault();
-          videoButton('#hero-video', '.hero .play-pause-button');
+          videoButton($(this), '.hero .play-pause-button');
           break;
       }
     });
