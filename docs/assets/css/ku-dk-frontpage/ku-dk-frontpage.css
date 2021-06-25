@@ -62,7 +62,7 @@ body {
   margin-bottom: 0;
   padding-right: 40px;
   /* left position + icon width */
-  color: var(--color);
+  color: rgb(var(--color));
 }
 
 .with-arrow::after {
@@ -139,8 +139,8 @@ h1, h2, h3 {
 }
 
 :is(.visual-container, .hero, .visual-teaser) a:focus .with-arrow {
-  outline: 1px dotted rbb(var(--color));
-  outline-offset: 2px;
+  outline: 1px dotted rgb(var(--color));
+  outline-offset: -1px;
 }
 
 .jumpboard .jumpcolumn {
