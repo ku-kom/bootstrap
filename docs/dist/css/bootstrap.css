@@ -12309,6 +12309,7 @@ p[align="right"]:before {
 }
 .find-box form .input-group input[type="text"] {
   opacity: .9;
+  border: 0;
 }
 .find-box form .input-group input[type="text"]::-moz-placeholder {
   color: #252525;
