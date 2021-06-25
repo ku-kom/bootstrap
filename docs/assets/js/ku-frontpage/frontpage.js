@@ -11,13 +11,13 @@
     var translations;
     if ($lang == 'da') {
       translations = {
-        "pause": "Stop afspilning (brug mellemrumstast)",
-        "play": "Afspil (brug mellemrumstast)"
+        "pause": "Stop afspilning (brug Enter tast)",
+        "play": "Afspil (brug Enter tast)"
       }
     } else { //English fallback
       translations = {
-        "pause": "Pause (use space bar)",
-        "play": "Play (use space bar)"
+        "pause": "Pause (use Enter key)",
+        "play": "Play (use Enter bar)"
       }
     }
 
@@ -44,7 +44,7 @@
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
     // Playser / pause buttons
-    var $button = '<button aria-label="'+ translations.pause +'" aria-pressed="false" class="play-pause-button" type="button"></button>';
+    var $button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -189,6 +189,7 @@
     }
 
     function escape_string(str) {
+      // Escape 'dangerous' characters
       return str.replace(/[&<>"'`=\/]/g, function(chars) {
         return escape_map[chars];
       });
@@ -265,20 +266,17 @@
       sliderButtons('.slick-slider', $(this));
     });
 
-    $('#hero-video').focusin(function(event) {
-      // Except elements like input, select, etc.
-      // if ($(event.target).is('input, [contentEditable="true"]')) {
-      //   return;
-      // }
-      switch (event.keyCode) {
-        // Pause hero video using space bar
-        case 32:
-          event.preventDefault();
-          videoButton('#hero-video', '.hero .play-pause-button');
-          break;
+
+    // Pause hero video using [Enter] key
+    $('#hero-video').keyup(function(e) {
+      if (e.key == 'Enter' || e.keyCode === 13) {
+        e.preventDefault();
+        videoButton('#hero-video', '.hero .play-pause-button');
+        return false;
       }
     });
 
+    // Rebuild page on screen size change
     $(window).on('resize orientationchange', debounce(function() {
       destroySlideshow();
       initSlideshows();
