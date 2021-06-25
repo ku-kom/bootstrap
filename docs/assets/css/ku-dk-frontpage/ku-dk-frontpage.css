@@ -139,8 +139,8 @@ h1, h2, h3 {
 }
 
 :is(.visual-container, .hero, .visual-teaser) a:focus .with-arrow {
-  outline: 1px dotted #000;
-  outline-offset: -1px;
+  outline: 1px dotted rbb(var(--color));
+  outline-offset: 2px;
 }
 
 .jumpboard .jumpcolumn {
