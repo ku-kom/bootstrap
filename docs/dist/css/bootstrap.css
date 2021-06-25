@@ -8107,6 +8107,12 @@ iframe {
   background-color: #901a1e;
   border-radius: 2px;
 }
+.ku-leftmenu .ku-navbar-header h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  letter-spacing: inherit;
+}
 .ku-leftmenu .ku-navbar-header a {
   color: inherit;
   text-decoration: none;
