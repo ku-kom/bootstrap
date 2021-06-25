@@ -12304,12 +12304,13 @@ p[align="right"]:before {
   margin: 0 auto;
 }
 .find-box form .input-group {
-  border: 1px solid #666;
+  border: 1px solid #757575;
   border-radius: 2px;
 }
 .find-box form .input-group input[type="text"] {
   opacity: .9;
   border: 0;
+  border-right: 1px solid #757575;
 }
 .find-box form .input-group input[type="text"]::-moz-placeholder {
   color: #252525;
@@ -12327,7 +12328,7 @@ p[align="right"]:before {
 .find-box form .input-group .input-group-btn .btn {
   color: #901a1e;
   font-weight: 700;
-  border-left: 1px solid #666;
+  border-left: 1px solid #757575;
 }
 .find-researcher {
   background-image: linear-gradient(to right, #bbb 0%, #999 100%);

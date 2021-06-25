@@ -107,13 +107,14 @@
     margin: 0 auto;
 
     .input-group {
-      border: 1px solid @gray-666;
+      border: 1px solid @input-border;
       border-radius: @border-radius-base;
 
       input[type="text"] {
         .placeholder(@color: @text-color);
         opacity: 0.90;
         border: 0;
+        border-right: 1px solid @input-border;
 
         &:placeholder-shown {
           text-overflow: ellipsis;
@@ -124,7 +125,7 @@
         .btn {
           color: @ku-red;
           font-weight: 700;
-          border-left: 1px solid @gray-666;
+          border-left: 1px solid @input-border;
         }
       }
     }
