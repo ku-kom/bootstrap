@@ -114,30 +114,33 @@
   right: 2%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: #a1a1a1;
   color: @white-color;
   z-index: 1020;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 
   .glyphicon-menu-up {
     .glyphicon;
+    border-radius: 50%;
+    background: #a1a1a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a1a1a1;
+    border-radius: 50%;
     width: 100%;
-    text-align: center;
+    height: 100%;
 
     &:before {
-      display: block;
-      margin: 0 auto;
+      line-height: 40px;
       font-size: 18px;
     }
   }
   &:focus {
     .tab-focus-v2();
+    outline-offset: 1px;
+    border: 1px solid @white-color;
   }
 }
 // KU loading symbol

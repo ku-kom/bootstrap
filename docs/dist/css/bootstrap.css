@@ -7890,19 +7890,9 @@ nav {
   right: 2%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: #a1a1a1;
   color: #fff;
   z-index: 1020;
   overflow: hidden;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
   cursor: pointer;
 }
 .scrolltop .glyphicon-menu-up {
@@ -7915,16 +7905,28 @@ nav {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #a1a1a1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #a1a1a1;
+  border-radius: 50%;
   width: 100%;
-  text-align: center;
+  height: 100%;
 }
 .scrolltop .glyphicon-menu-up:before {
-  display: block;
-  margin: 0 auto;
+  line-height: 40px;
   font-size: 18px;
 }
 .scrolltop:focus {
   outline: 1px dotted #2c6694;
+  outline-offset: 1px;
+  border: 1px solid #fff;
 }
 @keyframes ku-loading {
   from {
