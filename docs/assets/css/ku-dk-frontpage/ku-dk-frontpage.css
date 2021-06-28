@@ -1041,6 +1041,7 @@ video {
   }
 
   .hero-element, .video-container>img {
+    margin-left: -13px;
     height: 250px;
     object-fit: cover;
   }
