@@ -77,3 +77,7 @@ th.emplistimage:after, th.emplistemail:after {
   line-height: 14px;
   font-size: 13px !important;
 }
+
+.dimmed {
+    color: #757575!important;
+}
