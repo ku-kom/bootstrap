@@ -5709,12 +5709,18 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .maxlength-warning-message {
-   display: inline-block;
+   display: block;
+   max-width: 496px;
    background-color: #ffdec0;
    border: 1px solid #dbbea3;
    color: #6d501d !important;
    padding: 10px;
    border-radius: 2px;
+ }
+
+ .hardmaxlength-warning-message {
+   display: block;
+   max-width: 496px;
  }
 
  /* News list design */
