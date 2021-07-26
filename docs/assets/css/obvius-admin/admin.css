@@ -5719,6 +5719,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .hardmaxlength-warning-message {
+   margin-top: 10px;
    display: block;
    max-width: 496px;
  }
