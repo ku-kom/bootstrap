@@ -118,7 +118,7 @@ blockquote.full-width::before {
   }
 
   .exp-box {
-    margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
+    margin: 23px 0;
   }
 
   .factbox, .exp-box-right {
@@ -168,6 +168,11 @@ blockquote.full-width::before {
     max-width: 521px;
     margin-left: calc(16.66666667% + 4px);
   }
+
+    .widenews-content .image.align-center figcaption {
+      max-width: none;
+      margin-left: 0;
+    }
 
   .widenews-contactbox {
     font-size: 15px;
