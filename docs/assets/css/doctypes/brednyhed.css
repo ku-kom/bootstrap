@@ -47,6 +47,10 @@ blockquote.full-width::before {
   border: 0;
 }
 
+.factbox a {
+  color: inherit;
+}
+
 .exp-box {
   font-size: 14px;
 }
@@ -148,7 +152,7 @@ blockquote.full-width::before {
     float: none !important;
   }
 
-  .widenews-content :not(.image) >img:not([class]) {
+  .widenews-content :not(.image)>img:not([class]) {
     /* img:not([class]) is used since the editor inserts img without right/left alignment without a class. Remove when fixed. https://redmine.magenta-aps.dk/issues/43692 */
     margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
     max-width: 757px;
@@ -169,10 +173,10 @@ blockquote.full-width::before {
     margin-left: calc(16.66666667% + 4px);
   }
 
-    .widenews-content .image.align-center figcaption {
-      max-width: none;
-      margin-left: 0;
-    }
+  .widenews-content .image.align-center figcaption {
+    max-width: none;
+    margin-left: 0;
+  }
 
   .widenews-contactbox {
     font-size: 15px;
