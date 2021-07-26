@@ -37,7 +37,7 @@
     var trackHero = $('.hero .video-container').next('a');
     var tracFeatures = $('.visuelt-element .visual-img').next('a');
     // Sliders
-    var $heroVideo = $('.hero-element');
+    var $heroVideo = $('#hero-video');
     var $slideshow = $('.slick-slider');
     var $default_slideshow = $('.default_slideshow > .container > .row');
     var $instaslider = $('.instaslider');
