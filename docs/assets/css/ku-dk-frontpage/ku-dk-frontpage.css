@@ -376,7 +376,7 @@ video {
   background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/parallax/bg-parallax-4.jpg');
 }
 
-.bg-parallax.double-column .gccolumn:first-child .gcitem:first-child,  .bg-picture.double-column .gccolumn:first-child .gcitem:first-child {
+.bg-parallax.double-column .gccolumn:first-child .gcitem:first-child, .bg-picture.double-column .gccolumn:first-child .gcitem:first-child {
   /* Headings */
   margin-bottom: 0;
 }
@@ -498,6 +498,9 @@ video {
 
 .video-container {
   position: relative;
+  width: calc(100vw - var(--scroll-bar));
+  margin-left: calc(-50vw + 50% + (var(--scroll-bar)/ 2));
+  margin-right: calc(-50vw + 50% + (var(--scroll-bar)/ 2));
 }
 
 .video-container>video, .video-container>img {
@@ -1042,7 +1045,7 @@ video {
   }
 
   .hero-element, .video-container>img {
-    margin-left: -13px;
+    /* margin-left: -13px; */
     height: 250px;
     object-fit: cover;
   }
