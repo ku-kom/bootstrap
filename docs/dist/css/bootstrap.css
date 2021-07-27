@@ -10604,6 +10604,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 .swiper-slide:focus {
   outline: 1px dotted #2c6694;
+  outline-offset: -1px;
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;
