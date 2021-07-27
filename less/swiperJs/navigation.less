@@ -18,6 +18,11 @@
   */
 }
 
+.slider-controls {
+  // KU specific container to hold navigation
+  position: relative;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -44,10 +49,6 @@
     content: @icon-arrow;
     font-size: var(--swiper-navigation-size, 32px);
     text-transform: none !important;
-    // letter-spacing: 0;
-    // text-transform: none;
-    // font-variant: initial;
-    // line-height: 1;
   }
 
   &:focus {
@@ -64,18 +65,12 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   .icon-arrow-back;
-  // &:before {
-  //
-  // }
   left: 10px;
   right: auto;
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  // &:before {
-  //   content: @icon-arrow;
-  // }
   right: 10px;
   left: auto;
 }
