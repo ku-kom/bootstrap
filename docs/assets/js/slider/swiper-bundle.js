@@ -1,5 +1,5 @@
 /**
- * Swiper 6.7.0
+ * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: May 31, 2021
+ * Released on: July 22, 2021
  */
 
 (function (global, factory) {
@@ -1289,6 +1289,15 @@
     return typeof o === 'object' && o !== null && o.constructor && Object.prototype.toString.call(o).slice(8, -1) === 'Object';
   }
 
+  function isNode(node) {
+    // eslint-disable-next-line
+    if (typeof window !== 'undefined') {
+      return node instanceof HTMLElement;
+    }
+
+    return node && (node.nodeType === 1 || node.nodeType === 11);
+  }
+
   function extend() {
     var to = Object(arguments.length <= 0 ? undefined : arguments[0]);
     var noExtend = ['__proto__', 'constructor', 'prototype'];
@@ -1296,7 +1305,7 @@
     for (var i = 1; i < arguments.length; i += 1) {
       var nextSource = i < 0 || arguments.length <= i ? undefined : arguments[i];
 
-      if (nextSource !== undefined && nextSource !== null) {
+      if (nextSource !== undefined && nextSource !== null && !isNode(nextSource)) {
         var keysArray = Object.keys(Object(nextSource)).filter(function (key) {
           return noExtend.indexOf(key) < 0;
         });
@@ -1976,7 +1985,7 @@
           column = i - row * slidesPerRow;
         }
 
-        slide.css(getDirectionLabel('margin-top'), row !== 0 && params.spaceBetween && params.spaceBetween + "px");
+        slide.css(getDirectionLabel('margin-top'), row !== 0 ? params.spaceBetween && params.spaceBetween + "px" : '');
       }
 
       if (slide.css('display') === 'none') continue; // eslint-disable-line
@@ -3061,7 +3070,6 @@
     var normalizedSnapGrid = snapGrid.map(function (val) {
       return normalize(val);
     });
-    snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
     var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
 
     if (typeof prevSnap === 'undefined' && params.cssMode) {
@@ -3533,7 +3541,7 @@
     data.isTouchEvent = e.type === 'touchstart';
     if (!data.isTouchEvent && 'which' in e && e.which === 3) return;
     if (!data.isTouchEvent && 'button' in e && e.button > 0) return;
-    if (data.isTouched && data.isMoved) return; // change target el for shadow root componenet
+    if (data.isTouched && data.isMoved) return; // change target el for shadow root component
 
     var swipingClassHasValue = !!params.noSwipingClass && params.noSwipingClass !== '';
 
@@ -3583,9 +3591,9 @@
 
     if (e.type !== 'touchstart') {
       var preventDefault = true;
-      if ($targetEl.is(data.formElements)) preventDefault = false;
+      if ($targetEl.is(data.focusableElements)) preventDefault = false;
 
-      if (document.activeElement && $(document.activeElement).is(data.formElements) && document.activeElement !== $targetEl[0]) {
+      if (document.activeElement && $(document.activeElement).is(data.focusableElements) && document.activeElement !== $targetEl[0]) {
         document.activeElement.blur();
       }
 
@@ -3661,7 +3669,7 @@
     }
 
     if (data.isTouchEvent && document.activeElement) {
-      if (e.target === document.activeElement && $(e.target).is(data.formElements)) {
+      if (e.target === document.activeElement && $(e.target).is(data.focusableElements)) {
         data.isMoved = true;
         swiper.allowClick = false;
         return;
@@ -4464,7 +4472,6 @@
     if (!breakpoints || base === 'container' && !containerEl) return undefined;
     var breakpoint = false;
     var window = getWindow();
-    var currentWidth = base === 'window' ? window.innerWidth : containerEl.clientWidth;
     var currentHeight = base === 'window' ? window.innerHeight : containerEl.clientHeight;
     var points = Object.keys(breakpoints).map(function (point) {
       if (typeof point === 'string' && point.indexOf('@') === 0) {
@@ -4490,7 +4497,11 @@
           point = _points$i.point,
           value = _points$i.value;
 
-      if (value <= currentWidth) {
+      if (base === 'window') {
+        if (window.matchMedia("(min-width: " + value + "px)").matches) {
+          breakpoint = point;
+        }
+      } else if (value <= containerEl.clientWidth) {
         breakpoint = point;
       }
     }
@@ -4665,6 +4676,7 @@
     nested: false,
     createElements: false,
     enabled: true,
+    focusableElements: 'input, select, option, textarea, button, video, label',
     // Overrides
     width: null,
     height: null,
@@ -4964,7 +4976,7 @@
           startTranslate: undefined,
           allowThresholdMove: undefined,
           // Form elements to match
-          formElements: 'input, select, option, textarea, button, video, label',
+          focusableElements: swiper.params.focusableElements,
           // Last click time
           lastClickTime: now(),
           clickTimeout: undefined,
@@ -5203,9 +5215,13 @@
 
       el.swiper = swiper;
 
+      var getWrapperSelector = function getWrapperSelector() {
+        return "." + (swiper.params.wrapperClass || '').trim().split(' ').join('.');
+      };
+
       var getWrapper = function getWrapper() {
         if (el && el.shadowRoot && el.shadowRoot.querySelector) {
-          var res = $(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
+          var res = $(el.shadowRoot.querySelector(getWrapperSelector())); // Children needs to return slot items
 
           res.children = function (options) {
             return $el.children(options);
@@ -5214,7 +5230,7 @@
           return res;
         }
 
-        return $el.children("." + swiper.params.wrapperClass);
+        return $el.children(getWrapperSelector());
       }; // Find Wrapper
 
 
@@ -7462,11 +7478,6 @@
         gesture.slideWidth = gesture.$slideEl[0].offsetWidth;
         gesture.slideHeight = gesture.$slideEl[0].offsetHeight;
         gesture.$imageWrapEl.transition(0);
-
-        if (swiper.rtl) {
-          image.startX = -image.startX;
-          image.startY = -image.startY;
-        }
       } // Define if we need image drag
 
 
@@ -7612,10 +7623,16 @@
           image = zoom.image;
 
       if (!gesture.$slideEl) {
-        if (swiper.params.virtual && swiper.params.virtual.enabled && swiper.virtual) {
-          gesture.$slideEl = swiper.$wrapperEl.children("." + swiper.params.slideActiveClass);
-        } else {
-          gesture.$slideEl = swiper.slides.eq(swiper.activeIndex);
+        if (e && e.target) {
+          gesture.$slideEl = $(e.target).closest("." + swiper.params.slideClass);
+        }
+
+        if (!gesture.$slideEl) {
+          if (swiper.params.virtual && swiper.params.virtual.enabled && swiper.virtual) {
+            gesture.$slideEl = swiper.$wrapperEl.children("." + swiper.params.slideActiveClass);
+          } else {
+            gesture.$slideEl = swiper.slides.eq(swiper.activeIndex);
+          }
         }
 
         gesture.$imageEl = gesture.$slideEl.find('img, svg, canvas, picture, .swiper-zoom-target');
@@ -8166,7 +8183,15 @@
         }
       },
       slideChange: function slideChange(swiper) {
-        if (swiper.params.lazy.enabled && swiper.params.cssMode) {
+        var _swiper$params = swiper.params,
+            lazy = _swiper$params.lazy,
+            cssMode = _swiper$params.cssMode,
+            watchSlidesVisibility = _swiper$params.watchSlidesVisibility,
+            watchSlidesProgress = _swiper$params.watchSlidesProgress,
+            touchReleaseOnEdges = _swiper$params.touchReleaseOnEdges,
+            resistanceRatio = _swiper$params.resistanceRatio;
+
+        if (lazy.enabled && (cssMode || (watchSlidesVisibility || watchSlidesProgress) && (touchReleaseOnEdges || resistanceRatio === 0))) {
           swiper.lazy.load();
         }
       }
@@ -8530,9 +8555,13 @@
       }
 
       swiper.a11y.addElRole($(swiper.slides), params.slideRole);
-      swiper.slides.each(function (slideEl) {
+      var slidesLength = swiper.params.loop ? swiper.slides.filter(function (el) {
+        return !el.classList.contains(swiper.params.slideDuplicateClass);
+      }).length : swiper.slides.length;
+      swiper.slides.each(function (slideEl, index) {
         var $slideEl = $(slideEl);
-        var ariaLabelMessage = params.slideLabelMessage.replace(/\{\{index\}\}/, $slideEl.index() + 1).replace(/\{\{slidesLength\}\}/, swiper.slides.length);
+        var slideIndex = swiper.params.loop ? parseInt($slideEl.attr('data-swiper-slide-index'), 10) : index;
+        var ariaLabelMessage = params.slideLabelMessage.replace(/\{\{index\}\}/, slideIndex + 1).replace(/\{\{slidesLength\}\}/, slidesLength);
         swiper.a11y.addElLabel($slideEl, ariaLabelMessage);
       }); // Navigation
 
@@ -8812,7 +8841,7 @@
   };
 
   var HashNavigation = {
-    onHashCange: function onHashCange() {
+    onHashChange: function onHashChange() {
       var swiper = this;
       var document = getDocument();
       swiper.emit('hashChange');
@@ -8864,7 +8893,7 @@
       }
 
       if (swiper.params.hashNavigation.watchState) {
-        $(window).on('hashchange', swiper.hashNavigation.onHashCange);
+        $(window).on('hashchange', swiper.hashNavigation.onHashChange);
       }
     },
     destroy: function destroy() {
@@ -8872,7 +8901,7 @@
       var window = getWindow();
 
       if (swiper.params.hashNavigation.watchState) {
-        $(window).off('hashchange', swiper.hashNavigation.onHashCange);
+        $(window).off('hashchange', swiper.hashNavigation.onHashChange);
       }
     }
   };
@@ -9851,3 +9880,4 @@
   return Swiper;
 
 })));
+//# sourceMappingURL=swiper-bundle.js.map
