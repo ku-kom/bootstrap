@@ -282,6 +282,7 @@ module.exports = function (grunt) {
           'docs/assets/css/obvius-admin/admin.css',
           'docs/assets/css/tinymce/tiny-overrides.css',
           'docs/assets/css/scroll-effects/scroll-effects.css',
+          'docs/assets/css/pure/pure.css',
           //'dist/css/faculties/*.css'
         ]
       },
@@ -394,7 +395,8 @@ module.exports = function (grunt) {
           'docs/assets/css/social-feeds/twitter.css',
           'docs/assets/css/datatables/datatables.css',
           'docs/assets/css/multiple-select/multiple-select.css',
-          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css'
+          'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
+          'docs/assets/css/pure/pure.css',
         ],
         dest: 'dist/css/',
         ext: '.min.css',
