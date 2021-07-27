@@ -10602,7 +10602,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   position: relative;
   transition-property: transform;
 }
-.swiper-slide:focus {
+.swiper-slide:focus,
+.swiper-slide:active {
   outline: 1px dotted #2c6694;
   outline-offset: -1px;
 }

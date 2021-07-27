@@ -576,7 +576,7 @@ video {
   margin-right: 8px;
 }
 
-#instaslider .slick-active a:focus, #instaslider .swiper-slide:focus {
+#instaslider .slick-active a:focus, #instaslider .swiper-slide:focus, #instaslider .swiper-slide:active {
   outline: 4px solid #2c6694;
   outline-offset: -4px;
 }
