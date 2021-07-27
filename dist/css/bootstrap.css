@@ -10602,7 +10602,8 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   position: relative;
   transition-property: transform;
 }
-.swiper-slide:focus {
+.swiper-slide:focus,
+.swiper-slide:active {
   outline: 1px dotted #2c6694;
   outline-offset: -1px;
 }
@@ -10743,7 +10744,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  left: 5%;
+  left: -5%;
   right: auto;
 }
 .swiper-button-prev:before,
