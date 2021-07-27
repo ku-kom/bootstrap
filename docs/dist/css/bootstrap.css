@@ -10814,7 +10814,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  margin: 0 3px!important;
+  margin: 0 3px!important !important;
   display: inline-block;
   border-radius: 50%;
   background: #000;
