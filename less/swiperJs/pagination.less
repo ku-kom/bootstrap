@@ -15,7 +15,9 @@
   position: absolute;
   text-align: center;
   transition: 300ms opacity;
-  transform: translate3d(0, 0, 0);
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 
   &.swiper-pagination-hidden {
@@ -23,16 +25,15 @@
   }
 }
 /* Common Styles */
-
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 10px;
+  position: relative;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
 /* Bullets */
-
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
   font-size: 0;
@@ -68,8 +69,9 @@
 }
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px!important;
   display: inline-block;
   border-radius: 50%;
   background: @gray-base;
@@ -147,7 +149,6 @@
   }
 }
 /* Progress */
-
 .swiper-pagination-progressbar {
   background: rgba(@gray-base, 0.25);
   position: absolute;
