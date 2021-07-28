@@ -376,10 +376,9 @@ video {
   background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/parallax/bg-parallax-4.jpg');
 }
 
-.bg-parallax.double-column .gccolumn:first-child .gcitem:first-child, .bg-picture.double-column .gccolumn:first-child .gcitem:first-child {
-  /* Headings */
+/* .bg-parallax.double-column .gccolumn:first-child .gcitem:first-child, .bg-picture.double-column .gccolumn:first-child .gcitem:first-child {
   margin-bottom: 0;
-}
+} */
 
 .double-column .tile-header {
   font-size: 20px !important;
