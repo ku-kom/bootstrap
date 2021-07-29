@@ -6799,7 +6799,7 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-accordion > .panel-heading:focus-within {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
 }
 .panel-accordion > .panel-heading .panel-title {
   font-size: 16px;
@@ -7867,7 +7867,7 @@ nav {
   z-index: 10;
   height: auto;
   width: auto;
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -7924,7 +7924,7 @@ nav {
   font-size: 18px;
 }
 .scrolltop:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: 1px;
   border: 1px solid #fff;
 }
@@ -8312,7 +8312,7 @@ iframe {
   border-top: 0;
 }
 #mobileleftmenu li .mm-listitem__text:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: -1px;
 }
 #mobileleftmenu .mm-navbar:first-of-type {
@@ -9391,7 +9391,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   color: inherit;
 }
 .tile-link:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: -1px;
 }
 .tile-link:focus .tile-body:after {
@@ -10208,7 +10208,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   border-radius: 50%;
 }
 .slick-dots li button:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: 2px;
 }
 .slick-dots .slick-active button {
@@ -10608,7 +10608,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 .swiper-slide:focus,
 .swiper-slide:active {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: -1px;
 }
 .swiper-slide-invisible-blank {
@@ -10836,7 +10836,7 @@ button .swiper-pagination-bullet {
           appearance: none;
 }
 .swiper-pagination-bullet:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
@@ -11961,7 +11961,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .ccc-buttons button:focus {
-  outline: 1px dotted #2c6694;
+  outline: 1px solid #2c6694;
   outline-offset: -4px;
 }
 .ccc-buttons button:first-child {
