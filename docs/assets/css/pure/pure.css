@@ -4,7 +4,7 @@
 #branding-decoration,
 #left-sidebar,
 #right-sidebar,
-#footer {
+#footer, .breadcrumbs {
   display: none !important;
 }
 
