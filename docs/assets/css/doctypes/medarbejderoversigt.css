@@ -85,7 +85,7 @@ th.emplistimage:after, th.emplistemail:after {
 .pure-integration-content {
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
 
 .pure-integration-frame {
