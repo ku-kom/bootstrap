@@ -14,7 +14,8 @@
 }
 
 html, body {
-  overflow-y: hidden;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
@@ -28,7 +29,6 @@ body {
   letter-spacing: .3px;
   line-height: 1.5;
   color: #252525;
-  height: 100%;
   position: relative;
   direction: ltr;
 }
