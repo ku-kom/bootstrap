@@ -8311,6 +8311,10 @@ iframe {
 #mobileleftmenu li.local1_mmenu:first-of-type {
   border-top: 0;
 }
+#mobileleftmenu li .mm-listitem__text:focus {
+  outline: 1px dotted #2c6694;
+  outline-offset: -1px;
+}
 #mobileleftmenu .mm-navbar:first-of-type {
   padding: 0;
 }
