@@ -8438,7 +8438,7 @@ iframe {
 }
 #globalfooter {
   position: relative;
-  background: #757575;
+  background: #646464;
   color: #fff;
   margin: 0 auto;
   padding: 0;
@@ -8541,7 +8541,7 @@ iframe {
 .social-items .social-item {
   display: inline-block;
   margin: 13px 4px 0 0;
-  background-color: #666;
+  background-color: #555;
   border-radius: 50%;
 }
 .social-items .social-item .social-icon {
@@ -8559,10 +8559,10 @@ iframe {
   text-decoration: none;
 }
 .social-items .social-item .social-icon:active {
-  background-color: #666;
+  background-color: #555;
 }
 .social-items .social-item .social-icon:focus {
-  background-color: #666;
+  background-color: #555;
   outline: 1px dotted #fff;
 }
 .social-items .social-item .social-icon > span {
