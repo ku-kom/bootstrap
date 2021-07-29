@@ -197,6 +197,10 @@ h1, h2, h3 {
   padding-bottom: 80px;
 }
 
+.row-padding-top {
+  padding-bottom: 50px;
+}
+
 .visual-container {
   position: relative;
 }
