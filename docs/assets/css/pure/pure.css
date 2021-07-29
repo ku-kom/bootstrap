@@ -4,7 +4,7 @@
 #branding-decoration,
 #left-sidebar,
 #right-sidebar,
-#footer, .breadcrumb {
+#footer, #perm_cookie_box, .breadcrumb {
   display: none !important;
 }
 
@@ -13,7 +13,8 @@
   padding-top: 0;
 }
 
-#content-wrapper {
+#wrapper, #content-wrapper {
   width: 100%;
   max-width: 496px;
+  border: 0;
 }
