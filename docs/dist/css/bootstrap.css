@@ -8412,6 +8412,9 @@ iframe {
 .mm-panels > .mm-panel > .mm-navbar + .mm-listview {
   margin-top: -19px !important;
 }
+.mm-menu_position-front.mm-menu_opened {
+  z-index: 10!important;
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body.modal-open .mm-slideout {
     z-index: auto;
