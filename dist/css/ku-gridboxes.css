@@ -30,6 +30,8 @@
 .gridbox .box1 .header h3 {
   font-size: inherit;
   font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   margin: 0;
 }
 .gridbox .box2 {
