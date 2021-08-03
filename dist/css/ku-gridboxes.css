@@ -32,11 +32,6 @@
   font-weight: inherit;
   margin: 0;
 }
-.gridbox .header h3 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
-}
 .gridbox .box2 {
   padding: 5px 10px 10px;
   -ms-flex-order: 2;
