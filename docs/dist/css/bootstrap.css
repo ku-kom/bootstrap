@@ -11879,8 +11879,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .customcheck input {
-  position: absolute;
-  margin-left: -26px !important;
+  visibility: hidden;
 }
 .customcheck input:checked ~ .checkmark {
   background-color: #005cc8;
@@ -11916,6 +11915,9 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   content: "";
   position: absolute;
   display: none;
+}
+.checkmark:focus {
+  outline: 1px solid #2c6694;
 }
 .ccc-table-wrapper {
   display: none;

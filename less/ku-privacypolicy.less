@@ -202,9 +202,10 @@
   cursor: default!important;
 
   input {
-    position: absolute;
+    visibility: hidden;
+    // position: absolute;
     // opacity: 0;
-    margin-left: -26px!important;
+    // margin-left: -26px!important;
 
     &:checked {
       & ~ .checkmark {
@@ -250,6 +251,10 @@
     content: "";
     position: absolute;
     display: none;
+  }
+
+  &:focus {
+    outline: 1px solid @outline-color2;
   }
 }
 
