@@ -12804,7 +12804,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .editor-collapsible .mce-panel {
   width: 100% !important;
-  left: 0;
+  left: 0!important;
 }
 .exp-box {
   background-color: #f5f5f5;
