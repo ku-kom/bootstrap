@@ -184,75 +184,147 @@
 .ccc-list-actions {
   display: flex;
   flex-direction: row;
+  padding: 10px;
   @media (max-width: @screen-xs-max) {
     margin-bottom: 8px;
   }
 }
+// .customcheck {
+//   display: block;
+//   position: relative;
+//   padding-left: 30px!important;
+//   margin: 1px 4px 12px 0;
+//   @media (min-width: @screen-sm-max) {
+//     margin-top: 4px;
+//   }
+//   font-size: 22px;
+//   user-select: none;
+//   cursor: default!important;
+//
+//   input {
+//     position: absolute !important;
+//     height: 1px;
+//     width: 1px;
+//     overflow: hidden;
+//     clip: rect(1px, 1px, 1px, 1px);
+//     // position: absolute;
+//     // opacity: 0;
+//     // margin-left: -26px!important;
+//     &:checked {
+//       & ~ .checkmark {
+//         background-color: #005cc8;
+//         border-radius: @border-radius-base;
+//         border: 1px solid @gray-999;
+//
+//         &::after {
+//           display: block;
+//         }
+//
+//         &:focus {
+//           outline: 1px solid @white-color;
+//         }
+//       }
+//     }
+//   }
+//
+//   .checkmark {
+//     &::after {
+//       left: 7px;
+//       top: 4px;
+//       width: 5px;
+//       height: 10px;
+//       border: solid @white-color;
+//       border-width: 0 3px 3px 0;
+//       transform: rotate(45deg);
+//     }
+//   }
+// }
+//
+// .checkmark {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 20px;
+//   width: 20px;
+//   background-color: @gray-ddd;
+//   border: 1px solid @gray-666;
+//   border-radius: @border-radius-base;
+//
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+//   }
+//
+//   &:focus {
+//     outline: 1px solid @white-color;
+//     outline-offset: 2px;
+//   }
+// }
+// -------
 
-.customcheck {
-  display: block;
-  position: relative;
-  padding-left: 30px!important;
-  margin: 1px 4px 12px 0;
-  @media (min-width: @screen-sm-max) {
-    margin-top: 4px;
-  }
-  font-size: 22px;
-  user-select: none;
-  cursor: default!important;
+.ccc-large-checkbox {
+  margin: 0;
+  padding: 0;
 
-  input {
+  & > input[type='checkbox'] {
     position: absolute;
-    // opacity: 0;
-    margin-left: -26px!important;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    & + label {
+      display: block;
+      position: relative;
+      padding: 7px 0 0;
+
+      &::before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        background: @white-color;
+        border-radius: 2px;
+        border: 1px solid @gray-999;
+      }
+    }
 
     &:checked {
-      & ~ .checkmark {
-        background-color: #005cc8;
-        border-radius: @border-radius-base;
-        border: 1px solid @gray-999;
-
-        &::after {
-          display: block;
+      &+ label {
+        &::before {
+          background: #005cc8;
         }
 
-        &:focus {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 13px;
+          left: 4px;
+          border-left: 3px solid @white-color;
+          border-bottom: 3px solid @white-color;
+          height: 6px;
+          width: 13px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &:focus {
+      &+ label {
+        &::before {
           outline: 1px solid @white-color;
+          outline-offset: 2px;
         }
       }
     }
   }
-
-  .checkmark {
-    &::after {
-      left: 7px;
-      top: 4px;
-      width: 5px;
-      height: 10px;
-      border: solid @white-color;
-      border-width: 0 3px 3px 0;
-      transform: rotate(45deg);
-    }
-  }
 }
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: @gray-ddd;
-  border: 1px solid @gray-666;
-  border-radius: @border-radius-base;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-}
-
+// --------
 .ccc-table-wrapper {
   display: none;
   height: 218px;

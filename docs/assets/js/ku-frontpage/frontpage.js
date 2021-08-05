@@ -267,9 +267,10 @@
     });
 
 
-    // Pause hero video using [Enter] key
-    $('#hero-video').keyup(function(e) {
-      if (e.key == 'Enter' || e.keyCode === 13) {
+    // Pause hero video using [Space] key
+    $(document).on('keydown', '#hero-video', function(e) {
+      var key = e.key || e.keyCode;
+      if (key === 'Spacebar' || key === 32) {
         e.preventDefault();
         videoButton('#hero-video', '.hero .play-pause-button');
         return false;
