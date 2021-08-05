@@ -266,59 +266,63 @@
 .ccc-large-checkbox {
   margin: 0;
   padding: 0;
-}
 
-.ccc-large-checkbox > input[type='checkbox'] {
-  position: absolute;
-}
+  & > input[type='checkbox'] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 
-.ccc-large-checkbox > input[type='checkbox'] + label {
-  display: block;
-  position: relative;
-  padding: 7px 0 0;
-}
+    & + label {
+      display: block;
+      position: relative;
+      padding: 7px 0 0;
 
-.ccc-large-checkbox > input[type='checkbox'] + label::before {
-  content: '';
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  background: @white-color;
-  border-radius: 2px;
-  border: 1px solid @gray-999;
-}
+      &::before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        background: @white-color;
+        border-radius: 2px;
+        border: 1px solid @gray-999;
+      }
+    }
 
-.ccc-large-checkbox > input[type='checkbox']:checked + label::before {
-  background: #005cc8;
-}
+    &:checked {
+      &+ label {
+        &::before {
+          background: #005cc8;
+        }
 
-.ccc-large-checkbox > input[type='checkbox']:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 4px;
-  border-left: 3px solid @white-color;
-  border-bottom: 3px solid @white-color;
-  height: 6px;
-  width: 13px;
-  transform: rotate(-45deg);
-}
+        &::after {
+          content: '';
+          position: absolute;
+          top: 13px;
+          left: 4px;
+          border-left: 3px solid @white-color;
+          border-bottom: 3px solid @white-color;
+          height: 6px;
+          width: 13px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
 
-.ccc-large-checkbox > input[type='checkbox']:focus + label::before {
-  outline: 1px solid #005cc8;
-  box-shadow: 0 0 8px #005cc8;
-}
-
-.ccc-large-checkbox > input[type='checkbox'] {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
+    &:focus {
+      &+ label {
+        &::before {
+          outline: 1px solid @white-color;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
 }
 // --------
 .ccc-table-wrapper {

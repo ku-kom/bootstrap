@@ -11868,11 +11868,17 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .ccc-large-checkbox > input[type='checkbox'] {
   position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 .ccc-large-checkbox > input[type='checkbox'] + label {
   display: block;
   position: relative;
-  padding: 7px 0 0 0;
+  padding: 7px 0 0;
 }
 .ccc-large-checkbox > input[type='checkbox'] + label::before {
   content: '';
@@ -11900,17 +11906,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   transform: rotate(-45deg);
 }
 .ccc-large-checkbox > input[type='checkbox']:focus + label::before {
-  outline: 1px solid #005cc8;
-  box-shadow: 0 0 8px #005cc8;
-}
-.ccc-large-checkbox > input[type='checkbox'] {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 .ccc-table-wrapper {
   display: none;
