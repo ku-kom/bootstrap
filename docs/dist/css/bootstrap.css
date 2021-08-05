@@ -11692,7 +11692,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   color: #fff;
 }
 .ccc a:focus {
-  outline: 1px dotted #fff;
+  outline: 1px solid #fff;
   outline-offset: 2px;
 }
 .ccc-ani-enter,
@@ -11832,7 +11832,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   }
 }
 .ccc-select:focus {
-  outline: 1px dotted #fff;
+  outline: 1px solid #fff;
 }
 .ccc-select.open::after {
   content: "\e260";
@@ -11879,6 +11879,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   display: block;
   position: relative;
   padding: 7px 0 0;
+  margin-right: 5px;
 }
 .ccc-large-checkbox > input[type='checkbox'] + label::before {
   content: '';
