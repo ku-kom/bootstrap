@@ -224,9 +224,18 @@ body:not(.FullWidthFrontpage) .double-column {
       .tilebox {
         height: @special-tiles-hight;
 
+        .tile-header {
+          -webkit-line-clamp: 3;
+        }
+
         .tile-body {
           display: block;
-          flex: 1;
+          // flex: 1;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
 
           &:after {
             content: '';
