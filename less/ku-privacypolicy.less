@@ -253,7 +253,7 @@
     }
   }
 }
-// --------
+
 .ccc-table-wrapper {
   display: none;
   height: 218px;
@@ -261,6 +261,10 @@
   overflow-y: scroll;
   transition: height 0.4s ease;
   -webkit-overflow-scrolling: touch;
+  &:focus {
+    .tab-focus-v2();
+    outline-offset: 2px;
+  }
 }
 
 .ccc-table {

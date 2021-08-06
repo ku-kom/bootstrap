@@ -11921,6 +11921,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   transition: height .4s ease;
   -webkit-overflow-scrolling: touch;
 }
+.ccc-table-wrapper:focus {
+  outline: 1px solid #2c6694;
+  outline-offset: 2px;
+}
 .ccc-table {
   table-layout: fixed;
   color: #252525;
