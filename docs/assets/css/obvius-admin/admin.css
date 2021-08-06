@@ -5052,7 +5052,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .thumbnail {
    float: left;
    width: 120px;
-   min-height: 145px;
+   height: 150px;
    margin: 10px;
    padding: 10px;
    background-color: #ddd;
@@ -5065,16 +5065,17 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .thumbnail_image {
-   width: 100px;
+   width: 100%;
    text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: auto;
-   margin-bottom: auto;
+   margin: 0 auto;
  }
 
  .thumbnail_image>b {
    word-break: break-all;
+ }
+
+ .thumbnail .thumbnail_image img {
+   max-height: 100px;
  }
 
  .search_by_user_tekst {
