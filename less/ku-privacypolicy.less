@@ -114,7 +114,6 @@
   align-self: flex-end;
   font-size: 17px;
   margin-top: 0;
-  //display: block;
   display: inline-block;
   @media (min-width: @screen-sm-max) {
     font-size: 20px;
@@ -170,7 +169,6 @@
 }
 
 .ccc-select-description {
-  //display: block;
   align-self: flex-end;
   float: right;
   margin: 5px 15px 0 0;
@@ -189,92 +187,22 @@
     margin-bottom: 8px;
   }
 }
-// .customcheck {
-//   display: block;
-//   position: relative;
-//   padding-left: 30px!important;
-//   margin: 1px 4px 12px 0;
-//   @media (min-width: @screen-sm-max) {
-//     margin-top: 4px;
-//   }
-//   font-size: 22px;
-//   user-select: none;
-//   cursor: default!important;
-//
-//   input {
-//     position: absolute !important;
-//     height: 1px;
-//     width: 1px;
-//     overflow: hidden;
-//     clip: rect(1px, 1px, 1px, 1px);
-//     // position: absolute;
-//     // opacity: 0;
-//     // margin-left: -26px!important;
-//     &:checked {
-//       & ~ .checkmark {
-//         background-color: #005cc8;
-//         border-radius: @border-radius-base;
-//         border: 1px solid @gray-999;
-//
-//         &::after {
-//           display: block;
-//         }
-//
-//         &:focus {
-//           outline: 1px solid @white-color;
-//         }
-//       }
-//     }
-//   }
-//
-//   .checkmark {
-//     &::after {
-//       left: 7px;
-//       top: 4px;
-//       width: 5px;
-//       height: 10px;
-//       border: solid @white-color;
-//       border-width: 0 3px 3px 0;
-//       transform: rotate(45deg);
-//     }
-//   }
-// }
-//
-// .checkmark {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 20px;
-//   width: 20px;
-//   background-color: @gray-ddd;
-//   border: 1px solid @gray-666;
-//   border-radius: @border-radius-base;
-//
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     display: none;
-//   }
-//
-//   &:focus {
-//     outline: 1px solid @white-color;
-//     outline-offset: 2px;
-//   }
-// }
-// -------
 
 .ccc-large-checkbox {
   margin: 0;
   padding: 0;
 
   & > input[type='checkbox'] {
+    // Hide the checkbox but keep it, so that it can be accessed using keyboard navigation.
     position: absolute;
     height: 1px;
     width: 1px;
     margin: -1px;
     padding: 0;
     overflow: hidden;
+    white-space: nowrap;
     clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
 
     & + label {
       display: block;
