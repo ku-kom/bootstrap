@@ -9409,6 +9409,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   line-height: 1.25;
   margin-top: 0;
 }
+.tiles-x .tile-header {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
 .tile-cat {
   display: -ms-flexbox;
   display: flex;
