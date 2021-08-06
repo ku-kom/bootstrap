@@ -11873,7 +11873,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   margin: -1px;
   padding: 0;
   overflow: hidden;
+  white-space: nowrap;
   clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
 }
 .ccc-large-checkbox > input[type='checkbox'] + label {
   display: block;
