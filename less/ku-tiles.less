@@ -55,6 +55,7 @@
   &:focus {
     .tab-focus-v2();
     outline-offset: -1px;
+
     .tile-body:after {
       // Make room for focus outline:
       width: calc(100% - 2px)!important;
@@ -69,6 +70,15 @@
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
+
+  .tiles-x & {
+    // Truncate to avoid overflowing text
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+  }
 }
 
 .tile-cat {

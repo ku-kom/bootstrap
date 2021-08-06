@@ -5541,6 +5541,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 }
 .navbar-inverse a:focus {
   outline: 1px dotted #fff;
+  outline-offset: -2px;
 }
 @media (min-width: 768px) {
   .navbar-inverse {
@@ -9407,6 +9408,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
+}
+.tiles-x .tile-header {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 .tile-cat {
   display: -ms-flexbox;
