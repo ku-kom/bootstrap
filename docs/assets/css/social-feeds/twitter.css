@@ -9,7 +9,7 @@
 }
 
 #twitter-feed li+li {
-  margin-top: 6px;
+  margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
@@ -22,7 +22,7 @@
 #twitter-feed .description {
   float: none;
   clear: both;
-  margin: 4px 0;
+  margin: 6px 0 4px 0;
 }
 
 #twitter-feed .description+img {
@@ -33,23 +33,30 @@
   outline: 1px solid #106bfe;
 }
 
-.imgInfo, .twitterInfo {
-  float: left;
+.twitterInfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: calc(100% - 55px);
 }
 
 .imgInfo {
+  float: left;
   width: 55px;
+  padding-right: 5px;
   margin-bottom: 3px;
 }
 
 .imgInfo img {
-  height: 42px;
-  width: 42px;
+  height: auto;
+  width: 100%;
   border-radius: 50%;
 }
 
 .fullName {
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.33333;
 }
 
 .twitterName {
