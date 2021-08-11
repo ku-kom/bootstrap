@@ -161,16 +161,19 @@
         $(btn).attr('aria-label', translations.pause);
         $(btn).attr('aria-pressed', false);
         v.play();
+        console.log('Play conditions');
       } else {
         $(btn).addClass('paused');
         $(btn).attr('aria-label', translations.play);
         $(btn).attr('aria-pressed', true);
         v.pause();
+        console.log('Pause conditions');
       }
     }
 
     if ( !reduceMotion || reduceMotion.matches) {
       videoButton('#hero-video', '.hero .play-pause-button', 'pause');
+      console.log('Condition is rediced');
     }
 
 
