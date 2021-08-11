@@ -70,15 +70,12 @@
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
-
-  .tiles-x & {
-    // Truncate to avoid overflowing text
-    // -webkit-line-clamp: 4;
-    // -webkit-box-orient: vertical;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // display: -webkit-box;
-  }
+  flex-shrink: 0;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
 .tile-cat {
@@ -224,18 +221,23 @@ body:not(.FullWidthFrontpage) .double-column {
       .tilebox {
         height: @special-tiles-hight;
 
-        // .tile-header {
-        //   -webkit-line-clamp: 3;
-        // }
+        .tile-header {
+          // Truncate to avoid overflowing text
+          -webkit-line-clamp: 3;
+        }
 
         .tile-body {
           display: block;
           flex: 1;
-          // -webkit-line-clamp: 4;
-          // -webkit-box-orient: vertical;
-          // overflow: hidden;
-          // text-overflow: ellipsis;
-          // display: -webkit-box;
+
+          > p {
+            // Truncate to avoid overflowing text
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+          }
 
           &:after {
             content: '';
@@ -244,7 +246,7 @@ body:not(.FullWidthFrontpage) .double-column {
             display: block;
             height: 35px;
             position: absolute;
-            width: 100%;
+            width: calc(100% - 20px);
             bottom: 0;
           }
         }
@@ -256,11 +258,11 @@ body:not(.FullWidthFrontpage) .double-column {
     .double-column {
       .tiles-x:not(.tiles-plugin) {
         .tile-img {
-          flex: 0 0 65%;
+          flex: 0 0 55%;
         }
 
         .tile-content {
-          flex: 1 1 auto;
+          flex: 1 1 45%;
         }
       }
     }

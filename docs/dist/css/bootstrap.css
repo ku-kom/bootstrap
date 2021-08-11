@@ -9408,6 +9408,13 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 .tile-cat {
   display: -ms-flexbox;
@@ -9468,6 +9475,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 .tiles-x .tile-body > p {
   margin-top: 0;
+}
+.tiles-x .tile-body > p:last-child {
+  margin-bottom: 0;
 }
 .tiles-x .tile-cat {
   -ms-flex-negative: 0;
@@ -9645,11 +9655,23 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .double-column .tiles-x:not(.tiles-plugin) .tilebox {
     height: 367px;
   }
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header {
+    -webkit-line-clamp: 3;
+  }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
     display: block;
     -ms-flex: 1;
         flex: 1;
+  }
+  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > p,
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > p {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body:after {
@@ -9659,16 +9681,16 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
     display: block;
     height: 35px;
     position: absolute;
-    width: 100%;
+    width: calc(100% - 20px);
     bottom: 0;
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
-    -ms-flex: 0 0 65%;
-        flex: 0 0 65%;
+    -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-content {
-    -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+    -ms-flex: 1 1 45%;
+        flex: 1 1 45%;
   }
 }
 @media (max-width: 991px) {
