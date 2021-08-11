@@ -2215,9 +2215,7 @@ iframe, object, embed {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
-  background: #777;
-  background: -webkit-gradient(linear, left top, left bottom, from(#777), color-stop(25%, #868686), color-stop(50%, #8e8d8d), color-stop(80%, #888), to(#808080));
-  background: linear-gradient(to bottom, #777 0%, #868686 25%, #8e8d8d 50%, #888 80%, #808080 100%);
+  background: #646464;
 }
 
 #globalfooter .container {
@@ -2247,7 +2245,7 @@ iframe, object, embed {
   width: 430px;
   height: 430px;
   content: ' ';
-  background: url(/grafik/images/social-icons/footersegl.svg) no-repeat;
+  background: url('/grafik/images/social-icons/footersegl.svg') no-repeat;
   background-size: cover;
   opacity: .1;
 }
@@ -2363,7 +2361,8 @@ iframe, object, embed {
 
 #globalfooter .social-items .social-item {
   display: inline-block;
-  margin: .5em .3em 0 0;
+  margin: 13px 4px 0 0;
+    border-radius: 50%;
 }
 
 #globalfooter .social-items .social-item .social-icon {
@@ -2372,7 +2371,7 @@ iframe, object, embed {
   display: flex;
   width: 28px;
   height: 28px;
-  background-color: #757575;
+  background-color: #555;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100%;
@@ -2382,6 +2381,13 @@ iframe, object, embed {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+#globalfooter .social-items .social-item .social-icon>span {
+    border-radius: inherit;
+    width: inherit;
+height: inherit;
+    text-align: center;
 }
 
 #globalfooter .social-items .social-item .icon-facebook {

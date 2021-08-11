@@ -33,6 +33,9 @@
       '=': '&#x3D;'
     };
 
+    // Returns false if the user enabled reduced animations in their browser?
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     // Tracking elements
     var trackHero = $('.hero .video-container').next('a');
     var tracFeatures = $('.visuelt-element .visual-img').next('a');
@@ -88,7 +91,7 @@
       value: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: (!reduceMotion || reduceMotion.matches) ? false : true,
         autoplaySpeed: 4000,
         speed: 1000,
         arrows: true,
@@ -105,7 +108,7 @@
         ]
       },
       standard: {
-        autoplay: true,
+        autoplay: (!reduceMotion || reduceMotion.matches) ? false : true,
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplaySpeed: 5000,
@@ -142,12 +145,13 @@
       }
     }
 
-    function videoButton(el, btn) {
-      // Video buttons
+    function videoButton(el, btn, state) {
+      // Function to toggle video play/pause states.
       var v = $(el).get(0);
       if (!v) {
         return;
       }
+
       if (v.paused || v.ended) {
         $(btn).removeClass('paused');
         $(btn).attr('aria-label', translations.pause);
@@ -161,7 +165,18 @@
       }
     }
 
-    function sliderButtons(el, btn) {
+    if (!reduceMotion || reduceMotion.matches) {
+      var v = $('#hero-video').get(0);
+      if (!v) {
+        return;
+      }
+      $('.hero .play-pause-button').addClass('paused');
+      $('.hero .play-pause-button').attr('aria-label', translations.play);
+      $('.hero .play-pause-button').attr('aria-pressed', true);
+      v.pause();
+    }
+
+    function sliderButtons(el, btn, state) {
       // Slider buttons
       $(btn).toggleClass('paused');
       if ($(btn).hasClass('paused')) {
