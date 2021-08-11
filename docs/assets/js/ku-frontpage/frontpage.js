@@ -34,7 +34,7 @@
     };
 
     // Returns false if the user enabled reduced animations in their browser?
-    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     // Tracking elements
     var trackHero = $('.hero .video-container').next('a');
@@ -147,35 +147,34 @@
 
     function videoButton(el, btn, state) {
       // Function to toggle video play/pause states.
-      // Pass videoelement, play/pausebutton, and 'pause' if video is to be pause instantly
       var v = $(el).get(0);
       if (!v) {
         return;
       }
-      function checkState() {
-        if (state === 'pause')
-          return true;
-        }
-      if (v.paused || v.ended || checkState()) {
+
+      if (v.paused || v.ended) {
         $(btn).removeClass('paused');
         $(btn).attr('aria-label', translations.pause);
         $(btn).attr('aria-pressed', false);
         v.play();
-        console.log('Play conditions');
       } else {
         $(btn).addClass('paused');
         $(btn).attr('aria-label', translations.play);
         $(btn).attr('aria-pressed', true);
         v.pause();
-        console.log('Pause conditions');
       }
     }
 
-    if ( !reduceMotion || reduceMotion.matches) {
-      videoButton('#hero-video', '.hero .play-pause-button', 'pause');
-      console.log('Condition is rediced');
+    if (!reduceMotion || reduceMotion.matches) {
+      var v = $('#hero-video').get(0);
+      if (!v) {
+        return;
+      }
+      $('.hero .play-pause-button').addClass('paused');
+      $('.hero .play-pause-button').attr('aria-label', translations.play);
+      $('.hero .play-pause-button').attr('aria-pressed', true);
+      v.pause();
     }
-
 
     function sliderButtons(el, btn, state) {
       // Slider buttons
@@ -275,7 +274,7 @@
     });
 
     $(document).on('click', '.hero .play-pause-button', function() {
-      videoButton('#hero-video', $(this), null);
+      videoButton('#hero-video', $(this));
     });
 
     $(document).on('click', '.slick-slider .play-pause-button', function() {
@@ -288,7 +287,7 @@
       var key = e.key || e.keyCode;
       if (key === 'Spacebar' || key === 32) {
         e.preventDefault();
-        videoButton('#hero-video', '.hero .play-pause-button', null);
+        videoButton('#hero-video', '.hero .play-pause-button');
         return false;
       }
     });
