@@ -6103,6 +6103,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    box-shadow: 0 8px 10px 0 rgb(60 60 60 / 10%), 0 2px 6px 0 rgb(64 64 64 / 19%);
  }
 
+ iframe#edit_\.key\:\:KRAKOW\._save\:editengine_value\:key\:\:KRAKOW\:content_ifr {
+   /* Editor size */
+   min-height: 350px !important;
+ }
+
  /* Remove shortly */
  /* New subsite editing interface - comment for cmstest01*/
  #webstedinfo {
