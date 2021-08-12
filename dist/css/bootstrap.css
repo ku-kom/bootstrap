@@ -9441,7 +9441,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-bottom: 5px;
 }
 .tile-cat .header-small:empty {
-  display: none;
+  visibility: hidden;
 }
 .tile-cat .header-small:empty + .date {
   padding-left: 0;
