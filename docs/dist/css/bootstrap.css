@@ -9441,7 +9441,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   margin-bottom: 5px;
 }
 .tile-cat .header-small:empty {
-  display: none;
+  visibility: hidden;
 }
 .tile-cat .header-small:empty + .date {
   padding-left: 0;
@@ -9483,7 +9483,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.tiles-x .date {
+.tiles-x .date:not(:empty) {
   -ms-flex-preferred-size: 37%;
   flex-basis: 37%;
 }

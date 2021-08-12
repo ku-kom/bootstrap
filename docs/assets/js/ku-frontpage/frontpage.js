@@ -166,15 +166,15 @@
 
     }
 
-    if (!reduceMotion || reduceMotion.matches) {
-      var v = $($heroVideo).get(0);
-      if (!v) {
-        return;
-      }
-      $('.hero .play-pause-button').addClass('paused');
-      $('.hero .play-pause-button').attr('aria-label', translations.play);
-      $('.hero .play-pause-button').attr('aria-pressed', true);
-      v.pause();
+    if (reduceMotion.matches) {
+      // Stop all videos if reduced motion is requested.
+      $('video').each(function() {
+        $(this).get(0).pause();
+        $(this).get(0).currentTime = 0;
+        $(this).next('.play-pause-button').addClass('paused');
+        $(this).next('.play-pause-button').attr('aria-label', translations.play);
+        $(this).next('.play-pause-button').attr('aria-pressed', true);
+      });
     }
 
     function sliderButtons(el, btn, state) {
@@ -280,17 +280,6 @@
 
     $(document).on('click', '.slick-slider .play-pause-button', function() {
       sliderButtons('.slick-slider', $(this));
-    });
-
-
-    // Pause hero video using [Space] key
-    $(document).on('keydown', $heroVideo, function(e) {
-      var key = e.key || e.keyCode;
-      if (key === 'Spacebar' || key === 32) {
-        e.preventDefault();
-        videoButton($heroVideo, '.hero .play-pause-button');
-        return false;
-      }
     });
 
     // Rebuild page on screen size change

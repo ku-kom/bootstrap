@@ -46,7 +46,9 @@
   }
 
   .date {
-    flex-basis: 37%;
+    &:not(:empty) {
+      flex-basis: 37%;
+    }
   }
 
   .tile-img {
