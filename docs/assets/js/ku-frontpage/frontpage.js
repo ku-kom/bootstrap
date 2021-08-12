@@ -91,7 +91,7 @@
       value: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: (!reduceMotion || reduceMotion.matches) ? false : true,
+        autoplay: (reduceMotion.matches) ? false : true,
         autoplaySpeed: 4000,
         speed: 1000,
         arrows: true,
@@ -108,7 +108,7 @@
         ]
       },
       standard: {
-        autoplay: (!reduceMotion || reduceMotion.matches) ? false : true,
+        autoplay: (reduceMotion.matches) ? false : true,
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplaySpeed: 5000,
@@ -163,10 +163,11 @@
         $(btn).attr('aria-pressed', true);
         v.pause();
       }
+
     }
 
     if (!reduceMotion || reduceMotion.matches) {
-      var v = $('#hero-video').get(0);
+      var v = $($heroVideo).get(0);
       if (!v) {
         return;
       }
@@ -274,7 +275,7 @@
     });
 
     $(document).on('click', '.hero .play-pause-button', function() {
-      videoButton('#hero-video', $(this));
+      videoButton($heroVideo, $(this));
     });
 
     $(document).on('click', '.slick-slider .play-pause-button', function() {
@@ -283,11 +284,11 @@
 
 
     // Pause hero video using [Space] key
-    $(document).on('keydown', '#hero-video', function(e) {
+    $(document).on('keydown', $heroVideo, function(e) {
       var key = e.key || e.keyCode;
       if (key === 'Spacebar' || key === 32) {
         e.preventDefault();
-        videoButton('#hero-video', '.hero .play-pause-button');
+        videoButton($heroVideo, '.hero .play-pause-button');
         return false;
       }
     });
