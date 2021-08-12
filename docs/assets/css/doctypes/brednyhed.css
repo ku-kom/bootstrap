@@ -64,7 +64,6 @@ blockquote.full-width::before {
   content: attr(title);
   font-size: 13px;
   max-width: 521px;
-  margin-left: calc(16.66666667% + 4px);
   display: block;
   color: #757575;
   border-bottom: 1px solid #dfdfdf;
