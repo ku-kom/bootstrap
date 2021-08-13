@@ -74,7 +74,6 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
   display: -webkit-box;
 }
 
@@ -230,12 +229,10 @@ body:not(.FullWidthFrontpage) .double-column {
           display: block;
           flex: 1;
 
-          > p {
+          > .tile-teaser, p { // Remove "p" when this is is implemented: https://redmine.magenta-aps.dk/issues/44967
             // Truncate to avoid overflowing text
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
             display: -webkit-box;
           }
 
