@@ -12727,6 +12727,11 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body#content .exp-box-wrap[aria-expanded=false]::after {
   background: 0;
 }
+.mce-content-body#content .hidden-lg,
+.mce-content-body#content .hidden-md,
+.mce-content-body#content .hidden-sm {
+  display: block!important;
+}
 .mce-content-body p:empty {
   display: none;
 }
@@ -12736,12 +12741,12 @@ form.gdpr-accept .btn + .btn {
 .mce-content-body table {
   border: 1px dotted #ddd;
 }
-.mce-content-body table > tbody > tr > td,
-.mce-content-body table > thead > tr > td,
-.mce-content-body table > tfoot > tr > td,
-.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > th,
 .mce-content-body table > thead > tr > th,
-.mce-content-body table > tfoot > tr > th {
+.mce-content-body table > tbody > tr > th,
+.mce-content-body table > tfoot > tr > td,
+.mce-content-body table > thead > tr > td,
+.mce-content-body table > tbody > tr > td {
   border: 1px dotted #ddd;
 }
 .mce-content-body .slide-wrapper,

@@ -5,8 +5,8 @@
 
 .mce-window {
   iframe {
-  position: relative;
-}
+    position: relative;
+  }
 }
 
 .mce-content-body {
@@ -39,6 +39,12 @@
         }
       }
     }
+
+    .hidden-lg,
+    .hidden-md,
+    .hidden-sm {
+      display: block!important;
+    }
   }
 
   p:empty {
@@ -52,12 +58,12 @@
   table {
     border: 1px dotted @table-border-color;
 
-    > tbody,
+    > tfoot,
      > thead,
-    > tfoot {
+    > tbody {
       > tr {
-        > td,
-        > th {
+        > th,
+        > td {
           border: 1px dotted @table-border-color;
         }
       }
@@ -183,7 +189,7 @@
   }
 }
 
-  .editor-collapsible {
+.editor-collapsible {
   padding: 0 15px;
 
   .mce-panel {
