@@ -8106,7 +8106,7 @@ iframe {
   position: absolute;
   content: "";
   left: 0;
-  top: 4px;
+  top: 3px;
   background-color: #901a1e;
   border-radius: 2px;
 }
