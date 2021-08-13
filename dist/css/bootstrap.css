@@ -10094,13 +10094,13 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   position: relative;
   color: #252525;
 }
+.slide-link:focus {
+  outline: 2px solid #2c6694;
+  outline-offset: -2px;
+}
 .slide-link:hover img {
   -webkit-filter: brightness(90%) blur(0);
           filter: brightness(90%) blur(0);
-}
-.slick-active .slide-link:focus {
-  outline: 2px solid #2c6694;
-  outline-offset: -2px;
 }
 .slick-slide[aria-hidden="true"]:focus-within {
   pointer-events: none;

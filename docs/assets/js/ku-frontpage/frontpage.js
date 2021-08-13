@@ -69,7 +69,6 @@
       },
       news: {
         slidesToShow: 1,
-        // centerMode: true,
         arrows: false,
         dots: false,
         autoplay: false,
@@ -89,6 +88,8 @@
         ]
       },
       value: {
+        slide: '.slide-link',
+        rows: 0, // Do not remove this, otherwise the above setting won't work.
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplay: (reduceMotion.matches) ? false : true,

@@ -1,4 +1,5 @@
 /* Slider */
+
 .gallery-nav,
 .slide-gallery,
 .slideshow {
@@ -161,18 +162,14 @@
   position: relative;
   color: @text-color;
 
+  &:focus {
+    outline: 2px solid @outline-color2;
+    outline-offset: -2px;
+  }
+
   &:hover {
     img {
       .image-fadeOut();
-    }
-  }
-}
-
-.slick-active {
-  .slide-link {
-    &:focus {
-      outline: 2px solid @outline-color2;
-      outline-offset: -2px;
     }
   }
 }
@@ -389,6 +386,7 @@
     p {
       margin: 0 0 6px;
     }
+
     &.box {
       &-red1 {
         .slider-overlay-colors(@gridbox-text-light; @red1; 83%);
