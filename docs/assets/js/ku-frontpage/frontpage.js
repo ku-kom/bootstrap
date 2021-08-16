@@ -294,6 +294,10 @@
     trackHero.addClass('ku-topbanner');
     tracFeatures.addClass('ku-feature');
 
+    // Fixing accessibility issue with mobile menu - until this issue is fixed:
+    // https://github.com/FrDH/mmenu-js/issues/817
+    $('.mm-menu').find('.mm-tabstart, .mm-tabend').prop('tabindex', '-1');
+
     // Add heading semantics to heading if no h1 or h1 roles on page
     if (!$('h1').length || !$('[aria-level="1"]').length) {
       var heading = $('.ku-branding-text-major');
