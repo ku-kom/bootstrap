@@ -14,9 +14,9 @@
   var old = $.fn.twbsPagination;
 
   // KU KOM:
-  var lang = navigator.language;
+  var lang = document.documentElement.lang;
   var translations;
-  if (lang == 'da-DK') {
+  if (lang == 'da') {
     translations = {
       "page": "Side",
       "outOf": " ud af "
