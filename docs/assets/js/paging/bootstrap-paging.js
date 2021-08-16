@@ -16,15 +16,15 @@
   // KU KOM:
   var lang = document.documentElement.lang;
   var translations;
-  if (lang == 'da') {
+  if (lang === 'da') {
     translations = {
-      "page": "Side",
-      "outOf": " ud af "
+      'page': 'Side',
+      'outOf': ' ud af '
     }
-  } else { //English fallback
+  } else {
     translations = {
-      "page": "Page",
-      "outOf": " out of "
+      'page': 'Page',
+      'outOf': ' out of '
     }
   }
 
