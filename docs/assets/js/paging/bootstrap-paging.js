@@ -13,6 +13,21 @@
 
   var old = $.fn.twbsPagination;
 
+  // KU KOM:
+  var lang = navigator.language;
+  var translations;
+  if (lang == 'da-DK') {
+    translations = {
+      "page": "Side",
+      "outOf": " ud af "
+    }
+  } else { //English fallback
+    translations = {
+      "page": "Page",
+      "outOf": " out of "
+    }
+  }
+
   // PROTOTYPE AND CONSTRUCTOR
 
   var TwbsPagination = function(element, options) {
@@ -168,7 +183,7 @@
       $itemContainer.addClass(this.options[type + 'Class']);
       $itemContainer.data('page', page);
       $itemContainer.data('page-type', type);
-      $itemContainer.append($itemContent.attr('href', this.makeHref(page)).attr("aria-label", itemText).addClass(this.options.anchorClass).html(itemText));
+      $itemContainer.append($itemContent.attr('href', this.makeHref(page)).attr("aria-label", translations.page + ' ' + itemText + translations.outOf + this.options.totalPages).addClass(this.options.anchorClass).html(itemText));
 
       return $itemContainer;
     },
