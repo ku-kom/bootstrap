@@ -8274,8 +8274,9 @@ iframe {
 }
 /* Media queries */
 @media (min-width: 768px) {
-  #mobileleftmenu {
-    display: none;
+  #mobileleftmenu,
+  .mm-wrapper__blocker {
+    display: none!important;
   }
   .mm-page {
     height: 100%;
