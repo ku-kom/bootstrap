@@ -73,7 +73,6 @@ module.exports = function (grunt) {
       assets: {
         src: [
           'docs/assets/js/src/*.js',
-          'docs/assets/js/video-controls/*.js',
           'docs/assets/js/social-feeds/*.js',
           'docs/assets/js/scroll-progress/*.js',
           'docs/assets/js/cookie/*.js',
@@ -172,7 +171,7 @@ module.exports = function (grunt) {
               'docs/assets/js/social-feeds/instagram/instagramByHashtag.js',
               'docs/assets/js/social-feeds/twitter/twitterByAccount.js',
               'docs/assets/js/slider/slickslider-config.js',
-              'docs/assets/js/videoControls/videoControls.js',
+              'docs/assets/js/videoControls/*.js',
               'docs/assets/js/cookie/cookie.js',
               'docs/assets/js/scroll-progress/*.js',
               'docs/assets/js/parallax/jarallax.js',
