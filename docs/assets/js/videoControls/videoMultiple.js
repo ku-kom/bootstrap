@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   const videos = document.querySelectorAll('.video-container');
+  if (!videos) {
+    return;
+  }
   let button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
   class Video {
@@ -32,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       this.videoContainer.insertAdjacentHTML('beforeend', button);
       this.video = this.videoContainer.querySelector('.video');
       this.toggleButton = this.videoContainer.querySelector('.play-pause-button');
-
+      this.togglePlayPause();
       this.prefersReducedMotion();
       this.addEventListeners();
     }
