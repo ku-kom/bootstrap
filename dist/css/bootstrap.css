@@ -8286,6 +8286,10 @@ iframe {
 #mobileleftmenu {
   color: #252525;
 }
+#mobileleftmenu .mm-listitem_vertical .mm-btn:focus {
+  outline: 1px solid #2c6694;
+  outline-offset: -1px;
+}
 #mobileleftmenu li.navbar_mmenu {
   background-color: #fff;
   color: #252525;

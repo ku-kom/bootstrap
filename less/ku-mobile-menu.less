@@ -3,7 +3,8 @@
 // --------------------------------------------------
 /* Media queries */
 @media (min-width: @screen-sm) {
-  #mobileleftmenu, .mm-wrapper__blocker {
+  #mobileleftmenu,
+  .mm-wrapper__blocker {
     display: none!important;
   }
 
@@ -16,6 +17,15 @@
 #mobileleftmenu {
   //background-color: @white-color;
   color: @text-color;
+
+  .mm-listitem_vertical {
+    .mm-btn {
+      &:focus {
+        .tab-focus-v2();
+        outline-offset: -1px;
+      }
+    }
+  }
 
   li {
     &.navbar_mmenu {
@@ -58,6 +68,7 @@
         border-top: 0;
       }
     }
+
     .mm-listitem__text {
       &:focus {
         .tab-focus-v2();
@@ -218,7 +229,6 @@
 .mm-menu_position-front.mm-menu_opened {
   z-index: 10!important;
 }
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body.modal-open .mm-slideout {
     // Bootstrap modals collide with mobile menu in IE11:
