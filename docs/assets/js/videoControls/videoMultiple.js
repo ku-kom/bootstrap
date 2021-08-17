@@ -8,10 +8,10 @@
  * </div>
  */
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   var lang = document.documentElement.lang;
   var translations;
-  if (lang == 'da') {
+  if (lang === 'da') {
     translations = {
       'pause': 'Stop afspilning (brug Enter tast)',
       'play': 'Afspil (brug Enter tast)'
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       this.videoContainer.insertAdjacentHTML('beforeend', button);
       this.video = this.videoContainer.querySelector('.video');
       this.toggleButton = this.videoContainer.querySelector('.play-pause-button');
-      this.togglePlayPause();
       this.prefersReducedMotion();
       this.addEventListeners();
     }
@@ -70,7 +69,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     prefersReducedMotion() {
-      if (matchMedia('(prefers-reduced-motion)').matches) {
+      if (this.video.autoplay === false || matchMedia('(prefers-reduced-motion)').matches) {
         this.video.removeAttribute('autoplay');
         this.pauseVideo();
         this.video.currentTiem = 0;
