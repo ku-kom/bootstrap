@@ -134,9 +134,17 @@ module.exports = function (grunt) {
         // compress: {
         //   warnings: false
         // },
+        output: {
+          comments: 'some'
+        },
         sourceMap: true,
-        mangle: true,
-        preserveComments: /^!|@preserve|@license|@cc_on/i
+        mangle: {
+          properties: true,
+          toplevel: true,
+          eval: true
+        },
+        // mangle: true,
+        //preserveComments: /^!|@preserve|@license|@cc_on/i
       },
       core: {
         src: '<%= concat.bootstrap.dest %>',
