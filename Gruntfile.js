@@ -135,13 +135,15 @@ module.exports = function (grunt) {
         //   warnings: false
         // },
         output: {
-          comments: 'some'
+          comments: 'some',
+          quote_style: 1, // Always use single quotes
         },
         sourceMap: true,
         mangle: {
           properties: true,
-          toplevel: true,
-          eval: true
+          // toplevel: true,
+          eval: true,
+          reserved: ['jQuery']
         },
         // mangle: true,
         //preserveComments: /^!|@preserve|@license|@cc_on/i
