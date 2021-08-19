@@ -1,5 +1,6 @@
+/* eslint-disable */
 /**
- * Swiper 6.8.0
+ * Swiper 6.8.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +8,7 @@
  *
  * Released under the MIT License
  *
- * Released on: July 22, 2021
+ * Released on: August 16, 2021
  */
 
 (function (global, factory) {
@@ -1111,11 +1112,7 @@
     var foundElements = [];
 
     for (var i = 0; i < this.length; i += 1) {
-      try {
-        var found = this[i].querySelectorAll(selector);
-      } catch (err) {
-        console.log(selector);
-      }
+      var found = this[i].querySelectorAll(selector);
 
       for (var j = 0; j < found.length; j += 1) {
         foundElements.push(found[j]);
@@ -1291,7 +1288,7 @@
 
   function isNode(node) {
     // eslint-disable-next-line
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.HTMLElement !== 'undefined') {
       return node instanceof HTMLElement;
     }
 
@@ -1359,7 +1356,7 @@
       classes = '';
     }
 
-    return "." + classes.trim().replace(/([\.:\/])/g, '\\$1') // eslint-disable-line
+    return "." + classes.trim().replace(/([\.:!\/])/g, '\\$1') // eslint-disable-line
     .replace(/ /g, '.');
   }
 
@@ -1919,10 +1916,12 @@
 
     if (rtl) slides.css({
       marginLeft: '',
+      marginBottom: '',
       marginTop: ''
     });else slides.css({
       marginRight: '',
-      marginBottom: ''
+      marginBottom: '',
+      marginTop: ''
     });
     var slidesNumberEvenToRows;
 
@@ -3516,6 +3515,21 @@
     removeAllSlides: removeAllSlides
   };
 
+  function closestElement(selector, base) {
+    if (base === void 0) {
+      base = this;
+    }
+
+    function __closestFrom(el) {
+      if (!el || el === getDocument() || el === getWindow()) return null;
+      if (el.assignedSlot) el = el.assignedSlot;
+      var found = el.closest(selector);
+      return found || __closestFrom(el.getRootNode().host);
+    }
+
+    return __closestFrom(base);
+  }
+
   function onTouchStart(event) {
     var swiper = this;
     var document = getDocument();
@@ -3549,7 +3563,10 @@
       $targetEl = $(event.path[0]);
     }
 
-    if (params.noSwiping && $targetEl.closest(params.noSwipingSelector ? params.noSwipingSelector : "." + params.noSwipingClass)[0]) {
+    var noSwipingSelector = params.noSwipingSelector ? params.noSwipingSelector : "." + params.noSwipingClass;
+    var isTargetShadow = !!(e.target && e.target.shadowRoot); // use closestElement for shadow root element to get the actual closest for nested shadow root element
+
+    if (params.noSwiping && (isTargetShadow ? closestElement(noSwipingSelector, e.target) : $targetEl.closest(noSwipingSelector)[0])) {
       swiper.allowClick = true;
       return;
     }
@@ -4423,7 +4440,7 @@
     } else if (!wasMultiRow && isMultiRow) {
       $el.addClass(params.containerModifierClass + "multirow");
 
-      if (breakpointParams.slidesPerColumnFill === 'column') {
+      if (breakpointParams.slidesPerColumnFill && breakpointParams.slidesPerColumnFill === 'column' || !breakpointParams.slidesPerColumnFill && params.slidesPerColumnFill === 'column') {
         $el.addClass(params.containerModifierClass + "multirow-column");
       }
 
