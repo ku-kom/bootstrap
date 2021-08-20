@@ -9670,9 +9670,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
         flex: 1;
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > .tile-teaser,
-  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > .tile-teaser,
-  .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body p,
-  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body p {
+  .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > .tile-teaser {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
