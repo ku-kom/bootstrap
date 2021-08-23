@@ -1,6 +1,6 @@
 /* eslint-disable */
 /**
- * Swiper 6.8.2
+ * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -8,7 +8,7 @@
  *
  * Released under the MIT License
  *
- * Released on: August 16, 2021
+ * Released on: August 23, 2021
  */
 
 (function (global, factory) {
@@ -9897,4 +9897,3 @@
   return Swiper;
 
 })));
-//# sourceMappingURL=swiper-bundle.js.map
