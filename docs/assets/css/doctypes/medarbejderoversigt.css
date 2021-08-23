@@ -91,6 +91,4 @@ th.emplistimage:after, th.emplistemail:after {
 .pure-integration-frame {
   width: 100%;
   height: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
 }
