@@ -26,13 +26,13 @@ table.dataTable tbody+tfoot {
     display: table-header-group;
   }
 
-  table.dataTable tfoot th input {
+  table.dataTable tfoot input {
     font-weight: normal;
     width: 100% !important;
     padding: 5px 6px;
   }
 
-  table.dataTable tfoot th input:placeholder-shown {
+  table.dataTable tfoot input:placeholder-shown {
     text-overflow: ellipsis;
   }
 }
