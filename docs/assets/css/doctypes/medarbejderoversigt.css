@@ -10,9 +10,16 @@
   white-space: nowrap;
   border-bottom: 0;
 }
+.medarbejdertable tfoot tr td {
+  white-space: nowrap;
+}
 
-.medarbejdertable tr th input:placeholder-shown {
+.medarbejdertable tr td input:placeholder-shown {
   text-overflow: ellipsis;
+}
+
+.medarbejdertable tfoot tr td {
+  border-bottom: 2px solid #d7d7d7;
 }
 
 @media screen and (min-width: 768px) {
