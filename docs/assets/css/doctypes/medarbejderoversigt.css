@@ -10,12 +10,15 @@
   white-space: nowrap;
   border-bottom: 0;
 }
+
 .medarbejdertable tfoot tr td {
   white-space: nowrap;
 }
 
 .medarbejdertable tr td input:placeholder-shown {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .medarbejdertable tfoot tr td {
