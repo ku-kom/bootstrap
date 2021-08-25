@@ -1,0 +1,43 @@
+// KU CMS tags
+
+tag-selection {
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .label {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 0.25rem;
+  }
+
+  .close {
+    float: none;
+    color: @white-color;
+    margin-left: 0.25rem;
+  }
+}
+
+tag-finder {
+  box-shadow: 0.25rem 0.25rem 0.5rem hsl(0,0%,0%,.33);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  min-height: 16rem;
+  overflow: auto;
+
+  .list-group {
+    margin: 0;
+    border-right: 1px solid @gray-ddd;
+    width: 8rem;
+  }
+
+  .list-group-item {
+    .glyphicon {
+      float: right;
+    }
+  }
+}

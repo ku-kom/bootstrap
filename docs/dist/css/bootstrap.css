@@ -12141,6 +12141,47 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .social-embed.conversation h2 {
   color: #d8352a;
 }
+tag-selection ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+tag-selection .label {
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: .25rem;
+}
+tag-selection .close {
+  float: none;
+  color: #fff;
+  margin-left: .25rem;
+}
+tag-finder {
+  box-shadow: .25rem .25rem .5rem hsl(0, 0%, 0%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 16rem;
+  overflow: auto;
+}
+tag-finder .list-group {
+  margin: 0;
+  border-right: 1px solid #ddd;
+  width: 8rem;
+}
+tag-finder .list-group-item .glyphicon {
+  float: right;
+}
 .gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
   line-height: normal;
   margin: 4px 0 2px;
