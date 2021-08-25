@@ -12163,8 +12163,9 @@ tag-selection .close {
   color: #fff;
   margin-left: .25rem;
 }
-tag-selection .close:hover {
-  color: #fff;
+tag-selection .close:hover,
+tag-selection .close:focus {
+  color: inherit;
   text-shadow: none;
 }
 tag-finder {
