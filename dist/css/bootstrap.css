@@ -12163,6 +12163,10 @@ tag-selection .close {
   color: #fff;
   margin-left: .25rem;
 }
+tag-selection .close:hover {
+  color: #fff;
+  text-shadow: none;
+}
 tag-finder {
   box-shadow: .25rem .25rem .5rem hsl(0, 0%, 0%);
   display: -ms-flexbox;
