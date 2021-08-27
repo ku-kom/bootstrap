@@ -12909,11 +12909,11 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 .exp-box .collapse[aria-expanded="false"] {
   display: block;
   position: relative;
-  height: 100px !important;
+  height: 110px !important;
   overflow: hidden;
 }
 .exp-box .collapsing[aria-expanded="false"] {
-  height: 100px !important;
+  height: 110px !important;
 }
 .gccolumn .exp-box,
 .rightbox-normal .exp-box {
