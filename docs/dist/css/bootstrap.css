@@ -1310,32 +1310,32 @@ template {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/open-sans-v18-latin-ext_latin-300.eot');
-  src: url('../fonts/open-sans-v18-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-300.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-300.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-300.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-300.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-300.eot');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v23-latin-ext_latin-300.woff2') format('woff2'), url('../fonts/open-sans-v23-latin-ext_latin-300.woff') format('woff'), url('../fonts/open-sans-v23-latin-ext_latin-300.ttf') format('truetype'), url('../fonts/open-sans-v23-latin-ext_latin-300.svg#OpenSans') format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/open-sans-v18-latin-ext_latin-400.eot');
-  src: url('../fonts/open-sans-v18-latin-ext_latin-400.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-400.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-400.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-400.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-400.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-400.eot');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-400.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v23-latin-ext_latin-400.woff2') format('woff2'), url('../fonts/open-sans-v23-latin-ext_latin-400.woff') format('woff'), url('../fonts/open-sans-v23-latin-ext_latin-400.ttf') format('truetype'), url('../fonts/open-sans-v23-latin-ext_latin-400.svg#OpenSans') format('svg');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/open-sans-v18-latin-ext_latin-600.eot');
-  src: url('../fonts/open-sans-v18-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-600.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-600.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-600.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-600.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-600.eot');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v23-latin-ext_latin-600.woff2') format('woff2'), url('../fonts/open-sans-v23-latin-ext_latin-600.woff') format('woff'), url('../fonts/open-sans-v23-latin-ext_latin-600.ttf') format('truetype'), url('../fonts/open-sans-v23-latin-ext_latin-600.svg#OpenSans') format('svg');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/open-sans-v18-latin-ext_latin-700.eot');
-  src: url('../fonts/open-sans-v18-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2'), url('../fonts/open-sans-v18-latin-ext_latin-700.woff') format('woff'), url('../fonts/open-sans-v18-latin-ext_latin-700.ttf') format('truetype'), url('../fonts/open-sans-v18-latin-ext_latin-700.svg#OpenSans') format('svg');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-700.eot');
+  src: url('../fonts/open-sans-v23-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-v23-latin-ext_latin-700.woff2') format('woff2'), url('../fonts/open-sans-v23-latin-ext_latin-700.woff') format('woff'), url('../fonts/open-sans-v23-latin-ext_latin-700.ttf') format('truetype'), url('../fonts/open-sans-v23-latin-ext_latin-700.svg#OpenSans') format('svg');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -9661,7 +9661,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body {
@@ -9671,7 +9671,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   }
   .FullWidthFrontpage .triple-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > .tile-teaser,
   .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-body > .tile-teaser {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     display: -webkit-box;
   }
