@@ -3,7 +3,9 @@
  * Version 1.5.2
  */
 .ms-offscreen {
-  clip: rect(0 0 0 0) !important;
+  clip: rect(1px,1px,1px,1px) !important;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
   width: 1px !important;
   height: 1px !important;
   border: 0 !important;
@@ -14,6 +16,7 @@
   outline: 0 !important;
   left: auto !important;
   top: auto !important;
+  white-space: nowrap!important;
 }
 
 .ms-parent {
