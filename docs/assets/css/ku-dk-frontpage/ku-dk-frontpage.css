@@ -342,7 +342,7 @@ video {
 }
 
 .bg-parallax, .bg-picture {
-  background-repeat: no-repeat;
+  background-repeat-y: no-repeat;
   background-size: cover;
   background-position: center bottom;
   padding: 54px 0 80px 0;
@@ -353,19 +353,23 @@ video {
 }
 
 .bg-picture-1 {
-  background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-1.jpg');
+  background-image: url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-1.jpg');
+  background-color: #a6a6a6;
 }
 
 .bg-picture-2 {
-  background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-2.jpg');
+  background-image: url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-2.jpg');
+  background-color: #a6a6a6;
 }
 
 .bg-picture-3 {
-  background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-3.jpg');
+  background-image: url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-3.jpg');
+  background-color: #a6a6a6;
 }
 
 .bg-picture-4 {
-  background: #a6a6a6 url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-4.jpg');
+  background-image: url('https://www.ku.dk/statisk-grafik/baggrundsbilleder/bg-billede-4.jpg');
+  background-color: #a6a6a6;
 }
 
 .parallax-1 {
