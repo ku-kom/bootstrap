@@ -344,7 +344,7 @@ video {
 .bg-parallax, .bg-picture {
   background-repeat-y: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   background-color: #a6a6a6;
   padding: 54px 0 80px 0;
 }
