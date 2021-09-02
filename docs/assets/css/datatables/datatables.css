@@ -31,10 +31,12 @@ table.dataTable tbody+tfoot {
     width: 100% !important;
     padding: 5px 6px;
   }
+}
 
-  table.dataTable tfoot input:placeholder-shown {
-    text-overflow: ellipsis;
-  }
+.table.dataTable tr td input:placeholder-shown {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .dataTable {
