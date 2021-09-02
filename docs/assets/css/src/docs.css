@@ -52,6 +52,9 @@
   font-size: 13px;
   font-weight: normal;
 }
+.scripts-list li + li {
+  margin-top: 10px;
+}
 
 /* Inline code within headings retain the heading's background-color */
 
