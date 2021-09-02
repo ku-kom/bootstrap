@@ -8588,6 +8588,7 @@ iframe {
   height: 100%;
   top: 2px;
   text-align: center;
+  border-radius: inherit;
 }
 .social-items .footer-heading {
   margin-top: 20px;
