@@ -5285,24 +5285,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     width: 100%;
     min-width: 350px;
     padding: 5px 10px 5px 7px;
-    overflow: hidden;
-    white-space: normal;
   }
   .dropdown-menu.nyheder > li > a {
-    display: inline;
     line-height: 1.3;
     padding: 0;
     white-space: normal;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    clear: none;
   }
   .dropdown-menu.nyheder > li > a:focus,
   .dropdown-menu.nyheder > li > a:hover {
     background-color: inherit;
   }
+  .dropdown-menu.nyheder > li .small {
+    margin-top: 5px;
+  }
   .dropdown-menu.nyheder > li img {
     max-width: 115px;
     display: block;
     float: left;
-    margin: 0 8px 5px 0;
+    margin: 0 8px 0 0;
   }
   .dropdown-menu.nyheder > li + li {
     border-top: 1px dotted #ccc;

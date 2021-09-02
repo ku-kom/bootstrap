@@ -101,19 +101,6 @@ function shareURL(dest) {
   $('.panel-accordion').on('hide.bs.collapse', toggleClass);
   $('.panel-accordion').on('show.bs.collapse', toggleClass);
 
-  // Truncate multiple lines of text in News in global menu
-  var $chars = 85; // number of characters
-  var $news = $('ul.dropdown-menu.nyheder li a');
-  if ($news) {
-    $news.each(function(i, v) {
-      var $txt = $(this).text();
-      if ($txt.length > $chars) {
-        $(this).html($(this).html().substring(0, $chars) + '...');
-        $(this).addClass('truncated');
-      }
-    });
-  }
-
   function trackNews() {
     // Add tracking params to global menu news list
     var $li = $('ul.nyheder li:not(.no-track)');
