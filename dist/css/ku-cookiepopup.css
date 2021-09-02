@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  font-display: swap;
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+}
+.ccc {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  color: #fff;
+  background-color: rgba(80, 80, 80, .96);
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
+  z-index: 1051;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-overflow-scrolling: touch;
+  transition: all .4s ease;
+}
+.ccc a {
+  color: #fff;
+}
+.ccc a:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.ccc-ani-enter,
+.ccc-ani-leave-to {
+  transform: translate3d(0, 100%, 0);
+}
+.ccc-popup {
+  height: 100%;
+  padding-bottom: 23px;
+  background-color: transparent;
+}
+@media (min-width: 991px) {
+  .ccc-popup {
+    padding: 23px 130px 52px 130px;
+  }
+}
+#ccc-title {
+  font-size: 21px;
+  line-height: 1.3333333;
+  margin: 13px 0;
+}
+@media (min-width: 991px) {
+  #ccc-title {
+    font-size: 24px;
+  }
+}
+#ccc-desc {
+  font-size: 14px;
+}
+@media (min-width: 991px) {
+  #ccc-desc {
+    font-size: 16px;
+    letter-spacing: .7px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  #ccc-desc {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  #ccc-desc::after {
+    content: '';
+    background: linear-gradient(to top, #575757, rgba(80, 80, 80, 0));
+    height: 35px;
+    position: absolute;
+    width: calc(100% - var(--scroll-bar, 10px));
+    bottom: 0;
+    pointer-events: none;
+  }
+  .ccc-intro-inner {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: 265px;
+    padding: 0 10px 45px 0;
+  }
+  .ccc-intro-inner > p:first-child {
+    margin-top: 0;
+  }
+}
+.ccc-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-bottom: 23px;
+}
+.ccc-list > li {
+  border: 1px solid #888;
+  padding: 0 13px;
+  border-radius: 2px;
+}
+@media (min-width: 991px) {
+  .ccc-list > li {
+    padding: 0 13px;
+  }
+}
+.ccc-list > li + li {
+  margin-top: 23px;
+}
+.ccc-select-title {
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 17px;
+  margin-top: 0;
+  display: inline-block;
+}
+@media (min-width: 991px) {
+  .ccc-select-title {
+    font-size: 20px;
+  }
+}
+.ccc-select {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: end;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 15px;
+  letter-spacing: .7px;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+@media (min-width: 991px) {
+  .ccc-select {
+    font-size: 16px;
+  }
+}
+.ccc-select::after {
+  content: "\e259";
+  position: relative;
+  top: 2px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+@media (min-width: 991px) {
+  .ccc-select::after {
+    font-size: 26px;
+  }
+}
+.ccc-select:focus {
+  outline: 1px solid #fff;
+}
+.ccc-select.open::after {
+  content: "\e260";
+}
+.ccc-select-description {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  float: right;
+  margin: 5px 15px 0 0;
+}
+@media (max-width: 767px) {
+  .ccc-select-description {
+    margin-bottom: 13px;
+    font-size: 12px;
+    margin: 0 10px 2px 0;
+  }
+}
+.ccc-list-actions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .ccc-list-actions {
+    margin-bottom: 8px;
+  }
+}
+.ccc-large-checkbox {
+  margin: 0;
+  padding: 0;
+}
+.ccc-large-checkbox > input[type='checkbox'] {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+.ccc-large-checkbox > input[type='checkbox'] + label {
+  display: block;
+  position: relative;
+  padding: 7px 0 0;
+  margin-right: 5px;
+}
+.ccc-large-checkbox > input[type='checkbox'] + label::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #999;
+}
+.ccc-large-checkbox > input[type='checkbox']:checked + label::before {
+  background: #005cc8;
+}
+.ccc-large-checkbox > input[type='checkbox']:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  height: 6px;
+  width: 13px;
+  transform: rotate(-45deg);
+}
+.ccc-large-checkbox > input[type='checkbox']:focus + label::before {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.ccc-table-wrapper {
+  display: none;
+  height: 218px;
+  position: relative;
+  overflow-y: scroll;
+  transition: height .4s ease;
+  -webkit-overflow-scrolling: touch;
+}
+.ccc-table-wrapper:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.ccc-table {
+  table-layout: fixed;
+  color: #252525;
+  background-color: #fff;
+}
+.ccc-table > tbody > tr > td {
+  word-break: break-all;
+}
+.ccc-table-ani-enter,
+.ccc-table-ani-leave-to {
+  height: 0;
+}
+@media (max-width: 767px) {
+  .ccc-buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 991px) {
+  .ccc-buttons {
+    margin-top: 45px;
+  }
+}
+.ccc-buttons button {
+  text-transform: none;
+  font-size: 16px;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .ccc-buttons button {
+    -ms-flex: 1;
+        flex: 1;
+  }
+}
+.ccc-buttons button:focus {
+  outline: 1px solid #2c6694;
+  outline-offset: -4px;
+}
+.ccc-buttons button:first-child {
+  margin-right: 20px;
+}
+@media (min-width: 991px) {
+  .ccc-buttons button {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+  .ccc-buttons button:first-child {
+    margin-right: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .ccc-buttons button:first-child {
+    margin-right: 30px;
+  }
+}

@@ -1,4 +1,12 @@
 // KU cookie accept box
+@import "variables.less";
+@import "mixins.less";
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  font-display: swap;
+  src: url("@{icon-font-path}@{icon-font-name}.eot");
+  src: url("@{icon-font-path}@{icon-font-name}.eot?#iefix") format('embedded-opentype'), url("@{icon-font-path}@{icon-font-name}.woff2") format('woff2'), url("@{icon-font-path}@{icon-font-name}.woff") format('woff'), url("@{icon-font-path}@{icon-font-name}.ttf") format('truetype'), url("@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}") format('svg');
+}
 
 .ccc {
   position: fixed;
@@ -326,63 +334,6 @@
     &:first-child {
       @media (max-width: @screen-xs-max) {
         margin-right: 30px;
-      }
-    }
-  }
-}
-
-.cookiefilter {
-  position: relative;
-  min-height: 150px;
-  background-color: @well-bg;
-  color: @text-color;
-  border: 1px solid @well-border;
-  padding: 15px;
-  margin-bottom: @grid-gutter-by-half;
-  border-radius: @border-radius-base;
-  &:extend(.clearfix all);
-  .icon-exclamation;
-
-  &::before {
-    .icon;
-    position: absolute;
-    font-size: 156px;
-    opacity: 0.075;
-    top: 5px;
-    right: 0;
-  }
-}
-
-.cookiefilter-header {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: @line-height-small;
-}
-// Special styling for placeholder in right columns:
-
-.right-side {
-  .cookiefilter {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-
-    &::before {
-      font-size: 80px;
-      top: 0;
-    }
-
-    p {
-      margin: 6px 0 9px;
-    }
-  }
-
-  .cookiefilter-header {
-    font-size: 14px;
-    line-height: 18px;
-
-    &+ p {
-      &:first-of-type {
-        display: none;
       }
     }
   }

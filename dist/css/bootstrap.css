@@ -7345,10 +7345,10 @@ img.img-default:after,
 .divider:after,
 .spacer:before,
 .spacer:after,
-.ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after,
 .cookiefilter:before,
-.cookiefilter:after {
+.cookiefilter:after,
+.ku-branding .ku-branding-line:before,
+.ku-branding .ku-branding-line:after {
   content: " ";
   display: table;
 }
@@ -7374,8 +7374,8 @@ img.img-default:after,
 .gcitem:after,
 .divider:after,
 .spacer:after,
-.ku-branding .ku-branding-line:after,
-.cookiefilter:after {
+.cookiefilter:after,
+.ku-branding .ku-branding-line:after {
   clear: both;
 }
 .center-block {
@@ -7993,6 +7993,61 @@ nav {
 }
 iframe {
   border: 0;
+}
+.cookiefilter {
+  position: relative;
+  min-height: 150px;
+  background-color: #f5f5f5;
+  color: #252525;
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+  margin-bottom: 13px;
+  border-radius: 2px;
+}
+.cookiefilter:before {
+  content: "\65";
+}
+.cookiefilter::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "ku-symbols" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  position: absolute;
+  font-size: 156px;
+  opacity: .075;
+  top: 5px;
+  right: 0;
+}
+.cookiefilter-header {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3333333;
+}
+.right-side .cookiefilter {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.right-side .cookiefilter::before {
+  font-size: 80px;
+  top: 0;
+}
+.right-side .cookiefilter p {
+  margin: 6px 0 9px;
+}
+.right-side .cookiefilter-header {
+  font-size: 14px;
+  line-height: 18px;
+}
+.right-side .cookiefilter-header + p:first-of-type {
+  display: none;
 }
 .ku-branding {
   background-color: #fff;
@@ -11723,6 +11778,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   font-weight: 700;
   background-color: #ccc;
 }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  font-display: swap;
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/glyphicons-halflings-regular.woff2") format('woff2'), url("../fonts/glyphicons-halflings-regular.woff") format('woff'), url("../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+}
 .ccc {
   position: fixed;
   bottom: 0;
@@ -12036,61 +12097,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   .ccc-buttons button:first-child {
     margin-right: 30px;
   }
-}
-.cookiefilter {
-  position: relative;
-  min-height: 150px;
-  background-color: #f5f5f5;
-  color: #252525;
-  border: 1px solid #e3e3e3;
-  padding: 15px;
-  margin-bottom: 13px;
-  border-radius: 2px;
-}
-.cookiefilter:before {
-  content: "\65";
-}
-.cookiefilter::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "ku-symbols" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  position: absolute;
-  font-size: 156px;
-  opacity: .075;
-  top: 5px;
-  right: 0;
-}
-.cookiefilter-header {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.3333333;
-}
-.right-side .cookiefilter {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-}
-.right-side .cookiefilter::before {
-  font-size: 80px;
-  top: 0;
-}
-.right-side .cookiefilter p {
-  margin: 6px 0 9px;
-}
-.right-side .cookiefilter-header {
-  font-size: 14px;
-  line-height: 18px;
-}
-.right-side .cookiefilter-header + p:first-of-type {
-  display: none;
 }
 .social-embed {
   background-color: #fff;
