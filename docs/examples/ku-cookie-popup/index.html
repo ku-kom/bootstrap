@@ -10,96 +10,35 @@ slug: examples
       <div class="col-xs-3 col-sm-4 col-md-3 ku-leftmenu" role="menu">
         {% include ku-leftmenu.html %}
       </div>
-      <div class="col-xs-6 col-sm-8 col-md-6 main-content">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          </div>
-          <div class="col-sm-12"></div>
-          <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Middle</h2>
-              </div>
-              <div class="panel-body">
-                <p>This is a right side panel element. It can contain almost anything.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Middle</h2>
-              </div>
-              <div class="panel-body">
-                <p>This is a right side panel element. It can contain almost anything.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-3 right-side gridcontent" id="gridsidebar">
+      <div class="col-sm-8 main-content">
         <div class="row">
           <div class="col-sm-12">
-            <div class="flexiblebox-as-rightbox">
-              <a href="#" class="boxlink">
-                  <div class="gridbox with-img faculty_color text-down text-over size3">
-                      <div class="box1">
-                          <div class="header"><span>Primær tekst</span></div>
-                          <div class="text">
-                            <p>Sekundær tekst</p>
-                          </div>
-                      </div>
-                      <div class="box2"><img src="/bootstrap/images/placeholder_550x300.jpg" alt="Img alt text"></div>
-                  </div>
-              </a>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Right side</h2>
-              </div>
-              <div class="panel-body">
-                <p>This is a right side panel element. It can contain almost anything.</p>
-              </div>
-            </div>
+            <style>
+            .scripts-list li + li {
+              margin-top: 10px;
+            }
+            </style>
+            <h2>KU cookie popup</h2>
+            <p>How to implement KU cookie popup on external sites.</p>
+            <p>
+              <ol class="scripts-list">
+                <li>Add the following script in &lt;head&gt;:<br>
+                  <code>&lt;script&gt;KUCookieFilters.output_popup_placeholder();&lt;/script&gt;</code><br>
+                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookie_filters.js?f21d267&quot;&gt;&lt;/script&gt;</code>
+                </li>
+                <li>Add the following scripts right before &lt;/body&gt;:<br>
+                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookiedata.js?f21d267&quot;&gt;&lt;/script&gt;</code><br>
+                  <code>&lt;script&gt;KUCookieFilters.init(&quot;.ku.dk&quot;)&lt;/script&gt;</code><br>
+                  <code>&lt;script&gt;window.GLOBAL_cookieconf.liveStatsEndpoint = &quot;https://www.ku.dk/:obvius/consent&quot;;&lt;/script&gt;</code><br>
+                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/ccc.js?f21d267&quot;&gt;&lt;/script&gt;</code><br>
+                </li>
+                <li>If the domain is not *.ku.dk, please change the domain name here:<br><code>&lt;script&gt;KUCookieFilters.init(&quot;.ku.someotherdomain.dk&quot;)&lt;/script&gt;</code></li>
+              </ol>
+            </p>
           </div>
-          <div class="col-sm-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Right side</h2>
-              </div>
-              <div class="panel-body">
-                <p>This is a right side panel element. It can contain almost anything.</p>
-              </div>
-            </div>
-          </div>
-            <div class="col-sm-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Right side</h2>
-              </div>
-              <div class="panel-body">
-                <p>This is a right side panel element. It can contain almost anything.</p>
-              </div>
-            </div>
-          </div>
-            <div class="col-sm-12">
-              <div class="social-embed facebook"><h2>UCPH @ Facebook</h2></div>
-                <div><p>Facebook feeds...</p></div>
-            </div>
-            <div class="col-sm-12">
-              <div class="social-embed twitter"><h2>#kbhuni & #ucph</h2></div>
-                <div><p>Twitter feeds...</p></div>
-            </div>
         </div>
       </div>
     </div>
   </div>
   {% include local-footer.html %}
 </main>
-{% include components/ku-cookie-popup.html %}
