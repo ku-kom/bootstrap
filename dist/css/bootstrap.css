@@ -8584,8 +8584,9 @@ iframe {
   outline: 1px dotted #fff;
 }
 .social-items .social-item .social-icon > span {
-  border-radius: inherit;
   width: 100%;
+  height: 100%;
+  top: 2px;
   text-align: center;
 }
 .social-items .footer-heading {
