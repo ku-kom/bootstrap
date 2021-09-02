@@ -4,13 +4,13 @@
       <a class="topbar-logo" title="Start" href="{{ site.baseurl }}/"></a>
       <div id="topbar" class="navbar-collapse collapse">
         <ul id="topbar_menu" class="nav navbar-nav navbar-right" role="menubar" aria-label="Navigation">
-          <li role="presentation"><a role="menuitem" href="#">Kalender</a></li>
-          <li role="presentation"><a role="menuitem" href="#">Find vej</a></li>
-          <li role="presentation"><a role="menuitem" href="#">Telefonbog</a></li>
-          <li role="presentation"><a role="menuitem" href="#">Job</a></li>
-          <li role="presentation"><a role="menuitem" href="#">A-Å-index</a></li>
-          <li role="presentation"><a role="menuitem" href="#">KUnet</a></li>
-          <li role="presentation"><a role="menuitem" class="engelsk" href="#">English</a></li>
+          <li><a href="#">Kalender</a></li>
+          <li><a href="#">Find vej</a></li>
+          <li><a href="#">Telefonbog</a></li>
+          <li><a href="#">Job</a></li>
+          <li><a href="#">A-Å-index</a></li>
+          <li><a href="#">KUnet</a></li>
+          <li><a class="engelsk" href="#">English</a></li>
         </ul>
       </div>
       <a id="hamburger" href="#mobileleftmenu" class="navbar-toggle leftmenu-toggle" role="button">
@@ -25,73 +25,76 @@
 <nav id="kunav" aria-label="Global navigation" class="navbar navbar-default navbar-static-top ku-nav">
   <div class="container">
     <div id="navbar" class="navbar-collapse collapse">
-      <ul id="navbar_menu" class="nav navbar-nav" role="menu" aria-label="menu">
-        <li class="dropdown" role="presentation">
+      <ul id="navbar_menu" class="nav navbar-nav" aria-label="menu">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Uddannelser på KU</a>
           <ul class="dropdown-menu">
-            <li role="presentation"><a role="menuitem" href="#">Bachelor</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Kandidat</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Ph.d.</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Efter- og videreuddannelse</a></li>
+            <li><a href="#">Bachelor</a></li>
+            <li><a href="#">Kandidat</a></li>
+            <li><a href="#">Ph.d.</a></li>
+            <li><a href="#">Efter- og videreuddannelse</a></li>
           </ul>
         </li>
-        <li class="dropdown" role="presentation">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forskning på KU</a>
           <ul class="dropdown-menu">
-            <li role="presentation"><a role="menuitem" href="#">Styrkeområder</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Forskningscentre</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Ph.d.-programmer</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Find en forsker</a></li>
+            <li><a href="#">Styrkeområder</a></li>
+            <li><a href="#">Forskningscentre</a></li>
+            <li><a href="#">Ph.d.-programmer</a></li>
+            <li><a href="#">Find en forsker</a></li>
           </ul>
         </li>
-        <li class="dropdown" role="presentation"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Nyheder</a>
-            <ul class="dropdown-menu nyheder">
-                <li role="menuitem">
-                    <img src="https://placehold.it/55x55" alt="">
-                    <a href="#">Danmarks rigshospital for dyr slår dørene op. Her går man langt for dyrevelfærd. Hvad sker der hvis teksten er for lang?</a>
-                    <div class="small">16. december 2017</div>
-                </li>
-                <li role="menuitem">
-                    <img src="https://placehold.it/55x55" alt="">
-                    <a href="#">Gode karakterer til studiemiljøet</a>
-                    <div class="small">8. juni 2017</div>
-                </li>
-                <li role="menuitem">
-                    <img src="https://placehold.it/55x55" alt="">
-                    <a href="#">KU beklager behandling af studerende</a>
-                    <div class="small">7. marts 2017</div>
-                </li>
-                <li role="presentation"><a role="menuitem" href="https://nyheder.ku.dk/">Alle nyheder</a></li>
-                <li role="presentation"><a role="menuitem" href="https://nyheder.ku.dk/presseservice/">Presseservice</a></li>
-            </ul>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Nyheder</a>
+          <ul aria-hidden="true" class="nyheder dropdown-menu">
+
+          <li>
+              <img alt="Ekspedition i Arktis tog uventet drejning: Opdagede den nordligste ø i verden" src="../images/fallback/fallback-image.png">
+              <a href="#">Ekspedition i Arktis tog uventet drejning: Opdagede den nordligste ø i verden</a>
+              <div class="small">27.08.2021</div>
+          </li>
+          <li>
+              <img alt="Forskere bruger diamanter til at forstå kontinenternes fundament: ”Uden dét ville mennesket ikke eksistere”" src="../images/fallback/fallback-image.png">
+              <a href="#" class="truncated">Forskere bruger diamanter til at forstå kontinenternes fundament: ”Uden dét ville men...</a>
+              <div class="small">13.08.2021</div>
+          </li>
+          <li>
+              <img alt="Hundene cementerer deres position som danskernes foretrukne kæledyr" src="../images/fallback/fallback-image.png">
+              <a href="#">Hundene cementerer deres position som danskernes foretrukne kæledyr</a>
+              <div class="small">12.08.2021</div>
+          </li>
+
+            <li class="no-track"><a aria-label="Se alle nyheder fra KU" href="https://nyheder.ku.dk/">Alle nyheder</a></li>
+            <li class="no-track"><a aria-label="Presseservice på KU" href="https://nyheder.ku.dk/presseservice/">Presseservice</a>
+            </li>
+          </ul>
         </li>
-        <li class="dropdown" role="presentation">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samarbejde</a>
           <ul class="dropdown-menu">
-            <li role="presentation"><a role="menuitem" href="#">Internationalt</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Erhverv</a></li>
-            <li role="presentation"><a role="menuitem" href="#">ErhvervsPhD</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Skoler og gymnasier</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Alumni</a></li>
+            <li><a href="#">Internationalt</a></li>
+            <li><a href="#">Erhverv</a></li>
+            <li><a href="#">ErhvervsPhD</a></li>
+            <li><a href="#">Skoler og gymnasier</a></li>
+            <li><a href="#">Alumni</a></li>
           </ul>
         </li>
-        <li class="dropdown" role="presentation">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Besøg KU</a>
           <ul class="dropdown-menu">
-            <li role="presentation"><a role="menuitem" href="#">Museer</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Biblioteker</a></li>
-            <li role="presentation"><a role="menuitem" href="#">For skoler og gymnasier</a></li>
+            <li><a href="#">Museer</a></li>
+            <li><a href="#">Biblioteker</a></li>
+            <li><a href="#">For skoler og gymnasier</a></li>
           </ul>
         </li>
-        <li class="dropdown" role="presentation">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om KU</a>
           <ul class="dropdown-menu">
-            <li role="presentation"><a role="menuitem" href="#">Historie</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Organisation</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Ledelse</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Fakulteter</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Institutter</a></li>
-            <li role="presentation"><a role="menuitem" href="#">Kontakt</a></li>
+            <li><a href="#">Historie</a></li>
+            <li><a href="#">Organisation</a></li>
+            <li><a href="#">Ledelse</a></li>
+            <li><a href="#">Fakulteter</a></li>
+            <li><a href="#">Institutter</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
         </li>
       </ul>
