@@ -9,12 +9,12 @@
   $(document).ready(function() {
     var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
     var translations;
-    if ($lang == 'da') {
+    if ($lang === 'da') {
       translations = {
         "pause": "Stop afspilning (brug Enter tast)",
         "play": "Afspil (brug Enter tast)"
       }
-    } else { //English fallback
+    } else {
       translations = {
         "pause": "Pause (use Enter key)",
         "play": "Play (use Enter bar)"
@@ -22,18 +22,18 @@
     }
 
     // Escape characters for safety
-    var escape_map = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#39;',
-      '/': '&#x2F;',
-      '`': '&#x60;',
-      '=': '&#x3D;'
-    };
+    // var escape_map = {
+    //   '&': '&amp;',
+    //   '<': '&lt;',
+    //   '>': '&gt;',
+    //   '"': '&quot;',
+    //   "'": '&#39;',
+    //   '/': '&#x2F;',
+    //   '`': '&#x60;',
+    //   '=': '&#x3D;'
+    // };
 
-    // Returns false if the user enabled reduced animations in their browser?
+    // Returns false if the user has enabled reduced animations:
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     // Tracking elements
@@ -205,16 +205,16 @@
       });
     }
 
-    function escape_string(str) {
-      // Escape 'dangerous' characters
-      return str.replace(/[&<>"'`=\/]/g, function(chars) {
-        return escape_map[chars];
-      });
-    }
-
-    function maxChars(text, count) {
-      return text.slice(0, count) + (text.length > count ? '...' : '');
-    }
+    // function escape_string(str) {
+    //   // Escape 'dangerous' characters
+    //   return str.replace(/[&<>"'`=\/]/g, function(chars) {
+    //     return escape_map[chars];
+    //   });
+    // }
+    //
+    // function maxChars(text, count) {
+    //   return text.slice(0, count) + (text.length > count ? '...' : '');
+    // }
 
     function pauseVideos(el) {
       // Pause videos from video23
@@ -252,7 +252,7 @@
         }
       });
 
-      // Value slider
+      // tal og fakta-slider
       $valueslider.not('.slick-initialized').slick(sliderSettings.value);
 
       // Instagram:
