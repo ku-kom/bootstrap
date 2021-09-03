@@ -159,11 +159,12 @@
     if (reduceMotion.matches) {
       // Stop all videos if reduced motion is requested.
       $('video').each(function() {
-        $(this).get(0).pause();
-        $(this).get(0).currentTime = 0;
-        $(this).next('.play-pause-button').addClass('paused');
-        $(this).next('.play-pause-button').attr('aria-label', translations.play);
-        $(this).next('.play-pause-button').attr('aria-pressed', true);
+        var v = $(this);
+        v.get(0).pause();
+        v.get(0).currentTime = 0;
+        v.next('.play-pause-button').addClass('paused');
+        v.next('.play-pause-button').attr('aria-label', translations.play);
+        v.next('.play-pause-button').attr('aria-pressed', true);
       });
     }
 
