@@ -33,7 +33,7 @@ if (typeof jQuery === 'undefined') {
 
   // Set accessible attribute:
   if (window.matchMedia('(max-width: 767px)').matches) {
-    $footerHeader.attr('aria-expanded', 'false');
+    $footerHeader.prop('aria-expanded', 'false');
   }
 
   var collapseFooter = function(el, ev) {
@@ -43,7 +43,7 @@ if (typeof jQuery === 'undefined') {
       $(el).next('ul').slideToggle();
       $(el).toggleClass('open');
       // Toggle accessible state:
-      $(el).attr('aria-expanded', $(el).hasClass('open') ? 'true' : 'false');
+      $(el).prop('aria-expanded', $(el).hasClass('open') ? 'true' : 'false');
     } else {
       // Desktop:
       $(el).next('ul').show();
