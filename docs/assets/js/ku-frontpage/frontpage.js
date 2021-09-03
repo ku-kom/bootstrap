@@ -7,7 +7,7 @@
 
 
   $(document).ready(function() {
-    var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
+    var $lang = $('html').prop('lang');
 
     var translations;
     if ($lang === 'da') {
