@@ -144,13 +144,13 @@
 
       if (v.paused || v.ended) {
         $(btn).removeClass('paused');
-        $(btn).attr('aria-label', translations.pause);
-        $(btn).attr('aria-pressed', false);
+        $(btn).prop('aria-label', translations.pause);
+        $(btn).prop('aria-pressed', false);
         v.play();
       } else {
         $(btn).addClass('paused');
-        $(btn).attr('aria-label', translations.play);
-        $(btn).attr('aria-pressed', true);
+        $(btn).prop('aria-label', translations.play);
+        $(btn).prop('aria-pressed', true);
         v.pause();
       }
 
@@ -163,8 +163,8 @@
         v.get(0).pause();
         v.get(0).currentTime = 0;
         v.next('.play-pause-button').addClass('paused');
-        v.next('.play-pause-button').attr('aria-label', translations.play);
-        v.next('.play-pause-button').attr('aria-pressed', true);
+        v.next('.play-pause-button').prop('aria-label', translations.play);
+        v.next('.play-pause-button').prop('aria-pressed', true);
       });
     }
 
@@ -172,12 +172,12 @@
       // Slider buttons
       $(btn).toggleClass('paused');
       if ($(btn).hasClass('paused')) {
-        $(btn).attr('aria-label', translations.play);
-        $(btn).attr('aria-pressed', false);
+        $(btn).prop('aria-label', translations.play);
+        $(btn).prop('aria-pressed', false);
         $(el).slick('slickPause');
       } else {
-        $(btn).attr('aria-label', translations.pause);
-        $(btn).attr('aria-pressed', true);
+        $(btn).prop('aria-label', translations.pause);
+        $(btn).prop('aria-pressed', true);
         $(el).slick('slickPlay');
       }
     }
@@ -281,8 +281,8 @@
     if (!$('h1').length || !$('[aria-level="1"]').length) {
       var heading = $('.ku-branding-text-major');
       if (heading.length) {
-        heading.attr('role', 'heading');
-        heading.attr('aria-level', '1');
+        heading.prop('role', 'heading');
+        heading.prop('aria-level', '1');
       }
     }
 
