@@ -1,5 +1,5 @@
 /*global GlueFrame*/
-/* NEL, KU KOM, 2020.
+/* NEL, KU KOM, 2021.
  * Scripts for ku.dk frontpage.
  */
 (function($) {
@@ -8,6 +8,7 @@
 
   $(document).ready(function() {
     var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
+
     var translations;
     if ($lang === 'da') {
       translations = {
@@ -20,18 +21,6 @@
         "play": "Play (use Enter bar)"
       }
     }
-
-    // Escape characters for safety
-    // var escape_map = {
-    //   '&': '&amp;',
-    //   '<': '&lt;',
-    //   '>': '&gt;',
-    //   '"': '&quot;',
-    //   "'": '&#39;',
-    //   '/': '&#x2F;',
-    //   '`': '&#x60;',
-    //   '=': '&#x3D;'
-    // };
 
     // Returns false if the user has enabled reduced animations:
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -204,17 +193,6 @@
         $(this).slick('unslick');
       });
     }
-
-    // function escape_string(str) {
-    //   // Escape 'dangerous' characters
-    //   return str.replace(/[&<>"'`=\/]/g, function(chars) {
-    //     return escape_map[chars];
-    //   });
-    // }
-    //
-    // function maxChars(text, count) {
-    //   return text.slice(0, count) + (text.length > count ? '...' : '');
-    // }
 
     function pauseVideos(el) {
       // Pause videos from video23
