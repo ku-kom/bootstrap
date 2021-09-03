@@ -10641,10 +10641,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 :root {
   --swiper-theme-color: #3d3d3d;
 }
-:root {
-  --swiper-theme-color: #3d3d3d;
-}
-.swiper {
+.swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -10654,7 +10651,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   /* Fix of Webkit flickering */
   z-index: 1;
 }
-.swiper-vertical > .swiper-wrapper {
+.swiper-container-vertical > .swiper-wrapper {
   -ms-flex-direction: column;
       flex-direction: column;
 }
@@ -10668,15 +10665,29 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   transition-property: transform;
   box-sizing: content-box;
 }
-.swiper-android .swiper-slide,
+.swiper-container-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
 }
-.swiper-pointer-events {
+.swiper-container-multirow > .swiper-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.swiper-container-multirow-column > .swiper-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+.swiper-container-pointer-events {
   -ms-touch-action: pan-y;
       touch-action: pan-y;
 }
-.swiper-pointer-events.swiper-vertical {
+.swiper-container-pointer-events.swiper-container-vertical {
   -ms-touch-action: pan-x;
       touch-action: pan-x;
 }
@@ -10688,39 +10699,41 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   position: relative;
   transition-property: transform;
 }
+.swiper-slide:focus,
+.swiper-slide:active {
+  outline: 1px solid #2c6694;
+  outline-offset: -1px;
+}
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }
 /* Auto Height */
-.swiper-autoheight,
-.swiper-autoheight .swiper-slide {
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
   height: auto;
 }
-.swiper-autoheight .swiper-wrapper {
+.swiper-container-autoheight .swiper-wrapper {
   -ms-flex-align: start;
   align-items: flex-start;
   transition-property: transform, height;
 }
 /* 3D Effects */
-.swiper-3d,
-.swiper-3d.swiper-css-mode .swiper-wrapper {
+.swiper-container-3d {
   perspective: 1200px;
 }
-.swiper-3d .swiper-wrapper,
-.swiper-3d .swiper-slide,
-.swiper-3d .swiper-slide-shadow,
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right,
-.swiper-3d .swiper-slide-shadow-top,
-.swiper-3d .swiper-slide-shadow-bottom,
-.swiper-3d .swiper-cube-shadow {
+.swiper-container-3d .swiper-cube-shadow,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-wrapper {
   transform-style: preserve-3d;
 }
-.swiper-3d .swiper-slide-shadow,
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right,
-.swiper-3d .swiper-slide-shadow-top,
-.swiper-3d .swiper-slide-shadow-bottom {
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
   position: absolute;
   left: 0;
   top: 0;
@@ -10729,68 +10742,37 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   pointer-events: none;
   z-index: 10;
 }
-.swiper-3d .swiper-slide-shadow {
-  background: rgba(0, 0, 0, .15);
-}
-.swiper-3d .swiper-slide-shadow-left {
+.swiper-container-3d .swiper-slide-shadow-left {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
-.swiper-3d .swiper-slide-shadow-right {
+.swiper-container-3d .swiper-slide-shadow-right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
-.swiper-3d .swiper-slide-shadow-top {
+.swiper-container-3d .swiper-slide-shadow-top {
   background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
-.swiper-3d .swiper-slide-shadow-bottom {
+.swiper-container-3d .swiper-slide-shadow-bottom {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
 /* CSS Mode */
-.swiper-css-mode > .swiper-wrapper {
+.swiper-container-css-mode > .swiper-wrapper {
   overflow: auto;
   scrollbar-width: none;
   /* For Firefox */
   -ms-overflow-style: none;
   /* For Internet Explorer and Edge */
 }
-.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+.swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
   display: none;
 }
-.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+.swiper-container-css-mode > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: start start;
 }
-.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
   scroll-snap-type: x mandatory;
 }
-.swiper-vertical.swiper-css-mode > .swiper-wrapper {
+.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
   scroll-snap-type: y mandatory;
-}
-.swiper-centered > .swiper-wrapper::before {
-  content: '';
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -ms-flex-order: 9999;
-  order: 9999;
-}
-.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
-  -webkit-margin-start: var(--swiper-centered-offset-before);
-  margin-inline-start: var(--swiper-centered-offset-before);
-}
-.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
-  height: 100%;
-  min-height: 1px;
-  width: var(--swiper-centered-offset-after);
-}
-.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
-  -webkit-margin-before: var(--swiper-centered-offset-before);
-  margin-block-start: var(--swiper-centered-offset-before);
-}
-.swiper-centered.swiper-vertical > .swiper-wrapper::before {
-  width: 100%;
-  min-width: 1px;
-  height: var(--swiper-centered-offset-after);
-}
-.swiper-centered > .swiper-wrapper > .swiper-slide {
-  scroll-snap-align: center center;
 }
 @media (max-width: 991px) {
   .swiper-slide .tiles-x .tilebox {
