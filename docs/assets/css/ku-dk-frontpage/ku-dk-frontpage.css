@@ -1054,9 +1054,9 @@ video {
   }
 
   .hero-element, .video-container>img {
-    /* margin-left: -13px; */
     height: 250px;
-    object-fit: cover;
+    object-fit: cover!important;
+    width: 100%;
   }
 
   .search-researcher .input-group input {
