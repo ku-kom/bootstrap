@@ -54,15 +54,14 @@ if (typeof jQuery === 'undefined') {
     collapseFooter(this, e);
   });
 
-  $(window).on('resize orientationchange', debounce(function() {
+  $(window).resize(function() {
     var $newWidth = $('body').prop('clientWidth');
     if ($isResponsive === false && $newWidth !== $cachedWidth) {
       $footerHeader.removeClass('open');
       $footerColumn.removeAttr('style aria-expanded');
       $cachedWidth = $newWidth;
     }
-  }, 250));
-
+  });
 }(jQuery);
 
 /* ========================================================================
