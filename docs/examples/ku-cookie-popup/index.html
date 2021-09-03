@@ -17,17 +17,31 @@ slug: examples
             <h1>KU cookie popup</h1>
             <p>How to implement KU cookie popup on external sites.</p>
               <ol class="scripts-list">
+                <li>Add the stylesheet in &lt;head&gt;:<br><code>https://cms.ku.dk/bootstrap/dist/css/ku-cookiepopup.min.css</code></li>
                 <li>Add the following scripts in &lt;head&gt;:<br>
-                  <code>&lt;script&gt;KUCookieFilters.output_popup_placeholder();&lt;/script&gt;</code><br>
-                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookie_filters.js?f21d267&quot;&gt;&lt;/script&gt;</code>
+                  <p><code>&lt;script&gt;KUCookieFilters.output_popup_placeholder();&lt;/script&gt;</code></p>
+                  <p><code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookie_filters.js?f21d267&quot;&gt;&lt;/script&gt;</code></p>
                 </li>
                 <li>Add the following scripts right before &lt;/body&gt;:<br>
-                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookiedata.js?f21d267&quot;&gt;&lt;/script&gt;</code><br>
-                  <code>&lt;script&gt;KUCookieFilters.init(&quot;.ku.dk&quot;)&lt;/script&gt;</code><br>
-                  <code>&lt;script&gt;window.GLOBAL_cookieconf.liveStatsEndpoint = &quot;https://www.ku.dk/:obvius/consent&quot;;&lt;/script&gt;</code><br>
-                  <code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/ccc.js?f21d267&quot;&gt;&lt;/script&gt;</code><br>
+                  <p><code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/cookiedata.js?f21d267&quot;&gt;&lt;/script&gt;</code></p>
+                  <p><code>&lt;script&gt;KUCookieFilters.init(&quot;.ku.dk&quot;)&lt;/script&gt;</code><br>
+                  If the domain is not *.ku.dk, please change the domain name like this:<br><code>&lt;script&gt;KUCookieFilters.init(&quot;.someotherdomain.dk&quot;)&lt;/script&gt;</code></p>
+                  <p><code>&lt;script&gt;window.GLOBAL_cookieconf.liveStatsEndpoint = &quot;https://www.ku.dk/:obvius/consent&quot;;&lt;/script&gt;</code></p>
+                  <p><code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/ccc.js?f21d267&quot;&gt;&lt;/script&gt;</code></p>
                 </li>
-                <li>If the domain is not *.ku.dk, please change the domain name here:<br><code>&lt;script&gt;KUCookieFilters.init(&quot;.ku.someotherdomain.dk&quot;)&lt;/script&gt;</code></li>
+                <li>
+                  Wrap your custom scripts (that set statistical or marketing cookies) in the following function:
+                  <pre><code>
+    &lt;script&gt;
+    KUCookieFilters.wrap_inline_script(function() {
+      // Insert code here
+    }, [&quot;statistical&quot;, &quot;marketing&quot;]);
+    &lt;/script&gt;
+                  </code>
+                  </pre>
+                  Add parameters <code>&quot;statistical&quot;</code> and/or <code>&quot;marketing&quot;</code> depending on the type of cookies set by the script.
+                </li>
+
               </ol>
 
           </div>
