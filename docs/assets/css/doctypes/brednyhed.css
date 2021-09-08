@@ -139,7 +139,7 @@ blockquote.full-width::before {
   }
 
   .exp-box {
-    margin: 23px 0;
+    margin: 23px 0 30px 0;
   }
 
   .factbox, .exp-box-right {
