@@ -19,7 +19,7 @@ body {
   font-size: 13px !important;
 }
 
-header, nav, footer {
+header, nav, footer, #ccc {
   display: none !important;
 }
 
