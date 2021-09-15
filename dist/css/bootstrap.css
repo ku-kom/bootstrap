@@ -12278,7 +12278,7 @@ tag-finder .list-group {
 tag-finder .list-group-item .glyphicon {
   float: right;
 }
-#tagfindermodal *:not(.active) {
+#tagfindermodal div {
   background-color: #fff;
 }
 #tagfindermodal .list-group .list-group-item:focus {
@@ -12294,7 +12294,7 @@ tag-finder .list-group-item .glyphicon {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.tag-selection .panel-accordion .panel-body * {
+.tag-selection .panel-accordion .panel-body div {
   background-color: #fff;
 }
 tag-browser .list-group,

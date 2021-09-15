@@ -137,7 +137,7 @@ tag-finder {
 }
 
 #tagfindermodal {
-  *:not(.active) {
+  div {
     background-color: @white-color;
   }
 
@@ -155,7 +155,7 @@ tag-finder {
       display: flex;
       flex-direction: column;
 
-      * {
+      div {
         background-color: @white-color;
       }
     }
@@ -180,7 +180,7 @@ tag-browser {
 
     .list-group {
       margin: 0;
-      border-right: solid 1px #ddd;
+      border-right: solid 1px @gray-ddd;
       width: 15rem;
       overflow-y: auto;
       overflow-x: hidden;
