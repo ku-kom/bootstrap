@@ -35,6 +35,10 @@ tag-selection-control {
 
   .panel-accordion {
     max-width: 826px;
+
+    .panel-collapse {
+      background-color: @white-color;
+    }
   }
 
   .collapse-header-wrapper {
@@ -184,7 +188,7 @@ tag-browser {
     .list-group {
       margin: 0;
       border-right: solid 1px @gray-ddd;
-      width: 15rem;
+      width: 33%;
       overflow-y: auto;
       overflow-x: hidden;
     }
@@ -197,8 +201,8 @@ tag-browser {
       }
 
       &.selected {
-        background-color: #577d7f;
-        border-color: #577d7f;
+        background-color: @btn-info-bg;
+        border-color: @btn-info-border;
         color: #fff;
       }
 
