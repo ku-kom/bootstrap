@@ -132,7 +132,7 @@ Hide/show
    /* Chosen somewhat arbitrarily; short pages should look nice */
    padding: 0;
    background-color: #fff;
-   overflow: hidden;
+   /* overflow: hidden; */
  }
 
  @media all and (min-width: 768px) {
