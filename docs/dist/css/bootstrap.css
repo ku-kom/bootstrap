@@ -12320,7 +12320,7 @@ tag-browser .modal-body {
 tag-browser .modal-body .list-group {
   margin: 0;
   border-right: solid 1px #ddd;
-  width: 15rem;
+  width: 33%;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -12332,7 +12332,7 @@ tag-browser .modal-body .list-group-item[aria-expanded="true"]:not(.active) {
 }
 tag-browser .modal-body .list-group-item.selected {
   background-color: #577d7f;
-  border-color: #577d7f;
+  border-color: #4d6e70;
   color: #fff;
 }
 tag-browser .modal-body .list-group-item .glyphicon {
