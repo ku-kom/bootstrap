@@ -132,7 +132,7 @@ Hide/show
    /* Chosen somewhat arbitrarily; short pages should look nice */
    padding: 0;
    background-color: #fff;
-   overflow: hidden;
+   /* overflow: hidden; */
  }
 
  @media all and (min-width: 768px) {
@@ -275,7 +275,7 @@ Hide/show
  .obvius-command input,
  .obvius-newsboxes input {
    color: #222;
-   padding: 2px 4px;
+   padding: 6px 10px;
    margin-bottom: 2px;
  }
 
@@ -1706,6 +1706,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    overflow: hidden;
  }
 
+ div.obvius-mainarea {
+   overflow: visible;
+ }
+
  .obvius-editengine h2,
  .obvius-command h2 {
    clear: right;
@@ -1771,7 +1775,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .obvius-common .admincontentwrapper {
    background-color: #fff;
    float: left;
-   width: 800px;
+   width: 100%;
+   /* width: 800px; */
    margin-left: 0;
  }
 
