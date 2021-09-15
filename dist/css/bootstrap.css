@@ -12236,7 +12236,7 @@ tag-selection ul {
       flex-flow: row nowrap;
 }
 tag-selection .label {
-  font-size: 95%;
+  font-size: 100%;
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
   display: -ms-flexbox;
