@@ -12188,6 +12188,9 @@ tag-selection-control .modal-header {
 tag-selection-control .panel-accordion {
   max-width: 826px;
 }
+tag-selection-control .panel-accordion .panel-collapse {
+  background-color: #fff;
+}
 tag-selection-control .collapse-header-wrapper {
   display: -ms-flexbox;
   display: flex;
