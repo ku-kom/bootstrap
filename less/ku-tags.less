@@ -1,6 +1,5 @@
 // KU CMS tags
 /* Special admin styles */
-
 tag-selection-control {
   div[role="tablist"],
   div[role="tablist"] > .panel,
@@ -137,8 +136,14 @@ tag-finder {
   }
 }
 
-#tagfindermodal .list-group .list-group-item:focus {
-  outline-offset: -1px;
+#tagfindermodal {
+  * {
+    background-color: #fff;
+  }
+
+  .list-group .list-group-item:focus {
+    outline-offset: -1px;
+  }
 }
 
 .tag-selection {
