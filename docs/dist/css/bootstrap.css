@@ -12278,7 +12278,7 @@ tag-finder .list-group {
 tag-finder .list-group-item .glyphicon {
   float: right;
 }
-#tagfindermodal * {
+#tagfindermodal *:not(.active) {
   background-color: #fff;
 }
 #tagfindermodal .list-group .list-group-item:focus {
@@ -12286,6 +12286,13 @@ tag-finder .list-group-item .glyphicon {
 }
 .tag-selection {
   min-height: unset;
+}
+.tag-selection .panel-accordion .panel-body {
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 tag-browser .list-group,
 tag-browser .modal-body,
@@ -12307,7 +12314,7 @@ tag-browser .modal-body {
 tag-browser .modal-body .list-group {
   margin: 0;
   border-right: solid 1px #ddd;
-  width: 12rem;
+  width: 15rem;
   overflow-y: auto;
   overflow-x: hidden;
 }

@@ -1,5 +1,6 @@
 // KU CMS tags
 /* Special admin styles */
+
 tag-selection-control {
   div[role="tablist"],
   div[role="tablist"] > .panel,
@@ -137,8 +138,8 @@ tag-finder {
 }
 
 #tagfindermodal {
-  * {
-    background-color: #fff;
+  *:not(.active) {
+    background-color: @white-color;
   }
 
   .list-group .list-group-item:focus {
@@ -148,6 +149,14 @@ tag-finder {
 
 .tag-selection {
   min-height: unset;
+
+  .panel-accordion {
+    .panel-body {
+      background-color: @white-color;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 tag-browser {
@@ -169,7 +178,7 @@ tag-browser {
     .list-group {
       margin: 0;
       border-right: solid 1px #ddd;
-      width: 12rem;
+      width: 15rem;
       overflow-y: auto;
       overflow-x: hidden;
     }
