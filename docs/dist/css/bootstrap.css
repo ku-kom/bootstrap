@@ -12294,6 +12294,9 @@ tag-finder .list-group-item .glyphicon {
   -ms-flex-direction: column;
       flex-direction: column;
 }
+.tag-selection .panel-accordion .panel-body * {
+  background-color: #fff;
+}
 tag-browser .list-group,
 tag-browser .modal-body,
 tag-browser .modal-footer p {
