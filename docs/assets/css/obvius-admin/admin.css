@@ -1706,6 +1706,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    overflow: hidden;
  }
 
+ div.obvius-mainarea {
+   overflow: visible;
+ }
+
  .obvius-editengine h2,
  .obvius-command h2 {
    clear: right;
@@ -1771,7 +1775,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .obvius-common .admincontentwrapper {
    background-color: #fff;
    float: left;
-   width: 800px;
+   width: 100%;
+   /* width: 800px; */
    margin-left: 0;
  }
 
