@@ -12236,6 +12236,7 @@ tag-selection ul {
       flex-flow: row nowrap;
 }
 tag-selection .label {
+  font-size: 95%;
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
   display: -ms-flexbox;
@@ -12260,7 +12261,7 @@ tag-selection .tag-selection-minimal {
   font-size: .8rem;
 }
 tag-finder {
-  box-shadow: .25rem .25rem .5rem hsl(0, 0%, 0%);
+  box-shadow: .25rem .25rem .5rem hsla(0, 0%, 0%, .33);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
