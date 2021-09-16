@@ -6340,9 +6340,19 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    outline-offset: -1px
  }
 
- .tag-selection {
-   min-height: unset
+ .tag-selection .modal-dialog [class^="col-"] {
+   padding: 0 13px;
+   margin: 0;
  }
+
+ .tag-selection .modal-dialog .row {
+   padding: 0;
+   margin: 0;
+ }
+
+  .tag-selection .modal-body {
+    padding: 15px;
+  }
 
  .tag-selection .panel-accordion .panel-body {
    background-color: #fff;
