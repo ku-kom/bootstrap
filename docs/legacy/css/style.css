@@ -9694,3 +9694,8 @@ ul.sf-menu li a:hover {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+.tag-search-list .list-group-item-info {
+  cursor: pointer;
+  color: #3f6265;
+  background-color: #e2edee;
+}
