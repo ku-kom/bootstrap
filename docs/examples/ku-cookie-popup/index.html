@@ -15,7 +15,8 @@ slug: examples
           <div class="col-sm-12">
 
             <h1>KU cookie popup</h1>
-            <p>How to implement KU cookie popup on external sites.</p>
+            <p>Here is how to implement KU cookie popup on external sites.</p>
+            <p>* Note that all systems with a web interface for external users should use KU cookie solution so we only ask users once for cookie consent.</p>
               <ol class="scripts-list">
                 <li>Add the following references in <code>&lt;head&gt;</code>:<br>
                   <p><code>&lt;link href=&quot;https://cms.ku.dk/bootstrap/dist/css/ku-cookiepopup.min.css&quot; rel=&quot;stylesheet&quot;&gt;</code><br>
@@ -29,18 +30,18 @@ slug: examples
                   <p><code>&lt;script src=&quot;https://cms.ku.dk/scripts_js/cookies/ccc.js&quot;&gt;&lt;/script&gt;</code></p>
                 </li>
                 <li>
-                  Wrap your custom scripts or elements (that set statistical or marketing cookies) in the following function:
+                  Wrap your custom scripts or elements (that use statistical or marketing cookies) in the following function:
                   Example with scripts:
                   <pre><code>
     &lt;script&gt;
     KUCookieFilters.wrap_inline_script(function() {
-      // Insert code here
+      // Insert custom code here
     }, [&quot;statistical&quot;, &quot;marketing&quot;]);
     &lt;/script&gt;
                   </code>
                   </pre>
-                  <p>Add parameters <code>&quot;statistical&quot;</code> and/or <code>&quot;marketing&quot;</code> depending on the type of cookies set by the script.</p>
-                  Example with element - in this case, a Youtube video:
+                  <p>Add parameters <code>&quot;statistical&quot;</code> and/or <code>&quot;marketing&quot;</code> depending on the type of cookies used the script.</p>
+                  Example with element - in this case a Youtube video:
                   <pre><code>
      &lt;div class=&quot;cookiefilter <strong>cookiefiltercategory-statistical</strong> <strong>cookiefiltercategory-marketing</strong>&quot;
       data-original-html=&quot;&lt;iframe allowfullscreen=&quot;&quot; src=&quot;//www.youtube.com/embed/zpOULjyy-n8?rel=0&quot; title=&quot;Youtube video&quot;&gt;&lt;/iframe&gt;&quot; id=&quot;cookiefilter-placeholder-1&quot;&gt;
@@ -53,7 +54,7 @@ slug: examples
     &lt;/div&gt;
                   </code>
                   </pre>
-                  <p>The classes <code>cookiefiltercategory-*</code> determine which content to display based on the user's cookie selections in the cookie popup.</p>
+                  <p>The classes <code>cookiefiltercategory-*</code> determine which content to display based on the user's cookie preferences in the cookie popup.</p>
                 </li>
 
               </ol>
