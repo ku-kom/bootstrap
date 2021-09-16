@@ -9674,17 +9674,24 @@ ul.sf-menu li a:hover {
 }
 
 /* Tags in backend */
-.tag-search-wrapper .input-group-addon {
-    padding: 6px 10px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    color: #252525;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid #757575;
+tag-selection-control .tag-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.tag-search-list .list-group-item {
+
+.tag-search-wrapper .input-group-addon {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #252525;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #757575;
+}
+
+.tag-selection .list-group-item {
   position: relative;
   width: 100%;
   text-align: left;
@@ -9694,7 +9701,8 @@ ul.sf-menu li a:hover {
   background-color: #fff;
   border: 1px solid #ddd;
 }
-.tag-search-list .list-group-item-info {
+
+.tag-selection .list-group-item-info {
   cursor: pointer;
   color: #3f6265;
   background-color: #e2edee;
@@ -9702,8 +9710,41 @@ ul.sf-menu li a:hover {
 
 .tag-selection .modal-dialog {
   border: 1px solid #ccc;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .tag-selection .modal-dialog .close {
   float: right;
+}
+
+tag-browser {
+  width: 100%;
+}
+
+tag-browser .glyphicon-menu-right {
+  transform: scale(2.2);
+}
+
+tag-browser .glyphicon-menu-right:before {
+    content: "\203A";
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+tag-selection .label-default {
+    background-color: #757575;
+
+}
+tag-selection .label-info {
+    background-color: #577d7f;
 }
