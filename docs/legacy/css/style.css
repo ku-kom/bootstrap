@@ -2362,7 +2362,7 @@ iframe, object, embed {
 #globalfooter .social-items .social-item {
   display: inline-block;
   margin: 13px 4px 0 0;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #globalfooter .social-items .social-item .social-icon {
@@ -2384,10 +2384,10 @@ iframe, object, embed {
 }
 
 #globalfooter .social-items .social-item .social-icon>span {
-    border-radius: inherit;
-    width: inherit;
-height: inherit;
-    text-align: center;
+  border-radius: inherit;
+  width: inherit;
+  height: inherit;
+  text-align: center;
 }
 
 #globalfooter .social-items .social-item .icon-facebook {
@@ -8504,61 +8504,61 @@ ul.sf-menu li a:hover {
 }
 
 .ccc-large-checkbox {
-    margin: 0;
-    padding: 0
+  margin: 0;
+  padding: 0
 }
 
 .ccc-large-checkbox>input[type=checkbox] {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    clip: rect(1px,1px,1px,1px);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%)
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%)
 }
 
 .ccc-large-checkbox>input[type=checkbox]+label {
-    display: block;
-    position: relative;
-    padding: 7px 0 0;
-    margin-right: 5px
+  display: block;
+  position: relative;
+  padding: 7px 0 0;
+  margin-right: 5px
 }
 
 .ccc-large-checkbox>input[type=checkbox]+label::before {
-    content: '';
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 2px;
-    border: 1px solid #999
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #999
 }
 
 .ccc-large-checkbox>input[type=checkbox]:checked+label::before {
-    background: #005cc8
+  background: #005cc8
 }
 
 .ccc-large-checkbox>input[type=checkbox]:checked+label::after {
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: 4px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    height: 6px;
-    width: 13px;
-    transform: rotate(-45deg)
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  height: 6px;
+  width: 13px;
+  transform: rotate(-45deg)
 }
 
 .ccc-large-checkbox>input[type=checkbox]:focus+label::before {
-    outline: 1px solid #fff;
-    outline-offset: 2px
+  outline: 1px solid #fff;
+  outline-offset: 2px
 }
 
 .ccc-table-wrapper {
@@ -8570,8 +8570,8 @@ ul.sf-menu li a:hover {
 }
 
 .ccc-table-wrapper:focus {
-    outline: 1px solid #fff;
-    outline-offset: 2px
+  outline: 1px solid #fff;
+  outline-offset: 2px
 }
 
 .ccc-table {
@@ -9671,4 +9671,26 @@ ul.sf-menu li a:hover {
 
 .box-light3.outlined:hover {
   border: 1px solid #855800;
+}
+
+/* Tags in backend */
+.tag-search-wrapper .input-group-addon {
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #252525;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #757575;
+}
+.tag-search-list .list-group-item {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
