@@ -6350,6 +6350,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin: 0;
  }
 
+ .tag-selection .modal-dialog .row + .row {
+   margin-top: 23px;
+ }
+
   .tag-selection .modal-body {
     padding: 15px;
   }

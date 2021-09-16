@@ -9699,3 +9699,11 @@ ul.sf-menu li a:hover {
   color: #3f6265;
   background-color: #e2edee;
 }
+
+.tag-selection .modal-dialog {
+  border: 1px solid #ccc;
+}
+
+.tag-selection .modal-dialog .close {
+  float: right;
+}
