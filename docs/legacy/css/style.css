@@ -9718,8 +9718,18 @@ tag-selection-control .tag-search-wrapper {
   float: right;
 }
 
-tag-browser {
+.tag-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+tag-search, tag-browser {
   width: 100%;
+}
+
+tag-create label {
+  font-weight: 600;
 }
 
 tag-browser .glyphicon-menu-right {
