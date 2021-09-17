@@ -1346,8 +1346,6 @@ html {
   height: 100%;
 }
 body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -1364,6 +1362,10 @@ body {
   height: 100%;
   position: relative;
   direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 767px) {
   body {

@@ -31,8 +31,6 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   font-family: @font-family-base;
   font-size: @font-size-body-desktop;
   font-style: normal;
@@ -47,6 +45,10 @@ body {
   height: 100%;
   position: relative;
   direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   @media (max-width: @screen-xs-max) {
     -webkit-overflow-scrolling: touch;
     font-size: @font-size-body;
