@@ -1,5 +1,4 @@
  /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext"); */
-
  /*============================================================================*/
  /* ADMIN STYLES */
  /*============================================================================*/
@@ -20,7 +19,7 @@ Remember to assign new styles to a class or id containing the admin-elements
  body {
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
-   font-family: "Open Sans",Helvetica,Arial,sans-serif;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
    display: block !important;
    /* override flex */
    -ms-flex-direction: unset !important;
@@ -276,7 +275,9 @@ Hide/show
  .obvius-handling input,
  .obvius-buttons input,
  .obvius-command input,
- .obvius-newsboxes input {
+ .obvius-newsboxes input,
+ .obvius-command select
+  {
    color: #222;
    padding: 6px 10px;
    margin-bottom: 2px;
@@ -6307,7 +6308,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  tag-selection .close:focus, tag-selection .close:hover {
    color: inherit;
-   text-shadow: none
+   text-shadow: none;
+ }
+
+ tag-selection .close:focus {
+   outline: 1px dotted #fff;
  }
 
  tag-selection .tag-selection-minimal {
@@ -6354,13 +6359,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin: 0;
  }
 
- .tag-selection .modal-dialog .row + .row {
+ .tag-selection .modal-dialog .row+.row {
    margin-top: 23px;
  }
 
-  .tag-selection .modal-body {
-    padding: 15px;
-  }
+ .tag-selection .modal-body {
+   padding: 15px;
+ }
 
  .tag-selection .panel-accordion .panel-body {
    background-color: #fff;

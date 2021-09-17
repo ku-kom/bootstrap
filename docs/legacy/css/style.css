@@ -9676,8 +9676,8 @@ ul.sf-menu li a:hover {
 /* Tags in backend */
 .tag-search-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column!important;
+  align-items: flex-start!important;
 }
 
 .tag-search-wrapper .input-group-addon {
@@ -9731,12 +9731,6 @@ ul.sf-menu li a:hover {
 
 .tag-selection .modal-dialog .close {
   float: right;
-}
-
-.tag-search-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 tag-search, tag-browser {
