@@ -9674,7 +9674,7 @@ ul.sf-menu li a:hover {
 }
 
 /* Tags in backend */
-tag-selection-control .tag-search-wrapper {
+.tag-search-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9702,6 +9702,13 @@ tag-selection-control .tag-search-wrapper {
   border: 1px solid #ddd;
 }
 
+.list-group-item.active, .list-group-item.selected {
+  z-index: 2;
+  color: #fff;
+  background-color: #39808e;
+  border-color: #39808e;
+}
+
 .tag-selection .list-group-item-info {
   cursor: pointer;
   color: #3f6265;
@@ -9710,10 +9717,10 @@ tag-selection-control .tag-search-wrapper {
 
 .tag-selection .label .close {
   padding: 0;
-cursor: pointer;
-background: 0;
-border: 0;
--webkit-appearance: none;
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  -webkit-appearance: none;
 }
 
 .tag-selection .modal-dialog {
@@ -9745,24 +9752,26 @@ tag-browser .glyphicon-menu-right {
 }
 
 tag-browser .glyphicon-menu-right:before {
-    content: "\203A";
+  content: "\203A";
 }
-.label {
-    display: inline;
-    padding: .3em .6em .5em;
-    font-size: 85%;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 2px;
-}
-tag-selection .label-default {
-    background-color: #757575;
 
+.label {
+  display: inline;
+  padding: .3em .6em;
+  font-size: 85%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 2px;
 }
+
+tag-selection .label-default {
+  background-color: #757575;
+}
+
 tag-selection .label-info {
-    background-color: #577d7f;
+  background-color: #577d7f;
 }
