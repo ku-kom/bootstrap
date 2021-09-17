@@ -6436,3 +6436,9 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .tag-search-list .list-group-item-info {
    cursor: pointer;
  }
+
+ .mulitiselect-hint {
+   -ms-flex: 1;
+   flex: 1;
+   text-align: left;
+ }
