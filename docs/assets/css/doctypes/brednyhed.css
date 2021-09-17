@@ -51,6 +51,10 @@ blockquote.full-width::before {
   color: inherit;
 }
 
+.widenews-content .factbox img {
+  margin: 10px 0 !important;
+}
+
 .exp-box {
   font-size: 14px;
 }
