@@ -9708,6 +9708,14 @@ tag-selection-control .tag-search-wrapper {
   background-color: #e2edee;
 }
 
+.tag-selection .label .close {
+  padding: 0;
+cursor: pointer;
+background: 0;
+border: 0;
+-webkit-appearance: none;
+}
+
 .tag-selection .modal-dialog {
   border: 1px solid #ccc;
   width: 100%;
@@ -9741,7 +9749,7 @@ tag-browser .glyphicon-menu-right:before {
 }
 .label {
     display: inline;
-    padding: .2em .6em .3em;
+    padding: .3em .6em .5em;
     font-size: 85%;
     font-weight: 700;
     line-height: 1;
