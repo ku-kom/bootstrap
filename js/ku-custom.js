@@ -133,7 +133,6 @@ function shareURL(dest) {
     var scollPosition = window.pageYOffset || document.documentElement.scrollTop;
     if (scroll) {
       scroll.classList.toggle('in', scollPosition > 60);
-      console.log(scollPosition);
     }
   }
   scrollToTopIcon();
