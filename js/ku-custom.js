@@ -138,9 +138,9 @@ function shareURL(dest) {
   scrollFunction();
 
   // Init scroller on scroll
-  window.addEventListener('scroll', throttle(function() {
+  window.addEventListener('scroll', function() {
     scrollFunction()
-  }, 200));
+  });
 
   function checkScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
