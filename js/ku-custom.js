@@ -78,6 +78,10 @@ function shareURL(dest) {
   }
 }
 
+function getCurrentScrollPosition() {
+  return window.pageYOffset || document.documentElement.scrollTop;
+}
+
 (function($) {
   // Language of the current page - fallback to English
   var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
@@ -131,6 +135,7 @@ function shareURL(dest) {
     var scroll = document.getElementById('scrolltop');
     // multiple checks for browser compatibility:
     var scollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scollPosition);
     if (scroll) {
       scroll.classList.toggle('in', scollPosition > 60);
     }
@@ -140,7 +145,7 @@ function shareURL(dest) {
   // Init scroller on scroll
   window.addEventListener('scroll', throttle(function() {
     scrollToTopIcon();
-  }, 100));
+  }, 250));
 
   function hasScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
