@@ -1983,9 +1983,10 @@ function shareURL(dest) {
   function scrollToTopIcon() {
     var scroll = document.getElementById('scrolltop');
     // multiple checks for browser compatibility:
-    var scollPosition = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
+    var scollPosition = window.pageYOffset || document.documentElement.scrollTop;
     if (scroll) {
       scroll.classList.toggle('in', scollPosition > 60);
+      console.log(scollPosition);
     }
   }
   scrollToTopIcon();
