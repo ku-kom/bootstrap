@@ -1375,6 +1375,7 @@ body {
 }
 :root {
   --scroll-bar: 10px;
+  --scrollPercentage: 0;
   font-size: 16px;
 }
 button,
@@ -12722,6 +12723,24 @@ form.gdpr-accept .btn + .btn {
 }
 .feed ul li {
   padding: 10px 0;
+}
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  opacity: 1;
+  height: 10px;
+}
+.scroll-indicator.progress {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  background-color: #e9ecef;
+  opacity: 0;
+}
+.scroll-indicator .progress-bar {
+  background-color: #901a1e;
+  width: var(--scrollPercentage);
 }
 .mce-window iframe {
   position: relative;

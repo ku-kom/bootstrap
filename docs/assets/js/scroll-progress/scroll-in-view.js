@@ -20,8 +20,7 @@ function AnimateOnScroll(options) {
 
   const isElementXPercentInViewport = function(element, percentVisible) {
     // Returns true if an element is partially in view by a percentage.
-    let
-      rect = element.getBoundingClientRect(),
+    let rect = element.getBoundingClientRect(),
       windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
     return !(
