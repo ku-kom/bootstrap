@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll = Math.round(scroll);
     progressbar.setAttribute('aria-valuenow', scroll);
     progressbar.setAttribute('aria-valuetext', 'Scroll progress: ' + scroll + '%');
-    progressbar.style.setProperty("--scrollPercentage", scroll + '%');
+    progressbar.style.setProperty('--scrollPercentage', scroll + '%');
   }
 
 
