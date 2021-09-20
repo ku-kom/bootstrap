@@ -1,12 +1,13 @@
 /*
-* Scroll progress indicator.
-*/
+ * Scroll progress indicator.
+ */
 document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (reduceMotion.matches) {
     return;
   }
   let scrollPosition = 0;
+  let tick = false;
 
   const scrollProgress = () => {
     let progressbar = document.getElementById('horizontal-scroll');
@@ -34,15 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     scrollPosition = window.scrollY;
-
-    window.requestAnimationFrame(function() {
-      scrollProgress();
-      let top = window.pageYOffset || document.documentElement.scrollTop;
-      let el = document.querySelector('.progress');
-      // Apply class to scroll progress bar after some scroll to make it visible...
-      el.classList.toggle('in-view', top > 20);
-    });
+    if (!tick) {
+      // Throttle scroll event
+      window.requestAnimationFrame(function() {
+        scrollProgress();
+        let top = window.pageYOffset || document.documentElement.scrollTop;
+        let el = document.querySelector('.progress');
+        // Apply class to scroll progress bar after some scroll to make it visible...
+        el.classList.toggle('in-view', top > 20);
+        tick = false;
+      });
+      tick = true;
+    }
   }, {
+    capture: false,
     passive: true
   });
 });
