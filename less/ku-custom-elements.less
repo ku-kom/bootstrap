@@ -535,18 +535,19 @@ form.gdpr-accept {
 // Scroll indicator
 
 .scroll-indicator {
-  &.progress {
-    width: 100%;
-    height: 1px;
-    margin: 0;
-    background-color: #e9ecef;
-    opacity: 0;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  background-color: #e9ecef;
+  opacity: 0;
+
+  &.in-view {
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    opacity: 1;
+    height: 10px;
   }
-  position: fixed;
-  top: 0;
-  z-index: 11;
-  opacity: 1;
-  height: 10px;
 
   .progress-bar {
     background-color: #901a1e;
