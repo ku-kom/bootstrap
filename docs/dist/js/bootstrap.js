@@ -1981,23 +1981,19 @@ function shareURL(dest) {
 
   // Show/hide scroller if it exists
   function scrollFunction() {
-    var $scroll = $('#scrolltop');
+    var scroll = document.getElementById('scrolltop');
     // multiple checks for browser compatibility:
-    var $scollPosition = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
-    if ($scroll) {
-      if ($scollPosition > 60) {
-        $scroll.addClass('in');
-      } else {
-        $scroll.removeClass('in');
-      }
+    var scollPosition = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
+    if (scroll) {
+      scroll.classList.toggle('in', scollPosition > 60);
     }
   }
   scrollFunction();
 
   // Init scroller on scroll
-  window.onscroll = function() {
+  window.addEventListener('scroll', throttle(function() {
     scrollFunction()
-  };
+  }, 200));
 
   function checkScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
@@ -2014,9 +2010,17 @@ function shareURL(dest) {
 
   checkScrollbar();
 
-  $(window).on('resize orientationchange', debounce(function() {
+  window.addEventListener('orientationchange', debounce(function() {
     checkScrollbar();
   }, 250));
+
+  window.addEventListener('resize', debounce(function() {
+    checkScrollbar();
+  }, 250));
+
+  // $(window).on('resize orientationchange', debounce(function() {
+  //   checkScrollbar();
+  // }, 250));
 
   function scrollToTop() {
     var $root = $('html, body');

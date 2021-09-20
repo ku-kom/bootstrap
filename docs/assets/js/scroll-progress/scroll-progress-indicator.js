@@ -1,5 +1,5 @@
 /*
- * Scroll progress indicator.
+ * Scroll progress indicator. Adds a progress bar at the top of the page and indicates scroll progress.
  */
 document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(function() {
       scrollProgress();
       let top = window.pageYOffset || document.documentElement.scrollTop;
-      let el = document.querySelector('.progress');
+      let el = document.querySelector('.scroll-indicator');
       // Apply class to scroll progress bar after some scroll to make it visible...
       el.classList.toggle('in-view', top > 20);
     });
