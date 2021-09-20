@@ -1995,8 +1995,18 @@ function getCurrentScrollPosition() {
   scrollToTopIcon();
 
   // Init scroller on scroll
-  window.addEventListener('scroll', function() {
-    scrollToTopIcon();
+
+  var lastScrollPosition = 0;
+  var tick = false;
+  window.addEventListener('scroll', function(e) {
+    lastScrollPosition = window.scrollY;
+    if (!tick) {
+      window.requestAnimationFrame(function() {
+        scrollToTopIcon();
+        tick = false;
+      });
+      tick = true;
+    }
   });
 
   function hasScrollbar() {

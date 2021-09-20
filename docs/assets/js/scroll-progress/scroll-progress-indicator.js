@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
   let scrollPosition = 0;
+  let tick = false;
 
   const scrollProgress = () => {
     let progressbar = document.getElementById('horizontal-scroll');
@@ -32,17 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   appendProgressbar();
 
-  window.addEventListener('scroll', throttle(() => {
+  window.addEventListener('scroll', () => {
     scrollPosition = window.scrollY;
-    window.requestAnimationFrame(function() {
-      scrollProgress();
-      let top = window.pageYOffset || document.documentElement.scrollTop;
-      let el = document.querySelector('.scroll-indicator');
-      // Apply class to scroll progress bar after some scroll to make it visible...
-      el.classList.toggle('in-view', top > 20);
-    });
+    if (!tick) {
+      window.requestAnimationFrame(function() {
+        scrollProgress();
+        let top = window.pageYOffset || document.documentElement.scrollTop;
+        let el = document.querySelector('.scroll-indicator');
+        // Apply class to scroll progress bar after some scroll to make it visible...
+        el.classList.toggle('in-view', top > 20);
+        tick = false;
+      });
+      tick = true;
+    }
   }, {
     capture: false,
     passive: true
-  }, 100));
+  });
 });
