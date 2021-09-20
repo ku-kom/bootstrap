@@ -135,7 +135,6 @@ function getCurrentScrollPosition() {
     var scroll = document.getElementById('scrolltop');
     // multiple checks for browser compatibility:
     var scollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scollPosition);
     if (scroll) {
       scroll.classList.toggle('in', scollPosition > 60);
     }
@@ -143,9 +142,9 @@ function getCurrentScrollPosition() {
   scrollToTopIcon();
 
   // Init scroller on scroll
-  window.addEventListener('scroll', throttle(function() {
+  window.addEventListener('scroll', function() {
     scrollToTopIcon();
-  }, 250));
+  });
 
   function hasScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
