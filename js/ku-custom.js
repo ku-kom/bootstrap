@@ -127,7 +127,7 @@ function shareURL(dest) {
   makeGlobalMenuClickable();
 
   // Show/hide scroller if it exists
-  function scrollFunction() {
+  function scrollToTopIcon() {
     var scroll = document.getElementById('scrolltop');
     // multiple checks for browser compatibility:
     var scollPosition = window.pageYOffset !== 'undefined' ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
@@ -135,14 +135,14 @@ function shareURL(dest) {
       scroll.classList.toggle('in', scollPosition > 60);
     }
   }
-  scrollFunction();
+  scrollToTopIcon();
 
   // Init scroller on scroll
-  window.addEventListener('scroll', function() {
-    scrollFunction()
-  });
+  window.addEventListener('scroll', throttle(function() {
+    scrollToTopIcon();
+  }, 100));
 
-  function checkScrollbar() {
+  function hasScrollbar() {
     // Check if page has scrollbar and if so add css variable. Used for full width styling.
     var body = document.body;
     if (body) {
@@ -155,19 +155,15 @@ function shareURL(dest) {
     }
   }
 
-  checkScrollbar();
+  hasScrollbar();
 
   window.addEventListener('orientationchange', debounce(function() {
-    checkScrollbar();
+    hasScrollbar();
   }, 250));
 
   window.addEventListener('resize', debounce(function() {
-    checkScrollbar();
+    hasScrollbar();
   }, 250));
-
-  // $(window).on('resize orientationchange', debounce(function() {
-  //   checkScrollbar();
-  // }, 250));
 
   function scrollToTop() {
     var $root = $('html, body');
