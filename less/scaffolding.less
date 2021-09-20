@@ -16,13 +16,12 @@
   box-sizing: border-box;
 }
 // Body reset
-
 // Note: Fonts are stored in the cms.
 // .font-face('Name', 'url + filename', weight in numbers, font style, svg id)
-.font-face( @web-font-family-name, @web-font-path, 300, normal, @web-font-svg-id);
-.font-face( @web-font-family-name, @web-font-path, 400, normal, @web-font-svg-id);
-.font-face( @web-font-family-name, @web-font-path, 600, normal, @web-font-svg-id);
-.font-face( @web-font-family-name, @web-font-path, 700, normal, @web-font-svg-id);
+.font-face(@web-font-family-name, @web-font-path, 300, normal, @web-font-svg-id);
+.font-face(@web-font-family-name, @web-font-path, 400, normal, @web-font-svg-id);
+.font-face(@web-font-family-name, @web-font-path, 600, normal, @web-font-svg-id);
+.font-face(@web-font-family-name, @web-font-path, 700, normal, @web-font-svg-id);
 
 html {
   font-size: 10px;
@@ -60,9 +59,7 @@ body {
   --scrollPercentage: 0;
   font-size: 16px;
 }
-
 // Reset fonts for relevant elements
-
 button,
 input,
 select,
