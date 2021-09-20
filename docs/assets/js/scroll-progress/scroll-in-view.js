@@ -30,11 +30,11 @@ function AnimateOnScroll(options) {
   };
 
   const displayScrollElement = (element) => {
-    element.classList.add('in-view');
+    element.classList.add('js-in-view');
   };
 
   const hideScrollElement = (element) => {
-    element.classList.remove('in-view');
+    element.classList.remove('js-in-view');
   };
 
   const handleScrollAnimation = () => {

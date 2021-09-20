@@ -4,23 +4,23 @@
   transition: opacity 500ms;
 }
 
-.js-scroll.in-view {
+.js-in-view {
   opacity: 1;
 }
 
-.in-view.fade-in {
+.js-in-view.fade-in {
   animation: fade-in 700ms ease-in-out both;
 }
 
-.in-view.fade-in-bottom {
+.js-in-view.fade-in-bottom {
   animation: fade-in-bottom 700ms ease-in-out both;
 }
 
-.in-view.slide-left {
+.js-in-view.slide-left {
   animation: slide-in-left 700ms ease-in-out both;
 }
 
-.in-view.slide-right {
+.js-in-view.slide-right {
   animation: slide-in-right 700ms ease-in-out both;
 }
 
@@ -29,7 +29,7 @@
     opacity: 1 !important;
   }
 
-  .js-scroll.in-view {
+  .js-in-view {
     animation: none !important;
   }
 }
