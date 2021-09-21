@@ -9512,9 +9512,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   letter-spacing: .4px;
   margin-bottom: 5px;
 }
-.tile-cat .header-small:empty {
-  visibility: hidden;
-}
 .tile-cat .header-small:empty + .date {
   padding-left: 0;
 }
@@ -9554,6 +9551,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-x .tile-cat {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+.tiles-x .header-small:empty {
+  visibility: hidden;
 }
 .tiles-x .date:not(:empty) {
   -ms-flex-preferred-size: 37%;
@@ -9614,6 +9614,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-y .header-small {
   -ms-flex-preferred-size: 72%;
   flex-basis: 72%;
+}
+.tiles-y .header-small:empty {
+  display: none;
 }
 .tiles-y .tile-img {
   margin-bottom: 10px;

@@ -45,6 +45,12 @@
     flex-shrink: 0;
   }
 
+  .header-small {
+    &:empty {
+      visibility: hidden;
+    }
+  }
+
   .date {
     &:not(:empty) {
       flex-basis: 37%;
@@ -109,6 +115,10 @@
 
   .header-small {
     flex-basis: 72%;
+
+    &:empty {
+      display: none;
+    }
   }
 
   .tile-img {
