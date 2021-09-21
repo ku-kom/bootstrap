@@ -9,8 +9,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  var lang = document.documentElement.lang;
-  var translations;
+  let lang = document.documentElement.lang;
+  let translations;
   if (lang === 'da') {
     translations = {
       'pause': 'Stop afspilning (brug Enter tast)',
