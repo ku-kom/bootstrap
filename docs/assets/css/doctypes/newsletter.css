@@ -17,11 +17,11 @@
   bottom: -2px;
 }
 
-.Newsletter h1 {
+.Newsletter .main-content h1 {
   margin-bottom: 10px !important;
 }
 
-.Newsletter h2 {
+.Newsletter .main-content h2 {
   border-bottom: 0 !important;
   font-family: inherit !important;
   font-size: 22.1px !important;
@@ -29,7 +29,7 @@
   margin: 0 !important;
 }
 
-.Newsletter h3:not(.footer-heading) {
+.Newsletter .main-content h3:not(.footer-heading) {
   font-weight: 600 !important;
   color: initial !important;
   font-family: inherit !important;
@@ -38,7 +38,7 @@
   padding: initial !important;
 }
 
-.Newsletter ul, .Newsletter ol, .Newsletter li, .Newsletter td {
+.Newsletter .main-content ul, .Newsletter .main-content ol, .Newsletter .main-content li, .Newsletter .main-content td {
   font-size: 1em !important;
   color: #252525 !important;
   font-family: inherit !important;
