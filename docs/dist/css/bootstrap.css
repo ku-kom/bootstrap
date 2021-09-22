@@ -12400,7 +12400,7 @@ p[align="right"]:before {
   border-left: 1px solid #757575;
 }
 .find-researcher {
-  background-image: linear-gradient(to right, #bbb 0%, #999 100%);
+  background-image: linear-gradient(to right, #eee 0%, #ccc 100%);
   background-repeat: repeat-x;
 }
 .find-kunet {
