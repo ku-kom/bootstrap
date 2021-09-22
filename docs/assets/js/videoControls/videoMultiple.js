@@ -9,7 +9,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  let lang = document.documentElement.lang;
+  const lang = document.documentElement.lang;
   let translations;
   if (lang === 'da') {
     translations = {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!videos) {
     return;
   }
-  let button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
+  const button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
 
   class Video {
     constructor(video) {
