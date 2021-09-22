@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
       this.videoContainer = video;
       this.videoContainer.insertAdjacentHTML('beforeend', button);
       this.video = this.videoContainer.querySelector('.video');
-      this.toggleButton = this.videoContainer.querySelector('.play-pause-button');
+      this.btn = this.videoContainer.querySelector('.play-pause-button');
       this.prefersReducedMotion();
       this.addEventListeners();
     }
 
     addEventListeners() {
-      this.toggleButton.addEventListener('click', () => {
+      this.btn.addEventListener('click', () => {
         this.togglePlayPause();
       });
     }
@@ -55,16 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playVideo() {
       this.video.play();
-      this.toggleButton.classList.remove('paused');
-      this.toggleButton.setAttribute('aria-pressed', 'false');
-      this.toggleButton.setAttribute('aria-label', translations.pause);
+      this.btn.classList.remove('paused');
+      this.btn.setAttribute('aria-pressed', 'false');
+      this.btn.setAttribute('aria-label', translations.pause);
     }
 
     pauseVideo() {
       this.video.pause();
-      this.toggleButton.classList.add('paused');
-      this.toggleButton.setAttribute('aria-pressed', 'true');
-      this.toggleButton.setAttribute('aria-label', translations.play);
+      this.btn.classList.add('paused');
+      this.btn.setAttribute('aria-pressed', 'true');
+      this.btn.setAttribute('aria-label', translations.play);
 
     }
 
