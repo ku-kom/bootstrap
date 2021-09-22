@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (this.video.autoplay === false || matchMedia('(prefers-reduced-motion)').matches) {
         this.video.removeAttribute('autoplay');
         this.pauseVideo();
-        this.video.currentTiem = 0;
+        this.video.currentTime = 0;
       }
     }
   }
