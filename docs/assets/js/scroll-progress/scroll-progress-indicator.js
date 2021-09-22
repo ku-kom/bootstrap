@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let tick = false;
 
   const scrollProgress = () => {
-    let progressbar = document.getElementById('horizontal-scroll');
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progressbar = document.getElementById('horizontal-scroll');
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scroll = (winScroll / height) * 100;
     scroll = Math.round(scroll);
     progressbar.setAttribute('aria-valuenow', scroll);
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const appendProgressbar = () => {
-    let target = document.querySelector('header:first-of-type');
-    let bar = document.createElement('div');
+    const target = document.querySelector('header:first-of-type');
+    const bar = document.createElement('div');
     bar.classList.add('progress', 'scroll-indicator');
     bar.innerHTML = '<div class="progress-bar" id="horizontal-scroll" role="progressbar" aria-valuetext="Scroll progress: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="-1"></div>';
-    let fragment = document.createDocumentFragment();
+    const fragment = document.createDocumentFragment();
     fragment.appendChild(bar);
     target.appendChild(fragment);
   }
@@ -34,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
   appendProgressbar();
 
   window.addEventListener('scroll', () => {
+    const el = document.querySelector('.scroll-indicator');
     scrollPosition = window.scrollY;
     if (!tick) {
       window.requestAnimationFrame(function() {
         scrollProgress();
-        let top = window.pageYOffset || document.documentElement.scrollTop;
-        let el = document.querySelector('.scroll-indicator');
+        const top = window.pageYOffset || document.documentElement.scrollTop;
         // Apply class to scroll progress bar after some scroll to make it visible...
         el.classList.toggle('in-view', top > 20);
         tick = false;
