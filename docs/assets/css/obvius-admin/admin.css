@@ -276,8 +276,7 @@ Hide/show
  .obvius-buttons input,
  .obvius-command input,
  .obvius-newsboxes input,
- .obvius-command select
-  {
+ .obvius-command select {
    color: #222;
    padding: 6px 10px;
    margin-bottom: 2px;
@@ -6295,7 +6294,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    -ms-flex-align: center;
    align-items: center;
    margin-right: .25rem;
-   margin-bottom: 7px;
+   margin: 2px;
  }
 
  tag-selection .close {
@@ -6316,7 +6315,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  tag-selection .tag-selection-minimal {
-   font-size: .8rem
+   font-size: .8rem;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
  }
 
  tag-finder {
@@ -6377,6 +6382,15 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  .tag-selection .panel-accordion .panel-body div {
    background-color: #fff
+ }
+
+ .tag-selection .panel-accordion .panel-collapse[aria-expanded=true] tag-selection {
+   opacity: 1;
+   transition: opacity 150ms linear;
+ }
+
+ .tag-selection .panel-accordion .collapsing tag-selection {
+   opacity: 0;
  }
 
  tag-browser .list-group, tag-browser .modal-body, tag-browser .modal-footer p {
