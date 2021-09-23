@@ -6386,7 +6386,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  .tag-selection .panel-accordion .panel-collapse[aria-expanded=true] tag-selection {
    opacity: 1;
-   transition: opacity 150ms linear;
+   transition: opacity 100ms linear;
  }
 
  .tag-selection .panel-accordion .collapsing tag-selection {
