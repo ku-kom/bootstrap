@@ -4774,6 +4774,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin: 10px 0;
  }
 
+ .error {
+   max-width: 496px;
+ }
+
  .alt_text_input>label {
    margin-right: 5px;
  }
