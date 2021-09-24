@@ -5710,6 +5710,14 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    max-width: 496px;
  }
 
+ .accessibility-warning ul li {
+   word-break: break-all;
+ }
+
+ .accessibility-warning ul li + li {
+   margin-top: 5px;
+ }
+
  .editengine2-field .accessibility-warning {
    width: 100%;
    max-width: 827px;
