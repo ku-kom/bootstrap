@@ -4,13 +4,15 @@
   Usage:
   var el = new AnimateOnScroll({
       element: ".js-scroll, .another-element",
+      visible: 4 // Optional - probably not necessary to change: Percent scroll passed element before stuff happens
   });
 */
 function AnimateOnScroll(options) {
   'use strict';
 
-  var defaultOptions = {
+  let defaultOptions = {
     element: '.js-scroll',
+    visible: 4
   }
 
   // Extend user-defined options, otherwise use default options.
@@ -39,7 +41,7 @@ function AnimateOnScroll(options) {
 
   const handleScroll = () => {
     scrollElements.forEach((el) => {
-      if (isElementXPercentInViewport(el, 4)) { // Element is 4% visible...
+      if (isElementXPercentInViewport(el, options.visible)) {
         displayScrollElement(el);
       } else {
         hideScrollElement(el)
