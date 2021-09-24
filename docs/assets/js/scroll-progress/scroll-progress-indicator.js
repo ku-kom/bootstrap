@@ -2,6 +2,8 @@
  * Scroll progress indicator. Adds a progress bar at the top of the page and indicates scroll progress.
  */
 document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (reduceMotion.matches) {
     return;

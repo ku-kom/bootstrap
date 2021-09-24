@@ -37,7 +37,7 @@ function AnimateOnScroll(options) {
     element.classList.remove('js-in-view');
   };
 
-  const handleScrollAnimation = () => {
+  const handleScroll = () => {
     scrollElements.forEach((el) => {
       if (isElementXPercentInViewport(el, 4)) { // Element is 4% visible...
         displayScrollElement(el);
@@ -48,16 +48,16 @@ function AnimateOnScroll(options) {
   }
 
   window.addEventListener('load', () => {
-    handleScrollAnimation();
+    handleScroll();
   });
 
   // throttle() is a global helper function
   window.addEventListener('scroll', throttle(() => {
-    handleScrollAnimation();
+    handleScroll();
   }, 100));
 
   // debounce() is a global helper function
   window.addEventListener('orientationchange', debounce(() => {
-    handleScrollAnimation();
+    handleScroll();
   }, 150));
 }
