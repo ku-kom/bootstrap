@@ -7,7 +7,7 @@
       visible: 4 // Optional - probably not necessary to change: Percent scroll passed element before stuff happens
   });
 */
-function AnimateOnScroll(options = {}) {
+function AnimateOnScroll(options) {
   'use strict';
 
   const defaults = {
