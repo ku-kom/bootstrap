@@ -7,16 +7,16 @@
       visible: 4 // Optional - probably not necessary to change: Percent scroll passed element before stuff happens
   });
 */
-function AnimateOnScroll(options) {
+function AnimateOnScroll(options = {}) {
   'use strict';
 
-  let defaultOptions = {
+  const defaults = {
     element: '.js-scroll',
     visible: 4
   }
 
   // Extend user-defined options, otherwise use default options.
-  options = Object.assign({}, defaultOptions, options);
+  options = Object.assign({}, defaults, options);
 
   const scrollElements = document.querySelectorAll(options.element);
 
