@@ -9,6 +9,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+  
   const lang = document.documentElement.lang;
   let translations;
   if (lang === 'da') {
