@@ -12539,6 +12539,9 @@ p[align="right"]:before {
   font-size: 17px;
   font-weight: 600;
 }
+.factbox .fact-title strong {
+  font-weight: inherit;
+}
 .factbox-left {
   float: left;
   margin-right: 20px;
