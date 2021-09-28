@@ -2981,11 +2981,12 @@ table th[class*="col-"] {
   -webkit-overflow-scrolling: touch;
   min-height: .01%;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 14.25px;
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
   }
