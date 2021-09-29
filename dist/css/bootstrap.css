@@ -9436,6 +9436,10 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-plugin.tiles-x .tilebox {
   margin-bottom: 23px;
 }
+.tiles-plugin.tiles-x .tilebox .tile-img img {
+  min-height: 145px;
+  height: 100%;
+}
 @media (max-width: 767px) {
   .tiles-plugin.tiles-x .tilebox:last-child {
     margin-bottom: 0;

@@ -9,6 +9,12 @@
   &.tiles-x {
     .tilebox {
       margin-bottom: @grid-gutter-height;
+      .tile-img {
+        img {
+          min-height: 145px; // This is important in order to avoid collapsed boxed due to slow image rendering.
+          height: 100%;
+        }
+      }
     }
     @media (max-width: @screen-xs-max) {
       .tilebox {
