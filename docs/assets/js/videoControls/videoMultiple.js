@@ -10,7 +10,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
-  
+
   const lang = document.documentElement.lang;
   let translations;
   if (lang === 'da') {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     constructor(video) {
       this.videoContainer = video;
       this.videoContainer.insertAdjacentHTML('beforeend', button);
-      this.video = this.videoContainer.querySelector('.video');
+      this.video = this.videoContainer.querySelector('video');
       this.btn = this.videoContainer.querySelector('.play-pause-button');
       this.prefersReducedMotion();
       this.addEventListeners();
