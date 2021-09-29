@@ -9,10 +9,16 @@
   &.tiles-x {
     .tilebox {
       margin-bottom: @grid-gutter-height;
+
       .tile-img {
+        max-width: 100%;
+        padding-top: 66%;
+        /* 1:1 Aspect Ratio = 100% of width - important when using Isotope plugin */
+        position: relative;
         img {
-          min-height: 145px; // This is important in order to avoid collapsed boxed due to slow image rendering.
-          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
         }
       }
     }
