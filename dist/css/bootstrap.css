@@ -9434,11 +9434,8 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   padding-top: 15px;
 }
 .tiles-plugin.tiles-x .tilebox {
+  height: 289px;
   margin-bottom: 23px;
-}
-.tiles-plugin.tiles-x .tilebox .tile-img img {
-  min-height: 145px;
-  height: 100%;
 }
 @media (max-width: 767px) {
   .tiles-plugin.tiles-x .tilebox:last-child {
@@ -9447,7 +9444,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 }
 @media all and (min-width: 768px) {
   .tiles-plugin.tiles-x .tilebox {
-    height: 289px;
     width: 235px;
   }
 }
