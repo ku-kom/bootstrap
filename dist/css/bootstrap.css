@@ -9436,16 +9436,9 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
 .tiles-plugin.tiles-x .tilebox {
   margin-bottom: 23px;
 }
-.tiles-plugin.tiles-x .tilebox .tile-img {
-  max-width: 100%;
-  padding-top: 66%;
-  /* 1:1 Aspect Ratio = 100% of width - important when using Isotope plugin */
-  position: relative;
-}
 .tiles-plugin.tiles-x .tilebox .tile-img img {
-  position: absolute;
-  left: 0;
-  top: 0;
+  min-height: 145px;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .tiles-plugin.tiles-x .tilebox:last-child {
