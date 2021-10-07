@@ -185,6 +185,11 @@ blockquote.full-width::before {
     overflow: hidden;
   }
 
+  .well img, .factbox img {
+    max-width: 100%!important;
+    margin: 0!important;
+  }
+
   [itemprop="video"], .embed-responsive {
     margin: 30px calc(-25% - 7px) 30px calc(-25% - 7px);
   }
