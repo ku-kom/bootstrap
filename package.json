@@ -37,7 +37,7 @@
     "grunt-autoprefixer": "~3.0.4",
     "grunt-contrib-clean": "~2.0.0",
     "grunt-contrib-compress": "^2.0.0",
-    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-concat": "~2.0.0",
     "grunt-contrib-connect": "~3.0.0",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-csslint": "~2.0.0",
@@ -91,6 +91,6 @@
   "dependencies": {
     "grunt-cli": "^1.4.3",
     "gulp": "^4.0.2",
-    "npm": "^7.24.2"
+    "npm": "^8.0.0"
   }
 }
