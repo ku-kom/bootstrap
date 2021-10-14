@@ -51,7 +51,7 @@
     "grunt-csscomb": "~4.2.0",
     "grunt-eslint": "^23.0.0",
     "grunt-exec": "~3.0.0",
-    "grunt-html": "^15.0.2",
+    "grunt-html": "^15.1.0",
     "grunt-jekyll": "~1.0.1",
     "grunt-stylelint": "^0.16.0",
     "load-grunt-tasks": "~5.1.0",
