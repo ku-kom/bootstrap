@@ -87,7 +87,7 @@ module.exports = function (grunt) {
 
     eslint: {
       options: {
-        configFile: 'js/eslint.json'
+        overrideConfigFile: 'js/eslint.json'
       },
       grunt: {
         src: '<%= jshint.grunt.src %>'
