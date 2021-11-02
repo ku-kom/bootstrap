@@ -68,8 +68,10 @@
     font-size: 14px;
     left: 1px;
   }
+}
 
-  &[aria-expanded="true"] {
+.exp-box [aria-expanded="true"] {
+  &+ .btn-expand {
     &::after {
       content: "\2212";
       left: 0;

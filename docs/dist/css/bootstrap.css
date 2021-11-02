@@ -12954,7 +12954,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   font-size: 14px;
   left: 1px;
 }
-.btn-expand[aria-expanded="true"]::after {
+.exp-box [aria-expanded="true"] + .btn-expand::after {
   content: "\2212";
   left: 0;
 }
