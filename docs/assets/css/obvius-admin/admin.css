@@ -6255,6 +6255,14 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    display: none
  }
 
+ .tag-selection .disabled {
+    opacity: .5;
+}
+.tag-selection button[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
  tag-selection-control .tag-search-wrapper {
    display: -ms-flexbox;
    display: flex;
