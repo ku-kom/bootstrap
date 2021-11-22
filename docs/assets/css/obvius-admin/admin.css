@@ -6412,6 +6412,9 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .tag-selection .panel-accordion .collapsing tag-selection {
    opacity: 0;
  }
+.tag-browser-open {
+  overflow: hidden;
+}
 
  tag-browser .list-group, tag-browser .modal-body, tag-browser .modal-footer p {
    padding: 0 !important
