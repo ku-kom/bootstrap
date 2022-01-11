@@ -12167,6 +12167,16 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .social-embed.conversation h2 {
   color: #d8352a;
 }
+.taglist .tags {
+  padding-left: 0;
+  list-style: none;
+}
+.taglist .tags li {
+  float: left;
+}
+.taglist .tags li + li {
+  margin-left: 15px;
+}
 .gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
   line-height: normal;
   margin: 4px 0 2px;
