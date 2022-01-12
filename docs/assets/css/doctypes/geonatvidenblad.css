@@ -63,3 +63,9 @@
   background-position: top 24px right 0px;
   background-size: 36%;
 }
+
+@media and (min-width: 550px) and (max-width: 767px) {
+  .Videnblad.subscription-required.logged-in, .Videnblad.subscription-required.not-logged-in {
+    background-size: 26%;
+  }
+}
