@@ -10090,7 +10090,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide img {
     height: 100%;
-    max-width: none;
   }
 }
 .slick-slide.slick-loading img {
