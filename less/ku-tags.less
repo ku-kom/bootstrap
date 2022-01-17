@@ -8,8 +8,23 @@
     li {
       float: left;
 
+      & > a {
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 4px 6px;
+        border-radius: @border-radius-base;
+        border: 1px solid fade(@link-color, 80%);
+
+        &:hover {
+          color: @white-color;
+          background-color: @link-color;
+        }
+      }
+
       &+ li {
-        margin-left: 15px;
+        margin-left: 10px;
       }
     }
   }
