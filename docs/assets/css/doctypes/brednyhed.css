@@ -97,6 +97,10 @@ blockquote.full-width::before {
   }
 
   .manchet {
+    margin: 10px 0 30px 0;
+  }
+
+  .title+.manchet {
     font-size: 18px;
     margin: 23px 0 30px 0;
   }
@@ -186,8 +190,8 @@ blockquote.full-width::before {
   }
 
   .well img, .factbox img {
-    max-width: 100%!important;
-    margin: 0!important;
+    max-width: 100% !important;
+    margin: 0 !important;
   }
 
   [itemprop="video"], .embed-responsive {

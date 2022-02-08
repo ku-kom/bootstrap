@@ -7356,8 +7356,8 @@ img.img-default:after,
 .cookiefilter:after,
 .ku-branding .ku-branding-line:before,
 .ku-branding .ku-branding-line:after,
-.taglist:before,
-.taglist:after {
+.taglist .tags:before,
+.taglist .tags:after {
   content: " ";
   display: table;
 }
@@ -7385,7 +7385,7 @@ img.img-default:after,
 .spacer:after,
 .cookiefilter:after,
 .ku-branding .ku-branding-line:after,
-.taglist:after {
+.taglist .tags:after {
   clear: both;
 }
 .center-block {
@@ -12194,6 +12194,12 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .taglist .tags li + li {
   margin-left: 10px;
+}
+.tags-top {
+  margin-top: 5px;
+}
+.tags-bottom {
+  margin-top: 10px;
 }
 .gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
   line-height: normal;
