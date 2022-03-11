@@ -9523,6 +9523,12 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   transition: box-shadow .2s ease-out;
 }
 .tiles-x .tilebox::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  content: '';
+  border-radius: inherit;
   box-shadow: 0 8px 10px 0 rgba(60, 60, 60, .1), 0 2px 6px 0 rgba(64, 64, 64, .19);
   opacity: 0;
   transition: all .2s ease-out;
