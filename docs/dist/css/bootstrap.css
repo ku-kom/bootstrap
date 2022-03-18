@@ -12169,7 +12169,10 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   -ms-flex-direction: row;
       flex-direction: row;
   width: 100%;
-  gap: 13px;
+}
+.taglist .tags li {
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
 }
 .taglist .tags li > a {
   text-decoration: none;
