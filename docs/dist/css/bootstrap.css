@@ -12166,8 +12166,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   -ms-flex-direction: row;
       flex-direction: row;
   width: 100%;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   gap: 13px;
 }
 .taglist .tags li {
@@ -12189,9 +12187,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .taglist .tags li > a:hover {
   color: #fff;
   background-color: #2c6694;
-}
-.taglist .tags li + li {
-  margin-left: 13px;
 }
 .tags-top {
   margin-top: 26px;
