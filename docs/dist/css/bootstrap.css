@@ -7342,9 +7342,7 @@ img.img-default:after,
 .cookiefilter:before,
 .cookiefilter:after,
 .ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after,
-.taglist .tags:before,
-.taglist .tags:after {
+.ku-branding .ku-branding-line:after {
   content: " ";
   display: table;
 }
@@ -7371,8 +7369,7 @@ img.img-default:after,
 .divider:after,
 .spacer:after,
 .cookiefilter:after,
-.ku-branding .ku-branding-line:after,
-.taglist .tags:after {
+.ku-branding .ku-branding-line:after {
   clear: both;
 }
 .center-block {
@@ -12170,12 +12167,11 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   -ms-flex-direction: row;
       flex-direction: row;
   width: 100%;
+  gap: 13px;
 }
 .taglist .tags li {
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
-  margin-right: 10px;
-  margin-bottom: 13px;
 }
 .taglist .tags li > a {
   text-decoration: none;
@@ -12195,7 +12191,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .tags-top {
   margin-top: 26px;
-  margin-bottom: 13px;
+  margin-bottom: 23px;
 }
 .tags-bottom {
   margin-top: 16px;
