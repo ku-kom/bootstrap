@@ -5,19 +5,29 @@
   .tags {
     padding-left: 0;
     list-style: none;
-    &:extend(.clearfix all);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 13px;
+    //&:extend(.clearfix all);
 
     li {
-      float: left;
+      //float: left;
+      flex: 1 1 auto;
 
       & > a {
         text-decoration: none;
+        white-space: nowrap;
         display: block;
         text-transform: uppercase;
         font-weight: 600;
-        padding: 4px 6px;
+        padding: 4px 10px;
         border-radius: @border-radius-base;
         border: 1px solid fade(@link-color, 80%);
+        transition: all .2s ease;
+        transition-property: background-color, color;
 
         &:hover {
           color: @white-color;
@@ -26,15 +36,16 @@
       }
 
       &+ li {
-        margin-left: 10px;
+        margin-left: 13px;
       }
     }
   }
 }
 
 .tags-top {
-  margin-top: 5px;
+  margin-top: 26px;
+  margin-bottom: 23px;
 }
 .tags-bottom {
-  margin-top: 10px;
+  margin-top: 16px;
 }
