@@ -12200,6 +12200,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .tags-bottom {
   margin-top: 16px;
+  margin-bottom: 40px;
 }
 .gcitem.nyhed .nyhed-illustration + .nyhedswrap .nyhed-tema {
   line-height: normal;
