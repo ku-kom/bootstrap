@@ -12166,20 +12166,21 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
       flex-wrap: wrap;
   -ms-flex-direction: row;
       flex-direction: row;
-  width: 100%;
-  gap: 13px;
+  gap: 10px;
 }
 .taglist .tags li {
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
 }
 .taglist .tags li > a {
+  font-size: 11px;
+  letter-spacing: .7px;
   text-decoration: none;
   white-space: nowrap;
   display: block;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border-radius: 2px;
   border: 1px solid rgba(44, 102, 148, .8);
   transition: all .2s ease;
