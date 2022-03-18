@@ -2,8 +2,10 @@
 
 .taglist {
   width: 100%;
+
   .tags {
     padding-left: 0;
+    margin-bottom: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +15,10 @@
 
     li {
       flex: 0 1 auto;
-      & > a {
+      margin-right: 10px;
+      margin-bottom: 13px;
+
+      &>a {
         text-decoration: none;
         white-space: nowrap;
         display: block;
@@ -36,8 +41,9 @@
 
 .tags-top {
   margin-top: 26px;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
 }
+
 .tags-bottom {
   margin-top: 16px;
 }

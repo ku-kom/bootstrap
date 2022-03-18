@@ -12161,6 +12161,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .taglist .tags {
   padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
   display: -ms-flexbox;
   display: flex;
@@ -12173,6 +12174,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .taglist .tags li {
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
+  margin-right: 10px;
+  margin-bottom: 13px;
 }
 .taglist .tags li > a {
   text-decoration: none;
@@ -12192,7 +12195,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .tags-top {
   margin-top: 26px;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
 }
 .tags-bottom {
   margin-top: 16px;
