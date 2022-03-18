@@ -7342,7 +7342,9 @@ img.img-default:after,
 .cookiefilter:before,
 .cookiefilter:after,
 .ku-branding .ku-branding-line:before,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.taglist .tags:before,
+.taglist .tags:after {
   content: " ";
   display: table;
 }
@@ -7369,7 +7371,8 @@ img.img-default:after,
 .divider:after,
 .spacer:after,
 .cookiefilter:after,
-.ku-branding .ku-branding-line:after {
+.ku-branding .ku-branding-line:after,
+.taglist .tags:after {
   clear: both;
 }
 .center-block {
@@ -12167,10 +12170,6 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
       flex-direction: row;
   width: 100%;
   gap: 13px;
-}
-.taglist .tags li {
-  -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
 }
 .taglist .tags li > a {
   text-decoration: none;

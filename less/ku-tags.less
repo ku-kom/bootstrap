@@ -10,11 +10,9 @@
     flex-direction: row;
     width: 100%;
     gap: 13px;
-    //&:extend(.clearfix all);
+    &:extend(.clearfix all);
 
     li {
-      //float: left;
-      flex: 1 1 auto;
 
       & > a {
         text-decoration: none;
@@ -33,10 +31,6 @@
           background-color: @link-color;
         }
       }
-
-      // &+ li {
-      //   margin-left: 13px;
-      // }
     }
   }
 }
