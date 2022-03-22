@@ -1,16 +1,18 @@
 /* Displays tweets in a unordered list. */
 #twitter-feed {
   padding-right: 10px;
-  margin-top: 10px;
 }
 
 #twitter-feed ul {
-  margin-bottom: 0;
+  margin: 0;
+}
+
+#twitter-feed li {
+  padding-top: 15px;
 }
 
 #twitter-feed li+li {
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 15px;
   border-top: 1px solid #ccc;
 }
 
