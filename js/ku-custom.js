@@ -201,7 +201,7 @@ function getCurrentScrollPosition() {
     }
   });
 
-  $(window).on('load', function() {
+  $(document).ajaxComplete(function(event) {
     // Open accordions based on the hash in the url
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
     if ($accordion) {
