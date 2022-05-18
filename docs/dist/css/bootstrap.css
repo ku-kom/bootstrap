@@ -3626,7 +3626,6 @@ textarea.form-tooltip {
   line-height: 1.5;
   border-radius: 2px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -10006,7 +10005,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   display: block;
   box-sizing: border-box;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   -ms-touch-action: pan-y pinch-zoom;
@@ -10921,7 +10919,6 @@ button .swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .swiper-pagination-bullet:focus {
@@ -11094,7 +11091,6 @@ button .swiper-pagination-bullet {
   margin: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -12658,7 +12654,6 @@ form.gdpr-accept .btn + .btn {
   .custom-search {
     min-width: 330px;
     max-width: -webkit-fit-content;
-    max-width:    -moz-fit-content;
     max-width:         fit-content;
   }
 }
