@@ -88,6 +88,10 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+.ku-topbanner {
+  text-decoration: none;
+}
+
 .til-gavn>.container::before {
   content: '';
   display: block;
@@ -1104,9 +1108,12 @@ video {
   }
 
   .video-container {
-    width: calc(100vw - var(--scroll-bar));
+    /* width: calc(100vw - var(--scroll-bar));
     margin-left: calc(-50vw + 50% + (var(--scroll-bar)/ 2));
-    margin-right: calc(-50vw + 50% + (var(--scroll-bar)/ 2));
+    margin-right: calc(-50vw + 50% + (var(--scroll-bar)/ 2)); */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
   }
 
   .slick-slider .tiles-x .tilebox {

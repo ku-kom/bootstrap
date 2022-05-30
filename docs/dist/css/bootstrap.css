@@ -1374,7 +1374,7 @@ body {
   }
 }
 :root {
-  --scroll-bar: 10px;
+  --scroll-bar: 17px;
   --scrollPercentage: 0;
   font-size: 16px;
 }
