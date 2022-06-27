@@ -2247,18 +2247,18 @@ function getCurrentScrollPosition() {
   });
 
   $(window).load(function() {
-    setTimeout(function() {
-      // Open accordions based on the hash in the url
-      var $accordion = window.location.hash.indexOf('collapse-') >= 0;
-      if ($accordion) {
-        var $acc = window.location.hash;
-        $($acc).collapse('show');
+    // Open accordions based on the hash in the url
+    var $accordion = window.location.hash.indexOf('collapse-') >= 0;
+    if ($accordion) {
+      var $acc = window.location.hash;
+      $($acc).collapse('show');
 
+       setTimeout(function () {
         $('html, body').animate({
           scrollTop: $($acc).offset().top - 50
         }, 800);
-      }
-    }, 2000)
+      },10000);
+    }
   });
 
 })(jQuery);
