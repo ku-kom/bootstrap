@@ -46,7 +46,7 @@
     "grunt-contrib-jshint": "~3.2.0",
     "grunt-contrib-less": "~3.0.0",
     "grunt-contrib-pug": "~3.0.0",
-    "grunt-contrib-uglify": "~5.2.1",
+    "grunt-contrib-uglify": "~5.2.2",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-csscomb": "~4.2.0",
     "grunt-eslint": "^24.0.0",
@@ -58,7 +58,7 @@
     "markdown-it": "^13.0.1",
     "shelljs": "^0.8.5",
     "shx": "^0.3.4",
-    "stylelint": "^14.8.2",
+    "stylelint": "^14.9.1",
     "text-table": "^0.2.0",
     "time-grunt": "^2.0.0"
   },
