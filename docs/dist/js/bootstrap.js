@@ -2253,9 +2253,11 @@ function getCurrentScrollPosition() {
       var $acc = window.location.hash;
       $($acc).collapse('show');
 
-      $('html, body').animate({
-        scrollTop: $($acc).offset().top - 50
-      }, 800);
+      setTimeout(() => {
+        $('html, body').animate({
+          scrollTop: $($acc).offset().top - 50
+        }, 800);
+      }, 2000)
     }
   });
 
