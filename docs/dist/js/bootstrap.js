@@ -2246,18 +2246,16 @@ function getCurrentScrollPosition() {
     }
   });
 
-  $(window).load(function() {
+  $(document).ajaxComplete(function(event) {
     // Open accordions based on the hash in the url
     var $accordion = window.location.hash.indexOf('collapse-') >= 0;
     if ($accordion) {
       var $acc = window.location.hash;
       $($acc).collapse('show');
 
-       setTimeout(function () {
-        $('html, body').animate({
-          scrollTop: $($acc).offset().top - 50
-        }, 800);
-      },10000);
+      $('html, body').animate({
+        scrollTop: $($acc).offset().top - 50
+      }, 800);
     }
   });
 
