@@ -1378,6 +1378,11 @@ body {
   --scrollPercentage: 0;
   font-size: 16px;
 }
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 button,
 input,
 select,
