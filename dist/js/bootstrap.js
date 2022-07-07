@@ -2225,10 +2225,10 @@ function getCurrentScrollPosition() {
   }, 250));
 
   function scrollToTop() {
-    var $root = $('html, body');
-    $root.animate({
-      scrollTop: 0
-    }, 500);
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   // Smooth scrolling to top on click event
@@ -2253,7 +2253,10 @@ function getCurrentScrollPosition() {
       if ($accordion) {
         var $acc = window.location.hash;
         $($acc).collapse('show');
-        $($acc)[0].scrollIntoView({behavior: 'smooth', block: 'center'});
+        $($acc)[0].scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
       }
     }
   });
