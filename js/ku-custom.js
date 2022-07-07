@@ -207,8 +207,8 @@ function getCurrentScrollPosition() {
       var $accordion = window.location.hash.indexOf('collapse-') >= 0;
       if ($accordion) {
         var $acc = window.location.hash;
-        console.log($acc);
         $($acc).collapse('show');
+        $($acc).scrollIntoView({behavior: 'smooth', block: 'start'});
 
         // $('html, body').animate({
         //   scrollTop: $($acc).offset().top - 50
