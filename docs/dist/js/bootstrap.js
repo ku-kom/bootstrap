@@ -2252,6 +2252,7 @@ function getCurrentScrollPosition() {
       var $accordion = window.location.hash.indexOf('collapse-') >= 0;
       if ($accordion) {
         var $acc = window.location.hash;
+        console.log($acc);
         $($acc).collapse('show');
 
         // $('html, body').animate({
