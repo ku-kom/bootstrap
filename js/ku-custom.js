@@ -208,11 +208,7 @@ function getCurrentScrollPosition() {
       if ($accordion) {
         var $acc = window.location.hash;
         $($acc).collapse('show');
-        $($acc).scrollIntoView({behavior: 'smooth', block: 'start'});
-
-        // $('html, body').animate({
-        //   scrollTop: $($acc).offset().top - 50
-        // }, 800);
+        $($acc)[0].scrollIntoView({behavior: 'smooth', block: 'center'});
       }
     }
   });
