@@ -20,6 +20,9 @@
   .gridcontent>.gcrow:not(.full-page-width)>.container {
     max-width: 746px;
   }
+  .deloverskrift {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 992px) {
