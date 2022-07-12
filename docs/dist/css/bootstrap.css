@@ -12175,6 +12175,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 }
 .taglist .tags li > a {
   font-size: 11px;
+  line-height: initial;
   letter-spacing: .7px;
   text-decoration: none;
   white-space: nowrap;
@@ -12184,7 +12185,7 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
   padding: 3px 10px;
   border-radius: 2px;
   border: 1px solid rgba(44, 102, 148, .8);
-  transition: all .2s ease;
+  transition: all .1s ease;
   transition-property: background-color, color;
 }
 .taglist .tags li > a:visited {
