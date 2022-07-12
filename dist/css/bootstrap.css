@@ -12191,8 +12191,8 @@ fieldset[disabled] .datepicker-days .table-striped .day.today:hover {
 .taglist .tags li > a:visited {
   color: #2c6694;
 }
-.taglist .tags li > a:hover,
-.taglist .tags li > a:focus {
+.taglist .tags li > a:focus,
+.taglist .tags li > a:hover {
   color: #fff;
   background-color: #2c6694;
 }

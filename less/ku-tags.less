@@ -15,10 +15,10 @@
     li {
       flex: 0 1 auto;
 
-      &>a {
+      & > a {
         font-size: 11px;
         line-height: initial;
-        letter-spacing: .7px;
+        letter-spacing: 0.7px;
         text-decoration: none;
         white-space: nowrap;
         display: block;
@@ -27,15 +27,15 @@
         padding: 3px 10px;
         border-radius: @border-radius-base;
         border: 1px solid fade(@link-color, 80%);
-        transition: all .1s ease;
+        transition: all 0.1s ease;
         transition-property: background-color, color;
 
         &:visited {
           color: @link-color;
         }
 
-        &:hover,
-        &:focus {
+        &:focus,
+        &:hover {
           color: @white-color;
           background-color: @link-color;
         }
