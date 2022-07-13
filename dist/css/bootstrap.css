@@ -12227,6 +12227,7 @@ ul.stripped li {
 }
 ul.stripped h2 {
   font-size: 1em;
+  margin-top: 0;
 }
 .udd_table {
   border-collapse: collapse;
