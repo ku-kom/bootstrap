@@ -1378,6 +1378,7 @@ body {
   --scrollPercentage: 0;
   --gutterWidth: 26px;
   --gutterHeight: 23px;
+  --body-color: #252525;
   --box-text-light: #fcfcfc;
   --box-text-dark: #262626;
   --red1: #901a1e;
