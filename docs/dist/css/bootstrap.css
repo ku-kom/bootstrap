@@ -1378,6 +1378,26 @@ body {
   --scrollPercentage: 0;
   --gutterWidth: 26px;
   --gutterHeight: 23px;
+  --box-text-light: #fcfcfc;
+  --box-text-dark: #262626;
+  --red1: #901a1e;
+  --red2: #c73028;
+  --red3: #db3b0a;
+  --blue1: #122947;
+  --blue2: #425570;
+  --blue3: #bac7d9;
+  --teal1: #0a5963;
+  --teal2: #197f8e;
+  --teal3: #b7d7de;
+  --green1: #39641c;
+  --green2: #4b8325;
+  --green3: #becaa8;
+  --grey1: #3d3d3d;
+  --grey2: #666;
+  --grey3: #e1dfdf;
+  --white1: #fff;
+  --white2: #fefaf2;
+  --white3: #ffbd38;
   font-size: 16px;
 }
 @media (prefers-reduced-motion: no-preference) {
