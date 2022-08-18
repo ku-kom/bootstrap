@@ -54,10 +54,6 @@
   min-height: 90px;
 }
 
-.g-recaptcha div {
-  height: inherit;
-}
-
 .g-recaptcha iframe {
   overflow: hidden;
   width: 100%;
