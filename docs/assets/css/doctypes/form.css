@@ -48,8 +48,8 @@
 
 .g-recaptcha > div {
   overflow: hidden;
-  width: 100%!important;
-  min-width: 350px;
+  width: 80%!important;
+  min-width: 330px;
   min-height: 85px;
 }
 
