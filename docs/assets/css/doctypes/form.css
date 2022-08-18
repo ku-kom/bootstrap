@@ -48,12 +48,12 @@
 
 .g-recaptcha > div {
   overflow: hidden;
-  width: 100%;
+  width: 100%!important;
   min-width: 350px;
   min-height: 85px;
 }
 
-.g-recaptcha > iframe {
+.g-recaptcha iframe {
   overflow: hidden;
 }
 
