@@ -45,3 +45,15 @@
 .gdpr-accept-text {
   display: inline;
 }
+
+.g-recaptcha > div {
+  overflow: hidden;
+  width: 100%;
+  min-width: 350px;
+  min-height: 85px;
+}
+
+.g-recaptcha > iframe {
+  overflow: hidden;
+}
+
