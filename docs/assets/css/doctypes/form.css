@@ -63,3 +63,7 @@
 #submit_div {
   padding-left: 0;
 }
+
+.obviusform br {
+  display: none;
+}
