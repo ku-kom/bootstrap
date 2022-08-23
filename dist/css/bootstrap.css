@@ -1379,8 +1379,10 @@ body {
   --gutterWidth: 26px;
   --gutterHeight: 23px;
   --body-color: #252525;
+  --outline-color: #2c6694;
   --box-text-light: #fcfcfc;
   --box-text-dark: #262626;
+  --black: #000;
   --red1: #901a1e;
   --red2: #c73028;
   --red3: #db3b0a;
@@ -1399,6 +1401,7 @@ body {
   --white1: #fff;
   --white2: #fefaf2;
   --white3: #ffbd38;
+  --white: #fff;
   font-size: 16px;
 }
 @media (prefers-reduced-motion: no-preference) {
