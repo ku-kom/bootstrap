@@ -6,12 +6,10 @@ body {
 }
 .ku-branding::after {
   border-bottom: 1px solid #901a1e;
-  width: calc(100vw - 9px);
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: calc(100vw - var(--scroll-bar));
+  margin-left: calc(-50vw + 50% + (var(--scroll-bar)/2));
+  margin-right: calc(-50vw + 50% + (var(--scroll-bar)/2));
 }
 .breadcrumbs,
 .local-footer {
@@ -37,12 +35,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 0;
-  width: calc(100vw - 9px);
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: calc(100vw - var(--scroll-bar));
+  margin-left: calc(-50vw + 50% + (var(--scroll-bar)/2));
+  margin-right: calc(-50vw + 50% + (var(--scroll-bar)/2));
   box-shadow: 0 -13px 30px 0 rgba(0, 0, 0, 0.3), 0 13px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .campaign-block.jarallax {
