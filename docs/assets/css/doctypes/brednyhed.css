@@ -222,4 +222,11 @@ blockquote.full-width::before {
   .widenews-relatednews {
     margin-top: 23px;
   }
+
+  .flourish-embed {
+    /* Flourish iframe embed */
+    margin: 23px calc(-25% - 7px) 23px calc(-25% - 7px);
+    max-width: 757px;
+    float: none!important;
+  }
 }
