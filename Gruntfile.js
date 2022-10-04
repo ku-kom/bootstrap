@@ -290,6 +290,7 @@ module.exports = function (grunt) {
           'docs/assets/css/tinymce/tiny-overrides.css',
           'docs/assets/css/scroll-effects/scroll-effects.css',
           'docs/assets/css/pure/pure.css',
+          'docs/assets/css/unit-frontpages/unit-frontpage.css',
           //'dist/css/faculties/*.css'
         ]
       },
@@ -407,6 +408,7 @@ module.exports = function (grunt) {
           'docs/assets/css/multiple-select/multiple-select.css',
           'docs/assets/css/ku-dk-frontpage/ku-dk-frontpage.css',
           'docs/assets/css/pure/pure.css',
+          'docs/assets/css/unit-frontpages/unit-frontpage.css',
         ],
         dest: 'dist/css/',
         ext: '.min.css',
