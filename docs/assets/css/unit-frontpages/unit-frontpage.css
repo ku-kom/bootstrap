@@ -1,7 +1,7 @@
 .jumpcolumn {
   list-style: none;
   padding: 0;
-  margin: 0 8px
+  margin: 0 8px 0 0;
 }
 
 .jumpcolumn li {
@@ -16,7 +16,7 @@
   display: block;
   position: relative;
   padding-right: 20px;
-  color: #901a1e !important;
+  color: var(--red1) !important;
   text-decoration: none
 }
 
@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1;
-  color: #921819;
+  color: var(--red1);
   content: '\61';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased
