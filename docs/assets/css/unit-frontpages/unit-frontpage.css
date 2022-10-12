@@ -45,10 +45,6 @@
     Font-size: 24px;
   }
 
-  .deloverskrift {
-    margin-top: 0;
-  }
-
   .slick-slider {
     height: 367px;
   }
@@ -65,5 +61,26 @@
   .well {
     font-size: 16px;
     padding: 40px;
+  }
+
+  .editor-field,
+  .well {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  blockquote {
+    font-size: 20px;
+    line-height: 1.3333333;
+    font-weight: 600;
+  }
+
+  blockquote::before {
+    font-size: 65px;
+}
+
+  blockquote footer {
+    font-size: 15px;
+    font-weight: 400
   }
 }
