@@ -45,6 +45,14 @@
     Font-size: 24px;
   }
 
+  .deloverskrift {
+    margin-top: 0;
+  }
+
+  .slick-slider {
+    height: 367px;
+  }
+
   .panel-default>.panel-heading>.panel-title {
     font-size: 25px !important;
   }
