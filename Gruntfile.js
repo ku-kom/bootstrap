@@ -340,13 +340,13 @@ module.exports = function (grunt) {
         src: ['**/*.css'],
         dest: 'docs/examples/'
       },
-      legacy: {
-        src: [
-          'docs/legacy/css/styles.css',
-          'docs/legacy/css/responsive.css',
-          'docs/legacy/css/print.css',
-        ]
-      },
+      // legacy: {
+      //   src: [
+      //     'docs/legacy/css/styles.css',
+      //     'docs/legacy/css/responsive.css',
+      //     'docs/legacy/css/print.css',
+      //   ]
+      // },
     },
 
     stylelint: {
@@ -374,13 +374,13 @@ module.exports = function (grunt) {
       doctypes: {
         src: 'docs/assets/css/doctypes/*.css'
       },
-      legacy: {
-        src: [
-          'docs/legacy/css/styles.css',
-          'docs/legacy/css/responsive.css',
-          'docs/legacy/css/print.css',
-        ]
-      },
+      // legacy: {
+      //   src: [
+      //     'docs/legacy/css/styles.css',
+      //     'docs/legacy/css/responsive.css',
+      //     'docs/legacy/css/print.css',
+      //   ]
+      // },
     },
 
     cssmin: {
@@ -632,7 +632,7 @@ module.exports = function (grunt) {
   if (runSubset('core') &&
       // Skip core tests if this is a Savage build
       process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'stylelint:legacy', 'stylelint:doctypes', 'test-js', 'docs']);
+    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'stylelint:doctypes', 'test-js', 'docs']);
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
@@ -649,7 +649,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileCustom', 'less:compileCustomElements', 'less:compileFacultyStyles', 'less:compileNeutralStyles', 'less:compileCParallax', 'less:videoplayer', 'less:cookiepopup']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:videoplayer', 'autoprefixer:cookiepopup', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print', 'cssmin:cookiepopup', 'cssmin:videoplayer', 'autoprefixer:legacy']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:custom', 'autoprefixer:fakulteter', 'autoprefixer:doctypes', 'autoprefixer:neutral', 'autoprefixer:videoplayer', 'autoprefixer:cookiepopup', 'autoprefixer:parallax', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyCustom', 'cssmin:minifyFAK', 'cssmin:minifyDoctypes', 'cssmin:content', 'cssmin:parallax', 'cssmin:print', 'cssmin:cookiepopup', 'cssmin:videoplayer']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
