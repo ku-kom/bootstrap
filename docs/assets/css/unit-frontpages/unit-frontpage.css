@@ -117,17 +117,17 @@
     line-height: 1.6;
   }
 
-  blockquote {
+  .double-column .gccolumn blockquote.full-width {
     font-size: 20px;
     line-height: 1.3333333;
     font-weight: 600;
   }
 
-  blockquote::before {
+  .double-column .gccolumn blockquote.full-width:before {
     font-size: 65px;
   }
 
-  blockquote footer {
+  .double-column .gccolumn blockquote.full-width footer {
     font-size: 15px;
     font-weight: 400
   }
