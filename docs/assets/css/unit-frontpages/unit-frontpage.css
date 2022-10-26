@@ -121,6 +121,7 @@
     font-size: 20px;
     line-height: 1.3333333;
     font-weight: 600;
+    padding: 0 20px;
   }
 
   .double-column .gccolumn blockquote.full-width:before {
