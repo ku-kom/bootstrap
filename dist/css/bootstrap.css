@@ -12733,6 +12733,11 @@ form.gdpr-accept .btn + .btn {
   -webkit-filter: none;
           filter: none;
 }
+.image-presentation img {
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
 @media (min-width: 992px) {
   .image-presentation {
     height: 289px;
