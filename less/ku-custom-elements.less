@@ -3,9 +3,11 @@
 
 .gridnyhed {
   height: 389px;
+
   @media (min-width: @screen-md) {
     height: @gridbox1;
   }
+
   background-color: @grey-newsbox;
   display: flex;
   flex-direction: column;
@@ -28,6 +30,7 @@
       }
     }
   }
+
   @media (min-width: @screen-md) {
     .nyhed-illustration {
       flex: 0 1 160px;
@@ -65,6 +68,7 @@
       display: none;
     }
   }
+
   @media (min-width: @screen-md) {
     .nyhed-teaser {
       display: none;
@@ -77,6 +81,7 @@
     }
   }
 }
+
 // "Find something" boxes:
 
 .find-box {
@@ -131,20 +136,23 @@
     }
   }
 }
+
 // Find en forsker search box
 
 .find-researcher {
-  #gradient >.horizontal(@gray-lighter, @gray);
+  #gradient>.horizontal(@gray-lighter, @gray);
 }
+
 // Find på KUnet
 
 .find-kunet {
-  #gradient >.horizontal(#a80505, #7e0202);
+  #gradient>.horizontal(#a80505, #7e0202);
 
   .search-text {
     color: #efefef;
   }
 }
+
 // Custom dropdown lists
 
 .linkslist {
@@ -219,6 +227,7 @@
     }
   }
 }
+
 // Beredskabsbanner
 
 #warning-banner {
@@ -233,7 +242,7 @@
   @media (max-width: @screen-xs-max) {
     padding: 5px 40px 5px 0;
 
-    & > .container {
+    &>.container {
       padding-left: @grid-gutter-by-half;
       padding-right: @grid-gutter-by-half;
     }
@@ -278,6 +287,7 @@
   width: 21px;
   vertical-align: bottom;
 }
+
 // Faktaboks
 
 .factbox {
@@ -311,6 +321,7 @@
     margin-right: 20px;
     margin-left: 0;
   }
+
   @media (max-width: @screen-xs-max) {
     margin: 10px 0;
     width: 100%;
@@ -321,11 +332,12 @@
 
   .gccolumn &,
   .rightbox-normal & {
-    width: 100%!important;
+    width: 100% !important;
     margin: 0;
     float: none;
   }
 }
+
 // Newsletter and GDPR
 
 form.gdpr-accept {
@@ -345,56 +357,57 @@ form.gdpr-accept {
   }
 
   .btn {
-    + .btn {
+    +.btn {
       margin-left: 10px;
     }
   }
 }
+
 // Element for static images with text overlay just like slick slider - just not sliding:
 
 .image-presentation {
-  .slide-link {
+  position: relative;
+  overflow: hidden;
+
+  &>a {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+
     &:hover img {
       filter: none;
     }
   }
 
-  .slick-slide {
-    display: block;
-    float: none;
-    clear: both;
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
   @media (min-width: @screen-md) {
     height: @gridbox1;
-
-    .slick-slide {
-      img {
-        max-width: none;
-        height: 100%;
-      }
-    }
   }
 }
-@media all and (min-width: @screen-md) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (min-width: @screen-md) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   // IE 11
   .image-presentation {
-    .slick-slide {
+
+    &>a {
       img {
         height: auto;
       }
     }
   }
 }
+
 @media all and (min-width: @screen-md) {
+
   // IE Edge
   @supports (-ms-ime-align: auto) {
     .image-presentation {
-      .slick-slide {
+
+      &>a {
         img {
           height: auto;
         }
@@ -408,10 +421,12 @@ form.gdpr-accept {
   width: 100%;
   min-width: 300px;
   max-width: 400px;
+
   @media (min-width: @screen-sm) {
     min-width: 330px;
     max-width: fit-content;
   }
+
   padding: 15px 26px;
   margin: 0 auto;
 
@@ -434,9 +449,11 @@ form.gdpr-accept {
   font-weight: 600;
   padding: 10px 13px;
   border-radius: 2px;
+
   @media (min-width: @screen-sm) {
     height: @gridbox3;
   }
+
   position: relative;
 
   blockquote {
@@ -499,7 +516,7 @@ form.gdpr-accept {
   }
 
   .gdpr-label {
-    > p {
+    >p {
       display: inline;
     }
   }
@@ -517,6 +534,7 @@ form.gdpr-accept {
 .sitemap {
   li {
     margin-top: 5px;
+
     @media (min-width: @screen-sm) {
       margin-top: 3px;
     }
@@ -526,6 +544,7 @@ form.gdpr-accept {
     }
   }
 }
+
 // RSS feeds
 
 .feed {
@@ -537,6 +556,7 @@ form.gdpr-accept {
     }
   }
 }
+
 // Scroll indicator
 
 .scroll-indicator {
