@@ -93,6 +93,10 @@
 }
 
 @media (min-width: 992px) {
+  .image-presentation {
+    height: 400px;
+  }
+
   .jumpcolumn li {
     Font-size: 24px;
   }
