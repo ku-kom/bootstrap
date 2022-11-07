@@ -12718,7 +12718,7 @@ form.gdpr-accept .btn + .btn {
   position: relative;
   overflow: hidden;
 }
-.image-presentation.slick-slide {
+.image-presentation > .slick-slide {
   display: block;
   float: none;
 }
