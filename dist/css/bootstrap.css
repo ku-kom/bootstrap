@@ -7709,9 +7709,6 @@ nav {
 .main-content .row {
   margin-bottom: 23px;
 }
-.main-content .row:last-child {
-  margin-bottom: 0;
-}
 @media (max-width: 991px) {
   .main-content [class*="col-"] {
     margin-bottom: 23px;
