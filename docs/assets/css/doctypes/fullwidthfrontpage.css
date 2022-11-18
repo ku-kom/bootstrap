@@ -3,6 +3,10 @@
   padding-top: 0;
 }
 
+.gridcontent>.row>.container>.row {
+  margin-bottom: 0;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .gcrow:not(.double-column):not(.quad-column) [class*=col-sm-6] {
     margin-bottom: 0;
@@ -26,6 +30,7 @@
   .gridcontent>.gcrow:not(.full-page-width)>.container {
     max-width: 966px;
   }
+
   .deloverskrift {
     font-size: 25px;
   }
