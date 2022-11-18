@@ -58,7 +58,7 @@
     "markdown-it": "^13.0.1",
     "shelljs": "^0.8.5",
     "shx": "^0.3.4",
-    "stylelint": "^14.14.1",
+    "stylelint": "^14.15.0",
     "text-table": "^0.2.0",
     "time-grunt": "^2.0.0"
   },
@@ -91,6 +91,6 @@
   "dependencies": {
     "grunt-cli": "^1.4.3",
     "gulp": "^4.0.2",
-    "npm": "^8.19.3"
+    "npm": "^9.1.2"
   }
 }
