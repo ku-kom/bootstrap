@@ -3,7 +3,7 @@
   padding-top: 0;
 }
 
-.gridcontent>.row>.container>.row {
+.gridcontent>.row>.container>.row:last-child {
   margin-bottom: 0;
 }
 
