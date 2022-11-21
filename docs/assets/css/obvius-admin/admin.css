@@ -29,7 +29,6 @@ Remember to assign new styles to a class or id containing the admin-elements
  .device-icon {
    /* use !important to prevent issues with browser extensions that change fonts */
    font-family: "ku-symbols" !important;
-   speak: none;
    font-style: normal;
    font-weight: normal;
    font-variant: normal;
@@ -1678,13 +1677,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .obadm div.admincontentwrapper p.myresti {
-   /*    font-size: 12px; */
    padding-left: 0px;
    margin-bottom: 12px;
- }
-
- .obadm div.admincontentwrapper p.myresti * {
-   /*    font-size: 12px; */
  }
 
  .obadm div.content_admin_border {
@@ -4139,7 +4133,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    padding: 0.5em 2em 1em 250px;
  }
 
- ..alert.alert-unvisited a {
+ .alert.alert-unvisited a {
    color: #a54e07;
  }
 
@@ -4747,7 +4741,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-top: 1.5em;
  }
 
- .dialogcontent .form-group. .radio:first-child .control-label {
+ .dialogcontent .form-group .radio:first-child .control-label {
    padding-left: 0;
  }
 
@@ -5548,6 +5542,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  .clear {
    clear: both;
+ }
+
+ .col-disabled {
+  background-color: #ddd;
  }
 
  .admincontentwrapper #content img {
