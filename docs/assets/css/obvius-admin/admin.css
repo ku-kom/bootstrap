@@ -5545,7 +5545,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .col-disabled {
-  background-color: #ddd;
+  background-color: #ddd!important;
  }
 
  .admincontentwrapper #content img {
