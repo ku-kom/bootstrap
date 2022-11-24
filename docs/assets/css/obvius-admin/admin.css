@@ -5552,6 +5552,10 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    cursor: not-allowed;
  }
 
+ .dialogcontent .col-disabled:hover {
+   background-color: #ddd !important;
+ }
+
  .admincontentwrapper #content img {
    max-width: 100%;
    height: auto;
