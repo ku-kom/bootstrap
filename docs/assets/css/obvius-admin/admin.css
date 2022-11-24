@@ -5545,7 +5545,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .col-disabled {
-  background-color: #ddd!important;
+   background-color: #ddd !important;
+ }
+
+ .col-disabled:hover {
+   cursor: not-allowed;
  }
 
  .admincontentwrapper #content img {
@@ -5587,7 +5591,9 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    background: #999;
  }
 
- .mce-container-body [aria-label~="accordion"], .mce-container-body [aria-label~="semi-collapsible"], .mce-container-body [aria-label~="fold ud-boks"] {
+ .mce-container-body [aria-label~="accordion"],
+ .mce-container-body [aria-label~="semi-collapsible"],
+ .mce-container-body [aria-label~="fold ud-boks"] {
    /* Hide accordion, etc. buttons in editor */
    display: none
  }
@@ -5606,7 +5612,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    border: 1px solid #ccc;
  }
 
- .panel h4.panel-title>a, #obarea4 .bootstrap-accordion-title {
+ .panel h4.panel-title>a,
+ #obarea4 .bootstrap-accordion-title {
    color: #252525;
  }
 
@@ -5635,7 +5642,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    height: auto;
  }
 
- .accordion-hidden, .collapsible-hidden {
+ .accordion-hidden,
+ .collapsible-hidden {
    display: none;
  }
 
@@ -5713,7 +5721,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    word-break: break-all;
  }
 
- .accessibility-warning ul li + li {
+ .accessibility-warning ul li+li {
    margin-top: 10px;
  }
 
@@ -5773,18 +5781,21 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    width: 750px;
  }
 
- #gridcontent-dialog-edit-newsbox .dialogcontent, #gridcontent-dialog-edit-eventbox .dialogcontent {
+ #gridcontent-dialog-edit-newsbox .dialogcontent,
+ #gridcontent-dialog-edit-eventbox .dialogcontent {
    display: -ms-flexbox;
    display: flex;
    -ms-flex-direction: row;
    flex-direction: row;
  }
 
- #gridcontent-dialog-edit-newsbox .dialogcontent .tiles-x:after, #gridcontent-dialog-edit-eventbox .dialogcontent .tiles-x:after {
+ #gridcontent-dialog-edit-newsbox .dialogcontent .tiles-x:after,
+ #gridcontent-dialog-edit-eventbox .dialogcontent .tiles-x:after {
    display: none;
  }
 
- #gridcontent-dialog-edit-newsbox .tilebox, #gridcontent-dialog-edit-eventbox .tilebox {
+ #gridcontent-dialog-edit-newsbox .tilebox,
+ #gridcontent-dialog-edit-eventbox .tilebox {
    height: 289px;
    width: 235px;
  }
@@ -5793,7 +5804,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    border: 1px solid #ddd;
  }
 
- #gridcontent-dialog-edit-newsbox h2, #gridcontent-dialog-edit-eventbox h2 {
+ #gridcontent-dialog-edit-newsbox h2,
+ #gridcontent-dialog-edit-eventbox h2 {
    margin: 0;
  }
 
@@ -6073,7 +6085,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    padding-right: 13px;
  }
 
- input.newsbox, input.eventbox {
+ input.newsbox,
+ input.eventbox {
    padding-bottom: 1px;
  }
 
@@ -6081,7 +6094,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-top: 15px;
  }
 
- .gccolumn .gridbox.outlined.with-img, .preview-output .gridbox.outlined.with-img {
+ .gccolumn .gridbox.outlined.with-img,
+ .preview-output .gridbox.outlined.with-img {
    border: 0;
  }
 
@@ -6205,15 +6219,26 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  /* end */
- tag-selection-control .collapse-header-wrapper, tag-selection-control .input-group, tag-selection-control .modal-content, tag-selection-control .modal-dialog, tag-selection-control .panel-accordion, tag-selection-control .tag-search-list, tag-selection-control .tag-search-wrapper, tag-selection-control div[role=tablist], tag-selection-control div[role=tablist]>.panel, tag-selection-control div[role=tabpanel] {
+ tag-selection-control .collapse-header-wrapper,
+ tag-selection-control .input-group,
+ tag-selection-control .modal-content,
+ tag-selection-control .modal-dialog,
+ tag-selection-control .panel-accordion,
+ tag-selection-control .tag-search-list,
+ tag-selection-control .tag-search-wrapper,
+ tag-selection-control div[role=tablist],
+ tag-selection-control div[role=tablist]>.panel,
+ tag-selection-control div[role=tabpanel] {
    padding: 0 !important
  }
 
- tag-selection-control .modal-header, tag-selection-control div[role=tablist] .panel-title {
+ tag-selection-control .modal-header,
+ tag-selection-control div[role=tablist] .panel-title {
    margin: 0 !important
  }
 
- tag-selection-control .collapse-header-wrapper, tag-selection-control div[role=dialog] {
+ tag-selection-control .collapse-header-wrapper,
+ tag-selection-control div[role=dialog] {
    background-color: transparent !important
  }
 
@@ -6221,7 +6246,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin: 30px auto !important
  }
 
- tag-selection-control .modal-footer, tag-selection-control .modal-header {
+ tag-selection-control .modal-footer,
+ tag-selection-control .modal-header {
    padding: .5rem 1rem !important
  }
 
@@ -6255,12 +6281,13 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  }
 
  .tag-selection .disabled {
-    opacity: .5;
-}
-.tag-selection button[disabled] {
-    pointer-events: none;
-    cursor: not-allowed;
-}
+   opacity: .5;
+ }
+
+ .tag-selection button[disabled] {
+   pointer-events: none;
+   cursor: not-allowed;
+ }
 
  tag-selection-control .tag-search-wrapper {
    display: -ms-flexbox;
@@ -6324,7 +6351,8 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    margin-left: .35rem
  }
 
- tag-selection .close:focus, tag-selection .close:hover {
+ tag-selection .close:focus,
+ tag-selection .close:hover {
    color: inherit;
    text-shadow: none;
  }
@@ -6411,11 +6439,14 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
  .tag-selection .panel-accordion .collapsing tag-selection {
    opacity: 0;
  }
-.tag-browser-open {
-  overflow: hidden;
-}
 
- tag-browser .list-group, tag-browser .modal-body, tag-browser .modal-footer p {
+ .tag-browser-open {
+   overflow: hidden;
+ }
+
+ tag-browser .list-group,
+ tag-browser .modal-body,
+ tag-browser .modal-footer p {
    padding: 0 !important
  }
 
