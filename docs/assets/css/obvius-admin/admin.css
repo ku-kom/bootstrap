@@ -5548,11 +5548,11 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
    background-color: #eee !important;
  }
 
- .col-disabled:hover {
+ .gccolumn.col-disabled:hover {
    cursor: not-allowed;
  }
 
- .dialogcontent .col-disabled:hover {
+ .dialogcontent table tr:hover .col-disabled {
    background-color: #ddd !important;
  }
 
