@@ -1513,6 +1513,19 @@ hr {
   content: "";
   background-color: rgba(0, 0, 0, 0);
 }
+.site-content-width {
+  padding: var(--gutterHeight) 0;
+  margin-left: calc(var(--gutterWidth) * -1);
+  margin-right: calc(var(--gutterWidth) * -1);
+}
+@media (min-width: 768px) {
+  .site-content-width .gccolumn:last-child {
+    padding-right: var(--gutterWidth);
+  }
+  .site-content-width .gccolumn:first-child {
+    padding-left: var(--gutterWidth);
+  }
+}
 .h1,
 .h2,
 .h3,
