@@ -4573,6 +4573,7 @@ form.obvius-navigator div.obvius-subdocs table tr.obvius-a:hover,
 
  div.gridcontent-dialog-addrow table {
    width: 100%;
+   table-layout: fixed;
  }
 
  div.gridcontent-dialog-addrow colgroup col {
