@@ -18,6 +18,20 @@
         {% unless page.fullwidth == true %}
         <div class="col-md-3" role="complementary">
           <nav id="leftmenu" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul id="persistantmenu" class="nav exclude">
+              <li{% if page.slug=="css" %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}/css{% if site.github %}.html{% endif %}">CSS</a>
+              </li>
+              <li{% if page.slug=="components" %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}/components{% if site.github %}.html{% endif %}">Components</a>
+              </li>
+              <li{% if page.slug=="js" %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}/javascript{% if site.github %}.html{% endif %}">JavaScript</a>
+              </li>
+              <li{% if page.slug=="examples" %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}/examples/ku-default/">KU templates</a>
+              </li>
+            </ul>
             <ul class="nav bs-docs-sidenav">
               {% if page.slug == "getting-started" %}
                 {% include nav/getting-started.html %}
