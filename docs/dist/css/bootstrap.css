@@ -6393,7 +6393,7 @@ figcaption {
 }
 a.list-group-item,
 button.list-group-item {
-  color: #555;
+  color: #252525;
   text-decoration: none;
 }
 a.list-group-item .list-group-item-heading,
@@ -6405,7 +6405,7 @@ button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
   text-decoration: none;
-  color: #555;
+  color: #252525;
   background-color: #f5f5f5;
 }
 button.list-group-item {
