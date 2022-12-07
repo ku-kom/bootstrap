@@ -371,13 +371,8 @@ video {
   transform: none;
 }
 
-.valueslider .play-pause-button {
-  background: rgba(0, 0, 0, .1);
-  bottom: -36px;
-}
-
-.valueslider .play-pause-button:hover {
-  background: rgba(0, 0, 0, .2);
+.tiles-x .tilebox {
+  box-shadow: none;
 }
 
 .tiles-x .tile-img {
