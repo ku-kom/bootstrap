@@ -50,6 +50,7 @@ body {
 
 .main-content {
   padding-top: 0;
+  font-size: 15px;
 }
 
 .gridcontent>.row>.container>.row:last-child {
