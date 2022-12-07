@@ -189,21 +189,25 @@ video {
   margin-top: 10px;
 }
 
-.visual-caption .visual-box {
+.caption-tabstyle .visual-caption .visual-box {
   padding: 20px
 }
 
-.visual-caption .visual-box h2 {
+.caption-tabstyle .visual-caption .visual-box h2 {
   margin-bottom: 20px;
 }
 
-.visual-caption .cat {
+.caption-tabstyle .visual-caption .cat {
   display: inline-block;
   padding: 15px 20px 0 20px;
   margin-bottom: 0;
   bottom: -5px;
   position: relative;
   line-height: 1;
+}
+
+.caption-tabstyle .visual-caption {
+  margin: 20px 0;
 }
 
 .hero {
