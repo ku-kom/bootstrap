@@ -12,8 +12,6 @@
   --green1: 57, 100, 28;
   --green2: 75, 131, 37;
   --green3: 190, 202, 168;
-  /* Ekstra klimagrøn */
-  --green4: 160 192 140;
   --grey1: 61, 61, 61;
   --grey2: 102, 102, 102;
   --grey3: 225, 223, 223;
@@ -42,8 +40,7 @@
 .box-grey3,
 .box-light1,
 .box-light2,
-.box-light3,
-.box-green4 {
+.box-light3 {
   --color: 38, 38, 38;
 }
 
@@ -192,34 +189,21 @@ video {
   margin-top: 10px;
 }
 
-.jumpboard-row {
-  background-color: #ecf0f0;
-  padding: 23px 0;
+.visual-caption .visual-box {
+  padding: 20px
 }
 
-.slide-columns,
-.swiper-container {
-  padding-bottom: 80px;
+.visual-caption .visual-box h2 {
+  margin-bottom: 20px;
 }
 
-.swiper-container-initialized {
-  padding-bottom: 57px;
-}
-
-.researchrow .swiper-container-initialized {
-  padding-bottom: 0;
-}
-
-.ku-values {
-  padding-bottom: 80px;
-}
-
-.ku-values .slide-link {
-  color: inherit;
-}
-
-.ku-values .slick-slide:not([tabindex]) .slide-link:focus {
-  outline: 1px solid #2c6694;
+.visual-caption .cat {
+  display: inline-block;
+  padding: 15px 20px 0 20px;
+  margin-bottom: 0;
+  bottom: -5px;
+  position: relative;
+  line-height: 1;
 }
 
 .hero {
@@ -230,10 +214,6 @@ video {
 .events {
   padding: 0 0 80px 0;
   margin-bottom: 0 !important;
-}
-
-.instagram {
-  padding: 54px 0 80px 0;
 }
 
 .news-modal [class*=col-] {
@@ -660,18 +640,6 @@ video {
     bottom: 16px;
   }
 
-  #slides .slick-slide>div {
-    margin: 0 10px;
-  }
-
-  .slick-prev {
-    left: -5% !important;
-  }
-
-  .slick-next {
-    right: -5% !important;
-  }
-
   .image-box img {
     object-fit: cover;
     height: 100%;
@@ -689,33 +657,6 @@ video {
 
   .search-researcher {
     width: 475px;
-  }
-
-  /* Desktop */
-  #instaslider {
-    height: 235px;
-    border: 3px solid rgb(var(--color));
-  }
-
-  #instaslider .slick-slide>div {
-    margin: 0 6px;
-  }
-
-  #instaslider .slick-track {
-    padding: 6px 10px 6px 0;
-  }
-
-  #instaslider .slick-track .slick-active+.slick-active+.slick-active>div {
-    margin-right: 8px;
-  }
-
-  #instaslider .slick-list {
-    padding: 0 !important;
-  }
-
-  .jumpboard .jumpcolumn li:first-child::after,
-  .jumpboard .jumpcolumn li:last-child::before {
-    display: none;
   }
 
   .box-align-2 .column2 .gcitem:nth-child(1) {
@@ -790,6 +731,11 @@ video {
 
   .hero-video-sitewidth .full-page-width>.visual-caption {
     max-width: 914px;
+  }
+
+  .center-content {
+    display: flex;
+    align-items: center;
   }
 }
 
