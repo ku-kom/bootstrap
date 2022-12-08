@@ -658,7 +658,7 @@ video {
   }
 
   .single-column .column1 .tiles-x .tilebox .tile-content {
-    padding: 15px 20px 20px 20px
+    padding: 30px;
   }
 }
 
@@ -964,6 +964,19 @@ video {
   .special-textbox {
     padding: 80px 0;
     font-size: 17px;
+  }
+
+  .double-column .gccolumn .tiles-x .tile-body {
+    display: none !important;
+  }
+
+  .single-column .gccolumn .tiles-x .tile-body {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .single-column .gccolumn .tiles-x .tile-header {
+    font-size: 28px;
   }
 
   :not(.row).box-red1 {
