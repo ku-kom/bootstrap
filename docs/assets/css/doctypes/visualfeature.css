@@ -288,8 +288,8 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: #a6a6a6;
-  padding: 76px 0 76px 0;
+  /* background-color: #a6a6a6; */
+  padding: 76px 0;
 }
 
 .visuelt-element {
@@ -780,6 +780,11 @@ video {
     width: 100%;
   }
 
+  .special-textbox {
+    padding: 40px 0;
+    font-size: 16px;
+  }
+
   .search-researcher .input-group input {
     font-size: 16px;
     padding: 9px 16px;
@@ -889,10 +894,6 @@ video {
 @media all and (min-width: 992px) {
   .video-container>img {
     max-width: none;
-  }
-
-  .visual-teaser {
-    font-size: 18px;
   }
 
   .visuelt-element-full-width .visual-caption {
@@ -1039,6 +1040,11 @@ video {
 
   .visuelt-element.img-right .visual-img {
     float: right;
+  }
+
+  .special-textbox {
+    padding: 80px 0;
+    font-size: 17px;
   }
 
   :not(.row).box-red1 {
