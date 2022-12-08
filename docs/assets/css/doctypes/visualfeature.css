@@ -79,7 +79,7 @@ body {
   outline-offset: -1px;
 }
 
-.with-arrow {
+.with-arrow, .no-arrow {
   font-size: 22px;
   position: relative;
   margin-bottom: 0;
@@ -546,7 +546,7 @@ video {
     max-width: 746px;
   }
 
-  .with-arrow {
+  .with-arrow, .no-arrow {
     font-size: 30px;
     font-weight: 600;
   }

@@ -12723,6 +12723,7 @@ form.gdpr-accept .btn + .btn {
 .image-presentation {
   position: relative;
   overflow: hidden;
+  max-height: 410px;
 }
 .image-presentation > .slick-slide {
   display: block;
