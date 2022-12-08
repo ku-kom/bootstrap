@@ -9814,10 +9814,6 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .newsbox .tiles-x .tilebox {
     height: 289px;
   }
-  .single-column .eventbox .tiles-x .tilebox,
-  .single-column .newsbox .tiles-x .tilebox {
-    height: auto;
-  }
   .topnews > .deloverskrift {
     margin-top: 70px;
   }
