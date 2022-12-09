@@ -280,10 +280,15 @@ video {
 .tiles-x .tile-content {
   flex: 0 0 30%;
   padding: 20px;
+  justify-content: center;
 }
 
 .tiles-x .tile-cat {
   display: none;
+}
+
+.double-column .ttile-header {
+  -webkit-line-clamp: 3;
 }
 
 .triple-column .tile-body:after {
