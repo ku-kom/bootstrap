@@ -96,6 +96,16 @@
   max-height: 289px;
 }
 
+blockquote.full-width {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+blockquote footer {
+  font-weight: 400;
+}
+
 @media (min-width: 992px) {
   .image-presentation {
     height: 400px;
