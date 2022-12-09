@@ -217,34 +217,6 @@ video {
   margin-bottom: 0 !important
 }
 
-.events {
-  padding: 0 0 80px 0;
-  margin-bottom: 0 !important;
-}
-
-.news-modal [class*=col-] {
-  margin-bottom: 0;
-}
-
-.news-modal .modal-title {
-  font-size: 22px;
-}
-
-.news-modal .modal-footer {
-  background-color: #e1dfdf;
-  border-top: 0;
-}
-
-.news-modal .modal-teaser {
-  margin: 23px 0;
-  padding: 0 15px;
-  font-size: 16px;
-}
-
-.news-modal .modal-body {
-  padding: 0;
-}
-
 .quote {
   padding: 54px 0 80px 0;
 }
@@ -303,6 +275,11 @@ video {
 
 .events .tile-header {
   font-size: 20px !important;
+}
+
+.tiles-x .tile-content {
+  flex: 0 0 30%;
+  padding: 20px;
 }
 
 .triple-column .tile-body:after {
