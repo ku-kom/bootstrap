@@ -138,6 +138,10 @@ h3 {
   outline-offset: -1px;
 }
 
+.fullwidth-offset-content {
+  font-size: 17px;
+}
+
 .overskrift {
   padding-top: 54px;
   margin-bottom: 0 !important;
