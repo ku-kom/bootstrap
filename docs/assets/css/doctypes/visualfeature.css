@@ -282,6 +282,10 @@ video {
   padding: 20px;
 }
 
+.tiles-x .tile-cat {
+  display: none;
+}
+
 .triple-column .tile-body:after {
   content: '';
   pointer-events: none;
