@@ -3032,7 +3032,6 @@ table th[class*="col-"] {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
   }
   .table-responsive > .table-bordered {
     border: 0;
