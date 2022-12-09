@@ -24,14 +24,6 @@
   .gridcontent>.gcrow:not(.full-page-width)>.container {
     max-width: 746px;
   }
-
-  .single-column .gccolumn .tiles-x .tilebox {
-    height: 650px;
-  }
-
-  .single-column .gccolumn .tiles-x .tilebox .tile-content {
-    flex: 0 0 auto;
-  }
 }
 
 @media (min-width: 992px) {
