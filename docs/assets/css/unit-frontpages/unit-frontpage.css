@@ -92,9 +92,17 @@
   opacity: .3
 }
 
+.image-presentation img {
+  max-height: 289px;
+}
+
 @media (min-width: 992px) {
   .image-presentation {
     height: 400px;
+  }
+
+  .image-presentation img {
+    max-height: none;
   }
 
   .jumpcolumn li {
