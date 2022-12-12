@@ -276,6 +276,7 @@ video {
 .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header {
   font-size: 20px !important;
   -webkit-line-clamp: 3;
+  line-height: 1.3333;
 }
 
 .events .tile-header {
