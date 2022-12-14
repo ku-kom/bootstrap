@@ -294,7 +294,7 @@ video {
 }
 
 .tiles-x .tile-body {
-  display: none!important;
+  display: none !important;
 }
 
 .tiles-x .tilebox {
@@ -308,7 +308,6 @@ video {
 .hero-caption {
   position: relative;
   padding: 20px;
-  border-radius: 4px;
   font-size: 20px;
 }
 
@@ -795,6 +794,10 @@ video {
 }
 
 @media all and (min-width: 992px) {
+  .hero {
+    min-height: 600px;
+  }
+
   .video-container>img {
     max-width: none;
   }
@@ -905,6 +908,7 @@ video {
     position: absolute;
     padding: 30px;
     margin: 30px 0;
+    border-radius: 4px;
   }
 
   .caption-bottom-left .hero-caption {
