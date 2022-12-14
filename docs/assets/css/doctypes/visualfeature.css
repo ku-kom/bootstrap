@@ -335,80 +335,12 @@ video {
   display: none;
 }
 
-.video-container {
-  position: relative;
-}
-
-.video-container>video,
-.video-container>img {
-  object-fit: contain;
-}
-
-.video-container>video:focus {
-  outline: 1px dotted #fff;
-  outline-offset: -5px;
-}
-
-.video-sitewidth {
-  padding: 76px 0;
-}
-
-.hero-video-sitewidth .full-page-width {
-  width: calc(100vw);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  box-shadow: 0 -10px 70px 0 rgb(0 1 0 / 12%);
-}
-
-:is(.video-sitewidth, .hero-video-sitewidth) .visual-teaser {
-  margin-top: 5px;
-}
-
 .hero-video-sitewidth .full-page-width>.visual-caption {
   padding: 15px;
 }
 
 .search-researcher {
   width: 100%;
-}
-
-.image-box {
-  height: 185px;
-  position: relative;
-  overflow: hidden;
-}
-
-.image-box img {
-  -webkit-filter: brightness(100%) blur(0);
-  filter: brightness(100%) blur(0);
-  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
-}
-
-.image-box:hover img {
-  -webkit-filter: brightness(90%) blur(0);
-  filter: brightness(90%) blur(0);
-}
-
-.image-box-text-wrap {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  transform: translate(-50%) translate3d(0, 0, 0);
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.img-text {
-  display: inline;
-  color: #fff;
-  background-color: rgba(0, 0, 0, .60);
-  box-shadow: 10px 0 0 rgb(0 0 0 / 60%), -10px 0 0 rgb(0 0 0 / 60%);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
 }
 
 .find-ku-researcher {
@@ -422,10 +354,6 @@ video {
   font-size: 18px;
   line-height: 1.3333;
   margin-bottom: 15px;
-}
-
-:is(.video-sitewidth, .hero-video-sitewidth) .visual-caption {
-  margin: 23px 0 0;
 }
 
 .divider-top,
@@ -712,38 +640,11 @@ video {
   .visual-teaser {
     margin-top: 15px;
   }
-
-  @supports (-ms-ime-align: auto) {
-
-    .hero-element,
-    .video-container>img {
-      height: auto !important;
-    }
-  }
-}
-
-/* Special styles for Internet Explorer 11 */
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-
-  .hero-element,
-  .video-container>img {
-    width: 100%;
-  }
 }
 
 @media (max-width: 991px) {
   .ku-branding .ku-branding-text .ku-branding-text-major {
     font-size: 18px;
-  }
-
-  .video-container {
-    /* width: calc(100vw - var(--scroll-bar));
-    margin-left: calc(-50vw + 50% + (var(--scroll-bar)/ 2));
-    margin-right: calc(-50vw + 50% + (var(--scroll-bar)/ 2)); */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
   }
 
   .hero-caption {
@@ -760,12 +661,6 @@ video {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
-  .hero-element,
-  .video-container>img {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-  }
 
   .hero-caption {
     padding-left: 40px;
@@ -803,10 +698,6 @@ video {
 @media all and (min-width: 992px) {
   .hero {
     min-height: 600px;
-  }
-
-  .video-container>img {
-    max-width: none;
   }
 
   .visuelt-element-full-width .visual-caption {
@@ -1137,20 +1028,6 @@ video {
   }
 }
 
-@media (min-width: 3000px) {
-  .video-container {
-    width: 3000px;
-    margin-left: calc(-3000px / 2 + 1070px / 2 - var(--scroll-bar));
-    margin-right: calc(-3000px / 2 + 1070px / 2);
-  }
-
-  .hero-element,
-  .video-container>img {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
 .main-content .row:last-child {
   margin-bottom: 0;
 }
@@ -1170,4 +1047,10 @@ video {
 :is(.box-red1, .box-red2, .box-red3, .box-blue1, .box-blue2, .box-teal1, .box-teal2, .box-green1, .box-green2, .box-grey1, .box-grey2) .with-arrow::after {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
+}
+
+@media (min-width: 3000px) {
+  .hero {
+    background-size: 3000px auto;
+  }
 }
