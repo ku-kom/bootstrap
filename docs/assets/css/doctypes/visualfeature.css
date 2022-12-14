@@ -328,7 +328,7 @@ video {
 .hero-caption-text {
   font-size: 18px;
   line-height: 1.3333;
-  margin-top: 5px;
+  margin-top: 23px;
 }
 
 .hero-caption-text:empty {
@@ -632,7 +632,6 @@ video {
   .hero-caption-text {
     font-size: 20px;
     line-height: 1.4;
-    margin-top: 23px;
   }
 
   .divider-bottom>.container::after,
@@ -708,6 +707,10 @@ video {
     margin-right: calc(-50vw + 50%);
     overflow: hidden;
     position: relative;
+  }
+
+  .visual-teaser {
+    margin-top: 15px;
   }
 
   @supports (-ms-ime-align: auto) {
