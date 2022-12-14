@@ -273,6 +273,10 @@ video {
   padding: 76px 0;
 }
 
+.single-column .gccolumn .tiles-x .tile-body {
+  display: none;
+}
+
 .double-column .tiles-x:not(.tiles-plugin) .tilebox .tile-header {
   font-size: 20px !important;
   -webkit-line-clamp: 3;
@@ -620,6 +624,18 @@ video {
     font-size: 25px;
   }
 
+  :is(.hero-caption) .no-arrow,
+  .with-arrow {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-caption-text {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 23px;
+  }
+
   .divider-bottom>.container::after,
   .divider-top>.container::before {
     max-width: 914px
@@ -889,7 +905,7 @@ video {
   }
 
   .hero-caption {
-    max-width: 430px;
+    max-width: 600px;
     position: absolute;
     padding: 30px;
     margin: 30px 0;
@@ -897,14 +913,14 @@ video {
 
   .caption-bottom-left .hero-caption {
     top: auto;
-    bottom: 5%;
+    bottom: auto;
     right: auto;
     left: 0;
   }
 
   .caption-bottom-right .hero-caption {
     top: auto;
-    bottom: 5%;
+    bottom: auto;
     right: 0;
     left: auto;
   }
@@ -941,10 +957,10 @@ video {
     display: none !important;
   }
 
-  .single-column .gccolumn .tiles-x .tile-body {
+  /* .single-column .gccolumn .tiles-x .tile-body {
     font-size: 18px;
     padding-top: 10px;
-  }
+  } */
 
   .single-column .gccolumn .tiles-x .tile-header {
     font-size: 28px;
