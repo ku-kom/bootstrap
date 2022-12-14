@@ -151,6 +151,10 @@ h3 {
   padding-top: 23px;
 }
 
+.row-padding {
+  padding: 80px 0;
+}
+
 .row-padding-bottom {
   padding-bottom: 80px;
 }
@@ -947,10 +951,6 @@ video {
 
   .visuelt-element.img-right .visual-img {
     float: right;
-  }
-
-  .special-textbox {
-    padding: 80px 0;
   }
 
   .single-column .gccolumn .tiles-x .tile-header {
