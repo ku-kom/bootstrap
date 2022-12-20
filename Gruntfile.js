@@ -183,7 +183,8 @@ module.exports = function (grunt) {
               'docs/assets/js/canvasjs/canvasjs.js',
               'docs/assets/js/phonebook/*.js',
               'docs/assets/js/paging/*.js',
-              'docs/assets/js/ku-frontpage/*.js'
+              'docs/assets/js/ku-frontpage/*.js',
+              'docs/assets/js/course/course.js',
             ],
             dest: 'dist/js/',
             ext: '.min.js',
