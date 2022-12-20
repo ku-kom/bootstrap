@@ -319,6 +319,19 @@ h1.title {
   font-size: 14px;
 }
 
+.evu-modal-boks {
+  height: 133px;
+}
+
+.evu-modal-boks:hover {
+  background-color: #d5d2d2;
+}
+
+.evu-modal-trigger:any-link {
+  color: #252525;
+  text-decoration: none;
+}
+
 .evu-topimage {
   max-height: 300px;
   overflow: hidden;
@@ -589,7 +602,7 @@ h1.title {
     max-width: 966px;
     position: fixed;
     top: 0;
-    z-index: 2000;
+    z-index: 1035;
     left: 50%;
     transform: translateX(-50%);
     border-top-left-radius: 0;
