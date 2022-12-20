@@ -124,6 +124,10 @@ h3 {
   text-decoration: none;
 }
 
+.visual-box {
+  padding: 20px;
+}
+
 :is(.visual-container, .hero, .visual-teaser) a {
   color: inherit;
   text-decoration: none;
