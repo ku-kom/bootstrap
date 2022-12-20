@@ -315,6 +315,10 @@ h1.title {
   margin-bottom: 0;
 }
 
+.factbox {
+  font-size: 14px;
+}
+
 .evu-topimage {
   max-height: 300px;
   overflow: hidden;
@@ -542,20 +546,29 @@ h1.title {
 }
 
 @media (min-width: 992px) {
-  :is(.single-column, .double-column, .two-one-column, .one-two-column) .gccolumn blockquote.full-width {
+  blockquote.full-width {
     font-size: 20px;
     line-height: 1.3333333;
     font-weight: 600;
     padding: 0 20px
   }
 
-  :is(.single-column, .double-column, .two-one-column, .one-two-column) .gccolumn blockquote.full-width:before {
+   blockquote.full-width:before {
     font-size: 65px
   }
 
-  :is(.single-column, .double-column, .two-one-column, .one-two-column) .gccolumn blockquote.full-width footer {
+   blockquote.full-width footer {
     font-size: 15px;
     font-weight: 400
+  }
+
+  .fullwidth-offset-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .fullwidth-offset-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .evu-sticky-bar {
