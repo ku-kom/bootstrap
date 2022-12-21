@@ -364,7 +364,6 @@ h1.title {
   margin-bottom: 13px;
 }
 
-
 .exp-box .exp-box-wrap[aria-expanded=true] {
   min-height: calc(var(--exp-box) + (var(--gutterWidth) / 2));
 }
@@ -559,21 +558,36 @@ h1.title {
 }
 
 @media (min-width: 992px) {
-  blockquote.full-width {
+  blockquote {
     font-size: 20px;
     line-height: 1.3333333;
     font-weight: 600;
     padding: 0 20px
   }
 
-   blockquote.full-width:before {
+   blockquote::before {
     font-size: 65px
   }
 
-   blockquote.full-width footer {
+   blockquote footer {
     font-size: 15px;
     font-weight: 400
   }
+
+  .single-column .gccolumn blockquote {
+    float: right;
+    width: 60%;
+    margin: 0 43px 20px 0;
+  }
+
+  .single-column .gccolumn blockquote::before {
+    top: 56px;
+    left: -51px;
+    font-size: 64px;
+    color: inherit;
+    display: inline-block;
+  }
+
 
   .fullwidth-offset-content h2 {
     font-size: 24px;
@@ -615,21 +629,6 @@ h1.title {
 
   .course-lead {
     font-size: 18px;
-  }
-
-  .single-column .gccolumn blockquote {
-    font-size: 16px;
-    float: right;
-    width: 60%;
-    margin: 0 43px 20px 0;
-  }
-
-  .single-column .gccolumn blockquote::before {
-    top: 56px;
-    left: -51px;
-    font-size: 64px;
-    color: inherit;
-    display: inline-block;
   }
 
   .evu-topimage {

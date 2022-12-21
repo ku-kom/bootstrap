@@ -1499,7 +1499,7 @@ hr {
 @media (max-width: 768px) {
   .btn,
   .form-control {
-    height: auto!important;
+    height: auto !important;
   }
 }
 .stretched-link::after {
@@ -1513,12 +1513,12 @@ hr {
   content: "";
   background-color: rgba(0, 0, 0, 0);
 }
-.site-content-width {
-  padding: var(--gutterHeight) 0;
-  margin-left: calc(var(--gutterWidth) * -1) !important;
-  margin-right: calc(var(--gutterWidth) * -1) !important;
-}
 @media (min-width: 768px) {
+  .site-content-width {
+    padding: var(--gutterHeight) 0;
+    margin-left: calc(var(--gutterWidth) * -1) !important;
+    margin-right: calc(var(--gutterWidth) * -1) !important;
+  }
   .site-content-width .gccolumn:last-child {
     padding-right: var(--gutterWidth) !important;
   }
