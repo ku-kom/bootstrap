@@ -441,6 +441,7 @@ video {
   blockquote footer {
     font-size: 15px;
     font-weight: 400;
+    margin-top: 10px;
 }
 
   .quote h2 {
@@ -587,6 +588,16 @@ video {
 
   .single-column .column1 .tiles-x .tilebox .tile-content {
     padding: 30px;
+  }
+
+  .special-textbox h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .special-textbox h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
 
