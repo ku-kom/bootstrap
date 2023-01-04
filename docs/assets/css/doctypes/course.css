@@ -559,10 +559,6 @@ h1.title {
 
 @media (min-width: 992px) {
 
-  .image-presentation {
-    height: 410px;
-  }
-
   blockquote {
     font-size: 20px;
     line-height: 1.3333333;
