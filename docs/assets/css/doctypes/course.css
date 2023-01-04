@@ -558,6 +558,11 @@ h1.title {
 }
 
 @media (min-width: 992px) {
+
+  .image-presentation {
+    height: 410px;
+  }
+
   blockquote {
     font-size: 20px;
     line-height: 1.3333333;
@@ -565,11 +570,11 @@ h1.title {
     padding: 0 20px
   }
 
-   blockquote::before {
+  blockquote::before {
     font-size: 65px
   }
 
-   blockquote footer {
+  blockquote footer {
     font-size: 15px;
     font-weight: 400
   }
@@ -593,6 +598,7 @@ h1.title {
     font-size: 24px;
     margin-bottom: 15px;
   }
+
   .fullwidth-offset-content h3 {
     font-size: 20px;
     margin-bottom: 15px;
