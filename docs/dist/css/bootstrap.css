@@ -6602,7 +6602,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0!important;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: .25px;
