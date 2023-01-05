@@ -10390,7 +10390,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-red1,
   .image-presentation .caption.box-red1 {
-    background: rgba(144, 26, 30, .83);
+    background: rgba(144, 26, 30, .93);
   }
 }
 .slick-slide .caption.box-red1.full-bg,
@@ -10405,7 +10405,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-red2,
   .image-presentation .caption.box-red2 {
-    background: rgba(199, 48, 40, .83);
+    background: rgba(199, 48, 40, .93);
   }
 }
 .slick-slide .caption.box-red2.full-bg,
@@ -10420,7 +10420,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-red3,
   .image-presentation .caption.box-red3 {
-    background: rgba(219, 59, 10, .83);
+    background: rgba(219, 59, 10, .93);
   }
 }
 .slick-slide .caption.box-red3.full-bg,
@@ -10435,7 +10435,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-blue1,
   .image-presentation .caption.box-blue1 {
-    background: rgba(18, 41, 71, .83);
+    background: rgba(18, 41, 71, .93);
   }
 }
 .slick-slide .caption.box-blue1.full-bg,
@@ -10450,7 +10450,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-blue2,
   .image-presentation .caption.box-blue2 {
-    background: rgba(66, 85, 112, .83);
+    background: rgba(66, 85, 112, .93);
   }
 }
 .slick-slide .caption.box-blue2.full-bg,
@@ -10465,7 +10465,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-blue3,
   .image-presentation .caption.box-blue3 {
-    background: rgba(186, 199, 217, .83);
+    background: rgba(186, 199, 217, .93);
   }
 }
 .slick-slide .caption.box-blue3.full-bg,
@@ -10480,7 +10480,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-teal1,
   .image-presentation .caption.box-teal1 {
-    background: rgba(10, 89, 99, .83);
+    background: rgba(10, 89, 99, .93);
   }
 }
 .slick-slide .caption.box-teal1.full-bg,
@@ -10495,7 +10495,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-teal2,
   .image-presentation .caption.box-teal2 {
-    background: rgba(25, 127, 142, .83);
+    background: rgba(25, 127, 142, .93);
   }
 }
 .slick-slide .caption.box-teal2.full-bg,
@@ -10510,7 +10510,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-teal3,
   .image-presentation .caption.box-teal3 {
-    background: rgba(183, 215, 222, .83);
+    background: rgba(183, 215, 222, .93);
   }
 }
 .slick-slide .caption.box-teal3.full-bg,
@@ -10525,7 +10525,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-green1,
   .image-presentation .caption.box-green1 {
-    background: rgba(57, 100, 28, .83);
+    background: rgba(57, 100, 28, .93);
   }
 }
 .slick-slide .caption.box-green1.full-bg,
@@ -10540,7 +10540,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-green2,
   .image-presentation .caption.box-green2 {
-    background: rgba(75, 131, 37, .83);
+    background: rgba(75, 131, 37, .93);
   }
 }
 .slick-slide .caption.box-green2.full-bg,
@@ -10555,7 +10555,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-green3,
   .image-presentation .caption.box-green3 {
-    background: rgba(190, 202, 168, .83);
+    background: rgba(190, 202, 168, .93);
   }
 }
 .slick-slide .caption.box-green3.full-bg,
@@ -10570,7 +10570,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-grey1,
   .image-presentation .caption.box-grey1 {
-    background: rgba(61, 61, 61, .83);
+    background: rgba(61, 61, 61, .93);
   }
 }
 .slick-slide .caption.box-grey1.full-bg,
@@ -10585,7 +10585,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-grey2,
   .image-presentation .caption.box-grey2 {
-    background: rgba(102, 102, 102, .83);
+    background: rgba(102, 102, 102, .93);
   }
 }
 .slick-slide .caption.box-grey2.full-bg,
@@ -10600,7 +10600,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-grey3,
   .image-presentation .caption.box-grey3 {
-    background: rgba(225, 223, 223, .83);
+    background: rgba(225, 223, 223, .93);
   }
 }
 .slick-slide .caption.box-grey3.full-bg,
@@ -10615,7 +10615,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-light1,
   .image-presentation .caption.box-light1 {
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, .93);
   }
 }
 .slick-slide .caption.box-light1.full-bg,
@@ -10630,7 +10630,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-light2,
   .image-presentation .caption.box-light2 {
-    background: rgba(254, 250, 242, .9);
+    background: rgba(254, 250, 242, .93);
   }
 }
 .slick-slide .caption.box-light2.full-bg,
@@ -10645,7 +10645,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 @media (min-width: 768px) {
   .slick-slide .caption.box-light3,
   .image-presentation .caption.box-light3 {
-    background: rgba(255, 189, 56, .83);
+    background: rgba(255, 189, 56, .93);
   }
 }
 .slick-slide .caption.box-light3.full-bg,
