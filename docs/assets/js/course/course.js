@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const isDesktop = window.matchMedia('(min-width: 992px)').matches;
   const watcher = document.querySelector('.evu-sticky-watcher');
-
+  /**
+   * Observe element to make it sticky
+   */
   const createObserver = () => {
     const config = {
       root: null,
@@ -36,8 +38,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
+  const reloadOpenStreetMap = (id) => {
+    let buggyid = document.getElementById(id);
+    buggyid.src = buggyid.src;
+  };
+
   window.addEventListener('load', () => {
     createObserver();
+    setTimeout(reloadOpenStreetMap, 500, 'map');
   }, false);
 
   window.addEventListener('scroll', throttle(() => {
