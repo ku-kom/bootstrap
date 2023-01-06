@@ -660,6 +660,10 @@ h1.title {
     height: 100%;
     width: 100%;
   }
+
+  .deloverskrift {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1200px) {
