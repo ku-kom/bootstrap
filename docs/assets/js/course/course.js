@@ -40,7 +40,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const reloadOpenStreetMap = (id) => {
     let buggyid = document.getElementById(id);
-    buggyid.src = buggyid.src;
+    if (buggyid) {
+      buggyid.src = buggyid.src;
+    }
   };
 
   window.addEventListener('load', () => {

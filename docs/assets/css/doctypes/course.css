@@ -14,6 +14,13 @@ body {
   font-size: 15px;
 }
 
+/* Special styling for full-width rows */
+.gridcontent>.gcrow:not(.full-page-width)>.container {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
 .evu-temabox-link:-webkit-any-link {
   text-decoration: none;
 }
@@ -497,6 +504,12 @@ h1.title {
   padding: 8px 18px 8px 10px;
 }
 
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .gcrow:not(.double-column):not(.quad-column) [class*=col-sm-6] {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 991px) {
   .evu-header-apply .course-info-label::before {
     margin-right: 15px;
@@ -535,6 +548,9 @@ h1.title {
 }
 
 @media (min-width: 768px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 746px;
+  }
 
   h1 {
     font-size: 28px;
@@ -558,6 +574,9 @@ h1.title {
 }
 
 @media (min-width: 992px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 966px;
+  }
 
   blockquote {
     font-size: 20px;
@@ -644,6 +663,10 @@ h1.title {
 }
 
 @media (min-width: 1200px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 1070px;
+  }
+
   .evu-header-apply {
     max-width: 1018px;
   }
