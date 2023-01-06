@@ -578,9 +578,13 @@ h1.title {
     max-width: 966px;
   }
 
+  .modal-title {
+    font-size: 22px;
+  }
+
   blockquote {
     font-size: 20px;
-    line-height: 1.3333333;
+    line-height: 1.5;
     font-weight: 600;
     padding: 0 20px
   }
@@ -663,6 +667,14 @@ h1.title {
 
   .deloverskrift {
     font-size: 25px;
+  }
+
+  .evu-share {
+    float: right;
+  }
+
+  .evu-share .social-icons {
+    justify-content: end;
   }
 }
 

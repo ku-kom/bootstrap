@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', async () => {
    * Observe element to make it sticky
    */
   const createObserver = () => {
+    // Break if sticky element doesn't exist
+    if (watcher === null) {
+      return;
+    }
     const config = {
       root: null,
       trackVisibility: true,
@@ -36,6 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       observer.observe(watcher);
 
     }
+
   };
 
   const reloadOpenStreetMap = (id) => {
