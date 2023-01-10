@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   'use strict';
 
   /**
-   * Check if functions exist
+   * Break if functions don't exist
    */
   if (typeof debounce !== 'function' && typeof throttle !== 'function') {
     return;
@@ -14,14 +14,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const isDesktop = window.matchMedia('(min-width: 992px)').matches;
   const watcher = document.querySelector('.evu-sticky-watcher');
+
+  /**
+   * Break if sticky element doesn't exist
+   */
+  if (watcher === null) {
+    return;
+  }
+
   /**
    * Observe element to make it sticky
    */
   const createObserver = () => {
-    // Break if sticky element doesn't exist
-    if (watcher === null) {
-      return;
-    }
+
     const config = {
       root: null,
       trackVisibility: true,
