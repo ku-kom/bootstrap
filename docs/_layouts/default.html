@@ -8,16 +8,19 @@
     <!-- {% include nav/main.html %} -->
     <main id="content">
     {% include nav/logo.html %}
-    <div class="bs-docs-header" tabindex="-1">
+    <!-- <div class="bs-docs-header" tabindex="-1">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
       </div>
-    </div>
+    </div> -->
     <div class="container bs-docs-container">
       <div class="row">
         {% unless page.fullwidth == true %}
-        <div class="col-md-3" role="complementary">
+        <div class="col-md-3  ku-leftmenu" role="complementary">
+          <div class="ku-navbar-header">
+            <a href="{{ site.baseurl }}/">Styleguide</a>
+          </div>
           <nav id="leftmenu" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
             <ul id="persistantmenu" class="nav exclude">
               <li{% if page.slug=="css" %} class="active" {% endif %}>
