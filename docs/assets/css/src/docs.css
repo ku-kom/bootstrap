@@ -45,6 +45,7 @@
 
 .bs-docs-container {
   padding-bottom: 23px;
+  height: 100%;
 }
 
 /* Keep code small in tables on account of limited space */
