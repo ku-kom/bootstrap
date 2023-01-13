@@ -6,23 +6,25 @@ title: ku.dk &middot; Københavns Universitet &middot; Customized Bootstrap temp
   {% include nav/logo.html %}
   <div class="container main-area" id="main-area">
     <div class="row">
-      <div class="col-xs-4 col-md-3 hidden-xs ku-leftmenu" role="menu">
+      <div class="col-xs-4 col-md-3 hidden-xs" role="menu">
         <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-          <div class="ku-navbar-header">
-            <a href="{{ site.baseurl }}/">Styleguide</a>
+          <div class="ku-leftmenu">
+            <div class="ku-navbar-header">
+              <a href="{{ site.baseurl }}/">Styleguide</a>
+            </div>
           </div>
           <nav id="leftmenu" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
             <ul id="persistantmenu" class="nav exclude">
-              <li{% if page.slug=="css" %} class="active" {% endif %}>
+              <li>
               <a href="{{ site.baseurl }}/css{% if site.github %}.html{% endif %}">CSS</a>
               </li>
-              <li{% if page.slug=="components" %} class="active" {% endif %}>
+              <li>
               <a href="{{ site.baseurl }}/components{% if site.github %}.html{% endif %}">Components</a>
               </li>
-              <li{% if page.slug=="js" %} class="active" {% endif %}>
+              <li>
               <a href="{{ site.baseurl }}/javascript{% if site.github %}.html{% endif %}">JavaScript</a>
               </li>
-              <li{% if page.slug=="examples" %} class="active" {% endif %}>
+              <li>
                 <a href="{{ site.baseurl }}/examples{% if site.github %}.html{% endif %}">Examples</a>
               </li>
             </ul>
