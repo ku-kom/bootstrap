@@ -54,67 +54,6 @@ slug: examples
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           </div>
           <div class="col-sm-12 col-md-6">
-              <h2>Faculty colors</h2>
-              <p>Select faculty to test colors. Will also affect mobile menu.</p>
-              <form>
-                <div class="form-group">
-                  <label for="themes" class="control-label">Faculty colors</label>
-                  <select id="themes" class="form-control">
-                      <option value="theme-faelles" selected>-- default KU red --</option>
-                      <option value="theme-hum">Hum</option>
-                      <option value="theme-sund">Sund</option>
-                      <option value="theme-science">Science</option>
-                      <option value="theme-jur">Jura</option>
-                      <option value="theme-samf">Samf</option>
-                      <option value="theme-teo">Teo</option>
-                      </select>
-                </div>
-              </form>
-            <script>
-              var isLocalhost = ($path = window.location.href.indexOf("github.io") > -1) ? false : true;
-              $('#themes').on('change', getClass);
-
-              function getClass(e) {
-                var themes = $(e.currentTarget);
-                var classToAdd = themes.find('option[value]:selected').map(function() {
-                  return this.value;
-                }).get().join(' ');
-
-                var allClassess = themes.find('option[value]').map(function() {
-                  return this.value ? this.value : null;
-                }).get().join(' ');
-
-                $('html').removeClass(allClassess).addClass(classToAdd);
-
-                // Switch branding logo
-                var $fak = classToAdd.replace('theme-', '');
-
-                if ($('html').hasClass(classToAdd)) {
-                  $('.ku-branding-logo img').attr('src', '../../images/branding/' + $fak + '.svg');
-                }
-
-                // Set path of FAK stylesheets
-                if (isLocalhost === true) {
-                  var $style = '../../dist/css/faculties/';
-                } else {
-                  var $style = '../../../dist/css/faculties/';
-                }
-
-                // Append faculty stylesheet
-                var $head = $("head");
-                var $headlinklast = $head.find("link[rel='stylesheet']:last");
-
-                var linkElement = "<link rel='stylesheet' href='" + $style + "" + $fak + ".css' type='text/css' media='screen'>";
-                if ($headlinklast.length){
-                   $headlinklast.after(linkElement);
-                }
-                else {
-                   $head.append(linkElement);
-                }
-              }
-            </script>
-          </div>
-          <div class="col-sm-12 col-md-6">
             <h2>Heading</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
