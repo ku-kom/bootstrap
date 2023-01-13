@@ -559,6 +559,10 @@ h4 code {
   font-weight: bold;
 }
 
+.bs-docs-sidebar .nav > .not-active > a {
+  font-weight: 400!important;
+}
+
 /* Nav: second level (shown on .active) */
 
 .bs-docs-sidebar .nav .nav {
