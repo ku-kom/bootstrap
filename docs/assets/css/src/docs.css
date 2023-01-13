@@ -561,6 +561,12 @@ h4 code {
 
 .bs-docs-sidebar .nav > .not-active > a {
   font-weight: 400!important;
+  color: #252525!important;
+}
+
+.bs-docs-sidebar .nav > .not-active:hover > a,
+.bs-docs-sidebar .nav > .not-active:focus > a {
+  color: #901a1e!important;
 }
 
 /* Nav: second level (shown on .active) */
