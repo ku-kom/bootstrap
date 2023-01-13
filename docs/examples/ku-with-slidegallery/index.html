@@ -331,49 +331,30 @@ category: slider
             <pre class="prettyprint lang-js">
 &lt;script src=&quot;https://cms.ku.dk/bootstrap/assets/js/slider/slick.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
-$(document).ready(function() {
-  // Variables
-  var $slideshow = $('.slide-gallery');
-  var $thumbsShow = $('.gallery-nav');
-  var $countThumbs = $thumbsShow.find('.nav-item').length;
-  var $totalThumbs = ($countThumbs) ? $countThumbs : 1;
-
-  // Main slider options
-  var slickOptions = {
-    fade: true,
-    asNavFor: $thumbsShow,
-    responsive: [{
-      breakpoint: 480,
-      settings: {
-        arrows: false
-      }
-    }]
-  }
-
-  // Navigation slider options
-  var slickNavOptions = {
-    slidesToShow: $totalThumbs,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: $slideshow,
-    focusOnSelect: true,
-    useTransform: false
-  }
-
-  // Run on slider load
-  $slideshow.on('init', function(event, slick) {
-    // Add number of slides to counter
-    $('&lt;div class=&quot;slider-count&quot;&gt;&lt;span id=&quot;currentSlide&quot;&gt;1&lt;/span&gt; af &lt;span id=&quot;total&quot;&gt;' + slick.slideCount + '&lt;/span&gt;&lt;/div&gt;').insertAfter($(this));
+$(function () {
+  var $slideshow = $('.slideshow');
+  $slideshow.on('init', function (event, slick) {
+    if (slick.slideCount > 1 && slick.options.autoplay === true) {
+      $slideshow.append('&lt;button class="slick-pause" type="button" aria-label="Play/Pause"&gt;&lt;span class="glyphicon glyphicon-pause"&gt;&lt;/span&gt;&lt;/button&gt;');
+    }
   });
-
-  // Init sliders
-  var slider = $slideshow.slick(slickOptions);
-  var nav = $thumbsShow.slick(slickNavOptions);
-
-  // Run when slides change
-  $slideshow.on('afterChange', function(event, slick, currentSlide) {
-    // Update slide counter
-    $('.slider-count #currentSlide').html(currentSlide + 1);
+  $slideshow.slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1000,
+    dots: true,
+    fade: true,
+    arrows: true
+  });
+  $('.slick-pause').on('click', function () {
+    var $pause = $(this).find('.glyphicon');
+    if ($pause.hasClass('glyphicon-pause')) {
+      $slideshow.slick('slickPause');
+      $pause.toggleClass('glyphicon-pause glyphicon-play');
+    } else {
+      $slideshow.slick('slickPlay');
+      $pause.toggleClass('glyphicon-play glyphicon-pause');
+    }
   });
 });
 &lt;/script&gt;</pre>
