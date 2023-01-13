@@ -340,48 +340,48 @@ div#nav_head {
     background: #a1a1a1 !important;
 }
 
-.gridbox.box-red1 {
+.gridbox.subcolor_4 {
     color: #fff;
 }
 
-.gridbox.box-red1.text-down .header {
+.gridbox.subcolor_4.text-down .header {
     color: #fff;
     background: rgba(66, 117, 155, .83);
 }
 
-.gridbox.box-red1.text-top .header {
+.gridbox.subcolor_4.text-top .header {
     color: #fff;
     background: #42759b;
 }
 
-.gridbox.box-red1.outlined {
+.gridbox.subcolor_4.outlined {
     color: #42759b !important;
     border: 1px solid #42759b;
 }
 
-.gridbox.box-red1.outlined::before {
+.gridbox.subcolor_4.outlined::before {
     color: #42759b;
 }
 
-.gridbox.box-red1.outlined:hover {
+.gridbox.subcolor_4.outlined:hover {
     background: #f5f5f5!important;
     border: 1px solid #3b688a;
 }
 
-.gridbox.box-red1.outlined.with-img:hover {
+.gridbox.subcolor_4.outlined.with-img:hover {
     background: #f5f5f5 !important;
     border: 1px solid #3b688a;
 }
 
-.gridbox.box-red1.full {
+.gridbox.subcolor_4.full {
     background: #42759b;
 }
 
-.gridbox.box-red1.full:hover {
+.gridbox.subcolor_4.full:hover {
     background: #3b688a !important;
 }
 
-.gridbox.box-red1.text-down:hover {
+.gridbox.subcolor_4.text-down:hover {
     background: #3b688a !important;
 }
 
@@ -956,7 +956,7 @@ div#nav_head {
     background: #b5b5b5;
 }
 
-.one-one-two-column .column3 .size2.with-img.box-red1, .one-two-column .column2 .size2.with-img.box-red1, .single-column .column1 .size2.with-img.box-red1, .two-one-column .column1 .size2.with-img.box-red1, .two-one-one-column .column1 .size2.with-img.box-red1, .one-one-two-column .column3 .size3.with-img.box-red1, .one-two-column .column2 .size3.with-img.box-red1, .single-column .column1 .size3.with-img.box-red1, .two-one-column .column1 .size3.with-img.box-red1, .two-one-one-column .column1 .size3.with-img.box-red1 {
+.one-one-two-column .column3 .size2.with-img.subcolor_4, .one-two-column .column2 .size2.with-img.subcolor_4, .single-column .column1 .size2.with-img.subcolor_4, .two-one-column .column1 .size2.with-img.subcolor_4, .two-one-one-column .column1 .size2.with-img.subcolor_4, .one-one-two-column .column3 .size3.with-img.subcolor_4, .one-two-column .column2 .size3.with-img.subcolor_4, .single-column .column1 .size3.with-img.subcolor_4, .two-one-column .column1 .size3.with-img.subcolor_4, .two-one-one-column .column1 .size3.with-img.subcolor_4 {
     background: #42759b;
 }
 
@@ -1103,7 +1103,7 @@ div#nav_head {
     background: rgba(181, 181, 181, .83);
 }
 
-.EncyclopediaEntry .size2.outlined.with-img.box-red1 .header, .HTML .size2.outlined.with-img.box-red1 .header, .Standard .size2.outlined.with-img.box-red1 .header, .double-column [class*=column] .size2.outlined.with-img.box-red1 .header, .one-two-column .column1 .size2.outlined.with-img.box-red1 .header, .quad-column [class*=column] .size2.outlined.with-img.box-red1 .header, .rightbox-normal .size2.outlined.with-img.box-red1 .header, .triple-column [class*=column] .size2.outlined.with-img.box-red1 .header, .two-one-column .column2 .size2.outlined.with-img.box-red1 .header, .EncyclopediaEntry .size3.outlined.with-img.box-red1 .header, .HTML .size3.outlined.with-img.box-red1 .header, .Standard .size3.outlined.with-img.box-red1 .header, .double-column [class*=column] .size3.outlined.with-img.box-red1 .header, .one-two-column .column1 .size3.outlined.with-img.box-red1 .header, .quad-column [class*=column] .size3.outlined.with-img.box-red1 .header, .rightbox-normal .size3.outlined.with-img.box-red1 .header, .triple-column [class*=column] .size3.outlined.with-img.box-red1 .header, .two-one-column .column2 .size3.outlined.with-img.box-red1 .header {
+.EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header, .HTML .size2.outlined.with-img.subcolor_4 .header, .Standard .size2.outlined.with-img.subcolor_4 .header, .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header, .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .rightbox-normal .size2.outlined.with-img.subcolor_4 .header, .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header, .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header, .HTML .size3.outlined.with-img.subcolor_4 .header, .Standard .size3.outlined.with-img.subcolor_4 .header, .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header, .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .rightbox-normal .size3.outlined.with-img.subcolor_4 .header, .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
     color: #fff;
     background: rgba(66, 117, 155, .83);
 }
@@ -1500,7 +1500,7 @@ div#nav_head {
         color: #606060;
         background: #b5b5b5;
     }
-    .double-column [class*=column] .size2.with-img.box-red1, .one-two-column .column1 .size2.with-img.box-red1, .triple-column [class*=column] .size2.with-img.box-red1, .two-one-column .column2 .size2.with-img.box-red1, .double-column [class*=column] .size3.with-img.box-red1, .one-two-column .column1 .size3.with-img.box-red1, .triple-column [class*=column] .size3.with-img.box-red1, .two-one-column .column2 .size3.with-img.box-red1 {
+    .double-column [class*=column] .size2.with-img.subcolor_4, .one-two-column .column1 .size2.with-img.subcolor_4, .triple-column [class*=column] .size2.with-img.subcolor_4, .two-one-column .column2 .size2.with-img.subcolor_4, .double-column [class*=column] .size3.with-img.subcolor_4, .one-two-column .column1 .size3.with-img.subcolor_4, .triple-column [class*=column] .size3.with-img.subcolor_4, .two-one-column .column2 .size3.with-img.subcolor_4 {
         background: #42759b;
     }
     .double-column [class*=column] .size2.with-img.subcolor_5, .one-two-column .column1 .size2.with-img.subcolor_5, .triple-column [class*=column] .size2.with-img.subcolor_5, .two-one-column .column2 .size2.with-img.subcolor_5, .double-column [class*=column] .size3.with-img.subcolor_5, .one-two-column .column1 .size3.with-img.subcolor_5, .triple-column [class*=column] .size3.with-img.subcolor_5, .two-one-column .column2 .size3.with-img.subcolor_5 {
@@ -1573,7 +1573,7 @@ div#nav_head {
     .double-column [class*=column] .size2.with-img.outlined.subcolor_3 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_3 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_3 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_3 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
         color: #606060;
     }
-    .double-column [class*=column] .size2.with-img.outlined.box-red1 .header, .one-two-column .column1 .size2.with-img.outlined.box-red1 .header, .triple-column [class*=column] .size2.with-img.outlined.box-red1 .header, .two-one-column .column2 .size2.with-img.outlined.box-red1 .header, .double-column [class*=column] .size3.with-img.outlined.box-red1 .header, .one-two-column .column1 .size3.with-img.outlined.box-red1 .header, .triple-column [class*=column] .size3.with-img.outlined.box-red1 .header, .two-one-column .column2 .size3.with-img.outlined.box-red1 .header {
+    .double-column [class*=column] .size2.with-img.outlined.subcolor_4 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_4 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_4 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_4 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
         color: #42759b;
     }
     .double-column [class*=column] .size2.with-img.outlined.subcolor_5 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_5 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_5 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_5 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_5 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_5 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_5 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_5 .header {
@@ -1799,7 +1799,7 @@ div#nav_head {
     .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
         background: rgba(181, 181, 181, .83);
     }
-    .gcrow .gccolumn .gridbox.size2.with-img.outlined.box-red1 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.box-red1 .header {
+    .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
         background: rgba(66, 117, 155, .83);
     }
     .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5 .header {

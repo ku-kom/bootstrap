@@ -212,45 +212,45 @@
     background: #86ad9e !important;
 }
 
-.gridbox.box-red1.text-down .header {
+.gridbox.subcolor_4.text-down .header {
     color: #fff;
     background: rgba(125, 138, 139, .83);
 }
 
-.gridbox.box-red1.text-top .header {
+.gridbox.subcolor_4.text-top .header {
     color: #fff;
     background: #7d8a8b;
 }
 
-.gridbox.box-red1.outlined {
+.gridbox.subcolor_4.outlined {
     color: #7d8a8b !important;
     border: 1px solid #7d8a8b;
 }
 
-.gridbox.box-red1.outlined::before {
+.gridbox.subcolor_4.outlined::before {
     color: #7d8a8b;
 }
 
-.gridbox.box-red1.outlined:hover {
+.gridbox.subcolor_4.outlined:hover {
     background: #f5f5f5 !important;
     border: 1px solid #6c7778;
 }
 
-.gridbox.box-red1.outlined.with-img:hover {
+.gridbox.subcolor_4.outlined.with-img:hover {
     background: #f5f5f5 !important;
     border: 1px solid #6c7778;
 }
 
-.gridbox.box-red1.full {
+.gridbox.subcolor_4.full {
     color: #fff;
     background: #7d8a8b;
 }
 
-.gridbox.box-red1.full:hover {
+.gridbox.subcolor_4.full:hover {
     background: #6c7778 !important;
 }
 
-.gridbox.box-red1.text-down:hover {
+.gridbox.subcolor_4.text-down:hover {
     background: #6c7778 !important;
 }
 
@@ -822,7 +822,7 @@
     background: #95c1b0;
 }
 
-.one-one-two-column .column3 .size2.with-img.box-red1, .one-two-column .column2 .size2.with-img.box-red1, .single-column .column1 .size2.with-img.box-red1, .two-one-column .column1 .size2.with-img.box-red1, .two-one-one-column .column1 .size2.with-img.box-red1, .one-one-two-column .column3 .size3.with-img.box-red1, .one-two-column .column2 .size3.with-img.box-red1, .single-column .column1 .size3.with-img.box-red1, .two-one-column .column1 .size3.with-img.box-red1, .two-one-one-column .column1 .size3.with-img.box-red1 {
+.one-one-two-column .column3 .size2.with-img.subcolor_4, .one-two-column .column2 .size2.with-img.subcolor_4, .single-column .column1 .size2.with-img.subcolor_4, .two-one-column .column1 .size2.with-img.subcolor_4, .two-one-one-column .column1 .size2.with-img.subcolor_4, .one-one-two-column .column3 .size3.with-img.subcolor_4, .one-two-column .column2 .size3.with-img.subcolor_4, .single-column .column1 .size3.with-img.subcolor_4, .two-one-column .column1 .size3.with-img.subcolor_4, .two-one-one-column .column1 .size3.with-img.subcolor_4 {
     background: #7d8a8b;
 }
 
@@ -969,7 +969,7 @@
     background: rgba(149, 193, 176, .83);
 }
 
-.EncyclopediaEntry .size2.outlined.with-img.box-red1 .header, .HTML .size2.outlined.with-img.box-red1 .header, .Standard .size2.outlined.with-img.box-red1 .header, .double-column [class*=column] .size2.outlined.with-img.box-red1 .header, .one-two-column .column1 .size2.outlined.with-img.box-red1 .header, .quad-column [class*=column] .size2.outlined.with-img.box-red1 .header, .rightbox-normal .size2.outlined.with-img.box-red1 .header, .triple-column [class*=column] .size2.outlined.with-img.box-red1 .header, .two-one-column .column2 .size2.outlined.with-img.box-red1 .header, .EncyclopediaEntry .size3.outlined.with-img.box-red1 .header, .HTML .size3.outlined.with-img.box-red1 .header, .Standard .size3.outlined.with-img.box-red1 .header, .double-column [class*=column] .size3.outlined.with-img.box-red1 .header, .one-two-column .column1 .size3.outlined.with-img.box-red1 .header, .quad-column [class*=column] .size3.outlined.with-img.box-red1 .header, .rightbox-normal .size3.outlined.with-img.box-red1 .header, .triple-column [class*=column] .size3.outlined.with-img.box-red1 .header, .two-one-column .column2 .size3.outlined.with-img.box-red1 .header {
+.EncyclopediaEntry .size2.outlined.with-img.subcolor_4 .header, .HTML .size2.outlined.with-img.subcolor_4 .header, .Standard .size2.outlined.with-img.subcolor_4 .header, .double-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .one-two-column .column1 .size2.outlined.with-img.subcolor_4 .header, .quad-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .rightbox-normal .size2.outlined.with-img.subcolor_4 .header, .triple-column [class*=column] .size2.outlined.with-img.subcolor_4 .header, .two-one-column .column2 .size2.outlined.with-img.subcolor_4 .header, .EncyclopediaEntry .size3.outlined.with-img.subcolor_4 .header, .HTML .size3.outlined.with-img.subcolor_4 .header, .Standard .size3.outlined.with-img.subcolor_4 .header, .double-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .one-two-column .column1 .size3.outlined.with-img.subcolor_4 .header, .quad-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .rightbox-normal .size3.outlined.with-img.subcolor_4 .header, .triple-column [class*=column] .size3.outlined.with-img.subcolor_4 .header, .two-one-column .column2 .size3.outlined.with-img.subcolor_4 .header {
     color: #fff;
     background: rgba(125, 138, 139, .83);
 }
@@ -1357,7 +1357,7 @@
     .double-column [class*=column] .size2.with-img.subcolor_3, .one-two-column .column1 .size2.with-img.subcolor_3, .triple-column [class*=column] .size2.with-img.subcolor_3, .two-one-column .column2 .size2.with-img.subcolor_3, .double-column [class*=column] .size3.with-img.subcolor_3, .one-two-column .column1 .size3.with-img.subcolor_3, .triple-column [class*=column] .size3.with-img.subcolor_3, .two-one-column .column2 .size3.with-img.subcolor_3 {
         background: #95c1b0;
     }
-    .double-column [class*=column] .size2.with-img.box-red1, .one-two-column .column1 .size2.with-img.box-red1, .triple-column [class*=column] .size2.with-img.box-red1, .two-one-column .column2 .size2.with-img.box-red1, .double-column [class*=column] .size3.with-img.box-red1, .one-two-column .column1 .size3.with-img.box-red1, .triple-column [class*=column] .size3.with-img.box-red1, .two-one-column .column2 .size3.with-img.box-red1 {
+    .double-column [class*=column] .size2.with-img.subcolor_4, .one-two-column .column1 .size2.with-img.subcolor_4, .triple-column [class*=column] .size2.with-img.subcolor_4, .two-one-column .column2 .size2.with-img.subcolor_4, .double-column [class*=column] .size3.with-img.subcolor_4, .one-two-column .column1 .size3.with-img.subcolor_4, .triple-column [class*=column] .size3.with-img.subcolor_4, .two-one-column .column2 .size3.with-img.subcolor_4 {
         background: #7d8a8b;
     }
     .double-column [class*=column] .size2.with-img.subcolor_5, .one-two-column .column1 .size2.with-img.subcolor_5, .triple-column [class*=column] .size2.with-img.subcolor_5, .two-one-column .column2 .size2.with-img.subcolor_5, .double-column [class*=column] .size3.with-img.subcolor_5, .one-two-column .column1 .size3.with-img.subcolor_5, .triple-column [class*=column] .size3.with-img.subcolor_5, .two-one-column .column2 .size3.with-img.subcolor_5 {
@@ -1430,7 +1430,7 @@
     .double-column [class*=column] .size2.with-img.outlined.subcolor_3 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_3 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_3 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_3 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_3 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_3 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_3 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_3 .header {
         color: #95c1b0;
     }
-    .double-column [class*=column] .size2.with-img.outlined.box-red1 .header, .one-two-column .column1 .size2.with-img.outlined.box-red1 .header, .triple-column [class*=column] .size2.with-img.outlined.box-red1 .header, .two-one-column .column2 .size2.with-img.outlined.box-red1 .header, .double-column [class*=column] .size3.with-img.outlined.box-red1 .header, .one-two-column .column1 .size3.with-img.outlined.box-red1 .header, .triple-column [class*=column] .size3.with-img.outlined.box-red1 .header, .two-one-column .column2 .size3.with-img.outlined.box-red1 .header {
+    .double-column [class*=column] .size2.with-img.outlined.subcolor_4 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_4 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_4 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_4 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_4 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_4 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_4 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_4 .header {
         color: #7d8a8b;
     }
     .double-column [class*=column] .size2.with-img.outlined.subcolor_5 .header, .one-two-column .column1 .size2.with-img.outlined.subcolor_5 .header, .triple-column [class*=column] .size2.with-img.outlined.subcolor_5 .header, .two-one-column .column2 .size2.with-img.outlined.subcolor_5 .header, .double-column [class*=column] .size3.with-img.outlined.subcolor_5 .header, .one-two-column .column1 .size3.with-img.outlined.subcolor_5 .header, .triple-column [class*=column] .size3.with-img.outlined.subcolor_5 .header, .two-one-column .column2 .size3.with-img.outlined.subcolor_5 .header {
@@ -1656,7 +1656,7 @@
     .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_3 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_3 .header {
         background: rgba(149, 193, 176, .83);
     }
-    .gcrow .gccolumn .gridbox.size2.with-img.outlined.box-red1 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.box-red1 .header {
+    .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_4 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_4 .header {
         background: rgba(125, 138, 139, .83);
     }
     .gcrow .gccolumn .gridbox.size2.with-img.outlined.subcolor_5 .header, .gcrow .gccolumn .gridbox.size3.with-img.outlined.subcolor_5 .header {
