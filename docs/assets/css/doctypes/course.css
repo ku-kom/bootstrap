@@ -511,6 +511,10 @@ h1.title {
 }
 
 @media (max-width: 991px) {
+  .tiles-x .tilebox {
+    height: 289px;
+  }
+
   .evu-header-apply .course-info-label::before {
     margin-right: 15px;
   }
