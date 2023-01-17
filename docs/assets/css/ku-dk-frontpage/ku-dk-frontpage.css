@@ -1032,7 +1032,7 @@ video {
   }
 
   .find-a-researcher {
-    padding-top: 120px;
+    padding-bottom: 120px!important;
   }
 }
 

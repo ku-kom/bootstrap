@@ -558,10 +558,11 @@ video {
   }
 
   .find-a-researcher {
-    padding-top: 120px!important;
+    padding-bottom: 120px!important;
   }
 
   [itemprop=video]+.well {
+    color: var(--body-color);
     min-height: 110px;
     padding: 20px;
   }
