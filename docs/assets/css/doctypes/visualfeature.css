@@ -563,6 +563,7 @@ video {
 
   [itemprop=video]+.well {
     min-height: 95px;
+    padding: 20px;
   }
 
   .deloverskrift {
