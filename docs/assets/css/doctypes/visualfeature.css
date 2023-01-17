@@ -557,8 +557,20 @@ video {
     max-width: 966px;
   }
 
+  [itemprop=video]+.well {
+    min-height: 95px;
+  }
+
   .deloverskrift {
-    font-size: 25px;
+    font-size: 26px;
+  }
+
+  .panel-title {
+    font-size: 26px;
+  }
+
+  .panel-default>.panel-body {
+    padding-top: 30px;
   }
 
   :is(.hero-caption) .no-arrow,
