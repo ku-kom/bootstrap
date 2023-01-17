@@ -442,7 +442,7 @@ video {
     font-size: 15px;
     font-weight: 400;
     margin-top: 10px;
-}
+  }
 
   .quote h2 {
     font-size: 62px;
@@ -557,12 +557,17 @@ video {
     max-width: 966px;
   }
 
+  .find-a-researcher {
+    padding-top: 120px;
+  }
+
   [itemprop=video]+.well {
     min-height: 95px;
   }
 
   .deloverskrift {
     font-size: 26px;
+    margin-bottom: 30px;
   }
 
   .panel-title {
