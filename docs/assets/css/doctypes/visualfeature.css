@@ -558,7 +558,7 @@ video {
   }
 
   .find-a-researcher {
-    padding-top: 120px;
+    padding-top: 120px!important;
   }
 
   [itemprop=video]+.well {
