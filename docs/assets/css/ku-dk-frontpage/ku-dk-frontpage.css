@@ -1030,6 +1030,10 @@ video {
   .hero-video-sitewidth .full-page-width>.visual-caption {
     max-width: 914px;
   }
+
+  .find-a-researcher {
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 767px) {
