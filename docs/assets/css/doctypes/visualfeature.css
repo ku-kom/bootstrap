@@ -552,74 +552,6 @@ video {
   }
 }
 
-@media (min-width: 992px) {
-  .gridcontent>.gcrow:not(.full-page-width)>.container {
-    max-width: 966px;
-  }
-
-  .find-a-researcher {
-    padding-bottom: 120px!important;
-  }
-
-  [itemprop=video]+.well {
-    color: var(--body-color);
-    min-height: 110px;
-    padding: 20px;
-  }
-
-  .deloverskrift {
-    font-size: 26px;
-    margin-bottom: 30px;
-  }
-
-  .panel-title {
-    font-size: 26px;
-  }
-
-  .panel-default>.panel-body {
-    padding-top: 30px;
-  }
-
-  :is(.hero-caption) .no-arrow,
-  .with-arrow {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
-  .hero-caption-text {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
-  .divider-bottom>.container::after,
-  .divider-top>.container::before {
-    max-width: 914px
-  }
-
-  .hero-video-sitewidth .full-page-width>.visual-caption {
-    max-width: 914px;
-  }
-
-  .center-content {
-    display: flex;
-    align-items: center;
-  }
-
-  .single-column .column1 .tiles-x .tilebox .tile-content {
-    padding: 30px;
-  }
-
-  .special-textbox h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
-  }
-
-  .special-textbox h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
@@ -735,6 +667,71 @@ video {
 }
 
 @media all and (min-width: 992px) {
+  .gridcontent>.gcrow:not(.full-page-width)>.container {
+    max-width: 966px;
+  }
+
+  .find-a-researcher {
+    padding-bottom: 120px!important;
+  }
+
+  [itemprop=video]+.well {
+    color: var(--body-color);
+    min-height: 110px;
+    padding: 20px;
+  }
+
+  .deloverskrift {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .panel-title {
+    font-size: 26px;
+  }
+
+  .panel-default>.panel-body {
+    padding-top: 30px;
+  }
+
+  :is(.hero-caption) .no-arrow,
+  .with-arrow {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-caption-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .divider-bottom>.container::after,
+  .divider-top>.container::before {
+    max-width: 914px
+  }
+
+  .hero-video-sitewidth .full-page-width>.visual-caption {
+    max-width: 914px;
+  }
+
+  .center-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .single-column .column1 .tiles-x .tilebox .tile-content {
+    padding: 30px;
+  }
+
+  .special-textbox h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .special-textbox h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
   .hero {
     min-height: 600px;
   }
@@ -850,14 +847,14 @@ video {
 
   .caption-bottom-left .hero-caption {
     top: auto;
-    bottom: auto;
+    bottom: 5%;
     right: auto;
     left: 0;
   }
 
   .caption-bottom-right .hero-caption {
     top: auto;
-    bottom: auto;
+    bottom: 5%;
     right: 0;
     left: auto;
   }

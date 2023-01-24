@@ -36,7 +36,7 @@
     var $newsslider = $('.slide-columns > .container > .row');
     var $valueslider = $('.valueslider');
     // Playser / pause buttons
-    var $button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
+    var $button = '<button aria-label="' + translations.pause + '" class="play-pause-button" type="button"></button>';
 
     // Settings for different kind of sliders
     var sliderSettings = {
@@ -145,12 +145,10 @@
       if (v.paused || v.ended) {
         $(btn).removeClass('paused');
         $(btn).prop('aria-label', translations.pause);
-        $(btn).prop('aria-pressed', false);
         v.play();
       } else {
         $(btn).addClass('paused');
         $(btn).prop('aria-label', translations.play);
-        $(btn).prop('aria-pressed', true);
         v.pause();
       }
 
@@ -164,7 +162,6 @@
         v.get(0).currentTime = 0;
         v.next('.play-pause-button').addClass('paused');
         v.next('.play-pause-button').prop('aria-label', translations.play);
-        v.next('.play-pause-button').prop('aria-pressed', true);
       });
     }
 
@@ -173,11 +170,9 @@
       $(btn).toggleClass('paused');
       if ($(btn).hasClass('paused')) {
         $(btn).prop('aria-label', translations.play);
-        $(btn).prop('aria-pressed', false);
         $(el).slick('slickPause');
       } else {
         $(btn).prop('aria-label', translations.pause);
-        $(btn).prop('aria-pressed', true);
         $(el).slick('slickPlay');
       }
     }
