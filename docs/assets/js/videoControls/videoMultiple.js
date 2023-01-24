@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!videos) {
     return;
   }
-  const button = '<button aria-label="' + translations.pause + '" aria-pressed="false" class="play-pause-button" type="button"></button>';
+  const button = '<button aria-label="' + translations.pause + '" class="play-pause-button" type="button"></button>';
 
   class Video {
     constructor(video) {
@@ -58,14 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     playVideo() {
       this.video.play();
       this.btn.classList.remove('paused');
-      this.btn.setAttribute('aria-pressed', 'false');
       this.btn.setAttribute('aria-label', translations.pause);
     }
 
     pauseVideo() {
       this.video.pause();
       this.btn.classList.add('paused');
-      this.btn.setAttribute('aria-pressed', 'true');
       this.btn.setAttribute('aria-label', translations.play);
 
     }
