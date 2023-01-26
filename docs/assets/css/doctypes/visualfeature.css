@@ -764,7 +764,7 @@ video {
     min-height: var(--hero-height);
   }
 
-  :is(.hero > .container) .gccolumn-inner, .gcitem {
+  .hero > .container .gccolumn-inner, .hero > .container .gcitem {
     height: var(--hero-height);
   }
 
