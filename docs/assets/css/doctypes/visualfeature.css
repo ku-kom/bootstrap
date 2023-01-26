@@ -698,6 +698,12 @@ video {
     max-width: 966px;
   }
 
+  .tema-textblok {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.55;
+  }
+
   .find-a-researcher {
     padding-bottom: 120px !important;
   }
@@ -760,11 +766,15 @@ video {
     margin-bottom: 20px;
   }
 
-  .hero, .hero > .container, .hero > .container > .row, .hero > .container > .row > .gccolumn {
+  .hero,
+  .hero>.container,
+  .hero>.container>.row,
+  .hero>.container>.row>.gccolumn {
     min-height: var(--hero-height);
   }
 
-  .hero > .container .gccolumn-inner, .hero > .container .gcitem {
+  .hero>.container .gccolumn-inner,
+  .hero>.container .gcitem {
     height: var(--hero-height);
   }
 
@@ -776,6 +786,7 @@ video {
     height: 100%;
     object-fit: cover;
   }
+
   .visuelt-element-full-width .visual-caption {
     padding: 30px 30px 25px 30px;
   }
