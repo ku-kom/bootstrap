@@ -18,6 +18,7 @@
   --light1: 255, 255, 255;
   --light2: 254, 250, 242;
   --light3: 255, 189, 56;
+  --hero-height: 600px;
 }
 
 .box-red1,
@@ -657,8 +658,18 @@ video {
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .tiles-x .tile-img {
+    height: 50%;
+  }
 
+  .visual-caption {
+    top: 0;
+    margin: 20px 0;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
 
   .hero-caption {
     padding-left: 40px;
@@ -679,17 +690,6 @@ video {
 
   .image-box-text-wrap {
     font-size: 24px;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .tiles-x .tile-img {
-    height: 50%;
-  }
-
-  .visual-caption {
-    top: 0;
-    margin: 20px 0;
   }
 }
 
@@ -760,10 +760,22 @@ video {
     margin-bottom: 20px;
   }
 
-  .hero {
-    min-height: 600px;
+  .hero, .hero > .container, .hero > .container > .row, .hero > .container > .row > .gccolumn {
+    min-height: var(--hero-height);
   }
 
+  :is(.hero > .container) .gccolumn-inner, .gcitem {
+    height: var(--hero-height);
+  }
+
+  .hero .video-container {
+    height: 100%;
+  }
+
+  #hero-video {
+    height: 100%;
+    object-fit: cover;
+  }
   .visuelt-element-full-width .visual-caption {
     padding: 30px 30px 25px 30px;
   }
