@@ -1,4 +1,4 @@
-/* Full width front page styling */
+/* Special unit Full width front page styling */
 .main-content {
   padding-top: 0;
 }
@@ -13,7 +13,7 @@
   }
 }
 
-/* Special styling for full-width rows */
+/* Special styling for full width rows */
 .gridcontent>.gcrow:not(.full-page-width)>.container {
   width: 100%;
   padding-left: 13px;
