@@ -33,8 +33,12 @@
     .translate(0, -25%);
     .transition-transform(~"0.3s ease-out");
   }
-  &.in .modal-dialog { .translate(0, 0) }
+
+  &.in .modal-dialog {
+    .translate(0, 0)
+  }
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -54,7 +58,7 @@
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
-  .box-shadow(0 3px 9px rgba(0,0,0,.5));
+  .box-shadow(0 3px 9px rgba(0, 0, 0, .5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
@@ -69,9 +73,15 @@
   left: 0;
   z-index: @zindex-modal-background;
   background-color: @modal-backdrop-bg;
+
   // Fade for backdrop
-  &.fade { .opacity(0); }
-  &.in { .opacity(@modal-backdrop-opacity); }
+  &.fade {
+    .opacity(0);
+  }
+
+  &.in {
+    .opacity(@modal-backdrop-opacity);
+  }
 }
 
 // Modal header
@@ -81,6 +91,7 @@
   border-bottom: 1px solid @modal-header-border-color;
   &:extend(.clearfix all);
 }
+
 // Close icon
 .modal-header .close {
   margin-top: -2px;
@@ -107,16 +118,18 @@
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
-  .btn + .btn {
+  .btn+.btn {
     margin-left: 5px;
     margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
   }
+
   // but override that for button groups
-  .btn-group .btn + .btn {
+  .btn-group .btn+.btn {
     margin-left: -1px;
   }
+
   // and override it for block buttons as well
-  .btn-block + .btn-block {
+  .btn-block+.btn-block {
     margin-left: 0;
   }
 }
@@ -132,24 +145,31 @@
 
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
+
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     width: @modal-md;
     margin: 30px auto;
   }
+
   .modal-content {
-    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+    .box-shadow(0 5px 15px rgba(0, 0, 0, .5));
   }
 
   // Modal sizes
-  .modal-sm { width: @modal-sm; }
+  .modal-sm {
+    width: @modal-sm;
+  }
 }
 
 @media (min-width: @screen-md-min) {
-  .modal-lg { width: @modal-lg; }
+  .modal-lg {
+    width: @modal-lg;
+  }
 }
 
 @media (min-width: @screen-sm) {
+
   // KU specific:
   .modal-dialog-centered {
     display: flex;
@@ -162,6 +182,7 @@
       height: calc(100vh - 1rem);
       content: "";
     }
+
     .modal-content {
       width: 100%;
     }
