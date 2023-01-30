@@ -322,6 +322,10 @@ h1.title {
   margin-bottom: 0;
 }
 
+.deloverskrift {
+  font-size: 22px;
+}
+
 .factbox {
   font-size: 14px;
 }

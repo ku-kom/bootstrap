@@ -411,6 +411,14 @@ video {
   bottom: 0;
 }
 
+.panel-title {
+  font-size: 22px;
+}
+
+.deloverskrift {
+  font-size: 22px;
+}
+
 @media (min-width: 768px) {
   .gridcontent>.gcrow:not(.full-page-width)>.container {
     max-width: 746px;
