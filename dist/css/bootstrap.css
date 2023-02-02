@@ -9832,6 +9832,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-img {
     -ms-flex: 0 0 55%;
         flex: 0 0 55%;
+    max-height: 55%;
   }
   .FullWidthFrontpage .double-column .tiles-x:not(.tiles-plugin) .tile-content {
     -ms-flex: 1 1 45%;
