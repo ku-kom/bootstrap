@@ -39,7 +39,7 @@ h6 {
     display: none;
   }
 
-  & > strong {
+  &>strong {
     font-weight: inherit;
   }
 }
@@ -75,9 +75,11 @@ h6 {
 .h1,
 h1 {
   font-size: @font-size-h1;
+
   @media (max-width: @screen-xs-max) {
     margin-top: 20px;
   }
+
   margin-top: 23px;
   font-weight: 600;
 }
@@ -85,58 +87,70 @@ h1 {
 .h2,
 h2 {
   font-size: floor((@font-size-h2 * 1.05));
+
   @media (min-width: @screen-sm) {
     font-size: @font-size-h2;
   }
+
   font-weight: 600;
 }
 
 .h3,
 h3 {
   font-size: floor((@font-size-h3 * 1.1));
+
   @media (min-width: @screen-sm) {
     font-size: @font-size-h3;
   }
+
   font-weight: 600;
 }
 
 .h4,
 h4 {
   font-size: floor((@font-size-h4 * 1.14));
+
   @media (min-width: @screen-sm) {
     font-size: @font-size-h4;
   }
+
   font-weight: 600;
 }
 
 .h5,
 h5 {
   font-size: floor((@font-size-h5 * 1.2));
+
   @media (min-width: @screen-sm) {
     font-size: @font-size-h5;
   }
+
   font-weight: 700;
 }
 
 .h6,
 h6 {
   font-size: floor((@font-size-h6 * 1.1));
+
   @media (min-width: @screen-sm) {
     font-size: @font-size-h6;
   }
+
   font-weight: 600;
 }
 
 .gcitem {
+
   // If h1 is not the first element of the grid page, give it more top-margin
-  & > * {
-    & ~ h1 {
+  &>* {
+    &~h1 {
       &:first-of-type {
         margin-top: 20px;
       }
     }
   }
 }
+
 // Body text
 // -------------------------
 
@@ -147,11 +161,12 @@ p {
     //Hide empty p-tags comming from the editor
     display: none;
 
-    &+ p {
+    &+p {
       margin-top: 0;
     }
   }
 }
+
 // .lead {
 //   margin-bottom: @line-height-computed;
 //   font-size: floor((@font-size-base * 1.167));
@@ -174,6 +189,7 @@ mark {
   background-color: @state-warning-bg;
   padding: 0.2em;
 }
+
 // Alignment
 
 .text-left {
@@ -195,6 +211,7 @@ mark {
 .text-nowrap {
   white-space: nowrap;
 }
+
 // Transformation
 
 .text-lowercase {
@@ -208,6 +225,7 @@ mark {
 .text-capitalize {
   text-transform: capitalize;
 }
+
 // Contextual colors
 
 .text-muted {
@@ -233,6 +251,7 @@ mark {
 .text-danger {
   .text-emphasis-variant(@state-danger-text);
 }
+
 // Contextual backgrounds
 // For now we'll leave these alongside the text classes until v4 when we can
 // safely shift things around (per SemVer rules).
@@ -259,6 +278,7 @@ mark {
 .bg-danger {
   .bg-variant(@state-danger-bg);
 }
+
 // Page header
 // -------------------------
 
@@ -267,6 +287,7 @@ mark {
   margin: (@line-height-computed * 2) 0 @line-height-computed;
   border-bottom: 1px solid @page-header-border-color;
 }
+
 // Lists
 // -------------------------
 // Unordered and Ordered lists
@@ -282,6 +303,7 @@ ul {
     margin-bottom: 0;
   }
 }
+
 // List options
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 
@@ -291,18 +313,20 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+
 // Inline turns list items into inline-block
 
 .list-inline {
   .list-unstyled();
   margin-left: -5px;
 
-  > li {
+  >li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
+
 // Description Lists
 
 dl {
@@ -323,6 +347,7 @@ dt {
 dd {
   margin-left: 0; // Undo browser default
 }
+
 // Horizontal description lists
 //
 // Defaults to being stacked without any of the below styles applied, until the
@@ -332,7 +357,9 @@ dd {
   dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
   }
+
   @media (min-width: @dl-horizontal-breakpoint) {
+
     dd,
     dt {
       margin-top: 1px;
@@ -352,6 +379,7 @@ dd {
     }
   }
 }
+
 // Misc
 // -------------------------
 // Abbreviations and acronyms
@@ -360,6 +388,7 @@ abbr[title] {
   text-decoration: none;
   border-bottom: 0;
 }
+
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 
 abbr[data-original-title] {
@@ -371,6 +400,7 @@ abbr[data-original-title] {
   font-size: 90%;
   .text-uppercase();
 }
+
 // Blockquotes
 
 blockquote {
@@ -379,6 +409,7 @@ blockquote {
   position: relative;
   margin: @grid-gutter-height 0;
   font-size: 1.3em;
+
   @media (min-width: @screen-sm-min) {
     float: right;
     width: 49%;
@@ -386,6 +417,7 @@ blockquote {
     padding: 0 0 (@line-height-computed / 2) @line-height-computed;
     font-size: @blockquote-font-size;
   }
+
   .icon-quote;
 
   &::before {
@@ -431,11 +463,12 @@ blockquote {
 
 .right-side {
   blockquote {
-    width: 100%!important;
+    width: 100% !important;
     margin-left: 0;
     padding-left: 0;
   }
 }
+
 // Opposite alignment of blockquote
 //
 // .blockquote-reverse {
@@ -469,6 +502,7 @@ address {
   font-style: normal;
   line-height: @line-height-base;
 }
+
 // KU:
 
 .deloverskrift {
@@ -478,4 +512,8 @@ address {
   margin: 20px 0 0;
   padding: 0 5px 8px 0;
   border-bottom: 1px solid @ku-grey-border;
+}
+
+.page-lead {
+  font-size: 15px;
 }

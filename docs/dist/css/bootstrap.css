@@ -1930,7 +1930,7 @@ blockquote.full-width {
   float: none;
 }
 .right-side blockquote {
-  width: 100%!important;
+  width: 100% !important;
   margin-left: 0;
   padding-left: 0;
 }
@@ -1946,6 +1946,9 @@ address {
   margin: 20px 0 0;
   padding: 0 5px 8px 0;
   border-bottom: 1px solid #959595;
+}
+.page-lead {
+  font-size: 15px;
 }
 code,
 kbd,
