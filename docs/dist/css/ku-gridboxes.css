@@ -270,7 +270,7 @@
   color: #fcfcfc;
 }
 .box-red1 .header {
-  background: rgba(144, 26, 30, .83);
+  background: rgba(144, 26, 30, .93);
   color: #fcfcfc;
 }
 .box-red1.text-top .header {
@@ -297,7 +297,7 @@
   color: #fcfcfc;
 }
 .box-red2 .header {
-  background: rgba(199, 48, 40, .83);
+  background: rgba(199, 48, 40, .93);
   color: #fcfcfc;
 }
 .box-red2.text-top .header {
@@ -324,7 +324,7 @@
   color: #fff;
 }
 .box-red3 .header {
-  background: rgba(219, 59, 10, .83);
+  background: rgba(219, 59, 10, .93);
   color: #fff;
 }
 .box-red3.text-top .header {
@@ -351,7 +351,7 @@
   color: #fcfcfc;
 }
 .box-blue1 .header {
-  background: rgba(18, 41, 71, .83);
+  background: rgba(18, 41, 71, .93);
   color: #fcfcfc;
 }
 .box-blue1.text-top .header {
@@ -378,7 +378,7 @@
   color: #fcfcfc;
 }
 .box-blue2 .header {
-  background: rgba(66, 85, 112, .83);
+  background: rgba(66, 85, 112, .93);
   color: #fcfcfc;
 }
 .box-blue2.text-top .header {
@@ -405,7 +405,7 @@
   color: #262626;
 }
 .box-blue3 .header {
-  background: rgba(186, 199, 217, .83);
+  background: rgba(186, 199, 217, .93);
   color: #262626;
 }
 .box-blue3.text-top .header {
@@ -432,7 +432,7 @@
   color: #fcfcfc;
 }
 .box-teal1 .header {
-  background: rgba(10, 89, 99, .83);
+  background: rgba(10, 89, 99, .93);
   color: #fcfcfc;
 }
 .box-teal1.text-top .header {
@@ -459,7 +459,7 @@
   color: #fcfcfc;
 }
 .box-teal2 .header {
-  background: rgba(25, 127, 142, .83);
+  background: rgba(25, 127, 142, .93);
   color: #fcfcfc;
 }
 .box-teal2.text-top .header {
@@ -486,7 +486,7 @@
   color: #262626;
 }
 .box-teal3 .header {
-  background: rgba(183, 215, 222, .83);
+  background: rgba(183, 215, 222, .93);
   color: #262626;
 }
 .box-teal3.text-top .header {
@@ -513,7 +513,7 @@
   color: #fcfcfc;
 }
 .box-green1 .header {
-  background: rgba(57, 100, 28, .83);
+  background: rgba(57, 100, 28, .93);
   color: #fcfcfc;
 }
 .box-green1.text-top .header {
@@ -540,7 +540,7 @@
   color: #fff;
 }
 .box-green2 .header {
-  background: rgba(75, 131, 37, .83);
+  background: rgba(75, 131, 37, .93);
   color: #fff;
 }
 .box-green2.text-top .header {
@@ -567,7 +567,7 @@
   color: #262626;
 }
 .box-green3 .header {
-  background: rgba(190, 202, 168, .83);
+  background: rgba(190, 202, 168, .93);
   color: #262626;
 }
 .box-green3.text-top .header {
@@ -594,7 +594,7 @@
   color: #fcfcfc;
 }
 .box-grey1 .header {
-  background: rgba(61, 61, 61, .83);
+  background: rgba(61, 61, 61, .93);
   color: #fcfcfc;
 }
 .box-grey1.text-top .header {
@@ -621,7 +621,7 @@
   color: #fcfcfc;
 }
 .box-grey2 .header {
-  background: rgba(102, 102, 102, .83);
+  background: rgba(102, 102, 102, .93);
   color: #fcfcfc;
 }
 .box-grey2.text-top .header {
@@ -648,7 +648,7 @@
   color: #262626;
 }
 .box-grey3 .header {
-  background: rgba(225, 223, 223, .83);
+  background: rgba(225, 223, 223, .93);
   color: #262626;
 }
 .box-grey3.text-top .header {
@@ -675,7 +675,7 @@
   color: #262626;
 }
 .box-light1 .header {
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .93);
   color: #262626;
 }
 .box-light1.text-top .header {
@@ -705,7 +705,7 @@
   color: #262626;
 }
 .box-light2 .header {
-  background: rgba(254, 250, 242, .9);
+  background: rgba(254, 250, 242, .93);
   color: #262626;
 }
 .box-light2.text-top .header {
@@ -732,7 +732,7 @@
   color: #262626;
 }
 .box-light3 .header {
-  background: rgba(255, 189, 56, .83);
+  background: rgba(255, 189, 56, .93);
   color: #262626;
 }
 .box-light3.text-top .header {
