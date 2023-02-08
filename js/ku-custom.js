@@ -209,7 +209,7 @@ function getCurrentScrollPosition() {
         var $acc = window.location.hash;
         $($acc).collapse('show');
         window.scrollTo({
-          top: $($acc).offsetTop,
+          top: document.querySelector($acc).offsetTop,
           behavior: 'smooth'
         });
       }
