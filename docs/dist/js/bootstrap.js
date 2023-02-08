@@ -2262,7 +2262,7 @@ function getCurrentScrollPosition() {
   }
 
   $(document).ajaxComplete(function () {
-    setTimeout(scrollToOpenAccordion, 2000)
+    setTimeout(scrollToOpenAccordion, 1500)
   });
 
 })(jQuery);
