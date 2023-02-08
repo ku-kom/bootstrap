@@ -8,6 +8,9 @@
     width: 100%;
   }
 }
+.breadcrumbs {
+  display: none;
+}
 
 .main-content .figure:first-child,
 .main-content figure:first-child {
