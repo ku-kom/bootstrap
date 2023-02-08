@@ -2064,10 +2064,10 @@ function debounce(func, wait, immediate) {
   // N milliseconds. If `immediate` is passed, trigger the function on the
   // leading edge, instead of the trailing. Usage, call with time, e.g. $(window).on('resize', debounce(myFunction, 250));
   var timeout;
-  return function() {
+  return function () {
     var context = this,
       args = arguments;
-    var later = function() {
+    var later = function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -2081,11 +2081,11 @@ function debounce(func, wait, immediate) {
 function throttle(func, wait) {
   // Execute a function only every x ms to prevent clogging up events, e.g. during scroll, API calls, etc..
   var waiting = false; // Initially, we're not waiting
-  return function() { // We return a throttled function
+  return function () { // We return a throttled function
     if (!waiting) { // If we're not waiting
       func.apply(this, arguments); // Execute users function
       waiting = true; // Prevent future invocations
-      setTimeout(function() { // After a period of time
+      setTimeout(function () { // After a period of time
         waiting = false; // And allow future invocations
       }, wait);
     }
@@ -2104,7 +2104,7 @@ function shareURL(dest) {
   var url = window.location.href;
   var param = dest.toLowerCase().trim();
 
-  var media = $.map(urlMap, function(i, e) {
+  var media = $.map(urlMap, function (i, e) {
     // return keys
     return e;
   });
@@ -2127,7 +2127,7 @@ function getCurrentScrollPosition() {
   return window.pageYOffset || document.documentElement.scrollTop;
 }
 
-(function($) {
+(function ($) {
   // Language of the current page - fallback to English
   var $lang = $('html').prop('lang') ? $('html').prop('lang') : 'en';
 
@@ -2136,7 +2136,7 @@ function getCurrentScrollPosition() {
   var $editMode = ($('html').hasClass('ku-bs') === false) ? false : true;
 
   // Toggle icon in accordions
-  $('.panel-accordion').each(function() {
+  $('.panel-accordion').each(function () {
     if ($(this).find('.panel-heading').next('.panel-collapse').hasClass('in')) {
       $(this).find('.panel-heading').addClass('open');
     }
@@ -2154,7 +2154,7 @@ function getCurrentScrollPosition() {
     // Add tracking params to global menu news list
     var $li = $('ul.nyheder li:not(.no-track)');
     if ($li) {
-      $li.each(function(i, v) {
+      $li.each(function (i, v) {
         // Get current urls from news
         var url = $(this).find('a').prop('href');
         // Create new url with params
@@ -2169,7 +2169,7 @@ function getCurrentScrollPosition() {
   // Function to make parent items in global menu clickable although they hold dropdown menus. Add class 'disabled':
   function makeGlobalMenuClickable() {
     var $menu = $('#navbar_menu li.dropdown');
-    $menu.each(function() {
+    $menu.each(function () {
       $(this).children('.dropdown-toggle').addClass('disabled');
     });
   }
@@ -2190,10 +2190,10 @@ function getCurrentScrollPosition() {
 
   var lastScrollPosition = 0;
   var tick = false;
-  window.addEventListener('scroll', function(e) {
+  window.addEventListener('scroll', function (e) {
     lastScrollPosition = window.scrollY;
     if (!tick) {
-      window.requestAnimationFrame(function() {
+      window.requestAnimationFrame(function () {
         scrollToTopIcon();
         tick = false;
       });
@@ -2216,11 +2216,11 @@ function getCurrentScrollPosition() {
 
   hasScrollbar();
 
-  window.addEventListener('orientationchange', debounce(function() {
+  window.addEventListener('orientationchange', debounce(function () {
     hasScrollbar();
   }, 250));
 
-  window.addEventListener('resize', debounce(function() {
+  window.addEventListener('resize', debounce(function () {
     hasScrollbar();
   }, 250));
 
@@ -2232,12 +2232,12 @@ function getCurrentScrollPosition() {
   }
 
   // Smooth scrolling to top on click event
-  $('#scrolltop').click(function() {
+  $('#scrolltop').click(function () {
     scrollToTop();
   });
 
   // Smooth scrolling enter key
-  $('#scrolltop').on('keydown', function(event) {
+  $('#scrolltop').on('keydown', function (event) {
     switch (event.keyCode) {
       // Click using [Enter]
       case 13:
@@ -2246,16 +2246,16 @@ function getCurrentScrollPosition() {
     }
   });
 
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     if (window.location.hash !== '') {
       // Open accordions based on the hash in the url
       var $accordion = window.location.hash.indexOf('collapse-') >= 0;
       if ($accordion) {
         var $acc = window.location.hash;
         $($acc).collapse('show');
-        $($acc)[0].scrollIntoView({
-          behavior: 'smooth',
-          block: 'center'
+        window.scrollTo({
+          top: $($acc).offsetTop,
+          behavior: 'smooth'
         });
       }
     }
