@@ -1,4 +1,8 @@
 /* Full width front page styling */
+.breadcrumbs {
+  display: none;
+}
+
 .main-content {
   padding-top: 0;
 }
