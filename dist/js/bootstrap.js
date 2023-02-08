@@ -2246,19 +2246,23 @@ function getCurrentScrollPosition() {
     }
   });
 
-  $(window).on('load', function () {
+  function scrollToOpenAccordion() {
     if (window.location.hash !== '') {
       // Open accordions based on the hash in the url
       var $accordion = window.location.hash.indexOf('collapse-') >= 0;
       if ($accordion) {
         var $acc = window.location.hash;
         $($acc).collapse('show');
-        window.scrollTo({
-          top: document.querySelector($acc).offsetTop,
-          behavior: 'smooth'
+        $($acc)[0].scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
         });
       }
     }
+  }
+
+  $(document).ajaxComplete(function () {
+    setTimeout(scrollToOpenAccordion, 2000)
   });
 
 })(jQuery);
