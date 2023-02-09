@@ -242,9 +242,6 @@
 .gridbox.size4 {
   height: 81px;
 }
-.gridbox.size4 .box1 .text {
-  display: none;
-}
 .gridbox.size4 .box2 {
   display: none;
 }
@@ -1025,6 +1022,10 @@
     max-width: 100%;
     width: 100%;
     max-height: none;
+  }
+  .gridbox.size5 .box1 .text,
+  .gridbox.size4 .box1 .text {
+    display: block;
   }
 }
 @media all and (min-width: 480px) and (max-width: 767px) {

@@ -312,11 +312,11 @@
   &.size4 {
     height: @gridbox4;
 
-    .box1 {
-      .text {
-        display: none;
-      }
-    }
+    // .box1 {
+    //   .text {
+    //     display: none;
+    //   }
+    // }
 
     .box2 {
       display: none;
@@ -584,6 +584,21 @@
         }
       }
     }
+    &.size5, &.size4 {
+      .box1 {
+        .text {
+          display: block;
+        }
+      }
+    }
+
+    // &:not(.with-img) {
+    //   &:not(.size1) {
+    //     .box1 {
+    //       margin-bottom: 8px;
+    //     }
+    //   }
+    // }
   }
 }
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) {
