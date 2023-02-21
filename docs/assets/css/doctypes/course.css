@@ -370,6 +370,10 @@ h1.title {
   padding: 0;
 }
 
+.evu-exp-box .exp-box-inner strong {
+  font-weight: normal;
+}
+
 .exp-box .bootstrap-collapsible-title {
   font-size: 20px;
   margin-bottom: 13px;
