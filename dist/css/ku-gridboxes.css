@@ -409,7 +409,7 @@
   background: #bac7d9;
 }
 .box-blue3.outlined {
-  border: 1px solid #bac7d9;
+  border: 1px solid #666;
   color: #262626;
 }
 .box-blue3.outlined .header {
@@ -490,7 +490,7 @@
   background: #b7d7de;
 }
 .box-teal3.outlined {
-  border: 1px solid #b7d7de;
+  border: 1px solid #666;
   color: #262626;
 }
 .box-teal3.outlined .header {
@@ -571,7 +571,7 @@
   background: #becaa8;
 }
 .box-green3.outlined {
-  border: 1px solid #becaa8;
+  border: 1px solid #666;
   color: #262626;
 }
 .box-green3.outlined .header {
@@ -652,7 +652,7 @@
   background: #e1dfdf;
 }
 .box-grey3.outlined {
-  border: 1px solid #757575;
+  border: 1px solid #666;
   color: #262626;
 }
 .box-grey3.outlined .header {
