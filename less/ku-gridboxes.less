@@ -52,6 +52,7 @@
     order: 2;
     flex: 1 1 auto;
   }
+
   // Add an arrow to the box
   &::before {
     display: inline-block;
@@ -63,10 +64,12 @@
     right: @margin10;
     position: absolute;
     z-index: 5;
+
     @media all and (max-width: @screen-xs-max) {
       color: inherit;
     }
   }
+
   // Hide arrow
   &.no-arrow {
     &::before {
@@ -79,6 +82,7 @@
   }
 
   &.with-img {
+
     // Boxes with img
     .box2 {
       display: flex;
@@ -93,7 +97,9 @@
         flex: none;
         display: block;
         -ms-interpolation-mode: bicubic;
+        -o-object-fit: cover;
         object-fit: cover;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         .image-fadeIn();
       }
@@ -149,6 +155,7 @@
       display: none;
     }
   }
+
   // Boxes with the title at the top
   &.text-top {
     .box1 {
@@ -164,6 +171,7 @@
       bottom: auto;
     }
   }
+
   // Boxes with the title at the bottom
   &.text-down {
     .box1 {
@@ -174,6 +182,7 @@
       order: 1;
     }
   }
+
   // Boxes with the text above the content
   &.text-over {
     .header {
@@ -192,10 +201,10 @@
   }
 
   &.outlined {
-    background: @white-color!important;
+    background: @white-color  !important;
 
     &:hover {
-      background: @gray-lighter!important;
+      background: @gray-lighter  !important;
     }
 
     .header {
@@ -203,6 +212,7 @@
     }
 
     &:not(.with-img) {
+
       // Boxes without img: hide box2, make .box1 100% height
       .box1 {
         flex: 0 1 100%;
@@ -226,6 +236,7 @@
       }
     }
   }
+
   // Height 298px
   &.size1 {
     background: @gray-lighter;
@@ -282,8 +293,10 @@
       background: darken(@gray-lighter, 5%);
     }
   }
+
   // Height 185px
   &.size2 {
+
     //height: @gridbox2;
     &:not(.with-img) {
       .box1 {
@@ -295,8 +308,10 @@
       }
     }
   }
+
   // Height 133px
   &.size3 {
+
     //height: @gridbox3;
     &:not(.with-img) {
       .box1 {
@@ -308,6 +323,7 @@
       }
     }
   }
+
   // Height 81px
   &.size4 {
     height: @gridbox4;
@@ -322,6 +338,7 @@
       display: none;
     }
   }
+
   // Height 55px
   &.size5 {
     height: @gridbox5;
@@ -334,9 +351,10 @@
       .text {
         display: block;
       }
+
       @media all and (min-width: @screen-sm) {
         .text {
-          display: none!important;
+          display: none !important;
         }
       }
     }
@@ -346,6 +364,7 @@
     }
   }
 }
+
 // Use with values in this order: Text color, background color, hover color, border color, outlined text, opacity.
 // Reds family
 
@@ -364,6 +383,7 @@
     .box-color(@white-color; @red3);
     .gridbox-color(@white-color; @red3; darken(@red3, 5%); @red3; @red3; 93%);
   }
+
   // Blues family
   &-blue1 {
     .box-color(@gridbox-text-light; @blue1);
@@ -378,7 +398,14 @@
   &-blue3 {
     .box-color(@gridbox-text-dark; @blue3);
     .gridbox-color(@gridbox-text-dark; @blue3; darken(@blue3, 5%); @grey2; @gridbox-text-dark; 93%);
+
+    &.outlined {
+      &:hover {
+        border: 1px solid @grey2;
+      }
+    }
   }
+
   // Teals family
   &-teal1 {
     .box-color(@gridbox-text-light; @teal1);
@@ -393,7 +420,14 @@
   &-teal3 {
     .box-color(@gridbox-text-dark; @teal3);
     .gridbox-color(@gridbox-text-dark; @teal3; darken(@teal3, 5%); @grey2; @gridbox-text-dark; 93%);
+
+    &.outlined {
+      &:hover {
+        border: 1px solid @grey2;
+      }
+    }
   }
+
   // Greens family
   &-green1 {
     .box-color(@gridbox-text-light; @green1);
@@ -408,7 +442,14 @@
   &-green3 {
     .box-color(@gridbox-text-dark; @green3);
     .gridbox-color(@gridbox-text-dark; @green3; darken(@green3, 5%); @grey2; @gridbox-text-dark; 93%);
+
+    &.outlined {
+      &:hover {
+        border: 1px solid @grey2;
+      }
+    }
   }
+
   // Greys family
   &-grey1 {
     .box-color(@gridbox-text-light; @grey1);
@@ -424,10 +465,12 @@
     .box-color(@gridbox-text-dark; @grey3);
     .gridbox-color(@gridbox-text-dark; @grey3; darken(@grey3, 5%); @grey2; @gridbox-text-dark; 93%);
   }
+
   // Whites and yellows family
   &-light1 {
     .box-color(@gridbox-text-dark; @white1);
     .gridbox-color(@gridbox-text-dark; @white1; darken(@white1, 5%); @grey2; @gridbox-text-dark; 93%);
+
     // Exception - white full needs border.
     &.full {
       border: 1px solid @gray-light;
@@ -437,11 +480,18 @@
   &-light2 {
     .box-color(@gridbox-text-dark; @white2);
     .gridbox-color(@gridbox-text-dark; @white2; darken(@grey3, 5%); @grey2; @gridbox-text-dark; 93%);
+
+    &.outlined {
+      &:hover {
+        border: 1px solid @grey2;
+      }
+    }
   }
 
   &-light3 {
     .box-color(@gridbox-text-dark; @white3);
     .gridbox-color(@gridbox-text-dark; @white3; darken(@white3, 5%); @white3; @white3; 93%);
+
     // Exception with yellowish outline:
     &.outlined {
       border: 1px solid @white4;
@@ -453,6 +503,7 @@
     }
   }
 }
+
 // Outline arrow style for single column spans with dark text
 
 .double-column [class*=column],
@@ -465,6 +516,7 @@
 .two-one-one-column .column2,
 .two-one-one-column .column3 {
   .gridbox {
+
     &.size2,
     &.size3 {
       &.outlined.with-img {
@@ -487,6 +539,7 @@
     }
   }
 }
+
 /*
 * Mobile: All column types must behave like single column boxes
 */
@@ -501,6 +554,7 @@
     }
   }
 }
+
 @media all and (max-width: @screen-xs) {
   .gridbox {
     &.size1 {
@@ -527,7 +581,7 @@
 
     &.outlined {
       &.with-img {
-        border: 0!important;
+        border: 0 !important;
 
         &.size2,
         &.size3 {
@@ -551,6 +605,7 @@
     }
   }
 }
+
 @media all and (max-width: @screen-xs-max) {
   .gridbox {
     .text {
@@ -562,7 +617,7 @@
     }
 
     &:not(.with-img) {
-      height: auto!important;
+      height: auto !important;
     }
   }
 
@@ -584,7 +639,9 @@
         }
       }
     }
-    &.size5, &.size4 {
+
+    &.size5,
+    &.size4 {
       .box1 {
         .text {
           display: block;
@@ -593,7 +650,9 @@
     }
   }
 }
+
 @media all and (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+
   // Frontpage only
   .FullWidthFrontpage {
     .col-sm-6 {
@@ -608,7 +667,9 @@
     }
   }
 }
+
 @media all and (min-width: @screen-xs) {
+
   // Set gridbox height for tablet upwards
   .gridbox {
     &.size1 {
@@ -624,18 +685,20 @@
     }
   }
 }
+
 @media all and (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+
   // Tablet
   .gridbox {
     .img-text-aligned();
 
     &.outlined {
       &::before {
-        color: inherit!important;
+        color: inherit !important;
       }
 
       .box1 {
-        position: relative!important;
+        position: relative !important;
       }
     }
 
@@ -649,10 +712,11 @@
     }
 
     &.with-img {
+
       &.size2,
       &.size3 {
         .box1 {
-          position: relative!important;
+          position: relative !important;
 
           .header {
             border-right: 0;
@@ -669,6 +733,7 @@
     }
 
     &.text-down {
+
       // Add outline to white color boxes
       &.box-light1 {
         border: 1px solid @gray-light;
@@ -689,13 +754,15 @@
       &.outlined {
         .header {
           background: 0;
-          color: inherit!important;
+          color: inherit !important;
         }
       }
     }
   }
+
   // Tablet: For full-width front page only
   .FullWidthFrontpage {
+
     // Multiple columns span
     .one-one-two-column .column3,
     .one-two-column .column2,
@@ -730,7 +797,10 @@
     }
   }
 }
-@media all and (min-width: @screen-xs) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (min-width: @screen-xs) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   // IE11 only
   .FullWidthFrontpage {
     .double-column {
@@ -746,7 +816,9 @@
     }
   }
 }
+
 @media all and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
   // Tablet
   .gridbox {
     &.size1 {
@@ -757,19 +829,22 @@
       }
     }
   }
+
   //For full-width frontpage only
   .FullWidthFrontpage {
+
     .col-sm-6,
     .double-column .col-sm-6 {
       .gridbox {
+
         &.size2,
         &.size3 {
           &.with-img {
-            flex-direction: column!important;
+            flex-direction: column !important;
             border: 0;
 
             .box1 {
-              position: absolute!important;
+              position: absolute !important;
             }
 
             .text {
@@ -792,7 +867,9 @@
     }
   }
 }
+
 @media all and (min-width: @screen-md) {
+
   // Remove outline style for single column spans with image
   .double-column [class*=column],
   .one-two-column .column1,
@@ -800,14 +877,16 @@
   .triple-column [class*=column],
   .two-one-column .column2 {
     .gridbox {
+
       &.size2,
       &.size3 {
         &.outlined.with-img {
-          border: 0!important;
+          border: 0 !important;
         }
       }
     }
   }
+
   //Frontpage only
   .one-one-two-column .column1,
   .one-one-two-column .column2,
@@ -825,6 +904,7 @@
       }
     }
   }
+
   // Desktop text-down with img style for multiple column spans
   .one-one-two-column .column3,
   .one-three-column .column2,
@@ -852,7 +932,7 @@
       &.outlined {
         .header {
           background: transparent;
-          color: inherit!important;
+          color: inherit !important;
           border-right: 0;
           white-space: normal;
         }
@@ -865,6 +945,7 @@
       }
     }
   }
+
   // Desktop text-down with img style for multiple column spans
   .gridcontent:not(#gridsidebar) .single-column .column1,
   .one-one-two-column .column3,
@@ -891,6 +972,7 @@
       }
     }
   }
+
   // Outline arrow style for single column spans
   .double-column [class*=column],
   .one-two-column .column1,
@@ -898,6 +980,7 @@
   .triple-column [class*=column],
   .two-one-column .column2 {
     .gridbox {
+
       &.size2,
       &.size3 {
         &.text-over.with-img {
@@ -907,6 +990,7 @@
       }
     }
   }
+
   // Styling for full width boxes
   .single-column .column1 {
     .size1 {
@@ -945,18 +1029,20 @@
 
         .box2 {
           // Flip image to the left
-          flex: 1!important;
+          flex: 1 !important;
           order: 1;
 
           img {
+            -o-object-fit: cover;
             object-fit: cover;
           }
         }
 
         &:hover {
+
           // New sort of underlining :-)
           .header {
-            > span {
+            >span {
               background-image: linear-gradient(rgba(74, 73, 73, 0.25) 0%, @gray-dark 100%);
               background-repeat: repeat-x;
               background-size: 1px 1px;
@@ -966,6 +1052,7 @@
           }
         }
       }
+
       // Flip image to the right
       &.img-flip-right {
         .box1 {
@@ -992,8 +1079,10 @@
       }
     }
   }
+
   // Styling for 3/1 columns with .size1 boxes on full width page (front page)
   .FullWidthFrontpage {
+
     .one-three-column .column2,
     .three-one-column .column1 {
       .gridbox {
@@ -1024,6 +1113,7 @@
   #gridsidebar {
     .single-column .column1 {
       .gridbox {
+
         &.size2,
         &.size3 {
           &.with-img {
@@ -1035,6 +1125,7 @@
               border-right: 25px solid transparent;
               white-space: nowrap;
               overflow: hidden;
+
               @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
                 border-right: 0;
                 white-space: normal;
@@ -1065,12 +1156,14 @@
     }
   }
 }
+
 // Special styles for Edge
 @media all and (min-width: @screen-md) {
   @supports (-ms-ime-align: auto) {
     .GridForside {
       .single-column {
         .gridbox.with-img {
+
           // Nyhedsbokse fuld bredde
           &.size1 {
             .box2 img {
@@ -1092,8 +1185,11 @@
     }
   }
 }
+
 // Special styles for Internet Explorer
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   /* IE 11 */
   .gridbox {
     &.with-img {
@@ -1106,12 +1202,14 @@
           .img-fix-for-ie-size2();
         }
       }
+
       // Position image left
       &.img-left {
         img {
           .img-position-left();
         }
       }
+
       // Position image right
       &.img-right {
         img {
@@ -1140,6 +1238,7 @@
       }
     }
   }
+
   // Single columns
   .one-two-column .column1,
   .triple-column [class*=column],
@@ -1154,7 +1253,9 @@
     }
   }
 }
-@media all and (min-width: @screen-md) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (min-width: @screen-md) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .gridbox {
     &.with-img {
       .box2 img {
@@ -1162,6 +1263,7 @@
       }
     }
   }
+
   // Single columns
   .one-two-column .column1,
   .triple-column [class*=column],
@@ -1179,6 +1281,7 @@
   .GridForside {
     .single-column {
       .gridbox.with-img {
+
         // Nyhedsbokse fuld bredde
         &.size1 {
           .box2 img {
@@ -1199,7 +1302,9 @@
     }
   }
 }
+
 @supports (-ms-ime-align: auto) {
+
   /* IE Edge */
   .gridbox {
     &.with-img {
@@ -1212,12 +1317,14 @@
           .img-fix-for-ie-size2();
         }
       }
+
       // Position image left
       &.img-left {
         img {
           .img-position-left();
         }
       }
+
       // Position image right
       &.img-right {
         img {
@@ -1247,6 +1354,7 @@
     }
   }
 }
+
 @media all and (min-width: @screen-xs) {
   @supports (-ms-ime-align: auto) {
     .gridbox.with-img {
@@ -1263,7 +1371,9 @@
     }
   }
 }
-@media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (max-width: @screen-xs-max) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .gridbox.with-img {
     &.size1 {
       .box2 img {
@@ -1272,7 +1382,9 @@
     }
   }
 }
-@media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (min-width: @screen-sm) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .gridbox.with-img {
     &.size1 {
       .box2 img {
@@ -1285,7 +1397,7 @@
 }
 
 .boxlink {
-  color: inherit!important;
+  color: inherit !important;
   display: block;
   position: relative;
   text-decoration: none;
