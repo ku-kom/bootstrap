@@ -47,10 +47,6 @@ blockquote.full-width::before {
   border: 0;
 }
 
-.factbox a {
-  color: inherit;
-}
-
 .widenews-content .factbox img {
   margin: 10px 0 !important;
 }

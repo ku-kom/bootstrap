@@ -12730,6 +12730,9 @@ p[align="right"]:before {
 .factbox .fact-title strong {
   font-weight: inherit;
 }
+.factbox .fact-title a {
+  color: inherit;
+}
 .factbox-left {
   float: left;
   margin-right: 20px;
