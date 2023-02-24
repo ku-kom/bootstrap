@@ -12753,6 +12753,9 @@ p[align="right"]:before {
   margin: 0;
   float: none;
 }
+aside.well[class*="box-"] a {
+  color: inherit;
+}
 form.gdpr-accept label[for="email"] {
   margin-bottom: 5px;
 }
