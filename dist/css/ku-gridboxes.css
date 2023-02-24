@@ -566,15 +566,15 @@
   background: #406f1f;
 }
 .box-green3 {
-  background: #becaa8;
+  background: #a0c08c;
   color: #262626;
 }
 .box-green3 .header {
-  background: rgba(190, 202, 168, .93);
+  background: rgba(160, 192, 140, .93);
   color: #262626;
 }
 .box-green3.text-top .header {
-  background: #becaa8;
+  background: #a0c08c;
 }
 .box-green3.outlined {
   border: 1px solid #666;
@@ -584,13 +584,13 @@
   color: #262626;
 }
 .box-green3.outlined:hover {
-  border: 1px solid #b2c098;
+  border: 1px solid #92b77c;
 }
 .box-green3.full:hover {
-  background: #b2c098;
+  background: #92b77c;
 }
 .box-green3.text-down:hover {
-  background: #b2c098;
+  background: #92b77c;
 }
 .box-green3.outlined:hover {
   border: 1px solid #666;

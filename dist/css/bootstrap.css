@@ -1394,7 +1394,7 @@ body {
   --teal3: #b7d7de;
   --green1: #39641c;
   --green2: #4b8325;
-  --green3: #becaa8;
+  --green3: #a0c08c;
   --grey1: #3d3d3d;
   --grey2: #666;
   --grey3: #e1dfdf;
@@ -10591,18 +10591,18 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 }
 .slick-slide .caption.box-green3,
 .image-presentation .caption.box-green3 {
-  background: #becaa8;
+  background: #a0c08c;
   color: #262626;
 }
 @media (min-width: 768px) {
   .slick-slide .caption.box-green3,
   .image-presentation .caption.box-green3 {
-    background: rgba(190, 202, 168, .93);
+    background: rgba(160, 192, 140, .93);
   }
 }
 .slick-slide .caption.box-green3.full-bg,
 .image-presentation .caption.box-green3.full-bg {
-  background: #becaa8;
+  background: #a0c08c;
 }
 .slick-slide .caption.box-grey1,
 .image-presentation .caption.box-grey1 {
@@ -13360,7 +13360,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   outline: 1px dotted #fcfcfc;
 }
 .box-green3 {
-  background: #becaa8;
+  background: #a0c08c;
   color: #262626;
 }
 .box-green3 a:focus {
