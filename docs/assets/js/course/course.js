@@ -48,12 +48,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   };
 
+  /**
+   * Add heading semantics to branding image heading if no h1 on page
+   */
+  const addHeading = () => {
+    if (!document.querySelectorAll('h1').length) {
+      const de_facto_heading = document.querySelector('.ku-branding-text-major');
+      if (de_facto_heading.length) {
+        de_facto_heading.setAttribute('role', 'heading');
+        de_facto_heading.setAttribute('aria-level', '1');
+      }
+    }
+  }
+
+  /**
+   * Reload Open Street Maps due to a bug
+   */
   const reloadOpenStreetMap = (id) => {
     let buggyid = document.getElementById(id);
     if (buggyid) {
       buggyid.src = buggyid.src;
     }
   };
+
+  addHeading();
 
   window.addEventListener('load', () => {
     createObserver();
