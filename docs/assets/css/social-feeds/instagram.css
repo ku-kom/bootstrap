@@ -13,6 +13,7 @@ Needs html like this:
 */
 
 /* Preload fallback images */
+
 body::after {
   position: absolute;
   width: 0;
@@ -44,7 +45,8 @@ body::after {
   z-index: 100;
 }
 
-[id^="ig"].gridbox .header, [id^="ig"].gridbox:hover .header {
+[id^="ig"].gridbox .header,
+[id^="ig"].gridbox:hover .header {
   color: #606060;
   background: rgba(255, 255, 255, .9) !important;
 }
@@ -55,7 +57,6 @@ body::after {
 }
 
 [id^="ig"]:hover img {
-  -webkit-filter: none;
   filter: none;
 }
 
@@ -101,14 +102,14 @@ body::after {
 }
 
 #imageBox .batch img:hover {
-  -webkit-filter: brightness(90%) blur(0);
   filter: brightness(90%) blur(0);
 }
 
 /* Special styles for Internet Explorer */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE 11 */
+
   #imageBox .batch img {
     min-height: 100%;
     position: absolute;
@@ -121,8 +122,8 @@ body::after {
 }
 
 @supports (-ms-ime-align: auto) {
-
   /* IE Edge */
+
   #imageBox .batch img {
     min-height: 100%;
     position: absolute;

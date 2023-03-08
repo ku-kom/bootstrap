@@ -2,6 +2,7 @@
  * Style tweaks
  * --------------------------------------------------
  */
+
 html,
 body {
   overflow-x: hidden;
@@ -20,6 +21,7 @@ footer {
  * Off Canvas
  * --------------------------------------------------
  */
+
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;

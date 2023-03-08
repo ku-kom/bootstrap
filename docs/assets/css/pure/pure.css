@@ -1,10 +1,13 @@
 /* PURE portal cms styling */
+
 #branding-images,
 #nav-wrapper,
 #branding-decoration,
 #left-sidebar,
 #right-sidebar,
-#footer, #perm_cookie_box, .breadcrumb {
+#footer,
+#perm_cookie_box,
+.breadcrumb {
   display: none !important;
 }
 
@@ -13,7 +16,8 @@
   padding-top: 0;
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
   height: 100%;
 }
@@ -33,7 +37,8 @@ body {
   direction: ltr;
 }
 
-#wrapper, #content-wrapper {
+#wrapper,
+#content-wrapper {
   width: 100%;
   max-width: 496px;
   border: 0;

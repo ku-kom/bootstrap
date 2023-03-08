@@ -17,7 +17,7 @@
   font-size: 20px;
   font-weight: 600;
   padding: 10px 0;
-  border-bottom: 1px solid #999
+  border-bottom: 1px solid #999;
 }
 
 .jumpcolumn li a {
@@ -25,11 +25,11 @@
   position: relative;
   padding-right: 20px;
   color: var(--jumpboard-color) !important;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .jumpcolumn li a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .jumpcolumn li a:after {
@@ -46,11 +46,11 @@
   color: var(--jumpboard-color);
   content: '\61';
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
 }
 
 .slick-arrow::before {
-  opacity: .3
+  opacity: .3;
 }
 
 .image-presentation img {
@@ -117,7 +117,7 @@ blockquote footer {
 
   .double-column .gccolumn blockquote.full-width footer {
     font-size: 15px;
-    font-weight: 400
+    font-weight: 400;
   }
 
   .full-width {

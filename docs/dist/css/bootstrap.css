@@ -8907,8 +8907,7 @@ iframe {
   background-color: #e6e6e6;
 }
 .advanced-list li .advanced-link:hover .list-img {
-  -webkit-filter: brightness(90%) blur(0);
-          filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
 }
 .advanced-list li .advanced-link:active {
   background-color: #e6e6e6;
@@ -10244,8 +10243,7 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
   outline-offset: -2px;
 }
 .slide-link:hover img {
-  -webkit-filter: brightness(90%) blur(0);
-          filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
 }
 .slick-slide[aria-hidden="true"]:focus-within {
   pointer-events: none;
@@ -12494,9 +12492,8 @@ p[align="right"]:before {
   -ms-flex: none;
       flex: none;
   object-fit: cover;
-  -webkit-filter: brightness(100%) blur(0);
-          filter: brightness(100%) blur(0);
-  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
+  filter: brightness(100%) blur(0);
+  transition: .2s filter ease-out;
 }
 @media (min-width: 992px) {
   .gridnyhed .nyhed-illustration {
@@ -12535,8 +12532,7 @@ p[align="right"]:before {
   }
 }
 .gridnyhed:hover img {
-  -webkit-filter: brightness(90%) blur(0);
-          filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
 }
 .find-box {
   height: 130px;
@@ -12791,8 +12787,7 @@ form.gdpr-accept .btn + .btn {
   text-decoration: none;
 }
 .image-presentation > a:hover img {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .image-presentation img {
   height: 100%;
@@ -12827,8 +12822,7 @@ form.gdpr-accept .btn + .btn {
 @media (min-width: 768px) {
   .custom-search {
     min-width: 330px;
-    max-width: -webkit-fit-content;
-    max-width:         fit-content;
+    max-width: fit-content;
   }
 }
 .custom-search .media {

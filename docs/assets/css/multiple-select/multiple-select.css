@@ -2,6 +2,7 @@
  * @author zhixin wen: https://github.com/wenzhixin/multiple-select
  * Version 1.5.2
  */
+
 .ms-offscreen {
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%);
@@ -28,7 +29,7 @@
 .ms-parent.form-control {
   padding: 0;
   height: 33px;
-  border: 0
+  border: 0;
 }
 
 .ms-choice {
@@ -95,7 +96,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
-  color: #000
+  color: #000;
 }
 
 .ms-choice>div.icon-close:hover:before {
@@ -236,7 +237,8 @@
   padding: 0;
 }
 
-.ms-drop ul>li.hide-radio:focus, .ms-drop ul>li.hide-radio:hover {
+.ms-drop ul>li.hide-radio:focus,
+.ms-drop ul>li.hide-radio:hover {
   background-color: #eee;
 }
 
@@ -258,7 +260,8 @@
   padding-left: 28px;
 }
 
-.ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
+.ms-drop input[type="radio"],
+.ms-drop input[type="checkbox"] {
   position: absolute;
   margin-top: .3rem;
   margin-left: -1.25rem;

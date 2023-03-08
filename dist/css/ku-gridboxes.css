@@ -80,13 +80,11 @@
   -ms-interpolation-mode: bicubic;
   object-fit: cover;
   backface-visibility: hidden;
-  -webkit-filter: brightness(100%) blur(0);
-          filter: brightness(100%) blur(0);
-  transition: .2s -webkit-filter ease-out, .2s filter ease-out;
+  filter: brightness(100%) blur(0);
+  transition: .2s filter ease-out;
 }
 .gridbox:hover img {
-  -webkit-filter: brightness(90%) blur(0);
-          filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
 }
 .gridbox:not(.with-img) .box1 {
   -ms-flex: 1 1 auto;
@@ -1621,8 +1619,7 @@
   text-decoration: none;
 }
 .boxlink:hover .gridbox img {
-  -webkit-filter: brightness(90%) blur(0);
-          filter: brightness(90%) blur(0);
+  filter: brightness(90%) blur(0);
 }
 .boxlink:focus {
   outline: 1px solid #2c6694;
