@@ -540,6 +540,7 @@ h1.title {
 }
 
 .flexiblebox-as-rightbox .gridbox.size1 .box1 .header-small {
+  font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
