@@ -512,6 +512,44 @@ h1.title {
   padding: 8px 18px 8px 10px;
 }
 
+.flexiblebox-as-rightbox .gridbox.size1 {
+  background: #fff;
+  box-shadow: 0 0 0 1px #ddd;
+  transition: box-shadow .2s ease-out;
+}
+
+.flexiblebox-as-rightbox .gridbox.size1:hover {
+  background: #fff;
+  box-shadow: 0 8px 10px 0 rgba(60, 60, 60, .1), 0 2px 6px 0 rgba(64, 64, 64, .19);
+}
+
+.flexiblebox-as-rightbox .gridbox.size1 :is(.box1, .box2) {
+  flex: 1 1 50%;
+}
+
+.flexiblebox-as-rightbox .gridbox.size1 .box1 .header h3 {
+  font-size: 17.42px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0;
+  flex-shrink: 0;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.flexiblebox-as-rightbox .gridbox.size1 .box1 .header-small {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  color: var(--red2);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin-bottom: 5px;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .gcrow:not(.double-column):not(.quad-column) [class*=col-sm-6] {
     margin-bottom: 0;
