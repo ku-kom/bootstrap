@@ -42,6 +42,19 @@
   padding: 15px;
 }
 
+.video-container .caption:any-link {
+  color: inherit;
+  display: block;
+}
+
+.video-container .caption a {
+  text-decoration: none;
+}
+
+.video-container .caption a:hover {
+  text-decoration: underline;
+}
+
 .jumpcolumn {
   list-style: none;
   padding: 0;
