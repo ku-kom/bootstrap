@@ -42,12 +42,9 @@
   padding: 15px;
 }
 
-.video-container .caption:any-link {
+.video-container .caption a {
   color: inherit;
   display: block;
-}
-
-.video-container .caption a {
   text-decoration: none;
 }
 
