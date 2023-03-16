@@ -67,8 +67,8 @@
   font-size: 18px;
   line-height: 0;
   position: absolute;
-  bottom: 5px;
-  left: 20px;
+  bottom: 0;
+  left: @grid-gutter-by-half;
   padding: 6px;
   cursor: pointer;
   color: @white-color;
@@ -76,6 +76,12 @@
   border-radius: 50%;
   border: none;
   outline: 0;
+}
+
+@media (min-width: @screen-sm) {
+  .play-pause-button {
+    bottom: 5px;
+  }
 }
 
 .play-pause-button::before {

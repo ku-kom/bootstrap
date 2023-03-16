@@ -7459,8 +7459,8 @@ img.img-default:after,
   font-size: 18px;
   line-height: 0;
   position: absolute;
-  bottom: 5px;
-  left: 20px;
+  bottom: 0;
+  left: 13px;
   padding: 6px;
   cursor: pointer;
   color: #fff;
@@ -7468,6 +7468,11 @@ img.img-default:after,
   border-radius: 50%;
   border: none;
   outline: 0;
+}
+@media (min-width: 768px) {
+  .play-pause-button {
+    bottom: 5px;
+  }
 }
 .play-pause-button::before {
   /* Pause */

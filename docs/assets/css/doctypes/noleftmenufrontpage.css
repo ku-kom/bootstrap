@@ -31,9 +31,10 @@
 
 .video-container .caption :is(h1, h2, h3) {
   margin-top: 0;
+  font-size: 22px;
 }
 
-.video-container .caption {
+.video-container .caption:not(.box-light1) {
   padding: 15px;
 }
 
@@ -127,6 +128,7 @@ blockquote footer {
     top: 50%;
     transform: translateY(-50%);
     right: var(--gutterWidth);
+    max-width: 50%;
   }
 
   .deloverskrift {
