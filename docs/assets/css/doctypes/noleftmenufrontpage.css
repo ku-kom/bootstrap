@@ -22,7 +22,7 @@
 
 .video-container .video {
   max-height: 410px;
-  object-fit: cover!important;
+  object-fit: cover !important;
 }
 
 .video-container .caption {
@@ -126,8 +126,7 @@ blockquote footer {
 
   .video-container .caption {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 10%;
     right: var(--gutterWidth);
     max-width: 50%;
     padding: 15px;
