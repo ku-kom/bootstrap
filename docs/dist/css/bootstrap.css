@@ -7470,7 +7470,7 @@ img.img-default:after,
   border: none;
   outline: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .play-pause-button {
     right: auto;
     left: 13px;
