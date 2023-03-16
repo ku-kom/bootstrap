@@ -95,6 +95,16 @@
   -webkit-font-smoothing: antialiased;
 }
 
+
+#valueslider {
+  height: 289px;
+}
+
+.slick-arrow,
+.slick-arrow::before {
+  color: inherit;
+}
+
 .slick-arrow::before {
   opacity: .3;
 }
@@ -148,6 +158,10 @@ blockquote footer {
 
   .deloverskrift {
     font-size: 25px;
+  }
+
+  #valueslider {
+    height: 215px;
   }
 
   .image-presentation {
