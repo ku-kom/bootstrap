@@ -21,6 +21,9 @@
 }
 
 .video-container .video {
+  display: block;
+  width: 100%;
+  max-width: 1018px;
   max-height: 410px;
   object-fit: cover !important;
 }
