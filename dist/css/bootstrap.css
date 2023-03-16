@@ -7460,7 +7460,8 @@ img.img-default:after,
   line-height: 0;
   position: absolute;
   bottom: 0;
-  left: 13px;
+  left: auto;
+  right: 13px;
   padding: 6px;
   cursor: pointer;
   color: #fff;
@@ -7471,6 +7472,8 @@ img.img-default:after,
 }
 @media (min-width: 768px) {
   .play-pause-button {
+    right: auto;
+    left: 13px;
     bottom: 5px;
   }
 }

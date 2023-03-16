@@ -22,7 +22,7 @@
 
 .video-container .video {
   max-height: 410px;
-  object-fit: cover;
+  object-fit: cover!important;
 }
 
 .video-container .caption {

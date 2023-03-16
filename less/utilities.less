@@ -68,7 +68,8 @@
   line-height: 0;
   position: absolute;
   bottom: 0;
-  left: @grid-gutter-by-half;
+  left: auto;
+  right: @grid-gutter-by-half;
   padding: 6px;
   cursor: pointer;
   color: @white-color;
@@ -80,6 +81,8 @@
 
 @media (min-width: @screen-sm) {
   .play-pause-button {
+    right: auto;
+    left: @grid-gutter-by-half;
     bottom: 5px;
   }
 }
