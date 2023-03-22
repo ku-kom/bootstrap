@@ -1,5 +1,6 @@
 @import "../../../../less/variables.less";
 @import "../../../../less/mixins.less"; // Paralax effect: https://github.com/nk-o/jarallax
+
 // Page is 100% wide
 html {
   scroll-behavior: smooth;
@@ -8,6 +9,7 @@ html {
 body {
   background-color: @white-color;
 }
+
 // .progress {
 //   margin: 0;
 //   height: 6px;
@@ -46,12 +48,14 @@ body {
 // }
 
 .ku-branding {
+
   // display: none;
   &::after {
     border-bottom: 1px solid @ku-red;
     .page-full-width();
   }
 }
+
 // #content {
 //   margin-top: 42px;
 // }
@@ -82,7 +86,7 @@ body {
   z-index: 0;
   .page-full-width();
   // top + bottom shadow
-  box-shadow: 0 -13px 30px 0 rgba(@gray-base,.3), 0 13px 30px 0 rgba(@gray-base,.3);
+  box-shadow: 0 -13px 30px 0 rgba(@gray-base, .3), 0 13px 30px 0 rgba(@gray-base, .3);
 
   &.jarallax {
     box-shadow: none;
@@ -144,13 +148,18 @@ body {
     align-items: flex-end;
   }
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   /* IE 11 only in order to understand vertical alignment */
   .block-bg {
     height: 600px;
   }
 }
+
 @supports (-ms-ime-align: auto) {
+
   // Edge - prevent flickering
   body {
     transform: translateZ(0);
@@ -174,8 +183,6 @@ body {
   .jarallax-img {
     position: absolute;
     object-fit: cover;
-    // IE11 support for plugin https://github.com/bfred-it/object-fit-images
-    font-family: 'object-fit: cover;';
     top: 0;
     left: 0;
     width: 100%;
@@ -215,7 +222,9 @@ body {
   vertical-align: top;
   margin-left: 10px;
 }
+
 @media all and (min-width: @screen-sm) {
+
   // #content {
   //   margin-top: 68px;
   // }
@@ -270,11 +279,13 @@ body {
     margin-left: 26px;
   }
 }
+
 @media all and (min-width: @screen-md) {
   .campaign-block .block-content {
     max-width: 966px;
   }
 }
+
 @media all and (min-width: @screen-lg) {
   .campaign-block .block-content {
     max-width: 1018px;
