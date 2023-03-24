@@ -24,7 +24,7 @@ const getJobteaserRss = (source, id) => {
     .then((response) => response.text())
     .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
     .then((data) => {
-      console.log(data);
+      //console.log(data);
       const items = data.querySelectorAll('item');
       let html = '';
       items.forEach((item) => {
