@@ -57,6 +57,7 @@ const getJobteaserRss = (source, id) => {
       box.insertAdjacentHTML('beforeend', html);
     })
     .catch((error) => {
+      box.innerHTML = 'Error fetching feed. Try again later.';
       console.log(error)
     });
 };
