@@ -13,7 +13,7 @@ const clean = (str) => {
 
 const getJobteaserRss = (source, id) => {
   if (!source && !id) {
-    console.log('Specify var source = "feed url" and result element id');
+    console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id)');
     return;
   }
 
