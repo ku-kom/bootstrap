@@ -18,6 +18,7 @@ const getJobteaserRss = (source, id) => {
   }
 
   const box = document.getElementById(id);
+  // Run through custom php proxy to avoid CORS issues:
   let url = 'https://cms.secure.ku.dk/instacms/parseFeeds/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
 
   fetch(url)
