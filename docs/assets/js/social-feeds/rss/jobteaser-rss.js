@@ -1,6 +1,6 @@
 /**
  * Parse RSS feed from https://ucph.jobteaser.com/
- * call getJobteaserRss('feed-url', 'element-id')
+ * call getJobteaserRss('feed-url', 'element-id', number of items)
  */
 
 const lang = window.navigator.userLanguage || window.navigator.language;
@@ -11,7 +11,7 @@ const clean = (str) => {
     .trim();
 }
 
-const getJobteaserRss = (source, id) => {
+const getJobteaserRss = (source, id, max_items) => {
   if (!source && !id) {
     console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id)');
     return;
@@ -21,14 +21,19 @@ const getJobteaserRss = (source, id) => {
   // Run through custom php proxy to avoid CORS issues:
   let url = 'https://cms.secure.ku.dk/instacms/parseFeeds/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
 
+  // Max number of items to display:
+  const max = Number(max_items) || null;
+
   fetch(url)
     .then((response) => response.text())
     .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
     .then((data) => {
-      //console.log(data);
+      console.log(data);
       const items = data.querySelectorAll('item');
       let html = '';
-      items.forEach((item) => {
+      for (const [index, item] of items.entries()) {
+        // Break after x number of items items:
+        if (index === max) break;
         const link = clean(item.querySelector('link').textContent);
         const title = clean(item.querySelector('title').textContent);
         const desc = item.querySelector('description').textContent;
@@ -47,12 +52,23 @@ const getJobteaserRss = (source, id) => {
         for (let i = 0; i < locations.length; i++) {
           location = locations[i].textContent;
         }
+        const img = item.querySelector('enclosure').getAttribute('url');
         html += `
             <li>
-                <a href="${link}" target="_blank" rel="noopener">${title}</a><div class="small">${dato} | ${company}</div><div class="description">${desc}</div><div class="joblocation">${location}</div>
+                <div class="media">
+                  <a href="${link}" target="_blank" rel="noopener" class="stretched-link"> 
+                    <div class="media-left">
+                        <img class="media-object" src="${img}" alt="">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">${title}</h4>
+                        <div class="small">${dato} | ${company}</div><div class="description">${desc}</div><div class="joblocation">${location}</div>
+                    </div>
+                    </a>
+                </div>
             </li>
           `;
-      });
+      }
       html = `<ul class="list-unstyled">${html}</ul>`;
       box.innerHTML = '';
       box.insertAdjacentHTML('beforeend', html);
