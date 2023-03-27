@@ -66,7 +66,9 @@ const getJobteaserRss = (source, id, max_items) => {
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">${title}</h4>
-                        <div class="small">${dato} | ${company}</div><div class="description">${desc}</div><div class="joblocation">${location}</div>
+                        <div class="jobinfo">${dato} | ${company}</div>
+                        <div class="description">${desc}</div>
+                        <div class="joblocation">${location}</div>
                     </div>
                     </a>
                 </div>
