@@ -56,7 +56,7 @@ const getJobteaserRss = (source, id, max_items) => {
         html += `
             <li>
                 <div class="media">
-                  <a href="${link}" target="_blank" rel="noopener" class="stretched-link"> 
+                  <a href="${link}" target="_blank" rel="noopener"> 
                     <div class="media-left">
                         <img class="media-object" src="${img}" alt="">
                     </div>
