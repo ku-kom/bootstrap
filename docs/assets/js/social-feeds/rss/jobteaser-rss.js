@@ -17,12 +17,14 @@ const getJobteaserRss = (source, id, max_items) => {
     return;
   }
 
-  const box = document.getElementById(id);
   // Run through custom php proxy to avoid CORS issues:
   let url = 'https://cms.secure.ku.dk/instacms/parseFeeds/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
 
   // Max number of items to display:
   const max = Number(max_items) || null;
+
+  // Where to display the results:
+  const box = document.getElementById(id);
 
   fetch(url)
     .then((response) => response.text())
@@ -33,7 +35,9 @@ const getJobteaserRss = (source, id, max_items) => {
       let html = '';
       for (const [index, item] of items.entries()) {
         // Break after x number of items items:
-        if (index === max) break;
+        if (index === max) {
+          break;
+        }
         const link = clean(item.querySelector('link').textContent);
         const title = clean(item.querySelector('title').textContent);
         const desc = item.querySelector('description').textContent;
