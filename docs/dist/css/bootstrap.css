@@ -12951,6 +12951,7 @@ form.gdpr-accept .btn + .btn {
   position: relative;
 }
 .feed ul li .media > a {
+  display: block;
   text-decoration: none;
 }
 .feed ul li .media-object {
