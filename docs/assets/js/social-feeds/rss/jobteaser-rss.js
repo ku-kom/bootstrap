@@ -3,8 +3,14 @@
  * call getJobteaserRss('feed-url', 'element-id', number of items)
  */
 
+// Browser language (used for date formatting)
 const lang = window.navigator.userLanguage || window.navigator.language;
 
+/**
+ * 
+ * @param {string} str 
+ * @returns trimmed string and with no new-lines.
+ */
 const clean = (str) => {
   return str.replaceAll('\n', '')
     .replaceAll('\t', '')
@@ -13,7 +19,7 @@ const clean = (str) => {
 
 const getJobteaserRss = (source, id, max_items) => {
   if (!source && !id) {
-    console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id)');
+    console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id")');
     return;
   }
 
