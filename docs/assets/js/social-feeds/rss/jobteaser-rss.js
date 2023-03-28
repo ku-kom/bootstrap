@@ -59,19 +59,19 @@ const getJobteaserRss = (source, id, max_items) => {
         const img = item.querySelector('enclosure').getAttribute('url');
         html += `
             <li>
-                <div class="media">
-                  <a href="${link}" target="_blank" rel="noopener"> 
-                    <div class="media-left">
-                        <img class="media-object" src="${img}" alt="">
+              <a href="${link}" target="_blank" rel="noopener"> 
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="${img}" alt="">
                     </div>
-                    <div class="media-body">
+                    <div class="list-body">
                         <h4 class="media-heading">${title}</h4>
                         <div class="jobinfo">${dato} | ${company}</div>
                         <div class="description">${desc}</div>
                         <div class="joblocation">${location}</div>
                     </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
           `;
       }

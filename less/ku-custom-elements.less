@@ -585,22 +585,28 @@ form.gdpr-accept {
         font-weight: 600;
       }
 
-      .media {
+      .list-item {
+        display: flex;
+        flex-direction: row;
         font-weight: 400;
         position: relative;
 
         &>a {
+          color: inherit;
           display: block;
           text-decoration: none;
         }
       }
 
-      .media-object {
-        max-width: none;
+      .list-img {
+        max-width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      .media-body {
-        color: initial;
+      .list-body {
+        flex: 1;
       }
 
       .media-heading {

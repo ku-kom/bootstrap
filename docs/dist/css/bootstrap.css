@@ -12946,19 +12946,31 @@ form.gdpr-accept .btn + .btn {
 .feed ul li > a {
   font-weight: 600;
 }
-.feed ul li .media {
+.feed ul li .list-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
   font-weight: 400;
   position: relative;
 }
-.feed ul li .media > a {
+.feed ul li .list-item > a {
+  color: inherit;
   display: block;
   text-decoration: none;
 }
-.feed ul li .media-object {
-  max-width: none;
+.feed ul li .list-img {
+  max-width: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.feed ul li .media-body {
-  color: initial;
+.feed ul li .list-body {
+  -ms-flex: 1;
+      flex: 1;
 }
 .feed ul li .media-heading {
   text-decoration: underline;
