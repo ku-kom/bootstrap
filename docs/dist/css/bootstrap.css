@@ -12946,6 +12946,10 @@ form.gdpr-accept .btn + .btn {
 .feed ul li > a {
   font-weight: 600;
 }
+.feed ul li .list-item-link {
+  color: inherit;
+  text-decoration: none;
+}
 .feed ul li .list-item {
   display: -ms-flexbox;
   display: flex;
@@ -12954,17 +12958,12 @@ form.gdpr-accept .btn + .btn {
   font-weight: 400;
   position: relative;
 }
-.feed ul li .list-item > a {
-  color: inherit;
-  display: block;
-  text-decoration: none;
-}
 .feed ul li .list-img {
-  max-width: 20%;
+  -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+  padding-right: 10px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-align: center;
   align-items: center;
 }
