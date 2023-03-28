@@ -198,7 +198,7 @@ h3 {
 .jumpboard .jumpcolumn li a {
   display: block;
   position: relative;
-  color: #901a1e !important;
+  color: var(--red1) !important;
   text-decoration: none;
 }
 

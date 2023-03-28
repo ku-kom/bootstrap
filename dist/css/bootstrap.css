@@ -12992,7 +12992,7 @@ form.gdpr-accept .btn + .btn {
   height: 10px;
 }
 .scroll-indicator .progress-bar {
-  background-color: #901a1e;
+  background-color: var(--red1);
   width: var(--scrollPercentage);
 }
 .mce-window iframe {
