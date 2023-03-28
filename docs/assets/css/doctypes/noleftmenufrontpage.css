@@ -156,6 +156,10 @@ blockquote footer {
     border-radius: 2px;
   }
 
+  .top-slider {
+    height: 410px;
+  }
+
   .deloverskrift {
     font-size: 25px;
   }
