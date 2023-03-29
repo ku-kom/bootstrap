@@ -9622,7 +9622,6 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       flex-direction: column;
 }
 .tiles-x .tile-body {
-  font-size: 13px;
   display: none;
 }
 .tiles-x .tile-body > p {
@@ -9659,6 +9658,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   transition: transform .2s ease-out;
 }
 .tiles-x .tile-content {
+  font-size: 13px;
   padding: 10px;
   position: relative;
   -ms-flex: 1 1 50%;
