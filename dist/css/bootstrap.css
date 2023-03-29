@@ -9622,6 +9622,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
       flex-direction: column;
 }
 .tiles-x .tile-body {
+  font-size: 13px;
   display: none;
 }
 .tiles-x .tile-body > p {
