@@ -9691,6 +9691,7 @@ nav[aria-label="Pager"] + .nyhedsliste > .media:first-child {
   border-bottom: 1px solid #ccc;
 }
 .tiles-y .tile-content {
+  font-size: 13px;
   width: 100%;
   min-width: 0;
 }
