@@ -52,6 +52,10 @@
   text-decoration: underline;
 }
 
+.top-slider {
+  height: 289px;
+}
+
 .jumpcolumn {
   list-style: none;
   padding: 0;
@@ -171,7 +175,7 @@ blockquote footer {
   }
 
   .top-slider {
-    height: 410px;
+    height: 367px;
   }
 
   .deloverskrift {
