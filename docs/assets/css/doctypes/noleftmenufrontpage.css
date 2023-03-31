@@ -225,6 +225,12 @@ blockquote footer {
   .full-width .gccolumn:last-child {
     padding-right: var(--gutterWidth);
   }
+
+  .social-icons .icon {
+    width: 37px;
+    height: 37px;
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 1200px) {
