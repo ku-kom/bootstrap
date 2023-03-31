@@ -11,6 +11,11 @@
   display: none;
 }
 
+.gridcontent {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 .gridcontent>.row>.container>.row:last-child {
   margin-bottom: 0;
 }
@@ -90,8 +95,16 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.deloverskrift {
+  font-size: 22px;
+}
 
-#valueslider {
+.panel-default>.panel-heading>.panel-title {
+  font-size: 22px;
+}
+
+#valueslider,
+.valueslider {
   height: 289px;
 }
 
@@ -138,10 +151,6 @@ blockquote footer {
 }
 
 @media (min-width: 992px) {
-  .gridcontent {
-    font-size: 15px;
-    line-height: 1.6;
-  }
 
   .gridcontent>.row:not(:first-child) {
     /* Row gutter 23px + extra space 13px */
@@ -186,7 +195,7 @@ blockquote footer {
   }
 
   .panel-default>.panel-heading>.panel-title {
-    font-size: 25px !important;
+    font-size: 25px;
     margin-top: 20px;
   }
 
