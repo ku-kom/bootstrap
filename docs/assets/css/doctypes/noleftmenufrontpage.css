@@ -144,8 +144,8 @@ blockquote footer {
   }
 
   .gridcontent>.row:not(:first-child) {
-    /* Row gutter 26px + extra space 15px */
-    margin-top: 38px;
+    /* Row gutter 23px + extra space 13px */
+    margin-top: 36px;
   }
 
   .gridcontent>.gcrow:not(.full-page-width)>.container {
