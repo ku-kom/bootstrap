@@ -143,6 +143,11 @@ blockquote footer {
     line-height: 1.6;
   }
 
+  .gridcontent>.row:not(:first-child) {
+    /* Row gutter 26px + extra space 15px */
+    margin-top: 38px;
+  }
+
   .gridcontent>.gcrow:not(.full-page-width)>.container {
     max-width: 966px;
   }
