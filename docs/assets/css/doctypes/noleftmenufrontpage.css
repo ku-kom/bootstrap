@@ -135,6 +135,18 @@ blockquote footer {
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  .top-slider .slick-slide img,
+  .top-slider .slide-link img {
+    height: 50%;
+  }
+
+  .top-slider .slick-slide .caption,
+  .top-slider .slide-link .caption {
+    height: 50%;
+  }
+}
+
 /* Special styling for full-width rows */
 .gridcontent>.gcrow:not(.full-page-width)>.container {
   width: 100%;
