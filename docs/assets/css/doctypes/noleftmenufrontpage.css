@@ -196,7 +196,8 @@ blockquote footer {
     font-size: 25px;
   }
 
-  #valueslider {
+  #valueslider,
+  .valueslider {
     height: 215px;
   }
 
