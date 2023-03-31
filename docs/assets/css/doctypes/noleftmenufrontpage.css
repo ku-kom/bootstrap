@@ -136,14 +136,16 @@ blockquote footer {
 }
 
 @media (max-width: 767px) {
+
   .top-slider .slick-slide img,
   .top-slider .slide-link img {
-    height: 50%;
+    flex: 1 1 auto;
+    min-height: 50%;
   }
 
   .top-slider .slick-slide .caption,
   .top-slider .slide-link .caption {
-    height: 50%;
+    flex: 1 1 auto;
   }
 }
 
