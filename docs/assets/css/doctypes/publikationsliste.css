@@ -120,7 +120,7 @@ ol.portal_list li p.type {
   line-height: 18px;
 }
 
-.label {
+.pureportal .label {
   color: inherit;
   font-size: 12px;
   font-weight: 400;
