@@ -303,6 +303,11 @@ body {
   font-weight: 700;
 }
 
+.evu-header-apply :is(.course-clickable, .course-clickable:any-link) {
+  color: var(--white);
+  cursor: pointer;
+}
+
 .btn-evu-signup {
   background-color: var(--red1);
   color: var(--white) !important;
