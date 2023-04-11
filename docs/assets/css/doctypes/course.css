@@ -728,6 +728,12 @@ h1.title {
   .evu-share .social-icons {
     justify-content: end;
   }
+
+  .social-icons .icon {
+    width: 37px;
+    height: 37px;
+    font-size: 36px
+  }
 }
 
 @media (min-width: 1200px) {
