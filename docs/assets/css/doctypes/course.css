@@ -170,7 +170,7 @@ body {
   position: relative;
   min-height: 1px;
   width: 100%;
-  background-color: var(--white1);
+  background-color: var(--white);
   transition: box-shadow .2s ease-out;
 }
 
@@ -278,7 +278,7 @@ body {
 
 .evu-header-apply {
   background-color: var(--red3);
-  color: var(--white1);
+  color: var(--white);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -305,7 +305,7 @@ body {
 
 .btn-evu-signup {
   background-color: var(--red1);
-  color: var(--white1) !important;
+  color: var(--white) !important;
   border: 0;
   float: right;
   transition: background-color .1s linear;
