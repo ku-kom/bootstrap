@@ -37,7 +37,7 @@ body {
   height: 100px;
   background-color: var(--red1);
   transition: background-color .3s linear;
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   font-weight: 700;
   display: flex;
@@ -315,7 +315,7 @@ body {
 .btn-evu-signup:focus,
 .btn-evu-signup:active {
   background-color: #7a1619;
-  color: var(--white1) !important;
+  color: var(--white) !important;
 }
 
 h1.title {
@@ -358,7 +358,7 @@ h1.title {
 }
 
 .evu-exp-box {
-  background-color: #fff;
+  background-color: var(--white);
   border: 0;
 }
 
@@ -509,13 +509,13 @@ h1.title {
 }
 
 .flexiblebox-as-rightbox .gridbox.size1 {
-  background: #fff;
+  background: var(--white);
   box-shadow: 0 0 0 1px #ddd;
   transition: box-shadow .2s ease-out;
 }
 
 .flexiblebox-as-rightbox .gridbox.size1:hover {
-  background: #fff;
+  background: var(--white);
   box-shadow: 0 8px 10px 0 rgba(60, 60, 60, .1), 0 2px 6px 0 rgba(64, 64, 64, .19);
 }
 
