@@ -338,8 +338,15 @@ h1.title {
 .evu-modal-boks {
   position: relative;
   height: 133px;
+  text-transform: uppercase;
   transition: background-color .2s ease-out;
-  padding-right: 39%;
+  padding-right: 35%;
+}
+
+.evu-modal-boks .fact-title h3 {
+  font-size: 14.4px;
+  font-weight: 700;
+  letter-spacing: .7px;
 }
 
 .evu-modal-boks::after {
@@ -349,10 +356,10 @@ h1.title {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  height: 75%;
+  height: 60%;
   width: 30%;
 }
 
