@@ -338,6 +338,7 @@ h1.title {
 .evu-modal-boks {
   position: relative;
   height: 133px;
+  transition: background-color .2s ease-out;
   padding-right: 39%;
 }
 
