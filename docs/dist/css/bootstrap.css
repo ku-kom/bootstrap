@@ -12994,6 +12994,14 @@ form.gdpr-accept .btn + .btn {
   background-color: var(--red1);
   width: var(--scrollPercentage);
 }
+.courselist-load {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 .mce-window iframe {
   position: relative;
 }
