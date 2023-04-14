@@ -13014,6 +13014,18 @@ form.gdpr-accept .btn + .btn {
 .selected_courses_container .card-inner-text strong {
   font-weight: 400;
 }
+.text-icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  gap: 10px;
+}
+.text-icon .icon-lg {
+  font-size: 26px;
+}
 .mce-window iframe {
   position: relative;
 }
