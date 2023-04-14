@@ -145,6 +145,10 @@ blockquote footer {
   letter-spacing: .4px;
 }
 
+.ku-flexbox .icon {
+  margin-left: 5px;
+}
+
 @media (max-width: 767px) {
 
   .top-slider .slick-slide img,
