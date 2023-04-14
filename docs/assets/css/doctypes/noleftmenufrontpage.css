@@ -135,6 +135,18 @@ blockquote footer {
   font-weight: 400;
 }
 
+.ku-flexbox {
+  /* Box which is a fusion betweek a flexible box and a button */
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--red1);
+  font-size: 14.4px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
 @media (max-width: 767px) {
 
   .top-slider .slick-slide img,
