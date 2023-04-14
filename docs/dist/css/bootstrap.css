@@ -13002,11 +13002,6 @@ form.gdpr-accept .btn + .btn {
   -ms-flex-pack: center;
   justify-content: center;
 }
-@media (min-width: 768px) {
-  .selected_courses_container.row {
-    margin-bottom: 0;
-  }
-}
 .selected_courses_container > .gccolumn {
   margin-bottom: 23px;
 }
