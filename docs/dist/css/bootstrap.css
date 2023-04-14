@@ -4082,6 +4082,9 @@ fieldset[disabled] .btn-danger:hover {
   color: #7b161a;
   background-color: #fff;
 }
+.btn-danger .icon {
+  margin-left: 10px;
+}
 .btn-social {
   text-transform: uppercase;
   letter-spacing: .7px;
@@ -4101,7 +4104,7 @@ fieldset[disabled] .btn-danger:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  position: absolute!important;
+  position: absolute !important;
 }
 .btn-social.facebook {
   color: #fff;
