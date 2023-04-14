@@ -145,7 +145,7 @@ blockquote footer {
   letter-spacing: .4px;
 }
 
-.ku-flexbox .icon {
+.ku-flexbox :is(.icon, .glyphicon) {
   margin-left: 5px;
 }
 
