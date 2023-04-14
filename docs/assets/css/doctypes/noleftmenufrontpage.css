@@ -188,6 +188,14 @@ blockquote footer {
     border-radius: 2px;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
+  .caption h1 {
+    font-size: 26px;
+  }
+
   .top-slider {
     height: 410px;
   }
