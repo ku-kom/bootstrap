@@ -138,8 +138,6 @@ blockquote footer {
 .ku-flexbox {
   /* Box which is a fusion betweek a flexible box and a button */
   display: inline-block;
-  color: var(--white);
-  background-color: var(--red1);
   font-size: 14.4px;
   text-transform: uppercase;
   padding: 10px;
