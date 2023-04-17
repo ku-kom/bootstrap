@@ -249,22 +249,22 @@ blockquote footer {
     margin-bottom: 50px;
   }
 
-  blockquote h3 {
-    font-size: 20px;
-  }
-
-  .double-column .gccolumn blockquote.full-width {
+  blockquote.full-width {
     font-size: 20px;
     line-height: 1.5;
     font-weight: 600;
     padding: 0 20px;
   }
 
-  .double-column .gccolumn blockquote.full-width:before {
+  blockquote h3 {
+    font-size: 20px;
+  }
+
+  blockquote.full-width:before {
     font-size: 65px;
   }
 
-  .double-column .gccolumn blockquote.full-width footer {
+  blockquote.full-width footer {
     font-size: 15px;
     font-weight: 400;
   }
