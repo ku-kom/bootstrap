@@ -149,6 +149,10 @@ blockquote footer {
   margin-left: 5px;
 }
 
+blockquote h3 {
+  margin-top: 0;
+}
+
 @media (max-width: 767px) {
 
   .top-slider .slick-slide img,
