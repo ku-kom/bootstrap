@@ -252,6 +252,17 @@ body {
   flex-direction: row;
 }
 
+.evu-card .card-duration {
+  justify-content: end;
+  max-width: 45%;
+}
+
+.evu-card .card-duration .course-info-detail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .evu-card .card-footer-divider {
   flex: 1 1 auto;
   position: relative;
