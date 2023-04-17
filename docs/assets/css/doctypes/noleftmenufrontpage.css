@@ -249,7 +249,7 @@ blockquote footer {
     margin-bottom: 50px;
   }
 
-  .blockquote h3 {
+  blockquote h3 {
     font-size: 20px;
   }
 
