@@ -4115,17 +4115,17 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.facebook {
   color: #fff;
   background-color: #4267b2;
-  border-color: #364e92;
+  border-color: #3b5c9f;
 }
 .btn-social.facebook:focus {
   color: #fff;
   background-color: #34518d;
-  border-color: #141c35;
+  border-color: #192642;
 }
 .btn-social.facebook:hover {
   color: #fff;
   background-color: #34518d;
-  border-color: #253665;
+  border-color: #2b4273;
 }
 .btn-social.facebook::after {
   content: "\66";
@@ -4137,17 +4137,17 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.linkedin {
   color: #fff;
   background-color: #0073b1;
-  border-color: #084461;
+  border-color: #006298;
 }
 .btn-social.linkedin:focus {
   color: #fff;
   background-color: #00527e;
-  border-color: #000;
+  border-color: #001018;
 }
 .btn-social.linkedin:hover {
   color: #fff;
   background-color: #00527e;
-  border-color: #031c28;
+  border-color: #003b5a;
 }
 .btn-social.linkedin::after {
   content: "\6c";
@@ -4159,17 +4159,17 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.twitter {
   color: #fff;
   background-color: #0b7bc1;
-  border-color: #0075a2;
+  border-color: #0a6ca9;
 }
 .btn-social.twitter:focus {
   color: #fff;
   background-color: #085c91;
-  border-color: #001922;
+  border-color: #031f30;
 }
 .btn-social.twitter:hover {
   color: #fff;
   background-color: #085c91;
-  border-color: #004965;
+  border-color: #06476f;
 }
 .btn-social.twitter::after {
   content: "\74";
