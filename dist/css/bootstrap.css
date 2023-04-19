@@ -1234,7 +1234,7 @@ template {
   content: "\79";
 }
 .icon-youtube:hover {
-  background-color: #f00;
+  background-color: #cd0000;
 }
 .icon-tablet:before {
   content: "\77";
@@ -4092,6 +4092,12 @@ fieldset[disabled] .btn-danger:hover {
   position: relative;
   padding-right: 30px;
 }
+@media (max-width: 991px) {
+  .btn-social {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 .btn-social::after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ku-symbols" !important;
@@ -4123,7 +4129,8 @@ fieldset[disabled] .btn-danger:hover {
 }
 .btn-social.facebook::after {
   content: "\66";
-  top: -2px;
+  top: 50%;
+  transform: translateY(calc(-50% - 4px));
   margin-left: 2px;
   font-size: 27px;
 }
@@ -4145,7 +4152,8 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.linkedin::after {
   content: "\6c";
   font-size: 24px;
-  top: 2px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: 7px;
 }
 .btn-social.twitter {
@@ -4166,7 +4174,8 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.twitter::after {
   content: "\74";
   font-size: 22px;
-  top: 4px;
+  top: 50%;
+  transform: translateY(calc(-50% - 2px));
   margin-left: 5px;
 }
 .btn-social.instagram {
@@ -4188,29 +4197,55 @@ fieldset[disabled] .btn-danger:hover {
 .btn-social.instagram::after {
   content: "\69";
   font-size: 23px;
-  top: 4px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: 5px;
 }
 .btn-social.youtube {
   color: #fff;
-  background-color: #f00;
-  border-color: #e60000;
+  background-color: #e60000;
+  border-color: #cd0000;
 }
 .btn-social.youtube:focus {
   color: #fff;
-  background-color: #c00;
-  border-color: #600;
+  background-color: #b30000;
+  border-color: #4d0000;
 }
 .btn-social.youtube:hover {
   color: #fff;
-  background-color: #c00;
-  border-color: #a80000;
+  background-color: #b30000;
+  border-color: #8f0000;
 }
 .btn-social.youtube::after {
   content: "\79";
   font-size: 30px;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: 5px;
+}
+.btn-social.podcast {
+  color: #fff;
+  background-color: #872ec4;
+  border-color: #7929af;
+  background: linear-gradient(45deg, #d56dfb, #b150e2, #872ec4);
+}
+.btn-social.podcast:focus {
+  color: #fff;
+  background-color: #6b249b;
+  border-color: #321148;
+}
+.btn-social.podcast:hover {
+  color: #fff;
+  background-color: #6b249b;
+  border-color: #571e7e;
+}
+.btn-social.podcast::after {
+  font-family: 'Glyphicons Halflings' !important;
+  content: '\e035';
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(calc(-50% - 1px));
+  margin-left: 8px;
 }
 .btn-link {
   color: #2c6694;

@@ -135,6 +135,10 @@
   font-weight: 700;
   position: relative;
   padding-right: 30px;
+  @media (max-width: @screen-sm-max) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
   &::after {
     .icon;
@@ -146,7 +150,8 @@
 
     &::after {
       content: @icon-facebook;
-      top: -2px;
+      top: 50%;
+      transform: translateY(calc(-50% - 4px));
       margin-left: 2px;
       font-size: 27px;
     }
@@ -158,7 +163,8 @@
     &::after {
       content: @icon-linkedin;
       font-size: 24px;
-      top: 2px;
+      top: 50%;
+      transform: translateY(-50%);
       margin-left: 7px;
     }
   }
@@ -169,7 +175,8 @@
     &::after {
       content: @icon-twitter;
       font-size: 22px;
-      top: 4px;
+      top: 50%;
+      transform: translateY(calc(-50% - 2px));
       margin-left: 5px;
     }
   }
@@ -181,19 +188,35 @@
     &::after {
       content: @icon-instagram;
       font-size: 23px;
-      top: 4px;
+      top: 50%;
+      transform: translateY(-50%);
       margin-left: 5px;
     }
   }
 
   &.youtube {
-    .simple-button-variant(@white-color; #f00; darken(#f00, 5%));
+    .simple-button-variant(@white-color; #e60000; darken(#e60000, 5%));
 
     &::after {
       content: @icon-youtube;
       font-size: 30px;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       margin-left: 5px;
+    }
+  }
+
+  &.podcast {
+    .simple-button-variant(@white-color; #872EC4; darken(#872EC4, 5%));
+    background: linear-gradient(45deg, #d56dfb, #b150e2, #872ec4);
+
+    &::after {
+      font-family: 'Glyphicons Halflings'!important;
+      content: '\e035';
+      font-size: 16px;
+      top: 50%;
+      transform: translateY(calc(-50% - 1px));
+      margin-left: 8px;
     }
   }
 }
