@@ -70,18 +70,18 @@
 
 .simple-button-variant(@color; @background; @border) {
   color: @color;
-  background-color: @background;
+  background: @background;
   border-color: @border;
 
   &:focus {
     color: @color;
-    background-color: darken(@background, 10%);
+    background: darken(@background, 10%);
     border-color: darken(@border, 25%);
   }
 
   &:hover {
     color: @color;
-    background-color: darken(@background, 10%);
+    background: darken(@background, 10%);
     border-color: darken(@border, 12%);
   }
 }
