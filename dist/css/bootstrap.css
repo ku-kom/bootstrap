@@ -4225,18 +4225,18 @@ fieldset[disabled] .btn-danger:hover {
 }
 .btn-social.podcast {
   color: #fff;
-  background-color: #872ec4;
+  background-color: #8828c5;
   border-color: #7929af;
-  background: linear-gradient(45deg, #d56dfb, #b150e2, #872ec4);
+  background: linear-gradient(45deg, #f351ff, #c23fe4, #8828c5);
 }
 .btn-social.podcast:focus {
   color: #fff;
-  background-color: #6b249b;
+  background-color: #6b1f9b;
   border-color: #321148;
 }
 .btn-social.podcast:hover {
   color: #fff;
-  background-color: #6b249b;
+  background-color: #6b1f9b;
   border-color: #571e7e;
 }
 .btn-social.podcast::after {
