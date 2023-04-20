@@ -2858,6 +2858,9 @@ th {
 .pct_45 {
   width: 45%;
 }
+.pct_50 {
+  width: 50%;
+}
 .table-condensed > tbody > tr > td,
 .table-condensed > thead > tr > td,
 .table-condensed > tfoot > tr > td,
