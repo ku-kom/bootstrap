@@ -4119,6 +4119,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #4267b2;
   border-color: #3b5c9f;
+  text-align: left;
 }
 .btn-social.facebook:focus {
   color: #fff;
@@ -4141,6 +4142,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #0073b1;
   border-color: #006298;
+  text-align: left;
 }
 .btn-social.linkedin:focus {
   color: #fff;
@@ -4163,6 +4165,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #0b7bc1;
   border-color: #0a6ca9;
+  text-align: left;
 }
 .btn-social.twitter:focus {
   color: #fff;
@@ -4185,6 +4188,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #c13584;
   border-color: #ad3076;
+  text-align: left;
   background: linear-gradient(45deg, #c13584, #e1306c, #fd1d1d);
 }
 .btn-social.instagram:focus {
@@ -4208,6 +4212,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #e60000;
   border-color: #cd0000;
+  text-align: left;
 }
 .btn-social.youtube:focus {
   color: #fff;
@@ -4230,6 +4235,7 @@ fieldset[disabled] .btn-danger:hover {
   color: #fff;
   background: #8828c5;
   border-color: #7929af;
+  text-align: left;
   background: linear-gradient(45deg, #f351ff, #c23fe4, #8828c5);
 }
 .btn-social.podcast:focus {
@@ -13239,6 +13245,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
   color: #fff;
   background: #c73028;
   border-color: #b22b24;
+  text-align: left;
   bottom: -16px;
   position: relative;
 }
