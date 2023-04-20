@@ -135,6 +135,7 @@
   font-weight: 700;
   position: relative;
   padding-right: 30px;
+
   @media (max-width: @screen-sm-max) {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -199,9 +200,9 @@
 
     &::after {
       content: @icon-youtube;
-      font-size: 30px;
+      font-size: 35px;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(calc(-50% - 2px));
       margin-left: 5px;
     }
   }
@@ -211,7 +212,7 @@
     background: linear-gradient(45deg, #f351ff, #c23fe4, #8828c5);
 
     &::after {
-      font-family: 'Glyphicons Halflings'!important;
+      font-family: 'Glyphicons Halflings' !important;
       content: '\e035';
       font-size: 16px;
       top: 50%;
