@@ -171,6 +171,7 @@ body {
   min-height: 1px;
   width: 100%;
   background-color: var(--white);
+  box-shadow: 0 0 0 1px #ddd;
   transition: box-shadow .2s ease-out;
 }
 
@@ -212,8 +213,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-top: 0;
 }
 
 .evu-card .card-title {
