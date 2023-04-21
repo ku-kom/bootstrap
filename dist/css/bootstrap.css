@@ -4205,7 +4205,7 @@ fieldset[disabled] .btn-danger:hover {
   content: "\69";
   font-size: 27px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 1px));
   margin-left: 8px;
 }
 .btn-social.youtube {
