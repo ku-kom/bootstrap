@@ -204,6 +204,9 @@ body {
   font-weight: 600;
   display: inline-block;
   white-space: nowrap;
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background-color: var(--grey2);
   color: var(--box-text-light);
 }
