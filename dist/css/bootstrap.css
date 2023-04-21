@@ -4097,8 +4097,8 @@ fieldset[disabled] .btn-danger:hover {
 }
 @media (max-width: 991px) {
   .btn-social {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }
 .btn-social::after {
@@ -4135,8 +4135,8 @@ fieldset[disabled] .btn-danger:hover {
   content: "\66";
   top: 50%;
   transform: translateY(calc(-50% - 4px));
-  margin-left: 2px;
-  font-size: 27px;
+  margin-left: 3px;
+  font-size: 26px;
 }
 .btn-social.linkedin {
   color: #fff;
@@ -4156,10 +4156,10 @@ fieldset[disabled] .btn-danger:hover {
 }
 .btn-social.linkedin::after {
   content: "\6c";
-  font-size: 24px;
+  font-size: 26px;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 7px;
+  margin-left: 10px;
 }
 .btn-social.twitter {
   color: #fff;
@@ -4203,10 +4203,10 @@ fieldset[disabled] .btn-danger:hover {
 }
 .btn-social.instagram::after {
   content: "\69";
-  font-size: 23px;
+  font-size: 27px;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 5px;
+  margin-left: 8px;
 }
 .btn-social.youtube {
   color: #fff;
@@ -4226,10 +4226,10 @@ fieldset[disabled] .btn-danger:hover {
 }
 .btn-social.youtube::after {
   content: "\79";
-  font-size: 33px;
+  font-size: 36px;
   top: 50%;
   transform: translateY(calc(-50% - 1px));
-  margin-left: 5px;
+  margin-left: 8px;
 }
 .btn-social.podcast {
   color: #fff;
@@ -4254,7 +4254,7 @@ fieldset[disabled] .btn-danger:hover {
   font-size: 16px;
   top: 50%;
   transform: translateY(calc(-50% - 1px));
-  margin-left: 8px;
+  margin-left: 10px;
 }
 .btn-link {
   color: #2c6694;

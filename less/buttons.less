@@ -11,215 +11,215 @@
 // }
 
 .btn {
-  display: inline-block;
-  margin-bottom: 0; // For input.btn
-  font-weight: @btn-font-weight;
-  // KU:
-  letter-spacing: @btn-letter-spacing;
-  text-transform: uppercase;
-  text-decoration: none;
-  // KU end
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
-  white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: @btn-font-weight;
+    // KU:
+    letter-spacing: @btn-letter-spacing;
+    text-transform: uppercase;
+    text-decoration: none;
+    // KU end
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
 
-  @media (max-width: @screen-xs-max) {
-    font-size: 14px;
-  }
+    @media (max-width: @screen-xs-max) {
+        font-size: 14px;
+    }
 
-  .user-select(none);
+    .user-select(none);
 
-  &,
-  &.active,
-  &:active {
+    &,
+    &.active,
+    &:active {
+
+        &.focus,
+        &:focus {
+            .tab-focus();
+        }
+    }
 
     &.focus,
-    &:focus {
-      .tab-focus();
+    &:focus,
+    &:hover {
+        color: @btn-default-color;
+        text-decoration: none;
     }
-  }
 
-  &.focus,
-  &:focus,
-  &:hover {
-    color: @btn-default-color;
-    text-decoration: none;
-  }
-
-  &.active,
-  &:active {
-    outline: 0;
-    background-image: none;
-    .box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
-  }
-
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: @cursor-disabled;
-    .opacity(.65);
-    .box-shadow(none);
-  }
-
-  a & {
+    &.active,
+    &:active {
+        outline: 0;
+        background-image: none;
+        .box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
+    }
 
     &.disabled,
+    &[disabled],
     fieldset[disabled] & {
-      pointer-events: none;
+        cursor: @cursor-disabled;
+        .opacity(.65);
+        .box-shadow(none);
     }
-  }
 
-  // KU specific
-  &.go-back {
-    &::before {
-      font-family: 'Glyphicons Halflings';
-      content: "\e079";
-      margin-right: 2px;
+    a & {
+
+        &.disabled,
+        fieldset[disabled] & {
+            pointer-events: none;
+        }
     }
-  }
 
-  .icon {
-    margin-left: 5px;
-  }
+    // KU specific
+    &.go-back {
+        &::before {
+            font-family: 'Glyphicons Halflings';
+            content: "\e079";
+            margin-right: 2px;
+        }
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
 }
 
 // Alternate buttons
 // --------------------------------------------------
 
 .btn-default {
-  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+    .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
 }
 
 .btn-primary {
-  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+    .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }
 
 // Success appears as green
 
 .btn-success {
-  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+    .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
 }
 
 // Info appears as blue-green
 
 .btn-info {
-  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+    .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
 }
 
 // Warning appears as orange
 
 .btn-warning {
-  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+    .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
 }
 
 // Danger and error appear as red
 
 .btn-danger {
-  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+    .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 
-  .icon {
-    margin-left: 10px;
-  }
+    .icon {
+        margin-left: 10px;
+    }
 }
 
 // KU specific:
 
 .btn-social {
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  font-weight: 700;
-  position: relative;
-  padding-right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+    position: relative;
+    padding-right: 30px;
 
-  @media (max-width: @screen-sm-max) {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  &::after {
-    .icon;
-    position: absolute !important;
-  }
-
-  &.facebook {
-    .simple-button-variant(@white-color; @ku-facebook; darken(@ku-facebook, 5%));
+    @media (max-width: @screen-sm-max) {
+        padding-top: @grid-gutter-by-half;
+        padding-bottom: @grid-gutter-by-half;
+    }
 
     &::after {
-      content: @icon-facebook;
-      top: 50%;
-      transform: translateY(calc(-50% - 4px));
-      margin-left: 2px;
-      font-size: 27px;
+        .icon;
+        position: absolute !important;
     }
-  }
 
-  &.linkedin {
-    .simple-button-variant(@white-color; @ku-linkedin; darken(@ku-linkedin, 5%));
+    &.facebook {
+        .simple-button-variant(@white-color; @ku-facebook; darken(@ku-facebook, 5%));
 
-    &::after {
-      content: @icon-linkedin;
-      font-size: 24px;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 7px;
+        &::after {
+            content: @icon-facebook;
+            top: 50%;
+            transform: translateY(calc(-50% - 4px));
+            margin-left: 3px;
+            font-size: 26px;
+        }
     }
-  }
 
-  &.twitter {
-    .simple-button-variant(@white-color; @ku-twitter; darken(@ku-twitter, 5%));
+    &.linkedin {
+        .simple-button-variant(@white-color; @ku-linkedin; darken(@ku-linkedin, 5%));
 
-    &::after {
-      content: @icon-twitter;
-      font-size: 22px;
-      top: 50%;
-      transform: translateY(calc(-50% - 2px));
-      margin-left: 5px;
+        &::after {
+            content: @icon-linkedin;
+            font-size: 26px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+        }
     }
-  }
 
-  &.instagram {
-    .simple-button-variant(@white-color; #c13584; darken(#c13584, 5%));
-    background: linear-gradient(45deg, #c13584, #e1306c, #fd1d1d);
+    &.twitter {
+        .simple-button-variant(@white-color; @ku-twitter; darken(@ku-twitter, 5%));
 
-    &::after {
-      content: @icon-instagram;
-      font-size: 23px;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-left: 5px;
+        &::after {
+            content: @icon-twitter;
+            font-size: 22px;
+            top: 50%;
+            transform: translateY(calc(-50% - 2px));
+            margin-left: 5px;
+        }
     }
-  }
 
-  &.youtube {
-    .simple-button-variant(@white-color; @ku-youtube; darken(@ku-youtube, 5%));
+    &.instagram {
+        .simple-button-variant(@white-color; #c13584; darken(#c13584, 5%));
+        background: linear-gradient(45deg, #c13584, #e1306c, #fd1d1d);
 
-    &::after {
-      content: @icon-youtube;
-      font-size: 33px;
-      top: 50%;
-      transform: translateY(calc(-50% - 1px));
-      margin-left: 5px;
+        &::after {
+            content: @icon-instagram;
+            font-size: 27px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 8px;
+        }
     }
-  }
 
-  &.podcast {
-    .simple-button-variant(@white-color; #8828c5; darken(#872EC4, 5%));
-    background: linear-gradient(45deg, #f351ff, #c23fe4, #8828c5);
+    &.youtube {
+        .simple-button-variant(@white-color; @ku-youtube; darken(@ku-youtube, 5%));
 
-    &::after {
-      font-family: 'Glyphicons Halflings' !important;
-      content: '\e035';
-      font-size: 16px;
-      top: 50%;
-      transform: translateY(calc(-50% - 1px));
-      margin-left: 8px;
+        &::after {
+            content: @icon-youtube;
+            font-size: 36px;
+            top: 50%;
+            transform: translateY(calc(-50% - 1px));
+            margin-left: 8px;
+        }
     }
-  }
+
+    &.podcast {
+        .simple-button-variant(@white-color; #8828c5; darken(#872EC4, 5%));
+        background: linear-gradient(45deg, #f351ff, #c23fe4, #8828c5);
+
+        &::after {
+            font-family: 'Glyphicons Halflings' !important;
+            content: '\e035';
+            font-size: 16px;
+            top: 50%;
+            transform: translateY(calc(-50% - 1px));
+            margin-left: 10px;
+        }
+    }
 }
 
 // Link buttons
@@ -227,73 +227,73 @@
 // Make a button look and behave like a link
 
 .btn-link {
-  color: @link-color;
-  font-weight: normal;
-  border-radius: 0;
+    color: @link-color;
+    font-weight: normal;
+    border-radius: 0;
 
-  &,
-  &.active,
-  &:active,
-  &[disabled],
-  fieldset[disabled] & {
-    background-color: transparent;
-    .box-shadow(none);
-  }
+    &,
+    &.active,
+    &:active,
+    &[disabled],
+    fieldset[disabled] & {
+        background-color: transparent;
+        .box-shadow(none);
+    }
 
-  &,
-  &:active,
-  &:focus,
-  &:hover {
-    border-color: transparent;
-  }
-
-  &:focus,
-  &:hover {
-    color: @link-hover-color;
-    text-decoration: @link-hover-decoration;
-    background-color: transparent;
-  }
-
-  &[disabled],
-  fieldset[disabled] & {
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+        border-color: transparent;
+    }
 
     &:focus,
     &:hover {
-      color: @btn-link-disabled-color;
-      text-decoration: none;
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+        background-color: transparent;
     }
-  }
+
+    &[disabled],
+    fieldset[disabled] & {
+
+        &:focus,
+        &:hover {
+            color: @btn-link-disabled-color;
+            text-decoration: none;
+        }
+    }
 }
 
 // Button Sizes
 // --------------------------------------------------
 
 .btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
+    // line-height: ensure even-numbered height of button next to large input
+    .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
 }
 
 .btn-sm {
-  // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+    // line-height: ensure proper height of button next to small input
+    .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
 }
 
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+    .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
 }
 
 // Block button
 // --------------------------------------------------
 
 .btn-block {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 // Vertically space out multiple block buttons
 
 .btn-block+.btn-block {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 // Specificity overrides
@@ -301,30 +301,30 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  &.btn-block {
-    width: 100%;
-  }
+    &.btn-block {
+        width: 100%;
+    }
 }
 
 // KU specific:
 
 .btn {
-  &.toggleAccordions {
-    position: relative;
-    padding-right: 25px;
-    .glyphicon-plus;
+    &.toggleAccordions {
+        position: relative;
+        padding-right: 25px;
+        .glyphicon-plus;
 
-    &:before {
-      .glyphicon;
-      position: absolute;
-      top: 48%;
-      right: 5px;
-      transform: translateY(-50%);
-      color: @gray-light;
-    }
+        &:before {
+            .glyphicon;
+            position: absolute;
+            top: 48%;
+            right: 5px;
+            transform: translateY(-50%);
+            color: @gray-light;
+        }
 
-    &.expanded {
-      .glyphicon-minus;
+        &.expanded {
+            .glyphicon-minus;
+        }
     }
-  }
 }
