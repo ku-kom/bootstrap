@@ -13070,6 +13070,13 @@ form.gdpr-accept .btn + .btn {
 .text-icon .icon-lg {
   font-size: 26px;
 }
+.video-container .video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 .mce-window iframe {
   position: relative;
 }
