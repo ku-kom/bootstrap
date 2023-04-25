@@ -7,15 +7,15 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  transition: background .2s ease-out;
+  flex-direction: column;
+  transition: background 0.2s ease-out;
 }
 .gridbox .box1 {
   z-index: 4;
   -ms-flex-order: 1;
   order: 1;
   -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
+  flex: 0 1 auto;
   position: relative;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
   text-transform: uppercase;
   padding: 8px 18px 5px 10px;
   font-weight: 700;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 }
 .gridbox .box1 .header h3 {
   font-size: 14.4px;
@@ -39,7 +39,7 @@
   -ms-flex-order: 2;
   order: 2;
   -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .gridbox::before {
   display: inline-block;
@@ -75,20 +75,20 @@
 .gridbox.with-img .box2 img {
   width: 100%;
   -ms-flex: none;
-      flex: none;
+  flex: none;
   display: block;
   -ms-interpolation-mode: bicubic;
   object-fit: cover;
   backface-visibility: hidden;
   filter: brightness(100%) blur(0);
-  transition: .2s filter ease-out;
+  transition: 0.2s filter ease-out;
 }
 .gridbox:hover img {
   filter: brightness(90%) blur(0);
 }
 .gridbox:not(.with-img) .box1 {
   -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .gridbox:not(.with-img) .box1 .header {
   background: transparent;
@@ -160,7 +160,7 @@
 }
 .gridbox.outlined:not(.with-img) .box1 {
   -ms-flex: 0 1 100%;
-      flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 .gridbox.outlined:not(.with-img) .box2 {
   display: none;
@@ -183,13 +183,13 @@
   order: 2;
   padding: 5px 10px 10px;
   -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .gridbox.size1.with-img .box1 .header-small {
   font-weight: bold;
   color: #666;
   text-transform: uppercase;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   margin: 5px 0;
 }
 .gridbox.size1.with-img .box1 .header-small .date {
@@ -215,7 +215,7 @@
   -ms-flex-order: 1;
   order: 1;
   -ms-flex: 0 0 133px;
-      flex: 0 0 133px;
+  flex: 0 0 133px;
 }
 .gridbox.size1:before {
   display: none;
@@ -225,14 +225,14 @@
 }
 .gridbox.size2:not(.with-img) .box1 {
   -ms-flex: 0 1 100%;
-      flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 .gridbox.size2:not(.with-img) .box1 .text {
   display: block;
 }
 .gridbox.size3:not(.with-img) .box1 {
   -ms-flex: 0 1 100%;
-      flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 .gridbox.size3:not(.with-img) .box1 .text {
   display: block;
@@ -265,7 +265,7 @@
   color: #fcfcfc;
 }
 .box-red1 .header {
-  background: rgba(144, 26, 30, .93);
+  background: rgba(144, 26, 30, 0.93);
   color: #fcfcfc;
 }
 .box-red1.text-top .header {
@@ -292,7 +292,7 @@
   color: #fcfcfc;
 }
 .box-red2 .header {
-  background: rgba(199, 48, 40, .93);
+  background: rgba(199, 48, 40, 0.93);
   color: #fcfcfc;
 }
 .box-red2.text-top .header {
@@ -319,7 +319,7 @@
   color: #fff;
 }
 .box-red3 .header {
-  background: rgba(219, 59, 10, .93);
+  background: rgba(219, 59, 10, 0.93);
   color: #fff;
 }
 .box-red3.text-top .header {
@@ -346,7 +346,7 @@
   color: #fcfcfc;
 }
 .box-blue1 .header {
-  background: rgba(18, 41, 71, .93);
+  background: rgba(18, 41, 71, 0.93);
   color: #fcfcfc;
 }
 .box-blue1.text-top .header {
@@ -373,7 +373,7 @@
   color: #fcfcfc;
 }
 .box-blue2 .header {
-  background: rgba(66, 85, 112, .93);
+  background: rgba(66, 85, 112, 0.93);
   color: #fcfcfc;
 }
 .box-blue2.text-top .header {
@@ -400,7 +400,7 @@
   color: #262626;
 }
 .box-blue3 .header {
-  background: rgba(186, 199, 217, .93);
+  background: rgba(186, 199, 217, 0.93);
   color: #262626;
 }
 .box-blue3.text-top .header {
@@ -430,7 +430,7 @@
   color: #fcfcfc;
 }
 .box-teal1 .header {
-  background: rgba(10, 89, 99, .93);
+  background: rgba(10, 89, 99, 0.93);
   color: #fcfcfc;
 }
 .box-teal1.text-top .header {
@@ -457,7 +457,7 @@
   color: #fcfcfc;
 }
 .box-teal2 .header {
-  background: rgba(25, 127, 142, .93);
+  background: rgba(25, 127, 142, 0.93);
   color: #fcfcfc;
 }
 .box-teal2.text-top .header {
@@ -484,7 +484,7 @@
   color: #262626;
 }
 .box-teal3 .header {
-  background: rgba(183, 215, 222, .93);
+  background: rgba(183, 215, 222, 0.93);
   color: #262626;
 }
 .box-teal3.text-top .header {
@@ -514,7 +514,7 @@
   color: #fcfcfc;
 }
 .box-green1 .header {
-  background: rgba(57, 100, 28, .93);
+  background: rgba(57, 100, 28, 0.93);
   color: #fcfcfc;
 }
 .box-green1.text-top .header {
@@ -541,7 +541,7 @@
   color: #fff;
 }
 .box-green2 .header {
-  background: rgba(75, 131, 37, .93);
+  background: rgba(75, 131, 37, 0.93);
   color: #fff;
 }
 .box-green2.text-top .header {
@@ -568,7 +568,7 @@
   color: #262626;
 }
 .box-green3 .header {
-  background: rgba(160, 192, 140, .93);
+  background: rgba(160, 192, 140, 0.93);
   color: #262626;
 }
 .box-green3.text-top .header {
@@ -598,7 +598,7 @@
   color: #fcfcfc;
 }
 .box-grey1 .header {
-  background: rgba(61, 61, 61, .93);
+  background: rgba(61, 61, 61, 0.93);
   color: #fcfcfc;
 }
 .box-grey1.text-top .header {
@@ -625,7 +625,7 @@
   color: #fcfcfc;
 }
 .box-grey2 .header {
-  background: rgba(102, 102, 102, .93);
+  background: rgba(102, 102, 102, 0.93);
   color: #fcfcfc;
 }
 .box-grey2.text-top .header {
@@ -652,7 +652,7 @@
   color: #262626;
 }
 .box-grey3 .header {
-  background: rgba(225, 223, 223, .93);
+  background: rgba(225, 223, 223, 0.93);
   color: #262626;
 }
 .box-grey3.text-top .header {
@@ -679,7 +679,7 @@
   color: #262626;
 }
 .box-light1 .header {
-  background: rgba(255, 255, 255, .93);
+  background: rgba(255, 255, 255, 0.93);
   color: #262626;
 }
 .box-light1.text-top .header {
@@ -709,7 +709,7 @@
   color: #262626;
 }
 .box-light2 .header {
-  background: rgba(254, 250, 242, .93);
+  background: rgba(254, 250, 242, 0.93);
   color: #262626;
 }
 .box-light2.text-top .header {
@@ -739,7 +739,7 @@
   color: #262626;
 }
 .box-light3 .header {
-  background: rgba(255, 189, 56, .93);
+  background: rgba(255, 189, 56, 0.93);
   color: #262626;
 }
 .box-light3.text-top .header {
@@ -921,7 +921,7 @@
 */
 .gridbox.size1.with-img .box2 {
   -ms-flex: 0 0 55%;
-      flex: 0 0 55%;
+  flex: 0 0 55%;
 }
 .gridbox.size2.with-img.text-over.text-down .box1,
 .gridbox.size3.with-img.text-over.text-down .box1 {
@@ -938,7 +938,7 @@
 .gridbox.size2.with-img .box1,
 .gridbox.size3.with-img .box1 {
   -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   width: 100%;
 }
 .gridbox.size2.with-img .box1 .header,
@@ -966,7 +966,7 @@
   -ms-flex-order: 2;
   order: 2;
   -ms-flex: 1;
-      flex: 1;
+  flex: 1;
 }
 .gridbox.full .header {
   background: transparent;
@@ -978,7 +978,7 @@
   }
   .gridbox.size1 .box2 {
     -ms-flex: 1 0 185px;
-        flex: 1 0 185px;
+    flex: 1 0 185px;
   }
   .gridbox.size2.with-img {
     height: 220px;
@@ -1016,7 +1016,7 @@
   }
   .gridbox .box1 {
     -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
+    flex: 0 1 auto;
   }
   .gridbox:not(.with-img) {
     height: auto !important;
@@ -1026,7 +1026,7 @@
   }
   .gridbox.size1.with-img .box2 {
     -ms-flex: 1 0 185px;
-        flex: 1 0 185px;
+    flex: 1 0 185px;
   }
   .gridbox.size1.with-img .box2 img {
     max-width: 100%;
@@ -1058,17 +1058,17 @@
 @media all and (min-width: 480px) and (max-width: 991px) {
   .gridbox.size1 .box2 {
     -ms-flex: 0 1 185px;
-        flex: 0 1 185px;
+    flex: 0 1 185px;
   }
   .gridbox.size2.with-img,
   .gridbox.size3.with-img {
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
   .gridbox.size2.with-img .box1,
   .gridbox.size3.with-img .box1 {
     -ms-flex: 1;
-        flex: 1;
+    flex: 1;
     -ms-flex-order: 2;
     order: 2;
     position: relative;
@@ -1083,7 +1083,7 @@
   .gridbox.size2.with-img .box2,
   .gridbox.size3.with-img .box2 {
     -ms-flex: 0 0 235px;
-        flex: 0 0 235px;
+    flex: 0 0 235px;
     -ms-flex-order: 1;
     order: 1;
   }
@@ -1151,7 +1151,7 @@
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size3.with-img {
     -ms-flex-direction: column !important;
-        flex-direction: column !important;
+    flex-direction: column !important;
     border: 0;
   }
   .FullWidthFrontpage .col-sm-6 .gridbox.size2.with-img .box1,
@@ -1178,7 +1178,7 @@
   .FullWidthFrontpage .col-sm-6 .gridbox.size3.with-img.outlined .box2,
   .FullWidthFrontpage .double-column .col-sm-6 .gridbox.size3.with-img.outlined .box2 {
     -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+    flex: 1 1 auto;
   }
 }
 @media all and (min-width: 992px) {
@@ -1214,7 +1214,7 @@
   .two-one-column .column1 .gridbox.size1 .box2,
   .two-one-one-column .column1 .gridbox.size1 .box2 {
     -ms-flex: 0 1 185px;
-        flex: 0 1 185px;
+    flex: 0 1 185px;
   }
   .one-one-two-column .column3 .gridbox.size2.with-img,
   .one-three-column .column2 .gridbox.size2.with-img,
@@ -1231,7 +1231,7 @@
   .two-one-column .column1 .gridbox.size3.with-img,
   .two-one-one-column .column1 .gridbox.size3.with-img {
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
   .one-one-two-column .column3 .gridbox.size2.with-img .box1,
   .one-three-column .column2 .gridbox.size2.with-img .box1,
@@ -1248,7 +1248,7 @@
   .two-one-column .column1 .gridbox.size3.with-img .box1,
   .two-one-one-column .column1 .gridbox.size3.with-img .box1 {
     -ms-flex: 1;
-        flex: 1;
+    flex: 1;
     -ms-flex-order: 2;
     order: 2;
     position: relative;
@@ -1287,7 +1287,7 @@
   .two-one-column .column1 .gridbox.size3.with-img .box2,
   .two-one-one-column .column1 .gridbox.size3.with-img .box2 {
     -ms-flex: 0 0 235px;
-        flex: 0 0 235px;
+    flex: 0 0 235px;
     -ms-flex-order: 1;
     order: 1;
   }
@@ -1357,7 +1357,7 @@
   }
   .single-column .column1 .size1 {
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     background: #fff;
     border-bottom: 1px dotted #ccc;
   }
@@ -1367,7 +1367,7 @@
   .single-column .column1 .size1.with-img .box1 {
     padding: 0 0 5px 23px;
     -ms-flex: 0 1 51.6%;
-        flex: 0 1 51.6%;
+    flex: 0 1 51.6%;
     max-width: 390px;
     -ms-flex-order: 2;
     order: 2;
@@ -1387,7 +1387,7 @@
   }
   .single-column .column1 .size1.with-img .box2 {
     -ms-flex: 1 !important;
-        flex: 1 !important;
+    flex: 1 !important;
     -ms-flex-order: 1;
     order: 1;
   }
@@ -1395,7 +1395,7 @@
     object-fit: cover;
   }
   .single-column .column1 .size1.with-img:hover .header > span {
-    background-image: linear-gradient(rgba(74, 73, 73, .25) 0%, #252525 100%);
+    background-image: linear-gradient(rgba(74, 73, 73, 0.25) 0%, #252525 100%);
     background-repeat: repeat-x;
     background-size: 1px 1px;
     background-position: 0 93%;
@@ -1407,7 +1407,7 @@
   }
   .single-column .column1 .size1.img-flip-right .box2 {
     -ms-flex: 1;
-        flex: 1;
+    flex: 1;
     -ms-flex-order: 2;
     order: 2;
   }
@@ -1419,7 +1419,7 @@
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 {
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box1,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box1 {
@@ -1435,7 +1435,7 @@
     -ms-flex-order: 2;
     order: 2;
     -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
   }
   .FullWidthFrontpage .one-three-column .column2 .gridbox.size1 .box2 img,
   .FullWidthFrontpage .three-one-column .column1 .gridbox.size1 .box2 img {
@@ -1444,7 +1444,7 @@
   #gridsidebar .single-column .column1 .gridbox.size2.with-img,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img {
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .header,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .header {
@@ -1467,7 +1467,7 @@
   #gridsidebar .single-column .column1 .gridbox.size2.with-img .box2,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img .box2 {
     -ms-flex: 0 1 235px;
-        flex: 0 1 235px;
+    flex: 0 1 235px;
   }
   #gridsidebar .single-column .column1 .gridbox.size2.with-img::before,
   #gridsidebar .single-column .column1 .gridbox.size3.with-img::before {
