@@ -4143,7 +4143,7 @@ fieldset[disabled] .btn-danger:hover {
   letter-spacing: .7px;
   font-weight: 700;
   position: relative;
-  padding-right: 45px;
+  padding-right: 40px;
 }
 @media (max-width: 991px) {
   .btn-social {
