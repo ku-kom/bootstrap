@@ -2782,6 +2782,26 @@ pre code {
     margin-left: 0;
   }
 }
+.d-flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-column {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.flex-row {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.justify-content-center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.justify-content-between {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 table {
   background-color: transparent;
   border-collapse: collapse;
