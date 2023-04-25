@@ -134,7 +134,7 @@
     letter-spacing: 0.7px;
     font-weight: 700;
     position: relative;
-    padding-right: 30px;
+    padding-right: 45px;
 
     @media (max-width: @screen-sm-max) {
         padding-top: @grid-gutter-by-half;
@@ -219,6 +219,16 @@
             transform: translateY(calc(-50% - 1px));
             margin-left: 10px;
         }
+    }
+}
+
+// btn-ku is KU red
+
+.btn-ku {
+    .simple-button-variant(@white-color; @ku-red; darken(@ku-red, 4%));
+
+    span[class^="icon"] {
+        .icon-color-white;
     }
 }
 
