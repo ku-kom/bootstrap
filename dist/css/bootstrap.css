@@ -8080,6 +8080,9 @@ nav {
   padding-right: 0;
   padding-left: 0;
 }
+.no-margin {
+  margin: 0;
+}
 @media (max-width: 991px) {
   .mobile-margin-top-10 {
     margin-top: 10px;
