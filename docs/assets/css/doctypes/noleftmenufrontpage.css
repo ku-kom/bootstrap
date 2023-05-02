@@ -210,6 +210,10 @@ blockquote h3 {
     font-size: 30px;
   }
 
+  h1.title {
+    margin-top: 50px;
+  }
+
   .caption h1 {
     font-size: 26px;
   }
