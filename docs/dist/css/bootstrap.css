@@ -2797,6 +2797,14 @@ pre code {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.flex-column {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.flex-row {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
 @media (max-width: 991px) {
   .flex-column-mobile {
     -ms-flex-direction: column;
@@ -2806,14 +2814,6 @@ pre code {
     -ms-flex-direction: row;
         flex-direction: row;
   }
-}
-.flex-column {
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-.flex-row {
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 .justify-content-center {
   -ms-flex-pack: center;
