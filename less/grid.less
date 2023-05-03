@@ -5,20 +5,25 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 .container {
-  .container-fixed();
-  @media (max-width: @screen-sm-min) {
-    width: 100%;
-  }
-  @media (min-width: @screen-sm-min) {
-    width: @container-sm;
-  }
-  @media (min-width: @screen-md-min) {
-    width: @container-md;
-  }
-  @media (min-width: @screen-lg-min) {
-    width: @container-lg;
-  }
-  margin: 0 auto;
+    .container-fixed();
+
+    @media (max-width: @screen-sm-min) {
+        width: 100%;
+    }
+
+    @media (min-width: @screen-sm-min) {
+        width: @container-sm;
+    }
+
+    @media (min-width: @screen-md-min) {
+        width: @container-md;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        width: @container-lg;
+    }
+
+    margin: 0 auto;
 }
 
 // Fluid container
@@ -26,14 +31,16 @@
 // Utilizes the mixin meant for fixed width containers, but without any defined
 // width for fluid, full width layouts.
 .container-fluid {
-  .container-fixed();
+    .container-fixed();
 }
+
 // Row
 //
 // Rows contain and clear the floats of your columns.
 .row {
-  .make-row();
+    .make-row();
 }
+
 // Columns
 //
 // Common styles for small and large grid columns
@@ -42,51 +49,66 @@
 // Columns, offsets, pushes, and pulls for extra small devices like
 // smartphones.
 .make-grid(xs); // Small grid
+
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.
 @media (min-width: @screen-sm-min) {
-  .make-grid(sm);
+    .make-grid(sm);
 }
+
 // Medium grid
 //
 // Columns, offsets, pushes, and pulls for the desktop device range.
 @media (min-width: @screen-md-min) {
-  .make-grid(md);
+    .make-grid(md);
 }
+
 // Large grid
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 @media (min-width: @screen-lg-min) {
-  .make-grid(lg);
+    .make-grid(lg);
 }
 
 
 // KU specific: variour flexbox utilities
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width: @screen-sm-max) {
+    .flex-column-mobile {
+        flex-direction: column;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
 }
 
 .flex-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .flex-row {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .justify-content-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .justify-content-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .flex-gap {
-  gap: @mobile-grid-gutter-width;
+    gap: @mobile-grid-gutter-width;
 }

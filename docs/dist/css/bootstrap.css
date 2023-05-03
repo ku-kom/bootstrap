@@ -2797,6 +2797,16 @@ pre code {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 991px) {
+  .flex-column-mobile {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .flex-row-mobile {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
 .flex-column {
   -ms-flex-direction: column;
       flex-direction: column;
