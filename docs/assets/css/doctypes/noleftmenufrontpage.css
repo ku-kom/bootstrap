@@ -292,6 +292,11 @@ blockquote h3 {
     padding-right: var(--gutterWidth);
   }
 
+  .row.content-width {
+    margin-left: 0;
+    margin-right: 0
+  }
+
   .social-icons .icon {
     width: 37px;
     height: 37px;
