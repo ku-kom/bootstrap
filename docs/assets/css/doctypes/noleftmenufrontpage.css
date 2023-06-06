@@ -136,13 +136,17 @@ blockquote footer {
 }
 
 .ku-flexbox {
-  /* Box which is a fusion betweek a flexible box and a button */
+  /* Box which is a fusion between a flexible box and a button */
   display: inline-block;
   font-size: 14.4px;
   text-transform: uppercase;
   padding: 10px;
   font-weight: 700;
   letter-spacing: .4px;
+}
+
+.ku-flexbox a {
+  color: inherit;
 }
 
 .ku-flexbox :is(.icon, .glyphicon) {
