@@ -1,5 +1,6 @@
 :root {
   --jumpboard-color: #901a1e;
+  --exp-box: 200px;
 }
 
 /* Special unit full width front page styling */
@@ -16,7 +17,7 @@
   line-height: 1.6;
 }
 
-.gridcontent>.row>.container>.row:last-child {
+.gridcontent > .row > .container > .row:last-child {
   margin-bottom: 0;
 }
 
@@ -103,7 +104,7 @@
   font-size: 22px;
 }
 
-.panel-default>.panel-heading>.panel-title {
+.panel-default > .panel-heading > .panel-title {
   font-size: 22px;
 }
 
@@ -136,13 +137,17 @@ blockquote footer {
 }
 
 .ku-flexbox {
-  /* Box which is a fusion betweek a flexible box and a button */
+  /* Box which is a fusion between a flexible box and a button */
   display: inline-block;
   font-size: 14.4px;
   text-transform: uppercase;
   padding: 12px 15px;
   font-weight: 700;
   letter-spacing: .4px;
+}
+
+.ku-flexbox a {
+  color: inherit;
 }
 
 .ku-flexbox :is(.icon, .glyphicon) {
@@ -168,14 +173,14 @@ blockquote h3 {
 }
 
 /* Special styling for full-width rows */
-.gridcontent>.gcrow:not(.full-page-width)>.container {
+.gridcontent > .gcrow:not(.full-page-width) > .container {
   width: 100%;
   padding-left: calc(var(--gutterWidth) / 2);
   padding-right: calc(var(--gutterWidth) / 2);
 }
 
 @media (min-width: 768px) {
-  .gridcontent>.gcrow:not(.full-page-width)>.container {
+  .gridcontent > .gcrow:not(.full-page-width) > .container {
     max-width: 746px;
   }
 }
@@ -188,12 +193,12 @@ blockquote h3 {
 
 @media (min-width: 992px) {
 
-  .gridcontent>.row:not(:first-child) {
+  .gridcontent > .row:not(:first-child) {
     /* Row gutter 23px + extra space 13px */
     margin-top: 36px;
   }
 
-  .gridcontent>.gcrow:not(.full-page-width)>.container {
+  .gridcontent > .gcrow:not(.full-page-width) > .container {
     max-width: 966px;
   }
 
@@ -215,11 +220,15 @@ blockquote h3 {
   }
 
   .caption h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   h2 {
     font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   .top-slider {
@@ -228,6 +237,16 @@ blockquote h3 {
 
   .deloverskrift {
     font-size: 25px;
+  }
+
+  .exp-box .bootstrap-collapsible-title {
+    font-size: 20px;
+    margin-bottom: 13px
+  }
+
+  .exp-box .collapse[aria-expanded=false],
+  .exp-box .collapsing[aria-expanded=false] {
+    height: var(--exp-box) !important
   }
 
   #valueslider,
@@ -247,7 +266,7 @@ blockquote h3 {
     Font-size: 24px;
   }
 
-  .panel-default>.panel-heading>.panel-title {
+  .panel-default > .panel-heading > .panel-title {
     font-size: 25px;
     margin-top: 20px;
   }
@@ -305,7 +324,7 @@ blockquote h3 {
 }
 
 @media (min-width: 1200px) {
-  .gridcontent>.gcrow:not(.full-page-width)>.container {
+  .gridcontent > .gcrow:not(.full-page-width) > .container {
     max-width: 1070px;
   }
 }

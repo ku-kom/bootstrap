@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', async () => {
    */
   const addHeading = () => {
     if (!document.querySelectorAll('h1').length) {
-      const de_facto_heading = document.querySelector('.ku-branding-text-major');
-      if (de_facto_heading.length) {
-        de_facto_heading.setAttribute('role', 'heading');
-        de_facto_heading.setAttribute('aria-level', '1');
+      const ariaHeading = document.querySelector('.ku-branding-text-major');
+      if (ariaHeading) {
+        ariaHeading.setAttribute('role', 'heading');
+        ariaHeading.setAttribute('aria-level', '1');
       }
     }
   }
