@@ -12868,8 +12868,13 @@ p[align="right"]:before {
 .factbox a {
   color: inherit;
 }
+.rightbox-normal .factbox {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
 .factbox-left {
-  float: left;
+  float: left!important;
   margin-right: 20px;
   margin-left: 0;
 }
@@ -12881,12 +12886,6 @@ p[align="right"]:before {
     line-height: unset;
     float: none;
   }
-}
-.gccolumn .factbox,
-.rightbox-normal .factbox {
-  width: 100% !important;
-  margin: 0;
-  float: none;
 }
 aside.well[class*="box-"] a {
   color: inherit;
