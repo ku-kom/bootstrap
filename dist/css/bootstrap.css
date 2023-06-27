@@ -12806,6 +12806,7 @@ p[align="right"]:before {
 }
 #warning-banner-inner {
   width: 100%;
+  margin: 0 auto;
   padding: 13px;
 }
 @media (max-width: 767px) {
