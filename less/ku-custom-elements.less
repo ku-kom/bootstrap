@@ -239,13 +239,23 @@
 }
 
 #warning-banner-inner {
+    width: 100%;
+    padding: @grid-gutter-by-half;
+
     @media (max-width: @screen-xs-max) {
         padding: 5px 40px 5px 0;
+    }
 
-        &>.container {
-            padding-left: @grid-gutter-by-half;
-            padding-right: @grid-gutter-by-half;
-        }
+    @media (min-width: @screen-sm-min) {
+        max-width: 746px;
+    }
+
+    @media (min-width: @screen-md-min) {
+        max-width: 966px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        max-width: 1070px;
     }
 
     h1 {
@@ -280,12 +290,6 @@
             margin-bottom: 5px;
         }
     }
-}
-
-.icon-corona {
-    height: 21px;
-    width: 21px;
-    vertical-align: bottom;
 }
 
 // Faktaboks
@@ -328,7 +332,7 @@
     }
 
     &-left {
-        float: left!important;
+        float: left !important;
         margin-right: 20px;
         margin-left: 0;
     }

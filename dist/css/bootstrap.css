@@ -12804,13 +12804,28 @@ p[align="right"]:before {
   position: relative;
   width: 100%;
 }
+#warning-banner-inner {
+  width: 100%;
+  padding: 13px;
+}
 @media (max-width: 767px) {
   #warning-banner-inner {
     padding: 5px 40px 5px 0;
   }
-  #warning-banner-inner > .container {
-    padding-left: 13px;
-    padding-right: 13px;
+}
+@media (min-width: 768px) {
+  #warning-banner-inner {
+    max-width: 746px;
+  }
+}
+@media (min-width: 992px) {
+  #warning-banner-inner {
+    max-width: 966px;
+  }
+}
+@media (min-width: 1200px) {
+  #warning-banner-inner {
+    max-width: 1070px;
   }
 }
 #warning-banner-inner h1 {
@@ -12837,11 +12852,6 @@ p[align="right"]:before {
 }
 #warning-banner-inner p:last-child {
   margin-bottom: 5px;
-}
-.icon-corona {
-  height: 21px;
-  width: 21px;
-  vertical-align: bottom;
 }
 .factbox {
   background-color: #f5f5f5;
@@ -12874,7 +12884,7 @@ p[align="right"]:before {
   float: none;
 }
 .factbox-left {
-  float: left!important;
+  float: left !important;
   margin-right: 20px;
   margin-left: 0;
 }
