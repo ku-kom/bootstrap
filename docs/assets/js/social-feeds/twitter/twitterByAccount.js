@@ -15,13 +15,15 @@
       translations = {
         "reply": "Svar",
         "retweet": "Retweet",
-        "like": "Like"
+        "like": "Like",
+        "error": "Pt. ingen forbindelse."
       }
     } else { //English
       translations = {
         "reply": "Reply",
         "retweet": "Retweet",
-        "like": "Like"
+        "like": "Like",
+        "error": "Currently no connection."
       }
     }
     // Run
@@ -47,39 +49,41 @@
         }).done(function(feeds) {
           console.log(feeds);
           wrapper.find(loading).addClass('hidden');
-          $(feeds).each(function(i, e) {
-            var tweetscreenname = e.user.name;
-            var tweetusername = e.user.screen_name;
-            var profileimage = e.user.profile_image_url_https;
-            var time = e.created_at.replace("+0000 ", "") + " UTC";
-            var d = new Date(time);
-            var status = e.full_text;
-            status = renderLinks(status);
-            //var aria = (e.full_text) ? htmlEntities(e.full_text.substring(0, 50) + '...') : '';
+          // Added due to apit access error
+          wrapper.find('ul').append('<li>'+ translations.error +'</li>');
+          // $(feeds).each(function(i, e) {
+          //   var tweetscreenname = e.user.name;
+          //   var tweetusername = e.user.screen_name;
+          //   var profileimage = e.user.profile_image_url_https;
+          //   var time = e.created_at.replace("+0000 ", "") + " UTC";
+          //   var d = new Date(time);
+          //   var status = e.full_text;
+          //   status = renderLinks(status);
+          //   //var aria = (e.full_text) ? htmlEntities(e.full_text.substring(0, 50) + '...') : '';
 
-            var tweetid = e.id_str;
-            var photoUrl = '';
-            var twitterActions = '';
-            var showTweetActions = true;
+          //   var tweetid = e.id_str;
+          //   var photoUrl = '';
+          //   var twitterActions = '';
+          //   var showTweetActions = true;
 
-            if (typeof e.extended_entities != 'undefined') {
-              $.each(e.extended_entities.media, function(j, v) {
-                var photo = v.media_url_https;
-                photoUrl = '<img src="' + photo + '" alt="' + tweetscreenname + '" class="img-responsive">';
-              })
-            }
+          //   if (typeof e.extended_entities != 'undefined') {
+          //     $.each(e.extended_entities.media, function(j, v) {
+          //       var photo = v.media_url_https;
+          //       photoUrl = '<img src="' + photo + '" alt="' + tweetscreenname + '" class="img-responsive">';
+          //     })
+          //   }
 
-            if (showTweetActions == true) {
-              twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + i + ': ' + translations.reply + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '">' + translations.reply + '</a></div><div class="intent tw-rt"><a aria-label="' + i + ': ' + translations.retweet + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '">' + translations.retweet + '</a></div><div class="intent tw-fav"><a aria-label="' + i + ': ' + translations.like + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '">' + translations.like + '</a></div></div>';
-            }
+          //   if (showTweetActions == true) {
+          //     twitterActions = '<div class="tw-actions clearfix"><div class="intent tw-reply"><a aria-label="' + i + ': ' + translations.reply + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?in_reply_to=' + tweetid + '">' + translations.reply + '</a></div><div class="intent tw-rt"><a aria-label="' + i + ': ' + translations.retweet + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/retweet?tweet_id=' + tweetid + '">' + translations.retweet + '</a></div><div class="intent tw-fav"><a aria-label="' + i + ': ' + translations.like + ' @ Twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/like?tweet_id=' + tweetid + '">' + translations.like + '</a></div></div>';
+          //   }
 
-            wrapper.find('ul').append('<li><div class="imgInfo"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '" ><img src="' + profileimage +
-              '" class="profileImg" alt="@' + tweetusername + '" aria-label="@' + tweetusername + '" /></a></div><div class="twitterInfo"><div class="fullName">' + tweetscreenname + '</div><div class="twitterName">@' +
-              tweetusername + '</div></div><div class="description">' + status + '</div>' + photoUrl + '<div class="tweet-time"><a aria-label="' + i + ': ' + timeSince(d) + '" target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '/status/' + tweetid +
-              '">' + timeSince(d) + '</a></div>' + twitterActions + '</li>');
+          //   wrapper.find('ul').append('<li><div class="imgInfo"><a target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '" ><img src="' + profileimage +
+          //     '" class="profileImg" alt="@' + tweetusername + '" aria-label="@' + tweetusername + '" /></a></div><div class="twitterInfo"><div class="fullName">' + tweetscreenname + '</div><div class="twitterName">@' +
+          //     tweetusername + '</div></div><div class="description">' + status + '</div>' + photoUrl + '<div class="tweet-time"><a aria-label="' + i + ': ' + timeSince(d) + '" target="_blank" rel="noopener" tabindex="-1" href="https://twitter.com/' + tweetusername + '/status/' + tweetid +
+          //     '">' + timeSince(d) + '</a></div>' + twitterActions + '</li>');
 
-            return i < displaylimit - 1;
-          });
+          //   return i < displaylimit - 1;
+          // });
         })
         .fail(function(xhr, textStatus, errorThrown) {
           console.log(xhr.responseText);
