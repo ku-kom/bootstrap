@@ -45,7 +45,7 @@
             user: twitterAccount
           }
         }).done(function(feeds) {
-          //console.log(feeds);
+          console.log(feeds);
           wrapper.find(loading).addClass('hidden');
           $(feeds).each(function(i, e) {
             var tweetscreenname = e.user.name;
