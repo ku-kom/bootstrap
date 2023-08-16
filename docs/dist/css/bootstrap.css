@@ -6306,6 +6306,7 @@ figure img {
 }
 .figure-caption,
 figcaption {
+  font-weight: 400;
   font-size: .92em;
   color: #757575;
   border-bottom: 1px solid #dfdfdf;
@@ -7088,6 +7089,10 @@ button.list-group-item-danger.active:focus {
 .well h2:first-of-type,
 .well h3:first-of-type {
   margin-top: 0;
+}
+.well .figure-caption,
+.well figcaption {
+  color: #252525;
 }
 [itemprop="video"] + .well {
   border-top-right-radius: 0;
@@ -12876,6 +12881,10 @@ p[align="right"]:before {
 .factbox .fact-title strong {
   font-weight: inherit;
 }
+.factbox .figure-caption,
+.factbox figcaption {
+  color: #252525;
+}
 .factbox a {
   color: inherit;
 }
@@ -13335,7 +13344,7 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .gccolumn .exp-box,
 .rightbox-normal .exp-box {
-  width: 100%!important;
+  width: 100% !important;
   float: none;
   margin-left: 0;
   margin-right: 0;
@@ -13381,6 +13390,10 @@ html:lang(en) .mce-content-body .panel-accordion + .accordion-hidden::before {
 }
 .exp-box-wrap[aria-expanded="true"] .exp-box-inner {
   padding-bottom: 0;
+}
+.exp-box-inner .figure-caption,
+.exp-box-inner figcaption {
+  color: #252525;
 }
 .bootstrap-collapsible-title {
   margin-top: 0;

@@ -10,13 +10,13 @@
   border: 1px solid @well-border;
   border-radius: @border-radius-base;
 
-  & + & {
+  &+& {
     margin-top: 20px;
   }
 
   blockquote {
     border-color: #ddd;
-    border-color: rgba(0,0,0,.15);
+    border-color: rgba(0, 0, 0, .15);
   }
 
   h1,
@@ -26,13 +26,19 @@
       margin-top: 0;
     }
   }
+
+  .figure-caption,
+  figcaption {
+    color: @text-color;
+  }
 }
 
-[itemprop="video"] + .well {
+[itemprop="video"]+.well {
   // KU specific:
   // Well below embedded video:
   .border-top-radius(0);
 }
+
 // Sizes
 
 .well-lg {

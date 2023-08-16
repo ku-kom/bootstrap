@@ -7,6 +7,7 @@
   border: 1px solid @exp-box-border;
   border-radius: @border-radius-base;
   margin-bottom: (@exp-box-btn-offset + 7px);
+
   @media (min-width: @screen-sm-min) {
     &-left {
       width: 45%;
@@ -14,6 +15,7 @@
       margin-right: 20px;
 
       &~.collapsible-hidden {
+
         // Fix floating issues
         &+*:not(.collapsible-hidden) {
           overflow-x: hidden;
@@ -27,6 +29,7 @@
       margin-left: 20px;
 
       &+.collapsible-hidden {
+
         // Fix floating issues
         &:last-child {
           &+* {
@@ -40,17 +43,17 @@
   .collapse[aria-expanded="false"] {
     display: block;
     position: relative;
-    height: @exp-box-height !important;
+    height: @exp-box-height  !important;
     overflow: hidden;
   }
 
   .collapsing[aria-expanded="false"] {
-    height: @exp-box-height !important;
+    height: @exp-box-height  !important;
   }
 
   .gccolumn &,
   .rightbox-normal & {
-    width: 100%!important;
+    width: 100% !important;
     float: none;
     margin-left: 0;
     margin-right: 0;
@@ -71,7 +74,7 @@
 }
 
 .exp-box [aria-expanded="true"] {
-  &+ .btn-expand {
+  &+.btn-expand {
     &::after {
       content: "\2212";
       left: 0;
@@ -85,6 +88,11 @@
   .exp-box-wrap[aria-expanded="true"] & {
     padding-bottom: 0;
   }
+
+  .figure-caption,
+  figcaption {
+    color: @text-color;
+  }
 }
 
 .bootstrap-collapsible-title {
@@ -92,7 +100,7 @@
 }
 
 .bootstrap-collapsible-content {
-  & > * {
+  &>* {
     &:first-child {
       margin-top: 0;
       padding-top: 0;
