@@ -185,7 +185,7 @@ blockquote.full-width::before {
     overflow: hidden;
   }
 
-  .well img, .factbox img {
+  .well img, .factbox img, .exp-box-inner .img-default, .exp-box-inner .figure-caption, .exp-box-inner figcaption {
     max-width: 100% !important;
     margin: 0 !important;
   }
