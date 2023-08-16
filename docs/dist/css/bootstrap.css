@@ -6285,7 +6285,7 @@ figure img {
   /* IE 11 */
   .figure.image img,
   figure.image img {
-    width: 100%!important;
+    width: 100% !important;
   }
 }
 img.img-left {
@@ -6306,13 +6306,16 @@ figure img {
 }
 .figure-caption,
 figcaption {
-  font-weight: 400;
   font-size: .92em;
   color: #757575;
   border-bottom: 1px solid #dfdfdf;
   padding: 10px 10px 10px 0;
   display: table-caption;
   caption-side: bottom;
+}
+.figure-caption strong,
+figcaption strong {
+  font-weight: 400;
 }
 .alert {
   padding: 10px;
