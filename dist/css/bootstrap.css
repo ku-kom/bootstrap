@@ -4244,6 +4244,32 @@ fieldset[disabled] .btn-danger:hover {
   transform: translateY(calc(-50% - 2px));
   margin-left: 5px;
 }
+.btn-social.media-x {
+  color: #fff;
+  background: #222;
+  border-color: #2f2f2f;
+  text-align: left;
+}
+.btn-social.media-x:focus {
+  color: #fff;
+  background: #080808;
+  border-color: #000;
+}
+.btn-social.media-x:hover {
+  color: #fff;
+  background: #080808;
+  border-color: #101010;
+}
+.btn-social.media-x::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 50 50'%3E%3Cpath fill='%23fff' d='M29.5 21.7 43.9 5h-3.4L28 19.5 18 5H6.5l15.1 22L6.5 44.5h3.4l13.2-15.3 10.5 15.3h11.5L29.5 21.7zm11 20.3h-5.2L24.8 27.1 23.3 25 11.1 7.6h5.2l9.8 14 1.5 2.2L40.5 42z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 80%;
+  top: 50%;
+  transform: translateY(calc(-50% - 2px));
+  margin-left: 5px;
+}
 .btn-social.instagram {
   color: #fff;
   background: #c13584;
