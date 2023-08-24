@@ -12917,7 +12917,8 @@ p[align="right"]:before {
 .factbox a {
   color: inherit;
 }
-.rightbox-normal .factbox {
+.rightbox-normal .factbox,
+.rightbox .factbox {
   width: 100%;
   margin: 0;
   float: none;
