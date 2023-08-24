@@ -12902,12 +12902,12 @@ p[align="right"]:before {
 .factbox h3 {
   margin: 0 0 10px;
 }
-.factbox .fact-title {
+.fact-title .factbox {
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 600;
 }
-.factbox .fact-title strong {
+.fact-title .factbox strong {
   font-weight: inherit;
 }
 .factbox .figure-caption,
