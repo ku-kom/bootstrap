@@ -12902,14 +12902,6 @@ p[align="right"]:before {
 .factbox h3 {
   margin: 0 0 10px;
 }
-.fact-title .factbox {
-  margin-bottom: 10px;
-  font-size: 17px;
-  font-weight: 600;
-}
-.fact-title .factbox strong {
-  font-weight: inherit;
-}
 .factbox .figure-caption,
 .factbox figcaption {
   color: #252525;
@@ -12936,6 +12928,14 @@ p[align="right"]:before {
     line-height: unset;
     float: none;
   }
+}
+.fact-title {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.fact-title strong {
+  font-weight: inherit;
 }
 aside.well[class*="box-"] a {
   color: inherit;

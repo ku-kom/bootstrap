@@ -311,17 +311,8 @@
         margin: 0 0 10px;
     }
 
-    .fact-title & {
-        margin-bottom: 10px;
-        font-size: @font-size-h3;
-        font-weight: 600;
-
-        strong {
-            font-weight: inherit;
-        }
-    }
-
-    .figure-caption, figcaption {
+    .figure-caption,
+    figcaption {
         color: @text-color;
     }
 
@@ -330,7 +321,8 @@
     }
 
     // .gccolumn &,
-    .rightbox-normal &, .rightbox & {
+    .rightbox-normal &,
+    .rightbox & {
         width: 100%;
         margin: 0;
         float: none;
@@ -350,6 +342,16 @@
         float: none;
     }
 
+}
+
+.fact-title {
+    margin-bottom: 10px;
+    font-size: @font-size-h3;
+    font-weight: 600;
+
+    strong {
+        font-weight: inherit;
+    }
 }
 
 aside {
