@@ -3,6 +3,10 @@
   --exp-box: 200px;
 }
 
+.breadcrumbs {
+  display: none;
+}
+
 /* Special unit full width front page styling */
 .main-content {
   padding-top: 0;
