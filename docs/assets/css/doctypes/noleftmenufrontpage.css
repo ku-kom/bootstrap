@@ -53,10 +53,6 @@
   text-decoration: underline;
 }
 
-.top-slider {
-  height: 370px;
-}
-
 .jumpcolumn {
   list-style: none;
   padding: 0;
@@ -192,6 +188,9 @@ blockquote h3 {
 }
 
 @media (min-width: 992px) {
+  .top-slider {
+    height: 370px;
+  }
 
   .gridcontent > .row:not(:first-child) {
     /* Row gutter 23px + extra space 13px */

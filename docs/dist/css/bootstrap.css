@@ -12956,8 +12956,8 @@ form.gdpr-accept .btn + .btn {
   margin-left: 10px;
 }
 .image-presentation {
-  position: relative;
   overflow: hidden;
+  height: 289px;
 }
 .image-presentation > .slick-slide {
   display: block;
@@ -12982,11 +12982,6 @@ form.gdpr-accept .btn + .btn {
   min-width: 100%;
   max-height: 410px;
   object-fit: cover;
-}
-@media (min-width: 992px) {
-  .image-presentation {
-    height: 289px;
-  }
 }
 @media all and (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .image-presentation > a img {
