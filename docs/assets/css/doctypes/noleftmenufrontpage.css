@@ -122,6 +122,10 @@
   max-height: 289px;
 }
 
+.image-presentation .caption.full-bg h2 {
+  font-size: 26px;
+}
+
 blockquote.full-width {
   font-size: 17px;
   font-weight: 600;
