@@ -10869,10 +10869,10 @@ body:not(.FullWidthFrontpage) .double-column .tiles-y .tile-img img {
 .image-presentation .caption.full-bg {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
