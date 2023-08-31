@@ -262,6 +262,14 @@ blockquote h3 {
     max-height: none;
   }
 
+  .image-presentation .caption.full-bg h2 {
+    font-size: 32px;
+  }
+
+  .image-presentation .caption.full-bg p {
+    font-size: 24px;
+  }
+
   .jumpcolumn li {
     Font-size: 24px;
   }
