@@ -159,6 +159,10 @@ blockquote h3 {
 }
 
 @media (max-width: 767px) {
+  .image-presentation {
+    height: auto;
+    min-height: 289px;
+  }
 
   .top-slider .slick-slide img,
   .top-slider .slide-link img {
