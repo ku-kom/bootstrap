@@ -23,6 +23,7 @@
   @media (min-width: @screen-sm) {
     height: @gridbox1;
   }
+
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -43,6 +44,7 @@
   margin: 0;
   padding: 0;
   height: 100%; // KU
+
   // &:focus {
   //   outline: none;
   // }
@@ -86,7 +88,7 @@
   position: relative;
   display: none;
 
-  & > * {
+  &>* {
     overflow: hidden;
     height: 100%;
     position: relative;
@@ -97,6 +99,7 @@
       height: 100%;
       // max-width: none;
     }
+
     display: block;
     flex: none;
     object-fit: cover;
@@ -113,6 +116,7 @@
   .slick-initialized & {
     display: block;
   }
+
   // Loading
   .slick-loading & {
     visibility: hidden;
@@ -128,7 +132,10 @@
     border: 1px solid transparent;
   }
 }
-@media all and (min-width: @screen-sm) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (min-width: @screen-sm) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   /* IE 11 */
   .slick-slide img {
     .img-fix-for-ie();
@@ -136,8 +143,10 @@
     max-width: 100%;
   }
 }
+
 @media (min-width: @screen-sm) {
   @supports (-ms-ime-align: auto) {
+
     /* IE Edge */
     .slick-slide img {
       .img-fix-for-ie();
@@ -151,14 +160,15 @@
   text-align: center;
   margin: 5px 0;
 }
+
 // Links
 
 .slide-link {
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  text-decoration: none!important;
+  text-decoration: none !important;
   position: relative;
   color: @text-color;
 
@@ -182,10 +192,11 @@
     }
 
     .slide-link {
+
       &:focus,
       &:focus-visible {
         pointer-events: none;
-        outline: none!important;
+        outline: none !important;
       }
     }
   }
@@ -194,6 +205,7 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
 // Arrows
 
 .slick-arrow {
@@ -253,6 +265,7 @@
     }
   }
 }
+
 // Pause button
 
 .slick-pause {
@@ -266,7 +279,7 @@
   cursor: pointer;
   color: @white-color;
   outline: none;
-  background: rgba(170,170,170,.8);
+  background: rgba(170, 170, 170, .8);
   border: 1px solid @gray-light;
   border-radius: 50%;
 
@@ -283,6 +296,7 @@
 .slick-slider {
   &:hover {
     @media (min-width: @screen-sm) {
+
       // Only display arrows in desktop
       .slick-arrow {
         visibility: visible;
@@ -302,6 +316,7 @@
     }
   }
 }
+
 // Dots
 
 .slick-dots {
@@ -348,9 +363,11 @@
     }
   }
 }
+
 // Captions - KU specific
 
-.slick-slide, .image-presentation {
+.slick-slide,
+.image-presentation {
   .caption {
     // Textbar bottom as default
     display: block;
@@ -362,10 +379,12 @@
     text-decoration: none;
     line-height: 1.5;
     padding: 10px;
+
     @media (max-width: @screen-sm) {
       padding-right: 10%;
       min-height: 66px;
     }
+
     font-size: 14px;
     color: @text-color;
     background: @gray-f5;
@@ -399,6 +418,7 @@
       &-red3 {
         .slider-overlay-colors(@white-color; @red3; 93%);
       }
+
       // Blues family
       &-blue1 {
         .slider-overlay-colors(@gridbox-text-light; @blue1; 93%);
@@ -411,6 +431,7 @@
       &-blue3 {
         .slider-overlay-colors(@gridbox-text-dark; @blue3; 93%);
       }
+
       // Teals family
       &-teal1 {
         .slider-overlay-colors(@gridbox-text-light; @teal1; 93%);
@@ -423,6 +444,7 @@
       &-teal3 {
         .slider-overlay-colors(@gridbox-text-dark; @teal3; 93%);
       }
+
       // Greens family
       &-green1 {
         .slider-overlay-colors(@gridbox-text-light; @green1; 93%);
@@ -435,6 +457,7 @@
       &-green3 {
         .slider-overlay-colors(@gridbox-text-dark; @green3; 93%);
       }
+
       // Greys family
       &-grey1 {
         .slider-overlay-colors(@gridbox-text-light; @grey1; 93%);
@@ -447,6 +470,7 @@
       &-grey3 {
         .slider-overlay-colors(@gridbox-text-dark; @grey3; 93%);
       }
+
       // Whites and yellows family
       &-light1 {
         .slider-overlay-colors(@gridbox-text-dark; @white1; 93%);
@@ -480,14 +504,16 @@
   &:hover .caption {
     text-decoration: none;
   }
+
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
     .caption {
       // Special caption iPad
-      position: absolute!important;
+      position: absolute !important;
       left: 0;
       bottom: 0;
     }
   }
+
   @media (min-width: @screen-md) {
     .caption {
       font-size: 16px;
