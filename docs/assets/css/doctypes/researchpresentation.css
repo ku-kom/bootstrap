@@ -13,3 +13,7 @@
   font-size: 15px;
   margin-bottom: 32px;
 }
+
+.view_container a {
+  word-break: break-all;
+}
