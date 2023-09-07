@@ -395,6 +395,10 @@ form.gdpr-accept {
 .image-presentation {
     overflow: hidden;
     height: @gridbox1;
+    @media (max-width: @screen-xs-max) {
+        height: auto;
+        max-height: 370px;
+    }
 
     &>.slick-slide {
         display: block;

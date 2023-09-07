@@ -12959,6 +12959,12 @@ form.gdpr-accept .btn + .btn {
   overflow: hidden;
   height: 289px;
 }
+@media (max-width: 767px) {
+  .image-presentation {
+    height: auto;
+    max-height: 370px;
+  }
+}
 .image-presentation > .slick-slide {
   display: block;
   float: none;
