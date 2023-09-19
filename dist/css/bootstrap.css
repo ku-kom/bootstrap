@@ -12956,6 +12956,7 @@ form.gdpr-accept .btn + .btn {
   margin-left: 10px;
 }
 .image-presentation {
+  position: relative;
   overflow: hidden;
   height: 289px;
 }
