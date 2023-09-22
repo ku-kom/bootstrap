@@ -718,6 +718,10 @@ video {
     max-width: 966px;
   }
 
+  .video-container>img {
+    max-width: none;
+}
+
   .tema-textblok {
     font-size: 16px;
     font-weight: 600;
