@@ -355,6 +355,7 @@ h1.title {
   text-transform: uppercase;
   transition: background-color .2s ease-out;
   padding-right: 35%;
+  width: 100%;
 }
 
 .evu-modal-boks .fact-title h3 {
