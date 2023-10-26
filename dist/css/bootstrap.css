@@ -12962,6 +12962,7 @@ form.gdpr-accept .btn + .btn {
 }
 @media (max-width: 767px) {
   .image-presentation {
+    position: unset;
     height: auto;
     max-height: 370px;
   }
