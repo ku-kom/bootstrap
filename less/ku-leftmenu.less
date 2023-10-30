@@ -42,6 +42,7 @@
       }
     }
   }
+
   // All levels
   ul {
     li {
@@ -49,7 +50,8 @@
       display: block;
 
       &.active {
-        > a,
+
+        >a,
         a.active {
           font-weight: bold;
           color: @ku-red;
@@ -82,19 +84,21 @@
   }
 
   ul {
+
     //First level
-    > li {
+    >li {
+
       // Class name begins with active...
       &[class^="active"] {
-        > a {
+        >a {
           &::before {
             background-color: @ku-red;
-            color: @white-color!important;
+            color: @white-color  !important;
           }
         }
       }
 
-      > a {
+      >a {
         &::after {
           content: '';
           position: absolute;
@@ -167,7 +171,7 @@
             padding-left: 15px;
 
             li {
-              > a {
+              >a {
                 &::before {
                   height: 4px;
                   width: 4px;
@@ -180,9 +184,10 @@
               }
 
               ul {
+
                 // Fourth level
                 li {
-                  > a {
+                  >a {
                     padding-left: 9px;
 
                     &::before {
@@ -206,7 +211,7 @@
 }
 
 #leftmenu {
-  & ~ ul {
+  &~ul {
     // Extra local left menus
     border-top: 1px solid @gray;
     margin-top: @margin20;
@@ -219,6 +224,7 @@
     }
   }
 }
+
 // Left menu slide in/out for mobiles
 @media (max-width: @screen-xs-max) {
   .ku-leftmenu {
@@ -241,6 +247,10 @@
     &:active,
     &:focus {
       background-color: @gray-light;
+    }
+
+    .icon-bar {
+      width: 24px;
     }
   }
 }

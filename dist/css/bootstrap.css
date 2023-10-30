@@ -8141,7 +8141,7 @@ nav {
 .scrolltop {
   position: fixed;
   bottom: 3%;
-  right: 2%;
+  right: 10px;
   width: 40px;
   height: 40px;
   color: #fff;
@@ -8578,6 +8578,9 @@ iframe {
   .leftmenu-toggle:active,
   .leftmenu-toggle:focus {
     background-color: #757575;
+  }
+  .leftmenu-toggle .icon-bar {
+    width: 24px;
   }
 }
 /* Media queries */
