@@ -55,7 +55,7 @@
 
 .image-presentation {
   position: relative;
-  overflow: unset;
+  height: 370px;
 }
 
 .image-presentation img {
