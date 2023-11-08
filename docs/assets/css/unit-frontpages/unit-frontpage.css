@@ -53,6 +53,11 @@
   opacity: .3;
 }
 
+.image-presentation {
+  position: relative;
+  overflow: unset;
+}
+
 .image-presentation img {
   max-height: 50%;
   height: 50%;
