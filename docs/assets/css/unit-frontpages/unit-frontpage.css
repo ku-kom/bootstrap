@@ -55,6 +55,7 @@
 
 .image-presentation img {
   max-height: 50%;
+  height: 50%;
 }
 
 blockquote.full-width {
@@ -74,6 +75,7 @@ blockquote footer {
 
   .image-presentation img {
     max-height: none;
+    height: auto;
   }
 
   .jumpcolumn li {
