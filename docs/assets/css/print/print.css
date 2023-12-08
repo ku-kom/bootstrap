@@ -90,6 +90,10 @@ header, nav, footer, #ccc {
   display: none;
 }
 
+.bootstrap-accordion-content:before {
+  display: none;
+}
+
 a, a:visited {
   text-decoration: underline;
 }
@@ -273,6 +277,10 @@ th.visible-sm, td.visible-sm {
 
 /* cms warning banner */
 #warning-banner {
+  display: none;
+}
+
+#botxo-chat-1 {
   display: none;
 }
 
