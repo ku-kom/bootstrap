@@ -90,7 +90,8 @@ header, nav, footer, #ccc {
   display: none;
 }
 
-.bootstrap-accordion-content:before {
+.bootstrap-accordion-content:before,
+.bootstrap-accordion-content:after {
   display: none;
 }
 
