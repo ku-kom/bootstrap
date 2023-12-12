@@ -24,15 +24,15 @@
     width: 25%;
   }
 
-  .emplistworkarea+.emplistphone {
+  .emplistworkarea + .emplistphone {
     width: 20%;
   }
 
-  .emplistworkarea+.emplistphone+.emplistemail {
+  .emplistworkarea + .emplistphone + .emplistemail {
     width: 10%;
   }
 
-  .emplisttitle+.emplistphone+.emplistemail {
+  .emplisttitle + .emplistphone + .emplistemail {
     width: 12%;
   }
 }
@@ -51,7 +51,8 @@ th.emplistemail {
   pointer-events: none;
 }
 
-th.emplistimage:after, th.emplistemail:after {
+th.emplistimage:after,
+th.emplistemail:after {
   display: none !important;
 }
 
@@ -60,18 +61,18 @@ th.emplistimage:after, th.emplistemail:after {
   float: right;
 }
 
-.emp-title-heading>a {
+.emp-title-heading > a {
   color: #252525;
   text-decoration: none;
 }
 
-.emp-title-heading>a>h2 {
+.emp-title-heading > a > h2 {
   font-size: 18px;
   font-weight: 600;
   margin-top: 0;
 }
 
-#forskerprofil_kontaktoplysninger>img {
+#forskerprofil_kontaktoplysninger > img {
   float: right;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -95,4 +96,18 @@ th.emplistimage:after, th.emplistemail:after {
 .pure-integration-frame {
   width: 100%;
   height: 100%;
+}
+
+.forskerprofil_unit {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.forskerprofil_titel {
+  font-weight: 15px;
+}
+
+.forskerprofil_adresse {
+  font-size: 16px;
+  font-weight: 600;
 }
