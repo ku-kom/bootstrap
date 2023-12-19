@@ -217,11 +217,12 @@ blockquote h3 {
 
   .video-container .caption.textlabel-left {
     top: 50%;
+    left: 20px;
+    right: auto;
     bottom: auto;
     transform: translateY(-50%);
     width: 45%;
     min-height: 50%;
-    padding: 16px 20px 20px 40px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
