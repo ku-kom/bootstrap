@@ -3,14 +3,8 @@
  * call getJobteaserRss('feed-url', 'element-id', number of items)
  */
 
-// Browser language (used for date formatting)
 const lang = window.navigator.userLanguage || window.navigator.language;
 
-/**
- * 
- * @param {string} str 
- * @returns trimmed string and with no new-lines.
- */
 const clean = (str) => {
   return str.replaceAll('\n', '')
     .replaceAll('\t', '')
@@ -19,17 +13,20 @@ const clean = (str) => {
 
 const getJobteaserRss = (source, id, max_items) => {
   if (!source && !id) {
-    console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id")');
+    console.log('Specify feed url and result element id like this: getJobteaserRss("feed-url", "element-id)');
     return;
   }
-  
+
+  // Run through custom php proxy to avoid CORS issues:
+  let url = 'https://cms.secure.ku.dk/instacms/parseFeeds/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
+
   // Max number of items to display:
   const max = Number(max_items) || null;
 
   // Where to display the results:
   const box = document.getElementById(id);
 
-  fetch(source)
+  fetch(url)
     .then((response) => response.text())
     .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
     .then((data) => {
@@ -62,19 +59,19 @@ const getJobteaserRss = (source, id, max_items) => {
         const img = item.querySelector('enclosure').getAttribute('url');
         html += `
             <li>
-              <a href="${link}" class="list-item-link" target="_blank" rel="noopener"> 
-                <div class="list-item">
-                    <div class="list-img">
-                        <img src="${img}" alt="">
+                <div class="media">
+                  <a href="${link}" target="_blank" rel="noopener"> 
+                    <div class="media-left">
+                        <img class="media-object" src="${img}" alt="">
                     </div>
-                    <div class="list-body">
+                    <div class="media-body">
                         <h4 class="media-heading">${title}</h4>
                         <div class="jobinfo">${dato} | ${company}</div>
                         <div class="description">${desc}</div>
                         <div class="joblocation">${location}</div>
                     </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </li>
           `;
       }
