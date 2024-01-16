@@ -162,6 +162,7 @@ blockquote h3 {
   .image-presentation {
     height: auto;
     min-height: 289px;
+    max-height: none;
   }
 
   .top-slider .slick-slide img,
