@@ -30,7 +30,7 @@ const getJobteaserRss = (source, id, max_items) => {
     .then((response) => response.text())
     .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
     .then((data) => {
-      //console.log(data);
+      console.log(data);
       const items = data.querySelectorAll('item');
       let html = '';
       for (const [index, item] of items.entries()) {
