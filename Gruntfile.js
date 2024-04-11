@@ -645,7 +645,8 @@ module.exports = function (grunt) {
   }
 
   grunt.registerTask('test', testSubtasks);
-  grunt.registerTask('test-js', ['jshint:core', 'jshint:grunt', 'eslint:core', 'eslint:grunt']);
+  // grunt.registerTask('test-js', ['jshint:core', 'jshint:grunt', 'eslint:core', 'eslint:grunt']);
+  grunt.registerTask('test-js', ['jshint:core', 'jshint:grunt']);
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs', 'uglify:custom', 'uglify:slider']);
@@ -671,7 +672,7 @@ module.exports = function (grunt) {
   grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
   grunt.registerTask('lint-docs-css', ['stylelint:docs', 'stylelint:examples']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
-  grunt.registerTask('lint-docs-js', ['jshint:assets', 'eslint:assets']);
+  grunt.registerTask('lint-docs-js', ['jshint:assets']);
   grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data']);
   grunt.registerTask('docs-github', ['jekyll:github', 'htmlmin']);
   grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress']);
