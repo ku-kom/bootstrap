@@ -8908,6 +8908,9 @@ iframe {
   position: relative;
   top: 3px;
 }
+.social-items .social-item .social-icon > span.icon-facebook:before {
+  top: 0;
+}
 .social-items .footer-heading {
   margin-top: 20px;
 }
