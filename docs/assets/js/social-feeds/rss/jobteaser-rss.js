@@ -18,7 +18,7 @@ const getJobteaserRss = (source, id, max_items) => {
   }
 
   // Run through custom php proxy to avoid CORS issues:
-  let url = 'https://cms.secure.ku.dk/instacms/parseFeeds/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
+  let url = 'https://parser.cms.ku.dk/parseFeed.php?url=' + encodeURIComponent(source) + '&mimeType=application/rss+xml';
 
   // Max number of items to display:
   const max = Number(max_items) || null;
