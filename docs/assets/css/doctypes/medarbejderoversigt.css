@@ -99,8 +99,9 @@ th.emplistemail:after {
 }
 
 .forskerprofil_unit {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .forskerprofil_titel {
