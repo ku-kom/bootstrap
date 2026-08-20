@@ -57,7 +57,7 @@
     e.preventDefault();
     $loading.show();
     $.ajax({
-        url: 'https://www2.adm.ku.dk/selv/pls/!app_tlfbog_v2.soeg',
+        url: 'https://p-selvbetjening.ku.dk/selv/pls/!app_tlfbog.soeg',
         data: 'format=json&startrecord=0&recordsperpage=100&searchstring=' + encodeURIComponent($input.val()) + '&env=about', //the parameter env="" is used to define the correct domain in the backend CORS policy.
         method: 'post',
         jsonp: false, // Set to false for security reasons
