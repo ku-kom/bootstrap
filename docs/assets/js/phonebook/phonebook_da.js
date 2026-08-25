@@ -64,7 +64,7 @@
         dataType: 'json'
       })
       .done(function(data) {
-        //console.log(data);
+        console.log(data);
         employees = (data.root || {}).employees || [];
         // Check result and if paging plugin is loaded
         if (employees.length > 0 && $.fn.twbsPagination) {
@@ -107,7 +107,7 @@
         var address = (isEmpty(result[i].ANSAT_ADRESSE)) ? '' : '<dt>Adresse</dt><dd>' + result[i].ANSAT_ADRESSE + '</dd>';
         var location = (isEmpty(result[i].LOKATION)) ? '' : '<dt>Lokation</dt><dd>' + result[i].LOKATION + '</dd>';
         var remarks = (isEmpty(result[i].BEMAERK)) ? '' : '<dt>Bem&aelig;rk&shy;ninger</dt><dd>' + result[i].BEMAERK + '</dd>';
-
+console.log(result[i].FOTOURL);
         $li = $('<li class="contact-list"/>');
         var html = '<dl class="dl-horizontal">' +
           '<div class="ku-result">' +
